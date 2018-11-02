@@ -2,7 +2,7 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: ''
+ifdGuid: 2tD8c0qSqHuO00025QrE$V
 legacyGuid: ''
 definition: 'Properties for signal handling for an proportional controller taking setpoint and feedback inputs and creating a single valued output. HISTORY: In IFC4, SignalFactor1, SignalFactor2 and SignalFactor3 changed to ProportionalConstant, IntegralConstant and DerivativeConstant.  SignalTime1 and SignalTime2 changed to SignalTimeIncrease and SignalTimeDecrease.'
 localizations:
@@ -31,7 +31,7 @@ properties:
 - name: ControlType
   definition: 'The type of signal modification.PROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. PROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. PROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.'
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 2zAcg0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
@@ -181,7 +181,7 @@ properties:
 - name: Labels
   definition: Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3C4Hq0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
@@ -225,7 +225,7 @@ properties:
 - name: Range
   definition: The physical range of values.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3KQLW0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
@@ -264,7 +264,7 @@ properties:
 - name: Value
   definition: The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3QNpa0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
@@ -303,7 +303,7 @@ properties:
 - name: ProportionalConstant
   definition: The proportional gain factor of the controller (usually referred to as Kp).
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3XXaS0qSqHuO00025QrE$V
   legacyGuid: 8ed0daad82ac4bd1b2e85eec033fc2f8
   legacyGuidAsIfcGlobalId: 2EqDgjWgnBqRBeNkm3FyBu
   localizations:
@@ -345,7 +345,7 @@ properties:
 - name: IntegralConstant
   definition: The integral gain factor of the controller (usually referred to as Ki).  Asserted where ControlType is PROPORTIONALINTEGRAL or PROPORTIONALINTEGRALDERIVATIVE.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3cuv60qSqHuO00025QrE$V
   legacyGuid: 69d1b67804a74a40b0731058b0323a75
   legacyGuidAsIfcGlobalId: 1fqRPu1ATAGB1p45YmCZfr
   localizations:
@@ -387,7 +387,7 @@ properties:
 - name: DerivativeConstant
   definition: The derivative gain factor of the controller (usually referred to as Kd).  Asserted where ControlType is PROPORTIONALINTEGRALDERIVATIVE.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3hg4M0qSqHuO00025QrE$V
   legacyGuid: cca43d303bb3414ab53a5de138cf68cd
   legacyGuidAsIfcGlobalId: 3Cf3qmExD1IhKwNU4upsZD
   localizations:
@@ -429,7 +429,7 @@ properties:
 - name: SignalTimeIncrease
   definition: Time factor used for exponential increase.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3oDhq0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
@@ -470,7 +470,7 @@ properties:
 - name: SignalTimeDecrease
   definition: Time factor used for exponential decrease.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3tb0U0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR

@@ -2,7 +2,7 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcHvacDomain
-ifdGuid: ''
+ifdGuid: 3aCcs0qSWHuO00025QrE$V
 legacyGuid: ''
 definition: 'Chiller type common attributes.'
 localizations:
@@ -31,7 +31,7 @@ properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3gmEK0qSWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
@@ -69,7 +69,7 @@ properties:
 - name: Status
   definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3lXPa0qSWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
@@ -238,7 +238,7 @@ properties:
 - name: NominalCapacity
   definition: Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 3_R4k0qSWHuO00025QrE$V
   legacyGuid: b3d92e6deaeb429db95e2694b333ae6a
   legacyGuidAsIfcGlobalId: 2psIvjwkj2dRbU9fIpCwvg
   localizations:
@@ -277,7 +277,7 @@ properties:
 - name: NominalEfficiency
   definition: Nominal chiller efficiency under nominal conditions.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 04OYo0qSaHuO00025QrE$V
   legacyGuid: 3c955cd8d9384ed2bbdab2ae2227f723
   legacyGuidAsIfcGlobalId: 0ybLpOsJXEqhlQiguY9$SZ
   localizations:
@@ -316,7 +316,7 @@ properties:
 - name: NominalCondensingTemperature
   definition: Chiller condensing temperature.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 099k20qSaHuO00025QrE$V
   legacyGuid: 645d25134bb34f009c9f2ca75ad9d60c
   legacyGuidAsIfcGlobalId: 1aNIKJIxDF09oVBATQsTOC
   localizations:
@@ -355,7 +355,7 @@ properties:
 - name: NominalEvaporatingTemperature
   definition: Chiller evaporating temperature.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 0EX2i0qSaHuO00025QrE$V
   legacyGuid: c8463768ce10453990c35f51aa14172f
   legacyGuidAsIfcGlobalId: 38HZTepX15EP33Nr6g51Sl
   localizations:
@@ -394,7 +394,7 @@ properties:
 - name: NominalHeatRejectionRate
   definition: Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 0KUWm0qSaHuO00025QrE$V
   legacyGuid: f83bd85622304f168f90bf6887231612
   legacyGuidAsIfcGlobalId: 3uEzXM8Z1F5e_GlsY78nOI
   localizations:
@@ -433,7 +433,7 @@ properties:
 - name: NominalPowerConsumption
   definition: Nominal total power consumption.
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 0PrrQ0qSaHuO00025QrE$V
   legacyGuid: 0906617c44364f98a1da28ce810cf72f
   legacyGuidAsIfcGlobalId: 091c5yH3PFcA7QACw13FSl
   localizations:
@@ -472,7 +472,7 @@ properties:
 - name: CapacityCurve
   definition: 'Chiller cooling capacity is a function of condensing temperature and evaporating temperature, data is in table form, Capacity = f (TempCon, TempEvp), capacity = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPowerMeasure:Capacity2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 0Ud0g0qSaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
@@ -516,7 +516,7 @@ properties:
 - name: CoefficientOfPerformanceCurve
   definition: 'Chiller coefficient of performance (COP) is function of condensing temperature and evaporating temperature, data is in table form, COP= f (TempCon, TempEvp), COP = a2+b2*Tei+c2*Tei^2+d2*Tci+e2*Tci^2+f2*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPositiveRatioMeasure:CoefficientOfPerformance2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 0dZDm0qSaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
@@ -560,7 +560,7 @@ properties:
 - name: FullLoadRatioCurve
   definition: Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).
   dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
+  ifdGuid: 0lvHS0qSaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR

@@ -4,22 +4,24 @@ namespace PSet2YamlConverter
 {
     class Program
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         static void Main(string[] args)
         {
-            Console.WriteLine($"PSet Manager started");
-            Console.WriteLine($"A tool by the community of buildingSMART International");
-            Console.WriteLine($"The home of PSet Manager is https://github.com/buildingsmart/bSDD");
+            log.Info($"PSet Manager started");
+            log.Info($"A tool by the community of buildingSMART International");
+            log.Info($"The home of PSet Manager is https://github.com/buildingsmart/bSDD");
 
             string sourceFolderXml = args[0];
             string targetFolderYaml = args[1];
             string targetFolderJson = args[2];
-            Console.WriteLine($"Converting the PSets from this source folder: {sourceFolderXml}");
-            Console.WriteLine($"Into YAML files in this target folder: {targetFolderYaml}");
-            Console.WriteLine($"Into JSON files in this target folder: {targetFolderJson}");
+            log.Info($"Converting the PSets from this source folder: {sourceFolderXml}");
+            log.Info($"Into YAML files in this target folder: {targetFolderYaml}");
+            log.Info($"Into JSON files in this target folder: {targetFolderJson}");
 
             Converter converter = new Converter(sourceFolderXml, targetFolderYaml, targetFolderJson, true);
 
-            Console.WriteLine($"Successfully finished - Be happy with your Open BIM");
+            log.Info($"Successfully finished - Be happy with your Open BIM");
         }
     }
 }

@@ -4,7 +4,7 @@
     "version": "4.0.0.0",
     "schema": "IfcSharedBldgServiceElements"
   },
-  "ifdGuid": "",
+  "ifdGuid": "1kJVQ0qWWHuO00025QrE$V",
   "legacyGuid": "",
   "definition": "Common definition to capture sound pressure at a point on behalf of a device typically used within the context of building services and flow distribution systems.   To indicate sound values from an instance of IfcDistributionFlowElement at a particular location, IfcAnnotation instance(s) should be assigned to the IfcDistributionFlowElement through the IfcRelAssignsToProduct relationship. The IfcAnnotation should specify ObjectType of 'Sound' and geometric representation of 'Annotation Point' consisting of a single IfcPoint subtype as described at IfcAnnotation.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.",
   "localizations": [
@@ -50,7 +50,7 @@
       "name": "SoundScale",
       "definition": "The reference sound scale.  DBA: Decibels in an A-weighted scaleDBB: Decibels in an B-weighted scaleDBC: Decibels in an C-weighted scaleNC: Noise criteriaNR: Noise rating",
       "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "",
+      "ifdGuid": "1qGzU0qWWHuO00025QrE$V",
       "legacyGuidAsIfcGlobalId": "",
       "localizations": [
         {
@@ -370,7 +370,7 @@
       "name": "SoundFrequency",
       "definition": "List of nominal sound frequencies, correlated to the SoundPressure time series values (IfcTimeSeries.ListValues)",
       "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "",
+      "ifdGuid": "20o300qWWHuO00025QrE$V",
       "legacyGuidAsIfcGlobalId": "",
       "localizations": [
         {
@@ -431,7 +431,7 @@
       "name": "SoundPressure",
       "definition": "A time series of sound pressure values measured in decibels at a reference pressure of 20 microPascals for the referenced octave band frequency.  Each value in IfcTimeSeries.ListValues is correlated to the sound frequency at the same position within SoundFrequencies.",
       "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "",
+      "ifdGuid": "25ZEG0qWWHuO00025QrE$V",
       "legacyGuidAsIfcGlobalId": "",
       "localizations": [
         {

@@ -18,6 +18,8 @@ namespace PSet2YamlConverter
 {
     class Converter
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         private List<string> StandardLanguages = new List<string>
             {
                 "en-EN",
@@ -29,12 +31,16 @@ namespace PSet2YamlConverter
             };
 
         private bool CheckBSDD = false;
-        private Bsdd _bsdd;  
+        private Bsdd _bsdd;
+
+        private int numberOfPsets;
+        private int numberOfPsetsWithbSDDGuid;
+        private int numberOfProperties;
+        private int numberOfPropertiesWithbSDDGuid;
+
 
         public Converter(string sourceFolderXml,string targetFolderYaml, string targetFolderJson, bool checkBSDD = false)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-
             CheckBSDD = checkBSDD;
             _bsdd = new Bsdd();
 
@@ -45,25 +51,11 @@ namespace PSet2YamlConverter
 
             foreach (string sourceFile in Directory.EnumerateFiles(sourceFolderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_ConstructionResource")))
             {
-
+                numberOfPsets++;
                 PropertySetDef pSet = PropertySetDef.LoadFromFile(sourceFile);
-                Console.WriteLine("--------------------------------------------------");
-                Console.WriteLine($"Checking PSet {pSet.Name}");
-                Console.WriteLine($"Opened PSet-File {sourceFile.Replace(sourceFolderXml + @"\", string.Empty)}");
-                IfdConceptList ifdConceptList = _bsdd.SearchNests(pSet.Name);
-                if (ifdConceptList == null)
-                {
-                    Console.WriteLine($"Could not find the PSet in bSDD");
-                }
-                else
-                {
-                    IfdConcept bsddPSet = ifdConceptList.IfdConcept.FirstOrDefault();
-                    Console.WriteLine($"Loaded PSet from bSDD");
-                    Console.WriteLine($"Guid:        {bsddPSet.Guid}");
-                    Console.WriteLine($"Status:      {bsddPSet.Status}");
-                    Console.WriteLine($"VersionDate: {bsddPSet.VersionDate}");
-                    Console.WriteLine($"Web:         http://bsdd.buildingsmart.org/#concept/browse/{bsddPSet.Guid}");               
-                }
+                log.Info("--------------------------------------------------");
+                log.Info($"Checking PSet {pSet.Name}");
+                log.Info($"Opened PSet-File {sourceFile.Replace(sourceFolderXml + @"\", string.Empty)}");
                     
                 if (!propertySetVersionList.Contains(pSet.IfcVersion.version))
                     propertySetVersionList += pSet.IfcVersion.version + ",";
@@ -104,14 +96,45 @@ namespace PSet2YamlConverter
                             definition = string.Empty
                         });
 
-                Console.WriteLine($"Now checking the properties within the PSet");
+                if (CheckBSDD)
+                    if (propertySet.legacyGuid.Length == 0)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        log.Info($"      ERROR: The GUID is missing in PSet!");
+                        Console.ResetColor();
+                    }
+                IfdConceptList ifdConceptList = _bsdd.SearchNests(pSet.Name);
+                if (ifdConceptList == null)
+                {
+                    log.Info($"      Could not find the PSet in bSDD");
+                }
+                else
+                {
+                    numberOfPsetsWithbSDDGuid++;
+                    IfdConcept bsddPSet = ifdConceptList.IfdConcept.FirstOrDefault();
+                    log.Info($"      Loaded Property from bSDD (1 out of {ifdConceptList.IfdConcept.Count})");
+                    log.Info($"      Loaded PSet from bSDD");
+                    log.Info($"         Guid:        {bsddPSet.Guid}");
+                    log.Info($"         Status:      {bsddPSet.Status}");
+                    log.Info($"         VersionDate: {bsddPSet.VersionDate}");
+                    log.Info($"         Web:         http://bsdd.buildingsmart.org/#concept/browse/{bsddPSet.Guid}");
+
+                    if (ifdConceptList.IfdConcept.Count == 1)
+                    {
+                        log.Info($"      The GUID of the PSet in the file was changed {propertySet.legacyGuid} => {bsddPSet.Guid}");
+                        propertySet.ifdGuid = bsddPSet.Guid;
+                    }
+                }
+
+
+                log.Info($"   Now checking the properties within the PSet");
                 propertySet.properties = LoadProperties(pSet, pSet.PropertyDefs);
                 propertySet = Utils.PrepareTexts(propertySet);
 
                 string targetFileYaml = sourceFile.Replace("xml", "YAML").Replace(sourceFolderXml, targetFolderYaml);
                 string targetFileJson = sourceFile.Replace("xml", "json").Replace(sourceFolderXml, targetFolderJson);
-                //Console.WriteLine($"   Writing {targetFileYaml.Replace(targetFolderYaml + @"\", string.Empty)}");
-                //Console.WriteLine($"   Writing {targetFileJson.Replace(targetFolderJson + @"\", string.Empty)}");
+                //log.Info($"   Writing {targetFileYaml.Replace(targetFolderYaml + @"\", string.Empty)}");
+                //log.Info($"   Writing {targetFileJson.Replace(targetFolderJson + @"\", string.Empty)}");
 
                 var ScalarStyleSingleQuoted = new YamlMemberAttribute()
                 {
@@ -128,32 +151,32 @@ namespace PSet2YamlConverter
 
                 string yamlContent = yamlSerializer.Serialize(propertySet);
                 File.WriteAllText(targetFileYaml, yamlContent, Encoding.UTF8);
-                Console.WriteLine("The PSet was saved as YAML file");
+                log.Info("The PSet was saved as YAML file");
 
                 JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
                 jsonSerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
                 jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 string jsonContent = JsonConvert.SerializeObject(propertySet,Formatting.Indented, jsonSerializerSettings);
                 File.WriteAllText(targetFileJson, jsonContent, Encoding.UTF8);
-                Console.WriteLine("The PSet was saved as JSON file");
+                log.Info("The PSet was saved as JSON file");
 
                 var yamlDeserializer = new DeserializerBuilder()
                     .Build();
                 try
                 {
                     propertySet = yamlDeserializer.Deserialize<PropertySet>(new StringReader(File.ReadAllText(targetFileYaml)));
-                    Console.WriteLine("The YAML file is valid");
+                    log.Info("The YAML file is valid");
                 }
                 catch (Exception ex)
                 {
                     Console.Write("   ERROR!");
-                    Console.WriteLine(ex.Message);
+                    log.Info(ex.Message);
                 }
             }
-            Console.WriteLine($"Used Versions in PSets: {propertySetVersionList}");
-            Console.WriteLine($"Used Templates in PSets: {propertySetTemplateList}");
-            Console.WriteLine($"Used PropertyTypes: {propertyTypeList}");
-            Console.WriteLine($"Used Units: {propertyUnitList}");
+            log.Info($"Number of PSets:                 {numberOfPsets}");
+            log.Info($"   with not resolved bSDD Guid:  {numberOfPsetsWithbSDDGuid}");
+            log.Info($"Number of Properties:            {numberOfProperties}");
+            log.Info($"   with not resolved bSDD Guid:  {numberOfPropertiesWithbSDDGuid}");
         }
 
         private List<Property> LoadProperties(PropertySetDef pset, List<PropertyDef> PropertyDefs)
@@ -161,7 +184,8 @@ namespace PSet2YamlConverter
             List<Property> properties = new List<Property>();
             foreach (PropertyDef psetProperty in PropertyDefs)
             {
-                Console.WriteLine("      .................");
+                numberOfProperties++;
+                log.Info("      .................");
                 int itemNumber = 0;
                 foreach (var item in psetProperty.Items)
                 {
@@ -190,46 +214,52 @@ namespace PSet2YamlConverter
                     legacyGuidAsIfcGlobalId = Utils.GuidConverterToIfcGuid(psetProperty.ifdguid),
                     definition = psetProperty.Items[2].ToString()
                 };
-                Console.WriteLine($"      Name: {property.name}");
+                log.Info($"      Name: {property.name}");
                 if (CheckBSDD)
                 if (property.legacyGuidAsIfcGlobalId.Length == 0)
                 { 
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"      ERROR: The GUID for {property.name} is missing in PSet!");
+                    log.Info($"      ERROR: The GUID for {property.name} is missing in PSet!");
                     Console.ResetColor();
                 }
+
                 if (CheckGuidWithBsdd(property.legacyGuidAsIfcGlobalId) == false)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"      ERROR: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is not resolved by http://bsdd.buildingsmart.org");
+                    log.Info($"      ERROR: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is not resolved by http://bsdd.buildingsmart.org");
                     Console.ResetColor();
 
                     IfdConceptList ifdConceptList = _bsdd.SearchProperties(pset.Name + "." + property.name);
                     if (ifdConceptList == null)
                     {
-                        Console.WriteLine($"      Could not find the Property in bSDD");
+                        log.Info($"      Could not find the Property in bSDD");
                     }
                     else
                     {
+                        numberOfPropertiesWithbSDDGuid++;
                         IfdConcept bsddProperty = ifdConceptList.IfdConcept.FirstOrDefault();
-                        Console.WriteLine($"      Loaded Property from bSDD (1 out of {ifdConceptList.IfdConcept.Count})");
-                        Console.WriteLine($"         Guid:           {bsddProperty.Guid}");
-                        Console.WriteLine($"         Status:         {bsddProperty.Status}");
-                        Console.WriteLine($"         VersionDate:    {bsddProperty.VersionDate}");
-                        Console.WriteLine($"         Web:            http://bsdd.buildingsmart.org/#concept/browse/{bsddProperty.Guid}");
+                        log.Info($"      Loaded Property from bSDD (1 out of {ifdConceptList.IfdConcept.Count})");
+                        log.Info($"         Guid:           {bsddProperty.Guid}");
+                        log.Info($"         Status:         {bsddProperty.Status}");
+                        log.Info($"         VersionDate:    {bsddProperty.VersionDate}");
+                        log.Info($"         Web:            http://bsdd.buildingsmart.org/#concept/browse/{bsddProperty.Guid}");
                         foreach (var item in bsddProperty.FullNames)
                         {
                             int l = item.Language.LanguageCode.Length;
                             string tab = new string(' ', 10 - l);
-                            Console.WriteLine($"         Name {item.Language.LanguageCode}:{tab}{item.Name}", Encoding.UTF8);
+                            log.Info($"         Name {item.Language.LanguageCode}:{tab}{item.Name}");
                         }
-                        Console.WriteLine($"      The GUID in the PSet file shall be changed {property.legacyGuidAsIfcGlobalId} => {bsddProperty.Guid}");
+                        if (ifdConceptList.IfdConcept.Count == 1)
+                        {
+                            log.Info($"      The GUID in the PSet file was changed {property.legacyGuid} => {bsddProperty.Guid}");
+                            property.ifdGuid = bsddProperty.Guid;
+                        }
                     }
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"      OK: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is properly resolved by http://bsdd.buildingsmart.org");
+                    log.Info($"      OK: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is properly resolved by http://bsdd.buildingsmart.org");
                     property.ifdGuid = property.legacyGuidAsIfcGlobalId;
                     Console.ResetColor();
                 }
@@ -426,7 +456,7 @@ namespace PSet2YamlConverter
             }
             catch(Exception ex)
             {
-                //Console.WriteLine($"      ERROR: {ex.Message} {url}");
+                //log.Info($"      ERROR: {ex.Message} {url}");
                 check = false;
             }
 
