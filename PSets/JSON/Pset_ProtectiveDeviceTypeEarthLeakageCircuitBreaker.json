@@ -1,0 +1,320 @@
+﻿{
+  "name": "Pset_ProtectiveDeviceTypeEarthLeakageCircuitBreaker",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcElectricalDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "An earth failure device acts to protect people and equipment from the effects of current leakage.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcProtectiveDeviceType",
+      "type": "IfcProtectiveDeviceType/EARTHLEAKAGECIRCUITBREAKER"
+    }
+  ],
+  "properties": [
+    {
+      "name": "EarthFailureDeviceType",
+      "definition": "A list of the available types of circuit breaker from which that required may be selected where:Standard: Device that operates without a time delay.TimeDelayed: Device that operates after a time delay.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "漏電回路遮断機のタイプ",
+          "definition": "以下の中から選択が必要となる場合の遮断機タイプのリスト：スタンダード：遅延無しで動作する機器遅延：一定時間を経た後で動作する機器"
+        },
+        {
+          "language": "ko-KR",
+          "name": "누전 회로 차단기의 유형",
+          "definition": "다음 중 선택이 필요한 경우 차단기 유형 목록 : 스탠다드 : 지연없이 동작하는 기기 지연 : 일정 시간이 지난 후에 동작하는 기기 \""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_EarthFailureDeviceType",
+        "enumerationValues": [
+          {
+            "name": "STANDARD",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Standard",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Standard",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Standard",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Standard",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Standard",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Standard",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TIMEDELAYED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Timedelayed",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Timedelayed",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Timedelayed",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Timedelayed",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Timedelayed",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Timedelayed",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Sensitivity",
+      "definition": "The rated rms value of the vector sum of the instantaneous currents flowing in the main circuits of the device which causes the device to operate under specified conditions. (IEC 61008-1).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "感度",
+          "definition": "装置のメイン回路を流れる瞬時電流の合計ベクトルの関連する rms 値、特定の条件になると機器が動作するようになる（IEC 61008-1)。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "감도",
+          "definition": "장치의 기본 회로를 흐르는 순간 전류의 합계 벡터 관련 rms 값이 특정 조건이되면 장치가 작동하게된다 (IEC 61008-1)."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcElectricCurrentMeasure",
+        "measureType": "",
+        "unitType": "ELECTRICCURRENTUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

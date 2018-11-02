@@ -1,0 +1,1471 @@
+﻿{
+  "name": "Pset_FanTypeCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcHvacDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Fan type common attributes.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcFanType",
+      "type": "IfcFanType"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Status",
+      "definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "状態",
+          "definition": "要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_Status",
+        "enumerationValues": [
+          {
+            "name": "NEW",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "New",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "EXISTING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Existing",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DEMOLISH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Demolish",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TEMPORARY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Temporary",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MotorDriveType",
+      "definition": "Motor drive type:DIRECTDRIVE: Direct drive. BELTDRIVE: Belt drive. COUPLING: Coupling. OTHER: Other type of motor drive. UNKNOWN: Unknown motor drive type.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "d194532d05164c2d8f1139114f80333c",
+      "legacyGuidAsIfcGlobalId": "3Hb5Cj1HPCBOyHEH5FW3Cy",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "モーター駆動種類",
+          "definition": "モーター駆動種類DIRECTDRIVE: ダイレクトドライブBELTDRIVE: ベルトドライブCOUPLING: カップリングOTHER: その他"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_FanMotorConnectionType",
+        "enumerationValues": [
+          {
+            "name": "DIRECTDRIVE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Directdrive",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "BELTDRIVE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Beltdrive",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "COUPLING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Coupling",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CapacityControlType",
+      "definition": "InletVane: Control by adjusting inlet vane.VariableSpeedDrive: Control by variable speed drive. BladePitchAngle: Control by adjusting blade pitch angle.TwoSpeed: Control by switch between high and low speed.DischargeDamper: Control by modulating discharge damper.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "4227b3b83c884d30adc6a7f6ab6669b0",
+      "legacyGuidAsIfcGlobalId": "129xEuF8XDCAt6f$QhPccm",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "容量制御方式",
+          "definition": "InletVane: インレットベーンVariableSpeedDrive: 変速駆動 BladePitchAngle: 羽根ピッチ制御TwoSpeed: 二速制御DischargeDamper: 吐出ダンパ制御"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_FanCapacityControlType",
+        "enumerationValues": [
+          {
+            "name": "INLETVANE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Inletvane",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Inletvane",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Inletvane",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Inletvane",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Inletvane",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Inletvane",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VARIABLESPEEDDRIVE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Variablespeeddrive",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Variablespeeddrive",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Variablespeeddrive",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Variablespeeddrive",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Variablespeeddrive",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Variablespeeddrive",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "BLADEPITCHANGLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Bladepitchangle",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Bladepitchangle",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Bladepitchangle",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Bladepitchangle",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Bladepitchangle",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Bladepitchangle",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TWOSPEED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Twospeed",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Twospeed",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Twospeed",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Twospeed",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Twospeed",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Twospeed",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DISCHARGEDAMPER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dischargedamper",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dischargedamper",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dischargedamper",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dischargedamper",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dischargedamper",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dischargedamper",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OperationTemperatureRange",
+      "definition": "Allowable operation ambient air temperature range.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "a5de430f978e4b56b299c215bf601ef4",
+      "legacyGuidAsIfcGlobalId": "2btaCFbuvBLhAPmXM$O1xq",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "動作温度範囲",
+          "definition": "許容動作周囲温度範囲"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "0",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalAirFlowRate",
+      "definition": "Nominal air flow rate.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "a2c8ac2656f14740861ce965f2ab082e",
+      "legacyGuidAsIfcGlobalId": "2YoAmcLl57G8OSwMNogmWk",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "設計風量",
+          "definition": "設計風量"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcVolumetricFlowRateMeasure",
+        "measureType": "",
+        "unitType": "VOLUMETRICFLOWRATEUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalTotalPressure",
+      "definition": "Nominal total pressure rise across the fan.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "a6bd7bd9165b4ac0a1c5cf14a4c5adb5",
+      "legacyGuidAsIfcGlobalId": "2clNlP5bjAmA75pnIanQsr",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "設計全圧",
+          "definition": "ファンでの設計全圧上昇"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPressureMeasure",
+        "measureType": "",
+        "unitType": "PRESSUREUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalStaticPressure",
+      "definition": "The static pressure within the air stream that the fan must overcome to insure designed circulation of air.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "658ee33551df4fdd821cc96e9586aa51",
+      "legacyGuidAsIfcGlobalId": "1bZkCrKTzFtO8SoMwLXgfH",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "設計静圧",
+          "definition": "設計空気循環量を保証するためにファンが克服しなければならない気流中の静圧"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPressureMeasure",
+        "measureType": "",
+        "unitType": "PRESSUREUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalRotationSpeed",
+      "definition": "Nominal fan wheel speed.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "12015f7b25c54595aca346da73cd4a92",
+      "legacyGuidAsIfcGlobalId": "0I0Lzx9SL5bQoZHjfppKgI",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "設計回転速度",
+          "definition": "設計ホイール速度"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcRotationalFrequencyMeasure",
+        "measureType": "",
+        "unitType": "ROTATIONALFREQUENCYUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalPowerRate",
+      "definition": "Nominal fan power rate.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "ecbe8eacf21f459da1dd29ea8f01f4b8",
+      "legacyGuidAsIfcGlobalId": "3ilewiyXz5dQ7TAUgF0VIu",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "設計動力",
+          "definition": "設計動力"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPowerMeasure",
+        "measureType": "",
+        "unitType": "POWERUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OperationalCriteria",
+      "definition": "Time of operation at maximum operational ambient air temperature.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "7a588f5097844caea5bc9cee9ed0749a",
+      "legacyGuidAsIfcGlobalId": "1wM8zGbuHChgMydEwUq7IQ",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "動作環境",
+          "definition": "最大動作周囲温度での動作の時間"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcTimeMeasure",
+        "measureType": "",
+        "unitType": "TIMEUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PressureCurve",
+      "definition": "Pressure rise = f (flow rate).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "Pressure rise = f (flow rate)",
+        "DefiningValue": {
+          "dataType": "IfcVolumetricFlowRateMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcPressureMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "EfficiencyCurve",
+      "definition": "Fan efficiency =f (flow rate).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "Fan efficiency =f (flow rate)",
+        "DefiningValue": {
+          "dataType": "IfcVolumetricFlowRateMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcNormalisedRatioMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

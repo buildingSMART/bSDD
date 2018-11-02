@@ -1,0 +1,288 @@
+﻿name: 'Pset_SpaceFireSafetyRequirements'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcProductExtension
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Properties related to fire protection of spaces that apply to the occurrences of IfcSpace or IfcZone.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSpace
+  type: IfcSpace, IfcSpatialZone, IfcZone
+- name: IfcSpatialZone
+  type: IfcSpace, IfcSpatialZone, IfcZone
+- name: IfcZone
+  type: IfcSpace, IfcSpatialZone, IfcZone
+- name: IfcSpaceType
+  type: IfcSpace, IfcSpatialZone, IfcZone
+properties:
+- name: FireRiskFactor
+  definition: Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 02f8b60f6e724a76ab7d05ca050afc81
+  legacyGuidAsIfcGlobalId: 02_BOFRd9ATgjz1Se52lo1
+  localizations:
+  - language: de-DE
+    name: 'Brandgefahrenklasse'
+    definition: 'Brandgefahrenklasse des Raums, angegeben nach der nationalen oder regionalen Brandschutzverordnung.'
+  - language: fr-FR
+    name: 'Facteur de risque incendie'
+    definition: 'Facteur de risque incendie attribué à l''espace, selon la réglementation locale en matière de construction.'
+  - language: ja-JP
+    name: '火災危険度要因'
+    definition: '地域の建築規則に従って空間に割り当てられた火災危険要因火災のいくつかのレベルにおける空間の火災危険度を定義する。'
+  - language: ko-KR
+    name: '화재 위험 요인'
+    definition: '지역 건축 규칙에 따라 공간에 할당된 화재 위험 요인 화재 어느 정도의 공간의 화재 위험도를 정의한다. "'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FlammableStorage
+  definition: Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c7437fe72980402bbde7543ce5f39650
+  legacyGuidAsIfcGlobalId: 37Gt$dAO10AxtdL3pbyvPG
+  localizations:
+  - language: de-DE
+    name: 'Lagerung brennbarer Stoffe'
+    definition: 'Angabe, ob der Raum zur Lagerung der Produktion von brennbaren Stoffen genutzt wird (WHAHR) oder nicht (FALSCH). Die Angabe erfolgt nach der nationalen oder regionalen Brandschutzverordnung.'
+  - language: fr-FR
+    name: 'Stockage de combustible'
+    definition: 'Indique si l''espace est destiné au stockage de matières inflammables (considérées comme telles par le Code de la Construction en vigueur). (VRAI) signifie oui, (FAUX) sinon.'
+  - language: ja-JP
+    name: '可燃物保管区分'
+    definition: '空間が可燃物(建築基準を管理することによりそのように考慮される)の倉庫として使われることを意図されているかどうかを示すブーリアン値。(TRUE)はい、(FALSE)いいえ。'
+  - language: ko-KR
+    name: '가연성 물질 창고'
+    definition: '공간이 가연물 (건축 기준을 관리함으로써 그렇게 여겨지는)의 창고로 사용되는 것을 의도하고 있는지 여부를 나타내는 부울 값입니다. (TRUE) 예 (FALSE) 아니오. "이 물체가 화재의 경우 출구로 사용되도록 설계되었는지 여부를 나타내는  (TRUE) 예 (FALSE) 아니오 값'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FireExit
+  definition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 53ef83dcea2447a590b8ea652d60fff3
+  legacyGuidAsIfcGlobalId: 1JxuFSwYH7fP2uwcKjOF$p
+  localizations:
+  - language: de-DE
+    name: 'Notausgang'
+    definition: 'Angabe, ob der Raum einen Notausgang für den Brandfall hat und als ein Notausgangs(sammel)raum im Sinne der Brandschutzverordnung gilt (WAHR), oder nicht (FALSCH).'
+  - language: fr-FR
+    name: 'Sortie de secours'
+    definition: 'Indique si cet objet est conçu pour servir de sortie en cas d''incendie (VRAI) ou non (FAUX). Cas d''un espace comme un couloir conçu pour servir d''espace de sortie, par exemple pour l''évacuation en cas d''incendie.'
+  - language: ja-JP
+    name: '非常口区分'
+    definition: 'このオブジェクトが火災の場合に出口として使われるように設計されているかどうかを示すブーリアン値。(TRUE)はい、(FALSE)いいえ。ここに、空間(例えば廊下)は、例えば火災避難目的のために出口空間として使われるよう設計されているかどうか。'
+  - language: ko-KR
+    name: '화재 출구 (피난 출구)'
+    definition: '여기에 공간 (예 복도), 예를 들면 화재 피난 목적을 위해 출구 공간으로 사용하도록 설계되었는지 여부'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SprinklerProtection
+  definition: Indication whether the space is sprinkler protected (TRUE) or not (FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 07e3f5897ce6483ab48476532b046663
+  legacyGuidAsIfcGlobalId: 07u$M9VEP8EhI4TbCh16PZ
+  localizations:
+  - language: de-DE
+    name: 'Sprinklerschutz'
+    definition: 'Angabe, ob der Raum durch eine Sprinkleranlage geschützt wird (WAHR) oder nicht (FALSCH).'
+  - language: fr-FR
+    name: 'Protection par Sprinkler'
+    definition: 'Indication selon laquelle ce bâtiment bénéficie d''une protection par sprinkler (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: 'スプリンクラー防御'
+    definition: 'スプリンクラー設備の有無を示すブーリアン値。(TRUE)有、(FALSE)なし。'
+  - language: ko-KR
+    name: '스프링 클러 방어'
+    definition: '스프링 클러 설비의 유무를 나타내는 부울 값입니다. (TRUE) 유 (FALSE) 없음.'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SprinklerProtectionAutomatic
+  definition: Indication whether the space has an automatic sprinkler protection (TRUE) or not (FALSE).It should only be given, if the property "SprinklerProtection" is set to TRUE.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 9e953a24093348d799676bf9b1afba57
+  legacyGuidAsIfcGlobalId: 2UbJea2JD8rvbdQ$cnhxfN
+  localizations:
+  - language: de-DE
+    name: 'Sprinklerschutz automatisch'
+    definition: 'Angabe, ob der Raum durch eine automatische Sprinkleranlage geschützt wird (WAHR) oder nicht (FALSCH).  Dieser Wert soll nur angegeben werden, wenn das Attribut SprinklerProtection auf (WAHR) gesetzt ist.'
+  - language: fr-FR
+    name: 'Protection automatique par Sprinkler'
+    definition: 'Indication selon laquelle ce bâtiment bénéficie d''une protection automatique par sprinkler (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: '自動スプリンクラー防御'
+    definition: 'スプリンクラー設備が自動かどうか示すブーリアン値。(TRUE)自動、(FALSE)非自動。「スプリンクラー防御」プロパティがTRUEに設定された場合のみ、与えられる。'
+  - language: ko-KR
+    name: '스프링 클러 방어 자동 구분'
+    definition: '스프링 클러 설비가 자동 여부를 나타내는 부울 값입니다. (TRUE) 자동 (FALSE) 비자동. "스프링 클러 방어"속성이 TRUE로 설정된 경우에만 주어진다.'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AirPressurization
+  definition: Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: fbcb5207d55046aea00497e339ea0c3c
+  legacyGuidAsIfcGlobalId: 3xor87rL16hg04b_CvwWmy
+  localizations:
+  - language: de-DE
+    name: 'Luftdruckausgleich'
+    definition: 'Angabe, ob der Raum einen Luftdruckausgleich erfordert (WAHR) oder nicht (FALSCH).'
+  - language: fr-FR
+    name: 'Air comprimé disponible'
+    definition: 'Indique si l''espace nécessite d''être alimenté en air comprimé (VRAI) ou non (FAUX)'
+  - language: ja-JP
+    name: '空気加圧'
+    definition: '空間が加圧することを要求されているかどうかを示すブーリアン値。(TRUE)加圧、(FALSE)非加圧。'
+  - language: ko-KR
+    name: '공기 가압'
+    definition: '공간이 가압 요구되고 있는지 여부를 나타내는 부울 값입니다. (TRUE) 가압 (FALSE) 비 가압.'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,236 @@
+﻿{
+  "name": "Pset_SensorTypeFireSensor",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcBuildingControlsDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "A device that senses or detects the presence of fire.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSensorType",
+      "type": "IfcSensorType/FIRESENSOR"
+    }
+  ],
+  "properties": [
+    {
+      "name": "FireSensorSetPoint",
+      "definition": "The temperature value to be sensed to indicate the presence of fire.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "2a125386b89d437e8242a10f473e17a1",
+      "legacyGuidAsIfcGlobalId": "0g4bE6k9r3Ve92eGz7FXUX",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "感知温度",
+          "definition": "炎の存在を示すために感知される温度値。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "감지 온도",
+          "definition": "불꽃의 존재를 보여주기 위하여 감지되는 온도 값."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermodynamicTemperatureMeasure",
+        "measureType": "",
+        "unitType": "THERMODYNAMICTEMPERATUREUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AccuracyOfFireSensor",
+      "definition": "The accuracy of the sensor.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "9c0a29be920a41a7b7c64417c0df3b87",
+      "legacyGuidAsIfcGlobalId": "2S2Yc_aWf1fxV6H1V0tpk7",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "精度",
+          "definition": "センサの精度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "정확도",
+          "definition": "센서의 정밀도."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermodynamicTemperatureMeasure",
+        "measureType": "",
+        "unitType": "THERMODYNAMICTEMPERATUREUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "TimeConstant",
+      "definition": "The time constant of the sensor.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "51f3c69d39bf4c90b19f116b486f45c3",
+      "legacyGuidAsIfcGlobalId": "1HyyQTERzCaB6V4Mj8RqN3",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "時定数",
+          "definition": "センサの時定数。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "시정",
+          "definition": "센서의 시정."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcTimeMeasure",
+        "measureType": "",
+        "unitType": "TIMEUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

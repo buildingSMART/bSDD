@@ -1,0 +1,288 @@
+﻿name: 'Pset_ThermalLoadDesignCriteria'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedBldgServiceElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Building thermal load design data that are used for calculating thermal loads in a space or building. HISTORY: New property set in IFC Release 1.0 (Pset_LoadDesignCriteria); renamed Pset_ThermalLoadDesignCriteria in IFC2x2.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSpatialStructureElement
+  type: IfcSpatialElement
+- name: IfcSystem
+  type: IfcSpatialElement
+- name: IfcBuilding
+  type: IfcSpatialElement
+- name: IfcZone
+  type: IfcSpatialElement
+properties:
+- name: OccupancyDiversity
+  definition: Diversity factor that may be applied to the number of people in the space.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4e05207cf27e4a438eb83e8a4475fb7e
+  legacyGuidAsIfcGlobalId: 1E1I1yydvAGuwuFef4TVj_
+  localizations:
+  - language: ja-JP
+    name: '居住者の在室率'
+    definition: '室内居住者の在室率。'
+  - language: ko-KR
+    name: '거주자의 재실 비율'
+    definition: '실내 거주자의 재실 비율.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: OutsideAirPerPerson
+  definition: Design quantity of outside air to be provided per person in the space.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: f734233c0034409a8ec96022a13413e2
+  legacyGuidAsIfcGlobalId: 3tD2Cy03H0cex9O2AXD1FY
+  localizations:
+  - language: ja-JP
+    name: '１人あたりの外気量'
+    definition: '１人あたりの外気量の設計値。'
+  - language: ko-KR
+    name: '당 외기량'
+    definition: '당 외기 량의 설계 값.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumetricFlowRateMeasure
+    measureType: ''
+    unitType: VOLUMETRICFLOWRATEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ReceptacleLoadIntensity
+  definition: Average power use intensity of appliances and other non-HVAC equipment in the space per unit area.(PowerMeasure/IfcAreaMeasure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ece22a8d3bc246ca932e11b61b2cb81d
+  legacyGuidAsIfcGlobalId: 3iuYgDEy96ofCk4RORBBWT
+  localizations:
+  - language: ja-JP
+    name: '単位面積あたり事務機器の平均電力消費量'
+    definition: '単位面積あたり事務機器など非空調設備の平均電力消費量。（PowerMeasure/IfcAreaMeasure）'
+  - language: ko-KR
+    name: '단위면적 당 사무기기 평균 전력 소비량'
+    definition: '단위 면적 당 사무 기기 등 비 공조 설비의 평균 전력 소비. (PowerMeasure / IfcAreaMeasure)'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AppliancePercentLoadToRadiant
+  definition: Percent of sensible load to radiant heat.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e2058e3cd19f413a89ae8d8a0a10cc03
+  legacyGuidAsIfcGlobalId: 3Y1OuyqPz1EeckZOeA4Cm3
+  localizations:
+  - language: ja-JP
+    name: '放射熱のうち顕熱分の割合'
+    definition: '放射熱のうち顕熱分負荷の割合。'
+  - language: ko-KR
+    name: '복사열 중 현열 분의 비율'
+    definition: '복사열 중 현열 분 부하의 비율.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LightingLoadIntensity
+  definition: Average lighting load intensity in the space per unit area (PowerMeasure/IfcAreaMeasure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 499eac659681465e8549bf50df172270
+  legacyGuidAsIfcGlobalId: 19dgnbbe56NeL9lr3V5o9m
+  localizations:
+  - language: ja-JP
+    name: '照明負荷率'
+    definition: '単位面積あたり照明機器の平均電力消費量。（PowerMeasure/IfcAreaMeasure）'
+  - language: ko-KR
+    name: '조명 부하율'
+    definition: '단위 면적 당 조명의 평균 전력 소비. (PowerMeasure / IfcAreaMeasure)'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LightingPercentLoadToReturnAir
+  definition: Percent of lighting load to the return air plenum.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 6ae5de5d7b8e4ef7b2f6e746b613e664
+  legacyGuidAsIfcGlobalId: 1gvTvTUuvEzxBsvqQs4_Pa
+  localizations:
+  - language: ja-JP
+    name: 'リタン空気への照明機器の放熱率'
+    definition: '照明機器からリタン空気（天井裏）への放熱率。'
+  - language: ko-KR
+    name: '리탄 공기에 조명 기기의 방열 비율'
+    definition: '조명 기기에서 폴리탄 공기 (천장)의 방열 속도.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

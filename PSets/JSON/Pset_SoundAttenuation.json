@@ -1,0 +1,494 @@
+﻿{
+  "name": "Pset_SoundAttenuation",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcSharedBldgServiceElements"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Common definition to capture sound pressure at a point on behalf of a device typically used within the context of building services and flow distribution systems.   To indicate sound values from an instance of IfcDistributionFlowElement at a particular location, IfcAnnotation instance(s) should be assigned to the IfcDistributionFlowElement through the IfcRelAssignsToProduct relationship. The IfcAnnotation should specify ObjectType of 'Sound' and geometric representation of 'Annotation Point' consisting of a single IfcPoint subtype as described at IfcAnnotation.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcAnnotation",
+      "type": "IfcAnnotation/SOUND"
+    }
+  ],
+  "properties": [
+    {
+      "name": "SoundScale",
+      "definition": "The reference sound scale.  DBA: Decibels in an A-weighted scaleDBB: Decibels in an B-weighted scaleDBC: Decibels in an C-weighted scaleNC: Noise criteriaNR: Noise rating",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "騒音の単位",
+          "definition": "騒音の単位：- DBA: dB(A)- DBB: dB(B)- DBC:dB(C)- NC:騒音基準- NR:騒音評価"
+        },
+        {
+          "language": "ko-KR",
+          "name": "소음단위",
+          "definition": "소음 단위. DBA : dB (A) DBB : dB (B) DBC : dB (C) NC : 소음 기준 NR : 소음 평가"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_SoundScale",
+        "enumerationValues": [
+          {
+            "name": "DBA",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dba",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dba",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dba",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dba",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dba",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dba",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DBB",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dbb",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dbb",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dbb",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dbb",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dbb",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dbb",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DBC",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dbc",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dbc",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dbc",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dbc",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dbc",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dbc",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NC",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Nc",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Nc",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Nc",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Nc",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Nc",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Nc",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Nr",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Nr",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Nr",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Nr",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Nr",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Nr",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SoundFrequency",
+      "definition": "List of nominal sound frequencies, correlated to the SoundPressure time series values (IfcTimeSeries.ListValues)",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "音の周波数",
+          "definition": "代表的な周波数リスト、時系列音圧値と関連する。（IfcTimeSeriesにリストされた値）"
+        },
+        {
+          "language": "ko-KR",
+          "name": "소리의 주파수",
+          "definition": "대표적인 주파수 목록 시계열 소리 圧値과 관련된다. (IfcTimeSeries에 나열된 값)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyListValue": {
+        "dataType": "IfcFrequencyMeasure",
+        "measureType": "",
+        "unitType": "FREQUENCYUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SoundPressure",
+      "definition": "A time series of sound pressure values measured in decibels at a reference pressure of 20 microPascals for the referenced octave band frequency.  Each value in IfcTimeSeries.ListValues is correlated to the sound frequency at the same position within SoundFrequencies.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "音圧",
+          "definition": "時系列の音圧、単位はデシベル。オクターブバンドの音の強さ20mPaを基準する。IfcTimeSeriesにリストされた各値は同じ場所で、同じ周波数バントでの温の周波数と関連する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "음압",
+          "definition": "시계열의 음압 단위는 dB. 옥타브 밴드 소리의 강도 20mPa을 기준한다. IfcTimeSeries에 나열된 각 값은 같은 장소에서 같은 주파수 번트에서 온도의 주파수와 관련."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

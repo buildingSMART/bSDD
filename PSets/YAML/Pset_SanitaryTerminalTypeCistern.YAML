@@ -1,0 +1,544 @@
+﻿name: 'Pset_SanitaryTerminalTypeCistern'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcPlumbingFireProtectionDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'A water storage unit attached to a sanitary terminal that is fitted with a device, operated automatically or by the user, that discharges water to cleanse a water closet (toilet) pan, urinal or slop hopper. (BS6100 330 5008)'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSanitaryTerminalType
+  type: IfcSanitaryTerminalType/CISTERN
+properties:
+- name: CisternHeight
+  definition: Enumeration that identifies the height of the cistern or, if set to 'None' if the urinal has no cistern and is flushed using mains or high pressure water through a flushing valve.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 0fa66d10587f42e3a55e5aa50391154a
+  legacyGuidAsIfcGlobalId: 0FfcqGM7z2uwLUMgK3aHLA
+  localizations:
+  - language: ja-JP
+    name: '貯水タンクの高さ'
+    definition: '貯水タンクの高さを示す。小便器がフラッシュバルブを使い貯水タンクを持っていない場合は''None''に設定される。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_CisternHeight
+    enumerationValues:
+    - name: HIGHLEVEL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Highlevel'
+        definition: ''
+      - language: en-EN
+        name: 'Highlevel'
+        definition: ''
+      - language: es-ES
+        name: 'Highlevel'
+        definition: ''
+      - language: fr-FR
+        name: 'Highlevel'
+        definition: ''
+      - language: ja-JP
+        name: 'Highlevel'
+        definition: ''
+      - language: ru-RU
+        name: 'Highlevel'
+        definition: ''
+    - name: LOWLEVEL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Lowlevel'
+        definition: ''
+      - language: en-EN
+        name: 'Lowlevel'
+        definition: ''
+      - language: es-ES
+        name: 'Lowlevel'
+        definition: ''
+      - language: fr-FR
+        name: 'Lowlevel'
+        definition: ''
+      - language: ja-JP
+        name: 'Lowlevel'
+        definition: ''
+      - language: ru-RU
+        name: 'Lowlevel'
+        definition: ''
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'None'
+        definition: ''
+      - language: en-EN
+        name: 'None'
+        definition: ''
+      - language: es-ES
+        name: 'None'
+        definition: ''
+      - language: fr-FR
+        name: 'None'
+        definition: ''
+      - language: ja-JP
+        name: 'None'
+        definition: ''
+      - language: ru-RU
+        name: 'None'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CisternCapacity
+  definition: Volumetric capacity of the cistern
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e71e85075e4b4361af77e5fd12bc60f0
+  legacyGuidAsIfcGlobalId: 3d7eK7Naj3OQztvVqIl63m
+  localizations:
+  - language: ja-JP
+    name: '貯水タンク容量'
+    definition: '貯水タンクの体積容量。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumeMeasure
+    measureType: ''
+    unitType: VOLUMEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsSingleFlush
+  definition: Indicates whether the cistern is single flush = TRUE (i.e. the same amount of water is used for each and every flush) or dual flush = FALSE (i.e. the amount of water used for a flush may be selected by the user to be high or low depending on the waste material to be removed).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c3fd201c9ede403883ecc38e4bc18f94
+  legacyGuidAsIfcGlobalId: 33$I0Sdjv0E8FimuvBmO_K
+  localizations:
+  - language: ja-JP
+    name: '単一のフラッシュ'
+    definition: '単一フラッシュ= TRUE（各洗浄に同量の水が使用される）、デュアルフラッシュ= FALSE（洗浄する汚物に応じてハイまたはローをユーザが選択することができるフラッシュ使用）の指標を設定する。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FlushType
+  definition: 'The property enumeration Pset_FlushTypeEnum defines the types of flushing mechanism that may be specified for cisterns and sanitary terminals where:-Lever: 	Flushing is achieved by twisting a lever that causes a predetermined flow of water to be passed from a cistern to the sanitary terminal.Pull: 	Flushing is achieved by pulling a handle or knob vertically upwards that causes a predetermined flow of water to be passed from a cistern to the sanitary terminal.Push: 	Flushing is achieved by pushing a button or plate that causes a predetermined flow of water to be passed from a cistern to the sanitary terminal.Sensor: Flush is activated through an automatic sensing mechanism.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 886a68a4eeeb4c8ca27f3ef42601fd34
+  legacyGuidAsIfcGlobalId: 28QcYaxkjCZA9$FlGc0Vqq
+  localizations:
+  - language: ja-JP
+    name: 'タイプフラッシュ'
+    definition: '列挙するプロパティはPset_FlushTypeEnumでは貯水槽や衛生配管の配置による、フラッシュメカニズムのタイプを定義する：レバー式：洗浄水は、レバーをねじることによって貯水タンクから衛生配管にの所定の流量を流す。引っ張り式：洗浄水は、ハンドルまたはノブを垂直方向に引くことによって貯水タンクから衛生配管にの所定の流量を流す。押しボタン式：洗浄水は、ボタンかプレートを押すことによって貯水タンクから衛生配管にの所定の流量を流す。センサー式：洗浄水は、自動検出機構を介して作動する。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_FlushType
+    enumerationValues:
+    - name: LEVER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Lever'
+        definition: ''
+      - language: en-EN
+        name: 'Lever'
+        definition: ''
+      - language: es-ES
+        name: 'Lever'
+        definition: ''
+      - language: fr-FR
+        name: 'Lever'
+        definition: ''
+      - language: ja-JP
+        name: 'Lever'
+        definition: ''
+      - language: ru-RU
+        name: 'Lever'
+        definition: ''
+    - name: PULL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pull'
+        definition: ''
+      - language: en-EN
+        name: 'Pull'
+        definition: ''
+      - language: es-ES
+        name: 'Pull'
+        definition: ''
+      - language: fr-FR
+        name: 'Pull'
+        definition: ''
+      - language: ja-JP
+        name: 'Pull'
+        definition: ''
+      - language: ru-RU
+        name: 'Pull'
+        definition: ''
+    - name: PUSH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Push'
+        definition: ''
+      - language: en-EN
+        name: 'Push'
+        definition: ''
+      - language: es-ES
+        name: 'Push'
+        definition: ''
+      - language: fr-FR
+        name: 'Push'
+        definition: ''
+      - language: ja-JP
+        name: 'Push'
+        definition: ''
+      - language: ru-RU
+        name: 'Push'
+        definition: ''
+    - name: SENSOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sensor'
+        definition: ''
+      - language: en-EN
+        name: 'Sensor'
+        definition: ''
+      - language: es-ES
+        name: 'Sensor'
+        definition: ''
+      - language: fr-FR
+        name: 'Sensor'
+        definition: ''
+      - language: ja-JP
+        name: 'Sensor'
+        definition: ''
+      - language: ru-RU
+        name: 'Sensor'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FlushRate
+  definition: The minimum and maximum volume of water used at each flush. Where a single flush is used, the value of upper bound and lower bound should be equal. For a dual flush toilet, the lower bound should be used for the lesser flush rate and the upper bound for the greater flush rate. Where flush is achieved using mains pressure water through a flush valve, the value of upper and lower bound should be equal and should be the same as the flush rate property of the flush valve (see relevant valve property set). Alternatively, in this case, do not assert the flush rate property; refer to the flush rate of the flush valve.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: df5a2e190bba440ca15dd888fbae4ecc
+  legacyGuidAsIfcGlobalId: 3VMYuP2xf43A5Ts8ZxhaxC
+  localizations:
+  - language: ja-JP
+    name: 'フラッシュレート'
+    definition: '各フラッシュで使用される水量の最小値と最大値。単一フラッシュが使用されている場合、上下限値は同じ。デュアルフラッシュトイレについては、下限が低いフラッシュレート、上限に大きいフラッシュ率を使用する。ここで、洗浄はフラッシュバルブを通した水の水圧を用いて達成されるので、フラッシュレートとフラッシュバルブの上下限値と等しくなければなりません（関連バルブプロパティセットを参照してください）。また、この場合には、フラッシュレートのプロパティを設定しない。フラッシュバルブのフラッシュレートを参照。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: '?'
+    UpperBoundValue: '?'
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsAutomaticFlush
+  definition: Boolean value that determines if the cistern is flushed automatically either after each use or periodically (TRUE) or whether manual flushing is required (FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e08989e23fea44099d3f38912f1c129c
+  legacyGuidAsIfcGlobalId: 3WYOdYF_f42Pq$E94l71AS
+  localizations:
+  - language: ja-JP
+    name: '自動フラッシュか'
+    definition: '貯水タンクは、使用後に自動的または定期的に洗浄する場合（TRUE）、手動で洗浄する場合（FALSE）をブーリアン値で指定する。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CisternColor
+  definition: Color of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: fe72f04db03a4a34909c9b491b8a3f6d
+  legacyGuidAsIfcGlobalId: 3_Sl1Di3fAD92ScqaRYZzj
+  localizations:
+  - language: ja-JP
+    name: '貯水タンクカラー'
+    definition: '本体色。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

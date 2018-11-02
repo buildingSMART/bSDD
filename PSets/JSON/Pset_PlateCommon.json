@@ -1,0 +1,708 @@
+﻿{
+  "name": "Pset_PlateCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcSharedBldgElements"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Properties common to the definition of all occurrences of IfcPlate.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcPlate",
+      "type": "IfcPlateType"
+    },
+    {
+      "name": "IfcPlateStandardCase",
+      "type": "IfcPlateType"
+    },
+    {
+      "name": "IfcPlateType",
+      "type": "IfcPlateType"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "63ba5e95b58042878f4b0583d51f0930",
+      "legacyGuidAsIfcGlobalId": "1ZkbwLjO12XuzB1OFL7mam",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Bauteiltyp",
+          "definition": "Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des \"Typobjekts\", insbesondere wenn die Software keine Typen unterstützt."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Référence",
+          "definition": "Référence à l'identifiant d'un type spécifié dans le contexte du projet (exemple : \"type A1\") pour désigner un \"type de construction\". Une alternative au nom d'un objet type lorsque les objets types ne sont pas gérés par le logiciel."
+        },
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "認識された分類体系で参照する分類がない場合にこのプロジェクト固有の参照記号（例：タイプ'A-1'）が与えられる。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "参考号",
+          "definition": "若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Status",
+      "definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Status",
+          "definition": "Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. \"Neu\" (new) neues Bauteil als Ergänzung, \"Bestand\" (existing) bestehendes Bauteil, dass erhalten bleibt, \"Abbruch\" (demolish) Bauteil, das abgebrochen wird, \"Temporär\" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)"
+        },
+        {
+          "language": "fr-FR",
+          "name": "Statut",
+          "definition": "Statut de l'élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "状態",
+          "definition": "要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_ElementStatus",
+        "enumerationValues": [
+          {
+            "name": "NEW",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "New",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "EXISTING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Existing",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DEMOLISH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Demolish",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TEMPORARY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Temporary",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "IsExternal",
+      "definition": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "ca78acef71d34f7f9a14db5b57b62eca",
+      "legacyGuidAsIfcGlobalId": "3AUAplSTDFVveKsrjNjYxA",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Außenbauteil",
+          "definition": "Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser)."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Est extérieur",
+          "definition": "Indique si l'élément est conçu pour être utilisé à l'extérieur (VRAI) ou non (FAUX). Si VRAI, c'est un élément extérieur qui donne sur l'extérieur du bâtiment."
+        },
+        {
+          "language": "ja-JP",
+          "name": "外部区分",
+          "definition": "この要素が外部に用いられるか（TRUE）、否か（FALSE）を示す。（TRUE)の場合、これは外部要素で、建物の外部に面している。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "是否外部构件",
+          "definition": "表示该构件是否设计为外部构件。若是，则该构件为外部构件，朝向建筑物的外侧。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "LoadBearing",
+      "definition": "Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "b626e3ed9cfc4572ae7b7a31aafae288",
+      "legacyGuidAsIfcGlobalId": "2s9kFjdFn5SgvxUZ6g_kA8",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Tragendes Bauteil",
+          "definition": "Angabe, ob dieses Bauteil tragend ist (JA) oder nichttragend (NEIN)"
+        },
+        {
+          "language": "fr-FR",
+          "name": "Porteur",
+          "definition": "Indique si l'objet est censé porter des charges (VRAI) ou non (FAUX)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "耐力部材",
+          "definition": "オブジェクトが荷重を保持するか（TRUE）、保持しないか（FALSE）を示す。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "是否承重",
+          "definition": "表示该对象是否需要承重。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AcousticRating",
+      "definition": "Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "473ef5cd177f400e807fe7e3350fbd5d",
+      "legacyGuidAsIfcGlobalId": "17FlND5tz03e1$v_Cr3xrT",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Schallschutzklasse",
+          "definition": "Schallschutzklasse gemäß der nationalen oder regionalen Schallschutzverordnung."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Isolation acoustique",
+          "definition": "Classement acoustique de cet objet. Donné selon le Code National du Bâtiment. Il indique la résistance à la transmission du son de cet objet par une valeur de référence (au lieu de fournir les valeurs totales d'absorption du son)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "遮音等級",
+          "definition": "このオブジェクトの遮音等級。各国の建築基準に従って決められる。このオブジェクトの音響透過を指数であらわす。（実際の吸音値を示すかわりに）"
+        },
+        {
+          "language": "zh-CN",
+          "name": "隔音等级",
+          "definition": "该构件的隔音等级。该属性的依据为国家建筑规范。为表示该构件隔音效果的比率（而不是完全吸收声音的值）。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FireRating",
+      "definition": "Fire rating for this object.It is given according to the national fire safety classification.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "90467397553b45a28e1223d2f301e71b",
+      "legacyGuidAsIfcGlobalId": "2GHdENLJj5eeuI8zBp0USR",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Feuerwiderstandsklasse",
+          "definition": "Feuerwiderstandasklasse gemäß der nationalen oder regionalen Brandschutzverordnung."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Résistance au feu",
+          "definition": "Classement au feu de l'élément donné selon la classification nationale de sécurité incendie."
+        },
+        {
+          "language": "ja-JP",
+          "name": "耐火等級",
+          "definition": "当該オブジェクトの耐火等級。国で定めた耐火安全等級分類による。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "防火等级",
+          "definition": "该构件的防火等级。该属性的依据为国家防火安全分级。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ThermalTransmittance",
+      "definition": "Thermal transmittance coefficient (U-Value) of a material.It applies to the total door construction.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "4d1f1a65b3e543639ca990b8cda90d8e",
+      "legacyGuidAsIfcGlobalId": "1D7nfbi_L3OvofaBZDgGsE",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "U-Wert",
+          "definition": "Wärmedurchgangskoeffizient (U-Wert) der Materialschichten.Hier der Gesamtwärmedurchgangskoeffizient der Platte (für alle Schichten)."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Transmission thermique surfacique",
+          "definition": "Coefficient de transmission thermique (U) qui s'applique à l'ensemble de la plaque."
+        },
+        {
+          "language": "ja-JP",
+          "name": "熱貫流率",
+          "definition": "材料の熱貫流率（U値）。すべての扉部材に適応される。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "导热系数",
+          "definition": "材料的导热系数（U值）。适用于门的整体结构。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermalTransmittanceMeasure",
+        "measureType": "",
+        "unitType": "THERMALTRANSMITTANCEUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

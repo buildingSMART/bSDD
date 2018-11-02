@@ -1,0 +1,285 @@
+﻿name: 'Pset_CableCarrierSegmentTypeConduitSegment'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'An enclosed tubular carrier segment through which cables are pulled.HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcCableCarrierSegmentType
+  type: IfcCableCarrierSegmentType/CONDUITSEGMENT
+properties:
+- name: NominalWidth
+  definition: The nominal width of the segment.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 5dc02d277be9499085595cad28fcaffa
+  legacyGuidAsIfcGlobalId: 1Tm2qdU_b9a8LPNAqe$A$w
+  localizations:
+  - language: ja-JP
+    name: '公称幅'
+    definition: '呼び幅寸法。'
+  - language: ko-KR
+    name: '공칭 폭'
+    definition: '폭 치수'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalHeight
+  definition: The nominal height of the segment.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 0cd94691cd08475a8285eb42554aac54
+  legacyGuidAsIfcGlobalId: 0CsKQHpGX7MeA5wq9LIgnK
+  localizations:
+  - language: ja-JP
+    name: '公称高'
+    definition: '呼び高寸法。'
+  - language: ko-KR
+    name: '공칭 높이'
+    definition: '고 치수'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConduitShapeType
+  definition: The shape of the conduit segment.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c32c564c23e84f59a502ae4b9e798210
+  legacyGuidAsIfcGlobalId: 33B5PC8_XFMQK2hakUUO8G
+  localizations:
+  - language: ja-JP
+    name: '電線管のタイプ'
+    definition: '電線管の形状タイプ。（円筒形,卵形,その他,不明,なし）'
+  - language: ko-KR
+    name: '전선관의 유형'
+    definition: '전선관의 형상 타입. (원통형, 계란 모양, 기타 알 수 없음) "'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ConduitShapeType
+    enumerationValues:
+    - name: CIRCULAR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Circular'
+        definition: ''
+      - language: en-EN
+        name: 'Circular'
+        definition: ''
+      - language: es-ES
+        name: 'Circular'
+        definition: ''
+      - language: fr-FR
+        name: 'Circular'
+        definition: ''
+      - language: ja-JP
+        name: 'Circular'
+        definition: ''
+      - language: ru-RU
+        name: 'Circular'
+        definition: ''
+    - name: OVAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Oval'
+        definition: ''
+      - language: en-EN
+        name: 'Oval'
+        definition: ''
+      - language: es-ES
+        name: 'Oval'
+        definition: ''
+      - language: fr-FR
+        name: 'Oval'
+        definition: ''
+      - language: ja-JP
+        name: 'Oval'
+        definition: ''
+      - language: ru-RU
+        name: 'Oval'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsRigid
+  definition: Indication of whether the conduit is rigid (= TRUE) or flexible (= FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 6e2e2b18426f43d4bb2352164acaf974
+  legacyGuidAsIfcGlobalId: 1kBYiOGcz3rBiZKXPAolbq
+  localizations:
+  - language: ja-JP
+    name: '鋼管'
+    definition: '鋼管か否か。'
+  - language: ko-KR
+    name: '강관'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

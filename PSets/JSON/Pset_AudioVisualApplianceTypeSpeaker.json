@@ -1,0 +1,852 @@
+﻿{
+  "name": "Pset_AudioVisualApplianceTypeSpeaker",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcElectricalDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "An audio-visual speaker is a device that converts amplified audio signals into sound waves.  HISTORY: Added in IFC4.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcAudioVisualApplianceType",
+      "type": "IfcAudioVisualApplianceType/SPEAKER"
+    }
+  ],
+  "properties": [
+    {
+      "name": "SpeakerType",
+      "definition": "Indicates the type of speaker.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "スピーカータイプ",
+          "definition": "スピーカーのタイプを示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "스피커 타입",
+          "definition": "스피커의 타입을 나타낸다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_AudioVisualSpeakerType",
+        "enumerationValues": [
+          {
+            "name": "FULLRANGE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Fullrange",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Fullrange",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Fullrange",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Fullrange",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Fullrange",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Fullrange",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MIDRANGE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Midrange",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Midrange",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Midrange",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Midrange",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Midrange",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Midrange",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WOOFER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Woofer",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Woofer",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Woofer",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Woofer",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Woofer",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Woofer",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TWEETER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Tweeter",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Tweeter",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Tweeter",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Tweeter",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Tweeter",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Tweeter",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "COAXIAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Coaxial",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Coaxial",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Coaxial",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Coaxial",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Coaxial",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Coaxial",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SpeakerMounting",
+      "definition": "Indicates how the speaker is designed to be mounted.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "取付可能方法",
+          "definition": "取付可能な方法を示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "설치 가능 방법",
+          "definition": "붙일 수있는 방법을 보여준다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_AudioVisualSpeakerMounting",
+        "enumerationValues": [
+          {
+            "name": "FREESTANDING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Freestanding",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Freestanding",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Freestanding",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Freestanding",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Freestanding",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Freestanding",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CEILING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Ceiling",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Ceiling",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Ceiling",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Ceiling",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Ceiling",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Ceiling",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WALL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Wall",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Wall",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Wall",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Wall",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Wall",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Wall",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OUTDOOR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Outdoor",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Outdoor",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Outdoor",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Outdoor",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Outdoor",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Outdoor",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SpeakerDriverSize",
+      "definition": "Indicates the number of drivers and their sizes.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "スピーカードライバサイズ",
+          "definition": "ドライバユニットと数を示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "스피커 드라이버",
+          "definition": "드라이버 유닛과 수를 나타낸다"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "-",
+        "DefiningValue": {
+          "dataType": "IfcIdentifier",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcPositiveLengthMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FrequencyResponse",
+      "definition": "Indicates the output over a specified range of frequencies.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "周波数応答",
+          "definition": "周波数範囲での出力を示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "주파수 응답",
+          "definition": "주파수 범위에서 출력을 보여준다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "-",
+        "DefiningValue": {
+          "dataType": "IfcFrequencyMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcSoundPowerMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Impedence",
+      "definition": "Indicates the speaker impedence.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "インピーダンス値",
+          "definition": "インピーダンス値を示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "임피던스",
+          "definition": "임피던스 값을 나타낸다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcFrequencyMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

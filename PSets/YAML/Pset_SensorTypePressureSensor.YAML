@@ -1,0 +1,115 @@
+﻿name: 'Pset_SensorTypePressureSensor'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcBuildingControlsDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'A device that senses or detects pressure. HISTORY: PressureSensorSensorSetPoint changed to SetPointPressure. Range, accuracy and time constant deleted.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSensorType
+  type: IfcSensorType/PRESSURESENSOR
+properties:
+- name: SetPointPressure
+  definition: The pressure value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b0d0f8448134414e8a87bff0740e6c88
+  legacyGuidAsIfcGlobalId: 2mqFX4WJH1Jeg7l$1q3co8
+  localizations:
+  - language: ja-JP
+    name: '圧力設定値'
+    definition: '感知される圧力。セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。'
+  - language: ko-KR
+    name: '압력 설정'
+    definition: '감지되는 압력. 세트 포인트 값을 넣으려면, IfcPropertyBoundedValue.SetPointValue를 사용하십시오.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: '?'
+    UpperBoundValue: '?'
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsSwitch
+  definition: Identifies if the sensor also functions as a switch at the set point (=TRUE) or not (= FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b35630a4898e4d97b1e6de9527f0d420
+  legacyGuidAsIfcGlobalId: 2pLZ2aYOvDbx7ctfKdyDGW
+  localizations:
+  - language: ja-JP
+    name: 'スイッチ機能の有無'
+    definition: 'センサーが設定値でスイッチとして機能する（TRUE)か、否か（FALSE)を識別する。'
+  - language: ko-KR
+    name: '스위치 기능의 유무'
+    definition: '센서 설정에서 스위치 역할 (TRUE) 또는 여부 (FALSE)를 확인한다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

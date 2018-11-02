@@ -1,0 +1,114 @@
+﻿name: 'Pset_ActuatorTypeRotationalActuation'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcBuildingControlsDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Characteristics of rotational actuation of an actuatorHistory: Replaces Pset_RotationalActuator'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcActuatorType
+  type: IfcActuatorType
+properties:
+- name: Torque
+  definition: Indicates the maximum close-off torque for the actuator.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: f9d37374a935415cb8fa0f6b7a627259
+  legacyGuidAsIfcGlobalId: 3vqtDqgJL1NBZw3sjwOd9P
+  localizations:
+  - language: ja-JP
+    name: '最大トルク'
+    definition: 'アクチュエータの最大締め切りトルクを示す。'
+  - language: ko-KR
+    name: '최대 토크'
+    definition: '액츄에이터의 최대 마감 토크를 나타낸다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTorqueMeasure
+    measureType: ''
+    unitType: TORQUEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RangeAngle
+  definition: Indicates the maximum rotation the actuator must traverse.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ff266150bd5341c0a31d7b929d73c61e
+  legacyGuidAsIfcGlobalId: 3$9c5GlLD1mACTUvATSyOU
+  localizations:
+  - language: ja-JP
+    name: '最大回転角'
+    definition: 'アクチュエータが動く最大回転角を示す。'
+  - language: ko-KR
+    name: '최대 회전각'
+    definition: '액츄에이터가 움직이는 최대 회전각을 나타낸다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPlaneAngleMeasure
+    measureType: ''
+    unitType: PLANEANGLEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

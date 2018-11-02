@@ -1,0 +1,269 @@
+﻿name: 'Pset_SwitchingDeviceTypeContactor'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'An electrical device used to control the flow of power in a circuit on or off.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSwitchingDeviceType
+  type: IfcSwitchingDeviceType/CONTACTOR
+properties:
+- name: ContactorType
+  definition: 'A list of the available types of contactor from which that required may be selected where:CapacitorSwitching: for switching 3 phase single or multi-step capacitor banks.LowCurrent: requires the use of low resistance contacts.MagneticLatching: enables the contactor to remain in the on position when the coil is no longer energized.MechanicalLatching: requires that the contactor is mechanically retained in the on position.Modular: are totally enclosed and self contained.Reversing: has a double set of contactors that are prewired.Standard: is a generic device that controls the flow of power in a circuit on or off.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 8d931d791a5c4ff29a935fd072d9b378
+  legacyGuidAsIfcGlobalId: 2Danrv6bnFyfgJNz1osRDu
+  localizations:
+  - language: ja-JP
+    name: '接触器タイプ'
+    definition: '以下より選択が必要となる、接触器の一覧リスト：コンデンサスイッチ：3つのシングルフェーズまたは複数のコンデンサバンクで切り替える。低流：低い抵抗接触の使用が必要マグネット式：コイルのエネルギーが無くなった時に切替をONポジションにして有効にするMechanicalLatching：切替器がONポジションを維持するために機械的な仕組みが必要。モジュール式：閉鎖されている自働型切替器。リバース：2つの切替器をワイヤーで接続したもの。標準：回路で電力潮流をオンまたはオフでコントロールする一般的な装置。'
+  - language: ko-KR
+    name: '접촉기 유형'
+    definition: '다음에서 선택이 필요하다, 접촉기  목록 : 콘덴서 스위치 : 3 개의 단일 위상 이상의 커패시터 뱅크를 전환합니다. 낮은여 : 낮은 저항 접촉 사용해야 마그네틱 : 코일의 에너지가 분실된 때 전환을 ON 위치로하여 사용 MechanicalLatching : 판을 ON 위치를 유지하기 위해 기계적인 구조가 필요합니다. 모듈형 : 폐쇄되어있는 자신 동형 판. 리버스 : 두 판을 와이어로 연결한 것. 표준 : 회로에서 전력 조류를 켜지거나 꺼지지 컨트롤하는 일반적인 장치'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ContactorType
+    enumerationValues:
+    - name: CAPACITORSWITCHING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Capacitorswitching'
+        definition: ''
+      - language: en-EN
+        name: 'Capacitorswitching'
+        definition: ''
+      - language: es-ES
+        name: 'Capacitorswitching'
+        definition: ''
+      - language: fr-FR
+        name: 'Capacitorswitching'
+        definition: ''
+      - language: ja-JP
+        name: 'Capacitorswitching'
+        definition: ''
+      - language: ru-RU
+        name: 'Capacitorswitching'
+        definition: ''
+    - name: LOWCURRENT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Lowcurrent'
+        definition: ''
+      - language: en-EN
+        name: 'Lowcurrent'
+        definition: ''
+      - language: es-ES
+        name: 'Lowcurrent'
+        definition: ''
+      - language: fr-FR
+        name: 'Lowcurrent'
+        definition: ''
+      - language: ja-JP
+        name: 'Lowcurrent'
+        definition: ''
+      - language: ru-RU
+        name: 'Lowcurrent'
+        definition: ''
+    - name: MAGNETICLATCHING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Magneticlatching'
+        definition: ''
+      - language: en-EN
+        name: 'Magneticlatching'
+        definition: ''
+      - language: es-ES
+        name: 'Magneticlatching'
+        definition: ''
+      - language: fr-FR
+        name: 'Magneticlatching'
+        definition: ''
+      - language: ja-JP
+        name: 'Magneticlatching'
+        definition: ''
+      - language: ru-RU
+        name: 'Magneticlatching'
+        definition: ''
+    - name: MECHANICALLATCHING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Mechanicallatching'
+        definition: ''
+      - language: en-EN
+        name: 'Mechanicallatching'
+        definition: ''
+      - language: es-ES
+        name: 'Mechanicallatching'
+        definition: ''
+      - language: fr-FR
+        name: 'Mechanicallatching'
+        definition: ''
+      - language: ja-JP
+        name: 'Mechanicallatching'
+        definition: ''
+      - language: ru-RU
+        name: 'Mechanicallatching'
+        definition: ''
+    - name: MODULAR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Modular'
+        definition: ''
+      - language: en-EN
+        name: 'Modular'
+        definition: ''
+      - language: es-ES
+        name: 'Modular'
+        definition: ''
+      - language: fr-FR
+        name: 'Modular'
+        definition: ''
+      - language: ja-JP
+        name: 'Modular'
+        definition: ''
+      - language: ru-RU
+        name: 'Modular'
+        definition: ''
+    - name: REVERSING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Reversing'
+        definition: ''
+      - language: en-EN
+        name: 'Reversing'
+        definition: ''
+      - language: es-ES
+        name: 'Reversing'
+        definition: ''
+      - language: fr-FR
+        name: 'Reversing'
+        definition: ''
+      - language: ja-JP
+        name: 'Reversing'
+        definition: ''
+      - language: ru-RU
+        name: 'Reversing'
+        definition: ''
+    - name: STANDARD
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Standard'
+        definition: ''
+      - language: en-EN
+        name: 'Standard'
+        definition: ''
+      - language: es-ES
+        name: 'Standard'
+        definition: ''
+      - language: fr-FR
+        name: 'Standard'
+        definition: ''
+      - language: ja-JP
+        name: 'Standard'
+        definition: ''
+      - language: ru-RU
+        name: 'Standard'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

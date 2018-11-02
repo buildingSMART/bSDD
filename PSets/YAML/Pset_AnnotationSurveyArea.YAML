@@ -1,0 +1,300 @@
+﻿name: 'Pset_AnnotationSurveyArea'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcProductExtension
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Specifies particular properties of survey methods to be assigned to survey point set or resulting surface patches'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAnnotation
+  type: IfcAnnotation/SurveyArea
+properties:
+- name: AcquisitionMethod
+  definition: The means by which survey data was acquired.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4ec6640984c74eaabe57b48c88e8adb5
+  legacyGuidAsIfcGlobalId: 1EncG9XCTEghvNj8o8wAsr
+  localizations:
+  - language: fr-FR
+    name: 'Méthode d''acquisition'
+    definition: 'La méthode utilisée pour effectuer le relevé.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_AcquisitionMethod
+    enumerationValues:
+    - name: GPS
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Gps'
+        definition: ''
+      - language: en-EN
+        name: 'Gps'
+        definition: ''
+      - language: es-ES
+        name: 'Gps'
+        definition: ''
+      - language: fr-FR
+        name: 'Gps'
+        definition: ''
+      - language: ja-JP
+        name: 'Gps'
+        definition: ''
+      - language: ru-RU
+        name: 'Gps'
+        definition: ''
+    - name: LASERSCAN_AIRBORNE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Laserscan_airborne'
+        definition: ''
+      - language: en-EN
+        name: 'Laserscan_airborne'
+        definition: ''
+      - language: es-ES
+        name: 'Laserscan_airborne'
+        definition: ''
+      - language: fr-FR
+        name: 'Laserscan_airborne'
+        definition: ''
+      - language: ja-JP
+        name: 'Laserscan_airborne'
+        definition: ''
+      - language: ru-RU
+        name: 'Laserscan_airborne'
+        definition: ''
+    - name: LASERSCAN_GROUND
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Laserscan_ground'
+        definition: ''
+      - language: en-EN
+        name: 'Laserscan_ground'
+        definition: ''
+      - language: es-ES
+        name: 'Laserscan_ground'
+        definition: ''
+      - language: fr-FR
+        name: 'Laserscan_ground'
+        definition: ''
+      - language: ja-JP
+        name: 'Laserscan_ground'
+        definition: ''
+      - language: ru-RU
+        name: 'Laserscan_ground'
+        definition: ''
+    - name: SONAR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sonar'
+        definition: ''
+      - language: en-EN
+        name: 'Sonar'
+        definition: ''
+      - language: es-ES
+        name: 'Sonar'
+        definition: ''
+      - language: fr-FR
+        name: 'Sonar'
+        definition: ''
+      - language: ja-JP
+        name: 'Sonar'
+        definition: ''
+      - language: ru-RU
+        name: 'Sonar'
+        definition: ''
+    - name: THEODOLITE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Theodolite'
+        definition: ''
+      - language: en-EN
+        name: 'Theodolite'
+        definition: ''
+      - language: es-ES
+        name: 'Theodolite'
+        definition: ''
+      - language: fr-FR
+        name: 'Theodolite'
+        definition: ''
+      - language: ja-JP
+        name: 'Theodolite'
+        definition: ''
+      - language: ru-RU
+        name: 'Theodolite'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AccuracyQualityObtained
+  definition: A measure of the accuracy quality of survey points as obtained expressed in percentage terms.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c1dfd5cd5cac4f848ce3bae9f6bf9cbe
+  legacyGuidAsIfcGlobalId: 31tzNDNAnFX8pZkkdslvo_
+  localizations:
+  - language: fr-FR
+    name: 'Précision obtenue'
+    definition: 'Mesure de la précision obtenue des points de relevé, exprimée en pourcentage.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AccuracyQualityExpected
+  definition: A measure of the accuracy quality of survey points as expected expressed in percentage terms.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b0dced73b1f34473bfe39203eb0d780d
+  legacyGuidAsIfcGlobalId: 2mtErpiVD4Sx$ZaWFh3NWD
+  localizations:
+  - language: fr-FR
+    name: 'Précision attendue'
+    definition: 'Mesure de la précision attendue des points de relevé, exprimée en pourcentage.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

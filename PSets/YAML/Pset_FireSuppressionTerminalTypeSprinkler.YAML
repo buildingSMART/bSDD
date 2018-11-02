@@ -1,0 +1,1044 @@
+﻿name: 'Pset_FireSuppressionTerminalTypeSprinkler'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcPlumbingFireProtectionDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Device for sprinkling water from a pipe under pressure over an area (BS6100 100 3432)'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcFireSuppressionTerminalType
+  type: IfcFireSuppressionTerminalType/SPRINKLER
+properties:
+- name: SprinklerType
+  definition: Identifies the predefined types of sprinkler  from which the type required may be set.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: fe15668819774e3181ad7c9960cac338
+  legacyGuidAsIfcGlobalId: 3_5MQ86NTECO6jV9bWoiCu
+  localizations:
+  - language: ja-JP
+    name: 'スプリンクラータイプ'
+    definition: 'あらかじめ定義済みのスプリンクラーの型から必要な型を設定する識別。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_SprinklerType
+    enumerationValues:
+    - name: CEILING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Ceiling'
+        definition: ''
+      - language: en-EN
+        name: 'Ceiling'
+        definition: ''
+      - language: es-ES
+        name: 'Ceiling'
+        definition: ''
+      - language: fr-FR
+        name: 'Ceiling'
+        definition: ''
+      - language: ja-JP
+        name: 'Ceiling'
+        definition: ''
+      - language: ru-RU
+        name: 'Ceiling'
+        definition: ''
+    - name: CONCEALED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Concealed'
+        definition: ''
+      - language: en-EN
+        name: 'Concealed'
+        definition: ''
+      - language: es-ES
+        name: 'Concealed'
+        definition: ''
+      - language: fr-FR
+        name: 'Concealed'
+        definition: ''
+      - language: ja-JP
+        name: 'Concealed'
+        definition: ''
+      - language: ru-RU
+        name: 'Concealed'
+        definition: ''
+    - name: CUT-OFF
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Cut-off'
+        definition: ''
+      - language: en-EN
+        name: 'Cut-off'
+        definition: ''
+      - language: es-ES
+        name: 'Cut-off'
+        definition: ''
+      - language: fr-FR
+        name: 'Cut-off'
+        definition: ''
+      - language: ja-JP
+        name: 'Cut-off'
+        definition: ''
+      - language: ru-RU
+        name: 'Cut-off'
+        definition: ''
+    - name: PENDANT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pendant'
+        definition: ''
+      - language: en-EN
+        name: 'Pendant'
+        definition: ''
+      - language: es-ES
+        name: 'Pendant'
+        definition: ''
+      - language: fr-FR
+        name: 'Pendant'
+        definition: ''
+      - language: ja-JP
+        name: 'Pendant'
+        definition: ''
+      - language: ru-RU
+        name: 'Pendant'
+        definition: ''
+    - name: RECESSEDPENDANT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Recessedpendant'
+        definition: ''
+      - language: en-EN
+        name: 'Recessedpendant'
+        definition: ''
+      - language: es-ES
+        name: 'Recessedpendant'
+        definition: ''
+      - language: fr-FR
+        name: 'Recessedpendant'
+        definition: ''
+      - language: ja-JP
+        name: 'Recessedpendant'
+        definition: ''
+      - language: ru-RU
+        name: 'Recessedpendant'
+        definition: ''
+    - name: SIDEWALL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sidewall'
+        definition: ''
+      - language: en-EN
+        name: 'Sidewall'
+        definition: ''
+      - language: es-ES
+        name: 'Sidewall'
+        definition: ''
+      - language: fr-FR
+        name: 'Sidewall'
+        definition: ''
+      - language: ja-JP
+        name: 'Sidewall'
+        definition: ''
+      - language: ru-RU
+        name: 'Sidewall'
+        definition: ''
+    - name: UPRIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Upright'
+        definition: ''
+      - language: en-EN
+        name: 'Upright'
+        definition: ''
+      - language: es-ES
+        name: 'Upright'
+        definition: ''
+      - language: fr-FR
+        name: 'Upright'
+        definition: ''
+      - language: ja-JP
+        name: 'Upright'
+        definition: ''
+      - language: ru-RU
+        name: 'Upright'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Activation
+  definition: Identifies the predefined methods of sprinkler activation from which that required may be set.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b78067e45f3845988cf0e10e8e3aec1f
+  legacyGuidAsIfcGlobalId: 2tW6VaNpX5c8pmuGwEEkmV
+  localizations:
+  - language: ja-JP
+    name: '作動'
+    definition: 'あらかじめ定義済みのスプリンクラーの作動方式から必要な方式を設定する識別。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_SprinklerActivation
+    enumerationValues:
+    - name: BULB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Bulb'
+        definition: ''
+      - language: en-EN
+        name: 'Bulb'
+        definition: ''
+      - language: es-ES
+        name: 'Bulb'
+        definition: ''
+      - language: fr-FR
+        name: 'Bulb'
+        definition: ''
+      - language: ja-JP
+        name: 'Bulb'
+        definition: ''
+      - language: ru-RU
+        name: 'Bulb'
+        definition: ''
+    - name: FUSIBLESOLDER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Fusiblesolder'
+        definition: ''
+      - language: en-EN
+        name: 'Fusiblesolder'
+        definition: ''
+      - language: es-ES
+        name: 'Fusiblesolder'
+        definition: ''
+      - language: fr-FR
+        name: 'Fusiblesolder'
+        definition: ''
+      - language: ja-JP
+        name: 'Fusiblesolder'
+        definition: ''
+      - language: ru-RU
+        name: 'Fusiblesolder'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Response
+  definition: Identifies the predefined methods of sprinkler response from which that required may be set.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a18baf260fc34406aa5a4c04cef91aa8
+  legacyGuidAsIfcGlobalId: 2XYwyc3yD41gfQJ0JE_Hge
+  localizations:
+  - language: ja-JP
+    name: '応答'
+    definition: 'あらかじめ定義済みのスプリンクラーの応答方式から必要な方式を設定する識別。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_SprinklerResponse
+    enumerationValues:
+    - name: QUICK
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Quick'
+        definition: ''
+      - language: en-EN
+        name: 'Quick'
+        definition: ''
+      - language: es-ES
+        name: 'Quick'
+        definition: ''
+      - language: fr-FR
+        name: 'Quick'
+        definition: ''
+      - language: ja-JP
+        name: 'Quick'
+        definition: ''
+      - language: ru-RU
+        name: 'Quick'
+        definition: ''
+    - name: STANDARD
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Standard'
+        definition: ''
+      - language: en-EN
+        name: 'Standard'
+        definition: ''
+      - language: es-ES
+        name: 'Standard'
+        definition: ''
+      - language: fr-FR
+        name: 'Standard'
+        definition: ''
+      - language: ja-JP
+        name: 'Standard'
+        definition: ''
+      - language: ru-RU
+        name: 'Standard'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ActivationTemperature
+  definition: The temperature at which the object is designed to activate.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 5042b2d788b24b7dae4f89e14086dcc1
+  legacyGuidAsIfcGlobalId: 1GGhBNYB9BVQvFYU50Xjp1
+  localizations:
+  - language: ja-JP
+    name: '作動温度'
+    definition: '設計作動温度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: THERMODYNAMICTEMPERATUREUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CoverageArea
+  definition: The area that the sprinkler is designed to protect.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: f8fe067a860e4114bb703763f94e6556
+  legacyGuidAsIfcGlobalId: 3u$WPwXWv15BjmDsFvJcLM
+  localizations:
+  - language: ja-JP
+    name: 'カバー面積'
+    definition: 'スプリンクラーの設計保護区画面積。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcAreaMeasure
+    measureType: ''
+    unitType: AREAUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasDeflector
+  definition: Indication of whether the sprinkler has a deflector (baffle) fitted to diffuse the discharge on activation (= TRUE) or not (= FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 5cdd4e076e234d1e994604d94cb2aa86
+  legacyGuidAsIfcGlobalId: 1StKu7RYDD7fb61DbCigg6
+  localizations:
+  - language: ja-JP
+    name: 'ディフレクターの有無'
+    definition: 'スプリンクラー作動時、放水を拡散させる偏向器（バッフル）取り付けているかどうかの表示（= TRUE）そうでないか（= FALSE）を返します。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: BulbLiquidColor
+  definition: The color of the liquid in the bulb for a bulb activated sprinkler. Note that the liquid color varies according to the activation temperature requirement of the sprinkler head. Note also that this property does not need to be asserted for quick response activated sprinklers.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 6ce7737ff94144b58c5f0fb24b6b0765
+  legacyGuidAsIfcGlobalId: 1ivtD$_K54jOnV3x9BQmTb
+  localizations:
+  - language: ja-JP
+    name: 'バルブ液体色'
+    definition: 'バルブ作動スプリンクラーのバルブ液体色の設定。液体色は、スプリンクラーヘッドの作動温度に応じて変化する。また、この属性は、高速応答スプリンクラーは設定する必要はない。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_SprinklerBulbLiquidColor
+    enumerationValues:
+    - name: ORANGE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Orange'
+        definition: ''
+      - language: en-EN
+        name: 'Orange'
+        definition: ''
+      - language: es-ES
+        name: 'Orange'
+        definition: ''
+      - language: fr-FR
+        name: 'Orange'
+        definition: ''
+      - language: ja-JP
+        name: 'Orange'
+        definition: ''
+      - language: ru-RU
+        name: 'Orange'
+        definition: ''
+    - name: RED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Red'
+        definition: ''
+      - language: en-EN
+        name: 'Red'
+        definition: ''
+      - language: es-ES
+        name: 'Red'
+        definition: ''
+      - language: fr-FR
+        name: 'Red'
+        definition: ''
+      - language: ja-JP
+        name: 'Red'
+        definition: ''
+      - language: ru-RU
+        name: 'Red'
+        definition: ''
+    - name: YELLOW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Yellow'
+        definition: ''
+      - language: en-EN
+        name: 'Yellow'
+        definition: ''
+      - language: es-ES
+        name: 'Yellow'
+        definition: ''
+      - language: fr-FR
+        name: 'Yellow'
+        definition: ''
+      - language: ja-JP
+        name: 'Yellow'
+        definition: ''
+      - language: ru-RU
+        name: 'Yellow'
+        definition: ''
+    - name: GREEN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Green'
+        definition: ''
+      - language: en-EN
+        name: 'Green'
+        definition: ''
+      - language: es-ES
+        name: 'Green'
+        definition: ''
+      - language: fr-FR
+        name: 'Green'
+        definition: ''
+      - language: ja-JP
+        name: 'Green'
+        definition: ''
+      - language: ru-RU
+        name: 'Green'
+        definition: ''
+    - name: BLUE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Blue'
+        definition: ''
+      - language: en-EN
+        name: 'Blue'
+        definition: ''
+      - language: es-ES
+        name: 'Blue'
+        definition: ''
+      - language: fr-FR
+        name: 'Blue'
+        definition: ''
+      - language: ja-JP
+        name: 'Blue'
+        definition: ''
+      - language: ru-RU
+        name: 'Blue'
+        definition: ''
+    - name: MAUVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Mauve'
+        definition: ''
+      - language: en-EN
+        name: 'Mauve'
+        definition: ''
+      - language: es-ES
+        name: 'Mauve'
+        definition: ''
+      - language: fr-FR
+        name: 'Mauve'
+        definition: ''
+      - language: ja-JP
+        name: 'Mauve'
+        definition: ''
+      - language: ru-RU
+        name: 'Mauve'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: DischargeFlowRate
+  definition: The volumetric rate of fluid discharge.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 2a24dff3d0d64dfc8c51a4abfb742553
+  legacyGuidAsIfcGlobalId: 0g9D$pqDPD$8nHfAlxT2LJ
+  localizations:
+  - language: ja-JP
+    name: '吐出流量'
+    definition: '吐出流体の体積流量。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumetricFlowRateMeasure
+    measureType: ''
+    unitType: VOLUMETRICFLOWRATEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ResidualFlowingPressure
+  definition: The residual flowing pressure in the pipeline at which the discharge flow rate is determined.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: d0674711b6954200b94176458f5342b7
+  legacyGuidAsIfcGlobalId: 3GPqSHjfL20Bb1TaMFKqAt
+  localizations:
+  - language: ja-JP
+    name: '残留流動圧力'
+    definition: '吐出流量が確保される、パイプラインの流れ時残留圧力。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: PRESSUREUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: DischargeCoefficient
+  definition: The coefficient of flow at the sprinkler.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 9e87c98d0ab5492b897260c737ba7024
+  legacyGuidAsIfcGlobalId: 2UXycD2hL9AuboOCStkd0a
+  localizations:
+  - language: ja-JP
+    name: '流量係数'
+    definition: 'スプリンクラーの流れの係数。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaximumWorkingPressure
+  definition: Maximum pressure that the object is manufactured to withstand.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b8421f4eda904c73aecc1d96c7be3703
+  legacyGuidAsIfcGlobalId: 2uGXzEsf1CSwxC7PR7lZS3
+  localizations:
+  - language: ja-JP
+    name: '最大作動圧力'
+    definition: '最大圧力、製造耐圧。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: PRESSUREUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConnectionSize
+  definition: Size of the inlet connection to the sprinkler.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 3c78d32a854348559a5421e0c1c0b2bb
+  legacyGuidAsIfcGlobalId: 0yUDCgXKD8LPfK8U31mBAx
+  localizations:
+  - language: ja-JP
+    name: '接続サイズ'
+    definition: 'スプリンクラーへの入口接続のサイズ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

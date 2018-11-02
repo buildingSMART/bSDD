@@ -1,0 +1,698 @@
+﻿name: 'Pset_CableSegmentTypeConductorSegment'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'An electrical conductor is a single linear element with the specific purpose to lead electric current. The core of one lead is normally single wired or multiwired which are intertwined. According to IEC 60050: IEV 195-01-07, a conductor is a conductive part intended to carry a specified electric current.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcCableSegmentType
+  type: IfcCableSegmentType/CONDUCTORSEGMENT
+properties:
+- name: CrossSectionalArea
+  definition: Cross section area of the phase(s) lead(s).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 8f239bbc6b864944b17187cfd345bc8c
+  legacyGuidAsIfcGlobalId: 2F8vkyQuP9HB5nXy$JHRoC
+  localizations:
+  - language: ja-JP
+    name: '断面積'
+    definition: '位相、リードの断面積。'
+  - language: ko-KR
+    name: '단면적 영역'
+    definition: '리드 단면적.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcAreaMeasure
+    measureType: ''
+    unitType: AREAUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Function
+  definition: Type of function for which the conductor is intended.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 48f8d616ace34ebfb854d5cc3dd2a74a
+  legacyGuidAsIfcGlobalId: 18_DOMhEDElxXKrSmzqgTA
+  localizations:
+  - language: ja-JP
+    name: '機能'
+    definition: '導体の機能のタイプ。'
+  - language: ko-KR
+    name: '기능'
+    definition: '도체의 기능 유형.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_FunctionEnum
+    enumerationValues:
+    - name: LINE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Line'
+        definition: ''
+      - language: en-EN
+        name: 'Line'
+        definition: ''
+      - language: es-ES
+        name: 'Line'
+        definition: ''
+      - language: fr-FR
+        name: 'Line'
+        definition: ''
+      - language: ja-JP
+        name: 'Line'
+        definition: ''
+      - language: ru-RU
+        name: 'Line'
+        definition: ''
+    - name: NEUTRAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Neutral'
+        definition: ''
+      - language: en-EN
+        name: 'Neutral'
+        definition: ''
+      - language: es-ES
+        name: 'Neutral'
+        definition: ''
+      - language: fr-FR
+        name: 'Neutral'
+        definition: ''
+      - language: ja-JP
+        name: 'Neutral'
+        definition: ''
+      - language: ru-RU
+        name: 'Neutral'
+        definition: ''
+    - name: PROTECTIVEEARTH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Protectiveearth'
+        definition: ''
+      - language: en-EN
+        name: 'Protectiveearth'
+        definition: ''
+      - language: es-ES
+        name: 'Protectiveearth'
+        definition: ''
+      - language: fr-FR
+        name: 'Protectiveearth'
+        definition: ''
+      - language: ja-JP
+        name: 'Protectiveearth'
+        definition: ''
+      - language: ru-RU
+        name: 'Protectiveearth'
+        definition: ''
+    - name: PROTECTIVEEARTHNEUTRAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Protectiveearthneutral'
+        definition: ''
+      - language: en-EN
+        name: 'Protectiveearthneutral'
+        definition: ''
+      - language: es-ES
+        name: 'Protectiveearthneutral'
+        definition: ''
+      - language: fr-FR
+        name: 'Protectiveearthneutral'
+        definition: ''
+      - language: ja-JP
+        name: 'Protectiveearthneutral'
+        definition: ''
+      - language: ru-RU
+        name: 'Protectiveearthneutral'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Material
+  definition: Type of material from which the conductor is constructed.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 29c78866edcc4119966a2367f8baf29d
+  legacyGuidAsIfcGlobalId: 0fnuXcxSn16PPg8sVuklAT
+  localizations:
+  - language: ja-JP
+    name: '材料'
+    definition: '導体を構成する材料のタイプ。'
+  - language: ko-KR
+    name: '도체의 기능 유형.'
+    definition: '도체를 구성하는 재료의 종류.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_MaterialEnum
+    enumerationValues:
+    - name: ALUMINIUM
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Aluminium'
+        definition: ''
+      - language: en-EN
+        name: 'Aluminium'
+        definition: ''
+      - language: es-ES
+        name: 'Aluminium'
+        definition: ''
+      - language: fr-FR
+        name: 'Aluminium'
+        definition: ''
+      - language: ja-JP
+        name: 'Aluminium'
+        definition: ''
+      - language: ru-RU
+        name: 'Aluminium'
+        definition: ''
+    - name: COPPER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Copper'
+        definition: ''
+      - language: en-EN
+        name: 'Copper'
+        definition: ''
+      - language: es-ES
+        name: 'Copper'
+        definition: ''
+      - language: fr-FR
+        name: 'Copper'
+        definition: ''
+      - language: ja-JP
+        name: 'Copper'
+        definition: ''
+      - language: ru-RU
+        name: 'Copper'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Construction
+  definition: Purpose of informing on how the vonductor is constucted (interwined or solid). I.e. Solid (IEV 461-01-06), stranded (IEV 461-01-07), solid-/finestranded(IEV 461-01-11) (not flexible/flexible).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 73f507a3d67e4d6983c566d7d6997d24
+  legacyGuidAsIfcGlobalId: 1pzGUZrdvDQOF5PjVMcNqa
+  localizations:
+  - language: ja-JP
+    name: '構造'
+    definition: '導体の構成（より線か単線）の定義。すなわち単線（IEV 461-01-06）、より線（IEV 461-01-07）、フレキシブル導体（IEV 461-01-11）（フレキシブルか否か）で定義。'
+  - language: ko-KR
+    name: '구조'
+    definition: '도체 구성 (연선 또는 단선)의 정의 즉 단선 (IEV 461-01-06), 트위스트 (IEV 461-01-07), 플렉서블 도체 (IEV 461-01-11) (유연한 아닌지 가) 정의'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ConstructionEnum
+    enumerationValues:
+    - name: SOLIDCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Solidconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Solidconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Solidconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Solidconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Solidconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Solidconductor'
+        definition: ''
+    - name: STRANDEDCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Strandedconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Strandedconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Strandedconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Strandedconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Strandedconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Strandedconductor'
+        definition: ''
+    - name: FLEXIBLESTRANDEDCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Flexiblestrandedconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Flexiblestrandedconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Flexiblestrandedconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Flexiblestrandedconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Flexiblestrandedconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Flexiblestrandedconductor'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Shape
+  definition: Indication of the shape of the conductor.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 965ff651cfac41d391c77674a5c9717c
+  legacyGuidAsIfcGlobalId: 2MN$PHpwn1qv77TdIboN5y
+  localizations:
+  - language: ja-JP
+    name: '形状'
+    definition: '導体の形状を表示。'
+  - language: ko-KR
+    name: '형상'
+    definition: '도체의 형상을 표시합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ShapeEnum
+    enumerationValues:
+    - name: HELICALCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Helicalconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Helicalconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Helicalconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Helicalconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Helicalconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Helicalconductor'
+        definition: ''
+    - name: CIRCULARCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Circularconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Circularconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Circularconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Circularconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Circularconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Circularconductor'
+        definition: ''
+    - name: SECTORCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sectorconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Sectorconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Sectorconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Sectorconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Sectorconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Sectorconductor'
+        definition: ''
+    - name: RECTANGULARCONDUCTOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Rectangularconductor'
+        definition: ''
+      - language: en-EN
+        name: 'Rectangularconductor'
+        definition: ''
+      - language: es-ES
+        name: 'Rectangularconductor'
+        definition: ''
+      - language: fr-FR
+        name: 'Rectangularconductor'
+        definition: ''
+      - language: ja-JP
+        name: 'Rectangularconductor'
+        definition: ''
+      - language: ru-RU
+        name: 'Rectangularconductor'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

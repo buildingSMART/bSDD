@@ -1,0 +1,1155 @@
+﻿name: 'Pset_DistributionPortTypeAudioVisual'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedBldgServiceElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Audio-visual port occurrence attributes attached to an instance of IfcDistributionPort.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDistributionPort
+  type: IfcDistributionPort/AUDIOVISUAL
+properties:
+- name: ConnectionType
+  definition: 'The physical port connection:DIN: DIN connector.DSub: D-Subminature connector.DVI: Digital Video Interface.EIAJ: fiberoptic digital audio.HDMI: High-Definition Multimedia Interface.RCA: analog audio or video.TRS: analog audio jack plug.XLR: XLR connector.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '接続タイプ'
+    definition: '物理ポート接続：- DIN: DIN コネクタ- DSub: D-Subコネクタ- DVI: デジタルビデオ端子- EIAJ: 光ファイバーデジタルオーディオ- HDMI: HDMI端子- RCA: アナログオーディオ或いはビデオ- TRS: アナログオーディオジャックプラグ.- XLR: XLR コネクタ'
+  - language: ko-KR
+    name: '연결 유형'
+    definition: 'DIN : DIN 커넥터 DSub : D-Sub 커넥터 DVI : 디지털 비디오 단자 EIAJ : 광섬유 디지털 오디오 HDMI : HDMI 단자 RCA : 아날로그 오디오 또는 비디오 TRS : 아날로그 오디오 잭 플러그. XLR : XLR 커넥터'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_DistributionPortAudioVisualType
+    enumerationValues:
+    - name: DIN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Din'
+        definition: ''
+      - language: en-EN
+        name: 'Din'
+        definition: ''
+      - language: es-ES
+        name: 'Din'
+        definition: ''
+      - language: fr-FR
+        name: 'Din'
+        definition: ''
+      - language: ja-JP
+        name: 'Din'
+        definition: ''
+      - language: ru-RU
+        name: 'Din'
+        definition: ''
+    - name: DSUB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Dsub'
+        definition: ''
+      - language: en-EN
+        name: 'Dsub'
+        definition: ''
+      - language: es-ES
+        name: 'Dsub'
+        definition: ''
+      - language: fr-FR
+        name: 'Dsub'
+        definition: ''
+      - language: ja-JP
+        name: 'Dsub'
+        definition: ''
+      - language: ru-RU
+        name: 'Dsub'
+        definition: ''
+    - name: DVI
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Dvi'
+        definition: ''
+      - language: en-EN
+        name: 'Dvi'
+        definition: ''
+      - language: es-ES
+        name: 'Dvi'
+        definition: ''
+      - language: fr-FR
+        name: 'Dvi'
+        definition: ''
+      - language: ja-JP
+        name: 'Dvi'
+        definition: ''
+      - language: ru-RU
+        name: 'Dvi'
+        definition: ''
+    - name: EIAJ
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Eiaj'
+        definition: ''
+      - language: en-EN
+        name: 'Eiaj'
+        definition: ''
+      - language: es-ES
+        name: 'Eiaj'
+        definition: ''
+      - language: fr-FR
+        name: 'Eiaj'
+        definition: ''
+      - language: ja-JP
+        name: 'Eiaj'
+        definition: ''
+      - language: ru-RU
+        name: 'Eiaj'
+        definition: ''
+    - name: HDMI
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Hdmi'
+        definition: ''
+      - language: en-EN
+        name: 'Hdmi'
+        definition: ''
+      - language: es-ES
+        name: 'Hdmi'
+        definition: ''
+      - language: fr-FR
+        name: 'Hdmi'
+        definition: ''
+      - language: ja-JP
+        name: 'Hdmi'
+        definition: ''
+      - language: ru-RU
+        name: 'Hdmi'
+        definition: ''
+    - name: RCA
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Rca'
+        definition: ''
+      - language: en-EN
+        name: 'Rca'
+        definition: ''
+      - language: es-ES
+        name: 'Rca'
+        definition: ''
+      - language: fr-FR
+        name: 'Rca'
+        definition: ''
+      - language: ja-JP
+        name: 'Rca'
+        definition: ''
+      - language: ru-RU
+        name: 'Rca'
+        definition: ''
+    - name: TRS
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Trs'
+        definition: ''
+      - language: en-EN
+        name: 'Trs'
+        definition: ''
+      - language: es-ES
+        name: 'Trs'
+        definition: ''
+      - language: fr-FR
+        name: 'Trs'
+        definition: ''
+      - language: ja-JP
+        name: 'Trs'
+        definition: ''
+      - language: ru-RU
+        name: 'Trs'
+        definition: ''
+    - name: XLR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Xlr'
+        definition: ''
+      - language: en-EN
+        name: 'Xlr'
+        definition: ''
+      - language: es-ES
+        name: 'Xlr'
+        definition: ''
+      - language: fr-FR
+        name: 'Xlr'
+        definition: ''
+      - language: ja-JP
+        name: 'Xlr'
+        definition: ''
+      - language: ru-RU
+        name: 'Xlr'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConnectionSubtype
+  definition: 'The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P DSub: DA15, DB25, DC37, DD50, DE9, DE15 EIAJ: RC5720HDMI: A, B, CTRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '接続サブタイプ'
+    definition: '物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：- DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P - DSub: DA15, DB25, DC37, DD50, DE9, DE15 - EIAJ: RC5720- HDMI: A, B, C- TRS: TS_Mini, TS_SubMini, - TRS_Mini, TRS_SubMinii'
+  - language: ko-KR
+    name: '연결 서브 타입'
+    definition: 'DIN : Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P DSub : DA15, DB25, DC37, DD50, DE9, DE15 EIAJ : RC5720 HDMI : A, B, C TRS : TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConnectionGender
+  definition: The physical connection gender.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '接続ジェンダー'
+    definition: '形状的な接続ジェンダー（オス、メス、その他、未知、未設定）。'
+  - language: ko-KR
+    name: '열결 젠더'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_DistributionPortGender
+    enumerationValues:
+    - name: MALE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Male'
+        definition: ''
+      - language: en-EN
+        name: 'Male'
+        definition: ''
+      - language: es-ES
+        name: 'Male'
+        definition: ''
+      - language: fr-FR
+        name: 'Male'
+        definition: ''
+      - language: ja-JP
+        name: 'Male'
+        definition: ''
+      - language: ru-RU
+        name: 'Male'
+        definition: ''
+    - name: FEMALE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Female'
+        definition: ''
+      - language: en-EN
+        name: 'Female'
+        definition: ''
+      - language: es-ES
+        name: 'Female'
+        definition: ''
+      - language: fr-FR
+        name: 'Female'
+        definition: ''
+      - language: ja-JP
+        name: 'Female'
+        definition: ''
+      - language: ru-RU
+        name: 'Female'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioChannel
+  definition: Indicates the audio channel or NONE if no audio.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: 'オーディオチャネル'
+    definition: 'オーディオチャネルを示す値。オーディオがない場合NONEを設定。'
+  - language: ko-KR
+    name: '오디오 채널'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_DistributionPortAudioChannel
+    enumerationValues:
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'None'
+        definition: ''
+      - language: en-EN
+        name: 'None'
+        definition: ''
+      - language: es-ES
+        name: 'None'
+        definition: ''
+      - language: fr-FR
+        name: 'None'
+        definition: ''
+      - language: ja-JP
+        name: 'None'
+        definition: ''
+      - language: ru-RU
+        name: 'None'
+        definition: ''
+    - name: COMPOSITE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Composite'
+        definition: ''
+      - language: en-EN
+        name: 'Composite'
+        definition: ''
+      - language: es-ES
+        name: 'Composite'
+        definition: ''
+      - language: fr-FR
+        name: 'Composite'
+        definition: ''
+      - language: ja-JP
+        name: 'Composite'
+        definition: ''
+      - language: ru-RU
+        name: 'Composite'
+        definition: ''
+    - name: STEREO
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Stereo'
+        definition: ''
+      - language: en-EN
+        name: 'Stereo'
+        definition: ''
+      - language: es-ES
+        name: 'Stereo'
+        definition: ''
+      - language: fr-FR
+        name: 'Stereo'
+        definition: ''
+      - language: ja-JP
+        name: 'Stereo'
+        definition: ''
+      - language: ru-RU
+        name: 'Stereo'
+        definition: ''
+    - name: FRONTLEFT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Frontleft'
+        definition: ''
+      - language: en-EN
+        name: 'Frontleft'
+        definition: ''
+      - language: es-ES
+        name: 'Frontleft'
+        definition: ''
+      - language: fr-FR
+        name: 'Frontleft'
+        definition: ''
+      - language: ja-JP
+        name: 'Frontleft'
+        definition: ''
+      - language: ru-RU
+        name: 'Frontleft'
+        definition: ''
+    - name: FRONTCENTER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Frontcenter'
+        definition: ''
+      - language: en-EN
+        name: 'Frontcenter'
+        definition: ''
+      - language: es-ES
+        name: 'Frontcenter'
+        definition: ''
+      - language: fr-FR
+        name: 'Frontcenter'
+        definition: ''
+      - language: ja-JP
+        name: 'Frontcenter'
+        definition: ''
+      - language: ru-RU
+        name: 'Frontcenter'
+        definition: ''
+    - name: FRONTRIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Frontright'
+        definition: ''
+      - language: en-EN
+        name: 'Frontright'
+        definition: ''
+      - language: es-ES
+        name: 'Frontright'
+        definition: ''
+      - language: fr-FR
+        name: 'Frontright'
+        definition: ''
+      - language: ja-JP
+        name: 'Frontright'
+        definition: ''
+      - language: ru-RU
+        name: 'Frontright'
+        definition: ''
+    - name: SIDELEFT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sideleft'
+        definition: ''
+      - language: en-EN
+        name: 'Sideleft'
+        definition: ''
+      - language: es-ES
+        name: 'Sideleft'
+        definition: ''
+      - language: fr-FR
+        name: 'Sideleft'
+        definition: ''
+      - language: ja-JP
+        name: 'Sideleft'
+        definition: ''
+      - language: ru-RU
+        name: 'Sideleft'
+        definition: ''
+    - name: SIDERIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sideright'
+        definition: ''
+      - language: en-EN
+        name: 'Sideright'
+        definition: ''
+      - language: es-ES
+        name: 'Sideright'
+        definition: ''
+      - language: fr-FR
+        name: 'Sideright'
+        definition: ''
+      - language: ja-JP
+        name: 'Sideright'
+        definition: ''
+      - language: ru-RU
+        name: 'Sideright'
+        definition: ''
+    - name: BACKLEFT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Backleft'
+        definition: ''
+      - language: en-EN
+        name: 'Backleft'
+        definition: ''
+      - language: es-ES
+        name: 'Backleft'
+        definition: ''
+      - language: fr-FR
+        name: 'Backleft'
+        definition: ''
+      - language: ja-JP
+        name: 'Backleft'
+        definition: ''
+      - language: ru-RU
+        name: 'Backleft'
+        definition: ''
+    - name: BACKCENTER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Backcenter'
+        definition: ''
+      - language: en-EN
+        name: 'Backcenter'
+        definition: ''
+      - language: es-ES
+        name: 'Backcenter'
+        definition: ''
+      - language: fr-FR
+        name: 'Backcenter'
+        definition: ''
+      - language: ja-JP
+        name: 'Backcenter'
+        definition: ''
+      - language: ru-RU
+        name: 'Backcenter'
+        definition: ''
+    - name: BACKRIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Backright'
+        definition: ''
+      - language: en-EN
+        name: 'Backright'
+        definition: ''
+      - language: es-ES
+        name: 'Backright'
+        definition: ''
+      - language: fr-FR
+        name: 'Backright'
+        definition: ''
+      - language: ja-JP
+        name: 'Backright'
+        definition: ''
+      - language: ru-RU
+        name: 'Backright'
+        definition: ''
+    - name: SUBWOOFER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Subwoofer'
+        definition: ''
+      - language: en-EN
+        name: 'Subwoofer'
+        definition: ''
+      - language: es-ES
+        name: 'Subwoofer'
+        definition: ''
+      - language: fr-FR
+        name: 'Subwoofer'
+        definition: ''
+      - language: ja-JP
+        name: 'Subwoofer'
+        definition: ''
+      - language: ru-RU
+        name: 'Subwoofer'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VideoChannel
+  definition: Indicates the video channel or NONE if no video.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: 'ビデオチャネル'
+    definition: 'ビデオチャネルを示す値。ビデオがない場合NONEを設定。'
+  - language: ko-KR
+    name: '비디오 채널'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_DistributionPortVideoChannel
+    enumerationValues:
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'None'
+        definition: ''
+      - language: en-EN
+        name: 'None'
+        definition: ''
+      - language: es-ES
+        name: 'None'
+        definition: ''
+      - language: fr-FR
+        name: 'None'
+        definition: ''
+      - language: ja-JP
+        name: 'None'
+        definition: ''
+      - language: ru-RU
+        name: 'None'
+        definition: ''
+    - name: COMPOSITE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Composite'
+        definition: ''
+      - language: en-EN
+        name: 'Composite'
+        definition: ''
+      - language: es-ES
+        name: 'Composite'
+        definition: ''
+      - language: fr-FR
+        name: 'Composite'
+        definition: ''
+      - language: ja-JP
+        name: 'Composite'
+        definition: ''
+      - language: ru-RU
+        name: 'Composite'
+        definition: ''
+    - name: RED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Red'
+        definition: ''
+      - language: en-EN
+        name: 'Red'
+        definition: ''
+      - language: es-ES
+        name: 'Red'
+        definition: ''
+      - language: fr-FR
+        name: 'Red'
+        definition: ''
+      - language: ja-JP
+        name: 'Red'
+        definition: ''
+      - language: ru-RU
+        name: 'Red'
+        definition: ''
+    - name: GREEN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Green'
+        definition: ''
+      - language: en-EN
+        name: 'Green'
+        definition: ''
+      - language: es-ES
+        name: 'Green'
+        definition: ''
+      - language: fr-FR
+        name: 'Green'
+        definition: ''
+      - language: ja-JP
+        name: 'Green'
+        definition: ''
+      - language: ru-RU
+        name: 'Green'
+        definition: ''
+    - name: BLUE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Blue'
+        definition: ''
+      - language: en-EN
+        name: 'Blue'
+        definition: ''
+      - language: es-ES
+        name: 'Blue'
+        definition: ''
+      - language: fr-FR
+        name: 'Blue'
+        definition: ''
+      - language: ja-JP
+        name: 'Blue'
+        definition: ''
+      - language: ru-RU
+        name: 'Blue'
+        definition: ''
+    - name: VSYNC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Vsync'
+        definition: ''
+      - language: en-EN
+        name: 'Vsync'
+        definition: ''
+      - language: es-ES
+        name: 'Vsync'
+        definition: ''
+      - language: fr-FR
+        name: 'Vsync'
+        definition: ''
+      - language: ja-JP
+        name: 'Vsync'
+        definition: ''
+      - language: ru-RU
+        name: 'Vsync'
+        definition: ''
+    - name: HSYNC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Hsync'
+        definition: ''
+      - language: en-EN
+        name: 'Hsync'
+        definition: ''
+      - language: es-ES
+        name: 'Hsync'
+        definition: ''
+      - language: fr-FR
+        name: 'Hsync'
+        definition: ''
+      - language: ja-JP
+        name: 'Hsync'
+        definition: ''
+      - language: ru-RU
+        name: 'Hsync'
+        definition: ''
+    - name: Y
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Y'
+        definition: ''
+      - language: en-EN
+        name: 'Y'
+        definition: ''
+      - language: es-ES
+        name: 'Y'
+        definition: ''
+      - language: fr-FR
+        name: 'Y'
+        definition: ''
+      - language: ja-JP
+        name: 'Y'
+        definition: ''
+      - language: ru-RU
+        name: 'Y'
+        definition: ''
+    - name: PB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pb'
+        definition: ''
+      - language: en-EN
+        name: 'Pb'
+        definition: ''
+      - language: es-ES
+        name: 'Pb'
+        definition: ''
+      - language: fr-FR
+        name: 'Pb'
+        definition: ''
+      - language: ja-JP
+        name: 'Pb'
+        definition: ''
+      - language: ru-RU
+        name: 'Pb'
+        definition: ''
+    - name: PR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pr'
+        definition: ''
+      - language: en-EN
+        name: 'Pr'
+        definition: ''
+      - language: es-ES
+        name: 'Pr'
+        definition: ''
+      - language: fr-FR
+        name: 'Pr'
+        definition: ''
+      - language: ja-JP
+        name: 'Pr'
+        definition: ''
+      - language: ru-RU
+        name: 'Pr'
+        definition: ''
+    - name: CB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Cb'
+        definition: ''
+      - language: en-EN
+        name: 'Cb'
+        definition: ''
+      - language: es-ES
+        name: 'Cb'
+        definition: ''
+      - language: fr-FR
+        name: 'Cb'
+        definition: ''
+      - language: ja-JP
+        name: 'Cb'
+        definition: ''
+      - language: ru-RU
+        name: 'Cb'
+        definition: ''
+    - name: CR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Cr'
+        definition: ''
+      - language: en-EN
+        name: 'Cr'
+        definition: ''
+      - language: es-ES
+        name: 'Cr'
+        definition: ''
+      - language: fr-FR
+        name: 'Cr'
+        definition: ''
+      - language: ja-JP
+        name: 'Cr'
+        definition: ''
+      - language: ru-RU
+        name: 'Cr'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

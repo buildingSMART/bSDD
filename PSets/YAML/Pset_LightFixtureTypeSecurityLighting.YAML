@@ -1,0 +1,843 @@
+﻿name: 'Pset_LightFixtureTypeSecurityLighting'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Properties that characterize security lighting.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcLightFixtureType
+  type: IfcLightFixtureType/SECURITYLIGHTING
+properties:
+- name: SecurityLightingType
+  definition: The type of security lighting.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '防犯灯'
+    definition: '防犯灯のタイプ。'
+  - language: ko-KR
+    name: '방범등'
+    definition: '방범등 유형'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_LightFixtureSecurityLightingType
+    enumerationValues:
+    - name: SAFETYLIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Safetylight'
+        definition: ''
+      - language: en-EN
+        name: 'Safetylight'
+        definition: ''
+      - language: es-ES
+        name: 'Safetylight'
+        definition: ''
+      - language: fr-FR
+        name: 'Safetylight'
+        definition: ''
+      - language: ja-JP
+        name: 'Safetylight'
+        definition: ''
+      - language: ru-RU
+        name: 'Safetylight'
+        definition: ''
+    - name: WARNINGLIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Warninglight'
+        definition: ''
+      - language: en-EN
+        name: 'Warninglight'
+        definition: ''
+      - language: es-ES
+        name: 'Warninglight'
+        definition: ''
+      - language: fr-FR
+        name: 'Warninglight'
+        definition: ''
+      - language: ja-JP
+        name: 'Warninglight'
+        definition: ''
+      - language: ru-RU
+        name: 'Warninglight'
+        definition: ''
+    - name: EMERGENCYEXITLIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Emergencyexitlight'
+        definition: ''
+      - language: en-EN
+        name: 'Emergencyexitlight'
+        definition: ''
+      - language: es-ES
+        name: 'Emergencyexitlight'
+        definition: ''
+      - language: fr-FR
+        name: 'Emergencyexitlight'
+        definition: ''
+      - language: ja-JP
+        name: 'Emergencyexitlight'
+        definition: ''
+      - language: ru-RU
+        name: 'Emergencyexitlight'
+        definition: ''
+    - name: BLUEILLUMINATION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Blueillumination'
+        definition: ''
+      - language: en-EN
+        name: 'Blueillumination'
+        definition: ''
+      - language: es-ES
+        name: 'Blueillumination'
+        definition: ''
+      - language: fr-FR
+        name: 'Blueillumination'
+        definition: ''
+      - language: ja-JP
+        name: 'Blueillumination'
+        definition: ''
+      - language: ru-RU
+        name: 'Blueillumination'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FixtureHeight
+  definition: The height of the fixture, such as the text height of an exit sign.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '器具の高さ'
+    definition: '出口標識などの器具の高さ。'
+  - language: ko-KR
+    name: '기구의 높이'
+    definition: '출구 표지판 등의기구의 높이'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SelfTestFunction
+  definition: The type of self test function.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '自己診断機能'
+    definition: '自己診断機能のタイプ。'
+  - language: ko-KR
+    name: '자기 진단 기능'
+    definition: '자기 진단 기능의 유형'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_SelfTestType
+    enumerationValues:
+    - name: CENTRAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Central'
+        definition: ''
+      - language: en-EN
+        name: 'Central'
+        definition: ''
+      - language: es-ES
+        name: 'Central'
+        definition: ''
+      - language: fr-FR
+        name: 'Central'
+        definition: ''
+      - language: ja-JP
+        name: 'Central'
+        definition: ''
+      - language: ru-RU
+        name: 'Central'
+        definition: ''
+    - name: LOCAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Local'
+        definition: ''
+      - language: en-EN
+        name: 'Local'
+        definition: ''
+      - language: es-ES
+        name: 'Local'
+        definition: ''
+      - language: fr-FR
+        name: 'Local'
+        definition: ''
+      - language: ja-JP
+        name: 'Local'
+        definition: ''
+      - language: ru-RU
+        name: 'Local'
+        definition: ''
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'None'
+        definition: ''
+      - language: en-EN
+        name: 'None'
+        definition: ''
+      - language: es-ES
+        name: 'None'
+        definition: ''
+      - language: fr-FR
+        name: 'None'
+        definition: ''
+      - language: ja-JP
+        name: 'None'
+        definition: ''
+      - language: ru-RU
+        name: 'None'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: BackupSupplySystem
+  definition: The type of backup supply system.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '電源バックアップシステム'
+    definition: '電源バックアップシステムのタイプ。'
+  - language: ko-KR
+    name: '전원백업 시스템'
+    definition: '전원 백업 시스템 유형'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_BackupSupplySystemType
+    enumerationValues:
+    - name: LOCALBATTERY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Localbattery'
+        definition: ''
+      - language: en-EN
+        name: 'Localbattery'
+        definition: ''
+      - language: es-ES
+        name: 'Localbattery'
+        definition: ''
+      - language: fr-FR
+        name: 'Localbattery'
+        definition: ''
+      - language: ja-JP
+        name: 'Localbattery'
+        definition: ''
+      - language: ru-RU
+        name: 'Localbattery'
+        definition: ''
+    - name: CENTRALBATTERY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Centralbattery'
+        definition: ''
+      - language: en-EN
+        name: 'Centralbattery'
+        definition: ''
+      - language: es-ES
+        name: 'Centralbattery'
+        definition: ''
+      - language: fr-FR
+        name: 'Centralbattery'
+        definition: ''
+      - language: ja-JP
+        name: 'Centralbattery'
+        definition: ''
+      - language: ru-RU
+        name: 'Centralbattery'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: PictogramEscapeDirection
+  definition: The direction of escape pictogram.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '避難標識の向き'
+    definition: '避難標識の向き。'
+  - language: ko-KR
+    name: '피난 표지판 방향'
+    definition: '피난 표지판 방향'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_PictogramEscapeDirectionType
+    enumerationValues:
+    - name: RIGHTARROW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Rightarrow'
+        definition: ''
+      - language: en-EN
+        name: 'Rightarrow'
+        definition: ''
+      - language: es-ES
+        name: 'Rightarrow'
+        definition: ''
+      - language: fr-FR
+        name: 'Rightarrow'
+        definition: ''
+      - language: ja-JP
+        name: 'Rightarrow'
+        definition: ''
+      - language: ru-RU
+        name: 'Rightarrow'
+        definition: ''
+    - name: LEFTARROW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Leftarrow'
+        definition: ''
+      - language: en-EN
+        name: 'Leftarrow'
+        definition: ''
+      - language: es-ES
+        name: 'Leftarrow'
+        definition: ''
+      - language: fr-FR
+        name: 'Leftarrow'
+        definition: ''
+      - language: ja-JP
+        name: 'Leftarrow'
+        definition: ''
+      - language: ru-RU
+        name: 'Leftarrow'
+        definition: ''
+    - name: DOWNARROW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Downarrow'
+        definition: ''
+      - language: en-EN
+        name: 'Downarrow'
+        definition: ''
+      - language: es-ES
+        name: 'Downarrow'
+        definition: ''
+      - language: fr-FR
+        name: 'Downarrow'
+        definition: ''
+      - language: ja-JP
+        name: 'Downarrow'
+        definition: ''
+      - language: ru-RU
+        name: 'Downarrow'
+        definition: ''
+    - name: UPARROW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Uparrow'
+        definition: ''
+      - language: en-EN
+        name: 'Uparrow'
+        definition: ''
+      - language: es-ES
+        name: 'Uparrow'
+        definition: ''
+      - language: fr-FR
+        name: 'Uparrow'
+        definition: ''
+      - language: ja-JP
+        name: 'Uparrow'
+        definition: ''
+      - language: ru-RU
+        name: 'Uparrow'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Addressablility
+  definition: The type of addressability.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: 'アドレス指定能力'
+    definition: 'アドレス指定能力のタイプ。'
+  - language: ko-KR
+    name: '주소 지정 능력'
+    definition: '주소 지정 능력 타입'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_AddressabilityType
+    enumerationValues:
+    - name: IMPLEMENTED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Implemented'
+        definition: ''
+      - language: en-EN
+        name: 'Implemented'
+        definition: ''
+      - language: es-ES
+        name: 'Implemented'
+        definition: ''
+      - language: fr-FR
+        name: 'Implemented'
+        definition: ''
+      - language: ja-JP
+        name: 'Implemented'
+        definition: ''
+      - language: ru-RU
+        name: 'Implemented'
+        definition: ''
+    - name: UPGRADEABLETO
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Upgradeableto'
+        definition: ''
+      - language: en-EN
+        name: 'Upgradeableto'
+        definition: ''
+      - language: es-ES
+        name: 'Upgradeableto'
+        definition: ''
+      - language: fr-FR
+        name: 'Upgradeableto'
+        definition: ''
+      - language: ja-JP
+        name: 'Upgradeableto'
+        definition: ''
+      - language: ru-RU
+        name: 'Upgradeableto'
+        definition: ''
+    - name: NOTIMPLEMENTED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Notimplemented'
+        definition: ''
+      - language: en-EN
+        name: 'Notimplemented'
+        definition: ''
+      - language: es-ES
+        name: 'Notimplemented'
+        definition: ''
+      - language: fr-FR
+        name: 'Notimplemented'
+        definition: ''
+      - language: ja-JP
+        name: 'Notimplemented'
+        definition: ''
+      - language: ru-RU
+        name: 'Notimplemented'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

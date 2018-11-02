@@ -1,0 +1,591 @@
+﻿{
+  "name": "Pset_SystemFurnitureElementTypePanel",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcSharedFacilitiesElements"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "A set of specific properties for vertical panels that assembly workstations.. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Panel",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSystemFurnitureElementType",
+      "type": "IfcSystemFurnitureElementType/PANEL"
+    }
+  ],
+  "properties": [
+    {
+      "name": "HasOpening",
+      "definition": "indicates whether the panel has an opening (= TRUE) or not (= FALSE).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "57eebe0171844adc9db51ed2e7ad43f2",
+      "legacyGuidAsIfcGlobalId": "1Nxhu1SOHAt9sr7jBdhKFo",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FurniturePanelType",
+      "definition": "Available panel types from which that required may be selected.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "aa757afa46564ccc89f69f2500d478c3",
+      "legacyGuidAsIfcGlobalId": "2gTNhwHbPCp8dsdoK0r7Z3",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_FurniturePanelType",
+        "enumerationValues": [
+          {
+            "name": "ACOUSTICAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Acoustical",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Acoustical",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Acoustical",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Acoustical",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Acoustical",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Acoustical",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "GLAZED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Glazed",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Glazed",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Glazed",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Glazed",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Glazed",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Glazed",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "HORZ_SEG",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Horz_seg",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Horz_seg",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Horz_seg",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Horz_seg",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Horz_seg",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Horz_seg",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MONOLITHIC",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Monolithic",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Monolithic",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Monolithic",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Monolithic",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Monolithic",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Monolithic",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OPEN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Open",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Open",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Open",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Open",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Open",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Open",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "ENDS",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Ends",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Ends",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Ends",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Ends",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Ends",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Ends",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DOOR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Door",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Door",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Door",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Door",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Door",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Door",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SCREEN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Screen",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Screen",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Screen",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Screen",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Screen",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Screen",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalThickness",
+      "definition": "The nominal thickness of the panel.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "e31c6094edf74cc2bcda475bd50307a1",
+      "legacyGuidAsIfcGlobalId": "3Z762KxVTCmhpQHrlL0mUX",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

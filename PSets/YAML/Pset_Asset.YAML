@@ -1,0 +1,408 @@
+﻿name: 'Pset_Asset'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedFacilitiesElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'An asset is a uniquely identifiable element which has a financial value and against which maintenance actions are recorded.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAsset
+  type: IfcAsset
+properties:
+- name: AssetAccountingType
+  definition: Identifies the predefined types of risk from which the type required may be set.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 0a051757d5e9469d88b7c336252727e6
+  legacyGuidAsIfcGlobalId: 0A1HTNrUb6dOYtmpOb9oVc
+  localizations:
+  - language: ja-JP
+    name: '資産会計種別'
+    definition: '会計の定義済み種別。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_AssetAccountingType
+    enumerationValues:
+    - name: FIXED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Fixed'
+        definition: ''
+      - language: en-EN
+        name: 'Fixed'
+        definition: ''
+      - language: es-ES
+        name: 'Fixed'
+        definition: ''
+      - language: fr-FR
+        name: 'Fixed'
+        definition: ''
+      - language: ja-JP
+        name: 'Fixed'
+        definition: ''
+      - language: ru-RU
+        name: 'Fixed'
+        definition: ''
+    - name: NONFIXED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Nonfixed'
+        definition: ''
+      - language: en-EN
+        name: 'Nonfixed'
+        definition: ''
+      - language: es-ES
+        name: 'Nonfixed'
+        definition: ''
+      - language: fr-FR
+        name: 'Nonfixed'
+        definition: ''
+      - language: ja-JP
+        name: 'Nonfixed'
+        definition: ''
+      - language: ru-RU
+        name: 'Nonfixed'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AssetTaxType
+  definition: Identifies the predefined types of taxation group from which the type required may be set.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 604b1070fbd14a9098f680442487cf39
+  legacyGuidAsIfcGlobalId: 1WIn1m_z5Aa9ZsW4GaXyyv
+  localizations:
+  - language: ja-JP
+    name: '資産税種別'
+    definition: '税の定義済み種別。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_AssetTaxType
+    enumerationValues:
+    - name: CAPITALISED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Capitalised'
+        definition: ''
+      - language: en-EN
+        name: 'Capitalised'
+        definition: ''
+      - language: es-ES
+        name: 'Capitalised'
+        definition: ''
+      - language: fr-FR
+        name: 'Capitalised'
+        definition: ''
+      - language: ja-JP
+        name: 'Capitalised'
+        definition: ''
+      - language: ru-RU
+        name: 'Capitalised'
+        definition: ''
+    - name: EXPENSED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Expensed'
+        definition: ''
+      - language: en-EN
+        name: 'Expensed'
+        definition: ''
+      - language: es-ES
+        name: 'Expensed'
+        definition: ''
+      - language: fr-FR
+        name: 'Expensed'
+        definition: ''
+      - language: ja-JP
+        name: 'Expensed'
+        definition: ''
+      - language: ru-RU
+        name: 'Expensed'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AssetInsuranceType
+  definition: Identifies the predefined types of insurance rating from which the type required may be set.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 7cf22441d14f4a8b9869bcd5740996ed
+  legacyGuidAsIfcGlobalId: 1yyYH1qKzAYvXflDLq2PRj
+  localizations:
+  - language: ja-JP
+    name: '資産保険種別'
+    definition: '保険の定義済み種別。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_AssetInsuranceType
+    enumerationValues:
+    - name: PERSONAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Personal'
+        definition: ''
+      - language: en-EN
+        name: 'Personal'
+        definition: ''
+      - language: es-ES
+        name: 'Personal'
+        definition: ''
+      - language: fr-FR
+        name: 'Personal'
+        definition: ''
+      - language: ja-JP
+        name: 'Personal'
+        definition: ''
+      - language: ru-RU
+        name: 'Personal'
+        definition: ''
+    - name: REAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Real'
+        definition: ''
+      - language: en-EN
+        name: 'Real'
+        definition: ''
+      - language: es-ES
+        name: 'Real'
+        definition: ''
+      - language: fr-FR
+        name: 'Real'
+        definition: ''
+      - language: ja-JP
+        name: 'Real'
+        definition: ''
+      - language: ru-RU
+        name: 'Real'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

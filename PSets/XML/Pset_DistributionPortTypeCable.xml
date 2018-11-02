@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../XSD/PSD_IFC4.xsd">
+	<IfcVersion version="IFC4"/>
+	<Name>Pset_DistributionPortTypeCable</Name>
+	<Definition>Cable port occurrence attributes attached to an instance of IfcDistributionPort.</Definition>
+	<Applicability/>
+	<ApplicableClasses>
+		<ClassName>IfcDistributionPort/ELECTRICAL</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue>IfcDistributionPort/ELECTRICAL</ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1b51a5433f934fa7a5031c877bb4b429">
+			<Name>ConnectionType</Name>
+			<Definition>The physical port connection:
+
+ACPLUG: AC plug
+DCPLUG: DC plug
+CRIMP: bare wire</Definition>
+			<PropertyType>
+				<TypePropertyEnumeratedValue>
+					<EnumList name="PEnum_DistributionPortElectricalType">
+						<EnumItem>ACPLUG</EnumItem>
+						<EnumItem>DCPLUG</EnumItem>
+						<EnumItem>CRIMPCOAXIAL</EnumItem>
+						<EnumItem>RJ</EnumItem>
+						<EnumItem>RADIO</EnumItem>
+						<EnumItem>DIN</EnumItem>
+						<EnumItem>DSUB</EnumItem>
+						<EnumItem>DVI</EnumItem>
+						<EnumItem>EIAJ</EnumItem>
+						<EnumItem>HDMI</EnumItem>
+						<EnumItem>RCA</EnumItem>
+						<EnumItem>TRS</EnumItem>
+						<EnumItem>XLR</EnumItem>
+						<EnumItem>OTHER</EnumItem>
+						<EnumItem>NOTKNOWN</EnumItem>
+						<EnumItem>UNSET</EnumItem>
+					</EnumList>
+				</TypePropertyEnumeratedValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">接続タイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">物理ポート接続：
+
+- ACPLUG: AC プラグ
+- DCPLUG: DC プラグ
+- CRIMP: 裸線</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="4a16661be73843fb99eb498a99015880">
+			<Name>ConnectionSubtype</Name>
+			<Definition>The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:
+ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M; RADIO: IEEE802.11g, IEEE802.11n
+; RJ: 4P4C, 6P2C, 8P8C; DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P 
+DSub: DA15, DB25, DC37, DD50, DE9, DE15 
+EIAJ: RC5720
+HDMI: A, B, C
+TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
+			<PropertyType>
+				<TypePropertySingleValue>
+					<DataType type="IfcLabel"/>
+				</TypePropertySingleValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">接続サブタイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：
+
+- ACプラグ: A, B, C, D, E, F, EF, G, H, I, J, K, L, M</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="5a9b13be92d1458583634e056c138f30">
+			<Name>ConnectionGender</Name>
+			<Definition>The physical connection gender.</Definition>
+			<PropertyType>
+				<TypePropertyEnumeratedValue>
+					<EnumList name="PEnum_DistributionPortGender">
+						<EnumItem>MALE</EnumItem>
+						<EnumItem>FEMALE</EnumItem>
+						<EnumItem>OTHER</EnumItem>
+						<EnumItem>NOTKNOWN</EnumItem>
+						<EnumItem>UNSET</EnumItem>
+					</EnumList>
+				</TypePropertyEnumeratedValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">接続ジェンダー</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">形状的な接続ジェンダー（オス、メス、その他、未知、未設定）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="03d981504bcf4f748b31dee8065d5959">
+			<Name>ConductorFunction</Name>
+			<Definition>For ports distributing power, indicates function of the conductors to which the load is connected.</Definition>
+			<PropertyType>
+				<TypePropertyEnumeratedValue>
+					<EnumList name="PEnum_ConductorFunctionEnum">
+						<EnumItem>PHASE_L1</EnumItem>
+						<EnumItem>PHASE_L2</EnumItem>
+						<EnumItem>PHASE_L3</EnumItem>
+						<EnumItem>NEUTRAL</EnumItem>
+						<EnumItem>PROTECTIVEEARTH</EnumItem>
+						<EnumItem>PROTECTIVEEARTHNEUTRAL</EnumItem>
+						<EnumItem>OTHER</EnumItem>
+						<EnumItem>NOTKNOWN</EnumItem>
+						<EnumItem>UNSET</EnumItem>
+					</EnumList>
+				</TypePropertyEnumeratedValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電線種類</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">電気負荷と連結する電線種類。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="eaf80f92e6df4c29a18086e89bea20e9">
+			<Name>CurrentContent3rdHarmonic</Name>
+			<Definition>The ratio between the third harmonic current and the phase current.</Definition>
+			<PropertyType>
+				<TypePropertySingleValue>
+					<DataType type="IfcPositiveRatioMeasure"/>
+				</TypePropertySingleValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">第３高調波電流と相電流の比</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">第３高調波電流と相電流の比率。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="5207092197274e99917bfdcae2efea80">
+			<Name>Current</Name>
+			<Definition>The actual current and operable range.</Definition>
+			<PropertyType>
+				<TypePropertyBoundedValue>
+					<ValueRangeDef>
+						<LowerBoundValue/>
+						<UpperBoundValue/>
+					</ValueRangeDef>
+					<DataType type="IfcElectricCurrentMeasure"/>
+				</TypePropertyBoundedValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電流</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">実電流と動作可能範囲。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="87b7f6b294b5447ab7edaa0e2b690e7d">
+			<Name>Voltage</Name>
+			<Definition>The actual voltage and operable range.</Definition>
+			<PropertyType>
+				<TypePropertyBoundedValue>
+					<ValueRangeDef>
+						<LowerBoundValue/>
+						<UpperBoundValue/>
+					</ValueRangeDef>
+					<DataType type="IfcElectricVoltageMeasure"/>
+				</TypePropertyBoundedValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電圧</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">実電圧と動作可能範囲。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="437e2945ded040998d45ae3d9d9770db">
+			<Name>Power</Name>
+			<Definition>The actual power and operable range.</Definition>
+			<PropertyType>
+				<TypePropertyBoundedValue>
+					<ValueRangeDef>
+						<LowerBoundValue/>
+						<UpperBoundValue/>
+					</ValueRangeDef>
+					<DataType type="IfcPowerMeasure"/>
+				</TypePropertyBoundedValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電力</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">実電力と動作可能範囲。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1592daba2e144952a71949248bab50cc">
+			<Name>Protocols</Name>
+			<Definition>For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP</Definition>
+			<PropertyType>
+				<TypePropertyListValue>
+					<ListValue>
+						<DataType type="IfcIdentifier"/>
+					</ListValue>
+				</TypePropertyListValue>
+			</PropertyType>
+			<NameAliases>
+				<NameAlias lang="ja">プロトコル</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja">OSIのオープンシステム相互接続用基本プロトコル(ISO 7498)：
+1. 物理層; 2.データリンク層; 3. ネットワーク層; 4. トランスポート層; 5. セッション層; 6.プレゼンテーション層 ; 7. アプリケーション層. 
+例: 3:IP, 4:TCP, 5:HTTP</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">IfcDistributionPortオブジェクトに設定される電力ポートに関する属性情報。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+</PropertySetDef>

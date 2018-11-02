@@ -1,0 +1,455 @@
+﻿name: 'Pset_ProtectiveDeviceTrippingUnitTypeThermal'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Information on tripping units that are thermally tripped.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProtectiveDeviceTrippingUnitType
+  type: IfcProtectiveDeviceTrippingUnitType/THERMAL
+properties:
+- name: ThermalTrippingUnitType
+  definition: A list of the available types of thermal tripping unit  from which that required may be selected.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c818fd02548f4f74bc9bb8f80203aa18
+  legacyGuidAsIfcGlobalId: 386Fq2L8zFTBoRkFW20weO
+  localizations:
+  - language: ja-JP
+    name: 'サーマルトリップ装置タイプ'
+    definition: '選択を必要とするときのためのサーマルトリップ装置の選択リスト。'
+  - language: ko-KR
+    name: '열 트립 장치 유형'
+    definition: '선택을 필요로하는 경우를위한 열 트립 장치 선택 목록.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ThermalTrippingUnitType
+    enumerationValues:
+    - name: NH_FUSE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Nh_fuse'
+        definition: ''
+      - language: en-EN
+        name: 'Nh_fuse'
+        definition: ''
+      - language: es-ES
+        name: 'Nh_fuse'
+        definition: ''
+      - language: fr-FR
+        name: 'Nh_fuse'
+        definition: ''
+      - language: ja-JP
+        name: 'Nh_fuse'
+        definition: ''
+      - language: ru-RU
+        name: 'Nh_fuse'
+        definition: ''
+    - name: DIAZED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Diazed'
+        definition: ''
+      - language: en-EN
+        name: 'Diazed'
+        definition: ''
+      - language: es-ES
+        name: 'Diazed'
+        definition: ''
+      - language: fr-FR
+        name: 'Diazed'
+        definition: ''
+      - language: ja-JP
+        name: 'Diazed'
+        definition: ''
+      - language: ru-RU
+        name: 'Diazed'
+        definition: ''
+    - name: MINIZED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Minized'
+        definition: ''
+      - language: en-EN
+        name: 'Minized'
+        definition: ''
+      - language: es-ES
+        name: 'Minized'
+        definition: ''
+      - language: fr-FR
+        name: 'Minized'
+        definition: ''
+      - language: ja-JP
+        name: 'Minized'
+        definition: ''
+      - language: ru-RU
+        name: 'Minized'
+        definition: ''
+    - name: NEOZED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Neozed'
+        definition: ''
+      - language: en-EN
+        name: 'Neozed'
+        definition: ''
+      - language: es-ES
+        name: 'Neozed'
+        definition: ''
+      - language: fr-FR
+        name: 'Neozed'
+        definition: ''
+      - language: ja-JP
+        name: 'Neozed'
+        definition: ''
+      - language: ru-RU
+        name: 'Neozed'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: I1
+  definition: The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e0a6467f3fbe405ba0f1188ccbe9ec38
+  legacyGuidAsIfcGlobalId: 3WfaP$Fxv0Mw3n68pBwUmu
+  localizations:
+  - language: ja-JP
+    name: 'I1'
+    definition: 'サーマルの低試験電流限界値を [x In]、電流は I1　よりも低い値を示す。トリップ時間は関連する T2 の時間よりも長い。'
+  - language: ko-KR
+    name: 'I1'
+    definition: '열 낮은 시험 전류 한계를 [x In] 전류는 I1보다 낮은 값을 나타낸다. 트립 시간은 관련 T2 시간보다 길다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: I2
+  definition: The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c2741a653b114a45994ad5d48a76a622
+  legacyGuidAsIfcGlobalId: 32T1fbEn5AHPbArTIATgOY
+  localizations:
+  - language: ja-JP
+    name: 'I2'
+    definition: 'サーマルの高試験電流限界値を [x In], 電流は I2 よりも高い値を示す。トリップ時間は関連する T2 の時間よりも短い。'
+  - language: ko-KR
+    name: 'I2'
+    definition: '열 높은 시험 전류 한계를 [x In], 전류 I2보다 높은 값을 나타낸다. 트립 시간은 관련 T2 시간보다 짧다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: T2
+  definition: The (thermal) testing time in [s] associated with the testing currents I1 and I2.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a70222ed97334af69ae02520c630308f
+  legacyGuidAsIfcGlobalId: 2d0YBjbpDAzfhW9I36C32F
+  localizations:
+  - language: ja-JP
+    name: 'T2'
+    definition: 'サーマルの試験時間を [s] , 関連する試験電流を I1 と I2　とする。'
+  - language: ko-KR
+    name: 'T2'
+    definition: '열 시험 시간 [s] 관련 시험 전류를 I1과 I2로한다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: DefinedTemperature
+  definition: The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a595ba0f57cf4ded994013ef57e1edf9
+  legacyGuidAsIfcGlobalId: 2bbReFLyzDxPb04_zNuUtv
+  localizations:
+  - language: ja-JP
+    name: '設定温度'
+    definition: 'この保護装置が定める温度・電流/時間-カーブに関連する周囲温度'
+  - language: ko-KR
+    name: '설정 온도'
+    definition: '이 보호 장치가 정한 온도 · 전류 / 시간 - 곡선과 관련된 주위 온도'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TemperatureFactor
+  definition: The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: aba62b6f2fd7419fbf8ae3f6a8730ce6
+  legacyGuidAsIfcGlobalId: 2hfYjlBzT1dx_Au$QeSmpc
+  localizations:
+  - language: ja-JP
+    name: '温度係数'
+    definition: '熱の電流/時間を、定義済みの温度によって与えられる値と異なる場合に周囲温度に合わせるための補正係数（%/deg K で計測する）。'
+  - language: ko-KR
+    name: '온도 계수'
+    definition: '열 전류 / 시간 미리 정의된 온도에 의해 주어진 값과 다른 경우 주위 온도에 맞추기위한 보정 계수 (% / deg K로 측정한다).'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CurveDesignation
+  definition: The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: bda5e0dc08f7408fb60b5414a8be77ff
+  legacyGuidAsIfcGlobalId: 2zfU3S2FT0ZxOBL1IeldV$
+  localizations:
+  - language: ja-JP
+    name: '曲線指定'
+    definition: 'メーカーが提供する指定のトリッピングカーブ。MCBのために、指定はIEC 60898に準拠しなければならない。'
+  - language: ko-KR
+    name: '곡선 지정'
+    definition: '제조 업체가 제공하는 지정된 토릿삔구 곡선. MCB 위해, 지정은 IEC 60898을 준수해야한다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

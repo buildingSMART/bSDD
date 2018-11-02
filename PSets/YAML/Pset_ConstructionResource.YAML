@@ -1,0 +1,357 @@
+﻿name: 'Pset_ConstructionResource'
+ifcVersion:
+  version: 4.0.0.0
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Properties for tracking resource usage over time.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcConstructionResource
+  type: IfcConstructionResource
+properties:
+- name: ScheduleWork
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3kLci0qSmHuO00025QrE$V
+  legacyGuid: ee566b00d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3kLci0qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '予定作業時間'
+    definition: '資源配分のための予定された作業。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ActualWork
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3nKLk0qSmHuO00025QrE$V
+  legacyGuid: f1515b80d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3nKLk0qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '実績作業時間'
+    definition: '資源配分のための実績の作業。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RemainingWork
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3pixM0qSmHuO00025QrE$V
+  legacyGuid: f3b3b580d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3pixM0qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '残存作業時間'
+    definition: '資源配分のための残存している作業。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ScheduleCost
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3shgO0qSmHuO00025QrE$V
+  legacyGuid: f6aea600d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3shgO0qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '予定コスト'
+    definition: '資源配分のための予定されているコスト。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ActualCost
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3v4G00qSmHuO00025QrE$V
+  legacyGuid: f9110000d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3v4G00qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '実績コスト'
+    definition: '資源配分のための実績のコスト。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RemainingCost
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3xSre0qSmHuO00025QrE$V
+  legacyGuid: fb735a00d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3xSre0qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '残存コスト'
+    definition: '資源配分のための残存しているコスト。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ScheduleCompletion
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 3_Rag0qSmHuO00025QrE$V
+  legacyGuid: fe6e4a80d1cc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3_Rag0qSmHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '予定完了率'
+    definition: '予定された完了率。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ActualCompletion
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: 00qAI0qSqHuO00025QrE$V
+  legacyGuid: 00d0a480d1cd11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 00qAI0qSqHuO00025QrE$V
+  localizations:
+  - language: ja-JP
+    name: '実績完了率'
+    definition: '実績の完了率。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

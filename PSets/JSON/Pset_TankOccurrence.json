@@ -1,0 +1,403 @@
+﻿{
+  "name": "Pset_TankOccurrence",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcHvacDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Properties that relate to a tank. Note that a partial tank may be considered as a compartment within a compartmentalized tank.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcTank",
+      "type": "IfcTank"
+    }
+  ],
+  "properties": [
+    {
+      "name": "TankComposition",
+      "definition": "Defines the level of element composition where.COMPLEX: A set of elementary units aggregated together to fulfill the overall  required purpose.ELEMENT: A single elementary unit that may exist of itself or as an aggregation of partial units..PARTIAL: A partial elementary unit.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "水槽構成",
+          "definition": "定義　構成要素のレベル　　　　　　　　　　　　　　　　　　　　　　　複合：A　全般的に要求された目的を達成するために集められた基本ユニットのセット　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　要素：A それ自身あるいは部分的ユニットの集まりとしてある単一基本ユニット　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　部分的：A 部分的な基本単位"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_TankComposition",
+        "enumerationValues": [
+          {
+            "name": "COMPLEX",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Complex",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Complex",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Complex",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Complex",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Complex",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Complex",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "ELEMENT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Element",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Element",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Element",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Element",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Element",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Element",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PARTIAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Partial",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Partial",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Partial",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Partial",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Partial",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Partial",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasLadder",
+      "definition": "Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE.Note: No indication is given of the type of ladder (gooseneck etc.)",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "梯子有り",
+          "definition": "上部を点検するための梯子(TRUEに設定）をタンクに備えているかどうかの表示　もし、梯子が備え付けられていなければ値はFALSEと設定される。　　注：表示がない場合は梯子のタイプが与えられる（グースネック他）"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasVisualIndicator",
+      "definition": "Indication of whether the tank is provided with a visual indicator (set TRUE) that shows the water level in the tank. If no visual indicator is provided then value is set FALSE.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "目視型表示器有り",
+          "definition": "タンクの水位を示す目視型表示器（TRUEに設定)が備えつけられているかどうかの表示。もし目視型表示器が備えつけられていなければ、値はFALSEと設定される。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}
