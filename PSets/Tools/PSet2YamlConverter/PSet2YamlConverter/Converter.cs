@@ -62,8 +62,8 @@ namespace PSet2YamlConverter
                     Console.WriteLine($"Guid:        {bsddPSet.Guid}");
                     Console.WriteLine($"Status:      {bsddPSet.Status}");
                     Console.WriteLine($"VersionDate: {bsddPSet.VersionDate}");
+                    Console.WriteLine($"Web:         http://bsdd.buildingsmart.org/#concept/browse/{bsddPSet.Guid}");               
                 }
-
                     
                 if (!propertySetVersionList.Contains(pSet.IfcVersion.version))
                     propertySetVersionList += pSet.IfcVersion.version + ",";
@@ -204,7 +204,6 @@ namespace PSet2YamlConverter
                     Console.WriteLine($"      ERROR: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is not resolved by http://bsdd.buildingsmart.org");
                     Console.ResetColor();
 
-
                     IfdConceptList ifdConceptList = _bsdd.SearchProperties(pset.Name + "." + property.name);
                     if (ifdConceptList == null)
                     {
@@ -213,15 +212,16 @@ namespace PSet2YamlConverter
                     else
                     {
                         IfdConcept bsddProperty = ifdConceptList.IfdConcept.FirstOrDefault();
-                        Console.WriteLine($"      Loaded Property from bSDD");
-                        Console.WriteLine($"      Guid:        {bsddProperty.Guid}");
-                        Console.WriteLine($"      Status:      {bsddProperty.Status}");
-                        Console.WriteLine($"      VersionDate: {bsddProperty.VersionDate}");
+                        Console.WriteLine($"      Loaded Property from bSDD (1 out of {ifdConceptList.IfdConcept.Count})");
+                        Console.WriteLine($"         Guid:           {bsddProperty.Guid}");
+                        Console.WriteLine($"         Status:         {bsddProperty.Status}");
+                        Console.WriteLine($"         VersionDate:    {bsddProperty.VersionDate}");
+                        Console.WriteLine($"         Web:            http://bsdd.buildingsmart.org/#concept/browse/{bsddProperty.Guid}");
                         foreach (var item in bsddProperty.FullNames)
                         {
                             int l = item.Language.LanguageCode.Length;
                             string tab = new string(' ', 10 - l);
-                            Console.WriteLine($"      Name {item.Language.LanguageCode}:{tab}{item.Name}", Encoding.UTF8);
+                            Console.WriteLine($"         Name {item.Language.LanguageCode}:{tab}{item.Name}", Encoding.UTF8);
                         }
                         Console.WriteLine($"      The GUID in the PSet file shall be changed {property.legacyGuidAsIfcGlobalId} => {bsddProperty.Guid}");
                     }
