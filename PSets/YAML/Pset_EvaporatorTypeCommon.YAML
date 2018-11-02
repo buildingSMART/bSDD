@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcHvacDomain
-ifdGuid: 00GmY0qUCHuO00025QrE$V
-legacyGuid: ''
 definition: 'Evaporator type common attributes.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00GmY0qUCHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00GmY0qUCHuO00025QrE$V
+  ifdGuid: 00GmY0qUCHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 05e5C0qUCHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/05e5C0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05e5C0qUCHuO00025QrE$V
+    ifdGuid: 05e5C0qUCHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '参照記号'
@@ -68,9 +75,13 @@ properties:
     languageOfCreator: en-EN
 - name: Status
   definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0CBig0qUCHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0CBig0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CBig0qUCHuO00025QrE$V
+    ifdGuid: 0CBig0qUCHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '状態'
@@ -237,10 +248,14 @@ properties:
     languageOfCreator: en-EN
 - name: EvaporatorMediumType
   definition: 'ColdLiquid: Evaporator is using liquid type of fluid to exchange heat with refrigerant.ColdAir: Evaporator is using air to exchange heat with refrigerant.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0RhXE0qUCHuO00025QrE$V
-  legacyGuid: 02fd7a8b09fe4709a1e1016b3a974a6b
-  legacyGuidAsIfcGlobalId: 02$NgB2Vv72Q7X0Miwbqfh
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0RhXE0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RhXE0qUCHuO00025QrE$V
+    ifdGuid: 0RhXE0qUCHuO00025QrE$V
+    legacyGuid: 02fd7a8b09fe4709a1e1016b3a974a6b
+    legacyGuidAsIfcGlobalId: 02$NgB2Vv72Q7X0Miwbqfh
   localizations:
   - language: ja-JP
     name: '蒸発媒体'
@@ -363,10 +378,14 @@ properties:
     languageOfCreator: en-EN
 - name: EvaporatorCoolant
   definition: The fluid used for the coolant in the evaporator.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0eomA0qUCHuO00025QrE$V
-  legacyGuid: 5d090d7619944c308e88f8417a0518d5
-  legacyGuidAsIfcGlobalId: 1T2Grs6PHCC8w8_45w1HZL
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0eomA0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0eomA0qUCHuO00025QrE$V
+    ifdGuid: 0eomA0qUCHuO00025QrE$V
+    legacyGuid: 5d090d7619944c308e88f8417a0518d5
+    legacyGuidAsIfcGlobalId: 1T2Grs6PHCC8w8_45w1HZL
   localizations:
   - language: ja-JP
     name: '蒸発器冷却剤'
@@ -511,10 +530,14 @@ properties:
     languageOfCreator: en-EN
 - name: RefrigerantClass
   definition: 'Refrigerant class used by the compressor.CFC: Chlorofluorocarbons.HCFC: Hydrochlorofluorocarbons.HFC: Hydrofluorocarbons.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0vUtY0qUCHuO00025QrE$V
-  legacyGuid: 79da8a981fe3493a8c616d83773d6f82
-  legacyGuidAsIfcGlobalId: 1vsegO7_D9EenXRODtFM_2
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0vUtY0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0vUtY0qUCHuO00025QrE$V
+    ifdGuid: 0vUtY0qUCHuO00025QrE$V
+    legacyGuid: 79da8a981fe3493a8c616d83773d6f82
+    legacyGuidAsIfcGlobalId: 1vsegO7_D9EenXRODtFM_2
   localizations:
   - language: ja-JP
     name: '冷媒分類'
@@ -747,10 +770,14 @@ properties:
     languageOfCreator: en-EN
 - name: RefrigerantType
   definition: Refrigerant material.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1D9jy0qUCHuO00025QrE$V
-  legacyGuid: e3ccd9cee1b641908fa021d1459f9980
-  legacyGuidAsIfcGlobalId: 3ZpDdEuRP1a8_W8T55dvc0
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1D9jy0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1D9jy0qUCHuO00025QrE$V
+    ifdGuid: 1D9jy0qUCHuO00025QrE$V
+    legacyGuid: e3ccd9cee1b641908fa021d1459f9980
+    legacyGuidAsIfcGlobalId: 3ZpDdEuRP1a8_W8T55dvc0
   localizations:
   - language: ja-JP
     name: '冷媒種類'
@@ -787,10 +814,14 @@ properties:
     languageOfCreator: en-EN
 - name: ExternalSurfaceArea
   definition: External surface area (both primary and secondary area).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1G8S_0qUCHuO00025QrE$V
-  legacyGuid: ec9153858d0747928f10cf9a49504be6
-  legacyGuidAsIfcGlobalId: 3iaLE5ZGT7aeyGpvf9K4lc
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1G8S_0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1G8S_0qUCHuO00025QrE$V
+    ifdGuid: 1G8S_0qUCHuO00025QrE$V
+    legacyGuid: ec9153858d0747928f10cf9a49504be6
+    legacyGuidAsIfcGlobalId: 3iaLE5ZGT7aeyGpvf9K4lc
   localizations:
   - language: ja-JP
     name: '外表面積'
@@ -826,10 +857,14 @@ properties:
     languageOfCreator: en-EN
 - name: InternalSurfaceArea
   definition: Internal surface area.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Mi4S0qUCHuO00025QrE$V
-  legacyGuid: 5bb7baf416854f59bb962981f5dcc72c
-  legacyGuidAsIfcGlobalId: 1Rjxhq5eLFMRkMAO7rtCSi
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Mi4S0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Mi4S0qUCHuO00025QrE$V
+    ifdGuid: 1Mi4S0qUCHuO00025QrE$V
+    legacyGuid: 5bb7baf416854f59bb962981f5dcc72c
+    legacyGuidAsIfcGlobalId: 1Rjxhq5eLFMRkMAO7rtCSi
   localizations:
   - language: ja-JP
     name: '内表面積'
@@ -865,10 +900,14 @@ properties:
     languageOfCreator: en-EN
 - name: InternalRefrigerantVolume
   definition: Internal volume of evaporator (refrigerant side).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1S3P60qUCHuO00025QrE$V
-  legacyGuid: d1e1a03284fe49458fcb6f03b4a84f02
-  legacyGuidAsIfcGlobalId: 3HuQ0oXFv9HO$BRmEqg4y2
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1S3P60qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1S3P60qUCHuO00025QrE$V
+    ifdGuid: 1S3P60qUCHuO00025QrE$V
+    legacyGuid: d1e1a03284fe49458fcb6f03b4a84f02
+    legacyGuidAsIfcGlobalId: 3HuQ0oXFv9HO$BRmEqg4y2
   localizations:
   - language: ja-JP
     name: '内部冷媒容積'
@@ -904,10 +943,14 @@ properties:
     languageOfCreator: en-EN
 - name: InternalWaterVolume
   definition: Internal volume of evaporator (water side).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1XQjm0qUCHuO00025QrE$V
-  legacyGuid: c1cdb50651134ef6a806b07583114bd2
-  legacyGuidAsIfcGlobalId: 31pRK6KHDEzgW6i7M34KlI
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XQjm0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XQjm0qUCHuO00025QrE$V
+    ifdGuid: 1XQjm0qUCHuO00025QrE$V
+    legacyGuid: c1cdb50651134ef6a806b07583114bd2
+    legacyGuidAsIfcGlobalId: 31pRK6KHDEzgW6i7M34KlI
   localizations:
   - language: ja-JP
     name: '内部水容積'
@@ -943,10 +986,14 @@ properties:
     languageOfCreator: en-EN
 - name: NominalHeatTransferArea
   definition: Nominal heat transfer surface area associated with nominal overall heat transfer coefficient.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1dOBq0qUCHuO00025QrE$V
-  legacyGuid: c6e5a7e3bc234b8cb10d4f3cfa94ceac
-  legacyGuidAsIfcGlobalId: 36vQVZl2DBZB4DJppwbCwi
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1dOBq0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dOBq0qUCHuO00025QrE$V
+    ifdGuid: 1dOBq0qUCHuO00025QrE$V
+    legacyGuid: c6e5a7e3bc234b8cb10d4f3cfa94ceac
+    legacyGuidAsIfcGlobalId: 36vQVZl2DBZB4DJppwbCwi
   localizations:
   - language: ja-JP
     name: '設計熱交換面積'
@@ -982,10 +1029,14 @@ properties:
     languageOfCreator: en-EN
 - name: NominalHeatTransferCoefficient
   definition: Nominal overall heat transfer coefficient associated with nominal heat transfer area.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1jLfu0qUCHuO00025QrE$V
-  legacyGuid: 0dee313fe0df470b81e16c612b44296e
-  legacyGuidAsIfcGlobalId: 0DxZ4$uDz72u7XR64hH2bk
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1jLfu0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jLfu0qUCHuO00025QrE$V
+    ifdGuid: 1jLfu0qUCHuO00025QrE$V
+    legacyGuid: 0dee313fe0df470b81e16c612b44296e
+    legacyGuidAsIfcGlobalId: 0DxZ4$uDz72u7XR64hH2bk
   localizations:
   - language: ja-JP
     name: '設計熱交換係数'

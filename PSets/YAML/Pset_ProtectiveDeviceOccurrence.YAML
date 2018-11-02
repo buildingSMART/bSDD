@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 2Enzn3X1rFDP_2300j3ncG
-legacyGuid: ''
 definition: 'Properties that are applied to an occurrence of a protective device.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Enzn3X1rFDP_2300j3ncG
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Enzn3X1rFDP_2300j3ncG
+  ifdGuid: 2Enzn3X1rFDP_2300j3ncG
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: PoleUsage
   definition: Pole usage.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 01jtMQQzrBYQn9FaxWGuLI
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01jtMQQzrBYQn9FaxWGuLI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01jtMQQzrBYQn9FaxWGuLI
+    ifdGuid: 01jtMQQzrBYQn9FaxWGuLI
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -243,9 +250,13 @@ properties:
     languageOfCreator: en-EN
 - name: LongTimeFunction
   definition: Applying long time functionA flag indicating that the long time function (i.e. the thermal tripping) of the device is used. The value should be set to TRUE for all devices except those that allows the Long time function of the device not to be used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1BaXJ5q$v22vulz2WfcIHF
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1BaXJ5q$v22vulz2WfcIHF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BaXJ5q$v22vulz2WfcIHF
+    ifdGuid: 1BaXJ5q$v22vulz2WfcIHF
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -281,9 +292,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortTimeFunction
   definition: Applying short time function A flag indicating that the short time function of the device is used. The value should be set to FALSE for devices not having a short time function, or if the short time function is not selected to be used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2oOWuNfqXDx8_DtPmlGsgW
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2oOWuNfqXDx8_DtPmlGsgW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2oOWuNfqXDx8_DtPmlGsgW
+    ifdGuid: 2oOWuNfqXDx8_DtPmlGsgW
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -319,9 +334,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortTimei2tFunction
   definition: Applying short time i2t function. A flag indicating that the I2t short time function of the device is used. The value should be set to TRUE only if the I2t function  is explicitly selected for the device.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0uFfGhb59E786CdtQIpb0c
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0uFfGhb59E786CdtQIpb0c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uFfGhb59E786CdtQIpb0c
+    ifdGuid: 0uFfGhb59E786CdtQIpb0c
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -357,9 +376,13 @@ properties:
     languageOfCreator: en-EN
 - name: GroundFaultFunction
   definition: Applying ground fault function. A flag indicating that the ground fault function of the device is used. The value should be set to FALSE for devices not having a ground fault function, or if the ground fault function is not selected to be used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0c$BMHJDT4zRLNwJLWg_79
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0c$BMHJDT4zRLNwJLWg_79
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0c$BMHJDT4zRLNwJLWg_79
+    ifdGuid: 0c$BMHJDT4zRLNwJLWg_79
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -395,9 +418,13 @@ properties:
     languageOfCreator: en-EN
 - name: GroundFaulti2tFunction
   definition: Applying ground fault i2t function. A flag indicating that the I2t ground fault function of the device is used. The value should be set to TRUE only if the I2t function is explicitly selected for the device.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0R5m3XVKHE6wAwmTIhvFw$
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0R5m3XVKHE6wAwmTIhvFw$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0R5m3XVKHE6wAwmTIhvFw$
+    ifdGuid: 0R5m3XVKHE6wAwmTIhvFw$
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -433,9 +460,13 @@ properties:
     languageOfCreator: en-EN
 - name: LongTimeCurrentSetValue
   definition: Long time current set value. The set value of the long time tripping current if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1sniGNXi16lvR$CnA1f_H4
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1sniGNXi16lvR$CnA1f_H4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sniGNXi16lvR$CnA1f_H4
+    ifdGuid: 1sniGNXi16lvR$CnA1f_H4
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -471,9 +502,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortTimeCurrentSetValue
   definition: Short time current set value. The set value of the long time tripping current if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Vc2Rbk654ygjJae_8TWCD
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Vc2Rbk654ygjJae_8TWCD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Vc2Rbk654ygjJae_8TWCD
+    ifdGuid: 1Vc2Rbk654ygjJae_8TWCD
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -509,9 +544,13 @@ properties:
     languageOfCreator: en-EN
 - name: InstantaneousCurrentSetValue
   definition: Instantaneous current set value. The set value of the instantaneous tripping current if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2CnGkuCGT28ee_bIaab9OF
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2CnGkuCGT28ee_bIaab9OF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CnGkuCGT28ee_bIaab9OF
+    ifdGuid: 2CnGkuCGT28ee_bIaab9OF
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -547,9 +586,13 @@ properties:
     languageOfCreator: en-EN
 - name: GroundFaultCurrentSetValue
   definition: Ground fault current set value. The set value of the ground tripping current if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0XLools0fEYhaAhq59actK
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XLools0fEYhaAhq59actK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XLools0fEYhaAhq59actK
+    ifdGuid: 0XLools0fEYhaAhq59actK
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -585,9 +628,13 @@ properties:
     languageOfCreator: en-EN
 - name: LongTimeDelay
   definition: Long time delay. The set value of the long time time-delay if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Urg7JDBLCK8s4cOxG6jHZ
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Urg7JDBLCK8s4cOxG6jHZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Urg7JDBLCK8s4cOxG6jHZ
+    ifdGuid: 1Urg7JDBLCK8s4cOxG6jHZ
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -623,9 +670,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortTimeTrippingTime
   definition: Short time tripping time. The set value of the short time tripping time if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1qwcI$tpHFwh8ABUT1M6mz
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1qwcI$tpHFwh8ABUT1M6mz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qwcI$tpHFwh8ABUT1M6mz
+    ifdGuid: 1qwcI$tpHFwh8ABUT1M6mz
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -661,9 +712,13 @@ properties:
     languageOfCreator: en-EN
 - name: InstantaneousTrippingTime
   definition: Instantaneous tripping time. The set value of the instantaneous tripping time if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1DLgb0LdL4S9H249DjFKhh
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DLgb0LdL4S9H249DjFKhh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DLgb0LdL4S9H249DjFKhh
+    ifdGuid: 1DLgb0LdL4S9H249DjFKhh
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -699,9 +754,13 @@ properties:
     languageOfCreator: en-EN
 - name: GroundFaultTrippingTime
   definition: Ground fault tripping time. The set value of the ground fault tripping current if adjustable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3Sjjxvqif8cgqMTDk1LcJJ
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Sjjxvqif8cgqMTDk1LcJJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Sjjxvqif8cgqMTDk1LcJJ
+    ifdGuid: 3Sjjxvqif8cgqMTDk1LcJJ
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''

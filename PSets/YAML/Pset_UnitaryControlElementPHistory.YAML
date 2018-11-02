@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: 0B5P60qXCHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties for history and operating schedules of thermostats.  HISTORY: Added in IFC4.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0B5P60qXCHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0B5P60qXCHuO00025QrE$V
+  ifdGuid: 0B5P60qXCHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: Temperature
   definition: Indicates the current measured temperature.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0GSjm0qXCHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GSjm0qXCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GSjm0qXCHuO00025QrE$V
+    ifdGuid: 0GSjm0qXCHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -70,9 +77,13 @@ properties:
     languageOfCreator: en-EN
 - name: Mode
   definition: Indicates operation mode corresponding to Pset_UnitaryControlTypeCommon.Mode.  For example, 'HEAT', 'COOL', 'AUTO'.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0JRSo0qXCHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0JRSo0qXCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JRSo0qXCHuO00025QrE$V
+    ifdGuid: 0JRSo0qXCHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -110,9 +121,13 @@ properties:
     languageOfCreator: en-EN
 - name: Fan
   definition: Indicates fan operation where True is on, False is off, and Unknown is automatic.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0N0LE0qXCHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0N0LE0qXCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0N0LE0qXCHuO00025QrE$V
+    ifdGuid: 0N0LE0qXCHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -150,9 +165,13 @@ properties:
     languageOfCreator: en-EN
 - name: SetPoint
   definition: Indicates the temperature setpoint.  For thermostats with setbacks or separate high and low setpoints, then the time series may contain a pair of values at each entry where the first value is the heating setpoint (low) and the second value is the cooling setpoint (high).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0QbDg0qXCHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QbDg0qXCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QbDg0qXCHuO00025QrE$V
+    ifdGuid: 0QbDg0qXCHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcProductExtension
-ifdGuid: 0yroe0qWmHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties related to the comfort requirements for thermal and other  thermal related performance properties of spaces that apply to the occurrences of IfcSpace, IfcSpatialZone or IfcZone. It can also be used to capture requirements for IfcSpaceType''s. This includes the required design temperature, humidity, ventilation, and air conditioning.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0yroe0qWmHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yroe0qWmHuO00025QrE$V
+  ifdGuid: 0yroe0qWmHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -36,9 +39,13 @@ applicableIfcClasses:
 properties:
 - name: SpaceTemperature
   definition: Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur range (Min-Max) is available.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 12pGi0qWmHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/12pGi0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12pGi0qWmHuO00025QrE$V
+    ifdGuid: 12pGi0qWmHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Raumtemperatur'
@@ -74,10 +81,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceTemperatureMax
   definition: Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 18mkm0qWmHuO00025QrE$V
-  legacyGuid: 8fcb90b5115944cc93656f1102b798d1
-  legacyGuidAsIfcGlobalId: 2Fov2r4Lb4p9DbRn42jvZH
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/18mkm0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18mkm0qWmHuO00025QrE$V
+    ifdGuid: 18mkm0qWmHuO00025QrE$V
+    legacyGuid: 8fcb90b5115944cc93656f1102b798d1
+    legacyGuidAsIfcGlobalId: 2Fov2r4Lb4p9DbRn42jvZH
   localizations:
   - language: de-DE
     name: 'Raumtemperatur Maximal'
@@ -116,10 +127,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceTemperatureMin
   definition: Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1EkCq0qWmHuO00025QrE$V
-  legacyGuid: a08daaa104724b528799f1a9b0bac944
-  legacyGuidAsIfcGlobalId: 2WZQgX179BKeUPyQcmkib4
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1EkCq0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1EkCq0qWmHuO00025QrE$V
+    ifdGuid: 1EkCq0qWmHuO00025QrE$V
+    legacyGuid: a08daaa104724b528799f1a9b0bac944
+    legacyGuidAsIfcGlobalId: 2WZQgX179BKeUPyQcmkib4
   localizations:
   - language: de-DE
     name: 'Raumtemperatur Minimal'
@@ -158,10 +173,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceTemperatureSummerMax
   definition: Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1K5XU0qWmHuO00025QrE$V
-  legacyGuid: 4d4df59ed9b946d0b5e072d1bafda6e0
-  legacyGuidAsIfcGlobalId: 1DJVMUsRb6qBNWSj6w$QRW
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1K5XU0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1K5XU0qWmHuO00025QrE$V
+    ifdGuid: 1K5XU0qWmHuO00025QrE$V
+    legacyGuid: 4d4df59ed9b946d0b5e072d1bafda6e0
+    legacyGuidAsIfcGlobalId: 1DJVMUsRb6qBNWSj6w$QRW
   localizations:
   - language: de-DE
     name: 'Raumtemperatur Kühlung Maximal'
@@ -200,10 +219,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceTemperatureSummerMin
   definition: Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Q2$Y0qWmHuO00025QrE$V
-  legacyGuid: 6fc35a6c0ac84ae288aaca3581e00570
-  legacyGuidAsIfcGlobalId: 1lmrfi2iXAueYgoZM1u0Lm
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Q2$Y0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Q2$Y0qWmHuO00025QrE$V
+    ifdGuid: 1Q2$Y0qWmHuO00025QrE$V
+    legacyGuid: 6fc35a6c0ac84ae288aaca3581e00570
+    legacyGuidAsIfcGlobalId: 1lmrfi2iXAueYgoZM1u0Lm
   localizations:
   - language: de-DE
     name: 'Raumtemperatur Kühlung Minimal'
@@ -242,10 +265,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceTemperatureWinterMax
   definition: Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1W0Tc0qWmHuO00025QrE$V
-  legacyGuid: 1a2f9d27322b4109b491d0ec564c0d9f
-  legacyGuidAsIfcGlobalId: 0QBvqdCYj12RIHqEnMJ0sV
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1W0Tc0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1W0Tc0qWmHuO00025QrE$V
+    ifdGuid: 1W0Tc0qWmHuO00025QrE$V
+    legacyGuid: 1a2f9d27322b4109b491d0ec564c0d9f
+    legacyGuidAsIfcGlobalId: 0QBvqdCYj12RIHqEnMJ0sV
   localizations:
   - language: de-DE
     name: 'Raumtemperatur Heizung Maximal'
@@ -284,10 +311,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceTemperatureWinterMin
   definition: Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1bzxg0qWmHuO00025QrE$V
-  legacyGuid: 19208adab7e94576960975e96cc711ff
-  legacyGuidAsIfcGlobalId: 0P88hQj_b5TfO9TUbinn7$
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1bzxg0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bzxg0qWmHuO00025QrE$V
+    ifdGuid: 1bzxg0qWmHuO00025QrE$V
+    legacyGuid: 19208adab7e94576960975e96cc711ff
+    legacyGuidAsIfcGlobalId: 0P88hQj_b5TfO9TUbinn7$
   localizations:
   - language: de-DE
     name: 'Raumtemperatur Heizung Minimal'
@@ -326,10 +357,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceHumidity
   definition: Humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period. Provide this property, if no humidity range (Min-Max) is available.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1hxPk0qWmHuO00025QrE$V
-  legacyGuid: 86bf9d8cbe3e474d9355bf4d415f0393
-  legacyGuidAsIfcGlobalId: 26lvsClZv7JPDLlqr1NmEJ
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hxPk0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hxPk0qWmHuO00025QrE$V
+    ifdGuid: 1hxPk0qWmHuO00025QrE$V
+    legacyGuid: 86bf9d8cbe3e474d9355bf4d415f0393
+    legacyGuidAsIfcGlobalId: 26lvsClZv7JPDLlqr1NmEJ
   localizations:
   - language: de-DE
     name: 'Luftfeuchtigkeit'
@@ -365,9 +400,13 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceHumidityMax
   definition: Maximal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1mia_0qWmHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1mia_0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mia_0qWmHuO00025QrE$V
+    ifdGuid: 1mia_0qWmHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Luftfeuchtigkeit Maximal'
@@ -406,9 +445,13 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceHumidityMin
   definition: Minimal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1sg320qWmHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1sg320qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sg320qWmHuO00025QrE$V
+    ifdGuid: 1sg320qWmHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Luftfeuchtigkeit Minimal'
@@ -444,10 +487,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceHumiditySummer
   definition: Humidity of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 1274d9e10de84f87baa8f1474792fb32
-  legacyGuidAsIfcGlobalId: 0ITDdX3UXFXxgeyKT7alio
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 1274d9e10de84f87baa8f1474792fb32
+    legacyGuidAsIfcGlobalId: 0ITDdX3UXFXxgeyKT7alio
   localizations:
   - language: de-DE
     name: 'Luftfeuchtigkeit Kühlung'
@@ -486,10 +533,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpaceHumidityWinter
   definition: Humidity of the space or zone for the cold (winter) period that is required from user/designer view point and provided as requirement for heating.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: adccda58998e46e9a19ab4bdce529b27
-  legacyGuidAsIfcGlobalId: 2jpDfOcOv6wQ6QjBtEKfid
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: adccda58998e46e9a19ab4bdce529b27
+    legacyGuidAsIfcGlobalId: 2jpDfOcOv6wQ6QjBtEKfid
   localizations:
   - language: de-DE
     name: 'Luftfeuchtigkeit Heizung'
@@ -528,10 +579,14 @@ properties:
     languageOfCreator: en-EN
 - name: DiscontinuedHeating
   definition: Indication whether discontinued heating is required/desirable from user/designer view point. (TRUE) if yes, (FALSE) otherwise.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 9d86fcf5768343aea87331cd3d160d8f
-  legacyGuidAsIfcGlobalId: 2TXlprTeD3hgXpCSqz5WsF
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 9d86fcf5768343aea87331cd3d160d8f
+    legacyGuidAsIfcGlobalId: 2TXlprTeD3hgXpCSqz5WsF
   localizations:
   - language: de-DE
     name: 'Diskontinuierliche Heizung'
@@ -570,10 +625,14 @@ properties:
     languageOfCreator: en-EN
 - name: NaturalVentilation
   definition: Indication whether the space is required to have natural ventilation (TRUE) or mechanical ventilation (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 7be3687e067a43849b1865e1e5928d0c
-  legacyGuidAsIfcGlobalId: 1xusX_1df3X9iOPU7baeqC
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 7be3687e067a43849b1865e1e5928d0c
+    legacyGuidAsIfcGlobalId: 1xusX_1df3X9iOPU7baeqC
   localizations:
   - language: de-DE
     name: 'Natürliche Lüftung'
@@ -612,10 +671,14 @@ properties:
     languageOfCreator: en-EN
 - name: NaturalVentilationRate
   definition: Indication of the requirement of a particular natural air ventilation rate, given in air changes per hour.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 23b815796e764bc8b92834cac477d35e
-  legacyGuidAsIfcGlobalId: 0Zk1LvRdPBoBaeDCh4TzDU
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 23b815796e764bc8b92834cac477d35e
+    legacyGuidAsIfcGlobalId: 0Zk1LvRdPBoBaeDCh4TzDU
   localizations:
   - language: de-DE
     name: 'Natürliche Luftwechselzahl'
@@ -654,10 +717,14 @@ properties:
     languageOfCreator: en-EN
 - name: MechanicalVentilationRate
   definition: Indication of the requirement of a particular mechanical air ventilation rate, given in air changes per hour.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 9806e9df0f044fdfaaf19676d936fc6c
-  legacyGuidAsIfcGlobalId: 2O1kdV3mHFtwhnbdRPDlni
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 9806e9df0f044fdfaaf19676d936fc6c
+    legacyGuidAsIfcGlobalId: 2O1kdV3mHFtwhnbdRPDlni
   localizations:
   - language: de-DE
     name: 'Künstliche Luftwechselzahl'
@@ -696,10 +763,14 @@ properties:
     languageOfCreator: en-EN
 - name: AirConditioning
   definition: Indication whether this space requires air conditioning provided (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 14ade5c813504685bcdfa40ece7b2bae
-  legacyGuidAsIfcGlobalId: 0KhUN84r16XRpVf0xEUokk
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 14ade5c813504685bcdfa40ece7b2bae
+    legacyGuidAsIfcGlobalId: 0KhUN84r16XRpVf0xEUokk
   localizations:
   - language: de-DE
     name: 'Klimaanlage'
@@ -738,10 +809,14 @@ properties:
     languageOfCreator: en-EN
 - name: AirConditioningCentral
   definition: Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE).It should only be given, if the property "AirConditioning" is set to TRUE.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: f0a12d5437964116924095c5f822382c
-  legacyGuidAsIfcGlobalId: 3meIrKDvP15f90bSNu8ZWi
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: f0a12d5437964116924095c5f822382c
+    legacyGuidAsIfcGlobalId: 3meIrKDvP15f90bSNu8ZWi
   localizations:
   - language: de-DE
     name: 'Klimaanlage zentral'

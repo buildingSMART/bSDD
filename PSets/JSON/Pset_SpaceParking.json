@@ -4,9 +4,13 @@
     "version": "4.0.0.0",
     "schema": "IfcProductExtension"
   },
-  "ifdGuid": "3oeNa0qWeHuO00025QrE$V",
-  "legacyGuid": "",
   "definition": "Properties common to the definition of all occurrences of IfcSpace which have an attribute value for ObjectType = 'Parking'. NOTE: Modified in IFC 2x3, properties ParkingUse and ParkingUnits added.",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3oeNa0qWeHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oeNa0qWeHuO00025QrE$V",
+    "ifdGuid": "3oeNa0qWeHuO00025QrE$V",
+    "legacyGuid": ""
+  },
   "localizations": [
     {
       "language": "de-DE",
@@ -49,10 +53,15 @@
     {
       "name": "ParkingUse",
       "definition": "Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "3tPYq0qWeHuO00025QrE$V",
-      "legacyGuid": "a7f7c97eb5584e5b9a87465815ad9871",
-      "legacyGuidAsIfcGlobalId": "2dzyb_jLXEMvg7HbWLhPXn",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3tPYq0qWeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tPYq0qWeHuO00025QrE$V",
+        "ifdGuid": "3tPYq0qWeHuO00025QrE$V",
+        "legacyGuid": "a7f7c97eb5584e5b9a87465815ad9871",
+        "legacyGuidAsIfcGlobalId": "2dzyb_jLXEMvg7HbWLhPXn"
+      },
       "localizations": [
         {
           "language": "fr-FR",
@@ -106,10 +115,15 @@
     {
       "name": "ParkingUnits",
       "definition": "Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles, provision may be made for more than one unit in the space.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "3$lcW0qWeHuO00025QrE$V",
-      "legacyGuid": "2557f9910ebb427a8f177065018efe08",
-      "legacyGuidAsIfcGlobalId": "0bL$cH3hj2UeyNS6K1Zlu8",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3$lcW0qWeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$lcW0qWeHuO00025QrE$V",
+        "ifdGuid": "3$lcW0qWeHuO00025QrE$V",
+        "legacyGuid": "2557f9910ebb427a8f177065018efe08",
+        "legacyGuidAsIfcGlobalId": "0bL$cH3hj2UeyNS6K1Zlu8"
+      },
       "localizations": [
         {
           "language": "fr-FR",
@@ -163,9 +177,14 @@
     {
       "name": "IsAisle",
       "definition": "Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "056xA0qWiHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/056xA0qWiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/056xA0qWiHuO00025QrE$V",
+        "ifdGuid": "056xA0qWiHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "fr-FR",
@@ -219,9 +238,14 @@
     {
       "name": "IsOneWay",
       "definition": "Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0CGi20qWiHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0CGi20qWiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CGi20qWiHuO00025QrE$V",
+        "ifdGuid": "0CGi20qWiHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "fr-FR",

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgElements
-ifdGuid: 2Ga4O0qW4HuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties common to the definition of all occurrences of IfcRoof. Note: Properties for ProjectedArea and TotalArea added in IFC 2x3'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Ga4O0qW4HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Ga4O0qW4HuO00025QrE$V
+  ifdGuid: 2Ga4O0qW4HuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -32,10 +35,14 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2OJ_g0qW4HuO00025QrE$V
-  legacyGuid: 6cb5ce85739d429e8053c623fb1fbdac
-  legacyGuidAsIfcGlobalId: 1ijSw5Svr2de1JnYFx7xsi
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2OJ_g0qW4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2OJ_g0qW4HuO00025QrE$V
+    ifdGuid: 2OJ_g0qW4HuO00025QrE$V
+    legacyGuid: 6cb5ce85739d429e8053c623fb1fbdac
+    legacyGuidAsIfcGlobalId: 1ijSw5Svr2de1JnYFx7xsi
   localizations:
   - language: de-DE
     name: 'Bauteiltyp'
@@ -74,9 +81,13 @@ properties:
     languageOfCreator: en-EN
 - name: Status
   definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2UHSk0qW4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UHSk0qW4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UHSk0qW4HuO00025QrE$V
+    ifdGuid: 2UHSk0qW4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Status'
@@ -243,9 +254,13 @@ properties:
     languageOfCreator: en-EN
 - name: AcousticRating
   definition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2jnHI0qW4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2jnHI0qW4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jnHI0qW4HuO00025QrE$V
+    ifdGuid: 2jnHI0qW4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Schallschutzklasse'
@@ -281,10 +296,14 @@ properties:
     languageOfCreator: en-EN
 - name: FireRating
   definition: Fire rating for this object. It is given according to the national fire safety classification.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2rXBa0qW4HuO00025QrE$V
-  legacyGuid: d70b6272725f4edda7676442bb61e730
-  legacyGuidAsIfcGlobalId: 3N2s9oSbzEtQTdP4AxOUSm
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2rXBa0qW4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2rXBa0qW4HuO00025QrE$V
+    ifdGuid: 2rXBa0qW4HuO00025QrE$V
+    legacyGuid: d70b6272725f4edda7676442bb61e730
+    legacyGuidAsIfcGlobalId: 3N2s9oSbzEtQTdP4AxOUSm
   localizations:
   - language: de-DE
     name: 'Feuerwiderstandsklasse'
@@ -323,10 +342,14 @@ properties:
     languageOfCreator: en-EN
 - name: IsExternal
   definition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2zH5s0qW4HuO00025QrE$V
-  legacyGuid: 5702cd536df44c5796dffa11be33497a
-  legacyGuidAsIfcGlobalId: 1N0irJRVHCLvRV_X6_Cqbw
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2zH5s0qW4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zH5s0qW4HuO00025QrE$V
+    ifdGuid: 2zH5s0qW4HuO00025QrE$V
+    legacyGuid: 5702cd536df44c5796dffa11be33497a
+    legacyGuidAsIfcGlobalId: 1N0irJRVHCLvRV_X6_Cqbw
   localizations:
   - language: de-DE
     name: 'Außenbauteil'
@@ -365,10 +388,14 @@ properties:
     languageOfCreator: en-EN
 - name: ThermalTransmittance
   definition: Thermal transmittance coefficient (U-Value) of a material.Here the total thermal transmittance coefficient through the roof surface (including all materials).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 34Qsk0qW4HuO00025QrE$V
-  legacyGuid: 6320561946134fe7b2299aa2b6a0f422
-  legacyGuidAsIfcGlobalId: 1Z85OPHXDFvx8fcgAseFGY
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/34Qsk0qW4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34Qsk0qW4HuO00025QrE$V
+    ifdGuid: 34Qsk0qW4HuO00025QrE$V
+    legacyGuid: 6320561946134fe7b2299aa2b6a0f422
+    legacyGuidAsIfcGlobalId: 1Z85OPHXDFvx8fcgAseFGY
   localizations:
   - language: de-DE
     name: 'U-Wert'

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcPlumbingFireProtectionDomain
-ifdGuid: 3CnAO0qWCHuO00025QrE$V
-legacyGuid: ''
 definition: 'Soil appliance for the disposal of excrement. HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Prefix for color property removed. Datatype of color changed to IfcLabel (still a string value).'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3CnAO0qWCHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3CnAO0qWCHuO00025QrE$V
+  ifdGuid: 3CnAO0qWCHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: ToiletType
   definition: 'Enumeration that defines the types of toilet (water closet) arrangements that may be specified where:-BedPanWasher: Enclosed soil appliance in which bedpans and urinal bottles are emptied and cleansed.Chemical: Portable receptacle or soil appliance that receives and retains excrement in either an integral or a separate container, in which it is chemically treated and from which it has to be emptied periodically.CloseCoupled: 	Toilet suite in which a flushing cistern is connected directly to the water closet pan.LooseCoupled: 	Toilet arrangement in which a flushing cistern is connected to the water closet pan through a flushing pipe.SlopHopper: 	Hopper shaped soil appliance with a flushing rim and outlet similar to those of a toilet pan, into which human excrement is emptied for disposal.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3I8V20qWCHuO00025QrE$V
-  legacyGuid: 79a25a4744ea4219b112fbeaa04f8686
-  legacyGuidAsIfcGlobalId: 1vebf7HEf26R4I__gWJuQ6
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3I8V20qWCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3I8V20qWCHuO00025QrE$V
+    ifdGuid: 3I8V20qWCHuO00025QrE$V
+    legacyGuid: 79a25a4744ea4219b112fbeaa04f8686
+    legacyGuidAsIfcGlobalId: 1vebf7HEf26R4I__gWJuQ6
   localizations:
   - language: ja-JP
     name: 'トイレ種類'
@@ -222,10 +229,14 @@ properties:
     languageOfCreator: en-EN
 - name: ToiletPanType
   definition: 'The property enumeration Pset_ToiletPanTypeEnum defines the types of toilet pan that may be specified within the property set Pset_Toilet:-Siphonic: 	Toilet pan in which excrement is removed by siphonage induced by the flushing water.Squat: 	Toilet pan with an elongated bowl installed with its top edge at or near floor level, so that the user has to squat.WashDown: 	Toilet pan in which excrement is removed by the momentum of the flushing water.WashOut: 	A washdown toilet pan in which excrement falls first into a shallow water filled bowl.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3dbng0qWCHuO00025QrE$V
-  legacyGuid: 968cc5ab493e4d5b950c71654aa662b7
-  legacyGuidAsIfcGlobalId: 2MZCMhIJvDMvKCSMLAfcAt
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3dbng0qWCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dbng0qWCHuO00025QrE$V
+    ifdGuid: 3dbng0qWCHuO00025QrE$V
+    legacyGuid: 968cc5ab493e4d5b950c71654aa662b7
+    legacyGuidAsIfcGlobalId: 2MZCMhIJvDMvKCSMLAfcAt
   localizations:
   - language: ja-JP
     name: '便器タイプ'
@@ -392,10 +403,14 @@ properties:
     languageOfCreator: en-EN
 - name: PanMounting
   definition: 'The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-BackToWall: 	A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections.Pedestal: 	A floor mounted sanitary terminal that has an integral base.CounterTop: 	A sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is ‘vanity’. See also Wash Hand Basin Type specification.WallHung: 	A sanitary terminal cantilevered clear of the floor.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3thle0qWCHuO00025QrE$V
-  legacyGuid: 2442298f83864eccaff4c3e66b053433
-  legacyGuidAsIfcGlobalId: 0aGYcFWuPEpA$qm_Ph1JGp
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3thle0qWCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3thle0qWCHuO00025QrE$V
+    ifdGuid: 3thle0qWCHuO00025QrE$V
+    legacyGuid: 2442298f83864eccaff4c3e66b053433
+    legacyGuidAsIfcGlobalId: 0aGYcFWuPEpA$qm_Ph1JGp
   localizations:
   - language: ja-JP
     name: '取付方法'
@@ -562,10 +577,14 @@ properties:
     languageOfCreator: en-EN
 - name: Color
   definition: Color selection for this object
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 08Nt00qWGHuO00025QrE$V
-  legacyGuid: 7d0059dc2b9c4ec1be99c6545d35d87a
-  legacyGuidAsIfcGlobalId: 1z05dSAvnEmRwPnbHTDTXw
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08Nt00qWGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08Nt00qWGHuO00025QrE$V
+    ifdGuid: 08Nt00qWGHuO00025QrE$V
+    legacyGuid: 7d0059dc2b9c4ec1be99c6545d35d87a
+    legacyGuidAsIfcGlobalId: 1z05dSAvnEmRwPnbHTDTXw
   localizations:
   - language: ja-JP
     name: '色'
@@ -601,10 +620,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpilloverLevel
   definition: The level at which water spills out of the terminal.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0FXdu0qWGHuO00025QrE$V
-  legacyGuid: ae4b75b2086a471b9b1afd3b0ecf2cae
-  legacyGuidAsIfcGlobalId: 2kItMo26f76viQ$JiEpook
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0FXdu0qWGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FXdu0qWGHuO00025QrE$V
+    ifdGuid: 0FXdu0qWGHuO00025QrE$V
+    legacyGuid: ae4b75b2086a471b9b1afd3b0ecf2cae
+    legacyGuidAsIfcGlobalId: 2kItMo26f76viQ$JiEpook
   localizations:
   - language: ja-JP
     name: '水位'
@@ -640,10 +663,14 @@ properties:
     languageOfCreator: en-EN
 - name: NominalLength
   definition: Nominal or quoted length of the object.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0NHYA0qWGHuO00025QrE$V
-  legacyGuid: e5b1082dd44b40bf8d4b13458e088702
-  legacyGuidAsIfcGlobalId: 3biGWjr4j0lurB4qME28S2
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0NHYA0qWGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NHYA0qWGHuO00025QrE$V
+    ifdGuid: 0NHYA0qWGHuO00025QrE$V
+    legacyGuid: e5b1082dd44b40bf8d4b13458e088702
+    legacyGuidAsIfcGlobalId: 3biGWjr4j0lurB4qME28S2
   localizations:
   - language: ja-JP
     name: '長さ'
@@ -679,10 +706,14 @@ properties:
     languageOfCreator: en-EN
 - name: NominalWidth
   definition: Nominal or quoted width of the object.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0V1SS0qWGHuO00025QrE$V
-  legacyGuid: 4a2ec4d68c1040a0ad8c5878bcd0bf2d
-  legacyGuidAsIfcGlobalId: 1ABiJMZ110eAsCM7YyqByj
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0V1SS0qWGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0V1SS0qWGHuO00025QrE$V
+    ifdGuid: 0V1SS0qWGHuO00025QrE$V
+    legacyGuid: 4a2ec4d68c1040a0ad8c5878bcd0bf2d
+    legacyGuidAsIfcGlobalId: 1ABiJMZ110eAsCM7YyqByj
   localizations:
   - language: ja-JP
     name: '幅'
@@ -718,10 +749,14 @@ properties:
     languageOfCreator: en-EN
 - name: NominalDepth
   definition: Nominal or quoted depth of the object.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0cnMk0qWGHuO00025QrE$V
-  legacyGuid: cfeeabffee3f40f2b3e3e3b10c61a28c
-  legacyGuidAsIfcGlobalId: 3Fxgl$xZz0yhFZux4COQAC
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0cnMk0qWGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cnMk0qWGHuO00025QrE$V
+    ifdGuid: 0cnMk0qWGHuO00025QrE$V
+    legacyGuid: cfeeabffee3f40f2b3e3e3b10c61a28c
+    legacyGuidAsIfcGlobalId: 3Fxgl$xZz0yhFZux4COQAC
   localizations:
   - language: ja-JP
     name: '深さ'

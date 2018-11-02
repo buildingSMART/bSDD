@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgElements
-ifdGuid: 3mYUi0qWSHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties common to the definition of all occurrences of IfcSlab. Note: Properties for PitchAngle added in IFC 2x3'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3mYUi0qWSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mYUi0qWSHuO00025QrE$V
+  ifdGuid: 3mYUi0qWSHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -36,10 +39,14 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3wg_c0qWSHuO00025QrE$V
-  legacyGuid: 6029785093c84849b34776c31ccde025
-  legacyGuidAsIfcGlobalId: 1WANXGayX8IRD7TiCSpU0b
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3wg_c0qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wg_c0qWSHuO00025QrE$V
+    ifdGuid: 3wg_c0qWSHuO00025QrE$V
+    legacyGuid: 6029785093c84849b34776c31ccde025
+    legacyGuidAsIfcGlobalId: 1WANXGayX8IRD7TiCSpU0b
   localizations:
   - language: de-DE
     name: 'Bauteiltyp'
@@ -78,9 +85,13 @@ properties:
     languageOfCreator: en-EN
 - name: Status
   definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 002JG0qWWHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/002JG0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/002JG0qWWHuO00025QrE$V
+    ifdGuid: 002JG0qWWHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Status'
@@ -247,10 +258,14 @@ properties:
     languageOfCreator: en-EN
 - name: AcousticRating
   definition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0D9YC0qWWHuO00025QrE$V
-  legacyGuid: aaedd37747694ad591644cb088cd3d6b
-  legacyGuidAsIfcGlobalId: 2gxTDtHsbArP5aJB28pJrh
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0D9YC0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0D9YC0qWWHuO00025QrE$V
+    ifdGuid: 0D9YC0qWWHuO00025QrE$V
+    legacyGuid: aaedd37747694ad591644cb088cd3d6b
+    legacyGuidAsIfcGlobalId: 2gxTDtHsbArP5aJB28pJrh
   localizations:
   - language: de-DE
     name: 'Schallschutzklasse'
@@ -289,10 +304,14 @@ properties:
     languageOfCreator: en-EN
 - name: FireRating
   definition: Fire rating for this object. It is given according to the national fire safety classification.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0Jj9g0qWWHuO00025QrE$V
-  legacyGuid: 92d0f7a8adde4723b4b645f80c021f34
-  legacyGuidAsIfcGlobalId: 2IqFUehTv78xIsHVWC0Xyq
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Jj9g0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Jj9g0qWWHuO00025QrE$V
+    ifdGuid: 0Jj9g0qWWHuO00025QrE$V
+    legacyGuid: 92d0f7a8adde4723b4b645f80c021f34
+    legacyGuidAsIfcGlobalId: 2IqFUehTv78xIsHVWC0Xyq
   localizations:
   - language: de-DE
     name: 'Feuerwiderstandsklasse'
@@ -331,10 +350,14 @@ properties:
     languageOfCreator: en-EN
 - name: Combustible
   definition: Indication whether the object is made from combustible material (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 65af634774c0414ebcd1994b92ab3ba9
-  legacyGuidAsIfcGlobalId: 1bhsD7TC11JhpHcKkIgpkf
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 65af634774c0414ebcd1994b92ab3ba9
+    legacyGuidAsIfcGlobalId: 1bhsD7TC11JhpHcKkIgpkf
   localizations:
   - language: de-DE
     name: 'Brennbares Material'
@@ -373,10 +396,14 @@ properties:
     languageOfCreator: en-EN
 - name: SurfaceSpreadOfFlame
   definition: Indication on how the flames spread around the surface, It is given according to the national building code that governs the fire behaviour for materials.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0WEFC0qWWHuO00025QrE$V
-  legacyGuid: 1c3067a2eabc4368bc66c93c53fc4d8e
-  legacyGuidAsIfcGlobalId: 0SC6UYwhn3QBncoJnJ$4sE
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WEFC0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WEFC0qWWHuO00025QrE$V
+    ifdGuid: 0WEFC0qWWHuO00025QrE$V
+    legacyGuid: 1c3067a2eabc4368bc66c93c53fc4d8e
+    legacyGuidAsIfcGlobalId: 0SC6UYwhn3QBncoJnJ$4sE
   localizations:
   - language: de-DE
     name: 'Brandverhalten'
@@ -412,10 +439,14 @@ properties:
     languageOfCreator: en-EN
 - name: ThermalTransmittance
   definition: Thermal transmittance coefficient (U-Value) of a material. Here the total thermal transmittance coefficient through the slab (including all materials).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: bdd1a3d497034ceb9b5e7ce9996e03da
-  legacyGuidAsIfcGlobalId: 2zqQFKbmDCwvjUVEcPRWFQ
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: bdd1a3d497034ceb9b5e7ce9996e03da
+    legacyGuidAsIfcGlobalId: 2zqQFKbmDCwvjUVEcPRWFQ
   localizations:
   - language: de-DE
     name: 'U-Wert'
@@ -454,10 +485,14 @@ properties:
     languageOfCreator: en-EN
 - name: IsExternal
   definition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0qVF00qWWHuO00025QrE$V
-  legacyGuid: 03e5134bc3b74469bf796ef1275cc75f
-  legacyGuidAsIfcGlobalId: 03vHDBmxT4QRzvRl4dNCTV
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qVF00qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qVF00qWWHuO00025QrE$V
+    ifdGuid: 0qVF00qWWHuO00025QrE$V
+    legacyGuid: 03e5134bc3b74469bf796ef1275cc75f
+    legacyGuidAsIfcGlobalId: 03vHDBmxT4QRzvRl4dNCTV
   localizations:
   - language: de-DE
     name: 'Außenbauteil'
@@ -496,10 +531,14 @@ properties:
     languageOfCreator: en-EN
 - name: LoadBearing
   definition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0x2sU0qWWHuO00025QrE$V
-  legacyGuid: 9ea6ba801eff411ca2cbfa5aedd8d001
-  legacyGuidAsIfcGlobalId: 2Ufhg07lz17ABB_bhjsD01
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0x2sU0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0x2sU0qWWHuO00025QrE$V
+    ifdGuid: 0x2sU0qWWHuO00025QrE$V
+    legacyGuid: 9ea6ba801eff411ca2cbfa5aedd8d001
+    legacyGuidAsIfcGlobalId: 2Ufhg07lz17ABB_bhjsD01
   localizations:
   - language: de-DE
     name: 'Tragendes Bauteil'
@@ -538,10 +577,14 @@ properties:
     languageOfCreator: en-EN
 - name: Compartmentation
   definition: Indication whether the object is designed to serve as a fire compartmentation (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 2396b59a1e2b4e41979a55567c58201c
-  legacyGuidAsIfcGlobalId: 0ZbhMQ7YjEGPUQLLPyM20S
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 2396b59a1e2b4e41979a55567c58201c
+    legacyGuidAsIfcGlobalId: 0ZbhMQ7YjEGPUQLLPyM20S
   localizations:
   - language: de-DE
     name: 'Brandabschnittsdefinierendes Bauteil'
@@ -577,10 +620,14 @@ properties:
     languageOfCreator: en-EN
 - name: PitchAngle
   definition: 'Angle of the slab to the horizontal when used as a component for the roof (specified as 0 degrees or not asserted for cases where the slab is not used as a roof component).      The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 19MOE0qWWHuO00025QrE$V
-  legacyGuid: 1ff92857894a4d5bb0434d0643881759
-  legacyGuidAsIfcGlobalId: 0V_IXNYKfDMx13JGP3Y1TP
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19MOE0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19MOE0qWWHuO00025QrE$V
+    ifdGuid: 19MOE0qWWHuO00025QrE$V
+    legacyGuid: 1ff92857894a4d5bb0434d0643881759
+    legacyGuidAsIfcGlobalId: 0V_IXNYKfDMx13JGP3Y1TP
   localizations:
   - language: de-DE
     name: 'Dachflächenneigung'

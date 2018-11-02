@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: ''
-legacyGuid: ''
 definition: 'Log of control activity attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type CONTROL.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+  ifdGuid: ''
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: Transmit
   definition: Log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeControl.Protocols.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3lYvO0qTGHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3lYvO0qTGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lYvO0qTGHuO00025QrE$V
+    ifdGuid: 3lYvO0qTGHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '発信'
@@ -73,9 +80,13 @@ properties:
     languageOfCreator: en-EN
 - name: Receive
   definition: Log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeControl.Protocols.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3oXeQ0qTGHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3oXeQ0qTGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oXeQ0qTGHuO00025QrE$V
+    ifdGuid: 3oXeQ0qTGHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '受信'

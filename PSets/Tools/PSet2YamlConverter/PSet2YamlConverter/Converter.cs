@@ -65,8 +65,11 @@ namespace PSet2YamlConverter
                 PropertySet propertySet = new PropertySet()
                 {
                     name = pSet.Name,
-                    ifdGuid = "",
-                    legacyGuid = "",
+                    dictionaryReference = new DictionaryReference()
+                    {
+                        ifdGuid = "",
+                        legacyGuid = ""
+                    },
                     ifcVersion = new IfcVersion()
                     {
                         version = ConvertToSematicVersion(pSet.IfcVersion.version).ToString(),
@@ -97,7 +100,7 @@ namespace PSet2YamlConverter
                         });
 
                 if (CheckBSDD)
-                    if (propertySet.legacyGuid.Length == 0)
+                    if (propertySet.dictionaryReference.legacyGuid.Length == 0)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         log.Info($"      ERROR: The GUID is missing in PSet!");
@@ -121,11 +124,12 @@ namespace PSet2YamlConverter
 
                     if (ifdConceptList.IfdConcept.Count == 1)
                     {
-                        log.Info($"      The GUID of the PSet in the file was changed {propertySet.legacyGuid} => {bsddPSet.Guid}");
-                        propertySet.ifdGuid = bsddPSet.Guid;
+                        log.Info($"      The GUID of the PSet in the file was changed {propertySet.dictionaryReference.legacyGuid} => {bsddPSet.Guid}");
+                        propertySet.dictionaryReference.ifdGuid = bsddPSet.Guid;
                     }
                 }
-
+                propertySet.dictionaryReference.dictionaryWebUri = $"http://bsdd.buildingsmart.org/#concept/browse/{propertySet.dictionaryReference.ifdGuid}";
+                propertySet.dictionaryReference.dictionaryApiUri = $"http://bsdd.buildingsmart.org/api/4.0/IfdConcept/{propertySet.dictionaryReference.ifdGuid}";
 
                 log.Info($"   Now checking the properties within the PSet");
                 propertySet.properties = LoadProperties(pSet, pSet.PropertyDefs);
@@ -208,25 +212,29 @@ namespace PSet2YamlConverter
                 Property property = new Property()
                 {
                     name = psetProperty.Items[0].ToString(),
-                    dictionaryIdentifier = "http://bsdd.buildingsmart.org/IFC",
-                    ifdGuid = "",
-                    legacyGuid = psetProperty.ifdguid,
-                    legacyGuidAsIfcGlobalId = Utils.GuidConverterToIfcGuid(psetProperty.ifdguid),
+                    dictionaryReference = new DictionaryReference()
+                    { 
+                        dictionaryIdentifier = "http://bsdd.buildingsmart.org",
+                        dictionaryNamespace = "PSet",                  
+                        ifdGuid = "",
+                        legacyGuid = psetProperty.ifdguid,
+                        legacyGuidAsIfcGlobalId = Utils.GuidConverterToIfcGuid(psetProperty.ifdguid)
+                    },
                     definition = psetProperty.Items[2].ToString()
                 };
                 log.Info($"      Name: {property.name}");
                 if (CheckBSDD)
-                if (property.legacyGuidAsIfcGlobalId.Length == 0)
+                if (property.dictionaryReference.legacyGuidAsIfcGlobalId.Length == 0)
                 { 
                     Console.ForegroundColor = ConsoleColor.Red;
                     log.Info($"      ERROR: The GUID for {property.name} is missing in PSet!");
                     Console.ResetColor();
                 }
 
-                if (CheckGuidWithBsdd(property.legacyGuidAsIfcGlobalId) == false)
+                if (CheckGuidWithBsdd(property.dictionaryReference.legacyGuidAsIfcGlobalId) == false)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    log.Info($"      ERROR: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is not resolved by http://bsdd.buildingsmart.org");
+                    log.Info($"      ERROR: The GUID {property.dictionaryReference.legacyGuidAsIfcGlobalId} for {property.name} is not resolved by http://bsdd.buildingsmart.org");
                     Console.ResetColor();
 
                     IfdConceptList ifdConceptList = _bsdd.SearchProperties(pset.Name + "." + property.name);
@@ -251,19 +259,20 @@ namespace PSet2YamlConverter
                         }
                         if (ifdConceptList.IfdConcept.Count == 1)
                         {
-                            log.Info($"      The GUID in the PSet file was changed {property.legacyGuid} => {bsddProperty.Guid}");
-                            property.ifdGuid = bsddProperty.Guid;
+                            log.Info($"      The GUID in the PSet file was changed {property.dictionaryReference.legacyGuid} => {bsddProperty.Guid}");
+                            property.dictionaryReference.ifdGuid = bsddProperty.Guid;
                         }
                     }
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    log.Info($"      OK: The GUID {property.legacyGuidAsIfcGlobalId} for {property.name} is properly resolved by http://bsdd.buildingsmart.org");
-                    property.ifdGuid = property.legacyGuidAsIfcGlobalId;
+                    log.Info($"      OK: The GUID {property.dictionaryReference.legacyGuidAsIfcGlobalId} for {property.name} is properly resolved by http://bsdd.buildingsmart.org");
+                    property.dictionaryReference.ifdGuid = property.dictionaryReference.legacyGuidAsIfcGlobalId;
                     Console.ResetColor();
                 }
-
+                property.dictionaryReference.dictionaryWebUri = $"http://bsdd.buildingsmart.org/#concept/browse/{property.dictionaryReference.ifdGuid}";
+                property.dictionaryReference.dictionaryApiUri = $"http://bsdd.buildingsmart.org/api/4.0/IfdConcept/{property.dictionaryReference.ifdGuid}";
                 property.localizations = new List<Localization>();
                 PropertyDefNameAliases nameAliases;
                 if (psetProperty.Items.Length >= 4)

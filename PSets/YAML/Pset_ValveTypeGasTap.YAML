@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcHvacDomain
-ifdGuid: 00z9A0qXKHuO00025QrE$V
-legacyGuid: ''
 definition: 'A small diameter valve, used to discharge gas from a system.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00z9A0qXKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00z9A0qXKHuO00025QrE$V
+  ifdGuid: 00z9A0qXKHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: HasHoseUnion
   definition: Indicates whether the gas tap is fitted with a hose union connection (= TRUE) or not (= FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 06KTq0qXKHuO00025QrE$V
-  legacyGuid: 7e8d3a66e2604516b1a1ace1b201ce2a
-  legacyGuidAsIfcGlobalId: 1_ZJfcuc155h6XhE6o0Sug
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06KTq0qXKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06KTq0qXKHuO00025QrE$V
+    ifdGuid: 06KTq0qXKHuO00025QrE$V
+    legacyGuid: 7e8d3a66e2604516b1a1ace1b201ce2a
+    legacyGuidAsIfcGlobalId: 1_ZJfcuc155h6XhE6o0Sug
   localizations:
   - language: ja-JP
     name: 'ホースユニオン付き'

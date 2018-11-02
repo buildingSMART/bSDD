@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgElements
-ifdGuid: 1Nqdk0qSKHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties common to the definition of a provision for void as a special type of an instance of IfcBuildingElementProxy. A provision for void is a spatial provision that might be resolved into a void in a building element. The properties carry requested values.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Nqdk0qSKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Nqdk0qSKHuO00025QrE$V
+  ifdGuid: 1Nqdk0qSKHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -32,10 +35,14 @@ applicableIfcClasses:
 properties:
 - name: Shape
   definition: The shape form of the provision for void, the minimum set of agreed values includes 'Rectangle', 'Round', and 'Undefined'.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Sbo_0qSKHuO00025QrE$V
-  legacyGuid: 1f84ce9dbb8045c4a89c1ca82f749a84
-  legacyGuidAsIfcGlobalId: 0VXCwTku15nAYS7AWlT9g4
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Sbo_0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Sbo_0qSKHuO00025QrE$V
+    ifdGuid: 1Sbo_0qSKHuO00025QrE$V
+    legacyGuid: 1f84ce9dbb8045c4a89c1ca82f749a84
+    legacyGuidAsIfcGlobalId: 0VXCwTku15nAYS7AWlT9g4
   localizations:
   - language: de-DE
     name: 'Form'
@@ -74,10 +81,14 @@ properties:
     languageOfCreator: en-EN
 - name: Width
   definition: The requested width (horizontal extension in elevation) of the provision for void, only provided if the Shape property is set to "rectangle".
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1XM_E0qSKHuO00025QrE$V
-  legacyGuid: ee42887c56014da1afff889fc5ce662c
-  legacyGuidAsIfcGlobalId: 3kGeXyLW5DeQ$$Y9$5pcOi
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XM_E0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XM_E0qSKHuO00025QrE$V
+    ifdGuid: 1XM_E0qSKHuO00025QrE$V
+    legacyGuid: ee42887c56014da1afff889fc5ce662c
+    legacyGuidAsIfcGlobalId: 3kGeXyLW5DeQ$$Y9$5pcOi
   localizations:
   - language: de-DE
     name: 'Breite'
@@ -116,10 +127,14 @@ properties:
     languageOfCreator: en-EN
 - name: Height
   definition: The requested height (vertical extension in elevation) of the provision for void", only provided if the Shape property is set to "rectangle".
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1bY040qSKHuO00025QrE$V
-  legacyGuid: 436522bb17e4471a9457461e0b06c648
-  legacyGuidAsIfcGlobalId: 13PIAx5_H76fHNHXuB1iP8
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1bY040qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bY040qSKHuO00025QrE$V
+    ifdGuid: 1bY040qSKHuO00025QrE$V
+    legacyGuid: 436522bb17e4471a9457461e0b06c648
+    legacyGuidAsIfcGlobalId: 13PIAx5_H76fHNHXuB1iP8
   localizations:
   - language: de-DE
     name: 'Höhe'
@@ -158,10 +173,14 @@ properties:
     languageOfCreator: en-EN
 - name: Diameter
   definition: The requested diameter (in elevation) of the provision for void, only provided if the Shape property is set to "round".
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1fj1w0qSKHuO00025QrE$V
-  legacyGuid: bb2447722d78415bafd408c2c46c4c8d
-  legacyGuidAsIfcGlobalId: 2x94ToBNX1Mw$K2CB4R4oD
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1fj1w0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fj1w0qSKHuO00025QrE$V
+    ifdGuid: 1fj1w0qSKHuO00025QrE$V
+    legacyGuid: bb2447722d78415bafd408c2c46c4c8d
+    legacyGuidAsIfcGlobalId: 2x94ToBNX1Mw$K2CB4R4oD
   localizations:
   - language: de-DE
     name: 'Durchmesser'
@@ -200,10 +219,14 @@ properties:
     languageOfCreator: en-EN
 - name: Depth
   definition: The requested depth or thickness of the provision for void.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1ju3m0qSKHuO00025QrE$V
-  legacyGuid: 89c8805ab67d410d904907e6c084d466
-  legacyGuidAsIfcGlobalId: 29o81Qjdr13P191_R0XDHc
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ju3m0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ju3m0qSKHuO00025QrE$V
+    ifdGuid: 1ju3m0qSKHuO00025QrE$V
+    legacyGuid: 89c8805ab67d410d904907e6c084d466
+    legacyGuidAsIfcGlobalId: 29o81Qjdr13P191_R0XDHc
   localizations:
   - language: de-DE
     name: 'Tiefe'
@@ -242,10 +265,14 @@ properties:
     languageOfCreator: en-EN
 - name: System
   definition: he building service system that requires the provision for voids, e.g. 'Air Conditioning', 'Plumbing', 'Electro', etc.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1o35c0qSKHuO00025QrE$V
-  legacyGuid: f95921e68338429b9ed40888d2b56b4c
-  legacyGuidAsIfcGlobalId: 3vMI7cWpX2cvxK28ZIjMjC
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1o35c0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1o35c0qSKHuO00025QrE$V
+    ifdGuid: 1o35c0qSKHuO00025QrE$V
+    legacyGuid: f95921e68338429b9ed40888d2b56b4c
+    legacyGuidAsIfcGlobalId: 3vMI7cWpX2cvxK28ZIjMjC
   localizations:
   - language: de-DE
     name: 'Anlage'

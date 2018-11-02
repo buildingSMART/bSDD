@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 3_PSsKy$X4vfV83FA5ChXX
-legacyGuid: ''
 definition: 'Properties that may be applied to electric distribution board occurrences.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3_PSsKy$X4vfV83FA5ChXX
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_PSsKy$X4vfV83FA5ChXX
+  ifdGuid: 3_PSsKy$X4vfV83FA5ChXX
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: IsMain
   definition: Identifies if the current instance is a main distribution point or topmost level in an electrical distribution hierarchy (= TRUE) or a sub-main distribution point (= FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1cH47I0iH6OR8JYYXfBsgh
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1cH47I0iH6OR8JYYXfBsgh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1cH47I0iH6OR8JYYXfBsgh
+    ifdGuid: 1cH47I0iH6OR8JYYXfBsgh
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -68,9 +75,13 @@ properties:
     languageOfCreator: en-EN
 - name: IsSkilledOperator
   definition: Identifies if the current instance requires a skilled person or instructed person to perform operations on the distribution board (= TRUE) or whether operations may be performed by a person without appropriate skills or instruction (= FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0$jb4wkB9F2PxYcXz2iC24
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0$jb4wkB9F2PxYcXz2iC24
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$jb4wkB9F2PxYcXz2iC24
+    ifdGuid: 0$jb4wkB9F2PxYcXz2iC24
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''

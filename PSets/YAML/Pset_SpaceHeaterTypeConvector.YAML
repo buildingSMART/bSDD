@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcHvacDomain
-ifdGuid: 1v2Oi0qWeHuO00025QrE$V
-legacyGuid: ''
 definition: 'Space heater type convector attributes.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1v2Oi0qWeHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1v2Oi0qWeHuO00025QrE$V
+  ifdGuid: 1v2Oi0qWeHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: ConvectorType
   definition: Indicates the type of convector, whether forced air (mechanically driven) or natural (gravity).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1_PjM0qWeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1_PjM0qWeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_PjM0qWeHuO00025QrE$V
+    ifdGuid: 1_PjM0qWeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '対流タイプ'

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: 2TOsY0qWOHuO00025QrE$V
-legacyGuid: ''
 definition: 'A device that senses or detects wind speed and direction. HISTORY: Added in IFC4.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2TOsY0qWOHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TOsY0qWOHuO00025QrE$V
+  ifdGuid: 2TOsY0qWOHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: WindSensorType
   definition: Enumeration that Identifies the types of wind sensors that can be specified.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2YmBC0qWOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2YmBC0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YmBC0qWOHuO00025QrE$V
+    ifdGuid: 2YmBC0qWOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '風センサータイプ'
@@ -268,9 +275,13 @@ properties:
     languageOfCreator: en-EN
 - name: SetPointSpeed
   definition: The wind speed value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2sR1c0qWOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sR1c0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sR1c0qWOHuO00025QrE$V
+    ifdGuid: 2sR1c0qWOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '風速設定値'

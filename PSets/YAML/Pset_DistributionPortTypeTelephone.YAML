@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: ''
-legacyGuid: ''
 definition: 'Telephone port occurrence attributes attached to an instance of IfcDistributionPort.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+  ifdGuid: ''
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: ConnectionType
   definition: 'The physical port connection:RJ: Registered Jack.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1FE700qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1FE700qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FE700qTeHuO00025QrE$V
+    ifdGuid: 1FE700qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続タイプ'
@@ -136,9 +143,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectionSubtype
   definition: 'The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:RJ: 4P4C, 6P2C, 8P8C'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1PymK0qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1PymK0qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PymK0qTeHuO00025QrE$V
+    ifdGuid: 1PymK0qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続のサブタイプ'
@@ -177,9 +188,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectionGender
   definition: The physical connection gender.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1X6XC0qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1X6XC0qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1X6XC0qTeHuO00025QrE$V
+    ifdGuid: 1X6XC0qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続ジェンダー'

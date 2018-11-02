@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcProductExtension
-ifdGuid: 1xexg0qU4HuO00025QrE$V
-legacyGuid: ''
 definition: 'Environmental impact indicators are related to a given “functional unit” (ISO 14040 concept). An example of functional unit is a "Double glazing window with PVC frame" and the unit to consider is "one square meter of opening elements filled by this product”.Indicators values are valid for the whole life cycle or only a specific phase (see LifeCyclePhase property). Values of all the indicators are expressed per year according to the expected service life. The first five properties capture the characteristics of the functional unit. The following properties are related to environmental indicators.There is a consensus agreement international for the five one. Last ones are not yet fully and formally agreed at the international level.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1xexg0qU4HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xexg0qU4HuO00025QrE$V
+  ifdGuid: 1xexg0qU4HuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Référence'
@@ -71,9 +78,13 @@ properties:
     languageOfCreator: en-EN
 - name: FunctionalUnitReference
   definition: Reference to a database or a classification
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 28A1C0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/28A1C0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28A1C0qU4HuO00025QrE$V
+    ifdGuid: 28A1C0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Référence unité fonctionnelle'
@@ -112,9 +123,13 @@ properties:
     languageOfCreator: en-EN
 - name: Unit
   definition: The unit of the quantity the environmental indicators values are related with.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2FJo40qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2FJo40qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FJo40qU4HuO00025QrE$V
+    ifdGuid: 2FJo40qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Unité'
@@ -153,9 +168,13 @@ properties:
     languageOfCreator: en-EN
 - name: LifeCyclePhase
   definition: The whole life cycle or only a given phase  from which environmental data are valid.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2MTYy0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2MTYy0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2MTYy0qU4HuO00025QrE$V
+    ifdGuid: 2MTYy0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Phase cycle de vie'
@@ -721,9 +740,13 @@ properties:
     languageOfCreator: en-EN
 - name: ExpectedServiceLife
   definition: Expected service life in years.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2dlpk0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2dlpk0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dlpk0qU4HuO00025QrE$V
+    ifdGuid: 2dlpk0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Durée de vie typique'
@@ -762,9 +785,13 @@ properties:
     languageOfCreator: en-EN
 - name: TotalPrimaryEnergyConsumptionPerUnit
   definition: Quantity of energy used as defined in ISO21930:2007.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2jjHo0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2jjHo0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jjHo0qU4HuO00025QrE$V
+    ifdGuid: 2jjHo0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Consommation totale énergie primaire par unité'
@@ -803,9 +830,13 @@ properties:
     languageOfCreator: en-EN
 - name: WaterConsumptionPerUnit
   definition: Quantity of water used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2p4cS0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2p4cS0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2p4cS0qU4HuO00025QrE$V
+    ifdGuid: 2p4cS0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Consommation d''eau par unité'
@@ -844,9 +875,13 @@ properties:
     languageOfCreator: en-EN
 - name: HazardousWastePerUnit
   definition: Quantity of hazardous waste generated
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2v24W0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2v24W0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2v24W0qU4HuO00025QrE$V
+    ifdGuid: 2v24W0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Déchets dangereux par unité'
@@ -885,9 +920,13 @@ properties:
     languageOfCreator: en-EN
 - name: NonHazardousWastePerUnit
   definition: Quantity of non hazardous waste generated
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2_PPA0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_PPA0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_PPA0qU4HuO00025QrE$V
+    ifdGuid: 2_PPA0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Déchets non dangereux par unité'
@@ -926,9 +965,13 @@ properties:
     languageOfCreator: en-EN
 - name: ClimateChangePerUnit
   definition: Quantity of greenhouse gases emitted calculated in equivalent CO2
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Changement climatique par unité'
@@ -967,9 +1010,13 @@ properties:
     languageOfCreator: en-EN
 - name: AtmosphericAcidificationPerUnit
   definition: Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3982U0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3982U0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3982U0qU4HuO00025QrE$V
+    ifdGuid: 3982U0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Acidification atmospherique par unité'
@@ -1008,9 +1055,13 @@ properties:
     languageOfCreator: en-EN
 - name: RenewableEnergyConsumptionPerUnit
   definition: Quantity of renewable energy used as defined in ISO21930:2007
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3F5WY0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3F5WY0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3F5WY0qU4HuO00025QrE$V
+    ifdGuid: 3F5WY0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Consommation énergie renouvelable par unité'
@@ -1049,9 +1100,13 @@ properties:
     languageOfCreator: en-EN
 - name: NonRenewableEnergyConsumptionPerUnit
   definition: Quantity of non-renewable energy used as defined in ISO21930:2007
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3L2_c0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3L2_c0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3L2_c0qU4HuO00025QrE$V
+    ifdGuid: 3L2_c0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Consommation énergie non renouvelable par unité'
@@ -1090,9 +1145,13 @@ properties:
     languageOfCreator: en-EN
 - name: ResourceDepletionPerUnit
   definition: Quantity of resources used calculated in equivalent antimony
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3R0Sg0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3R0Sg0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R0Sg0qU4HuO00025QrE$V
+    ifdGuid: 3R0Sg0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Epuisement des ressources par unité'
@@ -1131,9 +1190,13 @@ properties:
     languageOfCreator: en-EN
 - name: InertWastePerUnit
   definition: Quantity of inert waste generated
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3Wzwk0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Wzwk0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Wzwk0qU4HuO00025QrE$V
+    ifdGuid: 3Wzwk0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Déchets inertes par unité'
@@ -1172,9 +1235,13 @@ properties:
     languageOfCreator: en-EN
 - name: RadioactiveWastePerUnit
   definition: Quantity of radioactive waste generated
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3cxOo0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cxOo0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cxOo0qU4HuO00025QrE$V
+    ifdGuid: 3cxOo0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Déchets radioactifs par unité'
@@ -1213,9 +1280,13 @@ properties:
     languageOfCreator: en-EN
 - name: StratosphericOzoneLayerDestructionPerUnit
   definition: Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3iIjS0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3iIjS0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3iIjS0qU4HuO00025QrE$V
+    ifdGuid: 3iIjS0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Destruction couche ozone stratosphérique par unité'
@@ -1254,9 +1325,13 @@ properties:
     languageOfCreator: en-EN
 - name: PhotochemicalOzoneFormationPerUnit
   definition: Quantity of gases creating the photochemical ozone calculated in equivalent ethylene
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3osKw0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3osKw0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3osKw0qU4HuO00025QrE$V
+    ifdGuid: 3osKw0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Formation ozone photochimique par unité'
@@ -1295,9 +1370,13 @@ properties:
     languageOfCreator: en-EN
 - name: EutrophicationPerUnit
   definition: Quantity of eutrophicating compounds calculated in equivalent PO4
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3tdWA0qU4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3tdWA0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tdWA0qU4HuO00025QrE$V
+    ifdGuid: 3tdWA0qU4HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: fr-FR
     name: 'Eutrophisation par unité'

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcProductExtension
-ifdGuid: 1tQQG0qSKHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties common to the definition of all instances of IfcBuildingStorey. Please note that several building attributes are handled directly at the IfcBuildingStorey instance, the building storey number (or short name) by IfcBuildingStorey.Name, the building storey name (or long name) by IfcBuildingStorey.LongName, and the description (or comments) by IfcBuildingStorey.Description. Actual building storey quantities, like building storey perimeter, building storey area and building storey volume are provided by IfcElementQuantity, and the building storey classification according to national building code by IfcClassificationReference.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1tQQG0qSKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tQQG0qSKHuO00025QrE$V
+  ifdGuid: 1tQQG0qSKHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1zNuK0qSKHuO00025QrE$V
-  legacyGuid: f3cb356ff19e4b5f8242a348b4d5a149
-  legacyGuidAsIfcGlobalId: 3popLlyPvBNu92eqYqrQ59
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zNuK0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zNuK0qSKHuO00025QrE$V
+    ifdGuid: 1zNuK0qSKHuO00025QrE$V
+    legacyGuid: f3cb356ff19e4b5f8242a348b4d5a149
+    legacyGuidAsIfcGlobalId: 3popLlyPvBNu92eqYqrQ59
   localizations:
   - language: de-DE
     name: 'Referenz ID'
@@ -72,10 +79,14 @@ properties:
     languageOfCreator: en-EN
 - name: EntranceLevel
   definition: Indication whether this building storey is an entrance level to the building (TRUE), or (FALSE) if otherwise.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 22lC_0qSKHuO00025QrE$V
-  legacyGuid: 9c36fb7bcfbb483882479a419f878dcc
-  legacyGuidAsIfcGlobalId: 2SDljxpxj8E897ca6VXutC
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22lC_0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22lC_0qSKHuO00025QrE$V
+    ifdGuid: 22lC_0qSKHuO00025QrE$V
+    legacyGuid: 9c36fb7bcfbb483882479a419f878dcc
+    legacyGuidAsIfcGlobalId: 2SDljxpxj8E897ca6VXutC
   localizations:
   - language: de-DE
     name: 'Eingangsebene'
@@ -114,10 +125,14 @@ properties:
     languageOfCreator: en-EN
 - name: AboveGround
   definition: Indication whether this building storey is fully above ground (TRUE), or below ground (FALSE), or partially above and below ground (UNKNOWN) - as in sloped terrain.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 29uzs0qSKHuO00025QrE$V
-  legacyGuid: 5eac1a2caad74479a23ad137d140271f
-  legacyGuidAsIfcGlobalId: 1Uh1eigjT4UQ8wqJVHG2SV
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/29uzs0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29uzs0qSKHuO00025QrE$V
+    ifdGuid: 29uzs0qSKHuO00025QrE$V
+    legacyGuid: 5eac1a2caad74479a23ad137d140271f
+    legacyGuidAsIfcGlobalId: 1Uh1eigjT4UQ8wqJVHG2SV
   localizations:
   - language: de-DE
     name: 'Oberirdisches Geschoss'
@@ -156,10 +171,14 @@ properties:
     languageOfCreator: en-EN
 - name: SprinklerProtection
   definition: Indication whether this object is sprinkler protected (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2GSbK0qSKHuO00025QrE$V
-  legacyGuid: c65a9a02510e467899db806f5604f850
-  legacyGuidAsIfcGlobalId: 36Mfe2KGv6U9dRW6zM1FXG
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2GSbK0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2GSbK0qSKHuO00025QrE$V
+    ifdGuid: 2GSbK0qSKHuO00025QrE$V
+    legacyGuid: c65a9a02510e467899db806f5604f850
+    legacyGuidAsIfcGlobalId: 36Mfe2KGv6U9dRW6zM1FXG
   localizations:
   - language: de-DE
     name: 'Sprinklerschutz'
@@ -198,10 +217,14 @@ properties:
     languageOfCreator: en-EN
 - name: SprinklerProtectionAutomatic
   definition: Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).It should only be given, if the property "SprinklerProtection" is set to TRUE.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 6a16ca505a4e484880b1b8dab9dd3a61
-  legacyGuidAsIfcGlobalId: 1g5ifGMav8I82nkDgvtJfX
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 6a16ca505a4e484880b1b8dab9dd3a61
+    legacyGuidAsIfcGlobalId: 1g5ifGMav8I82nkDgvtJfX
   localizations:
   - language: de-DE
     name: 'Sprinklerschutz automatisch'
@@ -240,9 +263,13 @@ properties:
     languageOfCreator: en-EN
 - name: LoadBearingCapacity
   definition: Maximum load bearing capacity of the floor structure throughtout the storey as designed.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2RBEe0qSKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2RBEe0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RBEe0qSKHuO00025QrE$V
+    ifdGuid: 2RBEe0qSKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Deckentragfähigkeit'
@@ -278,9 +305,13 @@ properties:
     languageOfCreator: en-EN
 - name: GrossPlannedArea
   definition: Total planned area for the building storey. Used for programming the building storey.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2WYZI0qSKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2WYZI0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WYZI0qSKHuO00025QrE$V
+    ifdGuid: 2WYZI0qSKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Bruttofläche nach Raumprogramm'
@@ -319,9 +350,13 @@ properties:
     languageOfCreator: en-EN
 - name: NetPlannedArea
   definition: Total planned net area for the building storey. Used for programming the building storey.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2bvty0qSKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bvty0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bvty0qSKHuO00025QrE$V
+    ifdGuid: 2bvty0qSKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Nettofläche nach Raumprogramm'

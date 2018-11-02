@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcHvacDomain
-ifdGuid: 2HjNa0qUaHuO00025QrE$V
-legacyGuid: ''
 definition: 'Humidifier performance history attributes.Sound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2HjNa0qUaHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HjNa0qUaHuO00025QrE$V
+  ifdGuid: 2HjNa0qUaHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: AtmosphericPressure
   definition: Ambient atmospheric pressure.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2OG$20qUaHuO00025QrE$V
-  legacyGuid: 1510d3230e094924ac8b001fb8900d43
-  legacyGuidAsIfcGlobalId: 0L4DCZ3Wb99AoB01_ua0r3
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2OG$20qUaHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2OG$20qUaHuO00025QrE$V
+    ifdGuid: 2OG$20qUaHuO00025QrE$V
+    legacyGuid: 1510d3230e094924ac8b001fb8900d43
+    legacyGuidAsIfcGlobalId: 0L4DCZ3Wb99AoB01_ua0r3
   localizations:
   - language: ja-JP
     name: '標準大気圧（外気圧）'
@@ -71,10 +78,14 @@ properties:
     languageOfCreator: en-EN
 - name: SaturationEfficiency
   definition: 'Saturation efficiency: Ratio of leaving air absolute humidity to the maximum absolute humidity.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2dmpc0qUaHuO00025QrE$V
-  legacyGuid: d202cdbc22314689a8ee53f22f9e251e
-  legacyGuidAsIfcGlobalId: 3I0isy8Z56YQZkK$8ldYKU
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2dmpc0qUaHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dmpc0qUaHuO00025QrE$V
+    ifdGuid: 2dmpc0qUaHuO00025QrE$V
+    legacyGuid: d202cdbc22314689a8ee53f22f9e251e
+    legacyGuidAsIfcGlobalId: 3I0isy8Z56YQZkK$8ldYKU
   localizations:
   - language: ja-JP
     name: '飽和比率'

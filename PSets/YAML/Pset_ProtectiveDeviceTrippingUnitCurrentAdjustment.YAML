@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 2aqKI0qViHuO00025QrE$V
-legacyGuid: ''
 definition: 'A set of current adjustment values that may be applied to an electronic or thermal tripping unit type.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2aqKI0qViHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2aqKI0qViHuO00025QrE$V
+  ifdGuid: 2aqKI0qViHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: AdjustmentValueType
   definition: The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2ePCk0qViHuO00025QrE$V
-  legacyGuid: bdd6b828bae644f3abb1fe5f56719523
-  legacyGuidAsIfcGlobalId: 2zrhWekkP4ywkn$bzMSPKZ
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ePCk0qViHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ePCk0qViHuO00025QrE$V
+    ifdGuid: 2ePCk0qViHuO00025QrE$V
+    legacyGuid: bdd6b828bae644f3abb1fe5f56719523
+    legacyGuidAsIfcGlobalId: 2zrhWekkP4ywkn$bzMSPKZ
   localizations:
   - language: ja-JP
     name: '調整値の型'
@@ -159,10 +166,14 @@ properties:
     languageOfCreator: en-EN
 - name: AdjustmentRange
   definition: Upper and lower current adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2mlGQ0qViHuO00025QrE$V
-  legacyGuid: c988d970ee7d4f4f9f8552c02e5f820a
-  legacyGuidAsIfcGlobalId: 39YDbmxdrFJv_5Ki0kNu8A
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2mlGQ0qViHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mlGQ0qViHuO00025QrE$V
+    ifdGuid: 2mlGQ0qViHuO00025QrE$V
+    legacyGuid: c988d970ee7d4f4f9f8552c02e5f820a
+    legacyGuidAsIfcGlobalId: 39YDbmxdrFJv_5Ki0kNu8A
   localizations:
   - language: ja-JP
     name: '調整範囲'
@@ -202,10 +213,14 @@ properties:
     languageOfCreator: en-EN
 - name: AdjustmentRangeStepValue
   definition: Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2uVAi0qViHuO00025QrE$V
-  legacyGuid: 7be80953808d4af584de0b9fc41be7b1
-  legacyGuidAsIfcGlobalId: 1xw0bJW8rAzOJU2v$46_Un
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uVAi0qViHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uVAi0qViHuO00025QrE$V
+    ifdGuid: 2uVAi0qViHuO00025QrE$V
+    legacyGuid: 7be80953808d4af584de0b9fc41be7b1
+    legacyGuidAsIfcGlobalId: 1xw0bJW8rAzOJU2v$46_Un
   localizations:
   - language: ja-JP
     name: '調整範囲のステップ値'
@@ -244,10 +259,14 @@ properties:
     languageOfCreator: en-EN
 - name: AdjustmentValues
   definition: A list of current adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2_Sem0qViHuO00025QrE$V
-  legacyGuid: d1aed8fb539a4a2e8a9cb84fb5392aae
-  legacyGuidAsIfcGlobalId: 3HhjZxKvfABegSk4_rEIgk
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_Sem0qViHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_Sem0qViHuO00025QrE$V
+    ifdGuid: 2_Sem0qViHuO00025QrE$V
+    legacyGuid: d1aed8fb539a4a2e8a9cb84fb5392aae
+    legacyGuidAsIfcGlobalId: 3HhjZxKvfABegSk4_rEIgk
   localizations:
   - language: ja-JP
     name: '調整値'
@@ -286,10 +305,14 @@ properties:
     languageOfCreator: en-EN
 - name: AdjustmentDesignation
   definition: The desgnation on the device for the adjustment.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 34Q6q0qViHuO00025QrE$V
-  legacyGuid: 081af545e6374c4d9e9fb0b1d55dd9a0
-  legacyGuidAsIfcGlobalId: 086lL5vZTCJPwViB7LNTcW
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/34Q6q0qViHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34Q6q0qViHuO00025QrE$V
+    ifdGuid: 34Q6q0qViHuO00025QrE$V
+    legacyGuid: 081af545e6374c4d9e9fb0b1d55dd9a0
+    legacyGuidAsIfcGlobalId: 086lL5vZTCJPwViB7LNTcW
   localizations:
   - language: ja-JP
     name: '調整の指定'

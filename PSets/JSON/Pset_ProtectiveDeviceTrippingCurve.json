@@ -4,9 +4,13 @@
     "version": "4.0.0.0",
     "schema": "IfcElectricalDomain"
   },
-  "ifdGuid": "0Woeq0qVeHuO00025QrE$V",
-  "legacyGuid": "",
   "definition": "Tripping curves are applied to thermal, thermal magnetic or MCB_RCD tripping units (i.e. tripping units having type property sets for thermal, thermal magnetic or MCB_RCD tripping defined). They are not applied to electronic tripping units.",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0Woeq0qVeHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Woeq0qVeHuO00025QrE$V",
+    "ifdGuid": "0Woeq0qVeHuO00025QrE$V",
+    "legacyGuid": ""
+  },
   "localizations": [
     {
       "language": "de-DE",
@@ -49,10 +53,15 @@
     {
       "name": "TrippingCurveType",
       "definition": "The type of tripping curve that is represented by the property set.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0aNXG0qVeHuO00025QrE$V",
-      "legacyGuid": "eb0138a9fedf4e879120a260e4d4293d",
-      "legacyGuidAsIfcGlobalId": "3h0JYf$jzEXv4Wec3ar2az",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0aNXG0qVeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0aNXG0qVeHuO00025QrE$V",
+        "ifdGuid": "0aNXG0qVeHuO00025QrE$V",
+        "legacyGuid": "eb0138a9fedf4e879120a260e4d4293d",
+        "legacyGuidAsIfcGlobalId": "3h0JYf$jzEXv4Wec3ar2az"
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -259,10 +268,15 @@
     {
       "name": "TrippingCurve",
       "definition": "A curve that establishes the release time of a tripping unit when a particular prospective current is applied.  Note that the tripping curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set: (1) Defining value is the Prospective Current which is a list of minimum 2 and maximum 16 numbers providing the currents in [x In] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points.(2) Defined value is a list of minimum 2 and maximum 16 numbers providing the release_time in [s] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points. Note that a defined interpolation.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0mITO0qVeHuO00025QrE$V",
-      "legacyGuid": "284776e6804b48e1b60a495e52bab949",
-      "legacyGuidAsIfcGlobalId": "0eHtRcW4j8uROAILvIkhb9",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0mITO0qVeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0mITO0qVeHuO00025QrE$V",
+        "ifdGuid": "0mITO0qVeHuO00025QrE$V",
+        "legacyGuid": "284776e6804b48e1b60a495e52bab949",
+        "legacyGuidAsIfcGlobalId": "0eHtRcW4j8uROAILvIkhb9"
+      },
       "localizations": [
         {
           "language": "ja-JP",

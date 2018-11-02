@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcProductExtension
-ifdGuid: 1cp2I0qUiHuO00025QrE$V
-legacyGuid: ''
 definition: 'Specifies the identity of land within a statutory registration system. NOTE: The property LandTitleID is to be used in preference to deprecated attribute LandTitleNumber in IfcSite.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1cp2I0qUiHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1cp2I0qUiHuO00025QrE$V
+  ifdGuid: 1cp2I0qUiHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -32,10 +35,14 @@ applicableIfcClasses:
 properties:
 - name: LandID
   definition: Identification number assigned by the statutory registration authority to a land parcel.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1iAMy0qUiHuO00025QrE$V
-  legacyGuid: efda3aa648f04155906787867b2b6e43
-  legacyGuidAsIfcGlobalId: 3lsZgcIF11LP1dXuPxAsv3
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1iAMy0qUiHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1iAMy0qUiHuO00025QrE$V
+    ifdGuid: 1iAMy0qUiHuO00025QrE$V
+    legacyGuid: efda3aa648f04155906787867b2b6e43
+    legacyGuidAsIfcGlobalId: 3lsZgcIF11LP1dXuPxAsv3
   localizations:
   - language: fr-FR
     name: 'Identifiant parcelle'
@@ -74,10 +81,14 @@ properties:
     languageOfCreator: en-EN
 - name: IsPermanentID
   definition: Indicates whether the identity assigned to a land parcel is permanent (= TRUE) or temporary (=FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1pwHE0qUiHuO00025QrE$V
-  legacyGuid: a1e38a8876054b29b6dd0523c319276e
-  legacyGuidAsIfcGlobalId: 2Xuug8TWLBARRT1IF36ITk
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1pwHE0qUiHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pwHE0qUiHuO00025QrE$V
+    ifdGuid: 1pwHE0qUiHuO00025QrE$V
+    legacyGuid: a1e38a8876054b29b6dd0523c319276e
+    legacyGuidAsIfcGlobalId: 2Xuug8TWLBARRT1IF36ITk
   localizations:
   - language: fr-FR
     name: 'Identifiant permanent'
@@ -116,10 +127,14 @@ properties:
     languageOfCreator: en-EN
 - name: LandTitleID
   definition: Identification number assigned by the statutory registration authority to the title to a land parcel.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1x4260qUiHuO00025QrE$V
-  legacyGuid: 7cd3f251269b415db852bba2b101a1f8
-  legacyGuidAsIfcGlobalId: 1yq$9H9fj1NRXIkwAn0Q7u
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1x4260qUiHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x4260qUiHuO00025QrE$V
+    ifdGuid: 1x4260qUiHuO00025QrE$V
+    legacyGuid: 7cd3f251269b415db852bba2b101a1f8
+    legacyGuidAsIfcGlobalId: 1yq$9H9fj1NRXIkwAn0Q7u
   localizations:
   - language: fr-FR
     name: 'Identifiant titre parcelle'

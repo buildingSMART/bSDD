@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: 0XQI20qWOHuO00025QrE$V
-legacyGuid: ''
 definition: 'A device that senses or detects pressure. HISTORY: PressureSensorSensorSetPoint changed to SetPointPressure. Range, accuracy and time constant deleted.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XQI20qWOHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XQI20qWOHuO00025QrE$V
+  ifdGuid: 0XQI20qWOHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: SetPointPressure
   definition: The pressure value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0cBTI0qWOHuO00025QrE$V
-  legacyGuid: b0d0f8448134414e8a87bff0740e6c88
-  legacyGuidAsIfcGlobalId: 2mqFX4WJH1Jeg7l$1q3co8
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0cBTI0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cBTI0qWOHuO00025QrE$V
+    ifdGuid: 0cBTI0qWOHuO00025QrE$V
+    legacyGuid: b0d0f8448134414e8a87bff0740e6c88
+    legacyGuidAsIfcGlobalId: 2mqFX4WJH1Jeg7l$1q3co8
   localizations:
   - language: ja-JP
     name: '圧力設定値'
@@ -73,10 +80,14 @@ properties:
     languageOfCreator: en-EN
 - name: IsSwitch
   definition: Identifies if the sensor also functions as a switch at the set point (=TRUE) or not (= FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0mw6c0qWOHuO00025QrE$V
-  legacyGuid: b35630a4898e4d97b1e6de9527f0d420
-  legacyGuidAsIfcGlobalId: 2pLZ2aYOvDbx7ctfKdyDGW
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0mw6c0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0mw6c0qWOHuO00025QrE$V
+    ifdGuid: 0mw6c0qWOHuO00025QrE$V
+    legacyGuid: b35630a4898e4d97b1e6de9527f0d420
+    legacyGuidAsIfcGlobalId: 2pLZ2aYOvDbx7ctfKdyDGW
   localizations:
   - language: ja-JP
     name: 'スイッチ機能の有無'

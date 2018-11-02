@@ -11,12 +11,8 @@ namespace PSD_IFC5
 
         public IfcVersion ifcVersion { get; set; }
 
-        public string ifdGuid { get; set; }
-
-        public string legacyGuid { get; set; }
-
         public string definition { get; set; }
-
+        public DictionaryReference dictionaryReference { get; set; }
         public List<Localization> localizations { get; set; }
 
         public List<ApplicableIfcClass> applicableIfcClasses { get; set; }
@@ -49,10 +45,7 @@ namespace PSD_IFC5
     {
         public string name { get; set; }
         public string definition { get; set; }
-        public string dictionaryIdentifier { get; set; }
-        public string ifdGuid { get; set; }
-        public string legacyGuid { get; set; }
-        public string legacyGuidAsIfcGlobalId { get; set; }
+        public DictionaryReference dictionaryReference { get; set; }
         public List<Localization> localizations { get; set; }
         public TypePropertyBoundedValue typePropertyBoundedValue { get; set; }
         public TypeComplexProperty typeComplexProperty { get; set; }
@@ -291,5 +284,16 @@ namespace PSD_IFC5
         public DateTime dateOfLastChange { get; set; }    
         public DateTime dateOfDeactivation { get; set; }
         public string languageOfCreator { get; set; }
+    }
+
+    public class DictionaryReference
+    {
+        public string dictionaryIdentifier { get; set; }
+        public string dictionaryNamespace { get; set; }
+        public string dictionaryWebUri { get; set; }
+        public string dictionaryApiUri { get; set; }
+        public string ifdGuid { get; set; }
+        public string legacyGuid { get; set; }
+        public string legacyGuidAsIfcGlobalId { get; set; }
     }
 }

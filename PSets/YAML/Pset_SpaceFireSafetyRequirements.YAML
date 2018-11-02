@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcProductExtension
-ifdGuid: 0g3oO0qWaHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties related to fire protection of spaces that apply to the occurrences of IfcSpace or IfcZone.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0g3oO0qWaHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0g3oO0qWaHuO00025QrE$V
+  ifdGuid: 0g3oO0qWaHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -36,10 +39,14 @@ applicableIfcClasses:
 properties:
 - name: FireRiskFactor
   definition: Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0pc8u0qWaHuO00025QrE$V
-  legacyGuid: 02f8b60f6e724a76ab7d05ca050afc81
-  legacyGuidAsIfcGlobalId: 02_BOFRd9ATgjz1Se52lo1
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0pc8u0qWaHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0pc8u0qWaHuO00025QrE$V
+    ifdGuid: 0pc8u0qWaHuO00025QrE$V
+    legacyGuid: 02f8b60f6e724a76ab7d05ca050afc81
+    legacyGuidAsIfcGlobalId: 02_BOFRd9ATgjz1Se52lo1
   localizations:
   - language: de-DE
     name: 'Brandgefahrenklasse'
@@ -78,10 +85,14 @@ properties:
     languageOfCreator: en-EN
 - name: FlammableStorage
   definition: Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: c7437fe72980402bbde7543ce5f39650
-  legacyGuidAsIfcGlobalId: 37Gt$dAO10AxtdL3pbyvPG
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: c7437fe72980402bbde7543ce5f39650
+    legacyGuidAsIfcGlobalId: 37Gt$dAO10AxtdL3pbyvPG
   localizations:
   - language: de-DE
     name: 'Lagerung brennbarer Stoffe'
@@ -120,10 +131,14 @@ properties:
     languageOfCreator: en-EN
 - name: FireExit
   definition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 53ef83dcea2447a590b8ea652d60fff3
-  legacyGuidAsIfcGlobalId: 1JxuFSwYH7fP2uwcKjOF$p
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 53ef83dcea2447a590b8ea652d60fff3
+    legacyGuidAsIfcGlobalId: 1JxuFSwYH7fP2uwcKjOF$p
   localizations:
   - language: de-DE
     name: 'Notausgang'
@@ -162,10 +177,14 @@ properties:
     languageOfCreator: en-EN
 - name: SprinklerProtection
   definition: Indication whether the space is sprinkler protected (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 07e3f5897ce6483ab48476532b046663
-  legacyGuidAsIfcGlobalId: 07u$M9VEP8EhI4TbCh16PZ
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 07e3f5897ce6483ab48476532b046663
+    legacyGuidAsIfcGlobalId: 07u$M9VEP8EhI4TbCh16PZ
   localizations:
   - language: de-DE
     name: 'Sprinklerschutz'
@@ -204,10 +223,14 @@ properties:
     languageOfCreator: en-EN
 - name: SprinklerProtectionAutomatic
   definition: Indication whether the space has an automatic sprinkler protection (TRUE) or not (FALSE).It should only be given, if the property "SprinklerProtection" is set to TRUE.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 9e953a24093348d799676bf9b1afba57
-  legacyGuidAsIfcGlobalId: 2UbJea2JD8rvbdQ$cnhxfN
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 9e953a24093348d799676bf9b1afba57
+    legacyGuidAsIfcGlobalId: 2UbJea2JD8rvbdQ$cnhxfN
   localizations:
   - language: de-DE
     name: 'Sprinklerschutz automatisch'
@@ -246,10 +269,14 @@ properties:
     languageOfCreator: en-EN
 - name: AirPressurization
   definition: Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: fbcb5207d55046aea00497e339ea0c3c
-  legacyGuidAsIfcGlobalId: 3xor87rL16hg04b_CvwWmy
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: fbcb5207d55046aea00497e339ea0c3c
+    legacyGuidAsIfcGlobalId: 3xor87rL16hg04b_CvwWmy
   localizations:
   - language: de-DE
     name: 'Luftdruckausgleich'

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: 2sgEo0qUSHuO00025QrE$V
-legacyGuid: ''
 definition: 'A device that reads and displays a pressure value at a point or the pressure difference between two points.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sgEo0qUSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sgEo0qUSHuO00025QrE$V
+  ifdGuid: 2sgEo0qUSHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: PressureGaugeType
   definition: Identifies the means by which pressure is displayed.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2ydis0qUSHuO00025QrE$V
-  legacyGuid: f434482818d549b0895d34bd4a95d73e
-  legacyGuidAsIfcGlobalId: 3qD4We6DL9i8bTDBrAbTS_
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ydis0qUSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ydis0qUSHuO00025QrE$V
+    ifdGuid: 2ydis0qUSHuO00025QrE$V
+    legacyGuid: f434482818d549b0895d34bd4a95d73e
+    legacyGuidAsIfcGlobalId: 3qD4We6DL9i8bTDBrAbTS_
   localizations:
   - language: ja-JP
     name: '圧力計タイプ'
@@ -181,10 +188,14 @@ properties:
     languageOfCreator: en-EN
 - name: DisplaySize
   definition: The physical size of the display. For a dial pressure gauge it will be the diameter of the dial.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3AxEc0qUSHuO00025QrE$V
-  legacyGuid: 0993d0a6bfa7432bb04e9ab0af1a1d40
-  legacyGuidAsIfcGlobalId: 09az2clwT3Ax1Ech2l6Xr0
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AxEc0qUSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AxEc0qUSHuO00025QrE$V
+    ifdGuid: 3AxEc0qUSHuO00025QrE$V
+    legacyGuid: 0993d0a6bfa7432bb04e9ab0af1a1d40
+    legacyGuidAsIfcGlobalId: 09az2clwT3Ax1Ech2l6Xr0
   localizations:
   - language: ja-JP
     name: '表示サイズ'

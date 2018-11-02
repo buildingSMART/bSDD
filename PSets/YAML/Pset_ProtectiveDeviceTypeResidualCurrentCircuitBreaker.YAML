@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 1DWAE0qVuHuO00025QrE$V
-legacyGuid: ''
 definition: 'A residual current circuit breaker opens, closes or isolates a circuit and has short circuit and overload protection.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DWAE0qVuHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DWAE0qVuHuO00025QrE$V
+  ifdGuid: 1DWAE0qVuHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: Sensitivity
   definition: Current leakage to an unwanted leading path during normal operation (IEC 151-14-49).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1IHLU0qVuHuO00025QrE$V
-  legacyGuid: 44e7ceea00b648d5951f116a148b9cc9
-  legacyGuidAsIfcGlobalId: 14vyxg0BP8rPKV4MeKYvp9
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IHLU0qVuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IHLU0qVuHuO00025QrE$V
+    ifdGuid: 1IHLU0qVuHuO00025QrE$V
+    legacyGuid: 44e7ceea00b648d5951f116a148b9cc9
+    legacyGuidAsIfcGlobalId: 14vyxg0BP8rPKV4MeKYvp9
   localizations:
   - language: ja-JP
     name: '感度'

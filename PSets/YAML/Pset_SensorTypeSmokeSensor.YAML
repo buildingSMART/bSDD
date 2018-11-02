@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: 1IuUm0qWOHuO00025QrE$V
-legacyGuid: ''
 definition: 'A device that senses or detects smoke. HISTORY: PressureSensorSensorSetPoint (error in previous release) changed to SetPointConcentration. Range, accuracy and time constant deleted.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IuUm0qWOHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IuUm0qWOHuO00025QrE$V
+  ifdGuid: 1IuUm0qWOHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: CoverageArea
   definition: The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Oryq0qWOHuO00025QrE$V
-  legacyGuid: 721cbb8b80c043269a586db88b590d04
-  legacyGuidAsIfcGlobalId: 1o7BkBWC139ffORRYBMGq4
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Oryq0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Oryq0qWOHuO00025QrE$V
+    ifdGuid: 1Oryq0qWOHuO00025QrE$V
+    legacyGuid: 721cbb8b80c043269a586db88b590d04
+    legacyGuidAsIfcGlobalId: 1o7BkBWC139ffORRYBMGq4
   localizations:
   - language: ja-JP
     name: '測定範囲'
@@ -72,10 +79,14 @@ properties:
     languageOfCreator: en-EN
 - name: SetPointConcentration
   definition: The smoke concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1VPaI0qWOHuO00025QrE$V
-  legacyGuid: 07b0055e38974cd7bb4daf3fc1e1b024
-  legacyGuidAsIfcGlobalId: 07i0LUE9TCrxjDhp$1uR0a
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1VPaI0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VPaI0qWOHuO00025QrE$V
+    ifdGuid: 1VPaI0qWOHuO00025QrE$V
+    legacyGuid: 07b0055e38974cd7bb4daf3fc1e1b024
+    legacyGuidAsIfcGlobalId: 07i0LUE9TCrxjDhp$1uR0a
   localizations:
   - language: ja-JP
     name: '煙濃度設定値'
@@ -115,10 +126,14 @@ properties:
     languageOfCreator: en-EN
 - name: HasBuiltInAlarm
   definition: Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1eLnO0qWOHuO00025QrE$V
-  legacyGuid: 9505c16b042d405784f673f332e29bb6
-  legacyGuidAsIfcGlobalId: 2L1S5h12r0LuJsS$Coufks
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1eLnO0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1eLnO0qWOHuO00025QrE$V
+    ifdGuid: 1eLnO0qWOHuO00025QrE$V
+    legacyGuid: 9505c16b042d405784f673f332e29bb6
+    legacyGuidAsIfcGlobalId: 2L1S5h12r0LuJsS$Coufks
   localizations:
   - language: ja-JP
     name: '煙警報器に含まれているか'

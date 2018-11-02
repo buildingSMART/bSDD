@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcHvacDomain
-ifdGuid: 1dUR20qXKHuO00025QrE$V
-legacyGuid: ''
 definition: 'Spring or weight loaded valve that automatically discharges to a safe place fluid that has built up to excessive pressure in pipes or fittings.Note that a pressure relief valve is constrained to have a single port pattern.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1dUR20qXKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dUR20qXKHuO00025QrE$V
+  ifdGuid: 1dUR20qXKHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: ReliefPressure
   definition: The pressure at which the spring or weight in the valve is set to discharge fluid.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1irli0qXKHuO00025QrE$V
-  legacyGuid: 5ec8e65a191d426e95490f1d3f9f2161
-  legacyGuidAsIfcGlobalId: 1UoEPQ6Hr2RfL93nq$do5X
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1irli0qXKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1irli0qXKHuO00025QrE$V
+    ifdGuid: 1irli0qXKHuO00025QrE$V
+    legacyGuid: 5ec8e65a191d426e95490f1d3f9f2161
+    legacyGuidAsIfcGlobalId: 1UoEPQ6Hr2RfL93nq$do5X
   localizations:
   - language: ja-JP
     name: 'リリーフ圧力'

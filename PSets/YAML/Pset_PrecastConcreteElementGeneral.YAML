@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcStructuralElementsDomain
-ifdGuid: 22X$Y0qVGHuO00025QrE$V
-legacyGuid: ''
 definition: 'Production and manufacturing related properties common to different types of precast concrete elements. The Pset can be used by a number of subtypes of IfcBuildingElement. If the precast concrete element is a sandwich wall panel each structural layer or shell represented by an IfcBuildingElementPart may be attached to a separate Pset of this type, if needed. Some of the properties apply only for specific types of precast concrete elements.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22X$Y0qVGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22X$Y0qVGHuO00025QrE$V
+  ifdGuid: 22X$Y0qVGHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: TypeDesignator
   definition: Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2KQPk0qVGHuO00025QrE$V
-  legacyGuid: 9ec7058e8b2442048bafc0cb76d4a726
-  legacyGuidAsIfcGlobalId: 2UnmMEYoH218klmCjsrASc
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2KQPk0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KQPk0qVGHuO00025QrE$V
+    ifdGuid: 2KQPk0qVGHuO00025QrE$V
+    legacyGuid: 9ec7058e8b2442048bafc0cb76d4a726
+    legacyGuidAsIfcGlobalId: 2UnmMEYoH218klmCjsrASc
   localizations:
   - language: ja-JP
     name: '特定子の記述'
@@ -69,10 +76,14 @@ properties:
     languageOfCreator: en-EN
 - name: CornerChamfer
   definition: The chamfer in the corners of the precast element. The chamfer is presumed to be equal in both directions.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 1804a51c044b4c0da014ba6d409dc137
-  legacyGuidAsIfcGlobalId: 0O1AKS14jC3Q0Kkcr0dS4t
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 1804a51c044b4c0da014ba6d409dc137
+    legacyGuidAsIfcGlobalId: 0O1AKS14jC3Q0Kkcr0dS4t
   localizations:
   - language: ja-JP
     name: '面取り'
@@ -108,10 +119,14 @@ properties:
     languageOfCreator: en-EN
 - name: ManufacturingToleranceClass
   definition: Classification designation of the manufacturing tolerances according to local standards.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 0f09db6d463c49e9801aaa480acdb3fd
-  legacyGuidAsIfcGlobalId: 0F2TjjHZn9wO0QgaWApRFz
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 0f09db6d463c49e9801aaa480acdb3fd
+    legacyGuidAsIfcGlobalId: 0F2TjjHZn9wO0QgaWApRFz
   localizations:
   - language: ja-JP
     name: 'メーカーの認可分類'
@@ -147,10 +162,14 @@ properties:
     languageOfCreator: en-EN
 - name: FormStrippingStrength
   definition: The minimum required compressive strength of the concrete at form stripping time.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2x9z80qVGHuO00025QrE$V
-  legacyGuid: 49fda27bc540464d8f52d8ab8a450c76
-  legacyGuidAsIfcGlobalId: 19$Q9xnK16JOzIsAkAHGns
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2x9z80qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2x9z80qVGHuO00025QrE$V
+    ifdGuid: 2x9z80qVGHuO00025QrE$V
+    legacyGuid: 49fda27bc540464d8f52d8ab8a450c76
+    legacyGuidAsIfcGlobalId: 19$Q9xnK16JOzIsAkAHGns
   localizations:
   - language: ja-JP
     name: '脱型強度'
@@ -186,10 +205,14 @@ properties:
     languageOfCreator: en-EN
 - name: LiftingStrength
   definition: The minimum required compressive strength of the concrete when the concrete element is lifted.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 31jac0qVGHuO00025QrE$V
-  legacyGuid: cf3c8cb1d1bc4dda8bef65dcf3414a93
-  legacyGuidAsIfcGlobalId: 3FF8onqRnDsellPTppGKgJ
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/31jac0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31jac0qVGHuO00025QrE$V
+    ifdGuid: 31jac0qVGHuO00025QrE$V
+    legacyGuid: cf3c8cb1d1bc4dda8bef65dcf3414a93
+    legacyGuidAsIfcGlobalId: 3FF8onqRnDsellPTppGKgJ
   localizations:
   - language: ja-JP
     name: '吊り上げ強度'
@@ -225,10 +248,14 @@ properties:
     languageOfCreator: en-EN
 - name: ReleaseStrength
   definition: The minimum required compressive strength of the concrete when the tendon stress is released. This property applies to prestressed concrete elements only.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 39TUu0qVGHuO00025QrE$V
-  legacyGuid: e25b9c74396541efa739377e8819a6d3
-  legacyGuidAsIfcGlobalId: 3YMvnqEML1xwSvDtw86QRJ
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/39TUu0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39TUu0qVGHuO00025QrE$V
+    ifdGuid: 39TUu0qVGHuO00025QrE$V
+    legacyGuid: e25b9c74396541efa739377e8819a6d3
+    legacyGuidAsIfcGlobalId: 3YMvnqEML1xwSvDtw86QRJ
   localizations:
   - language: ja-JP
     name: 'リリース強度'
@@ -264,10 +291,14 @@ properties:
     languageOfCreator: en-EN
 - name: MinimumAllowableSupportLength
   definition: The minimum allowable support length.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3FQyy0qVGHuO00025QrE$V
-  legacyGuid: c6d45b170d17478cbb58bdbd09ad541b
-  legacyGuidAsIfcGlobalId: 36r5iN3HT7ZBjOlRq9hLGR
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3FQyy0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FQyy0qVGHuO00025QrE$V
+    ifdGuid: 3FQyy0qVGHuO00025QrE$V
+    legacyGuid: c6d45b170d17478cbb58bdbd09ad541b
+    legacyGuidAsIfcGlobalId: 36r5iN3HT7ZBjOlRq9hLGR
   localizations:
   - language: ja-JP
     name: '最小許容支持長さ'
@@ -303,10 +334,14 @@ properties:
     languageOfCreator: en-EN
 - name: InitialTension
   definition: The initial stress of the tendon. This property applies to prestressed concrete elements only.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3L_aQ0qVGHuO00025QrE$V
-  legacyGuid: 65e44802d6d642b98637bf3e5bf7877d
-  legacyGuidAsIfcGlobalId: 1bv4W2rjP2kOOtlpvRzuTz
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3L_aQ0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3L_aQ0qVGHuO00025QrE$V
+    ifdGuid: 3L_aQ0qVGHuO00025QrE$V
+    legacyGuid: 65e44802d6d642b98637bf3e5bf7877d
+    legacyGuidAsIfcGlobalId: 1bv4W2rjP2kOOtlpvRzuTz
   localizations:
   - language: ja-JP
     name: '初引張力'
@@ -342,10 +377,14 @@ properties:
     languageOfCreator: en-EN
 - name: TendonRelaxation
   definition: The maximum allowable relaxation of the tendon (usually expressed as %/1000 h).This property applies to prestressed concrete elements only.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3Ry2U0qVGHuO00025QrE$V
-  legacyGuid: c7254787776149019ec56097e47a83fc
-  legacyGuidAsIfcGlobalId: 379KU7Ts590Px5O9VaUeFy
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Ry2U0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ry2U0qVGHuO00025QrE$V
+    ifdGuid: 3Ry2U0qVGHuO00025QrE$V
+    legacyGuid: c7254787776149019ec56097e47a83fc
+    legacyGuidAsIfcGlobalId: 379KU7Ts590Px5O9VaUeFy
   localizations:
   - language: ja-JP
     name: '緊張材のリラクセーション'
@@ -381,10 +420,14 @@ properties:
     languageOfCreator: en-EN
 - name: TransportationStrength
   definition: The minimum required compressive strength of the concrete required for transportation.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3XJN80qVGHuO00025QrE$V
-  legacyGuid: b17cc7a572a24b2097b562189135415b
-  legacyGuidAsIfcGlobalId: 2nVCUbSg9B89UrOXYHDK5R
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3XJN80qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XJN80qVGHuO00025QrE$V
+    ifdGuid: 3XJN80qVGHuO00025QrE$V
+    legacyGuid: b17cc7a572a24b2097b562189135415b
+    legacyGuidAsIfcGlobalId: 2nVCUbSg9B89UrOXYHDK5R
   localizations:
   - language: ja-JP
     name: '輸送強度'
@@ -420,10 +463,14 @@ properties:
     languageOfCreator: en-EN
 - name: SupportDuringTransportDescription
   definition: Textual description of how the concrete element is supported during transportation.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3dGrC0qVGHuO00025QrE$V
-  legacyGuid: 59914bfc51824b6883b1cddb4956ad14
-  legacyGuidAsIfcGlobalId: 1PaKlyKO9BQ8EnpTj9LgqK
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3dGrC0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dGrC0qVGHuO00025QrE$V
+    ifdGuid: 3dGrC0qVGHuO00025QrE$V
+    legacyGuid: 59914bfc51824b6883b1cddb4956ad14
+    legacyGuidAsIfcGlobalId: 1PaKlyKO9BQ8EnpTj9LgqK
   localizations:
   - language: ja-JP
     name: '輸送中の支持に関する記述'
@@ -459,10 +506,14 @@ properties:
     languageOfCreator: en-EN
 - name: SupportDuringTransportDocReference
   definition: Reference to an external document defining how the concrete element is supported during transportation.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3jEJG0qVGHuO00025QrE$V
-  legacyGuid: 45ce23dfd2b64d3dbc21b05c9d9813f7
-  legacyGuidAsIfcGlobalId: 15pYFVqhPDFRmXi5oTc1Ft
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3jEJG0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jEJG0qVGHuO00025QrE$V
+    ifdGuid: 3jEJG0qVGHuO00025QrE$V
+    legacyGuid: 45ce23dfd2b64d3dbc21b05c9d9813f7
+    legacyGuidAsIfcGlobalId: 15pYFVqhPDFRmXi5oTc1Ft
   localizations:
   - language: ja-JP
     name: '輸送中の支持に関する参考文献'
@@ -500,10 +551,14 @@ properties:
     languageOfCreator: en-EN
 - name: HollowCorePlugging
   definition: "A descriptive label for how the hollow core ends are treated: they may be left open, closed with a plug, or sealed with cast concrete. Values would be, for example: 'Unplugged', 'Plugged', 'SealedWithConcrete'. This property applies to  hollow core slabs only."
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3mD2I0qVGHuO00025QrE$V
-  legacyGuid: e0ec2fe011a848efafb88e055f80b165
-  legacyGuidAsIfcGlobalId: 3Wx2$W4QX8xw_uZWLVWB5b
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3mD2I0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mD2I0qVGHuO00025QrE$V
+    ifdGuid: 3mD2I0qVGHuO00025QrE$V
+    legacyGuid: e0ec2fe011a848efafb88e055f80b165
+    legacyGuidAsIfcGlobalId: 3Wx2$W4QX8xw_uZWLVWB5b
   localizations:
   - language: ja-JP
     name: 'くぼみの充填'
@@ -539,9 +594,13 @@ properties:
     languageOfCreator: en-EN
 - name: CamberAtMidspan
   definition: The camber deflection, measured from the midpoint of a cambered face of a piece to the midpoint of the chord joining the ends of the same face, as shown in the figure below, divided by the original (nominal) straight length of the face of the piece.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3smfm0qVGHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3smfm0qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3smfm0qVGHuO00025QrE$V
+    ifdGuid: 3smfm0qVGHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -577,9 +636,13 @@ properties:
     languageOfCreator: en-EN
 - name: BatterAtStart
   definition: The angle, in radians, by which the formwork at the starting face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3xXr00qVGHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3xXr00qVGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3xXr00qVGHuO00025QrE$V
+    ifdGuid: 3xXr00qVGHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -615,9 +678,13 @@ properties:
     languageOfCreator: en-EN
 - name: BatterAtEnd
   definition: The angle, in radians, by which the formwork at the ending face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 00v9g0qVKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00v9g0qVKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00v9g0qVKHuO00025QrE$V
+    ifdGuid: 00v9g0qVKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -653,9 +720,13 @@ properties:
     languageOfCreator: en-EN
 - name: Twisting
   definition: The angle, in radians, through which the end face of a precast piece is rotated with respect to its starting face, along its longitudinal axis, as a result of non-aligned supports. This measure is also termed the ‘warping’ angle.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 06sdk0qVKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06sdk0qVKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06sdk0qVKHuO00025QrE$V
+    ifdGuid: 06sdk0qVKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -691,9 +762,13 @@ properties:
     languageOfCreator: en-EN
 - name: Shortening
   definition: The ratio of the distance by which a precast piece is shortened after release from its form (due to compression induced by prestressing) to its original (nominal) length.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0CDyO0qVKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0CDyO0qVKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CDyO0qVKHuO00025QrE$V
+    ifdGuid: 0CDyO0qVKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -729,9 +804,13 @@ properties:
     languageOfCreator: en-EN
 - name: PieceMark
   definition: Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type ‘1’ and specific shape ‘A’).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0IBQS0qVKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0IBQS0qVKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IBQS0qVKHuO00025QrE$V
+    ifdGuid: 0IBQS0qVKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -767,9 +846,13 @@ properties:
     languageOfCreator: en-EN
 - name: DesignLocationNumber
   definition: Defines a unique location within a structure, the ‘slot’ for which the piece was designed.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0O8uW0qVKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0O8uW0qVKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0O8uW0qVKHuO00025QrE$V
+    ifdGuid: 0O8uW0qVKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcProductExtension
-ifdGuid: 3AP4i0qWSHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties common to the definition of all occurrences of IfcSite. Please note that several site attributes are handled directly at the IfcSite instance, the site number (or short name) by IfcSite.Name, the site name (or long name) by IfcSite.LongName, and the description (or comments) by IfcSite.Description. The land title number is also given as an explicit attribute IfcSite.LandTitleNumber. Actual site quantities, like site perimeter, site area and site volume are provided by IfcElementQuantity, and site classification according to national building code by IfcClassificationReference. The global positioning of the site in terms of Northing and Easting and height above sea level datum is given by IfcSite.RefLongitude, IfcSite.RefLatitude, IfcSite.RefElevation and the postal address by IfcSite.SiteAddress.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AP4i0qWSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AP4i0qWSHuO00025QrE$V
+  ifdGuid: 3AP4i0qWSHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3DNpk0qWSHuO00025QrE$V
-  legacyGuid: 9388f489d66d49129c3af4d81a0a7572
-  legacyGuidAsIfcGlobalId: 2JYFI9rcr94fmwzDWQ2dLo
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3DNpk0qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DNpk0qWSHuO00025QrE$V
+    ifdGuid: 3DNpk0qWSHuO00025QrE$V
+    legacyGuid: 9388f489d66d49129c3af4d81a0a7572
+    legacyGuidAsIfcGlobalId: 2JYFI9rcr94fmwzDWQ2dLo
   localizations:
   - language: de-DE
     name: 'Referenz ID'
@@ -72,10 +79,14 @@ properties:
     languageOfCreator: en-EN
 - name: BuildableArea
   definition: The area of site utilization expressed as a maximum value according to local building codes.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3JLHo0qWSHuO00025QrE$V
-  legacyGuid: 990071fb4c264a65a7b18d3f9a326fc3
-  legacyGuidAsIfcGlobalId: 2P077xJ2PAPQUnZJ_QCc$3
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3JLHo0qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JLHo0qWSHuO00025QrE$V
+    ifdGuid: 3JLHo0qWSHuO00025QrE$V
+    legacyGuid: 990071fb4c264a65a7b18d3f9a326fc3
+    legacyGuidAsIfcGlobalId: 2P077xJ2PAPQUnZJ_QCc$3
   localizations:
   - language: de-DE
     name: 'bebaubare Fläche'
@@ -114,9 +125,13 @@ properties:
     languageOfCreator: en-EN
 - name: SiteCoverageRatio
   definition: The ratio of the utilization,  TotalArea / BuildableArea, expressed as a maximum value. The ratio value may be used to derive BuildableArea.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3O6T20qWSHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3O6T20qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3O6T20qWSHuO00025QrE$V
+    ifdGuid: 3O6T20qWSHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Grundflächenzahl'
@@ -155,9 +170,13 @@ properties:
     languageOfCreator: en-EN
 - name: FloorAreaRatio
   definition: The ratio of all floor areas to the buildable area as the maximum floor area utilization of the site as a maximum value according to local building codes.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3TTni0qWSHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3TTni0qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TTni0qWSHuO00025QrE$V
+    ifdGuid: 3TTni0qWSHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Geschossflächenzahl'
@@ -193,10 +212,14 @@ properties:
     languageOfCreator: en-EN
 - name: BuildingHeightLimit
   definition: Allowed maximum height of buildings on this site - according to local building codes.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3Yr6M0qWSHuO00025QrE$V
-  legacyGuid: 50a4b35b9603468da6cb224de4e742c8
-  legacyGuidAsIfcGlobalId: 1GfBDRbWD6ZQRB8atavqB8
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Yr6M0qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Yr6M0qWSHuO00025QrE$V
+    ifdGuid: 3Yr6M0qWSHuO00025QrE$V
+    legacyGuid: 50a4b35b9603468da6cb224de4e742c8
+    legacyGuidAsIfcGlobalId: 1GfBDRbWD6ZQRB8atavqB8
   localizations:
   - language: de-DE
     name: 'maximale Bebauungshöhe'
@@ -235,9 +258,13 @@ properties:
     languageOfCreator: en-EN
 - name: TotalArea
   definition: Total planned area for the site. Used for programming the site space.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3gb0e0qWSHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gb0e0qWSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gb0e0qWSHuO00025QrE$V
+    ifdGuid: 3gb0e0qWSHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Bruttogrundstücksfläche'

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgElements
-ifdGuid: 0lIe60qSKHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties common to the definition of all instances of IfcBuildingElementProxy.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0lIe60qSKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lIe60qSKHuO00025QrE$V
+  ifdGuid: 0lIe60qSKHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -32,10 +35,14 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0rsFa0qSKHuO00025QrE$V
-  legacyGuid: d16b86b768f24cc5a1f92e6095bb757e
-  legacyGuidAsIfcGlobalId: 3HQuQtQF9CnQ7vBc2LktL_
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0rsFa0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0rsFa0qSKHuO00025QrE$V
+    ifdGuid: 0rsFa0qSKHuO00025QrE$V
+    legacyGuid: d16b86b768f24cc5a1f92e6095bb757e
+    legacyGuidAsIfcGlobalId: 3HQuQtQF9CnQ7vBc2LktL_
   localizations:
   - language: de-DE
     name: 'Bauteiltyp'
@@ -74,9 +81,13 @@ properties:
     languageOfCreator: en-EN
 - name: Status
   definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0w1HQ0qSKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0w1HQ0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0w1HQ0qSKHuO00025QrE$V
+    ifdGuid: 0w1HQ0qSKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: 'Status'
@@ -243,10 +254,14 @@ properties:
     languageOfCreator: en-EN
 - name: IsExternal
   definition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 16YMy0qSKHuO00025QrE$V
-  legacyGuid: 9179f5e8919e422c83192651e2651819
-  legacyGuidAsIfcGlobalId: 2HUVNeaPv2B8CP9b7YPHWP
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/16YMy0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16YMy0qSKHuO00025QrE$V
+    ifdGuid: 16YMy0qSKHuO00025QrE$V
+    legacyGuid: 9179f5e8919e422c83192651e2651819
+    legacyGuidAsIfcGlobalId: 2HUVNeaPv2B8CP9b7YPHWP
   localizations:
   - language: de-DE
     name: 'Außenbauteil'
@@ -285,10 +300,14 @@ properties:
     languageOfCreator: en-EN
 - name: ThermalTransmittance
   definition: 'Thermal transmittance coefficient (U-Value) of the element. It is the total thermal transmittance coefficient through the building element proxy within the direction of the thermal flow (including all materials).Note: new property in IFC4'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1AjOo0qSKHuO00025QrE$V
-  legacyGuid: 1a757587fea14026a427a8481fbc4d30
-  legacyGuidAsIfcGlobalId: 0QTNM7$g509gGdg4WVl4qm
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1AjOo0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AjOo0qSKHuO00025QrE$V
+    ifdGuid: 1AjOo0qSKHuO00025QrE$V
+    legacyGuid: 1a757587fea14026a427a8481fbc4d30
+    legacyGuidAsIfcGlobalId: 0QTNM7$g509gGdg4WVl4qm
   localizations:
   - language: de-DE
     name: 'U-Wert'
@@ -327,10 +346,14 @@ properties:
     languageOfCreator: en-EN
 - name: LoadBearing
   definition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1EuQe0qSKHuO00025QrE$V
-  legacyGuid: 9d2071ada75c41a0837123c9321d77c0
-  legacyGuidAsIfcGlobalId: 2T876jfrn1e8Dn8yao7NV0
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1EuQe0qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1EuQe0qSKHuO00025QrE$V
+    ifdGuid: 1EuQe0qSKHuO00025QrE$V
+    legacyGuid: 9d2071ada75c41a0837123c9321d77c0
+    legacyGuidAsIfcGlobalId: 2T876jfrn1e8Dn8yao7NV0
   localizations:
   - language: de-DE
     name: 'Tragendes Bauteil'
@@ -369,10 +392,14 @@ properties:
     languageOfCreator: en-EN
 - name: FireRating
   definition: Fire rating for the element.It is given according to the national fire safety classification.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1ITJ40qSKHuO00025QrE$V
-  legacyGuid: bf0000cd8a134222acd0a265c0be93ce
-  legacyGuidAsIfcGlobalId: 2$003DYXD28gpGecN0lfFE
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ITJ40qSKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ITJ40qSKHuO00025QrE$V
+    ifdGuid: 1ITJ40qSKHuO00025QrE$V
+    legacyGuid: bf0000cd8a134222acd0a265c0be93ce
+    legacyGuidAsIfcGlobalId: 2$003DYXD28gpGecN0lfFE
   localizations:
   - language: de-DE
     name: 'Feuerwiderstandsklasse'

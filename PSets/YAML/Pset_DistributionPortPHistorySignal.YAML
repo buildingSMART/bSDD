@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: ''
-legacyGuid: ''
 definition: 'Log of signal activity attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type SIGNAL.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+  ifdGuid: ''
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: Signal
   definition: Log of signal value.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1MgKg0qTKHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1MgKg0qTKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MgKg0qTKHuO00025QrE$V
+    ifdGuid: 1MgKg0qTKHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '信号'

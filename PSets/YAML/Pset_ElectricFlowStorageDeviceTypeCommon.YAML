@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 0BuG00qU0HuO00025QrE$V
-legacyGuid: ''
 definition: 'The characteristics of the supply associated with an electrical device occurrence acting as a source of supply to an electrical distribution system NOTE: Properties within this property set should ONLY be used in circumstances when an electrical supply is applied. The property set, the properties contained and their values are not applicable to a circumstance where the sypply  is not being applied to the eletrical system or is temporarily disconnected. All properties within this property set are considered to represent a steady state situation.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0BuG00qU0HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BuG00qU0HuO00025QrE$V
+  ifdGuid: 0BuG00qU0HuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0GfRG0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GfRG0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GfRG0qU0HuO00025QrE$V
+    ifdGuid: 0GfRG0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '参照'
@@ -71,9 +78,13 @@ properties:
     languageOfCreator: en-EN
 - name: Status
   definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0ND2k0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ND2k0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ND2k0qU0HuO00025QrE$V
+    ifdGuid: 0ND2k0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '状態'
@@ -240,9 +251,13 @@ properties:
     languageOfCreator: en-EN
 - name: NominalSupplyVoltage
   definition: The nominal voltage of the supply.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0f5Sw0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0f5Sw0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0f5Sw0qU0HuO00025QrE$V
+    ifdGuid: 0f5Sw0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '公称電圧'
@@ -281,9 +296,13 @@ properties:
     languageOfCreator: en-EN
 - name: NominalSupplyVoltageOffset
   definition: The maximum and minimum allowed voltage of the supply e.g. boundaries of 380V/440V may be applied for a nominal voltage of 400V.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0kSna0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kSna0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kSna0qU0HuO00025QrE$V
+    ifdGuid: 0kSna0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: 'オフセット公称電圧'
@@ -323,9 +342,13 @@ properties:
     languageOfCreator: en-EN
 - name: NominalFrequency
   definition: The nominal frequency of the supply.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0rcYS0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0rcYS0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0rcYS0qU0HuO00025QrE$V
+    ifdGuid: 0rcYS0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '公称周波数'
@@ -364,9 +387,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectedConductorFunction
   definition: Function of the conductors to which the load is connected.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0zyc80qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zyc80qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zyc80qU0HuO00025QrE$V
+    ifdGuid: 0zyc80qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続導体機能'
@@ -580,9 +607,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit3PoleMaximumState
   definition: Maximum 3 pole short circuit current provided at the point of supply.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1H1J80qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1H1J80qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1H1J80qU0HuO00025QrE$V
+    ifdGuid: 1H1J80qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '3極最大短絡電流'
@@ -621,9 +652,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit3PolePowerFactorMaximumState
   definition: Power factor of the maximum 3 pole short circuit current provided at the point of supply.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1M_nC0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1M_nC0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1M_nC0qU0HuO00025QrE$V
+    ifdGuid: 1M_nC0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '3極最大短絡電流力率'
@@ -662,9 +697,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit2PoleMinimumState
   definition: Minimum 2 pole short circuit current provided at the point of supply.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1SM5s0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1SM5s0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1SM5s0qU0HuO00025QrE$V
+    ifdGuid: 1SM5s0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '2極最小短絡電流'
@@ -703,9 +742,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit2PolePowerFactorMinimumState
   definition: Power factor of the minimum 2 pole short circuit current provided at the point of supply.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1ai9Y0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ai9Y0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ai9Y0qU0HuO00025QrE$V
+    ifdGuid: 1ai9Y0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '2極最小短絡電流力率'
@@ -744,9 +787,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit1PoleMaximumState
   definition: Maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1saZk0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1saZk0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1saZk0qU0HuO00025QrE$V
+    ifdGuid: 1saZk0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最大短絡電流'
@@ -785,9 +832,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit1PolePowerFactorMaximumState
   definition: Power factor of the maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1zkKc0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zkKc0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zkKc0qU0HuO00025QrE$V
+    ifdGuid: 1zkKc0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最大短絡電流力率'
@@ -826,9 +877,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit1PoleMinimumState
   definition: Minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 23hog0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/23hog0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23hog0qU0HuO00025QrE$V
+    ifdGuid: 23hog0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最小短絡電流'
@@ -867,9 +922,13 @@ properties:
     languageOfCreator: en-EN
 - name: ShortCircuit1PolePowerFactorMinimumState
   definition: Power factor of the minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2937K0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2937K0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2937K0qU0HuO00025QrE$V
+    ifdGuid: 2937K0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最小短絡電流力率'
@@ -908,9 +967,13 @@ properties:
     languageOfCreator: en-EN
 - name: EarthFault1PoleMaximumState
   definition: Maximum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2DqIa0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2DqIa0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DqIa0qU0HuO00025QrE$V
+    ifdGuid: 2DqIa0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最大地絡電流'
@@ -949,9 +1012,13 @@ properties:
     languageOfCreator: en-EN
 - name: EarthFault1PolePowerFactorMaximumState
   definition: Power factor of the maximum 1 pole earth fault  current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2JBdE0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2JBdE0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JBdE0qU0HuO00025QrE$V
+    ifdGuid: 2JBdE0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最大地絡電流力率'
@@ -990,9 +1057,13 @@ properties:
     languageOfCreator: en-EN
 - name: EarthFault1PoleMinimumState
   definition: Minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2NyoU0qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2NyoU0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2NyoU0qU0HuO00025QrE$V
+    ifdGuid: 2NyoU0qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最小地絡電流'
@@ -1031,9 +1102,13 @@ properties:
     languageOfCreator: en-EN
 - name: EarthFault1PolePowerFactorMinimumState
   definition: Power factor of the minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2TK780qU0HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2TK780qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TK780qU0HuO00025QrE$V
+    ifdGuid: 2TK780qU0HuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '1極最小地絡電流力率'

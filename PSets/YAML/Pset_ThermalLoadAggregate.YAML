@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: 3MeDO0qX0HuO00025QrE$V
-legacyGuid: ''
 definition: 'The aggregated thermal loads experienced by one or many spaces, zones, or buildings. This aggregate thermal load information is typically addressed by a system or plant. HISTORY: New property set in IFC Release 1.0 (Pset_AggregateLoadInformation); renamed Pset_ThermalLoadAggregate in IFC2x2.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3MeDO0qX0HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MeDO0qX0HuO00025QrE$V
+  ifdGuid: 3MeDO0qX0HuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -34,10 +37,14 @@ applicableIfcClasses:
 properties:
 - name: TotalCoolingLoad
   definition: The peak total cooling load for the building, zone or space.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3VaQU0qX0HuO00025QrE$V
-  legacyGuid: 81295c73efd545ae9b232c5fe5ff29a1
-  legacyGuidAsIfcGlobalId: 21ALnpxzL5hfiZB5$b$ocX
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3VaQU0qX0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VaQU0qX0HuO00025QrE$V
+    ifdGuid: 3VaQU0qX0HuO00025QrE$V
+    legacyGuid: 81295c73efd545ae9b232c5fe5ff29a1
+    legacyGuidAsIfcGlobalId: 21ALnpxzL5hfiZB5$b$ocX
   localizations:
   - language: ja-JP
     name: '冷房負荷'
@@ -76,10 +83,14 @@ properties:
     languageOfCreator: en-EN
 - name: TotalHeatingLoad
   definition: The peak total heating load for the building, zone or space.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3axl80qX0HuO00025QrE$V
-  legacyGuid: fecc065e70074b27b37cfe0ef1c2b609
-  legacyGuidAsIfcGlobalId: 3_p0PUS0TB9xDy$WxnmhO9
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3axl80qX0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3axl80qX0HuO00025QrE$V
+    ifdGuid: 3axl80qX0HuO00025QrE$V
+    legacyGuid: fecc065e70074b27b37cfe0ef1c2b609
+    legacyGuidAsIfcGlobalId: 3_p0PUS0TB9xDy$WxnmhO9
   localizations:
   - language: ja-JP
     name: '暖房負荷'
@@ -118,10 +129,14 @@ properties:
     languageOfCreator: en-EN
 - name: LightingDiversity
   definition: Lighting diversity.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3gvDC0qX0HuO00025QrE$V
-  legacyGuid: b001d431a8cf4676a3342d0b48ba4074
-  legacyGuidAsIfcGlobalId: 2m0TGngCz6TgCqBGj8ka1q
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gvDC0qX0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gvDC0qX0HuO00025QrE$V
+    ifdGuid: 3gvDC0qX0HuO00025QrE$V
+    legacyGuid: b001d431a8cf4676a3342d0b48ba4074
+    legacyGuidAsIfcGlobalId: 2m0TGngCz6TgCqBGj8ka1q
   localizations:
   - language: ja-JP
     name: '照明負荷係数'
@@ -160,10 +175,14 @@ properties:
     languageOfCreator: en-EN
 - name: InfiltrationDiversitySummer
   definition: Diversity factor for Summer infiltration.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3pFGu0qX0HuO00025QrE$V
-  legacyGuid: 63e405db678f4701a6fa0a005ae97dc7
-  legacyGuidAsIfcGlobalId: 1Zv0NRPuz70QRw2W1QwNt7
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3pFGu0qX0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3pFGu0qX0HuO00025QrE$V
+    ifdGuid: 3pFGu0qX0HuO00025QrE$V
+    legacyGuid: 63e405db678f4701a6fa0a005ae97dc7
+    legacyGuidAsIfcGlobalId: 1Zv0NRPuz70QRw2W1QwNt7
   localizations:
   - language: ja-JP
     name: '夏期すき間換気率'
@@ -202,10 +221,14 @@ properties:
     languageOfCreator: en-EN
 - name: InfiltrationDiversityWinter
   definition: Diversity factor for Winter infiltration.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3vouM0qX0HuO00025QrE$V
-  legacyGuid: 83b85e83541143198a1d5affbe2b35a7
-  legacyGuidAsIfcGlobalId: 23k5w3L1536OeTMl__ApMd
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vouM0qX0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vouM0qX0HuO00025QrE$V
+    ifdGuid: 3vouM0qX0HuO00025QrE$V
+    legacyGuid: 83b85e83541143198a1d5affbe2b35a7
+    legacyGuidAsIfcGlobalId: 23k5w3L1536OeTMl__ApMd
   localizations:
   - language: ja-JP
     name: '冬期すき間換気率'
@@ -244,10 +267,14 @@ properties:
     languageOfCreator: en-EN
 - name: ApplianceDiversity
   definition: Diversity of appliance load.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 00MVq0qX4HuO00025QrE$V
-  legacyGuid: 34220ed037b647eea295834289c186ba
-  legacyGuidAsIfcGlobalId: 0q8WxGDxP7xgALWqA9mOQw
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00MVq0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00MVq0qX4HuO00025QrE$V
+    ifdGuid: 00MVq0qX4HuO00025QrE$V
+    legacyGuid: 34220ed037b647eea295834289c186ba
+    legacyGuidAsIfcGlobalId: 0q8WxGDxP7xgALWqA9mOQw
   localizations:
   - language: ja-JP
     name: '機器の負荷率'
@@ -286,10 +313,14 @@ properties:
     languageOfCreator: en-EN
 - name: LoadSafetyFactor
   definition: Load safety factor.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 06Jzu0qX4HuO00025QrE$V
-  legacyGuid: d1a1d1cfd29a4c6fab17fe3e32beff04
-  legacyGuidAsIfcGlobalId: 3HeT7FqffCRwiN$Zuolly4
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06Jzu0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06Jzu0qX4HuO00025QrE$V
+    ifdGuid: 06Jzu0qX4HuO00025QrE$V
+    legacyGuid: d1a1d1cfd29a4c6fab17fe3e32beff04
+    legacyGuidAsIfcGlobalId: 3HeT7FqffCRwiN$Zuolly4
   localizations:
   - language: ja-JP
     name: '負荷の安全率'

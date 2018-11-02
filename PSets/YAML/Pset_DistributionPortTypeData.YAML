@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: ''
-legacyGuid: ''
 definition: 'Data port occurrence attributes attached to an instance of IfcDistributionPort.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+  ifdGuid: ''
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: ConnectionType
   definition: 'The physical port connection:Coaxial: Coaxial connector.RJ: Registered Jack.Radio: Radio waves (wireless).'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2gQ6E0qTOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2gQ6E0qTOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2gQ6E0qTOHuO00025QrE$V
+    ifdGuid: 2gQ6E0qTOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続タイプ'
@@ -180,9 +187,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectionSubtype
   definition: 'The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:Radio: IEEE802.11g, IEEE802.11nRJ: 4P4C, 6P2C, 8P8C'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2tXLA0qTOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2tXLA0qTOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tXLA0qTOHuO00025QrE$V
+    ifdGuid: 2tXLA0qTOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続サブタイプ'
@@ -221,9 +232,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectionGender
   definition: The physical connection gender.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2_4ye0qTOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_4ye0qTOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_4ye0qTOHuO00025QrE$V
+    ifdGuid: 2_4ye0qTOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続ジェンダー'
@@ -349,9 +364,13 @@ properties:
     languageOfCreator: en-EN
 - name: Frequency
   definition: Electromagnetic frequency, if applicable.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3Ac2A0qTOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Ac2A0qTOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ac2A0qTOHuO00025QrE$V
+    ifdGuid: 3Ac2A0qTOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '周波数'
@@ -391,9 +410,13 @@ properties:
     languageOfCreator: en-EN
 - name: DataSpeed
   definition: Data transmission in bits per second.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3H9fe0qTOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3H9fe0qTOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3H9fe0qTOHuO00025QrE$V
+    ifdGuid: 3H9fe0qTOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: 'データ転送速度'
@@ -433,9 +456,13 @@ properties:
     languageOfCreator: en-EN
 - name: Protocols
   definition: 'Identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3OJQW0qTOHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3OJQW0qTOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3OJQW0qTOHuO00025QrE$V
+    ifdGuid: 3OJQW0qTOHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: 'プロトコル'

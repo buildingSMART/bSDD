@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 2k5zo0qWuHuO00025QrE$V
-legacyGuid: ''
 definition: 'A switch disconnector is a switch which in the open position satisfies the isolating requirements specified for a disconnector.History: Property ''HasVisualIndication'' changed to ''IsIlluminated'' to conform with property name for toggle switch'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2k5zo0qWuHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2k5zo0qWuHuO00025QrE$V
+  ifdGuid: 2k5zo0qWuHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: SwitchDisconnectorType
   definition: 'A list of the available types of switch disconnector from which that required may be selected where:CenterBreak: A disconnector in which both contacts of each pole are movable and engage at a point substantially midway between their supports. (IEC 441-14-08)DividedSupport: A disconnector in which the fixed and moving contacts of each pole are not supported by a common base or frame. (IEC 441-14-06)DoubleBreak: A disconnector that opens a circuit at two points. (IEC 441-14-09)EarthingSwitch: A disconnector in which the fixed and moving contacts of each pole are not supported by a common base or frame. (IEC 441-14-07)Isolator: A disconnector which in the open position satisfies isolating requirements. (IEC 441-14-12)'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2pTIS0qWuHuO00025QrE$V
-  legacyGuid: 03f781cc014248959bd7f07afddc3195
-  legacyGuidAsIfcGlobalId: 03zu7C0K98bPlNy7hzt36L
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2pTIS0qWuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2pTIS0qWuHuO00025QrE$V
+    ifdGuid: 2pTIS0qWuHuO00025QrE$V
+    legacyGuid: 03f781cc014248959bd7f07afddc3195
+    legacyGuidAsIfcGlobalId: 03zu7C0K98bPlNy7hzt36L
   localizations:
   - language: ja-JP
     name: '高圧遮断機タイプ'
@@ -225,10 +232,14 @@ properties:
     languageOfCreator: en-EN
 - name: LoadDisconnectionType
   definition: A list of the available types of load disconnection from which that required may be selected.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 35xs20qWuHuO00025QrE$V
-  legacyGuid: d78dba418977481b984969fec122a056
-  legacyGuidAsIfcGlobalId: 3NZRf1YNT86vX9QVx18g1M
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35xs20qWuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35xs20qWuHuO00025QrE$V
+    ifdGuid: 35xs20qWuHuO00025QrE$V
+    legacyGuid: d78dba418977481b984969fec122a056
+    legacyGuidAsIfcGlobalId: 3NZRf1YNT86vX9QVx18g1M
   localizations:
   - language: ja-JP
     name: '切断タイプ'

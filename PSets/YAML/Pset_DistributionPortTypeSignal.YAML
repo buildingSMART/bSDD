@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: ''
-legacyGuid: ''
 definition: 'Signal port occurrence attributes attached to an instance of IfcDistributionPort.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+  ifdGuid: ''
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: ConnectionType
   definition: 'The physical port connection:CRIMP: bare wireRJ: registered jack'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0EsF80qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0EsF80qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EsF80qTeHuO00025QrE$V
+    ifdGuid: 0EsF80qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続タイプ'
@@ -158,9 +165,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectionSubtype
   definition: 'The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:DSub: DA15, DB25, DC37, DD50, DE9, DE15 RJ: 4P4C, 6P2C, 8P8C'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0QnBG0qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QnBG0qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QnBG0qTeHuO00025QrE$V
+    ifdGuid: 0QnBG0qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続サブタイプ'
@@ -199,9 +210,13 @@ properties:
     languageOfCreator: en-EN
 - name: ConnectionGender
   definition: The physical connection gender.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0XKok0qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XKok0qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XKok0qTeHuO00025QrE$V
+    ifdGuid: 0XKok0qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '接続ジェンダー'
@@ -327,9 +342,13 @@ properties:
     languageOfCreator: en-EN
 - name: Current
   definition: The nominal current and operable range.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0jFks0qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0jFks0qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jFks0qTeHuO00025QrE$V
+    ifdGuid: 0jFks0qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '電流'
@@ -369,9 +388,13 @@ properties:
     languageOfCreator: en-EN
 - name: Voltage
   definition: The nominal voltage and operable range.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0qPVk0qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qPVk0qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qPVk0qTeHuO00025QrE$V
+    ifdGuid: 0qPVk0qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ja-JP
     name: '電圧'
@@ -411,9 +434,13 @@ properties:
     languageOfCreator: en-EN
 - name: SignalIO
   definition: Indicates whether the signal is interpreted as analog or digital.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0y9Q00qTeHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0y9Q00qTeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0y9Q00qTeHuO00025QrE$V
+    ifdGuid: 0y9Q00qTeHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
     name: '신호'

@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcBuildingControlsDomain
-ifdGuid: 0fyJK0qSqHuO00025QrE$V
-legacyGuid: ''
 definition: 'Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued output.  HISTORY: IFC4 adapted from Pset_ControllerTypeCommon and applicable predefined type made specific to FLOATING; ACCUMULATOR and PULSECONVERTER types added; additional properties added to replace Pset_AnalogInput and Pset_AnalogOutput.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0fyJK0qSqHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0fyJK0qSqHuO00025QrE$V
+  ifdGuid: 0fyJK0qSqHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,9 +33,13 @@ applicableIfcClasses:
 properties:
 - name: ControlType
   definition: 'The type of signal modification effected and applicable ports: CONSTANT: No inputs; SignalOffset is written to the output value.MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.ABSOLUTE: Single analog input is read and absolute value is written to the output value.INVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.HYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.RUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.DERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.INTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.BINARY: Single binary input is read and SignalOffset is written to the output value if True.ACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.PULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.SUM: Two analog inputs are read, added, and written to the output value.SUBTRACT: Two analog inputs are read, subtracted, and written to the output value.PRODUCT: Two analog inputs are read, multiplied, and written to the output value.DIVIDE: Two analog inputs are read, divided, and written to the output value.AVERAGE: Two analog inputs are read and the average is written to the output value.MAXIMUM: Two analog inputs are read and the maximum is written to the output value.MINIMUM: Two analog inputs are read and the minimum is written to the output value..INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0kjUa0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kjUa0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kjUa0qSqHuO00025QrE$V
+    ifdGuid: 0kjUa0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
     name: 'FLOATING 유형'
@@ -664,9 +671,13 @@ properties:
     languageOfCreator: en-EN
 - name: Labels
   definition: Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1MfKo0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1MfKo0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MfKo0qSqHuO00025QrE$V
+    ifdGuid: 1MfKo0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -708,9 +719,13 @@ properties:
     languageOfCreator: en-EN
 - name: Range
   definition: The physical range of values supported by the device.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1U$OU0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1U$OU0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1U$OU0qSqHuO00025QrE$V
+    ifdGuid: 1U$OU0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -747,9 +762,13 @@ properties:
     languageOfCreator: en-EN
 - name: Value
   definition: The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.  The LowerLimitValue and UpperLimitValue must fall within the physical Range and may be used to determine extents when charting Pset_ControllerPHistory.Value.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1ZmZk0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ZmZk0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ZmZk0qSqHuO00025QrE$V
+    ifdGuid: 1ZmZk0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
     name: ''
@@ -786,9 +805,13 @@ properties:
     languageOfCreator: en-EN
 - name: SignalOffset
   definition: Offset constant added to modfied signal.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1fk1o0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1fk1o0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fk1o0qSqHuO00025QrE$V
+    ifdGuid: 1fk1o0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
     name: '옵셋'
@@ -827,9 +850,13 @@ properties:
     languageOfCreator: en-EN
 - name: SignalFactor
   definition: Factor multiplied onto offset signal.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1jv3e0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1jv3e0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jv3e0qSqHuO00025QrE$V
+    ifdGuid: 1jv3e0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
     name: '요소'
@@ -868,9 +895,13 @@ properties:
     languageOfCreator: en-EN
 - name: SignalTime
   definition: Time factor used for integral and running average controllers.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1ogEu0qSqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: ''
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ogEu0qSqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ogEu0qSqHuO00025QrE$V
+    ifdGuid: 1ogEu0qSqHuO00025QrE$V
+    legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: ko-KR
     name: '시간 요소'

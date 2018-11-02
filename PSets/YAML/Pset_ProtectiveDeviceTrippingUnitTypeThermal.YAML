@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 3ULd_0qVmHuO00025QrE$V
-legacyGuid: ''
 definition: 'Information on tripping units that are thermally tripped.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ULd_0qVmHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ULd_0qVmHuO00025QrE$V
+  ifdGuid: 3ULd_0qVmHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: ThermalTrippingUnitType
   definition: A list of the available types of thermal tripping unit  from which that required may be selected.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3Ziye0qVmHuO00025QrE$V
-  legacyGuid: c818fd02548f4f74bc9bb8f80203aa18
-  legacyGuidAsIfcGlobalId: 386Fq2L8zFTBoRkFW20weO
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Ziye0qVmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ziye0qVmHuO00025QrE$V
+    ifdGuid: 3Ziye0qVmHuO00025QrE$V
+    legacyGuid: c818fd02548f4f74bc9bb8f80203aa18
+    legacyGuidAsIfcGlobalId: 386Fq2L8zFTBoRkFW20weO
   localizations:
   - language: ja-JP
     name: 'サーマルトリップ装置タイプ'
@@ -203,10 +210,14 @@ properties:
     languageOfCreator: en-EN
 - name: I1
   definition: The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3ocdo0qVmHuO00025QrE$V
-  legacyGuid: e0a6467f3fbe405ba0f1188ccbe9ec38
-  legacyGuidAsIfcGlobalId: 3WfaP$Fxv0Mw3n68pBwUmu
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ocdo0qVmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ocdo0qVmHuO00025QrE$V
+    ifdGuid: 3ocdo0qVmHuO00025QrE$V
+    legacyGuid: e0a6467f3fbe405ba0f1188ccbe9ec38
+    legacyGuidAsIfcGlobalId: 3WfaP$Fxv0Mw3n68pBwUmu
   localizations:
   - language: ja-JP
     name: 'I1'
@@ -245,10 +256,14 @@ properties:
     languageOfCreator: en-EN
 - name: I2
   definition: The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3ua5s0qVmHuO00025QrE$V
-  legacyGuid: c2741a653b114a45994ad5d48a76a622
-  legacyGuidAsIfcGlobalId: 32T1fbEn5AHPbArTIATgOY
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ua5s0qVmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ua5s0qVmHuO00025QrE$V
+    ifdGuid: 3ua5s0qVmHuO00025QrE$V
+    legacyGuid: c2741a653b114a45994ad5d48a76a622
+    legacyGuidAsIfcGlobalId: 32T1fbEn5AHPbArTIATgOY
   localizations:
   - language: ja-JP
     name: 'I2'
@@ -287,10 +302,14 @@ properties:
     languageOfCreator: en-EN
 - name: T2
   definition: The (thermal) testing time in [s] associated with the testing currents I1 and I2.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 3zxQW0qVmHuO00025QrE$V
-  legacyGuid: a70222ed97334af69ae02520c630308f
-  legacyGuidAsIfcGlobalId: 2d0YBjbpDAzfhW9I36C32F
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3zxQW0qVmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zxQW0qVmHuO00025QrE$V
+    ifdGuid: 3zxQW0qVmHuO00025QrE$V
+    legacyGuid: a70222ed97334af69ae02520c630308f
+    legacyGuidAsIfcGlobalId: 2d0YBjbpDAzfhW9I36C32F
   localizations:
   - language: ja-JP
     name: 'T2'
@@ -329,10 +348,14 @@ properties:
     languageOfCreator: en-EN
 - name: DefinedTemperature
   definition: The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 03IlA0qVqHuO00025QrE$V
-  legacyGuid: a595ba0f57cf4ded994013ef57e1edf9
-  legacyGuidAsIfcGlobalId: 2bbReFLyzDxPb04_zNuUtv
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/03IlA0qVqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03IlA0qVqHuO00025QrE$V
+    ifdGuid: 03IlA0qVqHuO00025QrE$V
+    legacyGuid: a595ba0f57cf4ded994013ef57e1edf9
+    legacyGuidAsIfcGlobalId: 2bbReFLyzDxPb04_zNuUtv
   localizations:
   - language: ja-JP
     name: '設定温度'
@@ -371,10 +394,14 @@ properties:
     languageOfCreator: en-EN
 - name: TemperatureFactor
   definition: The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 09GDE0qVqHuO00025QrE$V
-  legacyGuid: aba62b6f2fd7419fbf8ae3f6a8730ce6
-  legacyGuidAsIfcGlobalId: 2hfYjlBzT1dx_Au$QeSmpc
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09GDE0qVqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09GDE0qVqHuO00025QrE$V
+    ifdGuid: 09GDE0qVqHuO00025QrE$V
+    legacyGuid: aba62b6f2fd7419fbf8ae3f6a8730ce6
+    legacyGuidAsIfcGlobalId: 2hfYjlBzT1dx_Au$QeSmpc
   localizations:
   - language: ja-JP
     name: '温度係数'
@@ -413,10 +440,14 @@ properties:
     languageOfCreator: en-EN
 - name: CurveDesignation
   definition: The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0E1OU0qVqHuO00025QrE$V
-  legacyGuid: bda5e0dc08f7408fb60b5414a8be77ff
-  legacyGuidAsIfcGlobalId: 2zfU3S2FT0ZxOBL1IeldV$
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0E1OU0qVqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E1OU0qVqHuO00025QrE$V
+    ifdGuid: 0E1OU0qVqHuO00025QrE$V
+    legacyGuid: bda5e0dc08f7408fb60b5414a8be77ff
+    legacyGuidAsIfcGlobalId: 2zfU3S2FT0ZxOBL1IeldV$
   localizations:
   - language: ja-JP
     name: '曲線指定'

@@ -4,9 +4,13 @@
     "version": "4.0.0.0",
     "schema": "IfcProcessExtension"
   },
-  "ifdGuid": "087P_0qXaHuO00025QrE$V",
-  "legacyGuid": "",
   "definition": "Properties common to the definition of all occurrences of IfcWorkPlan and IfcWorkSchedule (subtypes of IfcWorkControl).",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/087P_0qXaHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/087P_0qXaHuO00025QrE$V",
+    "ifdGuid": "087P_0qXaHuO00025QrE$V",
+    "legacyGuid": ""
+  },
   "localizations": [
     {
       "language": "de-DE",
@@ -57,9 +61,14 @@
     {
       "name": "WorkStartTime",
       "definition": "The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0Is3I0qXaHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0Is3I0qXaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Is3I0qXaHuO00025QrE$V",
+        "ifdGuid": "0Is3I0qXaHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -113,9 +122,14 @@
     {
       "name": "WorkFinishTime",
       "definition": "The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkFinishTime.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0NdEY0qXaHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0NdEY0qXaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NdEY0qXaHuO00025QrE$V",
+        "ifdGuid": "0NdEY0qXaHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -169,9 +183,14 @@
     {
       "name": "WorkDayDuration",
       "definition": "The elapsed time within a worktime-based day. For presentation purposes, applications may choose to display IfcTask durations in work days where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 24 hours (an elapsed day); if omitted then 8 hours is assumed.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0S_ZC0qXaHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0S_ZC0qXaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0S_ZC0qXaHuO00025QrE$V",
+        "ifdGuid": "0S_ZC0qXaHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -225,9 +244,14 @@
     {
       "name": "WorkWeekDuration",
       "definition": "The elapsed time within a worktime-based week. For presentation purposes, applications may choose to display IfcTask durations in work weeks where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 168 hours (an elapsed week); if omitted then 40 hours is assumed.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0Yy1G0qXaHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0Yy1G0qXaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Yy1G0qXaHuO00025QrE$V",
+        "ifdGuid": "0Yy1G0qXaHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -281,9 +305,14 @@
     {
       "name": "WorkMonthDuration",
       "definition": "The elapsed time within a worktime-based month. For presentation purposes, applications may choose to display IfcTask durations in work months where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 744 hours (an elapsed month of 31 days); if omitted then 160 hours is assumed.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0djCW0qXaHuO00025QrE$V",
-      "legacyGuidAsIfcGlobalId": "",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0djCW0qXaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0djCW0qXaHuO00025QrE$V",
+        "ifdGuid": "0djCW0qXaHuO00025QrE$V",
+        "legacyGuidAsIfcGlobalId": ""
+      },
       "localizations": [
         {
           "language": "ja-JP",

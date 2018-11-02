@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcSharedBldgServiceElements
-ifdGuid: 0E3uA0qX4HuO00025QrE$V
-legacyGuid: ''
 definition: 'Building thermal load design data that are used for calculating thermal loads in a space or building. HISTORY: New property set in IFC Release 1.0 (Pset_LoadDesignCriteria); renamed Pset_ThermalLoadDesignCriteria in IFC2x2.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0E3uA0qX4HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E3uA0qX4HuO00025QrE$V
+  ifdGuid: 0E3uA0qX4HuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -36,10 +39,14 @@ applicableIfcClasses:
 properties:
 - name: OccupancyDiversity
   definition: Diversity factor that may be applied to the number of people in the space.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0OoXU0qX4HuO00025QrE$V
-  legacyGuid: 4e05207cf27e4a438eb83e8a4475fb7e
-  legacyGuidAsIfcGlobalId: 1E1I1yydvAGuwuFef4TVj_
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0OoXU0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0OoXU0qX4HuO00025QrE$V
+    ifdGuid: 0OoXU0qX4HuO00025QrE$V
+    legacyGuid: 4e05207cf27e4a438eb83e8a4475fb7e
+    legacyGuidAsIfcGlobalId: 1E1I1yydvAGuwuFef4TVj_
   localizations:
   - language: ja-JP
     name: '居住者の在室率'
@@ -78,10 +85,14 @@ properties:
     languageOfCreator: en-EN
 - name: OutsideAirPerPerson
   definition: Design quantity of outside air to be provided per person in the space.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0Ul$Y0qX4HuO00025QrE$V
-  legacyGuid: f734233c0034409a8ec96022a13413e2
-  legacyGuidAsIfcGlobalId: 3tD2Cy03H0cex9O2AXD1FY
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ul$Y0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ul$Y0qX4HuO00025QrE$V
+    ifdGuid: 0Ul$Y0qX4HuO00025QrE$V
+    legacyGuid: f734233c0034409a8ec96022a13413e2
+    legacyGuidAsIfcGlobalId: 3tD2Cy03H0cex9O2AXD1FY
   localizations:
   - language: ja-JP
     name: '１人あたりの外気量'
@@ -120,10 +131,14 @@ properties:
     languageOfCreator: en-EN
 - name: ReceptacleLoadIntensity
   definition: Average power use intensity of appliances and other non-HVAC equipment in the space per unit area.(PowerMeasure/IfcAreaMeasure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0ajTc0qX4HuO00025QrE$V
-  legacyGuid: ece22a8d3bc246ca932e11b61b2cb81d
-  legacyGuidAsIfcGlobalId: 3iuYgDEy96ofCk4RORBBWT
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ajTc0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ajTc0qX4HuO00025QrE$V
+    ifdGuid: 0ajTc0qX4HuO00025QrE$V
+    legacyGuid: ece22a8d3bc246ca932e11b61b2cb81d
+    legacyGuidAsIfcGlobalId: 3iuYgDEy96ofCk4RORBBWT
   localizations:
   - language: ja-JP
     name: '単位面積あたり事務機器の平均電力消費量'
@@ -162,10 +177,14 @@ properties:
     languageOfCreator: en-EN
 - name: AppliancePercentLoadToRadiant
   definition: Percent of sensible load to radiant heat.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0ggxg0qX4HuO00025QrE$V
-  legacyGuid: e2058e3cd19f413a89ae8d8a0a10cc03
-  legacyGuidAsIfcGlobalId: 3Y1OuyqPz1EeckZOeA4Cm3
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ggxg0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ggxg0qX4HuO00025QrE$V
+    ifdGuid: 0ggxg0qX4HuO00025QrE$V
+    legacyGuid: e2058e3cd19f413a89ae8d8a0a10cc03
+    legacyGuidAsIfcGlobalId: 3Y1OuyqPz1EeckZOeA4Cm3
   localizations:
   - language: ja-JP
     name: '放射熱のうち顕熱分の割合'
@@ -204,10 +223,14 @@ properties:
     languageOfCreator: en-EN
 - name: LightingLoadIntensity
   definition: Average lighting load intensity in the space per unit area (PowerMeasure/IfcAreaMeasure).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0nEZ80qX4HuO00025QrE$V
-  legacyGuid: 499eac659681465e8549bf50df172270
-  legacyGuidAsIfcGlobalId: 19dgnbbe56NeL9lr3V5o9m
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0nEZ80qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nEZ80qX4HuO00025QrE$V
+    ifdGuid: 0nEZ80qX4HuO00025QrE$V
+    legacyGuid: 499eac659681465e8549bf50df172270
+    legacyGuidAsIfcGlobalId: 19dgnbbe56NeL9lr3V5o9m
   localizations:
   - language: ja-JP
     name: '照明負荷率'
@@ -246,10 +269,14 @@ properties:
     languageOfCreator: en-EN
 - name: LightingPercentLoadToReturnAir
   definition: Percent of lighting load to the return air plenum.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0toAc0qX4HuO00025QrE$V
-  legacyGuid: 6ae5de5d7b8e4ef7b2f6e746b613e664
-  legacyGuidAsIfcGlobalId: 1gvTvTUuvEzxBsvqQs4_Pa
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0toAc0qX4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0toAc0qX4HuO00025QrE$V
+    ifdGuid: 0toAc0qX4HuO00025QrE$V
+    legacyGuid: 6ae5de5d7b8e4ef7b2f6e746b613e664
+    legacyGuidAsIfcGlobalId: 1gvTvTUuvEzxBsvqQs4_Pa
   localizations:
   - language: ja-JP
     name: 'リタン空気への照明機器の放熱率'

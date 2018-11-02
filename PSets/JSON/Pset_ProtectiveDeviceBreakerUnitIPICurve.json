@@ -4,9 +4,13 @@
     "version": "4.0.0.0",
     "schema": "IfcElectricalDomain"
   },
-  "ifdGuid": "0t91a0qVaHuO00025QrE$V",
-  "legacyGuid": "",
   "definition": "A coherent set of attributes representing curves for  let-through currents of a protective device. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics.",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0t91a0qVaHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0t91a0qVaHuO00025QrE$V",
+    "ifdGuid": "0t91a0qVaHuO00025QrE$V",
+    "legacyGuid": ""
+  },
   "localizations": [
     {
       "language": "de-DE",
@@ -49,10 +53,15 @@
     {
       "name": "VoltageLevel",
       "definition": "The voltage level of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "0z6Ve0qVaHuO00025QrE$V",
-      "legacyGuid": "0bf4638040354d2193fe213887fa6434",
-      "legacyGuidAsIfcGlobalId": "0Bz6E0G3LD8PF_8JY7_cGq",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0z6Ve0qVaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0z6Ve0qVaHuO00025QrE$V",
+        "ifdGuid": "0z6Ve0qVaHuO00025QrE$V",
+        "legacyGuid": "0bf4638040354d2193fe213887fa6434",
+        "legacyGuidAsIfcGlobalId": "0Bz6E0G3LD8PF_8JY7_cGq"
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -407,10 +416,15 @@
     {
       "name": "NominalCurrent",
       "definition": "A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "1Vh1C0qVaHuO00025QrE$V",
-      "legacyGuid": "0e4765ae469845caba1e110868e0c91f",
-      "legacyGuidAsIfcGlobalId": "0EHsMkHfX5oheU4GXeuCaV",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1Vh1C0qVaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Vh1C0qVaHuO00025QrE$V",
+        "ifdGuid": "1Vh1C0qVaHuO00025QrE$V",
+        "legacyGuid": "0e4765ae469845caba1e110868e0c91f",
+        "legacyGuidAsIfcGlobalId": "0EHsMkHfX5oheU4GXeuCaV"
+      },
       "localizations": [
         {
           "language": "ja-JP",
@@ -469,10 +483,15 @@
     {
       "name": "BreakerUnitIPICurve",
       "definition": "A curve that establishes the let through peak current of a breaker unit when a particular prospective current is applied.  Note that the breaker unit IPI curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:(1) Defining value: A list of minimum 2 and maximum 16 numbers providing the currents in [A] for points in the I/Î log/log coordinate space. The curve is drawn as a straight line between two consecutive points.(2) Defined value: A list of minimum 2 and maximum 16 numbers providing the let-through peak currents, Î, in [A] for points in the I/Î log/log coordinate space. The curve is drawn as a straight line between two consecutive points.",
-      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
-      "ifdGuid": "1e14u0qVaHuO00025QrE$V",
-      "legacyGuid": "dee037b8bf5043669b6d36a037a9acd2",
-      "legacyGuidAsIfcGlobalId": "3Uu3Uulr13PfjjDg0tgQpI",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1e14u0qVaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1e14u0qVaHuO00025QrE$V",
+        "ifdGuid": "1e14u0qVaHuO00025QrE$V",
+        "legacyGuid": "dee037b8bf5043669b6d36a037a9acd2",
+        "legacyGuidAsIfcGlobalId": "3Uu3Uulr13PfjjDg0tgQpI"
+      },
       "localizations": [
         {
           "language": "ja-JP",

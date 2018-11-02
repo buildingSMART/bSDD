@@ -2,9 +2,12 @@
 ifcVersion:
   version: 4.0.0.0
   schema: IfcElectricalDomain
-ifdGuid: 0bAOA0qSSHuO00025QrE$V
-legacyGuid: ''
 definition: 'Electrical cable with a specific purpose to lead electric current within a circuit or any other electric construction. Includes all types of electric cables, mainly several electrical segments wrapped together, e.g. cable, tube, busbar. Note that the number of conductors within a cable is determined by an aggregation mechanism that aggregates the conductors within the cable. A single-core cable is defined in IEV 461-06-02 as being ''a cable having only one core''; a multiconductor cable is defined in IEV 461-06-03 as b eing ''a cable having more than one conductor, some of which may be uninsulated''; a mulicore cable is defined in IEV 461-06-04 as being ''a cable having more than one core''.'
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0bAOA0qSSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bAOA0qSSHuO00025QrE$V
+  ifdGuid: 0bAOA0qSSHuO00025QrE$V
+  legacyGuid: ''
 localizations:
 - language: de-DE
   name: ''
@@ -30,10 +33,14 @@ applicableIfcClasses:
 properties:
 - name: Standard
   definition: The designation of the standard applicable for the definition of the Cable/Bus used.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0h7sE0qSSHuO00025QrE$V
-  legacyGuid: 3d006b30216341de95eeaf7115f97bbb
-  legacyGuidAsIfcGlobalId: 0z06im8MD1tfNkht4L_Nkx
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0h7sE0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h7sE0qSSHuO00025QrE$V
+    ifdGuid: 0h7sE0qSSHuO00025QrE$V
+    legacyGuid: 3d006b30216341de95eeaf7115f97bbb
+    legacyGuidAsIfcGlobalId: 0z06im8MD1tfNkht4L_Nkx
   localizations:
   - language: ja-JP
     name: '標準'
@@ -72,10 +79,14 @@ properties:
     languageOfCreator: en-EN
 - name: NumberOfCores
   definition: The number of cores in Cable/Bus.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0n5KI0qSSHuO00025QrE$V
-  legacyGuid: 6be89291b8b64fd9a7e496693108ff5b
-  legacyGuidAsIfcGlobalId: 1hw9AHkBPFsQVabcan2FzR
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0n5KI0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0n5KI0qSSHuO00025QrE$V
+    ifdGuid: 0n5KI0qSSHuO00025QrE$V
+    legacyGuid: 6be89291b8b64fd9a7e496693108ff5b
+    legacyGuidAsIfcGlobalId: 1hw9AHkBPFsQVabcan2FzR
   localizations:
   - language: ja-JP
     name: '芯数'
@@ -114,10 +125,14 @@ properties:
     languageOfCreator: en-EN
 - name: OverallDiameter
   definition: The overall diameter of a Cable/Bus.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0urEa0qSSHuO00025QrE$V
-  legacyGuid: dce029fb532c4640ac89333216d28686
-  legacyGuidAsIfcGlobalId: 3Su2dxKon6GAo9Cp8MqeQ6
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0urEa0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0urEa0qSSHuO00025QrE$V
+    ifdGuid: 0urEa0qSSHuO00025QrE$V
+    legacyGuid: dce029fb532c4640ac89333216d28686
+    legacyGuidAsIfcGlobalId: 3Su2dxKon6GAo9Cp8MqeQ6
   localizations:
   - language: ja-JP
     name: '直径'
@@ -156,10 +171,14 @@ properties:
     languageOfCreator: en-EN
 - name: RatedVoltage
   definition: The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 0_oie0qSSHuO00025QrE$V
-  legacyGuid: ad05d9efe2104633adc26c6d46be11c1
-  legacyGuidAsIfcGlobalId: 2j1TdluX16Cwt2R6r6lX71
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0_oie0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_oie0qSSHuO00025QrE$V
+    ifdGuid: 0_oie0qSSHuO00025QrE$V
+    legacyGuid: ad05d9efe2104633adc26c6d46be11c1
+    legacyGuidAsIfcGlobalId: 2j1TdluX16Cwt2R6r6lX71
   localizations:
   - language: ja-JP
     name: '定格電圧'
@@ -199,10 +218,14 @@ properties:
     languageOfCreator: en-EN
 - name: RatedTemperature
   definition: The range of allowed temerature that a device is certified to handle. The upper bound of this value is the maximum.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: 75be84daab994bcda28b61a5cddcfddd
-  legacyGuidAsIfcGlobalId: 1rleJQgvbBpQABOQNDtFtT
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 75be84daab994bcda28b61a5cddcfddd
+    legacyGuidAsIfcGlobalId: 1rleJQgvbBpQABOQNDtFtT
   localizations:
   - language: ja-JP
     name: '定格温度'
@@ -242,10 +265,14 @@ properties:
     languageOfCreator: en-EN
 - name: ScreenDiameter
   definition: The diameter of the screen around a cable or bus segment (if present).
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1Ajem0qSSHuO00025QrE$V
-  legacyGuid: 8f9f613b723a45d89d4555023a821c7c
-  legacyGuidAsIfcGlobalId: 2Fds4xSZf5s9r5LG8wWXny
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Ajem0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Ajem0qSSHuO00025QrE$V
+    ifdGuid: 1Ajem0qSSHuO00025QrE$V
+    legacyGuid: 8f9f613b723a45d89d4555023a821c7c
+    legacyGuidAsIfcGlobalId: 2Fds4xSZf5s9r5LG8wWXny
   localizations:
   - language: ja-JP
     name: 'スクリーン径'
@@ -284,10 +311,14 @@ properties:
     languageOfCreator: en-EN
 - name: HasProtectiveEarth
   definition: One core has protective earth marked insulation, Yellow/Green.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1P1AW0qSSHuO00025QrE$V
-  legacyGuid: 80183e4d5c144d77a052ad70287e55c9
-  legacyGuidAsIfcGlobalId: 2063vDN1HDTw1IhN0eVbN9
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1P1AW0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1P1AW0qSSHuO00025QrE$V
+    ifdGuid: 1P1AW0qSSHuO00025QrE$V
+    legacyGuid: 80183e4d5c144d77a052ad70287e55c9
+    legacyGuidAsIfcGlobalId: 2063vDN1HDTw1IhN0eVbN9
   localizations:
   - language: ja-JP
     name: '保護用接地の有無'
@@ -326,10 +357,14 @@ properties:
     languageOfCreator: en-EN
 - name: MaximumOperatingTemperature
   definition: The maximum temperature at which a cable or bus is certified to operate.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1juJk0qSSHuO00025QrE$V
-  legacyGuid: f75619e560aa49798d61c5c04cd9bbed
-  legacyGuidAsIfcGlobalId: 3tLXdbOAf9UOrXnS1CsRlj
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1juJk0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1juJk0qSSHuO00025QrE$V
+    ifdGuid: 1juJk0qSSHuO00025QrE$V
+    legacyGuid: f75619e560aa49798d61c5c04cd9bbed
+    legacyGuidAsIfcGlobalId: 3tLXdbOAf9UOrXnS1CsRlj
   localizations:
   - language: ja-JP
     name: '許容最高温度'
@@ -368,10 +403,14 @@ properties:
     languageOfCreator: en-EN
 - name: MaximumShortCircuitTemperature
   definition: The maximum short circuit temperature at which a cable or bus is certified to operate.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 1$AaW0qSSHuO00025QrE$V
-  legacyGuid: 1b90ac1f818f4062a01aae2c3e0bfdd5
-  legacyGuidAsIfcGlobalId: 0RaAmVWOz0Og0QhYm_2$tL
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$AaW0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$AaW0qSSHuO00025QrE$V
+    ifdGuid: 1$AaW0qSSHuO00025QrE$V
+    legacyGuid: 1b90ac1f818f4062a01aae2c3e0bfdd5
+    legacyGuidAsIfcGlobalId: 0RaAmVWOz0Og0QhYm_2$tL
   localizations:
   - language: ja-JP
     name: '短絡許容最高温度'
@@ -410,10 +449,14 @@ properties:
     languageOfCreator: en-EN
 - name: SpecialConstruction
   definition: Special construction capabilities like self-supporting, flat devidable cable or bus flat non devidable cable or bus supporting elements inside (steal, textile, concentric conductor). Note that materials used should be agreed between exchange participants before use.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 27WeC0qSSHuO00025QrE$V
-  legacyGuid: 2f4bb1bad5114e71a2ae79632135aa99
-  legacyGuidAsIfcGlobalId: 0lIx6wrH5ESQAkUMCXDQgP
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/27WeC0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/27WeC0qSSHuO00025QrE$V
+    ifdGuid: 27WeC0qSSHuO00025QrE$V
+    legacyGuid: 2f4bb1bad5114e71a2ae79632135aa99
+    legacyGuidAsIfcGlobalId: 0lIx6wrH5ESQAkUMCXDQgP
   localizations:
   - language: ja-JP
     name: '特別な施工方法'
@@ -452,10 +495,14 @@ properties:
     languageOfCreator: en-EN
 - name: Weight
   definition: Weight of cable kg/km.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: ''
-  legacyGuid: d5a9a9bb4494446888876657f1c46790
-  legacyGuidAsIfcGlobalId: 3LgQcxH9H4Q8Y7PbVnn6UG
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: d5a9a9bb4494446888876657f1c46790
+    legacyGuidAsIfcGlobalId: 3LgQcxH9H4Q8Y7PbVnn6UG
   localizations:
   - language: ja-JP
     name: '重量'
@@ -494,10 +541,14 @@ properties:
     languageOfCreator: en-EN
 - name: SelfExtinguishing60332_1
   definition: Self Extinguishing cable/core according to IEC 60332.1.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2JRaK0qSSHuO00025QrE$V
-  legacyGuid: a6319f829ded4e36a61edac68859b444
-  legacyGuidAsIfcGlobalId: 2cCP_2dUrEDgOUsiQ8MRH4
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2JRaK0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JRaK0qSSHuO00025QrE$V
+    ifdGuid: 2JRaK0qSSHuO00025QrE$V
+    legacyGuid: a6319f829ded4e36a61edac68859b444
+    legacyGuidAsIfcGlobalId: 2cCP_2dUrEDgOUsiQ8MRH4
   localizations:
   - language: ja-JP
     name: '自己消火ケーブル'
@@ -536,10 +587,14 @@ properties:
     languageOfCreator: en-EN
 - name: SelfExtinguishing60332_3
   definition: Self Extinguishing cable/core according to IEC 60332.3.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2PP2O0qSSHuO00025QrE$V
-  legacyGuid: 20e1c6fb691645e0bec164bfaaf47c07
-  legacyGuidAsIfcGlobalId: 0WuSRxQHP5uBx1PB_gz7m7
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2PP2O0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2PP2O0qSSHuO00025QrE$V
+    ifdGuid: 2PP2O0qSSHuO00025QrE$V
+    legacyGuid: 20e1c6fb691645e0bec164bfaaf47c07
+    legacyGuidAsIfcGlobalId: 0WuSRxQHP5uBx1PB_gz7m7
   localizations:
   - language: ja-JP
     name: '自己消火ケーブル'
@@ -578,10 +633,14 @@ properties:
     languageOfCreator: en-EN
 - name: HalogenProof
   definition: Produces small amount of smoke and irritating Deaerator/Gas.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2Vyfs0qSSHuO00025QrE$V
-  legacyGuid: 651df9616ad046148582053e3b2c6dfe
-  legacyGuidAsIfcGlobalId: 1b7VbXQj1658M21JuxB6t_
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Vyfs0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Vyfs0qSSHuO00025QrE$V
+    ifdGuid: 2Vyfs0qSSHuO00025QrE$V
+    legacyGuid: 651df9616ad046148582053e3b2c6dfe
+    legacyGuidAsIfcGlobalId: 1b7VbXQj1658M21JuxB6t_
   localizations:
   - language: ja-JP
     name: 'エコケーブル'
@@ -620,10 +679,14 @@ properties:
     languageOfCreator: en-EN
 - name: FunctionReliable
   definition: Cable/bus maintain given properties/functions over a given (tested) time and conditions. According to IEC standard.
-  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
-  ifdGuid: 2bJ_W0qSSHuO00025QrE$V
-  legacyGuid: df0fc0b5b5f04ee498b58681d3e1b2ae
-  legacyGuidAsIfcGlobalId: 3V3y2rjV1Ev9YrXe7JuRAk
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bJ_W0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bJ_W0qSSHuO00025QrE$V
+    ifdGuid: 2bJ_W0qSSHuO00025QrE$V
+    legacyGuid: df0fc0b5b5f04ee498b58681d3e1b2ae
+    legacyGuidAsIfcGlobalId: 3V3y2rjV1Ev9YrXe7JuRAk
   localizations:
   - language: ja-JP
     name: '信頼性のある機能'
