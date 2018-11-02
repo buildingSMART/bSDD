@@ -32,12 +32,12 @@ environment:
   
 on_finish:
   - ps: '& "C:\projects\bSDD\PSets\Tools\ConvertAndPublishPSets.ps1"'
-  - git config --global credential.helper store
-  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - git config --global user.email "$($env:gh_email)"
-  - git config --global user.name "$($env:gh_username)"
-  - git config core.autocrlf true
-  - git status
-  - git commit . -m "Transformed PSets to YAML and JSON format"
-  - git remote -v
-  - git push origin master
+#  - git config --global credential.helper store
+#  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+#  - git config --global user.email "$($env:gh_email)"
+#  - git config --global user.name "$($env:gh_username)"
+#  - git config core.autocrlf true
+#  - git status
+#  - git commit . -m "Transformed PSets to YAML and JSON format"
+#  - git remote -v
+#  - git push origin master
