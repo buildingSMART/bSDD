@@ -1,0 +1,933 @@
+﻿name: 'Pset_LightFixtureTypeCommon'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Common data for light fixtures.History: IFC4 - Article number and manufacturer specific information deleted. Use Pset_ManufacturerTypeInformation. ArticleNumber instead.   Load properties moved from Pset_LightFixtureTypeThermal (deleted).'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcLightFixtureType
+  type: IfcLightFixtureType
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '参照'
+    definition: '当該プロジェクトで定義する形式の参照ID（例：A-1)、承認された分類に存在しないときに使用される。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_Status
+    enumerationValues:
+    - name: NEW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'New'
+        definition: ''
+      - language: en-EN
+        name: 'New'
+        definition: ''
+      - language: es-ES
+        name: 'New'
+        definition: ''
+      - language: fr-FR
+        name: 'New'
+        definition: ''
+      - language: ja-JP
+        name: 'New'
+        definition: ''
+      - language: ru-RU
+        name: 'New'
+        definition: ''
+    - name: EXISTING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Existing'
+        definition: ''
+      - language: en-EN
+        name: 'Existing'
+        definition: ''
+      - language: es-ES
+        name: 'Existing'
+        definition: ''
+      - language: fr-FR
+        name: 'Existing'
+        definition: ''
+      - language: ja-JP
+        name: 'Existing'
+        definition: ''
+      - language: ru-RU
+        name: 'Existing'
+        definition: ''
+    - name: DEMOLISH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Demolish'
+        definition: ''
+      - language: en-EN
+        name: 'Demolish'
+        definition: ''
+      - language: es-ES
+        name: 'Demolish'
+        definition: ''
+      - language: fr-FR
+        name: 'Demolish'
+        definition: ''
+      - language: ja-JP
+        name: 'Demolish'
+        definition: ''
+      - language: ru-RU
+        name: 'Demolish'
+        definition: ''
+    - name: TEMPORARY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Temporary'
+        definition: ''
+      - language: en-EN
+        name: 'Temporary'
+        definition: ''
+      - language: es-ES
+        name: 'Temporary'
+        definition: ''
+      - language: fr-FR
+        name: 'Temporary'
+        definition: ''
+      - language: ja-JP
+        name: 'Temporary'
+        definition: ''
+      - language: ru-RU
+        name: 'Temporary'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NumberOfSources
+  definition: Number of sources .
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: bd34644754f540afa50c302bc4116b3f
+  legacyGuidAsIfcGlobalId: 2zD6H7LFL0hwKCC2l44Mi$
+  localizations:
+  - language: ja-JP
+    name: '電球数'
+    definition: '電球数。'
+  - language: ko-KR
+    name: '전구수'
+    definition: '전구수'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcInteger
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TotalWattage
+  definition: Wattage on whole lightfitting device with all sources intact.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b78ffa15dd014fcea471088c14693881
+  legacyGuidAsIfcGlobalId: 2tZ$eLtG5FpgHn28mKQJY1
+  localizations:
+  - language: ja-JP
+    name: '総ワット数'
+    definition: '全ての照明器具のワット数。'
+  - language: ko-KR
+    name: '총 와트'
+    definition: '모든 조명기구 와트.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: POWERUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LightFixtureMountingType
+  definition: A list of the available types of mounting for light fixtures from which that required may be selected.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ffd422427eba49ed9ddc938655cad32a
+  legacyGuidAsIfcGlobalId: 3$r292Vhf9xPtSauPLojCg
+  localizations:
+  - language: ja-JP
+    name: '照明器具取付方法'
+    definition: '照明器具の取付方法をリストから選択。'
+  - language: ko-KR
+    name: '조명기구 설치방법'
+    definition: '조명기구의 설치 방법을 목록에서 선택합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_LightFixtureMountingType
+    enumerationValues:
+    - name: CABLESPANNED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Cablespanned'
+        definition: ''
+      - language: en-EN
+        name: 'Cablespanned'
+        definition: ''
+      - language: es-ES
+        name: 'Cablespanned'
+        definition: ''
+      - language: fr-FR
+        name: 'Cablespanned'
+        definition: ''
+      - language: ja-JP
+        name: 'Cablespanned'
+        definition: ''
+      - language: ru-RU
+        name: 'Cablespanned'
+        definition: ''
+    - name: FREESTANDING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Freestanding'
+        definition: ''
+      - language: en-EN
+        name: 'Freestanding'
+        definition: ''
+      - language: es-ES
+        name: 'Freestanding'
+        definition: ''
+      - language: fr-FR
+        name: 'Freestanding'
+        definition: ''
+      - language: ja-JP
+        name: 'Freestanding'
+        definition: ''
+      - language: ru-RU
+        name: 'Freestanding'
+        definition: ''
+    - name: POLE_SIDE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pole_side'
+        definition: ''
+      - language: en-EN
+        name: 'Pole_side'
+        definition: ''
+      - language: es-ES
+        name: 'Pole_side'
+        definition: ''
+      - language: fr-FR
+        name: 'Pole_side'
+        definition: ''
+      - language: ja-JP
+        name: 'Pole_side'
+        definition: ''
+      - language: ru-RU
+        name: 'Pole_side'
+        definition: ''
+    - name: POLE_TOP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pole_top'
+        definition: ''
+      - language: en-EN
+        name: 'Pole_top'
+        definition: ''
+      - language: es-ES
+        name: 'Pole_top'
+        definition: ''
+      - language: fr-FR
+        name: 'Pole_top'
+        definition: ''
+      - language: ja-JP
+        name: 'Pole_top'
+        definition: ''
+      - language: ru-RU
+        name: 'Pole_top'
+        definition: ''
+    - name: RECESSED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Recessed'
+        definition: ''
+      - language: en-EN
+        name: 'Recessed'
+        definition: ''
+      - language: es-ES
+        name: 'Recessed'
+        definition: ''
+      - language: fr-FR
+        name: 'Recessed'
+        definition: ''
+      - language: ja-JP
+        name: 'Recessed'
+        definition: ''
+      - language: ru-RU
+        name: 'Recessed'
+        definition: ''
+    - name: SURFACE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Surface'
+        definition: ''
+      - language: en-EN
+        name: 'Surface'
+        definition: ''
+      - language: es-ES
+        name: 'Surface'
+        definition: ''
+      - language: fr-FR
+        name: 'Surface'
+        definition: ''
+      - language: ja-JP
+        name: 'Surface'
+        definition: ''
+      - language: ru-RU
+        name: 'Surface'
+        definition: ''
+    - name: SUSPENDED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Suspended'
+        definition: ''
+      - language: en-EN
+        name: 'Suspended'
+        definition: ''
+      - language: es-ES
+        name: 'Suspended'
+        definition: ''
+      - language: fr-FR
+        name: 'Suspended'
+        definition: ''
+      - language: ja-JP
+        name: 'Suspended'
+        definition: ''
+      - language: ru-RU
+        name: 'Suspended'
+        definition: ''
+    - name: TRACKMOUNTED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Trackmounted'
+        definition: ''
+      - language: en-EN
+        name: 'Trackmounted'
+        definition: ''
+      - language: es-ES
+        name: 'Trackmounted'
+        definition: ''
+      - language: fr-FR
+        name: 'Trackmounted'
+        definition: ''
+      - language: ja-JP
+        name: 'Trackmounted'
+        definition: ''
+      - language: ru-RU
+        name: 'Trackmounted'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LightFixturePlacingType
+  definition: A list of the available types of placing specification for light fixtures from which that required may be selected.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4b3f117f0a054c3c839197a070b5d44b
+  legacyGuidAsIfcGlobalId: 1BFn5$2WLCF8EHbw1mjTHB
+  localizations:
+  - language: ja-JP
+    name: '照明器具取付場所'
+    definition: '照明器具の取付場所をリストから選択。'
+  - language: ko-KR
+    name: '조명기구 설치 장소'
+    definition: '조명기구의 설치 장소를 목록에서 선택합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_LightFixturePlacingType
+    enumerationValues:
+    - name: CEILING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Ceiling'
+        definition: ''
+      - language: en-EN
+        name: 'Ceiling'
+        definition: ''
+      - language: es-ES
+        name: 'Ceiling'
+        definition: ''
+      - language: fr-FR
+        name: 'Ceiling'
+        definition: ''
+      - language: ja-JP
+        name: 'Ceiling'
+        definition: ''
+      - language: ru-RU
+        name: 'Ceiling'
+        definition: ''
+    - name: FLOOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Floor'
+        definition: ''
+      - language: en-EN
+        name: 'Floor'
+        definition: ''
+      - language: es-ES
+        name: 'Floor'
+        definition: ''
+      - language: fr-FR
+        name: 'Floor'
+        definition: ''
+      - language: ja-JP
+        name: 'Floor'
+        definition: ''
+      - language: ru-RU
+        name: 'Floor'
+        definition: ''
+    - name: FURNITURE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Furniture'
+        definition: ''
+      - language: en-EN
+        name: 'Furniture'
+        definition: ''
+      - language: es-ES
+        name: 'Furniture'
+        definition: ''
+      - language: fr-FR
+        name: 'Furniture'
+        definition: ''
+      - language: ja-JP
+        name: 'Furniture'
+        definition: ''
+      - language: ru-RU
+        name: 'Furniture'
+        definition: ''
+    - name: POLE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pole'
+        definition: ''
+      - language: en-EN
+        name: 'Pole'
+        definition: ''
+      - language: es-ES
+        name: 'Pole'
+        definition: ''
+      - language: fr-FR
+        name: 'Pole'
+        definition: ''
+      - language: ja-JP
+        name: 'Pole'
+        definition: ''
+      - language: ru-RU
+        name: 'Pole'
+        definition: ''
+    - name: WALL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Wall'
+        definition: ''
+      - language: en-EN
+        name: 'Wall'
+        definition: ''
+      - language: es-ES
+        name: 'Wall'
+        definition: ''
+      - language: fr-FR
+        name: 'Wall'
+        definition: ''
+      - language: ja-JP
+        name: 'Wall'
+        definition: ''
+      - language: ru-RU
+        name: 'Wall'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaintenanceFactor
+  definition: The arithmetical allowance made for depreciation of lamps and reflective equipment from their initial values due to dirt, fumes, or age.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 05086e8278964678872e5c594355e050
+  legacyGuidAsIfcGlobalId: 0526w2U9P6U8SkN5b3LU1G
+  localizations:
+  - language: ja-JP
+    name: '保守率'
+    definition: '汚れ、煙、年数による初期からのランプや反射装置の低減許容計算。'
+  - language: ko-KR
+    name: '보수 비율'
+    definition: '먼지, 연기, 연수의 초기부터 램프와 반사 장치의 저감 허용 계산.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaximumPlenumSensibleLoad
+  definition: Maximum or Peak sensible thermal load contributed to the conditioned space by the light fixture.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: POWERUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaximumSpaceSensibleLoad
+  definition: Maximum or Peak sensible thermal load contributed to return air plenum by the light fixture.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: POWERUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SensibleLoadToRadiant
+  definition: Percent of sensible thermal load to radiant heat.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

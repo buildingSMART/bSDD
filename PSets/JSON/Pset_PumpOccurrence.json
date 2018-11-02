@@ -1,0 +1,588 @@
+﻿{
+  "name": "Pset_PumpOccurrence",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcHvacDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Pump occurrence attributes attached to an instance of IfcPump.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcPump",
+      "type": "IfcPump"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ImpellerDiameter",
+      "definition": "Diameter of pump impeller - used to scale performance of geometrically similar pumps.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "羽根直径",
+          "definition": "幾何学的に似たポンプの性能を予測するのに使われる。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "BaseType",
+      "definition": "Defines general types of pump bases.FRAME: Frame. BASE: Base. NONE: There is no pump base, such as an inline pump. OTHER: Other type of pump base.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "基礎タイプ",
+          "definition": "ポンプ基礎の一般的な型を定義する(フレーム、(コンクリ)基礎、なし、その他)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_PumpBaseType",
+        "enumerationValues": [
+          {
+            "name": "FRAME",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Frame",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Frame",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Frame",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Frame",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Frame",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Frame",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "BASE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Base",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Base",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Base",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Base",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Base",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Base",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NONE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "None",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DriveConnectionType",
+      "definition": "The way the pump drive mechanism is connected to the pump.DIRECTDRIVE: Direct drive. BELTDRIVE: Belt drive. COUPLING: Coupling. OTHER: Other type of drive connection.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "駆動接続タイプ",
+          "definition": "ポンプの動力機械がポンプに接続される方法(直動、ベルト、カップリング、その他)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_PumpDriveConnectionType",
+        "enumerationValues": [
+          {
+            "name": "DIRECTDRIVE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Directdrive",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Directdrive",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "BELTDRIVE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Beltdrive",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Beltdrive",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "COUPLING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Coupling",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Coupling",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

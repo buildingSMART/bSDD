@@ -1,0 +1,217 @@
+﻿name: 'Pset_ValveTypeMixing'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcHvacDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'A valve where typically the temperature of the outlet is determined by mixing hot and cold water inlet flows.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcValveType
+  type: IfcValveType/MIXING
+properties:
+- name: MixerControl
+  definition: Defines the form of control of the mixing valve.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 24cae0baab284fdaa032bedc714bda89
+  legacyGuidAsIfcGlobalId: 0aok2wgoXFsg0oljnnIzg9
+  localizations:
+  - language: ja-JP
+    name: '混合制御'
+    definition: '混合弁の制御形式の定義'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_MixingValveControl
+    enumerationValues:
+    - name: MANUAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Manual'
+        definition: ''
+      - language: en-EN
+        name: 'Manual'
+        definition: ''
+      - language: es-ES
+        name: 'Manual'
+        definition: ''
+      - language: fr-FR
+        name: 'Manual'
+        definition: ''
+      - language: ja-JP
+        name: 'Manual'
+        definition: ''
+      - language: ru-RU
+        name: 'Manual'
+        definition: ''
+    - name: PREDEFINED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Predefined'
+        definition: ''
+      - language: en-EN
+        name: 'Predefined'
+        definition: ''
+      - language: es-ES
+        name: 'Predefined'
+        definition: ''
+      - language: fr-FR
+        name: 'Predefined'
+        definition: ''
+      - language: ja-JP
+        name: 'Predefined'
+        definition: ''
+      - language: ru-RU
+        name: 'Predefined'
+        definition: ''
+    - name: THERMOSTATIC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Thermostatic'
+        definition: ''
+      - language: en-EN
+        name: 'Thermostatic'
+        definition: ''
+      - language: es-ES
+        name: 'Thermostatic'
+        definition: ''
+      - language: fr-FR
+        name: 'Thermostatic'
+        definition: ''
+      - language: ja-JP
+        name: 'Thermostatic'
+        definition: ''
+      - language: ru-RU
+        name: 'Thermostatic'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: OutletConnectionSize
+  definition: The size of the pipework connection from the mixing valve.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 37f36925b83b409b83843c815dce3a76
+  legacyGuidAsIfcGlobalId: 0tysabk3j0cuE4F85TpZfs
+  localizations:
+  - language: ja-JP
+    name: '出力側接続口径'
+    definition: '混合弁の配管接続サイズ'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

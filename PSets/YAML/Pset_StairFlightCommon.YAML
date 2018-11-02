@@ -1,0 +1,663 @@
+﻿name: 'Pset_StairFlightCommon'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedBldgElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Properties common to the definition of all occurrences of IfcStairFlight.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcStairFlight
+  type: IfcStairFlightType
+- name: IfcStairFlightType
+  type: IfcStairFlightType
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4a2ca8a758f64a148b1ef10815599c73
+  legacyGuidAsIfcGlobalId: 1ABAYdMFPA58iUyGWLMPnp
+  localizations:
+  - language: de-DE
+    name: 'Bauteiltyp'
+    definition: 'Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterstützt.'
+  - language: fr-FR
+    name: 'Référence'
+    definition: 'Référence à l''identifiant d''un type spécifié dans le contexte du projet (exemple : "type A1") pour désigner un "type de construction". Une alternative au nom d''un objet type lorsque les objets types ne sont pas gérés par le logiciel.'
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: zh-CN
+    name: '参考号'
+    definition: '若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: 'Status'
+    definition: 'Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Ergänzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Temporär" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)'
+  - language: fr-FR
+    name: 'Statut'
+    definition: 'Statut de l''élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire).'
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ElementStatus
+    enumerationValues:
+    - name: NEW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'New'
+        definition: ''
+      - language: en-EN
+        name: 'New'
+        definition: ''
+      - language: es-ES
+        name: 'New'
+        definition: ''
+      - language: fr-FR
+        name: 'New'
+        definition: ''
+      - language: ja-JP
+        name: 'New'
+        definition: ''
+      - language: ru-RU
+        name: 'New'
+        definition: ''
+    - name: EXISTING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Existing'
+        definition: ''
+      - language: en-EN
+        name: 'Existing'
+        definition: ''
+      - language: es-ES
+        name: 'Existing'
+        definition: ''
+      - language: fr-FR
+        name: 'Existing'
+        definition: ''
+      - language: ja-JP
+        name: 'Existing'
+        definition: ''
+      - language: ru-RU
+        name: 'Existing'
+        definition: ''
+    - name: DEMOLISH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Demolish'
+        definition: ''
+      - language: en-EN
+        name: 'Demolish'
+        definition: ''
+      - language: es-ES
+        name: 'Demolish'
+        definition: ''
+      - language: fr-FR
+        name: 'Demolish'
+        definition: ''
+      - language: ja-JP
+        name: 'Demolish'
+        definition: ''
+      - language: ru-RU
+        name: 'Demolish'
+        definition: ''
+    - name: TEMPORARY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Temporary'
+        definition: ''
+      - language: en-EN
+        name: 'Temporary'
+        definition: ''
+      - language: es-ES
+        name: 'Temporary'
+        definition: ''
+      - language: fr-FR
+        name: 'Temporary'
+        definition: ''
+      - language: ja-JP
+        name: 'Temporary'
+        definition: ''
+      - language: ru-RU
+        name: 'Temporary'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NumberOfRiser
+  definition: Total number of the risers included in the stair flight.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a486cd505e5e4b97bd099836c4aca2d1
+  legacyGuidAsIfcGlobalId: 2aXirGNbvBbxq9c3R4hABH
+  localizations:
+  - language: de-DE
+    name: 'Anzahl der Steigungen'
+    definition: 'German-description-2'
+  - language: fr-FR
+    name: 'Nombre de contremarches'
+    definition: 'Nombre total de contremarches de l''escalier'
+  - language: ja-JP
+    name: '蹴上げ数'
+    definition: '階段の蹴上げ数。'
+  - language: zh-CN
+    name: '踢板数'
+    definition: '该梯段所包含的踢板总数。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcCountMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NumberOfTreads
+  definition: Total number of treads included in the stair flight.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: bbee929f1bb74a97b3e43a4a3a22d9f4
+  legacyGuidAsIfcGlobalId: 2xxfAV6xTAbxFaEaew8jdq
+  localizations:
+  - language: de-DE
+    name: 'Anzahl der Auftritte'
+    definition: 'German-description-3'
+  - language: fr-FR
+    name: 'Nombre de girons'
+    definition: 'Nombre total de girons de l''escalier'
+  - language: ja-JP
+    name: '踏面数'
+    definition: '階段の踏面数。'
+  - language: zh-CN
+    name: '踏板数'
+    definition: '该梯段所包含的踏板总数。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcCountMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RiserHeight
+  definition: Vertical distance from tread to tread. The riser height is supposed to be equal for all steps of a stair or stair flight.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b17df2cff27947bc9e8e294345cf5063
+  legacyGuidAsIfcGlobalId: 2nVVBFydb7l9wEAKD5pr1Z
+  localizations:
+  - language: de-DE
+    name: 'Steigung'
+    definition: 'German-description-4'
+  - language: fr-FR
+    name: 'Hauteur de contremarche'
+    definition: 'Hauteur de la contremarche, supposée homogène pour toutes les marches de l''escalier ou de la volée de marches.'
+  - language: ja-JP
+    name: '蹴上げ高さ'
+    definition: '踏面と踏面の垂直方向の距離。この蹴上げ高さ値は、一連の階段において同じ値と仮定する。'
+  - language: zh-CN
+    name: '踢板高度'
+    definition: '踏板之间的垂直高度。楼梯或梯段所有梯级的踢板高度应当一致。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TreadLength
+  definition: Horizontal distance from the front of the thread to the front of the next tread. The tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 5dcd325bcd504003bc346c9738d386c6
+  legacyGuidAsIfcGlobalId: 1TpJ9RpL100xmqR9SuquR6
+  localizations:
+  - language: de-DE
+    name: 'Auftritt'
+    definition: 'German-description-5'
+  - language: fr-FR
+    name: 'Longueur du giron'
+    definition: 'Longueur de giron (largeur de marche), supposée égale pour toutes les marches de l''escalier ou de la volée de marchesle long de la ligne de foulée'
+  - language: ja-JP
+    name: '踏面長'
+    definition: '踏面の前面部分から次の踏面までの水平方向の距離。この踏面長の値は、一連の階段において同じ値と仮定する。'
+  - language: zh-CN
+    name: '踏板长度'
+    definition: '踏板前缘到下一级踏板前缘的水平距离。走线方向上楼梯或梯段所有梯级的踏板宽度应当一致。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NosingLength
+  definition: Horizontal distance from the front of the tread to the riser underneath. It is the overhang of the tread.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 432f31ca191b4f78b094975e9a9b5215
+  legacyGuidAsIfcGlobalId: 13Bp7A6HjFUB2KbrwQcr8L
+  localizations:
+  - language: de-DE
+    name: 'Überstand'
+    definition: 'German-description-6'
+  - language: fr-FR
+    name: 'Longueur du nez'
+    definition: 'Longueur du nez de marche.'
+  - language: zh-CN
+    name: '踏板前缘长度'
+    definition: '踏板前边沿到下级踢板的水平距离，即踏板悬挑部分的长度。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WalkingLineOffset
+  definition: 'Offset of the walking line from the inner side of the flight. Note: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4a7f6619742847f791390daa94ee396d
+  legacyGuidAsIfcGlobalId: 1AVsOPT2X7zv4v3QgKxZbj
+  localizations:
+  - language: de-DE
+    name: 'Abstand der Lauflinie'
+    definition: 'German-description-7'
+  - language: fr-FR
+    name: 'Décalage de la ligne de foulée'
+    definition: 'Décalage de la ligne de foulée par rapport au côté intérieur de la volée. Nota : la ligne de foulée peut avoir sa propre représentation. En cas d''incohérences, c''est la valeur déduite de la représentation de la forme qui prime.'
+  - language: zh-CN
+    name: '走线偏移'
+    definition: '走线到梯段内侧的偏移量。注：走线可能有单独的形状描述（如果不一致，应以从形状描述得到的值为准）。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TreadLengthAtOffset
+  definition: Length of treads at a given offset.Walking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculations is different from that used in design.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: d095e1544b2a4c449953030f28f4abc3
+  legacyGuidAsIfcGlobalId: 3GbU5KIofCH9bJ0myezAl3
+  localizations:
+  - language: de-DE
+    name: 'Auftritt an der Lauflinie'
+    definition: 'German-description-8'
+  - language: fr-FR
+    name: 'Longueur du giron le long de la ligne de foulée'
+    definition: 'Longueur du giron le long de la ligne de foulée. La valeur relativement à cette position doit normalement être identique à la propriété "Longueur du giron" ; elle peut être indiquée si la valeur de la propriété "Décalage de la ligne de foulée" donnée par une règle de calcul est différente de celle utilisée en conception.'
+  - language: zh-CN
+    name: '偏移踏板长度'
+    definition: '在指定偏移量处踏板的长度。走线位置由“走线偏移”指定。该属性一般应与踏板长度一致，但如果根据建筑规范计算得到的走线偏移量和设计中使用的走线偏移量不同时，应使用该属性。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TreadLengthAtInnerSide
+  definition: Minimum length of treads at the inner side of the winder. Only relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: f71e3120e1734010be61d4a0ad9334e3
+  legacyGuidAsIfcGlobalId: 3t7Z4WuND04BvXrA2japJZ
+  localizations:
+  - language: de-DE
+    name: 'minimaler Auftritt an der Innenseite'
+    definition: 'German-description-9'
+  - language: fr-FR
+    name: 'Longueur du giron côté intérieur'
+    definition: 'Longueur minimum des girons du côté intérieur de l''enroulement. Pertinent seulement pour les escaliers tournants car pour une volée droite, la valeur est donnée par la propriété "Longueur du giron". C''est une valeur précalculée. En cas d''incohérence, c''est la valeur dérivée de la représentation de la forme qui prime.'
+  - language: zh-CN
+    name: '内侧踏板长度'
+    definition: '螺旋楼梯踏板内侧的最小长度。该属性仅适用于螺旋楼梯。对直跑楼梯，该属性与IfcStairFlight.TreadLength一致。该属性为预设值，若有冲突，应以从形状描述得到的值为准。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Headroom
+  definition: Actual headroom clearance for the passageway according to the current design. The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 502f7c5b73fa42889f7f2b52e67a592a
+  legacyGuidAsIfcGlobalId: 1GBtnRS$f2Y9z$ArBcUbag
+  localizations:
+  - language: de-DE
+    name: 'Durchgangshöhe'
+    definition: 'German-description-10'
+  - language: fr-FR
+    name: 'HauteurPassage'
+    definition: 'Hauteur de passage (échappée) actuellement projetée. Cette propriété est donnée en complément de la représentation de la forme de l''élément et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment.'
+  - language: zh-CN
+    name: '净空'
+    definition: '当前设计方案确定的通道实际净空高度。该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WaistThickness
+  definition: Minimum thickness of the stair flight, measured perpendicular to the slope of the flight to the inner corner of riser and tread. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 89bbadfe5b96406dbb02190db88eb07d
+  legacyGuidAsIfcGlobalId: 29kwt_MvP0RRi26GsuZh1z
+  localizations:
+  - language: de-DE
+    name: 'minimale Dicke des Treppenplatte'
+    definition: 'German-description-11'
+  - language: fr-FR
+    name: 'Epaisseur de la volée'
+    definition: 'Epaisseur minimum de la volée mesurée perpendiculairement à la pente de la volée jusqu''au coin intérieur formé par la marche et la contremarche. C''est une valeur précalculée. En cas d''incohérence, c''est la valeur dérivée de la représentation de la forme qui prime.'
+  - language: zh-CN
+    name: '腰部厚度'
+    definition: '楼梯梯段的最小厚度，即踢板和踏板所成的内角到梯段斜面的垂线长度。该属性为预设值，若有冲突，应以从形状描述得到的值为准。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

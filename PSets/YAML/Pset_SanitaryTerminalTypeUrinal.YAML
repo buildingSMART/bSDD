@@ -1,0 +1,565 @@
+﻿name: 'Pset_SanitaryTerminalTypeUrinal'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcPlumbingFireProtectionDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Soil appliance that receives urine and directs it to a waste outlet (BS6100). HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Prefix for color property removed. Datatype of color changed to IfcLabel (still a string value).  Mounting property added.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSanitaryTerminalType
+  type: IfcSanitaryTerminalType/URINAL
+properties:
+- name: UrinalType
+  definition: 'Selection of the type of urinal from the enumerated list of types where:-Bowl: Individual wall mounted urinal.Slab: Urinal that consists of a slab or sheet fixed to a wall and down which urinal flows into a floor channel.Stall: Floor mounted urinal that consists of an elliptically shaped sanitary stall fixed to a wall and down which urine flows into a floor channel.Trough: Wall mounted urinal of elongated rectangular shape on plan, that can be used by more than one person at a time.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b323294a9c7148098ceecd62a3977da9
+  legacyGuidAsIfcGlobalId: 2p8obAd7582OpkpMAZbtsf
+  localizations:
+  - language: ja-JP
+    name: '小便器タイプ'
+    definition: '下記のリストより小便器タイプを選択便器：壁に設置された独立した小便器床：壁や床の溝へ流れるように固定されている個室：衛生個室の床や壁に楕円形に設置されたフロア溝：一人以上の人数が同時に使用できるよう、壁に直角に長く引き伸ばした形'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_UrinalType
+    enumerationValues:
+    - name: BOWL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Bowl'
+        definition: ''
+      - language: en-EN
+        name: 'Bowl'
+        definition: ''
+      - language: es-ES
+        name: 'Bowl'
+        definition: ''
+      - language: fr-FR
+        name: 'Bowl'
+        definition: ''
+      - language: ja-JP
+        name: 'Bowl'
+        definition: ''
+      - language: ru-RU
+        name: 'Bowl'
+        definition: ''
+    - name: SLAB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Slab'
+        definition: ''
+      - language: en-EN
+        name: 'Slab'
+        definition: ''
+      - language: es-ES
+        name: 'Slab'
+        definition: ''
+      - language: fr-FR
+        name: 'Slab'
+        definition: ''
+      - language: ja-JP
+        name: 'Slab'
+        definition: ''
+      - language: ru-RU
+        name: 'Slab'
+        definition: ''
+    - name: STALL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Stall'
+        definition: ''
+      - language: en-EN
+        name: 'Stall'
+        definition: ''
+      - language: es-ES
+        name: 'Stall'
+        definition: ''
+      - language: fr-FR
+        name: 'Stall'
+        definition: ''
+      - language: ja-JP
+        name: 'Stall'
+        definition: ''
+      - language: ru-RU
+        name: 'Stall'
+        definition: ''
+    - name: TROUGH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Trough'
+        definition: ''
+      - language: en-EN
+        name: 'Trough'
+        definition: ''
+      - language: es-ES
+        name: 'Trough'
+        definition: ''
+      - language: fr-FR
+        name: 'Trough'
+        definition: ''
+      - language: ja-JP
+        name: 'Trough'
+        definition: ''
+      - language: ru-RU
+        name: 'Trough'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Mounting
+  definition: 'Selection of the form of mounting from the enumerated list of mountings where:-BackToWall =	A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connectionsPedestal =	A floor mounted sanitary terminal that has an integral baseCounterTop =	A sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is ‘vanity’. See also Wash Hand Basin Type specification.WallHung =	A sanitary terminal cantilevered clear of the floor.Note that BackToWall, Pedestal and WallHung are allowable values for a urinal.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: cfb57797e6a84f3d8e2b0232b0e8f29d
+  legacyGuidAsIfcGlobalId: 3FjNUNvgXFFOuh0ZAmwFAT
+  localizations:
+  - language: ja-JP
+    name: '設置'
+    definition: '下記の設置方法より選択・床置き壁排出：接続口の後部に出水口を合わせること。・台：床置きの衛生器具には基礎があること。・カウンター：衛生器具の表層が水平に設置されていること。※手洗い台として設置された場合「化粧台」として扱うこと。また、洗面台種類の規格表を参照のこと。・壁掛け型：衛生器具は片側固定がされ床から離れていること。床置き壁排出型・台座と壁掛け型は便器と同等とされます。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_SanitaryMounting
+    enumerationValues:
+    - name: BACKTOWALL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Backtowall'
+        definition: ''
+      - language: en-EN
+        name: 'Backtowall'
+        definition: ''
+      - language: es-ES
+        name: 'Backtowall'
+        definition: ''
+      - language: fr-FR
+        name: 'Backtowall'
+        definition: ''
+      - language: ja-JP
+        name: 'Backtowall'
+        definition: ''
+      - language: ru-RU
+        name: 'Backtowall'
+        definition: ''
+    - name: PEDESTAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Pedestal'
+        definition: ''
+      - language: en-EN
+        name: 'Pedestal'
+        definition: ''
+      - language: es-ES
+        name: 'Pedestal'
+        definition: ''
+      - language: fr-FR
+        name: 'Pedestal'
+        definition: ''
+      - language: ja-JP
+        name: 'Pedestal'
+        definition: ''
+      - language: ru-RU
+        name: 'Pedestal'
+        definition: ''
+    - name: COUNTERTOP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Countertop'
+        definition: ''
+      - language: en-EN
+        name: 'Countertop'
+        definition: ''
+      - language: es-ES
+        name: 'Countertop'
+        definition: ''
+      - language: fr-FR
+        name: 'Countertop'
+        definition: ''
+      - language: ja-JP
+        name: 'Countertop'
+        definition: ''
+      - language: ru-RU
+        name: 'Countertop'
+        definition: ''
+    - name: WALLHUNG
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Wallhung'
+        definition: ''
+      - language: en-EN
+        name: 'Wallhung'
+        definition: ''
+      - language: es-ES
+        name: 'Wallhung'
+        definition: ''
+      - language: fr-FR
+        name: 'Wallhung'
+        definition: ''
+      - language: ja-JP
+        name: 'Wallhung'
+        definition: ''
+      - language: ru-RU
+        name: 'Wallhung'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Color
+  definition: Color of the urinal.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: eec9b6fa794e4d57bec21474b302bdac
+  legacyGuidAsIfcGlobalId: 3koRRwUKvDLxx257Ip0hsi
+  localizations:
+  - language: ja-JP
+    name: '色'
+    definition: '要素の色。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SpilloverLevel
+  definition: The level at which water spills out of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 2cca66ced9b64320a8bb2205a75816da
+  legacyGuidAsIfcGlobalId: 0iocREsRP38AYx8WMdM1RQ
+  localizations:
+  - language: ja-JP
+    name: '水位'
+    definition: '継手からの水位。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalLength
+  definition: Nominal or quoted length of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 8c188c6e0bbf4f2fa7da7687ff4a5a83
+  legacyGuidAsIfcGlobalId: 2C68nk2xzFBwVQTeV$Ibg3
+  localizations:
+  - language: ja-JP
+    name: '長さ'
+    definition: '要素の長さ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalWidth
+  definition: Nominal or quoted width of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: c576190e70b74c40a200a85d58e7fcd4
+  legacyGuidAsIfcGlobalId: 35TXaESBTCGA80g5rOv$pK
+  localizations:
+  - language: ja-JP
+    name: '幅'
+    definition: '要素の幅。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalDepth
+  definition: Nominal or quoted depth of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 1fd62a0185c944b9b3eece20447d5959
+  legacyGuidAsIfcGlobalId: 0VrYe1XSb4kRFkpY14VLbP
+  localizations:
+  - language: ja-JP
+    name: '深さ'
+    definition: '要素の深さ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

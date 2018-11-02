@@ -1,0 +1,112 @@
+﻿name: 'Pset_DistributionPortCommon'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedBldgServiceElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Common attributes attached to an instance of IfcDistributionPort.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDistributionPort
+  type: IfcDistributionPort
+properties:
+- name: PortNumber
+  definition: The port index for logically ordering the port within the containing element or element type.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: 'ポート番号'
+    definition: 'ポートに含まれる要素、種類を示す番号。'
+  - language: ko-KR
+    name: '포트 번호'
+    definition: '포트에 포함되는 요소 유형을 나타내는 숫자'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcInteger
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ColorCode
+  definition: Name of a color for identifying the connector, if applicable.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '色番号'
+    definition: 'コネクタの色。'
+  - language: ko-KR
+    name: '색상번호'
+    definition: '커넥터 고유 이름'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,475 @@
+﻿{
+  "name": "Pset_AirTerminalPHistory",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcHvacDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Air terminal performance history common attributes.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcPerformanceHistory",
+      "type": "IfcAirTerminal[PerformanceHistory]"
+    }
+  ],
+  "properties": [
+    {
+      "name": "AirFlowRate",
+      "definition": "Volumetric flow rate.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "8d815785230a478d8bad716c6481b754",
+      "legacyGuidAsIfcGlobalId": "2DWLU58mf7ZOkjSMnaWRTK",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Débit d'air",
+          "definition": "Débit d'air volumique"
+        },
+        {
+          "language": "ja-JP",
+          "name": "風量",
+          "definition": "送風量"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NeckAirVelocity",
+      "definition": "Air velocity at the neck.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "e0440e4ff34f4c769ea3404a99329252",
+      "legacyGuidAsIfcGlobalId": "3WH0vFyqzCTfwZG4gPCf9I",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Vitesse de l'air au point le plus étroit",
+          "definition": "Vitesse de l'air au point le plus étroit"
+        },
+        {
+          "language": "ja-JP",
+          "name": "ネック風速",
+          "definition": "ネックの風速"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SupplyAirTemperatureHeating",
+      "definition": "Supply air temperature in heating mode.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "466654221d0a4ad5960a20a0ad029904",
+      "legacyGuidAsIfcGlobalId": "16PbGY7GfArPOA8A2j0fa4",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Température de l'air soufflé en chauffage",
+          "definition": "Température de l'air soufflé en mode chauffage"
+        },
+        {
+          "language": "ja-JP",
+          "name": "暖房給気温度",
+          "definition": "暖房時の給気温度"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SupplyAirTemperatureCooling",
+      "definition": "Supply air temperature in cooling mode.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "d0feef66c8fa434cb95bf18f2b4b8ce9",
+      "legacyGuidAsIfcGlobalId": "3G$kzcoFf3JBbRyOyhIupf",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Température de l'air soufflé en refroidissement",
+          "definition": "Température de l'air soufflé en mode refroidissement"
+        },
+        {
+          "language": "ja-JP",
+          "name": "冷房給気温度",
+          "definition": "冷房時の給気温度"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PressureDrop",
+      "definition": "Drop in total pressure between inlet and outlet at nominal air-flow rate.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "30e53c24b17d45c98b64629dc7a7debe",
+      "legacyGuidAsIfcGlobalId": "0mvJmaiNr5oOjaOft7fzw_",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Chute de pression",
+          "definition": "Chute de pression totale entre l'entrée et la sortie en débit d'air nominal"
+        },
+        {
+          "language": "ja-JP",
+          "name": "圧力降下",
+          "definition": "設定風量での入口/出口間の全圧降下"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "InductionRatio",
+      "definition": "Induction ratio versus distance from the diffuser and its discharge direction; induction ratio (or entrainment ratio) is the ratio of the volumetric flow rate in the jet to the volumetric flow rate at the air terminal.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "9d9aa0a723da4a2f930942317dd03ffd",
+      "legacyGuidAsIfcGlobalId": "2Tcg2d8zfABvC9GZ5zq3$z",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Taux d'induction",
+          "definition": "Taux d'induction par rapport à la distance entre le diffuseur et sa direction de rejet;Le taux d'induction est le rapport entre  le débit volumique d'air dans le jet sur  le débit volumique d'air au niveau du terminal."
+        },
+        {
+          "language": "ja-JP",
+          "name": "誘引率",
+          "definition": "制気口からの距離とその排出方向に対する誘引比、誘導比（または同調比）は、エアターミナルでの体積流量に対する噴流の体積流量の比である。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "-",
+        "DefiningValue": {
+          "dataType": "IfcReal",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcLengthMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CenterlineAirVelocity",
+      "definition": "Centerline air velocity versus distance from the diffuser and temperature differential; a function of distance from diffuser and temperature difference between supply air and room air.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "65a4280c71e14bed9e6d7fd0b792301a",
+      "legacyGuidAsIfcGlobalId": "1bf2WCSU5BxPvjVz2taZ0Q",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Vitesse de l'air en axe central de jet",
+          "definition": "Vitesse de l'air en axe central de jet par rapport à la distance entre le diffuseur et la température différentielle; une fonction de la distance entre le diffuseur et la différence de température entre celui de l'air fourni et celui de l'air de la pièce."
+        },
+        {
+          "language": "ja-JP",
+          "name": "中心空気速度",
+          "definition": "吹出口かからの距離と温度差に対する中心速度、給気と室内空気の間の吹出口かからの距離と温度差の関数"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "-",
+        "DefiningValue": {
+          "dataType": "IfcLinearVelocityMeasure",
+          "measureType": "",
+          "unitType": "LINEARVELOCITYUNIT"
+        },
+        "DefinedValue": {
+          "dataType": "IfcLengthMeasure",
+          "measureType": "",
+          "unitType": "LINEARVELOCITYUNIT"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

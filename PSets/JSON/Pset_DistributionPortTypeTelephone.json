@@ -1,0 +1,492 @@
+﻿{
+  "name": "Pset_DistributionPortTypeTelephone",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcSharedBldgServiceElements"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Telephone port occurrence attributes attached to an instance of IfcDistributionPort.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcDistributionPort",
+      "type": "IfcDistributionPort/TELEPHONE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ConnectionType",
+      "definition": "The physical port connection:RJ: Registered Jack.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続タイプ",
+          "definition": "物理ポート接続：- RJ: 登録済みジャック"
+        },
+        {
+          "language": "ko-KR",
+          "name": "연결 유형",
+          "definition": "RJ : 등록된 잭"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_DistributionPortDataType",
+        "enumerationValues": [
+          {
+            "name": "RJ",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Rj",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConnectionSubtype",
+      "definition": "The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:RJ: 4P4C, 6P2C, 8P8C",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続のサブタイプ",
+          "definition": "物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：- RJ: 4P4C, 6P2C, 8P8C"
+        },
+        {
+          "language": "ko-KR",
+          "name": "연결 서브 타입",
+          "definition": "RJ : 4P4C, 6P2C, 8P8C"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConnectionGender",
+      "definition": "The physical connection gender.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続ジェンダー",
+          "definition": "形状的な接続ジェンダー（オス、メス、その他、未知、未設定）。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "연결 젠더",
+          "definition": "형상적인 연결 젠더 (수컷, 암컷? 기타 알 수없는 구성되지 않은)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_DistributionPortGender",
+        "enumerationValues": [
+          {
+            "name": "MALE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Male",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "FEMALE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Female",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

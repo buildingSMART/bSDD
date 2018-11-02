@@ -1,0 +1,768 @@
+﻿{
+  "name": "Pset_FireSuppressionTerminalTypeFireHydrant",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcPlumbingFireProtectionDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Device, fitted to a pipe, through which a temporary supply of water may be provided (BS6100 330 6107)For further details on fire hydrants, see www.firehydrant.org",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcFireSuppressionTerminalType",
+      "type": "IfcFireSuppressionTerminalType/FIREHYDRANT"
+    }
+  ],
+  "properties": [
+    {
+      "name": "FireHydrantType",
+      "definition": "Defines the range of hydrant types from which the required type can be selected where.DryBarrel:\t A hydrant that has isolating valves fitted below ground and that may be used where the possibility of water freezing is a consideration.WetBarrel:\t A hydrant that has isolating valves fitted above ground and that may be used where there is no possibility of water freezing.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "d99e455aa88f4d0380fd9d6de41a64c8",
+      "legacyGuidAsIfcGlobalId": "3PdaLQg8zD0u3zdMta6cJ8",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "消火栓のタイプ",
+          "definition": "消火栓の必要なタイプを定義する。乾式l：凍結の可能性のあるとき地中に開放弁セット。湿式：凍結の可能性のないとき地上に開放弁セット。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_FireHydrantType",
+        "enumerationValues": [
+          {
+            "name": "DRYBARREL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Drybarrel",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Drybarrel",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Drybarrel",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Drybarrel",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Drybarrel",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Drybarrel",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WETBARREL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Wetbarrel",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Wetbarrel",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Wetbarrel",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Wetbarrel",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Wetbarrel",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Wetbarrel",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PumperConnectionSize",
+      "definition": "The size of a connection to which a fire hose may be connected that is then linked to a pumping unit.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "96339f5fd239479b807bd70b1b22bf49",
+      "legacyGuidAsIfcGlobalId": "2MCvzVqZb7cu1xrmiR8hz9",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "ポンプ接続サイズ",
+          "definition": "ポンプユニットに接続されであろう消防ホースの接続サイズ。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NumberOfHoseConnections",
+      "definition": "The number of hose connections on the hydrant (excluding the pumper connection).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "0770c9741b324554a80b55f7b6b17d70",
+      "legacyGuidAsIfcGlobalId": "07SCbq6p95LAWBLVUsiNrm",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "ホースの接続の数",
+          "definition": "（ポンプ接続を除く）消火栓のホース接続の数。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcInteger",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HoseConnectionSize",
+      "definition": "The size of connections to which a hose may be connected (other than that to be linked to a pumping unit).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "9e7aac02eb604973b339db331cf3ea31",
+      "legacyGuidAsIfcGlobalId": "2UUgm2ws19SxCvspCSy_en",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "ホース接続サイズ",
+          "definition": "接続ホースのサイズ（ポンプユニット接続以外の）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DischargeFlowRate",
+      "definition": "The volumetric rate of fluid discharge.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "7cd93fe406d344388b7b651643213fd1",
+      "legacyGuidAsIfcGlobalId": "1ysJ$a1jD4E8jxPHP38J$H",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "放水流量",
+          "definition": "放水液体の体積。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcVolumetricFlowRateMeasure",
+        "measureType": "",
+        "unitType": "VOLUMETRICFLOWRATEUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FlowClass",
+      "definition": "Alphanumeric indication of the flow class of a hydrant (may be used in connection with or instead of the FlowRate property).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "d7bd6b229b15497794899b70336a8e37",
+      "legacyGuidAsIfcGlobalId": "3NlMiYcnL9TvI9ct0pQeut",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "流量クラス",
+          "definition": "消火栓流量クラスの英数字表示（流量属性と一緒に、または代わりに用いられる）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WaterIsPotable",
+      "definition": "Indication of whether the water flow from the hydrant is potable (set TRUE) or non potable (set FALSE).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "aa57550657424b46a30f5fe7edac8ede",
+      "legacyGuidAsIfcGlobalId": "2gLrK6Lq9BHgCFN_Vjh8xU",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "飲用水かどうか",
+          "definition": "消火栓の水が飲用かどうかの表示（飲用：TRUEを設定、飲用以外：FALSEを設定）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PressureRating",
+      "definition": "Maximum pressure that the hydrant is manufactured to withstand.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "a6db892e4339447a97f77d611fb6a03b",
+      "legacyGuidAsIfcGlobalId": "2csuakGpb4UfVtVM4Vjg0x",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "圧力",
+          "definition": "最大圧力、消火栓の耐圧。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPressureMeasure",
+        "measureType": "",
+        "unitType": "PRESSUREUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "BodyColor",
+      "definition": "Color of the body of the hydrant.Note: Consult local fire regulations for statutory colors that may be required for hydrant bodies in particular circumstances.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "fc13714c369e4578b9c0f3126073fe6d",
+      "legacyGuidAsIfcGlobalId": "3y4t5CDfv5UBd0yn9WS$vj",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "本体色",
+          "definition": "消火栓本体の色。注意：特定の状況で消火栓ボディに求められる地域消防規則法定色による。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcText",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CapColor",
+      "definition": "Color of the caps of the hydrant.Note: Consult local fire regulations for statutory colors that may be required for hydrant caps in particular circumstances.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "7f098a8f2def42ef86827f56cfde9e95",
+      "legacyGuidAsIfcGlobalId": "1$2OgFBUz2xuQ2VrRFtfwL",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "キャップ色",
+          "definition": "消火栓キャップの色。注意：特定の状況で消火栓キャップに求められる地域消防規則法定色による。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcText",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

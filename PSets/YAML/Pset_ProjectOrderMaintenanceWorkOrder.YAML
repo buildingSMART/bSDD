@@ -1,0 +1,691 @@
+﻿name: 'Pset_ProjectOrderMaintenanceWorkOrder'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedMgmtElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'A MaintenanceWorkOrder is a detailed description of maintenance work that is to be performed. Note that the Scheduled Frequency property of the maintenance work order is used when the order is required as an instance of a scheduled work order.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProjectOrder
+  type: IfcProjectOrder/MAINTENANCEWORKORDER
+properties:
+- name: ProductDescription
+  definition: A textual description of the products that require the work.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 32b5d8e2a58247dc95072baab76d1448
+  legacyGuidAsIfcGlobalId: 0ojTZYfO97t9K7AwgtRHH8
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WorkTypeRequested
+  definition: Work type requested in circumstances where there are categorizations of types of work task. It could be used to identify a remedial task, minor work task, electrical task etc.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 7549e05cf0c14d0fb9187f9bc9251bb4
+  legacyGuidAsIfcGlobalId: 1rIU1SyC5D3xaOVvl99Hkq
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ContractualType
+  definition: The contractual type of the work.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 83acaf04469f48ea981298956b375093
+  legacyGuidAsIfcGlobalId: 23hAy4Hfz8wfWIc9LhDr2J
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IfNotAccomplished
+  definition: Comments if the job is not accomplished.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: cf3c6e5d59fc4f8e9dcd005d851b9cea
+  legacyGuidAsIfcGlobalId: 3FF6vTMVnFZftD05s56vpg
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaintenaceType
+  definition: 'Identifies the predefined types of maintenance that can be done from which the type that generates the maintenance work order may be set where:ConditionBased: generated as a result of the condition of an asset or artefact being less than a determined value.Corrective: generated as a result of an immediate and urgent need for maintenance action.PlannedCorrective: generated as a result of immediate corrective action being needed but with sufficient time available for the work order to be included in maintenance planning.Scheduled: generated as a result of a fixed, periodic maintenance requirement.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: f329b22f9fd2471a9610c80d97c8e76f
+  legacyGuidAsIfcGlobalId: 3pAR8ldz976fOGo0sNoETl
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_MaintenanceType
+    enumerationValues:
+    - name: CONDITIONBASED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Conditionbased'
+        definition: ''
+      - language: en-EN
+        name: 'Conditionbased'
+        definition: ''
+      - language: es-ES
+        name: 'Conditionbased'
+        definition: ''
+      - language: fr-FR
+        name: 'Conditionbased'
+        definition: ''
+      - language: ja-JP
+        name: 'Conditionbased'
+        definition: ''
+      - language: ru-RU
+        name: 'Conditionbased'
+        definition: ''
+    - name: CORRECTIVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Corrective'
+        definition: ''
+      - language: en-EN
+        name: 'Corrective'
+        definition: ''
+      - language: es-ES
+        name: 'Corrective'
+        definition: ''
+      - language: fr-FR
+        name: 'Corrective'
+        definition: ''
+      - language: ja-JP
+        name: 'Corrective'
+        definition: ''
+      - language: ru-RU
+        name: 'Corrective'
+        definition: ''
+    - name: PLANNEDCORRECTIVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Plannedcorrective'
+        definition: ''
+      - language: en-EN
+        name: 'Plannedcorrective'
+        definition: ''
+      - language: es-ES
+        name: 'Plannedcorrective'
+        definition: ''
+      - language: fr-FR
+        name: 'Plannedcorrective'
+        definition: ''
+      - language: ja-JP
+        name: 'Plannedcorrective'
+        definition: ''
+      - language: ru-RU
+        name: 'Plannedcorrective'
+        definition: ''
+    - name: SCHEDULED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Scheduled'
+        definition: ''
+      - language: en-EN
+        name: 'Scheduled'
+        definition: ''
+      - language: es-ES
+        name: 'Scheduled'
+        definition: ''
+      - language: fr-FR
+        name: 'Scheduled'
+        definition: ''
+      - language: ja-JP
+        name: 'Scheduled'
+        definition: ''
+      - language: ru-RU
+        name: 'Scheduled'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FaultPriorityType
+  definition: 'Identifies the predefined types of priority that can be assigned from which the type may be set where:High: action is required urgently.Medium: action can occur within a reasonable period of time.Low: action can occur when convenient.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: d7f8277fedb54351835de5530eef22dc
+  legacyGuidAsIfcGlobalId: 3N_2T$xRL3KODTvLCExoBS
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_PriorityType
+    enumerationValues:
+    - name: HIGH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'High'
+        definition: ''
+      - language: en-EN
+        name: 'High'
+        definition: ''
+      - language: es-ES
+        name: 'High'
+        definition: ''
+      - language: fr-FR
+        name: 'High'
+        definition: ''
+      - language: ja-JP
+        name: 'High'
+        definition: ''
+      - language: ru-RU
+        name: 'High'
+        definition: ''
+    - name: MEDIUM
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Medium'
+        definition: ''
+      - language: en-EN
+        name: 'Medium'
+        definition: ''
+      - language: es-ES
+        name: 'Medium'
+        definition: ''
+      - language: fr-FR
+        name: 'Medium'
+        definition: ''
+      - language: ja-JP
+        name: 'Medium'
+        definition: ''
+      - language: ru-RU
+        name: 'Medium'
+        definition: ''
+    - name: LOW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Low'
+        definition: ''
+      - language: en-EN
+        name: 'Low'
+        definition: ''
+      - language: es-ES
+        name: 'Low'
+        definition: ''
+      - language: fr-FR
+        name: 'Low'
+        definition: ''
+      - language: ja-JP
+        name: 'Low'
+        definition: ''
+      - language: ru-RU
+        name: 'Low'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LocationPriorityType
+  definition: 'Identifies the predefined types of priority that can be assigned from which the type may be set where:High: action is required urgently.Medium: action can occur within a reasonable period of time.Low: action can occur when convenient.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 8bc4995f1f8d4523bfddbfb9e112f4cd
+  legacyGuidAsIfcGlobalId: 2Bn9bV7ur58x$TlxdX4lJD
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_PriorityType
+    enumerationValues:
+    - name: HIGH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'High'
+        definition: ''
+      - language: en-EN
+        name: 'High'
+        definition: ''
+      - language: es-ES
+        name: 'High'
+        definition: ''
+      - language: fr-FR
+        name: 'High'
+        definition: ''
+      - language: ja-JP
+        name: 'High'
+        definition: ''
+      - language: ru-RU
+        name: 'High'
+        definition: ''
+    - name: MEDIUM
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Medium'
+        definition: ''
+      - language: en-EN
+        name: 'Medium'
+        definition: ''
+      - language: es-ES
+        name: 'Medium'
+        definition: ''
+      - language: fr-FR
+        name: 'Medium'
+        definition: ''
+      - language: ja-JP
+        name: 'Medium'
+        definition: ''
+      - language: ru-RU
+        name: 'Medium'
+        definition: ''
+    - name: LOW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Low'
+        definition: ''
+      - language: en-EN
+        name: 'Low'
+        definition: ''
+      - language: es-ES
+        name: 'Low'
+        definition: ''
+      - language: fr-FR
+        name: 'Low'
+        definition: ''
+      - language: ja-JP
+        name: 'Low'
+        definition: ''
+      - language: ru-RU
+        name: 'Low'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ScheduledFrequency
+  definition: The period of time between expected instantiations of a work order that may have been predefined.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: de430ebbd54f46d4a1c02ca5d556dc4b
+  legacyGuidAsIfcGlobalId: 3UGmwxrKz6rA70BANLLjnB
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: TIMEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

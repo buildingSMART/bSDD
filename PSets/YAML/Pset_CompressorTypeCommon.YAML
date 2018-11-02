@@ -1,0 +1,972 @@
+﻿name: 'Pset_CompressorTypeCommon'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcHvacDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Compressor type common attributes.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcCompressorType
+  type: IfcCompressorType
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Référence'
+    definition: 'Identification de référence pour ce type spécifique à ce projet, c''est-à-dire type''A-1'', fourni à partir du moment où, s''il n''y a pas de référence de classification par rapport à un système de classification reconnu et en usage.'
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Etat'
+    definition: 'Etat de l''élément, utilisé avant tout pour les projets de rénovation et réaménagement. L''état assigné peut être "Nouveau" - l''élément prévu pour du neuf, "Existant" - l''élément existait et est maintenu, "Démoli" - l''élément existait mais doit être démoli/supprimé, "Provisoire" - l''élément existera à titre provisoire seulement (comme un support structurel par exemple).'
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_Status
+    enumerationValues:
+    - name: NEW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'New'
+        definition: ''
+      - language: en-EN
+        name: 'New'
+        definition: ''
+      - language: es-ES
+        name: 'New'
+        definition: ''
+      - language: fr-FR
+        name: 'New'
+        definition: ''
+      - language: ja-JP
+        name: 'New'
+        definition: ''
+      - language: ru-RU
+        name: 'New'
+        definition: ''
+    - name: EXISTING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Existing'
+        definition: ''
+      - language: en-EN
+        name: 'Existing'
+        definition: ''
+      - language: es-ES
+        name: 'Existing'
+        definition: ''
+      - language: fr-FR
+        name: 'Existing'
+        definition: ''
+      - language: ja-JP
+        name: 'Existing'
+        definition: ''
+      - language: ru-RU
+        name: 'Existing'
+        definition: ''
+    - name: DEMOLISH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Demolish'
+        definition: ''
+      - language: en-EN
+        name: 'Demolish'
+        definition: ''
+      - language: es-ES
+        name: 'Demolish'
+        definition: ''
+      - language: fr-FR
+        name: 'Demolish'
+        definition: ''
+      - language: ja-JP
+        name: 'Demolish'
+        definition: ''
+      - language: ru-RU
+        name: 'Demolish'
+        definition: ''
+    - name: TEMPORARY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Temporary'
+        definition: ''
+      - language: en-EN
+        name: 'Temporary'
+        definition: ''
+      - language: es-ES
+        name: 'Temporary'
+        definition: ''
+      - language: fr-FR
+        name: 'Temporary'
+        definition: ''
+      - language: ja-JP
+        name: 'Temporary'
+        definition: ''
+      - language: ru-RU
+        name: 'Temporary'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: PowerSource
+  definition: Type of power driving the compressor.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e0b07da9c6824e789f0c2582f4e2b4ad
+  legacyGuidAsIfcGlobalId: 3Wi7sfne9EU9yC9OBquhIj
+  localizations:
+  - language: fr-FR
+    name: 'SourcePuissance'
+    definition: 'Type de puissance fournie au compresseur'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_CompressorTypePowerSource
+    enumerationValues:
+    - name: MOTORDRIVEN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Motordriven'
+        definition: ''
+      - language: en-EN
+        name: 'Motordriven'
+        definition: ''
+      - language: es-ES
+        name: 'Motordriven'
+        definition: ''
+      - language: fr-FR
+        name: 'Motordriven'
+        definition: ''
+      - language: ja-JP
+        name: 'Motordriven'
+        definition: ''
+      - language: ru-RU
+        name: 'Motordriven'
+        definition: ''
+    - name: ENGINEDRIVEN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Enginedriven'
+        definition: ''
+      - language: en-EN
+        name: 'Enginedriven'
+        definition: ''
+      - language: es-ES
+        name: 'Enginedriven'
+        definition: ''
+      - language: fr-FR
+        name: 'Enginedriven'
+        definition: ''
+      - language: ja-JP
+        name: 'Enginedriven'
+        definition: ''
+      - language: ru-RU
+        name: 'Enginedriven'
+        definition: ''
+    - name: GASTURBINE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Gasturbine'
+        definition: ''
+      - language: en-EN
+        name: 'Gasturbine'
+        definition: ''
+      - language: es-ES
+        name: 'Gasturbine'
+        definition: ''
+      - language: fr-FR
+        name: 'Gasturbine'
+        definition: ''
+      - language: ja-JP
+        name: 'Gasturbine'
+        definition: ''
+      - language: ru-RU
+        name: 'Gasturbine'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RefrigerantClass
+  definition: 'Refrigerant class used by the compressor.CFC: Chlorofluorocarbons.HCFC: Hydrochlorofluorocarbons.HFC: Hydrofluorocarbons.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 6569f1fa19dc48efa7b78ab498e68a01
+  legacyGuidAsIfcGlobalId: 1bQV7w6Tn8xwUtYhIOvee1
+  localizations:
+  - language: fr-FR
+    name: 'ClasseRéfrigérant'
+    definition: 'Classe de réfrigérant utilisé par le compresseur.CFCHCFCHFC'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_RefrigerantClass
+    enumerationValues:
+    - name: CFC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Cfc'
+        definition: ''
+      - language: en-EN
+        name: 'Cfc'
+        definition: ''
+      - language: es-ES
+        name: 'Cfc'
+        definition: ''
+      - language: fr-FR
+        name: 'Cfc'
+        definition: ''
+      - language: ja-JP
+        name: 'Cfc'
+        definition: ''
+      - language: ru-RU
+        name: 'Cfc'
+        definition: ''
+    - name: HCFC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Hcfc'
+        definition: ''
+      - language: en-EN
+        name: 'Hcfc'
+        definition: ''
+      - language: es-ES
+        name: 'Hcfc'
+        definition: ''
+      - language: fr-FR
+        name: 'Hcfc'
+        definition: ''
+      - language: ja-JP
+        name: 'Hcfc'
+        definition: ''
+      - language: ru-RU
+        name: 'Hcfc'
+        definition: ''
+    - name: HFC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Hfc'
+        definition: ''
+      - language: en-EN
+        name: 'Hfc'
+        definition: ''
+      - language: es-ES
+        name: 'Hfc'
+        definition: ''
+      - language: fr-FR
+        name: 'Hfc'
+        definition: ''
+      - language: ja-JP
+        name: 'Hfc'
+        definition: ''
+      - language: ru-RU
+        name: 'Hfc'
+        definition: ''
+    - name: HYDROCARBONS
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Hydrocarbons'
+        definition: ''
+      - language: en-EN
+        name: 'Hydrocarbons'
+        definition: ''
+      - language: es-ES
+        name: 'Hydrocarbons'
+        definition: ''
+      - language: fr-FR
+        name: 'Hydrocarbons'
+        definition: ''
+      - language: ja-JP
+        name: 'Hydrocarbons'
+        definition: ''
+      - language: ru-RU
+        name: 'Hydrocarbons'
+        definition: ''
+    - name: AMMONIA
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Ammonia'
+        definition: ''
+      - language: en-EN
+        name: 'Ammonia'
+        definition: ''
+      - language: es-ES
+        name: 'Ammonia'
+        definition: ''
+      - language: fr-FR
+        name: 'Ammonia'
+        definition: ''
+      - language: ja-JP
+        name: 'Ammonia'
+        definition: ''
+      - language: ru-RU
+        name: 'Ammonia'
+        definition: ''
+    - name: CO2
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Co2'
+        definition: ''
+      - language: en-EN
+        name: 'Co2'
+        definition: ''
+      - language: es-ES
+        name: 'Co2'
+        definition: ''
+      - language: fr-FR
+        name: 'Co2'
+        definition: ''
+      - language: ja-JP
+        name: 'Co2'
+        definition: ''
+      - language: ru-RU
+        name: 'Co2'
+        definition: ''
+    - name: H2O
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'H2o'
+        definition: ''
+      - language: en-EN
+        name: 'H2o'
+        definition: ''
+      - language: es-ES
+        name: 'H2o'
+        definition: ''
+      - language: fr-FR
+        name: 'H2o'
+        definition: ''
+      - language: ja-JP
+        name: 'H2o'
+        definition: ''
+      - language: ru-RU
+        name: 'H2o'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RefrigerantType
+  definition: Refrigerant material.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4a3385f61b564d359c50bafc181ccb91
+  legacyGuidAsIfcGlobalId: 1ACuNs6rPDDPnGklmO7CkH
+  localizations:
+  - language: fr-FR
+    name: 'TypeRéfrigérant'
+    definition: 'Type de réfrigérant'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MinimumPartLoadRatio
+  definition: Minimum part load ratio as a fraction of nominal capacity.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b785837f0c504f819b832ac316a16759
+  legacyGuidAsIfcGlobalId: 2tXOD$351FWPk3AiCMeMTP
+  localizations:
+  - language: fr-FR
+    name: 'CoefficientMinimalChargePartielle'
+    definition: 'Coefficient minimum de charge partielle en tant que fraction de la puissance nominale.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaximumPartLoadRatio
+  definition: Maximum part load ratio as a fraction of nominal capacity.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 6ed6355e3d554f97ad6d087fa1dfa784
+  legacyGuidAsIfcGlobalId: 1krZLUFLLFbwrj27_XtwU4
+  localizations:
+  - language: fr-FR
+    name: 'CoefficientMaximalChargePartielle'
+    definition: 'Coefficient maximal de charge partielle en tant que fraction de la puissance nominale.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CompressorSpeed
+  definition: Compressor speed.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: adfe13ac3c4d42e58ec239e23534b0a7
+  legacyGuidAsIfcGlobalId: 2j$XEiF4r2vOx2EU8rDB2d
+  localizations:
+  - language: fr-FR
+    name: 'VitesseCompresseur'
+    definition: 'Vitesse du compresseur'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcRotationalFrequencyMeasure
+    measureType: ''
+    unitType: ROTATIONALFREQUENCYUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalCapacity
+  definition: Compressor nameplate capacity.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4934d1654bdb4e1fb7e26236bf597d8d
+  legacyGuidAsIfcGlobalId: 19DD5bIzjE7xVYOZQ$MNsD
+  localizations:
+  - language: fr-FR
+    name: 'PuissanceCompresseur'
+    definition: 'Puissance du compresseur au niveau de sa plaque.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: POWERUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IdealCapacity
+  definition: Compressor capacity under ideal conditions.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ba274b515ff443d097af2d2700df9413
+  legacyGuidAsIfcGlobalId: 2w9qjHN$H3q9UlBIS0tvGJ
+  localizations:
+  - language: fr-FR
+    name: 'PuissanceMaximale'
+    definition: 'Puissance maximale sous des conditions idéales'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: POWERUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IdealShaftPower
+  definition: Compressor shaft power under ideal conditions.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 43d5d718ad46487ab23f3366cef55725
+  legacyGuidAsIfcGlobalId: 13rTSOhKP8Uh8$CsREzLSb
+  localizations:
+  - language: fr-FR
+    name: 'PuissanceArbreMaximale'
+    definition: 'Puissance au niveau de l''arbre du compresseur sous conditions idéales.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: POWERUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasHotGasBypass
+  definition: Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 37548593bee0485faec712a3e17a9a7c
+  legacyGuidAsIfcGlobalId: 0tL8MJlk18Nwx74gFXUffy
+  localizations:
+  - language: fr-FR
+    name: 'PossedeBypassGazChaud'
+    definition: 'Qu''il y ait ou non un bypass du gaz chaud fourni au niveau du compresseur, VRAI= oui, FAUX= Non.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ImpellerDiameter
+  definition: Diameter of compressor impeller - used to scale performance of geometrically similar compressors.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'DiametreRotor'
+    definition: 'Diamètre du rotor du compresseur - utilisé pour dimensionner les performances des compresseurs géométriquement similaires.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

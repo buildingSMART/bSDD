@@ -1,0 +1,669 @@
+﻿name: 'Pset_FanCentrifugal'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcHvacDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Centrifugal fan occurrence attributes attached to an instance of IfcFan.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcFan
+  type: IfcFanType/CENTRIFUGAL
+properties:
+- name: DischargePosition
+  definition: 'Centrifugal fan discharge position.TOPHORIZONTAL: Top horizontal discharge. TOPANGULARDOWN: Top angular down discharge. DOWNBLAST: Downblast discharge. BOTTOMANGULARDOWN: Bottom angular down discharge. BOTTOMHORIZONTAL: Bottom horizontal discharge. BOTTOMANGULARUP: Bottom angular up discharge. UPBLAST: Upblast discharge. TOPANGULARUP: Top angular up discharge. OTHER: Other type of fan arrangement.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '吐出位置'
+    definition: '遠心送風機の吐出位置TOPHORIZONTAL: 上部水平 TOPANGULARDOWN: 上部角度付き下向き DOWNBLAST: 下向きBOTTOMANGULARDOWN: 下部角度付き下向きBOTTOMHORIZONTAL: 下部水平BOTTOMANGULARUP: 下部角度付き上向きUPBLAST: 上向きTOPANGULARUP: 上部角度付き上向き. OTHER: その他'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_CentrifugalFanDischargePosition
+    enumerationValues:
+    - name: TOPHORIZONTAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Tophorizontal'
+        definition: ''
+      - language: en-EN
+        name: 'Tophorizontal'
+        definition: ''
+      - language: es-ES
+        name: 'Tophorizontal'
+        definition: ''
+      - language: fr-FR
+        name: 'Tophorizontal'
+        definition: ''
+      - language: ja-JP
+        name: 'Tophorizontal'
+        definition: ''
+      - language: ru-RU
+        name: 'Tophorizontal'
+        definition: ''
+    - name: TOPANGULARDOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Topangulardown'
+        definition: ''
+      - language: en-EN
+        name: 'Topangulardown'
+        definition: ''
+      - language: es-ES
+        name: 'Topangulardown'
+        definition: ''
+      - language: fr-FR
+        name: 'Topangulardown'
+        definition: ''
+      - language: ja-JP
+        name: 'Topangulardown'
+        definition: ''
+      - language: ru-RU
+        name: 'Topangulardown'
+        definition: ''
+    - name: TOPANGULARUP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Topangularup'
+        definition: ''
+      - language: en-EN
+        name: 'Topangularup'
+        definition: ''
+      - language: es-ES
+        name: 'Topangularup'
+        definition: ''
+      - language: fr-FR
+        name: 'Topangularup'
+        definition: ''
+      - language: ja-JP
+        name: 'Topangularup'
+        definition: ''
+      - language: ru-RU
+        name: 'Topangularup'
+        definition: ''
+    - name: DOWNBLAST
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Downblast'
+        definition: ''
+      - language: en-EN
+        name: 'Downblast'
+        definition: ''
+      - language: es-ES
+        name: 'Downblast'
+        definition: ''
+      - language: fr-FR
+        name: 'Downblast'
+        definition: ''
+      - language: ja-JP
+        name: 'Downblast'
+        definition: ''
+      - language: ru-RU
+        name: 'Downblast'
+        definition: ''
+    - name: BOTTOMANGULARDOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Bottomangulardown'
+        definition: ''
+      - language: en-EN
+        name: 'Bottomangulardown'
+        definition: ''
+      - language: es-ES
+        name: 'Bottomangulardown'
+        definition: ''
+      - language: fr-FR
+        name: 'Bottomangulardown'
+        definition: ''
+      - language: ja-JP
+        name: 'Bottomangulardown'
+        definition: ''
+      - language: ru-RU
+        name: 'Bottomangulardown'
+        definition: ''
+    - name: BOTTOMHORIZONTAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Bottomhorizontal'
+        definition: ''
+      - language: en-EN
+        name: 'Bottomhorizontal'
+        definition: ''
+      - language: es-ES
+        name: 'Bottomhorizontal'
+        definition: ''
+      - language: fr-FR
+        name: 'Bottomhorizontal'
+        definition: ''
+      - language: ja-JP
+        name: 'Bottomhorizontal'
+        definition: ''
+      - language: ru-RU
+        name: 'Bottomhorizontal'
+        definition: ''
+    - name: BOTTOMANGULARUP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Bottomangularup'
+        definition: ''
+      - language: en-EN
+        name: 'Bottomangularup'
+        definition: ''
+      - language: es-ES
+        name: 'Bottomangularup'
+        definition: ''
+      - language: fr-FR
+        name: 'Bottomangularup'
+        definition: ''
+      - language: ja-JP
+        name: 'Bottomangularup'
+        definition: ''
+      - language: ru-RU
+        name: 'Bottomangularup'
+        definition: ''
+    - name: UPBLAST
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Upblast'
+        definition: ''
+      - language: en-EN
+        name: 'Upblast'
+        definition: ''
+      - language: es-ES
+        name: 'Upblast'
+        definition: ''
+      - language: fr-FR
+        name: 'Upblast'
+        definition: ''
+      - language: ja-JP
+        name: 'Upblast'
+        definition: ''
+      - language: ru-RU
+        name: 'Upblast'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: DirectionOfRotation
+  definition: 'The direction of the centrifugal fan wheel rotation when viewed from the drive side of the fan.CLOCKWISE: Clockwise. COUNTERCLOCKWISE: Counter-clockwise. OTHER: Other type of fan rotation.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '角度方向'
+    definition: 'ファンの駆動側から見たホイール回転方向CLOCKWISE　　時計回り COUNTERCLOCKWISE　反時計回り OTHER　その他'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_CentrifugalFanRotation
+    enumerationValues:
+    - name: CLOCKWISE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Clockwise'
+        definition: ''
+      - language: en-EN
+        name: 'Clockwise'
+        definition: ''
+      - language: es-ES
+        name: 'Clockwise'
+        definition: ''
+      - language: fr-FR
+        name: 'Clockwise'
+        definition: ''
+      - language: ja-JP
+        name: 'Clockwise'
+        definition: ''
+      - language: ru-RU
+        name: 'Clockwise'
+        definition: ''
+    - name: COUNTERCLOCKWISE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Counterclockwise'
+        definition: ''
+      - language: en-EN
+        name: 'Counterclockwise'
+        definition: ''
+      - language: es-ES
+        name: 'Counterclockwise'
+        definition: ''
+      - language: fr-FR
+        name: 'Counterclockwise'
+        definition: ''
+      - language: ja-JP
+        name: 'Counterclockwise'
+        definition: ''
+      - language: ru-RU
+        name: 'Counterclockwise'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Arrangement
+  definition: 'Defines the fan and motor drive arrangement as defined by AMCA.ARRANGEMENT1: Arrangement 1. ARRANGEMENT2: Arrangement 2. ARRANGEMENT3: Arrangement 3. ARRANGEMENT4: Arrangement 4. ARRANGEMENT7: Arrangement 7. ARRANGEMENT8: Arrangement 8. ARRANGEMENT9: Arrangement 9. ARRANGEMENT10: Arrangement 10. OTHER: Other type of fan drive arrangement.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '配置'
+    definition: 'ファンとモーターの配置（AMCAによる定義）ARRANGEMENT1, ARRANGEMENT2, ARRANGEMENT3, ARRANGEMENT4, ARRANGEMENT7, ARRANGEMENT8, ARRANGEMENT9, ARRANGEMENT10, OTHER, NOTKNOWN, UNSET'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_CentrifugalFanArrangement
+    enumerationValues:
+    - name: ARRANGEMENT1
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement1'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement1'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement1'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement1'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement1'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement1'
+        definition: ''
+    - name: ARRANGEMENT2
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement2'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement2'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement2'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement2'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement2'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement2'
+        definition: ''
+    - name: ARRANGEMENT3
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement3'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement3'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement3'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement3'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement3'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement3'
+        definition: ''
+    - name: ARRANGEMENT4
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement4'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement4'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement4'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement4'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement4'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement4'
+        definition: ''
+    - name: ARRANGEMENT7
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement7'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement7'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement7'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement7'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement7'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement7'
+        definition: ''
+    - name: ARRANGEMENT8
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement8'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement8'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement8'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement8'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement8'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement8'
+        definition: ''
+    - name: ARRANGEMENT9
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement9'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement9'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement9'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement9'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement9'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement9'
+        definition: ''
+    - name: ARRANGEMENT10
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Arrangement10'
+        definition: ''
+      - language: en-EN
+        name: 'Arrangement10'
+        definition: ''
+      - language: es-ES
+        name: 'Arrangement10'
+        definition: ''
+      - language: fr-FR
+        name: 'Arrangement10'
+        definition: ''
+      - language: ja-JP
+        name: 'Arrangement10'
+        definition: ''
+      - language: ru-RU
+        name: 'Arrangement10'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

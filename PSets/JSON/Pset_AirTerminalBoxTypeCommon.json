@@ -1,0 +1,1540 @@
+﻿{
+  "name": "Pset_AirTerminalBoxTypeCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcHvacDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Air terminal box type common attributes.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcAirTerminalBoxType",
+      "type": "IfcAirTerminalBoxType"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Référence",
+          "definition": "Identification de référence pour ce type spécifique à ce projet, c'est-à-dire type'A-1', fourni à partir du moment où, s'il n'y a pas de référence de classification par rapport à un système de classification reconnu et en usage."
+        },
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Status",
+      "definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Etat",
+          "definition": "Etat de l'élément, utilisé avant tout pour les projets de rénovation et réaménagement. L'état assigné peut être \"Nouveau\" - l'élément prévu pour du neuf, \"Existant\" - l'élément existait et est maintenu, \"Démoli\" - l'élément existait mais doit être démoli/supprimé, \"Provisoire\" - l'élément existera à titre provisoire seulement (comme un support structurel par exemple)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "状態",
+          "definition": "要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_Status",
+        "enumerationValues": [
+          {
+            "name": "NEW",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "New",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "New",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "EXISTING",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Existing",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Existing",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DEMOLISH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Demolish",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Demolish",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TEMPORARY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Temporary",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Temporary",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AirflowRateRange",
+      "definition": "Range of airflow that can be delivered.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "926b218f436f4491aff0f9200058b70d",
+      "legacyGuidAsIfcGlobalId": "2IQo6FGsz4aQ$m_I00MBSD",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Domaine de débit d'air",
+          "definition": "Plage de débit d'air pouvant être fourni."
+        },
+        {
+          "language": "ja-JP",
+          "name": "風量範囲",
+          "definition": "送風できる風量の範囲"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "0",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AirPressureRange",
+      "definition": "Allowable air static pressure range at the entrance of the air terminal box.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "75ae026f8f754d3f9b7e373dde7bb0b3",
+      "legacyGuidAsIfcGlobalId": "1rhW9lZtLDFvj_DptUUx2p",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Plage de pression d'air",
+          "definition": "Plage admise de la pression statique de l'air à l'entrée du registre terminal de ventilation"
+        },
+        {
+          "language": "ja-JP",
+          "name": "空気圧範囲",
+          "definition": "ターミナル入り口での許容静圧範囲"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "0",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalAirFlowRate",
+      "definition": "Nominal airflow rate.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "1a03ca0837fa45349f2b8ed9129d5b49",
+      "legacyGuidAsIfcGlobalId": "0Q0ye8D$f5D9yhZjaIdLj9",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Débit d'air nominal",
+          "definition": "Débit d'air nominal"
+        },
+        {
+          "language": "ja-JP",
+          "name": "設計風量範囲",
+          "definition": "設計風量範囲"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcVolumetricFlowRateMeasure",
+        "measureType": "",
+        "unitType": "VOLUMETRICFLOWRATEUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ArrangementType",
+      "definition": "Terminal box arrangement.SingleDuct: Terminal box receives warm or cold air from a single air supply duct.DualDuct: Terminal box receives warm and cold air from separate air supply ducts.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "05fa5dbbb9a84de29ff03c9ab93b2313",
+      "legacyGuidAsIfcGlobalId": "05_bsxkQXDuf$mF9gvEoCJ",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Type de configuration",
+          "definition": "Configuration du registre terminal.Conduit unique: le registre terminal reçoit de l'air chaud ou froid depuis un conduit unique d'amenée d'air"
+        },
+        {
+          "language": "ja-JP",
+          "name": "ターミナル形式",
+          "definition": "ターミナルボックスの形式。単一ダクト：単一のダクトから、温風または冷風を受け取るデュアルダクト：温風、冷風を分離されたダクトから受け取る"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_AirTerminalBoxArrangementType",
+        "enumerationValues": [
+          {
+            "name": "SINGLEDUCT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Singleduct",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Singleduct",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Singleduct",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Singleduct",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Singleduct",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Singleduct",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DUALDUCT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dualduct",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dualduct",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dualduct",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dualduct",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dualduct",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dualduct",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ReheatType",
+      "definition": "Terminal box reheat type.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "a1c75efd7ffa43b69cefe3560a26e11e",
+      "legacyGuidAsIfcGlobalId": "2XnrxzV$f3jfplurOA9k4U",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Type de réchauffage",
+          "definition": "Type de réchauffage d'un registre terminal de ventilation"
+        },
+        {
+          "language": "ja-JP",
+          "name": "再熱形式",
+          "definition": "ターミナルの再熱方式（電気、水コイル、蒸気コイル、ガス加熱．．．）"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_AirTerminalBoxReheatType",
+        "enumerationValues": [
+          {
+            "name": "ELECTRICALREHEAT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Electricalreheat",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Electricalreheat",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Electricalreheat",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Electricalreheat",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Electricalreheat",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Electricalreheat",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WATERCOILREHEAT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Watercoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Watercoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Watercoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Watercoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Watercoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Watercoilreheat",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "STEAMCOILREHEAT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Steamcoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Steamcoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Steamcoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Steamcoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Steamcoilreheat",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Steamcoilreheat",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "GASREHEAT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Gasreheat",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Gasreheat",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Gasreheat",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Gasreheat",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Gasreheat",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Gasreheat",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NONE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "None",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasSoundAttenuator",
+      "definition": "Terminal box has a sound attenuator.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "95b237bc3de74ae8817ed210b023ce96",
+      "legacyGuidAsIfcGlobalId": "2LiZUyFUTAw85_qX2m8ywM",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Possède correction acoustique",
+          "definition": "Le registre terminal possède une correction acoustique"
+        },
+        {
+          "language": "ja-JP",
+          "name": "消音有無",
+          "definition": "ターミナルに消音があるか否か　（あればTRUE)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasReturnAir",
+      "definition": "Terminal box has return air mixed with supply air from duct work.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "e1eef52588f4443681946f20bec19a10",
+      "legacyGuidAsIfcGlobalId": "3XxlKbYFH4De6KRo2_mPeG",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Possède air  repris",
+          "definition": "Le registre terminal a son air de reprise mélangé avec une amenée d'air issu du réseau de ventilation"
+        },
+        {
+          "language": "ja-JP",
+          "name": "還気有無",
+          "definition": "ターミナルで還気を混合しているか否か（していればTRUE)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasFan",
+      "definition": "Terminal box has a fan inside (fan powered box).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "b1dad999d71140feb811b408d5a68415",
+      "legacyGuidAsIfcGlobalId": "2nsjcPrn50$hWHj0ZLfeGL",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Possède ventilateur",
+          "definition": "Le registre terminal possède dans son  intérieur un ventilateur (registre motorisé)"
+        },
+        {
+          "language": "ja-JP",
+          "name": "送風機有無",
+          "definition": "内部に送風機を持つ時にTRUE"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalInletAirPressure",
+      "definition": "Nominal airflow inlet static pressure.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "beeaa378317f412397731160bdd48eba",
+      "legacyGuidAsIfcGlobalId": "2_wgDuCNz18vTp4M2zr8ww",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Pression nominale à l'entrée d'air",
+          "definition": "Pression statique en débit d'air nominal à l'entrée"
+        },
+        {
+          "language": "ja-JP",
+          "name": "設計入口空気圧",
+          "definition": "入口静圧の設計値"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPressureMeasure",
+        "measureType": "",
+        "unitType": "PRESSUREUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalDamperDiameter",
+      "definition": "Nominal damper diameter.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "4456fbbf9c8e4f0d955d18afa99b6e05",
+      "legacyGuidAsIfcGlobalId": "14Llk$d8vF3PLT6A_fcsu5",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Diamètre nominal clapet",
+          "definition": "Diamètre nominal clapet"
+        },
+        {
+          "language": "ja-JP",
+          "name": "設計ダンパ直径",
+          "definition": "ダンパ直径の設計値"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HousingThickness",
+      "definition": "Air terminal box housing material thickness.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "35a671ac4a814dd8b065a4cbc8706957",
+      "legacyGuidAsIfcGlobalId": "0rfd6iIe5DsB1bfCl8S6bN",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Epaisseur de l'enveloppe",
+          "definition": "Epaisseur du matériau réalisant l'enveloppe du registre terminal de ventilation"
+        },
+        {
+          "language": "ja-JP",
+          "name": "ハウジング板厚",
+          "definition": "ターミナルのハウジング材の板厚"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OperationTemperatureRange",
+      "definition": "Allowable operational range of the ambient air temperature.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "c2ed6df8f0c246a8bcdb435e5e15cf97",
+      "legacyGuidAsIfcGlobalId": "32xMtuyC96gBpRGrvU5S_N",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Plage de température d'exploitation",
+          "definition": "Plage opérationnelle possible de la température de l'air ambiant"
+        },
+        {
+          "language": "ja-JP",
+          "name": "動作温度範囲",
+          "definition": "許容周囲温度範囲"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "0",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ReturnAirFractionRange",
+      "definition": "Allowable return air fraction range as a fraction of discharge airflow.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "71820d2754d44facaaa3a305c0f48c51",
+      "legacyGuidAsIfcGlobalId": "1nWWqdLDHFhAgZemN0z8nH",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Plage pour la fraction d'air repris",
+          "definition": "Plage possiblede la fraction d'air repris en tant que fraction de l'air rejeté"
+        },
+        {
+          "language": "ja-JP",
+          "name": "還気風量比",
+          "definition": "送風量の一部としての許容還気風量"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "0",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

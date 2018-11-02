@@ -1,0 +1,522 @@
+﻿name: 'Pset_SanitaryTerminalTypeBath'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcPlumbingFireProtectionDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Sanitary appliance for immersion of the human body or parts of it (BS6100). HISTORY: In IFC4, Material and MaterialThickness properties removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value)'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSanitaryTerminalType
+  type: IfcSanitaryTerminalType/BATH
+properties:
+- name: BathType
+  definition: 'The property enumeration defines the types of bath that may be specified within the property set where.Domestic: 	Bath, for one person at a time, into which the whole body can be easily immersed.DomesticCorner: 	Bath, for one person at a time, into which the whole body can be easily immersed and in which the immersion trough is at an angle.Foot: 	Shallow bath for washing the feet.Jacuzzi: 	Whirlpool bath for more than one personPlunge: 	Bath, usually for more than one person at a time, into which the whole body can be easily immersed.Sitz: 	Bath in which a bather sits as in a chair.Treatment: 	Bath used for hydrotherapy purposes.Whirlpool: 	Bath in which an integrated device agitates the water by pumped circulation or induction of water and/or air.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 0c3618ba27f94700872bb851d75eb057
+  legacyGuidAsIfcGlobalId: 0CDXYw9$b708Shk57NNh1N
+  localizations:
+  - language: ja-JP
+    name: 'バスタイプ'
+    definition: '列挙するプロパティは、プロパティセット内で指定することができるバスの種類の定義：家庭用：全身を簡単に浸漬することができる一度に1人の人間が入るバス。家庭用Corner：浸漬トラフが傾いていて、全身を簡単に浸漬することができる一度に1人の人間が入るバス。フットバス：足を洗う浅いバス。ジャグジー：複数の人のための渦のバスプランジバス：通常は全身を簡単に浸漬することができまる一度に複数の人の入るバス。座バス：水浴を椅子のように座って行うバス。治療バス：水浴セラピーの目的に使用されるバス。渦バス：ポンプによる水の循環や、水や空気の誘引により水を攪拌する統合された装置としてのバス。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_BathType
+    enumerationValues:
+    - name: DOMESTIC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Domestic'
+        definition: ''
+      - language: en-EN
+        name: 'Domestic'
+        definition: ''
+      - language: es-ES
+        name: 'Domestic'
+        definition: ''
+      - language: fr-FR
+        name: 'Domestic'
+        definition: ''
+      - language: ja-JP
+        name: 'Domestic'
+        definition: ''
+      - language: ru-RU
+        name: 'Domestic'
+        definition: ''
+    - name: DOMESTICCORNER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Domesticcorner'
+        definition: ''
+      - language: en-EN
+        name: 'Domesticcorner'
+        definition: ''
+      - language: es-ES
+        name: 'Domesticcorner'
+        definition: ''
+      - language: fr-FR
+        name: 'Domesticcorner'
+        definition: ''
+      - language: ja-JP
+        name: 'Domesticcorner'
+        definition: ''
+      - language: ru-RU
+        name: 'Domesticcorner'
+        definition: ''
+    - name: FOOT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Foot'
+        definition: ''
+      - language: en-EN
+        name: 'Foot'
+        definition: ''
+      - language: es-ES
+        name: 'Foot'
+        definition: ''
+      - language: fr-FR
+        name: 'Foot'
+        definition: ''
+      - language: ja-JP
+        name: 'Foot'
+        definition: ''
+      - language: ru-RU
+        name: 'Foot'
+        definition: ''
+    - name: JACUZZI
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Jacuzzi'
+        definition: ''
+      - language: en-EN
+        name: 'Jacuzzi'
+        definition: ''
+      - language: es-ES
+        name: 'Jacuzzi'
+        definition: ''
+      - language: fr-FR
+        name: 'Jacuzzi'
+        definition: ''
+      - language: ja-JP
+        name: 'Jacuzzi'
+        definition: ''
+      - language: ru-RU
+        name: 'Jacuzzi'
+        definition: ''
+    - name: PLUNGE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Plunge'
+        definition: ''
+      - language: en-EN
+        name: 'Plunge'
+        definition: ''
+      - language: es-ES
+        name: 'Plunge'
+        definition: ''
+      - language: fr-FR
+        name: 'Plunge'
+        definition: ''
+      - language: ja-JP
+        name: 'Plunge'
+        definition: ''
+      - language: ru-RU
+        name: 'Plunge'
+        definition: ''
+    - name: SITZ
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sitz'
+        definition: ''
+      - language: en-EN
+        name: 'Sitz'
+        definition: ''
+      - language: es-ES
+        name: 'Sitz'
+        definition: ''
+      - language: fr-FR
+        name: 'Sitz'
+        definition: ''
+      - language: ja-JP
+        name: 'Sitz'
+        definition: ''
+      - language: ru-RU
+        name: 'Sitz'
+        definition: ''
+    - name: TREATMENT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Treatment'
+        definition: ''
+      - language: en-EN
+        name: 'Treatment'
+        definition: ''
+      - language: es-ES
+        name: 'Treatment'
+        definition: ''
+      - language: fr-FR
+        name: 'Treatment'
+        definition: ''
+      - language: ja-JP
+        name: 'Treatment'
+        definition: ''
+      - language: ru-RU
+        name: 'Treatment'
+        definition: ''
+    - name: WHIRLPOOL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Whirlpool'
+        definition: ''
+      - language: en-EN
+        name: 'Whirlpool'
+        definition: ''
+      - language: es-ES
+        name: 'Whirlpool'
+        definition: ''
+      - language: fr-FR
+        name: 'Whirlpool'
+        definition: ''
+      - language: ja-JP
+        name: 'Whirlpool'
+        definition: ''
+      - language: ru-RU
+        name: 'Whirlpool'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalLength
+  definition: Nominal or quoted length of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 3b60e774530a43aea36e054dd65a496a
+  legacyGuidAsIfcGlobalId: 0xOETqKmf3hgDk1KtMMabg
+  localizations:
+  - language: ja-JP
+    name: '呼び長さ'
+    definition: '公称または引用長さ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalWidth
+  definition: Nominal or quoted width of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 54be07f510c7441ca494ad3fd505ceb6
+  legacyGuidAsIfcGlobalId: 1KlWVr4CT47AIKhJ$L1Sws
+  localizations:
+  - language: ja-JP
+    name: '呼び幅'
+    definition: '公称または引用幅。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalDepth
+  definition: Nominal or quoted depth of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 390807bb0f6e4e999acd02fe16af39ec
+  legacyGuidAsIfcGlobalId: 0v20Ux3svEcPhD0luMhpdi
+  localizations:
+  - language: ja-JP
+    name: '公称深さ'
+    definition: '公称または引用深さ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Color
+  definition: Principal color of the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 29ee76bc046d4a70bee6fffac11a8279
+  legacyGuidAsIfcGlobalId: 0fxdQy16rASBxc$$h16e9v
+  localizations:
+  - language: ja-JP
+    name: '色'
+    definition: '主要な色。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: DrainSize
+  definition: The size of the drain outlet connection from the object.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 274817ad61ae4e6eaef8fe111da40bb8
+  legacyGuidAsIfcGlobalId: 0dI1UjOQvERgxu$X4Tf0ku
+  localizations:
+  - language: ja-JP
+    name: 'ドレインサイズ'
+    definition: '排水口の接続のサイズ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasGrabHandles
+  definition: Indicates whether the bath is fitted with handles that provide assistance to a bather in entering or leaving the bath.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 3dbea2007b514983b83f68f762aaf34c
+  legacyGuidAsIfcGlobalId: 0zlg80Ur59WxW$QFTYglDC
+  localizations:
+  - language: ja-JP
+    name: '手すりの有無'
+    definition: '風呂の出入りを補助する手すりが取り付けられているかどうかを示す。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

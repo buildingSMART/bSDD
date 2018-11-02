@@ -1,0 +1,602 @@
+﻿name: 'Pset_ActuatorTypeCommon'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcBuildingControlsDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Actuator type common attributes.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcActuatorType
+  type: IfcActuatorType
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: ko-KR
+    name: '참조 ID'
+    definition: '해당 프로젝트에서 사용이 유형에 대한 참조 ID (예 : ''A-1'') ※ 기본이있는 경우 그 기호를 사용'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: ko-KR
+    name: '페일 세이프 유형'
+    definition: '요청한 액츄에이터의 안전 장치 유형을 표시'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_Status
+    enumerationValues:
+    - name: NEW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'New'
+        definition: ''
+      - language: en-EN
+        name: 'New'
+        definition: ''
+      - language: es-ES
+        name: 'New'
+        definition: ''
+      - language: fr-FR
+        name: 'New'
+        definition: ''
+      - language: ja-JP
+        name: 'New'
+        definition: ''
+      - language: ru-RU
+        name: 'New'
+        definition: ''
+    - name: EXISTING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Existing'
+        definition: ''
+      - language: en-EN
+        name: 'Existing'
+        definition: ''
+      - language: es-ES
+        name: 'Existing'
+        definition: ''
+      - language: fr-FR
+        name: 'Existing'
+        definition: ''
+      - language: ja-JP
+        name: 'Existing'
+        definition: ''
+      - language: ru-RU
+        name: 'Existing'
+        definition: ''
+    - name: DEMOLISH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Demolish'
+        definition: ''
+      - language: en-EN
+        name: 'Demolish'
+        definition: ''
+      - language: es-ES
+        name: 'Demolish'
+        definition: ''
+      - language: fr-FR
+        name: 'Demolish'
+        definition: ''
+      - language: ja-JP
+        name: 'Demolish'
+        definition: ''
+      - language: ru-RU
+        name: 'Demolish'
+        definition: ''
+    - name: TEMPORARY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Temporary'
+        definition: ''
+      - language: en-EN
+        name: 'Temporary'
+        definition: ''
+      - language: es-ES
+        name: 'Temporary'
+        definition: ''
+      - language: fr-FR
+        name: 'Temporary'
+        definition: ''
+      - language: ja-JP
+        name: 'Temporary'
+        definition: ''
+      - language: ru-RU
+        name: 'Temporary'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FailPosition
+  definition: Specifies the required fail-safe position of the actuator.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 3d08a1dcdc224c8e8baf2c5bed35c308
+  legacyGuidAsIfcGlobalId: 0z2A7St29CZeklB5ljDSC8
+  localizations:
+  - language: ja-JP
+    name: 'フェールセーフタイプ'
+    definition: '要求されたアクチュエータのフェールセーフタイプを示す。'
+  - language: ko-KR
+    name: '재정 기능의 유무'
+    definition: '대체 기능으로 수동 조작이 제공되는지 (= TRUE) 여부 (= FALSE)를 확인한다. 수동으로 조작하는 액츄에이터의 경우는이 값을 기본값으로 FALSE로 설정해야하므로주의한다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_FailPosition
+    enumerationValues:
+    - name: FAILOPEN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Failopen'
+        definition: ''
+      - language: en-EN
+        name: 'Failopen'
+        definition: ''
+      - language: es-ES
+        name: 'Failopen'
+        definition: ''
+      - language: fr-FR
+        name: 'Failopen'
+        definition: ''
+      - language: ja-JP
+        name: 'Failopen'
+        definition: ''
+      - language: ru-RU
+        name: 'Failopen'
+        definition: ''
+    - name: FAILCLOSED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Failclosed'
+        definition: ''
+      - language: en-EN
+        name: 'Failclosed'
+        definition: ''
+      - language: es-ES
+        name: 'Failclosed'
+        definition: ''
+      - language: fr-FR
+        name: 'Failclosed'
+        definition: ''
+      - language: ja-JP
+        name: 'Failclosed'
+        definition: ''
+      - language: ru-RU
+        name: 'Failclosed'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ManualOverride
+  definition: Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 66b5af4673bb44eaa4d4fbb33d3e5724
+  legacyGuidAsIfcGlobalId: 1cjQz6Sxj4wgJK_xCzFbSa
+  localizations:
+  - language: ja-JP
+    name: 'オーバーライド機能の有無'
+    definition: 'オーバーライド機能として手動操作が提供されるか (= TRUE) 、否か （= FALSE)を識別する。手動で操作するアクチュエータの場合は、この値をデフォルトとしてFALSEに設定する必要があるので注意すること。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Application
+  definition: Indicates application of actuator.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ActuatorApplication
+    enumerationValues:
+    - name: ENTRYEXITDEVICE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Entryexitdevice'
+        definition: ''
+      - language: en-EN
+        name: 'Entryexitdevice'
+        definition: ''
+      - language: es-ES
+        name: 'Entryexitdevice'
+        definition: ''
+      - language: fr-FR
+        name: 'Entryexitdevice'
+        definition: ''
+      - language: ja-JP
+        name: 'Entryexitdevice'
+        definition: ''
+      - language: ru-RU
+        name: 'Entryexitdevice'
+        definition: ''
+    - name: FIRESMOKEDAMPERACTUATOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Firesmokedamperactuator'
+        definition: ''
+      - language: en-EN
+        name: 'Firesmokedamperactuator'
+        definition: ''
+      - language: es-ES
+        name: 'Firesmokedamperactuator'
+        definition: ''
+      - language: fr-FR
+        name: 'Firesmokedamperactuator'
+        definition: ''
+      - language: ja-JP
+        name: 'Firesmokedamperactuator'
+        definition: ''
+      - language: ru-RU
+        name: 'Firesmokedamperactuator'
+        definition: ''
+    - name: DAMPERACTUATOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Damperactuator'
+        definition: ''
+      - language: en-EN
+        name: 'Damperactuator'
+        definition: ''
+      - language: es-ES
+        name: 'Damperactuator'
+        definition: ''
+      - language: fr-FR
+        name: 'Damperactuator'
+        definition: ''
+      - language: ja-JP
+        name: 'Damperactuator'
+        definition: ''
+      - language: ru-RU
+        name: 'Damperactuator'
+        definition: ''
+    - name: VALVEPOSITIONER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Valvepositioner'
+        definition: ''
+      - language: en-EN
+        name: 'Valvepositioner'
+        definition: ''
+      - language: es-ES
+        name: 'Valvepositioner'
+        definition: ''
+      - language: fr-FR
+        name: 'Valvepositioner'
+        definition: ''
+      - language: ja-JP
+        name: 'Valvepositioner'
+        definition: ''
+      - language: ru-RU
+        name: 'Valvepositioner'
+        definition: ''
+    - name: SUNBLINDACTUATOR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sunblindactuator'
+        definition: ''
+      - language: en-EN
+        name: 'Sunblindactuator'
+        definition: ''
+      - language: es-ES
+        name: 'Sunblindactuator'
+        definition: ''
+      - language: fr-FR
+        name: 'Sunblindactuator'
+        definition: ''
+      - language: ja-JP
+        name: 'Sunblindactuator'
+        definition: ''
+      - language: ru-RU
+        name: 'Sunblindactuator'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

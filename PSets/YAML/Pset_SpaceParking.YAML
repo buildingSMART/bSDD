@@ -1,0 +1,184 @@
+﻿name: 'Pset_SpaceParking'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcProductExtension
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Properties common to the definition of all occurrences of IfcSpace which have an attribute value for ObjectType = ''Parking''. NOTE: Modified in IFC 2x3, properties ParkingUse and ParkingUnits added.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSpace
+  type: IfcSpace/PARKING
+properties:
+- name: ParkingUse
+  definition: Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a7f7c97eb5584e5b9a87465815ad9871
+  legacyGuidAsIfcGlobalId: 2dzyb_jLXEMvg7HbWLhPXn
+  localizations:
+  - language: fr-FR
+    name: 'Usage du parking'
+    definition: 'Identifie le type de véhicule pour lequel le parking a été conçu. Les valeurs possibles (voiture, bus, motos, vélos,…)  ne sont pas prédéfinies.'
+  - language: ja-JP
+    name: '駐車場の用途'
+    definition: 'どの車両種別の駐車場なのかを識別します。値はあらかじめ定められないが、自動車、小型車、オートバイ、自転車、トラック、バスなどを含んでいるかもしれません。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ParkingUnits
+  definition: Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles, provision may be made for more than one unit in the space.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 2557f9910ebb427a8f177065018efe08
+  legacyGuidAsIfcGlobalId: 0bL$cH3hj2UeyNS6K1Zlu8
+  localizations:
+  - language: fr-FR
+    name: 'Nombre unités'
+    definition: 'Nombre d''unités du type de véhicule spécifié dans la propriété TypeVehicule que peut contenir l''espace alloué au parking. Généralement, la valeur par défaut est 1. Elle peut être supérieure pour les deux roues.'
+  - language: ja-JP
+    name: '一区画当たりの駐車台数'
+    definition: '車両種別ごとの駐車台数のユニットごとの指定台数。一般に、この値は1台/1ユニットになるべきです。しかしながら、オートバイまたは自転車向けである場合、数台/1ユニット以上なるかもしれません。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcCountMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsAisle
+  definition: Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Est un accès'
+    definition: 'Indique si cette zone du parking, comme une allée, est réservée à l''accès (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: '通路か駐車スペースの判別'
+    definition: '駐車場の通路部分(TRUE)か駐車部部分(FALSE)かを示すフラグ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsOneWay
+  definition: Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Sens unique'
+    definition: 'Indique si cette allée du parking est prévue pour être à sens unique (VRAI) ou à double sens (FAUX). A fournir seulement si la propriété "Est un accès" est égale à VRAI.'
+  - language: ja-JP
+    name: '一方通行'
+    definition: '駐車場通路が一方通行(TRUE)か双方向(FALSE)かを示すフラグ。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

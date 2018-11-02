@@ -1,0 +1,539 @@
+﻿name: 'Pset_BeamCommon'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedBldgElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Properties common to the definition of all occurrence and type objects of beam.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcBeam
+  type: IfcBeamType
+- name: IfcBeamStandardCase
+  type: IfcBeamType
+- name: IfcBeamType
+  type: IfcBeamType
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 51a8ccdf3e6d485e9d4f775fef0a1d35
+  legacyGuidAsIfcGlobalId: 1HgCpVFcr8NfrFTr$l2Xqr
+  localizations:
+  - language: de-DE
+    name: 'Bauteiltyp'
+    definition: 'Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterstützt.'
+  - language: fr-FR
+    name: 'Référence'
+    definition: 'Référence à l''identifiant d''un type spécifié dans le contexte du projet (exemple : "type A1") pour désigner un "type de construction". Une alternative au nom d''un objet type lorsque les objets types ne sont pas gérés par le logiciel.'
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: zh-CN
+    name: '参考号'
+    definition: '若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: 'Status'
+    definition: 'Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Ergänzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Temporär" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)'
+  - language: fr-FR
+    name: 'Statut'
+    definition: 'Statut de l''élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire).'
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_ElementStatus
+    enumerationValues:
+    - name: NEW
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'New'
+        definition: ''
+      - language: en-EN
+        name: 'New'
+        definition: ''
+      - language: es-ES
+        name: 'New'
+        definition: ''
+      - language: fr-FR
+        name: 'New'
+        definition: ''
+      - language: ja-JP
+        name: 'New'
+        definition: ''
+      - language: ru-RU
+        name: 'New'
+        definition: ''
+    - name: EXISTING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Existing'
+        definition: ''
+      - language: en-EN
+        name: 'Existing'
+        definition: ''
+      - language: es-ES
+        name: 'Existing'
+        definition: ''
+      - language: fr-FR
+        name: 'Existing'
+        definition: ''
+      - language: ja-JP
+        name: 'Existing'
+        definition: ''
+      - language: ru-RU
+        name: 'Existing'
+        definition: ''
+    - name: DEMOLISH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Demolish'
+        definition: ''
+      - language: en-EN
+        name: 'Demolish'
+        definition: ''
+      - language: es-ES
+        name: 'Demolish'
+        definition: ''
+      - language: fr-FR
+        name: 'Demolish'
+        definition: ''
+      - language: ja-JP
+        name: 'Demolish'
+        definition: ''
+      - language: ru-RU
+        name: 'Demolish'
+        definition: ''
+    - name: TEMPORARY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Temporary'
+        definition: ''
+      - language: en-EN
+        name: 'Temporary'
+        definition: ''
+      - language: es-ES
+        name: 'Temporary'
+        definition: ''
+      - language: fr-FR
+        name: 'Temporary'
+        definition: ''
+      - language: ja-JP
+        name: 'Temporary'
+        definition: ''
+      - language: ru-RU
+        name: 'Temporary'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Span
+  definition: 'Clear span for this object.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. For geometry editing applications, like CAD: this value should be write-only.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 45ea9da80b9f4d28b5babcbb9d24489e
+  legacyGuidAsIfcGlobalId: 15wfse2vzDABMwlBkT94YU
+  localizations:
+  - language: de-DE
+    name: 'Spannweite'
+    definition: 'Lichte Spannweite des Balkens für die statische Anforderung,Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.'
+  - language: fr-FR
+    name: 'PorteeLibre'
+    definition: 'Portée libre de la poutre. Cette propriété  est donnée en complément de la représentation de la forme et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété.'
+  - language: ja-JP
+    name: '全長'
+    definition: 'このオブジェクトの全長。その形状（オブジェクトの全長）情報は、表示のための形状に内部で使用される幾何学的パラメータを加えて提供される。形状情報と内部の幾何学的パラメータに矛盾が生じた場合は、幾何学的パラメータが優先される。幾何学的パラメ－タ編集アプリケーションでは、CADと同様に、この値は書き込み専用とする。'
+  - language: zh-CN
+    name: '跨度'
+    definition: '该对象的净跨度。该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Slope
+  definition: 'Slope angle - relative to horizontal (0.0 degrees).The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: dfcbd15172da4c9499a9e25b703bb13f
+  legacyGuidAsIfcGlobalId: 3Voz5HSjfCb9cfubjmEx4$
+  localizations:
+  - language: de-DE
+    name: 'Neigungswinkel'
+    definition: 'Neigungswinkel des Balkens relative zur Horizontalen (0 Grad).Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.'
+  - language: fr-FR
+    name: 'Inclinaison'
+    definition: 'Angle d''inclinaison avec l''horizontale (0 degrés). Cette propriété  est donnée en complément de la représentation de la forme et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété'
+  - language: ja-JP
+    name: '傾斜'
+    definition: '傾斜角度。水平を0度とする。その形状（傾斜梁）情報は、表示のための形状に内部で使用される幾何学的パラメータを加えて提供される。形状情報と内部の幾何学的パラメータに矛盾が生じた場合は、幾何学的パラメータが優先される。幾何学的パラメ－タ編集アプリケーションでは、CADと同様に、この値は書き込み専用とする。'
+  - language: zh-CN
+    name: '坡度'
+    definition: '相对于水平（0.0度）方向的坡度角。该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPlaneAngleMeasure
+    measureType: ''
+    unitType: PLANEANGLEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Roll
+  definition: 'Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.Note: new property in IFC4'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 456b2de5f1984287a517cbe41d128600
+  legacyGuidAsIfcGlobalId: 15QotbyPX2XwKNo_GT4eO0
+  localizations:
+  - language: de-DE
+    name: 'Kippwinkel'
+    definition: 'Kippwinkel des Balkens relative zur Vertikalen (O Grad).Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.'
+  - language: fr-FR
+    name: 'Rotation autour de l''axe longitudinal'
+    definition: 'Rotation autour de l''axe longitudinal - relativement à l''axe Z pour toutes les poutres qui ne sont pas verticales relativement au repère absolu (la direction du profil est celle de l''axe Z si la valeur de la propriété est 0). Cette propriété est donnée en complément de la représentation de la forme de l''élément et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété. Note : nouvelle propriété de la version IFC2x4.'
+  - language: ja-JP
+    name: '回転'
+    definition: '梁の材軸に対する回転。-この材軸はグローバル座標系で非垂直な全ての梁に対してグローバルZ方向へ相対する。（表示方向は、グローバルZの回転方向を0とする。）その形状（梁の回転）情報は、表示のための形状に内部で使用される幾何学的パラメータを加えて提供される。形状情報と内部の幾何学的パラメータに矛盾が生じた場合は、幾何学的パラメータが優先される。幾何学的パラメ－タ編集アプリケーションでは、CADと同様に、この値は書き込み専用とする。注：IFC2x4の新しいプロパティ'
+  - language: zh-CN
+    name: '转角'
+    definition: '相对于纵轴的旋转角。对全局坐标系中的非垂直梁，该属性为相对于Z轴的角度。（若轮廓方向在Z轴上，则转角为0。）该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。注：IFC2x4新添属性'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPlaneAngleMeasure
+    measureType: ''
+    unitType: PLANEANGLEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsExternal
+  definition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 28da5e78e6c446a583e21e76834a60ae
+  legacyGuidAsIfcGlobalId: 0esbvuviH6fOFY7dQ3Ic2k
+  localizations:
+  - language: de-DE
+    name: 'Außenbauteil'
+    definition: 'Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).'
+  - language: fr-FR
+    name: 'Est extérieur'
+    definition: 'Indique si l''élément est conçu pour être utilisé à l''extérieur (VRAI) ou non (FAUX). Si VRAI, c''est un élément extérieur qui donne sur l''extérieur du bâtiment.'
+  - language: ja-JP
+    name: '外部区分'
+    definition: '外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。'
+  - language: zh-CN
+    name: '是否外部构件'
+    definition: '表示该图元是否设计为外部构件。若是，则该图元为外部图元，朝向建筑物的外部。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ThermalTransmittance
+  definition: 'Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the beam within the direction of the thermal flow (including all materials).Note: new property in IFC4'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 358be6b5cd054d5e9de96e235feff036
+  legacyGuidAsIfcGlobalId: 0rY_QrpGLDNftfRYDVx$0s
+  localizations:
+  - language: de-DE
+    name: 'U-Wert'
+    definition: 'Wärmedurchgangskoeffizient (U-Wert) der Materialschichten.Hier der Gesamtwärmedurchgangskoeffizient des Balkens (in Richtung des Wärmeflusses), angegeben ohne den inneren und äußeren Wärmeübergangswiderstand.'
+  - language: fr-FR
+    name: 'Transmission thermique surfacique'
+    definition: 'Coefficient de transmission thermique surfacique (U). C''est le coefficient global de transmission thermique à travers la poutre dans la direction du flux thermique (tous matériaux inclus). Nouvelle propriété de la version 2x4.'
+  - language: ja-JP
+    name: '熱貫流率'
+    definition: '熱貫流率U値。ここでは（すべての材料を含む）梁を通した熱移動の方向における全体の熱還流率を示す。注：IFC2x4の新しいプロパティ'
+  - language: zh-CN
+    name: '导热系数'
+    definition: '材料的导热系数（U值）。表示该梁在传热方向上的整体导热系数（包括所有材料）。注：IFC2x4新添属性'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermalTransmittanceMeasure
+    measureType: ''
+    unitType: THERMALTRANSMITTANCEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LoadBearing
+  definition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 0eff7e3b6b704c768740c1c8893d9342
+  legacyGuidAsIfcGlobalId: 0E$tuxQt1CTeT0mSY9FPD2
+  localizations:
+  - language: de-DE
+    name: 'Tragendes Bauteil'
+    definition: 'Angabe, ob dieses Bauteil tragend ist (JA) oder nichttragend (NEIN)'
+  - language: fr-FR
+    name: 'Porteur'
+    definition: 'Indique si l''objet est censé porter des charges (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: '耐力部材'
+    definition: '荷重に関係している部材かどうかを示すブーリアン値。'
+  - language: zh-CN
+    name: '是否承重'
+    definition: '表示该对象是否需要承重。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FireRating
+  definition: Fire rating for the element. It is given according to the national fire safety classification.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 5c5835c82b434dcaa3d507e2d29322f0
+  legacyGuidAsIfcGlobalId: 1SM3N8AqDDogFL1_BIaoBm
+  localizations:
+  - language: de-DE
+    name: 'Feuerwiderstandsklasse'
+    definition: 'Feuerwiderstandasklasse gemäß der nationalen oder regionalen Brandschutzverordnung.'
+  - language: fr-FR
+    name: 'Résistance au feu'
+    definition: 'Classement au feu de l''élément donné selon la classification nationale de sécurité incendie.'
+  - language: ja-JP
+    name: '耐火等級'
+    definition: '主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。'
+  - language: zh-CN
+    name: '防火等级'
+    definition: '该构件的防火等级。该属性的依据为国家防火安全分级。'
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

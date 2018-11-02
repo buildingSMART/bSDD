@@ -1,0 +1,414 @@
+﻿{
+  "name": "Pset_SpaceCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcProductExtension"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Properties common to the definition of all occurrences of IfcSpace. Please note that several space attributes are handled directly at the IfcSpace instance, the space number (or short name) by IfcSpace.Name, the space name (or long name) by IfcSpace:LongName, and the description (or comments) by IfcSpace.Description. Actual space quantities, like space perimeter, space area and space volume are provided by IfcElementQuantity, and space classification according to national building code by IfcClassificationReference. The level above zero (relative to the building) for the slab row construction is provided by the IfcBuildingStorey.Elevation, the level above zero (relative to the building) for the floor finish is provided by the IfcSpace.ElevationWithFlooring.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSpace",
+      "type": "IfcSpace"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "f96e8ec167be4a19927f18db8c3c27f2",
+      "legacyGuidAsIfcGlobalId": "3vRex1PxvA6P9$6DkCF2Vo",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Raumtyp",
+          "definition": "Bezeichnung zur Zusammenfassung gleichartiger Räume zu einem Raumtyp (auch Funktionstyp genannt). Alternativ zum Namen des \"Typobjekts\", insbesondere wenn die Software keine Raumtypen als Typobjekte unterstützt."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Référence",
+          "definition": "Référence à l'identifiant d'un type spécifié dans le contexte du projet (exemple : \"type A1\"). Utilisé pour enregistrer un type sans recourir à une classification."
+        },
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "참조 ID",
+          "definition": "이 프로젝트의 참조 ID (예 : A-1). 분류 코드가 아닌 내부에서 사용되는 프로젝트 형식으로 사용됩니다."
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "IsExternal",
+      "definition": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "IstAußenraum",
+          "definition": "Angabe, ob dieser Raum ein Aussenaum ist (JA) oder ein Innenraum (NEIN)."
+        },
+        {
+          "language": "fr-FR",
+          "name": "Est extérieur",
+          "definition": "Indique si l'élément est conçu pour être utilisé à l'extérieur (VRAI) ou non (FAUX). Si VRAI, c'est un élément extérieur qui donne sur l'extérieur du bâtiment."
+        },
+        {
+          "language": "ja-JP",
+          "name": "外部区分",
+          "definition": "外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。"
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "GrossPlannedArea",
+      "definition": "Total planned gross area for the space. Used for programming the space.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Surface programmée brute",
+          "definition": "Surface programmée brute totale de la pièce. Telle que définie lors de la programmation."
+        },
+        {
+          "language": "ja-JP",
+          "name": "計画グロス面積",
+          "definition": "計画されたグロス面積。建物計画に際に使用。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "계획 그로스 면적",
+          "definition": "객실의 총 계획 면적 글로스. 공간 계획시 사용된다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcAreaMeasure",
+        "measureType": "",
+        "unitType": "AREAUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NetPlannedArea",
+      "definition": "Total planned net area for the space. Used for programming the space.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "fr-FR",
+          "name": "Surface programmée nette",
+          "definition": "Surface programmée nette totale de la pièce. Telle que définie lors de la programmation."
+        },
+        {
+          "language": "ja-JP",
+          "name": "計画ネット面積",
+          "definition": "計画されたネット面積。建物計画に際に使用。（通常は、柱型等を抜いた面積となる）"
+        },
+        {
+          "language": "ko-KR",
+          "name": "계획 인터넷 면적",
+          "definition": "객실의 총 계획 인터넷 공간이 있습니다. 공간 계획시 사용된다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcAreaMeasure",
+        "measureType": "",
+        "unitType": "AREAUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PubliclyAccessible",
+      "definition": "Indication whether this space (in case of e.g., a toilet) is designed to serve as a publicly accessible space, e.g., for a public toilet (TRUE) or not (FALSE).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "e68c3f65d4494da6885d6383984098de",
+      "legacyGuidAsIfcGlobalId": "3cZ3zbr4bDfeXTOuEOG9ZU",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "öffentlich zugänglich",
+          "definition": "Angabe, ob dieser Raum (wie z.B. eine Toilette) öffentlich zugänglich sein soll (JA) oder nicht (NEIN)."
+        },
+        {
+          "language": "fr-FR",
+          "name": "AccessibleAuPublic",
+          "definition": "Indique si l'espace (par exemple des toilettes) est conçu pour être un espace accessible au public (TRUE) ou non (FALSE)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "公共アクセス可能性",
+          "definition": "この部屋（空間）が公共アクセス空間かどうかを示すブーリアン値。例：公共トイレの場合TRUE。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "공공 액세스 가능성",
+          "definition": "이 방 (공간)이 공공 액세스 공간 여부를 나타내는 부울 값입니다. 예 : 공공 화장실의 경우 TRUE."
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HandicapAccessible",
+      "definition": "Indication whether this space (in case of e.g., a toilet) is designed to serve as an accessible space for handicapped people, e.g., for a public toilet (TRUE) or not (FALSE). This information is often used to declare the need for access for the disabled and for special design requirements of this space.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "65d3c7ed2afe441a8c71cdc2143f9d19",
+      "legacyGuidAsIfcGlobalId": "1bqyVjAlv46ennpS8KFvqP",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "behindertengerecht zugänglich",
+          "definition": "Angabe, ob dieser Raum (wie z.B. eine Toilette) behindertengerecht zugänglich sein soll (JA) oder nicht (NEIN)."
+        },
+        {
+          "language": "fr-FR",
+          "name": "AccessibleHandicapes",
+          "definition": "Indique si l'élément est conçu pour être accessible aux handicapés (VRAI) ou non (FAUX). Cette information est souvent utilisée pour déclarer la nécessité d'un accès pour handicapés ou pour des contraintes spéciales de conception."
+        },
+        {
+          "language": "ja-JP",
+          "name": "ハンディキャップアクセス可能性",
+          "definition": "この部屋（空間）がハンディキャップ者向けの空間かどうかを示すブーリアン値。例：公共トイレの場合TRUE。この情報は、障害者向け利用の必要性や特別なデザインの必要性を示すために利用される。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "핸디캡 액세스 가능성",
+          "definition": "이 방 (공간)이 핸디캡을위한 공간 여부를 나타내는 부울 값입니다. 예 : 공공 화장실의 경우 TRUE. 이 정보는 장애인을위한 이용의 필요성과 특별한 디자인의 필요성을 나타내기 위해 사용된다."
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

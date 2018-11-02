@@ -1,0 +1,1336 @@
+﻿name: 'Pset_EnvironmentalImpactIndicators'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcProductExtension
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Environmental impact indicators are related to a given “functional unit” (ISO 14040 concept). An example of functional unit is a "Double glazing window with PVC frame" and the unit to consider is "one square meter of opening elements filled by this product”.Indicators values are valid for the whole life cycle or only a specific phase (see LifeCyclePhase property). Values of all the indicators are expressed per year according to the expected service life. The first five properties capture the characteristics of the functional unit. The following properties are related to environmental indicators.There is a consensus agreement international for the five one. Last ones are not yet fully and formally agreed at the international level.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcElementType
+  type: IfcElementType
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Référence'
+    definition: 'Référence à l''identifiant d''un type spécifié dans le contexte de ce projet.'
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトのための参照記号。'
+  - language: ko-KR
+    name: '참조'
+    definition: '이 프로젝트에서 여기에 특정한 형식에 대한 참조 ID'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FunctionalUnitReference
+  definition: Reference to a database or a classification
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Référence unité fonctionnelle'
+    definition: 'Référence à une base de données ou à une classification [NDT : référence, par exemple, à l''identification d''un produit dans la base INIES]'
+  - language: ja-JP
+    name: '機能単位参照'
+    definition: 'データベースやクラスへの参照。'
+  - language: ko-KR
+    name: '기능단위참조'
+    definition: '데이터베이스 또는 분류에 대한 참조'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Unit
+  definition: The unit of the quantity the environmental indicators values are related with.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Unité'
+    definition: 'Unité de la quantité prise en compte pour la détermination des impacts environnementaux.'
+  - language: ja-JP
+    name: '単位'
+    definition: '関連する環境指数値の数量単位。'
+  - language: ko-KR
+    name: '단위'
+    definition: '환경 지표 값이 연결된 량의 단위'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LifeCyclePhase
+  definition: The whole life cycle or only a given phase  from which environmental data are valid.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Phase cycle de vie'
+    definition: 'Le cycle de vie complet ou seulement une de ses phases pour lequel les les données environnementales sont valides'
+  - language: ja-JP
+    name: 'ライフサイクルフェーズ'
+    definition: '環境データが有効であるライフサイクル全てまたは特定の段階。'
+  - language: ko-KR
+    name: '라이프 사이클 단계'
+    definition: '환경 데이터가 유효한지 라이프 사이클 또는 단 하나 주어진 단계'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_LifeCyclePhase
+    enumerationValues:
+    - name: ACQUISITION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Acquisition'
+        definition: ''
+      - language: en-EN
+        name: 'Acquisition'
+        definition: ''
+      - language: es-ES
+        name: 'Acquisition'
+        definition: ''
+      - language: fr-FR
+        name: 'Acquisition'
+        definition: ''
+      - language: ja-JP
+        name: 'Acquisition'
+        definition: ''
+      - language: ru-RU
+        name: 'Acquisition'
+        definition: ''
+    - name: CRADLETOSITE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Cradletosite'
+        definition: ''
+      - language: en-EN
+        name: 'Cradletosite'
+        definition: ''
+      - language: es-ES
+        name: 'Cradletosite'
+        definition: ''
+      - language: fr-FR
+        name: 'Cradletosite'
+        definition: ''
+      - language: ja-JP
+        name: 'Cradletosite'
+        definition: ''
+      - language: ru-RU
+        name: 'Cradletosite'
+        definition: ''
+    - name: DECONSTRUCTION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Deconstruction'
+        definition: ''
+      - language: en-EN
+        name: 'Deconstruction'
+        definition: ''
+      - language: es-ES
+        name: 'Deconstruction'
+        definition: ''
+      - language: fr-FR
+        name: 'Deconstruction'
+        definition: ''
+      - language: ja-JP
+        name: 'Deconstruction'
+        definition: ''
+      - language: ru-RU
+        name: 'Deconstruction'
+        definition: ''
+    - name: DISPOSAL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Disposal'
+        definition: ''
+      - language: en-EN
+        name: 'Disposal'
+        definition: ''
+      - language: es-ES
+        name: 'Disposal'
+        definition: ''
+      - language: fr-FR
+        name: 'Disposal'
+        definition: ''
+      - language: ja-JP
+        name: 'Disposal'
+        definition: ''
+      - language: ru-RU
+        name: 'Disposal'
+        definition: ''
+    - name: DISPOSALTRANSPORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Disposaltransport'
+        definition: ''
+      - language: en-EN
+        name: 'Disposaltransport'
+        definition: ''
+      - language: es-ES
+        name: 'Disposaltransport'
+        definition: ''
+      - language: fr-FR
+        name: 'Disposaltransport'
+        definition: ''
+      - language: ja-JP
+        name: 'Disposaltransport'
+        definition: ''
+      - language: ru-RU
+        name: 'Disposaltransport'
+        definition: ''
+    - name: GROWTH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Growth'
+        definition: ''
+      - language: en-EN
+        name: 'Growth'
+        definition: ''
+      - language: es-ES
+        name: 'Growth'
+        definition: ''
+      - language: fr-FR
+        name: 'Growth'
+        definition: ''
+      - language: ja-JP
+        name: 'Growth'
+        definition: ''
+      - language: ru-RU
+        name: 'Growth'
+        definition: ''
+    - name: INSTALLATION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Installation'
+        definition: ''
+      - language: en-EN
+        name: 'Installation'
+        definition: ''
+      - language: es-ES
+        name: 'Installation'
+        definition: ''
+      - language: fr-FR
+        name: 'Installation'
+        definition: ''
+      - language: ja-JP
+        name: 'Installation'
+        definition: ''
+      - language: ru-RU
+        name: 'Installation'
+        definition: ''
+    - name: MAINTENANCE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Maintenance'
+        definition: ''
+      - language: en-EN
+        name: 'Maintenance'
+        definition: ''
+      - language: es-ES
+        name: 'Maintenance'
+        definition: ''
+      - language: fr-FR
+        name: 'Maintenance'
+        definition: ''
+      - language: ja-JP
+        name: 'Maintenance'
+        definition: ''
+      - language: ru-RU
+        name: 'Maintenance'
+        definition: ''
+    - name: MANUFACTURE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Manufacture'
+        definition: ''
+      - language: en-EN
+        name: 'Manufacture'
+        definition: ''
+      - language: es-ES
+        name: 'Manufacture'
+        definition: ''
+      - language: fr-FR
+        name: 'Manufacture'
+        definition: ''
+      - language: ja-JP
+        name: 'Manufacture'
+        definition: ''
+      - language: ru-RU
+        name: 'Manufacture'
+        definition: ''
+    - name: OCCUPANCY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Occupancy'
+        definition: ''
+      - language: en-EN
+        name: 'Occupancy'
+        definition: ''
+      - language: es-ES
+        name: 'Occupancy'
+        definition: ''
+      - language: fr-FR
+        name: 'Occupancy'
+        definition: ''
+      - language: ja-JP
+        name: 'Occupancy'
+        definition: ''
+      - language: ru-RU
+        name: 'Occupancy'
+        definition: ''
+    - name: OPERATION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Operation'
+        definition: ''
+      - language: en-EN
+        name: 'Operation'
+        definition: ''
+      - language: es-ES
+        name: 'Operation'
+        definition: ''
+      - language: fr-FR
+        name: 'Operation'
+        definition: ''
+      - language: ja-JP
+        name: 'Operation'
+        definition: ''
+      - language: ru-RU
+        name: 'Operation'
+        definition: ''
+    - name: PROCUREMENT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Procurement'
+        definition: ''
+      - language: en-EN
+        name: 'Procurement'
+        definition: ''
+      - language: es-ES
+        name: 'Procurement'
+        definition: ''
+      - language: fr-FR
+        name: 'Procurement'
+        definition: ''
+      - language: ja-JP
+        name: 'Procurement'
+        definition: ''
+      - language: ru-RU
+        name: 'Procurement'
+        definition: ''
+    - name: PRODUCTION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Production'
+        definition: ''
+      - language: en-EN
+        name: 'Production'
+        definition: ''
+      - language: es-ES
+        name: 'Production'
+        definition: ''
+      - language: fr-FR
+        name: 'Production'
+        definition: ''
+      - language: ja-JP
+        name: 'Production'
+        definition: ''
+      - language: ru-RU
+        name: 'Production'
+        definition: ''
+    - name: PRODUCTIONTRANSPORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Productiontransport'
+        definition: ''
+      - language: en-EN
+        name: 'Productiontransport'
+        definition: ''
+      - language: es-ES
+        name: 'Productiontransport'
+        definition: ''
+      - language: fr-FR
+        name: 'Productiontransport'
+        definition: ''
+      - language: ja-JP
+        name: 'Productiontransport'
+        definition: ''
+      - language: ru-RU
+        name: 'Productiontransport'
+        definition: ''
+    - name: RECOVERY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Recovery'
+        definition: ''
+      - language: en-EN
+        name: 'Recovery'
+        definition: ''
+      - language: es-ES
+        name: 'Recovery'
+        definition: ''
+      - language: fr-FR
+        name: 'Recovery'
+        definition: ''
+      - language: ja-JP
+        name: 'Recovery'
+        definition: ''
+      - language: ru-RU
+        name: 'Recovery'
+        definition: ''
+    - name: REFURBISHMENT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Refurbishment'
+        definition: ''
+      - language: en-EN
+        name: 'Refurbishment'
+        definition: ''
+      - language: es-ES
+        name: 'Refurbishment'
+        definition: ''
+      - language: fr-FR
+        name: 'Refurbishment'
+        definition: ''
+      - language: ja-JP
+        name: 'Refurbishment'
+        definition: ''
+      - language: ru-RU
+        name: 'Refurbishment'
+        definition: ''
+    - name: REPAIR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Repair'
+        definition: ''
+      - language: en-EN
+        name: 'Repair'
+        definition: ''
+      - language: es-ES
+        name: 'Repair'
+        definition: ''
+      - language: fr-FR
+        name: 'Repair'
+        definition: ''
+      - language: ja-JP
+        name: 'Repair'
+        definition: ''
+      - language: ru-RU
+        name: 'Repair'
+        definition: ''
+    - name: REPLACEMENT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Replacement'
+        definition: ''
+      - language: en-EN
+        name: 'Replacement'
+        definition: ''
+      - language: es-ES
+        name: 'Replacement'
+        definition: ''
+      - language: fr-FR
+        name: 'Replacement'
+        definition: ''
+      - language: ja-JP
+        name: 'Replacement'
+        definition: ''
+      - language: ru-RU
+        name: 'Replacement'
+        definition: ''
+    - name: TRANSPORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Transport'
+        definition: ''
+      - language: en-EN
+        name: 'Transport'
+        definition: ''
+      - language: es-ES
+        name: 'Transport'
+        definition: ''
+      - language: fr-FR
+        name: 'Transport'
+        definition: ''
+      - language: ja-JP
+        name: 'Transport'
+        definition: ''
+      - language: ru-RU
+        name: 'Transport'
+        definition: ''
+    - name: USAGE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Usage'
+        definition: ''
+      - language: en-EN
+        name: 'Usage'
+        definition: ''
+      - language: es-ES
+        name: 'Usage'
+        definition: ''
+      - language: fr-FR
+        name: 'Usage'
+        definition: ''
+      - language: ja-JP
+        name: 'Usage'
+        definition: ''
+      - language: ru-RU
+        name: 'Usage'
+        definition: ''
+    - name: WASTE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Waste'
+        definition: ''
+      - language: en-EN
+        name: 'Waste'
+        definition: ''
+      - language: es-ES
+        name: 'Waste'
+        definition: ''
+      - language: fr-FR
+        name: 'Waste'
+        definition: ''
+      - language: ja-JP
+        name: 'Waste'
+        definition: ''
+      - language: ru-RU
+        name: 'Waste'
+        definition: ''
+    - name: WHOLELIFECYCLE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Wholelifecycle'
+        definition: ''
+      - language: en-EN
+        name: 'Wholelifecycle'
+        definition: ''
+      - language: es-ES
+        name: 'Wholelifecycle'
+        definition: ''
+      - language: fr-FR
+        name: 'Wholelifecycle'
+        definition: ''
+      - language: ja-JP
+        name: 'Wholelifecycle'
+        definition: ''
+      - language: ru-RU
+        name: 'Wholelifecycle'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ExpectedServiceLife
+  definition: Expected service life in years.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Durée de vie typique'
+    definition: 'Durée de vie typique exprimée en années.'
+  - language: ja-JP
+    name: '期待される耐用期間'
+    definition: '数年間の期待される耐用年数。'
+  - language: ko-KR
+    name: '예상수명'
+    definition: '예상 수명'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TotalPrimaryEnergyConsumptionPerUnit
+  definition: Quantity of energy used as defined in ISO21930:2007.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Consommation totale énergie primaire par unité'
+    definition: 'Consommation d''énergie primaire utilisée, telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり全一次エネルギ消費'
+    definition: 'ISO21930:2007で定義されたエネルギー消費量。'
+  - language: ko-KR
+    name: '단위당 모든 차 에너지 소비'
+    definition: 'ISO21930 : 2007에서 정의된 에너지 사용량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcEnergyMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WaterConsumptionPerUnit
+  definition: Quantity of water used.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Consommation d''eau par unité'
+    definition: 'Quantité d''eau utilisée telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]. Exprimée en litres.'
+  - language: ja-JP
+    name: '単位あたり水使用'
+    definition: 'リットル単位で表現された水の消費量。'
+  - language: ko-KR
+    name: '단위 당 물 사용'
+    definition: '사용 수량의 리터 수'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HazardousWastePerUnit
+  definition: Quantity of hazardous waste generated
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Déchets dangereux par unité'
+    definition: 'Quantité de déchets dangereux générés tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010].'
+  - language: ja-JP
+    name: '単位あたり有害廃棄物'
+    definition: '生成された有害な廃棄量。'
+  - language: ko-KR
+    name: '단위당 유해 폐기물'
+    definition: '유해 폐기물의 발생량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NonHazardousWastePerUnit
+  definition: Quantity of non hazardous waste generated
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Déchets non dangereux par unité'
+    definition: 'Quantité de déchets non dangereux générés tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010].'
+  - language: ja-JP
+    name: '単位あたり非有害廃棄物'
+    definition: '生成された無害な排気量。'
+  - language: ko-KR
+    name: '단위당 비 유해 폐기물'
+    definition: '비 유해 폐기물의 발생량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ClimateChangePerUnit
+  definition: Quantity of greenhouse gases emitted calculated in equivalent CO2
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Changement climatique par unité'
+    definition: 'Quantité d''émissions de gaz à effet de serre exprimée en Kg d''équivalent CO2 tels que définis dans la norme  ISO21930:2007 [NDT : ainsi que dans les normes PrEN15804:2008 et NF P01-010].'
+  - language: ja-JP
+    name: '単位あたり気候変動'
+    definition: 'CO2で計算された温室効果ガスの放出量。'
+  - language: ko-KR
+    name: '단위당 기후 변화'
+    definition: 'CO2 등가 환산되는 온실 가스 발생량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AtmosphericAcidificationPerUnit
+  definition: Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Acidification atmospherique par unité'
+    definition: 'Quantité de gaz responsables de l''acidification atmosphérique exprimée en Kg d''équivalent SO2 [NDT : selon les normes PrEN15804:2008 et NF P01-010].'
+  - language: ja-JP
+    name: '単位あたり大気酸性化'
+    definition: 'SO2で計算される大気の酸性化に影響するガスの量。'
+  - language: ko-KR
+    name: '단위당 대기 산성화'
+    definition: 'SO2에 해당 환산된 대기 산성 화의 원인이되는 가스량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RenewableEnergyConsumptionPerUnit
+  definition: Quantity of renewable energy used as defined in ISO21930:2007
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Consommation énergie renouvelable par unité'
+    definition: 'Consommation d''énergie renouvelable telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり再生可能エネルギ消費'
+    definition: 'ISO21930:2007で定義される再生可能エネルギーの使用量。'
+  - language: ko-KR
+    name: '단위당 재생 에너지 소비'
+    definition: 'ISO21930 : 2007에 정의된 재생 가능 에너지 사용량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcEnergyMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NonRenewableEnergyConsumptionPerUnit
+  definition: Quantity of non-renewable energy used as defined in ISO21930:2007
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Consommation énergie non renouvelable par unité'
+    definition: 'Consommation d''énergie non renouvelable telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり再生不可エネルギ消費'
+    definition: 'ISO21930:2007で定義される非再生エネルギーの使用量。'
+  - language: ko-KR
+    name: '단위당 재생 불가 에너지 소비'
+    definition: 'ISO21930 : 2007에 정의된 재생 불가 에너지 사용량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcEnergyMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ResourceDepletionPerUnit
+  definition: Quantity of resources used calculated in equivalent antimony
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Epuisement des ressources par unité'
+    definition: 'Quantité de ressources consommées exprimée en équivalent Antimoine telles que définies dans la norme  ISO21930:2007  [NDT : et dans la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり資源消費'
+    definition: 'アンチモンで計算される資源の使用量。'
+  - language: ko-KR
+    name: '단위당 자원소비'
+    definition: '안티몬에 해당 환산된 사용 자원 량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: InertWastePerUnit
+  definition: Quantity of inert waste generated
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Déchets inertes par unité'
+    definition: 'Quantité de déchets inertes générés [NDT : selon la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり不活性廃棄物'
+    definition: '生成された安定廃棄物の量。'
+  - language: ko-KR
+    name: '단위당 불황성 폐기물'
+    definition: '불활성 폐기물 발생량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RadioactiveWastePerUnit
+  definition: Quantity of radioactive waste generated
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Déchets radioactifs par unité'
+    definition: 'Quantité de déchets radioactifs générés [NDT : selon la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり放射性廃棄物'
+    definition: '生成された放射性廃棄物の量。'
+  - language: ko-KR
+    name: '단위당 방사성 폐기물'
+    definition: '방사성 폐기물 발생량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: StratosphericOzoneLayerDestructionPerUnit
+  definition: Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Destruction couche ozone stratosphérique par unité'
+    definition: 'Quantité de gaz destructeurs de la couche d''ozone exprimée en équivalent CFC-R11 tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり成層圏オゾン層破壊'
+    definition: 'CFC-R11で計算される成層圏のオゾン層を破壊するガスの量。'
+  - language: ko-KR
+    name: '단위당 성층권 오존층 파괴'
+    definition: 'CFC-R11에 해당 환산된 성층권 오존층 파괴 가스량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: PhotochemicalOzoneFormationPerUnit
+  definition: Quantity of gases creating the photochemical ozone calculated in equivalent ethylene
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Formation ozone photochimique par unité'
+    definition: 'Quantité de gaz producteurs d''ozone photochimique exprimée en équivalent ethylène tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010]'
+  - language: ja-JP
+    name: '単位あたり光化学オゾン生成'
+    definition: 'エチレンで計算される光化学物質オゾンを生成するガスの量。'
+  - language: ko-KR
+    name: '단위당 광화학 오존 생성'
+    definition: '에틸렌에 해당 환산된 광화학 오존 생성 끊 가스량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: EutrophicationPerUnit
+  definition: Quantity of eutrophicating compounds calculated in equivalent PO4
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: fr-FR
+    name: 'Eutrophisation par unité'
+    definition: 'Quantité de composés responsables de l''eutrophisation exprimée en équivalent P04 tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme PrEN15804:2008]'
+  - language: ja-JP
+    name: '単位あたり富栄養化'
+    definition: 'PO4で計算される富栄養化する化合物の量。'
+  - language: ko-KR
+    name: '단위당 부영양화'
+    definition: 'PO4 (인산)에 상응하는 환산되는 부영 양화 성분 물량'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcMassMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

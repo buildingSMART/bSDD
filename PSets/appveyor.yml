@@ -1,0 +1,43 @@
+#---------------------------------------#
+#  Build the PSet2YamlConverter.exe     #
+#---------------------------------------#
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+before_build:
+  - nuget restore "Tools\PSet2YamlConverter\PSet2YamlConverter.sln"
+build:
+  project: Tools\PSet2YamlConverter\PSet2YamlConverter.sln
+  verbosity: minimal
+artifacts:
+- path: Tools\PSet2YamlConverter\PSet2YamlConverter\bin\$(configuration)
+  name: PSet2YamlConverter
+  
+#---------------------------------------#
+#    Run the PSet2YamlConverter.exe     #
+#---------------------------------------#
+environment:
+  access_token:
+    secure: sNVOMaQLV0mfLGZL9mXDXZvRvhHjX+WYON1/WokLH7w2fev2upMCuElyw07vW1w0
+  gh_email:
+    secure: V/J9RJx75dwkZ3GYcz6HxOuHhgRjronD6QpRkF5O+so=
+  gh_username: 
+    secure: WYN/eo4TYe5gfE1sRt2Ugw==
+  
+on_finish:
+  - ps: '& "C:\projects\psets\Tools\ConvertAndPublishPSets.ps1"'
+  - git config --global credential.helper store
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "$($env:gh_email)"
+  - git config --global user.name "$($env:gh_username)"
+  - git config core.autocrlf true
+  - git status
+  - git commit . -m "Transformed PSets to YAML and JSON format"
+  - git remote -v
+  - git push origin master

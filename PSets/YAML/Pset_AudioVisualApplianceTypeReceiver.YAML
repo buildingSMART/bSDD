@@ -1,0 +1,252 @@
+﻿name: 'Pset_AudioVisualApplianceTypeReceiver'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'An audio-visual receiver is a device that switches audio and/or video from multiple sources, including external sources connected from ports and internal aggregated sources.  HISTORY: Added in IFC4.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAudioVisualApplianceType
+  type: IfcAudioVisualApplianceType/RECEIVER
+properties:
+- name: ReceiverType
+  definition: Indicates the type of receiver.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '受信機形式'
+    definition: '受信機の形式を示す。'
+  - language: ko-KR
+    name: '수신기 형식'
+    definition: '수신기의 형식을 보여준다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_AudioVisualReceiverType
+    enumerationValues:
+    - name: AUDIO
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Audio'
+        definition: ''
+      - language: en-EN
+        name: 'Audio'
+        definition: ''
+      - language: es-ES
+        name: 'Audio'
+        definition: ''
+      - language: fr-FR
+        name: 'Audio'
+        definition: ''
+      - language: ja-JP
+        name: 'Audio'
+        definition: ''
+      - language: ru-RU
+        name: 'Audio'
+        definition: ''
+    - name: AUDIOVIDEO
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Audiovideo'
+        definition: ''
+      - language: en-EN
+        name: 'Audiovideo'
+        definition: ''
+      - language: es-ES
+        name: 'Audiovideo'
+        definition: ''
+      - language: fr-FR
+        name: 'Audiovideo'
+        definition: ''
+      - language: ja-JP
+        name: 'Audiovideo'
+        definition: ''
+      - language: ru-RU
+        name: 'Audiovideo'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioAmplification
+  definition: Indicates audio amplification frequency ranges.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: 'オーディオアンプ'
+    definition: '再生周波数帯域を示す。'
+  - language: ko-KR
+    name: '오디오 앰프'
+    definition: '재생 주파수 대역을 나타낸다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: '-'
+    DefiningValue:
+      dataType: IfcFrequencyMeasure
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcRatioMeasure
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioMode
+  definition: Indicates audio sound modes and corresponding labels, if applicable.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: 'オーディオモード'
+    definition: 'オーディオサウンドモードの設定。'
+  - language: ko-KR
+    name: '오디오 모드'
+    definition: '오디오 사운드 모드 설정.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: '-'
+    DefiningValue:
+      dataType: IfcIdentifier
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcLabel
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

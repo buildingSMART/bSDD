@@ -1,0 +1,225 @@
+﻿name: 'Pset_AnnotationLineOfSight'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcProductExtension
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Specifies the properties of the line of sight at a point of connection between two elements. Typically used to define the line of sight visibility at the junction between two roads (particularly between an access road and a public road).'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAnnotation
+  type: IfcAnnotation/LineOfSight
+properties:
+- name: SetbackDistance
+  definition: Setback distance from the point of connection on the major element along the axis of the minor element (e.g. distance from a public road at which the line of sigfht is measured.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 870d14e7de9348b1b4ef5566b5477719
+  legacyGuidAsIfcGlobalId: 273HJdtfD8iRJlLMQrHtSP
+  localizations:
+  - language: fr-FR
+    name: 'Distance de recul'
+    definition: 'Distance de recul le long de l''axe de l''élément secondaire depuis le point de jonction sur l''élément principal (par exemple, distance depuis la route principale à partir de laquelle la visibilité est appréciée).'
+  - language: ja-JP
+    name: '後退距離'
+    definition: '副要素の軸に沿った主要素の接続点からの後退距離（例えば、可視線が測定される公道からの距離）。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VisibleAngleLeft
+  definition: Angle of visibility to the left of the access.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b7fbf15e716040038f94f66f7cd9fa79
+  legacyGuidAsIfcGlobalId: 2t_$5USM100u_KzczysVfv
+  localizations:
+  - language: fr-FR
+    name: 'Angle de visibilité à gauche'
+    definition: 'Angle de visibilité à la gauche de l''accès.'
+  - language: ja-JP
+    name: '左側可視角度'
+    definition: '左側の経路に可視出来る角度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositivePlaneAngleMeasure
+    measureType: ''
+    unitType: PLANEANGLEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VisibleAngleRight
+  definition: Angle of visibility to the right of the access.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 397eeee44c52420a99f42665fda76e77
+  legacyGuidAsIfcGlobalId: 0vVkxaJ5922fdq9cNzfsvt
+  localizations:
+  - language: fr-FR
+    name: 'Angle de visibilité à droite'
+    definition: 'Angle de visibilité à la droite de l''accès.'
+  - language: ja-JP
+    name: '右側可視角度'
+    definition: '右側の経路に可視出来る角度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositivePlaneAngleMeasure
+    measureType: ''
+    unitType: PLANEANGLEUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RoadVisibleDistanceLeft
+  definition: Distance visible to the left of the access.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 6f90fef9de9d48e5b325c25cc1b38003
+  legacyGuidAsIfcGlobalId: 1laFxvtfr8vRCbmbp1iu03
+  localizations:
+  - language: fr-FR
+    name: 'Distance de visibilité côté gauche'
+    definition: 'Distance de visibilité à la gauche de l''accès.'
+  - language: ja-JP
+    name: '左側道路可視距離'
+    definition: '左側の経路に可視出来る距離。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RoadVisibleDistanceRight
+  definition: Distance visible to the right of the access.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 07fe2be159964d6e88a7d198e414747e
+  legacyGuidAsIfcGlobalId: 07$YlXMPPDReYdqPZa57H_
+  localizations:
+  - language: fr-FR
+    name: 'Distance de visibilité côté droit'
+    definition: 'Distance de visibilité à la droite de l''accès.'
+  - language: ja-JP
+    name: '右側道路可視距離'
+    definition: '右側の経路に可視出来る距離。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: LENGTHUNIT
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

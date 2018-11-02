@@ -1,0 +1,114 @@
+﻿{
+  "name": "Pset_SensorTypeSoundSensor",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcBuildingControlsDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "A device that senses or detects sound. HISTORY: SoundSensorSensorSetPoint changed to SetPointSound. Range, accuracy and time constant deleted.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSensorType",
+      "type": "IfcSensorType/SOUNDSENSOR"
+    }
+  ],
+  "properties": [
+    {
+      "name": "SetPointSound",
+      "definition": "The sound pressure value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "1b499f0886b74625ba4a0fc13217706c",
+      "legacyGuidAsIfcGlobalId": "0RIPy8XhT69RfA3y4o5t1i",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "音圧設定値",
+          "definition": "感知される音圧。セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "읍압 설정치",
+          "definition": "감지되는 음압. 세트 포인트 값을 넣으려면, IfcPropertyBoundedValue.SetPointValue를 사용하십시오."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

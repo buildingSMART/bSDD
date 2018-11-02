@@ -1,0 +1,114 @@
+﻿{
+  "name": "Pset_SensorTypeLightSensor",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcBuildingControlsDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "A device that senses or detects light. HISTORY: LightSensorSensorSetPoint changed to SetPointIlluminance. Range, accuracy and time constant deleted.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSensorType",
+      "type": "IfcSensorType/LIGHTSENSOR"
+    }
+  ],
+  "properties": [
+    {
+      "name": "SetPointIlluminance",
+      "definition": "The illuminance value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "30ac0783e4674b4588728188311188ea",
+      "legacyGuidAsIfcGlobalId": "0mh0U3v6TBHOXoWOWn4OZg",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "照度設定値",
+          "definition": "感知される照度。セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "조도 설정",
+          "definition": "감지하는 조도. 세트 포인트 값을 넣으려면, IfcPropertyBoundedValue.SetPointValue를 사용하십시오."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "0",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

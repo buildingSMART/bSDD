@@ -1,0 +1,359 @@
+﻿{
+  "name": "Pset_FlowInstrumentTypePressureGauge",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcBuildingControlsDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "A device that reads and displays a pressure value at a point or the pressure difference between two points.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcFlowInstrumentType",
+      "type": "IfcFlowInstrumentType/PRESSUREGAUGE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "PressureGaugeType",
+      "definition": "Identifies the means by which pressure is displayed.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "f434482818d549b0895d34bd4a95d73e",
+      "legacyGuidAsIfcGlobalId": "3qD4We6DL9i8bTDBrAbTS_",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "圧力計タイプ",
+          "definition": "圧力が表示される手段を識別する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "압력계 유형",
+          "definition": "압력이 표시되는 방법을 확인한다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_PressureGaugeType",
+        "enumerationValues": [
+          {
+            "name": "DIAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dial",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dial",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dial",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dial",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dial",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dial",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DIGITAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Digital",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Digital",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Digital",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Digital",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Digital",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Digital",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MANOMETER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Manometer",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Manometer",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Manometer",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Manometer",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Manometer",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Manometer",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DisplaySize",
+      "definition": "The physical size of the display. For a dial pressure gauge it will be the diameter of the dial.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "0993d0a6bfa7432bb04e9ab0af1a1d40",
+      "legacyGuidAsIfcGlobalId": "09az2clwT3Ax1Ech2l6Xr0",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "表示サイズ",
+          "definition": "表示のサイズ。 ダイヤル圧力計に関しては、ダイヤルの直径になる。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "디스플레이 크기",
+          "definition": "표시의 크기입니다. 다이얼 게이지에 관해서는 전화 직경된다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "LENGTHUNIT"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

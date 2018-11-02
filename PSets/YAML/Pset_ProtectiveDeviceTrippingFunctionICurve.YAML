@@ -1,0 +1,614 @@
+﻿name: 'Pset_ProtectiveDeviceTrippingFunctionICurve'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcElectricalDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Tripping functions are applied to electronic tripping units (i.e. tripping units having type property sets for electronic tripping defined). They are not applied to thermal, thermal magnetic or RCD tripping units.This property set represent the instantaneous time protection (I-curve) of an electronic protection device.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProtectiveDeviceTrippingUnitType
+  type: IfcProtectiveDeviceTrippingUnitType
+properties:
+- name: IsSelectable
+  definition: Indication whether the S-function can be switched off or not.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a7b89e24eb734feb9685ec80e11875d9
+  legacyGuidAsIfcGlobalId: 2dk9uawtDFwvQ5x83X67NP
+  localizations:
+  - language: ja-JP
+    name: '切り替え'
+    definition: '装置の “ON-OFF”状態を電気的表示が切り替え可能かどうか。'
+  - language: ko-KR
+    name: '전환'
+    definition: '장치의 "ON-OFF"상태를 전기적으로 표시가 교체 가능합니까?'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalCurrentAdjusted
+  definition: An indication if the tripping currents of the short time protection is related to the nominal current multiplied with the actual setting of the current adjustment, if any, of the long time protection part of the protective device, or not.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 7e9ee72d0c604fe6a602aef44fd60bc0
+  legacyGuidAsIfcGlobalId: 1_dkSj361FvgO2hlHFrWl0
+  localizations:
+  - language: ja-JP
+    name: '定格調整電流'
+    definition: '電流によって、動作時間が短かかったり長かったりするかどうか。'
+  - language: ko-KR
+    name: '정격전류조정'
+    definition: '전류 작동 시간 길이 여부'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ReleaseCurrent
+  definition: The release current in [x In] for the initial tripping of the S-function.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e05cdff082924690a9509756a61e10af
+  legacyGuidAsIfcGlobalId: 3WND$mWf96aAbGbrQc7X2l
+  localizations:
+  - language: ja-JP
+    name: '放出電流'
+    definition: '放出する電流は、S-functionの初期特性。'
+  - language: ko-KR
+    name: '방출전류'
+    definition: '방출 전류는 S-function의 초기 특성.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ReleaseTime
+  definition: The release time in [s] for the initial tripping of the relevant part. This time indicates that for current lower than the indicated release current, the tripping time will be longer than the indicated release time. The value is given as a mean value.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: d5a8c3460bf642f182365d8eadf02493
+  legacyGuidAsIfcGlobalId: 3LgCD62$P2yO8sNOwjy2IJ
+  localizations:
+  - language: ja-JP
+    name: '放出時間'
+    definition: '関連する部分の初期トリップのための[s]が放出時間。 このトリップ時間は、リリースの電流よりも低い電流の場合、指定された動作時間よりも長くなります。 値が平均値として与えられる。'
+  - language: ko-KR
+    name: '방출 시간'
+    definition: '관련 부분의 초기 여행을위한 [s]가 방출 시간.  이 트립 시간은 릴리스 전류보다 낮은 전류의 경우 지정된 동작 시간보다 길어집니다.  값을 평균으로 주어진다. "'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CurrentTolerance1
+  definition: The tolerance for the current of time/current-curve in [%].
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 7e4e74b0d7684679a554a531353003fb
+  legacyGuidAsIfcGlobalId: 1_JdImrsX6UQLKfJ4rC0Fx
+  localizations:
+  - language: ja-JP
+    name: '許容電流1'
+    definition: '時間/特性曲線の許容範囲を[％]で指定。'
+  - language: ko-KR
+    name: '허용 전류1'
+    definition: '시간 / 특성 곡선의 허용 범위를 [%]로 지정합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CurrentToleranceLimit1
+  definition: The time limit in [s] limiting the application of CurrentTolerance1, if any. If the value is set to 0, the value of the CurrentTolerance1 is valid for the whole time/current-curve.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 3374d9706b5f4eed91551a9591eebca9
+  legacyGuidAsIfcGlobalId: 0pTDbmQrzExP5L6fMHxhof
+  localizations:
+  - language: ja-JP
+    name: '許容電流限界1'
+    definition: '許容電流1を制限する時間制限。値が0の場合は、制限はない。'
+  - language: ko-KR
+    name: '허용전류한계1'
+    definition: '허용 전류 1 제한 시간 제한. 값이 0이면 제한이 없다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CurrentTolerance2
+  definition: The tolerance for the current of time/current-curve in [%] valid for times above CurrentTolereanceLimit1.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: e717d882e1154a71a3048ee17b17139a
+  legacyGuidAsIfcGlobalId: 3d5zY2uHLASQC4Zk5x5nEQ
+  localizations:
+  - language: ja-JP
+    name: '許容電流2'
+    definition: '[％]で指定された時間/特性曲線の許容範囲は、上記の許容電流限界1の時間で有効です。'
+  - language: ko-KR
+    name: '허용전류 2'
+    definition: '[%]로 지정된 시간 / 특성 곡선의 허용 범위는 상기의 허용 전류 한계 1 시간에 유효합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsCurrentTolerancePositiveOnly
+  definition: Indication whether the value of  CurrentTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b0c3cd68a8954ccf96a3bae2bcb493d7
+  legacyGuidAsIfcGlobalId: 2mmyreg9LCpvQZkkAyj9FN
+  localizations:
+  - language: ja-JP
+    name: '電流許容値'
+    definition: '許容電流限界1の値のみかどうか 上記でない場合、電流許容値はプラス/マイナスした値。'
+  - language: ko-KR
+    name: '전류 허용 값'
+    definition: '허용 전류 한계 값 1 만 여부  위의 경우, 전류 허용 값은 플러스 / 마이너스 값.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TimeTolerance1
+  definition: The tolerance for the time of time/current-curve in [%].
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 315594db57284326b3053c6697547fd0
+  legacyGuidAsIfcGlobalId: 0nLPJRLoX39hC5F6QNL7$G
+  localizations:
+  - language: ja-JP
+    name: '許容時間1'
+    definition: '[％]で時間/特性曲線の許容時間を設定。'
+  - language: ko-KR
+    name: '허용 시간1'
+    definition: '[%] 시간 / 특성 곡선의 허용 시간을 설정'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TimeToleranceLimit1
+  definition: The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 94b783e93a5b44fba2671d217234025e
+  legacyGuidAsIfcGlobalId: 2KjuFfEbj4_w9d7I5oD09U
+  localizations:
+  - language: ja-JP
+    name: '許容限界時間1'
+    definition: '許容時間1を制限する電流制限値。値が0の場合は、制限はない。'
+  - language: ko-KR
+    name: '허용 한계시간1'
+    definition: '허용 시간 1를 제한하는 전류 제한. 값이 0이면 제한이 없다'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TimeTolerance2
+  definition: The tolerance for the time of the time/current-curve in [%] valid for currents above TimeToleranceLimit1.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 45701bb9fda04078b21a24f6de4faf2c
+  legacyGuidAsIfcGlobalId: 15S1kv$Q10UB8Q9FRUJwyi
+  localizations:
+  - language: ja-JP
+    name: '許容時間2'
+    definition: '[％]で指定された時間/特性曲線の許容範囲は、上記の許容電流限界1の電流で有効です。'
+  - language: ko-KR
+    name: '허용시간 2'
+    definition: '[%]로 지정된 시간 / 특성 곡선의 허용 범위는 상기의 허용 전류 한계 1의 전류로 사용할 수 있습니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsTimeTolerancePositiveOnly
+  definition: Indication whether the value of  TimeTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 2123bf186aaf49fb94c837216ddb87da
+  legacyGuidAsIfcGlobalId: 0X8xyOQgz9_vJ8Do5jsuVQ
+  localizations:
+  - language: ja-JP
+    name: '時間許容値'
+    definition: '許容時間1の値のみかどうか 上記でない場合、時間許容値は、プラス/マイナスした値。'
+  - language: ko-KR
+    name: '시간 허용치'
+    definition: '허용 시간 1 값만 여부  위의 경우 시간 허용치는 플러스 / 마이너스 값.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaxAdjustmentX_ICS
+  definition: Provides the maximum setting value for the available current adjustment in relation to theIcs breaking capacity of the protection device of which the actual tripping unit is a part of. The value is not asserted unless the instantaneous time protection is.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ed09707c1fea4fa6b9abc61a72b95822
+  legacyGuidAsIfcGlobalId: 3j2N1y7_fFfhchnXfokLWY
+  localizations:
+  - language: ja-JP
+    name: '最大調整X_ICS'
+    definition: '実際のトリップ装置の一部である保護装置のIcs 遮断容量に関連して利用可能な電流の最大調整値。'
+  - language: ko-KR
+    name: '최대 조정 X_ICS'
+    definition: '실제 트립 장치의 일부인 보호자 Ics 차단 용량과 관련하여 사용 가능한 전류의 최대 조정 값'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsOffWhenSFunctionOn
+  definition: Indication whether the I-function is automatically switched off when the S-function is switched on.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

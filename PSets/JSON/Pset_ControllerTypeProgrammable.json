@@ -1,0 +1,1172 @@
+﻿{
+  "name": "Pset_ControllerTypeProgrammable",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcBuildingControlsDomain"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Properties for Discrete Digital Control (DDC) or programmable logic controllers.  HISTORY: Added in IFC4.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcControllerType",
+      "type": "IfcControllerType/PROGRAMMABLE"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ControlType",
+      "definition": "The type of discrete digital controller: PRIMARY: Controller has built-in communication interface for PC connection, may manage secondary controllers.SECONDARY: Controller communicates with primary controller and its own managed devices.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_ControllerTypeProgrammable",
+        "enumerationValues": [
+          {
+            "name": "PRIMARY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Primary",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Primary",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Primary",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Primary",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Primary",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Primary",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SECONDARY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Secondary",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Secondary",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Secondary",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Secondary",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Secondary",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Secondary",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FirmwareVersion",
+      "definition": "Indicates version of device firmware according to device manufacturer.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ko-KR",
+          "name": "펌웨어 버전",
+          "definition": "컨트롤러 펌웨어 버전"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SoftwareVersion",
+      "definition": "Indicates version of application software according to systems integrator.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ko-KR",
+          "name": "소프트웨어 버전",
+          "definition": "컨트롤러 소프트웨어 버전"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Application",
+      "definition": "Indicates application of controller.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_ControllerApplication",
+        "enumerationValues": [
+          {
+            "name": "MODEMCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Modemcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Modemcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Modemcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Modemcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Modemcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Modemcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TELEPHONEDIRECTORY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Telephonedirectory",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Telephonedirectory",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Telephonedirectory",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Telephonedirectory",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Telephonedirectory",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Telephonedirectory",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "FANCOILUNITCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Fancoilunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Fancoilunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Fancoilunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Fancoilunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Fancoilunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Fancoilunitcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "ROOFTOPUNITCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Rooftopunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Rooftopunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Rooftopunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Rooftopunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Rooftopunitcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Rooftopunitcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNITVENTILATORCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unitventilatorcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unitventilatorcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unitventilatorcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unitventilatorcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unitventilatorcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unitventilatorcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SPACECONFORTCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Spaceconfortcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Spaceconfortcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Spaceconfortcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Spaceconfortcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Spaceconfortcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Spaceconfortcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VAV",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Vav",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Vav",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Vav",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Vav",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Vav",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Vav",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PUMPCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Pumpcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Pumpcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Pumpcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Pumpcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Pumpcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Pumpcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "BOILERCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Boilercontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Boilercontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Boilercontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Boilercontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Boilercontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Boilercontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DISCHARGEAIRCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dischargeaircontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dischargeaircontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dischargeaircontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dischargeaircontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dischargeaircontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dischargeaircontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OCCUPANCYCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Occupancycontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Occupancycontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Occupancycontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Occupancycontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Occupancycontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Occupancycontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CONSTANTLIGHTCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Constantlightcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Constantlightcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Constantlightcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Constantlightcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Constantlightcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Constantlightcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SCENECONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Scenecontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Scenecontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Scenecontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Scenecontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Scenecontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Scenecontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PARTITIONWALLCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Partitionwallcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Partitionwallcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Partitionwallcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Partitionwallcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Partitionwallcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Partitionwallcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "REALTIMEKEEPER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Realtimekeeper",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Realtimekeeper",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Realtimekeeper",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Realtimekeeper",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Realtimekeeper",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Realtimekeeper",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "REALTIMEBASEDSCHEDULER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Realtimebasedscheduler",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Realtimebasedscheduler",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Realtimebasedscheduler",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Realtimebasedscheduler",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Realtimebasedscheduler",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Realtimebasedscheduler",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "LIGHTINGPANELCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Lightingpanelcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Lightingpanelcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Lightingpanelcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Lightingpanelcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Lightingpanelcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Lightingpanelcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SUNBLINDCONTROLLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Sunblindcontroller",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Sunblindcontroller",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Sunblindcontroller",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Sunblindcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Sunblindcontroller",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Sunblindcontroller",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

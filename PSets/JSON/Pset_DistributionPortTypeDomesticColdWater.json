@@ -1,0 +1,1177 @@
+﻿{
+  "name": "Pset_DistributionPortTypeDomesticColdWater",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcSharedBldgServiceElements"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Pipe port occurrence attributes attached to an instance of IfcDistributionPort.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcDistributionPort",
+      "type": "IfcDistributionPort/DOMESTICCOLDWATER"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ConnectionType",
+      "definition": "The end-style treatment of the pipe port:BRAZED: Brazed. COMPRESSION: Compression. FLANGED: Flanged. GROOVED: Grooved. OUTSIDESLEEVE: Outside Sleeve. SOLDERED: Soldered. SWEDGE: Swedge. THREADED: Threaded. WELDED: Welded. OTHER: Another type of end-style has been applied.NONE: No end-style has been applied.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "連結方式",
+          "definition": "配管ポートの加工方式：- BRAZED: ろう型- COMPRESSION: 圧縮型 - FLANGED:フランジ型- GROOVED: 溝型. - OUTSIDESLEEVE: 外側スリーブ型- SOLDERED: ハンダ型- SWEDGE:  Swedge？Sくさび型？ - THREADED: ねじ型- WELDED: 溶接型 - OTHER: その他- NONE: なし.- USERDEFINED:ユーザー定義タイプ- NOTDEFINED: 不確定タイプ"
+        },
+        {
+          "language": "ko-KR",
+          "name": "연결방식",
+          "definition": "배관 포트의 가공 방식 BRAZED : 밀랍 형 COMPRESSION : 압축형 FLANGED : 플랜지 GROOVED : 구형. OUTSIDESLEEVE : 외부 슬리브 형식 SOLDERED : 납땜 형식 SWEDGE : Swedge? S 쐐기 모양? THREADED : 나사형 WELDED : 용접 형 OTHER : 기타 NONE : 없음 USERDEFINED : 사용자 정의 유형 NOTDEFINED : 불확정 유형"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_PipeEndStyleTreatment",
+        "enumerationValues": [
+          {
+            "name": "BRAZED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Brazed",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Brazed",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Brazed",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Brazed",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Brazed",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Brazed",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "COMPRESSION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Compression",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Compression",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Compression",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Compression",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Compression",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Compression",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "FLANGED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Flanged",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Flanged",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Flanged",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Flanged",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Flanged",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Flanged",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "GROOVED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Grooved",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Grooved",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Grooved",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Grooved",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Grooved",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Grooved",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OUTSIDESLEEVE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Outsidesleeve",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Outsidesleeve",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Outsidesleeve",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Outsidesleeve",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Outsidesleeve",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Outsidesleeve",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SOLDERED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Soldered",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Soldered",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Soldered",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Soldered",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Soldered",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Soldered",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SWEDGE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Swedge",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Swedge",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Swedge",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Swedge",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Swedge",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Swedge",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "THREADED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Threaded",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Threaded",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Threaded",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Threaded",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Threaded",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Threaded",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WELDED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Welded",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Welded",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Welded",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Welded",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Welded",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Welded",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NONE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "None",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "None",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConnectionSubType",
+      "definition": "The physical port connection subtype that further qualifies the ConnectionType.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続サブタイプ",
+          "definition": "物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "연결 서브방식",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalDiameter",
+      "definition": "The nominal diameter of the pipe connection.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "呼び径",
+          "definition": "配管の呼び径。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "호칭 지름",
+          "definition": "배관의 호칭 지름"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "InnerDiameter",
+      "definition": "The actual inner diameter of the pipe.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "内径",
+          "definition": "配管の実内径。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "내경",
+          "definition": "배고나이 열매 내경"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OuterDiameter",
+      "definition": "The actual outer diameter of the pipe.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "外径",
+          "definition": "配管の実外径。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "외경",
+          "definition": "배관의 실제 외경"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Temperature",
+      "definition": "Temperature of the fluid.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "温度",
+          "definition": "流体の温度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "온도",
+          "definition": "유체 온도"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "VolumetricFlowRate",
+      "definition": "The volumetric flow rate of the fluid.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "体積流量",
+          "definition": "流体の体積流量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "체적 유량",
+          "definition": "유체이 체적 유량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MassFlowRate",
+      "definition": "The mass flow rate of the fluid.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "質量流量",
+          "definition": "流体の質量流量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "질량 유량",
+          "definition": "유체의 질량 유량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FlowCondition",
+      "definition": "Defines the flow condition as a percentage of the cross-sectional area.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "流動状態",
+          "definition": "断面の充満率で流動状態を定義する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "유동상태",
+          "definition": "단면 책임 비율로 유동상태 정의"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Velocity",
+      "definition": "The velocity of the fluid.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "速度",
+          "definition": "流体の速度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "속도",
+          "definition": "유체의 속도"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Pressure",
+      "definition": "The pressure of the fluid.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuidAsIfcGlobalId": "",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "圧力",
+          "definition": "流体の圧力。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "압력",
+          "definition": "유체의 압력"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "?",
+        "UpperBoundValue": "?",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

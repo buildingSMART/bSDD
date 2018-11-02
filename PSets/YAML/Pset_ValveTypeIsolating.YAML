@@ -1,0 +1,195 @@
+﻿name: 'Pset_ValveTypeIsolating'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcHvacDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Valve that is used to isolate system components.Note that an isolating valve is constrained to have a 2 port  pattern.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcValveType
+  type: IfcValveType/ISOLATING
+properties:
+- name: IsNormallyOpen
+  definition: If TRUE, the valve is normally open. If FALSE is is normally closed.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ce28c7bdc6e445d7893623a590ddda99
+  legacyGuidAsIfcGlobalId: 3EACUznkH5ruas8wMGtTgP
+  localizations:
+  - language: ja-JP
+    name: 'ノーマルオープン'
+    definition: 'もし、TRUEなら弁はノーマルオープン、もし、FALSEならノーマルクローズ'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsolatingPurpose
+  definition: Defines the purpose for which the isolating valve is used since the way in which the valve is identified as an isolating valve may be in the context of its use. Note that unless there is a contextual name for the isolating valve (as in the case of a Landing Valve on a rising fire main), then the value assigned shoulkd be UNSET.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 3befda2f08754c518d7cc051d7628cae
+  legacyGuidAsIfcGlobalId: 0xxzel27LCKOrym57NOeok
+  localizations:
+  - language: ja-JP
+    name: '遮断目的'
+    definition: 'その使用の前後関係から遮断弁として使われる弁があるようであれば、遮断弁が使われている理由を定義します。注：燃え上がる火の上のランディング弁のように、遮断弁に前後関係から別な名前がつく場合は別です。このようなとき値は定まらない。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_IsolatingPurpose
+    enumerationValues:
+    - name: LANDING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Landing'
+        definition: ''
+      - language: en-EN
+        name: 'Landing'
+        definition: ''
+      - language: es-ES
+        name: 'Landing'
+        definition: ''
+      - language: fr-FR
+        name: 'Landing'
+        definition: ''
+      - language: ja-JP
+        name: 'Landing'
+        definition: ''
+      - language: ru-RU
+        name: 'Landing'
+        definition: ''
+    - name: LANDINGWITHPRESSUREREGULATION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Landingwithpressureregulation'
+        definition: ''
+      - language: en-EN
+        name: 'Landingwithpressureregulation'
+        definition: ''
+      - language: es-ES
+        name: 'Landingwithpressureregulation'
+        definition: ''
+      - language: fr-FR
+        name: 'Landingwithpressureregulation'
+        definition: ''
+      - language: ja-JP
+        name: 'Landingwithpressureregulation'
+        definition: ''
+      - language: ru-RU
+        name: 'Landingwithpressureregulation'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

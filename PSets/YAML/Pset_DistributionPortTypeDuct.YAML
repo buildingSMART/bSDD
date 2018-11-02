@@ -1,0 +1,758 @@
+﻿name: 'Pset_DistributionPortTypeDuct'
+ifcVersion:
+  version: 4.0.0.0
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Duct port occurrence attributes attached to an instance of IfcDistributionPort.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDistributionPort/AIRCONDITIONING
+  type: IfcDistributionPort/AIRCONDITIONING
+properties:
+- name: ConnectionType
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: d2b239a61db14c2ab423e3d735a6de1f
+  legacyGuidAsIfcGlobalId: 3IiZcc7R5CAhGZuzSrfjuV
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_DuctConnectionType
+    enumerationValues:
+    - name: BEADEDSLEEVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Beadedsleeve'
+        definition: ''
+      - language: en-EN
+        name: 'Beadedsleeve'
+        definition: ''
+      - language: es-ES
+        name: 'Beadedsleeve'
+        definition: ''
+      - language: fr-FR
+        name: 'Beadedsleeve'
+        definition: ''
+      - language: ja-JP
+        name: 'Beadedsleeve'
+        definition: ''
+      - language: ru-RU
+        name: 'Beadedsleeve'
+        definition: ''
+    - name: COMPRESSION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Compression'
+        definition: ''
+      - language: en-EN
+        name: 'Compression'
+        definition: ''
+      - language: es-ES
+        name: 'Compression'
+        definition: ''
+      - language: fr-FR
+        name: 'Compression'
+        definition: ''
+      - language: ja-JP
+        name: 'Compression'
+        definition: ''
+      - language: ru-RU
+        name: 'Compression'
+        definition: ''
+    - name: CRIMP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Crimp'
+        definition: ''
+      - language: en-EN
+        name: 'Crimp'
+        definition: ''
+      - language: es-ES
+        name: 'Crimp'
+        definition: ''
+      - language: fr-FR
+        name: 'Crimp'
+        definition: ''
+      - language: ja-JP
+        name: 'Crimp'
+        definition: ''
+      - language: ru-RU
+        name: 'Crimp'
+        definition: ''
+    - name: DRAWBAND
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Drawband'
+        definition: ''
+      - language: en-EN
+        name: 'Drawband'
+        definition: ''
+      - language: es-ES
+        name: 'Drawband'
+        definition: ''
+      - language: fr-FR
+        name: 'Drawband'
+        definition: ''
+      - language: ja-JP
+        name: 'Drawband'
+        definition: ''
+      - language: ru-RU
+        name: 'Drawband'
+        definition: ''
+    - name: DRIVESLIP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Driveslip'
+        definition: ''
+      - language: en-EN
+        name: 'Driveslip'
+        definition: ''
+      - language: es-ES
+        name: 'Driveslip'
+        definition: ''
+      - language: fr-FR
+        name: 'Driveslip'
+        definition: ''
+      - language: ja-JP
+        name: 'Driveslip'
+        definition: ''
+      - language: ru-RU
+        name: 'Driveslip'
+        definition: ''
+    - name: FLANGED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Flanged'
+        definition: ''
+      - language: en-EN
+        name: 'Flanged'
+        definition: ''
+      - language: es-ES
+        name: 'Flanged'
+        definition: ''
+      - language: fr-FR
+        name: 'Flanged'
+        definition: ''
+      - language: ja-JP
+        name: 'Flanged'
+        definition: ''
+      - language: ru-RU
+        name: 'Flanged'
+        definition: ''
+    - name: OUTSIDESLEEVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: en-EN
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: es-ES
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: fr-FR
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: ja-JP
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: ru-RU
+        name: 'Outsidesleeve'
+        definition: ''
+    - name: SLIPON
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Slipon'
+        definition: ''
+      - language: en-EN
+        name: 'Slipon'
+        definition: ''
+      - language: es-ES
+        name: 'Slipon'
+        definition: ''
+      - language: fr-FR
+        name: 'Slipon'
+        definition: ''
+      - language: ja-JP
+        name: 'Slipon'
+        definition: ''
+      - language: ru-RU
+        name: 'Slipon'
+        definition: ''
+    - name: SOLDERED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Soldered'
+        definition: ''
+      - language: en-EN
+        name: 'Soldered'
+        definition: ''
+      - language: es-ES
+        name: 'Soldered'
+        definition: ''
+      - language: fr-FR
+        name: 'Soldered'
+        definition: ''
+      - language: ja-JP
+        name: 'Soldered'
+        definition: ''
+      - language: ru-RU
+        name: 'Soldered'
+        definition: ''
+    - name: SSLIP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Sslip'
+        definition: ''
+      - language: en-EN
+        name: 'Sslip'
+        definition: ''
+      - language: es-ES
+        name: 'Sslip'
+        definition: ''
+      - language: fr-FR
+        name: 'Sslip'
+        definition: ''
+      - language: ja-JP
+        name: 'Sslip'
+        definition: ''
+      - language: ru-RU
+        name: 'Sslip'
+        definition: ''
+    - name: STANDINGSEAM
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Standingseam'
+        definition: ''
+      - language: en-EN
+        name: 'Standingseam'
+        definition: ''
+      - language: es-ES
+        name: 'Standingseam'
+        definition: ''
+      - language: fr-FR
+        name: 'Standingseam'
+        definition: ''
+      - language: ja-JP
+        name: 'Standingseam'
+        definition: ''
+      - language: ru-RU
+        name: 'Standingseam'
+        definition: ''
+    - name: SWEDGE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Swedge'
+        definition: ''
+      - language: en-EN
+        name: 'Swedge'
+        definition: ''
+      - language: es-ES
+        name: 'Swedge'
+        definition: ''
+      - language: fr-FR
+        name: 'Swedge'
+        definition: ''
+      - language: ja-JP
+        name: 'Swedge'
+        definition: ''
+      - language: ru-RU
+        name: 'Swedge'
+        definition: ''
+    - name: WELDED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Welded'
+        definition: ''
+      - language: en-EN
+        name: 'Welded'
+        definition: ''
+      - language: es-ES
+        name: 'Welded'
+        definition: ''
+      - language: fr-FR
+        name: 'Welded'
+        definition: ''
+      - language: ja-JP
+        name: 'Welded'
+        definition: ''
+      - language: ru-RU
+        name: 'Welded'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'None'
+        definition: ''
+      - language: en-EN
+        name: 'None'
+        definition: ''
+      - language: es-ES
+        name: 'None'
+        definition: ''
+      - language: fr-FR
+        name: 'None'
+        definition: ''
+      - language: ja-JP
+        name: 'None'
+        definition: ''
+      - language: ru-RU
+        name: 'None'
+        definition: ''
+    - name: USERDEFINED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Userdefined'
+        definition: ''
+      - language: en-EN
+        name: 'Userdefined'
+        definition: ''
+      - language: es-ES
+        name: 'Userdefined'
+        definition: ''
+      - language: fr-FR
+        name: 'Userdefined'
+        definition: ''
+      - language: ja-JP
+        name: 'Userdefined'
+        definition: ''
+      - language: ru-RU
+        name: 'Userdefined'
+        definition: ''
+    - name: NOTDEFINED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Notdefined'
+        definition: ''
+      - language: en-EN
+        name: 'Notdefined'
+        definition: ''
+      - language: es-ES
+        name: 'Notdefined'
+        definition: ''
+      - language: fr-FR
+        name: 'Notdefined'
+        definition: ''
+      - language: ja-JP
+        name: 'Notdefined'
+        definition: ''
+      - language: ru-RU
+        name: 'Notdefined'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConnectionSubType
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 15d916dd1d7340bc81481576f81d2a08
+  legacyGuidAsIfcGlobalId: 0LsHRT7ND0l8585NRu7Ie8
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalWidth
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a28e9f226e204a909976810e633a45f4
+  legacyGuidAsIfcGlobalId: 2YZfyYRY1Aa9bsWGvZEaNq
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalHeight
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 90a90418907a41809a527bb1ef069005
+  legacyGuidAsIfcGlobalId: 2GgGGOa7f1W9fIUx7l1f05
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: DryBulbTemperature
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 0e28d2efe50346319664f17e52ebd118
+  legacyGuidAsIfcGlobalId: 0EADBlvGD6CPPayNvIwz4O
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WetBulbTemperature
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 46e6cb4f3ecb4016b3d952ec26836ce6
+  legacyGuidAsIfcGlobalId: 16vijFFij05hFPKkmcWspc
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VolumetricFlowRate
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 639c0067eb444ed8b9d177247c1f1cc2
+  legacyGuidAsIfcGlobalId: 1Zd01dwqHEsBdHToHy7np2
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Velocity
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 26538518abf6475ba1562ce731d7975e
+  legacyGuidAsIfcGlobalId: 0cKuKOg$P7Mw5MBESnrvTU
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Pressure
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 7583cd7c5ea74d109e2b6ad6d0dafa4b
+  legacyGuidAsIfcGlobalId: 1rWyryNgTD49uhQjRGslfB
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

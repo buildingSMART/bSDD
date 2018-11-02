@@ -1,0 +1,1683 @@
+﻿{
+  "name": "Pset_DistributionPortTypeCable",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "Cable port occurrence attributes attached to an instance of IfcDistributionPort.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcDistributionPort/ELECTRICAL",
+      "type": "IfcDistributionPort/ELECTRICAL"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ConnectionType",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "1b51a5433f934fa7a5031c877bb4b429",
+      "legacyGuidAsIfcGlobalId": "0RKQL3FvDFfwK378TxjBGf",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続タイプ",
+          "definition": "物理ポート接続：- ACPLUG: AC プラグ- DCPLUG: DC プラグ- CRIMP: 裸線"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_DistributionPortElectricalType",
+        "enumerationValues": [
+          {
+            "name": "ACPLUG",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Acplug",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Acplug",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Acplug",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Acplug",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Acplug",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Acplug",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DCPLUG",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dcplug",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dcplug",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dcplug",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dcplug",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dcplug",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dcplug",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CRIMPCOAXIAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Crimpcoaxial",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Crimpcoaxial",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Crimpcoaxial",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Crimpcoaxial",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Crimpcoaxial",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Crimpcoaxial",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "RJ",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Rj",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Rj",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "RADIO",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Radio",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Radio",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Radio",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Radio",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Radio",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Radio",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DIN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Din",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Din",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Din",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Din",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Din",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Din",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DSUB",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dsub",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dsub",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dsub",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dsub",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dsub",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dsub",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DVI",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Dvi",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Dvi",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Dvi",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Dvi",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Dvi",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Dvi",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "EIAJ",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Eiaj",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Eiaj",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Eiaj",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Eiaj",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Eiaj",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Eiaj",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "HDMI",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Hdmi",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Hdmi",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Hdmi",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Hdmi",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Hdmi",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Hdmi",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "RCA",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Rca",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Rca",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Rca",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Rca",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Rca",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Rca",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TRS",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Trs",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Trs",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Trs",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Trs",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Trs",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Trs",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "XLR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Xlr",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Xlr",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Xlr",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Xlr",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Xlr",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Xlr",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Notknown",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unset",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConnectionSubtype",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "4a16661be73843fb99eb498a99015880",
+      "legacyGuidAsIfcGlobalId": "1A5cORvpX3_vdhIOgP0LY0",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続サブタイプ",
+          "definition": "物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：- ACプラグ: A, B, C, D, E, F, EF, G, H, I, J, K, L, M"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConnectionGender",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "5a9b13be92d1458583634e056c138f30",
+      "legacyGuidAsIfcGlobalId": "1QcnE_aj55XODZJWLi4uym",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "接続ジェンダー",
+          "definition": "形状的な接続ジェンダー（オス、メス、その他、未知、未設定）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_DistributionPortGender",
+        "enumerationValues": [
+          {
+            "name": "MALE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Male",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Male",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "FEMALE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Female",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Female",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Notknown",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unset",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConductorFunction",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "03d981504bcf4f748b31dee8065d5959",
+      "legacyGuidAsIfcGlobalId": "03sO5GIyzFT8intkW6NLbP",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "電線種類",
+          "definition": "電気負荷と連結する電線種類。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_ConductorFunctionEnum",
+        "enumerationValues": [
+          {
+            "name": "PHASE_L1",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Phase_l1",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Phase_l1",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Phase_l1",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Phase_l1",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Phase_l1",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Phase_l1",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PHASE_L2",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Phase_l2",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Phase_l2",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Phase_l2",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Phase_l2",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Phase_l2",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Phase_l2",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PHASE_L3",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Phase_l3",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Phase_l3",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Phase_l3",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Phase_l3",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Phase_l3",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Phase_l3",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NEUTRAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Neutral",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Neutral",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Neutral",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Neutral",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Neutral",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Neutral",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PROTECTIVEEARTH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Protectiveearth",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Protectiveearth",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Protectiveearth",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Protectiveearth",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Protectiveearth",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Protectiveearth",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PROTECTIVEEARTHNEUTRAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Protectiveearthneutral",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Protectiveearthneutral",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Protectiveearthneutral",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Protectiveearthneutral",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Protectiveearthneutral",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Protectiveearthneutral",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Notknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Notknown",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unset",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unset",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CurrentContent3rdHarmonic",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "eaf80f92e6df4c29a18086e89bea20e9",
+      "legacyGuidAsIfcGlobalId": "3g_0_IvjzCAQ60XkYRwY3f",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "第３高調波電流と相電流の比",
+          "definition": "第３高調波電流と相電流の比率。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveRatioMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Current",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "5207092197274e99917bfdcae2efea80",
+      "legacyGuidAsIfcGlobalId": "1I1maXboTEcP5x$ShYx_g0",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "電流",
+          "definition": "実電流と動作可能範囲。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Voltage",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "87b7f6b294b5447ab7edaa0e2b690e7d",
+      "legacyGuidAsIfcGlobalId": "27j$QobBL4UhVjgWuhQGvz",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "電圧",
+          "definition": "実電圧と動作可能範囲。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Power",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "437e2945ded040998d45ae3d9d9770db",
+      "legacyGuidAsIfcGlobalId": "13VYb5tj10cOr5hZsTbt3R",
+      "localizations": [
+        {
+          "language": "ja-JP",
+          "name": "電力",
+          "definition": "実電力と動作可能範囲。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "PSet2YamlConverter.UnitType",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Protocols",
+      "definition": "PSet2YamlConverter.PropertyType",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "1592daba2e144952a71949248bab50cc",
+      "legacyGuidAsIfcGlobalId": "0LajgwBXH9KgSPIIIBgr3C",
+      "localizations": [
+        {
+          "language": "ja",
+          "name": "プロトコル",
+          "definition": "OSIのオープンシステム相互接続用基本プロトコル(ISO 7498)：1. 物理層; 2.データリンク層; 3. ネットワーク層; 4. トランスポート層; 5. セッション層; 6.プレゼンテーション層 ; 7. アプリケーション層. 例: 3:IP, 4:TCP, 5:HTTP"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyListValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2383 @@
+﻿{
+  "name": "Pset_Risk",
+  "ifcVersion": {
+    "version": "4.0.0.0",
+    "schema": "IfcSharedFacilitiesElements"
+  },
+  "ifdGuid": "",
+  "legacyGuid": "",
+  "definition": "An indication of exposure to mischance, peril, menace, hazard or loss. HISTORY: Extended in IFC2x3There are various types of risk that may be encountered and there may be several instances of Pset_Risk associated in an instance of an IfcProcess.Specification of this property set incorporates the values of the Incom risk analysis matrix (satisfying AS/NZS 4360) together with additional identified requirements.",
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "en-EN",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcProcess",
+      "type": "IfcTypeProcess"
+    },
+    {
+      "name": "IfcTypeProcess",
+      "type": "IfcTypeProcess"
+    }
+  ],
+  "properties": [
+    {
+      "name": "RiskType",
+      "definition": "Identifies the predefined types of risk from which the type required may be set.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "181fd2b5c970446882b103b7b8f48f70",
+      "legacyGuidAsIfcGlobalId": "0O7zAroN14Q8An0xUuz8zm",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_RiskType",
+        "enumerationValues": [
+          {
+            "name": "BUSINESS",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Business",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Business",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Business",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Business",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Business",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Business",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "HAZARD",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Hazard",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Hazard",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Hazard",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Hazard",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Hazard",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Hazard",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "HEALTHANDSAFETY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Healthandsafety",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Healthandsafety",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Healthandsafety",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Healthandsafety",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Healthandsafety",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Healthandsafety",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "INSURANCE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Insurance",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Insurance",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Insurance",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Insurance",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Insurance",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Insurance",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NatureOfRisk",
+      "definition": "An indication of the generic nature of the risk that might be encountered. NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "4f60a052a5f84bfba2295417eee6b211",
+      "legacyGuidAsIfcGlobalId": "1FOA1IfVXB_w8fL1Vkvh8H",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SubNatureOfRisk1",
+      "definition": "A first subsidiary value that might be assigned to designate a more specific type of risk.NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "4dbadf19dc394f808c7ffd80e68ffb7d",
+      "legacyGuidAsIfcGlobalId": "1DkjyPt3bFW8n$$O3cZ$jz",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SubNatureOfRisk2",
+      "definition": "A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "376f7f5c595c45aaa388b99b6408d6f8",
+      "legacyGuidAsIfcGlobalId": "0tRtzSMLn5ggE8kPja2DRu",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RiskCause",
+      "definition": "A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "8cfd74da29ee433fa52453ba85861331",
+      "legacyGuidAsIfcGlobalId": "2C$NJQAUv3FwKaKxg5XXCn",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcText",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AssessmentOfRisk",
+      "definition": "Likelihood of risk event occurring.Note  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "1839b665124d4245850025d605f6ee20",
+      "legacyGuidAsIfcGlobalId": "0OERPb4ar2HOK09TO5zkuW",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_RiskAssessment",
+        "enumerationValues": [
+          {
+            "name": "ALMOSTCERTAIN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Almostcertain",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Almostcertain",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Almostcertain",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Almostcertain",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Almostcertain",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Almostcertain",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VERYLIKELY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Verylikely",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Verylikely",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Verylikely",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Verylikely",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Verylikely",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Verylikely",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "LIKELY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Likely",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Likely",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Likely",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Likely",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Likely",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Likely",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VERYPOSSIBLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Verypossible",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Verypossible",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Verypossible",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Verypossible",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Verypossible",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Verypossible",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "POSSIBLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Possible",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Possible",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Possible",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Possible",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Possible",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Possible",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SOMEWHATPOSSIBLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Somewhatpossible",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Somewhatpossible",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Somewhatpossible",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Somewhatpossible",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Somewhatpossible",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Somewhatpossible",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNLIKELY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unlikely",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unlikely",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unlikely",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unlikely",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unlikely",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unlikely",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VERYUNLIKELY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Veryunlikely",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Veryunlikely",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Veryunlikely",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Veryunlikely",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Veryunlikely",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Veryunlikely",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "RARE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Rare",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Rare",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Rare",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Rare",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Rare",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Rare",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RiskConsequence",
+      "definition": "Indicates the level of severity of the consequences that the risk would have in case it happens.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "d3f6ed590cb74f63a56238bc29be8530",
+      "legacyGuidAsIfcGlobalId": "3JzkrP3BTFOwLYEBmfleKm",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_RiskConsequence",
+        "enumerationValues": [
+          {
+            "name": "CATASTROPHIC",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Catastrophic",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Catastrophic",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Catastrophic",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Catastrophic",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Catastrophic",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Catastrophic",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SEVERE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Severe",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Severe",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Severe",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Severe",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Severe",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Severe",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MAJOR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Major",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Major",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Major",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Major",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Major",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Major",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CONSIDERABLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Considerable",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MODERATE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Moderate",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SOME",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Some",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MINOR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Minor",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Minor",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Minor",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Minor",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Minor",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Minor",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VERYLOW",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Verylow",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "INSIGNIFICANT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Insignificant",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RiskRating",
+      "definition": "A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "a5de8375512642ba8fc1470a5c6c4aaf",
+      "legacyGuidAsIfcGlobalId": "2bteDrKIP2ke$1HmfSR4gl",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_RiskRating",
+        "enumerationValues": [
+          {
+            "name": "CRITICAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Critical",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Critical",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Critical",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Critical",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Critical",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Critical",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VERYHIGH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Veryhigh",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Veryhigh",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Veryhigh",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Veryhigh",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Veryhigh",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Veryhigh",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "HIGH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "High",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "High",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "High",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "High",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "High",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "High",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CONSIDERABLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Considerable",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Considerable",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MODERATE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Moderate",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Moderate",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SOME",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Some",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Some",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "LOW",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Low",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Low",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Low",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Low",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Low",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Low",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "VERYLOW",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Verylow",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Verylow",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "INSIGNIFICANT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Insignificant",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Insignificant",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RiskOwner",
+      "definition": "A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "9c26cd3e9ef740339cdd754e47fd5536",
+      "legacyGuidAsIfcGlobalId": "2S9iq_dlT0CvpTTKv7$LKs",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "listName": "PEnum_RiskOwner",
+        "enumerationValues": [
+          {
+            "name": "DESIGNER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Designer",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Designer",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Designer",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Designer",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Designer",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Designer",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "SPECIFIER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Specifier",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Specifier",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Specifier",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Specifier",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Specifier",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Specifier",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CONSTRUCTOR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Constructor",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Constructor",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Constructor",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Constructor",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Constructor",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Constructor",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "INSTALLER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Installer",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Installer",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Installer",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Installer",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Installer",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Installer",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MAINTAINER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Maintainer",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Maintainer",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Maintainer",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Maintainer",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Maintainer",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Maintainer",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Other",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Other",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "en-EN",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "Unknown",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "Unknown",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AffectsSurroundings",
+      "definition": "Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).For example, the process of painting would affect all the people in the vicinity of the process.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "d2bd4b452fab4b5fbacd645e09d91634",
+      "legacyGuidAsIfcGlobalId": "3IlKj5BwjBNxhDP5u9sHOq",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PreventiveMeassures",
+      "definition": "Identifies preventive measures to be taken to mitigate risk.",
+      "dictionaryIdentifier": "http://bsdd.buildingsmart.org/IFC",
+      "ifdGuid": "",
+      "legacyGuid": "029366c95b4041709e1fbb2974dcb865",
+      "legacyGuidAsIfcGlobalId": "02asR9Mq11S9uVkobqtBXb",
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-EN",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyListValue": {
+        "dataType": "IfcText",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

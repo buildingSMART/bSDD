@@ -1,0 +1,72 @@
+﻿name: 'Pset_SensorTypeConductanceSensor'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcBuildingControlsDomain
+ifdGuid: ''
+legacyGuid: ''
+definition: 'A device that senses or detects electrical conductance.  HISTORY: Added in IFC4.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSensorType
+  type: IfcSensorType/CONDUCTANCESENSOR
+properties:
+- name: SetPointConductance
+  definition: The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuidAsIfcGlobalId: ''
+  localizations:
+  - language: ja-JP
+    name: '電気伝導率設定値'
+    definition: '感知される電気伝導率。セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。'
+  - language: ko-KR
+    name: '전기 전도율 설정'
+    definition: '감지되는 전기 전도율. 세트 포인트 값을 넣으려면, IfcPropertyBoundedValue.SetPointValue를 사용하십시오.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: '?'
+    UpperBoundValue: '?'
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

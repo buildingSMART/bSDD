@@ -1,0 +1,727 @@
+﻿name: 'Pset_DistributionPortTypePipe'
+ifcVersion:
+  version: 4.0.0.0
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Pipe port occurrence attributes attached to an instance of IfcDistributionPort.'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDistributionPort/CHEMICAL
+  type: IfcDistributionPort/CHEMICAL
+properties:
+- name: ConnectionType
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: f842a89d8ec5470cb8ba7fec7338c6e3
+  legacyGuidAsIfcGlobalId: 3uGgYTZiL73BYwV_npECRZ
+  localizations:
+  - language: ja-JP
+    name: '接続タイプ'
+    definition: '物理ポート接続：- Coaxial: 同軸コネクタ.- DSub: D-Subコネクタ.- Infrared:赤外線- RJ: 登録済みジャック.- Radio: 無線- USB: USB.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_PipeEndStyleTreatment
+    enumerationValues:
+    - name: BRAZED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Brazed'
+        definition: ''
+      - language: en-EN
+        name: 'Brazed'
+        definition: ''
+      - language: es-ES
+        name: 'Brazed'
+        definition: ''
+      - language: fr-FR
+        name: 'Brazed'
+        definition: ''
+      - language: ja-JP
+        name: 'Brazed'
+        definition: ''
+      - language: ru-RU
+        name: 'Brazed'
+        definition: ''
+    - name: COMPRESSION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Compression'
+        definition: ''
+      - language: en-EN
+        name: 'Compression'
+        definition: ''
+      - language: es-ES
+        name: 'Compression'
+        definition: ''
+      - language: fr-FR
+        name: 'Compression'
+        definition: ''
+      - language: ja-JP
+        name: 'Compression'
+        definition: ''
+      - language: ru-RU
+        name: 'Compression'
+        definition: ''
+    - name: FLANGED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Flanged'
+        definition: ''
+      - language: en-EN
+        name: 'Flanged'
+        definition: ''
+      - language: es-ES
+        name: 'Flanged'
+        definition: ''
+      - language: fr-FR
+        name: 'Flanged'
+        definition: ''
+      - language: ja-JP
+        name: 'Flanged'
+        definition: ''
+      - language: ru-RU
+        name: 'Flanged'
+        definition: ''
+    - name: GROOVED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Grooved'
+        definition: ''
+      - language: en-EN
+        name: 'Grooved'
+        definition: ''
+      - language: es-ES
+        name: 'Grooved'
+        definition: ''
+      - language: fr-FR
+        name: 'Grooved'
+        definition: ''
+      - language: ja-JP
+        name: 'Grooved'
+        definition: ''
+      - language: ru-RU
+        name: 'Grooved'
+        definition: ''
+    - name: OUTSIDESLEEVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: en-EN
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: es-ES
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: fr-FR
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: ja-JP
+        name: 'Outsidesleeve'
+        definition: ''
+      - language: ru-RU
+        name: 'Outsidesleeve'
+        definition: ''
+    - name: SOLDERED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Soldered'
+        definition: ''
+      - language: en-EN
+        name: 'Soldered'
+        definition: ''
+      - language: es-ES
+        name: 'Soldered'
+        definition: ''
+      - language: fr-FR
+        name: 'Soldered'
+        definition: ''
+      - language: ja-JP
+        name: 'Soldered'
+        definition: ''
+      - language: ru-RU
+        name: 'Soldered'
+        definition: ''
+    - name: SWEDGE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Swedge'
+        definition: ''
+      - language: en-EN
+        name: 'Swedge'
+        definition: ''
+      - language: es-ES
+        name: 'Swedge'
+        definition: ''
+      - language: fr-FR
+        name: 'Swedge'
+        definition: ''
+      - language: ja-JP
+        name: 'Swedge'
+        definition: ''
+      - language: ru-RU
+        name: 'Swedge'
+        definition: ''
+    - name: THREADED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Threaded'
+        definition: ''
+      - language: en-EN
+        name: 'Threaded'
+        definition: ''
+      - language: es-ES
+        name: 'Threaded'
+        definition: ''
+      - language: fr-FR
+        name: 'Threaded'
+        definition: ''
+      - language: ja-JP
+        name: 'Threaded'
+        definition: ''
+      - language: ru-RU
+        name: 'Threaded'
+        definition: ''
+    - name: WELDED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Welded'
+        definition: ''
+      - language: en-EN
+        name: 'Welded'
+        definition: ''
+      - language: es-ES
+        name: 'Welded'
+        definition: ''
+      - language: fr-FR
+        name: 'Welded'
+        definition: ''
+      - language: ja-JP
+        name: 'Welded'
+        definition: ''
+      - language: ru-RU
+        name: 'Welded'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'None'
+        definition: ''
+      - language: en-EN
+        name: 'None'
+        definition: ''
+      - language: es-ES
+        name: 'None'
+        definition: ''
+      - language: fr-FR
+        name: 'None'
+        definition: ''
+      - language: ja-JP
+        name: 'None'
+        definition: ''
+      - language: ru-RU
+        name: 'None'
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unset'
+        definition: ''
+      - language: en-EN
+        name: 'Unset'
+        definition: ''
+      - language: es-ES
+        name: 'Unset'
+        definition: ''
+      - language: fr-FR
+        name: 'Unset'
+        definition: ''
+      - language: ja-JP
+        name: 'Unset'
+        definition: ''
+      - language: ru-RU
+        name: 'Unset'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConnectionSubType
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: df1d39774bb44a8d96c833058af039e0
+  legacyGuidAsIfcGlobalId: 3V7JbtIxHAZPR8CmMAy3dW
+  localizations:
+  - language: ja-JP
+    name: '接続サブタイプ'
+    definition: '物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：- DSub: DA15, DB25, DC37, DD50, DE9, DE15 - Radio: IEEE802.11g, IEEE802.11n- RJ: 4P4C, 6P2C, 8P8C - USB: A, B, MiniA, MiniB, MicroA, MicroB'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalDiameter
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: ac9d798031fc44e1828a2cc76ae5d86c
+  legacyGuidAsIfcGlobalId: 2idNc0CVn4uOAABCTgvTXi
+  localizations:
+  - language: ja-JP
+    name: '呼び径'
+    definition: '配管の呼び径。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: InnerDiameter
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: fcd3dc22fdfd4ea084f200be83155aa3
+  legacyGuidAsIfcGlobalId: 3yqzmY$VrEe8Jo0Bw35LgZ
+  localizations:
+  - language: ja-JP
+    name: '内径'
+    definition: '配管の実内径。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: OuterDiameter
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 4d18569df1264f3baceb2da495f1dfda
+  legacyGuidAsIfcGlobalId: 1D65QTyIPFEwphBQILyT$Q
+  localizations:
+  - language: ja-JP
+    name: '外径'
+    definition: '配管の実外径。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Temperature
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b6cb7483a65d4bd5ac6551b080116323
+  legacyGuidAsIfcGlobalId: 2sotI3fbrBrQnbKR204MCZ
+  localizations:
+  - language: ja-JP
+    name: '温度'
+    definition: '流体の温度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VolumetricFlowRate
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: b4252ef25858465d840e3539db7eed5e
+  legacyGuidAsIfcGlobalId: 2q9IxoM5X6NOGEDJdRVkrU
+  localizations:
+  - language: ja-JP
+    name: '体積流量'
+    definition: '流体の体積流量。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MassFlowRate
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a3db7690009f42a988a9f5683b29eb8f
+  legacyGuidAsIfcGlobalId: 2ZstQG09z2gOYfzMWxAUkF
+  localizations:
+  - language: ja-JP
+    name: '質量流量'
+    definition: '流体の質量流量。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FlowCondition
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: a09f286511e94d0f939193c2e0155921
+  legacyGuidAsIfcGlobalId: 2WdoXb4UbD3vEHayBW5LaX
+  localizations:
+  - language: ja-JP
+    name: '流動状態'
+    definition: '断面の充満率で流動状態を定義する。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Velocity
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 7faf6c2ffbd64304b38859166e006c4a
+  legacyGuidAsIfcGlobalId: 1$hsml_zP31BE8MHPk06nA
+  localizations:
+  - language: ja-JP
+    name: '速度'
+    definition: '流体の速度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Pressure
+  definition: PSet2YamlConverter.PropertyType
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: cc4abc86f21d4ee3a86d3815019c5ab3
+  legacyGuidAsIfcGlobalId: 3CIho6yXrEuwXjE1K1d5gp
+  localizations:
+  - language: ja-JP
+    name: '圧力'
+    definition: '流体の圧力。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: PSet2YamlConverter.UnitType
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

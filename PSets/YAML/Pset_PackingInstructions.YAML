@@ -1,0 +1,275 @@
+﻿name: 'Pset_PackingInstructions'
+ifcVersion:
+  version: 4.0.0.0
+  schema: IfcSharedMgmtElements
+ifdGuid: ''
+legacyGuid: ''
+definition: 'Packing instructions are specific instructions relating to the packing that is required for an artifact in the event of a move (or transport).'
+localizations:
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-EN
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcTask/MOVE
+  type: ''
+properties:
+- name: PackingCareType
+  definition: 'Identifies the predefined types of care that may be required when handling the artefact during a move where:Fragile: artefact may be broken during a move through careless handling.HandleWithCare: artefact may be damaged during a move through careless handling.'
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 772620dee13549a88ee23d487130b054
+  legacyGuidAsIfcGlobalId: 1t9Y3UuJL9g8xYFKXnCB1K
+  localizations:
+  - language: ja-JP
+    name: '荷造り注意タイプ'
+    definition: '引越しの最中の品物の取り扱いに要求される、あらかじめ定義されている注意タイプの識別子：Fragile: 注意深い取り扱いをしないと壊れる品物。HandleWithCare: 注意深い取り扱いでしないと損害を受ける品物。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    listName: PEnum_PackingCareType
+    enumerationValues:
+    - name: FRAGILE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Fragile'
+        definition: ''
+      - language: en-EN
+        name: 'Fragile'
+        definition: ''
+      - language: es-ES
+        name: 'Fragile'
+        definition: ''
+      - language: fr-FR
+        name: 'Fragile'
+        definition: ''
+      - language: ja-JP
+        name: 'Fragile'
+        definition: ''
+      - language: ru-RU
+        name: 'Fragile'
+        definition: ''
+    - name: HANDLEWITHCARE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Handlewithcare'
+        definition: ''
+      - language: en-EN
+        name: 'Handlewithcare'
+        definition: ''
+      - language: es-ES
+        name: 'Handlewithcare'
+        definition: ''
+      - language: fr-FR
+        name: 'Handlewithcare'
+        definition: ''
+      - language: ja-JP
+        name: 'Handlewithcare'
+        definition: ''
+      - language: ru-RU
+        name: 'Handlewithcare'
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Other'
+        definition: ''
+      - language: en-EN
+        name: 'Other'
+        definition: ''
+      - language: es-ES
+        name: 'Other'
+        definition: ''
+      - language: fr-FR
+        name: 'Other'
+        definition: ''
+      - language: ja-JP
+        name: 'Other'
+        definition: ''
+      - language: ru-RU
+        name: 'Other'
+        definition: ''
+    - name: UNKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: 'Unknown'
+        definition: ''
+      - language: en-EN
+        name: 'Unknown'
+        definition: ''
+      - language: es-ES
+        name: 'Unknown'
+        definition: ''
+      - language: fr-FR
+        name: 'Unknown'
+        definition: ''
+      - language: ja-JP
+        name: 'Unknown'
+        definition: ''
+      - language: ru-RU
+        name: 'Unknown'
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WrappingMaterial
+  definition: Special requirements for material used to wrap an artefact.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 889032efee554ec6bdb47014e386b4fa
+  legacyGuidAsIfcGlobalId: 28a3BlxbLEnhsqS1JZXhJw
+  localizations:
+  - language: ja-JP
+    name: '包装材料'
+    definition: '品物の包装に使用される材料に関する特記事項。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ContainerMaterial
+  definition: Special requirements for material used to contain an artefact.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 28373469faa54d528b0276f185c126f2
+  legacyGuidAsIfcGlobalId: 0eDpHf_gLDKei2Tl65mIRo
+  localizations:
+  - language: ja-JP
+    name: 'コンテナー材料'
+    definition: '品物の収容するのに使用される材料に関する特記事項。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SpecialInstructions
+  definition: Special instructions for packing.
+  dictionaryIdentifier: http://bsdd.buildingsmart.org/IFC
+  ifdGuid: ''
+  legacyGuid: 75a75299503b437c97df095689f1c383
+  legacyGuidAsIfcGlobalId: 1rfrAPK3j3V9VV2LQ9ySE3
+  localizations:
+  - language: ja-JP
+    name: '特記事項'
+    definition: '荷造りに関する特記事項。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-EN
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
