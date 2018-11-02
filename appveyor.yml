@@ -11,12 +11,12 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 before_build:
-  - nuget restore "Tools\PSet2YamlConverter\PSet2YamlConverter.sln"
+  - nuget restore "PSets\Tools\PSet2YamlConverter\PSet2YamlConverter.sln"
 build:
-  project: Tools\PSet2YamlConverter\PSet2YamlConverter.sln
+  project: PSets\Tools\PSet2YamlConverter\PSet2YamlConverter.sln
   verbosity: minimal
 artifacts:
-- path: Tools\PSet2YamlConverter\PSet2YamlConverter\bin\$(configuration)
+- path: PSets\Tools\PSet2YamlConverter\PSet2YamlConverter\bin\$(configuration)
   name: PSet2YamlConverter
   
 #---------------------------------------#
@@ -31,7 +31,7 @@ environment:
     secure: WYN/eo4TYe5gfE1sRt2Ugw==
   
 on_finish:
-  - ps: '& "C:\projects\psets\Tools\ConvertAndPublishPSets.ps1"'
+  - ps: '& "C:\projects\bSDD\PSets\Tools\ConvertAndPublishPSets.ps1"'
   - git config --global credential.helper store
   - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "$($env:gh_email)"
