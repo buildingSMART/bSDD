@@ -1,8 +1,8 @@
-$BaseFolder = "C:\projects\psets"
+$BaseFolder = "C:\projects\bSDD\PSets"
 $PSet2YamlConverterExe="$BaseFolder\Tools\PSet2YamlConverter\PSet2YamlConverter\bin\Release\PSet2YamlConverter.exe"
-$SourceFolderXml = "C:\projects\psets\XML"
-$TargetFolderYaml = "C:\projects\psets\YAML"
-$TargetFolderJson = "C:\projects\psets\JSON"
+$SourceFolderXml = "$BaseFolder\XML"
+$TargetFolderYaml = "$BaseFolder\YAML"
+$TargetFolderJson = "$BaseFolder\JSON"
 $ExitCode=0
 Write-Host "++++++++++++++++++++++++++++++++++++++"
 Write-Host Transforming now...
