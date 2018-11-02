@@ -3,7 +3,7 @@
 
 # PSets - Property Set Extension of the IFC schema
 
-Just for testing, Do not use. This is an repo, where I test, how the PSets could be presentend and maintainted with Git/GitHub. Nothing official.
+Just for testing, Do not use. This is an repo, where we test, how the PSets could be presentend and maintainted with Git/GitHub.
 
 # Schema Specifications
 Official releases of the PSets are listed here. PSets releases add semantics to the [IFC schema](https://github.com/buildingSMART/IFC).
