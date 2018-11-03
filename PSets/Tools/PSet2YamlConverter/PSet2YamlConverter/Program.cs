@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PSet2YamlConverter
 {
@@ -15,11 +16,13 @@ namespace PSet2YamlConverter
             string sourceFolderXml = args[0];
             string targetFolderYaml = args[1];
             string targetFolderJson = args[2];
+            string targetFolderResx = args[3];
             log.Info($"Converting the PSets from this source folder: {sourceFolderXml}");
             log.Info($"Into YAML files in this target folder: {targetFolderYaml}");
             log.Info($"Into JSON files in this target folder: {targetFolderJson}");
+            log.Info($"Into Resx files in this target folder: {targetFolderResx}");
 
-            Converter converter = new Converter(sourceFolderXml, targetFolderYaml, targetFolderJson, true);
+            Converter converter = new Converter(sourceFolderXml, targetFolderYaml, targetFolderJson, targetFolderResx, true);
 
             log.Info($"Successfully finished - Be happy with your Open BIM");
         }

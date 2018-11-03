@@ -22,7 +22,7 @@ namespace PSet2YamlConverter
 
         private List<string> StandardLanguages = new List<string>
             {
-                "en-EN",
+                "en-GB",
                 "es-ES",
                 "de-DE",
                 "fr-FR",
@@ -38,8 +38,7 @@ namespace PSet2YamlConverter
         private int numberOfProperties;
         private int numberOfPropertiesWithbSDDGuid;
 
-
-        public Converter(string sourceFolderXml,string targetFolderYaml, string targetFolderJson, bool checkBSDD = false)
+        public Converter(string sourceFolderXml,string targetFolderYaml, string targetFolderJson, string targetFolderResx, bool checkBSDD = false)
         {
             CheckBSDD = checkBSDD;
             _bsdd = new Bsdd();
@@ -137,8 +136,7 @@ namespace PSet2YamlConverter
 
                 string targetFileYaml = sourceFile.Replace("xml", "YAML").Replace(sourceFolderXml, targetFolderYaml);
                 string targetFileJson = sourceFile.Replace("xml", "json").Replace(sourceFolderXml, targetFolderJson);
-                //log.Info($"   Writing {targetFileYaml.Replace(targetFolderYaml + @"\", string.Empty)}");
-                //log.Info($"   Writing {targetFileJson.Replace(targetFolderJson + @"\", string.Empty)}");
+                string targetFileResx = sourceFile.Replace("xml", "resx").Replace(sourceFolderXml, targetFolderResx);
 
                 var ScalarStyleSingleQuoted = new YamlMemberAttribute()
                 {
@@ -176,6 +174,11 @@ namespace PSet2YamlConverter
                     Console.Write("   ERROR!");
                     log.Info(ex.Message);
                 }
+
+
+                ResxWriter resx = new ResxWriter(targetFileResx);
+                resx.Write(propertySet,StandardLanguages);
+                log.Info("The PSet was saved as RESX file");
             }
             log.Info($"Number of PSets:                 {numberOfPsets}");
             log.Info($"   with not resolved bSDD Guid:  {numberOfPsetsWithbSDDGuid}");

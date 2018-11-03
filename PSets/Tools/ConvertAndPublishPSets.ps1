@@ -3,10 +3,11 @@ $PSet2YamlConverterExe="$BaseFolder\Tools\PSet2YamlConverter\PSet2YamlConverter\
 $SourceFolderXml = "$BaseFolder\XML"
 $TargetFolderYaml = "$BaseFolder\YAML"
 $TargetFolderJson = "$BaseFolder\JSON"
+$TargetFolderResx = "$BaseFolder\RESX"
 $ExitCode=0
 Write-Host "++++++++++++++++++++++++++++++++++++++"
 Write-Host Transforming now...
-& $PSet2YamlConverterExe "$SourceFolderXml" "$TargetFolderYaml" "$TargetFolderJson"
+& $PSet2YamlConverterExe "$SourceFolderXml" "$TargetFolderYaml" "$TargetFolderJson" "$TargetFolderResx "
 if ($LastExitCode -eq '0') 
 { 
  Write-Host "OK: Transformation is successfull" -ForegroundColor Green
