@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PSet2YamlConverter
+namespace PSetManager
 {
     class Program
     {

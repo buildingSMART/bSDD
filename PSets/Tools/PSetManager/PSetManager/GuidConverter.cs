@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PSet2YamlConverter
+namespace PSetManager
 {
     public static class GuidConverter
     {

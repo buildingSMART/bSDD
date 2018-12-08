@@ -14,7 +14,7 @@ using System.Xml.Serialization;
 using bsDD.NET;
 using bsDD.NET.Model.Objects;
 
-namespace PSet2YamlConverter
+namespace PSetManager
 {
     class Converter
     {

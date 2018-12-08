@@ -1,5 +1,5 @@
 $BaseFolder = "C:\projects\bSDD\PSets"
-$PSet2YamlConverterExe="$BaseFolder\Tools\PSet2YamlConverter\PSet2YamlConverter\bin\Release\PSet2YamlConverter.exe"
+$PSetManagerExe="$BaseFolder\Tools\PSetManager\PSetManager\bin\Release\PSetManager.exe"
 $SourceFolderXml = "$BaseFolder\XML"
 $TargetFolderYaml = "$BaseFolder\YAML"
 $TargetFolderJson = "$BaseFolder\JSON"
@@ -7,7 +7,7 @@ $TargetFolderResx = "$BaseFolder\RESX"
 $ExitCode=0
 Write-Host "++++++++++++++++++++++++++++++++++++++"
 Write-Host Transforming now...
-& $PSet2YamlConverterExe "$SourceFolderXml" "$TargetFolderYaml" "$TargetFolderJson" "$TargetFolderResx "
+& $PSetManagerExe "$SourceFolderXml" "$TargetFolderYaml" "$TargetFolderJson" "$TargetFolderResx "
 if ($LastExitCode -eq '0') 
 { 
  Write-Host "OK: Transformation is successfull" -ForegroundColor Green

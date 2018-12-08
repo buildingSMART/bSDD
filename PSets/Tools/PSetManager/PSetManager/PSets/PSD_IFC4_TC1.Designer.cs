@@ -5,7 +5,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #pragma warning disable
-namespace PSet2YamlConverter
+namespace PSetManager
 {
     using System;
     using System.Diagnostics;

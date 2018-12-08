@@ -1,5 +1,5 @@
 #---------------------------------------#
-#  Build the PSet2YamlConverter.exe     #
+#  Build the PSetManager.exe     #
 #---------------------------------------#
 version: 1.0.{build}
 image: Visual Studio 2017
@@ -11,18 +11,18 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 before_build:
-  - nuget restore "PSets\Tools\PSet2YamlConverter\PSet2YamlConverter.sln"
+  - nuget restore "PSets\Tools\PSetManager\PSetManager.sln"
 build:
-  project: PSets\Tools\PSet2YamlConverter\PSet2YamlConverter.sln
+  project: PSets\Tools\PSetManager\PSetManager.sln
   verbosity: minimal
 artifacts:
-- path: PSets\Tools\PSet2YamlConverter\PSet2YamlConverter\bin\$(configuration)
-  name: PSet2YamlConverter
-- path: PSets\Tools\PSet2YamlConverter\PSet2YamlConverter\bin\$(configuration)\PSet2YamlConverter.log
+- path: PSets\Tools\PSetManager\PSetManager\bin\$(configuration)
+  name: PSetManager
+- path: PSets\Tools\PSetManager\PSetManager\bin\$(configuration)\PSetManager.log
   name: PSet2YamlConverterLog
   
 #---------------------------------------#
-#    Run the PSet2YamlConverter.exe     #
+#    Run the PSetManager.exe     #
 #---------------------------------------#
 environment:
   access_token:

@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using YamlDotNet.Serialization.EventEmitters;
 using YamlDotNet.Core;
 
-namespace PSet2YamlConverter
+namespace PSetManager
 {
     public static class Utils
     {
