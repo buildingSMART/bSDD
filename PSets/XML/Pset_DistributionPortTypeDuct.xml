@@ -11,23 +11,6 @@
 	<PropertyDefs>
 		<PropertyDef ifdguid="d2b239a61db14c2ab423e3d735a6de1f">
 			<Name>ConnectionType</Name>
-			<Definition>The end-style treatment of the duct port:
-
-BEADEDSLEEVE: Beaded Sleeve. 
-COMPRESSION: Compression. 
-CRIMP: Crimp. 
-DRAWBAND: Drawband. 
-DRIVESLIP: Drive slip. 
-FLANGED: Flanged. 
-OUTSIDESLEEVE: Outside Sleeve. 
-SLIPON: Slipon. 
-SOLDERED: Soldered. 
-SSLIP: S-Slip. 
-STANDINGSEAM: Standing seam. 
-SWEDGE: Swedge. 
-WELDED: Welded. 
-OTHER: Another type of end-style has been applied.
-NONE: No end-style has been applied.</Definition>
 			<PropertyType>
 				<TypePropertyEnumeratedValue>
 					<EnumList name="PEnum_DuctConnectionType">
@@ -51,6 +34,22 @@ NONE: No end-style has been applied.</Definition>
 					</EnumList>
 				</TypePropertyEnumeratedValue>
 			</PropertyType>
+			<Definition>The end-style treatment of the duct port:
+BEADEDSLEEVE: Beaded Sleeve. 
+COMPRESSION: Compression. 
+CRIMP: Crimp. 
+DRAWBAND: Drawband. 
+DRIVESLIP: Drive slip. 
+FLANGED: Flanged. 
+OUTSIDESLEEVE: Outside Sleeve. 
+SLIPON: Slipon. 
+SOLDERED: Soldered. 
+SSLIP: S-Slip. 
+STANDINGSEAM: Standing seam. 
+SWEDGE: Swedge. 
+WELDED: Welded. 
+OTHER: Another type of end-style has been applied.
+NONE: No end-style has been applied.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
@@ -67,29 +66,28 @@ NONE: No end-style has been applied.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="a28e9f226e204a909976810e633a45f4">
 			<Name>NominalWidth</Name>
-			<Definition>The nominal width or diameter of the duct connection.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcPositiveLengthMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The nominal width or diameter of the duct connection.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="90a90418907a41809a527bb1ef069005">
 			<Name>NominalHeight</Name>
-			<Definition>The nominal height of the duct connection.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcPositiveLengthMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The nominal height of the duct connection.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="0e28d2efe50346319664f17e52ebd118">
 			<Name>DryBulbTemperature</Name>
-			<Definition>Dry bulb temperature of the air.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -99,12 +97,12 @@ NONE: No end-style has been applied.</Definition>
 					<DataType type="IfcThermodynamicTemperatureMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>Dry bulb temperature of the air.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="46e6cb4f3ecb4016b3d952ec26836ce6">
 			<Name>WetBulbTemperature</Name>
-			<Definition>Wet bulb temperature of the air.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -114,12 +112,12 @@ NONE: No end-style has been applied.</Definition>
 					<DataType type="IfcThermodynamicTemperatureMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>Wet bulb temperature of the air.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="639c0067eb444ed8b9d177247c1f1cc2">
 			<Name>VolumetricFlowRate</Name>
-			<Definition>The volumetric flow rate of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -129,12 +127,12 @@ NONE: No end-style has been applied.</Definition>
 					<DataType type="IfcVolumetricFlowRateMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The volumetric flow rate of the fluid.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="26538518abf6475ba1562ce731d7975e">
 			<Name>Velocity</Name>
-			<Definition>The velocity of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -144,12 +142,12 @@ NONE: No end-style has been applied.</Definition>
 					<DataType type="IfcLinearVelocityMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The velocity of the fluid.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="7583cd7c5ea74d109e2b6ad6d0dafa4b">
 			<Name>Pressure</Name>
-			<Definition>The pressure of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -159,6 +157,7 @@ NONE: No end-style has been applied.</Definition>
 					<DataType type="IfcPressureMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The pressure of the fluid.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>

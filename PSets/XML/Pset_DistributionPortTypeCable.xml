@@ -11,11 +11,6 @@
 	<PropertyDefs>
 		<PropertyDef ifdguid="1b51a5433f934fa7a5031c877bb4b429">
 			<Name>ConnectionType</Name>
-			<Definition>The physical port connection:
-
-ACPLUG: AC plug
-DCPLUG: DC plug
-CRIMP: bare wire</Definition>
 			<PropertyType>
 				<TypePropertyEnumeratedValue>
 					<EnumList name="PEnum_DistributionPortElectricalType">
@@ -38,6 +33,10 @@ CRIMP: bare wire</Definition>
 					</EnumList>
 				</TypePropertyEnumeratedValue>
 			</PropertyType>
+			<Definition>The physical port connection:
+ACPLUG: AC plug
+DCPLUG: DC plug
+CRIMP: bare wire</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">接続タイプ</NameAlias>
 			</NameAliases>
@@ -74,7 +73,6 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="5a9b13be92d1458583634e056c138f30">
 			<Name>ConnectionGender</Name>
-			<Definition>The physical connection gender.</Definition>
 			<PropertyType>
 				<TypePropertyEnumeratedValue>
 					<EnumList name="PEnum_DistributionPortGender">
@@ -86,6 +84,7 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 					</EnumList>
 				</TypePropertyEnumeratedValue>
 			</PropertyType>
+			<Definition>The physical connection gender.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">接続ジェンダー</NameAlias>
 			</NameAliases>
@@ -120,12 +119,12 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="eaf80f92e6df4c29a18086e89bea20e9">
 			<Name>CurrentContent3rdHarmonic</Name>
-			<Definition>The ratio between the third harmonic current and the phase current.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcPositiveRatioMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The ratio between the third harmonic current and the phase current.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">第３高調波電流と相電流の比</NameAlias>
 			</NameAliases>
@@ -135,7 +134,6 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="5207092197274e99917bfdcae2efea80">
 			<Name>Current</Name>
-			<Definition>The actual current and operable range.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -145,6 +143,7 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 					<DataType type="IfcElectricCurrentMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The actual current and operable range.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">電流</NameAlias>
 			</NameAliases>
@@ -154,7 +153,6 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="87b7f6b294b5447ab7edaa0e2b690e7d">
 			<Name>Voltage</Name>
-			<Definition>The actual voltage and operable range.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -164,6 +162,7 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 					<DataType type="IfcElectricVoltageMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The actual voltage and operable range.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">電圧</NameAlias>
 			</NameAliases>
@@ -173,7 +172,6 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="437e2945ded040998d45ae3d9d9770db">
 			<Name>Power</Name>
-			<Definition>The actual power and operable range.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -183,6 +181,7 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 					<DataType type="IfcPowerMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The actual power and operable range.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">電力</NameAlias>
 			</NameAliases>
@@ -192,7 +191,6 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="1592daba2e144952a71949248bab50cc">
 			<Name>Protocols</Name>
-			<Definition>For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP</Definition>
 			<PropertyType>
 				<TypePropertyListValue>
 					<ListValue>
@@ -200,6 +198,7 @@ TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
 					</ListValue>
 				</TypePropertyListValue>
 			</PropertyType>
+			<Definition>For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP</Definition>
 			<NameAliases>
 				<NameAlias lang="ja">プロトコル</NameAlias>
 			</NameAliases>
