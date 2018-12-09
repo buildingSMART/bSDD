@@ -6,9 +6,12 @@ $TargetFolderJson = "$BaseFolder\JSON"
 $TargetFolderResx = "$BaseFolder\RESX"
 $ExitCode=0
 Write-Host "++++++++++++++++++++++++++++++++++++++"
-Write-Host Transforming now...
+Write-Host SourceFolderXml : $SourceFolderXml
+Write-Host TargetFolderYaml : $TargetFolderYaml
+Write-Host TargetFolderJson : $TargetFolderJson
+Write-Host TargetFolderResx : $TargetFolderResx
 
-& $PSetManagerExe -mode ConvertFromXml --folderXml $SourceFolderXml --folderYaml $TargetFolderYaml --folderJson $TargetFolderJson --folderResx $TargetFolderResx
+& $PSetManagerExe --mode ConvertFromXml --folderXml $SourceFolderXml --folderYaml $TargetFolderYaml --folderJson $TargetFolderJson --folderResx $TargetFolderResx
 
 if ($LastExitCode -eq '0') 
 { 
