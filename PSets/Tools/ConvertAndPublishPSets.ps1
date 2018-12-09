@@ -7,7 +7,9 @@ $TargetFolderResx = "$BaseFolder\RESX"
 $ExitCode=0
 Write-Host "++++++++++++++++++++++++++++++++++++++"
 Write-Host Transforming now...
-& $PSetManagerExe "$SourceFolderXml" "$TargetFolderYaml" "$TargetFolderJson" "$TargetFolderResx "
+
+& $PSetManagerExe -mode ConvertFromXml --folderXml $SourceFolderXml --folderYaml $TargetFolderYaml --folderJson $TargetFolderJson --folderResx $TargetFolderResx
+
 if ($LastExitCode -eq '0') 
 { 
  Write-Host "OK: Transformation is successfull" -ForegroundColor Green

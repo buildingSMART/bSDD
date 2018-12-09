@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using CommandLine;
 
 namespace PSetManager
 {
@@ -13,18 +13,31 @@ namespace PSetManager
             log.Info($"A tool by the community of buildingSMART International");
             log.Info($"The home of PSet Manager is https://github.com/buildingsmart/bSDD");
 
-            string sourceFolderXml = args[0];
-            string targetFolderYaml = args[1];
-            string targetFolderJson = args[2];
-            string targetFolderResx = args[3];
-            log.Info($"Converting the PSets from this source folder: {sourceFolderXml}");
-            log.Info($"Into YAML files in this target folder: {targetFolderYaml}");
-            log.Info($"Into JSON files in this target folder: {targetFolderJson}");
-            log.Info($"Into Resx files in this target folder: {targetFolderResx}");
+            Parser.Default.ParseArguments<CommandLineOptions>(args)
+               .WithParsed<CommandLineOptions>(options =>
+               {
+                   switch (options.mode)
+                   {
+                        case "ConvertFromXml":
+                           log.Info($"Converting the PSets from this source folder: {options.folderXml}");
+                           if (options.folderYaml !=null)
+                              log.Info($"Into YAML files in this target folder: {options.folderYaml}");
+                           if (options.folderJson != null)
+                               log.Info($"Into JSON files in this target folder: {options.folderJson}");
+                           if (options.folderResx != null)
+                               log.Info($"Into Resx files in this target folder: {options.folderResx}");
 
-            Converter converter = new Converter(sourceFolderXml, targetFolderYaml, targetFolderJson, targetFolderResx, true);
+                           ConverterXml2Yaml converterXml2Yaml = new ConverterXml2Yaml(options.folderXml, options.folderYaml, options.folderJson, options.folderResx, options.checkBSDD);
+                        break;
 
-            log.Info($"Successfully finished - Be happy with your Open BIM");
+                       case "ConvertFromYAML":
+                           log.Info($"Converting the PSets from this source folder: {options.folderYaml}");
+                           // To be implemented
+                           break;
+                   }
+               });
+
+            log.Info($"I am finished - Be happy with your Open BIM");
         }
     }
 }
