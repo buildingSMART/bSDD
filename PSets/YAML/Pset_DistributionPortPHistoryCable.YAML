@@ -31,7 +31,7 @@ applicableIfcClasses:
   type: IfcDistributionPort/ELECTRICAL
 properties:
 - name: Current
-  definition: PSetManager.PropertyType
+  definition: Log of electrical current.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -76,7 +76,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: Voltage
-  definition: PSetManager.PropertyType
+  definition: Log of electrical voltage.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -121,7 +121,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: RealPower
-  definition: PSetManager.PropertyType
+  definition: Real power.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -166,7 +166,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: ReactivePower
-  definition: PSetManager.PropertyType
+  definition: Reactive power.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -211,7 +211,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: ApparentPower
-  definition: PSetManager.PropertyType
+  definition: Apparent power.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -256,7 +256,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: PowerFactor
-  definition: PSetManager.PropertyType
+  definition: Power factor.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -301,7 +301,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: DataTransmitted
-  definition: PSetManager.PropertyType
+  definition: For data ports, captures log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -349,7 +349,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: DataReceived
-  definition: PSetManager.PropertyType
+  definition: For data ports, captures log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet

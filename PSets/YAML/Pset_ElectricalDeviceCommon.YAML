@@ -31,7 +31,7 @@ applicableIfcClasses:
   type: IfcDistributionElement
 properties:
 - name: RatedCurrent
-  definition: PSetManager.PropertyType
+  definition: The current that a device is designed to handle.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -75,7 +75,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: RatedVoltage
-  definition: PSetManager.PropertyType
+  definition: The voltage that a device is designed to handle.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -119,7 +119,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: NominalFrequencyRange
-  definition: PSetManager.PropertyType
+  definition: The upper and lower limits of frequency for which the operation of the device is certified.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -163,7 +163,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: PowerFactor
-  definition: PSetManager.PropertyType
+  definition: The ratio between the rated electrical power and the product of the rated current and rated voltage
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -206,7 +206,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: ConductorFunction
-  definition: PSetManager.PropertyType
+  definition: Function of a line conductor to which a device  is intended to be connected where L1, L2 and L3 represent the phase lines according to IEC 60446 notation (sometimes phase lines may be referenced by color [Red, Blue, Yellow] or by number [1, 2, 3] etc). Protective Earth is sometimes also known as CPC or common protective conductor. Note that for an electrical device, a set of line conductor functions may be applied.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -314,7 +314,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: NumberOfPoles
-  definition: PSetManager.PropertyType
+  definition: The number of live lines that is intemnded to be handled by the device.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -357,7 +357,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: HasProtectiveEarth
-  definition: PSetManager.PropertyType
+  definition: Indicates whether the electrical device has a protective earth connection (=TRUE) or not (= FALSE).
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -400,7 +400,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: IP_Code
-  definition: PSetManager.PropertyType
+  definition: IEC 60529 (1989) Classification of degrees of protection provided by enclosures (IP Code).
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet
@@ -443,7 +443,7 @@ properties:
     dateOfLastChange: 2018-01-01T00:00:00.0000000
     languageOfCreator: en-EN
 - name: InsulationStandardClass
-  definition: PSetManager.PropertyType
+  definition: Insulation standard classes provides basic protection information against electric shock. Defines levels of insulation required in terms of constructional requirements (creepage and clearance distances) and electrical requirements (compliance with electric strength tests). Basic insulation is considered to be shorted under single fault conditions. The actual values required depend on the working voltage to which the insulation is subjected, as well as other factors. Also indicates whether the electrical device has a protective earth connection.
   dictionaryReference:
     dictionaryIdentifier: http://bsdd.buildingsmart.org
     dictionaryNamespace: PSet

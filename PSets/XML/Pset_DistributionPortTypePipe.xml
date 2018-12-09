@@ -11,21 +11,6 @@
 	<PropertyDefs>
 		<PropertyDef ifdguid="f842a89d8ec5470cb8ba7fec7338c6e3">
 			<Name>ConnectionType</Name>
-			<Definition>The end-style treatment of the pipe port:
-
-BRAZED: Brazed. 
-COMPRESSION: Compression. 
-FLANGED: Flanged. 
-GROOVED: Grooved. 
-OUTSIDESLEEVE: Outside Sleeve. 
-SOLDERED: Soldered. 
-SWEDGE: Swedge. 
-THREADED: Threaded. 
-WELDED: Welded. 
-OTHER: Another type of end-style has been applied.
-NONE: No end-style has been applied.
-USERDEFINED: User-defined port connection type. 
-NOTDEFINED: Undefined port connection type.</Definition>
 			<PropertyType>
 				<TypePropertyEnumeratedValue>
 					<EnumList name="PEnum_PipeEndStyleTreatment">
@@ -44,6 +29,21 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					</EnumList>
 				</TypePropertyEnumeratedValue>
 			</PropertyType>
+			<Definition>The end-style treatment of the pipe port:
+
+BRAZED: Brazed. 
+COMPRESSION: Compression. 
+FLANGED: Flanged. 
+GROOVED: Grooved. 
+OUTSIDESLEEVE: Outside Sleeve. 
+SOLDERED: Soldered. 
+SWEDGE: Swedge. 
+THREADED: Threaded. 
+WELDED: Welded. 
+OTHER: Another type of end-style has been applied.
+NONE: No end-style has been applied.
+USERDEFINED: User-defined port connection type. 
+NOTDEFINED: Undefined port connection type.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">接続タイプ</NameAlias>
 			</NameAliases>
@@ -60,12 +60,12 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="df1d39774bb44a8d96c833058af039e0">
 			<Name>ConnectionSubType</Name>
-			<Definition>The physical port connection subtype that further qualifies the ConnectionType.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcLabel"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The physical port connection subtype that further qualifies the ConnectionType.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">接続サブタイプ</NameAlias>
 			</NameAliases>
@@ -80,12 +80,12 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="ac9d798031fc44e1828a2cc76ae5d86c">
 			<Name>NominalDiameter</Name>
-			<Definition>The nominal diameter of the pipe connection.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcPositiveLengthMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The nominal diameter of the pipe connection.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">呼び径</NameAlias>
 			</NameAliases>
@@ -95,12 +95,12 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="fcd3dc22fdfd4ea084f200be83155aa3">
 			<Name>InnerDiameter</Name>
-			<Definition>The actual inner diameter of the pipe.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcPositiveLengthMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The actual inner diameter of the pipe.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">内径</NameAlias>
 			</NameAliases>
@@ -110,12 +110,12 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="4d18569df1264f3baceb2da495f1dfda">
 			<Name>OuterDiameter</Name>
-			<Definition>The actual outer diameter of the pipe.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcPositiveLengthMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The actual outer diameter of the pipe.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">外径</NameAlias>
 			</NameAliases>
@@ -125,7 +125,6 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="b6cb7483a65d4bd5ac6551b080116323">
 			<Name>Temperature</Name>
-			<Definition>Temperature of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -135,6 +134,7 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					<DataType type="IfcThermodynamicTemperatureMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>Temperature of the fluid.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">温度</NameAlias>
 			</NameAliases>
@@ -144,7 +144,6 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="b4252ef25858465d840e3539db7eed5e">
 			<Name>VolumetricFlowRate</Name>
-			<Definition>The volumetric flow rate of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -154,6 +153,7 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					<DataType type="IfcVolumetricFlowRateMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The volumetric flow rate of the fluid.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">体積流量</NameAlias>
 			</NameAliases>
@@ -163,7 +163,6 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="a3db7690009f42a988a9f5683b29eb8f">
 			<Name>MassFlowRate</Name>
-			<Definition>The mass flow rate of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -173,6 +172,7 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					<DataType type="IfcMassFlowRateMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The mass flow rate of the fluid.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">質量流量</NameAlias>
 			</NameAliases>
@@ -182,7 +182,6 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="a09f286511e94d0f939193c2e0155921">
 			<Name>FlowCondition</Name>
-			<Definition>Defines the flow condition as a percentage of the cross-sectional area.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -192,6 +191,7 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					<DataType type="IfcPositiveRatioMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>Defines the flow condition as a percentage of the cross-sectional area.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">流動状態</NameAlias>
 			</NameAliases>
@@ -201,7 +201,6 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="7faf6c2ffbd64304b38859166e006c4a">
 			<Name>Velocity</Name>
-			<Definition>The velocity of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -211,6 +210,7 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					<DataType type="IfcLinearVelocityMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The velocity of the fluid.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">速度</NameAlias>
 			</NameAliases>
@@ -220,7 +220,6 @@ NOTDEFINED: Undefined port connection type.</Definition>
 		</PropertyDef>
 		<PropertyDef ifdguid="cc4abc86f21d4ee3a86d3815019c5ab3">
 			<Name>Pressure</Name>
-			<Definition>The pressure of the fluid.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -230,6 +229,7 @@ NOTDEFINED: Undefined port connection type.</Definition>
 					<DataType type="IfcPressureMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The pressure of the fluid.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">圧力</NameAlias>
 			</NameAliases>

@@ -11,12 +11,12 @@
 	<PropertyDefs>
 		<PropertyDef ifdguid="9fadeb7592de4a228764c24ee4f76b0b">
 			<Name>Current</Name>
-			<Definition>Log of electrical current.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcElectricCurrentMeasure"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>Log of electrical current.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">電流</NameAlias>
 			</NameAliases>
@@ -26,12 +26,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="6fa8730d435442e497527bd9defeb047">
 			<Name>Voltage</Name>
-			<Definition>Log of electrical voltage.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcElectricVoltageMeasure"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>Log of electrical voltage.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">電圧</NameAlias>
 			</NameAliases>
@@ -41,12 +41,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="fbaec68991c14f8fb0c963eb65250f26">
 			<Name>RealPower</Name>
-			<Definition>Real power.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcPowerMeasure"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>Real power.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">有効電力</NameAlias>
 			</NameAliases>
@@ -56,12 +56,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="401dc737009748699b073ef617ef615c">
 			<Name>ReactivePower</Name>
-			<Definition>Reactive power.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcPowerMeasure"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>Reactive power.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">無効電力</NameAlias>
 			</NameAliases>
@@ -71,12 +71,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="af897460248b427685e28b50acfc7106">
 			<Name>ApparentPower</Name>
-			<Definition>Apparent power.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcPowerMeasure"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>Apparent power.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">皮相電力</NameAlias>
 			</NameAliases>
@@ -86,12 +86,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="53e43bcebef54a4096fd8862a450903d">
 			<Name>PowerFactor</Name>
-			<Definition>Power factor.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcRatioMeasure"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>Power factor.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja-JP">パワーファクタ</NameAlias>
 			</NameAliases>
@@ -101,12 +101,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="c1d8b4f5077244d98bb7d96e3b9a3282">
 			<Name>DataTransmitted</Name>
-			<Definition>For data ports, captures log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcText"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>For data ports, captures log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja">発信</NameAlias>
 			</NameAliases>
@@ -116,12 +116,12 @@
 		</PropertyDef>
 		<PropertyDef ifdguid="e72bcd7d84ae42c6b1e3f696451d1e6e">
 			<Name>DataReceived</Name>
-			<Definition>For data ports, captures log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.</Definition>
 			<PropertyType>
 				<TypePropertyReferenceValue reftype="IfcTimeSeries">
 					<DataType type="IfcText"/>
 				</TypePropertyReferenceValue>
 			</PropertyType>
+			<Definition>For data ports, captures log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.</Definition>
 			<NameAliases>
 				<NameAlias lang="ja">受信</NameAlias>
 			</NameAliases>

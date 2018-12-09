@@ -11,7 +11,6 @@
 	<PropertyDefs>
 		<PropertyDef ifdguid="784d9d2144d440b5b30e2ad107609548">
 			<Name>RatedCurrent</Name>
-			<Definition>The current that a device is designed to handle.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -21,12 +20,12 @@
 					<DataType type="IfcElectricCurrentMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The current that a device is designed to handle.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="a2e15fb5e52e49e3b86731401fe07f86">
 			<Name>RatedVoltage</Name>
-			<Definition>The voltage that a device is designed to handle.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -36,12 +35,12 @@
 					<DataType type="IfcElectricVoltageMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The voltage that a device is designed to handle.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="f69a795455c74842825a54711d3b5abc">
 			<Name>NominalFrequencyRange</Name>
-			<Definition>The upper and lower limits of frequency for which the operation of the device is certified.</Definition>
 			<PropertyType>
 				<TypePropertyBoundedValue>
 					<ValueRangeDef>
@@ -51,23 +50,23 @@
 					<DataType type="IfcFrequencyMeasure"/>
 				</TypePropertyBoundedValue>
 			</PropertyType>
+			<Definition>The upper and lower limits of frequency for which the operation of the device is certified.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="cf5234358315441fa6c17c9b65bf62a0">
 			<Name>PowerFactor</Name>
-			<Definition>The ratio between the rated electrical power and the product of the rated current and rated voltage</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcNormalisedRatioMeasure"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The ratio between the rated electrical power and the product of the rated current and rated voltage</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="f936102bd4824b7eb989a5571e353770">
 			<Name>ConductorFunction</Name>
-			<Definition>Function of a line conductor to which a device  is intended to be connected where L1, L2 and L3 represent the phase lines according to IEC 60446 notation (sometimes phase lines may be referenced by color [Red, Blue, Yellow] or by number [1, 2, 3] etc). Protective Earth is sometimes also known as CPC or common protective conductor. Note that for an electrical device, a set of line conductor functions may be applied.</Definition>
 			<PropertyType>
 				<TypePropertyEnumeratedValue>
 					<EnumList name="PEnum_ConductorFunctionEnum">
@@ -77,45 +76,45 @@
 					</EnumList>
 				</TypePropertyEnumeratedValue>
 			</PropertyType>
+			<Definition>Function of a line conductor to which a device  is intended to be connected where L1, L2 and L3 represent the phase lines according to IEC 60446 notation (sometimes phase lines may be referenced by color [Red, Blue, Yellow] or by number [1, 2, 3] etc). Protective Earth is sometimes also known as CPC or common protective conductor. Note that for an electrical device, a set of line conductor functions may be applied.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="4b5b1c80d1df11e1800000215ad4efdf">
 			<Name>NumberOfPoles</Name>
-			<Definition>The number of live lines that is intemnded to be handled by the device.</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcInteger"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>The number of live lines that is intemnded to be handled by the device.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="50b86700d1df11e1800000215ad4efdf">
 			<Name>HasProtectiveEarth</Name>
-			<Definition>Indicates whether the electrical device has a protective earth connection (=TRUE) or not (= FALSE).</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcBoolean"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>Indicates whether the electrical device has a protective earth connection (=TRUE) or not (= FALSE).</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="56ae4800d1df11e1800000215ad4efdf">
 			<Name>IP_Code</Name>
-			<Definition>IEC 60529 (1989) Classification of degrees of protection provided by enclosures (IP Code).</Definition>
 			<PropertyType>
 				<TypePropertySingleValue>
 					<DataType type="IfcLabel"/>
 				</TypePropertySingleValue>
 			</PropertyType>
+			<Definition>IEC 60529 (1989) Classification of degrees of protection provided by enclosures (IP Code).</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>
 		<PropertyDef ifdguid="5d3cbf80d1df11e1800000215ad4efdf">
 			<Name>InsulationStandardClass</Name>
-			<Definition>Insulation standard classes provides basic protection information against electric shock. Defines levels of insulation required in terms of constructional requirements (creepage and clearance distances) and electrical requirements (compliance with electric strength tests). Basic insulation is considered to be shorted under single fault conditions. The actual values required depend on the working voltage to which the insulation is subjected, as well as other factors. Also indicates whether the electrical device has a protective earth connection.</Definition>
 			<PropertyType>
 				<TypePropertyEnumeratedValue>
 					<EnumList name="PEnum_InsulationStandardClass">
@@ -129,6 +128,7 @@
 					</EnumList>
 				</TypePropertyEnumeratedValue>
 			</PropertyType>
+			<Definition>Insulation standard classes provides basic protection information against electric shock. Defines levels of insulation required in terms of constructional requirements (creepage and clearance distances) and electrical requirements (compliance with electric strength tests). Basic insulation is considered to be shorted under single fault conditions. The actual values required depend on the working voltage to which the insulation is subjected, as well as other factors. Also indicates whether the electrical device has a protective earth connection.</Definition>
 			<NameAliases/>
 			<DefinitionAliases/>
 		</PropertyDef>

@@ -77,7 +77,7 @@ namespace PSetManager
             string propertyTypeList = string.Empty;
             string propertyUnitList = string.Empty;
 
-            foreach (string sourceFile in Directory.EnumerateFiles(sourceFolderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_ConstructionResource")))
+            foreach (string sourceFile in Directory.EnumerateFiles(sourceFolderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_DistributionPortPHistoryDuct")))
             {
                 numberOfPsets++;
                 PropertySetDef pSet = PropertySetDef.LoadFromFile(sourceFile);
