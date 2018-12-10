@@ -10,8 +10,10 @@ dictionaryReference:
   legacyGuid: ''
 localizations:
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Heizkessel - allgemeiner Eigenschaftssatz'
+  definition: 'Kesseltyp gemeinsame Attribute.
+
+    SoundLevel Attribut gelöscht im IFC2x2 Pset Addendum: Verwenden Sie stattdessen IfcSoundProperties, PrimaryEnergySource und AuxiliaryEnergySource Attribute gelöscht im IFC2x2 Pset Addendum: Verwenden Sie stattdessen IfcEnergyProperties, IfcFuelProperties, etc.'
 - language: en-GB
   name: ''
   definition: ''
@@ -48,8 +50,8 @@ properties:
     name: '参照記号'
     definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Referenz'
+    definition: 'Referenz-ID für diesen spezifizierten Typ in diesem Projekt (z.B. Typ A-1''), vorausgesetzt, dass es keinen Klassifizierungsbezug zu einem anerkannten Klassifizierungssystem gibt.'
   - language: en-GB
     name: ''
     definition: ''
@@ -90,8 +92,8 @@ properties:
     name: '状態'
     definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Status'
+    definition: 'Status des Elementes, das vorwiegend in Renovierungs- oder Nachrüstungsprojekten verwendet wird: Der Status kann als"Neu"-Element zugewiesen werden, das als Neuzugang entworfen wurde,"Vorhandenes" - Element existiert und bleibt,"Abbruch"-Element existiert, aber abgerissen werden soll,"Temporär"-Element existiert nur temporär (wie eine temporäre Stützkonstruktion).'
   - language: en-GB
     name: ''
     definition: ''
@@ -264,8 +266,8 @@ properties:
     name: '常用圧力'
     definition: '管轄組織により設定されたボイラの常用圧力'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Nenndruck'
+    definition: 'Nenndruckstufe des Kessels, wie sie von der zuständigen Behörde festgelegt wurde.'
   - language: en-GB
     name: ''
     definition: ''
@@ -307,8 +309,8 @@ properties:
     name: '動作モード'
     definition: 'ボイラの動作モードのID　（固定、２段階、比例．．．）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Betriebsmodus'
+    definition: 'Bezeichnet die Betriebsart des Kessels.'
   - language: en-GB
     name: ''
     definition: ''
@@ -459,8 +461,8 @@ properties:
     name: '伝熱面積'
     definition: '容器の伝熱部面積の合計'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Wärmeübertragungsoberfläche'
+    definition: 'Gesamte Wärmeübertragungsfläche des Behälters.'
   - language: en-GB
     name: ''
     definition: ''
@@ -502,8 +504,8 @@ properties:
     name: '設計部分負荷比率'
     definition: '許容部分負荷比範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Nenn-Teillastverhältnis'
+    definition: 'Zulässiger Teillastbereich.'
   - language: en-GB
     name: ''
     definition: ''
@@ -546,8 +548,8 @@ properties:
     name: '入口水温範囲'
     definition: '入口水温範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Wassereinlass - Temperaturbereich'
+    definition: 'Zulässiger Wassereintrittstemperaturbereich.'
   - language: en-GB
     name: ''
     definition: ''
@@ -590,8 +592,8 @@ properties:
     name: '缶内水量'
     definition: '缶内水量'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Wasserspeicherkapazität'
+    definition: 'Wasserspeicherkapazität.'
   - language: en-GB
     name: ''
     definition: ''
@@ -633,8 +635,8 @@ properties:
     name: '給湯タンク有無'
     definition: '給湯用の缶体があればTRUE、（瞬間湯沸かし器のように）ボイラにタンクがなければFALSE'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Speicherwassererwärmer'
+    definition: 'Wenn FALSE, dann ist im Kessel keine Speicherkapazität eingebaut, wie z.B. ein Durchlauferhitzer.'
   - language: en-GB
     name: ''
     definition: ''
@@ -676,8 +678,8 @@ properties:
     name: '部分負荷効率曲線'
     definition: '部分負荷係数の関数としてのボイラ効率　　E=f(部分負荷率）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Teillast-Wirkungsgradverlauf'
+    definition: 'Kesselwirkungsgrad in Abhängigkeit vom Teillastfaktor; E = f (PartialLaodfactor).'
   - language: en-GB
     name: ''
     definition: ''
@@ -725,8 +727,8 @@ properties:
     name: '出口温度範囲'
     definition: '水または蒸気のどちらかの許容出口温度'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Auslasstemperaturbereich'
+    definition: 'Zulässige Austrittstemperatur des Wassers oder des Dampfes.'
   - language: en-GB
     name: ''
     definition: ''
@@ -769,8 +771,8 @@ properties:
     name: '設計エネルギー消費量'
     definition: 'ボイラ最大能力時の設計燃料消費量'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Nennenergieverbrauch'
+    definition: 'Nominale Brennstoffverbrauchsrate, die zur Erzeugung der gesamten Kesselwärmeleistung erforderlich ist.'
   - language: en-GB
     name: ''
     definition: ''
@@ -811,8 +813,8 @@ properties:
     name: 'エネルギ種別'
     definition: '加熱に使用する燃料のエネルギ種類　（石炭、石炭粉末、電気、ガス、油、プロパン、木材、木材チップ、木材ペレット、木粉、他）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Energiequelle'
+    definition: 'Aufzählung, die die Energiequelle oder den Brennstoff definiert, der zur Wärmeerzeugung verwendet wird.'
   - language: en-GB
     name: ''
     definition: ''

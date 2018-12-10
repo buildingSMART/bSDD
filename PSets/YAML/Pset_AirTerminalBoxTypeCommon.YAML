@@ -10,8 +10,8 @@ dictionaryReference:
   legacyGuid: ''
 localizations:
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Volumenstromreglertyp - allgemeiner Eigenschaftssatz'
+  definition: 'Typ des Luftkastens gemeinsame Attribute.'
 - language: en-GB
   name: ''
   definition: ''
@@ -48,8 +48,8 @@ properties:
     name: '参照記号'
     definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Referenz'
+    definition: 'Referenz-ID für diesen spezifizierten Typ in diesem Projekt (z.B. Typ A-1''), vorausgesetzt, dass es keinen Klassifizierungsbezug zu einem anerkannten Klassifizierungssystem gibt.'
   - language: en-GB
     name: ''
     definition: ''
@@ -90,8 +90,8 @@ properties:
     name: '状態'
     definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Status'
+    definition: 'Status des Elementes, das vorwiegend in Renovierungs- oder Nachrüstungsprojekten verwendet wird: Der Status kann als"Neu"-Element zugewiesen werden, das als Neuzugang entworfen wurde,"Vorhandenes" - Element existiert und bleibt,"Abbruch"-Element existiert, aber abgerissen werden soll,"Temporär"-Element existiert nur temporär (wie eine temporäre Stützkonstruktion).'
   - language: en-GB
     name: ''
     definition: ''
@@ -264,8 +264,8 @@ properties:
     name: '風量範囲'
     definition: '送風できる風量の範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Bereich der Luftdurchflussmenge'
+    definition: 'Lieferbarer Luftdurchsatz.'
   - language: en-GB
     name: ''
     definition: ''
@@ -308,8 +308,8 @@ properties:
     name: '空気圧範囲'
     definition: 'ターミナル入り口での許容静圧範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Bereich des Luftdrucks'
+    definition: 'Zulässiger luftstatischer Druckbereich am Eingang des Luftkastens.'
   - language: en-GB
     name: ''
     definition: ''
@@ -352,8 +352,8 @@ properties:
     name: '設計風量範囲'
     definition: '設計風量範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Nenn-Luftdurchflussmenge'
+    definition: 'Nennluftvolumenstrom.'
   - language: en-GB
     name: ''
     definition: ''
@@ -395,8 +395,12 @@ properties:
     name: 'ターミナル形式'
     definition: 'ターミナルボックスの形式。単一ダクト：単一のダクトから、温風または冷風を受け取るデュアルダクト：温風、冷風を分離されたダクトから受け取る'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Art der Anordnung'
+    definition: 'Klemmenkastenanordnung.
+
+      SingleDuct: Klemmenkasten erhält Warm- oder Kaltluft aus einem einzigen Luftzuführungskanal.
+
+      DualDuct: Klemmenkasten erhält Warm- und Kaltluft aus separaten Luftzuführungskanälen.'
   - language: en-GB
     name: ''
     definition: ''
@@ -525,8 +529,8 @@ properties:
     name: '再熱形式'
     definition: 'ターミナルの再熱方式（電気、水コイル、蒸気コイル、ガス加熱．．．）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Wiederaufheizungstyp'
+    definition: 'Anschlusskasten mit Zwischenüberhitzung.'
   - language: en-GB
     name: ''
     definition: ''
@@ -721,8 +725,8 @@ properties:
     name: '消音有無'
     definition: 'ターミナルに消音があるか否か　（あればTRUE)'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Mit Schalldämmung'
+    definition: 'Klemmenkasten mit Schalldämpfer.'
   - language: en-GB
     name: ''
     definition: ''
@@ -764,8 +768,8 @@ properties:
     name: '還気有無'
     definition: 'ターミナルで還気を混合しているか否か（していればTRUE)'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Mit Rückluft'
+    definition: 'Der Klemmenkasten hat Abluft gemischt mit Zuluft aus Kanalarbeiten.'
   - language: en-GB
     name: ''
     definition: ''
@@ -807,8 +811,8 @@ properties:
     name: '送風機有無'
     definition: '内部に送風機を持つ時にTRUE'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Mit Lüfter'
+    definition: 'Der Klemmenkasten hat einen Lüfter im Inneren (Fan powered box).'
   - language: en-GB
     name: ''
     definition: ''
@@ -850,8 +854,8 @@ properties:
     name: '設計入口空気圧'
     definition: '入口静圧の設計値'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Nenn-Einlassluftdruck'
+    definition: 'Nennluftvolumenstrom Einlass statischer Druck.'
   - language: en-GB
     name: ''
     definition: ''
@@ -893,8 +897,8 @@ properties:
     name: '設計ダンパ直径'
     definition: 'ダンパ直径の設計値'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Nenn-Dämpferdurchmesser'
+    definition: 'Klappen-Nenndurchmesser.'
   - language: en-GB
     name: ''
     definition: ''
@@ -936,8 +940,8 @@ properties:
     name: 'ハウジング板厚'
     definition: 'ターミナルのハウジング材の板厚'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Gehäusedicke'
+    definition: 'Luftklemmenkasten Gehäuse Materialstärke.'
   - language: en-GB
     name: ''
     definition: ''
@@ -979,8 +983,8 @@ properties:
     name: '動作温度範囲'
     definition: '許容周囲温度範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Betriebstemperaturbereich'
+    definition: 'Zulässiger Arbeitsbereich der Umgebungslufttemperatur.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1023,8 +1027,8 @@ properties:
     name: '還気風量比'
     definition: '送風量の一部としての許容還気風量'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Zulässiger Rückluft-Anteil'
+    definition: 'Zulässiger Abluftfraktionsbereich als Bruchteil des Abluftvolumenstroms.'
   - language: en-GB
     name: ''
     definition: ''

@@ -10,8 +10,10 @@ dictionaryReference:
   legacyGuid: ''
 localizations:
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Luftauslasstyp - allgemeiner Eigenschaftssatz'
+  definition: 'Air Terminal Typ gemeinsame Attribute.
+
+    SoundLevel Attribut gelöscht in IFC2x2 Pset Addendum: Verwenden Sie stattdessen IfcSoundProperties.'
 - language: en-GB
   name: ''
   definition: ''
@@ -48,8 +50,8 @@ properties:
     name: '参照記号'
     definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Referenz'
+    definition: 'Referenz-ID für diesen spezifizierten Typ in diesem Projekt (z.B. Typ A-1''), vorausgesetzt, dass es keinen Klassifizierungsbezug zu einem anerkannten Klassifizierungssystem gibt.'
   - language: en-GB
     name: ''
     definition: ''
@@ -90,8 +92,8 @@ properties:
     name: '状態'
     definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Status'
+    definition: 'Status des Elementes, das vorwiegend in Renovierungs- oder Nachrüstungsprojekten verwendet wird: Der Status kann als"Neu"-Element zugewiesen werden, das als Neuzugang entworfen wurde,"Vorhandenes" - Element existiert und bleibt,"Abbruch"-Element existiert, aber abgerissen werden soll,"Temporär"-Element existiert nur temporär (wie eine temporäre Stützkonstruktion).'
   - language: en-GB
     name: ''
     definition: ''
@@ -264,8 +266,8 @@ properties:
     name: '形状'
     definition: 'ターミナルの形状（円状、四角形、正方形、スロット他）。　スロット（溝状）は一般的にアスペクト比１０以上が典型的である。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Form'
+    definition: 'Der Schlitz ist typischerweise eine lange, schmale Versorgungseinheit mit einem Seitenverhältnis, das im Allgemeinen größer als 10:1 ist.'
   - language: en-GB
     name: ''
     definition: ''
@@ -438,8 +440,8 @@ properties:
     name: '表面タイプ'
     definition: 'ターミナル表面の形式定義'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Anschlussflächentyp'
+    definition: 'Gibt an, wie die Anschlussfläche eines AirTerminals aufgebaut ist.'
   - language: en-GB
     name: ''
     definition: ''
@@ -678,8 +680,8 @@ properties:
     name: 'スロット巾'
     definition: 'スロット巾'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Schlitzbreite'
+    definition: 'Schlitzweite.'
   - language: en-GB
     name: ''
     definition: ''
@@ -721,8 +723,8 @@ properties:
     name: 'スロット長'
     definition: 'スロット長'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Schlitzlänge'
+    definition: 'Schlitzlänge.'
   - language: en-GB
     name: ''
     definition: ''
@@ -764,8 +766,8 @@ properties:
     name: 'スロット数'
     definition: 'スロット数'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Schlitzanzahl'
+    definition: 'Anzahl der Steckplätze.'
   - language: en-GB
     name: ''
     definition: ''
@@ -807,8 +809,8 @@ properties:
     name: '流れ種類'
     definition: '流れ種類（単一直線、腹式直線、４方向、放射状、SWIRL、DISPLACEMENT、COMPACT他）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Durchflussmuster'
+    definition: 'Strömungsmuster.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1047,8 +1049,8 @@ properties:
     name: '流量範囲'
     definition: '操作されるターミナル内の空気流の範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Luftdurchflussmengenbereich'
+    definition: 'Luftdurchflussbereich, innerhalb dessen der Volumenstromregler für den Betrieb ausgelegt ist.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1091,8 +1093,8 @@ properties:
     name: '温度範囲'
     definition: '操作されるターミナルの温度範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Temperaturbereich'
+    definition: 'Temperaturbereich, in dem der Volumenstromregler für den Betrieb ausgelegt ist.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1135,8 +1137,16 @@ properties:
     name: '吐き出し方向'
     definition: 'ターミナルの吐き出し方向水平：取り付け面と水平に吐き出し垂直：取り付け面から離れた方向に吐き出し調節可能：水平・垂直方向両方に調整'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Auslassrichtung'
+    definition: 'Ausblasrichtung des Luftauslasses.
+
+
+
+      Parallel: Ausblasrichtung parallel zur Montagefläche, die so gestaltet ist, dass die Strömung an der Oberfläche anliegt.
+
+      Perpendicular:  Ausblasrichtung von der Montagefläche weg.
+
+      Adjustable: sowohl parallele als auch senkrechte Ausblasrichtung.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1287,8 +1297,8 @@ properties:
     name: '到達距離'
     definition: 'ターミナルからの水平または垂直の到達距離流量範囲の最大値での吐き出し速度が設定された流速に減速するまでの上限値'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Strahlreichweite'
+    definition: 'Der horizontale oder vertikale Achsabstand, den ein Luftstrom nach dem Verlassen eines AirTerminals zurücklegt, bevor die maximale Strömungsgeschwindigkeit unter isothermen Bedingungen auf eine bestimmte Endgeschwindigkeit am oberen Wert des AirFlowrateRange reduziert wird.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1330,8 +1340,8 @@ properties:
     name: '空気拡散性能指標'
     definition: '空気拡散性能指標（ADPI)は冷房時に使用される。空気速度および気温のいくつかの測定が空間の居住域の隅々でなされる場合、ADPIは有効な草案の温度および空気速度のための仕様に遭遇する測定が得られた位置の割合である。'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Luftdiffusion - Leistungsindex'
+    definition: 'Wenn mehrere Messungen der Luftgeschwindigkeit und der Lufttemperatur in der gesamten Aufenthaltszone eines Raumes durchgeführt werden, ist der ADPI der Prozentsatz der Orte, an denen Messungen durchgeführt wurden, die den Spezifikationen für die effektive Zuglufttemperatur und die Luftgeschwindigkeit entsprechen.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1373,8 +1383,8 @@ properties:
     name: '仕上げ形式'
     definition: 'ターミナルの仕上げの形式（ANNODIZED,塗装他）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Oberfläche - Typ'
+    definition: 'Die Art der Oberflächenbehandlung des Luftauslasses.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1525,8 +1535,8 @@ properties:
     name: '仕上げ色'
     definition: 'ターミナルの仕上げ色'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Oberfläche - Farbe'
+    definition: 'Die Finish-Farbe für den Luftauslass.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1568,8 +1578,8 @@ properties:
     name: '取り付け形式'
     definition: 'ターミナルが天井や壁などに取り付けられる方法。表面、水平、LAYIN他表面：何か（壁・ダクト等）の表面に取り付けFLATFLUSH：表面に水平・Flushni取り付けLAYIN：天井にlay-in形式での取り付け（下がり天井格子など）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Montageart'
+    definition: "Die Art und Weise, wie der Luftterminal an der Decke, an der Wand usw. befestigt wird. \r\n\r\nSurface: an der Oberfläche von etwas (z.B. Wand, Kanal, usw.)."
   - language: en-GB
     name: ''
     definition: ''
@@ -1720,8 +1730,8 @@ properties:
     name: 'コア形式'
     definition: '取り付けられたターミナルのコアの定義方法（SHUTTERBLADE, CURVEDBLADE, REMOVABLE, REVERSIBLEなど）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Kerntyp'
+    definition: 'Kennzeichnet die Art und Weise, wie der Kern des AirTerminals aufgebaut ist.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1916,8 +1926,8 @@ properties:
     name: '水平羽根角度'
     definition: '水平翼の中心線からの水平（ローカル座標のＸ軸）面の羽根角度'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Kerneinstellung - horizontal'
+    definition: 'Grad der horizontalen (in der X-Achse des LocalPlacement) Schaufelblattes, das von der Mittellinie aus gesetzt wird.'
   - language: en-GB
     name: ''
     definition: ''
@@ -1959,8 +1969,8 @@ properties:
     name: '垂直羽根角度'
     definition: '垂直翼の中心線からの垂直（ローカル座標のＹ軸）方向の羽根角度'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Kerneinstellung - vertikal'
+    definition: 'Grad der vertikalen (in der Y-Achse der LocalPlacement) Schaufel, die von der Mittellinie aus gesetzt wird.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2002,8 +2012,8 @@ properties:
     name: '自己制御有無'
     definition: 'もし真なら、ターミナルに自身による温度制御が含まれる'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Mit integrierter Steuerung'
+    definition: 'Wenn TRUE, ist im AirTerminal eine autarke Temperaturregelung enthalten.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2045,8 +2055,8 @@ properties:
     name: '流量制御形式'
     definition: 'ターミナルの構成の一部として含まれる流量制御の形式（ダンパー、ベローズ、無し…）'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Durchflusssteuerung'
+    definition: 'Typ des Volumenstromregelelements, das in die Konstruktion des Volumenstromreglers einbezogen werden kann.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2197,8 +2207,8 @@ properties:
     name: '消音有無'
     definition: 'ターミナルに消音が付いている場合に真'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Mit Schalldämmung'
+    definition: 'Wenn TRUE, hat der Volumenstromregler eine Schalldämpfung.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2240,8 +2250,8 @@ properties:
     name: '断熱有無'
     definition: 'ターミナルに断熱がある場合に真'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Mit thermischer Isolation'
+    definition: 'Wenn TRUE, dann ist die Luftklappe thermisch isoliert.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2283,8 +2293,8 @@ properties:
     name: 'ネック面積'
     definition: 'ターミナルのネック面積'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Halsfläche'
+    definition: 'Halsbereich des Flughafens.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2326,8 +2336,8 @@ properties:
     name: '有効面積'
     definition: 'ターミナルの有効吹き出し範囲'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Effektive Fläche'
+    definition: 'Effektiver Ausblasbereich des Volumenstromreglers.'
   - language: en-GB
     name: ''
     definition: ''
@@ -2369,8 +2379,8 @@ properties:
     name: '流量制御特性'
     definition: '標準の圧力低下における流量制御装置の位置に対する流量'
   - language: de-DE
-    name: ''
-    definition: ''
+    name: 'Luftdurchflussmenge vgl. mit Flusssteuerungselement'
+    definition: 'Luftdurchsatz in Abhängigkeit von der Position des Stellgliedes bei Nenndruckabfall.'
   - language: en-GB
     name: ''
     definition: ''

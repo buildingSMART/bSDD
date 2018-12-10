@@ -10,8 +10,12 @@ dictionaryReference:
   legacyGuid: ''
 localizations:
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Gebäude - allgemeiner Eigenschaftssatz'
+  definition: 'Eigenschaften, die der Definition aller Instanzen von IfcBuilding gemeinsam sind. Bitte beachten Sie, dass mehrere Gebäudeattribute direkt an der IfcBuilding Instanz behandelt werden, die Gebäudenummer (oder der Kurzname) von IfcBuilding.Name, der Gebäudename (oder der Langname) von IfcBuilding.LongName und die Beschreibung (oder Kommentare) von IfcBuilding.Description. Tatsächliche Gebäudemengen wie Gebäudeumfang, Gebäudefläche und -volumen werden von IfcElementQuantity bereitgestellt, die Gebäudeklassifizierung nach Landesbauordnung von IfcClassificationReference.
+
+
+
+    Übersetzt mit www.DeepL.com/Translator'
 - language: en-GB
   name: ''
   definition: ''
@@ -90,7 +94,7 @@ properties:
   localizations:
   - language: de-DE
     name: 'Gebäudekennzeichen'
-    definition: 'Gebäudekennzeichen dieses Gebäudes. Während der Baueingabe ist es das temporäre Kennzeichnen des Bauantrags.'
+    definition: 'Einem Gebäude wird zunächst ein temporärer Identifikator zugeordnet, der bei der Erstellung eines Bauantrags in einen permanenten Identifikator umgewandelt wird, wenn das Gebäude in eine gesetzliche Gebäude- und Liegenschaftsdatenbank eingetragen wird.'
   - language: fr-FR
     name: 'Identifiant Bâtiment'
     definition: 'Un identifiant unique attribué au bâtiment. Un identifiant temporaire est attribué au moment de la programmation. Il est ensuite remplacé par un identifiant permanent lorsque le bâtiment est enregistré dans une base de données de nature règlementaire.'
@@ -180,8 +184,8 @@ properties:
     legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
-    name: 'Konstruktionsart'
-    definition: 'Wesentliche Konstruktionsart des Gebäudes (Stahlbeton, Stahlbau, Holzfachwerk, etc.)'
+    name: 'Art der Ausführung'
+    definition: 'Wesentliche Art der Projektausführung (Neubau, Umbau, Ertüchtigung, etc.)'
   - language: fr-FR
     name: 'Méthode de construction'
     definition: 'Le type d''intervention sur le bâtiment : construction neuve, rénovation, réhabilitation, etc.'
@@ -225,7 +229,7 @@ properties:
     legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
-    name: 'Gebäudeklasse Brandschutz'
+    name: 'Brandschutzklasse'
     definition: 'Zugewiesene Gebäudeklasse nach der nationalen Brandschutzverordnung.'
   - language: fr-FR
     name: 'Classe de protection au feu'
@@ -498,7 +502,7 @@ properties:
   localizations:
   - language: de-DE
     name: 'Geschossanzahl'
-    definition: 'Anzahl der Vollgeschosse des Gebäudes. Dieses Attribute soll nur dann eingefügt werden, wenn keine Geschosse als Objekte, IfcBuildingStorey, beinhaltet sind. Bei Unstimmigkeiten hat die Anzahl der IfcBuildingStorey Objekte Priorität.'
+    definition: 'Beachten Sie, dass, wenn IfcBuilingStorey geltend gemacht wird und die Anzahl der Geschosse in einem Gebäude daraus bestimmt werden kann, dieser Ansatz bevorzugt verwendet werden sollte, um eine Eigenschaft für die Anzahl der Geschosse festzulegen.'
   - language: fr-FR
     name: 'Nombre de niveaux'
     definition: 'Le nombre de niveaux dans un bâtiment, à indiquer lorsque la classe IfcBuildingStorey n''est pas  utilisée. Il est préférable de créer des instances d''IfcBuildingStorey et d''en déduire le nombre de niveaux plutôt que de saisir cette propriété.'
@@ -588,7 +592,7 @@ properties:
     legacyGuidAsIfcGlobalId: ''
   localizations:
   - language: de-DE
-    name: 'letztes Renovierungsjahr'
+    name: 'Letztes Renovierungsjahr'
     definition: 'Jahr der letzten Renovierung des Gebäudes.'
   - language: fr-FR
     name: 'Année de la dernière rénovation'
