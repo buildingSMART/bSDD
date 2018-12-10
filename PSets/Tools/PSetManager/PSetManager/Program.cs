@@ -30,9 +30,14 @@ namespace PSetManager
                            ConverterXml2Yaml converterXml2Yaml = new ConverterXml2Yaml(options.folderXml, options.folderYaml, options.folderJson, options.folderResx, options.checkBSDD);
                         break;
 
-                       case "ConvertFromYAML":
-                           log.Info($"Converting the PSets from this source folder: {options.folderYaml}");
-                           // To be implemented
+                       case "LoadTranslation":
+                           log.Info($"Load the translation into the YAML files from this source table: {options.folderYaml}");
+                           if (options.translationSourceFile != null)
+                               log.Info($"Load translation from {options.translationSourceFile}");
+                           if (options.folderYaml != null)
+                               log.Info($"Save into YAML files in this target folder: {options.folderYaml}");
+                           YamlTranslationWriter yamlTranslationWriter = new YamlTranslationWriter(options.translationSourceFile, options.folderYaml);
+
                            break;
                    }
                });
