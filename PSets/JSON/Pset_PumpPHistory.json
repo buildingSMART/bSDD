@@ -1,0 +1,469 @@
+﻿{
+  "name": "Pset_PumpPHistory",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Pump performance history attributes.",
+  "templatetype": "PSET_PERFORMANCEDRIVEN",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2XYuW0qVuHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XYuW0qVuHuO00025QrE$V",
+    "ifdGuid": "2XYuW0qVuHuO00025QrE$V",
+    "legacyGuid": "a18b8800d1fe11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "2XYuW0qVuHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Pumpe - Werteverlauf",
+      "definition": "Attribute der Pumpenleistungshistorie."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcPump",
+      "type": "IfcPump"
+    }
+  ],
+  "properties": [
+    {
+      "name": "MechanicalEfficiency",
+      "definition": "The pumps operational mechanical efficiency.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2cK3m0qVuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cK3m0qVuHuO00025QrE$V",
+        "ifdGuid": "2cK3m0qVuHuO00025QrE$V",
+        "legacyGuid": "a6503c00d1fe11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2cK3m0qVuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Mechanical Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "機械効率",
+          "definition": "ポンプの稼動時の機械効率"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OverallEfficiency",
+      "definition": "The pump and motor overall operational efficiency.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2fuyC0qVuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2fuyC0qVuHuO00025QrE$V",
+        "ifdGuid": "2fuyC0qVuHuO00025QrE$V",
+        "legacyGuid": "a9e3c300d1fe11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2fuyC0qVuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Overall Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "全効率",
+          "definition": "ポンプとモーターの運用全効率"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PressureRise",
+      "definition": "The developed pressure.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2jTqe0qVuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jTqe0qVuHuO00025QrE$V",
+        "ifdGuid": "2jTqe0qVuHuO00025QrE$V",
+        "legacyGuid": "ad774a00d1fe11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2jTqe0qVuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Pressure Rise",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "昇圧",
+          "definition": "上がった圧力"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RotationSpeed",
+      "definition": "Pump rotational speed.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2mSZg0qVuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mSZg0qVuHuO00025QrE$V",
+        "ifdGuid": "2mSZg0qVuHuO00025QrE$V",
+        "legacyGuid": "b0723a80d1fe11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2mSZg0qVuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Rotation Speed",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "回転速度",
+          "definition": "ポンプ回転速度"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Flowrate",
+      "definition": "The actual operational fluid flowrate.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2pRIi0qVuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2pRIi0qVuHuO00025QrE$V",
+        "ifdGuid": "2pRIi0qVuHuO00025QrE$V",
+        "legacyGuid": "b36d2b00d1fe11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2pRIi0qVuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Flowrate",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "流量",
+          "definition": "実際の運用流量"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Power",
+      "definition": "The actual power consumption of the pump.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2sQ1k0qVuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sQ1k0qVuHuO00025QrE$V",
+        "ifdGuid": "2sQ1k0qVuHuO00025QrE$V",
+        "legacyGuid": "b6681b80d1fe11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2sQ1k0qVuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Power",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "動力",
+          "definition": "ポンプの実動力消費"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+﻿{
+  "name": "Pset_PrecastSlab",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Layout and component information defining how prestressed slab components are laid out in a precast slab assembly. The values are global defaults for the slab as a whole, but can be overridden by local placements of the individual com",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0g1Ii0qVKHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0g1Ii0qVKHuO00025QrE$V",
+    "ifdGuid": "0g1Ii0qVKHuO00025QrE$V",
+    "legacyGuid": "2a052b00d1f511e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "0g1Ii0qVKHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Fertigteilplatte",
+      "definition": "Layout- und Bauteilinformationen, die festlegen, wie vorgespannte Deckenbauteile in einer Fertigteilmontage angeordnet werden, sind globale Vorgaben für die gesamte Platte, können aber durch lokale Platzierungen der einzelnen Komponenten übersteuert werden."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSlab",
+      "type": "IfcSlab"
+    }
+  ],
+  "properties": [
+    {
+      "name": "TypeDesignator",
+      "definition": "Type designator for the precast concrete slab, expressing mainly the component type. Possible values are “Hollow-core”, “Double-tee”, “Flat plank”, etc.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0l_mm0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0l_mm0qVKHuO00025QrE$V",
+        "ifdGuid": "0l_mm0qVKHuO00025QrE$V",
+        "legacyGuid": "2ffb0c00d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0l_mm0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Type Designator",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ToppingType",
+      "definition": "Defines if a topping is applied and what kind. Values are “Full topping”, “Perimeter Wash”, “None”",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0sYOE0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sYOE0qVKHuO00025QrE$V",
+        "ifdGuid": "0sYOE0qVKHuO00025QrE$V",
+        "legacyGuid": "36898380d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0sYOE0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Topping Type",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "EdgeDistanceToFirstAxis",
+      "definition": "The distance from the left (‘West’) edge of the slab (in the direction of span of the components) to the axis of the first component.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0yVsI0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yVsI0qVKHuO00025QrE$V",
+        "ifdGuid": "0yVsI0qVKHuO00025QrE$V",
+        "legacyGuid": "3c7f6480d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0yVsI0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Edge Distance To First Axis",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DistanceBetweenComponentAxes",
+      "definition": "The distance between the axes of the components, measured along the ‘South’ edge of the slab.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/133Tm0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/133Tm0qVKHuO00025QrE$V",
+        "ifdGuid": "133Tm0qVKHuO00025QrE$V",
+        "legacyGuid": "430ddc00d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "133Tm0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Distance Between Component Axes",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AngleToFirstAxis",
+      "definition": "The angle of rotation of the axis of the first component relative to the ‘West’ edge of the slab.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1ADEe0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ADEe0qVKHuO00025QrE$V",
+        "ifdGuid": "1ADEe0qVKHuO00025QrE$V",
+        "legacyGuid": "4a34ea00d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1ADEe0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Angle To First Axis",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPlaneAngleMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AngleBetweenComponentAxes",
+      "definition": "The angle between the axes of each pair of components.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1E_Pu0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1E_Pu0qVKHuO00025QrE$V",
+        "ifdGuid": "1E_Pu0qVKHuO00025QrE$V",
+        "legacyGuid": "4ef99e00d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1E_Pu0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Angle Between Component Axes",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPlaneAngleMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalThickness",
+      "definition": "The nominal overall thickness of the slab.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1KLkY0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KLkY0qVKHuO00025QrE$V",
+        "ifdGuid": "1KLkY0qVKHuO00025QrE$V",
+        "legacyGuid": "5456e880d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1KLkY0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Nominal Thickness",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalToppingThickness",
+      "definition": "The nominal thickness of the topping.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1RVVQ0qVKHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RVVQ0qVKHuO00025QrE$V",
+        "ifdGuid": "1RVVQ0qVKHuO00025QrE$V",
+        "legacyGuid": "5b7df680d1f511e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1RVVQ0qVKHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Nominal Topping Thickness",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

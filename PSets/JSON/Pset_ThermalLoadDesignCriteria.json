@@ -1,0 +1,487 @@
+﻿{
+  "name": "Pset_ThermalLoadDesignCriteria",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Building thermal load design data that are used for calculating thermal loads in a space or building. HISTORY: New property set in IFC Release 1.0 (Pset_LoadDesignCriteria); renamed Pset_ThermalLoadDesignCriteria in IFC2x2.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0E3uA0qX4HuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E3uA0qX4HuO00025QrE$V",
+    "ifdGuid": "0E3uA0qX4HuO00025QrE$V",
+    "legacyGuid": "0e0f8280d21111e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "0E3uA0qX4HuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "thermische Gesamtlast - Entwurfskriterien",
+      "definition": "HISTORY: Neue Eigenschaft, die in IFC Release 1.0 (Pset_LoadDesignCriteria) gesetzt wurde; in IFC2x2 umbenannt in Pset_ThermalLoadDesignCriteria."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSpatialElement",
+      "type": "IfcSpatialElement"
+    }
+  ],
+  "properties": [
+    {
+      "name": "OccupancyDiversity",
+      "definition": "Diversity factor that may be applied to the number of people in the space.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0OoXU0qX4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0OoXU0qX4HuO00025QrE$V",
+        "ifdGuid": "0OoXU0qX4HuO00025QrE$V",
+        "legacyGuid": "18ca1780d21111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0OoXU0qX4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Occupancy Diversity",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "居住者の在室率",
+          "definition": "室内居住者の在室率。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "거주자의 재실 비율",
+          "definition": "실내 거주자의 재실 비율."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveRatioMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OutsideAirPerPerson",
+      "definition": "Design quantity of outside air to be provided per person in the space.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0Ul$Y0qX4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ul$Y0qX4HuO00025QrE$V",
+        "ifdGuid": "0Ul$Y0qX4HuO00025QrE$V",
+        "legacyGuid": "1ebff880d21111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0Ul$Y0qX4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Outside Air Per Person",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "１人あたりの外気量",
+          "definition": "１人あたりの外気量の設計値。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "당 외기량",
+          "definition": "당 외기 량의 설계 값."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcVolumetricFlowRateMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ReceptacleLoadIntensity",
+      "definition": "Average power use intensity of appliances and other non-HVAC equipment in the space per unit area.(PowerMeasure/IfcAreaMeasure).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0ajTc0qX4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ajTc0qX4HuO00025QrE$V",
+        "ifdGuid": "0ajTc0qX4HuO00025QrE$V",
+        "legacyGuid": "24b5d980d21111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0ajTc0qX4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Receptacle Load Intensity",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位面積あたり事務機器の平均電力消費量",
+          "definition": "単位面積あたり事務機器など非空調設備の平均電力消費量。（PowerMeasure/IfcAreaMeasure）"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위면적 당 사무기기 평균 전력 소비량",
+          "definition": "단위 면적 당 사무 기기 등 비 공조 설비의 평균 전력 소비. (PowerMeasure / IfcAreaMeasure)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcReal",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AppliancePercentLoadToRadiant",
+      "definition": "Percent of sensible load to radiant heat.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0ggxg0qX4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ggxg0qX4HuO00025QrE$V",
+        "ifdGuid": "0ggxg0qX4HuO00025QrE$V",
+        "legacyGuid": "2aabba80d21111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0ggxg0qX4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Appliance Percent Load To Radiant",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "放射熱のうち顕熱分の割合",
+          "definition": "放射熱のうち顕熱分負荷の割合。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "복사열 중 현열 분의 비율",
+          "definition": "복사열 중 현열 분 부하의 비율."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveRatioMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "LightingLoadIntensity",
+      "definition": "Average lighting load intensity in the space per unit area (PowerMeasure/IfcAreaMeasure).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0nEZ80qX4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nEZ80qX4HuO00025QrE$V",
+        "ifdGuid": "0nEZ80qX4HuO00025QrE$V",
+        "legacyGuid": "313a3200d21111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0nEZ80qX4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Lighting Load Intensity",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "照明負荷率",
+          "definition": "単位面積あたり照明機器の平均電力消費量。（PowerMeasure/IfcAreaMeasure）"
+        },
+        {
+          "language": "ko-KR",
+          "name": "조명 부하율",
+          "definition": "단위 면적 당 조명의 평균 전력 소비. (PowerMeasure / IfcAreaMeasure)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcReal",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "LightingPercentLoadToReturnAir",
+      "definition": "Percent of lighting load to the return air plenum.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0toAc0qX4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0toAc0qX4HuO00025QrE$V",
+        "ifdGuid": "0toAc0qX4HuO00025QrE$V",
+        "legacyGuid": "37c8a980d21111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0toAc0qX4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Lighting Percent Load To Return Air",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "リタン空気への照明機器の放熱率",
+          "definition": "照明機器からリタン空気（天井裏）への放熱率。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "리탄 공기에 조명 기기의 방열 비율",
+          "definition": "조명 기기에서 폴리탄 공기 (천장)의 방열 속도."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveRatioMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

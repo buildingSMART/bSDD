@@ -1,0 +1,1070 @@
+﻿{
+  "name": "Pset_DistributionSystemTypeVentilation",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "This property set is used to define the general characteristics of the duct design parameters within a system.HISTORY: New property set in IFC Release 2.0.  Renamed from Pset_DuctDesignCriteria in IFC4.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2qZ640qTeHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qZ640qTeHuO00025QrE$V",
+    "ifdGuid": "2qZ640qTeHuO00025QrE$V",
+    "legacyGuid": "b48c6100d1da11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "2qZ640qTeHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "haustechnische Anlage - Lüftung",
+      "definition": "Mit diesem Eigenschaftssatz werden die allgemeinen Eigenschaften der Kanalauslegungsparameter innerhalb eines Systems definiert.\r\nHISTORY: Neue Eigenschaft, die in IFC Release 2.0 gesetzt wurde.  Umbenannt von Pset_DuctDesignCriteria in IFC4."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcDistributionSystem/VENTILATION",
+      "type": "IfcDistributionSystem/VENTILATION"
+    }
+  ],
+  "properties": [
+    {
+      "name": "DesignName",
+      "definition": "A name for the design values.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2vKHK0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vKHK0qTeHuO00025QrE$V",
+        "ifdGuid": "2vKHK0qTeHuO00025QrE$V",
+        "legacyGuid": "b9511500d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2vKHK0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Design Name",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "設計値名称",
+          "definition": "設計値の名称。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "설계 값이름",
+          "definition": "설계 값의 명칭."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DuctSizingMethod",
+      "definition": "Enumeration that identifies the methodology to be used to size system components.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2$tuo0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$tuo0qTeHuO00025QrE$V",
+        "ifdGuid": "2$tuo0qTeHuO00025QrE$V",
+        "legacyGuid": "bfdf8c80d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2$tuo0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Duct Sizing Method",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "ダクト寸法の決め方",
+          "definition": "ダクト寸法を決める計算方法。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "덕트 치수 결정 방법",
+          "definition": "덕트 치수를 결정하는 계산 방법."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "constantValues": [
+          {
+            "name": "CONSTANTFRICTION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CONSTANTPRESSURE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "STATICREGAIN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PressureClass",
+      "definition": "Nominal pressure rating of the system components. (Data type = PressureMeasure)",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3EBQY0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EBQY0qTeHuO00025QrE$V",
+        "ifdGuid": "3EBQY0qTeHuO00025QrE$V",
+        "legacyGuid": "ce2da880d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3EBQY0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Pressure Class",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "圧力等級",
+          "definition": "ダクトシステム各部位の圧力等級（計測した圧力）。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "압력 등급",
+          "definition": "덕트 시스템 각 부위의 압력 등급 (측정된 압력)"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPressureMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "LeakageClass",
+      "definition": "Nominal leakage rating for the system components.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3JYlC0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JYlC0qTeHuO00025QrE$V",
+        "ifdGuid": "3JYlC0qTeHuO00025QrE$V",
+        "legacyGuid": "d38af300d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3JYlC0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Leakage Class",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "漏れ率",
+          "definition": "ダクトシステム各部位の漏れ率。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "누설비율",
+          "definition": "덕트 시스템 각 부위의 누출 비율."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPressureMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FrictionLoss",
+      "definition": "The pressure loss due to friction per unit length. (Data type = PressureMeasure/LengthMeasure)",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3OJwS0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3OJwS0qTeHuO00025QrE$V",
+        "ifdGuid": "3OJwS0qTeHuO00025QrE$V",
+        "legacyGuid": "d84fa700d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3OJwS0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Friction Loss",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "摩擦損失",
+          "definition": "単位長さあたりの圧力損失（計測した圧力損失/ダクト長さ）。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "마찰 소실",
+          "definition": "단위 길이 당 압력 손실 (측정 압력 손실 / 덕트 길이)."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcReal",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ScrapFactor",
+      "definition": "Sheet metal scrap factor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3ThF60qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ThF60qTeHuO00025QrE$V",
+        "ifdGuid": "3ThF60qTeHuO00025QrE$V",
+        "legacyGuid": "ddacf180d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3ThF60qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Scrap Factor",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "廃材率",
+          "definition": "金属板の廃材率。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "폐기물 비율",
+          "definition": "금속판의 폐재 비율."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcReal",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DuctSealant",
+      "definition": "Type of sealant used on the duct and fittings.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3YSQM0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YSQM0qTeHuO00025QrE$V",
+        "ifdGuid": "3YSQM0qTeHuO00025QrE$V",
+        "legacyGuid": "e271a580d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3YSQM0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Duct Sealant",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "ダクトの密閉性",
+          "definition": "ダクトと継ぎ手の密閉形式。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "덕트 밀폐",
+          "definition": "덕트와 이음새의 밀폐 형식입니다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcMaterialDefinition",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MaximumVelocity",
+      "definition": "The maximum design velocity of the air in the duct or fitting.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3cdSC0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cdSC0qTeHuO00025QrE$V",
+        "ifdGuid": "3cdSC0qTeHuO00025QrE$V",
+        "legacyGuid": "e69dc300d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3cdSC0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Maximum Velocity",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "最大速度",
+          "definition": "ダクト或いは継ぎ手の最大設計風速。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "최대 속도",
+          "definition": "덕트 또는 이음새의 최대 설계 바람."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLinearVelocityMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AspectRatio",
+      "definition": "The default aspect ratio.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3kzVu0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3kzVu0qTeHuO00025QrE$V",
+        "ifdGuid": "3kzVu0qTeHuO00025QrE$V",
+        "legacyGuid": "eef5fe00d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3kzVu0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Aspect Ratio",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "アスペクト比",
+          "definition": "デフォルトアスペクト比。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "화면 비율",
+          "definition": "기본 화면 비율."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcReal",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MinimumHeight",
+      "definition": "The minimum duct height for rectangular, oval or round duct.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3uVsO0qTeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3uVsO0qTeHuO00025QrE$V",
+        "ifdGuid": "3uVsO0qTeHuO00025QrE$V",
+        "legacyGuid": "f87f6600d1da11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3uVsO0qTeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Minimum Height",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "最小高さ",
+          "definition": "矩形、円形或いは楕円形ダクトの最小高さ。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "최소 높이",
+          "definition": "사각형, 원형 또는 타원형 덕트의 최소 높이입니다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MinimumWidth",
+      "definition": "The minimum duct width for oval or rectangular duct.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/02eMI0qTiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/02eMI0qTiHuO00025QrE$V",
+        "ifdGuid": "02eMI0qTiHuO00025QrE$V",
+        "legacyGuid": "02a16480d1db11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "02eMI0qTiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Minimum Width",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "最小幅",
+          "definition": "矩形、円形或いは楕円形ダクトの最小幅。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "최소폭",
+          "definition": "사각형, 원형 또는 타원형 덕트의 최소 폭."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

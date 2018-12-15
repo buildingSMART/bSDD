@@ -1,0 +1,1031 @@
+﻿{
+  "name": "Pset_OutsideDesignCriteria",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Outside air conditions used as the basis for calculating thermal loads at peak conditions, as well as the weather data location from which these conditions were obtained. HISTORY: New property set in IFC Release 1.0.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3jX000qV4HuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jX000qV4HuO00025QrE$V",
+    "ifdGuid": "3jX000qV4HuO00025QrE$V",
+    "legacyGuid": "ed840000d1f111e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "3jX000qV4HuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Außenentwurfskriterien",
+      "definition": "Außenluftbedingungen, die als Grundlage für die Berechnung der thermischen Lasten bei Spitzenbelastungen dienen, sowie der Wetterdatenstandort, von dem aus diese Bedingungen ermittelt wurden, HISTORIE: Neue Eigenschaft, die in IFC Release 1.0 festgelegt wurde."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcBuilding",
+      "type": "IfcBuilding"
+    }
+  ],
+  "properties": [
+    {
+      "name": "HeatingDryBulb",
+      "definition": "Outside dry bulb temperature for heating design.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3ouKg0qV4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ouKg0qV4HuO00025QrE$V",
+        "ifdGuid": "3ouKg0qV4HuO00025QrE$V",
+        "legacyGuid": "f2e14a80d1f111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3ouKg0qV4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Heating Dry Bulb",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "暖房用設計外気乾球温度",
+          "definition": "暖房用設計用外気乾球温度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "난방 설계 외기 건구 온도",
+          "definition": "난방 설계 외기 건구 온도"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermodynamicTemperatureMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HeatingWetBulb",
+      "definition": "Outside wet bulb temperature for heating design.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3urok0qV4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3urok0qV4HuO00025QrE$V",
+        "ifdGuid": "3urok0qV4HuO00025QrE$V",
+        "legacyGuid": "f8d72b80d1f111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3urok0qV4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Heating Wet Bulb",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "暖房用設計外気湿球温度",
+          "definition": "暖房用設計用外気湿球温度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "난방 설계 외기 습구온도",
+          "definition": "난방 설계 외기 습구온도"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermodynamicTemperatureMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HeatingDesignDay",
+      "definition": "The month, day and time that has been selected for the heating design calculations.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3_pGo0qV4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_pGo0qV4HuO00025QrE$V",
+        "ifdGuid": "3_pGo0qV4HuO00025QrE$V",
+        "legacyGuid": "fecd0c80d1f111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3_pGo0qV4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Heating Design Day",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "暖房設計基準日",
+          "definition": "暖房設計用気象データの日付。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "난방 설계 기준일",
+          "definition": "난방 설계 기상 데이터의 날짜"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcDateTime",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CoolingDryBulb",
+      "definition": "Outside dry bulb temperature for cooling design.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/03aS20qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03aS20qV8HuO00025QrE$V",
+        "ifdGuid": "03aS20qV8HuO00025QrE$V",
+        "legacyGuid": "0391c080d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "03aS20qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Cooling Dry Bulb",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "冷房用設計外気乾球温度",
+          "definition": "冷房用設計用外気乾球温度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "냉방용 설계 외기건구 온도",
+          "definition": "냉방용 설계 외기건구 온도"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermodynamicTemperatureMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CoolingWetBulb",
+      "definition": "Outside wet bulb temperature for cooling design.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/08xmi0qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08xmi0qV8HuO00025QrE$V",
+        "ifdGuid": "08xmi0qV8HuO00025QrE$V",
+        "legacyGuid": "08ef0b00d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "08xmi0qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Cooling Wet Bulb",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "冷房用設計外気湿球温度",
+          "definition": "冷房用設計用外気湿球温度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "냉방용 설계외기 습구온도",
+          "definition": "냉방용 설계외기 습구온도"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermodynamicTemperatureMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CoolingDesignDay",
+      "definition": "The month, day  and time that has been selected for the cooling design calculations.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0EJ5M0qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EJ5M0qV8HuO00025QrE$V",
+        "ifdGuid": "0EJ5M0qV8HuO00025QrE$V",
+        "legacyGuid": "0e4c5580d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0EJ5M0qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Cooling Design Day",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "冷房設計基準日",
+          "definition": "冷房設計用気象データの日時（月、日、時刻）。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "냉방설계 기준일",
+          "definition": "냉방 설계 기상 데이터의 시간 (월, 일, 시간)."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcDateTime",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WeatherDataStation",
+      "definition": "The site weather data station description or reference to the data source from which weather data was obtained for use in calculations.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0J4Gc0qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0J4Gc0qV8HuO00025QrE$V",
+        "ifdGuid": "0J4Gc0qV8HuO00025QrE$V",
+        "legacyGuid": "13110980d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0J4Gc0qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Weather Data Station",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "気象台所在地",
+          "definition": "空調負荷計算時使用する気象データの気象台所在地。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "기상대 위치",
+          "definition": "공조 부하 계산시 사용하는 기상 데이터 기상대 위치."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcText",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WeatherDataDate",
+      "definition": "The date for which the weather data was gathered.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0ORbG0qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ORbG0qV8HuO00025QrE$V",
+        "ifdGuid": "0ORbG0qV8HuO00025QrE$V",
+        "legacyGuid": "186e5400d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0ORbG0qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Weather Data Date",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "気象データ",
+          "definition": "気象台所在地の気象データ。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "기상데이터",
+          "definition": "기상대 지역의 기상 데이터입니다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcDateTime",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "BuildingThermalExposure",
+      "definition": "The thermal exposure expected by the building based on surrounding site conditions.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0Scd60qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Scd60qV8HuO00025QrE$V",
+        "ifdGuid": "0Scd60qV8HuO00025QrE$V",
+        "legacyGuid": "1c9a7180d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0Scd60qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Building Thermal Exposure",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "周囲環境からの熱放射強度",
+          "definition": "周囲環境から建物への熱放射強度。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "주위환경에서 열의 방사강도",
+          "definition": "주위 환경​​에서 건물의 열 방사 강도."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "constantValues": [
+          {
+            "name": "LIGHT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MEDIUM",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "HEAVY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PrevailingWindDirection",
+      "definition": "The prevailing wind angle direction measured from True North (0 degrees) in a clockwise direction.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0dxPq0qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dxPq0qV8HuO00025QrE$V",
+        "ifdGuid": "0dxPq0qV8HuO00025QrE$V",
+        "legacyGuid": "27ed9d00d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0dxPq0qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Prevailing Wind Direction",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "卓越風の風向",
+          "definition": "卓越風の風向、真北は0°、時計回り。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "탁월한 방람의 풍향",
+          "definition": "탁월한 바람의 풍향, 북쪽은 0 ° 시계 방향."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPlaneAngleMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PrevailingWindVelocity",
+      "definition": "The design wind velocity coming from the direction specified by the PrevailingWindDirection attribute.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0jIkU0qV8HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jIkU0qV8HuO00025QrE$V",
+        "ifdGuid": "0jIkU0qV8HuO00025QrE$V",
+        "legacyGuid": "2d4ae780d1f211e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0jIkU0qV8HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Prevailing Wind Velocity",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "卓越風の風速",
+          "definition": "PrevailingWindDirection 属性に示された風向から来た卓越風の風速。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "탁월한 바람의 풍속",
+          "definition": "PrevailingWindDirection 속성에 지정된 풍향 온 탁월한 바람 바람."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLinearVelocityMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1072 @@
+﻿name: 'Pset_FanOccurrence'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Fan occurrence attributes attached to an instance of IfcFan.'
+templatetype: PSET_OCCURRENCEDRIVEN
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2wqmi0qUCHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2wqmi0qUCHuO00025QrE$V
+  ifdGuid: 2wqmi0qUCHuO00025QrE$V
+  legacyGuid: bad30b00d1e311e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 2wqmi0qUCHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Ventilator - Ereignisattribut'
+  definition: 'Fan-Ereignis-Attribute, die an eine Instanz von IfcFan angehängt sind.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcFan
+  type: IfcFan
+properties:
+- name: DischargeType
+  definition: 'Defines the type of connection at the fan discharge.Duct: Discharge into ductwork.Screen: Discharge into screen outlet.Louver: Discharge into a louver.Damper: Discharge into a damper.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_$oY0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_$oY0qUCHuO00025QrE$V
+    ifdGuid: 2_$oY0qUCHuO00025QrE$V
+    legacyGuid: beff2880d1e311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2_$oY0qUCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Discharge Type'
+    definition: ''
+  - language: ja-JP
+    name: '吐出形式'
+    definition: '送風機出口の接続形式定義Duct：ダクトへの吐き出しScreen:SCREEN内への吐き出しLouver:ルーバーへの吐き出し'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: DUCT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SCREEN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LOUVER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DAMPER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ApplicationOfFan
+  definition: 'The functional application of the fan.SupplyAir: Supply air fan. ReturnAir: Return air fan. ExhaustAir: Exhaust air fan. Other: Other type of application not defined above.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Fhvw0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Fhvw0qUCHuO00025QrE$V
+    ifdGuid: 3Fhvw0qUCHuO00025QrE$V
+    legacyGuid: cfaf9e80d1e311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3Fhvw0qUCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Application Of Fan'
+    definition: ''
+  - language: ja-JP
+    name: 'Fan用途'
+    definition: 'Fanの系統SUPPLYAIR, RETURNAIR, EXHAUSTAIR, COOLINGTOWER, OTHER'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: SUPPLYAIR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: RETURNAIR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: EXHAUSTAIR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: COOLINGTOWER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CoilPosition
+  definition: 'Defines the relationship between a fan and a coil.DrawThrough: Fan located downstream of the coil.BlowThrough: Fan located upstream of the coil.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3WO1I0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WO1I0qUCHuO00025QrE$V
+    ifdGuid: 3WO1I0qUCHuO00025QrE$V
+    legacyGuid: e0601480d1e311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3WO1I0qUCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Coil Position'
+    definition: ''
+  - language: ja-JP
+    name: 'コイル位置'
+    definition: 'Fanとコイル間の関係定義DwawThrough:ファンはコイルの下流に位置BlowThrough:ファンはコイルの上流に位置'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: DRAWTHROUGH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: BLOWTHROUGH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MotorPosition
+  definition: 'Defines the location of the motor relative to the air stream.InAirStream: Fan motor is in the air stream.OutOfAirStream: Fan motor is out of the air stream.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3iv6q0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3iv6q0qUCHuO00025QrE$V
+    ifdGuid: 3iv6q0qUCHuO00025QrE$V
+    legacyGuid: ece46d00d1e311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3iv6q0qUCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Motor Position'
+    definition: ''
+  - language: ja-JP
+    name: 'モーター位置'
+    definition: '空気流路と相対的なモーターの位置定義流路内、流路外　その他'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: INAIRSTREAM
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OUTOFAIRSTREAM
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FanMountingType
+  definition: Defines the method of mounting the fan in the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3w0Lm0qUCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3w0Lm0qUCHuO00025QrE$V
+    ifdGuid: 3w0Lm0qUCHuO00025QrE$V
+    legacyGuid: fa015c00d1e311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3w0Lm0qUCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Fan Mounting Type'
+    definition: ''
+  - language: ja-JP
+    name: 'Fan設置タイプ'
+    definition: '建物へのFan設置方法定義MANUFACTUREDCURB, FIELDERECTEDCURB, CONCRETEPAD, SUSPENDED, WALLMOUNTED, DUCTMOUNTED'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: MANUFACTUREDCURB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: FIELDERECTEDCURB
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: CONCRETEPAD
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SUSPENDED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: WALLMOUNTED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DUCTMOUNTED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FractionOfMotorHeatToAirStream
+  definition: Fraction of the motor heat released into the fluid flow.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0D52m0qUGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0D52m0qUGHuO00025QrE$V
+    ifdGuid: 0D52m0qUGHuO00025QrE$V
+    legacyGuid: 0d142c00d1e411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0D52m0qUGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Fraction Of Motor Heat To Air Stream'
+    definition: ''
+  - language: ja-JP
+    name: 'モーター排熱'
+    definition: '流体中にモーター発熱が放出される場合にTRUE'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ImpellerDiameter
+  definition: Diameter of fan wheel - used to scale performance of geometrically similar fans.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ISNQ0qUGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ISNQ0qUGHuO00025QrE$V
+    ifdGuid: 0ISNQ0qUGHuO00025QrE$V
+    legacyGuid: 12717680d1e411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0ISNQ0qUGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Impeller Diameter'
+    definition: ''
+  - language: ja-JP
+    name: '羽根径'
+    definition: 'ファンホイールの直径　-　幾何学的に類似したファンの性能を基準化するために使用。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

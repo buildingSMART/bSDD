@@ -1,0 +1,922 @@
+﻿{
+  "name": "Pset_DuctSilencerTypeCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Duct silencer type common attributes.InsertionLoss and RegeneratedSound attributes deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3IMyK0qTuHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IMyK0qTuHuO00025QrE$V",
+    "ifdGuid": "3IMyK0qTuHuO00025QrE$V",
+    "legacyGuid": "d25bc500d1de11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "3IMyK0qTuHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Kanalschalldämpfer - allgemeiner Eigenschaftssatz",
+      "definition": "Kanalschalldämpfertyp gemeinsame Attribute.\r\nInsertionLoss und RegeneratedSound-Attribute gelöscht in IFC2x2 Pset Addendum: Use IfcSoundProperties instead."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcDuctSilencer",
+      "type": "IfcDuctSilencer"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3NkG_0qTuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NkG_0qTuHuO00025QrE$V",
+        "ifdGuid": "3NkG_0qTuHuO00025QrE$V",
+        "legacyGuid": "d7b90f80d1de11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3NkG_0qTuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Reference",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Status",
+      "definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3T5be0qTuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3T5be0qTuHuO00025QrE$V",
+        "ifdGuid": "3T5be0qTuHuO00025QrE$V",
+        "legacyGuid": "dd165a00d1de11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3T5be0qTuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Status",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "状態",
+          "definition": "要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "constantValues": [
+          {
+            "name": "NEW",
+            "definition": "element designed as new addition",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "EXISTING",
+            "definition": "element exists and is to remain",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DEMOLISH",
+            "definition": "element exists but is to be demolished",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TEMPORARY",
+            "definition": "element will exist only temporarily (such as a temporary support structure)",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HydraulicDiameter",
+      "definition": "Hydraulic diameter.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3la9E0qTuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3la9E0qTuHuO00025QrE$V",
+        "ifdGuid": "3la9E0qTuHuO00025QrE$V",
+        "legacyGuid": "ef909380d1de11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3la9E0qTuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Hydraulic Diameter",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "水力直径",
+          "definition": "水力直径"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Length",
+      "definition": "The finished length of the silencer.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3qLKU0qTuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qLKU0qTuHuO00025QrE$V",
+        "ifdGuid": "3qLKU0qTuHuO00025QrE$V",
+        "legacyGuid": "f4554780d1de11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3qLKU0qTuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Length",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "長さ",
+          "definition": "サイレンサの仕上げ長さ"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Weight",
+      "definition": "The weight of the silencer.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3v6Vk0qTuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3v6Vk0qTuHuO00025QrE$V",
+        "ifdGuid": "3v6Vk0qTuHuO00025QrE$V",
+        "legacyGuid": "f919fb80d1de11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3v6Vk0qTuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Weight",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "重さ",
+          "definition": "サイレンサ重量"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AirFlowrateRange",
+      "definition": "Possible range of airflow that can be delivered.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3_TqO0qTuHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_TqO0qTuHuO00025QrE$V",
+        "ifdGuid": "3_TqO0qTuHuO00025QrE$V",
+        "legacyGuid": "fe774600d1de11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3_TqO0qTuHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Air Flowrate Range",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "流量範囲",
+          "definition": "送風可能な風量範囲"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WorkingPressureRange",
+      "definition": "Allowable minimum and maximum  working pressure (relative to ambient pressure).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/06Dkg0qTyHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06Dkg0qTyHuO00025QrE$V",
+        "ifdGuid": "06Dkg0qTyHuO00025QrE$V",
+        "legacyGuid": "0636ea80d1df11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "06Dkg0qTyHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Working Pressure Range",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "作動圧力範囲",
+          "definition": "許容最小・最大作動圧力（周囲圧との相対値）"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "TemperatureRange",
+      "definition": "Allowable minimum and maximum temperature.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0F9xm0qTyHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0F9xm0qTyHuO00025QrE$V",
+        "ifdGuid": "0F9xm0qTyHuO00025QrE$V",
+        "legacyGuid": "0f27bc00d1df11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0F9xm0qTyHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Temperature Range",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "温度範囲",
+          "definition": "許容最低・最高温度"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasExteriorInsulation",
+      "definition": "TRUE if the silencer has exterior insulation. FALSE if it does not.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0NV$S0qTyHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NV$S0qTyHuO00025QrE$V",
+        "ifdGuid": "0NV$S0qTyHuO00025QrE$V",
+        "legacyGuid": "177ff700d1df11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0NV$S0qTyHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Has Exterior Insulation",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "外部保温",
+          "definition": "サイレンサに外部保温があるときTRUE"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

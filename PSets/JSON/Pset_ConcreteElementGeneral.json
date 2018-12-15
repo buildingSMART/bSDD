@@ -1,0 +1,948 @@
+﻿{
+  "name": "Pset_ConcreteElementGeneral",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuildingElement, indicated that such element is designed or constructed using a concrete construction method.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1$B4S0qSiHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$B4S0qSiHuO00025QrE$V",
+    "ifdGuid": "1$B4S0qSiHuO00025QrE$V",
+    "legacyGuid": "7f2c4700d1cb11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "1$B4S0qSiHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Beton-Bauteil",
+      "definition": "Generelle Eigenschaften die allen Betonbauteilen, einschließlich Stahlbetonbauteilen, gemeinsam sind. Dieser Eigenschaftssatz kann den verschiedenen Bauelementklassen (Subtypen von IfcBuildingElement) zugeordnet werden."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcBeam",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcBuildingElementProxy",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcChimney",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcColumn",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcFooting",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcMember",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcPile",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcPlate",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcRailing",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcRamp",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcRampFlight",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcRoof",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcSlab",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcStair",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcStairFlight",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcWall",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    },
+    {
+      "name": "IfcCivilElement",
+      "type": "IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ConstructionMethod",
+      "definition": "Designator for whether the concrete element is constructed on site or prefabricated. Allowed values are: 'In-Situ' vs 'Precast'.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0uD8LqG39AORAVPayUkPlg",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uD8LqG39AORAVPayUkPlg",
+        "ifdGuid": "0uD8LqG39AORAVPayUkPlg",
+        "legacyGuid": "64af56b30b4540c2b43d74b49a28b9db",
+        "legacyGuidAsIfcGlobalId": "1ahrQp2qL0mhGzTBIQABdR"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Ausführung",
+          "definition": "Angabe, ob dieses Betonbauteil als Ortbeton (\"In-Situ\") oder als Fertigteil (\"Precast\") ausgeführt werden soll."
+        },
+        {
+          "language": "en",
+          "name": "Construction Method",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "StructuralClass",
+      "definition": "The structural class defined for the concrete structure (e.g. '1').",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/24YP60qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24YP60qSiHuO00025QrE$V",
+        "ifdGuid": "24YP60qSiHuO00025QrE$V",
+        "legacyGuid": "84899180d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "24YP60qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Structural Class",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "構造クラス",
+          "definition": "構造クラスはコンクリート構造を定義した。（例えば「１」）"
+        },
+        {
+          "language": "ko-KR",
+          "name": "구조 클래스",
+          "definition": "구조 클래스는 콘크리트 구조를 정의했다 (예를 들어 \"1\")"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "StrengthClass",
+      "definition": "Classification of the concrete strength in accordance with the concrete design code which is applied in the project.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/15ZGdmWsb6Tx2ZbSZiED39",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/15ZGdmWsb6Tx2ZbSZiED39",
+        "ifdGuid": "15ZGdmWsb6Tx2ZbSZiED39",
+        "legacyGuid": "96390dc443fd41d88cb6aca86dce4993",
+        "legacyGuidAsIfcGlobalId": "2MEGt4G$r1s8oshAXjpacJ"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Betonfestigkeitsklasse",
+          "definition": "Klassifikation der Betonfestigkeit gemäß der aktuellen, im Projekt angewandten, Norm."
+        },
+        {
+          "language": "en",
+          "name": "Strength Class",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ExposureClass",
+      "definition": "Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1GdqRqbtT0Mv4ePNA5Qcp$",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1GdqRqbtT0Mv4ePNA5Qcp$",
+        "ifdGuid": "1GdqRqbtT0Mv4ePNA5Qcp$",
+        "legacyGuid": "9bee0bf72ad34a66bef57b71b7ca175b",
+        "legacyGuidAsIfcGlobalId": "2RxWltAjDAPhxrUt6toXTR"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Expositionsklasse",
+          "definition": "Klassifikation der Widerstandsfähigkeit gegenüber chemischen und physikalischen Einwirkungen gemäß der aktuellen, im Projekt angewandten, Norm."
+        },
+        {
+          "language": "en",
+          "name": "Exposure Class",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ReinforcementVolumeRatio",
+      "definition": "The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "a1c0e785c9bc41878ddbc67fd0ff3d26",
+        "legacyGuidAsIfcGlobalId": "2XmEU5oRn1XutRnd$G$pqc"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Bewehrungsgrad Volumen",
+          "definition": "Das geforderte Verhältnis der effektiven Masse der Bewehrung im Verhältnis zur effektiven Masse des Betons für dieses Element."
+        },
+        {
+          "language": "en",
+          "name": "Reinforcement Volume Ratio",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassDensityMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ReinforcementAreaRatio",
+      "definition": "The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/34F4GIouD46fxHnpoILh6b",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34F4GIouD46fxHnpoILh6b",
+        "ifdGuid": "34F4GIouD46fxHnpoILh6b",
+        "legacyGuid": "036938642cbf49e2a90d346134ac7475",
+        "legacyGuidAsIfcGlobalId": "03QJXaBBz9ugaDD64qh7Hr"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Bewehrungsgrad Fläche",
+          "definition": "Das geforderte Verhältnis der effektiven flächenbezogenen Masse der Bewehrung im Verhältnis zur effektiven Fläche des Betons für dieses Element."
+        },
+        {
+          "language": "en",
+          "name": "Reinforcement Area Ratio",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcAreaDensityMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DimensionalAccuracyClass",
+      "definition": "Classification designation of the dimensional accuracy requirement according to local standards.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2akL20qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2akL20qSiHuO00025QrE$V",
+        "ifdGuid": "2akL20qSiHuO00025QrE$V",
+        "legacyGuid": "a4b95080d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2akL20qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Dimensional Accuracy Class",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "寸法精度クラス",
+          "definition": "国の基準が求める寸法精度の分類指定。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "치수 정밀도 클래스",
+          "definition": "국가 표준이 요구하는 치수 정밀도의 분류 지정"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConstructionToleranceClass",
+      "definition": "Classification designation of the on-site construction tolerances according to local standards.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2hu5w0qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hu5w0qSiHuO00025QrE$V",
+        "ifdGuid": "2hu5w0qSiHuO00025QrE$V",
+        "legacyGuid": "abe05e80d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2hu5w0qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Construction Tolerance Class",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "製造許容クラス",
+          "definition": "国の基準が求める現場での製造許容の分類指定。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "제조 허용 클래스",
+          "definition": "국가 표준이 요구하는 현장에서 제조 허용 범주 지정"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcreteCover",
+      "definition": "The protective concrete cover at the reinforcing bars according to local building regulations.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0DNU90jjHAu9WHDJ4TCpdg",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DNU90jjHAu9WHDJ4TCpdg",
+        "ifdGuid": "0DNU90jjHAu9WHDJ4TCpdg",
+        "legacyGuid": "0764b8e36a7c4275859f1534ea3eec09",
+        "legacyGuidAsIfcGlobalId": "07PBZZQdn2TOMV5JJgFkm9"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Betonüberdeckung",
+          "definition": "Abstand zwischen der Betonoberfläche und der Außenkante einer vom Beton umhüllten Bewehrung."
+        },
+        {
+          "language": "en",
+          "name": "Concrete Cover",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcreteCoverAtMainBars",
+      "definition": "The protective concrete cover at the main reinforcing bars according to local building regulations.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2u$Ks0qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2u$Ks0qSiHuO00025QrE$V",
+        "ifdGuid": "2u$Ks0qSiHuO00025QrE$V",
+        "legacyGuid": "b8fd4d80d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2u$Ks0qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Betonüberdeckung Hauptstäbe",
+          "definition": "Abstand zwischen der Betonoberfläche und der Außenkante den vom Beton umhüllten Bewehrungshauptstäben."
+        },
+        {
+          "language": "en",
+          "name": "Concrete Cover At Main Bars",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "主筋のコンクリート被り",
+          "definition": "国の建築基準に従い、主鉄筋をコンクリートの被りで保護する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "주근 콘크리트 입고",
+          "definition": "국가의 건축 기준에 따라 주로 철근을 콘크리트 입고로 보호"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcreteCoverAtLinks",
+      "definition": "The protective concrete cover at the reinforcement links according to local building regulations.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2_yow0qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_yow0qSiHuO00025QrE$V",
+        "ifdGuid": "2_yow0qSiHuO00025QrE$V",
+        "legacyGuid": "bef32e80d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2_yow0qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Betonüberdeckung Verbindungsstäbe",
+          "definition": "Abstand zwischen der Betonoberfläche und der Außenkante der vom Beton umhüllten Bewehrungsverbindungsstäben."
+        },
+        {
+          "language": "en",
+          "name": "Concrete Cover At Links",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "補強筋のコンクリート被り",
+          "definition": "国の建築基準に従い、補強筋をコンクリートの被りで保護する。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "보강근 콘크리트 입고",
+          "definition": "국가의 건축 기준에 따라 보강근 콘크리트의 입고로 보호"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ReinforcementStrengthClass",
+      "definition": "Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0a$_SNmubANveWrbsv0Hqi",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0a$_SNmubANveWrbsv0Hqi",
+        "ifdGuid": "0a$_SNmubANveWrbsv0Hqi",
+        "legacyGuid": "b88ca2252c4b4014bcf289bbbd596398",
+        "legacyGuidAsIfcGlobalId": "2uZA8bB4j05BpoYRkzMMEO"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Reinforcement Strength Class",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

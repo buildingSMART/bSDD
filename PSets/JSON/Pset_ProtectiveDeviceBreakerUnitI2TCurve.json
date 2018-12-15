@@ -1,0 +1,611 @@
+﻿{
+  "name": "Pset_ProtectiveDeviceBreakerUnitI2TCurve",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "A coherent set of attributes representing a curve for let-through energy of a protective device. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2hgeW0qVWHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hgeW0qVWHuO00025QrE$V",
+    "ifdGuid": "2hgeW0qVWHuO00025QrE$V",
+    "legacyGuid": "abaa8800d1f811e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "2hgeW0qVWHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Sicherungsschalter I2-T-Kennlinie",
+      "definition": "Ein kohärenter Satz von Attributen, der eine Kurve für die Durchlassenergie einer Schutzeinrichtung darstellt Hinweis - Eine Schutzeinrichtung kann mit verschiedenen Instanzen dieses pSets assoziiert werden, die Informationen über verschiedene  Grundeigenschaften liefern."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcProtectiveDevice",
+      "type": "IfcProtectiveDevice"
+    }
+  ],
+  "properties": [
+    {
+      "name": "VoltageLevel",
+      "definition": "The voltage levels of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2sPHq0qVWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sPHq0qVWHuO00025QrE$V",
+        "ifdGuid": "2sPHq0qVWHuO00025QrE$V",
+        "legacyGuid": "b6651d00d1f811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2sPHq0qVWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Voltage Level",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "電圧レベル",
+          "definition": "保護装置が作動する電圧レベルを選択。[U230,U400,U525,U690,U1000,その他,不明,無]"
+        },
+        {
+          "language": "ko-KR",
+          "name": "전압 레벨",
+          "definition": "보호 장치가 작동 전압 레벨을 선택합니다. [U230, U400, U525, U690, U1000, 기타 알 수 없음, 무"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "constantValues": [
+          {
+            "name": "U230",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "U400",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "U440",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "U525",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "U690",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "U1000",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NominalCurrent",
+      "definition": "A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Gdli0qVWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Gdli0qVWHuO00025QrE$V",
+        "ifdGuid": "3Gdli0qVWHuO00025QrE$V",
+        "legacyGuid": "d09efb00d1f811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3Gdli0qVWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Nominal Current",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "定格電流",
+          "definition": "定格電流[A]を少なくても1つ値をセットしなければならない。 セット内の任意の値の値を超えてはならない。 定格電流は、同じブレーカ部に関連付けられている。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "정격전류",
+          "definition": "정격 전류 [A]를 적어도 1 개의 값을 설정해야한다.   동일한 차단기부와 연결된 정격전류는세트 내의 임의의 값은 초과할 수 없다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcElectricCurrentMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "BreakerUnitCurve",
+      "definition": "A curve that establishes the let through energy of a breaker unit when a particular prospective current is applied.  Note that the breaker unit curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:(1) Defining value: ProspectiveCurrent: A list of minimum 2 and maximum 16 numbers providing the currents in [A] for points in the current/I2t log/log coordinate space. The curve is drawn as a straight line between two consecutive points.(2) Defined value: LetThroughEnergy: A list of minimum 2 and maximum 16 numbers providing the let-through energy, I2t, in [A2s] for points in the current/I2t log/log coordinate space. The curve is drawn as a straight line between two consecutive points.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3PZyo0qVWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PZyo0qVWHuO00025QrE$V",
+        "ifdGuid": "3PZyo0qVWHuO00025QrE$V",
+        "legacyGuid": "d98fcc80d1f811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3PZyo0qVWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Breaker Unit Curve",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "遮断機曲線",
+          "definition": "適用された電流と通過する遮断機のエネルギーを示した曲線 （1）定義値：ProspectiveCurrent（固有電流）：   電流/I2tで示される最小2から最大8のリストで電流[A]を定義します。   カーブが連続する2つの点を結ぶ直線として描かれています。 （2）定義値：LetThroughEnergy：   電流/I2tで示される最小2から最大8のリストで通過エネルギー電流[[A2s]を定義します。   カーブが連続する2つの点を結ぶ直線として描かれています。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "차단기 곡선",
+          "definition": "적용된 전류 통과 차단기의 에너지를 나타낸 곡선  (1) 정의 값 : ProspectiveCurrent (고유 전류) :    전류 / I2t에 표시된 최소 2에서 최대 8 개의 목록에서 전류 [A]를 정의합니다.    커브가 연속되는 두 개의 점을 연결하는 직선으로 그려져 있습니다.  (2) 정의 값 : LetThroughEnergy :    전류 / I2t에 표시된 최소 2에서 최대 8 개의 목록에서 통과 에너지 전류 [A2s을 정의합니다.    커브가 연속되는 두 개의 점을 연결하는 직선으로 그려져 있습니다."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "",
+        "DefiningValue": {
+          "dataType": "IfcElectricCurrentMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcReal",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

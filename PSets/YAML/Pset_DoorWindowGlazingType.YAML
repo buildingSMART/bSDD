@@ -1,0 +1,967 @@
+﻿name: 'Pset_DoorWindowGlazingType'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Properties common to the definition of the glazing component of occurrences of IfcDoor and IfcWindow, used for thermal and lighting calculations.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cdiA0qTmHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cdiA0qTmHuO00025QrE$V
+  ifdGuid: 3cdiA0qTmHuO00025QrE$V
+  legacyGuid: e69ec280d1dc11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3cdiA0qTmHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Türfenster - Verglasungstyp'
+  definition: 'Eigenschaften, die der Definition der Verglasungskomponente der Vorkommen von IfcDoor und IfcWindow gemeinsam sind und für thermische und lichttechnische Berechnungen verwendet werden.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDoor
+  type: IfcDoor, IfcWindow
+- name: ' IfcWindow'
+  type: IfcDoor, IfcWindow
+properties:
+- name: GlassLayers
+  definition: Number of glass layers within the frame. E.g. "2" for double glazing.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0DzO_0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DzO_0qTqHuO00025QrE$V
+    ifdGuid: 0DzO_0qTqHuO00025QrE$V
+    legacyGuid: 0df58f80d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0DzO_0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-1'
+    definition: 'German-description-1'
+  - language: en
+    name: 'Glass Layers'
+    definition: ''
+  - language: fr-FR
+    name: 'NombreVitrages'
+    definition: 'Nombre de couches de verre dans le cadre. Exemple : 2 pour le double vitrage.'
+  - language: ja-JP
+    name: 'ガラス枚数'
+    definition: 'ガラスの枚数。例："2"はペアガラス。'
+  - language: zh-CN
+    name: '玻璃层数'
+    definition: '框内玻璃的层数。例如：”2”表示双层玻璃。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcCountMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: GlassThickness1
+  definition: Thickness of the first (inner) glass layer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QUUW0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QUUW0qTqHuO00025QrE$V
+    ifdGuid: 0QUUW0qTqHuO00025QrE$V
+    legacyGuid: 1a79e800d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0QUUW0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-2'
+    definition: 'German-description-2'
+  - language: en
+    name: 'Glass Thickness1'
+    definition: ''
+  - language: fr-FR
+    name: 'EpaisseurVitrage1'
+    definition: 'Epaisseur de la première couche de verre (côté intérieur)'
+  - language: ja-JP
+    name: 'ガラス厚1'
+    definition: '最初の（室内側）ガラスの厚み。'
+  - language: zh-CN
+    name: '玻璃厚度1'
+    definition: '第一层（内侧）玻璃的厚度。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: GlassThickness2
+  definition: Thickness of the second (intermediate or outer) glass layer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0dbjS0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dbjS0qTqHuO00025QrE$V
+    ifdGuid: 0dbjS0qTqHuO00025QrE$V
+    legacyGuid: 2796d700d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0dbjS0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-3'
+    definition: 'German-description-3'
+  - language: en
+    name: 'Glass Thickness2'
+    definition: ''
+  - language: fr-FR
+    name: 'EpaisseurVitrage2'
+    definition: 'Epaisseur de la deuxième couche de verre (intermédiaire ou côté extérieur)'
+  - language: ja-JP
+    name: 'ガラス厚2'
+    definition: '2番目（中間、あるいは外側）のガラスの厚み。'
+  - language: zh-CN
+    name: '玻璃厚度2'
+    definition: '第二层（中间或外侧）玻璃的厚度。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: GlassThickness3
+  definition: Thickness of the third (outer) glass layer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0oKMm0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0oKMm0qTqHuO00025QrE$V
+    ifdGuid: 0oKMm0qTqHuO00025QrE$V
+    legacyGuid: 32516c00d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0oKMm0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-4'
+    definition: 'German-description-4'
+  - language: en
+    name: 'Glass Thickness3'
+    definition: ''
+  - language: fr-FR
+    name: 'EpaisseurVitrage3'
+    definition: 'Epaisseur de la troisième couche de verre (côté extérieur)'
+  - language: ja-JP
+    name: 'ガラス厚3'
+    definition: '3番目（外側）のガラスの厚み。'
+  - language: zh-CN
+    name: '玻璃厚度3'
+    definition: '第三层（外侧）玻璃的厚度。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FillGas
+  definition: Name of the gas by which the gap between two glass layers is filled. It is given for information purposes only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zf9U0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zf9U0qTqHuO00025QrE$V
+    ifdGuid: 0zf9U0qTqHuO00025QrE$V
+    legacyGuid: 3da49780d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0zf9U0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-5'
+    definition: 'German-description-5'
+  - language: en
+    name: 'Fill Gas'
+    definition: ''
+  - language: fr-FR
+    name: 'GazEntreVitrages'
+    definition: 'Nom du gaz remplissant l''espace entre deux couches de verre. Donné à titre informatif seulement.'
+  - language: ja-JP
+    name: '充填ガス種'
+    definition: '2枚のガラス間の隙間に充填されたガスの名称。これは情報目的専用に提供される。'
+  - language: zh-CN
+    name: '填充气体'
+    definition: '两层玻璃之间填充气体的名称。仅供参考。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: GlassColor
+  definition: Color (tint) selection for this glazing. It is given for information purposes only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/18zyC0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18zyC0qTqHuO00025QrE$V
+    ifdGuid: 18zyC0qTqHuO00025QrE$V
+    legacyGuid: 48f7c300d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 18zyC0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-6'
+    definition: 'German-description-6'
+  - language: en
+    name: 'Glass Color'
+    definition: ''
+  - language: fr-FR
+    name: 'CouleurVitrage'
+    definition: 'Choix de la couleur (teinte) du vitrage. Donné à titre informatif seulement.'
+  - language: ja-JP
+    name: 'ガラス色'
+    definition: 'ガラスの色合い。これは情報目的専用に提供される。'
+  - language: zh-CN
+    name: '玻璃颜色'
+    definition: '玻璃（贴膜）的颜色。仅供参考。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsTempered
+  definition: Indication whether the glass is tempered (TRUE) or not (FALSE) .
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Hw9I0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Hw9I0qTqHuO00025QrE$V
+    ifdGuid: 1Hw9I0qTqHuO00025QrE$V
+    legacyGuid: 51e89480d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1Hw9I0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-7'
+    definition: 'German-description-7'
+  - language: en
+    name: 'Is Tempered'
+    definition: ''
+  - language: fr-FR
+    name: 'VitrageTrempe'
+    definition: 'Indique si le verre est trempé (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: '強化ガラス'
+    definition: '強化ガラスか（TRUE）否か(FALSE)を示す。'
+  - language: zh-CN
+    name: '是否钢化'
+    definition: '表示玻璃是否经过强化处理。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsLaminated
+  definition: Indication whether the glass is layered with other materials (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Tr5Q0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Tr5Q0qTqHuO00025QrE$V
+    ifdGuid: 1Tr5Q0qTqHuO00025QrE$V
+    legacyGuid: 5dd45680d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1Tr5Q0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-8'
+    definition: 'German-description-8'
+  - language: en
+    name: 'Is Laminated'
+    definition: ''
+  - language: fr-FR
+    name: 'VitrageFeuillete'
+    definition: 'Indique si le verre est feuilleté (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: '皮膜を被せたガラス'
+    definition: 'ガラス以外の素材が重ねられているか（TRUE）否か（FALSE)示す。'
+  - language: zh-CN
+    name: '是否夹层'
+    definition: '表示玻璃是否具有含其他材料的夹层。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsCoated
+  definition: Indication whether the glass is coated with a material (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1f9u80qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1f9u80qTqHuO00025QrE$V
+    ifdGuid: 1f9u80qTqHuO00025QrE$V
+    legacyGuid: 69278200d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1f9u80qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-9'
+    definition: 'German-description-9'
+  - language: en
+    name: 'Is Coated'
+    definition: ''
+  - language: fr-FR
+    name: 'VitrageTraite'
+    definition: 'Indique si le verre a subi un traitement de surface (VRAI) ou non (FAUX).'
+  - language: ja-JP
+    name: 'コーティング'
+    definition: 'ガラスがコーティングされいるか（TRUE）否か（FALSE）示す。'
+  - language: zh-CN
+    name: '是否镀膜'
+    definition: '表示玻璃是否具有某种材料的镀膜。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsWired
+  definition: Indication whether the glass includes a contained wire mesh to prevent break-in (TRUE) or not (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1o65E0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1o65E0qTqHuO00025QrE$V
+    ifdGuid: 1o65E0qTqHuO00025QrE$V
+    legacyGuid: 72185380d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1o65E0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-10'
+    definition: 'German-description-10'
+  - language: en
+    name: 'Is Wired'
+    definition: ''
+  - language: fr-FR
+    name: 'VitrageArme'
+    definition: 'Indique si le verre est un verre armé à maille anti-effraction (VRAI) ou non (FAUX)'
+  - language: ja-JP
+    name: '網入りガラス'
+    definition: '不法侵入防止の網入りガラスか（TRUE)否か（FALSE）示す。'
+  - language: zh-CN
+    name: '是否夹丝'
+    definition: '表示玻璃是否具有防断裂的纤维网格。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VisibleLightReflectance
+  definition: Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wS8w0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wS8w0qTqHuO00025QrE$V
+    ifdGuid: 1wS8w0qTqHuO00025QrE$V
+    legacyGuid: 7a708e80d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1wS8w0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Reflektionsgrad für sichtbares Licht'
+    definition: 'German-description-12'
+  - language: en
+    name: 'Visible Light Reflectance'
+    definition: ''
+  - language: fr-FR
+    name: 'ReflexionVisible'
+    definition: 'Fraction du rayonnement visible qui est réfléchi par le vitrage sous incidence normale. Valeur sans unité.'
+  - language: ja-JP
+    name: '可視光反射率'
+    definition: 'ガラスへ法線入射した可視光の反射率。単位の無い値。'
+  - language: zh-CN
+    name: '可见光反射率'
+    definition: '正射时被玻璃反射的可见光比例。无单位。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VisibleLightTransmittance
+  definition: Fraction of the visible light that passes the glazing at normal incidence. It is a value without unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/20Pc_0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20Pc_0qTqHuO00025QrE$V
+    ifdGuid: 20Pc_0qTqHuO00025QrE$V
+    legacyGuid: 80666f80d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 20Pc_0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Transmissionsgrad für sichtbares Licht'
+    definition: 'German-description-11'
+  - language: en
+    name: 'Visible Light Transmittance'
+    definition: ''
+  - language: fr-FR
+    name: 'TransmittanceVisible'
+    definition: 'Fraction du rayonnement visible qui est transmise par le vitrage sous incidence normale. Valeur sans unité.'
+  - language: ja-JP
+    name: '可視光透過率'
+    definition: 'ガラスへ法線入射した可視光の透過率。単位の無い値。'
+  - language: zh-CN
+    name: '可见光透射率'
+    definition: '正射时穿透玻璃的可见光比例。无单位。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SolarAbsorption
+  definition: (Asol) The ratio of incident solar radiation that is absorbed by a glazing system. It is the sum of the absorption distributed to the exterior (a) and to the interior (qi). Note the following equation Asol + Rsol + Tsol = 1
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/24aeq0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24aeq0qTqHuO00025QrE$V
+    ifdGuid: 24aeq0qTqHuO00025QrE$V
+    legacyGuid: 84928d00d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 24aeq0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Strahlungsabsorbtionsgrad'
+    definition: 'German-description-13'
+  - language: en
+    name: 'Solar Absorption'
+    definition: ''
+  - language: fr-FR
+    name: 'AbsorptionRayonnementSolaire'
+    definition: '(Asol). Ratio du rayonnement solaire incident qui est absorbé par le vitrage. Somme de l''absorption distribuée à l''extérieur (a) et à l''intérieur (qi). Noter l''équation suivante : Asol + Rsol + Tsol = 1.'
+  - language: ja-JP
+    name: '日射吸収率'
+    definition: '（Asol)ガラスで吸収される日射の比率。吸収の合計は外部（a）と、室内（qi）に分配される。以下の方程式に注意。Asol + Rsol + Tsol = 1'
+  - language: zh-CN
+    name: '太阳能吸收率'
+    definition: '（Asol）被玻璃系统吸收的太阳入射辐射的比率，为传递到室外和室内的吸收的总量。注：以下等式成立Asol + Rsol + Tsol = 1'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SolarReflectance
+  definition: '(Rsol): The ratio of incident solar radiation that is reflected by a glazing system (also named ρe). Note the following equation Asol + Rsol + Tsol = 1'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/28lgg0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28lgg0qTqHuO00025QrE$V
+    ifdGuid: 28lgg0qTqHuO00025QrE$V
+    legacyGuid: 88beaa80d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 28lgg0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Strahlungsreflectionsgrad'
+    definition: 'German-description-14'
+  - language: en
+    name: 'Solar Reflectance'
+    definition: ''
+  - language: fr-FR
+    name: 'ReflexionRayonnementSolaire'
+    definition: '(Rsol). Ratio du rayonnement solaire incident qui est réfléchi par le vitrage. Noter l''équation suivante : Asol + Rsol + Tsol = 1.'
+  - language: ja-JP
+    name: '日射反射率'
+    definition: '（Rsol）ガラスで反射する日射の比率（ρeとも表わされる）。以下の方程式に注意。Asol + Rsol + Tsol = 1'
+  - language: zh-CN
+    name: '太阳能反射率'
+    definition: '（Rsol）被玻璃系统反射的太阳入射辐射的比率（也可用ρe表示）。注：以下等式成立Asol + Rsol + Tsol = 1'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SolarTransmittance
+  definition: '(Tsol): The ratio of incident solar radiation that directly passes through a glazing system (also named τe). Note the following equation Asol + Rsol + Tsol = 1'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2CwiW0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CwiW0qTqHuO00025QrE$V
+    ifdGuid: 2CwiW0qTqHuO00025QrE$V
+    legacyGuid: 8ceac800d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2CwiW0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Strahlungstransmissionsgrad'
+    definition: 'German-description-15'
+  - language: en
+    name: 'Solar Transmittance'
+    definition: ''
+  - language: fr-FR
+    name: 'TransmissionRayonnementSolaire'
+    definition: '(Tsol). Ratio du rayonnement solaire incident qui est transmis directement par le vitrage. Noter l''équation suivante : Asol + Rsol + Tsol = 1.'
+  - language: ja-JP
+    name: '日射透過率'
+    definition: '（Tsol）ガラスを透過する日射の比率（τeとも表わされる）。以下の方程式に注意。Asol + Rsol + Tsol = 1'
+  - language: zh-CN
+    name: '太阳能透射率'
+    definition: '（Tsol）透过玻璃系统的太阳入射辐射的比率（也可用τe表示）。注：以下等式成立Asol + Rsol + Tsol = 1'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SolarHeatGainTransmittance
+  definition: '(SHGC): The ratio of incident solar radiation that contributes to the heat gain of the interior, it is the solar radiation that directly passes (Tsol or τe) plus the part of the absorbed radiation that is distributed to the interior (qi). The SHGC is refered to also as g-value (g = τe + qi).'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Hhtm0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Hhtm0qTqHuO00025QrE$V
+    ifdGuid: 2Hhtm0qTqHuO00025QrE$V
+    legacyGuid: 91af7c00d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2Hhtm0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Gesamtenergiedurchlassgrad'
+    definition: 'German-description-16'
+  - language: en
+    name: 'Solar Heat Gain Transmittance'
+    definition: ''
+  - language: fr-FR
+    name: 'ApportsSolaires'
+    definition: '(SHGC): Ratio du rayonnement solaire incident qui contribue aux apports solaires récupérés. Rayonnemment transmis directement (Tsol ou Te), plus la part de rayonnement absorbé restitué à l''intérieur (qi). Le SHGC est également appelé valeur-g (g = Te + qi).'
+  - language: ja-JP
+    name: '透過太陽熱利得係数'
+    definition: '(SHGC):室内の熱利得の原因となる日射の比率。ガラスの透過分(Tsol or τe)と吸収分の内、室内側(qi)への分配分の和。SHGCは、g値（g = τe + qi）としても参照される。'
+  - language: zh-CN
+    name: '太阳能得热系数'
+    definition: '（SHGC）导致室内取得热量的入射太阳辐射比率，该值为透射太阳辐射（Tsol或τe）与分配到室内的吸收太阳辐射（qi）的和。SHGC也被称为g值（g = τe + qi）。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShadingCoefficient
+  definition: '(SC): The measure of the ability of a glazing to transmit solar heat, relative to that ability for 3 mm (1/8-inch) clear, double-strength, single glass. Shading coefficient is being phased out in favor of the solar heat gain coefficient (SHGC), and is approximately equal to the SHGC multiplied by 1.15. The shading coefficient is expressed as a number without units between 0 and 1.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Lsvc0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Lsvc0qTqHuO00025QrE$V
+    ifdGuid: 2Lsvc0qTqHuO00025QrE$V
+    legacyGuid: 95db9980d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2Lsvc0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'mittlere Durchlassfaktor b'
+    definition: 'Das Verhältnis aus g-Wert der jeweiligen Verglasung und dem g-Wert eines Zweischeiben-Normalglasfensters.Der g-Wert dieses Zweischeiben-Normalglasfensters wird als Konstante mit 80 % angesetzt. Bei Einfachglas beträgt die Konstante 87 %, Auch "Shading coefficient" genannt.'
+  - language: en
+    name: 'Shading Coefficient'
+    definition: ''
+  - language: fr-FR
+    name: 'CoefficientOmbrage'
+    definition: '(SC): Mesure de la capacité d''un vitrage à transmettre l''énergie solaire comparativement à un simple vitrage clair, de 3 mm (double renfort). Le coefficient d''atténuation est supprimé progressivement en faveur du coefficient d''apport solaire (SHGC) et est approximativement égal au SHGC multiplié par 1,15. Le coefficient d''atténuation est exprimé comme nombre sans unités entre 0 et 1.'
+  - language: ja-JP
+    name: '遮蔽係数'
+    definition: '(SC): ガラスの太陽熱伝導の基準、3mm（1/8インチ）透明の一枚ガラスの性能との比。遮蔽係数は太陽熱利得係数(SHGC)に移行し、段階的に廃止、SHGC×1.15とほとんど等しい。遮蔽係数は０から１までの単位無しの値。'
+  - language: zh-CN
+    name: '遮阳系数'
+    definition: '（SC）玻璃传递太阳热量能力的度量，以3mm（1/8英寸）透明双倍强度单层玻璃为基准。遮阳系数有被太阳能得热系数（SHGC）取代的趋势，其值约为SHGC的1.15倍。遮阳系数以大于0小于1的无单位数表示。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ThermalTransmittanceSummer
+  definition: Thermal transmittance coefficient (U-Value) of a material.Summer thermal transmittance coefficient of the glazing only, often referred to as (U-value).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Q1xS0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Q1xS0qTqHuO00025QrE$V
+    ifdGuid: 2Q1xS0qTqHuO00025QrE$V
+    legacyGuid: 9a07b700d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2Q1xS0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-15'
+    definition: 'German-description-17'
+  - language: en
+    name: 'Thermal Transmittance Summer'
+    definition: ''
+  - language: fr-FR
+    name: 'TransmittanceThermiqueEte'
+    definition: 'Coefficient de transmission thermique (U) d''un matériau. Coefficient de transmission thermique en été du vitrage seul, souvent désigné comme étant Uw.'
+  - language: ja-JP
+    name: '夏期の熱透過係数'
+    definition: '素材の熱透過係数（U値）。夏期のガラスの熱透過係数だけ、U値として参照される'
+  - language: zh-CN
+    name: '夏季导热系数'
+    definition: '材料的导热系数（U值）。仅玻璃的夏季导热系数，常以U值表示。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermalTransmittanceMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ThermalTransmittanceWinter
+  definition: Thermal transmittance coefficient (U-Value) of a material.Winter thermal transmittance coefficient of the glazing only, often referred to as (U-value).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UCzI0qTqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UCzI0qTqHuO00025QrE$V
+    ifdGuid: 2UCzI0qTqHuO00025QrE$V
+    legacyGuid: 9e33d480d1dd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2UCzI0qTqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'German-name-16'
+    definition: 'German-description-18'
+  - language: en
+    name: 'Thermal Transmittance Winter'
+    definition: ''
+  - language: fr-FR
+    name: 'TransmittanceThermiqueHiver'
+    definition: 'Coefficient de transmission thermique (U) d''un matériau. Coefficient de transmission thermique en hiver du vitrage seul, souvent désigné comme étant Uw.'
+  - language: ja-JP
+    name: '冬季の熱透過係数'
+    definition: '素材の熱透過係数（U値）。夏期のガラスの熱透過係数だけ、U値として参照される。'
+  - language: zh-CN
+    name: '冬季导热系数'
+    definition: '材料的导热系数（U值）。仅玻璃的冬季导热系数，常以U值表示。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermalTransmittanceMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

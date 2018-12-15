@@ -1,0 +1,136 @@
+﻿name: 'Pset_SpaceLightingRequirements'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Properties related to the lighting requirements that apply to the occurrences of IfcSpace or IfcZone. This includes the required artificial lighting, illuminance, etc.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ltw40qWeHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ltw40qWeHuO00025QrE$V
+  ifdGuid: 2ltw40qWeHuO00025QrE$V
+  legacyGuid: afdfa100d20a11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 2ltw40qWeHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Raumbeleuchtungsanforderungen'
+  definition: 'Property Set Definition in German'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSpace
+  type: IfcSpace, IfcSpatialZone, IfcZone
+- name: ' IfcSpatialZone'
+  type: IfcSpace, IfcSpatialZone, IfcZone
+- name: ' IfcZone'
+  type: IfcSpace, IfcSpatialZone, IfcZone
+properties:
+- name: ArtificialLighting
+  definition: Indication whether this space  requires artificial lighting (as natural lighting would be not sufficient). (TRUE) indicates yes (FALSE) otherwise.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2rFEk0qWeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2rFEk0qWeHuO00025QrE$V
+    ifdGuid: 2rFEk0qWeHuO00025QrE$V
+    legacyGuid: b53ceb80d20a11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2rFEk0qWeHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'künstliche Beleuchtung'
+    definition: 'Angabe, ob dieser Raum eine künstliche Beleuchtung erfordert (WAHR) oder nicht (FALSCH)'
+  - language: en
+    name: 'Artificial Lighting'
+    definition: ''
+  - language: fr-FR
+    name: 'EclairageArtificiel'
+    definition: 'Indication si cette pièce a des besoins d''éclairage artificiel (dans la mesure où l''éclairage naturel ne serait pas suffisant). (VRAI) signifie oui, (FAUX) sinon.'
+  - language: ja-JP
+    name: '人工照明'
+    definition: '領域が人工照明を必要とするかどうかの表示（自然光が十分でないとして）　（TRUE）の場合、必要。（FALSE）の場合、不必要。'
+  - language: ko-KR
+    name: '인공 조명'
+    definition: '이 공간이 인공 조명을 필요로하는지 여부 (자연 조명이 충분하지 않기 위하여)를 나타내는 부울 값입니다. (TRUE) 필요 (FALSE) 아니오 값.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Illuminance
+  definition: Required average illuminance value for this space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2xCio0qWeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xCio0qWeHuO00025QrE$V
+    ifdGuid: 2xCio0qWeHuO00025QrE$V
+    legacyGuid: bb32cc80d20a11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2xCio0qWeHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Beleuchtungsstärke'
+    definition: 'Geforderte durchschnittliche Beleuchtungsstärke in diesem Raum.'
+  - language: en
+    name: 'Illuminance'
+    definition: ''
+  - language: fr-FR
+    name: 'EclairementAttendu'
+    definition: 'Valeur de l''éclairement attendu pour la pièce.'
+  - language: ja-JP
+    name: '照度'
+    definition: '領域に対しての必要とされる照度の値の平均値。'
+  - language: ko-KR
+    name: '조도'
+    definition: '이 공간을 위해 필요한 평균 조도'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIlluminanceMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,2310 @@
+﻿{
+  "name": "Pset_EnvironmentalImpactIndicators",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Environmental impact indicators are related to a given “functional unit” (ISO 14040 concept). An example of functional unit is a \"Double glazing window with PVC frame\" and the unit to consider is \"one square meter of opening elements filled by this product”.Indicators values are valid for the whole life cycle or only a specific phase (see LifeCyclePhase property). Values of all the indicators are expressed per year according to the expected service life. The first five properties capture the characteristics of the functional unit. The following properties are related to environmental indicators.There is a consensus agreement international for the five one. Last ones are not yet fully and formally agreed at the international level.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1xexg0qU4HuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xexg0qU4HuO00025QrE$V",
+    "ifdGuid": "1xexg0qU4HuO00025QrE$V",
+    "legacyGuid": "7ba3ba80d1e111e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "1xexg0qU4HuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Indikatoren für die Umweltbeeinflussung",
+      "definition": "Umweltwirkungsindikatoren beziehen sich auf eine gegebene \"funktionelle Einheit\" (Konzept ISO 14040), wie z.B. ein \"Doppelverglasungsfenster mit PVC-Rahmen\" und die zu betrachtende Einheit ist \"ein Quadratmeter Öffnungselemente, die mit diesem Produkt gefüllt sind\".\r\nIndicators Die Werte gelten für den gesamten Lebenszyklus oder nur für eine bestimmte Phase (siehe Eigenschaft LifeCyclePhase)."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcElement",
+      "type": "IfcElement"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/22CZ80qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22CZ80qU4HuO00025QrE$V",
+        "ifdGuid": "22CZ80qU4HuO00025QrE$V",
+        "legacyGuid": "82323200d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "22CZ80qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Reference",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Reference",
+          "definition": "Référence à l'identifiant d'un type spécifié dans le contexte de ce projet."
+        },
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "このプロジェクトのための参照記号。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "참조",
+          "definition": "이 프로젝트에서 여기에 특정한 형식에 대한 참조 ID"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FunctionalUnitReference",
+      "definition": "Reference to a database or a classification",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/28A1C0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28A1C0qU4HuO00025QrE$V",
+        "ifdGuid": "28A1C0qU4HuO00025QrE$V",
+        "legacyGuid": "88281300d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "28A1C0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Functional Unit Reference",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ReferenceUniteFonctionnelle",
+          "definition": "Référence à une base de données ou à une classification [NDT : référence, par exemple, à l'identification d'un produit dans la base INIES]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "機能単位参照",
+          "definition": "データベースやクラスへの参照。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "기능단위참조",
+          "definition": "데이터베이스 또는 분류에 대한 참조"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Unit",
+      "definition": "The unit of the quantity the environmental indicators values are related with.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2FJo40qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FJo40qU4HuO00025QrE$V",
+        "ifdGuid": "2FJo40qU4HuO00025QrE$V",
+        "legacyGuid": "8f4f2100d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2FJo40qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Unite",
+          "definition": "Unité de la quantité prise en compte pour la détermination des impacts environnementaux."
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位",
+          "definition": "関連する環境指数値の数量単位。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위",
+          "definition": "환경 지표 값이 연결된 량의 단위"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcText",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "LifeCyclePhase",
+      "definition": "The whole life cycle or only a given phase  from which environmental data are valid.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2MTYy0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2MTYy0qU4HuO00025QrE$V",
+        "ifdGuid": "2MTYy0qU4HuO00025QrE$V",
+        "legacyGuid": "96762f00d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2MTYy0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Life Cycle Phase",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "PhaseCycleDeVie",
+          "definition": "Le cycle de vie complet ou seulement une de ses phases pour lequel les les données environnementales sont valides"
+        },
+        {
+          "language": "ja-JP",
+          "name": "ライフサイクルフェーズ",
+          "definition": "環境データが有効であるライフサイクル全てまたは特定の段階。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "라이프 사이클 단계",
+          "definition": "환경 데이터가 유효한지 라이프 사이클 또는 단 하나 주어진 단계"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "constantValues": [
+          {
+            "name": "ACQUISITION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "CRADLETOSITE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DECONSTRUCTION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DISPOSAL",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DISPOSALTRANSPORT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "GROWTH",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "INSTALLATION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MAINTENANCE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "MANUFACTURE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OCCUPANCY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OPERATION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PROCUREMENT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PRODUCTION",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "PRODUCTIONTRANSPORT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "RECOVERY",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "REFURBISHMENT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "REPAIR",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "REPLACEMENT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TRANSPORT",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "USAGE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WASTE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "WHOLELIFECYCLE",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "USERDEFINED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTDEFINED",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ExpectedServiceLife",
+      "definition": "Expected service life in years.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2dlpk0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dlpk0qU4HuO00025QrE$V",
+        "ifdGuid": "2dlpk0qU4HuO00025QrE$V",
+        "legacyGuid": "a7bf3b80d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2dlpk0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Expected Service Life",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "DureeDeVieTypique",
+          "definition": "Durée de vie typique exprimée en années."
+        },
+        {
+          "language": "ja-JP",
+          "name": "期待される耐用期間",
+          "definition": "数年間の期待される耐用年数。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "예상수명",
+          "definition": "예상 수명"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcTimeMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "TotalPrimaryEnergyConsumptionPerUnit",
+      "definition": "Quantity of energy used as defined in ISO21930:2007.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2jjHo0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jjHo0qU4HuO00025QrE$V",
+        "ifdGuid": "2jjHo0qU4HuO00025QrE$V",
+        "legacyGuid": "adb51c80d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2jjHo0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Total Primary Energy Consumption Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ConsommationTotaleEnergiePrimaireParUnite",
+          "definition": "Consommation d'énergie primaire utilisée, telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり全一次エネルギ消費",
+          "definition": "ISO21930:2007で定義されたエネルギー消費量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 모든 차 에너지 소비",
+          "definition": "ISO21930 : 2007에서 정의된 에너지 사용량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcEnergyMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WaterConsumptionPerUnit",
+      "definition": "Quantity of water used.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2p4cS0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2p4cS0qU4HuO00025QrE$V",
+        "ifdGuid": "2p4cS0qU4HuO00025QrE$V",
+        "legacyGuid": "b3126700d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2p4cS0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Water Consumption Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ConsommationEauParUnite",
+          "definition": "Quantité d'eau utilisée telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]. Exprimée en litres."
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり水使用",
+          "definition": "リットル単位で表現された水の消費量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위 당 물 사용",
+          "definition": "사용 수량의 리터 수"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcVolumeMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HazardousWastePerUnit",
+      "definition": "Quantity of hazardous waste generated",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2v24W0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2v24W0qU4HuO00025QrE$V",
+        "ifdGuid": "2v24W0qU4HuO00025QrE$V",
+        "legacyGuid": "b9084800d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2v24W0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Hazardous Waste Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "DechetsDangereuxParUnite",
+          "definition": "Quantité de déchets dangereux générés tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010]."
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり有害廃棄物",
+          "definition": "生成された有害な廃棄量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 유해 폐기물",
+          "definition": "유해 폐기물의 발생량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NonHazardousWastePerUnit",
+      "definition": "Quantity of non hazardous waste generated",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2_PPA0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_PPA0qU4HuO00025QrE$V",
+        "ifdGuid": "2_PPA0qU4HuO00025QrE$V",
+        "legacyGuid": "be659280d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2_PPA0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Non Hazardous Waste Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "DechetsNonDangereuxParUnite",
+          "definition": "Quantité de déchets non dangereux générés tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010]."
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり非有害廃棄物",
+          "definition": "生成された無害な排気量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 비 유해 폐기물",
+          "definition": "비 유해 폐기물의 발생량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ClimateChangePerUnit",
+      "definition": "Quantity of greenhouse gases emitted calculated in equivalent CO2",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/33AaQ0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/33AaQ0qU4HuO00025QrE$V",
+        "ifdGuid": "33AaQ0qU4HuO00025QrE$V",
+        "legacyGuid": "c32a4680d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "33AaQ0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Climate Change Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ChangementClimatiqueParUnite",
+          "definition": "Quantité d'émissions de gaz à effet de serre exprimée en Kg d'équivalent CO2 tels que définis dans la norme  ISO21930:2007 [NDT : ainsi que dans les normes PrEN15804:2008 et NF P01-010]."
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり気候変動",
+          "definition": "CO2で計算された温室効果ガスの放出量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 기후 변화",
+          "definition": "CO2 등가 환산되는 온실 가스 발생량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AtmosphericAcidificationPerUnit",
+      "definition": "Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3982U0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3982U0qU4HuO00025QrE$V",
+        "ifdGuid": "3982U0qU4HuO00025QrE$V",
+        "legacyGuid": "c9202780d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3982U0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Atmospheric Acidification Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "AcidificationAtmospheriqueParUnite",
+          "definition": "Quantité de gaz responsables de l'acidification atmosphérique exprimée en Kg d'équivalent SO2 [NDT : selon les normes PrEN15804:2008 et NF P01-010]."
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり大気酸性化",
+          "definition": "SO2で計算される大気の酸性化に影響するガスの量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 대기 산성화",
+          "definition": "SO2에 해당 환산된 대기 산성 화의 원인이되는 가스량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RenewableEnergyConsumptionPerUnit",
+      "definition": "Quantity of renewable energy used as defined in ISO21930:2007",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3F5WY0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3F5WY0qU4HuO00025QrE$V",
+        "ifdGuid": "3F5WY0qU4HuO00025QrE$V",
+        "legacyGuid": "cf160880d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3F5WY0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Renewable Energy Consumption Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ConsommationEnergieRenouvelableParUnite",
+          "definition": "Consommation d'énergie renouvelable telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり再生可能エネルギ消費",
+          "definition": "ISO21930:2007で定義される再生可能エネルギーの使用量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 재생 에너지 소비",
+          "definition": "ISO21930 : 2007에 정의된 재생 가능 에너지 사용량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcEnergyMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "NonRenewableEnergyConsumptionPerUnit",
+      "definition": "Quantity of non-renewable energy used as defined in ISO21930:2007",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3L2_c0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3L2_c0qU4HuO00025QrE$V",
+        "ifdGuid": "3L2_c0qU4HuO00025QrE$V",
+        "legacyGuid": "d50be980d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3L2_c0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Non Renewable Energy Consumption Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ConsommationEnergieNonRenouvelableParUnite",
+          "definition": "Consommation d'énergie non renouvelable telle que définie dans la norme ISO21930:2007 [NDT : et dans la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり再生不可エネルギ消費",
+          "definition": "ISO21930:2007で定義される非再生エネルギーの使用量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 재생 불가 에너지 소비",
+          "definition": "ISO21930 : 2007에 정의된 재생 불가 에너지 사용량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcEnergyMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ResourceDepletionPerUnit",
+      "definition": "Quantity of resources used calculated in equivalent antimony",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3R0Sg0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R0Sg0qU4HuO00025QrE$V",
+        "ifdGuid": "3R0Sg0qU4HuO00025QrE$V",
+        "legacyGuid": "db01ca80d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3R0Sg0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Resource Depletion Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "EpuisementRessourcesParUnite",
+          "definition": "Quantité de ressources consommées exprimée en équivalent Antimoine telles que définies dans la norme  ISO21930:2007  [NDT : et dans la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり資源消費",
+          "definition": "アンチモンで計算される資源の使用量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 자원소비",
+          "definition": "안티몬에 해당 환산된 사용 자원 량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "InertWastePerUnit",
+      "definition": "Quantity of inert waste generated",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Wzwk0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Wzwk0qU4HuO00025QrE$V",
+        "ifdGuid": "3Wzwk0qU4HuO00025QrE$V",
+        "legacyGuid": "e0f7ab80d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3Wzwk0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Inert Waste Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "DechetsInertesParUnite",
+          "definition": "Quantité de déchets inertes générés [NDT : selon la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり不活性廃棄物",
+          "definition": "生成された安定廃棄物の量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 불황성 폐기물",
+          "definition": "불활성 폐기물 발생량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RadioactiveWastePerUnit",
+      "definition": "Quantity of radioactive waste generated",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3cxOo0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cxOo0qU4HuO00025QrE$V",
+        "ifdGuid": "3cxOo0qU4HuO00025QrE$V",
+        "legacyGuid": "e6ed8c80d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3cxOo0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Radioactive Waste Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "DechetsRadioactifsParUnite",
+          "definition": "Quantité de déchets radioactifs générés [NDT : selon la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり放射性廃棄物",
+          "definition": "生成された放射性廃棄物の量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 방사성 폐기물",
+          "definition": "방사성 폐기물 발생량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "StratosphericOzoneLayerDestructionPerUnit",
+      "definition": "Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3iIjS0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3iIjS0qU4HuO00025QrE$V",
+        "ifdGuid": "3iIjS0qU4HuO00025QrE$V",
+        "legacyGuid": "ec4ad700d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3iIjS0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Stratospheric Ozone Layer Destruction Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "DestructionCoucheOzoneStartospheriqueParUnite",
+          "definition": "Quantité de gaz destructeurs de la couche d'ozone exprimée en équivalent CFC-R11 tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり成層圏オゾン層破壊",
+          "definition": "CFC-R11で計算される成層圏のオゾン層を破壊するガスの量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 성층권 오존층 파괴",
+          "definition": "CFC-R11에 해당 환산된 성층권 오존층 파괴 가스량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "PhotochemicalOzoneFormationPerUnit",
+      "definition": "Quantity of gases creating the photochemical ozone calculated in equivalent ethylene",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3osKw0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3osKw0qU4HuO00025QrE$V",
+        "ifdGuid": "3osKw0qU4HuO00025QrE$V",
+        "legacyGuid": "f2d94e80d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3osKw0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Photochemical Ozone Formation Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "FormationOzonePhotochimiqueParUnite",
+          "definition": "Quantité de gaz producteurs d'ozone photochimique exprimée en équivalent ethylène tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme NF P01-010]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり光化学オゾン生成",
+          "definition": "エチレンで計算される光化学物質オゾンを生成するガスの量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 광화학 오존 생성",
+          "definition": "에틸렌에 해당 환산된 광화학 오존 생성 끊 가스량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "EutrophicationPerUnit",
+      "definition": "Quantity of eutrophicating compounds calculated in equivalent PO4",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3tdWA0qU4HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tdWA0qU4HuO00025QrE$V",
+        "ifdGuid": "3tdWA0qU4HuO00025QrE$V",
+        "legacyGuid": "f79e0280d1e111e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3tdWA0qU4HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Eutrophication Per Unit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "EutrophisationParUnite",
+          "definition": "Quantité de composés responsables de l'eutrophisation exprimée en équivalent P04 tels que définis dans la norme  ISO21930:2007 [NDT : et dans la norme PrEN15804:2008]"
+        },
+        {
+          "language": "ja-JP",
+          "name": "単位あたり富栄養化",
+          "definition": "PO4で計算される富栄養化する化合物の量。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "단위당 부영양화",
+          "definition": "PO4 (인산)에 상응하는 환산되는 부영 양화 성분 물량"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcMassMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

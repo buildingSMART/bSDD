@@ -1,0 +1,126 @@
+﻿name: 'Pset_ProjectOrderPurchaseOrder'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Defines the requirements for purchase orders in a project.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3R3CK0qVSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R3CK0qVSHuO00025QrE$V
+  ifdGuid: 3R3CK0qVSHuO00025QrE$V
+  legacyGuid: db0cc500d1f711e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3R3CK0qVSHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Projektanweisung - Einkaufsanweisung'
+  definition: 'Definiert die Anforderungen an Bestellungen in einem Projekt.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProjectOrder/PURCHASEORDER
+  type: IfcProjectOrder/PURCHASEORDER
+properties:
+- name: IsFOB
+  definition: Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False). FOB is a shipping term which indicates that the supplier pays the shipping costs (and usually also the insurance costs) from the point of manufacture to a specified destination, at which point the buyer takes responsibility.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZPG00qVSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZPG00qVSHuO00025QrE$V
+    ifdGuid: 3ZPG00qVSHuO00025QrE$V
+    legacyGuid: e3650000d1f711e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3ZPG00qVSHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Is FOB'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShipMethod
+  definition: Method of shipping that will be used for goods or services.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3hlJi0qVSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hlJi0qVSHuO00025QrE$V
+    ifdGuid: 3hlJi0qVSHuO00025QrE$V
+    legacyGuid: ebbd3b00d1f711e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3hlJi0qVSHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Ship Method'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

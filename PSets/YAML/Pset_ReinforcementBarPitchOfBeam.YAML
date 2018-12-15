@@ -1,0 +1,218 @@
+﻿name: 'Pset_ReinforcementBarPitchOfBeam'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'The pitch length information of reinforcement  bar with the beam.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/30Faw0qVyHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30Faw0qVyHuO00025QrE$V
+  ifdGuid: 30Faw0qVyHuO00025QrE$V
+  legacyGuid: c03e4e80d1ff11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 30Faw0qVyHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Bewehrungsstab - Balkenabstand'
+  definition: 'Die Schlaglängeninformation des Bewehrungsstabes mit dem Träger.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcBeam
+  type: IfcBeam
+properties:
+- name: Description
+  definition: Description of the reinforcement.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35cva0qVyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35cva0qVyHuO00025QrE$V
+    ifdGuid: 35cva0qVyHuO00025QrE$V
+    legacyGuid: c59b9900d1ff11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 35cva0qVyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Description'
+    definition: ''
+  - language: ja-JP
+    name: '説明'
+    definition: '鉄筋の説明。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Reference
+  definition: A descriptive label for the general reinforcement type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3BaNe0qVyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3BaNe0qVyHuO00025QrE$V
+    ifdGuid: 3BaNe0qVyHuO00025QrE$V
+    legacyGuid: cb917a00d1ff11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3BaNe0qVyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Reference'
+    definition: ''
+  - language: ja-JP
+    name: '参照記号'
+    definition: '一般的な鉄筋タイプの説明ラベル。（例えば、梁の両端・中央で肋筋や巾止筋の間隔が異なる場合に、"Start","Center","End"を記述する）'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: StirrupBarPitch
+  definition: The pitch length of the stirrup bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3JKHw0qVyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JKHw0qVyHuO00025QrE$V
+    ifdGuid: 3JKHw0qVyHuO00025QrE$V
+    legacyGuid: d3511e80d1ff11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3JKHw0qVyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Stirrup Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '肋筋間隔'
+    definition: '肋筋の間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SpacingBarPitch
+  definition: The pitch length of the spacing bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3PtvO0qVyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PtvO0qVyHuO00025QrE$V
+    ifdGuid: 3PtvO0qVyHuO00025QrE$V
+    legacyGuid: d9df9600d1ff11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3PtvO0qVyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Spacing Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '幅止筋間隔'
+    definition: '巾止筋の間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

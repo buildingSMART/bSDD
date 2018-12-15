@@ -1,0 +1,1472 @@
+﻿{
+  "name": "Pset_WindowCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Properties common to the definition of all occurrences of Window.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2YCHW0qXWHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YCHW0qXWHuO00025QrE$V",
+    "ifdGuid": "2YCHW0qXWHuO00025QrE$V",
+    "legacyGuid": "a2311800d21811e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "2YCHW0qXWHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Fenster - allgemeiner Eigenschaftssatz",
+      "definition": "Eigenschaften, die der Definition aller Vorkommen von Window gemeinsam sind."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcWindow",
+      "type": "IfcWindow"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Reference",
+      "definition": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2czSm0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2czSm0qXWHuO00025QrE$V",
+        "ifdGuid": "2czSm0qXWHuO00025QrE$V",
+        "legacyGuid": "a6f5cc00d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2czSm0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Bauteiltyp",
+          "definition": "Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des \"Typobjekts\", insbesondere wenn die Software keine Typen unterstützt."
+        },
+        {
+          "language": "en",
+          "name": "Reference",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Reference",
+          "definition": "Référence à l'identifiant d'un type spécifié dans le contexte du projet (exemple : \"type A1\") pour désigner un \"type de construction\". Une alternative au nom d'un objet type lorsque les objets types ne sont pas gérés par le logiciel."
+        },
+        {
+          "language": "ja-JP",
+          "name": "参照記号",
+          "definition": "このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "参考号",
+          "definition": "若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcIdentifier",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Status",
+      "definition": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2iwwq0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iwwq0qXWHuO00025QrE$V",
+        "ifdGuid": "2iwwq0qXWHuO00025QrE$V",
+        "legacyGuid": "acebad00d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2iwwq0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Status",
+          "definition": "Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. \"Neu\" (new) neues Bauteil als Ergänzung, \"Bestand\" (existing) bestehendes Bauteil, dass erhalten bleibt, \"Abbruch\" (demolish) Bauteil, das abgebrochen wird, \"Temporär\" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)"
+        },
+        {
+          "language": "en",
+          "name": "Status",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Statut",
+          "definition": "Statut de l'élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "状態",
+          "definition": "要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyEnumeratedValue": {
+        "constantValues": [
+          {
+            "name": "NEW",
+            "definition": "element designed as new addition",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "EXISTING",
+            "definition": "element exists and is to remain",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "DEMOLISH",
+            "definition": "element exists but is to be demolished",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "TEMPORARY",
+            "definition": "element will exist only temporarily (such as a temporary support structure)",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "OTHER",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "NOTKNOWN",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          },
+          {
+            "name": "UNSET",
+            "definition": "",
+            "ifdGuid": "",
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "AcousticRating",
+      "definition": "Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2vS0M0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vS0M0qXWHuO00025QrE$V",
+        "ifdGuid": "2vS0M0qXWHuO00025QrE$V",
+        "legacyGuid": "b9700580d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2vS0M0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Schallschutzklasse",
+          "definition": "Schallschutzklasse gemäß der nationalen oder regionalen Schallschutzverordnung."
+        },
+        {
+          "language": "en",
+          "name": "Acoustic Rating",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "IsolationAcoustique",
+          "definition": "Classement acoustique de cet objet. Donné selon le Code National du Bâtiment. Il indique la résistance à la transmission du son de cet objet par une valeur de référence (au lieu de fournir les valeurs totales d'absorption du son)."
+        },
+        {
+          "language": "ja-JP",
+          "name": "遮音等級",
+          "definition": "遮音等級情報。関連する建築基準法を参照。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "隔音等级",
+          "definition": "该构件的隔音等级。该属性的依据为国家建筑规范。为表示该构件隔音效果的比率（而不是完全吸收声音的值）。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FireRating",
+      "definition": "Fire rating for this object.It is given according to the national fire safety classification.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2$$dq0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$$dq0qXWHuO00025QrE$V",
+        "ifdGuid": "2$$dq0qXWHuO00025QrE$V",
+        "legacyGuid": "bffe7d00d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2$$dq0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Feuerwiderstandsklasse",
+          "definition": "Feuerwiderstandasklasse gemäß der nationalen oder regionalen Brandschutzverordnung."
+        },
+        {
+          "language": "en",
+          "name": "Fire Rating",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "ResistanceAuFeu",
+          "definition": "Classement au feu de l'élément donné selon la classification nationale de sécurité incendie."
+        },
+        {
+          "language": "ja-JP",
+          "name": "耐火等級",
+          "definition": "主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "防火等级",
+          "definition": "该构件的防火等级。该属性的依据为国家防火安全分级。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SecurityRating",
+      "definition": "Index based rating system indicating security level.It is giving according to the national building code.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/36ZFI0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36ZFI0qXWHuO00025QrE$V",
+        "ifdGuid": "36ZFI0qXWHuO00025QrE$V",
+        "legacyGuid": "c68cf480d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "36ZFI0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Sicherheitsklasse",
+          "definition": "Sicherheitsklasse gemäß der nationalen oder regionalen Gebäudesicherheitsverordnung."
+        },
+        {
+          "language": "en",
+          "name": "Security Rating",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "NiveauSecurite",
+          "definition": "Système de classification par indices, indiquant le niveau de sécurité."
+        },
+        {
+          "language": "ja-JP",
+          "name": "防犯等級",
+          "definition": "防犯等級情報。関連する基準を参照。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "安全等级",
+          "definition": "表示安全程度的参考性等级。该属性的依据为国家建筑规范。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "IsExternal",
+      "definition": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3D6sm0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3D6sm0qXWHuO00025QrE$V",
+        "ifdGuid": "3D6sm0qXWHuO00025QrE$V",
+        "legacyGuid": "cd1b6c00d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3D6sm0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Außenbauteil",
+          "definition": "Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser)."
+        },
+        {
+          "language": "en",
+          "name": "Is External",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "EstExterieur",
+          "definition": "Indique si l'élément est conçu pour être utilisé à l'extérieur (VRAI) ou non (FAUX). Si VRAI, c'est un élément extérieur qui donne sur l'extérieur du bâtiment."
+        },
+        {
+          "language": "ja-JP",
+          "name": "外部区分",
+          "definition": "外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "是否外部构件",
+          "definition": "表示该构件是否设计为外部构件。若是，则该构件为外部构件，朝向建筑物的外侧。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Infiltration",
+      "definition": "Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3J4Kq0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3J4Kq0qXWHuO00025QrE$V",
+        "ifdGuid": "3J4Kq0qXWHuO00025QrE$V",
+        "legacyGuid": "d3114d00d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3J4Kq0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Luftdurchlässigkeit",
+          "definition": "Luftaustausch über die Fugen des geschlossenen Fensters  (Q-Wert). Gibt die Luftdurchlässigkeit des gesamten Fensters bei einem Luftdruckniveau von 50 Pascal an."
+        },
+        {
+          "language": "en",
+          "name": "Infiltration",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "TauxInfiltration",
+          "definition": "Taux d'infiltration de l'air extérieur lorsqu'on soumet la porte à une pression de 50 pascals. Cette valeur sera utilisée si la longueur des joints n'est pas connue."
+        },
+        {
+          "language": "ja-JP",
+          "name": "隙間風",
+          "definition": "隙間風の流量値。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "渗风量",
+          "definition": "在50帕斯卡压强下填充物面积上外部空气对填充物的渗透流速。在部分接缝的长度未知时应使用该属性。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcVolumetricFlowRateMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ThermalTransmittance",
+      "definition": "Thermal transmittance coefficient (U-Value) of a material.It applies to the total door construction.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3ORfU0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ORfU0qXWHuO00025QrE$V",
+        "ifdGuid": "3ORfU0qXWHuO00025QrE$V",
+        "legacyGuid": "d86e9780d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3ORfU0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "U-Wert",
+          "definition": "Wärmedurchgangskoeffizient (U-Wert) der Materialschichten.Hier der Gesamtwärmedurchgangskoeffizient des Fensters."
+        },
+        {
+          "language": "en",
+          "name": "Thermal Transmittance",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "TransmissionThermique",
+          "definition": "Coefficient de transmission thermique (U) d'un matériau. Il s'applique à l'ensemble de la fenêtre."
+        },
+        {
+          "language": "ja-JP",
+          "name": "熱貫流率",
+          "definition": "熱貫流率U値。ここでは窓を通した熱移動の方向における全体の熱還流率を示す。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "导热系数",
+          "definition": "材料的导热系数（U值）。适用于窗的整体结构。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcThermalTransmittanceMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "GlazingAreaFraction",
+      "definition": "Fraction of the glazing area relative to the total area of the filling element. It shall be used, if the glazing area is not given separately for all panels within the filling element.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3TCqk0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TCqk0qXWHuO00025QrE$V",
+        "ifdGuid": "3TCqk0qXWHuO00025QrE$V",
+        "legacyGuid": "dd334b80d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3TCqk0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Glasflächenanteil",
+          "definition": "Anteil der verglasten Fläche an der Gesamtfläche des Fensters. Es ist der Reziprokwert des Rahmenanteils."
+        },
+        {
+          "language": "en",
+          "name": "Glazing Area Fraction",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "FractionSurfaceVitree",
+          "definition": "Rapport de la surface de vitrage à la surface totale de l'ouverture. Cette propriété sera utilisée si la surface de vitrage n'est pas donnée séparément pour tous les panneaux occupant l'ouverture."
+        },
+        {
+          "language": "ja-JP",
+          "name": "ガラス率",
+          "definition": "外壁の総面積に対するガラスの面積の比率。ガラスの面積が外壁に含まれる全てのパネルと分離されていないときに、使用されます。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveRatioMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasSillExternal",
+      "definition": "Indication whether the window opening has an external sill (TRUE) or not (FALSE).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3ZmSC0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZmSC0qXWHuO00025QrE$V",
+        "ifdGuid": "3ZmSC0qXWHuO00025QrE$V",
+        "legacyGuid": "e3c1c300d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3ZmSC0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Fensterbank aussen",
+          "definition": "Angabe, ob dieses Fenster mit einer äußeren Fensterbank ausgestattet ist (JA) under nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Has Sill External",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Seuil côté extérieur",
+          "definition": "Indique si l'ouverture est dotée d'un seuil côté extérieur (VRAI) ou non (FAUX)."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasSillInternal",
+      "definition": "Indication whether the window opening has an internal sill (TRUE) or not (FALSE).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3gwD40qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gwD40qXWHuO00025QrE$V",
+        "ifdGuid": "3gwD40qXWHuO00025QrE$V",
+        "legacyGuid": "eae8d100d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3gwD40qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Fensterbank innen",
+          "definition": "Angabe, ob dieses Fenster mit einer inneren Fensterbank ausgestattet ist (JA) under nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Has Sill Internal",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Seuil côté intérieur",
+          "definition": "Indique si l'ouverture est dotée d'un seuil côté intérieur (VRAI) ou non (FAUX)."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HasDrive",
+      "definition": "Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3og7M0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3og7M0qXWHuO00025QrE$V",
+        "ifdGuid": "3og7M0qXWHuO00025QrE$V",
+        "legacyGuid": "f2a87580d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3og7M0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Antrieb",
+          "definition": "Angabe, ob dieses Bauteil einen automatischen Antrieb zum Öffnen und Schließen besitzt (JA) oder nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Has Drive",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Motorisé",
+          "definition": "Indique si cet objet est doté d'une motorisation (VRAI) ou non (FAUX)."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SmokeStop",
+      "definition": "Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3vpuE0qXWHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vpuE0qXWHuO00025QrE$V",
+        "ifdGuid": "3vpuE0qXWHuO00025QrE$V",
+        "legacyGuid": "f9cf8380d21811e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3vpuE0qXWHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Rauchschutz",
+          "definition": "Angabe, ob das Fenster einen Rauchschutz gemäß der nationalen oder regionalen Brandschutzverordnung gewährleistet (JA) oder nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Smoke Stop",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "CoupeFumee",
+          "definition": "Indique si la porte est conçue pour une fonction coupe-fumée (VRAI) ou non (FAUX)"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FireExit",
+      "definition": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE). Here it defines an exit window in accordance to the national building code.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/00NVi0qXaHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00NVi0qXaHuO00025QrE$V",
+        "ifdGuid": "00NVi0qXaHuO00025QrE$V",
+        "legacyGuid": "005dfb00d21911e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "00NVi0qXaHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Notausgang",
+          "definition": "Angabe, ob das Fenster ein Notausgang gemäß der nationalen oder regionalen Brandschutzverordnung ist (JA), oder nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Fire Exit",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Sortie de secours",
+          "definition": "Indique si cet objet est conçu pour servir de sortie en cas d'incendie (VRAI) ou non (FAUX). Définition de la sortie de secours selon le Code National."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WaterTightnessRating",
+      "definition": "Water tightness rating for this object.It is provided according to the national building code.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "e92533f3a7e4416196ad923faee29e96",
+        "legacyGuidAsIfcGlobalId": "3f9JFpf_H1OPQjaZ_kufwM"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MechanicalLoadRating",
+      "definition": "Mechanical load rating for this object.It is provided according to the national building code.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "7db55f9239da4d10830cd420f3a1988c",
+        "legacyGuidAsIfcGlobalId": "1zjL_IETfD48CCr23pePYC"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WindLoadRating",
+      "definition": "Wind load resistance rating for this object.It is provided according to the national building code.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "664882a15b8a420087f6f80670cbe20b",
+        "legacyGuidAsIfcGlobalId": "1cI8AXMuf208Vs_0Pmo_8B"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1407 @@
+﻿name: 'Pset_ValveTypeCommon'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Valve type common attributes.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0UTIo0qXGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UTIo0qXGHuO00025QrE$V
+  ifdGuid: 0UTIo0qXGHuO00025QrE$V
+  legacyGuid: 1e752c80d21411e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 0UTIo0qXGHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Ventiltyp - allgemeiner Eigenschaftssatz'
+  definition: 'Ventiltyp gemeinsame Attribute.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcValve
+  type: IfcValve
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Y2BE0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Y2BE0qXGHuO00025QrE$V
+    ifdGuid: 0Y2BE0qXGHuO00025QrE$V
+    legacyGuid: 2208b380d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0Y2BE0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Reference'
+    definition: ''
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 103808cf5fe64d589e7317c7493147b5
+    legacyGuidAsIfcGlobalId: 0GE0ZFN_PDM9vp5yT9CKUr
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: NEW
+      definition: element designed as new addition
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: EXISTING
+      definition: element exists and is to remain
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DEMOLISH
+      definition: element exists but is to be demolished
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TEMPORARY
+      definition: element will exist only temporarily (such as a temporary support structure)
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ValvePattern
+  definition: 'The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where:SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment.ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees.STRAIGHT_2_PORT: Valve in which the flow is straight through.STRAIGHT_3_PORT: Valve with three separate ports.CROSSOVER_4_PORT: Valve with 4 separate ports.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0d$fI0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0d$fI0qXGHuO00025QrE$V
+    ifdGuid: 0d$fI0qXGHuO00025QrE$V
+    legacyGuid: 27fe9480d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0d$fI0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Valve Pattern'
+    definition: ''
+  - language: ja-JP
+    name: '弁の形'
+    definition: '単一ポートSINGLEPORT()=システムで単一入口ポートを持ち、出口ポートは周囲環境である　2ポート直角型(ANGLED_2_PORT)＝中で流れ方向が完全に90度変わる弁　2ポート直行型(STRAIGHT_2_PORT)＝中で流れが真っ直ぐな弁　3ポート直行型(STRAIGHT_3_PORT)＝3つの別々のポートを持つ　4ポート交差型(CROSSOVER_4_PORT)＝4つの別々のポートを持つ'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: SINGLEPORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: ANGLED_2_PORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: STRAIGHT_2_PORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: STRAIGHT_3_PORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: CROSSOVER_4_PORT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ValveOperation
+  definition: 'The method of valve operation where:DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wireFLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanismHYDRAULIC: A valve that is opened and closed by hydraulic actuationLEVER: A valve that is opened and closed by the action of a lever rotating the gate within the valve.LOCKSHIELD: A valve that requires the use of a special lockshield key for opening and closing, the operating mechanism being protected by a shroud during normal operation.MOTORIZED: A valve that is opened and closed by the action of an electric motor on an actuatorPNEUMATIC: A valve that is opened and closed by pneumatic actuationSOLENOID: A valve that is normally held open by a magnetic field in a coil acting on the gate but that is closed immediately if the electrical current generating the magnetic field is removed. SPRING: A valve that is normally held in position by the pressure of a spring on a plate but that may be caused to open if the pressure of the fluid is sufficient to overcome the spring pressure. THERMOSTATIC: A valve in which the ports are opened or closed to maintain a required predetermined temperature.WHEEL: A valve that is opened and closed by the action of a wheel moving the gate within the valve.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0u5dG0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0u5dG0qXGHuO00025QrE$V
+    ifdGuid: 0u5dG0qXGHuO00025QrE$V
+    legacyGuid: 38167400d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0u5dG0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Valve Operation'
+    definition: ''
+  - language: ja-JP
+    name: '弁操作'
+    definition: 'The method of valve operation where:弁操作方法は以下の通り：おもり(DROPWEIGHT)＝おもりを付けられたレバーが外される動作で閉まる弁　浮き(FLOAT)＝水位と共に上下する浮きの動作で開閉する弁。浮きはレバーに付けたボール又は他の機構　水力(HYDRAULIC)＝水力アクチュエータで開閉する弁　レバー(LEVER)＝弁内のゲートを回転させるレバーの動作で開閉する弁　ロックシールド(LOCKSHIELD)＝開閉のために特別のロックシールドキーの使用を要求する弁。操作機構は通常の操作の間は覆いで保護されている　電動化(MOTORIZED)＝アクチュエータに付けられた電動モータの動作で開閉する弁　空気圧(PNEUMATIC)＝圧縮空気で動くアクチュエータで開閉する弁　筒型コイル(SOLENOID)＝ゲートに付けられ作動しているコイルの磁界で通常は開に保たれている弁。しかし、もし磁界を発生している電流が消されたらただちに閉まる　ばね(SPRING)＝板に付けられたばねの圧力で、通常は位置を保たれている弁。しかし、もし流体の圧力が、ばねの圧力より十分大きければ開いてしまう。　自動温度調節(THERMOSTATIC)＝前もって決められた要求温度を維持するために、中のポートが開閉する弁　ハンドル(WHEEL)＝弁内のゲートを動かすハンドルの動作で開閉する弁'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: DROPWEIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: FLOAT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: HYDRAULIC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LEVER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LOCKSHIELD
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: MOTORIZED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: PNEUMATIC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SOLENOID
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SPRING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: THERMOSTATIC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: WHEEL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ValveMechanism
+  definition: 'The mechanism by which the valve function is achieved where:BALL: Valve that has a ported ball that can be turned relative to the body seat ports.BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis.CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve.GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packing.GLOBE: Screwdown valve that has a spherical body.LUBRICATEDPLUG: Plug valve in which a lubricant is injected under pressure between the plug face and the body.NEEDLE: Valve for regulating the flow in or from a pipe, in which a slender cone moves along the axis of flow to close against a fixed conical seat.PARALLELSLIDE: Screwdown valve that has a machined plate that slides in formed grooves to form a seal.PLUG: Valve that has a ported plug that can be turned relative to the body seat ports.WEDGEGATE: Screwdown valve that has a wedge shaped plate fitting into tapered guides to form a seal.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Hjxk0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Hjxk0qXGHuO00025QrE$V
+    ifdGuid: 1Hjxk0qXGHuO00025QrE$V
+    legacyGuid: 51b7bb80d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1Hjxk0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Valve Mechanism'
+    definition: ''
+  - language: ja-JP
+    name: '弁機構'
+    definition: '機構により可能な弁機能は以下の通り：ボール弁(BALL valve)＝本体のシートポートに関連して回転できるポートボールを持つ弁　バタフライ弁(BUTTERFLY valve)＝直径軸あたりに流線型の円板の旋回軸のある弁　CONFIGUREDスクリュー弁(CONFIGUREDGATE Screwdown valve)＝閉鎖ゲートを持つねじ回し式弁。その弁は、弁を通過する時圧力と流量変更をより正確に制御できる方法で形づけられている　グランド弁(GLAND Valve)＝テーパーのついたシートを持った弁。その中に回転プラグがグランドとグランドパッキンによって保持されている　グローブスクリュー弁(GLOBE Screwdown valve)＝ 球形の本体を持つねじ回し式弁　滑プラグ弁(LUBRICATEDPLUG Plug valve)＝プラグ表面と本体との間の圧力を下げるために潤滑油が注入された弁　ニードル弁(NEEDLE Valve)＝管内外の流量を調節する弁。その中に固定した円錐形のシートを閉止ために、流れの軸に沿って動く細長いコーンを持っている　平行スライドスクリュー弁(PARALLELSLIDE Screwdown valve)＝機械加工されたプレートを持つねじ回し式弁。そのプレートはシールを形成するために溝の中を滑る　プラグ弁(PLUG Valve)＝本体のシートポートと関連して回転できる、ポートしたプラグを持つ弁　くさびゲートスクリュー弁(WEDGEGATE Screwdown valve)＝シールを形成するためにテーパーの付いたガイドの中をくさび状の板部品を持つねじ回し式弁'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: BALL
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: BUTTERFLY
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: CONFIGUREDGATE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: GLAND
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: GLOBE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LUBRICATEDPLUG
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NEEDLE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: PARALLELSLIDE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: PLUG
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: WEDGEGATE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Size
+  definition: The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1g9zO0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1g9zO0qXGHuO00025QrE$V
+    ifdGuid: 1g9zO0qXGHuO00025QrE$V
+    legacyGuid: 6a27d600d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1g9zO0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Size'
+    definition: ''
+  - language: ja-JP
+    name: 'サイズ'
+    definition: '弁（又は、水栓、混合弁等の接続）接続サイズ'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TestPressure
+  definition: The maximum pressure to which the valve has been subjected under test.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1uTV80qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1uTV80qXGHuO00025QrE$V
+    ifdGuid: 1uTV80qXGHuO00025QrE$V
+    legacyGuid: 7875f200d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1uTV80qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Test Pressure'
+    definition: ''
+  - language: ja-JP
+    name: '試験圧力'
+    definition: '試験の時、掛けられる最高圧力'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WorkingPressure
+  definition: The normally expected maximum working pressure of the valve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1_QzC0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_QzC0qXGHuO00025QrE$V
+    ifdGuid: 1_QzC0qXGHuO00025QrE$V
+    legacyGuid: 7e6bd300d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1_QzC0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Working Pressure'
+    definition: ''
+  - language: ja-JP
+    name: '運転圧力'
+    definition: 'バルブの通常予想される最高運転圧力'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FlowCoefficient
+  definition: Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/24ORG0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24ORG0qXGHuO00025QrE$V
+    ifdGuid: 24ORG0qXGHuO00025QrE$V
+    legacyGuid: 8461b400d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 24ORG0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Flow Coefficient'
+    definition: ''
+  - language: ja-JP
+    name: '流出係数'
+    definition: '流出係数（全開のバルブを通過する単位圧力損失当たりの流体の量）一般的にバルブのKv又はCv値で表される'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CloseOffRating
+  definition: Close off rating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ALvK0qXGHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ALvK0qXGHuO00025QrE$V
+    ifdGuid: 2ALvK0qXGHuO00025QrE$V
+    legacyGuid: 8a579500d21411e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2ALvK0qXGHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Close Off Rating'
+    definition: ''
+  - language: ja-JP
+    name: 'クローズオフレーティング'
+    definition: 'クローズオフレーティング'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

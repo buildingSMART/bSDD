@@ -1,0 +1,538 @@
+﻿{
+  "name": "Pset_ServiceLifeFactors",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Captures various factors that impact the expected service life of elements within the system or zone.",
+  "templatetype": "PSET_OCCURRENCEDRIVEN",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/04joSsCOnBIOUAKfnBqHzF",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04joSsCOnBIOUAKfnBqHzF",
+    "ifdGuid": "04joSsCOnBIOUAKfnBqHzF",
+    "legacyGuid": "519ab53b9b3848d494c3caf0dac8688e",
+    "legacyGuidAsIfcGlobalId": "1HchKxcpX8r9J3ol3Qo6YE"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Lebensdauerfaktoren",
+      "definition": "Erfasst verschiedene Faktoren, die die erwartete Lebensdauer von Elementen innerhalb des Systems oder der Zone beeinflussen."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSystem",
+      "type": "IfcSystem"
+    }
+  ],
+  "properties": [
+    {
+      "name": "QualityOfComponents",
+      "definition": "Adjustment of the service life resulting from the effect of the quality of components used.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1Z7qX7FHb2YOqkNY2BNAqz",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Z7qX7FHb2YOqkNY2BNAqz",
+        "ifdGuid": "1Z7qX7FHb2YOqkNY2BNAqz",
+        "legacyGuid": "d5f5278715be42a0b539cf3f060054e3",
+        "legacyGuidAsIfcGlobalId": "3LzIU75Rv2eBKvppy605JZ"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Quality Of Components",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "DesignLevel",
+      "definition": "Adjustment of the service life resulting from the effect of design level employed.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/20e_bQAp9DZOw3TX_0lyqJ",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20e_bQAp9DZOw3TX_0lyqJ",
+        "ifdGuid": "20e_bQAp9DZOw3TX_0lyqJ",
+        "legacyGuid": "8d77f8cb925b4cfdbea48301f42c89a0",
+        "legacyGuidAsIfcGlobalId": "2DT$ZBabjC$RwaWm7qB8cW"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Design Level",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WorkExecutionLevel",
+      "definition": "Adjustment of the service life resulting from the effect of the quality of work executed.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3nHwuhHs505BKfxj$HyASB",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3nHwuhHs505BKfxj$HyASB",
+        "ifdGuid": "3nHwuhHs505BKfxj$HyASB",
+        "legacyGuid": "ac78d9e0d39b43f4af2c7b7596d60667",
+        "legacyGuidAsIfcGlobalId": "2iUDdWqvj3zAyiUtMMrWPd"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Work Execution Level",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "IndoorEnvironment",
+      "definition": "Adjustment of the service life resulting from the effect of the indoor environment (where appropriate).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0dn_RIAjL5sQoRl8Z6Ko3K",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dn_RIAjL5sQoRl8Z6Ko3K",
+        "ifdGuid": "0dn_RIAjL5sQoRl8Z6Ko3K",
+        "legacyGuid": "ab27c286d027498e962abd4fa0cab9a8",
+        "legacyGuidAsIfcGlobalId": "2h9yA6q2T9ZfOglK_Wohce"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Indoor Environment",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OutdoorEnvironment",
+      "definition": "Adjustment of the service life resulting from the effect of the outdoor environment (where appropriate)",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3KTA7uHAv75glWgT0ElH8G",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KTA7uHAv75glWgT0ElH8G",
+        "ifdGuid": "3KTA7uHAv75glWgT0ElH8G",
+        "legacyGuid": "9988ab22befe45c9ab3c94972c61bd90",
+        "legacyGuidAsIfcGlobalId": "2PYAiYllv5oQiyb9SiORsG"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Outdoor Environment",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "InUseConditions",
+      "definition": "Adjustment of the service life resulting from the effect of the conditions in which components are operating.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0wCcTgMtfCb9qNPpob1gj5",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wCcTgMtfCb9qNPpob1gj5",
+        "ifdGuid": "0wCcTgMtfCb9qNPpob1gj5",
+        "legacyGuid": "37ac936a1b0a42bfa3c0f4998cca50e4",
+        "legacyGuidAsIfcGlobalId": "0th9Dg6mf2lwF0z9cCob3a"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "In Use Conditions",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MaintenanceLevel",
+      "definition": "Adjustment of the service life resulting from the effect of the level or degree of maintenance applied to dcomponents.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Ingb5jUP9TuAnhuFrFDy8",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ingb5jUP9TuAnhuFrFDy8",
+        "ifdGuid": "3Ingb5jUP9TuAnhuFrFDy8",
+        "legacyGuid": "97e75274042544a89cb65b8a94766d30",
+        "legacyGuidAsIfcGlobalId": "2Nvr9q12L4g9osMugKTcqm"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Maintenance Level",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyBoundedValue": {
+        "dataType": "IfcAmountOfSubstanceMeasure",
+        "unitType": "USERDEFINED",
+        "LowerBoundValue": "",
+        "UpperBoundValue": "",
+        "typeName": "TypePropertyBoundedValue"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

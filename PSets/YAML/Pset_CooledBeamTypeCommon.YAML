@@ -1,0 +1,1611 @@
+﻿name: 'Pset_CooledBeamTypeCommon'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Cooled beam common attributes.SoundLevel and SoundAttenuation attributes deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2cE4W0qSuHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cE4W0qSuHuO00025QrE$V
+  ifdGuid: 2cE4W0qSuHuO00025QrE$V
+  legacyGuid: a6384800d1ce11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 2cE4W0qSuHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Kühlbalkentyp - allgemeiner Eigenschaftssatz'
+  definition: 'Cooled beam common attributes.
+
+    SoundLevel und SoundAttenuation-Attribute gelöscht in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcCooledBeam
+  type: IfcCooledBeam
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2g$Fm0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2g$Fm0qSuHuO00025QrE$V
+    ifdGuid: 2g$Fm0qSuHuO00025QrE$V
+    legacyGuid: aafcfc00d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2g$Fm0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Reference'
+    definition: ''
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2mMaQ0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mMaQ0qSuHuO00025QrE$V
+    ifdGuid: 2mMaQ0qSuHuO00025QrE$V
+    legacyGuid: b05a4680d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2mMaQ0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Status'
+    definition: ''
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: NEW
+      definition: element designed as new addition
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: EXISTING
+      definition: element exists and is to remain
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DEMOLISH
+      definition: element exists but is to be demolished
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TEMPORARY
+      definition: element will exist only temporarily (such as a temporary support structure)
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsFreeHanging
+  definition: Is it free hanging type (not mounted in a false ceiling)?
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$sO_0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$sO_0qSuHuO00025QrE$V
+    ifdGuid: 2$sO_0qSuHuO00025QrE$V
+    legacyGuid: bfd98f80d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2$sO_0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Is Free Hanging'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: PipeConnection
+  definition: The manner in which the pipe connection is made to the cooled beam.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0bnXS0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bnXS0qSyHuO00025QrE$V
+    ifdGuid: 0bnXS0qSyHuO00025QrE$V
+    legacyGuid: 25c61700d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0bnXS0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Pipe Connection Enum'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: STRAIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: RIGHT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LEFT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TOP
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WaterFlowControlSystemType
+  definition: Factory fitted waterflow control system.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35Dje0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35Dje0qSuHuO00025QrE$V
+    ifdGuid: 35Dje0qSuHuO00025QrE$V
+    legacyGuid: c536da00d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 35Dje0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Water Flow Control System Type'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: ONOFFVALVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: 2WAYVALVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: 3WAYVALVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WaterPressureRange
+  definition: Allowable water circuit working pressure range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LJhc0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LJhc0qSuHuO00025QrE$V
+    ifdGuid: 3LJhc0qSuHuO00025QrE$V
+    legacyGuid: d54eb980d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3LJhc0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Water Pressure Range'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalCoolingCapacity
+  definition: Nominal cooling capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3RtJ40qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RtJ40qSuHuO00025QrE$V
+    ifdGuid: 3RtJ40qSuHuO00025QrE$V
+    legacyGuid: dbdd3100d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3RtJ40qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Cooling Capacity'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalSurroundingTemperatureCooling
+  definition: Nominal surrounding temperature (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Xqn80qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Xqn80qSuHuO00025QrE$V
+    ifdGuid: 3Xqn80qSuHuO00025QrE$V
+    legacyGuid: e1d31200d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3Xqn80qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Surrounding Temperature Cooling'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalSurroundingHumidityCooling
+  definition: Nominal surrounding humidity (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cbyO0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cbyO0qSuHuO00025QrE$V
+    ifdGuid: 3cbyO0qSuHuO00025QrE$V
+    legacyGuid: e697c600d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3cbyO0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Surrounding Humidity Cooling'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalSupplyWaterTemperatureCooling
+  definition: Nominal supply water temperature (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3hN7e0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hN7e0qSuHuO00025QrE$V
+    ifdGuid: 3hN7e0qSuHuO00025QrE$V
+    legacyGuid: eb5c7a00d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3hN7e0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Supply Water Temperature Cooling'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalReturnWaterTemperatureCooling
+  definition: Nominal return water temperature (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3mkSI0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mkSI0qSuHuO00025QrE$V
+    ifdGuid: 3mkSI0qSuHuO00025QrE$V
+    legacyGuid: f0b9c480d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3mkSI0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Return Water Temperature Cooling'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalWaterFlowCooling
+  definition: Nominal water flow (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3s5my0qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3s5my0qSuHuO00025QrE$V
+    ifdGuid: 3s5my0qSuHuO00025QrE$V
+    legacyGuid: f6170f00d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3s5my0qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Water Flow Cooling'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumetricFlowRateMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalHeatingCapacity
+  definition: Nominal heating capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3y3F00qSuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3y3F00qSuHuO00025QrE$V
+    ifdGuid: 3y3F00qSuHuO00025QrE$V
+    legacyGuid: fc0cf000d1ce11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3y3F00qSuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Heating Capacity'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalSurroundingTemperatureHeating
+  definition: Nominal surrounding temperature (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01QZg0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01QZg0qSyHuO00025QrE$V
+    ifdGuid: 01QZg0qSyHuO00025QrE$V
+    legacyGuid: 016a3a80d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 01QZg0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Surrounding Temperature Heating'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalSupplyWaterTemperatureHeating
+  definition: Nominal supply water temperature (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06Bkw0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06Bkw0qSyHuO00025QrE$V
+    ifdGuid: 06Bkw0qSyHuO00025QrE$V
+    legacyGuid: 062eee80d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 06Bkw0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Supply Water Temperature Heating'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalReturnWaterTemperatureHeating
+  definition: Nominal return water temperature (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0AywA0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0AywA0qSyHuO00025QrE$V
+    ifdGuid: 0AywA0qSyHuO00025QrE$V
+    legacyGuid: 0af3a280d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0AywA0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Return Water Temperature Heating'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalWaterFlowHeating
+  definition: Nominal water flow (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GKEq0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GKEq0qSyHuO00025QrE$V
+    ifdGuid: 0GKEq0qSyHuO00025QrE$V
+    legacyGuid: 1050ed00d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0GKEq0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Nominal Water Flow Heating'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumetricFlowRateMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IntegratedLightingType
+  definition: Integrated lighting in cooled beam.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0LhZU0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0LhZU0qSyHuO00025QrE$V
+    ifdGuid: 0LhZU0qSyHuO00025QrE$V
+    legacyGuid: 15ae3780d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0LhZU0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Integrated Lighting Type'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DIRECT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: INDIRECT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DIRECTANDINDIRECT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FinishColor
+  definition: Finish color for cooled beam.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qhCc0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qhCc0qSyHuO00025QrE$V
+    ifdGuid: 0qhCc0qSyHuO00025QrE$V
+    legacyGuid: 34acc980d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0qhCc0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Finish Color'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CoilLength
+  definition: Length of coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0w2XG0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0w2XG0qSyHuO00025QrE$V
+    ifdGuid: 0w2XG0qSyHuO00025QrE$V
+    legacyGuid: 3a0a1400d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0w2XG0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Coil Length'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: CoilWidth
+  definition: Width of coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0_piW0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_piW0qSyHuO00025QrE$V
+    ifdGuid: 0_piW0qSyHuO00025QrE$V
+    legacyGuid: 3ecec800d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0_piW0qSyHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Coil Width'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

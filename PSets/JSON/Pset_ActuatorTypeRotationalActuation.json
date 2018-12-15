@@ -1,0 +1,199 @@
+﻿{
+  "name": "Pset_ActuatorTypeRotationalActuation",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Characteristics of rotational actuation of an actuatorHistory: Replaces Pset_RotationalActuator",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2iSVY0qRqHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iSVY0qRqHuO00025QrE$V",
+    "ifdGuid": "2iSVY0qRqHuO00025QrE$V",
+    "legacyGuid": "ac71f880d1bd11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "2iSVY0qRqHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Aktortyp - Drehbetätigung",
+      "definition": "Kenndaten der Drehbetätigung eines actuator\nHistory: Ersetzt Pset_RotationalActuator"
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcActuator",
+      "type": "IfcActuator"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Torque",
+      "definition": "Indicates the maximum close-off torque for the actuator.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2npqC0qRqHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2npqC0qRqHuO00025QrE$V",
+        "ifdGuid": "2npqC0qRqHuO00025QrE$V",
+        "legacyGuid": "b1cf4300d1bd11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2npqC0qRqHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Torque",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "最大トルク",
+          "definition": "アクチュエータの最大締め切りトルクを示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "최대 토크",
+          "definition": "액츄에이터의 최대 마감 토크를 나타낸다."
+        },
+        {
+          "language": "de-DE",
+          "name": "Drehmoment",
+          "definition": "Gibt das maximale Abschaltdrehmoment für den Antrieb an."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcTorqueMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "RangeAngle",
+      "definition": "Indicates the maximum rotation the actuator must traverse.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2uzb40qRqHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uzb40qRqHuO00025QrE$V",
+        "ifdGuid": "2uzb40qRqHuO00025QrE$V",
+        "legacyGuid": "b8f65100d1bd11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "2uzb40qRqHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Range Angle",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "最大回転角",
+          "definition": "アクチュエータが動く最大回転角を示す。"
+        },
+        {
+          "language": "ko-KR",
+          "name": "최대 회전각",
+          "definition": "액츄에이터가 움직이는 최대 회전각을 나타낸다."
+        },
+        {
+          "language": "de-DE",
+          "name": "Winkelbereich",
+          "definition": "Gibt die maximale Umdrehung an, die der Antrieb durchlaufen muss."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPlaneAngleMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

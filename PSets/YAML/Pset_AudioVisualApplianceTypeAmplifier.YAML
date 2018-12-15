@@ -1,0 +1,301 @@
+﻿name: 'Pset_AudioVisualApplianceTypeAmplifier'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'An audio-visual amplifier is a device that renders audio from a single external source connected from a port.  HISTORY: Added in IFC4.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3F1X20qS4HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3F1X20qS4HuO00025QrE$V
+  ifdGuid: 3F1X20qS4HuO00025QrE$V
+  legacyGuid: cf061080d1c111e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3F1X20qS4HuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'audiovisuelles Gerät - Verstärker'
+  definition: 'Ein audio-visueller Verstärker ist ein Gerät, das Audio von einer einzigen externen Quelle wiedergibt, die über einen Port angeschlossen ist.  HISTORY: Hinzugefügt in IFC4.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAudioVisualAppliance/AMPLIFIER
+  type: IfcAudioVisualAppliance/AMPLIFIER
+properties:
+- name: AmplifierType
+  definition: Indicates the type of amplifier.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Nzk80qS4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Nzk80qS4HuO00025QrE$V
+    ifdGuid: 3Nzk80qS4HuO00025QrE$V
+    legacyGuid: d7f6e200d1c111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3Nzk80qS4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Amplifier Type'
+    definition: ''
+  - language: ja-JP
+    name: 'アンプ形式'
+    definition: 'アンプの形式を示す。'
+  - language: ko-KR
+    name: '앰프 형식'
+    definition: '앰프의 형식을 보여준다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: FIXED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: VARIABLE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET.
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioAmplification
+  definition: Indicates audio amplification frequency ranges.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cHFu0qS4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cHFu0qS4HuO00025QrE$V
+    ifdGuid: 3cHFu0qS4HuO00025QrE$V
+    legacyGuid: e644fe00d1c111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3cHFu0qS4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Audio Amplification'
+    definition: ''
+  - language: ja-JP
+    name: 'オーディオアンプ'
+    definition: '再生周波数帯域を示す。'
+  - language: ko-KR
+    name: '오디오 앰프'
+    definition: '재생 주파수 대역을 나타낸다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: ''
+    DefiningValue:
+      dataType: IfcFrequencyMeasure
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcSoundPowerMeasure
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioMode
+  definition: Indicates audio sound modes and corresponding labels, if applicable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3kdJa0qS4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3kdJa0qS4HuO00025QrE$V
+    ifdGuid: 3kdJa0qS4HuO00025QrE$V
+    legacyGuid: ee9d3900d1c111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3kdJa0qS4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Audio Mode'
+    definition: ''
+  - language: ja-JP
+    name: 'オーディオモード'
+    definition: 'オーディオサウンドモードの設定。'
+  - language: ko-KR
+    name: '오디오 모드'
+    definition: '오디오 사운드 모드 설정.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: ''
+    DefiningValue:
+      dataType: IfcIdentifier
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcLabel
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

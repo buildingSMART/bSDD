@@ -1,0 +1,301 @@
+﻿name: 'Pset_AudioVisualApplianceTypeReceiver'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'An audio-visual receiver is a device that switches audio and/or video from multiple sources, including external sources connected from ports and internal aggregated sources.  HISTORY: Added in IFC4.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1YZ140qSCHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1YZ140qSCHuO00025QrE$V
+  ifdGuid: 1YZ140qSCHuO00025QrE$V
+  legacyGuid: 628c1100d1c311e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 1YZ140qSCHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'audiovisuelles Gerät - Empfänger'
+  definition: 'Ein audio-visueller Empfänger ist ein Gerät, das Audio und/oder Video von mehreren Quellen umschaltet, einschließlich externer Quellen, die über Ports und interne aggregierte Quellen angeschlossen sind.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAudioVisualAppliance/RECEIVER
+  type: IfcAudioVisualAppliance/RECEIVER
+properties:
+- name: ReceiverType
+  definition: Indicates the type of receiver.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gIxM0qSCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gIxM0qSCHuO00025QrE$V
+    ifdGuid: 1gIxM0qSCHuO00025QrE$V
+    legacyGuid: 6a4bb580d1c311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1gIxM0qSCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Receiver Type'
+    definition: ''
+  - language: ja-JP
+    name: '受信機形式'
+    definition: '受信機の形式を示す。'
+  - language: ko-KR
+    name: '수신기 형식'
+    definition: '수신기의 형식을 보여준다.'
+  - language: de-DE
+    name: 'Empfängertyp'
+    definition: 'Gibt den Typ des Empfängers an.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: AUDIO
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: AUDIOVIDEO
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET.
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioAmplification
+  definition: Indicates audio amplification frequency ranges.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wOvK0qSCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wOvK0qSCHuO00025QrE$V
+    ifdGuid: 1wOvK0qSCHuO00025QrE$V
+    legacyGuid: 7a639500d1c311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1wOvK0qSCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Audio Amplification'
+    definition: ''
+  - language: ja-JP
+    name: 'オーディオアンプ'
+    definition: '再生周波数帯域を示す。'
+  - language: ko-KR
+    name: '오디오 앰프'
+    definition: '재생 주파수 대역을 나타낸다.'
+  - language: de-DE
+    name: 'Audio-Verstärkung'
+    definition: 'Zeigt die Frequenzbereiche der Audioverstärkung an.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: ''
+    DefiningValue:
+      dataType: IfcFrequencyMeasure
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcRatioMeasure
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AudioMode
+  definition: Indicates audio sound modes and corresponding labels, if applicable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/23L6Q0qSCHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23L6Q0qSCHuO00025QrE$V
+    ifdGuid: 23L6Q0qSCHuO00025QrE$V
+    legacyGuid: 83546680d1c311e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 23L6Q0qSCHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Audio Mode'
+    definition: ''
+  - language: ja-JP
+    name: 'オーディオモード'
+    definition: 'オーディオサウンドモードの設定。'
+  - language: ko-KR
+    name: '오디오 모드'
+    definition: '오디오 사운드 모드 설정.'
+  - language: de-DE
+    name: 'Audio-Modus'
+    definition: 'Zeigt Audiotonmodi und ggf. entsprechende Beschriftungen an.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: ''
+    DefiningValue:
+      dataType: IfcIdentifier
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcLabel
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

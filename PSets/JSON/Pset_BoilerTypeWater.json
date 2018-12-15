@@ -1,0 +1,205 @@
+﻿{
+  "name": "Pset_BoilerTypeWater",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Water boiler type common attributes.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Q3d00qSGHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Q3d00qSGHuO00025QrE$V",
+    "ifdGuid": "3Q3d00qSGHuO00025QrE$V",
+    "legacyGuid": "da0e7000d1c411e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "3Q3d00qSGHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Heizkesseltyp - Wasser",
+      "definition": "Wasserkocher Typ gemeinsame Attribute."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcBoiler/WATER",
+      "type": "IfcBoiler/WATER"
+    }
+  ],
+  "properties": [
+    {
+      "name": "NominalEfficiency",
+      "definition": "The nominal efficiency of the boiler as defined by the manufacturer. For water boilers, a function of inlet versus outlet temperature. Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: InletTemperature(IfcThermodynamicTemperatureMeasure), OutletTemperature(IfcThermodynamicTemperatureMeasure), NominalEfficiency(IfcNormalizedRatioMeasure).  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3UEes0qSGHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3UEes0qSGHuO00025QrE$V",
+        "ifdGuid": "3UEes0qSGHuO00025QrE$V",
+        "legacyGuid": "de3a8d80d1c411e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3UEes0qSGHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Nominal Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "EfficacitéNominale",
+          "definition": "Efficacité nominale de la chaudière tel que définie par le constructeur.Pour les chaudières à eau chaude, une fonction de la température en entrée par rapport à la température de sortie.Remarque: Comme deux variables sont utilisées ValeurDefinir et ValeursDefinies sont nulles, et les valeurs sont enregistrées dans IfcTable dans l'ordre suivant:- TempératureEntrée (IfcThermodynamicTemperatureMeasure) et TempératureSortie (IfcThermodynamicTemperatureMeasure) dans ValeursDefinir , et EfficacitéNominale (IfcNormalisedRatioMeasure) dansValeursDefinies.IfcTable est lié à IfcPropertyTableValue qui utilise IfcMetric et IfcPropertyConstraintRelationship."
+        },
+        {
+          "language": "de-DE",
+          "name": "Nennwirkungsgrad",
+          "definition": "Anmerkung: Da zwei Variablen verwendet werden, sind DefiningValues und DefinedValues null, und die Werte werden in IfcTable in der folgenden Reihenfolge gespeichert: InletTemperature(IfcThermodynamicTemperatureMeasure), OutletTemperature(IfcThermodynamicThermodynamicTemperatureMeasure), OutletTemperature(IfcThermodynamicTemperatureM"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "",
+        "DefiningValue": {
+          "dataType": "IfcThermodynamicTemperatureMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcNormalisedRatioMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "HeatOutput",
+      "definition": "Total nominal heat output as listed by the Boiler manufacturer. For water boilers, it is a function of inlet versus outlet temperature. For steam boilers, it is a function of inlet temperature versus steam pressure.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: InletTemperature(IfcThermodynamicTemperatureMeasure), OutletTemperature(IfcThermodynamicTemperatureMeasure), HeatOutput(IfcEnergyMeasure).  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3aoGK0qSGHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aoGK0qSGHuO00025QrE$V",
+        "ifdGuid": "3aoGK0qSGHuO00025QrE$V",
+        "legacyGuid": "e4c90500d1c411e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3aoGK0qSGHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Heat Output",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RendementChaleur",
+          "definition": "Rendement total nominal tel que défini par le constructeur de chaudière.Pour les chaudières à eau chaude, une fonction de la température en entrée par rapport à la température de sortie.Remarque: Comme deux variables sont utilisées ValeurDefinir et ValeursDefinies sont nulles, et les valeurs sont enregistrées dans IfcTable dans l'ordre suivant:- TempératureEntrée (IfcThermodynamicTemperatureMeasure) et TempératureSortie (IfcThermodynamicTemperatureMeasure) dans ValeursDefinir , et Rendement de chaleur (IfcEnergyMeasure) dansValeursDefinies.IfcPropertyTable est lié à IfcMetric qui utilise IfcMetric et IfcPropertyConstraintRelationship."
+        },
+        {
+          "language": "de-DE",
+          "name": "Wärmeabgabe",
+          "definition": "Die Gesamtnennwärmeleistung ist bei Wasserkesseln eine Funktion der Eintritts- und Austrittstemperatur, bei Dampfkesseln eine Funktion der Eintrittstemperatur und bei Dampfkesseln eine Funktion der Eintrittstemperatur und des Dampfdruckes.  Hinweis: Da zwei Variablen verwendet werden, sind DefiningValues und DefinedValues null, und die Werte werden in IfcTable in folgender Reihenfolge gespeichert: InletTemperature(IfcThermodynamicTemperatureMe"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyTableValue": {
+        "Expression": "",
+        "DefiningValue": {
+          "dataType": "IfcThermodynamicTemperatureMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        },
+        "DefinedValue": {
+          "dataType": "IfcEnergyMeasure",
+          "measureType": "",
+          "unitType": "USERDEFINED"
+        }
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

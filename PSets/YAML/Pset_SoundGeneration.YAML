@@ -1,0 +1,89 @@
+﻿name: 'Pset_SoundGeneration'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Common definition to capture the properties of sound typically used within the context of building services and flow distribution systems.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2AKPW0qWWHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AKPW0qWWHuO00025QrE$V
+  ifdGuid: 2AKPW0qWWHuO00025QrE$V
+  legacyGuid: 8a519800d20811e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 2AKPW0qWWHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Schallerzeugung'
+  definition: 'Gemeinsame Definition zur Erfassung der Eigenschaften von Geräuschen, die typischerweise im Rahmen von Gebäudetechnik und Strömungsverteilungssystemen verwendet werden.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDistributionFlowElement
+  type: IfcDistributionFlowElement
+properties:
+- name: SoundCurve
+  definition: Table of sound frequencies and sound power measured in decibels at a reference power of 1 picowatt(10^(-12) watt) for the referenced octave band frequency.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2FhkA0qWWHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FhkA0qWWHuO00025QrE$V
+    ifdGuid: 2FhkA0qWWHuO00025QrE$V
+    legacyGuid: 8faee280d20811e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2FhkA0qWWHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Sound Curve'
+    definition: ''
+  - language: ja-JP
+    name: '音響（騒音？）曲線'
+    definition: 'オクターブバンド1pW（10^(-12)の音の強さを基準とする音の周波数とデシベル単位で計測した音のエネルギーの一覧表。'
+  - language: ko-KR
+    name: '음향곡성'
+    definition: '옥타브 밴드 1pW (10 ^ (-12) 소리의 강도를 기준으로하는 소리의 주파수와 데시벨 단위로 측정하는 소리 에너지의 목록.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyTableValue:
+    Expression: ''
+    DefiningValue:
+      dataType: IfcFrequencyMeasure
+      measureType: ''
+      unitType: USERDEFINED
+    DefinedValue:
+      dataType: IfcSoundPowerMeasure
+      measureType: ''
+      unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

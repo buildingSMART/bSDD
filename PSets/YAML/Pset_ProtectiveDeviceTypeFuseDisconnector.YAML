@@ -1,0 +1,600 @@
+﻿name: 'Pset_ProtectiveDeviceTypeFuseDisconnector'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'A coherent set of attributes representing the breakeing capacity of a fuse, defined in accordance with IEC 60269. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3k8fE0qVqHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3k8fE0qVqHuO00025QrE$V
+  ifdGuid: 3k8fE0qVqHuO00025QrE$V
+  legacyGuid: ee229380d1fd11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3k8fE0qVqHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Sicherungstyp - Sicherungs-Lasttrennschalter'
+  definition: 'Hinweis - Eine Schutzeinrichtung kann mit verschiedenen Instanzen dieses pSets assoziiert werden, die Informationen zu verschiedenen grundlegenden Merkmalen liefern.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProtectiveDevice/FUSEDISCONNECTOR
+  type: IfcProtectiveDevice/FUSEDISCONNECTOR
+properties:
+- name: FuseDisconnectorType
+  definition: 'A list of the available types of fuse disconnector from which that required may be selected where:EngineProtectionDevice: A fuse whose characteristic is specifically designed for the protection of a motor or generator.FuseSwitchDisconnector: A switch disconnector in which a fuse link or a fuse carrier with fuse link forms the moving contact,HRC: A standard fuse (High Rupturing Capacity)OverloadProtectionDevice: A device that disconnects the supply when the operating conditions in an electrically undamaged circuit causes an overcurrent,SemiconductorFuse: A fuse whose characteristic is specifically designed for the protection of sem-conductor devices.SwitchDisconnectorFuse: A switch disconnector in which one or more poles have a fuse in series in a composite unit.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3pVzu0qVqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3pVzu0qVqHuO00025QrE$V
+    ifdGuid: 3pVzu0qVqHuO00025QrE$V
+    legacyGuid: f37fde00d1fd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3pVzu0qVqHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Fuse Disconnector Type'
+    definition: ''
+  - language: ja-JP
+    name: 'ヒューズ遮断機のタイプ'
+    definition: '自家用発電連携側：モータや発電機の保護のために設計されているヒューズ。 地絡保護装置：これでヒューズリンクまたはヒューズリンクヒューズキャリアは、可動接点を形成するスイッチ断路器、 HRC：標準ヒューズ（高連動破壊容量） 漏電保護装置：電気的に破損して回路の動作条件は、過電流が発生する電源を切断装置 欠相保護付：その特性を具体的にsemが芯デバイスの保護のために設計されているヒューズ。 複合ヒューズ保護装置：その内の1つまたは複数の極は、複合ユニットに直列にヒューズを持っているスイッチ断路器。'
+  - language: ko-KR
+    name: '퓨즈차단기 유형'
+    definition: '자가용 발전 연계 측면 : 모터 및 발전기 보호를 위해 디자인되는 퓨즈.  지락 보호 장치 : 이제 퓨즈 링크 또는 퓨즈 링크 퓨즈 캐리어는 가동 접점을 형성하는 스위치 단로기,  HRC : 표준 퓨즈 (높이 연동 파괴 용량)  누전 보호 장치 : 전기 손상 회로의 동작 조건은 과전류가 발생하는 전원을 차단 장치  결상 보호 부착 : 그 특성을 구체적으로 sem이 심 장치 보호를 위해 디자인되는 퓨즈.  복합 퓨즈 보호 장치 : 어떤 한 개 이상의 전극은 복합 유닛에 직렬로 퓨즈를 가지고있는 스위치 단로기.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: ENGINEPROTECTIONDEVICE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: FUSEDSWITCH
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: HRC
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OVERLOADPROTECTIONDEVICE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SWITCHDISCONNECTORFUSE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VoltageLevel
+  definition: The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0jKEI0qVuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jKEI0qVuHuO00025QrE$V
+    ifdGuid: 0jKEI0qVuHuO00025QrE$V
+    legacyGuid: 2d50e480d1fe11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0jKEI0qVuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Voltage Level'
+    definition: ''
+  - language: ja-JP
+    name: '電圧レベル'
+    definition: '電圧レベルを選択。'
+  - language: ko-KR
+    name: '전압레벨'
+    definition: '전압 레벨을 선택합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: U230
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U400
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U440
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U525
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U690
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U1000
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IC60269
+  definition: The breaking capacity in [A] for fuses in accordance with the IEC 60269 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0$onu0qVuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$onu0qVuHuO00025QrE$V
+    ifdGuid: 0$onu0qVuHuO00025QrE$V
+    legacyGuid: 3fcb1e00d1fe11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0$onu0qVuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'IC60269'
+    definition: ''
+  - language: ja-JP
+    name: 'IC60269'
+    definition: 'IECの60269シリーズに応じたヒューズの遮断容量[A]。'
+  - language: ko-KR
+    name: 'IC60269'
+    definition: 'IEC의 60269 시리즈에 따라 퓨즈의 차단 용량 [A].'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: PowerLoss
+  definition: The power loss in [W] of the fuse when the nominal current is flowing through the fuse.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/15mFy0qVuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/15mFy0qVuHuO00025QrE$V
+    ifdGuid: 15mFy0qVuHuO00025QrE$V
+    legacyGuid: 45c0ff00d1fe11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 15mFy0qVuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Power Loss'
+    definition: ''
+  - language: ja-JP
+    name: '電力損失'
+    definition: '定格電流がヒューズに流れる時の電力損失[W]。'
+  - language: ko-KR
+    name: '전력 손실'
+    definition: '정격 전류가 퓨즈에 흐르는시 전력 손실 [W].'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

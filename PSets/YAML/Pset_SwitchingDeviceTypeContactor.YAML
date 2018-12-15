@@ -1,0 +1,301 @@
+﻿name: 'Pset_SwitchingDeviceTypeContactor'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'An electrical device used to control the flow of power in a circuit on or off.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3oxqE0qWqHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oxqE0qWqHuO00025QrE$V
+  ifdGuid: 3oxqE0qWqHuO00025QrE$V
+  legacyGuid: f2ef4380d20d11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3oxqE0qWqHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Schaltertyp - Schütz'
+  definition: 'Ein elektrisches Gerät zur Steuerung des Leistungsflusses in einem Stromkreis ein oder aus.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSwitchingDevice/CONTACTOR
+  type: IfcSwitchingDevice/CONTACTOR
+properties:
+- name: ContactorType
+  definition: 'A list of the available types of contactor from which that required may be selected where:CapacitorSwitching: for switching 3 phase single or multi-step capacitor banks.LowCurrent: requires the use of low resistance contacts.MagneticLatching: enables the contactor to remain in the on position when the coil is no longer energized.MechanicalLatching: requires that the contactor is mechanically retained in the on position.Modular: are totally enclosed and self contained.Reversing: has a double set of contactors that are prewired.Standard: is a generic device that controls the flow of power in a circuit on or off.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ti$U0qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ti$U0qWqHuO00025QrE$V
+    ifdGuid: 3ti$U0qWqHuO00025QrE$V
+    legacyGuid: f7b3f780d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3ti$U0qWqHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Contactor Type'
+    definition: ''
+  - language: ja-JP
+    name: '接触器タイプ'
+    definition: '以下より選択が必要となる、接触器の一覧リスト：コンデンサスイッチ：3つのシングルフェーズまたは複数のコンデンサバンクで切り替える。低流：低い抵抗接触の使用が必要マグネット式：コイルのエネルギーが無くなった時に切替をONポジションにして有効にするMechanicalLatching：切替器がONポジションを維持するために機械的な仕組みが必要。モジュール式：閉鎖されている自働型切替器。リバース：2つの切替器をワイヤーで接続したもの。標準：回路で電力潮流をオンまたはオフでコントロールする一般的な装置。'
+  - language: ko-KR
+    name: '접촉기 유형'
+    definition: '다음에서 선택이 필요하다, 접촉기  목록 : 콘덴서 스위치 : 3 개의 단일 위상 이상의 커패시터 뱅크를 전환합니다. 낮은여 : 낮은 저항 접촉 사용해야 마그네틱 : 코일의 에너지가 분실된 때 전환을 ON 위치로하여 사용 MechanicalLatching : 판을 ON 위치를 유지하기 위해 기계적인 구조가 필요합니다. 모듈형 : 폐쇄되어있는 자신 동형 판. 리버스 : 두 판을 와이어로 연결한 것. 표준 : 회로에서 전력 조류를 켜지거나 꺼지지 컨트롤하는 일반적인 장치'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: CAPACITORSWITCHING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LOWCURRENT
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: MAGNETICLATCHING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: MECHANICALLATCHING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: MODULAR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: REVERSING
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: STANDARD
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

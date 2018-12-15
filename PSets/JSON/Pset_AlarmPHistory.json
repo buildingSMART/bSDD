@@ -1,0 +1,400 @@
+﻿{
+  "name": "Pset_AlarmPHistory",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Properties for history of alarm values.  HISTORY: Added in IFC4.",
+  "templatetype": "PSET_PERFORMANCEDRIVEN",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3anmO0qS0HuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3anmO0qS0HuO00025QrE$V",
+    "ifdGuid": "3anmO0qS0HuO00025QrE$V",
+    "legacyGuid": "e4c70600d1c011e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "3anmO0qS0HuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Alarm/Gefahrenmelder - Werteverlauf",
+      "definition": "Eigenschaften für die Historie der Alarmwerte.  HISTORY: Hinzugefügt in IFC4."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcAlarm",
+      "type": "IfcAlarm"
+    }
+  ],
+  "properties": [
+    {
+      "name": "Enabled",
+      "definition": "Indicates whether alarm is enabled or disabled over time.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3g9520qS0HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3g9520qS0HuO00025QrE$V",
+        "ifdGuid": "3g9520qS0HuO00025QrE$V",
+        "legacyGuid": "ea245080d1c011e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3g9520qS0HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Enabled",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "Aktiviert",
+          "definition": "Zeigt an, ob der Alarm im Laufe der Zeit aktiviert oder deaktiviert wurde."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Condition",
+      "definition": "Indicates alarm condition over time.  The range of possible values and their meanings is defined by Pset_AlarmTypeCommon.Condition.  An empty value indicates no present alarm condition.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3lWPi0qS0HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lWPi0qS0HuO00025QrE$V",
+        "ifdGuid": "3lWPi0qS0HuO00025QrE$V",
+        "legacyGuid": "ef819b00d1c011e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3lWPi0qS0HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Condition",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "Bedingung",
+          "definition": "Der Bereich der möglichen Werte und deren Bedeutung wird durch Pset_AlarmTypeCommon.Condition festgelegt."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Severity",
+      "definition": "Indicates alarm severity over time, where the scale of values is determined by the control system configuration.  A zero value indicates no present alarm.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3phRY0qS0HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3phRY0qS0HuO00025QrE$V",
+        "ifdGuid": "3phRY0qS0HuO00025QrE$V",
+        "legacyGuid": "f3adb880d1c011e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3phRY0qS0HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Severity",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "Schweregrad",
+          "definition": "Zeigt die Schwere des Alarms über die Zeit an, wobei die Skala der Werte durch die Konfiguration der Steuerung bestimmt wird."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Acknowledge",
+      "definition": "Indicates acknowledgement status where False indicates acknowlegement is required and outstanding, True indicates condition has been acknowedged, and Unknown indicates no acknowledgement is required.  Upon resetting the condition, then acknowledgement reverts to Unknown.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3v2mC0qS0HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3v2mC0qS0HuO00025QrE$V",
+        "ifdGuid": "3v2mC0qS0HuO00025QrE$V",
+        "legacyGuid": "f90b0300d1c011e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3v2mC0qS0HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Acknowledge",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "Quittierung",
+          "definition": "Zeigt den Quittierungsstatus an, wobei False bedeutet, dass eine Quittierung erforderlich und ausstehend ist, True bedeutet, dass eine Quittierung bestätigt wurde und Unknown bedeutet, dass keine Quittierung erforderlich ist."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "User",
+      "definition": "Indicates acknowledging user over time by identification corresponding to IfcPerson.Identification on an IfcActor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3ydee0qS0HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ydee0qS0HuO00025QrE$V",
+        "ifdGuid": "3ydee0qS0HuO00025QrE$V",
+        "legacyGuid": "fc9e8a00d1c011e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3ydee0qS0HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "User",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "Benutzer",
+          "definition": "Zeigt an, dass der Benutzer im Laufe der Zeit durch eine Identifikation, die der IfcPerson.Identification auf einem IfcActor entspricht, bestätigt wird."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+﻿name: 'Pset_SensorTypeCO2Sensor'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'A device that senses or detects carbon dioxide.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/4ab2a15067674090b54aa91ccf4928c6
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/4ab2a15067674090b54aa91ccf4928c6
+  ifdGuid: 4ab2a15067674090b54aa91ccf4928c6
+  legacyGuid: 4ab2a15067674090b54aa91ccf4928c6
+  legacyGuidAsIfcGlobalId: 1Aig5GPsT0aBLAgHpFIIZ6
+localizations:
+- language: de-DE
+  name: 'Sensortyp - CO2-Sensor '
+  definition: 'Ein Gerät, das Kohlendioxid erfasst oder detektiert.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSensor/CO2SENSOR
+  type: IfcSensor/CO2SENSOR
+properties:
+- name: SetPointConcentration
+  definition: The carbon dioxide concentration to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: e4ab0c98841748269c10ddef20bb5aa9
+    legacyGuidAsIfcGlobalId: 3agmoOX1T89fmGtUyWkrgf
+  localizations:
+  - language: en
+    name: 'Set Point Concentration'
+    definition: ''
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

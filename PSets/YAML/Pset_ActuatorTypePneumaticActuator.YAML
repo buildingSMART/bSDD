@@ -1,0 +1,132 @@
+﻿name: 'Pset_ActuatorTypePneumaticActuator'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'A device that pneumatically actuates a control element'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2LCmi0qRqHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LCmi0qRqHuO00025QrE$V
+  ifdGuid: 2LCmi0qRqHuO00025QrE$V
+  legacyGuid: 95330b00d1bd11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 2LCmi0qRqHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Aktortyp - pneumatischer Aktor'
+  definition: 'Vorrichtung zur pneumatischen Betätigung eines Steuerelementes'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcActuator/PNEUMATICACTUATOR
+  type: IfcActuator/PNEUMATICACTUATOR
+properties:
+- name: InputPressure
+  definition: Maximum input control air pressure requirement.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SMXa0qRqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SMXa0qRqHuO00025QrE$V
+    ifdGuid: 2SMXa0qRqHuO00025QrE$V
+    legacyGuid: 9c5a1900d1bd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2SMXa0qRqHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Input Pressure'
+    definition: ''
+  - language: ja-JP
+    name: '入力圧力'
+    definition: '最大制御空気圧。'
+  - language: ko-KR
+    name: '입력 압력'
+    definition: '최대 제어 공압'
+  - language: de-DE
+    name: 'Eingangsdruck'
+    definition: 'Maximaler Steuerluftdruck am Eingang'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: InputFlowrate
+  definition: Maximum input control air flowrate requirement.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2YJ$e0qRqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YJ$e0qRqHuO00025QrE$V
+    ifdGuid: 2YJ$e0qRqHuO00025QrE$V
+    legacyGuid: a24ffa00d1bd11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2YJ$e0qRqHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Input Flowrate'
+    definition: ''
+  - language: ja-JP
+    name: '入力流量'
+    definition: '最大制御空気流量。'
+  - language: ko-KR
+    name: '입력 유량'
+    definition: '최대 제어 공기 유량'
+  - language: de-DE
+    name: 'Eingangs-Durchflussmenge'
+    definition: 'Maximale Eingangsregelung Luftdurchsatzanforderung.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcVolumetricFlowRateMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

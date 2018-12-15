@@ -1,0 +1,923 @@
+﻿name: 'Pset_ElectricMotorTypeCommon'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Defines a particular type of engine that is a machine for converting electrical energy into mechanical energy. Note that in cases where a close coupled or monobloc pump or close coupled fan is being driven by the motor, the motor may itself be considered to be directly part of the pump or fan. In this case , motor information may need to be specified directly at the pump or fan and not througfh separate motor/motor connection entities. NOTE: StartingTime and TeTime added at IFC4'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AdI00qU0HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AdI00qU0HuO00025QrE$V
+  ifdGuid: 3AdI00qU0HuO00025QrE$V
+  legacyGuid: ca9d2000d1e011e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3AdI00qU0HuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Elektromotortyp - allgemeiner Eigenschaftssatz'
+  definition: 'In den Fällen, in denen eine Block- oder Blockpumpe oder ein Blockgebläse vom Motor angetrieben wird, kann der Motor selbst als Teil der Pumpe oder des Ventilators betrachtet werden, wobei die Motorinformationen direkt an der Pumpe oder dem Ventilator angegeben werden müssen und nicht durch separate Motor/Motor-Verbindungseinheiten.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcElectricMotor
+  type: IfcElectricMotor
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3INCI0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3INCI0qU0HuO00025QrE$V
+    ifdGuid: 3INCI0qU0HuO00025QrE$V
+    legacyGuid: d25cc480d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3INCI0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Reference'
+    definition: ''
+  - language: ja-JP
+    name: '参照'
+    definition: '当該プロジェクトで定義する形式の参照ID（例：A-1)、承認された分類に存在しないときに使用される。'
+  - language: ko-KR
+    name: '참조'
+    definition: '해당 프로젝트에 정의된 형식의 참조 ID (예 : A-1) 승인된 분류에 존재하지 않을 때 사용된다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3N8NY0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3N8NY0qU0HuO00025QrE$V
+    ifdGuid: 3N8NY0qU0HuO00025QrE$V
+    legacyGuid: d7217880d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3N8NY0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Status'
+    definition: ''
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: NEW
+      definition: element designed as new addition
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: EXISTING
+      definition: element exists and is to remain
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DEMOLISH
+      definition: element exists but is to be demolished
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TEMPORARY
+      definition: element will exist only temporarily (such as a temporary support structure)
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MaximumPowerOutput
+  definition: The maximum output power rating of the engine.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3bRvI0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bRvI0qU0HuO00025QrE$V
+    ifdGuid: 3bRvI0qU0HuO00025QrE$V
+    legacyGuid: e56f9480d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3bRvI0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Maximum Power Output'
+    definition: ''
+  - language: ja-JP
+    name: '最大出力'
+    definition: 'エンジンの最大出力定格。'
+  - language: ko-KR
+    name: '최대 출력'
+    definition: '엔진의 최대 출력 정격.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ElectricMotorEfficiency
+  definition: The ratio of output capacity to intake capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3fcx80qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fcx80qU0HuO00025QrE$V
+    ifdGuid: 3fcx80qU0HuO00025QrE$V
+    legacyGuid: e99bb200d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3fcx80qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Electric Motor Efficiency'
+    definition: ''
+  - language: ja-JP
+    name: '出力効率'
+    definition: '出力容量と入力容量の比率。'
+  - language: ko-KR
+    name: '출력 효율'
+    definition: '출력 용량을 입력 용량의 비율.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: StartCurrentFactor
+  definition: IEC. Start current factor defines how large the peak starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and to give the start current.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3k_Fo0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3k_Fo0qU0HuO00025QrE$V
+    ifdGuid: 3k_Fo0qU0HuO00025QrE$V
+    legacyGuid: eef8fc80d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3k_Fo0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Start Current Factor'
+    definition: ''
+  - language: ja-JP
+    name: '始動電流係数'
+    definition: '始動電流係数はエンジンが動き始めた時のピーク始動電流を定義。始動電流係数は定格電流と始動時の電流を掛け合わせたもの。'
+  - language: ko-KR
+    name: '시동전류 계수'
+    definition: '시동 전류 계수는 엔진이 움직이기 시작했다 피크 기동 전류를 정의합니다. 시동 전류 계수는 정격 전류 시동시 전류를 곱한 것'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: StartingTime
+  definition: The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3p9He0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3p9He0qU0HuO00025QrE$V
+    ifdGuid: 3p9He0qU0HuO00025QrE$V
+    legacyGuid: f3251a00d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3p9He0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Starting Time'
+    definition: ''
+  - language: ja-JP
+    name: '始動時間'
+    definition: 'モーターが停止状態から定格電圧を印加し定格速度に到達するまでに必要な時間。'
+  - language: ko-KR
+    name: '시작 시간'
+    definition: '모터가 정지 상태에서 정격 전압을인가하여 정격 속도에 도달하는 데 필요한 시간'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TeTime
+  definition: The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3uWcI0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3uWcI0qU0HuO00025QrE$V
+    ifdGuid: 3uWcI0qU0HuO00025QrE$V
+    legacyGuid: f8826480d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3uWcI0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Te Time'
+    definition: ''
+  - language: ja-JP
+    name: '最大時間'
+    definition: 'モーターがEX環境でローターロックされて使用きる最大時間。モーター始動電流が機器を介して減速している時間より前に保護装置で停止する時間を示す。'
+  - language: ko-KR
+    name: '최대 시간'
+    definition: '모터가 EX 환경 로터 잠겨 사용 수있는 최대 시간. 모터 기동 전류가 장비를 통해 감속하고있다 시간 전에 보호 장치 중지 시간을 보여준다'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcTimeMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LockedRotorCurrent
+  definition: Input current when a motor armature is energized but not rotating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ztwy0qU0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ztwy0qU0HuO00025QrE$V
+    ifdGuid: 3ztwy0qU0HuO00025QrE$V
+    legacyGuid: fddfaf00d1e011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3ztwy0qU0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Locked Rotor Current'
+    definition: ''
+  - language: ja-JP
+    name: '拘束ロータ電流'
+    definition: 'モーターの電機子に電圧を印加しロータが回っていない時の入力電流。'
+  - language: ko-KR
+    name: '구속 회전자 전류'
+    definition: '모터의 전기자 전압을인가 로터가 회전하지 않을 때 입력 전류.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MotorEnclosureType
+  definition: A list of the available types of motor enclosure from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/02f6C0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/02f6C0qU4HuO00025QrE$V
+    ifdGuid: 02f6C0qU4HuO00025QrE$V
+    legacyGuid: 02a46300d1e111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 02f6C0qU4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Motor Enclosure Type'
+    definition: ''
+  - language: ja-JP
+    name: 'モーター保護構造'
+    definition: 'モーターに必要な筐体を使用可能なタイプのリストから選択。'
+  - language: ko-KR
+    name: '모터 보호구조'
+    definition: '모터에 필요한 케이스를 사용 가능한 종류 목록에서 선택합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: OPENDRIPPROOF
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TOTALLYENCLOSEDAIROVER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TOTALLYENCLOSEDFANCOOLED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TOTALLYENCLOSEDNONVENTILATED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FrameSize
+  definition: Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0FmL80qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FmL80qU4HuO00025QrE$V
+    ifdGuid: 0FmL80qU4HuO00025QrE$V
+    legacyGuid: 0fc15200d1e111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0FmL80qU4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Frame Size'
+    definition: ''
+  - language: ja-JP
+    name: 'フレームサイズ'
+    definition: 'フレームサイズの意味が実際の大きさを表示しているのか、規格表記なのかを指定。'
+  - language: ko-KR
+    name: '프레임 크기'
+    definition: '프레임 크기의 의미가 실제 크기를 표시하고 있는지, 표준 표기인지 지정합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsGuarded
+  definition: Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0LjpC0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0LjpC0qU4HuO00025QrE$V
+    ifdGuid: 0LjpC0qU4HuO00025QrE$V
+    legacyGuid: 15b73300d1e111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0LjpC0qU4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Is Guarded'
+    definition: ''
+  - language: ja-JP
+    name: '保護'
+    definition: 'モーターの筐体が守られているかどうかを示す。'
+  - language: ko-KR
+    name: '보호'
+    definition: '모터의 케이스가 지켜지고 있는지 여부를 나타낸다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasPartWinding
+  definition: Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) .
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0R57s0qU4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0R57s0qU4HuO00025QrE$V
+    ifdGuid: 0R57s0qU4HuO00025QrE$V
+    legacyGuid: 1b147d80d1e111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0R57s0qU4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Has Part Winding'
+    definition: ''
+  - language: ja-JP
+    name: '巻線　'
+    definition: 'モータが単一の速度であるかどうかを示す。例えば、単巻線、マルチスピード、分割巻線。'
+  - language: ko-KR
+    name: '권선'
+    definition: '모터가 단일 속도인지 여부를 나타내는 예를 들어, 단일 권선, 다중 속도 분할 권선'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

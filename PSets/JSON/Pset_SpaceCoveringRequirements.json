@@ -1,0 +1,983 @@
+﻿{
+  "name": "Pset_SpaceCoveringRequirements",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Properties common to the definition of covering requirements of IfcSpace. Those properties define the requirements coming from a space program in early project phases and can later be used to define the room book information, if such coverings are not modeled explicitly as covering elements.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3dVbDjY5v9nR9aqiLpPqXH",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dVbDjY5v9nR9aqiLpPqXH",
+    "ifdGuid": "3dVbDjY5v9nR9aqiLpPqXH",
+    "legacyGuid": "7e5e0c89424f46bfa2bbcd0cf72e03c4",
+    "legacyGuidAsIfcGlobalId": "1_NWo9Gaz6lwAxpGptBWF4"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Flächenbelag",
+      "definition": "Eigenschaften der Bekleidungen des Raumes. Diese Eigenschaften werden als Anforderungen in frühen Phasen im Raumprogramm geführt und können für spätere Phasen als Informationen für das Raumbuch dienen, falls die Bekleidungen nicht als eigenständige Elemen"
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcSpace",
+      "type": "IfcSpace"
+    }
+  ],
+  "properties": [
+    {
+      "name": "FloorCovering",
+      "definition": "Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.The material information is provided in absence of an IfcCovering (type=FLOORING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1ZCFyE_C1Aq8q46k1ChiTE",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ZCFyE_C1Aq8q46k1ChiTE",
+        "ifdGuid": "1ZCFyE_C1Aq8q46k1ChiTE",
+        "legacyGuid": "bfd1f6a6ca08440899165d31dda04831",
+        "legacyGuidAsIfcGlobalId": "2$qVQcoWX429aMNJ7Te4Wn"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Bodenbelag",
+          "definition": "Angabe des Materials für den Bodenbelag. Diese Angabe wird im Raumbuch verwendet und oft im Raumstempel angezeigt.Die Materialangabe wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = FLOORING) für den Bodenbelag dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialangabe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Floor Covering",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RevetementSol",
+          "definition": "Indication sur la nature du revêtement de sol […]. L'information sur le matériau est fournie en l'absence d'un objet de la classe IfcCovering (Type=FLOORING) avec sa propre représentation de forme et une assignation à un matériau. En cas d'incohérence, c'est le matériau assigné à l'instance de IfcCovering qui prime."
+        },
+        {
+          "language": "ja-JP",
+          "name": "床仕上げ",
+          "definition": "部屋の床材質または仕上げに関するラベル（識別情報）。このラベル名は部屋リスト情報や部屋情報表示の際に利用される。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FloorCoveringThickness",
+      "definition": "Thickness of the material layer(s) for the space flooring.  The thickness information is provided in absence of an IfcCovering (type=FLOORING) object with own shape representation. In cases of inconsistency between the geometric parameters of an assigned IfcCovering and this attached property, the geometric parameters take precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3JDU0MU0PFnQqTeizCCakU",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JDU0MU0PFnQqTeizCCakU",
+        "ifdGuid": "3JDU0MU0PFnQqTeizCCakU",
+        "legacyGuid": "9650c4d3c07f4ccc9fd8147b099f0939",
+        "legacyGuidAsIfcGlobalId": "2MKCJJm7zCp9$O57i9dmav"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Dicke des Bodenbelags",
+          "definition": "Angabe der Dicke der Materialschichten für den Bodenbelag. Der Dickenparameter wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = FLOORING) für den Bodenbelag dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialdicke des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Floor Covering Thickness",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Epaisseur du revêtement de sol",
+          "definition": "Epaisseur de la couche de matériau constituant le revêtement de sol. Cette information sur le matériau est fournie en l'absence d'un objet de la classe IfcCovering (Type=FLOORING) avec sa propre représentation de forme. En cas d'incohérence entre les paramètres géométriques de l'instance de IfcCovering et cette propriété, ce sont les paramètres géométriques qui priment."
+        },
+        {
+          "language": "ja-JP",
+          "name": "床仕上げ材厚",
+          "definition": "部屋の床に関する材質層の厚さ。形状表現を持つIfcCovering(type=FLOORING)オブジェクトが存在しない場合に与えられる厚さ情報。IfcCoveringの幾何形状パラメータとこのプロパティ値が一致しない場合、幾何形状パラメータの値を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WallCovering",
+      "definition": "Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.The material information is provided in absence of an IfcCovering (type=CLADDING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2MPLET$kT9q8sZ_WRZ6MJx",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2MPLET$kT9q8sZ_WRZ6MJx",
+        "ifdGuid": "2MPLET$kT9q8sZ_WRZ6MJx",
+        "legacyGuid": "69193a7f647f4526bd7f1d3b9fdd1a9e",
+        "legacyGuidAsIfcGlobalId": "1f6Jf$P7z59hr$7JkVtHgU"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Wandbekleidung",
+          "definition": "Angabe des Materials für die Wandbekleidung, oder den Wandbelag Diese Angabe wird im Raumbuch verwendet und oft im Raumstempel angezeigt.Die Materialangabe wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = CLADDING) für die Wandbekleidung dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialangabe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Wall Covering",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RevetementMur",
+          "definition": "Indication sur la nature du revêtement de mur […]. L'information sur le matériau est fournie en l'absence d'un objet de la classe IfcCovering (Type=CLADDING) avec sa propre représentation de forme et une assignation à un matériau. En cas d'incohérence, c'est le matériau assigné à l'instance de IfcCovering qui prime."
+        },
+        {
+          "language": "ja-JP",
+          "name": "壁仕上げ",
+          "definition": "部屋の壁材質または仕上げに関するラベル（識別情報）。このラベル名は部屋リスト情報や部屋情報表示の際に利用される。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "WallCoveringThickness",
+      "definition": "Thickness of the material layer(s) for the space cladding.  The thickness information is provided in absence of an IfcCovering (type=CLADDING) object with own shape representation. In cases of inconsistency between the geometric parameters of an assigned IfcCovering and this attached property, the geometric parameters take precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2p3rAp$_vC_xpAyiuqnoNL",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2p3rAp$_vC_xpAyiuqnoNL",
+        "ifdGuid": "2p3rAp$_vC_xpAyiuqnoNL",
+        "legacyGuid": "44c775b14a0d46c58ad8c7e36c34a349",
+        "legacyGuidAsIfcGlobalId": "14ntMnIWr6nOhOn_DiDAD9"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Dicke der Wandbekleidung",
+          "definition": "Angabe der Dicke der Materialschichten für die Wandbekleidung. Der Dickenparameter wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = CLADDING) für die Wandbekleidung dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialdicke des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Wall Covering Thickness",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Epaisseur du revêtement de mur",
+          "definition": "Epaisseur de la couche de matériau constituant le revêtement de mur. Cette information sur le matériau est fournie en l'absence d'un objet de la classe IfcCovering (Type=CLADDING) avec sa propre représentation de forme. En cas d'incohérence entre les paramètres géométriques de l'instance de IfcCovering et cette propriété, ce sont les paramètres géométriques qui priment."
+        },
+        {
+          "language": "ja-JP",
+          "name": "壁仕上げ厚",
+          "definition": "部屋の壁に関する材質層の厚さ。形状表現を持つIfcCovering(type=CLADDING)オブジェクトが存在しない場合に与えられる厚さ情報。IfcCoveringの幾何形状パラメータとこのプロパティ値が一致しない場合、幾何形状パラメータの値を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CeilingCovering",
+      "definition": "Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.The material information is provided in absence of an IfcCovering (type=CEILING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2ufwgZd1924w$mdy9iGRc4",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ufwgZd1924w$mdy9iGRc4",
+        "ifdGuid": "2ufwgZd1924w$mdy9iGRc4",
+        "legacyGuid": "da83c4235c1d40aba9510f6abe2412f6",
+        "legacyGuidAsIfcGlobalId": "3QWyGZN1r0gwbH3sg_91Bs"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Deckenbekleidung",
+          "definition": "Angabe des Materials für die Deckenbekleidung oder den Deckenbelag (bzw. der Unterdecke). Diese Angabe wird im Raumbuch verwendet und oft im Raumstempel angezeigt.Die Materialangabe wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = CEILING) für die Deckenbekleidung dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialangabe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Ceiling Covering",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RevetementPlafond",
+          "definition": "Indication sur la nature du revêtement de plafond […]. L'information sur le matériau est fournie en l'absence d'un objet de la classe IfcCovering (Type=CEILING) avec sa propre représentation de forme et une assignation à un matériau. En cas d'incohérence, c'est le matériau assigné à l'instance de IfcCovering qui prime."
+        },
+        {
+          "language": "ja-JP",
+          "name": "天井仕上げ",
+          "definition": "部屋の天井材質または仕上げに関するラベル（識別情報）。このラベル名は部屋リスト情報や部屋情報表示の際に利用される。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CeilingCoveringThickness",
+      "definition": "Thickness of the material layer(s) for the space ceiling.  The thickness information is provided in absence of an IfcCovering (type=CEILING) object with own shape representation. In cases of inconsistency between the geometric parameters of an assigned IfcCovering and this attached property, the geometric parameters take precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2SFVcKInf3FerqiME7HE$a",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SFVcKInf3FerqiME7HE$a",
+        "ifdGuid": "2SFVcKInf3FerqiME7HE$a",
+        "legacyGuid": "abdab367fcc64b08b03d584baeb819c8",
+        "legacyGuidAsIfcGlobalId": "2hshDd$CPB2B0zM4kkk1d8"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Dicke der Deckenbekleidung",
+          "definition": "Angabe der  Dicke der Materialschichten für die Deckenbekleidung. Der Dickenparameter wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = CEILING) für die Deckenbekleidung dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialdicke des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Ceiling Covering Thickness",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Epaisseur du revêtement de plafond",
+          "definition": "Epaisseur de la couche de matériau constituant le revêtement de sol. Cette information sur le matériau est fournie en l'absence d'un objet de la classe IfcCovering (Type=CEILING) avec sa propre représentation de forme. En cas d'incohérence entre les paramètres géométriques de l'instance de IfcCovering et cette propriété, ce sont les paramètres géométriques qui priment."
+        },
+        {
+          "language": "ja-JP",
+          "name": "天井仕上げ厚",
+          "definition": "部屋の天井に関する材質層の厚さ。形状表現を持つIfcCovering(type=CEILING)オブジェクトが存在しない場合に与えられる厚さ情報。IfcCoveringの幾何形状パラメータとこのプロパティ値が一致しない場合、幾何形状パラメータの値を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SkirtingBoard",
+      "definition": "Label to indicate the material or construction of the skirting board around the space flooring. The label is used for room book information.The material information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2vmLkEh7X3ovJBQ1iW6TC$",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vmLkEh7X3ovJBQ1iW6TC$",
+        "ifdGuid": "2vmLkEh7X3ovJBQ1iW6TC$",
+        "legacyGuid": "6d6b4d00a2234b90b4eb1901ca5be2b5",
+        "legacyGuidAsIfcGlobalId": "1jQqq0eYDBaBJh6G7AM_Ar"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Sockelleiste",
+          "definition": "Angabe des Materials für die Sockelleiste. Diese Angabe wird im Raumbuch verwendet.Die Materialangabe wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = SKIRTINGBOARD) für die Sockelleiste dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialangabe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Skirting Board",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Matériau de la plinthe",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "幅木材",
+          "definition": "部屋の床の周りにある幅木の材質または施工に関するラベル（識別情報）。ラベル名は部屋リスト情報に使用される。形状表現を持つIfcCovering (type=SKIRTINGBOARD)オブジェクトが存在しない場合に与えられる材質情報。IfcCoveringの材質情報とこのプロパティ値が一致しない場合、IfcCoveringに与えられている材質情報を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SkirtingBoardHeight",
+      "definition": "Height of the skirting board.The height information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1mZAbxZ$n7ahLlHsGSjn9E",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mZAbxZ$n7ahLlHsGSjn9E",
+        "ifdGuid": "1mZAbxZ$n7ahLlHsGSjn9E",
+        "legacyGuid": "af1249f71eb24579aaec871aa4a6287b",
+        "legacyGuidAsIfcGlobalId": "2l4adt7h95UQhiXngafYXx"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Höhe der Sockelleite",
+          "definition": "Angabe der  Höhe der umlaufenden Sockelleiste. Der Höhenparameter wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = SKIRTINGBOARD) für die Sockelleiste dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Höhe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Skirting Board Height",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Hauteur de la plinthe",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "幅木材高",
+          "definition": "部屋の幅木の高さ。形状表現を持つIfcCovering(type=SKIRTINGBOARD)オブジェクトが存在しない場合に与えられる厚さ情報。IfcCoveringの幾何形状パラメータとこのプロパティ値が一致しない場合、幾何形状パラメータの値を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Molding",
+      "definition": "Label to indicate the material or construction of the molding around the space ceiling. The label is used for room book information.The material information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the material assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0YliTNi1nCAREbxZGw9ez_",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YliTNi1nCAREbxZGw9ez_",
+        "ifdGuid": "0YliTNi1nCAREbxZGw9ez_",
+        "legacyGuid": "3f9ca576246247ff8bdca254b651a15a",
+        "legacyGuidAsIfcGlobalId": "0$dALs9697$ulSebIsKQ5Q"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Gesims",
+          "definition": "Angabe des Materials für das Gesims (Deckenkante). Diese Angabe wird im Raumbuch verwendet.Die Materialangabe wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = MOLDING) für das Gesims dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Materialangabe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Molding",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Matériau de la moulure",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "廻縁",
+          "definition": "部屋の廻縁の材質または施工に関するラベル（識別情報）。ラベル名は部屋リスト情報に使用される。形状表現を持つIfcCovering (type=MOLDING)オブジェクトが存在しない場合に与えられる材質情報。IfcCoveringの材質情報とこのプロパティ値が一致しない場合、IfcCoveringに与えられている材質情報を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MoldingHeight",
+      "definition": "Height of the molding.The height information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precedence.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0Lzcn8NAn7c9qjw9yP26Jo",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Lzcn8NAn7c9qjw9yP26Jo",
+        "ifdGuid": "0Lzcn8NAn7c9qjw9yP26Jo",
+        "legacyGuid": "1e0092682e5347b2b2c5050bd03ee111",
+        "legacyGuidAsIfcGlobalId": "0U099eBbD7ihB51GlGFk4H"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Höhe des Gesims",
+          "definition": "Angabe der  Höhe des umlaufenden Gesims (Deckenkante). Der Höhenparameter wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = MOLDING) für das Gesims dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Höhe des zugeordneten Bekleidungsobjekts Priorität."
+        },
+        {
+          "language": "en",
+          "name": "Molding Height",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "Hauteur de la moulure",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "廻縁高",
+          "definition": "部屋の廻縁の高さ。形状表現を持つIfcCovering(type=MOLDING)オブジェクトが存在しない場合に与えられる厚さ情報。IfcCoveringの幾何形状パラメータとこのプロパティ値が一致しない場合、幾何形状パラメータの値を優先する。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcPositiveLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcealedFlooring",
+      "definition": "Indication whether this space is designed to have a concealed flooring space (TRUE) or not (FALSE). A concealed flooring space is normally meant to be the space beneath a raised floor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "8650a689ba064df69f052a87ab070f02",
+        "legacyGuidAsIfcGlobalId": "26KAQ9kWPDzfy5AeUh1my2"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Installationsboden",
+          "definition": "Angabe, ob dieser Raum mit einem aufgeständerten Fußboden ausgestattet ist (JA), oder nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Concealed Flooring",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "FauxPlancher",
+          "definition": "Indique si la pièce comprend un faux plancher (VRAI) ou non (FAUX)"
+        },
+        {
+          "language": "ja-JP",
+          "name": "隠蔽床",
+          "definition": "この部屋（空間）が隠蔽された床空間を持つように設計されているかどうかを示すブーリアン値。隠蔽された床空間とは、上げ床の下の空間。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcealedFlooringOffset",
+      "definition": "Distance between the floor slab and the floor covering, often used for cables and other installations. Often referred to as raised flooring.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "56029141a7c040c4aef51a242fa1611f",
+        "legacyGuidAsIfcGlobalId": "1M0f51fy10nAxr6YGleM4V"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcNonNegativeLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcealedCeiling",
+      "definition": "Indication whether this space is designed to have a concealed flooring space (TRUE) or not (FALSE). A concealed ceiling space is normally meant to be the space between a slab and a ceiling.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1eJ0_mMyP41giI5xH6IDXq",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1eJ0_mMyP41giI5xH6IDXq",
+        "ifdGuid": "1eJ0_mMyP41giI5xH6IDXq",
+        "legacyGuid": "7502fd34b7fa494280c610aec4787043",
+        "legacyGuidAsIfcGlobalId": "1r0lqqj$f9Ge364Ax4U713"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "Installationsdecke",
+          "definition": "Angabe, ob dieser Raum mit einer Installationsdecke (abgehängten Decke) ausgestattet ist (JA), oder nicht (NEIN)."
+        },
+        {
+          "language": "en",
+          "name": "Concealed Ceiling",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "FauxPlafond",
+          "definition": "Indique si la pièce comprend un faux plafond (VRAI) ou non (FAUX)"
+        },
+        {
+          "language": "ja-JP",
+          "name": "隠蔽天井",
+          "definition": "この部屋（空間）が隠蔽された天井空間を持つように設計されているかどうかを示すブーリアン値。隠蔽された天井空間とは、スラブと天井の間の空間。"
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcBoolean",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ConcealedCeilingOffset",
+      "definition": "Distance between the upper floor slab and the suspended ceiling, often used for distribution systems. Often referred to as plenum.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/",
+        "ifdGuid": "",
+        "legacyGuid": "a7d072c8df3245bd9c1b9424d7f35a87",
+        "legacyGuidAsIfcGlobalId": "2dq7B8tp95lPmRb2JNyrg7"
+      },
+      "localizations": [
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcNonNegativeLengthMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

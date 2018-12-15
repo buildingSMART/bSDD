@@ -1,0 +1,82 @@
+﻿name: 'Pset_ValveTypePressureRelief'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Spring or weight loaded valve that automatically discharges to a safe place fluid that has built up to excessive pressure in pipes or fittings.Note that a pressure relief valve is constrained to have a single port pattern.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1dUR20qXKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dUR20qXKHuO00025QrE$V
+  ifdGuid: 1dUR20qXKHuO00025QrE$V
+  legacyGuid: 6779b080d21511e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 1dUR20qXKHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Ventiltyp - Überdruckventil'
+  definition: 'Feder- oder gewichtsbelastetes Ventil, das automatisch an einen sicheren Ort entlädt, an dem sich Flüssigkeit, die sich bis zu einem übermäßigen Druck in Rohren oder Armaturen gebildet hat, abfließt.
+
+    Note, dass ein Druckbegrenzungsventil gezwungen ist, nur einen einzigen Anschluss zu haben.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcValve/PRESSURERELIEF
+  type: IfcValve/PRESSURERELIEF
+properties:
+- name: ReliefPressure
+  definition: The pressure at which the spring or weight in the valve is set to discharge fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1irli0qXKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1irli0qXKHuO00025QrE$V
+    ifdGuid: 1irli0qXKHuO00025QrE$V
+    legacyGuid: 6cd6fb00d21511e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1irli0qXKHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Relief Pressure'
+    definition: ''
+  - language: ja-JP
+    name: 'リリーフ圧力'
+    definition: 'バルブのバネやおもりが流体を放出する作動するときの圧力。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPressureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

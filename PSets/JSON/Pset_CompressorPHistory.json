@@ -1,0 +1,1021 @@
+﻿{
+  "name": "Pset_CompressorPHistory",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "Compressor performance history attributes.",
+  "templatetype": "PSET_PERFORMANCEDRIVEN",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3JWlS0qSeHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JWlS0qSeHuO00025QrE$V",
+    "ifdGuid": "3JWlS0qSeHuO00025QrE$V",
+    "legacyGuid": "d382f700d1ca11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "3JWlS0qSeHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Kompressor - Werteverlauf",
+      "definition": "Attribute der Kompressor-Leistungshistorie."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcCompressor",
+      "type": "IfcCompressor"
+    }
+  ],
+  "properties": [
+    {
+      "name": "CompressorCapacity",
+      "definition": "The product of the  ideal capacity and the overall volumetric efficiency of the compressor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Q4Mw0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Q4Mw0qSeHuO00025QrE$V",
+        "ifdGuid": "3Q4Mw0qSeHuO00025QrE$V",
+        "legacyGuid": "da116e80d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3Q4Mw0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Compressor Capacity",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "PuissanceCompresseur",
+          "definition": "Le produit de la puissance optimale par le rendement global du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "EnergyEfficiencyRatio",
+      "definition": "Energy efficiency ratio (EER).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3T35y0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3T35y0qSeHuO00025QrE$V",
+        "ifdGuid": "3T35y0qSeHuO00025QrE$V",
+        "legacyGuid": "dd0c5f00d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3T35y0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Energy Efficiency Ratio",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "CoefficientEfficacitéThermique",
+          "definition": "EER, coefficient d'efficacité Thermique"
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CoefficientOfPerformance",
+      "definition": "Coefficient of performance (COP).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Wd_O0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Wd_O0qSeHuO00025QrE$V",
+        "ifdGuid": "3Wd_O0qSeHuO00025QrE$V",
+        "legacyGuid": "e09fe600d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3Wd_O0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Coefficient Of Performance",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "CoefficientPerformance",
+          "definition": "Coefficient de performance (COP)."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "VolumetricEfficiency",
+      "definition": "Ratio of the actual volume of gas entering the compressor to the theoretical displacement of the compressor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3aCsq0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aCsq0qSeHuO00025QrE$V",
+        "ifdGuid": "3aCsq0qSeHuO00025QrE$V",
+        "legacyGuid": "e4336d00d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3aCsq0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Volumetric Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RendementVolumétrique",
+          "definition": "Rapport entre le volume effectif de gaz rentrant dans le compresseur et le volume déplacé théorique du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CompressionEfficiency",
+      "definition": "Ratio of the work required for isentropic compression of the gas to the work delivered to the gas within the compression volume (as obtained by measurement).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3dBbs0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dBbs0qSeHuO00025QrE$V",
+        "ifdGuid": "3dBbs0qSeHuO00025QrE$V",
+        "legacyGuid": "e72e5d80d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3dBbs0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Compression Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RendementCompression",
+          "definition": "Rapport entre le travail requis pour une compression isentropique du gaz et le travail fourni au gaz dans le volume comprimé (telq qu'obtenu par mesure)."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "MechanicalEfficiency",
+      "definition": "Ratio of the work (as measured) delivered to the gas to the work input to the compressor shaft.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3gAKu0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gAKu0qSeHuO00025QrE$V",
+        "ifdGuid": "3gAKu0qSeHuO00025QrE$V",
+        "legacyGuid": "ea294e00d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3gAKu0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Mechanical Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RendementMécanique",
+          "definition": "Rapport entre le travail fourni (tel que mesuré) au gaz et le travail fourni à l'arbre du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "IsentropicEfficiency",
+      "definition": "Ratio of the work required for isentropic compression of the gas to work input to the compressor shaft.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3j93w0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3j93w0qSeHuO00025QrE$V",
+        "ifdGuid": "3j93w0qSeHuO00025QrE$V",
+        "legacyGuid": "ed243e80d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3j93w0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Isentropic Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RendementIsentropique",
+          "definition": "Rapport entre le travail requis pour une compression isentropique du gaz et le travail fourni à l'arbre du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CompressorTotalEfficiency",
+      "definition": "Ratio of the thermal cooling capacity to electrical input.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3mjyM0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mjyM0qSeHuO00025QrE$V",
+        "ifdGuid": "3mjyM0qSeHuO00025QrE$V",
+        "legacyGuid": "f0b7c580d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3mjyM0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Compressor Total Efficiency",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "RendementGlobalIsentropique",
+          "definition": "Rapport entre la puissance frigorifique et l'énergie électrique absorbée."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "ShaftPower",
+      "definition": "The actual shaft power input to the compressor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3qu_C0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qu_C0qSeHuO00025QrE$V",
+        "ifdGuid": "3qu_C0qSeHuO00025QrE$V",
+        "legacyGuid": "f4e3e300d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3qu_C0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Shaft Power",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "PuissanceArbre",
+          "definition": "La puissance mécanique appliquée au niveau de l'arbre du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "InputPower",
+      "definition": "Input power to the compressor motor.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3uTse0qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3uTse0qSeHuO00025QrE$V",
+        "ifdGuid": "3uTse0qSeHuO00025QrE$V",
+        "legacyGuid": "f8776a00d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3uTse0qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Input Power",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "PuissanceEntréeMoteur",
+          "definition": "Puissance fournie au moteur du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "LubricantPumpHeatGain",
+      "definition": "Lubricant pump heat gain.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3y2l40qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3y2l40qSeHuO00025QrE$V",
+        "ifdGuid": "3y2l40qSeHuO00025QrE$V",
+        "legacyGuid": "fc0af100d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3y2l40qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Lubricant Pump Heat Gain",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "GainThermiqueLubrifiantPompe",
+          "definition": "Gain thermique par lubrification de la pompe à chaleur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FrictionHeatGain",
+      "definition": "Friction heat gain.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3$1U60qSeHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$1U60qSeHuO00025QrE$V",
+        "ifdGuid": "3$1U60qSeHuO00025QrE$V",
+        "legacyGuid": "ff05e180d1ca11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3$1U60qSeHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Friction Heat Gain",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "GainThermiqueFriction",
+          "definition": "Gain thermique par friction."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "CompressorTotalHeatGain",
+      "definition": "Compressor total heat gain.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/020D80qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/020D80qSiHuO00025QrE$V",
+        "ifdGuid": "020D80qSiHuO00025QrE$V",
+        "legacyGuid": "0200d200d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "020D80qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Compressor Total Heat Gain",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "GainThermiqueTotalCompresseur",
+          "definition": "Gain thermique total au niveau du compresseur."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "FullLoadRatio",
+      "definition": "Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/05b5a0qSiHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05b5a0qSiHuO00025QrE$V",
+        "ifdGuid": "05b5a0qSiHuO00025QrE$V",
+        "legacyGuid": "05945900d1cb11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "05b5a0qSiHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Full Load Ratio",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "CoefficientChargeTotale",
+          "definition": "Rapport entre puissance actuelle sur la puissance à pleine charge, comme fonction quadratique de la charge partielle, à une température de condensation et une température d'évaporation donnée, FracFullLoadPower = f (RapportChargePartielle)."
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertyReferenceValue": {
+        "refType": "IfcTimeSeries",
+        "url": "http://buildingsmart-tech.org",
+        "guid": "",
+        "libraryName": "Industry Foundation Classes by buildingSMART International",
+        "sectionref": "Core Schema"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

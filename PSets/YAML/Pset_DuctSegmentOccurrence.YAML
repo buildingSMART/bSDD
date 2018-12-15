@@ -1,0 +1,172 @@
+﻿name: 'Pset_DuctSegmentOccurrence'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Duct segment occurrence attributes attached to an instance of IfcDuctSegment.'
+templatetype: PSET_OCCURRENCEDRIVEN
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0gHVm0qTuHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0gHVm0qTuHuO00025QrE$V
+  ifdGuid: 0gHVm0qTuHuO00025QrE$V
+  legacyGuid: 2a45fc00d1de11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 0gHVm0qTuHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Kanalsegment - Ereignisattribut'
+  definition: 'Duct-Segment-Ereignis-Attribute, die an eine Instanz von IfcDuctSegment angehängt sind.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDuctSegment
+  type: IfcDuctSegment
+properties:
+- name: InteriorRoughnessCoefficient
+  definition: The interior roughness of the duct fitting material.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kSXc0qTuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kSXc0qTuHuO00025QrE$V
+    ifdGuid: 0kSXc0qTuHuO00025QrE$V
+    legacyGuid: 2e721980d1de11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0kSXc0qTuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Interior Roughness Coefficient'
+    definition: ''
+  - language: ja-JP
+    name: '内面粗さ係数'
+    definition: 'ダクト継手材料の内面粗さ'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasLiner
+  definition: TRUE if the fitting has interior duct insulating lining, FALSE if it does not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qP$g0qTuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qP$g0qTuHuO00025QrE$V
+    ifdGuid: 0qP$g0qTuHuO00025QrE$V
+    legacyGuid: 3467fa80d1de11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0qP$g0qTuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Has Liner'
+    definition: ''
+  - language: ja-JP
+    name: '内張り有無'
+    definition: '内貼り保温ダクト内面にあるときにTRUE。無い時にFALSE'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Color
+  definition: 'The color of the duct segment.Note: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0wNTk0qTuHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wNTk0qTuHuO00025QrE$V
+    ifdGuid: 0wNTk0qTuHuO00025QrE$V
+    legacyGuid: 3a5ddb80d1de11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0wNTk0qTuHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Color'
+    definition: ''
+  - language: ja-JP
+    name: '色'
+    definition: 'ダクト継手の色メモ：塗装されているときに使用される。他の場合は仕上げとして定義'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

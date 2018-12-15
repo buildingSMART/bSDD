@@ -1,0 +1,678 @@
+﻿name: 'Pset_ReinforcementBarPitchOfSlab'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'The pitch length information of reinforcement  bar with the slab.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/12BdU0qW0HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12BdU0qW0HuO00025QrE$V
+  ifdGuid: 12BdU0qW0HuO00025QrE$V
+  legacyGuid: 422e7780d20011e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 12BdU0qW0HuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Bewehrungsstab - Abstand Platte'
+  definition: 'Die Schlaglängeninformation des Bewehrungsstabes mit der Platte.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSlab
+  type: IfcSlab
+properties:
+- name: Description
+  definition: Description of the reinforcement.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1895Y0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1895Y0qW0HuO00025QrE$V
+    ifdGuid: 1895Y0qW0HuO00025QrE$V
+    legacyGuid: 48245880d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1895Y0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Description'
+    definition: ''
+  - language: ja-JP
+    name: '説明'
+    definition: '鉄筋の説明。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Reference
+  definition: A descriptive label for the general reinforcement type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Eij00qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Eij00qW0HuO00025QrE$V
+    ifdGuid: 1Eij00qW0HuO00025QrE$V
+    legacyGuid: 4eb2d000d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1Eij00qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Reference'
+    definition: ''
+  - language: ja-JP
+    name: '参照記号'
+    definition: '一般的な鉄筋タイプの説明ラベル。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LongOutsideTopBarPitch
+  definition: The pitch length of the long outside top bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1LGKU0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LGKU0qW0HuO00025QrE$V
+    ifdGuid: 1LGKU0qW0HuO00025QrE$V
+    legacyGuid: 55414780d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1LGKU0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Long Outside Top Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '長辺・柱列帯・上端ピッチ'
+    definition: '長辺方向・柱列帯・上端の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LongInsideCenterTopBarPitch
+  definition: The pitch length of the long inside center top bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1TcOA0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1TcOA0qW0HuO00025QrE$V
+    ifdGuid: 1TcOA0qW0HuO00025QrE$V
+    legacyGuid: 5d998280d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1TcOA0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Long Inside Center Top Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '長辺・柱列帯・上端中央ピッチ'
+    definition: '長辺方向・柱間帯・上端中央の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LongInsideEndTopBarPitch
+  definition: The pitch length of the long inside end top bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1byRs0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1byRs0qW0HuO00025QrE$V
+    ifdGuid: 1byRs0qW0HuO00025QrE$V
+    legacyGuid: 65f1bd80d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1byRs0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Long Inside End Top Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '長辺・柱列帯・上端端部ピッチ'
+    definition: '長辺方向・柱間帯・上端端部の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShortOutsideTopBarPitch
+  definition: The pitch length of the short outside top bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1kIVY0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kIVY0qW0HuO00025QrE$V
+    ifdGuid: 1kIVY0qW0HuO00025QrE$V
+    legacyGuid: 6e49f880d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1kIVY0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Short Outside Top Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '短辺・柱列帯・上端ピッチ'
+    definition: '短辺方向・柱列帯・上端の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShortInsideCenterTopBarPitch
+  definition: The pitch length of the short inside center top bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1rSGQ0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rSGQ0qW0HuO00025QrE$V
+    ifdGuid: 1rSGQ0qW0HuO00025QrE$V
+    legacyGuid: 75710680d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1rSGQ0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Short Inside Center Top Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '短辺・柱列帯・上端中央ピッチ'
+    definition: '短辺方向・柱間帯・上端中央の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShortInsideEndTopBarPitch
+  definition: The pitch length of the short inside end top bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zoK60qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zoK60qW0HuO00025QrE$V
+    ifdGuid: 1zoK60qW0HuO00025QrE$V
+    legacyGuid: 7dc94180d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1zoK60qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Short Inside End Top Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '短辺・柱列帯・上端端部ピッチ'
+    definition: '短辺方向・柱間帯・上端端部の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LongOutsideLowerBarPitch
+  definition: The pitch length of the long outside lower bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25YEO0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25YEO0qW0HuO00025QrE$V
+    ifdGuid: 25YEO0qW0HuO00025QrE$V
+    legacyGuid: 8588e600d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 25YEO0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Long Outside Lower Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '長辺・柱列帯・下端ピッチ'
+    definition: '長辺方向・柱列帯・下端の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LongInsideCenterLowerBarPitch
+  definition: The pitch length of the long inside center lower bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2DuI40qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DuI40qW0HuO00025QrE$V
+    ifdGuid: 2DuI40qW0HuO00025QrE$V
+    legacyGuid: 8de12100d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2DuI40qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Long Inside Center Lower Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '長辺・柱列帯・下端中央ピッチ'
+    definition: '長辺方向・柱間帯・下端中央の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LongInsideEndLowerBarPitch
+  definition: The pitch length of the long inside end lower bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2LeCM0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LeCM0qW0HuO00025QrE$V
+    ifdGuid: 2LeCM0qW0HuO00025QrE$V
+    legacyGuid: 95a0c580d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2LeCM0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Long Inside End Lower Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '長辺・柱列帯・下端端部ピッチ'
+    definition: '長辺方向・柱間帯・下端端部の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShortOutsideLowerBarPitch
+  definition: The pitch length of the short outside lower bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SnzE0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SnzE0qW0HuO00025QrE$V
+    ifdGuid: 2SnzE0qW0HuO00025QrE$V
+    legacyGuid: 9cc7d380d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2SnzE0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Short Outside Lower Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '短辺・柱列帯・下端ピッチ'
+    definition: '短辺方向・柱列帯・下端の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShortInsideCenterLowerBarPitch
+  definition: The pitch length of the short inside center lower bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2b80w0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2b80w0qW0HuO00025QrE$V
+    ifdGuid: 2b80w0qW0HuO00025QrE$V
+    legacyGuid: a5200e80d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2b80w0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Short Inside Center Lower Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '短辺・柱列帯・下端中央ピッチ'
+    definition: '短辺方向・柱間帯・下端中央の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ShortInsideEndLowerBarPitch
+  definition: The pitch length of the short inside end lower bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2itxC0qW0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2itxC0qW0HuO00025QrE$V
+    ifdGuid: 2itxC0qW0HuO00025QrE$V
+    legacyGuid: acdfb300d20011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 2itxC0qW0HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Short Inside End Lower Bar Pitch'
+    definition: ''
+  - language: ja-JP
+    name: '短辺・柱列帯・下端端部ピッチ'
+    definition: '短辺方向・柱間帯・下端端部の鉄筋間隔。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

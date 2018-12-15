@@ -1,0 +1,322 @@
+﻿name: 'Pset_SpaceThermalPHistory'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Thermal and air flow conditions of a space or zone.'
+templatetype: PSET_PERFORMANCEDRIVEN
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YdKm0qWmHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YdKm0qWmHuO00025QrE$V
+  ifdGuid: 0YdKm0qWmHuO00025QrE$V
+  legacyGuid: 229d4c00d20c11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 0YdKm0qWmHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Raumthermik - Werteverlauf'
+  definition: 'Wärme- und Luftströmungsbedingungen eines Raumes oder einer Zone GESCHICHTE: Neue Eigenschaft, die in IFC 2x2 festgelegt wurde.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSpace
+  type: IfcSpace
+properties:
+- name: CoolingAirFlowRate
+  definition: Cooling air flow rate in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0d_fQ0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0d_fQ0qWmHuO00025QrE$V
+    ifdGuid: 0d_fQ0qWmHuO00025QrE$V
+    legacyGuid: 27fa9680d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0d_fQ0qWmHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Cooling Air Flow Rate'
+    definition: ''
+  - language: ja-JP
+    name: '冷却空気流量'
+    definition: '室内の冷却空気流量'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HeatingAirFlowRate
+  definition: Heating air flow rate in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hZXs0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hZXs0qWmHuO00025QrE$V
+    ifdGuid: 0hZXs0qWmHuO00025QrE$V
+    legacyGuid: 2b8e1d80d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0hZXs0qWmHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Heating Air Flow Rate'
+    definition: ''
+  - language: ja-JP
+    name: '暖房空気流量'
+    definition: '室内の暖房空気流量'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VentilationAirFlowRate
+  definition: Ventilation air flow rate in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kYGu0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kYGu0qWmHuO00025QrE$V
+    ifdGuid: 0kYGu0qWmHuO00025QrE$V
+    legacyGuid: 2e890e00d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0kYGu0qWmHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Ventilation Air Flow Rate'
+    definition: ''
+  - language: ja-JP
+    name: '換気気流速度'
+    definition: '室内の換気空気流量'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ExhaustAirFlowRate
+  definition: Exhaust air flow rate in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0nW$w0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nW$w0qWmHuO00025QrE$V
+    ifdGuid: 0nW$w0qWmHuO00025QrE$V
+    legacyGuid: 3183fe80d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0nW$w0qWmHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Exhaust Air Flow Rate'
+    definition: ''
+  - language: ja-JP
+    name: '排気空気流量'
+    definition: '室内の排気流量'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SpaceTemperature
+  definition: Temperature of the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0r5uM0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0r5uM0qWmHuO00025QrE$V
+    ifdGuid: 0r5uM0qWmHuO00025QrE$V
+    legacyGuid: 35178580d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0r5uM0qWmHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Space Temperature'
+    definition: ''
+  - language: ja-JP
+    name: '室内温度'
+    definition: '室内の温度'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SpaceRelativeHumidity
+  definition: The relative humidity of the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ugmo0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ugmo0qWmHuO00025QrE$V
+    ifdGuid: 0ugmo0qWmHuO00025QrE$V
+    legacyGuid: 38ab0c80d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0ugmo0qWmHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Space Relative Humidity'
+    definition: ''
+  - language: ja-JP
+    name: '室内相対湿度'
+    definition: '室内の相対湿度'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyReferenceValue:
+    refType: IfcTimeSeries
+    url: http://buildingsmart-tech.org
+    guid: ''
+    libraryName: Industry Foundation Classes by buildingSMART International
+    sectionref: Core Schema
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,181 @@
+﻿name: 'Pset_CoveringCeiling'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Properties common to the definition of all occurrence and type objects of covering with the predefined type set to CEILING.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3roqE0qSyHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3roqE0qSyHuO00025QrE$V
+  ifdGuid: 3roqE0qSyHuO00025QrE$V
+  legacyGuid: f5cb4380d1cf11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3roqE0qSyHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Bekleidung/Belag Decke'
+  definition: 'Gemeinsame Eigenschaften zur Definition aller Vorkommens- und Typenobjekte der Bedeckung mit dem vordefinierten Typ, der auf CEILING gesetzt ist.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcCovering/CEILING
+  type: IfcCovering/CEILING
+properties:
+- name: Permeability
+  definition: Ratio of the permeability of the ceiling.The ration can be used to indicate an open ceiling (that enables identification of whether ceiling construction should be considered as impeding distribution of sprinkler water, light etc. from installations within the ceiling area).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3_l1K0qSyHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_l1K0qSyHuO00025QrE$V
+    ifdGuid: 3_l1K0qSyHuO00025QrE$V
+    legacyGuid: febc1500d1cf11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3_l1K0qSyHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Durchlässigkeit'
+    definition: 'Durchlässigkeit der Unterdecke als Faktor zwischen 0 Undurchlässig und 1 völlig durchlässig. Der Faktor kann zur Abschätzung genutzt werden, ob die Unterdecke zur Decke hin offen und durchlässig (für Licht, Wasser und Sicht) ist.'
+  - language: en
+    name: 'Permeability'
+    definition: ''
+  - language: fr-FR
+    name: 'Perméabilité'
+    definition: 'Ratio de perméabilité du plafond. Ce ratio peut être utilisé pour désigner un plafond ouvert (cela permet de savoir si la pose du plafond empêche la distribution de fluides à partir d''installations situées dans le faux plafond).'
+  - language: zh-CN
+    name: '渗透率'
+    definition: '天花板的渗透比率。该比率可用以表示开敞式天花板（表示天花板能否阻隔其内侧的喷淋水、光线等的）。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcNormalisedRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TileLength
+  definition: Length of ceiling tiles. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/046L_0qT0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/046L_0qT0HuO00025QrE$V
+    ifdGuid: 046L_0qT0HuO00025QrE$V
+    legacyGuid: 04195f80d1d011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 046L_0qT0HuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Deckenplattenlänge'
+    definition: 'Länge der Unterdeckenplatten, oder -panele, die zur Verkleidung verwendet werden.'
+  - language: en
+    name: 'Tile Length'
+    definition: ''
+  - language: fr-FR
+    name: 'Longueur des carreaux'
+    definition: 'Longueur des carreaux de plafond. Cette propriété est donnée en complément de la représentation de la forme et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment.'
+  - language: zh-CN
+    name: '面砖长度'
+    definition: '天花板面砖的长度。该属性所提供的尺寸信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的尺寸属性不符，应以几何参数为准。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TileWidth
+  definition: Width of ceiling tiles. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09Tge0qT0HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09Tge0qT0HuO00025QrE$V
+    ifdGuid: 09Tge0qT0HuO00025QrE$V
+    legacyGuid: 0976aa00d1d011e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 09Tge0qT0HuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Deckenplattenbreite'
+    definition: 'Breite der Unterdeckenplatten, oder -panele, die zur Verkleidung verwendet werden.'
+  - language: en
+    name: 'Tile Width'
+    definition: ''
+  - language: fr-FR
+    name: 'Largeur des carreaux'
+    definition: 'Largeur des carreaux de plafond. Cette propriété est donnée en complément de la représentation de la forme et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment.'
+  - language: zh-CN
+    name: '面砖宽度'
+    definition: '天花板面砖的宽度。该属性所提供的尺寸信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的尺寸属性不符，应以几何参数为准。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,271 @@
+﻿{
+  "name": "Pset_ActorCommon",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "A property set that enables further classification of actors, including the ability to give a number of actors to be designated as a population, the number being specified as a property to be dealt with as a single value rather than having to aggregate a number of instances of IfcActor.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3trzS0qRmHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3trzS0qRmHuO00025QrE$V",
+    "ifdGuid": "3trzS0qRmHuO00025QrE$V",
+    "legacyGuid": "f7d7d700d1bc11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "3trzS0qRmHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Akteur - allgemeiner Eigenschaftssatz",
+      "definition": "Ein Property-Set, das eine weitere Klassifizierung von Akteuren ermöglicht, einschließlich der Möglichkeit, eine Anzahl von Akteuren als Population zu benennen, wobei die Anzahl als Eigenschaft angegeben wird, die als Einzelwert behandelt werden soll, anstatt mehrere Instanzen von IfcActor aggregieren zu müssen."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcActor",
+      "type": "IfcActor"
+    }
+  ],
+  "properties": [
+    {
+      "name": "NumberOfActors",
+      "definition": "The number of actors that are to be dealt with together in the population.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/00oAY0qRqHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00oAY0qRqHuO00025QrE$V",
+        "ifdGuid": "00oAY0qRqHuO00025QrE$V",
+        "legacyGuid": "00c8a880d1bd11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "00oAY0qRqHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Number Of Actors",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "関与者数",
+          "definition": "母集団において取り扱われる関与者の数。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "参与者数",
+          "definition": "该组参与者的总数。"
+        },
+        {
+          "language": "de-DE",
+          "name": "Anzahl der Akteure",
+          "definition": "Die Anzahl der Akteure, die in der Bevölkerung gemeinsam behandelt werden sollen."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcCountMeasure",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "Category",
+      "definition": "Designation of the category into which the actors in the population belong.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/06lec0qRqHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06lec0qRqHuO00025QrE$V",
+        "ifdGuid": "06lec0qRqHuO00025QrE$V",
+        "legacyGuid": "06be8980d1bd11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "06lec0qRqHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Category",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "部門",
+          "definition": "母集団の中の関与者のカテゴリー（部門・分野）の指定。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "类别",
+          "definition": "该组参与者所属的类别。"
+        },
+        {
+          "language": "de-DE",
+          "name": "Kategorie",
+          "definition": "Bezeichnung der Kategorie, zu der die Akteure in der Bevölkerung gehören."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "SkillLevel",
+      "definition": "Skill level exhibited by the actor and which indicates an extent of their capability to perform actions on the artefacts upon which they can act.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/0C6zG0qRqHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0C6zG0qRqHuO00025QrE$V",
+        "ifdGuid": "0C6zG0qRqHuO00025QrE$V",
+        "legacyGuid": "0c1bd400d1bd11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "0C6zG0qRqHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Skill Level",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "技能段階",
+          "definition": "関与者が示すスキルレベル（技能・技量段階）、および実行されるアクションへの能力を示すもの。"
+        },
+        {
+          "language": "zh-CN",
+          "name": "技能等级",
+          "definition": "参与者具备的技能的等级，即他们在专业领域内所能展示的能力。"
+        },
+        {
+          "language": "de-DE",
+          "name": "Wissensstufe",
+          "definition": "Fertigkeitsstufe, die vom Schauspieler ausgestellt wird und die ein Maß für seine Fähigkeit angibt, Handlungen an den Artefakten durchzuführen, auf die er reagieren kann."
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

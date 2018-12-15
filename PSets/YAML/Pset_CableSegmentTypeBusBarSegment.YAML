@@ -1,0 +1,83 @@
+﻿name: 'Pset_CableSegmentTypeBusBarSegment'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Properties specific to busbar cable segments.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0O39E0qSSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0O39E0qSSHuO00025QrE$V
+  ifdGuid: 0O39E0qSSHuO00025QrE$V
+  legacyGuid: 180c9380d1c711e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 0O39E0qSSHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Kabelsegmenttyp - Stromschienensegment'
+  definition: 'Eigenschaften spezifisch für Sammelschienen-Kabelsegmente.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcCableSegment/BUSBARSEGMENT
+  type: IfcCableSegment/BUSBARSEGMENT
+properties:
+- name: IsHorizontalBusbar
+  definition: Indication of whether the busbar occurrences are routed horizontally (= TRUE) or vertically (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0U0dI0qSSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0U0dI0qSSHuO00025QrE$V
+    ifdGuid: 0U0dI0qSSHuO00025QrE$V
+    legacyGuid: 1e027480d1c711e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0U0dI0qSSHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Is Horizontal Busbar'
+    definition: ''
+  - language: ja-JP
+    name: '水平母線'
+    definition: '母線は、水平方向にルーティングされるかどうかを示す（= TRUE）または垂直方向に（= FALSE）を返します。'
+  - language: ko-KR
+    name: '수평 모선'
+    definition: '모선은 가로로 라우팅되는지 여부를 나타내는 (= TRUE) 또는 수직 (= FALSE)를 반환합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,346 @@
+﻿name: 'Pset_AnnotationSurveyArea'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Specifies particular properties of survey methods to be assigned to survey point set or resulting surface patches'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1UNlG0qS4HuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1UNlG0qS4HuO00025QrE$V
+  ifdGuid: 1UNlG0qS4HuO00025QrE$V
+  legacyGuid: 5e5ef400d1c111e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 1UNlG0qS4HuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Annotation - Untersuchungsgebiet'
+  definition: 'Spezifiziert bestimmte Eigenschaften von Vermessungsmethoden, die der Vermessungspunktmenge oder den resultierenden Oberflächenpatches zugeordnet werden sollen.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcAnnotation/SurveyArea
+  type: IfcAnnotation/SurveyArea
+properties:
+- name: AcquisitionMethod
+  definition: The means by which survey data was acquired.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Zl3w0qS4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Zl3w0qS4HuO00025QrE$V
+    ifdGuid: 1Zl3w0qS4HuO00025QrE$V
+    legacyGuid: 63bc3e80d1c111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1Zl3w0qS4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Acquisition Method'
+    definition: ''
+  - language: fr-FR
+    name: 'MethodeAcquisition'
+    definition: 'La méthode utilisée pour effectuer le relevé.'
+  - language: de-DE
+    name: 'Akquisitionsmethode'
+    definition: 'Die Mittel, mit denen die Erhebungsdaten erfasst wurden.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: GPS
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LASERSCAN_AIRBORNE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: LASERSCAN_GROUND
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SONAR
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: THEODOLITE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: USERDEFINED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AccuracyQualityObtained
+  definition: A measure of the accuracy quality of survey points as obtained expressed in percentage terms.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1spmw0qS4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1spmw0qS4HuO00025QrE$V
+    ifdGuid: 1spmw0qS4HuO00025QrE$V
+    legacyGuid: 76cf0e80d1c111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1spmw0qS4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Accuracy Quality Obtained'
+    definition: ''
+  - language: fr-FR
+    name: 'PrecisionObtenue'
+    definition: 'Mesure de la précision obtenue des points de relevé, exprimée en pourcentage.'
+  - language: de-DE
+    name: 'Genauigkeit - Qualität - erhalten'
+    definition: 'Ein Maß für die Genauigkeitsqualität der ermittelten Messpunkte, ausgedrückt in Prozent.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: AccuracyQualityExpected
+  definition: A measure of the accuracy quality of survey points as expected expressed in percentage terms.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ynE_0qS4HuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ynE_0qS4HuO00025QrE$V
+    ifdGuid: 1ynE_0qS4HuO00025QrE$V
+    legacyGuid: 7cc4ef80d1c111e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1ynE_0qS4HuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Accuracy Quality Expected'
+    definition: ''
+  - language: fr-FR
+    name: 'PrecisionAttendue'
+    definition: 'Mesure de la précision attendue des points de relevé, exprimée en pourcentage.'
+  - language: de-DE
+    name: 'Genauigkeit - Qualität - erhalten'
+    definition: 'Ein Maß für die Genauigkeitsqualität von Vermessungspunkten, wie erwartet, ausgedrückt in Prozent.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcRatioMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,808 @@
+﻿name: 'Pset_DistributionPortTypePipe'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Pipe port occurrence attributes attached to an instance of IfcDistributionPort.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/369nZ1zOj5Rx7GrENld5CA
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/369nZ1zOj5Rx7GrENld5CA
+  ifdGuid: 369nZ1zOj5Rx7GrENld5CA
+  legacyGuid: e85967d6b1c34c3c930301ef638f478f
+  legacyGuidAsIfcGlobalId: 3eMMVMiSDCF9C30UzZZqUF
+localizations:
+- language: de-DE
+  name: 'Anschluss/Port-Typ - Rohr'
+  definition: 'Pipe-Port-Erscheinungsattribute, die an eine Instanz von IfcDistributionPort angehängt sind.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcDistributionPort/PIPE
+  type: IfcDistributionPort/PIPE
+properties:
+- name: ConnectionType
+  definition: 'The end-style treatment of the pipe port:BRAZED: Brazed. COMPRESSION: Compression. FLANGED: Flanged. GROOVED: Grooved. OUTSIDESLEEVE: Outside Sleeve. SOLDERED: Soldered. SWEDGE: Swedge. THREADED: Threaded. WELDED: Welded. OTHER: Another type of end-style has been applied.NONE: No end-style has been applied.USERDEFINED: User-defined port connection type. NOTDEFINED: Undefined port connection type.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0HwJZ9i8f8mwXwCjRafpoW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0HwJZ9i8f8mwXwCjRafpoW
+    ifdGuid: 0HwJZ9i8f8mwXwCjRafpoW
+    legacyGuid: f842a89d8ec5470cb8ba7fec7338c6e3
+    legacyGuidAsIfcGlobalId: 3uGgYTZiL73BYwV_npECRZ
+  localizations:
+  - language: en
+    name: 'Connection Type'
+    definition: ''
+  - language: ja-JP
+    name: '接続タイプ'
+    definition: '物理ポート接続：- Coaxial: 同軸コネクタ.- DSub: D-Subコネクタ.- Infrared:赤外線- RJ: 登録済みジャック.- Radio: 無線- USB: USB.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: BRAZED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: COMPRESSION
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: FLANGED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: GROOVED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OUTSIDESLEEVE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SOLDERED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: SWEDGE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: THREADED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: WELDED
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NONE
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ConnectionSubType
+  definition: The physical port connection subtype that further qualifies the ConnectionType.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01P0NvGur0hwO7SmZsb0Tt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01P0NvGur0hwO7SmZsb0Tt
+    ifdGuid: 01P0NvGur0hwO7SmZsb0Tt
+    legacyGuid: df1d39774bb44a8d96c833058af039e0
+    legacyGuidAsIfcGlobalId: 3V7JbtIxHAZPR8CmMAy3dW
+  localizations:
+  - language: en
+    name: 'Connection Sub Type'
+    definition: ''
+  - language: ja-JP
+    name: '接続サブタイプ'
+    definition: '物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：- DSub: DA15, DB25, DC37, DD50, DE9, DE15 - Radio: IEEE802.11g, IEEE802.11n- RJ: 4P4C, 6P2C, 8P8C - USB: A, B, MiniA, MiniB, MicroA, MicroB'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NominalDiameter
+  definition: The nominal diameter of the pipe connection.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Faur3kgLDz819V5L_$cUl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Faur3kgLDz819V5L_$cUl
+    ifdGuid: 3Faur3kgLDz819V5L_$cUl
+    legacyGuid: ac9d798031fc44e1828a2cc76ae5d86c
+    legacyGuidAsIfcGlobalId: 2idNc0CVn4uOAABCTgvTXi
+  localizations:
+  - language: en
+    name: 'Nominal Diameter'
+    definition: ''
+  - language: ja-JP
+    name: '呼び径'
+    definition: '配管の呼び径。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: InnerDiameter
+  definition: The actual inner diameter of the pipe.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2a9sDG$rrA1PSBrlJtZChX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2a9sDG$rrA1PSBrlJtZChX
+    ifdGuid: 2a9sDG$rrA1PSBrlJtZChX
+    legacyGuid: fcd3dc22fdfd4ea084f200be83155aa3
+    legacyGuidAsIfcGlobalId: 3yqzmY$VrEe8Jo0Bw35LgZ
+  localizations:
+  - language: en
+    name: 'Inner Diameter'
+    definition: ''
+  - language: ja-JP
+    name: '内径'
+    definition: '配管の実内径。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: OuterDiameter
+  definition: The actual outer diameter of the pipe.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0a7gQialL2n85xxL4EGlx9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0a7gQialL2n85xxL4EGlx9
+    ifdGuid: 0a7gQialL2n85xxL4EGlx9
+    legacyGuid: 4d18569df1264f3baceb2da495f1dfda
+    legacyGuidAsIfcGlobalId: 1D65QTyIPFEwphBQILyT$Q
+  localizations:
+  - language: en
+    name: 'Outer Diameter'
+    definition: ''
+  - language: ja-JP
+    name: '外径'
+    definition: '配管の実外径。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Temperature
+  definition: Temperature of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2M$OZfhPjAdeGnQMrwHj6T
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2M$OZfhPjAdeGnQMrwHj6T
+    ifdGuid: 2M$OZfhPjAdeGnQMrwHj6T
+    legacyGuid: b6cb7483a65d4bd5ac6551b080116323
+    legacyGuidAsIfcGlobalId: 2sotI3fbrBrQnbKR204MCZ
+  localizations:
+  - language: en
+    name: 'Temperature'
+    definition: ''
+  - language: ja-JP
+    name: '温度'
+    definition: '流体の温度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VolumetricFlowRate
+  definition: The volumetric flow rate of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/073baI3fb3uRhFAOv7yMUa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/073baI3fb3uRhFAOv7yMUa
+    ifdGuid: 073baI3fb3uRhFAOv7yMUa
+    legacyGuid: b4252ef25858465d840e3539db7eed5e
+    legacyGuidAsIfcGlobalId: 2q9IxoM5X6NOGEDJdRVkrU
+  localizations:
+  - language: en
+    name: 'Volumetric Flow Rate'
+    definition: ''
+  - language: ja-JP
+    name: '体積流量'
+    definition: '流体の体積流量。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: MassFlowRate
+  definition: The mass flow rate of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2i3keHx1XCu8gH1egE3fdN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2i3keHx1XCu8gH1egE3fdN
+    ifdGuid: 2i3keHx1XCu8gH1egE3fdN
+    legacyGuid: a3db7690009f42a988a9f5683b29eb8f
+    legacyGuidAsIfcGlobalId: 2ZstQG09z2gOYfzMWxAUkF
+  localizations:
+  - language: en
+    name: 'Mass Flow Rate'
+    definition: ''
+  - language: ja-JP
+    name: '質量流量'
+    definition: '流体の質量流量。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FlowCondition
+  definition: Defines the flow condition as a percentage of the cross-sectional area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0IPeA521X7EvFllIlik07J
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IPeA521X7EvFllIlik07J
+    ifdGuid: 0IPeA521X7EvFllIlik07J
+    legacyGuid: a09f286511e94d0f939193c2e0155921
+    legacyGuidAsIfcGlobalId: 2WdoXb4UbD3vEHayBW5LaX
+  localizations:
+  - language: en
+    name: 'Flow Condition'
+    definition: ''
+  - language: ja-JP
+    name: '流動状態'
+    definition: '断面の充満率で流動状態を定義する。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Velocity
+  definition: The velocity of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22WuruaybDZgfH_sWPbQbx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22WuruaybDZgfH_sWPbQbx
+    ifdGuid: 22WuruaybDZgfH_sWPbQbx
+    legacyGuid: 7faf6c2ffbd64304b38859166e006c4a
+    legacyGuidAsIfcGlobalId: 1$hsml_zP31BE8MHPk06nA
+  localizations:
+  - language: en
+    name: 'Velocity'
+    definition: ''
+  - language: ja-JP
+    name: '速度'
+    definition: '流体の速度。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Pressure
+  definition: The pressure of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1NXOn4nkL0rx2REB147Kp_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1NXOn4nkL0rx2REB147Kp_
+    ifdGuid: 1NXOn4nkL0rx2REB147Kp_
+    legacyGuid: cc4abc86f21d4ee3a86d3815019c5ab3
+    legacyGuidAsIfcGlobalId: 3CIho6yXrEuwXjE1K1d5gp
+  localizations:
+  - language: en
+    name: 'Pressure'
+    definition: ''
+  - language: ja-JP
+    name: '圧力'
+    definition: '流体の圧力。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,524 @@
+﻿name: 'Pset_ProtectiveDeviceBreakerUnitTypeMotorProtection'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'A coherent set of attributes representing different capacities of a a motor protection device, defined in accordance with IEC 60947. Note - A protective device may be associated with different instances of this Pset.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3TS1w0qVaHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TS1w0qVaHuO00025QrE$V
+  ifdGuid: 3TS1w0qVaHuO00025QrE$V
+  legacyGuid: dd701e80d1f911e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3TS1w0qVaHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Sicherungsschaltertyp - Motorschutz'
+  definition: 'Ein zusammenhängender Satz von Attributen, die verschiedene Kapazitäten eines Motorschutzgerätes repräsentieren, definiert nach IEC 60947 Hinweis - Eine Schutzeinrichtung kann mit verschiedenen Instanzen dieses Pset verbunden sein.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProtectiveDevice
+  type: IfcProtectiveDevice
+properties:
+- name: PerformanceClasses
+  definition: A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a motor protection device may beconstructed for different levels of breaking capacities. A maximum of 7 differentperformance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZPV_0qVaHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZPV_0qVaHuO00025QrE$V
+    ifdGuid: 3ZPV_0qVaHuO00025QrE$V
+    legacyGuid: e365ff80d1f911e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3ZPV_0qVaHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Performance Classes'
+    definition: ''
+  - language: ja-JP
+    name: '能力クラス'
+    definition: 'モータ保護を行う開閉装置は、能力が違う最大7種類がある。名称の例として、B, C, N, S, H, L, Vが含まれる。'
+  - language: ko-KR
+    name: '능력클래스'
+    definition: '모터 보호하는 개폐 장치는 능력이 다른 최대 7 종류가있다. 이름의 예로는, B, C, N, S, H, L, V가 포함된다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyListValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: VoltageLevel
+  definition: The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ixsU0qVaHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ixsU0qVaHuO00025QrE$V
+    ifdGuid: 3ixsU0qVaHuO00025QrE$V
+    legacyGuid: ecef6780d1f911e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3ixsU0qVaHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Voltage Level'
+    definition: ''
+  - language: ja-JP
+    name: '電圧レベル'
+    definition: '電圧レベルを選択。'
+  - language: ko-KR
+    name: '전압레벨'
+    definition: '전압 레벨을 선택합니다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: U230
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U400
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U440
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U525
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U690
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: U1000
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ICU60947
+  definition: The ultimate breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09Yv_0qVeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09Yv_0qVeHuO00025QrE$V
+    ifdGuid: 09Yv_0qVeHuO00025QrE$V
+    legacyGuid: 098b9f80d1fa11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 09Yv_0qVeHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'ICU60947'
+    definition: ''
+  - language: ja-JP
+    name: 'ICU60947'
+    definition: 'IECの60947シリーズに基づいてテスト配線用遮断機またはモータ保護装置のための遮断容量を[A]で設定。'
+  - language: ko-KR
+    name: 'ICU60947'
+    definition: 'IEC의 60947 시리즈를 기반으로 테스트 배선용 차단기 또는 모터 보호 장치를위한 차단 용량 [A]로 설정.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ICS60947
+  definition: The service breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0FWO20qVeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FWO20qVeHuO00025QrE$V
+    ifdGuid: 0FWO20qVeHuO00025QrE$V
+    legacyGuid: 0f818080d1fa11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0FWO20qVeHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'ICS60947'
+    definition: ''
+  - language: ja-JP
+    name: 'ICS60947'
+    definition: 'IECの60947シリーズに基づいてテスト配線用遮断機またはモータ保護装置のための遮断容量サービスを[A]で設定。'
+  - language: ko-KR
+    name: 'ICS60947'
+    definition: 'IEC의 60947 시리즈를 기반으로 테스트 배선용 차단기 또는 모터 보호 장치를위한 차단 용량 서비스를 [A]로 설정.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ICW60947
+  definition: The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ktii0qVeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ktii0qVeHuO00025QrE$V
+    ifdGuid: 0Ktii0qVeHuO00025QrE$V
+    legacyGuid: 14decb00d1fa11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0Ktii0qVeHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'ICW60947'
+    definition: ''
+  - language: ja-JP
+    name: 'ICW60947'
+    definition: 'IEC60947シリーズに基づいてテストした配線遮断機またはモータ保護装置のための電流[A]に耐える温度。 値は、1sで与えられる。'
+  - language: ko-KR
+    name: 'ICW60947'
+    definition: 'IEC60947 시리즈를 기반으로 테스트 배선 차단기 또는 모터 보호 장치를위한 전류 [A]에 견디는 온도  값은 1s 주어진다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ICM60947
+  definition: The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QF1M0qVeHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QF1M0qVeHuO00025QrE$V
+    ifdGuid: 0QF1M0qVeHuO00025QrE$V
+    legacyGuid: 1a3c1580d1fa11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0QF1M0qVeHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'ICM60947'
+    definition: ''
+  - language: ja-JP
+    name: 'ICM60947'
+    definition: 'IECの60947シリーズに基づいてテストした配線遮断機またはモータ保護装置のためので作る能力[A]。'
+  - language: ko-KR
+    name: 'ICM60947'
+    definition: 'IEC의 60947 시리즈를 기반으로 테스트 배선 차단기 또는 모터 보호 장치를위한 만드는 능력 [A]. "'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcElectricCurrentMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

@@ -1,0 +1,80 @@
+﻿name: 'Pset_ProjectOrderMoveOrder'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Defines the requirements for move orders. Note that the move order status is defined in the same way as a work order status since a move order implies a work requirement.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/38aek0qVSHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/38aek0qVSHuO00025QrE$V
+  ifdGuid: 38aek0qVSHuO00025QrE$V
+  legacyGuid: c8928b80d1f711e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 38aek0qVSHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Projektanweisung - Transportanweisung'
+  definition: 'Beachten Sie, dass der Status des Transportauftrags analog zu einem Arbeitsauftragsstatus definiert ist, da ein Transportauftrag einen Arbeitsauftrag impliziert.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcProjectOrder/MOVEORDER
+  type: IfcProjectOrder/MOVEORDER
+properties:
+- name: SpecialInstructions
+  definition: Special instructions that affect the move.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3FkPc0qVSHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FkPc0qVSHuO00025QrE$V
+    ifdGuid: 3FkPc0qVSHuO00025QrE$V
+    legacyGuid: cfb99980d1f711e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3FkPc0qVSHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Special Instructions'
+    definition: ''
+  - language: ja-JP
+    name: '特別指示'
+    definition: '移動・引っ越しに影響する特別な指示。'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

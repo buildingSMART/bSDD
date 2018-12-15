@@ -1,0 +1,182 @@
+﻿name: 'Pset_SensorTypeSmokeSensor'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'A device that senses or detects smoke. HISTORY: PressureSensorSensorSetPoint (error in previous release) changed to SetPointConcentration. Range, accuracy and time constant deleted.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IuUm0qWOHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IuUm0qWOHuO00025QrE$V
+  ifdGuid: 1IuUm0qWOHuO00025QrE$V
+  legacyGuid: 52e1ec00d20611e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 1IuUm0qWOHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Sensortyp - Rauchsensor '
+  definition: 'GESCHICHTE: PressureSensorSensorSensorSetPoint (Fehler in der vorherigen Version) wurde in SetPointConcentration geändert, Bereich, Genauigkeit und Zeitkonstante wurden gelöscht.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSensor/SMOKESENSOR
+  type: IfcSensor/SMOKESENSOR
+properties:
+- name: CoverageArea
+  definition: The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Oryq0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Oryq0qWOHuO00025QrE$V
+    ifdGuid: 1Oryq0qWOHuO00025QrE$V
+    legacyGuid: 58d7cd00d20611e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1Oryq0qWOHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Coverage Area'
+    definition: ''
+  - language: ja-JP
+    name: '測定範囲'
+    definition: 'センサでカバーされている床面積。(通常、センターがセンサの位置にある円として測定される)'
+  - language: ko-KR
+    name: '측정 범위'
+    definition: '센서 커버되는 바닥 면적. (일반적으로 센터 센서의 위치에있는 원형으로 측정되는)'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcAreaMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: SetPointConcentration
+  definition: The smoke concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1VPaI0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VPaI0qWOHuO00025QrE$V
+    ifdGuid: 1VPaI0qWOHuO00025QrE$V
+    legacyGuid: 5f664480d20611e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1VPaI0qWOHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Set Point Concentration'
+    definition: ''
+  - language: ja-JP
+    name: '煙濃度設定値'
+    definition: '感知される煙濃度。セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。'
+  - language: ko-KR
+    name: '연기 농도 설정'
+    definition: '감지되는 연기 농도. 세트 포인트 값을 넣으려면, IfcPropertyBoundedValue.SetPointValue를 사용하십시오.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasBuiltInAlarm
+  definition: Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1eLnO0qWOHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1eLnO0qWOHuO00025QrE$V
+    ifdGuid: 1eLnO0qWOHuO00025QrE$V
+    legacyGuid: 68571600d20611e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 1eLnO0qWOHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Has Built In Alarm'
+    definition: ''
+  - language: ja-JP
+    name: '煙警報器に含まれているか'
+    definition: '煙センサーが煙警報センサユニットの中に要素として含まれているか(TRUE)、否か(FALSE)を識別する。'
+  - language: ko-KR
+    name: '연기 경보기에 포함여부'
+    definition: '연기 센서가 화재 경보 센서 유닛의 요소로 포함되어 있는지 (TRUE) 여부 (FALSE)를 확인한다.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

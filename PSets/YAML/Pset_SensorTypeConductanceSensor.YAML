@@ -1,0 +1,84 @@
+﻿name: 'Pset_SensorTypeConductanceSensor'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'A device that senses or detects electrical conductance.  HISTORY: Added in IFC4.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/027SE0qWKHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/027SE0qWKHuO00025QrE$V
+  ifdGuid: 027SE0qWKHuO00025QrE$V
+  legacyGuid: 021dc380d20511e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 027SE0qWKHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Sensortyp - Leitwertsensor '
+  definition: 'Ein Gerät, das elektrische Leitfähigkeit erfasst oder detektiert.  GESCHICHTE: Hinzugefügt in IFC4.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcSensor/CONDUCTANCESENSOR
+  type: IfcSensor/CONDUCTANCESENSOR
+properties:
+- name: SetPointConductance
+  definition: The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06IU40qWKHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06IU40qWKHuO00025QrE$V
+    ifdGuid: 06IU40qWKHuO00025QrE$V
+    legacyGuid: 0649e100d20511e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 06IU40qWKHuO00025QrE$V
+  localizations:
+  - language: en
+    name: 'Set Point Conductance'
+    definition: ''
+  - language: ja-JP
+    name: '電気伝導率設定値'
+    definition: '感知される電気伝導率。セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。'
+  - language: ko-KR
+    name: '전기 전도율 설정'
+    definition: '감지되는 전기 전도율. 세트 포인트 값을 넣으려면, IfcPropertyBoundedValue.SetPointValue를 사용하십시오.'
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyBoundedValue:
+    unitType: USERDEFINED
+    LowerBoundValue: ''
+    UpperBoundValue: ''
+    typeName: TypePropertyBoundedValue
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN

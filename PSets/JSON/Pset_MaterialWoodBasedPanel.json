@@ -1,0 +1,2537 @@
+﻿{
+  "name": "Pset_MaterialWoodBasedPanel",
+  "ifcVersion": {
+    "version": "4.0.0.0"
+  },
+  "definition": "This is a collection of mechanical properties related to wood-based materials for panel-like products like plywood or OSB. The propositions given above for wood-based beam materials with respect to anisotropy, strength graduation according to element sizes (especially panel thickness) apply accordingly.",
+  "templatetype": "PSET_TYPEDRIVENOVERRIDE",
+  "dictionaryReference": {
+    "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1okUM0qUyHuO00025QrE$V",
+    "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1okUM0qUyHuO00025QrE$V",
+    "ifdGuid": "1okUM0qUyHuO00025QrE$V",
+    "legacyGuid": "72b9e580d1ef11e1800000215ad4efdf",
+    "legacyGuidAsIfcGlobalId": "1okUM0qUyHuO00025QrE$V"
+  },
+  "localizations": [
+    {
+      "language": "de-DE",
+      "name": "Material - Holzplatte",
+      "definition": "Es handelt sich um eine Sammlung mechanischer Eigenschaften von Holzwerkstoffen für plattenförmige Produkte wie Sperrholz oder OSB, wobei die obigen Ausführungen für Holzwerkstoffe hinsichtlich Anisotropie, Festigkeitsabstufung nach Elementgrößen (insbesondere Plattendicke) entsprechend gelten."
+    },
+    {
+      "language": "en-GB",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "es-ES",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "fr-FR",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ja-JP",
+      "name": "",
+      "definition": ""
+    },
+    {
+      "language": "ru-RU",
+      "name": "",
+      "definition": ""
+    }
+  ],
+  "applicableIfcClasses": [
+    {
+      "name": "IfcMaterial/Wood",
+      "type": "IfcMaterial/Wood"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ApplicableStructuralDesignMethod",
+      "definition": "Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1rjDO0qUyHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rjDO0qUyHuO00025QrE$V",
+        "ifdGuid": "1rjDO0qUyHuO00025QrE$V",
+        "legacyGuid": "75b4d600d1ef11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1rjDO0qUyHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Applicable Structural Design Method",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typePropertySingleValue": {
+        "dataType": "IfcLabel",
+        "measureType": "",
+        "unitType": "USERDEFINED"
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "InPlane",
+      "definition": "Mechanical properties with respect to in-plane load, i.e. for function as a membrane.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1x4Y20qUyHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x4Y20qUyHuO00025QrE$V",
+        "ifdGuid": "1x4Y20qUyHuO00025QrE$V",
+        "legacyGuid": "7b122080d1ef11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1x4Y20qUyHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "In Plane",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typeComplexProperty": {
+        "name": "CP_MaterialMechanicalPanel",
+        "subProperties": [
+          {
+            "name": "YoungModulusBending",
+            "definition": "Defining values: α; defined values: elastic modulus in bending.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1ys_G0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ys_G0qUyHuO00025QrE$V",
+              "ifdGuid": "1ys_G0qUyHuO00025QrE$V",
+              "legacyGuid": "f88795abf8e24e72b93a3f90f8c300ce",
+              "legacyGuidAsIfcGlobalId": "3uXvMh_E9EShawFv3umm3E"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcModulusOfElasticityMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "YoungModulusTension",
+            "definition": "Defining values: α; defined values: elastic modulus in tension.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/26$UA0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26$UA0qUyHuO00025QrE$V",
+              "ifdGuid": "26$UA0qUyHuO00025QrE$V",
+              "legacyGuid": "2c404c72a4b849f6a69bce9d0f4f37fc",
+              "legacyGuidAsIfcGlobalId": "0iG4nofBX9zgQRpfqFJpVy"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcModulusOfElasticityMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "YoungModulusCompression",
+            "definition": "Elastic modulus in compression.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2Hk7U0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Hk7U0qUyHuO00025QrE$V",
+              "ifdGuid": "2Hk7U0qUyHuO00025QrE$V",
+              "legacyGuid": "358fc45434544169ac1e38cc58f61634",
+              "legacyGuidAsIfcGlobalId": "0rZyHKD5H1QQmUECnOzXOq"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcModulusOfElasticityMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ShearModulus",
+            "definition": "Shear modulus.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2N5S80qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2N5S80qUyHuO00025QrE$V",
+              "ifdGuid": "2N5S80qUyHuO00025QrE$V",
+              "legacyGuid": "4bd9c7533884422e95e5f0a14e6de99a",
+              "legacyGuidAsIfcGlobalId": "1BsSTJE8H2BfNbyA5ERUcQ"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcModulusOfElasticityMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "BendingStrength",
+            "definition": "Defining values: α; defined values: bending strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2RsdO0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RsdO0qUyHuO00025QrE$V",
+              "ifdGuid": "2RsdO0qUyHuO00025QrE$V",
+              "legacyGuid": "f82b0dc8ae43409cae6acaceaf171fb0",
+              "legacyGuidAsIfcGlobalId": "3uAmt8haD0dAvgoiwl5n_m"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "CompressiveStrength",
+            "definition": "Defining values: α; defined values: compressive strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2eNiw0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2eNiw0qUyHuO00025QrE$V",
+              "ifdGuid": "2eNiw0qUyHuO00025QrE$V",
+              "legacyGuid": "43cbe65a8d5c4a769b984d0da1ff6417",
+              "legacyGuidAsIfcGlobalId": "13o_PQZLnATfkOJGsX$sGN"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "TensileStrength",
+            "definition": "Defining values: α; defined values: tensile strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2qIf20qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qIf20qUyHuO00025QrE$V",
+              "ifdGuid": "2qIf20qUyHuO00025QrE$V",
+              "legacyGuid": "aef7c8bcd73e434da20ffcf00ed7babc",
+              "legacyGuidAsIfcGlobalId": "2kzyYyrpv3JQ8F$F0Erxgy"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ShearStrength",
+            "definition": "Defining values: α; defined values: shear strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2$dRm0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$dRm0qUyHuO00025QrE$V",
+              "ifdGuid": "2$dRm0qUyHuO00025QrE$V",
+              "legacyGuid": "370ad6a14f8348dda7f7c1d8902fb274",
+              "legacyGuidAsIfcGlobalId": "0t2jQXJuD8tQVtmTYGBx9q"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "BearingStrength",
+            "definition": "Defining values: α; defined values: bearing strength of bolt holes, i.e. intrados pressure.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3DKq60qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DKq60qUyHuO00025QrE$V",
+              "ifdGuid": "3DKq60qUyHuO00025QrE$V",
+              "legacyGuid": "c3c9c43178814262ad28abdc3d705f51",
+              "legacyGuidAsIfcGlobalId": "33oSGnU852OgqegzmzS5zH"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "RaisedCompressiveStrength",
+            "definition": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Ofcq0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ofcq0qUyHuO00025QrE$V",
+              "ifdGuid": "3Ofcq0qUyHuO00025QrE$V",
+              "legacyGuid": "84e6e3df603f4f149a0f2d18e7bd8443",
+              "legacyGuidAsIfcGlobalId": "24vkFVO3zF59eFBHZdlOH3"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcPressureMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ReferenceDepth",
+            "definition": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3U0xU0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3U0xU0qUyHuO00025QrE$V",
+              "ifdGuid": "3U0xU0qUyHuO00025QrE$V",
+              "legacyGuid": "48b02192a22a4ebe9108903c05361ece",
+              "legacyGuidAsIfcGlobalId": "18i26IeYfElf48a3m5DXxE"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcPositiveLengthMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OutOfPlane",
+      "definition": "Mechanical properties with respect to out-of-plane load, i.e. for function as a plate; tension zone of unbalanced layups is stressed in tension.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3bAiM0qUyHuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bAiM0qUyHuO00025QrE$V",
+        "ifdGuid": "3bAiM0qUyHuO00025QrE$V",
+        "legacyGuid": "e52ac580d1ef11e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "3bAiM0qUyHuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Out Of Plane",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typeComplexProperty": {
+        "name": "CP_MaterialMechanicalPanel",
+        "subProperties": [
+          {
+            "name": "YoungModulusBending",
+            "definition": "Defining values: α; defined values: elastic modulus in bending.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1ys_G0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ys_G0qUyHuO00025QrE$V",
+              "ifdGuid": "1ys_G0qUyHuO00025QrE$V",
+              "legacyGuid": "ac7bb382cae843d2824737032f114b80",
+              "legacyGuidAsIfcGlobalId": "2iUxE2okX3qe97DmCl4Kk0"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcModulusOfElasticityMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "YoungModulusTension",
+            "definition": "Defining values: α; defined values: elastic modulus in tension.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/26$UA0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26$UA0qUyHuO00025QrE$V",
+              "ifdGuid": "26$UA0qUyHuO00025QrE$V",
+              "legacyGuid": "6ab98e5d630444aa863fa5eacb7aa2e3",
+              "legacyGuidAsIfcGlobalId": "1gkOvTOmH4geO$fUhBUgBZ"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcModulusOfElasticityMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "YoungModulusCompression",
+            "definition": "Elastic modulus in compression.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2Hk7U0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Hk7U0qUyHuO00025QrE$V",
+              "ifdGuid": "2Hk7U0qUyHuO00025QrE$V",
+              "legacyGuid": "9d2f0e63af8f437189664aa28915e8d4",
+              "legacyGuidAsIfcGlobalId": "2TBmvZhuz3SObcIgA95UZK"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcModulusOfElasticityMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ShearModulus",
+            "definition": "Shear modulus.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2N5S80qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2N5S80qUyHuO00025QrE$V",
+              "ifdGuid": "2N5S80qUyHuO00025QrE$V",
+              "legacyGuid": "95065e1627354f45903f0fd09b84b851",
+              "legacyGuidAsIfcGlobalId": "2L1buM9pLFHP0$3z2RXBXH"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcModulusOfElasticityMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "BendingStrength",
+            "definition": "Defining values: α; defined values: bending strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2RsdO0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RsdO0qUyHuO00025QrE$V",
+              "ifdGuid": "2RsdO0qUyHuO00025QrE$V",
+              "legacyGuid": "f4028709b945497396211c0c70294fca",
+              "legacyGuidAsIfcGlobalId": "3q0eS9kKL9SvOX70nmAK$A"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "CompressiveStrength",
+            "definition": "Defining values: α; defined values: compressive strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2eNiw0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2eNiw0qUyHuO00025QrE$V",
+              "ifdGuid": "2eNiw0qUyHuO00025QrE$V",
+              "legacyGuid": "2aec861c2b6a4d91b19592ab6f03296c",
+              "legacyGuidAsIfcGlobalId": "0gx8OSAsfDaR6Lagjl0obi"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "TensileStrength",
+            "definition": "Defining values: α; defined values: tensile strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2qIf20qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qIf20qUyHuO00025QrE$V",
+              "ifdGuid": "2qIf20qUyHuO00025QrE$V",
+              "legacyGuid": "58fca2f87665483a942c2629a28a4aeb",
+              "legacyGuidAsIfcGlobalId": "1O$ABuTcL8EfGi9YcYYahh"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ShearStrength",
+            "definition": "Defining values: α; defined values: shear strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2$dRm0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$dRm0qUyHuO00025QrE$V",
+              "ifdGuid": "2$dRm0qUyHuO00025QrE$V",
+              "legacyGuid": "ddf4bd42acbb4e389441691a2c19e8ea",
+              "legacyGuidAsIfcGlobalId": "3TzBr2hBjEE9H1QHei6UZg"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "BearingStrength",
+            "definition": "Defining values: α; defined values: bearing strength of bolt holes, i.e. intrados pressure.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3DKq60qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DKq60qUyHuO00025QrE$V",
+              "ifdGuid": "3DKq60qUyHuO00025QrE$V",
+              "legacyGuid": "144dda8ccaf84972806a992577539696",
+              "legacyGuidAsIfcGlobalId": "0KJTgColX9Se1gcILtKvQM"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "RaisedCompressiveStrength",
+            "definition": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Ofcq0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ofcq0qUyHuO00025QrE$V",
+              "ifdGuid": "3Ofcq0qUyHuO00025QrE$V",
+              "legacyGuid": "9a6bd43de78c4ac19a19e9a963c9f95a",
+              "legacyGuidAsIfcGlobalId": "2QQzGzvunAmPePwQbZoVbQ"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcPressureMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ReferenceDepth",
+            "definition": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3U0xU0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3U0xU0qUyHuO00025QrE$V",
+              "ifdGuid": "3U0xU0qUyHuO00025QrE$V",
+              "legacyGuid": "cac94447840b4eb7ba13f42234111fcc",
+              "legacyGuidAsIfcGlobalId": "3AoKH7X0jEjxeJz28q4H$C"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcPositiveLengthMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    },
+    {
+      "name": "OutOfPlaneNegative",
+      "definition": "Mechanical properties with respect to out-of-plane load i.e. for function as a plate; compression zone of unbalanced layups is stressed in tension.",
+      "dictionaryReference": {
+        "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+        "dictionaryNamespace": "PSet",
+        "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1H3Iu0qV0HuO00025QrE$V",
+        "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1H3Iu0qV0HuO00025QrE$V",
+        "ifdGuid": "1H3Iu0qV0HuO00025QrE$V",
+        "legacyGuid": "510d2e00d1f011e1800000215ad4efdf",
+        "legacyGuidAsIfcGlobalId": "1H3Iu0qV0HuO00025QrE$V"
+      },
+      "localizations": [
+        {
+          "language": "en",
+          "name": "Out Of Plane Negative",
+          "definition": ""
+        },
+        {
+          "language": "de-DE",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "en-GB",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "es-ES",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "fr-FR",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ja-JP",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "language": "ru-RU",
+          "name": "",
+          "definition": ""
+        }
+      ],
+      "typeComplexProperty": {
+        "name": "CP_MaterialMechanicalPanel",
+        "subProperties": [
+          {
+            "name": "YoungModulusBending",
+            "definition": "Defining values: α; defined values: elastic modulus in bending.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/1ys_G0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ys_G0qUyHuO00025QrE$V",
+              "ifdGuid": "1ys_G0qUyHuO00025QrE$V",
+              "legacyGuid": "94babf4d76de4389be6c7ead799975f8",
+              "legacyGuidAsIfcGlobalId": "2KkhzDTjv3YRviVgrvcNNu"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcModulusOfElasticityMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "YoungModulusTension",
+            "definition": "Defining values: α; defined values: elastic modulus in tension.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/26$UA0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26$UA0qUyHuO00025QrE$V",
+              "ifdGuid": "26$UA0qUyHuO00025QrE$V",
+              "legacyGuid": "b19610ec1ce0406e8fa92fd04ee8e882",
+              "legacyGuidAsIfcGlobalId": "2nbX3i7E10Re_fBz1EwEY2"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcModulusOfElasticityMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "YoungModulusCompression",
+            "definition": "Elastic modulus in compression.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2Hk7U0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Hk7U0qUyHuO00025QrE$V",
+              "ifdGuid": "2Hk7U0qUyHuO00025QrE$V",
+              "legacyGuid": "1e830245635c4ba9b2641fbfb34f21c6",
+              "legacyGuidAsIfcGlobalId": "0UWm95OrnBgR9a7x_pJo76"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcModulusOfElasticityMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ShearModulus",
+            "definition": "Shear modulus.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2N5S80qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2N5S80qUyHuO00025QrE$V",
+              "ifdGuid": "2N5S80qUyHuO00025QrE$V",
+              "legacyGuid": "f06cdc79454445ce932242432067a3b8",
+              "legacyGuidAsIfcGlobalId": "3mRDnvHKH5pfCYGaCWPwEu"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcModulusOfElasticityMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "BendingStrength",
+            "definition": "Defining values: α; defined values: bending strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2RsdO0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RsdO0qUyHuO00025QrE$V",
+              "ifdGuid": "2RsdO0qUyHuO00025QrE$V",
+              "legacyGuid": "724f6921b3154083935f315208f9274b",
+              "legacyGuidAsIfcGlobalId": "1oJsaXinL0WvDVCL88_ITB"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "CompressiveStrength",
+            "definition": "Defining values: α; defined values: compressive strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2eNiw0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2eNiw0qUyHuO00025QrE$V",
+              "ifdGuid": "2eNiw0qUyHuO00025QrE$V",
+              "legacyGuid": "a6afa72425b248a9bfa46b6ccfb73306",
+              "legacyGuidAsIfcGlobalId": "2chwSa9R98gR_aQspFjpC6"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "TensileStrength",
+            "definition": "Defining values: α; defined values: tensile strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2qIf20qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qIf20qUyHuO00025QrE$V",
+              "ifdGuid": "2qIf20qUyHuO00025QrE$V",
+              "legacyGuid": "a4bd6014998d470092b4d2b6dd5aeeb9",
+              "legacyGuidAsIfcGlobalId": "2alM0KcOr709AqqhRTMkwv"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ShearStrength",
+            "definition": "Defining values: α; defined values: shear strength.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/2$dRm0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$dRm0qUyHuO00025QrE$V",
+              "ifdGuid": "2$dRm0qUyHuO00025QrE$V",
+              "legacyGuid": "4a403dcf501d4e78b5cee728c2b6a0b6",
+              "legacyGuidAsIfcGlobalId": "1AG3tFK1rEUBNEvoZ2jg2s"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "BearingStrength",
+            "definition": "Defining values: α; defined values: bearing strength of bolt holes, i.e. intrados pressure.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3DKq60qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DKq60qUyHuO00025QrE$V",
+              "ifdGuid": "3DKq60qUyHuO00025QrE$V",
+              "legacyGuid": "6c1f8790752543e0a1d6e4ebf42fe435",
+              "legacyGuidAsIfcGlobalId": "1i7uUGTIL3uA7MvElqB_Gr"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertyTableValue": {
+              "Expression": "",
+              "DefiningValue": {
+                "dataType": "IfcPositivePlaneAngleMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              },
+              "DefinedValue": {
+                "dataType": "IfcPressureMeasure",
+                "measureType": "",
+                "unitType": "USERDEFINED"
+              }
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "RaisedCompressiveStrength",
+            "definition": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3Ofcq0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ofcq0qUyHuO00025QrE$V",
+              "ifdGuid": "3Ofcq0qUyHuO00025QrE$V",
+              "legacyGuid": "f46c6856c20c4cab9d1cee76811b57f4",
+              "legacyGuidAsIfcGlobalId": "3qR6XMmWnCgvqSxdQ16rVq"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcPressureMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          },
+          {
+            "name": "ReferenceDepth",
+            "definition": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+            "dictionaryReference": {
+              "dictionaryIdentifier": "http://bsdd.buildingsmart.org",
+              "dictionaryNamespace": "PSet",
+              "dictionaryWebUri": "http://bsdd.buildingsmart.org/#concept/browse/3U0xU0qUyHuO00025QrE$V",
+              "dictionaryApiUri": "http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3U0xU0qUyHuO00025QrE$V",
+              "ifdGuid": "3U0xU0qUyHuO00025QrE$V",
+              "legacyGuid": "f73420bb618440dbbe1146d9fb646fa0",
+              "legacyGuidAsIfcGlobalId": "3tD22xOOH0sxuHHjdxP6_W"
+            },
+            "localizations": [
+              {
+                "language": "de-DE",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "en-GB",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "es-ES",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "fr-FR",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ja-JP",
+                "name": "",
+                "definition": ""
+              },
+              {
+                "language": "ru-RU",
+                "name": "",
+                "definition": ""
+              }
+            ],
+            "typePropertySingleValue": {
+              "dataType": "IfcPositiveLengthMeasure",
+              "measureType": "",
+              "unitType": "USERDEFINED"
+            },
+            "status": {
+              "versionNumber": 4,
+              "dateOfVersion": "2018-01-01T00:00:00",
+              "revisionNumber": 2,
+              "dateOfRevision": "2018-01-01T00:00:00",
+              "status": "Active",
+              "dateOfCreation": "2018-01-01T00:00:00",
+              "dateOfActivation": "2018-01-01T00:00:00",
+              "dateOfLastChange": "2018-01-01T00:00:00",
+              "dateOfDeactivation": "0001-01-01T00:00:00",
+              "languageOfCreator": "en-EN"
+            }
+          }
+        ]
+      },
+      "status": {
+        "versionNumber": 4,
+        "dateOfVersion": "2018-01-01T00:00:00",
+        "revisionNumber": 2,
+        "dateOfRevision": "2018-01-01T00:00:00",
+        "status": "Active",
+        "dateOfCreation": "2018-01-01T00:00:00",
+        "dateOfActivation": "2018-01-01T00:00:00",
+        "dateOfLastChange": "2018-01-01T00:00:00",
+        "dateOfDeactivation": "0001-01-01T00:00:00",
+        "languageOfCreator": "en-EN"
+      }
+    }
+  ]
+}

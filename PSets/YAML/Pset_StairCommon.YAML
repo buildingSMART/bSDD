@@ -1,0 +1,1087 @@
+﻿name: 'Pset_StairCommon'
+ifcVersion:
+  version: 4.0.0.0
+definition: 'Properties common to the definition of all occurrences of IfcStair.'
+templatetype: PSET_TYPEDRIVENOVERRIDE
+dictionaryReference:
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AinK0qWmHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AinK0qWmHuO00025QrE$V
+  ifdGuid: 3AinK0qWmHuO00025QrE$V
+  legacyGuid: cab31500d20c11e1800000215ad4efdf
+  legacyGuidAsIfcGlobalId: 3AinK0qWmHuO00025QrE$V
+localizations:
+- language: de-DE
+  name: 'Treppe - allgemeiner Eigenschaftssatz'
+  definition: 'Eigenschaften, die der Definition aller Vorkommen von IfcStair gemeinsam sind.'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+applicableIfcClasses:
+- name: IfcStair
+  type: IfcStair
+properties:
+- name: Reference
+  definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3IShc0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IShc0qWmHuO00025QrE$V
+    ifdGuid: 3IShc0qWmHuO00025QrE$V
+    legacyGuid: d272b980d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3IShc0qWmHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Bauteiltyp'
+    definition: 'Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterstützt.'
+  - language: en
+    name: 'Reference'
+    definition: ''
+  - language: fr-FR
+    name: 'Reference'
+    definition: 'Référence à l''identifiant d''un type spécifié dans le contexte du projet (exemple : "type A1") pour désigner un "type de construction". Une alternative au nom d''un objet type lorsque les objets types ne sont pas gérés par le logiciel.'
+  - language: ja-JP
+    name: '参照記号'
+    definition: 'このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。'
+  - language: zh-CN
+    name: '参考号'
+    definition: '若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcIdentifier
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: Status
+  definition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3P0J40qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3P0J40qWmHuO00025QrE$V
+    ifdGuid: 3P0J40qWmHuO00025QrE$V
+    legacyGuid: d9013100d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3P0J40qWmHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Status'
+    definition: 'Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Ergänzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Temporär" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)'
+  - language: en
+    name: 'Status'
+    definition: ''
+  - language: fr-FR
+    name: 'Statut'
+    definition: 'Statut de l''élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire).'
+  - language: ja-JP
+    name: '状態'
+    definition: '要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertyEnumeratedValue:
+    constantValues:
+    - name: NEW
+      definition: element designed as new addition
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: EXISTING
+      definition: element exists and is to remain
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: DEMOLISH
+      definition: element exists but is to be demolished
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: TEMPORARY
+      definition: element will exist only temporarily (such as a temporary support structure)
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: OTHER
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: NOTKNOWN
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+    - name: UNSET
+      definition: ''
+      ifdGuid: ''
+      localizations:
+      - language: de-DE
+        name: ''
+        definition: ''
+      - language: en-GB
+        name: ''
+        definition: ''
+      - language: es-ES
+        name: ''
+        definition: ''
+      - language: fr-FR
+        name: ''
+        definition: ''
+      - language: ja-JP
+        name: ''
+        definition: ''
+      - language: ru-RU
+        name: ''
+        definition: ''
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NumberOfRiser
+  definition: Total number of the risers included in the stair.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3eW7e0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3eW7e0qWmHuO00025QrE$V
+    ifdGuid: 3eW7e0qWmHuO00025QrE$V
+    legacyGuid: e8807a00d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3eW7e0qWmHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Anzahl der Steigungen'
+    definition: 'German-description-2'
+  - language: en
+    name: 'Number Of Riser'
+    definition: ''
+  - language: fr-FR
+    name: 'NombreContreMarches'
+    definition: 'Nombre total de contremarches de l''escalier'
+  - language: ja-JP
+    name: '蹴上げ数'
+    definition: '階段の蹴上げ数。'
+  - language: zh-CN
+    name: '踢板数'
+    definition: '该楼梯所包含的踢板总数。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcCountMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NumberOfTreads
+  definition: Total number of treads included in the stair.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3jHIu0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jHIu0qWmHuO00025QrE$V
+    ifdGuid: 3jHIu0qWmHuO00025QrE$V
+    legacyGuid: ed452e00d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3jHIu0qWmHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Anzahl der Auftritte'
+    definition: 'German-description-3'
+  - language: en
+    name: 'Number Of Treads'
+    definition: ''
+  - language: fr-FR
+    name: 'NombreGirons'
+    definition: 'Nombre total de girons de l''escalier'
+  - language: ja-JP
+    name: '踏面数'
+    definition: '階段の踏面数。'
+  - language: zh-CN
+    name: '踏板数'
+    definition: '该楼梯所包含的踏板总数。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcCountMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RiserHeight
+  definition: Vertical distance from tread to tread. The riser height is supposed to be equal for all steps of a stair or stair flight.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3oedY0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oedY0qWmHuO00025QrE$V
+    ifdGuid: 3oedY0qWmHuO00025QrE$V
+    legacyGuid: f2a27880d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3oedY0qWmHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Steigung'
+    definition: 'German-description-4'
+  - language: en
+    name: 'Riser Height'
+    definition: ''
+  - language: fr-FR
+    name: 'HauteurContreMarche'
+    definition: 'Hauteur de la contremarche, supposée homogène pour toutes les marches de l''escalier ou de la volée de marches.'
+  - language: ja-JP
+    name: '蹴上げ高さ'
+    definition: '踏面と踏面の垂直方向の距離。この蹴上げ高さ値は、一連の階段において同じ値と仮定する。'
+  - language: zh-CN
+    name: '踢板高度'
+    definition: '踏板之间的垂直高度。楼梯或梯段所有梯级的踢板高度应当一致。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TreadLength
+  definition: Horizontal distance from the front of the thread to the front of the next tread. The tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3w_hE0qWmHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3w_hE0qWmHuO00025QrE$V
+    ifdGuid: 3w_hE0qWmHuO00025QrE$V
+    legacyGuid: fafab380d20c11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 3w_hE0qWmHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Auftritt'
+    definition: 'German-description-5'
+  - language: en
+    name: 'Tread Length'
+    definition: ''
+  - language: fr-FR
+    name: 'LongueurGiron'
+    definition: 'Longueur de giron (largeur de marche), supposée égale pour toutes les marches de l''escalier ou de la volée de marchesle long de la ligne de foulée'
+  - language: ja-JP
+    name: '踏面長'
+    definition: '踏面の前面部分から次の踏面までの水平方向の距離。この踏面長の値は、一連の階段において同じ値と仮定する。'
+  - language: zh-CN
+    name: '踏板长度'
+    definition: '踏板前缘到下一级踏板前缘的水平距离。走线方向上楼梯或梯段所有梯级的踏板宽度应当一致。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: NosingLength
+  definition: Horizontal distance from the front of the tread to the riser underneath. It is the overhang of the tread.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1JGmiIvd5EGuqdpFYuil_c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1JGmiIvd5EGuqdpFYuil_c
+    ifdGuid: 1JGmiIvd5EGuqdpFYuil_c
+    legacyGuid: a9e3055e9126471caa4a118eb84c2751
+    legacyGuidAsIfcGlobalId: 2fumLUaIP77AfA4OwuJ2TH
+  localizations:
+  - language: de-DE
+    name: 'Überstand'
+    definition: ''
+  - language: en
+    name: 'Nosing Length'
+    definition: ''
+  - language: fr-FR
+    name: 'Hauteur de passage requise'
+    definition: 'Hauteur de passage (échappée) requise selon le Code en vigueur ou des spécifications additionnelles.'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WalkingLineOffset
+  definition: 'Offset of the walking line from the inner side of the flight. Note: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1f9OEXhlz3OBbFniHUvbVV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1f9OEXhlz3OBbFniHUvbVV
+    ifdGuid: 1f9OEXhlz3OBbFniHUvbVV
+    legacyGuid: 975f98e25ec84e4dad52a2fb2cad197c
+    legacyGuidAsIfcGlobalId: 2NNvZYNiXEJQrIeliihHby
+  localizations:
+  - language: de-DE
+    name: 'Abstand der Lauflinie'
+    definition: ''
+  - language: en
+    name: 'Walking Line Offset'
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TreadLengthAtOffset
+  definition: Length of treads at a given offset.Walking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculations is different from that used in design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22_kwlzV1ESvubLQue_IQD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22_kwlzV1ESvubLQue_IQD
+    ifdGuid: 22_kwlzV1ESvubLQue_IQD
+    legacyGuid: 468b4f6c361b4ced8545cc440b4d8a1d
+    legacyGuidAsIfcGlobalId: 16YqziDXjCxOL5p4GBJOeT
+  localizations:
+  - language: de-DE
+    name: 'Auftritt an der Lauflinie'
+    definition: ''
+  - language: en
+    name: 'Tread Length At Offset'
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: TreadLengthAtInnerSide
+  definition: Minimum length of treads at the inner side of the winder. Only relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3FSRCykurCMATUS$SKT$yu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FSRCykurCMATUS$SKT$yu
+    ifdGuid: 3FSRCykurCMATUS$SKT$yu
+    legacyGuid: 9996d6e7f7ec4fb9973c027edc7fc421
+    legacyGuidAsIfcGlobalId: 2PbjRdz_nFkPSy0dxSVyGX
+  localizations:
+  - language: de-DE
+    name: 'minimaler Auftritt an der Innenseite'
+    definition: ''
+  - language: en
+    name: 'Tread Length At Inner Side'
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: WaistThickness
+  definition: Minimum thickness of the stair flight, measured perpendicular to the slope of the flight to the inner corner of riser and tread. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/36ti_QSN1BH9XECy4s$Mrs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36ti_QSN1BH9XECy4s$Mrs
+    ifdGuid: 36ti_QSN1BH9XECy4s$Mrs
+    legacyGuid: 47b259a7db1246f487ecf6049461cc52
+    legacyGuidAsIfcGlobalId: 17ibcdsn96z8VizWIKOSnI
+  localizations:
+  - language: de-DE
+    name: 'minimale Dicke des Treppenplatte'
+    definition: ''
+  - language: en
+    name: 'Waist Thickness'
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: RequiredHeadroom
+  definition: Required headroom clearance for the passageway according to the applicable building code or additional requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/04X1k0qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04X1k0qWqHuO00025QrE$V
+    ifdGuid: 04X1k0qWqHuO00025QrE$V
+    legacyGuid: 04841b80d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 04X1k0qWqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'erforderliche Durchgangshöhe'
+    definition: 'German-description-6'
+  - language: en
+    name: 'Required Headroom'
+    definition: ''
+  - language: fr-FR
+    name: 'HauteurPassageRequise'
+    definition: 'Hauteur de passage (échappée) requise selon le Code en vigueur ou des spécifications additionnelles.'
+  - language: ja-JP
+    name: '要求頭高余裕'
+    definition: '要求される頭高余裕。関連する建築基準法を参照。'
+  - language: zh-CN
+    name: '所需净空'
+    definition: '建筑规范或其他规定要求的通道净空高度。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcPositiveLengthMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HandicapAccessible
+  definition: Indication that this object is designed to be accessible by the handicapped. Set to (TRUE) if this stair is rated as handicap accessible  according the local building codes, otherwise (FALSE). Accessibility maybe provided by additional means.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ct5Q0qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ct5Q0qWqHuO00025QrE$V
+    ifdGuid: 0Ct5Q0qWqHuO00025QrE$V
+    legacyGuid: 0cdc5680d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0Ct5Q0qWqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Behindertengerecht'
+    definition: 'German-description-7'
+  - language: en
+    name: 'Handicap Accessible'
+    definition: ''
+  - language: fr-FR
+    name: 'AccessibleHandicapes'
+    definition: 'Indique que cet objet est conçu pour être accessible aux handicapés. Indication donnée selon le Code National.'
+  - language: ja-JP
+    name: 'ハンディキャップアクセス可能性'
+    definition: 'この空間がハンディキャップ者向けの空間かどうかを示すブーリアン値。'
+  - language: zh-CN
+    name: '是否为无障碍设施'
+    definition: '表示该构件是否设计为可供残疾人使用的无障碍设施。该属性的根据为国家建筑规范。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: HasNonSkidSurface
+  definition: Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0fU8w0qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0fU8w0qWqHuO00025QrE$V
+    ifdGuid: 0fU8w0qWqHuO00025QrE$V
+    legacyGuid: 29788e80d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0fU8w0qWqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Nichtrutschende Oberfläche'
+    definition: 'German-description-11'
+  - language: en
+    name: 'Has Non Skid Surface'
+    definition: ''
+  - language: fr-FR
+    name: 'AntiDerapant'
+    definition: 'Indique si le revêtement de surface est anti dérapant (VRAI) ou non (FALSE)'
+  - language: ja-JP
+    name: '滑り止め表面加工区分'
+    definition: 'スリップ防止のための表面仕上げをしているかどうかのブーリアン値。'
+  - language: zh-CN
+    name: '表面是否防滑'
+    definition: '表示表面处理是否设计为防滑的。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: IsExternal
+  definition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0JQiu0qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JQiu0qWqHuO00025QrE$V
+    ifdGuid: 0JQiu0qWqHuO00025QrE$V
+    legacyGuid: 136ace00d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0JQiu0qWqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Außenbauteil'
+    definition: 'Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).'
+  - language: en
+    name: 'Is External'
+    definition: ''
+  - language: fr-FR
+    name: 'EstExterieur'
+    definition: 'Indique si l''élément est conçu pour être utilisé à l''extérieur (VRAI) ou non (FAUX). Si VRAI, c''est un élément extérieur qui donne sur l''extérieur du bâtiment.'
+  - language: ja-JP
+    name: '外部区分'
+    definition: '外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。'
+  - language: zh-CN
+    name: '是否外部构件'
+    definition: '表示该构件是否设计为外部构件。若是，则该构件为外部构件，朝向建筑物的外侧。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: ThermalTransmittance
+  definition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: e2afaa3ca32644f294f3a4fb08059fc3
+    legacyGuidAsIfcGlobalId: 3YhweyeoP4yfJpfFi81P$3
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: LoadBearing
+  definition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
+    ifdGuid: ''
+    legacyGuid: 8fc535f66e7a4d6899fd3b4218b31836
+    legacyGuidAsIfcGlobalId: 2FnJNsRdfDQ9dzEq8OinWs
+  localizations:
+  - language: de-DE
+    name: ''
+    definition: ''
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: fr-FR
+    name: ''
+    definition: ''
+  - language: ja-JP
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcText
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FireRating
+  definition: Fire rating for this object.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0P_KM0qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0P_KM0qWqHuO00025QrE$V
+    ifdGuid: 0P_KM0qWqHuO00025QrE$V
+    legacyGuid: 19f94580d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0P_KM0qWqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Feuerwiderstandsklasse'
+    definition: 'Feuerwiderstandasklasse gemäß der nationalen oder regionalen Brandschutzverordnung.'
+  - language: en
+    name: 'Fire Rating'
+    definition: ''
+  - language: fr-FR
+    name: 'ResistanceAuFeu'
+    definition: 'Classement au feu de l''élément donné selon la classification nationale de sécurité incendie.'
+  - language: ja-JP
+    name: '耐火等級'
+    definition: '主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。'
+  - language: zh-CN
+    name: '防火等级'
+    definition: '该构件的防火等级。该属性的依据为国家防火安全分级。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcLabel
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
+- name: FireExit
+  definition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here it defines an exit stair in accordance to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YKO20qWqHuO00025QrE$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YKO20qWqHuO00025QrE$V
+    ifdGuid: 0YKO20qWqHuO00025QrE$V
+    legacyGuid: 22518080d20d11e1800000215ad4efdf
+    legacyGuidAsIfcGlobalId: 0YKO20qWqHuO00025QrE$V
+  localizations:
+  - language: de-DE
+    name: 'Fluchttreppe'
+    definition: 'Angabe, ob die Tür ein Notausgang oder Fluchttür gemäß der nationalen oder regionalen Brandschutzverordnung ist (JA), oder nicht (NEIN).'
+  - language: en
+    name: 'Fire Exit'
+    definition: 'Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE). Here it defines an exit stair in accordance to the national building code.'
+  - language: fr-FR
+    name: 'Sortie Secours'
+    definition: 'Indique si cet objet est conçu pour servir de sortie en cas d''incendie (VRAI) ou non (FAUX). Définition de la sortie de secours selon le Code National.'
+  - language: ja-JP
+    name: '非常口区分'
+    definition: 'このオブジェクトが火災時の非常口として設計されているかどうかを示すブーリアン値。ここでは関連する建築基準法における出口ドアとして定義している。'
+  - language: zh-CN
+    name: '是否为紧急出口'
+    definition: '表示该构件是否设计为火灾时的紧急出口。该属性的依据为国家建筑规范。'
+  - language: en-GB
+    name: ''
+    definition: ''
+  - language: es-ES
+    name: ''
+    definition: ''
+  - language: ru-RU
+    name: ''
+    definition: ''
+  typePropertySingleValue:
+    dataType: IfcBoolean
+    measureType: ''
+    unitType: USERDEFINED
+  status:
+    versionNumber: 4
+    dateOfVersion: 2018-01-01T00:00:00.0000000
+    revisionNumber: 2
+    dateOfRevision: 2018-01-01T00:00:00.0000000
+    status: Active
+    dateOfCreation: 2018-01-01T00:00:00.0000000
+    dateOfActivation: 2018-01-01T00:00:00.0000000
+    dateOfLastChange: 2018-01-01T00:00:00.0000000
+    languageOfCreator: en-EN
