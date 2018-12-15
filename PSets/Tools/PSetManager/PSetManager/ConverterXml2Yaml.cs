@@ -38,45 +38,53 @@ namespace PSetManager
         private int numberOfProperties;
         private int numberOfPropertiesWithbSDDGuid;
 
-        public ConverterXml2Yaml(string sourceFolderXml,string targetFolderYaml, string targetFolderJson, string targetFolderResx, bool checkBSDD = false)
+        public ConverterXml2Yaml(string folderXml,string folderYaml, string folderJson, string folderResx, bool checkBSDD = false)
         {
 
-            if (sourceFolderXml==null)
+            log.Info($"Converting the PSets from this source folder: {folderXml}");
+            if (folderYaml != null)
+                log.Info($"Converting YAML files in this target folder: {folderYaml}");
+            if (folderJson != null)
+                log.Info($"Converting JSON files in this target folder: {folderJson}");
+            if (folderResx != null)
+                log.Info($"Converting Resx files in this target folder: {folderResx}");
+
+            if (folderXml==null)
             {
                 log.Error($"ERROR - The parameter folderXml does not exist. Exiting!");
                 return;
             }
 
-            if (targetFolderYaml == null)
+            if (folderYaml == null)
             {
                 log.Error($"ERROR - The parameter folderYaml does not exist. Exiting!");
                 return;
             }
 
-            if (!Directory.Exists(sourceFolderXml))
+            if (!Directory.Exists(folderXml))
             {
-                log.Error($"ERROR - The Directory {sourceFolderXml} does not exist. Exiting!");
+                log.Error($"ERROR - The Directory {folderXml} does not exist. Exiting!");
                 return;
             }
 
-            if (targetFolderYaml !=null)
-               if (!Directory.Exists(targetFolderYaml))
+            if (folderYaml !=null)
+               if (!Directory.Exists(folderYaml))
                 {
-                    log.Error($"ERROR - The Directory {targetFolderYaml} does not exist. Exiting!");
+                    log.Error($"ERROR - The Directory {folderYaml} does not exist. Exiting!");
                     return;
                 }
 
-            if (targetFolderJson != null)
-                if (!Directory.Exists(targetFolderJson))
+            if (folderJson != null)
+                if (!Directory.Exists(folderJson))
                 {
-                    log.Error($"ERROR - The Directory {targetFolderJson} does not exist. Exiting!");
+                    log.Error($"ERROR - The Directory {folderJson} does not exist. Exiting!");
                     return;
                 }
 
-            if (targetFolderResx != null)
-                if (!Directory.Exists(targetFolderResx))
+            if (folderResx != null)
+                if (!Directory.Exists(folderResx))
                 {
-                    log.Error($"ERROR - The Directory {targetFolderResx} does not exist. Exiting!");
+                    log.Error($"ERROR - The Directory {folderResx} does not exist. Exiting!");
                     return;
                 }
 
@@ -89,7 +97,7 @@ namespace PSetManager
             string propertyTypeList = string.Empty;
             string propertyUnitList = string.Empty;
 
-            foreach (string sourceFile in Directory.EnumerateFiles(sourceFolderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_CondenserTypeCommon")))
+            foreach (string sourceFile in Directory.EnumerateFiles(folderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_CondenserTypeCommon")))
             {
                 numberOfPsets++;
 
@@ -102,7 +110,7 @@ namespace PSetManager
                 PropertySetDef pSet = PropertySetDef.Deserialize(sourceFileContentReplaced);
                 log.Info("--------------------------------------------------");
                 log.Info($"Checking PSet {pSet.Name}");
-                log.Info($"Opened PSet-File {sourceFile.Replace(sourceFolderXml + @"\", string.Empty)}");
+                log.Info($"Opened PSet-File {sourceFile.Replace(folderXml + @"\", string.Empty)}");
 
                 if (!propertySetVersionList.Contains(pSet.IfcVersion.version))
                     propertySetVersionList += pSet.IfcVersion.version + ",";
@@ -186,9 +194,9 @@ namespace PSetManager
                 propertySet.properties = LoadProperties(pSet, pSet.PropertyDefs);
                 propertySet = Utils.PrepareTexts(propertySet);
 
-                if (targetFolderYaml != null)
+                if (folderYaml != null)
                 {
-                    string targetFileYaml = sourceFile.Replace("xml", "YAML").Replace(sourceFolderXml, targetFolderYaml);
+                    string targetFileYaml = sourceFile.Replace("xml", "YAML").Replace(folderXml, folderYaml);
 
                     var ScalarStyleSingleQuoted = new YamlMemberAttribute()
                     {
@@ -222,9 +230,9 @@ namespace PSetManager
                 }
 
 
-                if (targetFolderJson != null)
+                if (folderJson != null)
                 {
-                    string targetFileJson = sourceFile.Replace("xml", "json").Replace(sourceFolderXml, targetFolderJson);
+                    string targetFileJson = sourceFile.Replace("xml", "json").Replace(folderXml, folderJson);
                     JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
                     jsonSerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
                     jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
@@ -233,9 +241,9 @@ namespace PSetManager
                     log.Info("The PSet was saved as JSON file");
                 }
 
-                if (targetFolderResx != null)
+                if (folderResx != null)
                 {
-                    string targetFileResx = sourceFile.Replace("xml", "resx").Replace(sourceFolderXml, targetFolderResx);
+                    string targetFileResx = sourceFile.Replace("xml", "resx").Replace(folderXml, folderResx);
                     ResxWriter resx = new ResxWriter(targetFileResx);
                     resx.Write(propertySet,StandardLanguages);
                     log.Info("The PSet was saved as RESX file");

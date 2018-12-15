@@ -32,6 +32,17 @@ namespace PSetManager
 
         public YamlTranslationWriter(string translationSourceFile, string folderYaml, string folderJson, string folderResx)
         {
+
+            log.Info($"Inject the translation into the YAML files from this source table: {translationSourceFile}");
+            if (translationSourceFile != null)
+                log.Info($"Inject translations from {translationSourceFile}");
+            if (folderYaml != null)
+                log.Info($"Inject into YAML files in this target folder: {folderYaml}");
+            if (folderJson != null)
+                log.Info($"Inject into JSON files in this target folder: {folderJson}");
+            if (folderResx != null)
+                log.Info($"Inject into RESX files in this target folder: {folderResx}");
+
             if (translationSourceFile == null)
                 {
                     log.Error($"ERROR - The parameter translationSourceFile does not exist. Exiting!");
@@ -128,7 +139,7 @@ namespace PSetManager
 
                 if (folderJson != null)
                 {
-                    string targetFileJson = yamlFileName.Replace("yaml", "json").Replace(folderYaml, folderJson);
+                    string targetFileJson = yamlFileName.Replace(".YAML", ".json").Replace(folderYaml, folderJson);
                     JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
                     jsonSerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
                     jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
@@ -139,7 +150,7 @@ namespace PSetManager
 
                 if (folderResx != null)
                 {
-                    string targetFileResx = yamlFileName.Replace("yaml", "resx").Replace(folderYaml, folderResx);
+                    string targetFileResx = yamlFileName.Replace(".YAML", ".resx").Replace(folderYaml, folderResx);
                     ResxWriter resx = new ResxWriter(targetFileResx);
                     resx.Write(propertySet, StandardLanguages);
                     log.Info("The PSet was saved as RESX file");
