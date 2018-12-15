@@ -20,26 +20,60 @@ namespace PSetManager
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public YamlTranslationWriter(string translationSourceFile, string targetFolderYaml)
+        private List<string> StandardLanguages = new List<string>
+            {
+                "en-GB",
+                "es-ES",
+                "de-DE",
+                "fr-FR",
+                "ja-JP",
+                "ru-RU"
+            };
+
+        public YamlTranslationWriter(string translationSourceFile, string folderYaml, string folderJson, string folderResx)
         {
-            if (translationSourceFile != null)
-                if (!File.Exists(translationSourceFile))
+            if (translationSourceFile == null)
                 {
-                    log.Error($"ERROR - File {translationSourceFile} does not exist. Exiting!");
+                    log.Error($"ERROR - The parameter translationSourceFile does not exist. Exiting!");
+                    return;
+                }
+            else
+                if (!File.Exists(translationSourceFile))
+                    {
+                        log.Error($"ERROR - File {translationSourceFile} does not exist. Exiting!");
+                        return;
+                    }
+
+            if (folderYaml == null)
+                {
+                    log.Error($"ERROR - The parameter folderXml does not exist. Exiting!");
+                    return;
+                }
+            else
+                if (!Directory.Exists(folderYaml))
+                {
+                    log.Error($"ERROR - The Directory {folderYaml} does not exist. Exiting!");
                     return;
                 }
 
-            if (targetFolderYaml != null)
-                if (!Directory.Exists(targetFolderYaml))
+            if (folderJson != null)
+                if (!Directory.Exists(folderJson))
                 {
-                    log.Error($"ERROR - The Directory {targetFolderYaml} does not exist. Exiting!");
+                    log.Error($"ERROR - The Directory {folderJson} does not exist. Exiting!");
                     return;
                 }
-           
+
+            if (folderResx != null)
+                if (!Directory.Exists(folderResx))
+                {
+                    log.Error($"ERROR - The Directory {folderResx} does not exist. Exiting!");
+                    return;
+                }
+
 
             foreach (Translation translation in ReadTranslationDataFromExcel(translationSourceFile))
             {
-                string yamlFileName = Path.Combine(targetFolderYaml, $"{translation.pset}.YAML");
+                string yamlFileName = Path.Combine(folderYaml, $"{translation.pset}.YAML");
                 var yamlDeserializer = new DeserializerBuilder().Build();
                 PropertySet propertySet;
                 try
@@ -90,6 +124,25 @@ namespace PSetManager
                             log.Error($"ERROR: {ex.Message}");
                         }
                         break;
+                }
+
+                if (folderJson != null)
+                {
+                    string targetFileJson = yamlFileName.Replace("yaml", "json").Replace(folderYaml, folderJson);
+                    JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
+                    jsonSerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+                    jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                    string jsonContent = JsonConvert.SerializeObject(propertySet, Formatting.Indented, jsonSerializerSettings);
+                    File.WriteAllText(targetFileJson, jsonContent, Encoding.UTF8);
+                    log.Info("The PSet was saved as JSON file");
+                }
+
+                if (folderResx != null)
+                {
+                    string targetFileResx = yamlFileName.Replace("yaml", "resx").Replace(folderYaml, folderResx);
+                    ResxWriter resx = new ResxWriter(targetFileResx);
+                    resx.Write(propertySet, StandardLanguages);
+                    log.Info("The PSet was saved as RESX file");
                 }
             }
         }

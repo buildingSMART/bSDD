@@ -41,6 +41,18 @@ namespace PSetManager
         public ConverterXml2Yaml(string sourceFolderXml,string targetFolderYaml, string targetFolderJson, string targetFolderResx, bool checkBSDD = false)
         {
 
+            if (sourceFolderXml==null)
+            {
+                log.Error($"ERROR - The parameter folderXml does not exist. Exiting!");
+                return;
+            }
+
+            if (targetFolderYaml == null)
+            {
+                log.Error($"ERROR - The parameter folderYaml does not exist. Exiting!");
+                return;
+            }
+
             if (!Directory.Exists(sourceFolderXml))
             {
                 log.Error($"ERROR - The Directory {sourceFolderXml} does not exist. Exiting!");
