@@ -11,9 +11,13 @@ namespace PSetManager
     {
         public static string CleanUp(string str)
         {
-            str = Quote(Regex.Replace(str, @"\r\n?|\n", string.Empty));
-            str = Quote(Regex.Replace(str, @"\n", string.Empty));
-            str = str.Trim();
+            if (str != null)
+            {
+                str = Quote(Regex.Replace(str, @"\r\n?|\n", string.Empty));
+                str = Quote(Regex.Replace(str, @"\n", string.Empty));
+                str = str.Trim();
+            }
+            else str = string.Empty;
 
             return str;
         }
@@ -27,8 +31,12 @@ namespace PSetManager
         }
         public static string FirstUpperRestLower(string str)
         {
-            str = CleanUp(str);
-            return Utils.CleanUp(str.ToString().Substring(0, 1) + str.ToString().Substring(1, str.ToString().Length - 1).ToLower());
+            if (str.Length > 0)
+            {
+                str = CleanUp(str);
+                return Utils.CleanUp(str.ToString().Substring(0, 1) + str.ToString().Substring(1, str.ToString().Length - 1).ToLower());
+            }
+            else return str;
         }
         public static string GuidConverterToIfcGuid(string guidInStringFormat)
         {

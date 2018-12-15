@@ -77,10 +77,17 @@ namespace PSetManager
             string propertyTypeList = string.Empty;
             string propertyUnitList = string.Empty;
 
-            foreach (string sourceFile in Directory.EnumerateFiles(sourceFolderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_DistributionPortPHistoryDuct")))
+            foreach (string sourceFile in Directory.EnumerateFiles(sourceFolderXml, "PSet*.xml").OrderBy(x => x).ToList())//.Where(x=>x.Contains("Pset_CondenserTypeCommon")))
             {
                 numberOfPsets++;
-                PropertySetDef pSet = PropertySetDef.LoadFromFile(sourceFile);
+
+                string sourceFileContent = File.ReadAllText(sourceFile);
+                //Dirty Fix of this serialization error: Not expected: <PropertySetDef xmlns='http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd'> 
+                string deserializationErrorString = "xmlns=\"http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd\"";
+                string sourceFileContentReplaced = sourceFileContent.Replace(deserializationErrorString, string.Empty);
+
+
+                PropertySetDef pSet = PropertySetDef.Deserialize(sourceFileContentReplaced);
                 log.Info("--------------------------------------------------");
                 log.Info($"Checking PSet {pSet.Name}");
                 log.Info($"Opened PSet-File {sourceFile.Replace(sourceFolderXml + @"\", string.Empty)}");
@@ -93,17 +100,19 @@ namespace PSetManager
                 PropertySet propertySet = new PropertySet()
                 {
                     name = pSet.Name,
+                    definition = pSet.Definition,
+                    templatetype = pSet.templatetype.ToString()??string.Empty,
                     dictionaryReference = new DictionaryReference()
                     {
-                        ifdGuid = "",
-                        legacyGuid = ""
+                        ifdGuid = pSet.ifdguid ?? string.Empty,
+                        legacyGuid = pSet.ifdguid ?? string.Empty,
+                        legacyGuidAsIfcGlobalId = Utils.GuidConverterToIfcGuid(pSet.ifdguid)
                     },
                     ifcVersion = new IfcVersion()
                     {
                         version = ConvertToSematicVersion(pSet.IfcVersion.version).ToString(),
                         schema = pSet.IfcVersion.schema
-                    },
-                    definition = pSet.Definition
+                    }                  
                 };
 
                 propertySet.applicableIfcClasses = new List<ApplicableIfcClass>();
@@ -255,6 +264,7 @@ namespace PSetManager
                 Property property = new Property()
                 {
                     name = psetProperty.Items[0].ToString(),
+                    definition = psetProperty.Items[1].ToString(),
                     dictionaryReference = new DictionaryReference()
                     { 
                         dictionaryIdentifier = "http://bsdd.buildingsmart.org",
@@ -262,8 +272,7 @@ namespace PSetManager
                         ifdGuid = "",
                         legacyGuid = psetProperty.ifdguid,
                         legacyGuidAsIfcGlobalId = Utils.GuidConverterToIfcGuid(psetProperty.ifdguid)
-                    },
-                    definition = psetProperty.Items[2].ToString()
+                    }                    
                 };
                 log.Info($"      Name: {property.name}");
                 if (property.dictionaryReference.legacyGuidAsIfcGlobalId.Length == 0)
@@ -319,13 +328,17 @@ namespace PSetManager
                 property.dictionaryReference.dictionaryWebUri = $"http://bsdd.buildingsmart.org/#concept/browse/{property.dictionaryReference.ifdGuid}";
                 property.dictionaryReference.dictionaryApiUri = $"http://bsdd.buildingsmart.org/api/4.0/IfdConcept/{property.dictionaryReference.ifdGuid}";
                 property.localizations = new List<Localization>();
-                PropertyDefNameAliases nameAliases;
+                PropertyDefNameAliases nameAliases = null;
+                PropertyDefDefinitionAliases definitionAliases = null;
                 if (psetProperty.Items.Length >= 4)
                 {
-                    nameAliases = (PropertyDefNameAliases)psetProperty.Items[3];
-                    PropertyDefDefinitionAliases definitionAliases = new PropertyDefDefinitionAliases();
-                    if (psetProperty.Items.Length >= 5)
-                        definitionAliases = (PropertyDefDefinitionAliases)psetProperty.Items[4];
+                    foreach (var item in psetProperty.Items)
+                        if (item.GetType() == typeof(PSetManager.PropertyDefNameAliases))
+                            nameAliases = (PropertyDefNameAliases)item;
+
+                    foreach (var item in psetProperty.Items)
+                        if (item.GetType() == typeof(PSetManager.PropertyDefDefinitionAliases))
+                            definitionAliases = (PropertyDefDefinitionAliases)item;
 
                     foreach (var alias in nameAliases.NameAlias)
                     {
@@ -371,31 +384,87 @@ namespace PSetManager
                         break;
                     case "PropertyTypeTypePropertyEnumeratedValue":
                         psetEnumeratedValue = (PropertyTypeTypePropertyEnumeratedValue)psetValueType.Item;
-                        property.typePropertyEnumeratedValue = new TypePropertyEnumeratedValue();
-                        property.typePropertyEnumeratedValue.listName = psetEnumeratedValue.EnumList.name;
-                        property.typePropertyEnumeratedValue.enumerationValues = new List<EnumerationValue>();
-                        foreach (var enumValue in psetEnumeratedValue.EnumList.EnumItem)
-                        {
-                            EnumerationValue enumerationValue = new EnumerationValue()
-                            {
-                                ifdGuid = string.Empty,// Utils.GuidConverterToIfcGuid(Guid.NewGuid().ToString()),
-                                name = Utils.CleanUp(enumValue),
-                                definition = string.Empty,
-                                localizations = new List<Localization>()
-                            };
 
-                            foreach (string standardLanguage in StandardLanguages.OrderBy(x=>x))
+                        if (psetEnumeratedValue.EnumList.EnumItem.Count != 0)
+                        { 
+                            property.typePropertyEnumeratedValue = new TypePropertyEnumeratedValue();
+                            property.typePropertyEnumeratedValue.listName = psetEnumeratedValue.EnumList.name;
+                            property.typePropertyEnumeratedValue.enumerationValues = new List<EnumerationValue>();
+
+                            foreach (var item in psetEnumeratedValue.EnumList.EnumItem)
                             {
-                                enumerationValue.localizations.Add(new Localization()
+                                EnumerationValue enumerationValue = new EnumerationValue()
                                 {
-                                    language = standardLanguage,
-                                    name = Utils.FirstUpperRestLower(enumValue.ToString()),
-                                    definition = string.Empty
-                                });
-                            }
+                                    ifdGuid = string.Empty,// Utils.GuidConverterToIfcGuid(Guid.NewGuid().ToString()),
+                                    name = Utils.CleanUp(item),
+                                    definition = string.Empty,
+                                    localizations = new List<Localization>()
+                                };
 
-                            property.typePropertyEnumeratedValue.enumerationValues.Add(enumerationValue);
+                                foreach (string standardLanguage in StandardLanguages.OrderBy(x => x))
+                                {
+                                    enumerationValue.localizations.Add(new Localization()
+                                    {
+                                        language = standardLanguage,
+                                        name = Utils.FirstUpperRestLower(item.ToString()),
+                                        definition = string.Empty
+                                    });
+                                }
+
+                                property.typePropertyEnumeratedValue.enumerationValues.Add(enumerationValue);
+                            }
                         }
+
+                        if (psetEnumeratedValue.ConstantList.ConstantDef.Count != 0)
+                        {
+                            property.typePropertyEnumeratedValue = new TypePropertyEnumeratedValue();
+                            property.typePropertyEnumeratedValue.constantValues = new List<ConstantValue>();
+                            //property.typePropertyEnumeratedValue.listName = psetEnumeratedValue.ConstantList.ConstantDef
+
+                            foreach (var item in psetEnumeratedValue.ConstantList.ConstantDef)
+                            {
+
+                                string nameItem = item.Items[0].ToString();
+
+                                string definitionItem;
+                                if (item.Items[1].GetType() == typeof(String))
+                                    definitionItem = item.Items[1].ToString();
+                                else definitionItem = string.Empty;
+
+                                ConstantValue constantValue = new ConstantValue()
+                                {
+                                    ifdGuid = string.Empty,
+                                    name = Utils.CleanUp(nameItem),
+                                    definition = Utils.CleanUp(definitionItem),
+                                    localizations = new List<Localization>()
+                                };
+
+                                foreach (string standardLanguage in StandardLanguages.OrderBy(x => x))
+                                {
+
+                                    ConstantDefNameAliases constantDefNameAlias = null;
+                                    foreach (var i in item.Items)
+                                        if (i.GetType() == typeof(PSetManager.ConstantDefNameAliases))
+                                            constantDefNameAlias = (ConstantDefNameAliases)i;
+
+                                    ConstantDefDefinitionAliases constantDefDefinitionAliases = null;
+                                    foreach (var i in item.Items)
+                                        if (i.GetType() == typeof(PSetManager.ConstantDefDefinitionAliases))
+                                            constantDefDefinitionAliases = (ConstantDefDefinitionAliases)i;
+
+                                    //if ((constantDefNameAlias.NameAlias.FirstOrDefault().Value != null) || (constantDefDefinitionAliases.NameAlias.FirstOrDefault().Value != null))
+                                    constantValue.localizations.Add(new Localization()
+                                    {
+                                        language = standardLanguage,
+                                        name = Utils.FirstUpperRestLower(constantDefNameAlias.NameAlias.Where(l=>l.lang.ToLower()==standardLanguage.ToLower()).FirstOrDefault()?.Value ?? string.Empty),
+                                        definition = Utils.FirstUpperRestLower(constantDefDefinitionAliases.DefinitionAlias.Where(l => l.lang.ToLower() == standardLanguage.ToLower()).FirstOrDefault()?.Value ?? string.Empty)
+                                    });
+                                }
+
+                                property.typePropertyEnumeratedValue.constantValues.Add(constantValue);
+                            }
+                        }
+
                         break;
                     case "PropertyTypeTypePropertyListValue":
                         psetListValue = (PropertyTypeTypePropertyListValue)psetValueType.Item;

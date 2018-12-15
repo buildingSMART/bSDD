@@ -10,7 +10,11 @@ namespace PSD_IFC5
         public IfcVersion ifcVersion { get; set; }
 
         public string definition { get; set; }
+
+        public string templatetype { get; set; }
+
         public DictionaryReference dictionaryReference { get; set; }
+
         public List<Localization> localizations { get; set; }
 
         public List<ApplicableIfcClass> applicableIfcClasses { get; set; }
@@ -87,6 +91,7 @@ namespace PSD_IFC5
         public string listName { get; set; }
 
         public List<EnumerationValue> enumerationValues { get; set; }
+        public List<ConstantValue> constantValues { get; set; }
     }
     /// <summary>
     /// The container element of list value.
@@ -259,6 +264,17 @@ namespace PSD_IFC5
         IfcAppliedValue
     };
     public class EnumerationValue
+    {
+        public string name { get; set; }
+
+        public string definition { get; set; }
+
+        public string ifdGuid { get; set; }
+
+        public List<Localization> localizations { get; set; }
+    }
+
+    public class ConstantValue
     {
         public string name { get; set; }
 
