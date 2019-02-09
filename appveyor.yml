@@ -31,9 +31,14 @@ environment:
     secure: V/J9RJx75dwkZ3GYcz6HxOuHhgRjronD6QpRkF5O+so=
   gh_username: 
     secure: WYN/eo4TYe5gfE1sRt2Ugw==
+  bsddUrl: http://test.bsdd.buildingsmart.org
+  bsdd_username: 
+    secure: V/J9RJx75dwkZ3GYcz6HxOuHhgRjronD6QpRkF5O+so=
+  bsdd_password: 
+    secure: NsrogBgtuwTGnsZJl37ryz5NPjIO7ZESEzqd+1Xcd9lpE3XW0LBaE9eGI3ModO0q    
   
 on_finish:
-  - ps: '& "C:\projects\bSDD\PSets\Tools\ConvertAndPublishPSets.ps1"'
+  - ps: '& "C:\projects\bSDD\PSets\Tools\ConvertAndPublishPSets.ps1 -bsddUrl $env:bsddUrl -bsdd_username $env:bsdd_username -bsdd_password $env:bsdd_password"'
 #  - git config --global credential.helper store
 #  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 #  - git config --global user.email "$($env:gh_email)"
