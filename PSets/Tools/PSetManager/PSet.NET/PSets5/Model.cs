@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PSD_IFC5
+namespace PSets5
 {
     public class PropertySet
     {

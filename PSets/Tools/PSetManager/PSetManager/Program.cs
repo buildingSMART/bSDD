@@ -1,7 +1,7 @@
 ﻿using System;
 using CommandLine;
 
-namespace PSetManager
+namespace PSets4
 {
     class Program
     {
@@ -19,16 +19,21 @@ namespace PSetManager
                    switch (options.mode)
                    {
                         case "ConvertFromXml":
-                           ConverterXml2Yaml converterXml2Yaml = new ConverterXml2Yaml(options.folderXml, options.folderYaml, options.folderJson, options.folderResx, options.checkBSDD);
-                        break;
+                            ConverterXml2Yaml converterXml2Yaml = new ConverterXml2Yaml(options.folderXml, options.folderYaml, options.folderJson, options.folderResx, options.checkBSDD);
+                            break;
 
                        case "LoadTranslation":
-                           YamlTranslationWriter yamlTranslationWriter = new YamlTranslationWriter(options.translationSourceFile, options.folderYaml, options.folderJson, options.folderResx);
-                       break;
+                            YamlTranslationWriter yamlTranslationWriter = new YamlTranslationWriter(options.translationSourceFile, options.folderYaml, options.folderJson, options.folderResx);
+                            break;
+
+                       case "PublishToBSDD":
+                            BsddWriter bsddWriter = new BsddWriter(options.folderYaml, options.bsddUrl, options.bsddUser,options.bsddPassword, options.bsddLanguageCode);
+                            break;
                    }
                });
 
-            log.Info($"I am finished - Be happy with your Open BIM");
+            log.Info($"--------------------------------------------------------------------------------------------------");
+            log.Info($"I am finished - Be happy with your Open BIM powered by the family of standards by buildingSMART International");
         }
     }
 }

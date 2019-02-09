@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 using YamlDotNet.Core;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
-using PSD_IFC5;
+using PSets5;
 using Newtonsoft.Json;
 using System.Net;
 using System.Xml.Serialization;
-using bsDD.NET;
-using bsDD.NET.Model.Objects;
+using bSDD.NET;
+using bSDD.NET.Model.Objects;
 
-namespace PSetManager
+namespace PSets4
 {
     class ConverterXml2Yaml
     {
@@ -32,6 +32,7 @@ namespace PSetManager
 
         private bool CheckBSDD;
         private Bsdd _bsdd;
+        private WebClient bsddWebClient;
 
         private int numberOfPsets;
         private int numberOfPsetsWithbSDDGuid;
@@ -90,7 +91,10 @@ namespace PSetManager
 
             CheckBSDD = checkBSDD;
             if (CheckBSDD)
-                _bsdd = new Bsdd();
+            { 
+                _bsdd = new Bsdd("http://bsdd.buildingsamt.org","","");
+                bsddWebClient = new WebClient();
+            }
 
             string propertySetVersionList = string.Empty;
             string propertySetTemplateList = string.Empty;
@@ -353,11 +357,11 @@ namespace PSetManager
                 if (psetProperty.Items.Length >= 4)
                 {
                     foreach (var item in psetProperty.Items)
-                        if (item.GetType() == typeof(PSetManager.PropertyDefNameAliases))
+                        if (item.GetType() == typeof(PSets4.PropertyDefNameAliases))
                             nameAliases = (PropertyDefNameAliases)item;
 
                     foreach (var item in psetProperty.Items)
-                        if (item.GetType() == typeof(PSetManager.PropertyDefDefinitionAliases))
+                        if (item.GetType() == typeof(PSets4.PropertyDefDefinitionAliases))
                             definitionAliases = (PropertyDefDefinitionAliases)item;
 
                     foreach (var alias in nameAliases.NameAlias)
@@ -464,12 +468,12 @@ namespace PSetManager
 
                                     ConstantDefNameAliases constantDefNameAlias = null;
                                     foreach (var i in item.Items)
-                                        if (i.GetType() == typeof(PSetManager.ConstantDefNameAliases))
+                                        if (i.GetType() == typeof(PSets4.ConstantDefNameAliases))
                                             constantDefNameAlias = (ConstantDefNameAliases)i;
 
                                     ConstantDefDefinitionAliases constantDefDefinitionAliases = null;
                                     foreach (var i in item.Items)
-                                        if (i.GetType() == typeof(PSetManager.ConstantDefDefinitionAliases))
+                                        if (i.GetType() == typeof(PSets4.ConstantDefDefinitionAliases))
                                             constantDefDefinitionAliases = (ConstantDefDefinitionAliases)i;
 
                                     //if ((constantDefNameAlias.NameAlias.FirstOrDefault().Value != null) || (constantDefDefinitionAliases.NameAlias.FirstOrDefault().Value != null))
@@ -591,10 +595,9 @@ namespace PSetManager
             bool check = false;
             string url = $"http://bsdd.buildingsmart.org/api/4.0/IfdConcept/{guid}";
 
-            var webClient = new WebClient();
             try
             {
-                var response = webClient.DownloadString(url);
+                var response = bsddWebClient.DownloadString(url);
                 check = true;
             }
             catch(Exception ex)

@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using YamlDotNet.Core;
 using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
-using PSD_IFC5;
+using PSets5;
 using Newtonsoft.Json;
-using System.Net;
-using System.Xml.Serialization;
-using bsDD.NET;
-using bsDD.NET.Model.Objects;
 
-namespace PSetManager
+namespace PSets4
 {
     class YamlTranslationWriter
     {

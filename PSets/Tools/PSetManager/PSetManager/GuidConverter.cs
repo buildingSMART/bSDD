@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PSetManager
+namespace PSets4
 {
     public static class GuidConverter
     {

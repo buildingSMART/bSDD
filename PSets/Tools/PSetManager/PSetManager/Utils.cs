@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using YamlDotNet.Serialization.EventEmitters;
 using YamlDotNet.Core;
 
-namespace PSetManager
+namespace PSets4
 {
     public static class Utils
     {
@@ -79,7 +79,7 @@ namespace PSetManager
             }
 
         }
-        public static PSD_IFC5.PropertySet PrepareTexts(PSD_IFC5.PropertySet propertySet)
+        public static PSets5.PropertySet PrepareTexts(PSets5.PropertySet propertySet)
         {
             propertySet.definition = Utils.CleanUp(propertySet.definition);
             foreach (var prop in propertySet.properties)

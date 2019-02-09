@@ -51,15 +51,12 @@
     <Compile Include="Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PSets\PSD_IFC4_TC1.Designer.cs" />
     <Compile Include="ConverterXml2Yaml.cs" />
+    <Compile Include="BsddWriter.cs" />
     <Compile Include="YamlTranslationWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="PSets\PSD_IFC4_TC1.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ClosedXML">
@@ -82,13 +79,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\bSDD.NET\bsDD.NET.csproj">
-      <Project>{340520a0-b91d-4d22-b8b0-60497efd9507}</Project>
-      <Name>bsDD.NET</Name>
+    <ProjectReference Include="..\bSDD.NET\bSDD.NET.csproj">
+      <Project>{5ef3885d-d54c-4f56-b4c9-a652cdf5789b}</Project>
+      <Name>bSDD.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PSD_IFC5\PSD_IFC5.csproj">
-      <Project>{37d76463-ae2f-4086-bae2-1e1a87212e9e}</Project>
-      <Name>PSD_IFC5</Name>
+    <ProjectReference Include="..\PSet.NET\PSet.NET.csproj">
+      <Project>{01ec4a9c-70d3-4363-b04d-09b307586e09}</Project>
+      <Name>PSet.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
