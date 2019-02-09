@@ -4,7 +4,6 @@ param(
 [string]$bsddPassword
 )
 
-
 $BaseFolder = "C:\projects\bSDD\PSets"
 $PSetManagerExe="$BaseFolder\Tools\PSetManager\PSetManager\bin\Release\PSetManager.exe"
 $FolderXml = "$BaseFolder\XML"
@@ -13,9 +12,9 @@ $FolderJson = "$BaseFolder\JSON"
 $FolderResx = "$BaseFolder\RESX"
 $ExitCode=0
 Write-Host "++++++++++++++++++++++++++++++++++++++"
-Write-Host SourceFolderXml  : $SourceFolderXml
-Write-Host TargetFolderYaml : $TargetFolderYaml
-Write-Host TargetFolderJson : $TargetFolderJson
+Write-Host SourceFolderXml  : $FolderXml
+Write-Host TargetFolderYaml : $FolderYaml
+Write-Host TargetFolderJson : $FolderJson
 Write-Host bsddUrl          : $bsddUrl
 
 ## Run the PSetManager in the mode to convert the XML-Psets to the new YAML format
