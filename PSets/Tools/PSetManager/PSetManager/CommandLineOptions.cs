@@ -27,16 +27,16 @@ namespace PSets4
         [Option('b', "checkBSDD", Required = false, Default = true, HelpText = "Check the connection to the bSDD (network required!)")]
         public bool checkBSDD { get; set; }
 
-        [Option('b', "bsddUrl", Required = false, Default = true, HelpText = "URL of the bSDD ('http://test.bsdd.buildingsmart.org' or 'http://bsdd.buildingsmart.org'))")]
+        [Option('b', "bsddUrl", Required = false, HelpText = "URL of the bSDD ('http://test.bsdd.buildingsmart.org' or 'http://bsdd.buildingsmart.org'))")]
         public string bsddUrl { get; set; }
 
-        [Option('u', "bsddUser", Required = false, Default = true, HelpText = "User for the bSDD")]
+        [Option('u', "bsddUser", Required = false, HelpText = "User for the bSDD")]
         public string bsddUser { get; set; }
 
-        [Option('p', "bsddPassword", Required = false, Default = true, HelpText = "Password for the bsDD")]
+        [Option('p', "bsddPassword", Required = false, HelpText = "Password for the bsDD")]
         public string bsddPassword { get; set; }
 
-        [Option('l', "bsddLanguageCode", Required = false, Default = true, HelpText = "Language, that shall be published to the bsDD")]
+        [Option('l', "bsddLanguageCode", Required = false, HelpText = "Language, that shall be published to the bsDD")]
         public string bsddLanguageCode { get; set; }
 
     }
