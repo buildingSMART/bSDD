@@ -11,7 +11,7 @@ Write-Host TargetFolderYaml : $TargetFolderYaml
 Write-Host TargetFolderJson : $TargetFolderJson
 Write-Host TargetFolderResx : $TargetFolderResx
 
-& $PSetManagerExe --mode ConvertFromXml --folderXml $SourceFolderXml --folderYaml $TargetFolderYaml --folderJson $TargetFolderJson --folderResx $TargetFolderResx
+& $PSetManagerExe --mode ConvertFromXml --folderXml $SourceFolderXml --folderYaml $TargetFolderYaml --folderJson $TargetFolderJson --folderResx $TargetFolderResx --checkBSDD true
 
 if ($LastExitCode -eq '0') 
 { 
