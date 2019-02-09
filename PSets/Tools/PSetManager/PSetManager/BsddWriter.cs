@@ -144,11 +144,11 @@ namespace PSets4
                                             if (existingNames.Select(x => x.Name).ToList().Contains(localization.name))
                                             {
                                                 guidOfExistingName = existingNames.Where(x => x.Name == localization.name).FirstOrDefault().Guid;
-                                                log.Info($"    The name {localization.name} allready exists with the GUID {guidOfExistingName}, no insertion needed");                                          
+                                                log.Info($"    The name '{localization.name}' allready exists with the GUID {guidOfExistingName}, no insertion needed");                                          
                                             }
                                             else
                                             {
-                                                log.Info($"    The name {localization.name} does not exist, inserting it now...");  
+                                                log.Info($"    The name '{localization.name}' does not exist, inserting it now...");  
                                                 var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.name);
                                                 guidOfNewName = answer.Guid;
                                                 log.Info($"    Succesfully inserted with the GUID {guidOfNewName}");
@@ -184,11 +184,11 @@ namespace PSets4
                                             if (existingDefinitions.Select(x => x.Description).ToList().Contains(localization.definition))
                                             {
                                                 guidOfExistingDefinition = existingDefinitions.Where(x => x.Description == localization.definition).FirstOrDefault().Guid;
-                                                log.Info($"    The description {localization.definition} allready exists with the GUID {guidOfExistingDefinition}, no insertion needed");
+                                                log.Info($"    The description '{localization.definition}' allready exists with the GUID {guidOfExistingDefinition}, no insertion needed");
                                             }
                                             else
                                             {
-                                                log.Info($"    The description {localization.definition} does not exist, inserting it now...");
+                                                log.Info($"    The description '{localization.definition}' does not exist, inserting it now...");
                                                 var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.definition);
                                                 guidOfNewDefinition = answer.Guid;
                                                 log.Info($"    Succesfully inserted with the GUID {guidOfNewDefinition}");
@@ -196,7 +196,7 @@ namespace PSets4
 
                                             foreach (var name in existingDefinitions.Where(x => x.Guid != guidOfExistingDefinition).Where(y => y.Guid != guidOfNewDefinition))
                                             {
-                                                log.Info($"    Deleting old description {name.Description} with GUID {name.Guid}");
+                                                log.Info($"    Deleting old description '{name.Description}' with GUID {name.Guid}");
                                                 var answer = bsdd.DeleteConceptName(propertyConcept.Guid, name.Guid);
                                             }
                                         }
