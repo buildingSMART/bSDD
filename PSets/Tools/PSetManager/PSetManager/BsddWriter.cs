@@ -41,11 +41,11 @@ namespace PSets4
                 try
                 {
                     PSet = yamlDeserializer.Deserialize<PropertySet>(new StringReader(File.ReadAllText(yamlFileName)));
-                    log.Info($"--------------------------------------------------------------------------------------------------");
-                    log.Info($"--------------------------------------------------------------------------------------------------");
+                    log.Info($"--------------------------------------------------------------------------------------------------------");
+                    log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"Opened the YAML file {yamlFileName}");
-                    log.Info($"--------------------------------------------------------------------------------------------------");
-                    log.Info($"--------------------------------------------------------------------------------------------------");
+                    log.Info($"--------------------------------------------------------------------------------------------------------");
+                    log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"Now checking the PSet {PSet.name} in the bSDD at {PSet.dictionaryReference.ifdGuid}");
                     IfdConcept pSetConcept = bsdd.GetConcept(PSet.dictionaryReference.ifdGuid);
 
@@ -111,11 +111,11 @@ namespace PSets4
                         //Now traversing the properties of the PSet
                         foreach (var property in PSet.properties)
                         {
-                            log.Info($"--------------------------------------------------------------------------------------------------");
+                            log.Info($"--------------------------------------------------------------------------------------------------------");
                             IfdConcept propertyConcept = bsdd.GetConcept(property.dictionaryReference.ifdGuid);
                             if (propertyConcept != null)
                             {
-                                log.Info($"Ok, the property {property.name} lives here: {bsddUrl}/#concept/browse/{propertyConcept.Guid}");
+                                log.Info($"Ok, the property '{property.name}' lives here: {bsddUrl}/#concept/browse/{propertyConcept.Guid}");
                                 log.Info($"Status: {propertyConcept.Status}");
 
                                 //Check, if the property is correct related to it's PSet
@@ -217,10 +217,14 @@ namespace PSets4
                                     }
                                 }
                             }
+
+                            log.Info($"    Update the status of the Property concept to APPROVED");
+                            bsdd.UpdateConceptStatus(propertyConcept.Guid, IfdStatusEnum.APPROVED);
+                            log.Info($"    Succesfully updated");
                         }
 
-                        log.Info($"--------------------------------------------------------------------------------------------------");
-                        log.Info($"    Update the status of the concept to APPROVED");
+                        log.Info($"--------------------------------------------------------------------------------------------------------");
+                        log.Info($"    Update the status of the PSet concept to APPROVED");
                         bsdd.UpdateConceptStatus(pSetConcept.Guid, IfdStatusEnum.APPROVED);
                         log.Info($"    Succesfully updated");
                     }
