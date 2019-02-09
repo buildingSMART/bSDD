@@ -2,8 +2,8 @@
 using RestSharp;
 using bSDD.NET.Model.Objects;
 using System.Collections.Generic;
-using System.Net;
-using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace bSDD.NET
 {
@@ -176,12 +176,53 @@ namespace bSDD.NET
             //Adds the new description of the concept in the given language and deletes the old one
 
             var responseInsert = InsertConceptDefinition(conceptGuid, languageCode, definition);
-
             var request = new RestRequest($"/IfdConcept/{conceptGuid}/description/{descriptionGuid}", Method.DELETE);
             request.AddHeader("Accept", "application/json");
             request.AddCookie("peregrineapisessionid", Session.Guid);
             var responseDelete = restclient.Execute<IfdBase>(request);          
             return responseInsert;
         }
-    }
+
+        public void RelatePropertyToPSet(string psetGuid, string propertyGuid)
+        {
+            //GET /IfdConcept/{guid}/parents
+            //Gets all the parents of a given concept. You need minimum PUBLIC access to use this method.
+
+            var requestParentCheck = new RestRequest($"/IfdConcept/{propertyGuid}/parents", Method.GET);
+            requestParentCheck.AddQueryParameter("cache", "false");
+            requestParentCheck.AddHeader("Accept", "application/json");
+            requestParentCheck.AddCookie("peregrineapisessionid", Session.Guid);
+
+            var responseParentCheck = restclient.Execute<IfdConcept>(requestParentCheck);
+
+            //Deserialization does not work
+            //2019-02-09T20:35:12.010 Verbose Could not find member 'IfdConceptInRelationship' 
+            //on bSDD.NET.Model.Objects.IfdSandboxConceptInRelationship.Path 'IfdConceptInRelationship', line 1, position 28.
+            //ITraceWriter traceWriter = new MemoryTraceWriter();
+            //IfdConcept relation = JsonConvert.DeserializeObject<IfdConcept>(responseParentCheck.Content, new JsonSerializerSettings { TraceWriter = traceWriter });
+
+            //Dirty Hack
+
+            if (!responseParentCheck.Content.Contains(psetGuid))
+            {
+                //The Property is not related to it's PSet, we have to fix the relation
+                //POST /IfdConcept/{guid}/parent
+                //Adds a parent to the concept You need minimum IFD_EDITOR access to use this method.
+
+                var requestRelationFix = new RestRequest($"/IfdConcept/{propertyGuid}/parent", Method.POST);
+                requestRelationFix.AddQueryParameter("cache", "false");
+                requestRelationFix.AddHeader("Accept", "application/json");
+                requestRelationFix.AddCookie("peregrineapisessionid", Session.Guid);
+                requestRelationFix.AddParameter("parentGuid", psetGuid, ParameterType.GetOrPost);
+                requestRelationFix.AddParameter("relationshipType", "COLLECTS", ParameterType.GetOrPost);
+                requestRelationFix.AddParameter("contextGuid", "0zJVPr3UT7Yf3VIENUwY2H", ParameterType.GetOrPost);  //hardcoded GUID of the IFC-context
+
+                var responseRelationFix = restclient.Execute<IfdBase>(requestRelationFix);
+
+            }
+
+
+        }
+        
+}
 }

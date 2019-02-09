@@ -1,25 +1,32 @@
 ﻿using bSDD.NET.Model.Objects;
+using Newtonsoft.Json;
+using RestSharp;
+using RestSharp.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace bSDD.NET
 {
-    class NewNameDto
+
+    public class JsonNetSerializer : IRestSerializer
     {
-        /// <summary>
-        /// the GUID of the language of the name
-        /// </summary>
-        public string languageGuid { get; set; }
+        public string Serialize(object obj) =>
+            JsonConvert.SerializeObject(obj);
 
-        /// <summary>
-        /// the name itself
-        /// </summary>
-        public string name { get; set; }
+        public string Serialize(Parameter parameter) =>
+            JsonConvert.SerializeObject(parameter.Value);
 
-        /// <summary>
-        /// the name type
-        /// </summary>
-        public IfdNameTypeEnum nameType { get; set; }
+        public T Deserialize<T>(IRestResponse response) =>
+            JsonConvert.DeserializeObject<T>(response.Content);
+
+        public string[] SupportedContentTypes { get; } =
+        {
+            "application/json", "text/json", "text/x-json", "text/javascript", "*+json"
+        };
+
+        public string ContentType { get; set; } = "application/json";
+
+        public DataFormat DataFormat { get; } = DataFormat.Json;
     }
 }

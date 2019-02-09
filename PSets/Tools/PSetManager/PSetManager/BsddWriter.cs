@@ -29,15 +29,22 @@ namespace PSets4
 
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
-            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x).ToList().Where(x=>x.Contains("Pset_ActionRequest")))
-            { 
+
+            List<string> pSetsFilterList = new List<string>() { "Pset_ActionRequest", "Pset_ActorCommon" };
+            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x))
+            {
+                if (!pSetsFilterList.Contains(Path.GetFileName(yamlFileName).Replace(".YAML","")))
+                    break;
+
                 var yamlDeserializer = new DeserializerBuilder().Build();
                 PropertySet PSet;
                 try
                 {
                     PSet = yamlDeserializer.Deserialize<PropertySet>(new StringReader(File.ReadAllText(yamlFileName)));
                     log.Info($"--------------------------------------------------------------------------------------------------");
+                    log.Info($"--------------------------------------------------------------------------------------------------");
                     log.Info($"Opened the YAML file {yamlFileName}");
+                    log.Info($"--------------------------------------------------------------------------------------------------");
                     log.Info($"--------------------------------------------------------------------------------------------------");
                     log.Info($"Now checking the PSet {PSet.name} in the bSDD at {PSet.dictionaryReference.ifdGuid}");
                     IfdConcept pSetConcept = bsdd.GetConcept(PSet.dictionaryReference.ifdGuid);
@@ -104,12 +111,19 @@ namespace PSets4
                         //Now traversing the properties of the PSet
                         foreach (var property in PSet.properties)
                         {
+                            log.Info($"--------------------------------------------------------------------------------------------------");
                             IfdConcept propertyConcept = bsdd.GetConcept(property.dictionaryReference.ifdGuid);
                             if (propertyConcept != null)
                             {
                                 log.Info($"Ok, the property {property.name} lives here: {bsddUrl}/#concept/browse/{propertyConcept.Guid}");
                                 log.Info($"Status: {propertyConcept.Status}");
 
+                                //Check, if the property is correct related to it's PSet
+                                //If not, fix the relation
+
+                                bsdd.RelatePropertyToPSet(pSetConcept.Guid, propertyConcept.Guid);
+
+                                //Insert translations
                                 foreach (var localization in property.localizations
                                                                 .Where(x => x.language.ToLower() == languageCode.ToLower())
                                                                 .Where(x => x.name.Length > 0))
@@ -122,7 +136,7 @@ namespace PSets4
                                         localization.name = localization.name.Replace("  ", " ");
 
                                         var existingNames = propertyConcept.FullNames.Where(x => x.Language.LanguageCode.ToLower() == localization.language.ToLower()).ToList();                               
-                                        if (existingNames == null)
+                                        if (existingNames.Count == 0)
                                         {
                                             log.Info($"    No name exists for the language {localization.language}");
                                             log.Info($"    Insert this name as the first name : {localization.name}");
@@ -168,7 +182,7 @@ namespace PSets4
                                         localization.definition = localization.definition.Replace("  ", " ");
 
                                         var existingDefinitions = propertyConcept.Definitions.Where(x => x.Language.LanguageCode.ToLower() == localization.language.ToLower()).ToList();
-                                        if (existingDefinitions == null)
+                                        if (existingDefinitions.Count() == 0)
                                         {
                                             log.Info($"    No description exists for the language {localization.language}");
                                             log.Info($"    Insert this description as the first name : {localization.definition}");
@@ -205,6 +219,7 @@ namespace PSets4
                             }
                         }
 
+                        log.Info($"--------------------------------------------------------------------------------------------------");
                         log.Info($"    Update the status of the concept to APPROVED");
                         bsdd.UpdateConceptStatus(pSetConcept.Guid, IfdStatusEnum.APPROVED);
                         log.Info($"    Succesfully updated");

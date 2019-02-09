@@ -33,7 +33,7 @@ namespace PSets4
                });
 
             log.Info($"--------------------------------------------------------------------------------------------------");
-            log.Info($"I am finished - Be happy with your Open BIM powered by the family of standards by buildingSMART International");
+            log.Info($"I am finished - Be happy with your Open BIM powered by the family of standards by buildingSMART International :-)");
         }
     }
 }
