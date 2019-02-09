@@ -135,16 +135,23 @@ namespace bSDD.NET
         {
             //DELETE /IfdConcept/{guid}/name/{nameGuid}
             //POST /IfdConcept/{guid}/name
-            //Delets and re-adds the name of the concept in the given language
-
-            var request = new RestRequest($"/IfdConcept/{conceptGuid}/description/{nameGuid}", Method.DELETE);
-            request.AddHeader("Accept", "application/json");
-            request.AddCookie("peregrineapisessionid", Session.Guid);
-
-            var responseDelete = restclient.Execute<IfdBase>(request);
+            //adds the new name of the concept in the given language and deletes the old one
 
             var responseInsert = InsertConceptName(conceptGuid, languageCode, name);
+            DeleteConceptName(conceptGuid, nameGuid);        
             return responseInsert;
+        }
+
+        public IfdBase DeleteConceptName(string conceptGuid, string nameGuid)
+        {
+            //DELETE /IfdConcept/{guid}/name/{nameGuid}
+            //deletes the name of a context with the given GUID
+
+            var request = new RestRequest($"/IfdConcept/{conceptGuid}/name/{nameGuid}", Method.DELETE);
+            request.AddHeader("Accept", "application/json");
+            request.AddCookie("peregrineapisessionid", Session.Guid);
+            var responseDelete = restclient.Execute<IfdBase>(request);        
+            return responseDelete.Data;
         }
 
         public IfdBase InsertConceptDefinition(string conceptGuid, string languageCode, string definition)
@@ -166,15 +173,14 @@ namespace bSDD.NET
         {
             //DELETE /IfdConcept/{guid}/description/{descriptionGuid}
             //POST /IfdConcept/{guid}/definition
-            //Delets and re-adds the description of the concept in the given language
+            //Adds the new description of the concept in the given language and deletes the old one
+
+            var responseInsert = InsertConceptDefinition(conceptGuid, languageCode, definition);
 
             var request = new RestRequest($"/IfdConcept/{conceptGuid}/description/{descriptionGuid}", Method.DELETE);
             request.AddHeader("Accept", "application/json");
             request.AddCookie("peregrineapisessionid", Session.Guid);
-
-            var responseDelete = restclient.Execute<IfdBase>(request);
-
-            var responseInsert = InsertConceptDefinition(conceptGuid, languageCode, definition);
+            var responseDelete = restclient.Execute<IfdBase>(request);          
             return responseInsert;
         }
     }
