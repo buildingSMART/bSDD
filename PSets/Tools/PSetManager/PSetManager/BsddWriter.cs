@@ -16,14 +16,19 @@ namespace PSets4
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public BsddWriter(string folderYaml, string bsddUrl, string bsddUser, string bsddPassword, string languageCode)
+        public BsddWriter()
+        {
+
+        }
+
+        public int Workspace(string folderYaml, string bsddUrl, string bsddUser, string bsddPassword, string languageCode)
         {
             log.Info($"Upload the texts to concepts in the buildingSMART Data Dictionary (bSDD) from this source: {folderYaml}");
             if (folderYaml != null)
                 if (!Directory.Exists(folderYaml))
                 {
                     log.Error($"ERROR - The Directory {folderYaml} does not exist. Exiting!");
-                    return;
+                    return 1;
                 }
 
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
@@ -42,6 +47,9 @@ namespace PSets4
 
             int ctPSets = 0;
             int ctProperties = 0;
+            int ctPropertiesWithMissingTranslation = 0;
+            int ctPropertiesWithMissingGuid = 0;
+
 
             foreach (string yamlFileName in yamlFileNames)
             {
@@ -149,6 +157,7 @@ namespace PSets4
 
                                 if (propertyLocalizations.Count()==0)
                                 {
+                                    ctPropertiesWithMissingTranslation++;
                                     log.Error($"ERROR: Translation missing for {PSet.name}.{property.name} into {languageCode}");
                                 }
                                 else
@@ -164,16 +173,19 @@ namespace PSets4
                                         var existingNames = propertyConcept.FullNames.Where(x => x.Language.LanguageCode.ToLower() == localization.language.ToLower()).ToList();
                                         if (existingNames.Count == 0)
                                         {
-                                            log.Warn($"    No name exists for the language {localization.language}");
-                                            log.Warn($"    Insert this name as the first name : '{localization.name}'");
-                                                if (localization.name.Length > 0)
-                                                {
-                                                    var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.name);
-                                                    log.Warn($"    Succesfully inserted first name with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
-                                                }
-                                                else
-                                                    log.Error($"    ERROR: Translation of name missing for {PSet.name}.{property.name} into {languageCode}");
+                                        log.Warn($"    No name exists for the language {localization.language}");
+                                        log.Warn($"    Insert this name as the first name : '{localization.name}'");
+                                            if (localization.name.Length > 0)
+                                            {
+                                                var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.name);
+                                                log.Warn($"    Succesfully inserted first name with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
                                             }
+                                            else
+                                            {
+                                                ctPropertiesWithMissingTranslation++; 
+                                                log.Error($"    ERROR: Translation of name missing for {PSet.name}.{property.name} into {languageCode}");
+                                            }
+                                        }
                                         else
                                         {
                                             log.Info($"    There exists {existingNames.Count()} name(s) for the concept {propertyConcept.Guid} in the language {localization.language}");
@@ -218,15 +230,18 @@ namespace PSets4
                                         {
                                             log.Warn($"    No description exists for the language {localization.language}");
                                             log.Warn($"    Insert this description as the first description : '{localization.definition}'");
-                                            if (localization.definition.Length>0)
-                                                { 
-                                                    var answer = bsdd.InsertConceptDefinition(propertyConcept.Guid, localization.language, localization.definition);
-                                                    log.Warn($"    Succesfully inserted first description with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
-                                                }
-                                            else
-                                                    log.Error($"    ERROR: Translation of definition missing for {PSet.name}.{property.name} into {languageCode}");
+                                            if (localization.definition.Length > 0)
+                                            {
+                                                var answer = bsdd.InsertConceptDefinition(propertyConcept.Guid, localization.language, localization.definition);
+                                                log.Warn($"    Succesfully inserted first description with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
                                             }
                                             else
+                                            {
+                                                ctPropertiesWithMissingTranslation++;
+                                                log.Error($"    ERROR: Translation of definition missing for {PSet.name}.{property.name} into {languageCode}");
+                                            }
+                                        }
+                                        else
                                         {
                                             log.Info($"    There exists {existingDefinitions.Count()} description(s) for the concept {propertyConcept.Guid} in the language {localization.language}");
 
@@ -261,6 +276,7 @@ namespace PSets4
                             }
                             else
                             {
+                                ctPropertiesWithMissingGuid++;
                                 log.Error($"ERROR: The property '{property.name}' cannot be found in the bSDD!");
                                 if (property.dictionaryReference.ifdGuid.Length == 0)
                                 {
@@ -294,10 +310,14 @@ namespace PSets4
                 catch (Exception ex)
                 {
                     log.Error(ex.Message);
-                    return;
+                    return 1;
                 }
             }
             log.Warn($"Published {ctPSets} PSets with {ctProperties} Properties.");
+            log.Warn($"{ctPropertiesWithMissingTranslation} translations missing.");
+            log.Warn($"{ctPropertiesWithMissingGuid} guid missing.");
+
+            return ctPropertiesWithMissingTranslation + ctPropertiesWithMissingGuid;
         }
     }
 }
