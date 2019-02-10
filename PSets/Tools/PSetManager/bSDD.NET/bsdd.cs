@@ -210,32 +210,45 @@ namespace bSDD.NET
 
             var responseParentCheck = restclient.Execute<IfdConceptInRelationshipFix>(requestParentCheck);
 
-            IfdConceptInRelationship rel = responseParentCheck.Data.IfdConceptInRelationship;
-
-            bool contextIsIfcContext = false;
-            foreach (var context in rel.Contexts)
-                if (context.Guid == relationContextGuid)
-                    contextIsIfcContext = true;
-
-
-            //Dirty Hack, to have a workaround
-            if ((rel.Guid != psetGuid))// || (!contextIsIfcContext))     //Open: Check, if the relation is on the given context, or on another context
+            try
             {
-                //The Property is not related to it's PSet, we have to fix the relation
-                //POST /IfdConcept/{guid}/parent
-                //Adds a parent to the concept You need minimum IFD_EDITOR access to use this method.
+                IfdConceptInRelationship relation = new IfdConceptInRelationship();
+                bool contextIsIfcContext = false;
+                relation = responseParentCheck?.Data?.IfdConceptInRelationship ?? null;
+                if (relation != null)
+                { 
+                    if (relation.Contexts != null)
+                    foreach (var context in relation.Contexts)
+                        { 
+                            if (context.Guid != null)
+                            if (context.Guid == relationContextGuid)
+                                contextIsIfcContext = true;
+                        }
+                }
 
-                propertyIsRelated = false;
+                //Dirty Hack, to have a workaround
+                if ((relation?.Guid != psetGuid) || (relation == null))// || (!contextIsIfcContext))     //Open: Check, if the relation is on the given context, or on another context
+                {
+                    //The Property is not related to it's PSet, we have to fix the relation
+                    //POST /IfdConcept/{guid}/parent
+                    //Adds a parent to the concept You need minimum IFD_EDITOR access to use this method.
 
-                var requestRelationFix = new RestRequest($"/IfdConcept/{propertyGuid}/parent", Method.POST);
-                requestRelationFix.AddQueryParameter("cache", "false");
-                requestRelationFix.AddHeader("Accept", "application/json");
-                requestRelationFix.AddCookie("peregrineapisessionid", Session.Guid);
-                requestRelationFix.AddParameter("parentGuid", psetGuid, ParameterType.GetOrPost);
-                requestRelationFix.AddParameter("relationshipType", "COLLECTS", ParameterType.GetOrPost);
-                requestRelationFix.AddParameter("contextGuid", relationContextGuid, ParameterType.GetOrPost);
+                    propertyIsRelated = false;
 
-                var responseRelationFix = restclient.Execute<IfdBase>(requestRelationFix);
+                    var requestRelationFix = new RestRequest($"/IfdConcept/{propertyGuid}/parent", Method.POST);
+                    requestRelationFix.AddQueryParameter("cache", "false");
+                    requestRelationFix.AddHeader("Accept", "application/json");
+                    requestRelationFix.AddCookie("peregrineapisessionid", Session.Guid);
+                    requestRelationFix.AddParameter("parentGuid", psetGuid, ParameterType.GetOrPost);
+                    requestRelationFix.AddParameter("relationshipType", "COLLECTS", ParameterType.GetOrPost);
+                    requestRelationFix.AddParameter("contextGuid", relationContextGuid, ParameterType.GetOrPost);
+
+                    var responseRelationFix = restclient.Execute<IfdBase>(requestRelationFix);
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
 
             return propertyIsRelated;
