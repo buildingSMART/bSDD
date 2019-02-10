@@ -183,6 +183,18 @@ namespace bSDD.NET
             return responseInsert;
         }
 
+        public IfdBase DeleteConceptDescription(string conceptGuid, string descriptionGuid)
+        {
+            //DELETE /IfdConcept/{guid}/description/{descriptionGuid}
+            //Removes the description from the concept. You need minimum IFD_EDITOR access to use this method.
+
+            var request = new RestRequest($"/IfdConcept/{conceptGuid}/description/{descriptionGuid}", Method.DELETE);
+            request.AddHeader("Accept", "application/json");
+            request.AddCookie("peregrineapisessionid", Session.Guid);
+            var responseDelete = restclient.Execute<IfdBase>(request);
+            return responseDelete.Data;
+        }
+
         public void RelatePropertyToPSet(string psetGuid, string propertyGuid)
         {
             //GET /IfdConcept/{guid}/parents
