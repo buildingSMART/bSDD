@@ -36,7 +36,7 @@ namespace PSets4
 
             log.Info($"--------------------------------------------------------------------------------------------------");
             if (result!=0)
-                log.Error($"ERROR: The PSetManager end with errors. Please read the log, fix these errors and try again. Thank you!");
+                log.Error($"ERROR: The PSetManager end with some errors. Please read the log, fix these errors and try again. Thank you!");
             log.Info($"I am finished - Be happy with your Open BIM powered by the family of standards by buildingSMART International :-)");
 
             return result;

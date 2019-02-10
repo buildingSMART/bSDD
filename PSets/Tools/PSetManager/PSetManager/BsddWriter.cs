@@ -280,7 +280,7 @@ namespace PSets4
                                 log.Error($"ERROR: The property '{property.name}' cannot be found in the bSDD!");
                                 if (property.dictionaryReference.ifdGuid.Length == 0)
                                 {
-                                    log.Error($"ERROR: The property '{property.name}' has no ifdGuid in the YAML file.");
+                                    log.Error($"ERROR: The property '{PSet.name}.{property.name}' has no ifdGuid in the YAML file.");
                                     log.Warn($"Please search the GUID for the property in the bSDD and insert it into the YAML file.");
                                     log.Warn($"Then store the file to GitHub(e.g.with a pull request)");
                                     log.Warn($"ERROR: Now I am making a search for you on the bSDD for possible concepts with the term '{property.name}'");
@@ -289,8 +289,8 @@ namespace PSets4
                                         log.Warn($"    no terms found");
                                     else
                                     { 
-                                        log.Warn($"    {possibleConcepts.IfdConcept.Count()} terms found, showing the first 10");
-                                        foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null).Take(20).OrderBy(x=>x.Status))
+                                        log.Warn($"    {possibleConcepts.IfdConcept.Count()} terms found, showing the first 15");
+                                        foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null).OrderBy(x=>x.Status.ToString()).Take(15))
                                         {
                                             log.Warn($"    Found: {possibleConcept.Status} : {possibleConcept.ConceptType} - {possibleConcept.Guid} : {possibleConcept.Definitions.FirstOrDefault().Description}");
                                         }
