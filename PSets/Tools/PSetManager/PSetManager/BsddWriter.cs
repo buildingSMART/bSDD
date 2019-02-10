@@ -30,7 +30,7 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            List<string> pSetsFilterList = new List<string>() { "Pset_ActionRequest", "Pset_ActorCommon", "Pset_ActuatorPHistory" };
+            List<string> pSetsFilterList = new List<string>() { "Pset_ActionRequest", "Pset_ActorCommon", "Pset_ActuatorPHistory", "Pset_ActuatorTypeCommon", "Pset_ActuatorTypeElectricActuator" };
             foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x))
             {
                 if (!pSetsFilterList.Contains(Path.GetFileName(yamlFileName).Replace(".YAML","")))
