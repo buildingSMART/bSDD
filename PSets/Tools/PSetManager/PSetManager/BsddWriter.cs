@@ -29,7 +29,7 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML");//.Where(x => x.Contains("Pset_CableSegmentOccurrence"));
+            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML").Where(x => x.Contains("Pset_CondenserTypeCommon"));
 
             //A dirty trick to get all PSets done within one hour (the build time of Appveyor is limited to one hour)
             //Travers randomly the list of the PSet in ascending or descending order
@@ -141,10 +141,18 @@ namespace PSets4
                                 else
                                     log.Warn($"The relation of the property to its PSet was now inserted with the relationshipType='COLLECTS'.");
 
-                                //Insert translations
-                                foreach (var localization in property.localizations
+                                //Localizations of the Property
+
+                                var propertyLocalizations = property.localizations
                                                                 .Where(x => x.language.ToLower() == languageCode.ToLower())
-                                                                .Where(x => x.name.Length > 0))
+                                                                .Where(x => x.name.Length > 0);
+
+                                if (propertyLocalizations.Count()==0)
+                                {
+                                    log.Error($"Translation missing for {PSet.name}.{property.name} into {languageCode}");
+                                }
+                                else
+                                foreach (var localization in propertyLocalizations)
                                 {
                                     log.Info($"Publishing the Property for language {localization.language}");
 
@@ -251,7 +259,7 @@ namespace PSets4
                                     log.Warn($"Then store the file to GitHub(e.g.with a pull request)");
                                     log.Warn($"ERROR: Now I am making a search for you on the bSDD for possible concepts with the term '{property.name}'");
                                     IfdConceptList possibleConcepts = bsdd.SearchConcepts(property.name);
-                                    foreach (var possibleConcept in possibleConcepts.IfdConcept)
+                                    foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null))
                                     {
                                         log.Warn($"    Found: {possibleConcept.ConceptType} - {possibleConcept.Guid} - {possibleConcept.Status} : {possibleConcept.Definitions.FirstOrDefault().Description}");
                                     }
