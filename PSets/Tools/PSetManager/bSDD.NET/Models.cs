@@ -9,7 +9,14 @@ using System.Text;
 namespace bSDD.NET
 {
 
-    public class JsonNetSerializer : IRestSerializer
+    public partial class IfdConceptInRelationshipFix
+    {
+
+        public IfdConceptInRelationship IfdConceptInRelationship { get; set; }
+
+    }
+
+        public class JsonNetSerializer : IRestSerializer
     {
         public string Serialize(object obj) =>
             JsonConvert.SerializeObject(obj);

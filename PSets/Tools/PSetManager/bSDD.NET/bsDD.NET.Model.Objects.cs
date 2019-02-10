@@ -338,7 +338,9 @@ namespace bSDD.NET.Model.Objects {
   public partial class IfdConceptInRelationship : bSDD.NET.Model.Objects.IfdConcept {
 
     private System.Collections.Generic.List<bSDD.NET.Model.Objects.IfdContext> _contexts;
-    private bSDD.NET.Model.Objects.IfdRelationshipTypeEnum _relationshipType;
+    //private bSDD.NET.Model.Objects.IfdContext _contexts;
+
+        private bSDD.NET.Model.Objects.IfdRelationshipTypeEnum _relationshipType;
     /// <summary>
     ///  the contexts
     /// </summary>

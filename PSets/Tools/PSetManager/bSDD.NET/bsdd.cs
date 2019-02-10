@@ -4,12 +4,13 @@ using bSDD.NET.Model.Objects;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System;
 
 namespace bSDD.NET
 {
     public class Bsdd
     {
-        private string Version = "4.0";
+        private readonly string Version = "4.0";
 
         public string BaseUrl { get; }
 
@@ -195,7 +196,7 @@ namespace bSDD.NET
             return responseDelete.Data;
         }
 
-        public bool RelatePropertyToPSet(string psetGuid, string propertyGuid)
+        public bool RelatePropertyToPSet(string psetGuid, string propertyGuid, string relationContextGuid)
         {
             //GET /IfdConcept/{guid}/parents
             //Gets all the parents of a given concept. You need minimum PUBLIC access to use this method.
@@ -207,17 +208,18 @@ namespace bSDD.NET
             requestParentCheck.AddHeader("Accept", "application/json");
             requestParentCheck.AddCookie("peregrineapisessionid", Session.Guid);
 
-            var responseParentCheck = restclient.Execute<IfdConcept>(requestParentCheck);
+            var responseParentCheck = restclient.Execute<IfdConceptInRelationshipFix>(requestParentCheck);
 
-            //Deserialization does not work
-            //2019-02-09T20:35:12.010 Verbose Could not find member 'IfdConceptInRelationship' 
-            //on bSDD.NET.Model.Objects.IfdSandboxConceptInRelationship.Path 'IfdConceptInRelationship', line 1, position 28.
-            //ITraceWriter traceWriter = new MemoryTraceWriter();
-            //IfdConcept relation = JsonConvert.DeserializeObject<IfdConcept>(responseParentCheck.Content, new JsonSerializerSettings { TraceWriter = traceWriter });
+            IfdConceptInRelationship rel = responseParentCheck.Data.IfdConceptInRelationship;
 
-            //Dirty Hack
+            bool contextIsIfcContext = false;
+            foreach (var context in rel.Contexts)
+                if (context.Guid == relationContextGuid)
+                    contextIsIfcContext = true;
 
-            if (!responseParentCheck.Content.Contains(psetGuid))
+
+            //Dirty Hack, to have a workaround
+            if ((rel.Guid != psetGuid))// || (!contextIsIfcContext))     //Open: Check, if the relation is on the given context, or on another context
             {
                 //The Property is not related to it's PSet, we have to fix the relation
                 //POST /IfdConcept/{guid}/parent
@@ -231,10 +233,9 @@ namespace bSDD.NET
                 requestRelationFix.AddCookie("peregrineapisessionid", Session.Guid);
                 requestRelationFix.AddParameter("parentGuid", psetGuid, ParameterType.GetOrPost);
                 requestRelationFix.AddParameter("relationshipType", "COLLECTS", ParameterType.GetOrPost);
-                requestRelationFix.AddParameter("contextGuid", "0zJVPr3UT7Yf3VIENUwY2H", ParameterType.GetOrPost);  //hardcoded GUID of the IFC-context
+                requestRelationFix.AddParameter("contextGuid", relationContextGuid, ParameterType.GetOrPost);
 
                 var responseRelationFix = restclient.Execute<IfdBase>(requestRelationFix);
-
             }
 
             return propertyIsRelated;

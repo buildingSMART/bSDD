@@ -15,11 +15,9 @@ namespace PSets4
     class BsddWriter
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private readonly string GuidOfIfc4Context = "0zJVPr3UT7Yf3VIENUwY2H";
 
-        public BsddWriter()
-        {
-
-        }
+        public BsddWriter() { }
 
         public int Workspace(string folderYaml, string bsddUrl, string bsddUser, string bsddPassword, string languageCode)
         {
@@ -143,7 +141,7 @@ namespace PSets4
 
                                 //Check, if the property is correctly related to its PSet
                                 //If not, fix the relation
-                                bool isRelated = bsdd.RelatePropertyToPSet(pSetConcept.Guid, propertyConcept.Guid);
+                                bool isRelated = bsdd.RelatePropertyToPSet(psetGuid: pSetConcept.Guid, propertyGuid: propertyConcept.Guid, relationContextGuid: GuidOfIfc4Context);
                                 if (isRelated)
                                     log.Info($"The property is correctly related to its PSet");
                                 else
