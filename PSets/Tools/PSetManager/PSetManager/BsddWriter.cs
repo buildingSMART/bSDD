@@ -235,8 +235,11 @@ namespace PSets4
                                         }
                                     }
                                 }
-                                bsdd.UpdateConceptStatus(propertyConcept.Guid, IfdStatusEnum.APPROVED);
-                                log.Warn($"    Succesfully updated the status of the Property concept {propertyConcept.Guid} to APPROVED");
+                                if (propertyConcept.Status != IfdStatusEnum.APPROVED)
+                                { 
+                                    bsdd.UpdateConceptStatus(propertyConcept.Guid, IfdStatusEnum.APPROVED);
+                                    log.Warn($"    Succesfully updated the status of the Property concept {propertyConcept.Guid} to APPROVED");
+                                }
                             }
                             else
                             {
@@ -256,9 +259,12 @@ namespace PSets4
                                 }
                             }
                         }
-                        log.Info($"--------------------------------------------------------------------------------------------------------");                     
-                        bsdd.UpdateConceptStatus(pSetConcept.Guid, IfdStatusEnum.APPROVED);
-                        log.Warn($"    Succesfully updated the status of the PSet concept {pSetConcept.Guid} to APPROVED");
+                        log.Info($"--------------------------------------------------------------------------------------------------------");
+                        if (pSetConcept.Status != IfdStatusEnum.APPROVED)
+                        {
+                            bsdd.UpdateConceptStatus(pSetConcept.Guid, IfdStatusEnum.APPROVED);
+                            log.Warn($"    Succesfully updated the status of the PSet concept {pSetConcept.Guid} to APPROVED");
+                        }
                     }
                 }
                 catch (Exception ex)
