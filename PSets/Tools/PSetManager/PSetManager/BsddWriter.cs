@@ -30,12 +30,8 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            List<string> pSetsFilterList = new List<string>() { "Pset_ActionRequest", "Pset_ActorCommon", "Pset_ActuatorPHistory", "Pset_ActuatorTypeCommon", "Pset_ActuatorTypeElectricActuator" };
-            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x))
+            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x).Take(10))
             {
-                if (!pSetsFilterList.Contains(Path.GetFileName(yamlFileName).Replace(".YAML","")))
-                    break;
-
                 var yamlDeserializer = new DeserializerBuilder().Build();
                 PropertySet PSet;
                 try
@@ -118,10 +114,13 @@ namespace PSets4
                                 log.Info($"Ok, the property '{property.name}' lives here: {bsddUrl}/#concept/browse/{propertyConcept.Guid}");
                                 log.Info($"Status: {propertyConcept.Status}");
 
-                                //Check, if the property is correct related to it's PSet
+                                //Check, if the property is correctly related to its PSet
                                 //If not, fix the relation
-
-                                bsdd.RelatePropertyToPSet(pSetConcept.Guid, propertyConcept.Guid);
+                                bool isRelated = bsdd.RelatePropertyToPSet(pSetConcept.Guid, propertyConcept.Guid);
+                                if (isRelated)
+                                    log.Info($"The property is correctly related to its PSet");
+                                else
+                                    log.Info($"The relation of the property to its PSet was now inserted.");
 
                                 //Insert translations
                                 foreach (var localization in property.localizations

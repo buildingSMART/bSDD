@@ -195,10 +195,12 @@ namespace bSDD.NET
             return responseDelete.Data;
         }
 
-        public void RelatePropertyToPSet(string psetGuid, string propertyGuid)
+        public bool RelatePropertyToPSet(string psetGuid, string propertyGuid)
         {
             //GET /IfdConcept/{guid}/parents
             //Gets all the parents of a given concept. You need minimum PUBLIC access to use this method.
+
+            bool propertyIsRelated = true;
 
             var requestParentCheck = new RestRequest($"/IfdConcept/{propertyGuid}/parents", Method.GET);
             requestParentCheck.AddQueryParameter("cache", "false");
@@ -221,6 +223,8 @@ namespace bSDD.NET
                 //POST /IfdConcept/{guid}/parent
                 //Adds a parent to the concept You need minimum IFD_EDITOR access to use this method.
 
+                propertyIsRelated = false;
+
                 var requestRelationFix = new RestRequest($"/IfdConcept/{propertyGuid}/parent", Method.POST);
                 requestRelationFix.AddQueryParameter("cache", "false");
                 requestRelationFix.AddHeader("Accept", "application/json");
@@ -233,7 +237,7 @@ namespace bSDD.NET
 
             }
 
-
+            return propertyIsRelated;
         }
         
 }
