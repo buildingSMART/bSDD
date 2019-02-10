@@ -29,21 +29,38 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x))//.Take(50))//.Where(x=>x.Contains("Pset_AirTerminalOccurrence")))
+            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML").Where(x => x.Contains("Pset_CableSegmentOccurrence"));
+
+            //A dirty trick to get all PSets done within one hour (the build time of Appveyor is limited to one hour)
+            //Travers randomly the list of the PSet in ascending or descending order
+
+            Random rand = new Random();
+            if (rand.Next(0, 2) == 0)
+                yamlFileNames = yamlFileNames.OrderBy(x => x);
+            else
+                yamlFileNames = yamlFileNames.OrderByDescending(x => x);
+
+            int ctPSets = 0;
+            int ctProperties = 0;
+
+            foreach (string yamlFileName in yamlFileNames)
             {
+                ctPSets++;
+                log.Info($"--------------------------------------------------------------------------------------------------------");
+                log.Info($"--------------------------------------------------------------------------------------------------------");
+                log.Info($"Loading PSet {ctPSets}/{yamlFileNames.Count()}");
+
                 var yamlDeserializer = new DeserializerBuilder().Build();
                 PropertySet PSet;
                 try
                 {
                     PSet = yamlDeserializer.Deserialize<PropertySet>(new StringReader(File.ReadAllText(yamlFileName)));
-                    log.Info($"--------------------------------------------------------------------------------------------------------");
-                    log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"Opened the YAML file {yamlFileName}");
                     log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"Now checking the PSet {PSet.name} in the bSDD at {PSet.dictionaryReference.ifdGuid}");
                     IfdConcept pSetConcept = bsdd.GetConcept(PSet.dictionaryReference.ifdGuid);
-
+ 
                     if (pSetConcept != null)
                     {
                         log.Info($"Ok, the PSet lives here: {bsddUrl}/#concept/browse/{pSetConcept.Guid}");
@@ -107,7 +124,10 @@ namespace PSets4
                         foreach (var property in PSet.properties)
                         {
                             log.Info($"--------------------------------------------------------------------------------------------------------");
+                            ctProperties++;
+                            log.Info($"Loading property #{ctProperties}");
                             IfdConcept propertyConcept = bsdd.GetConcept(property.dictionaryReference.ifdGuid);
+
                             if (propertyConcept != null)
                             {
                                 log.Info($"Ok, the property '{property.name}' lives here: {bsddUrl}/#concept/browse/{propertyConcept.Guid}");
@@ -127,13 +147,13 @@ namespace PSets4
                                                                 .Where(x => x.name.Length > 0))
                                 {
                                     log.Info($"Publishing the Property for language {localization.language}");
-                                 
+
                                     {   //managing the names of the property
 
                                         //Dirty fix for https://github.com/buildingSMART/bSDD/issues/11
                                         localization.name = localization.name.Replace("  ", " ");
 
-                                        var existingNames = propertyConcept.FullNames.Where(x => x.Language.LanguageCode.ToLower() == localization.language.ToLower()).ToList();                               
+                                        var existingNames = propertyConcept.FullNames.Where(x => x.Language.LanguageCode.ToLower() == localization.language.ToLower()).ToList();
                                         if (existingNames.Count == 0)
                                         {
                                             log.Warn($"    No name exists for the language {localization.language}");
@@ -162,12 +182,12 @@ namespace PSets4
                                             }
                                             else
                                             {
-                                                log.Warn($"    The name does not exist, inserting it now : '{localization.name}'");  
+                                                log.Warn($"    The name does not exist, inserting it now : '{localization.name}'");
                                                 var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.name);
                                                 guidOfNewName = answer.Guid;
                                                 log.Warn($"    Succesfully inserted with the GUID {guidOfNewName}");
                                             }
-                                            foreach (var name in existingNames.Where(x=>x.Guid!= guidOfExistingName).Where(y=>y.Guid!= guidOfNewName))
+                                            foreach (var name in existingNames.Where(x => x.Guid != guidOfExistingName).Where(y => y.Guid != guidOfNewName))
                                             {
                                                 log.Warn($"    Deleting old name with GUID {name.Guid} : '{name.Name}'");
                                                 var answer = bsdd.DeleteConceptName(propertyConcept.Guid, name.Guid);
@@ -220,12 +240,22 @@ namespace PSets4
                             }
                             else
                             {
-                                log.Error($"ERROR: The property '{property.name}' cannot be found in the bSDD: {bsddUrl}/#concept/browse/{property.dictionaryReference.ifdGuid}");
-                                if (property.dictionaryReference.ifdGuid.Length ==0)
-                                    log.Error($"ERROR: The property '{property.name}' has not ifdGuid. Please search the GUID of the property and insert it in the YAML file. Then store it to GitHub (e.g. with a pull request).");
+                                log.Error($"ERROR: The property '{property.name}' cannot be found in the bSDD!");
+                                if (property.dictionaryReference.ifdGuid.Length == 0)
+                                {
+                                    log.Error($"ERROR: The property '{property.name}' has no ifdGuid in the YAML file.");
+                                    log.Warn($"Please search the GUID for the property in the bSDD and insert it into the YAML file.");
+                                    log.Warn($"Then store the file to GitHub(e.g.with a pull request)");
+                                    log.Warn($"ERROR: Now I am making a search for you on the bSDD for possible concepts with the term '{property.name}'");
+                                    IfdConceptList possibleConcepts = bsdd.SearchConcepts(property.name);
+                                    foreach (var possibleConcept in possibleConcepts.IfdConcept)
+                                    {
+                                        log.Warn($"    Found: {possibleConcept.ConceptType} - {possibleConcept.Guid} - {possibleConcept.Status} : {possibleConcept.Definitions.FirstOrDefault().Description}");
+                                    }
+                                    log.Warn($"{possibleConcepts.IfdConcept.Count()} Concepts found - You could pick up one of these for your property...");
+                                }
                             }
                         }
-
                         log.Info($"--------------------------------------------------------------------------------------------------------");                     
                         bsdd.UpdateConceptStatus(pSetConcept.Guid, IfdStatusEnum.APPROVED);
                         log.Warn($"    Succesfully updated the status of the PSet concept {pSetConcept.Guid} to APPROVED");
@@ -237,6 +267,7 @@ namespace PSets4
                     return;
                 }
             }
+            log.Warn($"Published {ctPSets} PSets with {ctProperties} Properties.");
         }
     }
 }
