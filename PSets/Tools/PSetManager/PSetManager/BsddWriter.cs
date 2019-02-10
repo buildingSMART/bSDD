@@ -29,7 +29,7 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML");//.Where(x => x.Contains("Pset_ElectricFlowStorageDeviceTypeCommon"));
+            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML");//.Where(x => x.Contains("Pset_StairCommon"));
 
             //A dirty trick to get all PSets done within one hour (the build time of Appveyor is limited to one hour)
             //Travers randomly the list of the PSet in ascending or descending order
@@ -166,9 +166,14 @@ namespace PSets4
                                         {
                                             log.Warn($"    No name exists for the language {localization.language}");
                                             log.Warn($"    Insert this name as the first name : '{localization.name}'");
-                                            var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.name);
-                                            log.Warn($"    Succesfully inserted first name with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
-                                        }
+                                                if (localization.name.Length > 0)
+                                                {
+                                                    var answer = bsdd.InsertConceptName(propertyConcept.Guid, localization.language, localization.name);
+                                                    log.Warn($"    Succesfully inserted first name with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
+                                                }
+                                                else
+                                                    log.Error($"    ERROR: Translation of name missing for {PSet.name}.{property.name} into {languageCode}");
+                                            }
                                         else
                                         {
                                             log.Info($"    There exists {existingNames.Count()} name(s) for the concept {propertyConcept.Guid} in the language {localization.language}");
@@ -213,10 +218,15 @@ namespace PSets4
                                         {
                                             log.Warn($"    No description exists for the language {localization.language}");
                                             log.Warn($"    Insert this description as the first description : '{localization.definition}'");
-                                            var answer = bsdd.InsertConceptDefinition(propertyConcept.Guid, localization.language, localization.definition);
-                                            log.Warn($"    Succesfully inserted first description with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
-                                        }
-                                        else
+                                            if (localization.definition.Length>0)
+                                                { 
+                                                    var answer = bsdd.InsertConceptDefinition(propertyConcept.Guid, localization.language, localization.definition);
+                                                    log.Warn($"    Succesfully inserted first description with GUID {answer.Guid} for the concept {propertyConcept.Guid}");
+                                                }
+                                            else
+                                                    log.Error($"    ERROR: Translation of definition missing for {PSet.name}.{property.name} into {languageCode}");
+                                            }
+                                            else
                                         {
                                             log.Info($"    There exists {existingDefinitions.Count()} description(s) for the concept {propertyConcept.Guid} in the language {localization.language}");
 
@@ -264,9 +274,9 @@ namespace PSets4
                                     else
                                     { 
                                         log.Warn($"    {possibleConcepts.IfdConcept.Count()} terms found, showing the first 10");
-                                        foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null).Take(20))
+                                        foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null).Take(20).OrderBy(x=>x.Status))
                                         {
-                                            log.Warn($"    Found: {possibleConcept.ConceptType} - {possibleConcept.Guid} - {possibleConcept.Status} : {possibleConcept.Definitions.FirstOrDefault().Description}");
+                                            log.Warn($"    Found: {possibleConcept.Status} : {possibleConcept.ConceptType} - {possibleConcept.Guid} : {possibleConcept.Definitions.FirstOrDefault().Description}");
                                         }
                                         log.Warn($"{possibleConcepts.IfdConcept.Count()} Concepts found - You could pick up one of these for your property...");
                                     }
