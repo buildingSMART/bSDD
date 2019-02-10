@@ -29,7 +29,7 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML").Where(x => x.Contains("Pset_CableSegmentOccurrence"));
+            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML");//.Where(x => x.Contains("Pset_CableSegmentOccurrence"));
 
             //A dirty trick to get all PSets done within one hour (the build time of Appveyor is limited to one hour)
             //Travers randomly the list of the PSet in ascending or descending order
