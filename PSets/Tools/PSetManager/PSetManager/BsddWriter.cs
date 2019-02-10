@@ -29,7 +29,7 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML");//.Where(x => x.Contains("Pset_CondenserTypeCommon"));
+            var yamlFileNames = Directory.EnumerateFiles(folderYaml, "PSet*.YAML");//.Where(x => x.Contains("Pset_ElectricFlowStorageDeviceTypeCommon"));
 
             //A dirty trick to get all PSets done within one hour (the build time of Appveyor is limited to one hour)
             //Travers randomly the list of the PSet in ascending or descending order
@@ -149,7 +149,7 @@ namespace PSets4
 
                                 if (propertyLocalizations.Count()==0)
                                 {
-                                    log.Error($"Translation missing for {PSet.name}.{property.name} into {languageCode}");
+                                    log.Error($"ERROR: Translation missing for {PSet.name}.{property.name} into {languageCode}");
                                 }
                                 else
                                 foreach (var localization in propertyLocalizations)
@@ -259,11 +259,17 @@ namespace PSets4
                                     log.Warn($"Then store the file to GitHub(e.g.with a pull request)");
                                     log.Warn($"ERROR: Now I am making a search for you on the bSDD for possible concepts with the term '{property.name}'");
                                     IfdConceptList possibleConcepts = bsdd.SearchConcepts(property.name);
-                                    foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null))
-                                    {
-                                        log.Warn($"    Found: {possibleConcept.ConceptType} - {possibleConcept.Guid} - {possibleConcept.Status} : {possibleConcept.Definitions.FirstOrDefault().Description}");
+                                    if (possibleConcepts==null)
+                                        log.Warn($"    no terms found");
+                                    else
+                                    { 
+                                        log.Warn($"    {possibleConcepts.IfdConcept.Count()} terms found, showing the first 10");
+                                        foreach (var possibleConcept in possibleConcepts.IfdConcept.Where(x=>x.Definitions!=null).Take(20))
+                                        {
+                                            log.Warn($"    Found: {possibleConcept.ConceptType} - {possibleConcept.Guid} - {possibleConcept.Status} : {possibleConcept.Definitions.FirstOrDefault().Description}");
+                                        }
+                                        log.Warn($"{possibleConcepts.IfdConcept.Count()} Concepts found - You could pick up one of these for your property...");
                                     }
-                                    log.Warn($"{possibleConcepts.IfdConcept.Count()} Concepts found - You could pick up one of these for your property...");
                                 }
                             }
                         }
