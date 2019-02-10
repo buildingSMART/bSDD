@@ -30,7 +30,7 @@ namespace PSets4
             Bsdd bsdd = new Bsdd(bsddUrl, bsddUser, bsddPassword);
             log.Info($"Successfully logged in, into bSDD at {bsddUrl}");
 
-            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x).Take(10))
+            foreach (string yamlFileName in Directory.EnumerateFiles(folderYaml, "PSet*.YAML").OrderBy(x => x).Take(30))
             {
                 var yamlDeserializer = new DeserializerBuilder().Build();
                 PropertySet PSet;
