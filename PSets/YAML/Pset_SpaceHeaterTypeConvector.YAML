@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1v2Oi0qWeHuO00025QrE$V
   ifdGuid: 1v2Oi0qWeHuO00025QrE$V
   legacyGuid: 79098b00d20a11e1800000215ad4efdf
+  legacyGuids:
+  - 1v2Oi0qWeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1v2Oi0qWeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSpaceHeater/CONVECTOR
   type: IfcSpaceHeater/CONVECTOR
+propertyUsages:
+- propertyName: ConvectorType
+  usageDefinition: Indicates the type of convector, whether forced air (mechanically driven) or natural (gravity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Zwmtld4bCrvobhlmBmyIM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Zwmtld4bCrvobhlmBmyIM
+    ifdGuid: 0Zwmtld4bCrvobhlmBmyIM
 properties:
 - name: ConvectorType
   definition: Indicates the type of convector, whether forced air (mechanically driven) or natural (gravity).
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_PjM0qWeHuO00025QrE$V
     ifdGuid: 1_PjM0qWeHuO00025QrE$V
     legacyGuid: 7e66d580d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 1_PjM0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1_PjM0qWeHuO00025QrE$V
   localizations:
   - language: en

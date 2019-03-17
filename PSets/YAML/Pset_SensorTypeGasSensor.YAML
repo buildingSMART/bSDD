@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13hcw0qWKHuO00025QrE$V
   ifdGuid: 13hcw0qWKHuO00025QrE$V
   legacyGuid: 43ae6e80d20511e1800000215ad4efdf
+  legacyGuids:
+  - 13hcw0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 13hcw0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/GASSENSOR
   type: IfcSensor/GASSENSOR
+propertyUsages:
+- propertyName: GasDetected
+  usageDefinition: Identification of the gas that is being detected, according to chemical formula.  For example, carbon monoxide is 'CO', carbon dioxide is 'CO2', oxygen is 'O2'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0S4pKNGbP9$xrWPtevdw_y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0S4pKNGbP9$xrWPtevdw_y
+    ifdGuid: 0S4pKNGbP9$xrWPtevdw_y
+- propertyName: SetPointConcentration
+  usageDefinition: The gas concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3kLyFn6K5C9enw6r4bIbVv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3kLyFn6K5C9enw6r4bIbVv
+    ifdGuid: 3kLyFn6K5C9enw6r4bIbVv
+- propertyName: CoverageArea
+  usageDefinition: The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ClFJAuXjBVfCx_3GtMVgd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ClFJAuXjBVfCx_3GtMVgd
+    ifdGuid: 2ClFJAuXjBVfCx_3GtMVgd
 properties:
 - name: GasDetected
   definition: Identification of the gas that is being detected, according to chemical formula.  For example, carbon monoxide is 'CO', carbon dioxide is 'CO2', oxygen is 'O2'.
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/192xa0qWKHuO00025QrE$V
     ifdGuid: 192xa0qWKHuO00025QrE$V
     legacyGuid: 490bb900d20511e1800000215ad4efdf
+    legacyGuids:
+    - 192xa0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 192xa0qWKHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1HO$G0qWKHuO00025QrE$V
     ifdGuid: 1HO$G0qWKHuO00025QrE$V
     legacyGuid: 5163f400d20511e1800000215ad4efdf
+    legacyGuids:
+    - 1HO$G0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1HO$G0qWKHuO00025QrE$V
   localizations:
   - language: en
@@ -134,6 +165,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gRAK0qWKHuO00025QrE$V
     ifdGuid: 1gRAK0qWKHuO00025QrE$V
     legacyGuid: 6a6ca500d20511e1800000215ad4efdf
+    legacyGuids:
+    - 1gRAK0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1gRAK0qWKHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tQQG0qSKHuO00025QrE$V
   ifdGuid: 1tQQG0qSKHuO00025QrE$V
   legacyGuid: 7769a400d1c511e1800000215ad4efdf
+  legacyGuids:
+  - 1tQQG0qSKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1tQQG0qSKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcBuildingStorey
   type: IfcBuildingStorey
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IJfaT$F92kPczz4WxiWoP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IJfaT$F92kPczz4WxiWoP
+    ifdGuid: 1IJfaT$F92kPczz4WxiWoP
+- propertyName: EntranceLevel
+  usageDefinition: Indication whether this building storey is an entrance level to the building (TRUE), or (FALSE) if otherwise.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AvuBeH2f1zhIFAwECYJ1_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AvuBeH2f1zhIFAwECYJ1_
+    ifdGuid: 3AvuBeH2f1zhIFAwECYJ1_
+- propertyName: AboveGround
+  usageDefinition: Indication whether this building storey is fully above ground (TRUE), or below ground (FALSE), or partially above and below ground (UNKNOWN) - as in sloped terrain.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bysY9EJD4Cg3CTMIUcWEy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bysY9EJD4Cg3CTMIUcWEy
+    ifdGuid: 2bysY9EJD4Cg3CTMIUcWEy
+- propertyName: SprinklerProtection
+  usageDefinition: Indication whether this object is sprinkler protected (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3zqv4Wbm1Ev8fKBgHTdyPW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zqv4Wbm1Ev8fKBgHTdyPW
+    ifdGuid: 3zqv4Wbm1Ev8fKBgHTdyPW
+- propertyName: SprinklerProtectionAutomatic
+  usageDefinition: Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).It should only be given, if the property "SprinklerProtection" is set to TRUE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3KAH8beoLAie_GapOBWM9Q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KAH8beoLAie_GapOBWM9Q
+    ifdGuid: 3KAH8beoLAie_GapOBWM9Q
+- propertyName: LoadBearingCapacity
+  usageDefinition: Maximum load bearing capacity of the floor structure throughtout the storey as designed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Lkbs_oMT1a8r9jjiguyCF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Lkbs_oMT1a8r9jjiguyCF
+    ifdGuid: 0Lkbs_oMT1a8r9jjiguyCF
+- propertyName: GrossPlannedArea
+  usageDefinition: Total planned area for the building storey. Used for programming the building storey.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3u_lzegQn3FBN9uBa0Vyl$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3u_lzegQn3FBN9uBa0Vyl$
+    ifdGuid: 3u_lzegQn3FBN9uBa0Vyl$
+- propertyName: NetPlannedArea
+  usageDefinition: Total planned net area for the building storey. Used for programming the building storey.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0VhEaJ3Xr1m987tTIeNnwN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0VhEaJ3Xr1m987tTIeNnwN
+    ifdGuid: 0VhEaJ3Xr1m987tTIeNnwN
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zNuK0qSKHuO00025QrE$V
     ifdGuid: 1zNuK0qSKHuO00025QrE$V
     legacyGuid: 7d5f8500d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1zNuK0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1zNuK0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +159,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22lC_0qSKHuO00025QrE$V
     ifdGuid: 22lC_0qSKHuO00025QrE$V
     legacyGuid: 82bccf80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 22lC_0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 22lC_0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -139,6 +210,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29uzs0qSKHuO00025QrE$V
     ifdGuid: 29uzs0qSKHuO00025QrE$V
     legacyGuid: 89e3dd80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 29uzs0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 29uzs0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -188,6 +261,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2GSbK0qSKHuO00025QrE$V
     ifdGuid: 2GSbK0qSKHuO00025QrE$V
     legacyGuid: 90725500d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 2GSbK0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2GSbK0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -237,6 +312,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Lpv_0qSKHuO00025QrE$V
     ifdGuid: 2Lpv_0qSKHuO00025QrE$V
     legacyGuid: 95cf9f80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 2Lpv_0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Lpv_0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -286,6 +363,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RBEe0qSKHuO00025QrE$V
     ifdGuid: 2RBEe0qSKHuO00025QrE$V
     legacyGuid: 9b2cea00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 2RBEe0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2RBEe0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -332,6 +411,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WYZI0qSKHuO00025QrE$V
     ifdGuid: 2WYZI0qSKHuO00025QrE$V
     legacyGuid: a08a3480d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 2WYZI0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2WYZI0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -381,6 +462,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bvty0qSKHuO00025QrE$V
     ifdGuid: 2bvty0qSKHuO00025QrE$V
     legacyGuid: a5e77f00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 2bvty0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2bvty0qSKHuO00025QrE$V
   localizations:
   - language: de-DE

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EWsy0qUqHuO00025QrE$V
   ifdGuid: 3EWsy0qUqHuO00025QrE$V
   legacyGuid: ce836f00d1ed11e1800000215ad4efdf
+  legacyGuids:
+  - 3EWsy0qUqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3EWsy0qUqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcMaterial/Steel
   type: IfcMaterial/Steel
+propertyUsages:
+- propertyName: YieldStress
+  usageDefinition: A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Tr9wYYzH2T9KUmRYCgz$i
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Tr9wYYzH2T9KUmRYCgz$i
+    ifdGuid: 0Tr9wYYzH2T9KUmRYCgz$i
+- propertyName: UltimateStress
+  usageDefinition: A measure of the ultimate stress of the material.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0NFcf7zgz209TjcrkzMfjA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NFcf7zgz209TjcrkzMfjA
+    ifdGuid: 0NFcf7zgz209TjcrkzMfjA
+- propertyName: UltimateStrain
+  usageDefinition: A measure of the (engineering) strain at the state of ultimate stress of the material.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/36jMo1jz57IRzZLw1KgvWd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36jMo1jz57IRzZLw1KgvWd
+    ifdGuid: 36jMo1jz57IRzZLw1KgvWd
+- propertyName: HardeningModule
+  usageDefinition: A measure of the hardening module of the material (slope of stress versus strain curve after yield range).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OqWCEIcf8ue2hny5aU_Ch
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OqWCEIcf8ue2hny5aU_Ch
+    ifdGuid: 1OqWCEIcf8ue2hny5aU_Ch
+- propertyName: ProportionalStress
+  usageDefinition: A measure of the proportional stress of the material. It describes the stress before the first plastic deformation occurs and is commonly measured at a deformation of 0.01%.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1iALZ4O1HCGhjeXDCfMq8b
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1iALZ4O1HCGhjeXDCfMq8b
+    ifdGuid: 1iALZ4O1HCGhjeXDCfMq8b
+- propertyName: PlasticStrain
+  usageDefinition: A measure of the permanent displacement, as in slip or twinning, which remains after the stress has been removed. Currently applied to a strain of 0.2% proportional stress of the material.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0rxFc3QJbEefVJlm0KR2cW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0rxFc3QJbEefVJlm0KR2cW
+    ifdGuid: 0rxFc3QJbEefVJlm0KR2cW
+- propertyName: Relaxations
+  usageDefinition: Measures of decrease in stress over long time intervals resulting from plastic flow. Different relaxation values for different initial stress levels for a material may be given. It describes the time dependent relative relaxation value for a given initial stress level at constant strain.Relating values are the "RelaxationValue". Related values are the "InitialStress"
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3GWLNGH512x8w2T2i2Eczo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3GWLNGH512x8w2T2i2Eczo
+    ifdGuid: 3GWLNGH512x8w2T2i2Eczo
 properties:
 - name: YieldStress
   definition: A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JuBc0qUqHuO00025QrE$V
     ifdGuid: 3JuBc0qUqHuO00025QrE$V
     legacyGuid: d3e0b980d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3JuBc0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3JuBc0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Prfg0qUqHuO00025QrE$V
     ifdGuid: 3Prfg0qUqHuO00025QrE$V
     legacyGuid: d9d69a80d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3Prfg0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Prfg0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +196,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VC_K0qUqHuO00025QrE$V
     ifdGuid: 3VC_K0qUqHuO00025QrE$V
     legacyGuid: df33e500d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3VC_K0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3VC_K0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +244,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aaI_0qUqHuO00025QrE$V
     ifdGuid: 3aaI_0qUqHuO00025QrE$V
     legacyGuid: e4912f80d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3aaI_0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3aaI_0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +292,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fxde0qUqHuO00025QrE$V
     ifdGuid: 3fxde0qUqHuO00025QrE$V
     legacyGuid: e9ee7a00d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3fxde0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3fxde0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +340,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lv5i0qUqHuO00025QrE$V
     ifdGuid: 3lv5i0qUqHuO00025QrE$V
     legacyGuid: efe45b00d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3lv5i0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3lv5i0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -317,6 +388,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rGQM0qUqHuO00025QrE$V
     ifdGuid: 3rGQM0qUqHuO00025QrE$V
     legacyGuid: f541a580d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 3rGQM0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3rGQM0qUqHuO00025QrE$V
   localizations:
   - language: en

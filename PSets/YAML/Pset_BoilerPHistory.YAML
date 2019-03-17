@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_VF_0qSGHuO00025QrE$V
   ifdGuid: 0_VF_0qSGHuO00025QrE$V
   legacyGuid: 3e7cff80d1c411e1800000215ad4efdf
+  legacyGuids:
+  - 0_VF_0qSGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0_VF_0qSGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,79 @@ localizations:
 applicableIfcClasses:
 - name: IfcBoiler
   type: IfcBoiler
+propertyUsages:
+- propertyName: EnergySourceConsumption
+  usageDefinition: Energy consumption.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/23fcZmujjAWvTcuvM6Bhu2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23fcZmujjAWvTcuvM6Bhu2
+    ifdGuid: 23fcZmujjAWvTcuvM6Bhu2
+- propertyName: OperationalEfficiency
+  usageDefinition: 'Operational efficiency: boiler output divided by total energy input (electrical and fuel).'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3tNNowHZfC_uPnPGV70JhF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tNNowHZfC_uPnPGV70JhF
+    ifdGuid: 3tNNowHZfC_uPnPGV70JhF
+- propertyName: CombustionEfficiency
+  usageDefinition: Combustion efficiency under nominal condition.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/05nzGNUhj3jhLL9DfHJJZo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05nzGNUhj3jhLL9DfHJJZo
+    ifdGuid: 05nzGNUhj3jhLL9DfHJJZo
+- propertyName: WorkingPressure
+  usageDefinition: Boiler working pressure.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3o7EiE4x99XgMuuBI$9tnS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3o7EiE4x99XgMuuBI$9tnS
+    ifdGuid: 3o7EiE4x99XgMuuBI$9tnS
+- propertyName: CombustionTemperature
+  usageDefinition: Average combustion chamber temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1jqvAiEiTCHRnz8MtR9kSB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jqvAiEiTCHRnz8MtR9kSB
+    ifdGuid: 1jqvAiEiTCHRnz8MtR9kSB
+- propertyName: PartLoadRatio
+  usageDefinition: Ratio of the real to the nominal capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/23O2jnECH3GQzr$CpisUd6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23O2jnECH3GQzr$CpisUd6
+    ifdGuid: 23O2jnECH3GQzr$CpisUd6
+- propertyName: Load
+  usageDefinition: Boiler real load.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3wcN9bcFP3ovVobhd8VYlD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wcN9bcFP3ovVobhd8VYlD
+    ifdGuid: 3wcN9bcFP3ovVobhd8VYlD
+- propertyName: PrimaryEnergyConsumption
+  usageDefinition: Boiler primary energy source consumption (i.e., the fuel consumed for changing the thermodynamic state of the fluid).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0I$S$xk0TCoPzTpySdmQAZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0I$S$xk0TCoPzTpySdmQAZ
+    ifdGuid: 0I$S$xk0TCoPzTpySdmQAZ
+- propertyName: AuxiliaryEnergyConsumption
+  usageDefinition: Boiler secondary energy source consumption (i.e., the electricity consumed by electrical devices such as fans and pumps).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Et8CjKPrBYQ0YOTQ6fBqV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Et8CjKPrBYQ0YOTQ6fBqV
+    ifdGuid: 1Et8CjKPrBYQ0YOTQ6fBqV
 properties:
 - name: EnergySourceConsumption
   definition: Energy consumption.
@@ -41,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13sae0qSGHuO00025QrE$V
     ifdGuid: 13sae0qSGHuO00025QrE$V
     legacyGuid: 43da4a00d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 13sae0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 13sae0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +166,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17RT40qSGHuO00025QrE$V
     ifdGuid: 17RT40qSGHuO00025QrE$V
     legacyGuid: 476dd100d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 17RT40qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 17RT40qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +216,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AQC60qSGHuO00025QrE$V
     ifdGuid: 1AQC60qSGHuO00025QrE$V
     legacyGuid: 4a68c180d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1AQC60qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1AQC60qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +266,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1D$4Y0qSGHuO00025QrE$V
     ifdGuid: 1D$4Y0qSGHuO00025QrE$V
     legacyGuid: 4dfc4880d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1D$4Y0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1D$4Y0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +316,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Gzpa0qSGHuO00025QrE$V
     ifdGuid: 1Gzpa0qSGHuO00025QrE$V
     legacyGuid: 50f73900d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1Gzpa0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Gzpa0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -281,6 +366,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1JyYc0qSGHuO00025QrE$V
     ifdGuid: 1JyYc0qSGHuO00025QrE$V
     legacyGuid: 53f22980d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1JyYc0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1JyYc0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -329,6 +416,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ML8E0qSGHuO00025QrE$V
     ifdGuid: 1ML8E0qSGHuO00025QrE$V
     legacyGuid: 56548380d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1ML8E0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ML8E0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -377,6 +466,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PJtG0qSGHuO00025QrE$V
     ifdGuid: 1PJtG0qSGHuO00025QrE$V
     legacyGuid: 594f7400d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1PJtG0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1PJtG0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +516,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RiSu0qSGHuO00025QrE$V
     ifdGuid: 1RiSu0qSGHuO00025QrE$V
     legacyGuid: 5bb1ce00d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 1RiSu0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1RiSu0qSGHuO00025QrE$V
   localizations:
   - language: en

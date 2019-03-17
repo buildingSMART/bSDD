@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AP4i0qWSHuO00025QrE$V
   ifdGuid: 3AP4i0qWSHuO00025QrE$V
   legacyGuid: ca644b00d20711e1800000215ad4efdf
+  legacyGuids:
+  - 3AP4i0qWSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3AP4i0qWSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,55 @@ localizations:
 applicableIfcClasses:
 - name: IfcSite
   type: IfcSite
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LzdBHbj16nhwGUosy06J0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LzdBHbj16nhwGUosy06J0
+    ifdGuid: 3LzdBHbj16nhwGUosy06J0
+- propertyName: BuildableArea
+  usageDefinition: The area of site utilization expressed as a maximum value according to local building codes.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2PTGBEJyLA9P1IV8ZFCFhO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2PTGBEJyLA9P1IV8ZFCFhO
+    ifdGuid: 2PTGBEJyLA9P1IV8ZFCFhO
+- propertyName: SiteCoverageRatio
+  usageDefinition: The ratio of the utilization,  TotalArea / BuildableArea, expressed as a maximum value. The ratio value may be used to derive BuildableArea.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1SfVy_YjnAUPvN0$_JFBG_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1SfVy_YjnAUPvN0$_JFBG_
+    ifdGuid: 1SfVy_YjnAUPvN0$_JFBG_
+- propertyName: FloorAreaRatio
+  usageDefinition: The ratio of all floor areas to the buildable area as the maximum floor area utilization of the site as a maximum value according to local building codes.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Frl2904jByRSA7aC$6O3D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Frl2904jByRSA7aC$6O3D
+    ifdGuid: 2Frl2904jByRSA7aC$6O3D
+- propertyName: BuildingHeightLimit
+  usageDefinition: Allowed maximum height of buildings on this site - according to local building codes.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2lUH$gLGj2APGpzHRszuYu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2lUH$gLGj2APGpzHRszuYu
+    ifdGuid: 2lUH$gLGj2APGpzHRszuYu
+- propertyName: TotalArea
+  usageDefinition: Total planned area for the site. Used for programming the site space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YAypv7Rr9QBcOx5KmXDRd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YAypv7Rr9QBcOx5KmXDRd
+    ifdGuid: 0YAypv7Rr9QBcOx5KmXDRd
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
@@ -41,6 +92,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DNpk0qWSHuO00025QrE$V
     ifdGuid: 3DNpk0qWSHuO00025QrE$V
     legacyGuid: cd5f3b80d20711e1800000215ad4efdf
+    legacyGuids:
+    - 3DNpk0qWSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3DNpk0qWSHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +143,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JLHo0qWSHuO00025QrE$V
     ifdGuid: 3JLHo0qWSHuO00025QrE$V
     legacyGuid: d3551c80d20711e1800000215ad4efdf
+    legacyGuids:
+    - 3JLHo0qWSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3JLHo0qWSHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -139,6 +194,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3O6T20qWSHuO00025QrE$V
     ifdGuid: 3O6T20qWSHuO00025QrE$V
     legacyGuid: d819d080d20711e1800000215ad4efdf
+    legacyGuids:
+    - 3O6T20qWSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3O6T20qWSHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -188,6 +245,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TTni0qWSHuO00025QrE$V
     ifdGuid: 3TTni0qWSHuO00025QrE$V
     legacyGuid: dd771b00d20711e1800000215ad4efdf
+    legacyGuids:
+    - 3TTni0qWSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3TTni0qWSHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -234,6 +293,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Yr6M0qWSHuO00025QrE$V
     ifdGuid: 3Yr6M0qWSHuO00025QrE$V
     legacyGuid: e2d46580d20711e1800000215ad4efdf
+    legacyGuids:
+    - 3Yr6M0qWSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Yr6M0qWSHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -283,6 +344,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gb0e0qWSHuO00025QrE$V
     ifdGuid: 3gb0e0qWSHuO00025QrE$V
     legacyGuid: ea940a00d20711e1800000215ad4efdf
+    legacyGuids:
+    - 3gb0e0qWSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3gb0e0qWSHuO00025QrE$V
   localizations:
   - language: de-DE

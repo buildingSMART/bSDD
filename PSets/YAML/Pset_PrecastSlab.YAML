@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0g1Ii0qVKHuO00025QrE$V
   ifdGuid: 0g1Ii0qVKHuO00025QrE$V
   legacyGuid: 2a052b00d1f511e1800000215ad4efdf
+  legacyGuids:
+  - 0g1Ii0qVKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0g1Ii0qVKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcSlab
   type: IfcSlab
+propertyUsages:
+- propertyName: TypeDesignator
+  usageDefinition: Type designator for the precast concrete slab, expressing mainly the component type. Possible values are “Hollow-core”, “Double-tee”, “Flat plank”, etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/37rJ16iiP6k8xq1i5vjNfB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/37rJ16iiP6k8xq1i5vjNfB
+    ifdGuid: 37rJ16iiP6k8xq1i5vjNfB
+- propertyName: ToppingType
+  usageDefinition: Defines if a topping is applied and what kind. Values are “Full topping”, “Perimeter Wash”, “None”
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kOn7ljnP0jfwuOpDJmxp8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kOn7ljnP0jfwuOpDJmxp8
+    ifdGuid: 0kOn7ljnP0jfwuOpDJmxp8
+- propertyName: EdgeDistanceToFirstAxis
+  usageDefinition: The distance from the left (‘West’) edge of the slab (in the direction of span of the components) to the axis of the first component.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/30Yumckez5JvXd8bRP$8W7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30Yumckez5JvXd8bRP$8W7
+    ifdGuid: 30Yumckez5JvXd8bRP$8W7
+- propertyName: DistanceBetweenComponentAxes
+  usageDefinition: The distance between the axes of the components, measured along the ‘South’ edge of the slab.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0xz$bH0RrA79_IuqcDAjGz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0xz$bH0RrA79_IuqcDAjGz
+    ifdGuid: 0xz$bH0RrA79_IuqcDAjGz
+- propertyName: AngleToFirstAxis
+  usageDefinition: The angle of rotation of the axis of the first component relative to the ‘West’ edge of the slab.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2C_PxnLgf4ZgZNtTsWL2Ub
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2C_PxnLgf4ZgZNtTsWL2Ub
+    ifdGuid: 2C_PxnLgf4ZgZNtTsWL2Ub
+- propertyName: AngleBetweenComponentAxes
+  usageDefinition: The angle between the axes of each pair of components.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2LD2nvAAT2ZRD9ZOPlLmLe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LD2nvAAT2ZRD9ZOPlLmLe
+    ifdGuid: 2LD2nvAAT2ZRD9ZOPlLmLe
+- propertyName: NominalThickness
+  usageDefinition: The nominal overall thickness of the slab.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EYtEpo2D3_BN9UvbWPUXU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EYtEpo2D3_BN9UvbWPUXU
+    ifdGuid: 2EYtEpo2D3_BN9UvbWPUXU
+- propertyName: NominalToppingThickness
+  usageDefinition: The nominal thickness of the topping.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1MFGKdPgH9ZvaFNwIZj3J2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MFGKdPgH9ZvaFNwIZj3J2
+    ifdGuid: 1MFGKdPgH9ZvaFNwIZj3J2
 properties:
 - name: TypeDesignator
   definition: Type designator for the precast concrete slab, expressing mainly the component type. Possible values are “Hollow-core”, “Double-tee”, “Flat plank”, etc.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0l_mm0qVKHuO00025QrE$V
     ifdGuid: 0l_mm0qVKHuO00025QrE$V
     legacyGuid: 2ffb0c00d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 0l_mm0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0l_mm0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sYOE0qVKHuO00025QrE$V
     ifdGuid: 0sYOE0qVKHuO00025QrE$V
     legacyGuid: 36898380d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 0sYOE0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0sYOE0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +204,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yVsI0qVKHuO00025QrE$V
     ifdGuid: 0yVsI0qVKHuO00025QrE$V
     legacyGuid: 3c7f6480d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 0yVsI0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0yVsI0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +252,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/133Tm0qVKHuO00025QrE$V
     ifdGuid: 133Tm0qVKHuO00025QrE$V
     legacyGuid: 430ddc00d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 133Tm0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 133Tm0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ADEe0qVKHuO00025QrE$V
     ifdGuid: 1ADEe0qVKHuO00025QrE$V
     legacyGuid: 4a34ea00d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 1ADEe0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ADEe0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +348,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1E_Pu0qVKHuO00025QrE$V
     ifdGuid: 1E_Pu0qVKHuO00025QrE$V
     legacyGuid: 4ef99e00d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 1E_Pu0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1E_Pu0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -317,6 +396,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KLkY0qVKHuO00025QrE$V
     ifdGuid: 1KLkY0qVKHuO00025QrE$V
     legacyGuid: 5456e880d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 1KLkY0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1KLkY0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -363,6 +444,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RVVQ0qVKHuO00025QrE$V
     ifdGuid: 1RVVQ0qVKHuO00025QrE$V
     legacyGuid: 5b7df680d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 1RVVQ0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1RVVQ0qVKHuO00025QrE$V
   localizations:
   - language: en

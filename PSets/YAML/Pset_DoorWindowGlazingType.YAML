@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cdiA0qTmHuO00025QrE$V
   ifdGuid: 3cdiA0qTmHuO00025QrE$V
   legacyGuid: e69ec280d1dc11e1800000215ad4efdf
+  legacyGuids:
+  - 3cdiA0qTmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3cdiA0qTmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,159 @@ applicableIfcClasses:
   type: IfcDoor, IfcWindow
 - name: ' IfcWindow'
   type: IfcDoor, IfcWindow
+propertyUsages:
+- propertyName: GlassLayers
+  usageDefinition: Number of glass layers within the frame. E.g. "2" for double glazing.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/28OcQf3ZH0tvlH_d2EGDGH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28OcQf3ZH0tvlH_d2EGDGH
+    ifdGuid: 28OcQf3ZH0tvlH_d2EGDGH
+- propertyName: GlassThickness1
+  usageDefinition: Thickness of the first (inner) glass layer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1M_H2h_KfCmeR3NJtvczgz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1M_H2h_KfCmeR3NJtvczgz
+    ifdGuid: 1M_H2h_KfCmeR3NJtvczgz
+- propertyName: GlassThickness2
+  usageDefinition: Thickness of the second (intermediate or outer) glass layer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WatCLl1n3xhbDmHyf_3qT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WatCLl1n3xhbDmHyf_3qT
+    ifdGuid: 0WatCLl1n3xhbDmHyf_3qT
+- propertyName: GlassThickness3
+  usageDefinition: Thickness of the third (outer) glass layer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ZscIJBUb3N8optCjDsc57
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ZscIJBUb3N8optCjDsc57
+    ifdGuid: 2ZscIJBUb3N8optCjDsc57
+- propertyName: FillGas
+  usageDefinition: Name of the gas by which the gap between two glass layers is filled. It is given for information purposes only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1pNhD6mqn7LfE730WPQ1b_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pNhD6mqn7LfE730WPQ1b_
+    ifdGuid: 1pNhD6mqn7LfE730WPQ1b_
+- propertyName: GlassColor
+  usageDefinition: Color (tint) selection for this glazing. It is given for information purposes only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3j8vwzu0b3xf1VvXSTpOwq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3j8vwzu0b3xf1VvXSTpOwq
+    ifdGuid: 3j8vwzu0b3xf1VvXSTpOwq
+- propertyName: IsTempered
+  usageDefinition: Indication whether the glass is tempered (TRUE) or not (FALSE) .
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0h92EghyfFzvZOATosOC3z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h92EghyfFzvZOATosOC3z
+    ifdGuid: 0h92EghyfFzvZOATosOC3z
+- propertyName: IsLaminated
+  usageDefinition: Indication whether the glass is layered with other materials (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$KoEdd$DFA9jgb5vX76Pl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$KoEdd$DFA9jgb5vX76Pl
+    ifdGuid: 2$KoEdd$DFA9jgb5vX76Pl
+- propertyName: IsCoated
+  usageDefinition: Indication whether the glass is coated with a material (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/34wyHne194rfJ1fP_vVqbn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34wyHne194rfJ1fP_vVqbn
+    ifdGuid: 34wyHne194rfJ1fP_vVqbn
+- propertyName: IsWired
+  usageDefinition: Indication whether the glass includes a contained wire mesh to prevent break-in (TRUE) or not (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10BC9ZUGj9feBjw77wp1dC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10BC9ZUGj9feBjw77wp1dC
+    ifdGuid: 10BC9ZUGj9feBjw77wp1dC
+- propertyName: VisibleLightReflectance
+  usageDefinition: Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2En4n1Um94KwG4T89NFEbI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2En4n1Um94KwG4T89NFEbI
+    ifdGuid: 2En4n1Um94KwG4T89NFEbI
+- propertyName: VisibleLightTransmittance
+  usageDefinition: Fraction of the visible light that passes the glazing at normal incidence. It is a value without unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0iZVTnFgv3dfiNv8qBQdJ1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0iZVTnFgv3dfiNv8qBQdJ1
+    ifdGuid: 0iZVTnFgv3dfiNv8qBQdJ1
+- propertyName: SolarAbsorption
+  usageDefinition: (Asol) The ratio of incident solar radiation that is absorbed by a glazing system. It is the sum of the absorption distributed to the exterior (a) and to the interior (qi). Note the following equation Asol + Rsol + Tsol = 1
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ZqT42SqX2KuGDPlgqA4dK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ZqT42SqX2KuGDPlgqA4dK
+    ifdGuid: 0ZqT42SqX2KuGDPlgqA4dK
+- propertyName: SolarReflectance
+  usageDefinition: '(Rsol): The ratio of incident solar radiation that is reflected by a glazing system (also named ρe). Note the following equation Asol + Rsol + Tsol = 1'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1BMpeLHInEDgLL1SN2$04q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BMpeLHInEDgLL1SN2$04q
+    ifdGuid: 1BMpeLHInEDgLL1SN2$04q
+- propertyName: SolarTransmittance
+  usageDefinition: '(Tsol): The ratio of incident solar radiation that directly passes through a glazing system (also named τe). Note the following equation Asol + Rsol + Tsol = 1'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Usy3DBDbEhf2Clw$ldpuo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Usy3DBDbEhf2Clw$ldpuo
+    ifdGuid: 3Usy3DBDbEhf2Clw$ldpuo
+- propertyName: SolarHeatGainTransmittance
+  usageDefinition: '(SHGC): The ratio of incident solar radiation that contributes to the heat gain of the interior, it is the solar radiation that directly passes (Tsol or τe) plus the part of the absorbed radiation that is distributed to the interior (qi). The SHGC is refered to also as g-value (g = τe + qi).'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2diScHHbH2QuV3Vg5MQal1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2diScHHbH2QuV3Vg5MQal1
+    ifdGuid: 2diScHHbH2QuV3Vg5MQal1
+- propertyName: ShadingCoefficient
+  usageDefinition: '(SC): The measure of the ability of a glazing to transmit solar heat, relative to that ability for 3 mm (1/8-inch) clear, double-strength, single glass. Shading coefficient is being phased out in favor of the solar heat gain coefficient (SHGC), and is approximately equal to the SHGC multiplied by 1.15. The shading coefficient is expressed as a number without units between 0 and 1.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1klMZmCjPDTPk$DU$AZQUn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1klMZmCjPDTPk$DU$AZQUn
+    ifdGuid: 1klMZmCjPDTPk$DU$AZQUn
+- propertyName: ThermalTransmittanceSummer
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material.Summer thermal transmittance coefficient of the glazing only, often referred to as (U-value).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gCQ7pJrL9D81eY5MzaV6t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gCQ7pJrL9D81eY5MzaV6t
+    ifdGuid: 3gCQ7pJrL9D81eY5MzaV6t
+- propertyName: ThermalTransmittanceWinter
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material.Winter thermal transmittance coefficient of the glazing only, often referred to as (U-value).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35sxUZu9r3Iv6pCurAaW$k
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35sxUZu9r3Iv6pCurAaW$k
+    ifdGuid: 35sxUZu9r3Iv6pCurAaW$k
 properties:
 - name: GlassLayers
   definition: Number of glass layers within the frame. E.g. "2" for double glazing.
@@ -43,6 +198,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DzO_0qTqHuO00025QrE$V
     ifdGuid: 0DzO_0qTqHuO00025QrE$V
     legacyGuid: 0df58f80d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 0DzO_0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0DzO_0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -92,6 +249,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QUUW0qTqHuO00025QrE$V
     ifdGuid: 0QUUW0qTqHuO00025QrE$V
     legacyGuid: 1a79e800d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 0QUUW0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0QUUW0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -141,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dbjS0qTqHuO00025QrE$V
     ifdGuid: 0dbjS0qTqHuO00025QrE$V
     legacyGuid: 2796d700d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 0dbjS0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0dbjS0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -190,6 +351,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0oKMm0qTqHuO00025QrE$V
     ifdGuid: 0oKMm0qTqHuO00025QrE$V
     legacyGuid: 32516c00d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 0oKMm0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0oKMm0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -239,6 +402,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zf9U0qTqHuO00025QrE$V
     ifdGuid: 0zf9U0qTqHuO00025QrE$V
     legacyGuid: 3da49780d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 0zf9U0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0zf9U0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -288,6 +453,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18zyC0qTqHuO00025QrE$V
     ifdGuid: 18zyC0qTqHuO00025QrE$V
     legacyGuid: 48f7c300d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 18zyC0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 18zyC0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -337,6 +504,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Hw9I0qTqHuO00025QrE$V
     ifdGuid: 1Hw9I0qTqHuO00025QrE$V
     legacyGuid: 51e89480d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 1Hw9I0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Hw9I0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -386,6 +555,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Tr5Q0qTqHuO00025QrE$V
     ifdGuid: 1Tr5Q0qTqHuO00025QrE$V
     legacyGuid: 5dd45680d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 1Tr5Q0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Tr5Q0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -435,6 +606,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1f9u80qTqHuO00025QrE$V
     ifdGuid: 1f9u80qTqHuO00025QrE$V
     legacyGuid: 69278200d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 1f9u80qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1f9u80qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -484,6 +657,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1o65E0qTqHuO00025QrE$V
     ifdGuid: 1o65E0qTqHuO00025QrE$V
     legacyGuid: 72185380d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 1o65E0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1o65E0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -533,6 +708,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wS8w0qTqHuO00025QrE$V
     ifdGuid: 1wS8w0qTqHuO00025QrE$V
     legacyGuid: 7a708e80d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 1wS8w0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1wS8w0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -582,6 +759,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20Pc_0qTqHuO00025QrE$V
     ifdGuid: 20Pc_0qTqHuO00025QrE$V
     legacyGuid: 80666f80d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 20Pc_0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 20Pc_0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -631,6 +810,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24aeq0qTqHuO00025QrE$V
     ifdGuid: 24aeq0qTqHuO00025QrE$V
     legacyGuid: 84928d00d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 24aeq0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24aeq0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -680,6 +861,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28lgg0qTqHuO00025QrE$V
     ifdGuid: 28lgg0qTqHuO00025QrE$V
     legacyGuid: 88beaa80d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 28lgg0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 28lgg0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -729,6 +912,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CwiW0qTqHuO00025QrE$V
     ifdGuid: 2CwiW0qTqHuO00025QrE$V
     legacyGuid: 8ceac800d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 2CwiW0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2CwiW0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -778,6 +963,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Hhtm0qTqHuO00025QrE$V
     ifdGuid: 2Hhtm0qTqHuO00025QrE$V
     legacyGuid: 91af7c00d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 2Hhtm0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Hhtm0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -827,6 +1014,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Lsvc0qTqHuO00025QrE$V
     ifdGuid: 2Lsvc0qTqHuO00025QrE$V
     legacyGuid: 95db9980d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 2Lsvc0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Lsvc0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -876,6 +1065,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Q1xS0qTqHuO00025QrE$V
     ifdGuid: 2Q1xS0qTqHuO00025QrE$V
     legacyGuid: 9a07b700d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 2Q1xS0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Q1xS0qTqHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -925,6 +1116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UCzI0qTqHuO00025QrE$V
     ifdGuid: 2UCzI0qTqHuO00025QrE$V
     legacyGuid: 9e33d480d1dd11e1800000215ad4efdf
+    legacyGuids:
+    - 2UCzI0qTqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2UCzI0qTqHuO00025QrE$V
   localizations:
   - language: de-DE

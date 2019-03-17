@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/32MTg0qWeHuO00025QrE$V
   ifdGuid: 32MTg0qWeHuO00025QrE$V
   legacyGuid: c259da80d20a11e1800000215ad4efdf
+  legacyGuids:
+  - 32MTg0qWeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 32MTg0qWeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,63 @@ applicableIfcClasses:
   type: IfcSpace, IfcSpatialZone, IfcZone
 - name: ' IfcZone'
   type: IfcSpace, IfcSpatialZone, IfcZone
+propertyUsages:
+- propertyName: OccupancyType
+  usageDefinition: Occupancy type for this object. It is defined according to the presiding national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0SSvG5hMnD2OkVEU$lVA2H
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0SSvG5hMnD2OkVEU$lVA2H
+    ifdGuid: 0SSvG5hMnD2OkVEU$lVA2H
+- propertyName: OccupancyNumber
+  usageDefinition: Number of people required for the activity assigned to this space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/20SgIedCjAigCwFz7b4g_Q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20SgIedCjAigCwFz7b4g_Q
+    ifdGuid: 20SgIedCjAigCwFz7b4g_Q
+- propertyName: OccupancyNumberPeak
+  usageDefinition: Maximal number of people required for the activity assigned to this space in peak time.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1V60vLtFP42uSPMPcALQRp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1V60vLtFP42uSPMPcALQRp
+    ifdGuid: 1V60vLtFP42uSPMPcALQRp
+- propertyName: OccupancyTimePerDay
+  usageDefinition: The amount of time during the day that the activity is required within this space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3INdjeMTPAABqsYPiTnVe2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3INdjeMTPAABqsYPiTnVe2
+    ifdGuid: 3INdjeMTPAABqsYPiTnVe2
+- propertyName: AreaPerOccupant
+  usageDefinition: Design occupancy loading for this type of usage assigned to this space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35CjOOnhb5C8u4WY6TEov6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35CjOOnhb5C8u4WY6TEov6
+    ifdGuid: 35CjOOnhb5C8u4WY6TEov6
+- propertyName: MinimumHeadroom
+  usageDefinition: Headroom required for the activity assigned to this space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2kBekWY9nDgQzWHQnQinvO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2kBekWY9nDgQzWHQnQinvO
+    ifdGuid: 2kBekWY9nDgQzWHQnQinvO
+- propertyName: IsOutlookDesirable
+  usageDefinition: An indication of whether the outlook is desirable (set TRUE) or not (set FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/27dNhygWn7jhxb5CgnD5eJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/27dNhygWn7jhxb5CgnD5eJ
+    ifdGuid: 27dNhygWn7jhxb5CgnD5eJ
 properties:
 - name: OccupancyType
   definition: Occupancy type for this object. It is defined according to the presiding national building code.
@@ -45,6 +104,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/38Jxk0qWeHuO00025QrE$V
     ifdGuid: 38Jxk0qWeHuO00025QrE$V
     legacyGuid: c84fbb80d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 38Jxk0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 38Jxk0qWeHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -91,6 +152,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FTic0qWeHuO00025QrE$V
     ifdGuid: 3FTic0qWeHuO00025QrE$V
     legacyGuid: cf76c980d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3FTic0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3FTic0qWeHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -137,6 +200,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Kr1G0qWeHuO00025QrE$V
     ifdGuid: 3Kr1G0qWeHuO00025QrE$V
     legacyGuid: d4d41400d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3Kr1G0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Kr1G0qWeHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -183,6 +248,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3QoVK0qWeHuO00025QrE$V
     ifdGuid: 3QoVK0qWeHuO00025QrE$V
     legacyGuid: dac9f500d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3QoVK0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3QoVK0qWeHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -229,6 +296,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WlzO0qWeHuO00025QrE$V
     ifdGuid: 3WlzO0qWeHuO00025QrE$V
     legacyGuid: e0bfd600d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3WlzO0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3WlzO0qWeHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -275,6 +344,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3c7I20qWeHuO00025QrE$V
     ifdGuid: 3c7I20qWeHuO00025QrE$V
     legacyGuid: e61d2080d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3c7I20qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3c7I20qWeHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -321,6 +392,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3guTI0qWeHuO00025QrE$V
     ifdGuid: 3guTI0qWeHuO00025QrE$V
     legacyGuid: eae1d480d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3guTI0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3guTI0qWeHuO00025QrE$V
   localizations:
   - language: de-DE

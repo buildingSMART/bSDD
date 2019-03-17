@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1u1ZY0qSqHuO00025QrE$V
   ifdGuid: 1u1ZY0qSqHuO00025QrE$V
   legacyGuid: 78063880d1cd11e1800000215ad4efdf
+  legacyGuids:
+  - 1u1ZY0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1u1ZY0qSqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcController/MULTIPOSITION
   type: IfcController/MULTIPOSITION
+propertyUsages:
+- propertyName: ControlType
+  usageDefinition: 'The type of signal modification effected and applicable ports:INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Ph75sO89DeR0Lw9X$TxVi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Ph75sO89DeR0Lw9X$TxVi
+    ifdGuid: 1Ph75sO89DeR0Lw9X$TxVi
+- propertyName: Labels
+  usageDefinition: Table mapping values to labels, where each entry corresponds to an integer within the ValueRange.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2hNVsNjPH4TAKP_jf47aby
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hNVsNjPH4TAKP_jf47aby
+    ifdGuid: 2hNVsNjPH4TAKP_jf47aby
+- propertyName: Range
+  usageDefinition: The physical range of values supported by the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3UTcBiQbr3TP3UYzri51we
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3UTcBiQbr3TP3UYzri51we
+    ifdGuid: 3UTcBiQbr3TP3UYzri51we
+- propertyName: Value
+  usageDefinition: The expected range and default value.  The LowerLimitValue and UpperLimitValue must fall within the physical Range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2NZSOjevXDxQW2XnUST_bc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2NZSOjevXDxQW2XnUST_bc
+    ifdGuid: 2NZSOjevXDxQW2XnUST_bc
 properties:
 - name: ControlType
   definition: 'The type of signal modification effected and applicable ports:INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_bB00qSqHuO00025QrE$V
     ifdGuid: 1_bB00qSqHuO00025QrE$V
     legacyGuid: 7e94b000d1cd11e1800000215ad4efdf
+    legacyGuids:
+    - 1_bB00qSqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1_bB00qSqHuO00025QrE$V
   localizations:
   - language: en
@@ -217,6 +254,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29vzk0qSqHuO00025QrE$V
     ifdGuid: 29vzk0qSqHuO00025QrE$V
     legacyGuid: 89e7db80d1cd11e1800000215ad4efdf
+    legacyGuids:
+    - 29vzk0qSqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 29vzk0qSqHuO00025QrE$V
   localizations:
   - language: en
@@ -269,6 +308,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2H3kc0qSqHuO00025QrE$V
     ifdGuid: 2H3kc0qSqHuO00025QrE$V
     legacyGuid: 910ee980d1cd11e1800000215ad4efdf
+    legacyGuids:
+    - 2H3kc0qSqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2H3kc0qSqHuO00025QrE$V
   localizations:
   - language: en
@@ -316,6 +357,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Lqvs0qSqHuO00025QrE$V
     ifdGuid: 2Lqvs0qSqHuO00025QrE$V
     legacyGuid: 95d39d80d1cd11e1800000215ad4efdf
+    legacyGuids:
+    - 2Lqvs0qSqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Lqvs0qSqHuO00025QrE$V
   localizations:
   - language: en

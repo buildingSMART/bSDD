@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06tNe0qViHuO00025QrE$V
   ifdGuid: 06tNe0qViHuO00025QrE$V
   legacyGuid: 06dd7a00d1fb11e1800000215ad4efdf
+  legacyGuids:
+  - 06tNe0qViHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 06tNe0qViHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,79 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit
   type: IfcProtectiveDeviceTrippingUnit
+propertyUsages:
+- propertyName: IsSelectable
+  usageDefinition: Indication whether the L-function can be switched off or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0TJdeqfbP3PA_su3zmRtlX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TJdeqfbP3PA_su3zmRtlX
+    ifdGuid: 0TJdeqfbP3PA_su3zmRtlX
+- propertyName: UpperCurrent1
+  usageDefinition: The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/38nQ4FsifEChZziIBKDK1Z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/38nQ4FsifEChZziIBKDK1Z
+    ifdGuid: 38nQ4FsifEChZziIBKDK1Z
+- propertyName: UpperCurrent2
+  usageDefinition: The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0dNqiIq71EeB$1FUt3DwSt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dNqiIq71EeB$1FUt3DwSt
+    ifdGuid: 0dNqiIq71EeB$1FUt3DwSt
+- propertyName: UpperTime1
+  usageDefinition: The time in [s], indicating that tripping times of the upper time/current curve lower than UpperTime1 is determined by the I2t part of the L-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hKxFbRf16PfSUOKgjrFej
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hKxFbRf16PfSUOKgjrFej
+    ifdGuid: 0hKxFbRf16PfSUOKgjrFej
+- propertyName: UpperTime2
+  usageDefinition: The time in [s], indicating the tripping times of the upper time/current curve at the UpperCurrent2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0h9V_MLV51QxKTSnb6x7cm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h9V_MLV51QxKTSnb6x7cm
+    ifdGuid: 0h9V_MLV51QxKTSnb6x7cm
+- propertyName: LowerCurrent1
+  usageDefinition: The current in [x In], indicating that for currents smaller than LowerCurrent1 the I2t part of the L-function will not trip the current,
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1RHfo45c1ADOc9zhrm8c8$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RHfo45c1ADOc9zhrm8c8$
+    ifdGuid: 1RHfo45c1ADOc9zhrm8c8$
+- propertyName: LowerCurrent2
+  usageDefinition: The current in [x In], indicating the upper current limit of the lower time/current curve of the I2t part of the L-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0mUpN4SX97d93QqA5AoGY_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0mUpN4SX97d93QqA5AoGY_
+    ifdGuid: 0mUpN4SX97d93QqA5AoGY_
+- propertyName: LowerTime1
+  usageDefinition: The time in [s], indicating that tripping times of the lower time/current curve lower than LowerTime1 is determined by the I2t part of the L-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3O0rgE8FfAhQJZtOK$L7rq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3O0rgE8FfAhQJZtOK$L7rq
+    ifdGuid: 3O0rgE8FfAhQJZtOK$L7rq
+- propertyName: LowerTime2
+  usageDefinition: The time in [s], indicating the tripping times of the upper time/current curve at the LowerCurrent2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3jo454nj9A5RXzA5aNKUTt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jo454nj9A5RXzA5aNKUTt
+    ifdGuid: 3jo454nj9A5RXzA5aNKUTt
 properties:
 - name: IsSelectable
   definition: Indication whether the L-function can be switched off or not.
@@ -43,6 +118,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ASG40qViHuO00025QrE$V
     ifdGuid: 0ASG40qViHuO00025QrE$V
     legacyGuid: 0a710100d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0ASG40qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ASG40qViHuO00025QrE$V
   localizations:
   - language: en
@@ -92,6 +169,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Hc0y0qViHuO00025QrE$V
     ifdGuid: 0Hc0y0qViHuO00025QrE$V
     legacyGuid: 11980f00d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0Hc0y0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Hc0y0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -141,6 +220,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0MzLc0qViHuO00025QrE$V
     ifdGuid: 0MzLc0qViHuO00025QrE$V
     legacyGuid: 16f55980d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0MzLc0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0MzLc0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -190,6 +271,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0SKgG0qViHuO00025QrE$V
     ifdGuid: 0SKgG0qViHuO00025QrE$V
     legacyGuid: 1c52a400d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0SKgG0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0SKgG0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -239,6 +322,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Xh_w0qViHuO00025QrE$V
     ifdGuid: 0Xh_w0qViHuO00025QrE$V
     legacyGuid: 21afee80d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0Xh_w0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Xh_w0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +373,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dfS_0qViHuO00025QrE$V
     ifdGuid: 0dfS_0qViHuO00025QrE$V
     legacyGuid: 27a5cf80d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0dfS_0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0dfS_0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +424,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kpDs0qViHuO00025QrE$V
     ifdGuid: 0kpDs0qViHuO00025QrE$V
     legacyGuid: 2eccdd80d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0kpDs0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0kpDs0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -386,6 +475,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qmhw0qViHuO00025QrE$V
     ifdGuid: 0qmhw0qViHuO00025QrE$V
     legacyGuid: 34c2be80d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0qmhw0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0qmhw0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -435,6 +526,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0vXtA0qViHuO00025QrE$V
     ifdGuid: 0vXtA0qViHuO00025QrE$V
     legacyGuid: 39877280d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 0vXtA0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0vXtA0qViHuO00025QrE$V
   localizations:
   - language: en

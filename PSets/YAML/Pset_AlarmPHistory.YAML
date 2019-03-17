@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3anmO0qS0HuO00025QrE$V
   ifdGuid: 3anmO0qS0HuO00025QrE$V
   legacyGuid: e4c70600d1c011e1800000215ad4efdf
+  legacyGuids:
+  - 3anmO0qS0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3anmO0qS0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,47 @@ localizations:
 applicableIfcClasses:
 - name: IfcAlarm
   type: IfcAlarm
+propertyUsages:
+- propertyName: Enabled
+  usageDefinition: Indicates whether alarm is enabled or disabled over time.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1u7sHozbj03eUk6rkVkepl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1u7sHozbj03eUk6rkVkepl
+    ifdGuid: 1u7sHozbj03eUk6rkVkepl
+- propertyName: Condition
+  usageDefinition: Indicates alarm condition over time.  The range of possible values and their meanings is defined by Pset_AlarmTypeCommon.Condition.  An empty value indicates no present alarm condition.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Yc_so3DD34u5IxIVZRZDb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Yc_so3DD34u5IxIVZRZDb
+    ifdGuid: 2Yc_so3DD34u5IxIVZRZDb
+- propertyName: Severity
+  usageDefinition: Indicates alarm severity over time, where the scale of values is determined by the control system configuration.  A zero value indicates no present alarm.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0pmy_hE2HBbvKoNtXR60Ui
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0pmy_hE2HBbvKoNtXR60Ui
+    ifdGuid: 0pmy_hE2HBbvKoNtXR60Ui
+- propertyName: Acknowledge
+  usageDefinition: Indicates acknowledgement status where False indicates acknowlegement is required and outstanding, True indicates condition has been acknowedged, and Unknown indicates no acknowledgement is required.  Upon resetting the condition, then acknowledgement reverts to Unknown.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2aTkrh$Xj6uRZAuIbsvmj_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2aTkrh$Xj6uRZAuIbsvmj_
+    ifdGuid: 2aTkrh$Xj6uRZAuIbsvmj_
+- propertyName: User
+  usageDefinition: Indicates acknowledging user over time by identification corresponding to IfcPerson.Identification on an IfcActor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3NUXQ1S613huScHuauRnlI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NUXQ1S613huScHuauRnlI
+    ifdGuid: 3NUXQ1S613huScHuauRnlI
 properties:
 - name: Enabled
   definition: Indicates whether alarm is enabled or disabled over time.
@@ -41,6 +84,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3g9520qS0HuO00025QrE$V
     ifdGuid: 3g9520qS0HuO00025QrE$V
     legacyGuid: ea245080d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3g9520qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3g9520qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +134,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lWPi0qS0HuO00025QrE$V
     ifdGuid: 3lWPi0qS0HuO00025QrE$V
     legacyGuid: ef819b00d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3lWPi0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3lWPi0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +184,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3phRY0qS0HuO00025QrE$V
     ifdGuid: 3phRY0qS0HuO00025QrE$V
     legacyGuid: f3adb880d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3phRY0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3phRY0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +234,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3v2mC0qS0HuO00025QrE$V
     ifdGuid: 3v2mC0qS0HuO00025QrE$V
     legacyGuid: f90b0300d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3v2mC0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3v2mC0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +284,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ydee0qS0HuO00025QrE$V
     ifdGuid: 3ydee0qS0HuO00025QrE$V
     legacyGuid: fc9e8a00d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3ydee0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ydee0qS0HuO00025QrE$V
   localizations:
   - language: en

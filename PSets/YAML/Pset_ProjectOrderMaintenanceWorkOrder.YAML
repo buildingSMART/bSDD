@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1B$wq0qVSHuO00025QrE$V
   ifdGuid: 1B$wq0qVSHuO00025QrE$V
   legacyGuid: 4bffad00d1f711e1800000215ad4efdf
+  legacyGuids:
+  - 1B$wq0qVSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1B$wq0qVSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcProjectOrder/MAINTENANCEWORKORDER
   type: IfcProjectOrder/MAINTENANCEWORKORDER
+propertyUsages:
+- propertyName: ProductDescription
+  usageDefinition: A textual description of the products that require the work.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/382O2z7UT4qxeSpoVB8yV$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/382O2z7UT4qxeSpoVB8yV$
+    ifdGuid: 382O2z7UT4qxeSpoVB8yV$
+- propertyName: WorkTypeRequested
+  usageDefinition: Work type requested in circumstances where there are categorizations of types of work task. It could be used to identify a remedial task, minor work task, electrical task etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2v4gMeq3f6xeFjYiyOFlkY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2v4gMeq3f6xeFjYiyOFlkY
+    ifdGuid: 2v4gMeq3f6xeFjYiyOFlkY
+- propertyName: ContractualType
+  usageDefinition: The contractual type of the work.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3PKBybHMnDmOrkPUmwrzxV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PKBybHMnDmOrkPUmwrzxV
+    ifdGuid: 3PKBybHMnDmOrkPUmwrzxV
+- propertyName: IfNotAccomplished
+  usageDefinition: Comments if the job is not accomplished.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0TTjBjFevCQR1Jt7xPkxI4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TTjBjFevCQR1Jt7xPkxI4
+    ifdGuid: 0TTjBjFevCQR1Jt7xPkxI4
+- propertyName: MaintenaceType
+  usageDefinition: 'Identifies the predefined types of maintenance that can be done from which the type that generates the maintenance work order may be set where:ConditionBased: generated as a result of the condition of an asset or artefact being less than a determined value.Corrective: generated as a result of an immediate and urgent need for maintenance action.PlannedCorrective: generated as a result of immediate corrective action being needed but with sufficient time available for the work order to be included in maintenance planning.Scheduled: generated as a result of a fixed, periodic maintenance requirement.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09FBI8R3z5IPTHCyck9npK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09FBI8R3z5IPTHCyck9npK
+    ifdGuid: 09FBI8R3z5IPTHCyck9npK
+- propertyName: FaultPriorityType
+  usageDefinition: 'Identifies the predefined types of priority that can be assigned from which the type may be set where:High: action is required urgently.Medium: action can occur within a reasonable period of time.Low: action can occur when convenient.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2tTASKPDL6Sf8cDZciNNea
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tTASKPDL6Sf8cDZciNNea
+    ifdGuid: 2tTASKPDL6Sf8cDZciNNea
+- propertyName: LocationPriorityType
+  usageDefinition: 'Identifies the predefined types of priority that can be assigned from which the type may be set where:High: action is required urgently.Medium: action can occur within a reasonable period of time.Low: action can occur when convenient.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2aYdzOLIj1e9yzxNjmmgxD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2aYdzOLIj1e9yzxNjmmgxD
+    ifdGuid: 2aYdzOLIj1e9yzxNjmmgxD
+- propertyName: ScheduledFrequency
+  usageDefinition: The period of time between expected instantiations of a work order that may have been predefined.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CA3X5Xvr2LwPGeGzxVYMV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CA3X5Xvr2LwPGeGzxVYMV
+    ifdGuid: 1CA3X5Xvr2LwPGeGzxVYMV
 properties:
 - name: ProductDescription
   definition: A textual description of the products that require the work.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Jlr60qVSHuO00025QrE$V
     ifdGuid: 1Jlr60qVSHuO00025QrE$V
     legacyGuid: 53bf5180d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 1Jlr60qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Jlr60qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1S5uo0qVSHuO00025QrE$V
     ifdGuid: 1S5uo0qVSHuO00025QrE$V
     legacyGuid: 5c178c80d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 1S5uo0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1S5uo0qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +204,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1b25u0qVSHuO00025QrE$V
     ifdGuid: 1b25u0qVSHuO00025QrE$V
     legacyGuid: 65085e00d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 1b25u0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1b25u0qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +252,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kaSO0qVSHuO00025QrE$V
     ifdGuid: 1kaSO0qVSHuO00025QrE$V
     legacyGuid: 6e91c600d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 1kaSO0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1kaSO0qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1u6ou0qVSHuO00025QrE$V
     ifdGuid: 1u6ou0qVSHuO00025QrE$V
     legacyGuid: 781b2e00d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 1u6ou0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1u6ou0qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -423,6 +500,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JXZa0qVSHuO00025QrE$V
     ifdGuid: 2JXZa0qVSHuO00025QrE$V
     legacyGuid: 93863900d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 2JXZa0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2JXZa0qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -599,6 +678,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2e_sC0qVSHuO00025QrE$V
     ifdGuid: 2e_sC0qVSHuO00025QrE$V
     legacyGuid: a8fb6300d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 2e_sC0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2e_sC0qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -775,6 +856,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$eRe0qVSHuO00025QrE$V
     ifdGuid: 2$eRe0qVSHuO00025QrE$V
     legacyGuid: bfa1ba00d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 2$eRe0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2$eRe0qVSHuO00025QrE$V
   localizations:
   - language: en

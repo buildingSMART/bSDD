@@ -1,0 +1,51 @@
+﻿name: MaximumAllowedVoltageDrop
+definition: 'The maximum voltage drop across the circuit that must not be exceeded. There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to that board. The settings should limit the overall voltage drop to the required level. Default settings of 1.5% for sub-main circuits and 2.5% for final circuits, giving an overall limit of 4% may be applied.NOTE: This value may also be specified as a constraint within an IFC model if required but is included within the property set at this stage pending implementation of the required capabilities within software applications.'
+dictionaryReference:
+  dictionaryIdentifier: http://bsdd.buildingsmart.org
+  dictionaryNamespace: PSet
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2fEJM0qTeHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2fEJM0qTeHuO00025QrE$V
+  ifdGuid: 2fEJM0qTeHuO00025QrE$V
+  legacyGuid: a9393580d1da11e1800000215ad4efdf
+  legacyGuids:
+  - 2fEJM0qTeHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 2fEJM0qTeHuO00025QrE$V
+localizations:
+- language: en
+  name: 'Maximum Allowed Voltage Drop'
+  definition: ''
+- language: ja-JP
+  name: '最大許容電圧降下'
+  definition: '電気回路での電圧降下は最大電圧降下を超えないように。二種類の電圧降下限度があり、一つは分岐－主回路、もう一つは各分電盤或いは末端回路の電気需要装置と接続電気盤である。総電圧下降を使用範囲以内に制限する。デフォルト値は分岐－主回路1.5％、末端回路2.5％、合計総電圧4％である。注：この値はIFCモデルでの制約値と指定されているが、現段階ではプロプティセットに設定する。将来的には必要な性能として各ソフトアプリケションに利用する。'
+- language: ko-KR
+  name: '최대허용전압강하'
+  definition: '전기 회로에서 전압 강하는 최대 전압 강하를 초과하지 않도록. 두 종류의 전압 강하 한도가 있는데 하나는 분기 - 주회로, 다른 하나는 각 분전반 혹은 말단 회로의 전기 수요 장치와 연결 전기 판이다. 총 전압 하강을 사용 범위 이내로 제한한다. 기본값은 분기 - 주회로 1.5 %, 말단 회로 2.5 %, 합계 총 전압 4 %이다. 참고 :이 값은 IFC 모델에 따라 제한 값이 지정되어 있지만, 현 단계에서는 프로 쁘띠 세트로 설정한다. 미래에 필요한 성능으로 각 소프트웨어 어플 리케이션에 이용한다.'
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: fr-FR
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+typePropertySingleValue:
+  dataType: IfcElectricVoltageMeasure
+  measureType: ''
+  unitType: USERDEFINED
+status:
+  versionNumber: 4
+  dateOfVersion: 2018-01-01T00:00:00.0000000
+  revisionNumber: 2
+  dateOfRevision: 2018-01-01T00:00:00.0000000
+  status: Active
+  dateOfCreation: 2018-01-01T00:00:00.0000000
+  dateOfActivation: 2018-01-01T00:00:00.0000000
+  dateOfLastChange: 2018-01-01T00:00:00.0000000
+  languageOfCreator: en-EN

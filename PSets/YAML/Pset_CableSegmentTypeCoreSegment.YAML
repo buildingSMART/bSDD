@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jbN00qSWHuO00025QrE$V
   ifdGuid: 1jbN00qSWHuO00025QrE$V
   legacyGuid: 6d957000d1c811e1800000215ad4efdf
+  legacyGuids:
+  - 1jbN00qSWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1jbN00qSWHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,103 @@ localizations:
 applicableIfcClasses:
 - name: IfcCableSegment/CORESEGMENT
   type: IfcCableSegment/CORESEGMENT
+propertyUsages:
+- propertyName: OverallDiameter
+  usageDefinition: The overall diameter of a core (maximun space used).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3FQC0s7xL7v8RhzXSHcd$j
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FQC0s7xL7v8RhzXSHcd$j
+    ifdGuid: 3FQC0s7xL7v8RhzXSHcd$j
+- propertyName: RatedVoltage
+  usageDefinition: The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UN6pX35n5suowyGJGXttG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UN6pX35n5suowyGJGXttG
+    ifdGuid: 2UN6pX35n5suowyGJGXttG
+- propertyName: RatedTemperature
+  usageDefinition: The range of allowed temerature that a device is certified to handle. The upper bound of this value is the maximum.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0OYf82$rzA9u7lPd4U1LnV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0OYf82$rzA9u7lPd4U1LnV
+    ifdGuid: 0OYf82$rzA9u7lPd4U1LnV
+- propertyName: ScreenDiameter
+  usageDefinition: The diameter of the screen around a core segment (if present).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/12BOHWz0nDuvOeuiDFcpVP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12BOHWz0nDuvOeuiDFcpVP
+    ifdGuid: 12BOHWz0nDuvOeuiDFcpVP
+- propertyName: CoreIdentifier
+  usageDefinition: The core identification used  Identifiers may be used such as by color (Black, Brown, Grey) or by number (1, 2, 3) or by IEC phase reference (L1, L2, L3) etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3fmxwdmv13rvX6ROzxqt$b
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fmxwdmv13rvX6ROzxqt$b
+    ifdGuid: 3fmxwdmv13rvX6ROzxqt$b
+- propertyName: SheathColors
+  usageDefinition: Colour of the core (derived from IEC 60757). Note that the combined color 'GreenAndYellow' shall be used only as Protective Earth (PE) conductors according to the requirements of IEC 60446.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/21yJGyk$nA48Wfo8Xxuh24
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21yJGyk$nA48Wfo8Xxuh24
+    ifdGuid: 21yJGyk$nA48Wfo8Xxuh24
+- propertyName: Weight
+  usageDefinition: Weight of core kg/km.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2mVAaldNn0w8q20WWuthrx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mVAaldNn0w8q20WWuthrx
+    ifdGuid: 2mVAaldNn0w8q20WWuthrx
+- propertyName: SelfExtinguishing60332_1
+  usageDefinition: Self Extinguishing cable/core according to IEC 60332.1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/20mwSTAd15KQelETOMXb41
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20mwSTAd15KQelETOMXb41
+    ifdGuid: 20mwSTAd15KQelETOMXb41
+- propertyName: SelfExtinguishing60332_3
+  usageDefinition: Self Extinguishing cable/core according to IEC 60332.3.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1U4D9JpYX8DeNRXCm7tx78
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1U4D9JpYX8DeNRXCm7tx78
+    ifdGuid: 1U4D9JpYX8DeNRXCm7tx78
+- propertyName: HalogenProof
+  usageDefinition: Produces small amount of smoke and irritating deaerator/gas.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0wJSBIpw1DixGf3Gv2se8h
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wJSBIpw1DixGf3Gv2se8h
+    ifdGuid: 0wJSBIpw1DixGf3Gv2se8h
+- propertyName: FunctionReliable
+  usageDefinition: Core maintain given properties/functions over a given (tested) time and conditions. According to (IEC) standard.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35lnZvnQzFXA1iHaK0okB8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35lnZvnQzFXA1iHaK0okB8
+    ifdGuid: 35lnZvnQzFXA1iHaK0okB8
+- propertyName: Standard
+  usageDefinition: The designation of the standard applicable for the definition of the core used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0xCpvth4DCAhBkkRWHdrJL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0xCpvth4DCAhBkkRWHdrJL
+    ifdGuid: 0xCpvth4DCAhBkkRWHdrJL
 properties:
 - name: OverallDiameter
   definition: The overall diameter of a core (maximun space used).
@@ -41,6 +140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1oyhg0qSWHuO00025QrE$V
     ifdGuid: 1oyhg0qSWHuO00025QrE$V
     legacyGuid: 72f2ba80d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 1oyhg0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1oyhg0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +191,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1uw9k0qSWHuO00025QrE$V
     ifdGuid: 1uw9k0qSWHuO00025QrE$V
     legacyGuid: 78e89b80d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 1uw9k0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1uw9k0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -140,6 +243,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$TnC0qSWHuO00025QrE$V
     ifdGuid: 1$TnC0qSWHuO00025QrE$V
     legacyGuid: 7f771300d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 1$TnC0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1$TnC0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -190,6 +295,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26dY40qSWHuO00025QrE$V
     ifdGuid: 26dY40qSWHuO00025QrE$V
     legacyGuid: 869e2100d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 26dY40qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 26dY40qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -239,6 +346,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Cb080qSWHuO00025QrE$V
     ifdGuid: 2Cb080qSWHuO00025QrE$V
     legacyGuid: 8c940200d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 2Cb080qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Cb080qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +397,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IYUC0qSWHuO00025QrE$V
     ifdGuid: 2IYUC0qSWHuO00025QrE$V
     legacyGuid: 9289e300d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 2IYUC0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2IYUC0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -731,6 +842,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2nY7K0qSWHuO00025QrE$V
     ifdGuid: 2nY7K0qSWHuO00025QrE$V
     legacyGuid: b1887500d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 2nY7K0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2nY7K0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -780,6 +893,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sJIa0qSWHuO00025QrE$V
     ifdGuid: 2sJIa0qSWHuO00025QrE$V
     legacyGuid: b64d2900d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 2sJIa0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2sJIa0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -829,6 +944,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xgdE0qSWHuO00025QrE$V
     ifdGuid: 2xgdE0qSWHuO00025QrE$V
     legacyGuid: bbaa7380d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 2xgdE0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2xgdE0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -878,6 +995,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/311xu0qSWHuO00025QrE$V
     ifdGuid: 311xu0qSWHuO00025QrE$V
     legacyGuid: c107be00d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 311xu0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 311xu0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -927,6 +1046,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36$Py0qSWHuO00025QrE$V
     ifdGuid: 36$Py0qSWHuO00025QrE$V
     legacyGuid: c6fd9f00d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 36$Py0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 36$Py0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -976,6 +1097,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3CMkc0qSWHuO00025QrE$V
     ifdGuid: 3CMkc0qSWHuO00025QrE$V
     legacyGuid: cc5ae980d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 3CMkc0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3CMkc0qSWHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UfmK0qTyHuO00025QrE$V
   ifdGuid: 0UfmK0qTyHuO00025QrE$V
   legacyGuid: 1ea70500d1df11e1800000215ad4efdf
+  legacyGuids:
+  - 0UfmK0qTyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0UfmK0qTyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,87 @@ localizations:
 applicableIfcClasses:
 - name: IfcDistributionElement
   type: IfcDistributionElement
+propertyUsages:
+- propertyName: RatedCurrent
+  usageDefinition: The current that a device is designed to handle.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3mwdRVz3zEh9T3MT5SxQmX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mwdRVz3zEh9T3MT5SxQmX
+    ifdGuid: 3mwdRVz3zEh9T3MT5SxQmX
+- propertyName: RatedVoltage
+  usageDefinition: The voltage that a device is designed to handle.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1GVy7Pm5L8UvGeWUq$Cp1L
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1GVy7Pm5L8UvGeWUq$Cp1L
+    ifdGuid: 1GVy7Pm5L8UvGeWUq$Cp1L
+- propertyName: NominalFrequencyRange
+  usageDefinition: The upper and lower limits of frequency for which the operation of the device is certified.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09FqRk45fAIOMUP3Nt3JnL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09FqRk45fAIOMUP3Nt3JnL
+    ifdGuid: 09FqRk45fAIOMUP3Nt3JnL
+- propertyName: PowerFactor
+  usageDefinition: The ratio between the rated electrical power and the product of the rated current and rated voltage
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0IC19NmYvC$PqTLyXR2u8W
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IC19NmYvC$PqTLyXR2u8W
+    ifdGuid: 0IC19NmYvC$PqTLyXR2u8W
+- propertyName: ConductorFunction
+  usageDefinition: Function of a line conductor to which a device  is intended to be connected where L1, L2 and L3 represent the phase lines according to IEC 60446 notation (sometimes phase lines may be referenced by color [Red, Blue, Yellow] or by number [1, 2, 3] etc). Protective Earth is sometimes also known as CPC or common protective conductor. Note that for an electrical device, a set of line conductor functions may be applied.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OCcyk6hn6oxdP0eT4Vl5f
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OCcyk6hn6oxdP0eT4Vl5f
+    ifdGuid: 1OCcyk6hn6oxdP0eT4Vl5f
+- propertyName: NumberOfPoles
+  usageDefinition: The number of live lines that is intended to be handled by the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UtMesIJDBoQkZyDffnfpE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UtMesIJDBoQkZyDffnfpE
+    ifdGuid: 2UtMesIJDBoQkZyDffnfpE
+- propertyName: HasProtectiveEarth
+  usageDefinition: Indicates whether the electrical device has a protective earth connection (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08k6bTchL6yP0K76oeU3yh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08k6bTchL6yP0K76oeU3yh
+    ifdGuid: 08k6bTchL6yP0K76oeU3yh
+- propertyName: InsulationStandardClass
+  usageDefinition: Insulation standard classes provides basic protection information against electric shock. Defines levels of insulation required in terms of constructional requirements (creepage and clearance distances) and electrical requirements (compliance with electric strength tests). Basic insulation is considered to be shorted under single fault conditions. The actual values required depend on the working voltage to which the insulation is subjected, as well as other factors. Also indicates whether the electrical device has a protective earth connection.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0uoWx43L9FX8ZZzuFPYeH6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uoWx43L9FX8ZZzuFPYeH6
+    ifdGuid: 0uoWx43L9FX8ZZzuFPYeH6
+- propertyName: IP_Code
+  usageDefinition: IP Code, the International Protection Marking, IEC 60529), classifies and rates the degree of protection provided against intrusion.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1tsp6t1ez1iASCM5keBXu1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tsp6t1ez1iASCM5keBXu1
+    ifdGuid: 1tsp6t1ez1iASCM5keBXu1
+- propertyName: IK_Code
+  usageDefinition: IK Code according to IEC 62262 (2002) is a numeric classification for the degree of protection provided by enclosures for electrical equipment against external mechanical impacts.<blockquote class="note">NOTE&nbsp; In earlier labeling, the third numeral (1..) had been occasionally added to the closely related IP Code on ingress protection, to indicate the level of impact protection.</blockquote>
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2js0z2Hk99GvyeLom5WMaf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2js0z2Hk99GvyeLom5WMaf
+    ifdGuid: 2js0z2Hk99GvyeLom5WMaf
 properties:
 - name: RatedCurrent
   definition: The current that a device is designed to handle.
@@ -41,6 +124,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uA_NPqNL1PAbblov4t9fq
     ifdGuid: 0uA_NPqNL1PAbblov4t9fq
     legacyGuid: 784d9d2144d440b5b30e2ad107609548
+    legacyGuids:
+    - 1uJPqXHDH0jRCEAj47O9L8
     legacyGuidAsIfcGlobalId: 1uJPqXHDH0jRCEAj47O9L8
   localizations:
   - language: en
@@ -88,6 +173,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wdT6rlrf9tRP6nggIlRDW
     ifdGuid: 3wdT6rlrf9tRP6nggIlRDW
     legacyGuid: a2e15fb5e52e49e3b86731401fe07f86
+    legacyGuids:
+    - 2YuL_rvIv9uxXdCK0Vu7_6
     legacyGuidAsIfcGlobalId: 2YuL_rvIv9uxXdCK0Vu7_6
   localizations:
   - language: en
@@ -135,6 +222,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UfemTNJT8khovIpWn29kM
     ifdGuid: 0UfemTNJT8khovIpWn29kM
     legacyGuid: f69a795455c74842825a54711d3b5abc
+    legacyGuids:
+    - 3scdbKLST8Ge9QL74TErgy
     legacyGuidAsIfcGlobalId: 3scdbKLST8Ge9QL74TErgy
   localizations:
   - language: en
@@ -182,6 +271,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xwFl7f056tQswqTwBeB06
     ifdGuid: 2xwFl7f056tQswqTwBeB06
     legacyGuid: cf5234358315441fa6c17c9b65bf62a0
+    legacyGuids:
+    - 3FKZGrWnL47wR1V9jblsAW
     legacyGuidAsIfcGlobalId: 3FKZGrWnL47wR1V9jblsAW
   localizations:
   - language: en
@@ -228,6 +319,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TbI_F2rDDGeJFL3V29IrE
     ifdGuid: 2TbI_F2rDDGeJFL3V29IrE
     legacyGuid: f936102bd4824b7eb989a5571e353770
+    legacyGuids:
+    - 3vDX0hr89BVhc9fLSUDJTm
     legacyGuidAsIfcGlobalId: 3vDX0hr89BVhc9fLSUDJTm
   localizations:
   - language: en
@@ -470,6 +563,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BMno0qTyHuO00025QrE$V
     ifdGuid: 1BMno0qTyHuO00025QrE$V
     legacyGuid: 4b5b1c80d1df11e1800000215ad4efdf
+    legacyGuids:
+    - 1BMno0qTyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1BMno0qTyHuO00025QrE$V
   localizations:
   - language: en
@@ -516,6 +611,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Gk6S0qTyHuO00025QrE$V
     ifdGuid: 1Gk6S0qTyHuO00025QrE$V
     legacyGuid: 50b86700d1df11e1800000215ad4efdf
+    legacyGuids:
+    - 1Gk6S0qTyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Gk6S0qTyHuO00025QrE$V
   localizations:
   - language: en
@@ -562,6 +659,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1TFB_0qTyHuO00025QrE$V
     ifdGuid: 1TFB_0qTyHuO00025QrE$V
     legacyGuid: 5d3cbf80d1df11e1800000215ad4efdf
+    legacyGuids:
+    - 1TFB_0qTyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1TFB_0qTyHuO00025QrE$V
   localizations:
   - language: en
@@ -782,6 +881,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MhaW0qTyHuO00025QrE$V
     ifdGuid: 1MhaW0qTyHuO00025QrE$V
     legacyGuid: 56ae4800d1df11e1800000215ad4efdf
+    legacyGuids:
+    - 1MhaW0qTyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1MhaW0qTyHuO00025QrE$V
   localizations:
   - language: en
@@ -826,8 +927,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0M_wyRHov5nfoPzeAPS$Rs'
+    ifdGuid: 0M_wyRHov5nfoPzeAPS$Rs
     legacyGuid: aecd027ed5424357a5fd13331a99bc51
+    legacyGuids:
+    - 2kpG9_rK93LwNz4pCQcRnH
     legacyGuidAsIfcGlobalId: 2kpG9_rK93LwNz4pCQcRnH
   localizations:
   - language: de-DE

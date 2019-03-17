@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10OhK0qVmHuO00025QrE$V
   ifdGuid: 10OhK0qVmHuO00025QrE$V
   legacyGuid: 4062b500d1fc11e1800000215ad4efdf
+  legacyGuids:
+  - 10OhK0qVmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 10OhK0qVmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,87 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit/ELECTROMAGNETIC
   type: IfcProtectiveDeviceTrippingUnit/ELECTROMAGNETIC
+propertyUsages:
+- propertyName: ElectroMagneticTrippingUnitType
+  usageDefinition: A list of the available types of electric magnetic tripping unit  from which that required may be selected. These cover overload, none special, short circuit, motor protection and bi-metal tripping.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3POOXCQILDpwe44$6tDI9A
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3POOXCQILDpwe44$6tDI9A
+    ifdGuid: 3POOXCQILDpwe44$6tDI9A
+- propertyName: I1
+  usageDefinition: The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0NjIX1tJLBThdgGmqPO0gd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NjIX1tJLBThdgGmqPO0gd
+    ifdGuid: 0NjIX1tJLBThdgGmqPO0gd
+- propertyName: I2
+  usageDefinition: The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ooJOlB59AMPzxsf7sqDDf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ooJOlB59AMPzxsf7sqDDf
+    ifdGuid: 1ooJOlB59AMPzxsf7sqDDf
+- propertyName: T2
+  usageDefinition: The (thermal) testing time in [s] associated with the testing currents I1 and I2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3v7okSsyf1N9MFbNyyf_i1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3v7okSsyf1N9MFbNyyf_i1
+    ifdGuid: 3v7okSsyf1N9MFbNyyf_i1
+- propertyName: DefinedTemperature
+  usageDefinition: The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3rkS$Filb2ZvSAt2c9D62q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rkS$Filb2ZvSAt2c9D62q
+    ifdGuid: 3rkS$Filb2ZvSAt2c9D62q
+- propertyName: TemperatureFactor
+  usageDefinition: The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2313kpq1v62PeV_88usTVH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2313kpq1v62PeV_88usTVH
+    ifdGuid: 2313kpq1v62PeV_88usTVH
+- propertyName: I4
+  usageDefinition: The lower electromagnetic testing current limit in [x In], indicating that for currents lower than I4, the tripping time shall be longer than the associated tripping time, T5, i.e. the device shall not trip instantaneous.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/31Jrre19P1BOeJ1btr3YFU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31Jrre19P1BOeJ1btr3YFU
+    ifdGuid: 31Jrre19P1BOeJ1btr3YFU
+- propertyName: I5
+  usageDefinition: The upper electromagnetic testing current limit in [x In], indicating that for currents larger than I5, the tripping time shall be shorter than or equal to the associated tripping time, T5, i.e. the device shall trip instantaneous.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XnGt3bIPE4e_0YSrT7xAm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XnGt3bIPE4e_0YSrT7xAm
+    ifdGuid: 0XnGt3bIPE4e_0YSrT7xAm
+- propertyName: T5
+  usageDefinition: The electromagnetic testing time in [s] associated with the testing currents I4 and I5, i.e. electromagnetic tripping time
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3TD9Q1CozC08Fx2r62hiAB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TD9Q1CozC08Fx2r62hiAB
+    ifdGuid: 3TD9Q1CozC08Fx2r62hiAB
+- propertyName: CurveDesignation
+  usageDefinition: The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1BPnukK8vAOBEMSmkvD4Dc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BPnukK8vAOBEMSmkvD4Dc
+    ifdGuid: 1BPnukK8vAOBEMSmkvD4Dc
 properties:
 - name: ElectroMagneticTrippingUnitType
   definition: A list of the available types of electric magnetic tripping unit  from which that required may be selected. These cover overload, none special, short circuit, motor protection and bi-metal tripping.
@@ -41,6 +124,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/15l$_0qVmHuO00025QrE$V
     ifdGuid: 15l$_0qVmHuO00025QrE$V
     legacyGuid: 45bfff80d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 15l$_0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 15l$_0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -264,6 +349,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LFqY0qVmHuO00025QrE$V
     ifdGuid: 1LFqY0qVmHuO00025QrE$V
     legacyGuid: 553f4880d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1LFqY0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1LFqY0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -313,6 +400,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RDIc0qVmHuO00025QrE$V
     ifdGuid: 1RDIc0qVmHuO00025QrE$V
     legacyGuid: 5b352980d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1RDIc0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1RDIc0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -362,6 +451,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1WadG0qVmHuO00025QrE$V
     ifdGuid: 1WadG0qVmHuO00025QrE$V
     legacyGuid: 60927400d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1WadG0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1WadG0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -411,6 +502,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1eKXY0qVmHuO00025QrE$V
     ifdGuid: 1eKXY0qVmHuO00025QrE$V
     legacyGuid: 68521880d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1eKXY0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1eKXY0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -460,6 +553,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ku900qVmHuO00025QrE$V
     ifdGuid: 1ku900qVmHuO00025QrE$V
     legacyGuid: 6ee09000d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1ku900qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ku900qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -509,6 +604,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pfKG0qVmHuO00025QrE$V
     ifdGuid: 1pfKG0qVmHuO00025QrE$V
     legacyGuid: 73a54400d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1pfKG0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1pfKG0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -558,6 +655,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1vcoK0qVmHuO00025QrE$V
     ifdGuid: 1vcoK0qVmHuO00025QrE$V
     legacyGuid: 799b2500d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 1vcoK0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1vcoK0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -607,6 +706,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20APo0qVmHuO00025QrE$V
     ifdGuid: 20APo0qVmHuO00025QrE$V
     legacyGuid: 80299c80d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 20APo0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 20APo0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -656,6 +757,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24xb20qVmHuO00025QrE$V
     ifdGuid: 24xb20qVmHuO00025QrE$V
     legacyGuid: 84ee5080d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 24xb20qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24xb20qVmHuO00025QrE$V
   localizations:
   - language: en

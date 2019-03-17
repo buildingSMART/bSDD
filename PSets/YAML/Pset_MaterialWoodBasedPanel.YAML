@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1okUM0qUyHuO00025QrE$V
   ifdGuid: 1okUM0qUyHuO00025QrE$V
   legacyGuid: 72b9e580d1ef11e1800000215ad4efdf
+  legacyGuids:
+  - 1okUM0qUyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1okUM0qUyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcMaterial/Wood
   type: IfcMaterial/Wood
+propertyUsages:
+- propertyName: ApplicableStructuralDesignMethod
+  usageDefinition: Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ltUA0sxP8OA8$IC1xOlfx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ltUA0sxP8OA8$IC1xOlfx
+    ifdGuid: 3ltUA0sxP8OA8$IC1xOlfx
+- propertyName: InPlane
+  usageDefinition: Mechanical properties with respect to in-plane load, i.e. for function as a membrane.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Gbib3DRzAAgMmDBhm5$NM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Gbib3DRzAAgMmDBhm5$NM
+    ifdGuid: 1Gbib3DRzAAgMmDBhm5$NM
+- propertyName: OutOfPlane
+  usageDefinition: Mechanical properties with respect to out-of-plane load, i.e. for function as a plate; tension zone of unbalanced layups is stressed in tension.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Gq6B26WD8rve3ovgykndE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Gq6B26WD8rve3ovgykndE
+    ifdGuid: 0Gq6B26WD8rve3ovgykndE
+- propertyName: OutOfPlaneNegative
+  usageDefinition: Mechanical properties with respect to out-of-plane load i.e. for function as a plate; compression zone of unbalanced layups is stressed in tension.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LbZe_Xo97VAB6bLiak9f8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LbZe_Xo97VAB6bLiak9f8
+    ifdGuid: 3LbZe_Xo97VAB6bLiak9f8
 properties:
 - name: ApplicableStructuralDesignMethod
   definition: Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rjDO0qUyHuO00025QrE$V
     ifdGuid: 1rjDO0qUyHuO00025QrE$V
     legacyGuid: 75b4d600d1ef11e1800000215ad4efdf
+    legacyGuids:
+    - 1rjDO0qUyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1rjDO0qUyHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +124,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x4Y20qUyHuO00025QrE$V
     ifdGuid: 1x4Y20qUyHuO00025QrE$V
     legacyGuid: 7b122080d1ef11e1800000215ad4efdf
+    legacyGuids:
+    - 1x4Y20qUyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1x4Y20qUyHuO00025QrE$V
   localizations:
   - language: en
@@ -647,6 +686,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bAiM0qUyHuO00025QrE$V
     ifdGuid: 3bAiM0qUyHuO00025QrE$V
     legacyGuid: e52ac580d1ef11e1800000215ad4efdf
+    legacyGuids:
+    - 3bAiM0qUyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3bAiM0qUyHuO00025QrE$V
   localizations:
   - language: en
@@ -1207,6 +1248,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1H3Iu0qV0HuO00025QrE$V
     ifdGuid: 1H3Iu0qV0HuO00025QrE$V
     legacyGuid: 510d2e00d1f011e1800000215ad4efdf
+    legacyGuids:
+    - 1H3Iu0qV0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1H3Iu0qV0HuO00025QrE$V
   localizations:
   - language: en

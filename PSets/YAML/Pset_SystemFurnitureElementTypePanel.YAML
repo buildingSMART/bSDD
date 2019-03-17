@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_xhW0qWyHuO00025QrE$V
   ifdGuid: 0_xhW0qWyHuO00025QrE$V
   legacyGuid: 3eeeb800d20f11e1800000215ad4efdf
+  legacyGuids:
+  - 0_xhW0qWyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0_xhW0qWyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcSystemFurnitureElement/PANEL
   type: IfcSystemFurnitureElement/PANEL
+propertyUsages:
+- propertyName: HasOpening
+  usageDefinition: indicates whether the panel has an opening (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2dwU2SxNvEgvwQ5kArZb2i
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dwU2SxNvEgvwQ5kArZb2i
+    ifdGuid: 2dwU2SxNvEgvwQ5kArZb2i
+- propertyName: FurniturePanelType
+  usageDefinition: Available panel types from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2XVMZZzhzF0gTUkA1IKHom
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XVMZZzhzF0gTUkA1IKHom
+    ifdGuid: 2XVMZZzhzF0gTUkA1IKHom
+- propertyName: NominalThickness
+  usageDefinition: The nominal thickness of the panel.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/33O73_4BT6keWsHCsi5cnM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/33O73_4BT6keWsHCsi5cnM
+    ifdGuid: 33O73_4BT6keWsHCsi5cnM
 properties:
 - name: HasOpening
   definition: indicates whether the panel has an opening (= TRUE) or not (= FALSE).
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13ism0qWyHuO00025QrE$V
     ifdGuid: 13ism0qWyHuO00025QrE$V
     legacyGuid: 43b36c00d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 13ism0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 13ism0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AGUE0qWyHuO00025QrE$V
     ifdGuid: 1AGUE0qWyHuO00025QrE$V
     legacyGuid: 4a41e380d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 1AGUE0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1AGUE0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -373,6 +404,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1UXU20qWyHuO00025QrE$V
     ifdGuid: 1UXU20qWyHuO00025QrE$V
     legacyGuid: 5e85e080d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 1UXU20qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1UXU20qWyHuO00025QrE$V
   localizations:
   - language: en

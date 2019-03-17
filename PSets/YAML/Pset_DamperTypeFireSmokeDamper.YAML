@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YkNC0qT4HuO00025QrE$V
   ifdGuid: 3YkNC0qT4HuO00025QrE$V
   legacyGuid: e2b97300d1d111e1800000215ad4efdf
+  legacyGuids:
+  - 3YkNC0qT4HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3YkNC0qT4HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,47 @@ localizations:
 applicableIfcClasses:
 - name: IfcDamper/FIRESMOKEDAMPER
   type: IfcDamper/FIRESMOKEDAMPER
+propertyUsages:
+- propertyName: ControlType
+  usageDefinition: The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3DW4LUAkP0pxJ9RoN_2LBk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DW4LUAkP0pxJ9RoN_2LBk
+    ifdGuid: 3DW4LUAkP0pxJ9RoN_2LBk
+- propertyName: ActuationType
+  usageDefinition: Enumeration that identifies the different types of dampers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00YNReZYr2pe5dlvcCJq3Z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00YNReZYr2pe5dlvcCJq3Z
+    ifdGuid: 00YNReZYr2pe5dlvcCJq3Z
+- propertyName: ClosureRatingEnum
+  usageDefinition: Enumeration that identifies the closure rating for the damper.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0uMGwrZ_r2Z9CSeqrK_Zb8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uMGwrZ_r2Z9CSeqrK_Zb8
+    ifdGuid: 0uMGwrZ_r2Z9CSeqrK_Zb8
+- propertyName: FireResistanceRating
+  usageDefinition: Measure of the fire resistance rating in hours (e.g., 1.5 hours, 2 hours, etc.).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2gy1R07lP5OvHNk0GpJOeE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2gy1R07lP5OvHNk0GpJOeE
+    ifdGuid: 2gy1R07lP5OvHNk0GpJOeE
+- propertyName: FusibleLinkTemperature
+  usageDefinition: The temperature that the fusible link melts.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0PEoEMXGf9wwgDTG1pU43x
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PEoEMXGf9wwgDTG1pU43x
+    ifdGuid: 0PEoEMXGf9wwgDTG1pU43x
 properties:
 - name: ControlType
   definition: The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.).
@@ -43,6 +86,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dVYS0qT4HuO00025QrE$V
     ifdGuid: 3dVYS0qT4HuO00025QrE$V
     legacyGuid: e77e2700d1d111e1800000215ad4efdf
+    legacyGuids:
+    - 3dVYS0qT4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3dVYS0qT4HuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +134,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jT0W0qT4HuO00025QrE$V
     ifdGuid: 3jT0W0qT4HuO00025QrE$V
     legacyGuid: ed740800d1d111e1800000215ad4efdf
+    legacyGuids:
+    - 3jT0W0qT4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3jT0W0qT4HuO00025QrE$V
   localizations:
   - language: en
@@ -243,6 +290,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3waFS0qT4HuO00025QrE$V
     ifdGuid: 3waFS0qT4HuO00025QrE$V
     legacyGuid: fa90f700d1d111e1800000215ad4efdf
+    legacyGuids:
+    - 3waFS0qT4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3waFS0qT4HuO00025QrE$V
   localizations:
   - language: en
@@ -397,6 +446,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/075K_0qT8HuO00025QrE$V
     ifdGuid: 075K_0qT8HuO00025QrE$V
     legacyGuid: 07154f80d1d211e1800000215ad4efdf
+    legacyGuids:
+    - 075K_0qT8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 075K_0qT8HuO00025QrE$V
   localizations:
   - language: en
@@ -443,6 +494,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BsWE0qT8HuO00025QrE$V
     ifdGuid: 0BsWE0qT8HuO00025QrE$V
     legacyGuid: 0bda0380d1d211e1800000215ad4efdf
+    legacyGuids:
+    - 0BsWE0qT8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0BsWE0qT8HuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Enzn3X1rFDP_2300j3ncG
   ifdGuid: 2Enzn3X1rFDP_2300j3ncG
   legacyGuid: 96b2191f151b47c695341fa549672b6e
+  legacyGuids:
+  - 2MiXaV5Hj7nfKq7wL9Pojk
   legacyGuidAsIfcGlobalId: 2MiXaV5Hj7nfKq7wL9Pojk
 localizations:
 - language: de-DE
@@ -31,6 +33,119 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDevice
   type: IfcProtectiveDevice
+propertyUsages:
+- propertyName: PoleUsage
+  usageDefinition: Pole usage.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08Qhu1aSPF0vP8ZSpxP9_X
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08Qhu1aSPF0vP8ZSpxP9_X
+    ifdGuid: 08Qhu1aSPF0vP8ZSpxP9_X
+- propertyName: LongTimeFunction
+  usageDefinition: Applying long time functionA flag indicating that the long time function (i.e. the thermal tripping) of the device is used. The value should be set to TRUE for all devices except those that allows the Long time function of the device not to be used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1tqY5Ls9n0hes06PRPs9K9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tqY5Ls9n0hes06PRPs9K9
+    ifdGuid: 1tqY5Ls9n0hes06PRPs9K9
+- propertyName: ShortTimeFunction
+  usageDefinition: Applying short time function A flag indicating that the short time function of the device is used. The value should be set to FALSE for devices not having a short time function, or if the short time function is not selected to be used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3MJiNayFDF_etcchG2hMZp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MJiNayFDF_etcchG2hMZp
+    ifdGuid: 3MJiNayFDF_etcchG2hMZp
+- propertyName: ShortTimei2tFunction
+  usageDefinition: Applying short time i2t function. A flag indicating that the I2t short time function of the device is used. The value should be set to TRUE only if the I2t function  is explicitly selected for the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1nbjcit8T2IO71j23vUJxk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1nbjcit8T2IO71j23vUJxk
+    ifdGuid: 1nbjcit8T2IO71j23vUJxk
+- propertyName: GroundFaultFunction
+  usageDefinition: Applying ground fault function. A flag indicating that the ground fault function of the device is used. The value should be set to FALSE for devices not having a ground fault function, or if the ground fault function is not selected to be used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0shPvsqwbA6w2dF7lhZsI$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0shPvsqwbA6w2dF7lhZsI$
+    ifdGuid: 0shPvsqwbA6w2dF7lhZsI$
+- propertyName: GroundFaulti2tFunction
+  usageDefinition: Applying ground fault i2t function. A flag indicating that the I2t ground fault function of the device is used. The value should be set to TRUE only if the I2t function is explicitly selected for the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09fnTqIyjEwfDcOOXaLiDN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09fnTqIyjEwfDcOOXaLiDN
+    ifdGuid: 09fnTqIyjEwfDcOOXaLiDN
+- propertyName: LongTimeCurrentSetValue
+  usageDefinition: Long time current set value. The set value of the long time tripping current if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3l$tx8u0nAlPxPU4JQ0lhs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3l$tx8u0nAlPxPU4JQ0lhs
+    ifdGuid: 3l$tx8u0nAlPxPU4JQ0lhs
+- propertyName: ShortTimeCurrentSetValue
+  usageDefinition: Short time current set value. The set value of the long time tripping current if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0epnMe81rBPAZorp7k0vvw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0epnMe81rBPAZorp7k0vvw
+    ifdGuid: 0epnMe81rBPAZorp7k0vvw
+- propertyName: InstantaneousCurrentSetValue
+  usageDefinition: Instantaneous current set value. The set value of the instantaneous tripping current if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3lFPPs23jBegJuGLDOlTu7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lFPPs23jBegJuGLDOlTu7
+    ifdGuid: 3lFPPs23jBegJuGLDOlTu7
+- propertyName: GroundFaultCurrentSetValue
+  usageDefinition: Ground fault current set value. The set value of the ground tripping current if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OmR0AVgbBAexr2CksLvoR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OmR0AVgbBAexr2CksLvoR
+    ifdGuid: 1OmR0AVgbBAexr2CksLvoR
+- propertyName: LongTimeDelay
+  usageDefinition: Long time delay. The set value of the long time time-delay if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1AqUMDRDX6ROhiKCkN7MnW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AqUMDRDX6ROhiKCkN7MnW
+    ifdGuid: 1AqUMDRDX6ROhiKCkN7MnW
+- propertyName: ShortTimeTrippingTime
+  usageDefinition: Short time tripping time. The set value of the short time tripping time if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08FF5gnIHD1Ru$Ue8I97Yn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08FF5gnIHD1Ru$Ue8I97Yn
+    ifdGuid: 08FF5gnIHD1Ru$Ue8I97Yn
+- propertyName: InstantaneousTrippingTime
+  usageDefinition: Instantaneous tripping time. The set value of the instantaneous tripping time if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/12q4K6vgL4Yu6U_h22RphS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12q4K6vgL4Yu6U_h22RphS
+    ifdGuid: 12q4K6vgL4Yu6U_h22RphS
+- propertyName: GroundFaultTrippingTime
+  usageDefinition: Ground fault tripping time. The set value of the ground fault tripping current if adjustable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2qcPC9_nfEYPxObS4slzm$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qcPC9_nfEYPxObS4slzm$
+    ifdGuid: 2qcPC9_nfEYPxObS4slzm$
 properties:
 - name: PoleUsage
   definition: Pole usage.
@@ -41,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01jtMQQzrBYQn9FaxWGuLI
     ifdGuid: 01jtMQQzrBYQn9FaxWGuLI
     legacyGuid: a4234ac09e044d25883b1529e5898574
+    legacyGuids:
+    - 2a8qh0dWHD9OWx5IdbYOLq
     legacyGuidAsIfcGlobalId: 2a8qh0dWHD9OWx5IdbYOLq
   localizations:
   - language: en
@@ -283,6 +400,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BaXJ5q$v22vulz2WfcIHF
     ifdGuid: 1BaXJ5q$v22vulz2WfcIHF
     legacyGuid: f9250bdd70df4cbfaf6ad72d26170202
+    legacyGuids:
+    - 3v9GlTSDzClwzgroqc5m82
     legacyGuidAsIfcGlobalId: 3v9GlTSDzClwzgroqc5m82
   localizations:
   - language: en
@@ -329,6 +448,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2oOWuNfqXDx8_DtPmlGsgW
     ifdGuid: 2oOWuNfqXDx8_DtPmlGsgW
     legacyGuid: 337c40a498c54e4baa54a444cf4790ea
+    legacyGuids:
+    - 0pV42acCLEIwfKf4JFHv3g
     legacyGuidAsIfcGlobalId: 0pV42acCLEIwfKf4JFHv3g
   localizations:
   - language: en
@@ -375,6 +496,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uFfGhb59E786CdtQIpb0c
     ifdGuid: 0uFfGhb59E786CdtQIpb0c
     legacyGuid: ab1a66c09b664bc39faba566d40fc3f6
+    legacyGuids:
+    - 2h6cR0csPBmv_hfMRK3yFs
     legacyGuidAsIfcGlobalId: 2h6cR0csPBmv_hfMRK3yFs
   localizations:
   - language: en
@@ -421,6 +544,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0c$BMHJDT4zRLNwJLWg_79
     ifdGuid: 0c$BMHJDT4zRLNwJLWg_79
     legacyGuid: 8a30c27174694aa78319e83f13deaf14
+    legacyGuids:
+    - 2ACC9nT6bAfuCPw3yJtgyK
     legacyGuidAsIfcGlobalId: 2ACC9nT6bAfuCPw3yJtgyK
   localizations:
   - language: en
@@ -467,6 +592,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0R5m3XVKHE6wAwmTIhvFw$
     ifdGuid: 0R5m3XVKHE6wAwmTIhvFw$
     legacyGuid: 011510087b3e484aa631627e3ef99db0
+    legacyGuids:
+    - 015H08Upv8IgOnOdu__Psm
     legacyGuidAsIfcGlobalId: 015H08Upv8IgOnOdu__Psm
   localizations:
   - language: en
@@ -513,6 +640,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sniGNXi16lvR$CnA1f_H4
     ifdGuid: 1sniGNXi16lvR$CnA1f_H4
     legacyGuid: 4bc3d7215dac42f8ad3e069dc2559ee2
+    legacyGuids:
+    - 1BmzSXNQn2_Aq_1ft2LPxY
     legacyGuidAsIfcGlobalId: 1BmzSXNQn2_Aq_1ft2LPxY
   localizations:
   - language: en
@@ -559,6 +688,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Vc2Rbk654ygjJae_8TWCD
     ifdGuid: 1Vc2Rbk654ygjJae_8TWCD
     legacyGuid: 70aaff9161f949eeb5bc5517d4044d3e
+    legacyGuids:
+    - 1mgl_HOVb9xhMyLHVK14q_
     legacyGuidAsIfcGlobalId: 1mgl_HOVb9xhMyLHVK14q_
   localizations:
   - language: en
@@ -605,6 +736,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CnGkuCGT28ee_bIaab9OF
     ifdGuid: 2CnGkuCGT28ee_bIaab9OF
     legacyGuid: 3be6cdde984242b0a0d64478bc12607e
+    legacyGuids:
+    - 0xvitUc492iA3MH7Yy4c1_
     legacyGuidAsIfcGlobalId: 0xvitUc492iA3MH7Yy4c1_
   localizations:
   - language: en
@@ -651,6 +784,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XLools0fEYhaAhq59actK
     ifdGuid: 0XLools0fEYhaAhq59actK
     legacyGuid: f0e1b9943900433a8bb2e462694b55d1
+    legacyGuids:
+    - 3muRcKEG13Eekov69fIrNH
     legacyGuidAsIfcGlobalId: 3muRcKEG13Eekov69fIrNH
   localizations:
   - language: en
@@ -697,6 +832,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Urg7JDBLCK8s4cOxG6jHZ
     ifdGuid: 1Urg7JDBLCK8s4cOxG6jHZ
     legacyGuid: f0250a29337f4364acb3be5daa02add0
+    legacyGuids:
+    - 3m9GefCtz3PAoplbsg0gtG
     legacyGuidAsIfcGlobalId: 3m9GefCtz3PAoplbsg0gtG
   localizations:
   - language: en
@@ -743,6 +880,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qwcI$tpHFwh8ABUT1M6mz
     ifdGuid: 1qwcI$tpHFwh8ABUT1M6mz
     legacyGuid: 74cb82eed6ff4aae9f88fe5222059167
+    legacyGuids:
+    - 1qouBkrlzAhf_8$b8Y1P5d
     legacyGuidAsIfcGlobalId: 1qouBkrlzAhf_8$b8Y1P5d
   localizations:
   - language: en
@@ -789,6 +928,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DLgb0LdL4S9H249DjFKhh
     ifdGuid: 1DLgb0LdL4S9H249DjFKhh
     legacyGuid: 976a795614174914adcd03a1ce7bdf3e
+    legacyGuids:
+    - 2NQdbM51T95AtD0w7EUzy_
     legacyGuidAsIfcGlobalId: 2NQdbM51T95AtD0w7EUzy_
   localizations:
   - language: en
@@ -835,6 +976,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Sjjxvqif8cgqMTDk1LcJJ
     ifdGuid: 3Sjjxvqif8cgqMTDk1LcJJ
     legacyGuid: 5a52482a0258465fa47cc512a46703f1
+    legacyGuids:
+    - 1QKaWg0bX6NwHynHAaPmFn
     legacyGuidAsIfcGlobalId: 1QKaWg0bX6NwHynHAaPmFn
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0aZEu0qRyHuO00025QrE$V
   ifdGuid: 0aZEu0qRyHuO00025QrE$V
   legacyGuid: 248cee00d1bf11e1800000215ad4efdf
+  legacyGuids:
+  - 0aZEu0qRyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0aZEu0qRyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcAirTerminal
   type: IfcAirTerminal
+propertyUsages:
+- propertyName: AirFlowRate
+  usageDefinition: Volumetric flow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1E8XxsHBX5NBmsofPnMvKX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1E8XxsHBX5NBmsofPnMvKX
+    ifdGuid: 1E8XxsHBX5NBmsofPnMvKX
+- propertyName: NeckAirVelocity
+  usageDefinition: Air velocity at the neck.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0KZLarNaH55wBpZ72wEebu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KZLarNaH55wBpZ72wEebu
+    ifdGuid: 0KZLarNaH55wBpZ72wEebu
+- propertyName: SupplyAirTemperatureHeating
+  usageDefinition: Supply air temperature in heating mode.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Nu1edTa10aBq7oDNIx5X9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Nu1edTa10aBq7oDNIx5X9
+    ifdGuid: 2Nu1edTa10aBq7oDNIx5X9
+- propertyName: SupplyAirTemperatureCooling
+  usageDefinition: Supply air temperature in cooling mode.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3bsV4daOXBaw9L6BmkymRM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bsV4daOXBaw9L6BmkymRM
+    ifdGuid: 3bsV4daOXBaw9L6BmkymRM
+- propertyName: PressureDrop
+  usageDefinition: Drop in total pressure between inlet and outlet at nominal air-flow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1AeC3CmBnBDPDsmWYjgpQs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AeC3CmBnBDPDsmWYjgpQs
+    ifdGuid: 1AeC3CmBnBDPDsmWYjgpQs
+- propertyName: InductionRatio
+  usageDefinition: Induction ratio versus distance from the diffuser and its discharge direction; induction ratio (or entrainment ratio) is the ratio of the volumetric flow rate in the jet to the volumetric flow rate at the air terminal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2k4Y_sLh5719KSq0LeZpbK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2k4Y_sLh5719KSq0LeZpbK
+    ifdGuid: 2k4Y_sLh5719KSq0LeZpbK
+- propertyName: CenterlineAirVelocity
+  usageDefinition: Centerline air velocity versus distance from the diffuser and temperature differential; a function of distance from diffuser and temperature difference between supply air and room air.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/31VCZjjkb9Mg5KOeQVriuY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31VCZjjkb9Mg5KOeQVriuY
+    ifdGuid: 31VCZjjkb9Mg5KOeQVriuY
 properties:
 - name: AirFlowRate
   definition: Volumetric flow rate.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h6sM0qRyHuO00025QrE$V
     ifdGuid: 0h6sM0qRyHuO00025QrE$V
     legacyGuid: 2b1b6580d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0h6sM0qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0h6sM0qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +150,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0khko0qRyHuO00025QrE$V
     ifdGuid: 0khko0qRyHuO00025QrE$V
     legacyGuid: 2eaeec80d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0khko0qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0khko0qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +200,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0osme0qRyHuO00025QrE$V
     ifdGuid: 0osme0qRyHuO00025QrE$V
     legacyGuid: 32db0a00d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0osme0qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0osme0qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +250,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sRf40qRyHuO00025QrE$V
     ifdGuid: 0sRf40qRyHuO00025QrE$V
     legacyGuid: 366e9100d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0sRf40qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0sRf40qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wcgw0qRyHuO00025QrE$V
     ifdGuid: 0wcgw0qRyHuO00025QrE$V
     legacyGuid: 3a9aae80d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0wcgw0qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0wcgw0qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -281,6 +350,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zbPy0qRyHuO00025QrE$V
     ifdGuid: 0zbPy0qRyHuO00025QrE$V
     legacyGuid: 3d959f00d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0zbPy0qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0zbPy0qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -333,6 +404,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16Xd20qRyHuO00025QrE$V
     ifdGuid: 16Xd20qRyHuO00025QrE$V
     legacyGuid: 46867080d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 16Xd20qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 16Xd20qRyHuO00025QrE$V
   localizations:
   - language: en

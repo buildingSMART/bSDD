@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16NPE0qWOHuO00025QrE$V
   ifdGuid: 16NPE0qWOHuO00025QrE$V
   legacyGuid: 465d9380d20611e1800000215ad4efdf
+  legacyGuids:
+  - 16NPE0qWOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 16NPE0qWOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/RADIOACTIVITYSENSOR
   type: IfcSensor/RADIOACTIVITYSENSOR
+propertyUsages:
+- propertyName: SetPointRadioactivity
+  usageDefinition: The radioactivity value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1_e_ce78f6NwGK6xYXWFNM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_e_ce78f6NwGK6xYXWFNM
+    ifdGuid: 1_e_ce78f6NwGK6xYXWFNM
 properties:
 - name: SetPointRadioactivity
   definition: The radioactivity value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Bkju0qWOHuO00025QrE$V
     ifdGuid: 1Bkju0qWOHuO00025QrE$V
     legacyGuid: 4bbade00d20611e1800000215ad4efdf
+    legacyGuids:
+    - 1Bkju0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Bkju0qWOHuO00025QrE$V
   localizations:
   - language: en

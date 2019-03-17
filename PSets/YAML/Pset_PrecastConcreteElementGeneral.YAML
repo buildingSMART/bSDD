@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22X$Y0qVGHuO00025QrE$V
   ifdGuid: 22X$Y0qVGHuO00025QrE$V
   legacyGuid: 8287f880d1f411e1800000215ad4efdf
+  legacyGuids:
+  - 22X$Y0qVGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 22X$Y0qVGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -61,6 +63,167 @@ applicableIfcClasses:
   type: IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement
 - name: IfcCivilElement
   type: IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement
+propertyUsages:
+- propertyName: TypeDesignator
+  usageDefinition: Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3N6$N8bQ50YRBLsQRLqagm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3N6$N8bQ50YRBLsQRLqagm
+    ifdGuid: 3N6$N8bQ50YRBLsQRLqagm
+- propertyName: CornerChamfer
+  usageDefinition: The chamfer in the corners of the precast element. The chamfer is presumed to be equal in both directions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2dNsZgFtP3TeGqr$BxOaDh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dNsZgFtP3TeGqr$BxOaDh
+    ifdGuid: 2dNsZgFtP3TeGqr$BxOaDh
+- propertyName: ManufacturingToleranceClass
+  usageDefinition: Classification designation of the manufacturing tolerances according to local standards.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0fBC6m1Mj81hgKDd$lqPsJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0fBC6m1Mj81hgKDd$lqPsJ
+    ifdGuid: 0fBC6m1Mj81hgKDd$lqPsJ
+- propertyName: FormStrippingStrength
+  usageDefinition: The minimum required compressive strength of the concrete at form stripping time.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/14d4$qASHEP9UiK0zABL2W
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14d4$qASHEP9UiK0zABL2W
+    ifdGuid: 14d4$qASHEP9UiK0zABL2W
+- propertyName: LiftingStrength
+  usageDefinition: The minimum required compressive strength of the concrete when the concrete element is lifted.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1b9cYC02fC6hRA$0GMrpoP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1b9cYC02fC6hRA$0GMrpoP
+    ifdGuid: 1b9cYC02fC6hRA$0GMrpoP
+- propertyName: ReleaseStrength
+  usageDefinition: The minimum required compressive strength of the concrete when the tendon stress is released. This property applies to prestressed concrete elements only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1o$VAM3R9FzBHvl2MQNxMd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1o$VAM3R9FzBHvl2MQNxMd
+    ifdGuid: 1o$VAM3R9FzBHvl2MQNxMd
+- propertyName: MinimumAllowableSupportLength
+  usageDefinition: The minimum allowable support length.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2eAc$Ybxz9be5ripMqouuw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2eAc$Ybxz9be5ripMqouuw
+    ifdGuid: 2eAc$Ybxz9be5ripMqouuw
+- propertyName: InitialTension
+  usageDefinition: The initial stress of the tendon. This property applies to prestressed concrete elements only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2XsQYjZmz4bgDAn5PYrbEI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XsQYjZmz4bgDAn5PYrbEI
+    ifdGuid: 2XsQYjZmz4bgDAn5PYrbEI
+- propertyName: TendonRelaxation
+  usageDefinition: The maximum allowable relaxation of the tendon (usually expressed as %/1000 h).This property applies to prestressed concrete elements only.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2A3EiyD1r9JuTHNmbBZqde
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2A3EiyD1r9JuTHNmbBZqde
+    ifdGuid: 2A3EiyD1r9JuTHNmbBZqde
+- propertyName: TransportationStrength
+  usageDefinition: The minimum required compressive strength of the concrete required for transportation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17UjOCFjH8je2htE3zcGQf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17UjOCFjH8je2htE3zcGQf
+    ifdGuid: 17UjOCFjH8je2htE3zcGQf
+- propertyName: SupportDuringTransportDescription
+  usageDefinition: Textual description of how the concrete element is supported during transportation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1RSVHoG_z1ifKda7NLGAyw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RSVHoG_z1ifKda7NLGAyw
+    ifdGuid: 1RSVHoG_z1ifKda7NLGAyw
+- propertyName: SupportDuringTransportDocReference
+  usageDefinition: Reference to an external document defining how the concrete element is supported during transportation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$bLFPqM9DVPfwiYgMX7Jn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$bLFPqM9DVPfwiYgMX7Jn
+    ifdGuid: 2$bLFPqM9DVPfwiYgMX7Jn
+- propertyName: HollowCorePlugging
+  usageDefinition: "A descriptive label for how the hollow core ends are treated: they may be left open, closed with a plug, or sealed with cast concrete. Values would be, for example: 'Unplugged', 'Plugged', 'SealedWithConcrete'. This property applies to  hollow core slabs only."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2nzFjFtKX619I31MifwDmo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2nzFjFtKX619I31MifwDmo
+    ifdGuid: 2nzFjFtKX619I31MifwDmo
+- propertyName: CamberAtMidspan
+  usageDefinition: The camber deflection, measured from the midpoint of a cambered face of a piece to the midpoint of the chord joining the ends of the same face, as shown in the figure below, divided by the original (nominal) straight length of the face of the piece.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19l1YPsejEKxUVmflNeGjq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19l1YPsejEKxUVmflNeGjq
+    ifdGuid: 19l1YPsejEKxUVmflNeGjq
+- propertyName: BatterAtStart
+  usageDefinition: The angle, in radians, by which the formwork at the starting face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Qv5ItSNjAKAscTQfdHpRu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Qv5ItSNjAKAscTQfdHpRu
+    ifdGuid: 0Qv5ItSNjAKAscTQfdHpRu
+- propertyName: BatterAtEnd
+  usageDefinition: The angle, in radians, by which the formwork at the ending face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EJzhjw6j3qBgIE$BR3Bex
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EJzhjw6j3qBgIE$BR3Bex
+    ifdGuid: 3EJzhjw6j3qBgIE$BR3Bex
+- propertyName: Twisting
+  usageDefinition: The angle, in radians, through which the end face of a precast piece is rotated with respect to its starting face, along its longitudinal axis, as a result of non-aligned supports. This measure is also termed the ‘warping’ angle.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0CJ9g40YvEkQXPCDfGpMFk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CJ9g40YvEkQXPCDfGpMFk
+    ifdGuid: 0CJ9g40YvEkQXPCDfGpMFk
+- propertyName: Shortening
+  usageDefinition: The ratio of the distance by which a precast piece is shortened after release from its form (due to compression induced by prestressing) to its original (nominal) length.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2pJg1bws58gO_E$5NTI1rc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2pJg1bws58gO_E$5NTI1rc
+    ifdGuid: 2pJg1bws58gO_E$5NTI1rc
+- propertyName: PieceMark
+  usageDefinition: Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type ‘1’ and specific shape ‘A’).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hPgk7Avf7BQ7bEMeKJUHc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hPgk7Avf7BQ7bEMeKJUHc
+    ifdGuid: 0hPgk7Avf7BQ7bEMeKJUHc
+- propertyName: DesignLocationNumber
+  usageDefinition: Defines a unique location within a structure, the ‘slot’ for which the piece was designed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2z4TnwdxD558TJdECE25KP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2z4TnwdxD558TJdECE25KP
+    ifdGuid: 2z4TnwdxD558TJdECE25KP
 properties:
 - name: TypeDesignator
   definition: Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.
@@ -71,6 +234,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KQPk0qVGHuO00025QrE$V
     ifdGuid: 2KQPk0qVGHuO00025QrE$V
     legacyGuid: 94699b80d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 2KQPk0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2KQPk0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -117,6 +282,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hg8a0qVGHuO00025QrE$V
     ifdGuid: 2hg8a0qVGHuO00025QrE$V
     legacyGuid: aba88900d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 2hg8a0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2hg8a0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -163,6 +330,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qcLg0qVGHuO00025QrE$V
     ifdGuid: 2qcLg0qVGHuO00025QrE$V
     legacyGuid: b4995a80d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 2qcLg0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2qcLg0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -209,6 +378,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2x9z80qVGHuO00025QrE$V
     ifdGuid: 2x9z80qVGHuO00025QrE$V
     legacyGuid: bb27d200d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 2x9z80qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2x9z80qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -255,6 +426,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31jac0qVGHuO00025QrE$V
     ifdGuid: 31jac0qVGHuO00025QrE$V
     legacyGuid: c1b64980d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 31jac0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 31jac0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -301,6 +474,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39TUu0qVGHuO00025QrE$V
     ifdGuid: 39TUu0qVGHuO00025QrE$V
     legacyGuid: c975ee00d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 39TUu0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 39TUu0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -347,6 +522,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FQyy0qVGHuO00025QrE$V
     ifdGuid: 3FQyy0qVGHuO00025QrE$V
     legacyGuid: cf6bcf00d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3FQyy0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3FQyy0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -393,6 +570,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3L_aQ0qVGHuO00025QrE$V
     ifdGuid: 3L_aQ0qVGHuO00025QrE$V
     legacyGuid: d5fa4680d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3L_aQ0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3L_aQ0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -439,6 +618,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ry2U0qVGHuO00025QrE$V
     ifdGuid: 3Ry2U0qVGHuO00025QrE$V
     legacyGuid: dbf02780d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3Ry2U0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Ry2U0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -485,6 +666,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XJN80qVGHuO00025QrE$V
     ifdGuid: 3XJN80qVGHuO00025QrE$V
     legacyGuid: e14d7200d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3XJN80qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3XJN80qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -531,6 +714,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dGrC0qVGHuO00025QrE$V
     ifdGuid: 3dGrC0qVGHuO00025QrE$V
     legacyGuid: e7435300d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3dGrC0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3dGrC0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -577,6 +762,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jEJG0qVGHuO00025QrE$V
     ifdGuid: 3jEJG0qVGHuO00025QrE$V
     legacyGuid: ed393400d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3jEJG0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3jEJG0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -625,6 +812,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mD2I0qVGHuO00025QrE$V
     ifdGuid: 3mD2I0qVGHuO00025QrE$V
     legacyGuid: f0342480d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3mD2I0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3mD2I0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -671,6 +860,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3smfm0qVGHuO00025QrE$V
     ifdGuid: 3smfm0qVGHuO00025QrE$V
     legacyGuid: f6c29c00d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3smfm0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3smfm0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -717,6 +908,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3xXr00qVGHuO00025QrE$V
     ifdGuid: 3xXr00qVGHuO00025QrE$V
     legacyGuid: fb875000d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 3xXr00qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3xXr00qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -763,6 +956,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00v9g0qVKHuO00025QrE$V
     ifdGuid: 00v9g0qVKHuO00025QrE$V
     legacyGuid: 00e49a80d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 00v9g0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 00v9g0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -809,6 +1004,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06sdk0qVKHuO00025QrE$V
     ifdGuid: 06sdk0qVKHuO00025QrE$V
     legacyGuid: 06da7b80d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 06sdk0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 06sdk0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -855,6 +1052,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CDyO0qVKHuO00025QrE$V
     ifdGuid: 0CDyO0qVKHuO00025QrE$V
     legacyGuid: 0c37c600d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 0CDyO0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0CDyO0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -901,6 +1100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IBQS0qVKHuO00025QrE$V
     ifdGuid: 0IBQS0qVKHuO00025QrE$V
     legacyGuid: 122da700d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 0IBQS0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0IBQS0qVKHuO00025QrE$V
   localizations:
   - language: en
@@ -947,6 +1148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0O8uW0qVKHuO00025QrE$V
     ifdGuid: 0O8uW0qVKHuO00025QrE$V
     legacyGuid: 18238800d1f511e1800000215ad4efdf
+    legacyGuids:
+    - 0O8uW0qVKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0O8uW0qVKHuO00025QrE$V
   localizations:
   - language: en

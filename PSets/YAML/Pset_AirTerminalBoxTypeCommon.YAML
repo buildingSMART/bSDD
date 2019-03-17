@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kmP_0qRuHuO00025QrE$V
   ifdGuid: 1kmP_0qRuHuO00025QrE$V
   legacyGuid: 6ec19f80d1be11e1800000215ad4efdf
+  legacyGuids:
+  - 1kmP_0qRuHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1kmP_0qRuHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,127 @@ localizations:
 applicableIfcClasses:
 - name: IfcAirTerminalBox
   type: IfcAirTerminalBox
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09N_7Eo2f4kOD$5WOCaqJh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09N_7Eo2f4kOD$5WOCaqJh
+    ifdGuid: 09N_7Eo2f4kOD$5WOCaqJh
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gJbO_vt17_vR4_XcpAybA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gJbO_vt17_vR4_XcpAybA
+    ifdGuid: 3gJbO_vt17_vR4_XcpAybA
+- propertyName: AirflowRateRange
+  usageDefinition: Range of airflow that can be delivered.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2s8yZeGKnDpwv8uW4$08lG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2s8yZeGKnDpwv8uW4$08lG
+    ifdGuid: 2s8yZeGKnDpwv8uW4$08lG
+- propertyName: AirPressureRange
+  usageDefinition: Allowable air static pressure range at the entrance of the air terminal box.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3BCBSKbgfBGeS3zt2LFyVC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3BCBSKbgfBGeS3zt2LFyVC
+    ifdGuid: 3BCBSKbgfBGeS3zt2LFyVC
+- propertyName: NominalAirFlowRate
+  usageDefinition: Nominal airflow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3PzGeXJnvE7Ae5jwjHf9pf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PzGeXJnvE7Ae5jwjHf9pf
+    ifdGuid: 3PzGeXJnvE7Ae5jwjHf9pf
+- propertyName: ArrangementType
+  usageDefinition: 'Terminal box arrangement.SingleDuct: Terminal box receives warm or cold air from a single air supply duct.DualDuct: Terminal box receives warm and cold air from separate air supply ducts.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3BKteW44bABfonoWAlZ8Km
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3BKteW44bABfonoWAlZ8Km
+    ifdGuid: 3BKteW44bABfonoWAlZ8Km
+- propertyName: ReheatType
+  usageDefinition: Terminal box reheat type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3KpUfzLrf2PORkjAXBDFCc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KpUfzLrf2PORkjAXBDFCc
+    ifdGuid: 3KpUfzLrf2PORkjAXBDFCc
+- propertyName: HasSoundAttenuator
+  usageDefinition: Terminal box has a sound attenuator.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3eBPdQFEb3FwBfrNTy$yh3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3eBPdQFEb3FwBfrNTy$yh3
+    ifdGuid: 3eBPdQFEb3FwBfrNTy$yh3
+- propertyName: HasReturnAir
+  usageDefinition: Terminal box has return air mixed with supply air from duct work.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0dRtl65pHDO8zd2glIMDs7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dRtl65pHDO8zd2glIMDs7
+    ifdGuid: 0dRtl65pHDO8zd2glIMDs7
+- propertyName: HasFan
+  usageDefinition: Terminal box has a fan inside (fan powered box).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25Zu8URIb7EwDBqFMT1$il
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25Zu8URIb7EwDBqFMT1$il
+    ifdGuid: 25Zu8URIb7EwDBqFMT1$il
+- propertyName: NominalInletAirPressure
+  usageDefinition: Nominal airflow inlet static pressure.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kzpP_J25ARQg7E6PbIZfh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kzpP_J25ARQg7E6PbIZfh
+    ifdGuid: 0kzpP_J25ARQg7E6PbIZfh
+- propertyName: NominalDamperDiameter
+  usageDefinition: Nominal damper diameter.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2OFopL1sv97Bqv92Eu6L7f
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2OFopL1sv97Bqv92Eu6L7f
+    ifdGuid: 2OFopL1sv97Bqv92Eu6L7f
+- propertyName: HousingThickness
+  usageDefinition: Air terminal box housing material thickness.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gUhhi68zEpwntJrsxJltd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gUhhi68zEpwntJrsxJltd
+    ifdGuid: 1gUhhi68zEpwntJrsxJltd
+- propertyName: OperationTemperatureRange
+  usageDefinition: Allowable operational range of the ambient air temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1E$ZoEKSv5YQ4NJLu3uNbE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1E$ZoEKSv5YQ4NJLu3uNbE
+    ifdGuid: 1E$ZoEKSv5YQ4NJLu3uNbE
+- propertyName: ReturnAirFractionRange
+  usageDefinition: Allowable return air fraction range as a fraction of discharge airflow.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3HfOjVMXX7LOjTsr$Heyd0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3HfOjVMXX7LOjTsr$Heyd0
+    ifdGuid: 3HfOjVMXX7LOjTsr$Heyd0
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +164,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sWKG0qRuHuO00025QrE$V
     ifdGuid: 1sWKG0qRuHuO00025QrE$V
     legacyGuid: 76814400d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 1sWKG0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1sWKG0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +212,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1z3xk0qRuHuO00025QrE$V
     ifdGuid: 1z3xk0qRuHuO00025QrE$V
     legacyGuid: 7d0fbb80d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 1z3xk0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1z3xk0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +412,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CZmI0qRuHuO00025QrE$V
     ifdGuid: 2CZmI0qRuHuO00025QrE$V
     legacyGuid: 8c8f0480d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 2CZmI0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2CZmI0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -332,6 +461,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2P4rq0qRuHuO00025QrE$V
     ifdGuid: 2P4rq0qRuHuO00025QrE$V
     legacyGuid: 99135d00d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 2P4rq0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2P4rq0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -379,6 +510,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XQvW0qRuHuO00025QrE$V
     ifdGuid: 2XQvW0qRuHuO00025QrE$V
     legacyGuid: a16b9800d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 2XQvW0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2XQvW0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +558,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dONa0qRuHuO00025QrE$V
     ifdGuid: 2dONa0qRuHuO00025QrE$V
     legacyGuid: a7617900d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 2dONa0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2dONa0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -583,6 +718,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2rhvK0qRuHuO00025QrE$V
     ifdGuid: 2rhvK0qRuHuO00025QrE$V
     legacyGuid: b5af9500d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 2rhvK0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2rhvK0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -803,6 +940,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/38ASw0qRuHuO00025QrE$V
     ifdGuid: 38ASw0qRuHuO00025QrE$V
     legacyGuid: c829ce80d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 38ASw0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 38ASw0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -849,6 +988,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DXna0qRuHuO00025QrE$V
     ifdGuid: 3DXna0qRuHuO00025QrE$V
     legacyGuid: cd871900d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3DXna0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3DXna0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -895,6 +1036,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JVFe0qRuHuO00025QrE$V
     ifdGuid: 3JVFe0qRuHuO00025QrE$V
     legacyGuid: d37cfa00d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3JVFe0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3JVFe0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -941,6 +1084,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PSji0qRuHuO00025QrE$V
     ifdGuid: 3PSji0qRuHuO00025QrE$V
     legacyGuid: d972db00d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3PSji0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3PSji0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -987,6 +1132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VQBm0qRuHuO00025QrE$V
     ifdGuid: 3VQBm0qRuHuO00025QrE$V
     legacyGuid: df68bc00d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3VQBm0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3VQBm0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -1033,6 +1180,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3anWQ0qRuHuO00025QrE$V
     ifdGuid: 3anWQ0qRuHuO00025QrE$V
     legacyGuid: e4c60680d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3anWQ0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3anWQ0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -1079,6 +1228,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gk_U0qRuHuO00025QrE$V
     ifdGuid: 3gk_U0qRuHuO00025QrE$V
     legacyGuid: eabbe780d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3gk_U0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3gk_U0qRuHuO00025QrE$V
   localizations:
   - language: en
@@ -1126,6 +1277,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3nulM0qRuHuO00025QrE$V
     ifdGuid: 3nulM0qRuHuO00025QrE$V
     legacyGuid: f1e2f580d1be11e1800000215ad4efdf
+    legacyGuids:
+    - 3nulM0qRuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3nulM0qRuHuO00025QrE$V
   localizations:
   - language: en

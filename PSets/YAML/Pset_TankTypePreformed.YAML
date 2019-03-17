@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1cab00qX0HuO00025QrE$V
   ifdGuid: 1cab00qX0HuO00025QrE$V
   legacyGuid: 66925000d21011e1800000215ad4efdf
+  legacyGuids:
+  - 1cab00qX0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1cab00qX0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcTank/PREFORMED
   type: IfcTank/PREFORMED
+propertyUsages:
+- propertyName: PatternType
+  usageDefinition: Defines the types of pattern (or shape of a tank that may be specified.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/24W2vWgeD6Og1fxNSrtaMk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24W2vWgeD6Og1fxNSrtaMk
+    ifdGuid: 24W2vWgeD6Og1fxNSrtaMk
+- propertyName: EndShapeType
+  usageDefinition: Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top; for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ENIu59azCdAnqWtYAK77j
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ENIu59azCdAnqWtYAK77j
+    ifdGuid: 2ENIu59azCdAnqWtYAK77j
+- propertyName: FirstCurvatureRadius
+  usageDefinition: FirstCurvatureRadius should be defined as the base or left side radius of curvature value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0779$tqAb3zh$q1sSBCrnD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0779$tqAb3zh$q1sSBCrnD
+    ifdGuid: 0779$tqAb3zh$q1sSBCrnD
+- propertyName: SecondCurvatureRadius
+  usageDefinition: SecondCurvatureRadius should be defined as the top or right side radius of curvature value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1xx7uT8Qn2GAj94jx1GV3f
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xx7uT8Qn2GAj94jx1GV3f
+    ifdGuid: 1xx7uT8Qn2GAj94jx1GV3f
 properties:
 - name: PatternType
   definition: Defines the types of pattern (or shape of a tank that may be specified.
@@ -45,6 +80,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hLmG0qX0HuO00025QrE$V
     ifdGuid: 1hLmG0qX0HuO00025QrE$V
     legacyGuid: 6b570400d21011e1800000215ad4efdf
+    legacyGuids:
+    - 1hLmG0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1hLmG0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -221,6 +258,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1uS$C0qX0HuO00025QrE$V
     ifdGuid: 1uS$C0qX0HuO00025QrE$V
     legacyGuid: 7873f300d21011e1800000215ad4efdf
+    legacyGuids:
+    - 1uS$C0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1uS$C0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -441,6 +480,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2996a0qX0HuO00025QrE$V
     ifdGuid: 2996a0qX0HuO00025QrE$V
     legacyGuid: 89246900d21011e1800000215ad4efdf
+    legacyGuids:
+    - 2996a0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2996a0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -487,6 +528,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IhT40qX0HuO00025QrE$V
     ifdGuid: 2IhT40qX0HuO00025QrE$V
     legacyGuid: 92add100d21011e1800000215ad4efdf
+    legacyGuids:
+    - 2IhT40qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2IhT40qX0HuO00025QrE$V
   localizations:
   - language: en

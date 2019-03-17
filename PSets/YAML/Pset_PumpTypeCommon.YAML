@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2v_wA0qVuHuO00025QrE$V
   ifdGuid: 2v_wA0qVuHuO00025QrE$V
   legacyGuid: b9fba280d1fe11e1800000215ad4efdf
+  legacyGuids:
+  - 2v_wA0qVuHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2v_wA0qVuHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcPump
   type: IfcPump
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25TqiKFXn3nPyfSc9OLBGe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25TqiKFXn3nPyfSc9OLBGe
+    ifdGuid: 25TqiKFXn3nPyfSc9OLBGe
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2qxC$MJgr3FOhlvLLTst_9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qxC$MJgr3FOhlvLLTst_9
+    ifdGuid: 2qxC$MJgr3FOhlvLLTst_9
+- propertyName: FlowRateRange
+  usageDefinition: Allowable range of volume of fluid being pumped against the resistance specified.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3XhB3aTmzDn8TqBKVUmdbT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XhB3aTmzDn8TqBKVUmdbT
+    ifdGuid: 3XhB3aTmzDn8TqBKVUmdbT
+- propertyName: FlowResistanceRange
+  usageDefinition: Allowable range of frictional resistance against which the fluid is being pumped.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OrxujrhP5A8caaxkD$A09
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OrxujrhP5A8caaxkD$A09
+    ifdGuid: 1OrxujrhP5A8caaxkD$A09
+- propertyName: ConnectionSize
+  usageDefinition: The connection size of the to and from the pump.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2iSMEqBSD69vwGryytz24H
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iSMEqBSD69vwGryytz24H
+    ifdGuid: 2iSMEqBSD69vwGryytz24H
+- propertyName: TemperatureRange
+  usageDefinition: Allowable operational range of the fluid temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0fCg99JF17oRo6FILPJpg2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0fCg99JF17oRo6FILPJpg2
+    ifdGuid: 0fCg99JF17oRo6FILPJpg2
+- propertyName: NetPositiveSuctionHead
+  usageDefinition: Minimum liquid pressure at the pump inlet to prevent cavitation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3M_v$2EVn2DBuB3KtXw9u4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3M_v$2EVn2DBuB3KtXw9u4
+    ifdGuid: 3M_v$2EVn2DBuB3KtXw9u4
+- propertyName: NominalRotationSpeed
+  usageDefinition: Pump rotational speed under nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SLGWQ5N55p8mnmWp4OKyz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SLGWQ5N55p8mnmWp4OKyz
+    ifdGuid: 2SLGWQ5N55p8mnmWp4OKyz
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1').
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$yOE0qVuHuO00025QrE$V
     ifdGuid: 2$yOE0qVuHuO00025QrE$V
     legacyGuid: bff18380d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 2$yOE0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2$yOE0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36V$i0qVuHuO00025QrE$V
     ifdGuid: 36V$i0qVuHuO00025QrE$V
     legacyGuid: c67ffb00d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 36V$i0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 36V$i0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +356,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KpXS0qVuHuO00025QrE$V
     ifdGuid: 3KpXS0qVuHuO00025QrE$V
     legacyGuid: d4ce1700d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 3KpXS0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3KpXS0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -332,6 +405,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RzIK0qVuHuO00025QrE$V
     ifdGuid: 3RzIK0qVuHuO00025QrE$V
     legacyGuid: dbf52500d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 3RzIK0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3RzIK0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -379,6 +454,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3chxe0qVuHuO00025QrE$V
     ifdGuid: 3chxe0qVuHuO00025QrE$V
     legacyGuid: e6afba00d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 3chxe0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3chxe0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +502,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jriW0qVuHuO00025QrE$V
     ifdGuid: 3jriW0qVuHuO00025QrE$V
     legacyGuid: edd6c800d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 3jriW0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3jriW0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -472,6 +551,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rbco0qVuHuO00025QrE$V
     ifdGuid: 3rbco0qVuHuO00025QrE$V
     legacyGuid: f5966c80d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 3rbco0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3rbco0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -518,6 +599,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3xZ4s0qVuHuO00025QrE$V
     ifdGuid: 3xZ4s0qVuHuO00025QrE$V
     legacyGuid: fb8c4d80d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 3xZ4s0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3xZ4s0qVuHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11F1o0qUKHuO00025QrE$V
   ifdGuid: 11F1o0qUKHuO00025QrE$V
   legacyGuid: 413c1c80d1e511e1800000215ad4efdf
+  legacyGuids:
+  - 11F1o0qUKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 11F1o0qUKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcFilter/AIRPARTICLEFILTER
   type: IfcFilter/AIRPARTICLEFILTER
+propertyUsages:
+- propertyName: AirParticleFilterType
+  usageDefinition: 'A panel dry type extended surface filter is a dry-type air filter with random fiber mats or blankets in the forms of pockets, V-shaped or radial pleats, and include the following:CoarseFilter: Filter with a efficiency lower than 30% for atmosphere dust-spot.CoarseMetalScreen: Filter made of metal screen.CoarseCellFoams: Filter made of cell foams.CoarseSpunGlass: Filter made of spun glass.MediumFilter: Filter with an efficiency between 30-98% for atmosphere dust-spot.MediumElectretFilter: Filter with fine electret synthetic fibers.MediumNaturalFiberFilter: Filter with natural fibers.HEPAFilter: High efficiency particulate air filter.ULPAFilter: Ultra low penetration air filter.MembraneFilters: Filter made of membrane for certain pore diameters in flat sheet and pleated form.A renewable media with a moving curtain viscous filter are random-fiber media coated with viscous substance in roll form or curtain where fresh media is fed across the face of the filter and the dirty media is rewound onto a roll at the bottom or to into a reservoir:RollForm: Viscous filter used in roll form.AdhesiveReservoir: Viscous filter used in moving curtain form.A renewable moving curtain dry media filter is a random-fiber dry media of relatively high porosity used in moving-curtain(roll) filters.An electrical filter uses electrostatic precipitation to remove and collect particulate contaminants.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3BxZdppCz4_PCK7VsCVIKH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3BxZdppCz4_PCK7VsCVIKH
+    ifdGuid: 3BxZdppCz4_PCK7VsCVIKH
+- propertyName: FrameMaterial
+  usageDefinition: Filter frame material.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3mcLG9Uj97kRPsv6KWgstx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mcLG9Uj97kRPsv6KWgstx
+    ifdGuid: 3mcLG9Uj97kRPsv6KWgstx
+- propertyName: SeparationType
+  usageDefinition: Air particulate filter media separation type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2AiH2MWSr6BR4MjhIr1Oo6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AiH2MWSr6BR4MjhIr1Oo6
+    ifdGuid: 2AiH2MWSr6BR4MjhIr1Oo6
+- propertyName: DustHoldingCapacity
+  usageDefinition: Maximum filter dust holding capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3L_TUbjeXBtxF3al_wstIz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3L_TUbjeXBtxF3al_wstIz
+    ifdGuid: 3L_TUbjeXBtxF3al_wstIz
+- propertyName: FaceSurfaceArea
+  usageDefinition: Face area of filter frame.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Dv$_owsfBoRMlfVTUoCbv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Dv$_owsfBoRMlfVTUoCbv
+    ifdGuid: 1Dv$_owsfBoRMlfVTUoCbv
+- propertyName: MediaExtendedArea
+  usageDefinition: Total extended media area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1t2ED_NonBQOQrU2OQ4xe0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1t2ED_NonBQOQrU2OQ4xe0
+    ifdGuid: 1t2ED_NonBQOQrU2OQ4xe0
+- propertyName: NominalCountedEfficiency
+  usageDefinition: Nominal filter efficiency based the particle count concentration before and after the filter against particles with a certain size distribution.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3NRDe6eaHDhw3Yc7Dsy2d5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NRDe6eaHDhw3Yc7Dsy2d5
+    ifdGuid: 3NRDe6eaHDhw3Yc7Dsy2d5
+- propertyName: NominalWeightedEfficiency
+  usageDefinition: Nominal filter efficiency based the particle weight concentration before and after the filter against particles with a certain size distribution.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3sSrpUCP90zPODtVJtVIun
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3sSrpUCP90zPODtVJtVIun
+    ifdGuid: 3sSrpUCP90zPODtVJtVIun
+- propertyName: PressureDropCurve
+  usageDefinition: Under certain dust holding weight, DelPressure = f (fluidflowRate)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3HnnuXprL2xAZ14WJ_$Osi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3HnnuXprL2xAZ14WJ_$Osi
+    ifdGuid: 3HnnuXprL2xAZ14WJ_$Osi
+- propertyName: CountedEfficiencyCurve
+  usageDefinition: Counted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3qPRfXBZ1Fdfga2O8rHrZx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qPRfXBZ1Fdfga2O8rHrZx
+    ifdGuid: 3qPRfXBZ1Fdfga2O8rHrZx
+- propertyName: WeightedEfficiencyCurve
+  usageDefinition: Weighted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3lgWDoND92vvI73jwOTfwJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lgWDoND92vvI73jwOTfwJ
+    ifdGuid: 3lgWDoND92vvI73jwOTfwJ
 properties:
 - name: AirParticleFilterType
   definition: 'A panel dry type extended surface filter is a dry-type air filter with random fiber mats or blankets in the forms of pockets, V-shaped or radial pleats, and include the following:CoarseFilter: Filter with a efficiency lower than 30% for atmosphere dust-spot.CoarseMetalScreen: Filter made of metal screen.CoarseCellFoams: Filter made of cell foams.CoarseSpunGlass: Filter made of spun glass.MediumFilter: Filter with an efficiency between 30-98% for atmosphere dust-spot.MediumElectretFilter: Filter with fine electret synthetic fibers.MediumNaturalFiberFilter: Filter with natural fibers.HEPAFilter: High efficiency particulate air filter.ULPAFilter: Ultra low penetration air filter.MembraneFilters: Filter made of membrane for certain pore diameters in flat sheet and pleated form.A renewable media with a moving curtain viscous filter are random-fiber media coated with viscous substance in roll form or curtain where fresh media is fed across the face of the filter and the dirty media is rewound onto a roll at the bottom or to into a reservoir:RollForm: Viscous filter used in roll form.AdhesiveReservoir: Viscous filter used in moving curtain form.A renewable moving curtain dry media filter is a random-fiber dry media of relatively high porosity used in moving-curtain(roll) filters.An electrical filter uses electrostatic precipitation to remove and collect particulate contaminants.'
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17CVs0qUKHuO00025QrE$V
     ifdGuid: 17CVs0qUKHuO00025QrE$V
     legacyGuid: 4731fd80d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 17CVs0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 17CVs0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -415,6 +508,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ZDPy0qUKHuO00025QrE$V
     ifdGuid: 1ZDPy0qUKHuO00025QrE$V
     legacyGuid: 63359f00d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 1ZDPy0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ZDPy0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -462,6 +557,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1cC8_0qUKHuO00025QrE$V
     ifdGuid: 1cC8_0qUKHuO00025QrE$V
     legacyGuid: 66308f80d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 1cC8_0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1cC8_0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -638,6 +735,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qVgk0qUKHuO00025QrE$V
     ifdGuid: 1qVgk0qUKHuO00025QrE$V
     legacyGuid: 747eab80d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 1qVgk0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1qVgk0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -684,6 +783,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1vGr_0qUKHuO00025QrE$V
     ifdGuid: 1vGr_0qUKHuO00025QrE$V
     legacyGuid: 79435f80d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 1vGr_0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1vGr_0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -730,6 +831,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$qTS0qUKHuO00025QrE$V
     ifdGuid: 1$qTS0qUKHuO00025QrE$V
     legacyGuid: 7fd1d700d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 1$qTS0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1$qTS0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -776,6 +879,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25Bo60qUKHuO00025QrE$V
     ifdGuid: 25Bo60qUKHuO00025QrE$V
     legacyGuid: 852f2180d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 25Bo60qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 25Bo60qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -822,6 +927,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AZ6m0qUKHuO00025QrE$V
     ifdGuid: 2AZ6m0qUKHuO00025QrE$V
     legacyGuid: 8a8c6c00d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 2AZ6m0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2AZ6m0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -868,6 +975,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FwRQ0qUKHuO00025QrE$V
     ifdGuid: 2FwRQ0qUKHuO00025QrE$V
     legacyGuid: 8fe9b680d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 2FwRQ0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2FwRQ0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -920,6 +1029,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Q2xK0qUKHuO00025QrE$V
     ifdGuid: 2Q2xK0qUKHuO00025QrE$V
     legacyGuid: 9a0bb500d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 2Q2xK0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Q2xK0qUKHuO00025QrE$V
   localizations:
   - language: en
@@ -972,6 +1083,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bztS0qUKHuO00025QrE$V
     ifdGuid: 2bztS0qUKHuO00025QrE$V
     legacyGuid: a5f77700d1e511e1800000215ad4efdf
+    legacyGuids:
+    - 2bztS0qUKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2bztS0qUKHuO00025QrE$V
   localizations:
   - language: en

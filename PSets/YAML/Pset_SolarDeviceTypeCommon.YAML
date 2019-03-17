@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FJsI0qWWHuO00025QrE$V
   ifdGuid: 1FJsI0qWWHuO00025QrE$V
   legacyGuid: 4f4f6480d20811e1800000215ad4efdf
+  legacyGuids:
+  - 1FJsI0qWWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1FJsI0qWWHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcSolarDevice
   type: IfcSolarDevice
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1R5pSkzNv9EP3bGI49e$pb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1R5pSkzNv9EP3bGI49e$pb
+    ifdGuid: 1R5pSkzNv9EP3bGI49e$pb
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0h0b0E_An8gwOs6pJOmoEo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h0b0E_An8gwOs6pJOmoEo
+    ifdGuid: 0h0b0E_An8gwOs6pJOmoEo
+- propertyName: ActiveCellSurfaceAreaFraction
+  usageDefinition: 'The percentage of surface area containing active solar cells. Note: the surface area may be provided at Qto_SolarDeviceBaseQuantities.GrossArea.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XirbWTo51Ce6yHB9cMfPq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XirbWTo51Ce6yHB9cMfPq
+    ifdGuid: 1XirbWTo51Ce6yHB9cMfPq
+- propertyName: CellEfficiency
+  usageDefinition: The ratio of power generated divided by incident solar power.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1NqqQKIZ53uQMi$w67mv80
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1NqqQKIZ53uQMi$w67mv80
+    ifdGuid: 1NqqQKIZ53uQMi$w67mv80
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LtTm0qWWHuO00025QrE$V
     ifdGuid: 1LtTm0qWWHuO00025QrE$V
     legacyGuid: 55dddc00d20811e1800000215ad4efdf
+    legacyGuids:
+    - 1LtTm0qWWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1LtTm0qWWHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +127,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Rqxq0qWWHuO00025QrE$V
     ifdGuid: 1Rqxq0qWWHuO00025QrE$V
     legacyGuid: 5bd3bd00d20811e1800000215ad4efdf
+    legacyGuids:
+    - 1Rqxq0qWWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Rqxq0qWWHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +327,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 9a9a35d295f84d568bac6657ec7bec7d
+    legacyGuids:
+    - 2QcZNIbVXDLekiPbViU_nz
     legacyGuidAsIfcGlobalId: 2QcZNIbVXDLekiPbViU_nz
   localizations:
   - language: de-DE
@@ -331,6 +372,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 034f6ceaa9d848df8940419e8c744201
+    legacyGuids:
+    - 03JspggTX8tub0GPwCT481
     legacyGuidAsIfcGlobalId: 03JspggTX8tub0GPwCT481
   localizations:
   - language: de-DE

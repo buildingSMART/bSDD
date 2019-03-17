@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AdI00qU0HuO00025QrE$V
   ifdGuid: 3AdI00qU0HuO00025QrE$V
   legacyGuid: ca9d2000d1e011e1800000215ad4efdf
+  legacyGuids:
+  - 3AdI00qU0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3AdI00qU0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,103 @@ localizations:
 applicableIfcClasses:
 - name: IfcElectricMotor
   type: IfcElectricMotor
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3$1aOvWsn3wR4KBkOncTn5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$1aOvWsn3wR4KBkOncTn5
+    ifdGuid: 3$1aOvWsn3wR4KBkOncTn5
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ZI0GY5lz8FxTRRfQPJAhY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ZI0GY5lz8FxTRRfQPJAhY
+    ifdGuid: 1ZI0GY5lz8FxTRRfQPJAhY
+- propertyName: MaximumPowerOutput
+  usageDefinition: The maximum output power rating of the engine.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2KeMwwZjj0FR49cijFqCRE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KeMwwZjj0FR49cijFqCRE
+    ifdGuid: 2KeMwwZjj0FR49cijFqCRE
+- propertyName: ElectricMotorEfficiency
+  usageDefinition: The ratio of output capacity to intake capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/30M6Lmg2rAQB$nw5N$k4iG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30M6Lmg2rAQB$nw5N$k4iG
+    ifdGuid: 30M6Lmg2rAQB$nw5N$k4iG
+- propertyName: StartCurrentFactor
+  usageDefinition: IEC. Start current factor defines how large the peak starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and to give the start current.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uS2UdUkj8WwTThSWesg8s
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uS2UdUkj8WwTThSWesg8s
+    ifdGuid: 2uS2UdUkj8WwTThSWesg8s
+- propertyName: StartingTime
+  usageDefinition: The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08n6mt10LAr9oste_kg27o
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08n6mt10LAr9oste_kg27o
+    ifdGuid: 08n6mt10LAr9oste_kg27o
+- propertyName: TeTime
+  usageDefinition: The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3K9y0OV3XArAEqjH9mkdwv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3K9y0OV3XArAEqjH9mkdwv
+    ifdGuid: 3K9y0OV3XArAEqjH9mkdwv
+- propertyName: LockedRotorCurrent
+  usageDefinition: Input current when a motor armature is energized but not rotating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EHwpr$2P1egAosttZV8Eg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EHwpr$2P1egAosttZV8Eg
+    ifdGuid: 3EHwpr$2P1egAosttZV8Eg
+- propertyName: MotorEnclosureType
+  usageDefinition: A list of the available types of motor enclosure from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0BpT9jRaTBW8dfvbU$vr$6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BpT9jRaTBW8dfvbU$vr$6
+    ifdGuid: 0BpT9jRaTBW8dfvbU$vr$6
+- propertyName: FrameSize
+  usageDefinition: Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1G70ViEez1xwPHi0DSkj6a
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1G70ViEez1xwPHi0DSkj6a
+    ifdGuid: 1G70ViEez1xwPHi0DSkj6a
+- propertyName: IsGuarded
+  usageDefinition: Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1edAqDagv3dAqWGYiC$1OR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1edAqDagv3dAqWGYiC$1OR
+    ifdGuid: 1edAqDagv3dAqWGYiC$1OR
+- propertyName: HasPartWinding
+  usageDefinition: Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) .
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3TqXiZhHT0C8Ts$5UgmgP7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TqXiZhHT0C8Ts$5UgmgP7
+    ifdGuid: 3TqXiZhHT0C8Ts$5UgmgP7
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3INCI0qU0HuO00025QrE$V
     ifdGuid: 3INCI0qU0HuO00025QrE$V
     legacyGuid: d25cc480d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3INCI0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3INCI0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +191,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3N8NY0qU0HuO00025QrE$V
     ifdGuid: 3N8NY0qU0HuO00025QrE$V
     legacyGuid: d7217880d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3N8NY0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3N8NY0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +391,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bRvI0qU0HuO00025QrE$V
     ifdGuid: 3bRvI0qU0HuO00025QrE$V
     legacyGuid: e56f9480d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3bRvI0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3bRvI0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +442,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fcx80qU0HuO00025QrE$V
     ifdGuid: 3fcx80qU0HuO00025QrE$V
     legacyGuid: e99bb200d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3fcx80qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3fcx80qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -386,6 +493,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3k_Fo0qU0HuO00025QrE$V
     ifdGuid: 3k_Fo0qU0HuO00025QrE$V
     legacyGuid: eef8fc80d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3k_Fo0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3k_Fo0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -435,6 +544,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3p9He0qU0HuO00025QrE$V
     ifdGuid: 3p9He0qU0HuO00025QrE$V
     legacyGuid: f3251a00d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3p9He0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3p9He0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -484,6 +595,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3uWcI0qU0HuO00025QrE$V
     ifdGuid: 3uWcI0qU0HuO00025QrE$V
     legacyGuid: f8826480d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3uWcI0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3uWcI0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -533,6 +646,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ztwy0qU0HuO00025QrE$V
     ifdGuid: 3ztwy0qU0HuO00025QrE$V
     legacyGuid: fddfaf00d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 3ztwy0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ztwy0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -582,6 +697,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/02f6C0qU4HuO00025QrE$V
     ifdGuid: 02f6C0qU4HuO00025QrE$V
     legacyGuid: 02a46300d1e111e1800000215ad4efdf
+    legacyGuids:
+    - 02f6C0qU4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 02f6C0qU4HuO00025QrE$V
   localizations:
   - language: en
@@ -783,6 +900,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FmL80qU4HuO00025QrE$V
     ifdGuid: 0FmL80qU4HuO00025QrE$V
     legacyGuid: 0fc15200d1e111e1800000215ad4efdf
+    legacyGuids:
+    - 0FmL80qU4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0FmL80qU4HuO00025QrE$V
   localizations:
   - language: en
@@ -832,6 +951,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0LjpC0qU4HuO00025QrE$V
     ifdGuid: 0LjpC0qU4HuO00025QrE$V
     legacyGuid: 15b73300d1e111e1800000215ad4efdf
+    legacyGuids:
+    - 0LjpC0qU4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0LjpC0qU4HuO00025QrE$V
   localizations:
   - language: en
@@ -881,6 +1002,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0R57s0qU4HuO00025QrE$V
     ifdGuid: 0R57s0qU4HuO00025QrE$V
     legacyGuid: 1b147d80d1e111e1800000215ad4efdf
+    legacyGuids:
+    - 0R57s0qU4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0R57s0qU4HuO00025QrE$V
   localizations:
   - language: en

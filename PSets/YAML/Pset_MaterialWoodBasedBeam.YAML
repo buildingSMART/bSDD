@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rQ0i0qUuHuO00025QrE$V
   ifdGuid: 1rQ0i0qUuHuO00025QrE$V
   legacyGuid: 75680b00d1ee11e1800000215ad4efdf
+  legacyGuids:
+  - 1rQ0i0qUuHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1rQ0i0qUuHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -41,6 +43,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcMaterial/Wood
   type: IfcMaterial/Wood
+propertyUsages:
+- propertyName: ApplicableStructuralDesignMethod
+  usageDefinition: Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3rOXLMIePBmA3nCfAkjr5s
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rOXLMIePBmA3nCfAkjr5s
+    ifdGuid: 3rOXLMIePBmA3nCfAkjr5s
+- propertyName: InPlane
+  usageDefinition: Mechanical properties with respect to in-plane load, i.e. bending about the strong axis; tension zone of unbalanced layups is stressed in tension.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EUgm5HpP588tnTD9u07r7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EUgm5HpP588tnTD9u07r7
+    ifdGuid: 2EUgm5HpP588tnTD9u07r7
+- propertyName: InPlaneNegative
+  usageDefinition: Mechanical properties with respect to in-plane load, i.e. bending about the strong axis; compression zone of unbalanced layups is stressed in tension.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3aazARgHvD0PiY6vBnq$R_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aazARgHvD0PiY6vBnq$R_
+    ifdGuid: 3aazARgHvD0PiY6vBnq$R_
+- propertyName: OutOfPlane
+  usageDefinition: Mechanical properties with respect to out-of-plane load, i.e. bending about the weak axis.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10RDbgIb12rP4W_oHH02Rl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10RDbgIb12rP4W_oHH02Rl
+    ifdGuid: 10RDbgIb12rP4W_oHH02Rl
 properties:
 - name: ApplicableStructuralDesignMethod
   definition: Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.
@@ -51,6 +86,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1uOlk0qUuHuO00025QrE$V
     ifdGuid: 1uOlk0qUuHuO00025QrE$V
     legacyGuid: 7862fb80d1ee11e1800000215ad4efdf
+    legacyGuids:
+    - 1uOlk0qUuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1uOlk0qUuHuO00025QrE$V
   localizations:
   - language: en
@@ -97,6 +134,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zm4O0qUuHuO00025QrE$V
     ifdGuid: 1zm4O0qUuHuO00025QrE$V
     legacyGuid: 7dc04600d1ee11e1800000215ad4efdf
+    legacyGuids:
+    - 1zm4O0qUuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1zm4O0qUuHuO00025QrE$V
   localizations:
   - language: en
@@ -836,6 +875,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ddmq0qUuHuO00025QrE$V
     ifdGuid: 3Ddmq0qUuHuO00025QrE$V
     legacyGuid: cd9f0d00d1ee11e1800000215ad4efdf
+    legacyGuids:
+    - 3Ddmq0qUuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Ddmq0qUuHuO00025QrE$V
   localizations:
   - language: en
@@ -1575,6 +1616,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WUCI0qUyHuO00025QrE$V
     ifdGuid: 0WUCI0qUyHuO00025QrE$V
     legacyGuid: 2078c480d1ef11e1800000215ad4efdf
+    legacyGuids:
+    - 0WUCI0qUyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0WUCI0qUyHuO00025QrE$V
   localizations:
   - language: en

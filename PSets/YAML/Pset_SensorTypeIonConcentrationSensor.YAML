@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mmWG0qWKHuO00025QrE$V
   ifdGuid: 2mmWG0qWKHuO00025QrE$V
   legacyGuid: b0c20400d20511e1800000215ad4efdf
+  legacyGuids:
+  - 2mmWG0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2mmWG0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,23 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/IONCONCENTRATIONSENSOR
   type: IfcSensor/IONCONCENTRATIONSENSOR
+propertyUsages:
+- propertyName: SubstanceDetected
+  usageDefinition: Identification of the substance that is being detected according to chemical formula.  For example, calcium carbonate is 'CaCO3'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2r7JpzoK5ESQisOpuU5mdh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2r7JpzoK5ESQisOpuU5mdh
+    ifdGuid: 2r7JpzoK5ESQisOpuU5mdh
+- propertyName: SetPointConcentration
+  usageDefinition: The ion concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1eoazT4KP3zRTlTq8j74IV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1eoazT4KP3zRTlTq8j74IV
+    ifdGuid: 1eoazT4KP3zRTlTq8j74IV
 properties:
 - name: SubstanceDetected
   definition: Identification of the substance that is being detected according to chemical formula.  For example, calcium carbonate is 'CaCO3'
@@ -41,6 +60,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2s7qw0qWKHuO00025QrE$V
     ifdGuid: 2s7qw0qWKHuO00025QrE$V
     legacyGuid: b61f4e80d20511e1800000215ad4efdf
+    legacyGuids:
+    - 2s7qw0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2s7qw0qWKHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +111,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2yhSO0qWKHuO00025QrE$V
     ifdGuid: 2yhSO0qWKHuO00025QrE$V
     legacyGuid: bcadc600d20511e1800000215ad4efdf
+    legacyGuids:
+    - 2yhSO0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2yhSO0qWKHuO00025QrE$V
   localizations:
   - language: en

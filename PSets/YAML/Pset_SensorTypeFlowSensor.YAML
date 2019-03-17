@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qnxm0qWKHuO00025QrE$V
   ifdGuid: 0qnxm0qWKHuO00025QrE$V
   legacyGuid: 34c7bc00d20511e1800000215ad4efdf
+  legacyGuids:
+  - 0qnxm0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0qnxm0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/FLOWSENSOR
   type: IfcSensor/FLOWSENSOR
+propertyUsages:
+- propertyName: SetPointFlow
+  usageDefinition: The volumetric flow value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EWj3do7H9uffHKCH2bnQ4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EWj3do7H9uffHKCH2bnQ4
+    ifdGuid: 2EWj3do7H9uffHKCH2bnQ4
 properties:
 - name: SetPointFlow
   definition: The volumetric flow value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0w9GQ0qWKHuO00025QrE$V
     ifdGuid: 0w9GQ0qWKHuO00025QrE$V
     legacyGuid: 3a250680d20511e1800000215ad4efdf
+    legacyGuids:
+    - 0w9GQ0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0w9GQ0qWKHuO00025QrE$V
   localizations:
   - language: en

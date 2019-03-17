@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IQ7i0qT8HuO00025QrE$V
   ifdGuid: 0IQ7i0qT8HuO00025QrE$V
   legacyGuid: 12687b00d1d211e1800000215ad4efdf
+  legacyGuids:
+  - 0IQ7i0qT8HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0IQ7i0qT8HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcDamper/SMOKEDAMPER
   type: IfcDamper/SMOKEDAMPER
+propertyUsages:
+- propertyName: ControlType
+  usageDefinition: The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.) .
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Y9_srDVz1B94RY2I9zeIk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Y9_srDVz1B94RY2I9zeIk
+    ifdGuid: 2Y9_srDVz1B94RY2I9zeIk
 properties:
 - name: ControlType
   definition: The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.) .
@@ -43,6 +54,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NBIy0qT8HuO00025QrE$V
     ifdGuid: 0NBIy0qT8HuO00025QrE$V
     legacyGuid: 172d2f00d1d211e1800000215ad4efdf
+    legacyGuids:
+    - 0NBIy0qT8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0NBIy0qT8HuO00025QrE$V
   localizations:
   - language: en

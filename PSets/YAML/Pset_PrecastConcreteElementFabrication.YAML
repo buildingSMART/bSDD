@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tRUM0qVGHuO00025QrE$V
   ifdGuid: 0tRUM0qVGHuO00025QrE$V
   legacyGuid: 376de580d1f411e1800000215ad4efdf
+  legacyGuids:
+  - 0tRUM0qVGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0tRUM0qVGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -61,6 +63,63 @@ applicableIfcClasses:
   type: IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement
 - name: IfcCivilElement
   type: IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement
+propertyUsages:
+- propertyName: TypeDesignator
+  usageDefinition: Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/32eKN0vyXEHh86MKqlQ_Py
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/32eKN0vyXEHh86MKqlQ_Py
+    ifdGuid: 32eKN0vyXEHh86MKqlQ_Py
+- propertyName: ProductionLotId
+  usageDefinition: The manufacturer's production lot identifier.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zz7vK7bz5RATD9A5YGsg0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zz7vK7bz5RATD9A5YGsg0
+    ifdGuid: 1zz7vK7bz5RATD9A5YGsg0
+- propertyName: SerialNumber
+  usageDefinition: The manufacturer's serial number for the precast concrete element.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/37EKG$f0rEXRTsW1y$AWcZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/37EKG$f0rEXRTsW1y$AWcZ
+    ifdGuid: 37EKG$f0rEXRTsW1y$AWcZ
+- propertyName: PieceMark
+  usageDefinition: Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type ‘1’ and specific shape ‘A’).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3sfTBQ6tz14BpUYckzW9lI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3sfTBQ6tz14BpUYckzW9lI
+    ifdGuid: 3sfTBQ6tz14BpUYckzW9lI
+- propertyName: AsBuiltLocationNumber
+  usageDefinition: Defines a unique location within a structure, the ‘slot’ into which the piece was installed. Where pieces share the same piece mark, they can be interchanged. The value is only known after erection.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3er0ACw_P5tvUkv9Gt$P6I
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3er0ACw_P5tvUkv9Gt$P6I
+    ifdGuid: 3er0ACw_P5tvUkv9Gt$P6I
+- propertyName: ActualProductionDate
+  usageDefinition: Production date (stripped from form).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3FyzNL6eTFUupSmSKWhPJU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FyzNL6eTFUupSmSKWhPJU
+    ifdGuid: 3FyzNL6eTFUupSmSKWhPJU
+- propertyName: ActualErectionDate
+  usageDefinition: Date erected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Ju0c9OlL4eBBq6UW10ntV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Ju0c9OlL4eBBq6UW10ntV
+    ifdGuid: 2Ju0c9OlL4eBBq6UW10ntV
 properties:
 - name: TypeDesignator
   definition: Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.
@@ -71,6 +130,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zOyQ0qVGHuO00025QrE$V
     ifdGuid: 0zOyQ0qVGHuO00025QrE$V
     legacyGuid: 3d63c680d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 0zOyQ0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0zOyQ0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -117,6 +178,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13MQU0qVGHuO00025QrE$V
     ifdGuid: 13MQU0qVGHuO00025QrE$V
     legacyGuid: 4359a780d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 13MQU0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 13MQU0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -163,6 +226,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18jl80qVGHuO00025QrE$V
     ifdGuid: 18jl80qVGHuO00025QrE$V
     legacyGuid: 48b6f200d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 18jl80qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 18jl80qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -209,6 +274,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1WZdO0qVGHuO00025QrE$V
     ifdGuid: 1WZdO0qVGHuO00025QrE$V
     legacyGuid: 608e7600d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 1WZdO0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1WZdO0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -255,6 +322,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1d7Es0qVGHuO00025QrE$V
     ifdGuid: 1d7Es0qVGHuO00025QrE$V
     legacyGuid: 671ced80d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 1d7Es0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1d7Es0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -301,6 +370,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jgsK0qVGHuO00025QrE$V
     ifdGuid: 1jgsK0qVGHuO00025QrE$V
     legacyGuid: 6dab6500d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 1jgsK0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1jgsK0qVGHuO00025QrE$V
   localizations:
   - language: en
@@ -347,6 +418,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1oS1a0qVGHuO00025QrE$V
     ifdGuid: 1oS1a0qVGHuO00025QrE$V
     legacyGuid: 72701900d1f411e1800000215ad4efdf
+    legacyGuids:
+    - 1oS1a0qVGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1oS1a0qVGHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DyD$0oIv0gfJxvnc4DYKp
   ifdGuid: 2DyD$0oIv0gfJxvnc4DYKp
   legacyGuid: 9dd227358d2b430cb8c8ac3b8b7f8f72
+  legacyGuids:
+  - 2TqYSrZIj33BZ8h3kBVuzo
   legacyGuidAsIfcGlobalId: 2TqYSrZIj33BZ8h3kBVuzo
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcDistributionPort/DUCT
   type: IfcDistributionPort/DUCT
+propertyUsages:
+- propertyName: Temperature
+  usageDefinition: Temperature of the fluid. For air this value represents the dry bulb temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/37SzP8DSb2Yv2BBYm8yN3U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/37SzP8DSb2Yv2BBYm8yN3U
+    ifdGuid: 37SzP8DSb2Yv2BBYm8yN3U
+- propertyName: WetBulbTemperature
+  usageDefinition: Wet bulb temperature of the fluid; only applicable if the fluid is air.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ImP0BhV9EQOxjVBPuz1i6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ImP0BhV9EQOxjVBPuz1i6
+    ifdGuid: 3ImP0BhV9EQOxjVBPuz1i6
+- propertyName: VolumetricFlowRate
+  usageDefinition: The volumetric flow rate of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2jTmI2JRb2jepsxxanhbO0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jTmI2JRb2jepsxxanhbO0
+    ifdGuid: 2jTmI2JRb2jepsxxanhbO0
+- propertyName: MassFlowRate
+  usageDefinition: The mass flow rate of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3WBSwe9Oz6ZwRsFnvHAEJR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WBSwe9Oz6ZwRsFnvHAEJR
+    ifdGuid: 3WBSwe9Oz6ZwRsFnvHAEJR
+- propertyName: FlowCondition
+  usageDefinition: Defines the flow condition as a percentage of the cross-sectional area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2BEsGrj419MPrYzOEty_6i
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2BEsGrj419MPrYzOEty_6i
+    ifdGuid: 2BEsGrj419MPrYzOEty_6i
+- propertyName: Velocity
+  usageDefinition: The velocity of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0bcLZPzLP06Rs82TpFdvjD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bcLZPzLP06Rs82TpFdvjD
+    ifdGuid: 0bcLZPzLP06Rs82TpFdvjD
+- propertyName: Pressure
+  usageDefinition: The pressure of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1EwMIcCof9tu2xjScjKj8N
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1EwMIcCof9tu2xjScjKj8N
+    ifdGuid: 1EwMIcCof9tu2xjScjKj8N
 properties:
 - name: Temperature
   definition: Temperature of the fluid. For air this value represents the dry bulb temperature.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YRhMcZBT6EBTIqFpZjdx7
     ifdGuid: 0YRhMcZBT6EBTIqFpZjdx7
     legacyGuid: cbe855427fd14da0a29dd807677eb4a9
+    legacyGuids:
+    - 3Bw5L2Vz5DeAATs0TdVhIf
     legacyGuidAsIfcGlobalId: 3Bw5L2Vz5DeAATs0TdVhIf
   localizations:
   - language: en
@@ -89,6 +150,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/041Dlt54bEIf5bYnWRn8Rp
     ifdGuid: 041Dlt54bEIf5bYnWRn8Rp
     legacyGuid: c04ff2c7bd4148da8d8e037447267a2f
+    legacyGuids:
+    - 30J$B7lK58sesE0tH79del
     legacyGuidAsIfcGlobalId: 30J$B7lK58sesE0tH79del
   localizations:
   - language: en
@@ -137,6 +200,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0f2DVxpZbD$eQxAbM0hExC
     ifdGuid: 0f2DVxpZbD$eQxAbM0hExC
     legacyGuid: 7e8e87f0549843c0a39e88ac3f175c6e
+    legacyGuids:
+    - 1_ZeVmL9X3mAEUYAm$5rnk
     legacyGuidAsIfcGlobalId: 1_ZeVmL9X3mAEUYAm$5rnk
   localizations:
   - language: en
@@ -185,6 +250,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MfpemKI9C7uqVBmi6vIEP
     ifdGuid: 1MfpemKI9C7uqVBmi6vIEP
     legacyGuid: be32824c472c44e8ab71cf06b1d088c9
+    legacyGuids:
+    - 2_Ce9CHon4wAjnpmQnq8Z9
     legacyGuidAsIfcGlobalId: 2_Ce9CHon4wAjnpmQnq8Z9
   localizations:
   - language: en
@@ -233,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QPvHdcibCTRtdpG_bDvyv
     ifdGuid: 0QPvHdcibCTRtdpG_bDvyv
     legacyGuid: 39ebdb53ec0a4cfb9c16d3b93e4b79d3
+    legacyGuids:
+    - 0vwzjJx0fC_vmMqxa_ItdJ
     legacyGuidAsIfcGlobalId: 0vwzjJx0fC_vmMqxa_ItdJ
   localizations:
   - language: en
@@ -281,6 +350,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gOvh66r99xPnHMYNEVTh$
     ifdGuid: 1gOvh66r99xPnHMYNEVTh$
     legacyGuid: 80b98e43359d4dc2bc6f1e3c586498e1
+    legacyGuids:
+    - 20kOv3DPrDmhnl7ZnOP9ZX
     legacyGuidAsIfcGlobalId: 20kOv3DPrDmhnl7ZnOP9ZX
   localizations:
   - language: en
@@ -329,6 +400,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ur5IadwH20w8C_yu_ohTy
     ifdGuid: 1ur5IadwH20w8C_yu_ohTy
     legacyGuid: 8148600227f74025863b0dda2b5a372e
+    legacyGuids:
+    - 21I6029$T09OOx3TehMZSk
     legacyGuidAsIfcGlobalId: 21I6029$T09OOx3TehMZSk
   localizations:
   - language: en

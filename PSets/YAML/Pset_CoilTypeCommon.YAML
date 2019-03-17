@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Irgu0qSaHuO00025QrE$V
   ifdGuid: 2Irgu0qSaHuO00025QrE$V
   legacyGuid: 92d6ae00d1c911e1800000215ad4efdf
+  legacyGuids:
+  - 2Irgu0qSaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2Irgu0qSaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcCoil
   type: IfcCoil
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YRkZui$zCnvDojSboMKA4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YRkZui$zCnvDojSboMKA4
+    ifdGuid: 0YRkZui$zCnvDojSboMKA4
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1PwCCW2Gr66gpN2ZiB7XCJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PwCCW2Gr66gpN2ZiB7XCJ
+    ifdGuid: 1PwCCW2Gr66gpN2ZiB7XCJ
+- propertyName: OperationalTemperatureRange
+  usageDefinition: Allowable operational air temperature range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2qKiZE08P4zPUPv8jgSyci
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qKiZE08P4zPUPv8jgSyci
+    ifdGuid: 2qKiZE08P4zPUPv8jgSyci
+- propertyName: AirflowRateRange
+  usageDefinition: Possible range of airflow that can be delivered.  For cases where there is no airflow across the coil (e.g. electric coil in a floor slab), then the value is zero.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0_VUeSY21FQPhiObirYxqG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_VUeSY21FQPhiObirYxqG
+    ifdGuid: 0_VUeSY21FQPhiObirYxqG
+- propertyName: NominalSensibleCapacity
+  usageDefinition: Nominal sensible capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Kh$Xl5OX6mR6YqhTPvtLJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Kh$Xl5OX6mR6YqhTPvtLJ
+    ifdGuid: 0Kh$Xl5OX6mR6YqhTPvtLJ
+- propertyName: NominalLatentCapacity
+  usageDefinition: Nominal latent capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2hDwKa7GvBrer375DqKM$P
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hDwKa7GvBrer375DqKM$P
+    ifdGuid: 2hDwKa7GvBrer375DqKM$P
+- propertyName: NominalUA
+  usageDefinition: Nominal UA value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AL_qx74HFJe3It4TkBaLS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AL_qx74HFJe3It4TkBaLS
+    ifdGuid: 3AL_qx74HFJe3It4TkBaLS
+- propertyName: PlacementType
+  usageDefinition: Indicates the placement of the coil.  FLOOR indicates an under floor heater (if coil type is WATERHEATINGCOIL or ELECTRICHEATINGCOIL); CEILING indicates a cooling ceiling (if coil type is WATERCOOLINGCOIL);UNIT indicates that the coil is part of a cooling or heating unit, like cooled beam, etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$5_CwLYPEY9Z3meATi61V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$5_CwLYPEY9Z3meATi61V
+    ifdGuid: 1$5_CwLYPEY9Z3meATi61V
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Ncs80qSaHuO00025QrE$V
     ifdGuid: 2Ncs80qSaHuO00025QrE$V
     legacyGuid: 979b6200d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 2Ncs80qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Ncs80qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Umd00qSaHuO00025QrE$V
     ifdGuid: 2Umd00qSaHuO00025QrE$V
     legacyGuid: 9ec27000d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 2Umd00qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Umd00qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +356,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2j48m0qSaHuO00025QrE$V
     ifdGuid: 2j48m0qSaHuO00025QrE$V
     legacyGuid: ad108c00d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 2j48m0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2j48m0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -332,6 +405,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qq320qSaHuO00025QrE$V
     ifdGuid: 2qq320qSaHuO00025QrE$V
     legacyGuid: b4d03080d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 2qq320qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2qq320qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -379,6 +454,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xNgW0qSaHuO00025QrE$V
     ifdGuid: 2xNgW0qSaHuO00025QrE$V
     legacyGuid: bb5ea800d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 2xNgW0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2xNgW0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +502,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/308rm0qSaHuO00025QrE$V
     ifdGuid: 308rm0qSaHuO00025QrE$V
     legacyGuid: c0235c00d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 308rm0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 308rm0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -471,6 +550,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35WAQ0qSaHuO00025QrE$V
     ifdGuid: 35WAQ0qSaHuO00025QrE$V
     legacyGuid: c580a680d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 35WAQ0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 35WAQ0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -517,6 +598,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39hCG0qSaHuO00025QrE$V
     ifdGuid: 39hCG0qSaHuO00025QrE$V
     legacyGuid: c9acc400d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 39hCG0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 39hCG0qSaHuO00025QrE$V
   localizations:
   - language: en

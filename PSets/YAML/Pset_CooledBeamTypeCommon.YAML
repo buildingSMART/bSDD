@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cE4W0qSuHuO00025QrE$V
   ifdGuid: 2cE4W0qSuHuO00025QrE$V
   legacyGuid: a6384800d1ce11e1800000215ad4efdf
+  legacyGuids:
+  - 2cE4W0qSuHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2cE4W0qSuHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,175 @@ localizations:
 applicableIfcClasses:
 - name: IfcCooledBeam
   type: IfcCooledBeam
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17aVOxMVf1CvsYbYi7Cv8W
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17aVOxMVf1CvsYbYi7Cv8W
+    ifdGuid: 17aVOxMVf1CvsYbYi7Cv8W
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0oE4YRCYT6XPTbdJ6153GS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0oE4YRCYT6XPTbdJ6153GS
+    ifdGuid: 0oE4YRCYT6XPTbdJ6153GS
+- propertyName: IsFreeHanging
+  usageDefinition: Is it free hanging type (not mounted in a false ceiling)?
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ED5SQ3$v8Ix$nvpPtdguG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ED5SQ3$v8Ix$nvpPtdguG
+    ifdGuid: 0ED5SQ3$v8Ix$nvpPtdguG
+- propertyName: PipeConnection
+  usageDefinition: The manner in which the pipe connection is made to the cooled beam.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/017a9DIOT0ShRwjcixhRj_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/017a9DIOT0ShRwjcixhRj_
+    ifdGuid: 017a9DIOT0ShRwjcixhRj_
+- propertyName: WaterFlowControlSystemType
+  usageDefinition: Factory fitted waterflow control system.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Zk_RC4i56YxPWD_SZ6z_w
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Zk_RC4i56YxPWD_SZ6z_w
+    ifdGuid: 0Zk_RC4i56YxPWD_SZ6z_w
+- propertyName: WaterPressureRange
+  usageDefinition: Allowable water circuit working pressure range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1fa49sa2L5nOAlPIXDxWHQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fa49sa2L5nOAlPIXDxWHQ
+    ifdGuid: 1fa49sa2L5nOAlPIXDxWHQ
+- propertyName: NominalCoolingCapacity
+  usageDefinition: Nominal cooling capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bpVt1zvb5hgMVRKA8bh_i
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bpVt1zvb5hgMVRKA8bh_i
+    ifdGuid: 2bpVt1zvb5hgMVRKA8bh_i
+- propertyName: NominalSurroundingTemperatureCooling
+  usageDefinition: Nominal surrounding temperature (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2q4jtSc6LBs8d90RAtprwH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2q4jtSc6LBs8d90RAtprwH
+    ifdGuid: 2q4jtSc6LBs8d90RAtprwH
+- propertyName: NominalSurroundingHumidityCooling
+  usageDefinition: Nominal surrounding humidity (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0B6fyZPcL1g8iU4x1uUgkv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0B6fyZPcL1g8iU4x1uUgkv
+    ifdGuid: 0B6fyZPcL1g8iU4x1uUgkv
+- propertyName: NominalSupplyWaterTemperatureCooling
+  usageDefinition: Nominal supply water temperature (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1N7938NP56VwGiGh69THfq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1N7938NP56VwGiGh69THfq
+    ifdGuid: 1N7938NP56VwGiGh69THfq
+- propertyName: NominalReturnWaterTemperatureCooling
+  usageDefinition: Nominal return water temperature (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2k8C147a925xx5p3z_V0qe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2k8C147a925xx5p3z_V0qe
+    ifdGuid: 2k8C147a925xx5p3z_V0qe
+- propertyName: NominalWaterFlowCooling
+  usageDefinition: Nominal water flow (refers to nominal cooling capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2dwZwHm11Euvm3d6djxA1D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dwZwHm11Euvm3d6djxA1D
+    ifdGuid: 2dwZwHm11Euvm3d6djxA1D
+- propertyName: NominalHeatingCapacity
+  usageDefinition: Nominal heating capacity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ng9in0tvFEhUXObIxftvR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ng9in0tvFEhUXObIxftvR
+    ifdGuid: 1ng9in0tvFEhUXObIxftvR
+- propertyName: NominalSurroundingTemperatureHeating
+  usageDefinition: Nominal surrounding temperature (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WQjwQ$21DVfe7Uh07b6fb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WQjwQ$21DVfe7Uh07b6fb
+    ifdGuid: 0WQjwQ$21DVfe7Uh07b6fb
+- propertyName: NominalSupplyWaterTemperatureHeating
+  usageDefinition: Nominal supply water temperature (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ntMEjZ0P75BJrOGAr5kh8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ntMEjZ0P75BJrOGAr5kh8
+    ifdGuid: 1ntMEjZ0P75BJrOGAr5kh8
+- propertyName: NominalReturnWaterTemperatureHeating
+  usageDefinition: Nominal return water temperature (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2XU57qnpDADBDEhKcABH27
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XU57qnpDADBDEhKcABH27
+    ifdGuid: 2XU57qnpDADBDEhKcABH27
+- propertyName: NominalWaterFlowHeating
+  usageDefinition: Nominal water flow (refers to nominal heating capacity).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0z8$j1FRX2Mx0ZPPjjfqsu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0z8$j1FRX2Mx0ZPPjjfqsu
+    ifdGuid: 0z8$j1FRX2Mx0ZPPjjfqsu
+- propertyName: IntegratedLightingType
+  usageDefinition: Integrated lighting in cooled beam.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1fQvDpNXrEPQSavfQhv59T
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fQvDpNXrEPQSavfQhv59T
+    ifdGuid: 1fQvDpNXrEPQSavfQhv59T
+- propertyName: FinishColor
+  usageDefinition: Finish color for cooled beam.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3epGAEMi1CzQ99pImtvGXJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3epGAEMi1CzQ99pImtvGXJ
+    ifdGuid: 3epGAEMi1CzQ99pImtvGXJ
+- propertyName: CoilLength
+  usageDefinition: Length of coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19IKdgduj6WgvYNVfYKmac
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19IKdgduj6WgvYNVfYKmac
+    ifdGuid: 19IKdgduj6WgvYNVfYKmac
+- propertyName: CoilWidth
+  usageDefinition: Width of coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gtTd4EK1AHwxHUVWXaFBn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gtTd4EK1AHwxHUVWXaFBn
+    ifdGuid: 3gtTd4EK1AHwxHUVWXaFBn
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -43,6 +214,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2g$Fm0qSuHuO00025QrE$V
     ifdGuid: 2g$Fm0qSuHuO00025QrE$V
     legacyGuid: aafcfc00d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 2g$Fm0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2g$Fm0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +262,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mMaQ0qSuHuO00025QrE$V
     ifdGuid: 2mMaQ0qSuHuO00025QrE$V
     legacyGuid: b05a4680d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 2mMaQ0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2mMaQ0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -287,6 +462,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$sO_0qSuHuO00025QrE$V
     ifdGuid: 2$sO_0qSuHuO00025QrE$V
     legacyGuid: bfd98f80d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 2$sO_0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2$sO_0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -333,6 +510,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bnXS0qSyHuO00025QrE$V
     ifdGuid: 0bnXS0qSyHuO00025QrE$V
     legacyGuid: 25c61700d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0bnXS0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0bnXS0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -531,6 +710,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35Dje0qSuHuO00025QrE$V
     ifdGuid: 35Dje0qSuHuO00025QrE$V
     legacyGuid: c536da00d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 35Dje0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 35Dje0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -729,6 +910,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LJhc0qSuHuO00025QrE$V
     ifdGuid: 3LJhc0qSuHuO00025QrE$V
     legacyGuid: d54eb980d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3LJhc0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3LJhc0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -776,6 +959,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RtJ40qSuHuO00025QrE$V
     ifdGuid: 3RtJ40qSuHuO00025QrE$V
     legacyGuid: dbdd3100d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3RtJ40qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3RtJ40qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -822,6 +1007,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Xqn80qSuHuO00025QrE$V
     ifdGuid: 3Xqn80qSuHuO00025QrE$V
     legacyGuid: e1d31200d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3Xqn80qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Xqn80qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -868,6 +1055,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cbyO0qSuHuO00025QrE$V
     ifdGuid: 3cbyO0qSuHuO00025QrE$V
     legacyGuid: e697c600d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3cbyO0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3cbyO0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -914,6 +1103,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hN7e0qSuHuO00025QrE$V
     ifdGuid: 3hN7e0qSuHuO00025QrE$V
     legacyGuid: eb5c7a00d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3hN7e0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3hN7e0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -960,6 +1151,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mkSI0qSuHuO00025QrE$V
     ifdGuid: 3mkSI0qSuHuO00025QrE$V
     legacyGuid: f0b9c480d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3mkSI0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3mkSI0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -1006,6 +1199,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3s5my0qSuHuO00025QrE$V
     ifdGuid: 3s5my0qSuHuO00025QrE$V
     legacyGuid: f6170f00d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3s5my0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3s5my0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -1052,6 +1247,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3y3F00qSuHuO00025QrE$V
     ifdGuid: 3y3F00qSuHuO00025QrE$V
     legacyGuid: fc0cf000d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 3y3F00qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3y3F00qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -1098,6 +1295,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01QZg0qSyHuO00025QrE$V
     ifdGuid: 01QZg0qSyHuO00025QrE$V
     legacyGuid: 016a3a80d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 01QZg0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 01QZg0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1144,6 +1343,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06Bkw0qSyHuO00025QrE$V
     ifdGuid: 06Bkw0qSyHuO00025QrE$V
     legacyGuid: 062eee80d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 06Bkw0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 06Bkw0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1190,6 +1391,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0AywA0qSyHuO00025QrE$V
     ifdGuid: 0AywA0qSyHuO00025QrE$V
     legacyGuid: 0af3a280d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0AywA0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0AywA0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1236,6 +1439,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GKEq0qSyHuO00025QrE$V
     ifdGuid: 0GKEq0qSyHuO00025QrE$V
     legacyGuid: 1050ed00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0GKEq0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0GKEq0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1282,6 +1487,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0LhZU0qSyHuO00025QrE$V
     ifdGuid: 0LhZU0qSyHuO00025QrE$V
     legacyGuid: 15ae3780d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0LhZU0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0LhZU0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1480,6 +1687,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qhCc0qSyHuO00025QrE$V
     ifdGuid: 0qhCc0qSyHuO00025QrE$V
     legacyGuid: 34acc980d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0qhCc0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0qhCc0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1526,6 +1735,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0w2XG0qSyHuO00025QrE$V
     ifdGuid: 0w2XG0qSyHuO00025QrE$V
     legacyGuid: 3a0a1400d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0w2XG0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0w2XG0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1572,6 +1783,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_piW0qSyHuO00025QrE$V
     ifdGuid: 0_piW0qSyHuO00025QrE$V
     legacyGuid: 3ecec800d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 0_piW0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0_piW0qSyHuO00025QrE$V
   localizations:
   - language: en

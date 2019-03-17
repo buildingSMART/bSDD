@@ -1,0 +1,54 @@
+﻿name: TotalUACurves
+definition: 'Total UA curves, UA - air and water velocities, UA = [(C1 * AirFlowRate^0.8)^-1 + (C2 * WaterFlowRate^0.8)^-1]^-1.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: AirFlowRate,WaterFlowRate,UA.  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.'
+dictionaryReference:
+  dictionaryIdentifier: http://bsdd.buildingsmart.org
+  dictionaryNamespace: PSet
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0cg7e0qSeHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cg7e0qSeHuO00025QrE$V
+  ifdGuid: 0cg7e0qSeHuO00025QrE$V
+  legacyGuid: 26a87a00d1ca11e1800000215ad4efdf
+  legacyGuids:
+  - 0cg7e0qSeHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 0cg7e0qSeHuO00025QrE$V
+localizations:
+- language: en
+  name: 'Total UACurves'
+  definition: ''
+- language: fr-FR
+  name: 'CourbesCoefficientTransmissionThermiqueTotal'
+  definition: 'Courbes de coefficient de transmission thermique total - vitesses de l''eau et de l''air, U.S = [(C1*DébitAéraulique^0,8)^-1 + (C2*DébitHydraulique^0,8)^-1]^-1.Remarque: comme deux variables sont utilisées, ValeursDefinir et ValeursDéfinies sont nulles, et les valeurs sont enregistrées dans IfcTable dans l''ordre suivant:DébitAéraulique, DebitHydraulique, U.S.Le IfcTable est lié à IfcPropertyTableValue en utilisant IfcMetric et IfcPropertyConstraintRelationship.'
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+typePropertyTableValue:
+  Expression: ''
+  DefiningValue:
+    dataType: IfcReal
+    measureType: ''
+    unitType: USERDEFINED
+  DefinedValue:
+    dataType: IfcVolumetricFlowRateMeasure
+    measureType: ''
+    unitType: USERDEFINED
+status:
+  versionNumber: 4
+  dateOfVersion: 2018-01-01T00:00:00.0000000
+  revisionNumber: 2
+  dateOfRevision: 2018-01-01T00:00:00.0000000
+  status: Active
+  dateOfCreation: 2018-01-01T00:00:00.0000000
+  dateOfActivation: 2018-01-01T00:00:00.0000000
+  dateOfLastChange: 2018-01-01T00:00:00.0000000
+  languageOfCreator: en-EN

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Mzba0qVqHuO00025QrE$V
   ifdGuid: 0Mzba0qVqHuO00025QrE$V
   legacyGuid: 16f65900d1fd11e1800000215ad4efdf
+  legacyGuids:
+  - 0Mzba0qVqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0Mzba0qVqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,55 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDevice/CIRCUITBREAKER
   type: IfcProtectiveDevice/CIRCUITBREAKER
+propertyUsages:
+- propertyName: PerformanceClasses
+  usageDefinition: A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a circuit breaker may beconstructed for different levels of breaking capacities. A maximum of 7 differentperformance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OymRGRRL4ZPYXRCHA4y$Q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OymRGRRL4ZPYXRCHA4y$Q
+    ifdGuid: 1OymRGRRL4ZPYXRCHA4y$Q
+- propertyName: VoltageLevel
+  usageDefinition: The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3MZDdxbSb8XeTvYmiwKpJl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MZDdxbSb8XeTvYmiwKpJl
+    ifdGuid: 3MZDdxbSb8XeTvYmiwKpJl
+- propertyName: ICU60947
+  usageDefinition: The ultimate breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3WJ2V2taH0G9QF$gLHfq0a
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WJ2V2taH0G9QF$gLHfq0a
+    ifdGuid: 3WJ2V2taH0G9QF$gLHfq0a
+- propertyName: ICS60947
+  usageDefinition: The service breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1NedtqCA9CswwJx0zCSmYL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1NedtqCA9CswwJx0zCSmYL
+    ifdGuid: 1NedtqCA9CswwJx0zCSmYL
+- propertyName: ICW60947
+  usageDefinition: The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1lXzkszYb6T9$efCmRwP7U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1lXzkszYb6T9$efCmRwP7U
+    ifdGuid: 1lXzkszYb6T9$efCmRwP7U
+- propertyName: ICM60947
+  usageDefinition: The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3MmunCySf9mxIufPymv4uO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MmunCySf9mxIufPymv4uO
+    ifdGuid: 3MmunCySf9mxIufPymv4uO
 properties:
 - name: PerformanceClasses
   definition: A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a circuit breaker may beconstructed for different levels of breaking capacities. A maximum of 7 differentperformance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.
@@ -41,6 +92,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Rkmq0qVqHuO00025QrE$V
     ifdGuid: 0Rkmq0qVqHuO00025QrE$V
     legacyGuid: 1bbb0d00d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 0Rkmq0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Rkmq0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +143,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YuXi0qVqHuO00025QrE$V
     ifdGuid: 0YuXi0qVqHuO00025QrE$V
     legacyGuid: 22e21b00d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 0YuXi0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0YuXi0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -335,6 +390,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0rN5I0qVqHuO00025QrE$V
     ifdGuid: 0rN5I0qVqHuO00025QrE$V
     legacyGuid: 355c5480d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 0rN5I0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0rN5I0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -384,6 +441,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wkPy0qVqHuO00025QrE$V
     ifdGuid: 0wkPy0qVqHuO00025QrE$V
     legacyGuid: 3ab99f00d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 0wkPy0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0wkPy0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -433,6 +492,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10hu00qVqHuO00025QrE$V
     ifdGuid: 10hu00qVqHuO00025QrE$V
     legacyGuid: 40af8000d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 10hu00qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 10hu00qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -482,6 +543,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17reu0qVqHuO00025QrE$V
     ifdGuid: 17reu0qVqHuO00025QrE$V
     legacyGuid: 47d68e00d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 17reu0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 17reu0qVqHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jX000qV4HuO00025QrE$V
   ifdGuid: 3jX000qV4HuO00025QrE$V
   legacyGuid: ed840000d1f111e1800000215ad4efdf
+  legacyGuids:
+  - 3jX000qV4HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3jX000qV4HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcBuilding
   type: IfcBuilding
+propertyUsages:
+- propertyName: HeatingDryBulb
+  usageDefinition: Outside dry bulb temperature for heating design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3JfdLsaJ1BCfFXmOpscGoN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JfdLsaJ1BCfFXmOpscGoN
+    ifdGuid: 3JfdLsaJ1BCfFXmOpscGoN
+- propertyName: HeatingWetBulb
+  usageDefinition: Outside wet bulb temperature for heating design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gL$1MT7b1AQ5c$TV9BEl5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gL$1MT7b1AQ5c$TV9BEl5
+    ifdGuid: 1gL$1MT7b1AQ5c$TV9BEl5
+- propertyName: HeatingDesignDay
+  usageDefinition: The month, day and time that has been selected for the heating design calculations.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0TldX5DTf72BMHS5nqX6LV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TldX5DTf72BMHS5nqX6LV
+    ifdGuid: 0TldX5DTf72BMHS5nqX6LV
+- propertyName: CoolingDryBulb
+  usageDefinition: Outside dry bulb temperature for cooling design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2jh26BvXf4uw8pY1pzBd8D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jh26BvXf4uw8pY1pzBd8D
+    ifdGuid: 2jh26BvXf4uw8pY1pzBd8D
+- propertyName: CoolingWetBulb
+  usageDefinition: Outside wet bulb temperature for cooling design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3_Gxq1gdL5RQBM32HUgMGU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_Gxq1gdL5RQBM32HUgMGU
+    ifdGuid: 3_Gxq1gdL5RQBM32HUgMGU
+- propertyName: CoolingDesignDay
+  usageDefinition: The month, day  and time that has been selected for the cooling design calculations.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2R8W81uOfAdPwuMp9lEXuG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2R8W81uOfAdPwuMp9lEXuG
+    ifdGuid: 2R8W81uOfAdPwuMp9lEXuG
+- propertyName: WeatherDataStation
+  usageDefinition: The site weather data station description or reference to the data source from which weather data was obtained for use in calculations.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3_dyu7Iov9Fxj76yAzqfaG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_dyu7Iov9Fxj76yAzqfaG
+    ifdGuid: 3_dyu7Iov9Fxj76yAzqfaG
+- propertyName: WeatherDataDate
+  usageDefinition: The date for which the weather data was gathered.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1paFU0i8bBWgowNVARGfC2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1paFU0i8bBWgowNVARGfC2
+    ifdGuid: 1paFU0i8bBWgowNVARGfC2
+- propertyName: BuildingThermalExposure
+  usageDefinition: The thermal exposure expected by the building based on surrounding site conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0JoaNCtSv4QOFNbJNLEYPv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JoaNCtSv4QOFNbJNLEYPv
+    ifdGuid: 0JoaNCtSv4QOFNbJNLEYPv
+- propertyName: PrevailingWindDirection
+  usageDefinition: The prevailing wind angle direction measured from True North (0 degrees) in a clockwise direction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0FtaSPJJTD$RS9XKFr7Zj6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FtaSPJJTD$RS9XKFr7Zj6
+    ifdGuid: 0FtaSPJJTD$RS9XKFr7Zj6
+- propertyName: PrevailingWindVelocity
+  usageDefinition: The design wind velocity coming from the direction specified by the PrevailingWindDirection attribute.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1t$8l3PQv6bfDqbjeMOHJy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1t$8l3PQv6bfDqbjeMOHJy
+    ifdGuid: 1t$8l3PQv6bfDqbjeMOHJy
 properties:
 - name: HeatingDryBulb
   definition: Outside dry bulb temperature for heating design.
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ouKg0qV4HuO00025QrE$V
     ifdGuid: 3ouKg0qV4HuO00025QrE$V
     legacyGuid: f2e14a80d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 3ouKg0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ouKg0qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +183,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3urok0qV4HuO00025QrE$V
     ifdGuid: 3urok0qV4HuO00025QrE$V
     legacyGuid: f8d72b80d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 3urok0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3urok0qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -139,6 +234,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_pGo0qV4HuO00025QrE$V
     ifdGuid: 3_pGo0qV4HuO00025QrE$V
     legacyGuid: fecd0c80d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 3_pGo0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3_pGo0qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -188,6 +285,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03aS20qV8HuO00025QrE$V
     ifdGuid: 03aS20qV8HuO00025QrE$V
     legacyGuid: 0391c080d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 03aS20qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 03aS20qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -237,6 +336,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08xmi0qV8HuO00025QrE$V
     ifdGuid: 08xmi0qV8HuO00025QrE$V
     legacyGuid: 08ef0b00d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 08xmi0qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 08xmi0qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -286,6 +387,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EJ5M0qV8HuO00025QrE$V
     ifdGuid: 0EJ5M0qV8HuO00025QrE$V
     legacyGuid: 0e4c5580d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 0EJ5M0qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0EJ5M0qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -335,6 +438,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0J4Gc0qV8HuO00025QrE$V
     ifdGuid: 0J4Gc0qV8HuO00025QrE$V
     legacyGuid: 13110980d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 0J4Gc0qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0J4Gc0qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -384,6 +489,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ORbG0qV8HuO00025QrE$V
     ifdGuid: 0ORbG0qV8HuO00025QrE$V
     legacyGuid: 186e5400d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 0ORbG0qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ORbG0qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -433,6 +540,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Scd60qV8HuO00025QrE$V
     ifdGuid: 0Scd60qV8HuO00025QrE$V
     legacyGuid: 1c9a7180d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 0Scd60qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Scd60qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -590,6 +699,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dxPq0qV8HuO00025QrE$V
     ifdGuid: 0dxPq0qV8HuO00025QrE$V
     legacyGuid: 27ed9d00d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 0dxPq0qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0dxPq0qV8HuO00025QrE$V
   localizations:
   - language: en
@@ -639,6 +750,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jIkU0qV8HuO00025QrE$V
     ifdGuid: 0jIkU0qV8HuO00025QrE$V
     legacyGuid: 2d4ae780d1f211e1800000215ad4efdf
+    legacyGuids:
+    - 0jIkU0qV8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0jIkU0qV8HuO00025QrE$V
   localizations:
   - language: en

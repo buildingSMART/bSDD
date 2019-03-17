@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$C8Y0qVeHuO00025QrE$V
   ifdGuid: 0$C8Y0qVeHuO00025QrE$V
   legacyGuid: 3f308880d1fa11e1800000215ad4efdf
+  legacyGuids:
+  - 0$C8Y0qVeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0$C8Y0qVeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,143 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit
   type: IfcProtectiveDeviceTrippingUnit
+propertyUsages:
+- propertyName: IsSelectable
+  usageDefinition: Indication whether the S-function can be switched off or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0sJ76YYhT7EuieQK2q15oU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sJ76YYhT7EuieQK2q15oU
+    ifdGuid: 0sJ76YYhT7EuieQK2q15oU
+- propertyName: NominalCurrentAdjusted
+  usageDefinition: An indication if the tripping currents of the short time protection is related to the nominal current multiplied with the actual setting of the current adjustment, if any, of the long time protection part of the protective device, or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1sEax824b9yf$0K6LDkYU_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sEax824b9yf$0K6LDkYU_
+    ifdGuid: 1sEax824b9yf$0K6LDkYU_
+- propertyName: ExternalAdjusted
+  usageDefinition: An indication if the ground fault protection may be adjusted according to an external current coil or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0o1iAbWwDDbRceGbBOBkkk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0o1iAbWwDDbRceGbBOBkkk
+    ifdGuid: 0o1iAbWwDDbRceGbBOBkkk
+- propertyName: ReleaseCurrent
+  usageDefinition: The release current in [x In] for the initial tripping of the S-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1rqRgV1FT2IPuIWqArX$hJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rqRgV1FT2IPuIWqArX$hJ
+    ifdGuid: 1rqRgV1FT2IPuIWqArX$hJ
+- propertyName: ReleaseTime
+  usageDefinition: The release time in [s] for the initial tripping of the relevant part. This time indicates that for current lower than the indicated release current, the tripping time will be longer than the indicated release time. The value is given as a mean value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2kEHnqHNvEEOeX4m3z7TKQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2kEHnqHNvEEOeX4m3z7TKQ
+    ifdGuid: 2kEHnqHNvEEOeX4m3z7TKQ
+- propertyName: CurrentTolerance1
+  usageDefinition: The tolerance for the current of time/current-curve in [%].
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gL1AyRgvDnx2TtbLZ1o05
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gL1AyRgvDnx2TtbLZ1o05
+    ifdGuid: 3gL1AyRgvDnx2TtbLZ1o05
+- propertyName: CurrentToleranceLimit1
+  usageDefinition: The time limit in [s] limiting the application of CurrentTolerance1, if any. If the value is set to 0, the value of the CurrentTolerance1 is valid for the whole time/current-curve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/39LAOhppb5AQenNntolqp$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39LAOhppb5AQenNntolqp$
+    ifdGuid: 39LAOhppb5AQenNntolqp$
+- propertyName: CurrentTolerance2
+  usageDefinition: The tolerance for the current of time/current-curve in [%] valid for times above CurrentTolereanceLimit1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3g0gcmnLzBl9AOen66vWZR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3g0gcmnLzBl9AOen66vWZR
+    ifdGuid: 3g0gcmnLzBl9AOen66vWZR
+- propertyName: IsCurrentTolerancePositiveOnly
+  usageDefinition: Indication whether the value of  CurrentTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0i73zrXl97WgamfNc3Y8he
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0i73zrXl97WgamfNc3Y8he
+    ifdGuid: 0i73zrXl97WgamfNc3Y8he
+- propertyName: TimeTolerance1
+  usageDefinition: The tolerance for the time of time/current-curve in [%].
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1sAAdIAfTFQ9FdyI7g9ZiY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sAAdIAfTFQ9FdyI7g9ZiY
+    ifdGuid: 1sAAdIAfTFQ9FdyI7g9ZiY
+- propertyName: TimeToleranceLimit1
+  usageDefinition: The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ZgvKoEKz1ChLmEhu5FCx5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ZgvKoEKz1ChLmEhu5FCx5
+    ifdGuid: 0ZgvKoEKz1ChLmEhu5FCx5
+- propertyName: TimeTolerance2
+  usageDefinition: The tolerance for the time of the time/current-curve in [%] valid for currents above TimeToleranceLimit1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Hg$$LheX9tAt0kRvpYzoi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Hg$$LheX9tAt0kRvpYzoi
+    ifdGuid: 0Hg$$LheX9tAt0kRvpYzoi
+- propertyName: IsTimeTolerancePositiveOnly
+  usageDefinition: Indication whether the value of  TimeTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1it5JKTt59k9r9atRPP0Mf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1it5JKTt59k9r9atRPP0Mf
+    ifdGuid: 1it5JKTt59k9r9atRPP0Mf
+- propertyName: ReleaseCurrentI2tStart
+  usageDefinition: The release current in [x In] for the start point of the I2t tripping curve of the G-function, if any.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UnHerBGf8phcLHyd2DXrg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UnHerBGf8phcLHyd2DXrg
+    ifdGuid: 2UnHerBGf8phcLHyd2DXrg
+- propertyName: ReleaseTimeI2tStart
+  usageDefinition: The release time in [s] for the start point of the I2t tripping curve of the G-function, if any.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DrfDeSc12ZhANymEDwv6N
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DrfDeSc12ZhANymEDwv6N
+    ifdGuid: 1DrfDeSc12ZhANymEDwv6N
+- propertyName: ReleaseCurrentI2tEnd
+  usageDefinition: The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/16vYTN_4PFrBqM55YkERym
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16vYTN_4PFrBqM55YkERym
+    ifdGuid: 16vYTN_4PFrBqM55YkERym
+- propertyName: ReleaseTimeI2tEnd
+  usageDefinition: The release time in [s] for the end point of the I2 tripping curve of the G-function, if any. The value of ReleaseTimeI2tEnd shall be lower than ReleaseTimeI2tStart.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3utvP9kcXBtxXNxGP_fYa8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3utvP9kcXBtxXNxGP_fYa8
+    ifdGuid: 3utvP9kcXBtxXNxGP_fYa8
 properties:
 - name: IsSelectable
   definition: Indication whether the S-function can be switched off or not.
@@ -43,6 +182,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12n0_0qVeHuO00025QrE$V
     ifdGuid: 12n0_0qVeHuO00025QrE$V
     legacyGuid: 42c40f80d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 12n0_0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 12n0_0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -92,6 +233,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AWxG0qVeHuO00025QrE$V
     ifdGuid: 1AWxG0qVeHuO00025QrE$V
     legacyGuid: 4a83b400d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1AWxG0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1AWxG0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -141,6 +284,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1H4Yk0qVeHuO00025QrE$V
     ifdGuid: 1H4Yk0qVeHuO00025QrE$V
     legacyGuid: 51122b80d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1H4Yk0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1H4Yk0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -190,6 +335,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1N20o0qVeHuO00025QrE$V
     ifdGuid: 1N20o0qVeHuO00025QrE$V
     legacyGuid: 57080c80d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1N20o0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1N20o0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -239,6 +386,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RpC20qVeHuO00025QrE$V
     ifdGuid: 1RpC20qVeHuO00025QrE$V
     legacyGuid: 5bccc080d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1RpC20qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1RpC20qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +437,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Xmg60qVeHuO00025QrE$V
     ifdGuid: 1Xmg60qVeHuO00025QrE$V
     legacyGuid: 61c2a180d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1Xmg60qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Xmg60qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +488,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1d7_m0qVeHuO00025QrE$V
     ifdGuid: 1d7_m0qVeHuO00025QrE$V
     legacyGuid: 671fec00d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1d7_m0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1d7_m0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -386,6 +539,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1j5Sq0qVeHuO00025QrE$V
     ifdGuid: 1j5Sq0qVeHuO00025QrE$V
     legacyGuid: 6d15cd00d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1j5Sq0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1j5Sq0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -435,6 +590,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pf4I0qVeHuO00025QrE$V
     ifdGuid: 1pf4I0qVeHuO00025QrE$V
     legacyGuid: 73a44480d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1pf4I0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1pf4I0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -484,6 +641,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wChm0qVeHuO00025QrE$V
     ifdGuid: 1wChm0qVeHuO00025QrE$V
     legacyGuid: 7a32bc00d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 1wChm0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1wChm0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -533,6 +692,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20A9q0qVeHuO00025QrE$V
     ifdGuid: 20A9q0qVeHuO00025QrE$V
     legacyGuid: 80289d00d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 20A9q0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 20A9q0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -582,6 +743,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24xL40qVeHuO00025QrE$V
     ifdGuid: 24xL40qVeHuO00025QrE$V
     legacyGuid: 84ed5100d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 24xL40qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24xL40qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -631,6 +794,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Aup80qVeHuO00025QrE$V
     ifdGuid: 2Aup80qVeHuO00025QrE$V
     legacyGuid: 8ae33200d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 2Aup80qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Aup80qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -680,6 +845,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HSQc0qVeHuO00025QrE$V
     ifdGuid: 2HSQc0qVeHuO00025QrE$V
     legacyGuid: 9171a980d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 2HSQc0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2HSQc0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -729,6 +896,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2MplG0qVeHuO00025QrE$V
     ifdGuid: 2MplG0qVeHuO00025QrE$V
     legacyGuid: 96cef400d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 2MplG0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2MplG0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -778,6 +947,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SB3w0qVeHuO00025QrE$V
     ifdGuid: 2SB3w0qVeHuO00025QrE$V
     legacyGuid: 9c2c3e80d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 2SB3w0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2SB3w0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -827,6 +998,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Y8X_0qVeHuO00025QrE$V
     ifdGuid: 2Y8X_0qVeHuO00025QrE$V
     legacyGuid: a2221f80d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 2Y8X_0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Y8X_0qVeHuO00025QrE$V
   localizations:
   - language: en

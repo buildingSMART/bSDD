@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Ca0G0qS0HuO00025QrE$V
   ifdGuid: 2Ca0G0qS0HuO00025QrE$V
   legacyGuid: 8c900400d1c011e1800000215ad4efdf
+  legacyGuids:
+  - 2Ca0G0qS0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2Ca0G0qS0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcAirToAirHeatRecovery
   type: IfcAirToAirHeatRecovery
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sF6nk6KbDx8YHsmK38AZa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sF6nk6KbDx8YHsmK38AZa
+    ifdGuid: 2sF6nk6KbDx8YHsmK38AZa
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gg3nsbiP9OfFF2hq01jg2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gg3nsbiP9OfFF2hq01jg2
+    ifdGuid: 1gg3nsbiP9OfFF2hq01jg2
+- propertyName: HeatTransferType
+  usageDefinition: Type of heat transfer between the two air streams.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0V_3jCTK9AUQzNKlcUkUZa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0V_3jCTK9AUQzNKlcUkUZa
+    ifdGuid: 0V_3jCTK9AUQzNKlcUkUZa
+- propertyName: HasDefrost
+  usageDefinition: has the heat exchanger has defrost function or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2lwWyx8g54gxxqbNe9dD_R
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2lwWyx8g54gxxqbNe9dD_R
+    ifdGuid: 2lwWyx8g54gxxqbNe9dD_R
+- propertyName: OperationalTemperatureRange
+  usageDefinition: Allowable operation ambient air temperature range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1qXr_RDLj6lPsaDCj$o7eJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qXr_RDLj6lPsaDCj$o7eJ
+    ifdGuid: 1qXr_RDLj6lPsaDCj$o7eJ
+- propertyName: PrimaryAirflowRateRange
+  usageDefinition: possible range of primary airflow that can be delivered..
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/18VcBXgfvD8P0Y1jrrpl3o
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18VcBXgfvD8P0Y1jrrpl3o
+    ifdGuid: 18VcBXgfvD8P0Y1jrrpl3o
+- propertyName: SecondaryAirflowRateRange
+  usageDefinition: possible range of secondary airflow that can be delivered.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2xhjtiw_9Ck8aGkdDojBSw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xhjtiw_9Ck8aGkdDojBSw
+    ifdGuid: 2xhjtiw_9Ck8aGkdDojBSw
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IXUK0qS0HuO00025QrE$V
     ifdGuid: 2IXUK0qS0HuO00025QrE$V
     legacyGuid: 9285e500d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 2IXUK0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2IXUK0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2OUyO0qS0HuO00025QrE$V
     ifdGuid: 2OUyO0qS0HuO00025QrE$V
     legacyGuid: 987bc600d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 2OUyO0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2OUyO0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +348,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2eawM0qS0HuO00025QrE$V
     ifdGuid: 2eawM0qS0HuO00025QrE$V
     legacyGuid: a893a580d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 2eawM0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2eawM0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -439,6 +504,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tUbW0qS0HuO00025QrE$V
     ifdGuid: 2tUbW0qS0HuO00025QrE$V
     legacyGuid: b77a5800d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 2tUbW0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2tUbW0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -485,6 +552,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_eMO0qS0HuO00025QrE$V
     ifdGuid: 2_eMO0qS0HuO00025QrE$V
     legacyGuid: bea16600d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 2_eMO0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_eMO0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -532,6 +601,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Hj3O0qS0HuO00025QrE$V
     ifdGuid: 3Hj3O0qS0HuO00025QrE$V
     legacyGuid: d1b43600d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3Hj3O0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Hj3O0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -579,6 +650,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RFPu0qS0HuO00025QrE$V
     ifdGuid: 3RFPu0qS0HuO00025QrE$V
     legacyGuid: db3d9e00d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 3RFPu0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3RFPu0qS0HuO00025QrE$V
   localizations:
   - language: en

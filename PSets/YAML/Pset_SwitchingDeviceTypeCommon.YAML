@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Tip80qWqHuO00025QrE$V
   ifdGuid: 2Tip80qWqHuO00025QrE$V
   legacyGuid: 9db33200d20d11e1800000215ad4efdf
+  legacyGuids:
+  - 2Tip80qWqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2Tip80qWqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcSwitchingDevice
   type: IfcSwitchingDevice
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0x_5uEDGT1Ae1IcN1wQUcg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0x_5uEDGT1Ae1IcN1wQUcg
+    ifdGuid: 0x_5uEDGT1Ae1IcN1wQUcg
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2J7YZziif2LxYuDXbwFVLp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2J7YZziif2LxYuDXbwFVLp
+    ifdGuid: 2J7YZziif2LxYuDXbwFVLp
+- propertyName: NumberOfGangs
+  usageDefinition: Number of gangs/buttons on this switch.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2hM8H3Phb3cuS7IAj8L7yk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hM8H3Phb3cuS7IAj8L7yk
+    ifdGuid: 2hM8H3Phb3cuS7IAj8L7yk
+- propertyName: SwitchFunction
+  usageDefinition: Indicates types of switches which differs in functionality.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3PYshfTlb8Fuz2UOqzmkFa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PYshfTlb8Fuz2UOqzmkFa
+    ifdGuid: 3PYshfTlb8Fuz2UOqzmkFa
+- propertyName: HasLock
+  usageDefinition: Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Pth3yK9H2SgNce6tsbZLb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Pth3yK9H2SgNce6tsbZLb
+    ifdGuid: 2Pth3yK9H2SgNce6tsbZLb
+- propertyName: IsIlluminated
+  usageDefinition: An indication of whether there is an illuminated indicator to show that the switch is on (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/26bLsGOSD53AW$1zIs3Sjt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26bLsGOSD53AW$1zIs3Sjt
+    ifdGuid: 26bLsGOSD53AW$1zIs3Sjt
+- propertyName: Legend
+  usageDefinition: A text inscribed or applied to the switch as a legend to indicate purpose or function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3hexCcy1jAPxnQtSQhMfW3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hexCcy1jAPxnQtSQhMfW3
+    ifdGuid: 3hexCcy1jAPxnQtSQhMfW3
+- propertyName: SetPoint
+  usageDefinition: "Indicates the setpoint and label.  For toggle switches, there are two positions, 0 for off and 1 for on.  For dimmer switches, the values may indicate the fully-off and full-on positions, where missing integer values in between are interpolated.   For selector switches, the range indicates the available positions.  An IfcTable may be attached (using IfcMetric and IfcPropertyConstraintRelationship) containing columns of the specified header names and types:'Position' (IfcInteger): The discrete setpoint level.'Sink' (IfcLabel): The Name of the switched input port (IfcDistributionPort with FlowDirection=SINK).'Source' (IfcLabel): The Name of the switched output port (IfcDistributionPort with FlowDirection=SOURCE).'Ratio' (IfcNormalizedRatioMeasure): The ratio of power at the setpoint where 0.0 is off and 1.0 is fully on."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1mJk0QtgT3sxhiUBZKOI5Q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mJk0QtgT3sxhiUBZKOI5Q
+    ifdGuid: 1mJk0QtgT3sxhiUBZKOI5Q
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YT_O0qWqHuO00025QrE$V
     ifdGuid: 2YT_O0qWqHuO00025QrE$V
     legacyGuid: a277e600d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 2YT_O0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2YT_O0qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +159,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2f1bs0qWqHuO00025QrE$V
     ifdGuid: 2f1bs0qWqHuO00025QrE$V
     legacyGuid: a9065d80d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 2f1bs0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2f1bs0qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +359,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uXQQ0qWqHuO00025QrE$V
     ifdGuid: 2uXQQ0qWqHuO00025QrE$V
     legacyGuid: b885a680d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 2uXQQ0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2uXQQ0qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +410,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zul40qWqHuO00025QrE$V
     ifdGuid: 2zul40qWqHuO00025QrE$V
     legacyGuid: bde2f100d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 2zul40qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2zul40qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -516,6 +591,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DOZe0qWqHuO00025QrE$V
     ifdGuid: 3DOZe0qWqHuO00025QrE$V
     legacyGuid: cd623a00d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 3DOZe0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3DOZe0qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -565,6 +642,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KYKW0qWqHuO00025QrE$V
     ifdGuid: 3KYKW0qWqHuO00025QrE$V
     legacyGuid: d4894800d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 3KYKW0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3KYKW0qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -614,6 +693,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R5x_0qWqHuO00025QrE$V
     ifdGuid: 3R5x_0qWqHuO00025QrE$V
     legacyGuid: db17bf80d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 3R5x_0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3R5x_0qWqHuO00025QrE$V
   localizations:
   - language: en
@@ -663,6 +744,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YrsG0qWqHuO00025QrE$V
     ifdGuid: 3YrsG0qWqHuO00025QrE$V
     legacyGuid: e2d76400d20d11e1800000215ad4efdf
+    legacyGuids:
+    - 3YrsG0qWqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3YrsG0qWqHuO00025QrE$V
   localizations:
   - language: en

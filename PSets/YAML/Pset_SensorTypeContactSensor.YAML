@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E2OM0qWKHuO00025QrE$V
   ifdGuid: 0E2OM0qWKHuO00025QrE$V
   legacyGuid: 0e098580d20511e1800000215ad4efdf
+  legacyGuids:
+  - 0E2OM0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0E2OM0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/CONTACTSENSOR
   type: IfcSensor/CONTACTSENSOR
+propertyUsages:
+- propertyName: SetPointContact
+  usageDefinition: The contact value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ltj8YQ159zOQsaoIrMadK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ltj8YQ159zOQsaoIrMadK
+    ifdGuid: 0Ltj8YQ159zOQsaoIrMadK
 properties:
 - name: SetPointContact
   definition: The contact value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IpZc0qWKHuO00025QrE$V
     ifdGuid: 0IpZc0qWKHuO00025QrE$V
     legacyGuid: 12ce3980d20511e1800000215ad4efdf
+    legacyGuids:
+    - 0IpZc0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0IpZc0qWKHuO00025QrE$V
   localizations:
   - language: en

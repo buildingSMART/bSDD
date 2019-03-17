@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AZMk0qUSHuO00025QrE$V
   ifdGuid: 2AZMk0qUSHuO00025QrE$V
   legacyGuid: 8a8d6b80d1e711e1800000215ad4efdf
+  legacyGuids:
+  - 2AZMk0qUSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2AZMk0qUSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcFlowInstrument
   type: IfcFlowInstrument
+propertyUsages:
+- propertyName: Value
+  usageDefinition: Indicates measured values over time which may be recorded continuously or only when changed beyond a particular deadband.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10h9WcozzDL8XWuq5eJf3Y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10h9WcozzDL8XWuq5eJf3Y
+    ifdGuid: 10h9WcozzDL8XWuq5eJf3Y
+- propertyName: Quality
+  usageDefinition: 'Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0gNRy4OFr12hPN0unspolX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0gNRy4OFr12hPN0unspolX
+    ifdGuid: 0gNRy4OFr12hPN0unspolX
+- propertyName: Status
+  usageDefinition: "Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2xaAy7Kvf4igxdeN9KlCbo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xaAy7Kvf4igxdeN9KlCbo
+    ifdGuid: 2xaAy7Kvf4igxdeN9KlCbo
 properties:
 - name: Value
   definition: Indicates measured values over time which may be recorded continuously or only when changed beyond a particular deadband.
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2GWqo0qUSHuO00025QrE$V
     ifdGuid: 2GWqo0qUSHuO00025QrE$V
     legacyGuid: 90834c80d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 2GWqo0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2GWqo0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +118,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Khse0qUSHuO00025QrE$V
     ifdGuid: 2Khse0qUSHuO00025QrE$V
     legacyGuid: 94af6a00d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 2Khse0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Khse0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +168,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Ngbg0qUSHuO00025QrE$V
     ifdGuid: 2Ngbg0qUSHuO00025QrE$V
     legacyGuid: 97aa5a80d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 2Ngbg0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Ngbg0qUSHuO00025QrE$V
   localizations:
   - language: en

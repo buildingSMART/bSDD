@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kGp_0qXaHuO00025QrE$V
   ifdGuid: 0kGp_0qXaHuO00025QrE$V
   legacyGuid: 2e433f80d21911e1800000215ad4efdf
+  legacyGuids:
+  - 0kGp_0qXaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0kGp_0qXaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,55 @@ localizations:
 applicableIfcClasses:
 - name: IfcZone
   type: IfcZone
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1bAnPccSz0JhS58qLDvwIQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bAnPccSz0JhS58qLDvwIQ
+    ifdGuid: 1bAnPccSz0JhS58qLDvwIQ
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external zone at the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ocmPJRbDAJBHSZ6$Gqedb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ocmPJRbDAJBHSZ6$Gqedb
+    ifdGuid: 1ocmPJRbDAJBHSZ6$Gqedb
+- propertyName: GrossPlannedArea
+  usageDefinition: Total planned gross area for the zone. Used for programming the zone.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ayJaWUpPBq8xVe7cbm4P3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ayJaWUpPBq8xVe7cbm4P3
+    ifdGuid: 0ayJaWUpPBq8xVe7cbm4P3
+- propertyName: NetPlannedArea
+  usageDefinition: Total planned net area for the zone. Used for programming the zone.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3HWhLAD$L09PpI93i9mrIF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3HWhLAD$L09PpI93i9mrIF
+    ifdGuid: 3HWhLAD$L09PpI93i9mrIF
+- propertyName: PubliclyAccessible
+  usageDefinition: Indication whether this space (in case of e.g., a toilet) is designed to serve as a publicly accessible space, e.g., for a public toilet (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XVcazfcv10e40bL8wXV1Z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XVcazfcv10e40bL8wXV1Z
+    ifdGuid: 0XVcazfcv10e40bL8wXV1Z
+- propertyName: HandicapAccessible
+  usageDefinition: Indication whether this space (in case of e.g., a toilet) is designed to serve as an accessible space for handicapped people, e.g., for a public toilet (TRUE) or not (FALSE). This information is often used to declare the need for access for the disabled and for special design requirements of this space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3UU2JAoW13VB6KtUKPlfpS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3UU2JAoW13VB6KtUKPlfpS
+    ifdGuid: 3UU2JAoW13VB6KtUKPlfpS
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
@@ -41,6 +92,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nriQ0qXaHuO00025QrE$V
     ifdGuid: 0nriQ0qXaHuO00025QrE$V
     legacyGuid: 31d6c680d21911e1800000215ad4efdf
+    legacyGuids:
+    - 0nriQ0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0nriQ0qXaHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +143,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IUFM1QSfD6AJxNh5YOCyx
     ifdGuid: 2IUFM1QSfD6AJxNh5YOCyx
     legacyGuid: 28fecb30be2a40c69fb0703be83c5e9f
+    legacyGuids:
+    - 0e$iimlYf0nf_mS3leF5wV
     legacyGuidAsIfcGlobalId: 0e$iimlYf0nf_mS3leF5wV
   localizations:
   - language: en
@@ -136,6 +191,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26i06XSkHEWOce5holIMjL
     ifdGuid: 26i06XSkHEWOce5holIMjL
     legacyGuid: e46e79127254467fab1435fce14121bf
+    legacyGuids:
+    - 3aRdaISbH6VwiKDVpXGI6$
     legacyGuidAsIfcGlobalId: 3aRdaISbH6VwiKDVpXGI6$
   localizations:
   - language: en
@@ -182,6 +239,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uJyku3QH6VfEOZJ6gIkEg
     ifdGuid: 0uJyku3QH6VfEOZJ6gIkEg
     legacyGuid: c0ec9d3bf8f649b9be1a1a3ea965d058
+    legacyGuids:
+    - 30x9qx_FP9kRuQ6ZwfPT1O
     legacyGuidAsIfcGlobalId: 30x9qx_FP9kRuQ6ZwfPT1O
   localizations:
   - language: en
@@ -228,6 +287,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AHk40qXaHuO00025QrE$V
     ifdGuid: 1AHk40qXaHuO00025QrE$V
     legacyGuid: 4a46e100d21911e1800000215ad4efdf
+    legacyGuids:
+    - 1AHk40qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1AHk40qXaHuO00025QrE$V
   localizations:
   - language: en
@@ -277,6 +338,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1HRUy0qXaHuO00025QrE$V
     ifdGuid: 1HRUy0qXaHuO00025QrE$V
     legacyGuid: 516def00d21911e1800000215ad4efdf
+    legacyGuids:
+    - 1HRUy0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1HRUy0qXaHuO00025QrE$V
   localizations:
   - language: en

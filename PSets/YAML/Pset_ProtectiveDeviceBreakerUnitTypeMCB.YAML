@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x5nu0qVaHuO00025QrE$V
   ifdGuid: 1x5nu0qVaHuO00025QrE$V
   legacyGuid: 7b171e00d1f911e1800000215ad4efdf
+  legacyGuids:
+  - 1x5nu0qVaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1x5nu0qVaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDevice/CIRCUITBREAKER
   type: IfcProtectiveDevice/CIRCUITBREAKER
+propertyUsages:
+- propertyName: PowerLoss
+  usageDefinition: The power loss in [W] per pole of the MCB  when the nominal current is flowing through the MCB.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17s59MQ595z91hJoZJyT_9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17s59MQ595z91hJoZJyT_9
+    ifdGuid: 17s59MQ595z91hJoZJyT_9
+- propertyName: VoltageLevel
+  usageDefinition: The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17WLpR_Qn8aOcLA0t3pBIT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17WLpR_Qn8aOcLA0t3pBIT
+    ifdGuid: 17WLpR_Qn8aOcLA0t3pBIT
+- propertyName: NominalCurrents
+  usageDefinition: A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XRr1T1Nr82OLidSsTTotr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XRr1T1Nr82OLidSsTTotr
+    ifdGuid: 1XRr1T1Nr82OLidSsTTotr
+- propertyName: ICU60947
+  usageDefinition: The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1NBmiGFVTCoB6XCJCTEAuv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1NBmiGFVTCoB6XCJCTEAuv
+    ifdGuid: 1NBmiGFVTCoB6XCJCTEAuv
+- propertyName: ICS60947
+  usageDefinition: The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zVyQhx6D5NAgfYEemYl8q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zVyQhx6D5NAgfYEemYl8q
+    ifdGuid: 1zVyQhx6D5NAgfYEemYl8q
+- propertyName: ICN60898
+  usageDefinition: The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1l5sDzkFL4dP6BENSuxG0k
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1l5sDzkFL4dP6BENSuxG0k
+    ifdGuid: 1l5sDzkFL4dP6BENSuxG0k
+- propertyName: ICS60898
+  usageDefinition: The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1z2O7q$xfCu8bSMMBk3dgt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1z2O7q$xfCu8bSMMBk3dgt
+    ifdGuid: 1z2O7q$xfCu8bSMMBk3dgt
 properties:
 - name: PowerLoss
   definition: The power loss in [W] per pole of the MCB  when the nominal current is flowing through the MCB.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24e8O0qVaHuO00025QrE$V
     ifdGuid: 24e8O0qVaHuO00025QrE$V
     legacyGuid: 84a08600d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 24e8O0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24e8O0qVaHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +151,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EmeI0qVaHuO00025QrE$V
     ifdGuid: 2EmeI0qVaHuO00025QrE$V
     legacyGuid: 8ec28480d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 2EmeI0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2EmeI0qVaHuO00025QrE$V
   localizations:
   - language: en
@@ -335,6 +398,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2kMQq0qVaHuO00025QrE$V
     ifdGuid: 2kMQq0qVaHuO00025QrE$V
     legacyGuid: ae59ad00d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 2kMQq0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2kMQq0qVaHuO00025QrE$V
   localizations:
   - language: en
@@ -384,6 +449,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2siUW0qVaHuO00025QrE$V
     ifdGuid: 2siUW0qVaHuO00025QrE$V
     legacyGuid: b6b1e800d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 2siUW0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2siUW0qVaHuO00025QrE$V
   localizations:
   - language: en
@@ -433,6 +500,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30q_Q0qVaHuO00025QrE$V
     ifdGuid: 30q_Q0qVaHuO00025QrE$V
     legacyGuid: c0d3e680d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 30q_Q0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 30q_Q0qVaHuO00025QrE$V
   localizations:
   - language: en
@@ -482,6 +551,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39nBW0qVaHuO00025QrE$V
     ifdGuid: 39nBW0qVaHuO00025QrE$V
     legacyGuid: c9c4b800d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 39nBW0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 39nBW0qVaHuO00025QrE$V
   localizations:
   - language: en
@@ -531,6 +602,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IjOc0qVaHuO00025QrE$V
     ifdGuid: 3IjOc0qVaHuO00025QrE$V
     legacyGuid: d2b58980d1f911e1800000215ad4efdf
+    legacyGuids:
+    - 3IjOc0qVaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3IjOc0qVaHuO00025QrE$V
   localizations:
   - language: en

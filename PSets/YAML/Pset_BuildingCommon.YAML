@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hy1C0qSGHuO00025QrE$V
   ifdGuid: 3hy1C0qSGHuO00025QrE$V
   legacyGuid: ebf01300d1c411e1800000215ad4efdf
+  legacyGuids:
+  - 3hy1C0qSGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3hy1C0qSGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,119 @@ localizations:
 applicableIfcClasses:
 - name: IfcBuilding
   type: IfcBuilding
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3hkK82iTP8Q8UwDbQrYkud
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hkK82iTP8Q8UwDbQrYkud
+    ifdGuid: 3hkK82iTP8Q8UwDbQrYkud
+- propertyName: BuildingID
+  usageDefinition: A unique identifier assigned to a building. A temporary identifier is initially assigned at the time of making a planning application. This temporary identifier is changed to a permanent identifier when the building is registered into a statutory buildings and properties database.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/065ZYo0XT0W9_Q7Mlpkotc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/065ZYo0XT0W9_Q7Mlpkotc
+    ifdGuid: 065ZYo0XT0W9_Q7Mlpkotc
+- propertyName: IsPermanentID
+  usageDefinition: Indicates whether the identity assigned to a building is permanent (= TRUE) or temporary (=FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1bSSy6x2TALQGj6DG_ih_X
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bSSy6x2TALQGj6DG_ih_X
+    ifdGuid: 1bSSy6x2TALQGj6DG_ih_X
+- propertyName: ConstructionMethod
+  usageDefinition: The type of construction action to the building, the project deals with, e.g. new construction, renovation, refurbishment, etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IuFgJkID1DOBHBFDydcdn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IuFgJkID1DOBHBFDydcdn
+    ifdGuid: 1IuFgJkID1DOBHBFDydcdn
+- propertyName: FireProtectionClass
+  usageDefinition: Main fire protection class for the building which is assigned from the fire protection classification table as given by the relevant national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0_qA0vD2z3gx8tykUhXF5q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_qA0vD2z3gx8tykUhXF5q
+    ifdGuid: 0_qA0vD2z3gx8tykUhXF5q
+- propertyName: SprinklerProtection
+  usageDefinition: Indication whether this object is sprinkler protected (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17TRDBL3r2AATPA6UXXmXb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17TRDBL3r2AATPA6UXXmXb
+    ifdGuid: 17TRDBL3r2AATPA6UXXmXb
+- propertyName: SprinklerProtectionAutomatic
+  usageDefinition: Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bpxz1vb9EhwHrt2nU6Qqx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bpxz1vb9EhwHrt2nU6Qqx
+    ifdGuid: 2bpxz1vb9EhwHrt2nU6Qqx
+- propertyName: OccupancyType
+  usageDefinition: Occupancy type for this object.It is defined according to the presiding national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0b6aaECSP6Dug2DqLS8kPU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0b6aaECSP6Dug2DqLS8kPU
+    ifdGuid: 0b6aaECSP6Dug2DqLS8kPU
+- propertyName: GrossPlannedArea
+  usageDefinition: Total planned gross area for the building  Used for programming the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0M38kcooT4pRRIc$WB3Eh3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0M38kcooT4pRRIc$WB3Eh3
+    ifdGuid: 0M38kcooT4pRRIc$WB3Eh3
+- propertyName: NetPlannedArea
+  usageDefinition: Total planned net area for the building  Used for programming the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XnvSEgHvAPQpf$EOfbqvr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XnvSEgHvAPQpf$EOfbqvr
+    ifdGuid: 1XnvSEgHvAPQpf$EOfbqvr
+- propertyName: NumberOfStoreys
+  usageDefinition: The number of storeys within a building.Captured for those cases where the IfcBuildingStorey entity is not used. Note that if IfcBuilingStorey is asserted and the number of storeys in a building can be determined from it, then this approach should be used in preference to setting a property for the number of storeys.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2m7zaNgXn19viel49QYr2B
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2m7zaNgXn19viel49QYr2B
+    ifdGuid: 2m7zaNgXn19viel49QYr2B
+- propertyName: YearOfConstruction
+  usageDefinition: Year of construction of this building, including expected year of completion.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0h90L2GQTBwehnH9iVQpqX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h90L2GQTBwehnH9iVQpqX
+    ifdGuid: 0h90L2GQTBwehnH9iVQpqX
+- propertyName: YearOfLastRefurbishment
+  usageDefinition: Year of last major refurbishment, or reconstruction, of the building (applies to reconstruction works).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LbzThI116BA0U9E2T6oVY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LbzThI116BA0U9E2T6oVY
+    ifdGuid: 3LbzThI116BA0U9E2T6oVY
+- propertyName: IsLandmarked
+  usageDefinition: This builing is listed as a historic building (TRUE), or not (FALSE), or unknown.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2CrRIZPafBiemCKP5CM9NH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CrRIZPafBiemCKP5CM9NH
+    ifdGuid: 2CrRIZPafBiemCKP5CM9NH
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.
@@ -45,6 +160,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mjCS0qSGHuO00025QrE$V
     ifdGuid: 3mjCS0qSGHuO00025QrE$V
     legacyGuid: f0b4c700d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 3mjCS0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3mjCS0qSGHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -94,6 +211,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rUNi0qSGHuO00025QrE$V
     ifdGuid: 3rUNi0qSGHuO00025QrE$V
     legacyGuid: f5797b00d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 3rUNi0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3rUNi0qSGHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -143,6 +262,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wFYy0qSGHuO00025QrE$V
     ifdGuid: 3wFYy0qSGHuO00025QrE$V
     legacyGuid: fa3e2f00d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 3wFYy0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3wFYy0qSGHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -192,6 +313,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$0kC0qSGHuO00025QrE$V
     ifdGuid: 3$0kC0qSGHuO00025QrE$V
     legacyGuid: ff02e300d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 3$0kC0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3$0kC0qSGHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -241,6 +364,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03Bm20qSKHuO00025QrE$V
     ifdGuid: 03Bm20qSKHuO00025QrE$V
     legacyGuid: 032f0080d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 03Bm20qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 03Bm20qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -290,6 +415,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/07Mnu0qSKHuO00025QrE$V
     ifdGuid: 07Mnu0qSKHuO00025QrE$V
     legacyGuid: 075b1e00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 07Mnu0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 07Mnu0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -339,6 +466,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0C7z80qSKHuO00025QrE$V
     ifdGuid: 0C7z80qSKHuO00025QrE$V
     legacyGuid: 0c1fd200d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0C7z80qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0C7z80qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -388,6 +517,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GI__0qSKHuO00025QrE$V
     ifdGuid: 0GI__0qSKHuO00025QrE$V
     legacyGuid: 104bef80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0GI__0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0GI__0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -437,6 +568,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0L4AE0qSKHuO00025QrE$V
     ifdGuid: 0L4AE0qSKHuO00025QrE$V
     legacyGuid: 1510a380d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0L4AE0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0L4AE0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -486,6 +619,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PFC40qSKHuO00025QrE$V
     ifdGuid: 0PFC40qSKHuO00025QrE$V
     legacyGuid: 193cc100d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0PFC40qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0PFC40qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -532,6 +667,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TQDw0qSKHuO00025QrE$V
     ifdGuid: 0TQDw0qSKHuO00025QrE$V
     legacyGuid: 1d68de80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0TQDw0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0TQDw0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -581,6 +718,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XbFm0qSKHuO00025QrE$V
     ifdGuid: 0XbFm0qSKHuO00025QrE$V
     legacyGuid: 2194fc00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0XbFm0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0XbFm0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -630,6 +769,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cMR00qSKHuO00025QrE$V
     ifdGuid: 0cMR00qSKHuO00025QrE$V
     legacyGuid: 2659b000d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0cMR00qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0cMR00qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -676,6 +817,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0gXSs0qSKHuO00025QrE$V
     ifdGuid: 0gXSs0qSKHuO00025QrE$V
     legacyGuid: 2a85cd80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 0gXSs0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0gXSs0qSKHuO00025QrE$V
   localizations:
   - language: de-DE

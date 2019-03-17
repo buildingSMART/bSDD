@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Iz9y0qWKHuO00025QrE$V
   ifdGuid: 2Iz9y0qWKHuO00025QrE$V
   legacyGuid: 92f49f00d20511e1800000215ad4efdf
+  legacyGuids:
+  - 2Iz9y0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2Iz9y0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/HUMIDITYSENSOR
   type: IfcSensor/HUMIDITYSENSOR
+propertyUsages:
+- propertyName: SetPointHumidity
+  usageDefinition: The humidity value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hE24_YCfC19h2syPxfo9V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hE24_YCfC19h2syPxfo9V
+    ifdGuid: 0hE24_YCfC19h2syPxfo9V
 properties:
 - name: SetPointHumidity
   definition: The humidity value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ce0M0qWKHuO00025QrE$V
     ifdGuid: 2ce0M0qWKHuO00025QrE$V
     legacyGuid: a6a00580d20511e1800000215ad4efdf
+    legacyGuids:
+    - 2ce0M0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2ce0M0qWKHuO00025QrE$V
   localizations:
   - language: en

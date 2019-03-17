@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0K0cK0qWiHuO00025QrE$V
   ifdGuid: 0K0cK0qWiHuO00025QrE$V
   legacyGuid: 14026500d20b11e1800000215ad4efdf
+  legacyGuids:
+  - 0K0cK0qWiHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0K0cK0qWiHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,111 @@ localizations:
 applicableIfcClasses:
 - name: IfcSpace
   type: IfcSpace
+propertyUsages:
+- propertyName: CoolingDesignAirflow
+  usageDefinition: The air flowrate required during the peak cooling conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0CTdKb6En3L8hGmifdCTEa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CTdKb6En3L8hGmifdCTEa
+    ifdGuid: 0CTdKb6En3L8hGmifdCTEa
+- propertyName: HeatingDesignAirflow
+  usageDefinition: The air flowrate required during the peak heating conditions, but could also be determined by minimum ventilation requirement or minimum air change requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1UP0TvnYr6nw3VlaNen3xB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1UP0TvnYr6nw3VlaNen3xB
+    ifdGuid: 1UP0TvnYr6nw3VlaNen3xB
+- propertyName: TotalSensibleHeatGain
+  usageDefinition: The total sensible heat or energy gained by the space during the peak cooling conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GvxKvEjD3qOxouU$tEgN_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GvxKvEjD3qOxouU$tEgN_
+    ifdGuid: 0GvxKvEjD3qOxouU$tEgN_
+- propertyName: TotalHeatGain
+  usageDefinition: The total amount of heat or energy gained by the space at the time of the space's peak cooling conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/30A2j4zK54fxGiYbFXDa3w
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30A2j4zK54fxGiYbFXDa3w
+    ifdGuid: 30A2j4zK54fxGiYbFXDa3w
+- propertyName: TotalHeatLoss
+  usageDefinition: The total amount of heat or energy lost by the space at the time of the space's peak heating conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Ag1OQ7$107QVzRstb_SwR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Ag1OQ7$107QVzRstb_SwR
+    ifdGuid: 1Ag1OQ7$107QVzRstb_SwR
+- propertyName: CoolingDryBulb
+  usageDefinition: Inside dry bulb temperature for cooling design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0CIyko_db4gQavWWuBe7Td
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CIyko_db4gQavWWuBe7Td
+    ifdGuid: 0CIyko_db4gQavWWuBe7Td
+- propertyName: CoolingRelativeHumidity
+  usageDefinition: Inside relative humidity for cooling design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2HMhG9zCXAguiW82TiwNmu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HMhG9zCXAguiW82TiwNmu
+    ifdGuid: 2HMhG9zCXAguiW82TiwNmu
+- propertyName: HeatingDryBulb
+  usageDefinition: Inside dry bulb temperature for heating design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2iyXbfMx13Z8O4xnMlTYRS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iyXbfMx13Z8O4xnMlTYRS
+    ifdGuid: 2iyXbfMx13Z8O4xnMlTYRS
+- propertyName: HeatingRelativeHumidity
+  usageDefinition: Inside relative humidity for heating design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/30KfctUIL7QB$qwjr9uXtZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30KfctUIL7QB$qwjr9uXtZ
+    ifdGuid: 30KfctUIL7QB$qwjr9uXtZ
+- propertyName: VentilationAirFlowrate
+  usageDefinition: Ventilation outside air requirement for the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ea3a6sP16agTqv27p5j2M
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ea3a6sP16agTqv27p5j2M
+    ifdGuid: 3ea3a6sP16agTqv27p5j2M
+- propertyName: ExhaustAirFlowrate
+  usageDefinition: Design exhaust air flow rate for the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3c4JdkLKX4tOXhQtV9bi_d
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3c4JdkLKX4tOXhQtV9bi_d
+    ifdGuid: 3c4JdkLKX4tOXhQtV9bi_d
+- propertyName: CeilingRAPlenum
+  usageDefinition: Ceiling plenum used for return air or not. TRUE = Yes, FALSE = No.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$h6US_Sj8_x5c78Y$649P
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$h6US_Sj8_x5c78Y$649P
+    ifdGuid: 1$h6US_Sj8_x5c78Y$649P
+- propertyName: BoundaryAreaHeatLoss
+  usageDefinition: Heat loss per unit area for the boundary object. This is a design input value for use in the absence of calculated load data.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Gb2HMpGfDxPdl4FIzc9O9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Gb2HMpGfDxPdl4FIzc9O9
+    ifdGuid: 0Gb2HMpGfDxPdl4FIzc9O9
 properties:
 - name: CoolingDesignAirflow
   definition: The air flowrate required during the peak cooling conditions.
@@ -41,6 +148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0P_4O0qWiHuO00025QrE$V
     ifdGuid: 0P_4O0qWiHuO00025QrE$V
     legacyGuid: 19f84600d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0P_4O0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0P_4O0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +196,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0VxYS0qWiHuO00025QrE$V
     ifdGuid: 0VxYS0qWiHuO00025QrE$V
     legacyGuid: 1fee2700d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0VxYS0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0VxYS0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +244,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bv0W0qWiHuO00025QrE$V
     ifdGuid: 0bv0W0qWiHuO00025QrE$V
     legacyGuid: 25e40800d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0bv0W0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0bv0W0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -182,6 +295,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0iSd_0qWiHuO00025QrE$V
     ifdGuid: 0iSd_0qWiHuO00025QrE$V
     legacyGuid: 2c727f80d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0iSd_0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0iSd_0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -231,6 +346,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nDpE0qWiHuO00025QrE$V
     ifdGuid: 0nDpE0qWiHuO00025QrE$V
     legacyGuid: 31373380d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0nDpE0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0nDpE0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -280,6 +397,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uNa60qWiHuO00025QrE$V
     ifdGuid: 0uNa60qWiHuO00025QrE$V
     legacyGuid: 385e4180d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0uNa60qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0uNa60qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -329,6 +448,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zkum0qWiHuO00025QrE$V
     ifdGuid: 0zkum0qWiHuO00025QrE$V
     legacyGuid: 3dbb8c00d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0zkum0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0zkum0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -378,6 +499,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13iMq0qWiHuO00025QrE$V
     ifdGuid: 13iMq0qWiHuO00025QrE$V
     legacyGuid: 43b16d00d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 13iMq0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 13iMq0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -427,6 +550,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/193hU0qWiHuO00025QrE$V
     ifdGuid: 193hU0qWiHuO00025QrE$V
     legacyGuid: 490eb780d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 193hU0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 193hU0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -476,6 +601,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FdIy0qWiHuO00025QrE$V
     ifdGuid: 1FdIy0qWiHuO00025QrE$V
     legacyGuid: 4f9d2f00d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 1FdIy0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1FdIy0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -525,6 +652,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1K_dc0qWiHuO00025QrE$V
     ifdGuid: 1K_dc0qWiHuO00025QrE$V
     legacyGuid: 54fa7980d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 1K_dc0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1K_dc0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -574,6 +703,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QLyG0qWiHuO00025QrE$V
     ifdGuid: 1QLyG0qWiHuO00025QrE$V
     legacyGuid: 5a57c400d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 1QLyG0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1QLyG0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -623,6 +754,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XVj80qWiHuO00025QrE$V
     ifdGuid: 1XVj80qWiHuO00025QrE$V
     legacyGuid: 617ed200d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 1XVj80qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1XVj80qWiHuO00025QrE$V
   localizations:
   - language: en

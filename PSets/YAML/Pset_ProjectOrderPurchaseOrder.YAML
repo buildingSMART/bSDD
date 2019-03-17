@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R3CK0qVSHuO00025QrE$V
   ifdGuid: 3R3CK0qVSHuO00025QrE$V
   legacyGuid: db0cc500d1f711e1800000215ad4efdf
+  legacyGuids:
+  - 3R3CK0qVSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3R3CK0qVSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,23 @@ localizations:
 applicableIfcClasses:
 - name: IfcProjectOrder/PURCHASEORDER
   type: IfcProjectOrder/PURCHASEORDER
+propertyUsages:
+- propertyName: IsFOB
+  usageDefinition: Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False). FOB is a shipping term which indicates that the supplier pays the shipping costs (and usually also the insurance costs) from the point of manufacture to a specified destination, at which point the buyer takes responsibility.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1w$cAAsabBsw0gPMVPS$Rp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1w$cAAsabBsw0gPMVPS$Rp
+    ifdGuid: 1w$cAAsabBsw0gPMVPS$Rp
+- propertyName: ShipMethod
+  usageDefinition: Method of shipping that will be used for goods or services.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0c2IzG6g92rufrZ38JkgWw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0c2IzG6g92rufrZ38JkgWw
+    ifdGuid: 0c2IzG6g92rufrZ38JkgWw
 properties:
 - name: IsFOB
   definition: Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False). FOB is a shipping term which indicates that the supplier pays the shipping costs (and usually also the insurance costs) from the point of manufacture to a specified destination, at which point the buyer takes responsibility.
@@ -41,6 +60,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZPG00qVSHuO00025QrE$V
     ifdGuid: 3ZPG00qVSHuO00025QrE$V
     legacyGuid: e3650000d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 3ZPG00qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ZPG00qVSHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hlJi0qVSHuO00025QrE$V
     ifdGuid: 3hlJi0qVSHuO00025QrE$V
     legacyGuid: ebbd3b00d1f711e1800000215ad4efdf
+    legacyGuids:
+    - 3hlJi0qVSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3hlJi0qVSHuO00025QrE$V
   localizations:
   - language: en

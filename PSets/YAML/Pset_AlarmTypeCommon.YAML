@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01_zI0qS4HuO00025QrE$V
   ifdGuid: 01_zI0qS4HuO00025QrE$V
   legacyGuid: 01fbd480d1c111e1800000215ad4efdf
+  legacyGuids:
+  - 01_zI0qS4HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 01_zI0qS4HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcAlarm
   type: IfcAlarm
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_IZMN6S98bhL$O3TaWono
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_IZMN6S98bhL$O3TaWono
+    ifdGuid: 2_IZMN6S98bhL$O3TaWono
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0uIB_CcB9CLBsTEb8WB1sS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uIB_CcB9CLBsTEb8WB1sS
+    ifdGuid: 0uIB_CcB9CLBsTEb8WB1sS
+- propertyName: Condition
+  usageDefinition: Table mapping alarm condition identifiers to descriptive labels, which may be used for interpreting Pset_AlarmPHistory.Condition.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3s5LeBSt52puULiducD8gF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3s5LeBSt52puULiducD8gF
+    ifdGuid: 3s5LeBSt52puULiducD8gF
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08Yam0qS4HuO00025QrE$V
     ifdGuid: 08Yam0qS4HuO00025QrE$V
     legacyGuid: 088a4c00d1c111e1800000215ad4efdf
+    legacyGuids:
+    - 08Yam0qS4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 08Yam0qS4HuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +119,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EW2q0qS4HuO00025QrE$V
     ifdGuid: 0EW2q0qS4HuO00025QrE$V
     legacyGuid: 0e802d00d1c111e1800000215ad4efdf
+    legacyGuids:
+    - 0EW2q0qS4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0EW2q0qS4HuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +319,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YAvE0qS4HuO00025QrE$V
     ifdGuid: 0YAvE0qS4HuO00025QrE$V
     legacyGuid: 222b9380d1c111e1800000215ad4efdf
+    legacyGuids:
+    - 0YAvE0qS4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0YAvE0qS4HuO00025QrE$V
   localizations:
   - language: en

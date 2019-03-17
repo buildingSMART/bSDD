@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04BrI0qVmHuO00025QrE$V
   ifdGuid: 04BrI0qVmHuO00025QrE$V
   legacyGuid: 042f5480d1fc11e1800000215ad4efdf
+  legacyGuids:
+  - 04BrI0qVmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 04BrI0qVmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit
   type: IfcProtectiveDeviceTrippingUnit
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2kB6c86tXEQvq0lcJhGWGt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2kB6c86tXEQvq0lcJhGWGt
+    ifdGuid: 2kB6c86tXEQvq0lcJhGWGt
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/32ye1TH2f0ke1IUfTGc2wW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/32ye1TH2f0ke1IUfTGc2wW
+    ifdGuid: 32ye1TH2f0ke1IUfTGc2wW
+- propertyName: Standard
+  usageDefinition: The designation of the standard applicable for the definition of the characteristics of thetripping_unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bAEbxihD8QQ48$DWVq7mV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bAEbxihD8QQ48$DWVq7mV
+    ifdGuid: 2bAEbxihD8QQ48$DWVq7mV
+- propertyName: UseInDiscrimination
+  usageDefinition: An indication whether the time/current tripping information can be applied in a discriminationanalysis or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DeWR38dPBgwyxcKT9uL$Z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DeWR38dPBgwyxcKT9uL$Z
+    ifdGuid: 1DeWR38dPBgwyxcKT9uL$Z
+- propertyName: AtexVerified
+  usageDefinition: An indication whether the tripping_unit is verified to be applied in EX-environment or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2piWkVBGX8fe1lI0z3DQeZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2piWkVBGX8fe1lI0z3DQeZ
+    ifdGuid: 2piWkVBGX8fe1lI0z3DQeZ
+- propertyName: OldDevice
+  usageDefinition: Indication whether the protection_ unit is out-dated or not. If not out-dated, the device is still for sale.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2hEs4ss153QxkFzRfCqb9z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hEs4ss153QxkFzRfCqb9z
+    ifdGuid: 2hEs4ss153QxkFzRfCqb9z
+- propertyName: LimitingTerminalSize
+  usageDefinition: The maximum terminal size capacity of the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/13m_f4sVX5cBmJl8c$NdWw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13m_f4sVX5cBmJl8c$NdWw
+    ifdGuid: 13m_f4sVX5cBmJl8c$NdWw
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08Mt80qVmHuO00025QrE$V
     ifdGuid: 08Mt80qVmHuO00025QrE$V
     legacyGuid: 085b7200d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 08Mt80qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 08Mt80qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +151,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EKLC0qVmHuO00025QrE$V
     ifdGuid: 0EKLC0qVmHuO00025QrE$V
     legacyGuid: 0e515300d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 0EKLC0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0EKLC0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +351,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0V0Sa0qVmHuO00025QrE$V
     ifdGuid: 0V0Sa0qVmHuO00025QrE$V
     legacyGuid: 1f01c900d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 0V0Sa0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0V0Sa0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +402,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ba420qVmHuO00025QrE$V
     ifdGuid: 0ba420qVmHuO00025QrE$V
     legacyGuid: 25904080d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 0ba420qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ba420qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -386,6 +453,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0i7hW0qVmHuO00025QrE$V
     ifdGuid: 0i7hW0qVmHuO00025QrE$V
     legacyGuid: 2c1eb800d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 0i7hW0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0i7hW0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -435,6 +504,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0o59a0qVmHuO00025QrE$V
     ifdGuid: 0o59a0qVmHuO00025QrE$V
     legacyGuid: 32149900d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 0o59a0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0o59a0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -484,6 +555,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0vEwS0qVmHuO00025QrE$V
     ifdGuid: 0vEwS0qVmHuO00025QrE$V
     legacyGuid: 393ba700d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 0vEwS0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0vEwS0qVmHuO00025QrE$V
   localizations:
   - language: en

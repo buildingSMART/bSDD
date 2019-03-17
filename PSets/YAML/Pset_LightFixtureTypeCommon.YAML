@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28BH20qUiHuO00025QrE$V
   ifdGuid: 28BH20qUiHuO00025QrE$V
   legacyGuid: 882d1080d1eb11e1800000215ad4efdf
+  legacyGuids:
+  - 28BH20qUiHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 28BH20qUiHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,87 @@ localizations:
 applicableIfcClasses:
 - name: IfcLightFixture
   type: IfcLightFixture
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0eV0A7ALP3hex9fvX2LEh_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0eV0A7ALP3hex9fvX2LEh_
+    ifdGuid: 0eV0A7ALP3hex9fvX2LEh_
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1oxO7zTMXDfhVwNNycqGpe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1oxO7zTMXDfhVwNNycqGpe
+    ifdGuid: 1oxO7zTMXDfhVwNNycqGpe
+- propertyName: NumberOfSources
+  usageDefinition: Number of sources .
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OffR$bNf5guTxdIzvaw8D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OffR$bNf5guTxdIzvaw8D
+    ifdGuid: 1OffR$bNf5guTxdIzvaw8D
+- propertyName: TotalWattage
+  usageDefinition: Wattage on whole lightfitting device with all sources intact.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1VtnvkVeb1oQumHwM3P_Fu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VtnvkVeb1oQumHwM3P_Fu
+    ifdGuid: 1VtnvkVeb1oQumHwM3P_Fu
+- propertyName: LightFixtureMountingType
+  usageDefinition: A list of the available types of mounting for light fixtures from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2B_VqTecT0AeT6R2bCkbRP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2B_VqTecT0AeT6R2bCkbRP
+    ifdGuid: 2B_VqTecT0AeT6R2bCkbRP
+- propertyName: LightFixturePlacingType
+  usageDefinition: A list of the available types of placing specification for light fixtures from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2N5_thq7L4ZgQ$Y5Q1i092
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2N5_thq7L4ZgQ$Y5Q1i092
+    ifdGuid: 2N5_thq7L4ZgQ$Y5Q1i092
+- propertyName: MaintenanceFactor
+  usageDefinition: The arithmetical allowance made for depreciation of lamps and reflective equipment from their initial values due to dirt, fumes, or age.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/14U5UrmvT6kR2n4nfvekef
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14U5UrmvT6kR2n4nfvekef
+    ifdGuid: 14U5UrmvT6kR2n4nfvekef
+- propertyName: MaximumPlenumSensibleLoad
+  usageDefinition: Maximum or Peak sensible thermal load contributed to return air plenum by the light fixture.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3GcfTI8jDFVA6DCfhUG_A1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3GcfTI8jDFVA6DCfhUG_A1
+    ifdGuid: 3GcfTI8jDFVA6DCfhUG_A1
+- propertyName: MaximumSpaceSensibleLoad
+  usageDefinition: Maximum or Peak sensible thermal load contributed to the conditioned space by the light fixture.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0D8c23SLP5t90Rto4iZET9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0D8c23SLP5t90Rto4iZET9
+    ifdGuid: 0D8c23SLP5t90Rto4iZET9
+- propertyName: SensibleLoadToRadiant
+  usageDefinition: Percent of sensible thermal load to radiant heat.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Nyhv8qWz2wvwDSUcNmtfv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Nyhv8qWz2wvwDSUcNmtfv
+    ifdGuid: 3Nyhv8qWz2wvwDSUcNmtfv
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -43,6 +126,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EkuW0qUiHuO00025QrE$V
     ifdGuid: 2EkuW0qUiHuO00025QrE$V
     legacyGuid: 8ebb8800d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 2EkuW0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2EkuW0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +174,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LIV_0qUiHuO00025QrE$V
     ifdGuid: 2LIV_0qUiHuO00025QrE$V
     legacyGuid: 9549ff80d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 2LIV_0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2LIV_0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -287,6 +374,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2aoKY0qUiHuO00025QrE$V
     ifdGuid: 2aoKY0qUiHuO00025QrE$V
     legacyGuid: a4c94880d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 2aoKY0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2aoKY0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -336,6 +425,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2g9fC0qUiHuO00025QrE$V
     ifdGuid: 2g9fC0qUiHuO00025QrE$V
     legacyGuid: aa269300d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 2g9fC0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2g9fC0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -385,6 +476,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2lWzs0qUiHuO00025QrE$V
     ifdGuid: 2lWzs0qUiHuO00025QrE$V
     legacyGuid: af83dd80d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 2lWzs0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2lWzs0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -674,6 +767,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35aPu0qUiHuO00025QrE$V
     ifdGuid: 35aPu0qUiHuO00025QrE$V
     legacyGuid: c5919e00d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 35aPu0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 35aPu0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -897,6 +992,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3O2zU0qUiHuO00025QrE$V
     ifdGuid: 3O2zU0qUiHuO00025QrE$V
     legacyGuid: d80bd780d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 3O2zU0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3O2zU0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -946,6 +1043,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3U0RY0qUiHuO00025QrE$V
     ifdGuid: 3U0RY0qUiHuO00025QrE$V
     legacyGuid: de01b880d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 3U0RY0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3U0RY0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -992,6 +1091,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bACQ0qUiHuO00025QrE$V
     ifdGuid: 3bACQ0qUiHuO00025QrE$V
     legacyGuid: e528c680d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 3bACQ0qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3bACQ0qUiHuO00025QrE$V
   localizations:
   - language: en
@@ -1038,6 +1139,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gXX40qUiHuO00025QrE$V
     ifdGuid: 3gXX40qUiHuO00025QrE$V
     legacyGuid: ea861100d1eb11e1800000215ad4efdf
+    legacyGuids:
+    - 3gXX40qUiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3gXX40qUiHuO00025QrE$V
   localizations:
   - language: en

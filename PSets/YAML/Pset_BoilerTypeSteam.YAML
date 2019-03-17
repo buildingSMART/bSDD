@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/340A_0qSGHuO00025QrE$V
   ifdGuid: 340A_0qSGHuO00025QrE$V
   legacyGuid: c400af80d1c411e1800000215ad4efdf
+  legacyGuids:
+  - 340A_0qSGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 340A_0qSGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcBoiler/STEAM
   type: IfcBoiler/STEAM
+propertyUsages:
+- propertyName: MaximumOutletPressure
+  usageDefinition: Maximum steam outlet pressure.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3I6KqQQUb53xL1cvjyZDGB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3I6KqQQUb53xL1cvjyZDGB
+    ifdGuid: 3I6KqQQUb53xL1cvjyZDGB
+- propertyName: NominalEfficiency
+  usageDefinition: 'The nominal efficiency of the boiler as defined by the manufacturer. For steam boilers, a function of inlet temperature versus steam pressure.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: InletTemperature(IfcThermodynamicTemperatureMeasure) and OutletTemperature(IfcThermodynamicTemperatureMeasure) in DefiningValues, and NominalEfficiency(IfcNormalisedRatioMeasure) in DefinedValues. For example, DefininfValues(InletTemp, OutletTemp), DefinedValues(null, NominalEfficiency).  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2vZmfmeObElQqffRrkM0JX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vZmfmeObElQqffRrkM0JX
+    ifdGuid: 2vZmfmeObElQqffRrkM0JX
+- propertyName: HeatOutput
+  usageDefinition: 'Total nominal heat output as listed by the Boiler manufacturer. For steam boilers, it is a function of inlet temperature versus steam pressure.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: InletTemperature(IfcThermodynamicTemperatureMeasure) and OutletTemperature(IfcThermodynamicTemperatureMeasure) in DefiningValues, and HeatOutput(IfcEnergyMeasure) in DefinedValues. For example, DefiningValues(InletTemp, OutletTemp), DefinedValues(null, HeatOutput). The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$CW5xtyrAZ8_oZCyyJapF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$CW5xtyrAZ8_oZCyyJapF
+    ifdGuid: 1$CW5xtyrAZ8_oZCyyJapF
 properties:
 - name: MaximumOutletPressure
   definition: Maximum steam outlet pressure.
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/38BCq0qSGHuO00025QrE$V
     ifdGuid: 38BCq0qSGHuO00025QrE$V
     legacyGuid: c82ccd00d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 38BCq0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 38BCq0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3CMEg0qSGHuO00025QrE$V
     ifdGuid: 3CMEg0qSGHuO00025QrE$V
     legacyGuid: cc58ea80d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 3CMEg0qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3CMEg0qSGHuO00025QrE$V
   localizations:
   - language: en
@@ -139,6 +170,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ivs80qSGHuO00025QrE$V
     ifdGuid: 3Ivs80qSGHuO00025QrE$V
     legacyGuid: d2e76200d1c411e1800000215ad4efdf
+    legacyGuids:
+    - 3Ivs80qSGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Ivs80qSGHuO00025QrE$V
   localizations:
   - language: en

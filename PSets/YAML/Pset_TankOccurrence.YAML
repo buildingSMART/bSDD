@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RKTU0qWyHuO00025QrE$V
   ifdGuid: 2RKTU0qWyHuO00025QrE$V
   legacyGuid: 9b51d780d20f11e1800000215ad4efdf
+  legacyGuids:
+  - 2RKTU0qWyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2RKTU0qWyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcTank
   type: IfcTank
+propertyUsages:
+- propertyName: TankComposition
+  usageDefinition: 'Defines the level of element composition where.COMPLEX: A set of elementary units aggregated together to fulfill the overall  required purpose.ELEMENT: A single elementary unit that may exist of itself or as an aggregation of partial units..PARTIAL: A partial elementary unit.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1EWuAMEejFHP2QXCzu41NM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1EWuAMEejFHP2QXCzu41NM
+    ifdGuid: 1EWuAMEejFHP2QXCzu41NM
+- propertyName: HasLadder
+  usageDefinition: 'Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE.Note: No indication is given of the type of ladder (gooseneck etc.)'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0HJGRS0kD13gzPNAnGcV1u
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0HJGRS0kD13gzPNAnGcV1u
+    ifdGuid: 0HJGRS0kD13gzPNAnGcV1u
+- propertyName: HasVisualIndicator
+  usageDefinition: Indication of whether the tank is provided with a visual indicator (set TRUE) that shows the water level in the tank. If no visual indicator is provided then value is set FALSE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3NOKqvIOvAEgl8BR6cRFUG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NOKqvIOvAEgl8BR6cRFUG
+    ifdGuid: 3NOKqvIOvAEgl8BR6cRFUG
 properties:
 - name: TankComposition
   definition: 'Defines the level of element composition where.COMPLEX: A set of elementary units aggregated together to fulfill the overall  required purpose.ELEMENT: A single elementary unit that may exist of itself or as an aggregation of partial units..PARTIAL: A partial elementary unit.'
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Who80qWyHuO00025QrE$V
     ifdGuid: 2Who80qWyHuO00025QrE$V
     legacyGuid: a0af2200d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 2Who80qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Who80qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -217,6 +246,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jCtg0qWyHuO00025QrE$V
     ifdGuid: 2jCtg0qWyHuO00025QrE$V
     legacyGuid: ad337a80d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 2jCtg0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2jCtg0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -263,6 +294,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2pmV80qWyHuO00025QrE$V
     ifdGuid: 2pmV80qWyHuO00025QrE$V
     legacyGuid: b3c1f200d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 2pmV80qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2pmV80qWyHuO00025QrE$V
   localizations:
   - language: en

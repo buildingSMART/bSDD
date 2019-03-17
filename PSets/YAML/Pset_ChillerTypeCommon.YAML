@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aCcs0qSWHuO00025QrE$V
   ifdGuid: 3aCcs0qSWHuO00025QrE$V
   legacyGuid: e4326d80d1c811e1800000215ad4efdf
+  legacyGuids:
+  - 3aCcs0qSWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3aCcs0qSWHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcChiller
   type: IfcChiller
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0buY19EtP8je6P8IjlnGZ6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0buY19EtP8je6P8IjlnGZ6
+    ifdGuid: 0buY19EtP8je6P8IjlnGZ6
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2s6PgqOlv3WQQp8uWvEtNs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2s6PgqOlv3WQQp8uWvEtNs
+    ifdGuid: 2s6PgqOlv3WQQp8uWvEtNs
+- propertyName: NominalCapacity
+  usageDefinition: Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3xp0MUqhD7A9wJ7Z_yRjlr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3xp0MUqhD7A9wJ7Z_yRjlr
+    ifdGuid: 3xp0MUqhD7A9wJ7Z_yRjlr
+- propertyName: NominalEfficiency
+  usageDefinition: Nominal chiller efficiency under nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Nasqo17v9whwagj8qZfuB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Nasqo17v9whwagj8qZfuB
+    ifdGuid: 1Nasqo17v9whwagj8qZfuB
+- propertyName: NominalCondensingTemperature
+  usageDefinition: Chiller condensing temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00utVxXDf8L8xq9nkdbcrM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00utVxXDf8L8xq9nkdbcrM
+    ifdGuid: 00utVxXDf8L8xq9nkdbcrM
+- propertyName: NominalEvaporatingTemperature
+  usageDefinition: Chiller evaporating temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1YX3c6WvD5IAiAssL3faN3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1YX3c6WvD5IAiAssL3faN3
+    ifdGuid: 1YX3c6WvD5IAiAssL3faN3
+- propertyName: NominalHeatRejectionRate
+  usageDefinition: Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0xjLT9UV5AMuN24Pi$FV_K
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0xjLT9UV5AMuN24Pi$FV_K
+    ifdGuid: 0xjLT9UV5AMuN24Pi$FV_K
+- propertyName: NominalPowerConsumption
+  usageDefinition: Nominal total power consumption.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ogw_MGFvC2evMDTCveAxp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ogw_MGFvC2evMDTCveAxp
+    ifdGuid: 0Ogw_MGFvC2evMDTCveAxp
+- propertyName: CapacityCurve
+  usageDefinition: 'Chiller cooling capacity is a function of condensing temperature and evaporating temperature, data is in table form, Capacity = f (TempCon, TempEvp), capacity = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPowerMeasure:Capacity2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0tH$nu_bn0cvt3omCshbGw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tH$nu_bn0cvt3omCshbGw
+    ifdGuid: 0tH$nu_bn0cvt3omCshbGw
+- propertyName: CoefficientOfPerformanceCurve
+  usageDefinition: 'Chiller coefficient of performance (COP) is function of condensing temperature and evaporating temperature, data is in table form, COP= f (TempCon, TempEvp), COP = a2+b2*Tei+c2*Tei^2+d2*Tci+e2*Tci^2+f2*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPositiveRatioMeasure:CoefficientOfPerformance2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/39RbmanrTA4xjT88F19tQh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39RbmanrTA4xjT88F19tQh
+    ifdGuid: 39RbmanrTA4xjT88F19tQh
+- propertyName: FullLoadRatioCurve
+  usageDefinition: Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1jDP832cj3GeKjmhMJvDzI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jDP832cj3GeKjmhMJvDzI
+    ifdGuid: 1jDP832cj3GeKjmhMJvDzI
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gmEK0qSWHuO00025QrE$V
     ifdGuid: 3gmEK0qSWHuO00025QrE$V
     legacyGuid: eac0e500d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 3gmEK0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3gmEK0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +180,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lXPa0qSWHuO00025QrE$V
     ifdGuid: 3lXPa0qSWHuO00025QrE$V
     legacyGuid: ef859900d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 3lXPa0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3lXPa0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +380,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_R4k0qSWHuO00025QrE$V
     ifdGuid: 3_R4k0qSWHuO00025QrE$V
     legacyGuid: fe6c4b80d1c811e1800000215ad4efdf
+    legacyGuids:
+    - 3_R4k0qSWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3_R4k0qSWHuO00025QrE$V
   localizations:
   - language: en
@@ -331,6 +428,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04OYo0qSaHuO00025QrE$V
     ifdGuid: 04OYo0qSaHuO00025QrE$V
     legacyGuid: 04622c80d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 04OYo0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 04OYo0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -377,6 +476,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/099k20qSaHuO00025QrE$V
     ifdGuid: 099k20qSaHuO00025QrE$V
     legacyGuid: 0926e080d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 099k20qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 099k20qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -423,6 +524,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EX2i0qSaHuO00025QrE$V
     ifdGuid: 0EX2i0qSaHuO00025QrE$V
     legacyGuid: 0e842b00d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 0EX2i0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0EX2i0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -469,6 +572,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KUWm0qSaHuO00025QrE$V
     ifdGuid: 0KUWm0qSaHuO00025QrE$V
     legacyGuid: 147a0c00d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 0KUWm0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0KUWm0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -515,6 +620,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PrrQ0qSaHuO00025QrE$V
     ifdGuid: 0PrrQ0qSaHuO00025QrE$V
     legacyGuid: 19d75680d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 0PrrQ0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0PrrQ0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -561,6 +668,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ud0g0qSaHuO00025QrE$V
     ifdGuid: 0Ud0g0qSaHuO00025QrE$V
     legacyGuid: 1e9c0a80d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 0Ud0g0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Ud0g0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -613,6 +722,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dZDm0qSaHuO00025QrE$V
     ifdGuid: 0dZDm0qSaHuO00025QrE$V
     legacyGuid: 278cdc00d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 0dZDm0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0dZDm0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -665,6 +776,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lvHS0qSaHuO00025QrE$V
     ifdGuid: 0lvHS0qSaHuO00025QrE$V
     legacyGuid: 2fe51700d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 0lvHS0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0lvHS0qSaHuO00025QrE$V
   localizations:
   - language: en

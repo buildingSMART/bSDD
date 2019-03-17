@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3SHEw0qWKHuO00025QrE$V
   ifdGuid: 3SHEw0qWKHuO00025QrE$V
   legacyGuid: dc44ee80d20511e1800000215ad4efdf
+  legacyGuids:
+  - 3SHEw0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3SHEw0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/LIGHTSENSOR
   type: IfcSensor/LIGHTSENSOR
+propertyUsages:
+- propertyName: SetPointIlluminance
+  usageDefinition: The illuminance value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2oKlIbwYP4Jve8dPLrQPFA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2oKlIbwYP4Jve8dPLrQPFA
+    ifdGuid: 2oKlIbwYP4Jve8dPLrQPFA
 properties:
 - name: SetPointIlluminance
   definition: The illuminance value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XeZa0qWKHuO00025QrE$V
     ifdGuid: 3XeZa0qWKHuO00025QrE$V
     legacyGuid: e1a23900d20511e1800000215ad4efdf
+    legacyGuids:
+    - 3XeZa0qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3XeZa0qWKHuO00025QrE$V
   localizations:
   - language: en

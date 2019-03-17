@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Nqdk0qSKHuO00025QrE$V
   ifdGuid: 1Nqdk0qSKHuO00025QrE$V
   legacyGuid: 57d27b80d1c511e1800000215ad4efdf
+  legacyGuids:
+  - 1Nqdk0qSKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1Nqdk0qSKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,55 @@ localizations:
 applicableIfcClasses:
 - name: IfcBuildingElementProxy/PROVISIONFORVOID
   type: IfcBuildingElementProxy/PROVISIONFORVOID
+propertyUsages:
+- propertyName: Shape
+  usageDefinition: The shape form of the provision for void, the minimum set of agreed values includes 'Rectangle', 'Round', and 'Undefined'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gzA2K7c90Yf_ImFTcDsPS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gzA2K7c90Yf_ImFTcDsPS
+    ifdGuid: 3gzA2K7c90Yf_ImFTcDsPS
+- propertyName: Width
+  usageDefinition: The requested width (horizontal extension in elevation) of the provision for void, only provided if the Shape property is set to "rectangle".
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0IppcAWcL98QkLP0IG8baC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IppcAWcL98QkLP0IG8baC
+    ifdGuid: 0IppcAWcL98QkLP0IG8baC
+- propertyName: Height
+  usageDefinition: The requested height (vertical extension in elevation) of the provision for void", only provided if the Shape property is set to "rectangle".
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XijGnJWzFDBCAAk1TG3B5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XijGnJWzFDBCAAk1TG3B5
+    ifdGuid: 0XijGnJWzFDBCAAk1TG3B5
+- propertyName: Diameter
+  usageDefinition: The requested diameter (in elevation) of the provision for void, only provided if the Shape property is set to "round".
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06$TRWoSb6NPNXhF2VPAQx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06$TRWoSb6NPNXhF2VPAQx
+    ifdGuid: 06$TRWoSb6NPNXhF2VPAQx
+- propertyName: Depth
+  usageDefinition: The requested depth or thickness of the provision for void.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2NL45hyUH949Rcqvn8FXEG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2NL45hyUH949Rcqvn8FXEG
+    ifdGuid: 2NL45hyUH949Rcqvn8FXEG
+- propertyName: System
+  usageDefinition: he building service system that requires the provision for voids, e.g. 'Air Conditioning', 'Plumbing', 'Electro', etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1iVHRYGd97zAMZZoNeSQjO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1iVHRYGd97zAMZZoNeSQjO
+    ifdGuid: 1iVHRYGd97zAMZZoNeSQjO
 properties:
 - name: Shape
   definition: The shape form of the provision for void, the minimum set of agreed values includes 'Rectangle', 'Round', and 'Undefined'.
@@ -41,6 +92,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Sbo_0qSKHuO00025QrE$V
     ifdGuid: 1Sbo_0qSKHuO00025QrE$V
     legacyGuid: 5c972f80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1Sbo_0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Sbo_0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +143,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XM_E0qSKHuO00025QrE$V
     ifdGuid: 1XM_E0qSKHuO00025QrE$V
     legacyGuid: 615be380d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1XM_E0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1XM_E0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -139,6 +194,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bY040qSKHuO00025QrE$V
     ifdGuid: 1bY040qSKHuO00025QrE$V
     legacyGuid: 65880100d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1bY040qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1bY040qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -188,6 +245,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fj1w0qSKHuO00025QrE$V
     ifdGuid: 1fj1w0qSKHuO00025QrE$V
     legacyGuid: 69b41e80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1fj1w0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1fj1w0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -237,6 +296,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ju3m0qSKHuO00025QrE$V
     ifdGuid: 1ju3m0qSKHuO00025QrE$V
     legacyGuid: 6de03c00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1ju3m0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ju3m0qSKHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -286,6 +347,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1o35c0qSKHuO00025QrE$V
     ifdGuid: 1o35c0qSKHuO00025QrE$V
     legacyGuid: 720c5980d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 1o35c0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1o35c0qSKHuO00025QrE$V
   localizations:
   - language: de-DE

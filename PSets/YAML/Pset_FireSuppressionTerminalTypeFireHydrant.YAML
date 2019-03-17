@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2658C0qUOHuO00025QrE$V
   ifdGuid: 2658C0qUOHuO00025QrE$V
   legacyGuid: 86148300d1e611e1800000215ad4efdf
+  legacyGuids:
+  - 2658C0qUOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2658C0qUOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,87 @@ localizations:
 applicableIfcClasses:
 - name: IfcFireSuppressionTerminal/FIREHYDRANT
   type: IfcFireSuppressionTerminal/FIREHYDRANT
+propertyUsages:
+- propertyName: FireHydrantType
+  usageDefinition: 'Defines the range of hydrant types from which the required type can be selected where.DryBarrel:	 A hydrant that has isolating valves fitted below ground and that may be used where the possibility of water freezing is a consideration.WetBarrel:	 A hydrant that has isolating valves fitted above ground and that may be used where there is no possibility of water freezing.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17W0$ckvDFN93sXm9zYeDr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17W0$ckvDFN93sXm9zYeDr
+    ifdGuid: 17W0$ckvDFN93sXm9zYeDr
+- propertyName: PumperConnectionSize
+  usageDefinition: The size of a connection to which a fire hose may be connected that is then linked to a pumping unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3umAMlQ1rFjucnx2HW9HkR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3umAMlQ1rFjucnx2HW9HkR
+    ifdGuid: 3umAMlQ1rFjucnx2HW9HkR
+- propertyName: NumberOfHoseConnections
+  usageDefinition: The number of hose connections on the hydrant (excluding the pumper connection).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3dTjqSFqH4ARZskv_VUmcy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dTjqSFqH4ARZskv_VUmcy
+    ifdGuid: 3dTjqSFqH4ARZskv_VUmcy
+- propertyName: HoseConnectionSize
+  usageDefinition: The size of connections to which a hose may be connected (other than that to be linked to a pumping unit).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0C8t5iUuD7X9Y5O6CoOdGT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0C8t5iUuD7X9Y5O6CoOdGT
+    ifdGuid: 0C8t5iUuD7X9Y5O6CoOdGT
+- propertyName: DischargeFlowRate
+  usageDefinition: The volumetric rate of fluid discharge.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1WTYYF2Wr9b9ataEQMnYn1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1WTYYF2Wr9b9ataEQMnYn1
+    ifdGuid: 1WTYYF2Wr9b9ataEQMnYn1
+- propertyName: FlowClass
+  usageDefinition: Alphanumeric indication of the flow class of a hydrant (may be used in connection with or instead of the FlowRate property).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1FZK93Zxb6evBvAtby7TCj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FZK93Zxb6evBvAtby7TCj
+    ifdGuid: 1FZK93Zxb6evBvAtby7TCj
+- propertyName: WaterIsPotable
+  usageDefinition: Indication of whether the water flow from the hydrant is potable (set TRUE) or non potable (set FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0SKSDaYHTC3eQjwv5PzhZq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0SKSDaYHTC3eQjwv5PzhZq
+    ifdGuid: 0SKSDaYHTC3eQjwv5PzhZq
+- propertyName: PressureRating
+  usageDefinition: Maximum pressure that the hydrant is manufactured to withstand.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2DdUarIOLBQ91ZhIgJO6DT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DdUarIOLBQ91ZhIgJO6DT
+    ifdGuid: 2DdUarIOLBQ91ZhIgJO6DT
+- propertyName: BodyColor
+  usageDefinition: 'Color of the body of the hydrant.Note: Consult local fire regulations for statutory colors that may be required for hydrant bodies in particular circumstances.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0poC1OzYzCvuaUlo_dyYOt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0poC1OzYzCvuaUlo_dyYOt
+    ifdGuid: 0poC1OzYzCvuaUlo_dyYOt
+- propertyName: CapColor
+  usageDefinition: 'Color of the caps of the hydrant.Note: Consult local fire regulations for statutory colors that may be required for hydrant caps in particular circumstances.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3JihwjwJz6jeS9u0NmY3kS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JihwjwJz6jeS9u0NmY3kS
+    ifdGuid: 3JihwjwJz6jeS9u0NmY3kS
 properties:
 - name: FireHydrantType
   definition: 'Defines the range of hydrant types from which the required type can be selected where.DryBarrel:	 A hydrant that has isolating valves fitted below ground and that may be used where the possibility of water freezing is a consideration.WetBarrel:	 A hydrant that has isolating valves fitted above ground and that may be used where there is no possibility of water freezing.'
@@ -45,6 +128,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AGA20qUOHuO00025QrE$V
     ifdGuid: 2AGA20qUOHuO00025QrE$V
     legacyGuid: 8a40a080d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2AGA20qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2AGA20qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -199,6 +284,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KOfy0qUOHuO00025QrE$V
     ifdGuid: 2KOfy0qUOHuO00025QrE$V
     legacyGuid: 94629f00d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2KOfy0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2KOfy0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -245,6 +332,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QyHQ0qUOHuO00025QrE$V
     ifdGuid: 2QyHQ0qUOHuO00025QrE$V
     legacyGuid: 9af11680d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2QyHQ0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2QyHQ0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -291,6 +380,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2VjSg0qUOHuO00025QrE$V
     ifdGuid: 2VjSg0qUOHuO00025QrE$V
     legacyGuid: 9fb5ca80d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2VjSg0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2VjSg0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +428,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bgwk0qUOHuO00025QrE$V
     ifdGuid: 2bgwk0qUOHuO00025QrE$V
     legacyGuid: a5abab80d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2bgwk0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2bgwk0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -383,6 +476,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2gS5_0qUOHuO00025QrE$V
     ifdGuid: 2gS5_0qUOHuO00025QrE$V
     legacyGuid: aa705f80d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2gS5_0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2gS5_0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -429,6 +524,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2m$jS0qUOHuO00025QrE$V
     ifdGuid: 2m$jS0qUOHuO00025QrE$V
     legacyGuid: b0fed700d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2m$jS0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2m$jS0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -475,6 +572,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sN260qUOHuO00025QrE$V
     ifdGuid: 2sN260qUOHuO00025QrE$V
     legacyGuid: b65c2180d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2sN260qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2sN260qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -521,6 +620,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xkMm0qUOHuO00025QrE$V
     ifdGuid: 2xkMm0qUOHuO00025QrE$V
     legacyGuid: bbb96c00d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 2xkMm0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2xkMm0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -567,6 +668,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30VY00qUOHuO00025QrE$V
     ifdGuid: 30VY00qUOHuO00025QrE$V
     legacyGuid: c07e2000d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 30VY00qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 30VY00qUOHuO00025QrE$V
   localizations:
   - language: en

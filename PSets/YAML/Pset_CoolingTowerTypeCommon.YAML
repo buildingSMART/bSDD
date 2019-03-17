@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RQm00qSyHuO00025QrE$V
   ifdGuid: 1RQm00qSyHuO00025QrE$V
   legacyGuid: 5b6b0000d1cf11e1800000215ad4efdf
+  legacyGuids:
+  - 1RQm00qSyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1RQm00qSyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,127 @@ localizations:
 applicableIfcClasses:
 - name: IfcCoolingTower
   type: IfcCoolingTower
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0PAc6z9iX1W81dmeaeEneT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PAc6z9iX1W81dmeaeEneT
+    ifdGuid: 0PAc6z9iX1W81dmeaeEneT
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35xmjh4P19FAxLUko7bumt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35xmjh4P19FAxLUko7bumt
+    ifdGuid: 35xmjh4P19FAxLUko7bumt
+- propertyName: NominalCapacity
+  usageDefinition: Nominal cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream at nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ne7G1RkL3R9Nn64M6pypV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ne7G1RkL3R9Nn64M6pypV
+    ifdGuid: 3ne7G1RkL3R9Nn64M6pypV
+- propertyName: CircuitType
+  usageDefinition: 'OpenCircuit: Exposes water directly to the cooling atmosphere.CloseCircuit: The fluid is separated from the atmosphere by a heat exchanger.Wet: The air stream or the heat exchange surface is evaporatively cooled.Dry: No evaporation into the air stream.DryWet: A combination of a dry tower and a wet tower.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3YOYg5y$L4VvsK1cauBQgb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YOYg5y$L4VvsK1cauBQgb
+    ifdGuid: 3YOYg5y$L4VvsK1cauBQgb
+- propertyName: FlowArrangement
+  usageDefinition: 'CounterFlow: Air and water flow enter in different directions.CrossFlow: Air and water flow are perpendicular.ParallelFlow: air and water flow enter in same directions.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Yn8KccIX7eQukKC11Gw7h
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Yn8KccIX7eQukKC11Gw7h
+    ifdGuid: 1Yn8KccIX7eQukKC11Gw7h
+- propertyName: SprayType
+  usageDefinition: 'SprayFilled: Water is sprayed into airflow.SplashTypeFill: water cascades over successive rows of splash bars.FilmTypeFill: water flows in a thin layer over closely spaced sheets.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LI$1pjRD4Sh5hrv6f1u5R
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LI$1pjRD4Sh5hrv6f1u5R
+    ifdGuid: 3LI$1pjRD4Sh5hrv6f1u5R
+- propertyName: CapacityControl
+  usageDefinition: 'FanCycling: Fan is cycled on and off to control duty.TwoSpeedFan: Fan is switched between low and high speed to control duty.VariableSpeedFan: Fan speed is varied to control duty.DampersControl: Dampers modulate the air flow to control duty.BypassValveControl: Bypass valve modulates the water flow to control duty.MultipleSeriesPumps: Turn on/off multiple series pump to control duty.TwoSpeedPump: Switch between high/low pump speed to control duty.VariableSpeedPump: vary pump speed to control duty.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0n_NZZb6fDwOTPN7n0q1bC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0n_NZZb6fDwOTPN7n0q1bC
+    ifdGuid: 0n_NZZb6fDwOTPN7n0q1bC
+- propertyName: ControlStrategy
+  usageDefinition: 'FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature.WetBulbTempReset: The set-point is reset based on the wet-bulb temperature.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/39aBUePiHDoxxCZawcvFFH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39aBUePiHDoxxCZawcvFFH
+    ifdGuid: 39aBUePiHDoxxCZawcvFFH
+- propertyName: NumberOfCells
+  usageDefinition: Number of cells in one cooling tower unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0y5qzkghXDefLufVYxH$VX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0y5qzkghXDefLufVYxH$VX
+    ifdGuid: 0y5qzkghXDefLufVYxH$VX
+- propertyName: BasinReserveVolume
+  usageDefinition: Volume between operating and overflow levels in cooling tower basin.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3E19Ee_197d9Oob8IEcAw3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3E19Ee_197d9Oob8IEcAw3
+    ifdGuid: 3E19Ee_197d9Oob8IEcAw3
+- propertyName: LiftElevationDifference
+  usageDefinition: Elevation difference between cooling tower sump and the top of the tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/31xp7M6NH1TeItVk5nKUHv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31xp7M6NH1TeItVk5nKUHv
+    ifdGuid: 31xp7M6NH1TeItVk5nKUHv
+- propertyName: WaterRequirement
+  usageDefinition: Make-up water requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ERaeMu9L38xDFgBRPKjdx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ERaeMu9L38xDFgBRPKjdx
+    ifdGuid: 1ERaeMu9L38xDFgBRPKjdx
+- propertyName: OperationTemperatureRange
+  usageDefinition: Allowable operation ambient air temperature range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Z_sD4tHb8sQBsK0Ff4gsr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Z_sD4tHb8sQBsK0Ff4gsr
+    ifdGuid: 2Z_sD4tHb8sQBsK0Ff4gsr
+- propertyName: AmbientDesignDryBulbTemperature
+  usageDefinition: Ambient design dry bulb temperature used for selecting the cooling tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1swwdc2irAzhCTToPEeEle
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1swwdc2irAzhCTToPEeEle
+    ifdGuid: 1swwdc2irAzhCTToPEeEle
+- propertyName: AmbientDesignWetBulbTemperature
+  usageDefinition: Ambient design wet bulb temperature used for selecting the cooling tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CHKE6MHXFXBNKdVLnPptD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CHKE6MHXFXBNKdVLnPptD
+    ifdGuid: 1CHKE6MHXFXBNKdVLnPptD
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -43,6 +166,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XOE40qSyHuO00025QrE$V
     ifdGuid: 1XOE40qSyHuO00025QrE$V
     legacyGuid: 6160e100d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1XOE40qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1XOE40qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +214,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1clYk0qSyHuO00025QrE$V
     ifdGuid: 1clYk0qSyHuO00025QrE$V
     legacyGuid: 66be2b80d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1clYk0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1clYk0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -287,6 +414,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rfDu0qSyHuO00025QrE$V
     ifdGuid: 1rfDu0qSyHuO00025QrE$V
     legacyGuid: 75a4de00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1rfDu0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1rfDu0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -333,6 +462,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x0YY0qSyHuO00025QrE$V
     ifdGuid: 1x0YY0qSyHuO00025QrE$V
     legacyGuid: 7b022880d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1x0YY0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1x0YY0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -531,6 +662,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29K4I0qSyHuO00025QrE$V
     ifdGuid: 29K4I0qSyHuO00025QrE$V
     legacyGuid: 89504480d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 29K4I0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 29K4I0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -707,6 +840,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Lr9q0qSyHuO00025QrE$V
     ifdGuid: 2Lr9q0qSyHuO00025QrE$V
     legacyGuid: 95d49d00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 2Lr9q0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Lr9q0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -883,6 +1018,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bK_O0qSyHuO00025QrE$V
     ifdGuid: 2bK_O0qSyHuO00025QrE$V
     legacyGuid: a553e600d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 2bK_O0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2bK_O0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1169,6 +1306,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35WwK0qSyHuO00025QrE$V
     ifdGuid: 35WwK0qSyHuO00025QrE$V
     legacyGuid: c583a500d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 35WwK0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 35WwK0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1323,6 +1462,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Grj20qSyHuO00025QrE$V
     ifdGuid: 3Grj20qSyHuO00025QrE$V
     legacyGuid: d0d6d080d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3Grj20qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Grj20qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1369,6 +1510,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MD1i0qSyHuO00025QrE$V
     ifdGuid: 3MD1i0qSyHuO00025QrE$V
     legacyGuid: d6341b00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3MD1i0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3MD1i0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1415,6 +1558,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RaMM0qSyHuO00025QrE$V
     ifdGuid: 3RaMM0qSyHuO00025QrE$V
     legacyGuid: db916580d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3RaMM0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3RaMM0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1461,6 +1606,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WLXc0qSyHuO00025QrE$V
     ifdGuid: 3WLXc0qSyHuO00025QrE$V
     legacyGuid: e0561980d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3WLXc0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3WLXc0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1507,6 +1654,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3b6is0qSyHuO00025QrE$V
     ifdGuid: 3b6is0qSyHuO00025QrE$V
     legacyGuid: e51acd80d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3b6is0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3b6is0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1553,6 +1702,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ftu60qSyHuO00025QrE$V
     ifdGuid: 3ftu60qSyHuO00025QrE$V
     legacyGuid: e9df8180d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3ftu60qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ftu60qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -1599,6 +1750,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lFCm0qSyHuO00025QrE$V
     ifdGuid: 3lFCm0qSyHuO00025QrE$V
     legacyGuid: ef3ccc00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 3lFCm0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3lFCm0qSyHuO00025QrE$V
   localizations:
   - language: en

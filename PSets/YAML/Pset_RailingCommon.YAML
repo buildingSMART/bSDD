@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00KG60qVyHuO00025QrE$V
   ifdGuid: 00KG60qVyHuO00025QrE$V
   legacyGuid: 00510180d1ff11e1800000215ad4efdf
+  legacyGuids:
+  - 00KG60qVyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 00KG60qVyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,47 @@ localizations:
 applicableIfcClasses:
 - name: IfcRailing
   type: IfcRailing
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0TXzMQUKXAF8lrbe3szpU4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TXzMQUKXAF8lrbe3szpU4
+    ifdGuid: 0TXzMQUKXAF8lrbe3szpU4
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2L7Qq4AE10luXXxs4lJWFa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2L7Qq4AE10luXXxs4lJWFa
+    ifdGuid: 2L7Qq4AE10luXXxs4lJWFa
+- propertyName: Height
+  usageDefinition: Height of the object. It is the upper hight of the railing above the floor or stair.The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/34Z2O4K2HAbRU9Ack$f502
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34Z2O4K2HAbRU9Ack$f502
+    ifdGuid: 34Z2O4K2HAbRU9Ack$f502
+- propertyName: Diameter
+  usageDefinition: Diameter of the object. It is the diameter of the handrail of the railing.The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.Here the diameter of the hand or guardrail within the railing.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0SLXEQoFHDaxVshxDaiKWb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0SLXEQoFHDaxVshxDaiKWb
+    ifdGuid: 0SLXEQoFHDaxVshxDaiKWb
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2im0OH5YLAEhV9Wfm9TIXd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2im0OH5YLAEhV9Wfm9TIXd
+    ifdGuid: 2im0OH5YLAEhV9Wfm9TIXd
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
@@ -41,6 +84,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06tta0qVyHuO00025QrE$V
     ifdGuid: 06tta0qVyHuO00025QrE$V
     legacyGuid: 06df7900d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 06tta0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 06tta0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +135,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DRV20qVyHuO00025QrE$V
     ifdGuid: 0DRV20qVyHuO00025QrE$V
     legacyGuid: 0d6df080d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 0DRV20qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0DRV20qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -288,6 +335,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PMRA0qVyHuO00025QrE$V
     ifdGuid: 0PMRA0qVyHuO00025QrE$V
     legacyGuid: 1959b280d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 0PMRA0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0PMRA0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -337,6 +386,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Vw2e0qVyHuO00025QrE$V
     ifdGuid: 0Vw2e0qVyHuO00025QrE$V
     legacyGuid: 1fe82a00d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 0Vw2e0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Vw2e0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -386,6 +437,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0d3pW0qVyHuO00025QrE$V
     ifdGuid: 0d3pW0qVyHuO00025QrE$V
     legacyGuid: 270f3800d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 0d3pW0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0d3pW0qVyHuO00025QrE$V
   localizations:
   - language: de-DE

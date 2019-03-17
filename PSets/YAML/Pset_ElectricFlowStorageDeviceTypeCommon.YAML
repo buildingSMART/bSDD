@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BuG00qU0HuO00025QrE$V
   ifdGuid: 0BuG00qU0HuO00025QrE$V
   legacyGuid: 0be10000d1e011e1800000215ad4efdf
+  legacyGuids:
+  - 0BuG00qU0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0BuG00qU0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,183 @@ localizations:
 applicableIfcClasses:
 - name: IfcElectricFlowStorageDevice
   type: IfcElectricFlowStorageDevice
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1kXohpvrT8cvcGfFeaIA_1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kXohpvrT8cvcGfFeaIA_1
+    ifdGuid: 1kXohpvrT8cvcGfFeaIA_1
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1QVFG1YNH4zvZBbF$Wt1iW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QVFG1YNH4zvZBbF$Wt1iW
+    ifdGuid: 1QVFG1YNH4zvZBbF$Wt1iW
+- propertyName: NominalSupplyVoltage
+  usageDefinition: The nominal voltage of the supply.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0tgck$34H5dRnSxmaX1L1W
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tgck$34H5dRnSxmaX1L1W
+    ifdGuid: 0tgck$34H5dRnSxmaX1L1W
+- propertyName: NominalSupplyVoltageOffset
+  usageDefinition: The maximum and minimum allowed voltage of the supply e.g. boundaries of 380V/440V may be applied for a nominal voltage of 400V.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3rCz5V5ND7rBpzoWU6udT_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rCz5V5ND7rBpzoWU6udT_
+    ifdGuid: 3rCz5V5ND7rBpzoWU6udT_
+- propertyName: NominalFrequency
+  usageDefinition: The nominal frequency of the supply.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3$esFb6ujDQwfyXapusLKE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$esFb6ujDQwfyXapusLKE
+    ifdGuid: 3$esFb6ujDQwfyXapusLKE
+- propertyName: ConnectedConductorFunction
+  usageDefinition: Function of the conductors to which the load is connected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3B1N3NcmnDBBQa0Byf45S3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3B1N3NcmnDBBQa0Byf45S3
+    ifdGuid: 3B1N3NcmnDBBQa0Byf45S3
+- propertyName: ShortCircuit3PoleMaximumState
+  usageDefinition: Maximum 3 pole short circuit current provided at the point of supply.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZjxN6Ce56Eh_S4rxlE7Tx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZjxN6Ce56Eh_S4rxlE7Tx
+    ifdGuid: 3ZjxN6Ce56Eh_S4rxlE7Tx
+- propertyName: ShortCircuit3PolePowerFactorMaximumState
+  usageDefinition: Power factor of the maximum 3 pole short circuit current provided at the point of supply.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UtGLLCmv70h8ZmxmPRpmx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UtGLLCmv70h8ZmxmPRpmx
+    ifdGuid: 2UtGLLCmv70h8ZmxmPRpmx
+- propertyName: ShortCircuit2PoleMinimumState
+  usageDefinition: Minimum 2 pole short circuit current provided at the point of supply.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0mKgaYnAzATfL8Cfs9wShr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0mKgaYnAzATfL8Cfs9wShr
+    ifdGuid: 0mKgaYnAzATfL8Cfs9wShr
+- propertyName: ShortCircuit2PolePowerFactorMinimumState
+  usageDefinition: Power factor of the minimum 2 pole short circuit current provided at the point of supply.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gtDxi2V5EJ9VSzV_JnT6U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gtDxi2V5EJ9VSzV_JnT6U
+    ifdGuid: 1gtDxi2V5EJ9VSzV_JnT6U
+- propertyName: ShortCircuit1PoleMaximumState
+  usageDefinition: Maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qKY3y4Sn4PRy1J4rtve4X
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qKY3y4Sn4PRy1J4rtve4X
+    ifdGuid: 0qKY3y4Sn4PRy1J4rtve4X
+- propertyName: ShortCircuit1PolePowerFactorMaximumState
+  usageDefinition: Power factor of the maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0BzmrzBZ94dxHiPMs6CAhD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BzmrzBZ94dxHiPMs6CAhD
+    ifdGuid: 0BzmrzBZ94dxHiPMs6CAhD
+- propertyName: ShortCircuit1PoleMinimumState
+  usageDefinition: Minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1sJ4usx7r5Mu5IYi6p6LNY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sJ4usx7r5Mu5IYi6p6LNY
+    ifdGuid: 1sJ4usx7r5Mu5IYi6p6LNY
+- propertyName: ShortCircuit1PolePowerFactorMinimumState
+  usageDefinition: Power factor of the minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1xrp1A4hX6PhPU4EAbCpLt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xrp1A4hX6PhPU4EAbCpLt
+    ifdGuid: 1xrp1A4hX6PhPU4EAbCpLt
+- propertyName: EarthFault1PoleMaximumState
+  usageDefinition: Maximum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zTizTxkr3bw9LkMGDNxbx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zTizTxkr3bw9LkMGDNxbx
+    ifdGuid: 1zTizTxkr3bw9LkMGDNxbx
+- propertyName: EarthFault1PolePowerFactorMaximumState
+  usageDefinition: Power factor of the maximum 1 pole earth fault  current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01ya7z75fDLPlEFadwMrUJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01ya7z75fDLPlEFadwMrUJ
+    ifdGuid: 01ya7z75fDLPlEFadwMrUJ
+- propertyName: EarthFault1PoleMinimumState
+  usageDefinition: Minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19ygcLjuD1j9_hGrMOVf_z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19ygcLjuD1j9_hGrMOVf_z
+    ifdGuid: 19ygcLjuD1j9_hGrMOVf_z
+- propertyName: EarthFault1PolePowerFactorMinimumState
+  usageDefinition: Power factor of the minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1C$xllNQ54ghs5tiXNVR8E
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1C$xllNQ54ghs5tiXNVR8E
+    ifdGuid: 1C$xllNQ54ghs5tiXNVR8E
+- propertyName: RadiativeFraction
+  usageDefinition: The fraction of energy converted to heat.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3et7cD8IzC_u7Bzn1pcIh5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3et7cD8IzC_u7Bzn1pcIh5
+    ifdGuid: 3et7cD8IzC_u7Bzn1pcIh5
+- propertyName: ModuleCapacity
+  usageDefinition: The capacity for each battery module.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0TuL$5Xu92AxROf9S_tGY6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TuL$5Xu92AxROf9S_tGY6
+    ifdGuid: 0TuL$5Xu92AxROf9S_tGY6
+- propertyName: ModulesInParallel
+  usageDefinition: The number of modules in parallel, where the total number of modules equals the number in parallel multiplied by the number in series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0lB2ck2yrASBddbwlraJIU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lB2ck2yrASBddbwlraJIU
+    ifdGuid: 0lB2ck2yrASBddbwlraJIU
+- propertyName: ModulesInSeries
+  usageDefinition: The number of modules in series, where the total number of modules equals the number in parallel multiplied by the number in series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3$BGZWNXj1_h0FZvodzRYl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$BGZWNXj1_h0FZvodzRYl
+    ifdGuid: 3$BGZWNXj1_h0FZvodzRYl
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +220,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GfRG0qU0HuO00025QrE$V
     ifdGuid: 0GfRG0qU0HuO00025QrE$V
     legacyGuid: 10a5b400d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 0GfRG0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0GfRG0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +271,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ND2k0qU0HuO00025QrE$V
     ifdGuid: 0ND2k0qU0HuO00025QrE$V
     legacyGuid: 17342b80d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 0ND2k0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ND2k0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +471,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0f5Sw0qU0HuO00025QrE$V
     ifdGuid: 0f5Sw0qU0HuO00025QrE$V
     legacyGuid: 2915ce80d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 0f5Sw0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0f5Sw0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +522,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kSna0qU0HuO00025QrE$V
     ifdGuid: 0kSna0qU0HuO00025QrE$V
     legacyGuid: 2e731900d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 0kSna0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0kSna0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -387,6 +574,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0rcYS0qU0HuO00025QrE$V
     ifdGuid: 0rcYS0qU0HuO00025QrE$V
     legacyGuid: 359a2700d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 0rcYS0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0rcYS0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -436,6 +625,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zyc80qU0HuO00025QrE$V
     ifdGuid: 0zyc80qU0HuO00025QrE$V
     legacyGuid: 3df26200d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 0zyc80qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0zyc80qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -681,6 +872,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1H1J80qU0HuO00025QrE$V
     ifdGuid: 1H1J80qU0HuO00025QrE$V
     legacyGuid: 51053200d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 1H1J80qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1H1J80qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -730,6 +923,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1M_nC0qU0HuO00025QrE$V
     ifdGuid: 1M_nC0qU0HuO00025QrE$V
     legacyGuid: 56fb1300d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 1M_nC0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1M_nC0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -779,6 +974,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1SM5s0qU0HuO00025QrE$V
     ifdGuid: 1SM5s0qU0HuO00025QrE$V
     legacyGuid: 5c585d80d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 1SM5s0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1SM5s0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -828,6 +1025,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ai9Y0qU0HuO00025QrE$V
     ifdGuid: 1ai9Y0qU0HuO00025QrE$V
     legacyGuid: 64b09880d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 1ai9Y0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ai9Y0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -877,6 +1076,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1saZk0qU0HuO00025QrE$V
     ifdGuid: 1saZk0qU0HuO00025QrE$V
     legacyGuid: 76923b80d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 1saZk0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1saZk0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -926,6 +1127,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zkKc0qU0HuO00025QrE$V
     ifdGuid: 1zkKc0qU0HuO00025QrE$V
     legacyGuid: 7db94980d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 1zkKc0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1zkKc0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -975,6 +1178,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23hog0qU0HuO00025QrE$V
     ifdGuid: 23hog0qU0HuO00025QrE$V
     legacyGuid: 83af2a80d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 23hog0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 23hog0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -1024,6 +1229,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2937K0qU0HuO00025QrE$V
     ifdGuid: 2937K0qU0HuO00025QrE$V
     legacyGuid: 890c7500d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 2937K0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2937K0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -1073,6 +1280,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DqIa0qU0HuO00025QrE$V
     ifdGuid: 2DqIa0qU0HuO00025QrE$V
     legacyGuid: 8dd12900d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 2DqIa0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2DqIa0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -1122,6 +1331,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JBdE0qU0HuO00025QrE$V
     ifdGuid: 2JBdE0qU0HuO00025QrE$V
     legacyGuid: 932e7380d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 2JBdE0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2JBdE0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -1171,6 +1382,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2NyoU0qU0HuO00025QrE$V
     ifdGuid: 2NyoU0qU0HuO00025QrE$V
     legacyGuid: 97f32780d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 2NyoU0qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2NyoU0qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -1220,6 +1433,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TK780qU0HuO00025QrE$V
     ifdGuid: 2TK780qU0HuO00025QrE$V
     legacyGuid: 9d507200d1e011e1800000215ad4efdf
+    legacyGuids:
+    - 2TK780qU0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2TK780qU0HuO00025QrE$V
   localizations:
   - language: en
@@ -1269,6 +1484,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 7c868260451b48038f4fc498fc0e3a9b
+    legacyGuids:
+    - 1yXe9WHHj80uzFn9Zy3ZgR
     legacyGuidAsIfcGlobalId: 1yXe9WHHj80uzFn9Zy3ZgR
   localizations:
   - language: de-DE
@@ -1312,6 +1529,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 7813d9d480684f79aca293559a565df4
+    legacyGuids:
+    - 1u4zdKW6XFUQoYarMQLbtq
     legacyGuidAsIfcGlobalId: 1u4zdKW6XFUQoYarMQLbtq
   localizations:
   - language: de-DE
@@ -1355,6 +1574,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 64446b4170e249fa9c6a4564917ccfd9
+    legacyGuids:
+    - 1aH6j1SE99_fngHMIHVC$P
     legacyGuidAsIfcGlobalId: 1aH6j1SE99_fngHMIHVC$P
   localizations:
   - language: de-DE
@@ -1398,6 +1619,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 9c327be76d6f4139ab9f58c6a5cc7a9a
+    legacyGuids:
+    - 2SCdldRMz1EQkVMCQbp7gQ
     legacyGuidAsIfcGlobalId: 2SCdldRMz1EQkVMCQbp7gQ
   localizations:
   - language: de-DE

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3OatQ0qSaHuO00025QrE$V
   ifdGuid: 3OatQ0qSaHuO00025QrE$V
   legacyGuid: d8937680d1c911e1800000215ad4efdf
+  legacyGuids:
+  - 3OatQ0qSaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3OatQ0qSaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,111 @@ localizations:
 applicableIfcClasses:
 - name: IfcCoil
   type: IfcCoil
+propertyUsages:
+- propertyName: FluidPressureRange
+  usageDefinition: Allowable water working pressure range inside the tube.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3aHW4nOxLEbBGl5MqNu22X
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aHW4nOxLEbBGl5MqNu22X
+    ifdGuid: 3aHW4nOxLEbBGl5MqNu22X
+- propertyName: CoilCoolant
+  usageDefinition: The fluid used for heating or cooling used by the hydronic coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0L0CNVlYvDzuoJom6iZkiE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0L0CNVlYvDzuoJom6iZkiE
+    ifdGuid: 0L0CNVlYvDzuoJom6iZkiE
+- propertyName: CoilConnectionDirection
+  usageDefinition: Coil connection direction (facing into the air stream).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1d9iyJez9BPuXgUGJ9rT9X
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1d9iyJez9BPuXgUGJ9rT9X
+    ifdGuid: 1d9iyJez9BPuXgUGJ9rT9X
+- propertyName: CoilFluidArrangement
+  usageDefinition: 'Fluid flow arrangement of the coil.CrossCounterFlow: Air and water flow enter in different directions.CrossFlow: Air and water flow are perpendicular.CrossParallelFlow: Air and water flow enter in same directions.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$BHq$50fFO9nc6vcie7HF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$BHq$50fFO9nc6vcie7HF
+    ifdGuid: 1$BHq$50fFO9nc6vcie7HF
+- propertyName: CoilFaceArea
+  usageDefinition: Coil face area in the direction against air the flow.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0UnuamXaLCi80NcPj2XDwS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UnuamXaLCi80NcPj2XDwS
+    ifdGuid: 0UnuamXaLCi80NcPj2XDwS
+- propertyName: HeatExchangeSurfaceArea
+  usageDefinition: Heat exchange surface area associated with U-value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11C9dj_1r1dgJz9olzIzTL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11C9dj_1r1dgJz9olzIzTL
+    ifdGuid: 11C9dj_1r1dgJz9olzIzTL
+- propertyName: PrimarySurfaceArea
+  usageDefinition: Primary heat transfer surface area of the tubes and headers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ap$o$eb9BS8sqobGyXTkU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ap$o$eb9BS8sqobGyXTkU
+    ifdGuid: 2ap$o$eb9BS8sqobGyXTkU
+- propertyName: SecondarySurfaceArea
+  usageDefinition: Secondary heat transfer surface area created by fins.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0pMXwCLsj3Yey1vWFL7wNI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0pMXwCLsj3Yey1vWFL7wNI
+    ifdGuid: 0pMXwCLsj3Yey1vWFL7wNI
+- propertyName: TotalUACurves
+  usageDefinition: 'Total UA curves, UA - air and water velocities, UA = [(C1 * AirFlowRate^0.8)^-1 + (C2 * WaterFlowRate^0.8)^-1]^-1.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: AirFlowRate,WaterFlowRate,UA.  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2FwKWTacz1VQusTUd3KMfS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FwKWTacz1VQusTUd3KMfS
+    ifdGuid: 2FwKWTacz1VQusTUd3KMfS
+- propertyName: WaterPressureDropCurve
+  usageDefinition: Water pressure drop curve, pressure drop – flow rate curve, WaterPressureDrop = f(WaterflowRate).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/32CKSVO6v86gAmYqOPcwQ0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/32CKSVO6v86gAmYqOPcwQ0
+    ifdGuid: 32CKSVO6v86gAmYqOPcwQ0
+- propertyName: BypassFactor
+  usageDefinition: Fraction of air that is bypassed by the coil (0-1).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0D5nYRR_98fRLBNv7x4ada
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0D5nYRR_98fRLBNv7x4ada
+    ifdGuid: 0D5nYRR_98fRLBNv7x4ada
+- propertyName: SensibleHeatRatio
+  usageDefinition: Air-side sensible heat ratio, or fraction of sensible heat transfer to the total heat transfer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1G5mmdKgf3URZWl1Mg$2gY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1G5mmdKgf3URZWl1Mg$2gY
+    ifdGuid: 1G5mmdKgf3URZWl1Mg$2gY
+- propertyName: WetCoilFraction
+  usageDefinition: Fraction of coil surface area that is wet (0-1).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1aX5iQ9afD_BgqevFh6_3Y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1aX5iQ9afD_BgqevFh6_3Y
+    ifdGuid: 1aX5iQ9afD_BgqevFh6_3Y
 properties:
 - name: FluidPressureRange
   definition: Allowable water working pressure range inside the tube.
@@ -41,6 +148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3S9ls0qSaHuO00025QrE$V
     ifdGuid: 3S9ls0qSaHuO00025QrE$V
     legacyGuid: dc26fd80d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 3S9ls0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3S9ls0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -88,6 +197,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XX4W0qSaHuO00025QrE$V
     ifdGuid: 3XX4W0qSaHuO00025QrE$V
     legacyGuid: e1844800d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 3XX4W0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3XX4W0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -264,6 +375,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3keJS0qSaHuO00025QrE$V
     ifdGuid: 3keJS0qSaHuO00025QrE$V
     legacyGuid: eea13700d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 3keJS0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3keJS0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -418,6 +531,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zX_c0qSaHuO00025QrE$V
     ifdGuid: 3zX_c0qSaHuO00025QrE$V
     legacyGuid: fd87e980d1c911e1800000215ad4efdf
+    legacyGuids:
+    - 3zX_c0qSaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3zX_c0qSaHuO00025QrE$V
   localizations:
   - language: en
@@ -594,6 +709,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BFMy0qSeHuO00025QrE$V
     ifdGuid: 0BFMy0qSeHuO00025QrE$V
     legacyGuid: 0b3d6f00d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0BFMy0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0BFMy0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -640,6 +757,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Gchc0qSeHuO00025QrE$V
     ifdGuid: 0Gchc0qSeHuO00025QrE$V
     legacyGuid: 109ab980d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0Gchc0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Gchc0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -686,6 +805,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0L_0G0qSeHuO00025QrE$V
     ifdGuid: 0L_0G0qSeHuO00025QrE$V
     legacyGuid: 15f80400d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0L_0G0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0L_0G0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -732,6 +853,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QlBW0qSeHuO00025QrE$V
     ifdGuid: 0QlBW0qSeHuO00025QrE$V
     legacyGuid: 1abcb800d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0QlBW0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0QlBW0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -778,6 +901,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cg7e0qSeHuO00025QrE$V
     ifdGuid: 0cg7e0qSeHuO00025QrE$V
     legacyGuid: 26a87a00d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0cg7e0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0cg7e0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -830,6 +955,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0l0BK0qSeHuO00025QrE$V
     ifdGuid: 0l0BK0qSeHuO00025QrE$V
     legacyGuid: 2f00b500d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0l0BK0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0l0BK0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -882,6 +1009,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tMF00qSeHuO00025QrE$V
     ifdGuid: 0tMF00qSeHuO00025QrE$V
     legacyGuid: 3758f000d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0tMF00qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0tMF00qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -928,6 +1057,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yjZg0qSeHuO00025QrE$V
     ifdGuid: 0yjZg0qSeHuO00025QrE$V
     legacyGuid: 3cb63a80d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 0yjZg0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0yjZg0qSeHuO00025QrE$V
   localizations:
   - language: en
@@ -974,6 +1105,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12h1k0qSeHuO00025QrE$V
     ifdGuid: 12h1k0qSeHuO00025QrE$V
     legacyGuid: 42ac1b80d1ca11e1800000215ad4efdf
+    legacyGuids:
+    - 12h1k0qSeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 12h1k0qSeHuO00025QrE$V
   localizations:
   - language: en

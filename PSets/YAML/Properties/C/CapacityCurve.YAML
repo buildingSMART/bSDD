@@ -1,0 +1,54 @@
+﻿name: CapacityCurve
+definition: 'Chiller cooling capacity is a function of condensing temperature and evaporating temperature, data is in table form, Capacity = f (TempCon, TempEvp), capacity = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPowerMeasure:Capacity2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+dictionaryReference:
+  dictionaryIdentifier: http://bsdd.buildingsmart.org
+  dictionaryNamespace: PSet
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ud0g0qSaHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ud0g0qSaHuO00025QrE$V
+  ifdGuid: 0Ud0g0qSaHuO00025QrE$V
+  legacyGuid: 1e9c0a80d1c911e1800000215ad4efdf
+  legacyGuids:
+  - 0Ud0g0qSaHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 0Ud0g0qSaHuO00025QrE$V
+localizations:
+- language: en
+  name: 'Capacity Curve'
+  definition: ''
+- language: fr-FR
+  name: 'CourbePuissance'
+  definition: 'Puissance frigoifique du groupe froid qui est une fonction de la température de condensation et de la température d''évaporation, les informations sont sous la forme d''un tableau, Puissance = f(TempCon,TempEvp), puissance = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci.Ce tableau utilises plusieurs entrées variables; pour la  représenter, DefiningValues et DefinedValues sont pour les deux nulles et IfcTable est attachée en utilisant IfcPropertyConstraintRelationship et IfcMetric. Les colonnes sont indiquées dans l''ordre suivant:1. IfcPowerMeasure: Capacity2. IfcThermodynamicTemperatureMeasure: CondensingTemperature3. IfcThermodynamicTemperatureMeasure: EvaporatingTemperature'
+- language: de-DE
+  name: ''
+  definition: ''
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: ja-JP
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+typePropertyTableValue:
+  Expression: ''
+  DefiningValue:
+    dataType: IfcThermodynamicTemperatureMeasure
+    measureType: ''
+    unitType: USERDEFINED
+  DefinedValue:
+    dataType: IfcPowerMeasure
+    measureType: ''
+    unitType: USERDEFINED
+status:
+  versionNumber: 4
+  dateOfVersion: 2018-01-01T00:00:00.0000000
+  revisionNumber: 2
+  dateOfRevision: 2018-01-01T00:00:00.0000000
+  status: Active
+  dateOfCreation: 2018-01-01T00:00:00.0000000
+  dateOfActivation: 2018-01-01T00:00:00.0000000
+  dateOfLastChange: 2018-01-01T00:00:00.0000000
+  languageOfCreator: en-EN

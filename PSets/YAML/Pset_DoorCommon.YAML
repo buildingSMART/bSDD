@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EZIQ0qTiHuO00025QrE$V
   ifdGuid: 0EZIQ0qTiHuO00025QrE$V
   legacyGuid: 0e8d2680d1db11e1800000215ad4efdf
+  legacyGuids:
+  - 0EZIQ0qTiHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0EZIQ0qTiHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,159 @@ localizations:
 applicableIfcClasses:
 - name: IfcDoor
   type: IfcDoor
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/325eARXPLBvhAsxEmSzYXC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/325eARXPLBvhAsxEmSzYXC
+    ifdGuid: 325eARXPLBvhAsxEmSzYXC
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3SYW9XEUbBkAH$RII51Y14
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3SYW9XEUbBkAH$RII51Y14
+    ifdGuid: 3SYW9XEUbBkAH$RII51Y14
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object. It is given according to the national fire safety code or regulation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Dbl55vknFLOO8nHTvmeHR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Dbl55vknFLOO8nHTvmeHR
+    ifdGuid: 0Dbl55vknFLOO8nHTvmeHR
+- propertyName: AcousticRating
+  usageDefinition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3i2mIuWlrES8lVj$nxM_dg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3i2mIuWlrES8lVj$nxM_dg
+    ifdGuid: 3i2mIuWlrES8lVj$nxM_dg
+- propertyName: SecurityRating
+  usageDefinition: Index based rating system indicating security level.It is giving according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wy9$DAzzEsg6fHQx31Hcn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wy9$DAzzEsg6fHQx31Hcn
+    ifdGuid: 1wy9$DAzzEsg6fHQx31Hcn
+- propertyName: DurabilityRating
+  usageDefinition: Durability against mechanical stress. It is given according to the national code or regulation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sZJI2NhDCbhbKCzs9Bsyo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sZJI2NhDCbhbKCzs9Bsyo
+    ifdGuid: 2sZJI2NhDCbhbKCzs9Bsyo
+- propertyName: HygrothermalRating
+  usageDefinition: Resistence against hygrothermal impact from different temperatures and humidities inside and outside. It is given according to the national code or regulation.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Us3NCuSD2rfWV8J7c6BN_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Us3NCuSD2rfWV8J7c6BN_
+    ifdGuid: 1Us3NCuSD2rfWV8J7c6BN_
+- propertyName: WaterTightnessRating
+  usageDefinition: Water tightness rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1LeVxcu4j03eZWQ4nGYMdU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LeVxcu4j03eZWQ4nGYMdU
+    ifdGuid: 1LeVxcu4j03eZWQ4nGYMdU
+- propertyName: MechanicalLoadRating
+  usageDefinition: Mechanical load rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wWmTvoEL9qA52tO5Xahvi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wWmTvoEL9qA52tO5Xahvi
+    ifdGuid: 1wWmTvoEL9qA52tO5Xahvi
+- propertyName: WindLoadRating
+  usageDefinition: Wind load resistance rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1xVCn_Ms14kwZCFvmxT3BR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xVCn_Ms14kwZCFvmxT3BR
+    ifdGuid: 1xVCn_Ms14kwZCFvmxT3BR
+- propertyName: Infiltration
+  usageDefinition: Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ESVF7hz1AefKp2bT8$Fmv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ESVF7hz1AefKp2bT8$Fmv
+    ifdGuid: 3ESVF7hz1AefKp2bT8$Fmv
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vGLXGQ5r9H9NcDm7CtKTS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vGLXGQ5r9H9NcDm7CtKTS
+    ifdGuid: 3vGLXGQ5r9H9NcDm7CtKTS
+- propertyName: ThermalTransmittance
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material.It applies to the total door construction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1oyDnRRjz5OvXK30pB4FBa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1oyDnRRjz5OvXK30pB4FBa
+    ifdGuid: 1oyDnRRjz5OvXK30pB4FBa
+- propertyName: GlazingAreaFraction
+  usageDefinition: Fraction of the glazing area relative to the total area of the filling element. It shall be used, if the glazing area is not given separately for all panels within the filling element.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0n4PFamzz2jwTt98gzuEU2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0n4PFamzz2jwTt98gzuEU2
+    ifdGuid: 0n4PFamzz2jwTt98gzuEU2
+- propertyName: HandicapAccessible
+  usageDefinition: Indication that this object is designed to be accessible by the handicapped. It is giving according to the requirements of the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3IXFAJJmD269P_Z3effx8M
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IXFAJJmD269P_Z3effx8M
+    ifdGuid: 3IXFAJJmD269P_Z3effx8M
+- propertyName: FireExit
+  usageDefinition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here it defines an exit door in accordance to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Jrc_zFQX7vRLvU1zOaUv5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Jrc_zFQX7vRLvU1zOaUv5
+    ifdGuid: 2Jrc_zFQX7vRLvU1zOaUv5
+- propertyName: HasDrive
+  usageDefinition: Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ckIdOALTF2wC2sCNIa7SV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ckIdOALTF2wC2sCNIa7SV
+    ifdGuid: 2ckIdOALTF2wC2sCNIa7SV
+- propertyName: SelfClosing
+  usageDefinition: Indication whether this object is designed to close automatically after use (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0VuLGojTz25QDuj4w_ZgFB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0VuLGojTz25QDuj4w_ZgFB
+    ifdGuid: 0VuLGojTz25QDuj4w_ZgFB
+- propertyName: SmokeStop
+  usageDefinition: Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2b$qQGH4PB$RTM1U8rRINV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2b$qQGH4PB$RTM1U8rRINV
+    ifdGuid: 2b$qQGH4PB$RTM1U8rRINV
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
@@ -41,6 +196,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dbTU0qTiHuO00025QrE$V
     ifdGuid: 0dbTU0qTiHuO00025QrE$V
     legacyGuid: 2795d780d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 0dbTU0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0dbTU0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +247,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0owGC0qTiHuO00025QrE$V
     ifdGuid: 0owGC0qTiHuO00025QrE$V
     legacyGuid: 32e90300d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 0owGC0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0owGC0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -288,6 +447,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xeBm0qTiHuO00025QrE$V
     ifdGuid: 1xeBm0qTiHuO00025QrE$V
     legacyGuid: 7ba0bc00d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 1xeBm0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1xeBm0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -337,6 +498,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LGWE0qTiHuO00025QrE$V
     ifdGuid: 2LGWE0qTiHuO00025QrE$V
     legacyGuid: 95420380d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 2LGWE0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2LGWE0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -386,6 +549,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qG9M0qTiHuO00025QrE$V
     ifdGuid: 2qG9M0qTiHuO00025QrE$V
     legacyGuid: b4409580d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 2qG9M0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2qG9M0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -435,6 +600,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DuTq0qTiHuO00025QrE$V
     ifdGuid: 3DuTq0qTiHuO00025QrE$V
     legacyGuid: cde1dd00d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 3DuTq0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3DuTq0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -481,6 +648,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3iHzY0qTiHuO00025QrE$V
     ifdGuid: 3iHzY0qTiHuO00025QrE$V
     legacyGuid: ec47d880d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 3iHzY0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3iHzY0qTiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -525,8 +694,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '2XUr1mKS19U8FoGB64cPhs'
+    ifdGuid: 2XUr1mKS19U8FoGB64cPhs
     legacyGuid: 5030f04224d94c74aba753294170b227
+    legacyGuids:
+    - 1GCF129DbCTAkdKob1SB8d
     legacyGuidAsIfcGlobalId: 1GCF129DbCTAkdKob1SB8d
   localizations:
   - language: de-DE
@@ -568,8 +739,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0kfvJqB7z1rBUzTRTUhqpv'
+    ifdGuid: 0kfvJqB7z1rBUzTRTUhqpv
     legacyGuid: da9b78dfa88b4538887d4c597a1059dd
+    legacyGuids:
+    - 3QctZVg8j5E8XzJ5bw45dT
     legacyGuidAsIfcGlobalId: 3QctZVg8j5E8XzJ5bw45dT
   localizations:
   - language: de-DE
@@ -611,8 +784,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '3zRiP6$q9A8BIVaVCu$08c'
+    ifdGuid: 3zRiP6$q9A8BIVaVCu$08c
     legacyGuid: 9be0892ff9324135bdafcd98782a64ff
+    legacyGuids:
+    - 2Ru8al_J91DRslpPXuAcJ$
     legacyGuidAsIfcGlobalId: 2Ru8al_J91DRslpPXuAcJ$
   localizations:
   - language: de-DE
@@ -656,6 +831,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ZjeK0qTmHuO00025QrE$V
     ifdGuid: 0ZjeK0qTmHuO00025QrE$V
     legacyGuid: 23b68500d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 0ZjeK0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ZjeK0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -702,6 +879,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0AhTG0qTmHuO00025QrE$V
     ifdGuid: 0AhTG0qTmHuO00025QrE$V
     legacyGuid: 0aadd400d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 0AhTG0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0AhTG0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -751,6 +930,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12jHS0qTmHuO00025QrE$V
     ifdGuid: 12jHS0qTmHuO00025QrE$V
     legacyGuid: 42b51700d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 12jHS0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 12jHS0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -800,6 +981,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1TXuk0qTmHuO00025QrE$V
     ifdGuid: 1TXuk0qTmHuO00025QrE$V
     legacyGuid: 5d878b80d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 1TXuk0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1TXuk0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -846,6 +1029,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sa3o0qTmHuO00025QrE$V
     ifdGuid: 1sa3o0qTmHuO00025QrE$V
     legacyGuid: 76903c80d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 1sa3o0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1sa3o0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -892,6 +1077,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FcEs0qTmHuO00025QrE$V
     ifdGuid: 2FcEs0qTmHuO00025QrE$V
     legacyGuid: 8f98ed80d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 2FcEs0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2FcEs0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -941,6 +1128,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2gQs80qTmHuO00025QrE$V
     ifdGuid: 2gQs80qTmHuO00025QrE$V
     legacyGuid: aa6b6200d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 2gQs80qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2gQs80qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -987,6 +1176,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_hry0qTmHuO00025QrE$V
     ifdGuid: 2_hry0qTmHuO00025QrE$V
     legacyGuid: beaf5f00d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 2_hry0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_hry0qTmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -1036,6 +1227,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Enpw0qTmHuO00025QrE$V
     ifdGuid: 3Enpw0qTmHuO00025QrE$V
     legacyGuid: cec73e80d1dc11e1800000215ad4efdf
+    legacyGuids:
+    - 3Enpw0qTmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Enpw0qTmHuO00025QrE$V
   localizations:
   - language: de-DE

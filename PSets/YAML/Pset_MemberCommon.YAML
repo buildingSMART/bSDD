@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$U5O0qV4HuO00025QrE$V
   ifdGuid: 0$U5O0qV4HuO00025QrE$V
   legacyGuid: 3f785600d1f111e1800000215ad4efdf
+  legacyGuids:
+  - 0$U5O0qV4HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0$U5O0qV4HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,79 @@ localizations:
 applicableIfcClasses:
 - name: IfcMember
   type: IfcMember
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ENb9J5dv8kRDQFZXNlf8F
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ENb9J5dv8kRDQFZXNlf8F
+    ifdGuid: 2ENb9J5dv8kRDQFZXNlf8F
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0BWE2zDXHCfQ235eHPArKV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BWE2zDXHCfQ235eHPArKV
+    ifdGuid: 0BWE2zDXHCfQ235eHPArKV
+- propertyName: Span
+  usageDefinition: Clear span for this object.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Y9DWbRfbC7QCVdinjXocs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Y9DWbRfbC7QCVdinjXocs
+    ifdGuid: 1Y9DWbRfbC7QCVdinjXocs
+- propertyName: Slope
+  usageDefinition: Slope angle - relative to horizontal (0.0 degrees).The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wUpctSqT5IQ17_7hT6tQ9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wUpctSqT5IQ17_7hT6tQ9
+    ifdGuid: 1wUpctSqT5IQ17_7hT6tQ9
+- propertyName: Roll
+  usageDefinition: 'Rotation against the longitudinal axis - relative to the global Z direction for all members that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.Note: new property in IFC4.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2PoCeadef2IfVIHzvk63TF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2PoCeadef2IfVIHzvk63TF
+    ifdGuid: 2PoCeadef2IfVIHzvk63TF
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0KGYMHmAL7buNfK$pf_z3k
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KGYMHmAL7buNfK$pf_z3k
+    ifdGuid: 0KGYMHmAL7buNfK$pf_z3k
+- propertyName: ThermalTransmittance
+  usageDefinition: 'Thermal transmittance coefficient (U-Value) of a material.Here the total thermal transmittance coefficient through the member within the direction of the thermal flow (including all materials).Note: new property in IFC4.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0cIrY9lqD35RVbiI2mCzM9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cIrY9lqD35RVbiI2mCzM9
+    ifdGuid: 0cIrY9lqD35RVbiI2mCzM9
+- propertyName: LoadBearing
+  usageDefinition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3nQ6ed1_5Fy8jiPwsyXXRM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3nQ6ed1_5Fy8jiPwsyXXRM
+    ifdGuid: 3nQ6ed1_5Fy8jiPwsyXXRM
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3nNUPvu7v0Nxe72xYgvaPr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3nNUPvu7v0Nxe72xYgvaPr
+    ifdGuid: 3nNUPvu7v0Nxe72xYgvaPr
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
@@ -41,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19cbI0qV4HuO00025QrE$V
     ifdGuid: 19cbI0qV4HuO00025QrE$V
     legacyGuid: 499a5480d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 19cbI0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 19cbI0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +167,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Fa3M0qV4HuO00025QrE$V
     ifdGuid: 1Fa3M0qV4HuO00025QrE$V
     legacyGuid: 4f903580d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1Fa3M0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Fa3M0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -288,6 +367,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Ttb60qV4HuO00025QrE$V
     ifdGuid: 1Ttb60qV4HuO00025QrE$V
     legacyGuid: 5dde5180d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1Ttb60qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Ttb60qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -337,6 +418,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1aRCa0qV4HuO00025QrE$V
     ifdGuid: 1aRCa0qV4HuO00025QrE$V
     legacyGuid: 646cc900d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1aRCa0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1aRCa0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -386,6 +469,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fCNq0qV4HuO00025QrE$V
     ifdGuid: 1fCNq0qV4HuO00025QrE$V
     legacyGuid: 69317d00d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1fCNq0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1fCNq0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -435,6 +520,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kZiU0qV4HuO00025QrE$V
     ifdGuid: 1kZiU0qV4HuO00025QrE$V
     legacyGuid: 6e8ec780d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1kZiU0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1kZiU0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -484,6 +571,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qXAY0qV4HuO00025QrE$V
     ifdGuid: 1qXAY0qV4HuO00025QrE$V
     legacyGuid: 7484a880d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1qXAY0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1qXAY0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -533,6 +622,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wUec0qV4HuO00025QrE$V
     ifdGuid: 1wUec0qV4HuO00025QrE$V
     legacyGuid: 7a7a8980d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 1wUec0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1wUec0qV4HuO00025QrE$V
   localizations:
   - language: de-DE
@@ -582,6 +673,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20S6g0qV4HuO00025QrE$V
     ifdGuid: 20S6g0qV4HuO00025QrE$V
     legacyGuid: 80706a80d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 20S6g0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 20S6g0qV4HuO00025QrE$V
   localizations:
   - language: de-DE

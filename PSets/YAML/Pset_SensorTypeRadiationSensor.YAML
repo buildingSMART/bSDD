@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tTk40qWOHuO00025QrE$V
   ifdGuid: 0tTk40qWOHuO00025QrE$V
   legacyGuid: 3776e100d20611e1800000215ad4efdf
+  legacyGuids:
+  - 0tTk40qWOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0tTk40qWOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/RADIATIONSENSOR
   type: IfcSensor/RADIATIONSENSOR
+propertyUsages:
+- propertyName: SetPointRadiation
+  usageDefinition: The radiation power value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3c0z7oxnLBnwrbe3zZjtOw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3c0z7oxnLBnwrbe3zZjtOw
+    ifdGuid: 3c0z7oxnLBnwrbe3zZjtOw
 properties:
 - name: SetPointRadiation
   definition: The radiation power value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yr2k0qWOHuO00025QrE$V
     ifdGuid: 0yr2k0qWOHuO00025QrE$V
     legacyGuid: 3cd42b80d20611e1800000215ad4efdf
+    legacyGuids:
+    - 0yr2k0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0yr2k0qWOHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00z9A0qXKHuO00025QrE$V
   ifdGuid: 00z9A0qXKHuO00025QrE$V
   legacyGuid: 00f49280d21511e1800000215ad4efdf
+  legacyGuids:
+  - 00z9A0qXKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 00z9A0qXKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcValve/GASTAP
   type: IfcValve/GASTAP
+propertyUsages:
+- propertyName: HasHoseUnion
+  usageDefinition: Indicates whether the gas tap is fitted with a hose union connection (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Z_i_SFLD8jxCq67QZpWRb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Z_i_SFLD8jxCq67QZpWRb
+    ifdGuid: 0Z_i_SFLD8jxCq67QZpWRb
 properties:
 - name: HasHoseUnion
   definition: Indicates whether the gas tap is fitted with a hose union connection (= TRUE) or not (= FALSE).
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06KTq0qXKHuO00025QrE$V
     ifdGuid: 06KTq0qXKHuO00025QrE$V
     legacyGuid: 0651dd00d21511e1800000215ad4efdf
+    legacyGuids:
+    - 06KTq0qXKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 06KTq0qXKHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/027SE0qWKHuO00025QrE$V
   ifdGuid: 027SE0qWKHuO00025QrE$V
   legacyGuid: 021dc380d20511e1800000215ad4efdf
+  legacyGuids:
+  - 027SE0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 027SE0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/CONDUCTANCESENSOR
   type: IfcSensor/CONDUCTANCESENSOR
+propertyUsages:
+- propertyName: SetPointConductance
+  usageDefinition: The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LVn7VkyPAHhalfPHZvDSa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LVn7VkyPAHhalfPHZvDSa
+    ifdGuid: 3LVn7VkyPAHhalfPHZvDSa
 properties:
 - name: SetPointConductance
   definition: The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06IU40qWKHuO00025QrE$V
     ifdGuid: 06IU40qWKHuO00025QrE$V
     legacyGuid: 0649e100d20511e1800000215ad4efdf
+    legacyGuids:
+    - 06IU40qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 06IU40qWKHuO00025QrE$V
   localizations:
   - language: en

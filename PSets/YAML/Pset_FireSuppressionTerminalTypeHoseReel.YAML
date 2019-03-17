@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3739U0qUOHuO00025QrE$V
   ifdGuid: 3739U0qUOHuO00025QrE$V
   legacyGuid: c70c9780d1e611e1800000215ad4efdf
+  legacyGuids:
+  - 3739U0qUOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3739U0qUOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcFireSuppressionTerminal/HOSEREEL
   type: IfcFireSuppressionTerminal/HOSEREEL
+propertyUsages:
+- propertyName: HoseReelType
+  usageDefinition: Identifies the predefined types of hose arrangement from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10eHhqgBf7SRCINcvtVpr$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10eHhqgBf7SRCINcvtVpr$
+    ifdGuid: 10eHhqgBf7SRCINcvtVpr$
+- propertyName: HoseReelMountingType
+  usageDefinition: Identifies the predefined types of hose reel mounting from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LScRNCI58EgpKaFMmM0ez
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LScRNCI58EgpKaFMmM0ez
+    ifdGuid: 3LScRNCI58EgpKaFMmM0ez
+- propertyName: InletConnectionSize
+  usageDefinition: Size of the inlet connection to the hose reel.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zPkCcyVDF1hbd3JMwHQdv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zPkCcyVDF1hbd3JMwHQdv
+    ifdGuid: 0zPkCcyVDF1hbd3JMwHQdv
+- propertyName: HoseDiameter
+  usageDefinition: Notional diameter (bore) of the hose.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2fc$I$2p99ae0IzPQmBTaI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2fc$I$2p99ae0IzPQmBTaI
+    ifdGuid: 2fc$I$2p99ae0IzPQmBTaI
+- propertyName: HoseLength
+  usageDefinition: Notional length of the hose fitted to the hose reel when fully extended.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1nLT4HlKXFnvisD8Nx4yXt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1nLT4HlKXFnvisD8Nx4yXt
+    ifdGuid: 1nLT4HlKXFnvisD8Nx4yXt
+- propertyName: HoseNozzleType
+  usageDefinition: Identifies the predefined types of nozzle (in terms of spray pattern) fitted to the end of the hose from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3DAyhFuz9FgxFf3gqG9d4v
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DAyhFuz9FgxFf3gqG9d4v
+    ifdGuid: 3DAyhFuz9FgxFf3gqG9d4v
+- propertyName: ClassOfService
+  usageDefinition: A classification of usage of the hose reel that may be applied.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1x8ctdDxzDWglw8DBRTleJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x8ctdDxzDWglw8DBRTleJ
+    ifdGuid: 1x8ctdDxzDWglw8DBRTleJ
+- propertyName: ClassificationAuthority
+  usageDefinition: The name of the authority that applies the classification of service to the hose reel (e.g. NFPA/FEMA).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19pYR6FhXCNxJ7GJdCVYZ$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19pYR6FhXCNxJ7GJdCVYZ$
+    ifdGuid: 19pYR6FhXCNxJ7GJdCVYZ$
 properties:
 - name: HoseReelType
   definition: Identifies the predefined types of hose arrangement from which the type required may be set.
@@ -45,6 +112,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3CQU80qUOHuO00025QrE$V
     ifdGuid: 3CQU80qUOHuO00025QrE$V
     legacyGuid: cc69e200d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 3CQU80qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3CQU80qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -199,6 +268,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PXj40qUOHuO00025QrE$V
     ifdGuid: 3PXj40qUOHuO00025QrE$V
     legacyGuid: d986d100d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 3PXj40qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3PXj40qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -375,6 +446,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3f1Xe0qUOHuO00025QrE$V
     ifdGuid: 3f1Xe0qUOHuO00025QrE$V
     legacyGuid: e9061a00d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 3f1Xe0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3f1Xe0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -421,6 +494,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3k_$i0qUOHuO00025QrE$V
     ifdGuid: 3k_$i0qUOHuO00025QrE$V
     legacyGuid: eefbfb00d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 3k_$i0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3k_$i0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -467,6 +542,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rYdA0qUOHuO00025QrE$V
     ifdGuid: 3rYdA0qUOHuO00025QrE$V
     legacyGuid: f58a7280d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 3rYdA0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3rYdA0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -513,6 +590,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3y6Ee0qUOHuO00025QrE$V
     ifdGuid: 3y6Ee0qUOHuO00025QrE$V
     legacyGuid: fc18ea00d1e611e1800000215ad4efdf
+    legacyGuids:
+    - 3y6Ee0qUOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3y6Ee0qUOHuO00025QrE$V
   localizations:
   - language: en
@@ -667,6 +746,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09DTa0qUSHuO00025QrE$V
     ifdGuid: 09DTa0qUSHuO00025QrE$V
     legacyGuid: 0935d900d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 09DTa0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 09DTa0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -713,6 +794,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GzNs0qUSHuO00025QrE$V
     ifdGuid: 0GzNs0qUSHuO00025QrE$V
     legacyGuid: 10f57d80d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 0GzNs0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0GzNs0qUSHuO00025QrE$V
   localizations:
   - language: en

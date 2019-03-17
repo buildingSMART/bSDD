@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/087P_0qXaHuO00025QrE$V
   ifdGuid: 087P_0qXaHuO00025QrE$V
   legacyGuid: 081d9f80d21911e1800000215ad4efdf
+  legacyGuids:
+  - 087P_0qXaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 087P_0qXaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,47 @@ localizations:
 applicableIfcClasses:
 - name: IfcWorkControl
   type: IfcWorkControl
+propertyUsages:
+- propertyName: WorkStartTime
+  usageDefinition: The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0MFGqs7Gn6$hDUEB328Cyj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0MFGqs7Gn6$hDUEB328Cyj
+    ifdGuid: 0MFGqs7Gn6$hDUEB328Cyj
+- propertyName: WorkFinishTime
+  usageDefinition: The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkFinishTime.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2X38hqh511juCsbZx0IO8O
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2X38hqh511juCsbZx0IO8O
+    ifdGuid: 2X38hqh511juCsbZx0IO8O
+- propertyName: WorkDayDuration
+  usageDefinition: The elapsed time within a worktime-based day. For presentation purposes, applications may choose to display IfcTask durations in work days where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 24 hours (an elapsed day); if omitted then 8 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1dX2A9d05A0wCNt2tuo1$N
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dX2A9d05A0wCNt2tuo1$N
+    ifdGuid: 1dX2A9d05A0wCNt2tuo1$N
+- propertyName: WorkWeekDuration
+  usageDefinition: The elapsed time within a worktime-based week. For presentation purposes, applications may choose to display IfcTask durations in work weeks where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 168 hours (an elapsed week); if omitted then 40 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0PfNQY9bv16P_MX23PsrVK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PfNQY9bv16P_MX23PsrVK
+    ifdGuid: 0PfNQY9bv16P_MX23PsrVK
+- propertyName: WorkMonthDuration
+  usageDefinition: The elapsed time within a worktime-based month. For presentation purposes, applications may choose to display IfcTask durations in work months where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 744 hours (an elapsed month of 31 days); if omitted then 160 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vpaLdIzH1$w2VDw_m7v9c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vpaLdIzH1$w2VDw_m7v9c
+    ifdGuid: 3vpaLdIzH1$w2VDw_m7v9c
 properties:
 - name: WorkStartTime
   definition: The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.
@@ -41,6 +84,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Is3I0qXaHuO00025QrE$V
     ifdGuid: 0Is3I0qXaHuO00025QrE$V
     legacyGuid: 12d83480d21911e1800000215ad4efdf
+    legacyGuids:
+    - 0Is3I0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Is3I0qXaHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NdEY0qXaHuO00025QrE$V
     ifdGuid: 0NdEY0qXaHuO00025QrE$V
     legacyGuid: 179ce880d21911e1800000215ad4efdf
+    legacyGuids:
+    - 0NdEY0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0NdEY0qXaHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +180,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0S_ZC0qXaHuO00025QrE$V
     ifdGuid: 0S_ZC0qXaHuO00025QrE$V
     legacyGuid: 1cfa3300d21911e1800000215ad4efdf
+    legacyGuids:
+    - 0S_ZC0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0S_ZC0qXaHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +228,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Yy1G0qXaHuO00025QrE$V
     ifdGuid: 0Yy1G0qXaHuO00025QrE$V
     legacyGuid: 22f01400d21911e1800000215ad4efdf
+    legacyGuids:
+    - 0Yy1G0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Yy1G0qXaHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +276,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0djCW0qXaHuO00025QrE$V
     ifdGuid: 0djCW0qXaHuO00025QrE$V
     legacyGuid: 27b4c800d21911e1800000215ad4efdf
+    legacyGuids:
+    - 0djCW0qXaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0djCW0qXaHuO00025QrE$V
   localizations:
   - language: en

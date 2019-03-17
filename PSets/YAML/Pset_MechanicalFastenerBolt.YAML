@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YVA00qV0HuO00025QrE$V
   ifdGuid: 3YVA00qV0HuO00025QrE$V
   legacyGuid: e27ca000d1f011e1800000215ad4efdf
+  legacyGuids:
+  - 3YVA00qV0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3YVA00qV0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcMechanicalFastener/BOLT
   type: IfcMechanicalFastener/BOLT
+propertyUsages:
+- propertyName: ThreadDiameter
+  usageDefinition: Nominal diameter of the thread, if different from the bolt's overall nominal diameter
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2iTNAn5DzCeQPf9olrYri8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iTNAn5DzCeQPf9olrYri8
+    ifdGuid: 2iTNAn5DzCeQPf9olrYri8
+- propertyName: ThreadLength
+  usageDefinition: Nominal length of the thread
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1fTf0uAgLCvgURGw9u57B2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fTf0uAgLCvgURGw9u57B2
+    ifdGuid: 1fTf0uAgLCvgURGw9u57B2
+- propertyName: NutsCount
+  usageDefinition: Count of nuts to be mounted on one bolt
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2WkIs2mGj3Kx7uEaA3Qe1m
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WkIs2mGj3Kx7uEaA3Qe1m
+    ifdGuid: 2WkIs2mGj3Kx7uEaA3Qe1m
+- propertyName: WashersCount
+  usageDefinition: Count of washers to be mounted on one bolt
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LL8NaWTbAxQl67D00a$Xu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LL8NaWTbAxQl67D00a$Xu
+    ifdGuid: 3LL8NaWTbAxQl67D00a$Xu
+- propertyName: HeadShape
+  usageDefinition: Shape of the bolt's head, e.g. 'Hexagon', 'Countersunk', 'Cheese'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WM$_f3nLDJ8soeZYOweRE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WM$_f3nLDJ8soeZYOweRE
+    ifdGuid: 0WM$_f3nLDJ8soeZYOweRE
+- propertyName: KeyShape
+  usageDefinition: If applicable, shape of the head's slot, e.g. 'Slot', 'Allen'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EvDzd9Ob3CQG6Q55T4Dsx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EvDzd9Ob3CQG6Q55T4Dsx
+    ifdGuid: 3EvDzd9Ob3CQG6Q55T4Dsx
+- propertyName: NutShape
+  usageDefinition: Shape of the nut, e.g. 'Hexagon', 'Cap', 'Castle', 'Wing'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3IeekD6LnFaA29$kXmgd3C
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IeekD6LnFaA29$kXmgd3C
+    ifdGuid: 3IeekD6LnFaA29$kXmgd3C
+- propertyName: WasherShape
+  usageDefinition: Shape of the washers, e.g. 'Standard', 'Square'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2U6FgbhzPFmQN73DfftoOO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2U6FgbhzPFmQN73DfftoOO
+    ifdGuid: 2U6FgbhzPFmQN73DfftoOO
 properties:
 - name: ThreadDiameter
   definition: Nominal diameter of the thread, if different from the bolt's overall nominal diameter
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dsUg0qV0HuO00025QrE$V
     ifdGuid: 3dsUg0qV0HuO00025QrE$V
     legacyGuid: e7d9ea80d1f011e1800000215ad4efdf
+    legacyGuids:
+    - 3dsUg0qV0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3dsUg0qV0HuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3kQ680qV0HuO00025QrE$V
     ifdGuid: 3kQ680qV0HuO00025QrE$V
     legacyGuid: ee686200d1f011e1800000215ad4efdf
+    legacyGuids:
+    - 3kQ680qV0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3kQ680qV0HuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +204,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qNaC0qV0HuO00025QrE$V
     ifdGuid: 3qNaC0qV0HuO00025QrE$V
     legacyGuid: f45e4300d1f011e1800000215ad4efdf
+    legacyGuids:
+    - 3qNaC0qV0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3qNaC0qV0HuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +252,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wL2G0qV0HuO00025QrE$V
     ifdGuid: 3wL2G0qV0HuO00025QrE$V
     legacyGuid: fa542400d1f011e1800000215ad4efdf
+    legacyGuids:
+    - 3wL2G0qV0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3wL2G0qV0HuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$6DW0qV0HuO00025QrE$V
     ifdGuid: 3$6DW0qV0HuO00025QrE$V
     legacyGuid: ff18d800d1f011e1800000215ad4efdf
+    legacyGuids:
+    - 3$6DW0qV0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3$6DW0qV0HuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +348,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05fq_0qV4HuO00025QrE$V
     ifdGuid: 05fq_0qV4HuO00025QrE$V
     legacyGuid: 05a74f80d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 05fq_0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 05fq_0qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -317,6 +396,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0BdJ20qV4HuO00025QrE$V
     ifdGuid: 0BdJ20qV4HuO00025QrE$V
     legacyGuid: 0b9d3080d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 0BdJ20qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0BdJ20qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -363,6 +444,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TVjE0qV4HuO00025QrE$V
     ifdGuid: 0TVjE0qV4HuO00025QrE$V
     legacyGuid: 1d7ed380d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 0TVjE0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0TVjE0qV4HuO00025QrE$V
   localizations:
   - language: en

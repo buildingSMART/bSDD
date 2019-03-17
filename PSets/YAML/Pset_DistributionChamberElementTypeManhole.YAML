@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oqb80qTCHuO00025QrE$V
   ifdGuid: 3oqb80qTCHuO00025QrE$V
   legacyGuid: f2d25200d1d311e1800000215ad4efdf
+  legacyGuids:
+  - 3oqb80qTCHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3oqb80qTCHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,111 @@ localizations:
 applicableIfcClasses:
 - name: IfcDistributionChamberElement/MANHOLE
   type: IfcDistributionChamberElement/MANHOLE
+propertyUsages:
+- propertyName: InvertLevel
+  usageDefinition: Level of the lowest part of the cross section as measured from ground level.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Mie0BWsLFWBA429jmDeYB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Mie0BWsLFWBA429jmDeYB
+    ifdGuid: 2Mie0BWsLFWBA429jmDeYB
+- propertyName: SoffitLevel
+  usageDefinition: Level of the highest internal part of the cross section as measured from ground level.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1LOHP495z7$O14AnBth_gK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LOHP495z7$O14AnBth_gK
+    ifdGuid: 1LOHP495z7$O14AnBth_gK
+- propertyName: WallMaterial
+  usageDefinition: 'The material from which the wall of the chamber is constructed.NOTE: It is assumed that chamber walls will be constructed of a single material.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ui59EfxDDz9FWiuiJZZiR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ui59EfxDDz9FWiuiJZZiR
+    ifdGuid: 0ui59EfxDDz9FWiuiJZZiR
+- propertyName: WallThickness
+  usageDefinition: 'The thickness of the chamber wall constructionNOTE: It is assumed that chamber walls will be constructed at a single thickness.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WqtQBgYH7ABxZtkh8xL2p
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WqtQBgYH7ABxZtkh8xL2p
+    ifdGuid: 0WqtQBgYH7ABxZtkh8xL2p
+- propertyName: BaseMaterial
+  usageDefinition: 'The material from which the base of the chamber is constructed.NOTE: It is assumed that chamber base will be constructed of a single material.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1bPI6pF8DDjf35HWSB7XpD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bPI6pF8DDjf35HWSB7XpD
+    ifdGuid: 1bPI6pF8DDjf35HWSB7XpD
+- propertyName: BaseThickness
+  usageDefinition: 'The thickness of the chamber base constructionNOTE: It is assumed that chamber base will be constructed at a single thickness.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Xiw2XSA1B6x6MX$2YvAQR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Xiw2XSA1B6x6MX$2YvAQR
+    ifdGuid: 0Xiw2XSA1B6x6MX$2YvAQR
+- propertyName: IsShallow
+  usageDefinition: Indicates whether the chamber has been designed as being shallow (TRUE) or deep (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/12LSdjHLL989_L4LO_gCND
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12LSdjHLL989_L4LO_gCND
+    ifdGuid: 12LSdjHLL989_L4LO_gCND
+- propertyName: HasSteps
+  usageDefinition: Indicates whether the chamber has steps (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1uc_GpCRX3qBHfPlD2Iveg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1uc_GpCRX3qBHfPlD2Iveg
+    ifdGuid: 1uc_GpCRX3qBHfPlD2Iveg
+- propertyName: WithBackdrop
+  usageDefinition: Indicates whether the chamber has a backdrop or tumbling bay (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SSPztV0rB1AOEM8jwR27k
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SSPztV0rB1AOEM8jwR27k
+    ifdGuid: 2SSPztV0rB1AOEM8jwR27k
+- propertyName: AccessCoverMaterial
+  usageDefinition: 'The material from which the access cover to the chamber is constructed.NOTE: It is assumed that chamber walls will be constructed of a single material.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1MFhHbK5LDb81mzhvAXxrJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MFhHbK5LDb81mzhvAXxrJ
+    ifdGuid: 1MFhHbK5LDb81mzhvAXxrJ
+- propertyName: AccessLengthOrRadius
+  usageDefinition: The length of the chamber access cover or, where the plan shape of the cover is circular, the radius.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2wtLkrXkX6rh3hueRfTDO9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2wtLkrXkX6rh3hueRfTDO9
+    ifdGuid: 2wtLkrXkX6rh3hueRfTDO9
+- propertyName: AccessWidth
+  usageDefinition: The width of the chamber access cover where the plan shape of the cover is not circular.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1QA4CMTiP9AvQ3IOpd32gL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QA4CMTiP9AvQ3IOpd32gL
+    ifdGuid: 1QA4CMTiP9AvQ3IOpd32gL
+- propertyName: AccessCoverLoadRating
+  usageDefinition: The load rating of the access cover (which may be a value or an alphanumerically defined class rating).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2QnU8jsFX5iP5z2K$9LiBP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QnU8jsFX5iP5z2K$9LiBP
+    ifdGuid: 2QnU8jsFX5iP5z2K$9LiBP
 properties:
 - name: InvertLevel
   definition: Level of the lowest part of the cross section as measured from ground level.
@@ -41,6 +148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tbmO0qTCHuO00025QrE$V
     ifdGuid: 3tbmO0qTCHuO00025QrE$V
     legacyGuid: f7970600d1d311e1800000215ad4efdf
+    legacyGuids:
+    - 3tbmO0qTCHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3tbmO0qTCHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +199,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3yMxe0qTCHuO00025QrE$V
     ifdGuid: 3yMxe0qTCHuO00025QrE$V
     legacyGuid: fc5bba00d1d311e1800000215ad4efdf
+    legacyGuids:
+    - 3yMxe0qTCHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3yMxe0qTCHuO00025QrE$V
   localizations:
   - language: en
@@ -139,6 +250,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0186u0qTGHuO00025QrE$V
     ifdGuid: 0186u0qTGHuO00025QrE$V
     legacyGuid: 01206e00d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0186u0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0186u0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -189,6 +302,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04i$K0qTGHuO00025QrE$V
     ifdGuid: 04i$K0qTGHuO00025QrE$V
     legacyGuid: 04b3f500d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 04i$K0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 04i$K0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -238,6 +353,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0A4J_0qTGHuO00025QrE$V
     ifdGuid: 0A4J_0qTGHuO00025QrE$V
     legacyGuid: 0a113f80d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0A4J_0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0A4J_0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +405,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DfCQ0qTGHuO00025QrE$V
     ifdGuid: 0DfCQ0qTGHuO00025QrE$V
     legacyGuid: 0da4c680d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0DfCQ0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0DfCQ0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -337,6 +456,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0J0X40qTGHuO00025QrE$V
     ifdGuid: 0J0X40qTGHuO00025QrE$V
     legacyGuid: 13021100d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0J0X40qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0J0X40qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -386,6 +507,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ONrk0qTGHuO00025QrE$V
     ifdGuid: 0ONrk0qTGHuO00025QrE$V
     legacyGuid: 185f5b80d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0ONrk0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ONrk0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -435,6 +558,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TlAO0qTGHuO00025QrE$V
     ifdGuid: 0TlAO0qTGHuO00025QrE$V
     legacyGuid: 1dbca600d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0TlAO0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0TlAO0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -484,6 +609,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ZieS0qTGHuO00025QrE$V
     ifdGuid: 0ZieS0qTGHuO00025QrE$V
     legacyGuid: 23b28700d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0ZieS0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ZieS0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -534,6 +661,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0chNU0qTGHuO00025QrE$V
     ifdGuid: 0chNU0qTGHuO00025QrE$V
     legacyGuid: 26ad7780d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0chNU0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0chNU0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -583,6 +712,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ierY0qTGHuO00025QrE$V
     ifdGuid: 0ierY0qTGHuO00025QrE$V
     legacyGuid: 2ca35880d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0ierY0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ierY0qTGHuO00025QrE$V
   localizations:
   - language: en
@@ -632,6 +763,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ocJc0qTGHuO00025QrE$V
     ifdGuid: 0ocJc0qTGHuO00025QrE$V
     legacyGuid: 32993980d1d411e1800000215ad4efdf
+    legacyGuids:
+    - 0ocJc0qTGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ocJc0qTGHuO00025QrE$V
   localizations:
   - language: en

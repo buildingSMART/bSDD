@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1J7xw0qUaHuO00025QrE$V
   ifdGuid: 1J7xw0qUaHuO00025QrE$V
   legacyGuid: 531fbe80d1e911e1800000215ad4efdf
+  legacyGuids:
+  - 1J7xw0qUaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1J7xw0qUaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcHeatExchanger
   type: IfcHeatExchanger
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2iDCoZP5b4HfBKsqoE_ucf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iDCoZP5b4HfBKsqoE_ucf
+    ifdGuid: 2iDCoZP5b4HfBKsqoE_ucf
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01fD1p5Vf1qOqXQN7w1lVx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01fD1p5Vf1qOqXQN7w1lVx
+    ifdGuid: 01fD1p5Vf1qOqXQN7w1lVx
+- propertyName: Arrangement
+  usageDefinition: 'Defines the basic flow arrangements for the heat exchanger:COUNTERFLOW: Counterflow heat exchanger arrangement. CROSSFLOW: Crossflow heat exchanger arrangement. PARALLELFLOW: Parallel flow heat exchanger arrangement. MULTIPASS: Multipass flow heat exchanger arrangement. OTHER: Other type of heat exchanger flow arrangement not defined above.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2jr2UCo_9Ds8TL_U$53Fpq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jr2UCo_9Ds8TL_U$53Fpq
+    ifdGuid: 2jr2UCo_9Ds8TL_U$53Fpq
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1').
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PhZO0qUaHuO00025QrE$V
     ifdGuid: 1PhZO0qUaHuO00025QrE$V
     legacyGuid: 59ae3600d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 1PhZO0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1PhZO0qUaHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1V2u20qUaHuO00025QrE$V
     ifdGuid: 1V2u20qUaHuO00025QrE$V
     legacyGuid: 5f0b8080d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 1V2u20qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1V2u20qUaHuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +316,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mxIE0qUaHuO00025QrE$V
     ifdGuid: 1mxIE0qUaHuO00025QrE$V
     legacyGuid: 70ed2380d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 1mxIE0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1mxIE0qUaHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/420f74163290409197c2bcb30f5541c1
   ifdGuid: 420f74163290409197c2bcb30f5541c1
   legacyGuid: 420f74163290409197c2bcb30f5541c1
+  legacyGuids:
+  - 123tGMCf10aPV2lBCFLK71
   legacyGuidAsIfcGlobalId: 123tGMCf10aPV2lBCFLK71
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcReinforcingBar
   type: IfcReinforcingBar
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3qKMBmG9X86PrQLxFHfXl7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qKMBmG9X86PrQLxFHfXl7
+    ifdGuid: 3qKMBmG9X86PrQLxFHfXl7
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2rETWW2Q1Af9jeuvbx9koH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2rETWW2Q1Af9jeuvbx9koH
+    ifdGuid: 2rETWW2Q1Af9jeuvbx9koH
+- propertyName: NominalDiameter
+  usageDefinition: The nominal diameter defining the cross-section size of the reinforcing bar.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0aB2E4XID09frA4HRPfwC_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0aB2E4XID09frA4HRPfwC_
+    ifdGuid: 0aB2E4XID09frA4HRPfwC_
+- propertyName: BarLength
+  usageDefinition: The total length of the reinforcing bar. The total length of bended bars are calculated according to local standards with corrections for the bends.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3nbivm3qH91fLEPVlXHfNx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3nbivm3qH91fLEPVlXHfNx
+    ifdGuid: 3nbivm3qH91fLEPVlXHfNx
+- propertyName: BarSpacing
+  usageDefinition: The spacing between bars if constant.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0wN6Xh3dv8MQU9AG5EOrlT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wN6Xh3dv8MQU9AG5EOrlT
+    ifdGuid: 0wN6Xh3dv8MQU9AG5EOrlT
+- propertyName: BarSurface
+  usageDefinition: Indicator for whether the bar surface is plain or textured.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3RfQ8JfMDBbfXDCSofF4uJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RfQ8JfMDBbfXDCSofF4uJ
+    ifdGuid: 3RfQ8JfMDBbfXDCSofF4uJ
+- propertyName: BendingShapeCode
+  usageDefinition: Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the <em>IfcProject</em> object through the <em>IfcDocumentReference</em> mechanism.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2qUN9VNVj7FP8pqF5Vaw7d
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qUN9VNVj7FP8pqF5Vaw7d
+    ifdGuid: 2qUN9VNVj7FP8pqF5Vaw7d
+- propertyName: BendingParameters
+  usageDefinition: If this mesh type is bent rather than planar, this attribute provides bending shape parameters. Their meaning is defined by the bending shape code and the respective standard.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2kjZ8EPFfAu8AMZNjm39VZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2kjZ8EPFfAu8AMZNjm39VZ
+    ifdGuid: 2kjZ8EPFfAu8AMZNjm39VZ
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1').
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: d9c5cd9f0bb4453fb678181411558c5d
+    legacyGuids:
+    - 3PnSsV2xH5FxPu61GHLOnT
     legacyGuidAsIfcGlobalId: 3PnSsV2xH5FxPu61GHLOnT
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 7d7be887760d4fe3b1302963f7bccd8a
+    legacyGuids:
+    - 1zU_Y7TWrFux4mAMFtlCsA
     legacyGuidAsIfcGlobalId: 1zU_Y7TWrFux4mAMFtlCsA
   localizations:
   - language: en
@@ -285,6 +356,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: e6ad105049cb411ba58e97fb9eade51e
+    legacyGuids:
+    - 3chH1GISj16wMEb$kUhUKU
     legacyGuidAsIfcGlobalId: 3chH1GISj16wMEb$kUhUKU
   localizations:
   - language: de-DE
@@ -328,6 +401,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: d2837eec2e95439f97cceef7c80d6580
+    legacyGuids:
+    - 3IWtxiBfL3dvVCxlV83MM0
     legacyGuidAsIfcGlobalId: 3IWtxiBfL3dvVCxlV83MM0
   localizations:
   - language: de-DE
@@ -371,6 +446,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 002c10a549c44cd3a02a7d3a7cc3e726
+    legacyGuids:
+    - 00B12bISHCqw0gVJfym_Sc
     legacyGuidAsIfcGlobalId: 00B12bISHCqw0gVJfym_Sc
   localizations:
   - language: de-DE
@@ -414,6 +491,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: b4b939846b424bbe898721fbff0d6c8e
+    legacyGuids:
+    - 2qkJc4Qq9Blec78Vl$3MoE
     legacyGuidAsIfcGlobalId: 2qkJc4Qq9Blec78Vl$3MoE
   localizations:
   - language: de-DE
@@ -565,6 +644,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: b89eecc8c2d445f3a26938ae697189aa
+    legacyGuids:
+    - 2udkp8mjH5yw9fEAvfSOcg
     legacyGuidAsIfcGlobalId: 2udkp8mjH5yw9fEAvfSOcg
   localizations:
   - language: de-DE
@@ -608,6 +689,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
     ifdGuid: ''
     legacyGuid: 766df352b926486a8cfae4e207790013
+    legacyGuids:
+    - 1sRVDIkIP8QepwvE87UG0J
     legacyGuidAsIfcGlobalId: 1sRVDIkIP8QepwvE87UG0J
   localizations:
   - language: de-DE

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fOTs0qWKHuO00025QrE$V
   ifdGuid: 3fOTs0qWKHuO00025QrE$V
   legacyGuid: e961dd80d20511e1800000215ad4efdf
+  legacyGuids:
+  - 3fOTs0qWKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3fOTs0qWKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/MOISTURESENSOR
   type: IfcSensor/MOISTURESENSOR
+propertyUsages:
+- propertyName: SetPointMoisture
+  usageDefinition: The moisture value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WstjoQfjEoe_sX1lAyEeY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WstjoQfjEoe_sX1lAyEeY
+    ifdGuid: 0WstjoQfjEoe_sX1lAyEeY
 properties:
 - name: SetPointMoisture
   definition: The moisture value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3k9f60qWKHuO00025QrE$V
     ifdGuid: 3k9f60qWKHuO00025QrE$V
     legacyGuid: ee269180d20511e1800000215ad4efdf
+    legacyGuids:
+    - 3k9f60qWKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3k9f60qWKHuO00025QrE$V
   localizations:
   - language: en

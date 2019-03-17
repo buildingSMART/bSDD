@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2y6Yq0qWyHuO00025QrE$V
   ifdGuid: 2y6Yq0qWyHuO00025QrE$V
   legacyGuid: bc1a2d00d20f11e1800000215ad4efdf
+  legacyGuids:
+  - 2y6Yq0qWyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2y6Yq0qWyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,127 @@ localizations:
 applicableIfcClasses:
 - name: IfcTank
   type: IfcTank
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/07tlo9rXT7lvlnWLOq7qgt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/07tlo9rXT7lvlnWLOq7qgt
+    ifdGuid: 07tlo9rXT7lvlnWLOq7qgt
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3epexCh4bEdPMGVPEqkFXX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3epexCh4bEdPMGVPEqkFXX
+    ifdGuid: 3epexCh4bEdPMGVPEqkFXX
+- propertyName: AccessType
+  usageDefinition: Defines the types of access (or cover) to a tank that may be specified.Note that covers are generally specified for rectangular tanks. For cylindrical tanks, access will normally be via a manhole.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0RtGzBV0T1$vXEVtmRXrvl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RtGzBV0T1$vXEVtmRXrvl
+    ifdGuid: 0RtGzBV0T1$vXEVtmRXrvl
+- propertyName: StorageType
+  usageDefinition: Defines the general material category intended to be stored.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19rO53c3r7cwn24yv$UYSc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19rO53c3r7cwn24yv$UYSc
+    ifdGuid: 19rO53c3r7cwn24yv$UYSc
+- propertyName: NominalLengthOrDiameter
+  usageDefinition: The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1oNEYhMnn2dQEJC15F1KpC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1oNEYhMnn2dQEJC15F1KpC
+    ifdGuid: 1oNEYhMnn2dQEJC15F1KpC
+- propertyName: NominalWidthOrDiameter
+  usageDefinition: 'The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank.Note: Not required for a vertical cylindrical tank.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bA8PBdjbCnewW3uAYyKHz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bA8PBdjbCnewW3uAYyKHz
+    ifdGuid: 2bA8PBdjbCnewW3uAYyKHz
+- propertyName: NominalDepth
+  usageDefinition: 'The nominal depth of the tank.Note: Not required for a horizontal cylindrical tank.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2txq5qHYzExB9v4of$WXvk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2txq5qHYzExB9v4of$WXvk
+    ifdGuid: 2txq5qHYzExB9v4of$WXvk
+- propertyName: NominalCapacity
+  usageDefinition: The total nominal or design volumetric capacity of the tank.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3jxvtihgDFou0HuAfgAr3U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3jxvtihgDFou0HuAfgAr3U
+    ifdGuid: 3jxvtihgDFou0HuAfgAr3U
+- propertyName: EffectiveCapacity
+  usageDefinition: The total effective or actual volumetric capacity of the tank.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2zHLoc4SzEJu5Pr8qBCHMD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zHLoc4SzEJu5Pr8qBCHMD
+    ifdGuid: 2zHLoc4SzEJu5Pr8qBCHMD
+- propertyName: OperatingWeight
+  usageDefinition: Operating weight of the tank including all of its contents.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1buXZpeqX5tRWDaSwNyyQK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1buXZpeqX5tRWDaSwNyyQK
+    ifdGuid: 1buXZpeqX5tRWDaSwNyyQK
+- propertyName: PatternType
+  usageDefinition: Defines the types of pattern (or shape of a tank that may be specified.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1znseyimf7hgD_I$WweJ7$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1znseyimf7hgD_I$WweJ7$
+    ifdGuid: 1znseyimf7hgD_I$WweJ7$
+- propertyName: EndShapeType
+  usageDefinition: Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top; for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3XjPoT2yb5buxcRLvX94N7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XjPoT2yb5buxcRLvX94N7
+    ifdGuid: 3XjPoT2yb5buxcRLvX94N7
+- propertyName: FirstCurvatureRadius
+  usageDefinition: FirstCurvatureRadius should be defined as the base or left side radius of curvature value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CyDBkuPjDgxvwII6c0KEa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CyDBkuPjDgxvwII6c0KEa
+    ifdGuid: 1CyDBkuPjDgxvwII6c0KEa
+- propertyName: SecondCurvatureRadius
+  usageDefinition: SecondCurvatureRadius should be defined as the top or right side radius of curvature value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3MkWAnHUH9GvGSyaboNGg_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MkWAnHUH9GvGSyaboNGg_
+    ifdGuid: 3MkWAnHUH9GvGSyaboNGg_
+- propertyName: NumberOfSections
+  usageDefinition: 'Number of sections used in the construction of the tank. Default is 1.Note: All sections assumed to be the same size.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0aYIEkHyP7n9C213EuYqxd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0aYIEkHyP7n9C213EuYqxd
+    ifdGuid: 0aYIEkHyP7n9C213EuYqxd
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1').
@@ -41,6 +164,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30Hag0qWyHuO00025QrE$V
     ifdGuid: 30Hag0qWyHuO00025QrE$V
     legacyGuid: c0464a80d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 30Hag0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 30Hag0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +212,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35evK0qWyHuO00025QrE$V
     ifdGuid: 35evK0qWyHuO00025QrE$V
     legacyGuid: c5a39500d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 35evK0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 35evK0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +412,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Im8G0qWyHuO00025QrE$V
     ifdGuid: 3Im8G0qWyHuO00025QrE$V
     legacyGuid: d2c08400d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 3Im8G0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Im8G0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -505,6 +634,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WTWc0qWyHuO00025QrE$V
     ifdGuid: 3WTWc0qWyHuO00025QrE$V
     legacyGuid: e0760980d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 3WTWc0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3WTWc0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -769,6 +900,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lzLA0qWyHuO00025QrE$V
     ifdGuid: 3lzLA0qWyHuO00025QrE$V
     legacyGuid: eff55280d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 3lzLA0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3lzLA0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -815,6 +948,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tjFS0qWyHuO00025QrE$V
     ifdGuid: 3tjFS0qWyHuO00025QrE$V
     legacyGuid: f7b4f700d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 3tjFS0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3tjFS0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -861,6 +996,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_t0K0qWyHuO00025QrE$V
     ifdGuid: 3_t0K0qWyHuO00025QrE$V
     legacyGuid: fedc0500d20f11e1800000215ad4efdf
+    legacyGuids:
+    - 3_t0K0qWyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3_t0K0qWyHuO00025QrE$V
   localizations:
   - language: en
@@ -907,6 +1044,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06cwc0qX0HuO00025QrE$V
     ifdGuid: 06cwc0qX0HuO00025QrE$V
     legacyGuid: 069ba980d21011e1800000215ad4efdf
+    legacyGuids:
+    - 06cwc0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 06cwc0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -953,6 +1092,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0AnyS0qX0HuO00025QrE$V
     ifdGuid: 0AnyS0qX0HuO00025QrE$V
     legacyGuid: 0ac7c700d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0AnyS0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0AnyS0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -999,6 +1140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FZ7i0qX0HuO00025QrE$V
     ifdGuid: 0FZ7i0qX0HuO00025QrE$V
     legacyGuid: 0f8c7b00d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0FZ7i0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0FZ7i0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -1045,6 +1188,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KKIy0qX0HuO00025QrE$V
     ifdGuid: 0KKIy0qX0HuO00025QrE$V
     legacyGuid: 14512f00d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0KKIy0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0KKIy0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -1221,6 +1366,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0V2yG0qX0HuO00025QrE$V
     ifdGuid: 0V2yG0qX0HuO00025QrE$V
     legacyGuid: 1f0bc400d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0V2yG0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0V2yG0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -1441,6 +1588,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0imKc0qX0HuO00025QrE$V
     ifdGuid: 0imKc0qX0HuO00025QrE$V
     legacyGuid: 2cc14980d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0imKc0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0imKc0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -1487,6 +1636,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qWEu0qX0HuO00025QrE$V
     ifdGuid: 0qWEu0qX0HuO00025QrE$V
     legacyGuid: 3480ee00d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0qWEu0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0qWEu0qX0HuO00025QrE$V
   localizations:
   - language: en
@@ -1533,6 +1684,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ysIa0qX0HuO00025QrE$V
     ifdGuid: 0ysIa0qX0HuO00025QrE$V
     legacyGuid: 3cd92900d21011e1800000215ad4efdf
+    legacyGuids:
+    - 0ysIa0qX0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ysIa0qX0HuO00025QrE$V
   localizations:
   - language: en

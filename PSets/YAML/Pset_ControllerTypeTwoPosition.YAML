@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zYUY0qSqHuO00025QrE$V
   ifdGuid: 3zYUY0qSqHuO00025QrE$V
   legacyGuid: fd89e880d1cd11e1800000215ad4efdf
+  legacyGuids:
+  - 3zYUY0qSqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3zYUY0qSqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcController/TWOPOSITION
   type: IfcController/TWOPOSITION
+propertyUsages:
+- propertyName: ControlType
+  usageDefinition: 'The type of signal modification effected and applicable ports:LOWERLIMITSWITCH: Single analog input is read and if less than Value.LowerBound then True is written to the output value.UPPERLIMITSWITCH: Single analog input is read and if more than Value.UpperBound then True is written to the output value.LOWERBANDSWITCH: Single analog input is read and if less than Value.LowerBound+BandWidth then True is written to the output value.UPPERBANDSWITCH: Single analog input is read and if more than Value.UpperBound-BandWidth then True is written to the output value.NOT: Single binary input is read and the opposite value is written to the output value.AND: Two binary inputs are read and if both are True then True is written to the output value.OR: Two binary inputs are read and if either is True then True is written to the output value.XOR: Two binary inputs are read and if one is true then True is written to the output value.CALENDAR: No inputs; the current time is compared with an IfcWorkCalendar to which the IfcController is assigned and True is written if active.INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Dxni4HtTBdRU_njcx4d1I
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Dxni4HtTBdRU_njcx4d1I
+    ifdGuid: 3Dxni4HtTBdRU_njcx4d1I
+- propertyName: Labels
+  usageDefinition: Table mapping values to labels, where such labels indicate the meanings of True and False, such as 'Open' and 'Closed'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cFadvH0DDdxHei1FZ86oS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cFadvH0DDdxHei1FZ86oS
+    ifdGuid: 3cFadvH0DDdxHei1FZ86oS
+- propertyName: Polarity
+  usageDefinition: True indicates normal polarity; False indicates reverse polarity.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2jKgxxlx99_8_D$bCxoa6r
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2jKgxxlx99_8_D$bCxoa6r
+    ifdGuid: 2jKgxxlx99_8_D$bCxoa6r
+- propertyName: Value
+  usageDefinition: The default value such as normally-closed or normally-open.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0h26_rTLj7tf8lrVBFh97G
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0h26_rTLj7tf8lrVBFh97G
+    ifdGuid: 0h26_rTLj7tf8lrVBFh97G
 properties:
 - name: ControlType
   definition: 'The type of signal modification effected and applicable ports:LOWERLIMITSWITCH: Single analog input is read and if less than Value.LowerBound then True is written to the output value.UPPERLIMITSWITCH: Single analog input is read and if more than Value.UpperBound then True is written to the output value.LOWERBANDSWITCH: Single analog input is read and if less than Value.LowerBound+BandWidth then True is written to the output value.UPPERBANDSWITCH: Single analog input is read and if more than Value.UpperBound-BandWidth then True is written to the output value.NOT: Single binary input is read and the opposite value is written to the output value.AND: Two binary inputs are read and if both are True then True is written to the output value.OR: Two binary inputs are read and if either is True then True is written to the output value.XOR: Two binary inputs are read and if one is true then True is written to the output value.CALENDAR: No inputs; the current time is compared with an IfcWorkCalendar to which the IfcController is assigned and True is written if active.INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/02vpC0qSuHuO00025QrE$V
     ifdGuid: 02vpC0qSuHuO00025QrE$V
     legacyGuid: 02e73300d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 02vpC0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 02vpC0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -440,6 +477,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0W7060qSuHuO00025QrE$V
     ifdGuid: 0W7060qSuHuO00025QrE$V
     legacyGuid: 201c0180d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 0W7060qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0W7060qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -492,6 +531,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dswO0qSuHuO00025QrE$V
     ifdGuid: 0dswO0qSuHuO00025QrE$V
     legacyGuid: 27dba600d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 0dswO0qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0dswO0qSuHuO00025QrE$V
   localizations:
   - language: en
@@ -538,6 +579,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jEF20qSuHuO00025QrE$V
     ifdGuid: 0jEF20qSuHuO00025QrE$V
     legacyGuid: 2d38f080d1ce11e1800000215ad4efdf
+    legacyGuids:
+    - 0jEF20qSuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0jEF20qSuHuO00025QrE$V
   localizations:
   - language: en

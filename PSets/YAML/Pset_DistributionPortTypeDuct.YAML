@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vTV6IQiP25Pl_EHmISb8h
   ifdGuid: 3vTV6IQiP25Pl_EHmISb8h
   legacyGuid: e3a0f7f7ae494e08baa3474d1816fafd
+  legacyGuids:
+  - 3ZeFVthabE2BgZHqqO5lhz
   legacyGuidAsIfcGlobalId: 3ZeFVthabE2BgZHqqO5lhz
 localizations:
 - language: de-DE
@@ -31,6 +33,87 @@ localizations:
 applicableIfcClasses:
 - name: IfcDistributionPort/DUCT
   type: IfcDistributionPort/DUCT
+propertyUsages:
+- propertyName: ConnectionType
+  usageDefinition: 'The end-style treatment of the duct port:BEADEDSLEEVE: Beaded Sleeve. COMPRESSION: Compression. CRIMP: Crimp. DRAWBAND: Drawband. DRIVESLIP: Drive slip. FLANGED: Flanged. OUTSIDESLEEVE: Outside Sleeve. SLIPON: Slipon. SOLDERED: Soldered. SSLIP: S-Slip. STANDINGSEAM: Standing seam. SWEDGE: Swedge. WELDED: Welded. OTHER: Another type of end-style has been applied.NONE: No end-style has been applied.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2xpv1EHwP0GxyCeMz60Lg5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xpv1EHwP0GxyCeMz60Lg5
+    ifdGuid: 2xpv1EHwP0GxyCeMz60Lg5
+- propertyName: ConnectionSubType
+  usageDefinition: The physical port connection subtype that further qualifies the ConnectionType.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3F_ek_x_HDweYADRNCORd6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3F_ek_x_HDweYADRNCORd6
+    ifdGuid: 3F_ek_x_HDweYADRNCORd6
+- propertyName: NominalWidth
+  usageDefinition: The nominal width or diameter of the duct connection.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2TvIbg79H69e_T8EhkBW99
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TvIbg79H69e_T8EhkBW99
+    ifdGuid: 2TvIbg79H69e_T8EhkBW99
+- propertyName: NominalHeight
+  usageDefinition: The nominal height of the duct connection. Only provided for rectangular shaped ducts.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3QIaqUGSz4ewCNOqUQgISS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3QIaqUGSz4ewCNOqUQgISS
+    ifdGuid: 3QIaqUGSz4ewCNOqUQgISS
+- propertyName: NominalThickness
+  usageDefinition: The nominal wall thickness of the duct at the connection point.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1imbaXR_H9XhNCDYBU86b$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1imbaXR_H9XhNCDYBU86b$
+    ifdGuid: 1imbaXR_H9XhNCDYBU86b$
+- propertyName: DryBulbTemperature
+  usageDefinition: Dry bulb temperature of the air.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OUY2cOebAPOKllyV_abGt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OUY2cOebAPOKllyV_abGt
+    ifdGuid: 1OUY2cOebAPOKllyV_abGt
+- propertyName: WetBulbTemperature
+  usageDefinition: Wet bulb temperature of the air.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3aMM0$1EXAl9b69XwTs1eQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3aMM0$1EXAl9b69XwTs1eQ
+    ifdGuid: 3aMM0$1EXAl9b69XwTs1eQ
+- propertyName: VolumetricFlowRate
+  usageDefinition: The volumetric flow rate of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Wi_o77cPBl8z$UpHdOWSk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Wi_o77cPBl8z$UpHdOWSk
+    ifdGuid: 0Wi_o77cPBl8z$UpHdOWSk
+- propertyName: Velocity
+  usageDefinition: The velocity of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/180d7IIJH9IwmLwK4BHdke
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/180d7IIJH9IwmLwK4BHdke
+    ifdGuid: 180d7IIJH9IwmLwK4BHdke
+- propertyName: Pressure
+  usageDefinition: The pressure of the fluid.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/19R56dXyHCMAue02KBbwFi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/19R56dXyHCMAue02KBbwFi
+    ifdGuid: 19R56dXyHCMAue02KBbwFi
 properties:
 - name: ConnectionType
   definition: 'The end-style treatment of the duct port:BEADEDSLEEVE: Beaded Sleeve. COMPRESSION: Compression. CRIMP: Crimp. DRAWBAND: Drawband. DRIVESLIP: Drive slip. FLANGED: Flanged. OUTSIDESLEEVE: Outside Sleeve. SLIPON: Slipon. SOLDERED: Soldered. SSLIP: S-Slip. STANDINGSEAM: Standing seam. SWEDGE: Swedge. WELDED: Welded. OTHER: Another type of end-style has been applied.NONE: No end-style has been applied.'
@@ -41,6 +124,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3t3GeySFP4pO64Rh$EGncD
     ifdGuid: 3t3GeySFP4pO64Rh$EGncD
     legacyGuid: d2b239a61db14c2ab423e3d735a6de1f
+    legacyGuids:
+    - 3IiZcc7R5CAhGZuzSrfjuV
     legacyGuidAsIfcGlobalId: 3IiZcc7R5CAhGZuzSrfjuV
   localizations:
   - language: en
@@ -459,6 +544,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CZ3bk52j8oOxxVxaZdHOX
     ifdGuid: 1CZ3bk52j8oOxxVxaZdHOX
     legacyGuid: 15d916dd1d7340bc81481576f81d2a08
+    legacyGuids:
+    - 0LsHRT7ND0l8585NRu7Ie8
     legacyGuidAsIfcGlobalId: 0LsHRT7ND0l8585NRu7Ie8
   localizations:
   - language: en
@@ -505,6 +592,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mlld_nqrA8xptm32Gw9Qo
     ifdGuid: 3mlld_nqrA8xptm32Gw9Qo
     legacyGuid: a28e9f226e204a909976810e633a45f4
+    legacyGuids:
+    - 2YZfyYRY1Aa9bsWGvZEaNq
     legacyGuidAsIfcGlobalId: 2YZfyYRY1Aa9bsWGvZEaNq
   localizations:
   - language: en
@@ -551,6 +640,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1x6$w$9_z7EvsMgQjLYtrR
     ifdGuid: 1x6$w$9_z7EvsMgQjLYtrR
     legacyGuid: 90a90418907a41809a527bb1ef069005
+    legacyGuids:
+    - 2GgGGOa7f1W9fIUx7l1f05
     legacyGuidAsIfcGlobalId: 2GgGGOa7f1W9fIUx7l1f05
   localizations:
   - language: en
@@ -595,8 +686,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '3pZ7qPh79EkeywkiNX$j9f'
+    ifdGuid: 3pZ7qPh79EkeywkiNX$j9f
     legacyGuid: 9aa93573818943ee9e7ad7e898fddfae
+    legacyGuids:
+    - 2QgJLpWOb3xfvwr_YO$T_k
     legacyGuidAsIfcGlobalId: 2QgJLpWOb3xfvwr_YO$T_k
   localizations:
   - language: en
@@ -643,6 +736,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iiC9qc4fA3RLxhlkV1F5c
     ifdGuid: 2iiC9qc4fA3RLxhlkV1F5c
     legacyGuid: 0e28d2efe50346319664f17e52ebd118
+    legacyGuids:
+    - 0EADBlvGD6CPPayNvIwz4O
     legacyGuidAsIfcGlobalId: 0EADBlvGD6CPPayNvIwz4O
   localizations:
   - language: en
@@ -690,6 +785,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2BgqgTJBXF28PNOJnKB5Lc
     ifdGuid: 2BgqgTJBXF28PNOJnKB5Lc
     legacyGuid: 46e6cb4f3ecb4016b3d952ec26836ce6
+    legacyGuids:
+    - 16vijFFij05hFPKkmcWspc
     legacyGuidAsIfcGlobalId: 16vijFFij05hFPKkmcWspc
   localizations:
   - language: en
@@ -737,6 +834,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VqSV9qtT51eSFMEPET903
     ifdGuid: 1VqSV9qtT51eSFMEPET903
     legacyGuid: 639c0067eb444ed8b9d177247c1f1cc2
+    legacyGuids:
+    - 1Zd01dwqHEsBdHToHy7np2
     legacyGuidAsIfcGlobalId: 1Zd01dwqHEsBdHToHy7np2
   localizations:
   - language: en
@@ -784,6 +883,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YXvh3uIPETf1nupTurT2m
     ifdGuid: 2YXvh3uIPETf1nupTurT2m
     legacyGuid: 26538518abf6475ba1562ce731d7975e
+    legacyGuids:
+    - 0cKuKOg$P7Mw5MBESnrvTU
     legacyGuidAsIfcGlobalId: 0cKuKOg$P7Mw5MBESnrvTU
   localizations:
   - language: en
@@ -831,6 +932,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1lP2V15Yj8HgGPnWGj$hR6
     ifdGuid: 1lP2V15Yj8HgGPnWGj$hR6
     legacyGuid: 7583cd7c5ea74d109e2b6ad6d0dafa4b
+    legacyGuids:
+    - 1rWyryNgTD49uhQjRGslfB
     legacyGuidAsIfcGlobalId: 1rWyryNgTD49uhQjRGslfB
   localizations:
   - language: en

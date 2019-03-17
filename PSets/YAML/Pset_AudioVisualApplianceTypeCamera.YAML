@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vy6I0qS4HuO00025QrE$V
   ifdGuid: 3vy6I0qS4HuO00025QrE$V
   legacyGuid: f9f06480d1c111e1800000215ad4efdf
+  legacyGuids:
+  - 3vy6I0qS4HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3vy6I0qS4HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,103 @@ localizations:
 applicableIfcClasses:
 - name: IfcAudioVisualAppliance/CAMERA
   type: IfcAudioVisualAppliance/CAMERA
+propertyUsages:
+- propertyName: CameraType
+  usageDefinition: Indicates the type of camera.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0vtsOUVgH7Iuy7BIU5J3pd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0vtsOUVgH7Iuy7BIU5J3pd
+    ifdGuid: 0vtsOUVgH7Iuy7BIU5J3pd
+- propertyName: IsOutdoors
+  usageDefinition: Indicates if camera is designed to be used outdoors.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11xTA_x6P7OPH86kiCRja3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11xTA_x6P7OPH86kiCRja3
+    ifdGuid: 11xTA_x6P7OPH86kiCRja3
+- propertyName: VideoResolutionWidth
+  usageDefinition: Indicates the number of horizontal pixels (the largest native video resolution width).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2KOC9Bghb8wxyq5gf8u2L0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KOC9Bghb8wxyq5gf8u2L0
+    ifdGuid: 2KOC9Bghb8wxyq5gf8u2L0
+- propertyName: VideoResolutionHeight
+  usageDefinition: Indicates the number of vertical pixels (the largest native video resolution height).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Q4fy9D5f7uBJNUIy86VPI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Q4fy9D5f7uBJNUIy86VPI
+    ifdGuid: 1Q4fy9D5f7uBJNUIy86VPI
+- propertyName: VideoResolutionMode
+  usageDefinition: Indicates video resolution modes.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3PlEBkJJf6pQlerJT40nyM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PlEBkJJf6pQlerJT40nyM
+    ifdGuid: 3PlEBkJJf6pQlerJT40nyM
+- propertyName: VideoCaptureInterval
+  usageDefinition: Indicates video frame capture time intervals.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2YOnMooVr2J89fz4OTKhlU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YOnMooVr2J89fz4OTKhlU
+    ifdGuid: 2YOnMooVr2J89fz4OTKhlU
+- propertyName: PanTiltZoomPreset
+  usageDefinition: Indicates pan/tilt/zoom position presets.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0guvA21v134xJ$wqrNiudH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0guvA21v134xJ$wqrNiudH
+    ifdGuid: 0guvA21v134xJ$wqrNiudH
+- propertyName: PanHorizontal
+  usageDefinition: Indicates horizontal range for panning.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1qb3DHUCn95QWFm$LC$QeX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qb3DHUCn95QWFm$LC$QeX
+    ifdGuid: 1qb3DHUCn95QWFm$LC$QeX
+- propertyName: PanVertical
+  usageDefinition: Indicates vertical range for panning.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3OG1e_sXDDFBzMr807axzS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3OG1e_sXDDFBzMr807axzS
+    ifdGuid: 3OG1e_sXDDFBzMr807axzS
+- propertyName: TiltHorizontal
+  usageDefinition: Indicates horizontal range for pivoting, where positive values indicate the camera rotating clockwise,
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/26NjNSiIv6JfRL9alnJOi$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26NjNSiIv6JfRL9alnJOi$
+    ifdGuid: 26NjNSiIv6JfRL9alnJOi$
+- propertyName: TiltVertical
+  usageDefinition: Indicates vertical range for pivoting, where 0.0 is level, +90 degrees is looking up, -90 degrees is looking down.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Tul4UngnACOXWOVBkmgwu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Tul4UngnACOXWOVBkmgwu
+    ifdGuid: 1Tul4UngnACOXWOVBkmgwu
+- propertyName: Zoom
+  usageDefinition: Indicates the zoom range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0sRy7zBbT6tPWVUr9n1JCW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sRy7zBbT6tPWVUr9n1JCW
+    ifdGuid: 0sRy7zBbT6tPWVUr9n1JCW
 properties:
 - name: CameraType
   definition: Indicates the type of camera.
@@ -41,6 +140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_jHY0qS4HuO00025QrE$V
     ifdGuid: 3_jHY0qS4HuO00025QrE$V
     legacyGuid: feb51880d1c111e1800000215ad4efdf
+    legacyGuids:
+    - 3_jHY0qS4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3_jHY0qS4HuO00025QrE$V
   localizations:
   - language: en
@@ -220,6 +321,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ED660qS8HuO00025QrE$V
     ifdGuid: 0ED660qS8HuO00025QrE$V
     legacyGuid: 0e346180d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0ED660qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0ED660qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -269,6 +372,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JaQm0qS8HuO00025QrE$V
     ifdGuid: 0JaQm0qS8HuO00025QrE$V
     legacyGuid: 1391ac00d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0JaQm0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0JaQm0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -318,6 +423,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0OxlQ0qS8HuO00025QrE$V
     ifdGuid: 0OxlQ0qS8HuO00025QrE$V
     legacyGuid: 18eef680d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0OxlQ0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0OxlQ0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -367,6 +474,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UJ440qS8HuO00025QrE$V
     ifdGuid: 0UJ440qS8HuO00025QrE$V
     legacyGuid: 1e4c4100d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0UJ440qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0UJ440qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -422,6 +531,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bSqy0qS8HuO00025QrE$V
     ifdGuid: 0bSqy0qS8HuO00025QrE$V
     legacyGuid: 25734f00d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0bSqy0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0bSqy0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -474,6 +585,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jClE0qS8HuO00025QrE$V
     ifdGuid: 0jClE0qS8HuO00025QrE$V
     legacyGuid: 2d32f380d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0jClE0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0jClE0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -526,6 +639,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qyfW0qS8HuO00025QrE$V
     ifdGuid: 0qyfW0qS8HuO00025QrE$V
     legacyGuid: 34f29800d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0qyfW0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0qyfW0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -573,6 +688,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0y6QO0qS8HuO00025QrE$V
     ifdGuid: 0y6QO0qS8HuO00025QrE$V
     legacyGuid: 3c19a600d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 0y6QO0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0y6QO0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -620,6 +737,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12g1s0qS8HuO00025QrE$V
     ifdGuid: 12g1s0qS8HuO00025QrE$V
     legacyGuid: 42a81d80d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 12g1s0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 12g1s0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -667,6 +786,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18dVw0qS8HuO00025QrE$V
     ifdGuid: 18dVw0qS8HuO00025QrE$V
     legacyGuid: 489dfe80d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 18dVw0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 18dVw0qS8HuO00025QrE$V
   localizations:
   - language: en
@@ -714,6 +835,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Eaz_0qS8HuO00025QrE$V
     ifdGuid: 1Eaz_0qS8HuO00025QrE$V
     legacyGuid: 4e93df80d1c211e1800000215ad4efdf
+    legacyGuids:
+    - 1Eaz_0qS8HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Eaz_0qS8HuO00025QrE$V
   localizations:
   - language: en

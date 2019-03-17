@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21wcI0qUeHuO00025QrE$V
   ifdGuid: 21wcI0qUeHuO00025QrE$V
   legacyGuid: 81ea6480d1ea11e1800000215ad4efdf
+  legacyGuids:
+  - 21wcI0qUeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 21wcI0qUeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,79 @@ localizations:
 applicableIfcClasses:
 - name: IfcJunctionBox
   type: IfcJunctionBox
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3wlLdIQVrFePCxE24QwFfd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wlLdIQVrFePCxE24QwFfd
+    ifdGuid: 3wlLdIQVrFePCxE24QwFfd
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ssWXXtQXDkxOkhcA8MSOu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ssWXXtQXDkxOkhcA8MSOu
+    ifdGuid: 3ssWXXtQXDkxOkhcA8MSOu
+- propertyName: NumberOfGangs
+  usageDefinition: Number of slots available for switches/outlets (most commonly 1, 2, 3, or 4).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2JhWeYT8D5qxSGAPOiwcSU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JhWeYT8D5qxSGAPOiwcSU
+    ifdGuid: 2JhWeYT8D5qxSGAPOiwcSU
+- propertyName: ClearDepth
+  usageDefinition: Clear unobstructed depth available for cable inclusion within the junction box.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1RpnXF4SrCYQWPjh03CPv0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RpnXF4SrCYQWPjh03CPv0
+    ifdGuid: 1RpnXF4SrCYQWPjh03CPv0
+- propertyName: ShapeType
+  usageDefinition: Shape of the junction box.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3rULHcSBjDPAReN_uutGS_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rULHcSBjDPAReN_uutGS_
+    ifdGuid: 3rULHcSBjDPAReN_uutGS_
+- propertyName: PlacingType
+  usageDefinition: Location at which the type of junction box can be located.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0veNj2ew57pAnbbT8FRau2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0veNj2ew57pAnbbT8FRau2
+    ifdGuid: 0veNj2ew57pAnbbT8FRau2
+- propertyName: MountingType
+  usageDefinition: Method of mounting to be adopted for the type of junction box.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1PVKYRKzPA$xo_d0lZdx58
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PVKYRKzPA$xo_d0lZdx58
+    ifdGuid: 1PVKYRKzPA$xo_d0lZdx58
+- propertyName: IsExternal
+  usageDefinition: Indication of whether the junction box type is allowed for exposure to outdoor elements (set TRUE where external exposure is allowed).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ebDrDAdHD$9R3WTaMkxm3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ebDrDAdHD$9R3WTaMkxm3
+    ifdGuid: 1ebDrDAdHD$9R3WTaMkxm3
+- propertyName: IP_Code
+  usageDefinition: IEC 60529 (1989) Classification of degrees of protection provided by enclosures (IP Code).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hFlYVhO94iPPaC5Z3ddQ1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hFlYVhO94iPPaC5Z3ddQ1
+    ifdGuid: 0hFlYVhO94iPPaC5Z3ddQ1
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -45,6 +120,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/27u4M0qUeHuO00025QrE$V
     ifdGuid: 27u4M0qUeHuO00025QrE$V
     legacyGuid: 87e04580d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 27u4M0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 27u4M0qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -94,6 +171,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DrYQ0qUeHuO00025QrE$V
     ifdGuid: 2DrYQ0qUeHuO00025QrE$V
     legacyGuid: 8dd62680d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 2DrYQ0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2DrYQ0qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -292,6 +371,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TxWO0qUeHuO00025QrE$V
     ifdGuid: 2TxWO0qUeHuO00025QrE$V
     legacyGuid: 9dee0600d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 2TxWO0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2TxWO0qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -341,6 +422,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ZIr20qUeHuO00025QrE$V
     ifdGuid: 2ZIr20qUeHuO00025QrE$V
     legacyGuid: a34b5080d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 2ZIr20qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2ZIr20qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -390,6 +473,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2kddm0qUeHuO00025QrE$V
     ifdGuid: 2kddm0qUeHuO00025QrE$V
     legacyGuid: ae9e7c00d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 2kddm0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2kddm0qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -569,6 +654,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_jbk0qUeHuO00025QrE$V
     ifdGuid: 2_jbk0qUeHuO00025QrE$V
     legacyGuid: beb65b80d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 2_jbk0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_jbk0qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -748,6 +835,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EpZi0qUeHuO00025QrE$V
     ifdGuid: 3EpZi0qUeHuO00025QrE$V
     legacyGuid: cece3b00d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 3EpZi0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3EpZi0qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -927,6 +1016,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VVh40qUeHuO00025QrE$V
     ifdGuid: 3VVh40qUeHuO00025QrE$V
     legacyGuid: df7eb100d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 3VVh40qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3VVh40qUeHuO00025QrE$V
   localizations:
   - language: en
@@ -976,6 +1067,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3c3IY0qUeHuO00025QrE$V
     ifdGuid: 3c3IY0qUeHuO00025QrE$V
     legacyGuid: e60d2880d1ea11e1800000215ad4efdf
+    legacyGuids:
+    - 3c3IY0qUeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3c3IY0qUeHuO00025QrE$V
   localizations:
   - language: en

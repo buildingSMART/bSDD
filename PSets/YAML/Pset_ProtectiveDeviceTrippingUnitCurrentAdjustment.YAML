@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2aqKI0qViHuO00025QrE$V
   ifdGuid: 2aqKI0qViHuO00025QrE$V
   legacyGuid: a4d14480d1fb11e1800000215ad4efdf
+  legacyGuids:
+  - 2aqKI0qViHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2aqKI0qViHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,47 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit
   type: IfcProtectiveDeviceTrippingUnit
+propertyUsages:
+- propertyName: AdjustmentValueType
+  usageDefinition: The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0bdr8BeXv5R9lpz2Su6tS9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bdr8BeXv5R9lpz2Su6tS9
+    ifdGuid: 0bdr8BeXv5R9lpz2Su6tS9
+- propertyName: AdjustmentRange
+  usageDefinition: Upper and lower current adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Lzetr9ZP2mAYCyyj12ySW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Lzetr9ZP2mAYCyyj12ySW
+    ifdGuid: 0Lzetr9ZP2mAYCyyj12ySW
+- propertyName: AdjustmentRangeStepValue
+  usageDefinition: Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ZGgLGqJfB5uGufGB4ithF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ZGgLGqJfB5uGufGB4ithF
+    ifdGuid: 2ZGgLGqJfB5uGufGB4ithF
+- propertyName: AdjustmentValues
+  usageDefinition: A list of current adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1oMYhbzKzCUeNSR7kLzjrQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1oMYhbzKzCUeNSR7kLzjrQ
+    ifdGuid: 1oMYhbzKzCUeNSR7kLzjrQ
+- propertyName: AdjustmentDesignation
+  usageDefinition: The desgnation on the device for the adjustment.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1aNVv0GXf46PN$8NnMYfqE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1aNVv0GXf46PN$8NnMYfqE
+    ifdGuid: 1aNVv0GXf46PN$8NnMYfqE
 properties:
 - name: AdjustmentValueType
   definition: The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).
@@ -41,6 +84,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ePCk0qViHuO00025QrE$V
     ifdGuid: 2ePCk0qViHuO00025QrE$V
     legacyGuid: a864cb80d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 2ePCk0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2ePCk0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -132,6 +177,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mlGQ0qViHuO00025QrE$V
     ifdGuid: 2mlGQ0qViHuO00025QrE$V
     legacyGuid: b0bd0680d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 2mlGQ0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2mlGQ0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -182,6 +229,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uVAi0qViHuO00025QrE$V
     ifdGuid: 2uVAi0qViHuO00025QrE$V
     legacyGuid: b87cab00d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 2uVAi0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2uVAi0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -231,6 +280,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_Sem0qViHuO00025QrE$V
     ifdGuid: 2_Sem0qViHuO00025QrE$V
     legacyGuid: be728c00d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 2_Sem0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_Sem0qViHuO00025QrE$V
   localizations:
   - language: en
@@ -280,6 +331,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34Q6q0qViHuO00025QrE$V
     ifdGuid: 34Q6q0qViHuO00025QrE$V
     legacyGuid: c4686d00d1fb11e1800000215ad4efdf
+    legacyGuids:
+    - 34Q6q0qViHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 34Q6q0qViHuO00025QrE$V
   localizations:
   - language: en

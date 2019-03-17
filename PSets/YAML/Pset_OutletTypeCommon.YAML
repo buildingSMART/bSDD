@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DxDU0qV4HuO00025QrE$V
   ifdGuid: 3DxDU0qV4HuO00025QrE$V
   legacyGuid: cdecd780d1f111e1800000215ad4efdf
+  legacyGuids:
+  - 3DxDU0qV4HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3DxDU0qV4HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcOutlet
   type: IfcOutlet
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1yjtnTYKb3IQ4mzlBVBl$U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1yjtnTYKb3IQ4mzlBVBl$U
+    ifdGuid: 1yjtnTYKb3IQ4mzlBVBl$U
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Cdwa$Xqr2KAmjTnP4dbwu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Cdwa$Xqr2KAmjTnP4dbwu
+    ifdGuid: 1Cdwa$Xqr2KAmjTnP4dbwu
+- propertyName: IsPluggableOutlet
+  usageDefinition: Indication of whether the outlet accepts a loose plug connection (= TRUE) or whether it is directly connected (= FALSE) or whether the form of connection has not yet been determined (= UNKNOWN).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2h9hwHlBT2O9NuLDNewTbp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2h9hwHlBT2O9NuLDNewTbp
+    ifdGuid: 2h9hwHlBT2O9NuLDNewTbp
+- propertyName: NumberOfSockets
+  usageDefinition: The number of sockets that may be connected. In case of inconsistency, sockets defined on ports take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ucmqO2xvFYwFyLUPRV1$1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ucmqO2xvFYwFyLUPRV1$1
+    ifdGuid: 1ucmqO2xvFYwFyLUPRV1$1
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JIY80qV4HuO00025QrE$V
     ifdGuid: 3JIY80qV4HuO00025QrE$V
     legacyGuid: d34a2200d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 3JIY80qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3JIY80qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +127,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PG0C0qV4HuO00025QrE$V
     ifdGuid: 3PG0C0qV4HuO00025QrE$V
     legacyGuid: d9400300d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 3PG0C0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3PG0C0qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -288,6 +327,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3e9hM0qV4HuO00025QrE$V
     ifdGuid: 3e9hM0qV4HuO00025QrE$V
     legacyGuid: e826b580d1f111e1800000215ad4efdf
+    legacyGuids:
+    - 3e9hM0qV4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3e9hM0qV4HuO00025QrE$V
   localizations:
   - language: en
@@ -335,8 +376,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '00KAQC041D2AEzidWL0A8J'
+    ifdGuid: 00KAQC041D2AEzidWL0A8J
     legacyGuid: f9dc44b033ee47e8adeafbbbd20abdd8
+    legacyGuids:
+    - 3vt4ImC_v7wAtg_xlI2htO
     legacyGuidAsIfcGlobalId: 3vt4ImC_v7wAtg_xlI2htO
   localizations:
   - language: en

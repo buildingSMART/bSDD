@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0g3oO0qWaHuO00025QrE$V
   ifdGuid: 0g3oO0qWaHuO00025QrE$V
   legacyGuid: 2a0f2600d20911e1800000215ad4efdf
+  legacyGuids:
+  - 0g3oO0qWaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0g3oO0qWaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,55 @@ applicableIfcClasses:
   type: IfcSpace, IfcSpatialZone, IfcZone
 - name: ' IfcZone'
   type: IfcSpace, IfcSpatialZone, IfcZone
+propertyUsages:
+- propertyName: FireRiskFactor
+  usageDefinition: Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1QPclABVTEGwm$Z6Qd5AsW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QPclABVTEGwm$Z6Qd5AsW
+    ifdGuid: 1QPclABVTEGwm$Z6Qd5AsW
+- propertyName: FlammableStorage
+  usageDefinition: Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/31jp0KxDvBe8EaugmAUzoc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31jp0KxDvBe8EaugmAUzoc
+    ifdGuid: 31jp0KxDvBe8EaugmAUzoc
+- propertyName: FireExit
+  usageDefinition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Cpc5Wgyn2CRcIQ9neJLje
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Cpc5Wgyn2CRcIQ9neJLje
+    ifdGuid: 2Cpc5Wgyn2CRcIQ9neJLje
+- propertyName: SprinklerProtection
+  usageDefinition: Indication whether the space is sprinkler protected (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2D7dQCNNfEuAJYCrLDPbMY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2D7dQCNNfEuAJYCrLDPbMY
+    ifdGuid: 2D7dQCNNfEuAJYCrLDPbMY
+- propertyName: SprinklerProtectionAutomatic
+  usageDefinition: Indication whether the space has an automatic sprinkler protection (TRUE) or not (FALSE).It should only be given, if the property "SprinklerProtection" is set to TRUE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2QelTecaDEkxt4yKsbnGf9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QelTecaDEkxt4yKsbnGf9
+    ifdGuid: 2QelTecaDEkxt4yKsbnGf9
+- propertyName: AirPressurization
+  usageDefinition: Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06$o8FUdP32Rg7dB9wzxXL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06$o8FUdP32Rg7dB9wzxXL
+    ifdGuid: 06$o8FUdP32Rg7dB9wzxXL
 properties:
 - name: FireRiskFactor
   definition: Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.
@@ -45,6 +96,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0pc8u0qWaHuO00025QrE$V
     ifdGuid: 0pc8u0qWaHuO00025QrE$V
     legacyGuid: 33988e00d20911e1800000215ad4efdf
+    legacyGuids:
+    - 0pc8u0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0pc8u0qWaHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -94,6 +147,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yYL_0qWaHuO00025QrE$V
     ifdGuid: 0yYL_0qWaHuO00025QrE$V
     legacyGuid: 3c895f80d20911e1800000215ad4efdf
+    legacyGuids:
+    - 0yYL_0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0yYL_0qWaHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -143,6 +198,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sylo0qWaHuO00025QrE$V
     ifdGuid: 1sylo0qWaHuO00025QrE$V
     legacyGuid: 76f2fc80d20911e1800000215ad4efdf
+    legacyGuids:
+    - 1sylo0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1sylo0qWaHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -192,6 +249,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_6Wg0qWaHuO00025QrE$V
     ifdGuid: 1_6Wg0qWaHuO00025QrE$V
     legacyGuid: 7e1a0a80d20911e1800000215ad4efdf
+    legacyGuids:
+    - 1_6Wg0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1_6Wg0qWaHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -241,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/243_k0qWaHuO00025QrE$V
     ifdGuid: 243_k0qWaHuO00025QrE$V
     legacyGuid: 840feb80d20911e1800000215ad4efdf
+    legacyGuids:
+    - 243_k0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 243_k0qWaHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -290,6 +351,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Bpv00qWaHuO00025QrE$V
     ifdGuid: 2Bpv00qWaHuO00025QrE$V
     legacyGuid: 8bcf9000d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2Bpv00qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Bpv00qWaHuO00025QrE$V
   localizations:
   - language: de-DE

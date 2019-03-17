@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$B4S0qSiHuO00025QrE$V
   ifdGuid: 1$B4S0qSiHuO00025QrE$V
   legacyGuid: 7f2c4700d1cb11e1800000215ad4efdf
+  legacyGuids:
+  - 1$B4S0qSiHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1$B4S0qSiHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -63,6 +65,103 @@ applicableIfcClasses:
   type: IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement
 - name: IfcCivilElement
   type: IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement
+propertyUsages:
+- propertyName: ConstructionMethod
+  usageDefinition: "Designator for whether the concrete element is constructed on site or prefabricated. Allowed values are: 'In-Situ' vs 'Precast'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_Wh1vRq51SQEyzrrEwVpA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_Wh1vRq51SQEyzrrEwVpA
+    ifdGuid: 2_Wh1vRq51SQEyzrrEwVpA
+- propertyName: StructuralClass
+  usageDefinition: The structural class defined for the concrete structure (e.g. '1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3MHAjWo8zDYh6$cEAFZ316
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MHAjWo8zDYh6$cEAFZ316
+    ifdGuid: 3MHAjWo8zDYh6$cEAFZ316
+- propertyName: StrengthClass
+  usageDefinition: Classification of the concrete strength in accordance with the concrete design code which is applied in the project.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ncHNFxNL3rwktBXsaaXBY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ncHNFxNL3rwktBXsaaXBY
+    ifdGuid: 1ncHNFxNL3rwktBXsaaXBY
+- propertyName: ExposureClass
+  usageDefinition: Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2GVhlCYbLDYB9WnRqeRZmX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2GVhlCYbLDYB9WnRqeRZmX
+    ifdGuid: 2GVhlCYbLDYB9WnRqeRZmX
+- propertyName: ReinforcementVolumeRatio
+  usageDefinition: The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ss_sbVUnFKOcRG3aAV349
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ss_sbVUnFKOcRG3aAV349
+    ifdGuid: 1ss_sbVUnFKOcRG3aAV349
+- propertyName: ReinforcementAreaRatio
+  usageDefinition: The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0cQp5K7cbAlx7RgbXz2NKC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cQp5K7cbAlx7RgbXz2NKC
+    ifdGuid: 0cQp5K7cbAlx7RgbXz2NKC
+- propertyName: DimensionalAccuracyClass
+  usageDefinition: Classification designation of the dimensional accuracy requirement according to local standards.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0HS6KWQDv1fep1Me$_kNh_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0HS6KWQDv1fep1Me$_kNh_
+    ifdGuid: 0HS6KWQDv1fep1Me$_kNh_
+- propertyName: ConstructionToleranceClass
+  usageDefinition: Classification designation of the on-site construction tolerances according to local standards.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/03L6YyQ_nC1BfcpbLbLWrM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03L6YyQ_nC1BfcpbLbLWrM
+    ifdGuid: 03L6YyQ_nC1BfcpbLbLWrM
+- propertyName: ConcreteCover
+  usageDefinition: The protective concrete cover at the reinforcing bars according to local building regulations.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Mj0RVskXD9vAa5uSOIVeq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Mj0RVskXD9vAa5uSOIVeq
+    ifdGuid: 3Mj0RVskXD9vAa5uSOIVeq
+- propertyName: ConcreteCoverAtMainBars
+  usageDefinition: The protective concrete cover at the main reinforcing bars according to local building regulations.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1VK1hbgTP5pP3Vd_sCfucw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VK1hbgTP5pP3Vd_sCfucw
+    ifdGuid: 1VK1hbgTP5pP3Vd_sCfucw
+- propertyName: ConcreteCoverAtLinks
+  usageDefinition: The protective concrete cover at the reinforcement links according to local building regulations.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sl12i6m19q8BnQvQYiS9Q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sl12i6m19q8BnQvQYiS9Q
+    ifdGuid: 2sl12i6m19q8BnQvQYiS9Q
+- propertyName: ReinforcementStrengthClass
+  usageDefinition: Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2cwZ_E8KfD7fD5H$_67$2J
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cwZ_E8KfD7fD5H$_67$2J
+    ifdGuid: 2cwZ_E8KfD7fD5H$_67$2J
 properties:
 - name: ConstructionMethod
   definition: "Designator for whether the concrete element is constructed on site or prefabricated. Allowed values are: 'In-Situ' vs 'Precast'."
@@ -73,6 +172,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0uD8LqG39AORAVPayUkPlg
     ifdGuid: 0uD8LqG39AORAVPayUkPlg
     legacyGuid: 64af56b30b4540c2b43d74b49a28b9db
+    legacyGuids:
+    - 1ahrQp2qL0mhGzTBIQABdR
     legacyGuidAsIfcGlobalId: 1ahrQp2qL0mhGzTBIQABdR
   localizations:
   - language: de-DE
@@ -119,6 +220,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24YP60qSiHuO00025QrE$V
     ifdGuid: 24YP60qSiHuO00025QrE$V
     legacyGuid: 84899180d1cb11e1800000215ad4efdf
+    legacyGuids:
+    - 24YP60qSiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24YP60qSiHuO00025QrE$V
   localizations:
   - language: en
@@ -168,6 +271,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/15ZGdmWsb6Tx2ZbSZiED39
     ifdGuid: 15ZGdmWsb6Tx2ZbSZiED39
     legacyGuid: 96390dc443fd41d88cb6aca86dce4993
+    legacyGuids:
+    - 2MEGt4G$r1s8oshAXjpacJ
     legacyGuidAsIfcGlobalId: 2MEGt4G$r1s8oshAXjpacJ
   localizations:
   - language: de-DE
@@ -214,6 +319,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1GdqRqbtT0Mv4ePNA5Qcp$
     ifdGuid: 1GdqRqbtT0Mv4ePNA5Qcp$
     legacyGuid: 9bee0bf72ad34a66bef57b71b7ca175b
+    legacyGuids:
+    - 2RxWltAjDAPhxrUt6toXTR
     legacyGuidAsIfcGlobalId: 2RxWltAjDAPhxrUt6toXTR
   localizations:
   - language: de-DE
@@ -258,8 +365,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0GQlBv9ij3jeKIyVJNB7ZZ'
+    ifdGuid: 0GQlBv9ij3jeKIyVJNB7ZZ
     legacyGuid: a1c0e785c9bc41878ddbc67fd0ff3d26
+    legacyGuids:
+    - 2XmEU5oRn1XutRnd$G$pqc
     legacyGuidAsIfcGlobalId: 2XmEU5oRn1XutRnd$G$pqc
   localizations:
   - language: de-DE
@@ -306,6 +415,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34F4GIouD46fxHnpoILh6b
     ifdGuid: 34F4GIouD46fxHnpoILh6b
     legacyGuid: 036938642cbf49e2a90d346134ac7475
+    legacyGuids:
+    - 03QJXaBBz9ugaDD64qh7Hr
     legacyGuidAsIfcGlobalId: 03QJXaBBz9ugaDD64qh7Hr
   localizations:
   - language: de-DE
@@ -352,6 +463,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2akL20qSiHuO00025QrE$V
     ifdGuid: 2akL20qSiHuO00025QrE$V
     legacyGuid: a4b95080d1cb11e1800000215ad4efdf
+    legacyGuids:
+    - 2akL20qSiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2akL20qSiHuO00025QrE$V
   localizations:
   - language: en
@@ -401,6 +514,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hu5w0qSiHuO00025QrE$V
     ifdGuid: 2hu5w0qSiHuO00025QrE$V
     legacyGuid: abe05e80d1cb11e1800000215ad4efdf
+    legacyGuids:
+    - 2hu5w0qSiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2hu5w0qSiHuO00025QrE$V
   localizations:
   - language: en
@@ -450,6 +565,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DNU90jjHAu9WHDJ4TCpdg
     ifdGuid: 0DNU90jjHAu9WHDJ4TCpdg
     legacyGuid: 0764b8e36a7c4275859f1534ea3eec09
+    legacyGuids:
+    - 07PBZZQdn2TOMV5JJgFkm9
     legacyGuidAsIfcGlobalId: 07PBZZQdn2TOMV5JJgFkm9
   localizations:
   - language: de-DE
@@ -496,6 +613,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2u$Ks0qSiHuO00025QrE$V
     ifdGuid: 2u$Ks0qSiHuO00025QrE$V
     legacyGuid: b8fd4d80d1cb11e1800000215ad4efdf
+    legacyGuids:
+    - 2u$Ks0qSiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2u$Ks0qSiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -545,6 +664,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_yow0qSiHuO00025QrE$V
     ifdGuid: 2_yow0qSiHuO00025QrE$V
     legacyGuid: bef32e80d1cb11e1800000215ad4efdf
+    legacyGuids:
+    - 2_yow0qSiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_yow0qSiHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -594,6 +715,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0a$_SNmubANveWrbsv0Hqi
     ifdGuid: 0a$_SNmubANveWrbsv0Hqi
     legacyGuid: b88ca2252c4b4014bcf289bbbd596398
+    legacyGuids:
+    - 2uZA8bB4j05BpoYRkzMMEO
     legacyGuidAsIfcGlobalId: 2uZA8bB4j05BpoYRkzMMEO
   localizations:
   - language: en

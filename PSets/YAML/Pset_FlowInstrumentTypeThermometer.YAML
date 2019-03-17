@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3I4$U0qUSHuO00025QrE$V
   ifdGuid: 3I4$U0qUSHuO00025QrE$V
   legacyGuid: d213f780d1e711e1800000215ad4efdf
+  legacyGuids:
+  - 3I4$U0qUSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3I4$U0qUSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,23 @@ localizations:
 applicableIfcClasses:
 - name: IfcFlowInstrument/THERMOMETER
   type: IfcFlowInstrument/THERMOMETER
+propertyUsages:
+- propertyName: ThermometerType
+  usageDefinition: Identifies the means by which temperature is displayed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2yoKGiHGj7bx7VsINND7IJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2yoKGiHGj7bx7VsINND7IJ
+    ifdGuid: 2yoKGiHGj7bx7VsINND7IJ
+- propertyName: DisplaySize
+  usageDefinition: The physical size of the display. In the case of a stem thermometer, this will be the length of the stem. For a dial thermometer, it will be the diameter of the dial.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2JvF$R8WzET8gRgyzNvVdc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JvF$R8WzET8gRgyzNvVdc
+    ifdGuid: 2JvF$R8WzET8gRgyzNvVdc
 properties:
 - name: ThermometerType
   definition: Identifies the means by which temperature is displayed.
@@ -41,6 +60,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NSK80qUSHuO00025QrE$V
     ifdGuid: 3NSK80qUSHuO00025QrE$V
     legacyGuid: d7714200d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 3NSK80qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3NSK80qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -220,6 +241,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3blru0qUSHuO00025QrE$V
     ifdGuid: 3blru0qUSHuO00025QrE$V
     legacyGuid: e5bf5e00d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 3blru0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3blru0qUSHuO00025QrE$V
   localizations:
   - language: en

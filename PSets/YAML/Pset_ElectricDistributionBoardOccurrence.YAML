@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_PSsKy$X4vfV83FA5ChXX
   ifdGuid: 3_PSsKy$X4vfV83FA5ChXX
   legacyGuid: d30bf543ce1742878f88dcea78c0c03f
+  legacyGuids:
+  - 3J2$L3pXT2Xu_8tEfumC0$
   legacyGuidAsIfcGlobalId: 3J2$L3pXT2Xu_8tEfumC0$
 localizations:
 - language: de-DE
@@ -31,6 +33,23 @@ localizations:
 applicableIfcClasses:
 - name: IfcElectricDistributionBoard
   type: IfcElectricDistributionBoard
+propertyUsages:
+- propertyName: IsMain
+  usageDefinition: Identifies if the current instance is a main distribution point or topmost level in an electrical distribution hierarchy (= TRUE) or a sub-main distribution point (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3s4R4EutP9MQvcQcKEU9dG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3s4R4EutP9MQvcQcKEU9dG
+    ifdGuid: 3s4R4EutP9MQvcQcKEU9dG
+- propertyName: IsSkilledOperator
+  usageDefinition: Identifies if the current instance requires a skilled person or instructed person to perform operations on the distribution board (= TRUE) or whether operations may be performed by a person without appropriate skills or instruction (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0iXe7fHCjBTQQVod0PuUGW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0iXe7fHCjBTQQVod0PuUGW
+    ifdGuid: 0iXe7fHCjBTQQVod0PuUGW
 properties:
 - name: IsMain
   definition: Identifies if the current instance is a main distribution point or topmost level in an electrical distribution hierarchy (= TRUE) or a sub-main distribution point (= FALSE).
@@ -41,6 +60,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1cH47I0iH6OR8JYYXfBsgh
     ifdGuid: 1cH47I0iH6OR8JYYXfBsgh
     legacyGuid: c8b9fc58cd024eeda3208ff916082beb
+    legacyGuids:
+    - 38kVnOpG9ExQCWZ$aM22lh
     legacyGuidAsIfcGlobalId: 38kVnOpG9ExQCWZ$aM22lh
   localizations:
   - language: en
@@ -87,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$jb4wkB9F2PxYcXz2iC24
     ifdGuid: 0$jb4wkB9F2PxYcXz2iC24
     legacyGuid: 421bd7510cf947d8982953510c16a01a
+    legacyGuids:
+    - 126zTH3Fb7s9WfKr4C5g0Q
     legacyGuidAsIfcGlobalId: 126zTH3Fb7s9WfKr4C5g0Q
   localizations:
   - language: en

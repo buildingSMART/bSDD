@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HjtW0qUqHuO00025QrE$V
   ifdGuid: 2HjtW0qUqHuO00025QrE$V
   legacyGuid: 91b77800d1ed11e1800000215ad4efdf
+  legacyGuids:
+  - 2HjtW0qUqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2HjtW0qUqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,79 @@ localizations:
 applicableIfcClasses:
 - name: IfcMaterial
   type: IfcMaterial
+propertyUsages:
+- propertyName: VisibleTransmittance
+  usageDefinition: Transmittance at normal incidence (visible). Defines the fraction of the visible spectrum of solar radiation that passes through per unit area, perpendicular to the surface.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3$CJc7DGz8MBuF9OMxYivX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$CJc7DGz8MBuF9OMxYivX
+    ifdGuid: 3$CJc7DGz8MBuF9OMxYivX
+- propertyName: SolarTransmittance
+  usageDefinition: Transmittance at normal incidence (solar). Defines the fraction of solar radiation that passes through per unit area, perpendicular to the surface.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cS0n1xE1FkQslw1T4FnKf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cS0n1xE1FkQslw1T4FnKf
+    ifdGuid: 3cS0n1xE1FkQslw1T4FnKf
+- propertyName: ThermalIrTransmittance
+  usageDefinition: Thermal IR transmittance at normal incidence. Defines the fraction of thermal energy that passes through per unit area, perpendicular to the surface.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3NhLgJpWr0zx3if1AU0nua
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NhLgJpWr0zx3if1AU0nua
+    ifdGuid: 3NhLgJpWr0zx3if1AU0nua
+- propertyName: ThermalIrEmissivityBack
+  usageDefinition: 'Thermal IR emissivity: back side. Defines the fraction of thermal energy emitted per unit area to "blackbody" at the same temperature, through the "back" side of the material.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3QlY0ECiPDz9jjExFii2c6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3QlY0ECiPDz9jjExFii2c6
+    ifdGuid: 3QlY0ECiPDz9jjExFii2c6
+- propertyName: ThermalIrEmissivityFront
+  usageDefinition: 'Thermal IR emissivity: front side. Defines the fraction of thermal energy emitted per unit area to "blackbody" at the same temperature, through the "front" side of the material.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0g2HOME6H9qOkSJEqeF9em
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0g2HOME6H9qOkSJEqeF9em
+    ifdGuid: 0g2HOME6H9qOkSJEqeF9em
+- propertyName: VisibleReflectanceBack
+  usageDefinition: 'Reflectance at normal incidence (visible): back side. Defines the fraction of the solar ray in the visible spectrum that is reflected and not transmitted when the ray passes from one medium into another, at the "back" side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1kgyKYKUr3VuzI8UcP18oT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kgyKYKUr3VuzI8UcP18oT
+    ifdGuid: 1kgyKYKUr3VuzI8UcP18oT
+- propertyName: VisibleReflectanceFront
+  usageDefinition: 'Reflectance at normal incidence (visible): front side. Defines the fraction of the solar ray in the visible spectrum that is reflected and not transmitted when the ray passes from one medium into another, at the "front" side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0E8_EH84PCA8FxbAvr8ast
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E8_EH84PCA8FxbAvr8ast
+    ifdGuid: 0E8_EH84PCA8FxbAvr8ast
+- propertyName: SolarReflectanceBack
+  usageDefinition: 'Reflectance at normal incidence (solar): back side. Defines the fraction of the solar ray that is reflected and not transmitted when the ray passes from one medium into another, at the "back" side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Lsy6KtCTCa8xYsgg9fYjK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Lsy6KtCTCa8xYsgg9fYjK
+    ifdGuid: 1Lsy6KtCTCa8xYsgg9fYjK
+- propertyName: SolarReflectanceFront
+  usageDefinition: 'Reflectance at normal incidence (solar): front side. Defines the fraction of the solar ray that is reflected and not transmitted when the ray passes from one medium into another, at the "front" side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Gz7NWQC59Rv85iW9tFARE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Gz7NWQC59Rv85iW9tFARE
+    ifdGuid: 1Gz7NWQC59Rv85iW9tFARE
 properties:
 - name: VisibleTransmittance
   definition: Transmittance at normal incidence (visible). Defines the fraction of the visible spectrum of solar radiation that passes through per unit area, perpendicular to the surface.
@@ -41,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LIly0qUqHuO00025QrE$V
     ifdGuid: 2LIly0qUqHuO00025QrE$V
     legacyGuid: 954aff00d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2LIly0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2LIly0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +164,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SSWq0qUqHuO00025QrE$V
     ifdGuid: 2SSWq0qUqHuO00025QrE$V
     legacyGuid: 9c720d00d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2SSWq0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2SSWq0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +212,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XprU0qUqHuO00025QrE$V
     ifdGuid: 2XprU0qUqHuO00025QrE$V
     legacyGuid: a1cf5780d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2XprU0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2XprU0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +260,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dBA80qUqHuO00025QrE$V
     ifdGuid: 2dBA80qUqHuO00025QrE$V
     legacyGuid: a72ca200d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2dBA80qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2dBA80qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +308,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2iYUo0qUqHuO00025QrE$V
     ifdGuid: 2iYUo0qUqHuO00025QrE$V
     legacyGuid: ac89ec80d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2iYUo0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2iYUo0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +356,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tH860qUqHuO00025QrE$V
     ifdGuid: 2tH860qUqHuO00025QrE$V
     legacyGuid: b7448180d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2tH860qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2tH860qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -317,6 +404,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zEcA0qUqHuO00025QrE$V
     ifdGuid: 2zEcA0qUqHuO00025QrE$V
     legacyGuid: bd3a6280d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 2zEcA0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2zEcA0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -363,6 +452,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/33C4E0qUqHuO00025QrE$V
     ifdGuid: 33C4E0qUqHuO00025QrE$V
     legacyGuid: c3304380d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 33C4E0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 33C4E0qUqHuO00025QrE$V
   localizations:
   - language: en
@@ -409,6 +500,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/37zFU0qUqHuO00025QrE$V
     ifdGuid: 37zFU0qUqHuO00025QrE$V
     legacyGuid: c7f4f780d1ed11e1800000215ad4efdf
+    legacyGuids:
+    - 37zFU0qUqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 37zFU0qUqHuO00025QrE$V
   localizations:
   - language: en

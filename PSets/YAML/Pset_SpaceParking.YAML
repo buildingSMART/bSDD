@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oeNa0qWeHuO00025QrE$V
   ifdGuid: 3oeNa0qWeHuO00025QrE$V
   legacyGuid: f2a17900d20a11e1800000215ad4efdf
+  legacyGuids:
+  - 3oeNa0qWeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3oeNa0qWeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcSpace/PARKING
   type: IfcSpace/PARKING
+propertyUsages:
+- propertyName: ParkingUse
+  usageDefinition: Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gYJjRoIn0dQF0VHdVE18w
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gYJjRoIn0dQF0VHdVE18w
+    ifdGuid: 1gYJjRoIn0dQF0VHdVE18w
+- propertyName: ParkingUnits
+  usageDefinition: Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles, provision may be made for more than one unit in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2tUqHLouT6JhlzoMBKm6E2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tUqHLouT6JhlzoMBKm6E2
+    ifdGuid: 2tUqHLouT6JhlzoMBKm6E2
+- propertyName: IsAisle
+  usageDefinition: Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1a7AkRVOf0shZT0gFUBKFa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1a7AkRVOf0shZT0gFUBKFa
+    ifdGuid: 1a7AkRVOf0shZT0gFUBKFa
+- propertyName: IsOneWay
+  usageDefinition: Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0RcCoJSPn5bOhVRrYDDgW7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RcCoJSPn5bOhVRrYDDgW7
+    ifdGuid: 0RcCoJSPn5bOhVRrYDDgW7
 properties:
 - name: ParkingUse
   definition: Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tPYq0qWeHuO00025QrE$V
     ifdGuid: 3tPYq0qWeHuO00025QrE$V
     legacyGuid: f7662d00d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3tPYq0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3tPYq0qWeHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +124,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$lcW0qWeHuO00025QrE$V
     ifdGuid: 3$lcW0qWeHuO00025QrE$V
     legacyGuid: ffbe6800d20a11e1800000215ad4efdf
+    legacyGuids:
+    - 3$lcW0qWeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3$lcW0qWeHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +172,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/056xA0qWiHuO00025QrE$V
     ifdGuid: 056xA0qWiHuO00025QrE$V
     legacyGuid: 051bb280d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 056xA0qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 056xA0qWiHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +220,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CGi20qWiHuO00025QrE$V
     ifdGuid: 0CGi20qWiHuO00025QrE$V
     legacyGuid: 0c42c080d20b11e1800000215ad4efdf
+    legacyGuids:
+    - 0CGi20qWiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0CGi20qWiHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WJyv3i$jF$gqaKT_OJyJh
   ifdGuid: 2WJyv3i$jF$gqaKT_OJyJh
   legacyGuid: af017348bac3492f866b43ce813c35f8
+  legacyGuids:
+  - 2l0ND8kiD9BuPhGyw1F3Nu
   legacyGuidAsIfcGlobalId: 2l0ND8kiD9BuPhGyw1F3Nu
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcDistributionPort/CABLE
   type: IfcDistributionPort/CABLE
+propertyUsages:
+- propertyName: Current
+  usageDefinition: Log of electrical current.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cG$s800j9rReL57trvPKU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cG$s800j9rReL57trvPKU
+    ifdGuid: 3cG$s800j9rReL57trvPKU
+- propertyName: Voltage
+  usageDefinition: Log of electrical voltage.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0sSZ2v7Kz4$PlADrbjPOvT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sSZ2v7Kz4$PlADrbjPOvT
+    ifdGuid: 0sSZ2v7Kz4$PlADrbjPOvT
+- propertyName: RealPower
+  usageDefinition: Real power.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0H3ut7N958cRAUcNPYHxOS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0H3ut7N958cRAUcNPYHxOS
+    ifdGuid: 0H3ut7N958cRAUcNPYHxOS
+- propertyName: ReactivePower
+  usageDefinition: Reactive power.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1rRLvfLOvBMPw$fCeRGg55
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rRLvfLOvBMPw$fCeRGg55
+    ifdGuid: 1rRLvfLOvBMPw$fCeRGg55
+- propertyName: ApparentPower
+  usageDefinition: Apparent power.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ppa2OYuLDfeuJWA$Hlt2m
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ppa2OYuLDfeuJWA$Hlt2m
+    ifdGuid: 2ppa2OYuLDfeuJWA$Hlt2m
+- propertyName: PowerFactor
+  usageDefinition: Power factor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YN1r4zLX0tOnvkkhurXU6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YN1r4zLX0tOnvkkhurXU6
+    ifdGuid: 0YN1r4zLX0tOnvkkhurXU6
+- propertyName: DataTransmitted
+  usageDefinition: For data ports, captures log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0e0Xh6zlj63xdKqygU0gKT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0e0Xh6zlj63xdKqygU0gKT
+    ifdGuid: 0e0Xh6zlj63xdKqygU0gKT
+- propertyName: DataReceived
+  usageDefinition: For data ports, captures log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2cra0cr218VxCO5HKClN5p
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cra0cr218VxCO5HKClN5p
+    ifdGuid: 2cra0cr218VxCO5HKClN5p
 properties:
 - name: Current
   definition: Log of electrical current.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mZomNLFrB_wT7dPo4cHot
     ifdGuid: 3mZomNLFrB_wT7dPo4cHot
     legacyGuid: 9fadeb7592de4a228764c24ee4f76b0b
+    legacyGuids:
+    - 2VhUjrajvA8eTamaxazsiB
     legacyGuidAsIfcGlobalId: 2VhUjrajvA8eTamaxazsiB
   localizations:
   - language: en
@@ -89,6 +158,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3E9n8tsEHFrw0EwtTEKy5V
     ifdGuid: 3E9n8tsEHFrw0EwtTEKy5V
     legacyGuid: 6fa8730d435442e497527bd9defeb047
+    legacyGuids:
+    - 1lg7CDGrH2v9TIUzdU$h17
     legacyGuidAsIfcGlobalId: 1lg7CDGrH2v9TIUzdU$h17
   localizations:
   - language: en
@@ -137,6 +208,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ksr5qktL2nAqlayGRDyOG
     ifdGuid: 3Ksr5qktL2nAqlayGRDyOG
     legacyGuid: fbaec68991c14f8fb0c963eb65250f26
+    legacyGuids:
+    - 3xhiQ9aS5FZx39O_jb9Gyc
     legacyGuidAsIfcGlobalId: 3xhiQ9aS5FZx39O_jb9Gyc
   localizations:
   - language: en
@@ -185,6 +258,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FOE3oPjvDeAx_blq$eFxQ
     ifdGuid: 1FOE3oPjvDeAx_blq$eFxQ
     legacyGuid: 401dc737009748699b073ef617ef615c
+    legacyGuids:
+    - 107SSt09T8QPi7FlONxs5S
     legacyGuidAsIfcGlobalId: 107SSt09T8QPi7FlONxs5S
   localizations:
   - language: en
@@ -233,6 +308,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18HOdS_o9CNOgWp5AqxNlq
     ifdGuid: 18HOdS_o9CNOgWp5AqxNlq
     legacyGuid: af897460248b427685e28b50acfc7106
+    legacyGuids:
+    - 2lYNHW98j2TeNYYr2i$746
     legacyGuidAsIfcGlobalId: 2lYNHW98j2TeNYYr2i$746
   localizations:
   - language: en
@@ -281,6 +358,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mzXfbd$v9jfNjjXmQvdar
     ifdGuid: 2mzXfbd$v9jfNjjXmQvdar
     legacyGuid: 53e43bcebef54a4096fd8862a450903d
+    legacyGuids:
+    - 1Jv3lEllLAG9RzY6AaK90z
     legacyGuidAsIfcGlobalId: 1Jv3lEllLAG9RzY6AaK90z
   localizations:
   - language: en
@@ -329,6 +408,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05QhEKE010mvrIm2h_OceJ
     ifdGuid: 05QhEKE010mvrIm2h_OceJ
     legacyGuid: c1d8b4f5077244d98bb7d96e3b9a3282
+    legacyGuids:
+    - 31sBJr1t94sOktsMuxcZA2
     legacyGuidAsIfcGlobalId: 31sBJr1t94sOktsMuxcZA2
   localizations:
   - language: en
@@ -380,6 +461,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PtcCV9Ej9aw1ewmf54H1_
     ifdGuid: 0PtcCV9Ej9aw1ewmf54H1_
     legacyGuid: e72bcd7d84ae42c6b1e3f696451d1e6e
+    legacyGuids:
+    - 3dAyrzXAv2nh7ZzfP57Hvk
     legacyGuidAsIfcGlobalId: 3dAyrzXAv2nh7ZzfP57Hvk
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UTIo0qXGHuO00025QrE$V
   ifdGuid: 0UTIo0qXGHuO00025QrE$V
   legacyGuid: 1e752c80d21411e1800000215ad4efdf
+  legacyGuids:
+  - 0UTIo0qXGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0UTIo0qXGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,87 @@ localizations:
 applicableIfcClasses:
 - name: IfcValve
   type: IfcValve
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1').
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1578lqr_r7dxoz0pwMf94f
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1578lqr_r7dxoz0pwMf94f
+    ifdGuid: 1578lqr_r7dxoz0pwMf94f
+- propertyName: Status
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2NDTN7J6bA4xtfkYaAAlRe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2NDTN7J6bA4xtfkYaAAlRe
+    ifdGuid: 2NDTN7J6bA4xtfkYaAAlRe
+- propertyName: ValvePattern
+  usageDefinition: 'The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where:SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment.ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees.STRAIGHT_2_PORT: Valve in which the flow is straight through.STRAIGHT_3_PORT: Valve with three separate ports.CROSSOVER_4_PORT: Valve with 4 separate ports.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3P0gox5hX9j8lQUiQCkLsB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3P0gox5hX9j8lQUiQCkLsB
+    ifdGuid: 3P0gox5hX9j8lQUiQCkLsB
+- propertyName: ValveOperation
+  usageDefinition: 'The method of valve operation where:DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wireFLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanismHYDRAULIC: A valve that is opened and closed by hydraulic actuationLEVER: A valve that is opened and closed by the action of a lever rotating the gate within the valve.LOCKSHIELD: A valve that requires the use of a special lockshield key for opening and closing, the operating mechanism being protected by a shroud during normal operation.MOTORIZED: A valve that is opened and closed by the action of an electric motor on an actuatorPNEUMATIC: A valve that is opened and closed by pneumatic actuationSOLENOID: A valve that is normally held open by a magnetic field in a coil acting on the gate but that is closed immediately if the electrical current generating the magnetic field is removed. SPRING: A valve that is normally held in position by the pressure of a spring on a plate but that may be caused to open if the pressure of the fluid is sufficient to overcome the spring pressure. THERMOSTATIC: A valve in which the ports are opened or closed to maintain a required predetermined temperature.WHEEL: A valve that is opened and closed by the action of a wheel moving the gate within the valve.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3_p7Vy9LfE3e9_wJDU$6bX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3_p7Vy9LfE3e9_wJDU$6bX
+    ifdGuid: 3_p7Vy9LfE3e9_wJDU$6bX
+- propertyName: ValveMechanism
+  usageDefinition: 'The mechanism by which the valve function is achieved where:BALL: Valve that has a ported ball that can be turned relative to the body seat ports.BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis.CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve.GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packing.GLOBE: Screwdown valve that has a spherical body.LUBRICATEDPLUG: Plug valve in which a lubricant is injected under pressure between the plug face and the body.NEEDLE: Valve for regulating the flow in or from a pipe, in which a slender cone moves along the axis of flow to close against a fixed conical seat.PARALLELSLIDE: Screwdown valve that has a machined plate that slides in formed grooves to form a seal.PLUG: Valve that has a ported plug that can be turned relative to the body seat ports.WEDGEGATE: Screwdown valve that has a wedge shaped plate fitting into tapered guides to form a seal.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0q4N5SCsfC5P2TK4wFf2Ya
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0q4N5SCsfC5P2TK4wFf2Ya
+    ifdGuid: 0q4N5SCsfC5P2TK4wFf2Ya
+- propertyName: Size
+  usageDefinition: The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ub4GtjaH2aOjM3gpE0Trg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ub4GtjaH2aOjM3gpE0Trg
+    ifdGuid: 0Ub4GtjaH2aOjM3gpE0Trg
+- propertyName: TestPressure
+  usageDefinition: The maximum pressure to which the valve has been subjected under test.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/05$tIx0Sv81O_2iceU2TjX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05$tIx0Sv81O_2iceU2TjX
+    ifdGuid: 05$tIx0Sv81O_2iceU2TjX
+- propertyName: WorkingPressure
+  usageDefinition: The normally expected maximum working pressure of the valve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3KqO5WlGj8ev1X9hzfFFhh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KqO5WlGj8ev1X9hzfFFhh
+    ifdGuid: 3KqO5WlGj8ev1X9hzfFFhh
+- propertyName: FlowCoefficient
+  usageDefinition: Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/32U93oqpv3vhS_fPolyvpf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/32U93oqpv3vhS_fPolyvpf
+    ifdGuid: 32U93oqpv3vhS_fPolyvpf
+- propertyName: CloseOffRating
+  usageDefinition: Close off rating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1h77RdEM90bvd7P53L2uvn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1h77RdEM90bvd7P53L2uvn
+    ifdGuid: 1h77RdEM90bvd7P53L2uvn
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1').
@@ -41,6 +124,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Y2BE0qXGHuO00025QrE$V
     ifdGuid: 0Y2BE0qXGHuO00025QrE$V
     legacyGuid: 2208b380d21411e1800000215ad4efdf
+    legacyGuids:
+    - 0Y2BE0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Y2BE0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -85,8 +170,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0sHHE7YejFUOKdlcP7Icvo'
+    ifdGuid: 0sHHE7YejFUOKdlcP7Icvo
     legacyGuid: 103808cf5fe64d589e7317c7493147b5
+    legacyGuids:
+    - 0GE0ZFN_PDM9vp5yT9CKUr
     legacyGuidAsIfcGlobalId: 0GE0ZFN_PDM9vp5yT9CKUr
   localizations:
   - language: de-DE
@@ -282,6 +369,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0d$fI0qXGHuO00025QrE$V
     ifdGuid: 0d$fI0qXGHuO00025QrE$V
     legacyGuid: 27fe9480d21411e1800000215ad4efdf
+    legacyGuids:
+    - 0d$fI0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0d$fI0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -502,6 +591,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0u5dG0qXGHuO00025QrE$V
     ifdGuid: 0u5dG0qXGHuO00025QrE$V
     legacyGuid: 38167400d21411e1800000215ad4efdf
+    legacyGuids:
+    - 0u5dG0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0u5dG0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -854,6 +945,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Hjxk0qXGHuO00025QrE$V
     ifdGuid: 1Hjxk0qXGHuO00025QrE$V
     legacyGuid: 51b7bb80d21411e1800000215ad4efdf
+    legacyGuids:
+    - 1Hjxk0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Hjxk0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -1184,6 +1277,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1g9zO0qXGHuO00025QrE$V
     ifdGuid: 1g9zO0qXGHuO00025QrE$V
     legacyGuid: 6a27d600d21411e1800000215ad4efdf
+    legacyGuids:
+    - 1g9zO0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1g9zO0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -1230,6 +1325,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1uTV80qXGHuO00025QrE$V
     ifdGuid: 1uTV80qXGHuO00025QrE$V
     legacyGuid: 7875f200d21411e1800000215ad4efdf
+    legacyGuids:
+    - 1uTV80qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1uTV80qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -1276,6 +1373,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_QzC0qXGHuO00025QrE$V
     ifdGuid: 1_QzC0qXGHuO00025QrE$V
     legacyGuid: 7e6bd300d21411e1800000215ad4efdf
+    legacyGuids:
+    - 1_QzC0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1_QzC0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -1322,6 +1421,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24ORG0qXGHuO00025QrE$V
     ifdGuid: 24ORG0qXGHuO00025QrE$V
     legacyGuid: 8461b400d21411e1800000215ad4efdf
+    legacyGuids:
+    - 24ORG0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24ORG0qXGHuO00025QrE$V
   localizations:
   - language: en
@@ -1368,6 +1469,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ALvK0qXGHuO00025QrE$V
     ifdGuid: 2ALvK0qXGHuO00025QrE$V
     legacyGuid: 8a579500d21411e1800000215ad4efdf
+    legacyGuids:
+    - 2ALvK0qXGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2ALvK0qXGHuO00025QrE$V
   localizations:
   - language: en

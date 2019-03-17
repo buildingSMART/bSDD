@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E4O60qXKHuO00025QrE$V
   ifdGuid: 0E4O60qXKHuO00025QrE$V
   legacyGuid: 0e118180d21511e1800000215ad4efdf
+  legacyGuids:
+  - 0E4O60qXKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0E4O60qXKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,23 @@ localizations:
 applicableIfcClasses:
 - name: IfcValve/ISOLATING
   type: IfcValve/ISOLATING
+propertyUsages:
+- propertyName: IsNormallyOpen
+  usageDefinition: If TRUE, the valve is normally open. If FALSE is is normally closed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3yqassfYL7oQmYrEbb_fYN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3yqassfYL7oQmYrEbb_fYN
+    ifdGuid: 3yqassfYL7oQmYrEbb_fYN
+- propertyName: IsolatingPurpose
+  usageDefinition: Defines the purpose for which the isolating valve is used since the way in which the valve is identified as an isolating valve may be in the context of its use. Note that unless there is a contextual name for the isolating valve (as in the case of a Landing Valve on a rising fire main), then the value assigned shoulkd be UNSET.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2QnmE_SHvB1AK016$6VKWj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QnmE_SHvB1AK016$6VKWj
+    ifdGuid: 2QnmE_SHvB1AK016$6VKWj
 properties:
 - name: IsNormallyOpen
   definition: If TRUE, the valve is normally open. If FALSE is is normally closed.
@@ -43,6 +62,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IrZM0qXKHuO00025QrE$V
     ifdGuid: 0IrZM0qXKHuO00025QrE$V
     legacyGuid: 12d63580d21511e1800000215ad4efdf
+    legacyGuids:
+    - 0IrZM0qXKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0IrZM0qXKHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +110,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QbTe0qXKHuO00025QrE$V
     ifdGuid: 0QbTe0qXKHuO00025QrE$V
     legacyGuid: 1a95da00d21511e1800000215ad4efdf
+    legacyGuids:
+    - 0QbTe0qXKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0QbTe0qXKHuO00025QrE$V
   localizations:
   - language: en

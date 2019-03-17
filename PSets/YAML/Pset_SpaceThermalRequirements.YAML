@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yroe0qWmHuO00025QrE$V
   ifdGuid: 0yroe0qWmHuO00025QrE$V
   legacyGuid: 3cd72a00d20c11e1800000215ad4efdf
+  legacyGuids:
+  - 0yroe0qWmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0yroe0qWmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -35,6 +37,151 @@ applicableIfcClasses:
   type: IfcSpace, IfcSpatialZone, IfcZone
 - name: ' IfcZone'
   type: IfcSpace, IfcSpatialZone, IfcZone
+propertyUsages:
+- propertyName: SpaceTemperature
+  usageDefinition: Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur range (Min-Max) is available.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/046x4FdJv7RRlNfCkeeRAG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/046x4FdJv7RRlNfCkeeRAG
+    ifdGuid: 046x4FdJv7RRlNfCkeeRAG
+- propertyName: SpaceTemperatureMax
+  usageDefinition: Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2WHtuK1c97fOwj_5GPr8gS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WHtuK1c97fOwj_5GPr8gS
+    ifdGuid: 2WHtuK1c97fOwj_5GPr8gS
+- propertyName: SpaceTemperatureMin
+  usageDefinition: Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0lUvpfppn2TQOkXmK7orsD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lUvpfppn2TQOkXmK7orsD
+    ifdGuid: 0lUvpfppn2TQOkXmK7orsD
+- propertyName: SpaceTemperatureSummerMax
+  usageDefinition: Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/20Qnr_pID0gx9fsKHaQYAF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20Qnr_pID0gx9fsKHaQYAF
+    ifdGuid: 20Qnr_pID0gx9fsKHaQYAF
+- propertyName: SpaceTemperatureSummerMin
+  usageDefinition: Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2chxgpWnnD_B6ERKLmSb4l
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2chxgpWnnD_B6ERKLmSb4l
+    ifdGuid: 2chxgpWnnD_B6ERKLmSb4l
+- propertyName: SpaceTemperatureWinterMax
+  usageDefinition: Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3NQVmvqj58pvypxYYvTERP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NQVmvqj58pvypxYYvTERP
+    ifdGuid: 3NQVmvqj58pvypxYYvTERP
+- propertyName: SpaceTemperatureWinterMin
+  usageDefinition: Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZHedBtX59iRD6QhB9S6KS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZHedBtX59iRD6QhB9S6KS
+    ifdGuid: 3ZHedBtX59iRD6QhB9S6KS
+- propertyName: SpaceHumidity
+  usageDefinition: Humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period. Provide this property, if no humidity range (Min-Max) is available.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2fK8rb34b1BBh5swlQZsRX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2fK8rb34b1BBh5swlQZsRX
+    ifdGuid: 2fK8rb34b1BBh5swlQZsRX
+- propertyName: SpaceHumidityMax
+  usageDefinition: Maximal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0jSqEGhRn0ff2$APWbv$na
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jSqEGhRn0ff2$APWbv$na
+    ifdGuid: 0jSqEGhRn0ff2$APWbv$na
+- propertyName: SpaceHumidityMin
+  usageDefinition: Minimal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2HZsDS6nX5ZRC4q2_ks7rR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HZsDS6nX5ZRC4q2_ks7rR
+    ifdGuid: 2HZsDS6nX5ZRC4q2_ks7rR
+- propertyName: SpaceHumiditySummer
+  usageDefinition: Humidity of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3RfR73hm5E9uEgdzPsyxnh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RfR73hm5E9uEgdzPsyxnh
+    ifdGuid: 3RfR73hm5E9uEgdzPsyxnh
+- propertyName: SpaceHumidityWinter
+  usageDefinition: Humidity of the space or zone for the cold (winter) period that is required from user/designer view point and provided as requirement for heating.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1jJBXTz4DEPuMfXspo47Er
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jJBXTz4DEPuMfXspo47Er
+    ifdGuid: 1jJBXTz4DEPuMfXspo47Er
+- propertyName: DiscontinuedHeating
+  usageDefinition: Indication whether discontinued heating is required/desirable from user/designer view point. (TRUE) if yes, (FALSE) otherwise.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2VzRM4P$50mfD4eBtrR871
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2VzRM4P$50mfD4eBtrR871
+    ifdGuid: 2VzRM4P$50mfD4eBtrR871
+- propertyName: NaturalVentilation
+  usageDefinition: Indication whether the space is required to have natural ventilation (TRUE) or mechanical ventilation (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1i9X$vpYjCHB6YDupJYbmi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1i9X$vpYjCHB6YDupJYbmi
+    ifdGuid: 1i9X$vpYjCHB6YDupJYbmi
+- propertyName: NaturalVentilationRate
+  usageDefinition: Indication of the requirement of a particular natural air ventilation rate, given in air changes per hour.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2yOzGyskL7av5_QnNrdrD5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2yOzGyskL7av5_QnNrdrD5
+    ifdGuid: 2yOzGyskL7av5_QnNrdrD5
+- propertyName: MechanicalVentilationRate
+  usageDefinition: Indication of the requirement of a particular mechanical air ventilation rate, given in air changes per hour.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3SYKa0Xl9Dbfwfy5Gaw7r2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3SYKa0Xl9Dbfwfy5Gaw7r2
+    ifdGuid: 3SYKa0Xl9Dbfwfy5Gaw7r2
+- propertyName: AirConditioning
+  usageDefinition: Indication whether this space requires air conditioning provided (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3qmssp9lzDg9x9oNAsIysI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qmssp9lzDg9x9oNAsIysI
+    ifdGuid: 3qmssp9lzDg9x9oNAsIysI
+- propertyName: AirConditioningCentral
+  usageDefinition: Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE).It should only be given, if the property "AirConditioning" is set to TRUE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2DWZxaQlz9OQY6Yn_oIOvt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DWZxaQlz9OQY6Yn_oIOvt
+    ifdGuid: 2DWZxaQlz9OQY6Yn_oIOvt
 properties:
 - name: SpaceTemperature
   definition: Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur range (Min-Max) is available.
@@ -45,6 +192,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/12pGi0qWmHuO00025QrE$V
     ifdGuid: 12pGi0qWmHuO00025QrE$V
     legacyGuid: 42cd0b00d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 12pGi0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 12pGi0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -91,6 +240,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18mkm0qWmHuO00025QrE$V
     ifdGuid: 18mkm0qWmHuO00025QrE$V
     legacyGuid: 48c2ec00d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 18mkm0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 18mkm0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -140,6 +291,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1EkCq0qWmHuO00025QrE$V
     ifdGuid: 1EkCq0qWmHuO00025QrE$V
     legacyGuid: 4eb8cd00d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1EkCq0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1EkCq0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -189,6 +342,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1K5XU0qWmHuO00025QrE$V
     ifdGuid: 1K5XU0qWmHuO00025QrE$V
     legacyGuid: 54161780d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1K5XU0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1K5XU0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -238,6 +393,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Q2$Y0qWmHuO00025QrE$V
     ifdGuid: 1Q2$Y0qWmHuO00025QrE$V
     legacyGuid: 5a0bf880d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1Q2$Y0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Q2$Y0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -287,6 +444,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1W0Tc0qWmHuO00025QrE$V
     ifdGuid: 1W0Tc0qWmHuO00025QrE$V
     legacyGuid: 6001d980d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1W0Tc0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1W0Tc0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -336,6 +495,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bzxg0qWmHuO00025QrE$V
     ifdGuid: 1bzxg0qWmHuO00025QrE$V
     legacyGuid: 65f7ba80d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1bzxg0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1bzxg0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -385,6 +546,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hxPk0qWmHuO00025QrE$V
     ifdGuid: 1hxPk0qWmHuO00025QrE$V
     legacyGuid: 6bed9b80d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1hxPk0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1hxPk0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -431,6 +594,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mia_0qWmHuO00025QrE$V
     ifdGuid: 1mia_0qWmHuO00025QrE$V
     legacyGuid: 70b24f80d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1mia_0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1mia_0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -480,6 +645,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sg320qWmHuO00025QrE$V
     ifdGuid: 1sg320qWmHuO00025QrE$V
     legacyGuid: 76a83080d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1sg320qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1sg320qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -526,6 +693,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1y1Ni0qWmHuO00025QrE$V
     ifdGuid: 1y1Ni0qWmHuO00025QrE$V
     legacyGuid: 7c057b00d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 1y1Ni0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1y1Ni0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -575,6 +744,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21OiM0qWmHuO00025QrE$V
     ifdGuid: 21OiM0qWmHuO00025QrE$V
     legacyGuid: 8162c580d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 21OiM0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 21OiM0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -624,6 +795,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26m100qWmHuO00025QrE$V
     ifdGuid: 26m100qWmHuO00025QrE$V
     legacyGuid: 86c01000d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 26m100qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 26m100qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -673,6 +846,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DJeU0qWmHuO00025QrE$V
     ifdGuid: 2DJeU0qWmHuO00025QrE$V
     legacyGuid: 8d4e8780d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 2DJeU0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2DJeU0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -722,6 +897,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KTPM0qWmHuO00025QrE$V
     ifdGuid: 2KTPM0qWmHuO00025QrE$V
     legacyGuid: 94759580d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 2KTPM0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2KTPM0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -771,6 +948,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QQtQ0qWmHuO00025QrE$V
     ifdGuid: 2QQtQ0qWmHuO00025QrE$V
     legacyGuid: 9a6b7680d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 2QQtQ0qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2QQtQ0qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -820,6 +999,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2VoC40qWmHuO00025QrE$V
     ifdGuid: 2VoC40qWmHuO00025QrE$V
     legacyGuid: 9fc8c100d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 2VoC40qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2VoC40qWmHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -869,6 +1050,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2blg80qWmHuO00025QrE$V
     ifdGuid: 2blg80qWmHuO00025QrE$V
     legacyGuid: a5bea200d20c11e1800000215ad4efdf
+    legacyGuids:
+    - 2blg80qWmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2blg80qWmHuO00025QrE$V
   localizations:
   - language: de-DE

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LJ480qXOHuO00025QrE$V
   ifdGuid: 1LJ480qXOHuO00025QrE$V
   legacyGuid: 554c4200d21611e1800000215ad4efdf
+  legacyGuids:
+  - 1LJ480qXOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1LJ480qXOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,111 @@ localizations:
 applicableIfcClasses:
 - name: IfcWasteTerminal/FLOORTRAP
   type: IfcWasteTerminal/FLOORTRAP
+propertyUsages:
+- propertyName: NominalBodyLength
+  usageDefinition: Nominal or quoted length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the chamber of the trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Aa1y5LGb9vvUqY2gHRfe1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Aa1y5LGb9vvUqY2gHRfe1
+    ifdGuid: 1Aa1y5LGb9vvUqY2gHRfe1
+- propertyName: NominalBodyWidth
+  usageDefinition: Nominal or quoted length measured along the y-axis in the local coordinate system of the chamber of the trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/33xuN5vhTCeAL90PC1rchQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/33xuN5vhTCeAL90PC1rchQ
+    ifdGuid: 33xuN5vhTCeAL90PC1rchQ
+- propertyName: NominalBodyDepth
+  usageDefinition: Nominal or quoted length measured along the z-axis in the local coordinate system of the chamber of the  trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0653wFdH96Ivr2l1t5OxHM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0653wFdH96Ivr2l1t5OxHM
+    ifdGuid: 0653wFdH96Ivr2l1t5OxHM
+- propertyName: IsForSullageWater
+  usageDefinition: Indicates if the purpose of the floor trap is to receive sullage water, or if that is amongst its purposes (= TRUE), or not (= FALSE). Note that if TRUE, it is expected that an upstand or kerb will be placed around the floor trap to prevent the ingress of surface water runoff; the provision of the upstand or kerb is not dealt with in this property set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1nLGzUeDTFOQXUODfq9Pfl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1nLGzUeDTFOQXUODfq9Pfl
+    ifdGuid: 1nLGzUeDTFOQXUODfq9Pfl
+- propertyName: SpilloverLevel
+  usageDefinition: The level at which water spills out of the terminal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0lG7PnaT93qRNGjy57Un5q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lG7PnaT93qRNGjy57Un5q
+    ifdGuid: 0lG7PnaT93qRNGjy57Un5q
+- propertyName: TrapType
+  usageDefinition: Identifies the predefined types of waste trap used in combination with the floor trap from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Tnbmrpi5EHxsgdoRkchDV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Tnbmrpi5EHxsgdoRkchDV
+    ifdGuid: 3Tnbmrpi5EHxsgdoRkchDV
+- propertyName: HasStrainer
+  usageDefinition: Indicates whether the gully trap has a strainer (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gwvuCP4r09vADjBiJLyRA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gwvuCP4r09vADjBiJLyRA
+    ifdGuid: 1gwvuCP4r09vADjBiJLyRA
+- propertyName: OutletConnectionSize
+  usageDefinition: Size of the outlet connection from the object.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gu0kjTgrEg9sq1er7qg62
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gu0kjTgrEg9sq1er7qg62
+    ifdGuid: 3gu0kjTgrEg9sq1er7qg62
+- propertyName: InletPatternType
+  usageDefinition: Identifies the pattern of inlet connections to a trap.A trap may have 0,1,2,3 or 4 inlet connections and the pattern of their arrangement may vary. The enumeration makes the convention that an outlet is either vertical or is placed at the bottom (south side) of the trap (when viewed in plan). Position 1 is to the left (west), position 2 is to the top (north), position 3 is to the right (east) and position 4 is to the bottom (south).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0VFHWuCt91_favOavPOJGN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0VFHWuCt91_favOavPOJGN
+    ifdGuid: 0VFHWuCt91_favOavPOJGN
+- propertyName: InletConnectionSize
+  usageDefinition: Size of the inlet connection(s), where used, of the inlet connections.Note that all inlet connections are assumed to be the same size.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KuiecH1P8zRTTlF5iqLGy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KuiecH1P8zRTTlF5iqLGy
+    ifdGuid: 1KuiecH1P8zRTTlF5iqLGy
+- propertyName: CoverLength
+  usageDefinition: The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2OwPmp8Cv0XQ0wC5qovd8o
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2OwPmp8Cv0XQ0wC5qovd8o
+    ifdGuid: 2OwPmp8Cv0XQ0wC5qovd8o
+- propertyName: CoverWidth
+  usageDefinition: The length measured along the y-axis in the local coordinate system of the cover of the  trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3VT5JxVXPC4hHi7Mt09yOn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VT5JxVXPC4hHi7Mt09yOn
+    ifdGuid: 3VT5JxVXPC4hHi7Mt09yOn
+- propertyName: CoverMaterial
+  usageDefinition: Material from which the cover or grating is constructed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2tbXJ6lbv9tvYTrHhPq0tx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tbXJ6lbv9tvYTrHhPq0tx
+    ifdGuid: 2tbXJ6lbv9tvYTrHhPq0tx
 properties:
 - name: NominalBodyLength
   definition: Nominal or quoted length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the chamber of the trap.
@@ -41,6 +148,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QgOo0qXOHuO00025QrE$V
     ifdGuid: 1QgOo0qXOHuO00025QrE$V
     legacyGuid: 5aa98c80d21611e1800000215ad4efdf
+    legacyGuids:
+    - 1QgOo0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1QgOo0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +196,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Zcbu0qXOHuO00025QrE$V
     ifdGuid: 1Zcbu0qXOHuO00025QrE$V
     legacyGuid: 639a5e00d21611e1800000215ad4efdf
+    legacyGuids:
+    - 1Zcbu0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Zcbu0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +244,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hyfa0qXOHuO00025QrE$V
     ifdGuid: 1hyfa0qXOHuO00025QrE$V
     legacyGuid: 6bf29900d21611e1800000215ad4efdf
+    legacyGuids:
+    - 1hyfa0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1hyfa0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +292,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rV040qXOHuO00025QrE$V
     ifdGuid: 1rV040qXOHuO00025QrE$V
     legacyGuid: 757c0100d21611e1800000215ad4efdf
+    legacyGuids:
+    - 1rV040qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1rV040qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +340,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1yemy0qXOHuO00025QrE$V
     ifdGuid: 1yemy0qXOHuO00025QrE$V
     legacyGuid: 7ca30f00d21611e1800000215ad4efdf
+    legacyGuids:
+    - 1yemy0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1yemy0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +388,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25a_20qXOHuO00025QrE$V
     ifdGuid: 25a_20qXOHuO00025QrE$V
     legacyGuid: 8593e080d21611e1800000215ad4efdf
+    legacyGuids:
+    - 25a_20qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 25a_20qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -469,6 +588,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2L4oc0qXOHuO00025QrE$V
     ifdGuid: 2L4oc0qXOHuO00025QrE$V
     legacyGuid: 95132980d21611e1800000215ad4efdf
+    legacyGuids:
+    - 2L4oc0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2L4oc0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -515,6 +636,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SEZU0qXOHuO00025QrE$V
     ifdGuid: 2SEZU0qXOHuO00025QrE$V
     legacyGuid: 9c3a3780d21611e1800000215ad4efdf
+    legacyGuids:
+    - 2SEZU0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2SEZU0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -561,6 +684,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cN3O0qXOHuO00025QrE$V
     ifdGuid: 2cN3O0qXOHuO00025QrE$V
     legacyGuid: a65c3600d21611e1800000215ad4efdf
+    legacyGuids:
+    - 2cN3O0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2cN3O0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -957,6 +1082,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/34APi0qXOHuO00025QrE$V
     ifdGuid: 34APi0qXOHuO00025QrE$V
     legacyGuid: c4299b00d21611e1800000215ad4efdf
+    legacyGuids:
+    - 34APi0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 34APi0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -1003,6 +1130,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DimC0qXOHuO00025QrE$V
     ifdGuid: 3DimC0qXOHuO00025QrE$V
     legacyGuid: cdb30300d21611e1800000215ad4efdf
+    legacyGuids:
+    - 3DimC0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3DimC0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -1049,6 +1178,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3MezI0qXOHuO00025QrE$V
     ifdGuid: 3MezI0qXOHuO00025QrE$V
     legacyGuid: d6a3d480d21611e1800000215ad4efdf
+    legacyGuids:
+    - 3MezI0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3MezI0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -1095,6 +1226,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VbAO0qXOHuO00025QrE$V
     ifdGuid: 3VbAO0qXOHuO00025QrE$V
     legacyGuid: df94a600d21611e1800000215ad4efdf
+    legacyGuids:
+    - 3VbAO0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3VbAO0qXOHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Woeq0qVeHuO00025QrE$V
   ifdGuid: 0Woeq0qVeHuO00025QrE$V
   legacyGuid: 20ca8d00d1fa11e1800000215ad4efdf
+  legacyGuids:
+  - 0Woeq0qVeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0Woeq0qVeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,23 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDevice
   type: IfcProtectiveDevice
+propertyUsages:
+- propertyName: TrippingCurveType
+  usageDefinition: The type of tripping curve that is represented by the property set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0yIqOfpmTCaOZ2PCnsugyv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yIqOfpmTCaOZ2PCnsugyv
+    ifdGuid: 0yIqOfpmTCaOZ2PCnsugyv
+- propertyName: TrippingCurve
+  usageDefinition: 'A curve that establishes the release time of a tripping unit when a particular prospective current is applied.  Note that the tripping curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set: (1) Defining value is the Prospective Current which is a list of minimum 2 and maximum 16 numbers providing the currents in [x In] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points.(2) Defined value is a list of minimum 2 and maximum 16 numbers providing the release_time in [s] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points. Note that a defined interpolation.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0PFO7cubD2JfVkR$qnkFDh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PFO7cubD2JfVkR$qnkFDh
+    ifdGuid: 0PFO7cubD2JfVkR$qnkFDh
 properties:
 - name: TrippingCurveType
   definition: The type of tripping curve that is represented by the property set.
@@ -41,6 +60,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0aNXG0qVeHuO00025QrE$V
     ifdGuid: 0aNXG0qVeHuO00025QrE$V
     legacyGuid: 245e1400d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 0aNXG0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0aNXG0qVeHuO00025QrE$V
   localizations:
   - language: en
@@ -198,6 +219,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0mITO0qVeHuO00025QrE$V
     ifdGuid: 0mITO0qVeHuO00025QrE$V
     legacyGuid: 3049d600d1fa11e1800000215ad4efdf
+    legacyGuids:
+    - 0mITO0qVeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0mITO0qVeHuO00025QrE$V
   localizations:
   - language: en

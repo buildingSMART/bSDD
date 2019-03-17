@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IuUm0qWOHuO00025QrE$V
   ifdGuid: 1IuUm0qWOHuO00025QrE$V
   legacyGuid: 52e1ec00d20611e1800000215ad4efdf
+  legacyGuids:
+  - 1IuUm0qWOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1IuUm0qWOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/SMOKESENSOR
   type: IfcSensor/SMOKESENSOR
+propertyUsages:
+- propertyName: CoverageArea
+  usageDefinition: The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uU8ak$jnDERWOZ2qGTpRI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uU8ak$jnDERWOZ2qGTpRI
+    ifdGuid: 2uU8ak$jnDERWOZ2qGTpRI
+- propertyName: SetPointConcentration
+  usageDefinition: The smoke concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ryuv$rNv7ouYThf$bLci8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ryuv$rNv7ouYThf$bLci8
+    ifdGuid: 0ryuv$rNv7ouYThf$bLci8
+- propertyName: HasBuiltInAlarm
+  usageDefinition: Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3syAXb9vf4NPvfyiMzrxlB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3syAXb9vf4NPvfyiMzrxlB
+    ifdGuid: 3syAXb9vf4NPvfyiMzrxlB
 properties:
 - name: CoverageArea
   definition: The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Oryq0qWOHuO00025QrE$V
     ifdGuid: 1Oryq0qWOHuO00025QrE$V
     legacyGuid: 58d7cd00d20611e1800000215ad4efdf
+    legacyGuids:
+    - 1Oryq0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Oryq0qWOHuO00025QrE$V
   localizations:
   - language: en
@@ -90,6 +119,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VPaI0qWOHuO00025QrE$V
     ifdGuid: 1VPaI0qWOHuO00025QrE$V
     legacyGuid: 5f664480d20611e1800000215ad4efdf
+    legacyGuids:
+    - 1VPaI0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1VPaI0qWOHuO00025QrE$V
   localizations:
   - language: en
@@ -140,6 +171,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1eLnO0qWOHuO00025QrE$V
     ifdGuid: 1eLnO0qWOHuO00025QrE$V
     legacyGuid: 68571600d20611e1800000215ad4efdf
+    legacyGuids:
+    - 1eLnO0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1eLnO0qWOHuO00025QrE$V
   localizations:
   - language: en

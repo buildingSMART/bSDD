@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PvWk0qS0HuO00025QrE$V
   ifdGuid: 1PvWk0qS0HuO00025QrE$V
   legacyGuid: 59e60b80d1c011e1800000215ad4efdf
+  legacyGuids:
+  - 1PvWk0qS0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1PvWk0qS0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcAirToAirHeatRecovery
   type: IfcAirToAirHeatRecovery
+propertyUsages:
+- propertyName: SensibleEffectiveness
+  usageDefinition: Sensible heat transfer effectiveness, where effectiveness is defined as the ratio of heat transfer to maximum possible heat transfer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ghbrEDXP5bOAd4zrVaY0n
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ghbrEDXP5bOAd4zrVaY0n
+    ifdGuid: 3ghbrEDXP5bOAd4zrVaY0n
+- propertyName: TotalEffectiveness
+  usageDefinition: 'Total heat transfer effectiveness: The ratio of heat transfer to the maximum possible heat transfer.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZuGH38wz9xg59d8haILTW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZuGH38wz9xg59d8haILTW
+    ifdGuid: 3ZuGH38wz9xg59d8haILTW
+- propertyName: TemperatureEffectiveness
+  usageDefinition: 'Temperature heat transfer effectiveness: The ratio of primary airflow temperature changes to maximum possible temperature changes.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sGLHOeJLFtucbksbdb6MP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sGLHOeJLFtucbksbdb6MP
+    ifdGuid: 2sGLHOeJLFtucbksbdb6MP
+- propertyName: DefrostTemperatureEffectiveness
+  usageDefinition: Temperature heat transfer effectiveness when defrosting is active.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QddwTCijA6v4eafomZUwg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QddwTCijA6v4eafomZUwg
+    ifdGuid: 0QddwTCijA6v4eafomZUwg
+- propertyName: HumidityEffectiveness
+  usageDefinition: 'Humidity heat transfer effectiveness: The ratio of primary airflow absolute humidity changes to maximum possible absolute humidity changes.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Lab5tk4fAJ9AddK_wR3R7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Lab5tk4fAJ9AddK_wR3R7
+    ifdGuid: 1Lab5tk4fAJ9AddK_wR3R7
+- propertyName: SensibleHeatTransferRate
+  usageDefinition: Sensible heat transfer rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3osfERvDD189nN$oSDosln
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3osfERvDD189nN$oSDosln
+    ifdGuid: 3osfERvDD189nN$oSDosln
+- propertyName: LatentHeatTransferRate
+  usageDefinition: Latent heat transfer rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0v2M1G8BH5rhmrKgO3qFcc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0v2M1G8BH5rhmrKgO3qFcc
+    ifdGuid: 0v2M1G8BH5rhmrKgO3qFcc
+- propertyName: TotalHeatTransferRate
+  usageDefinition: Total heat transfer rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uZtSKofbD1OiB6v2W0SW9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uZtSKofbD1OiB6v2W0SW9
+    ifdGuid: 2uZtSKofbD1OiB6v2W0SW9
+- propertyName: SensibleEffectivenessTable
+  usageDefinition: Sensible heat transfer effectiveness curve as a function of the primary and secondary air flow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3PXf5Mfw5Ceefm8C_yHl1A
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PXf5Mfw5Ceefm8C_yHl1A
+    ifdGuid: 3PXf5Mfw5Ceefm8C_yHl1A
+- propertyName: TotalEffectivenessTable
+  usageDefinition: Total heat transfer effectiveness curve as a function of the primary and secondary air flow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3NFGyV9Y5FBAhSovxdAhzT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3NFGyV9Y5FBAhSovxdAhzT
+    ifdGuid: 3NFGyV9Y5FBAhSovxdAhzT
+- propertyName: AirPressureDropCurves
+  usageDefinition: Air pressure drop as function of air flow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2dfbCrznLC0e$KmxgBliE0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2dfbCrznLC0e$KmxgBliE0
+    ifdGuid: 2dfbCrznLC0e$KmxgBliE0
 properties:
 - name: SensibleEffectiveness
   definition: Sensible heat transfer effectiveness, where effectiveness is defined as the ratio of heat transfer to maximum possible heat transfer.
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1WT8C0qS0HuO00025QrE$V
     ifdGuid: 1WT8C0qS0HuO00025QrE$V
     legacyGuid: 60748300d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1WT8C0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1WT8C0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +182,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1a20e0qS0HuO00025QrE$V
     ifdGuid: 1a20e0qS0HuO00025QrE$V
     legacyGuid: 64080a00d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1a20e0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1a20e0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +232,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dcv40qS0HuO00025QrE$V
     ifdGuid: 1dcv40qS0HuO00025QrE$V
     legacyGuid: 679b9100d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1dcv40qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1dcv40qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +282,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1iO4K0qS0HuO00025QrE$V
     ifdGuid: 1iO4K0qS0HuO00025QrE$V
     legacyGuid: 6c604500d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1iO4K0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1iO4K0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +332,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1lMpM0qS0HuO00025QrE$V
     ifdGuid: 1lMpM0qS0HuO00025QrE$V
     legacyGuid: 6f5b3580d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1lMpM0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1lMpM0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -281,6 +382,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pXrC0qS0HuO00025QrE$V
     ifdGuid: 1pXrC0qS0HuO00025QrE$V
     legacyGuid: 73875300d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1pXrC0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1pXrC0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -329,6 +432,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tit20qS0HuO00025QrE$V
     ifdGuid: 1tit20qS0HuO00025QrE$V
     legacyGuid: 77b37080d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1tit20qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1tit20qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -377,6 +482,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xHlU0qS0HuO00025QrE$V
     ifdGuid: 1xHlU0qS0HuO00025QrE$V
     legacyGuid: 7b46f780d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1xHlU0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1xHlU0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +532,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_sdw0qS0HuO00025QrE$V
     ifdGuid: 1_sdw0qS0HuO00025QrE$V
     legacyGuid: 7eda7e80d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 1_sdw0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1_sdw0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -473,6 +582,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22RWM0qS0HuO00025QrE$V
     ifdGuid: 22RWM0qS0HuO00025QrE$V
     legacyGuid: 826e0580d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 22RWM0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 22RWM0qS0HuO00025QrE$V
   localizations:
   - language: en
@@ -521,6 +632,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/260Oo0qS0HuO00025QrE$V
     ifdGuid: 260Oo0qS0HuO00025QrE$V
     legacyGuid: 86018c80d1c011e1800000215ad4efdf
+    legacyGuids:
+    - 260Oo0qS0HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 260Oo0qS0HuO00025QrE$V
   localizations:
   - language: en

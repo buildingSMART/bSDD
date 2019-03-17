@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bTzG0qXSHuO00025QrE$V
   ifdGuid: 2bTzG0qXSHuO00025QrE$V
   legacyGuid: a577d400d21711e1800000215ad4efdf
+  legacyGuids:
+  - 2bTzG0qXSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2bTzG0qXSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcWasteTerminal/GULLYTRAP
   type: IfcWasteTerminal/GULLYTRAP
+propertyUsages:
+- propertyName: NominalBodyLength
+  usageDefinition: Nominal or quoted length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the chamber of the gully trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1X9TBoFtr7bx0l2uxydF0G
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1X9TBoFtr7bx0l2uxydF0G
+    ifdGuid: 1X9TBoFtr7bx0l2uxydF0G
+- propertyName: NominalBodyWidth
+  usageDefinition: Nominal or quoted length measured along the y-axis in the local coordinate system of the chamber of the gully trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0DXHHZ3VP2gwHEe62_lHgv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DXHHZ3VP2gwHEe62_lHgv
+    ifdGuid: 0DXHHZ3VP2gwHEe62_lHgv
+- propertyName: NominalBodyDepth
+  usageDefinition: Nominal or quoted length measured along the z-axis in the local coordinate system of the chamber of the gully trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ozJKNTc1Atv7YbHkcoNoV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ozJKNTc1Atv7YbHkcoNoV
+    ifdGuid: 2ozJKNTc1Atv7YbHkcoNoV
+- propertyName: GullyType
+  usageDefinition: Identifies the predefined types of gully from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SAiyHFPz8yOO7gT7d7QhE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SAiyHFPz8yOO7gT7d7QhE
+    ifdGuid: 2SAiyHFPz8yOO7gT7d7QhE
+- propertyName: HasStrainer
+  usageDefinition: Indicates whether the gully trap has a strainer (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3QWSNSGnvEH86FbvYS8Zkn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3QWSNSGnvEH86FbvYS8Zkn
+    ifdGuid: 3QWSNSGnvEH86FbvYS8Zkn
+- propertyName: TrapType
+  usageDefinition: Identifies the predefined types of trap from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AtZfeog1EmQUHDEKk8LmL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AtZfeog1EmQUHDEKk8LmL
+    ifdGuid: 3AtZfeog1EmQUHDEKk8LmL
+- propertyName: OutletConnectionSize
+  usageDefinition: Size of the outlet connection from the object.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Xf1y2R0P0PAeuuj_J96h_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Xf1y2R0P0PAeuuj_J96h_
+    ifdGuid: 3Xf1y2R0P0PAeuuj_J96h_
+- propertyName: BackInletPatternType
+  usageDefinition: Identifies the pattern of inlet connections to a gully trap.A gulley trap may have 0,1,2,3 or 4 inlet connections and the pattern of their arrangement may vary. The enumeration makes the convention that an outlet is either vertical or is placed at the bottom (south side) of the gully trap (when viewed in plan). Position 1 is to the left (west), position 2 is to the top (north), position 3 is to the right (east) and position 4 is to the bottom (south).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/108m2nox1FUA38GQJ50SIf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/108m2nox1FUA38GQJ50SIf
+    ifdGuid: 108m2nox1FUA38GQJ50SIf
+- propertyName: InletConnectionSize
+  usageDefinition: Size of the inlet connection(s), where used, of the inlet connections.Note that all inlet connections are assumed to be the same size.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0FXgSMInz1aBW95UlXsSka
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0FXgSMInz1aBW95UlXsSka
+    ifdGuid: 0FXgSMInz1aBW95UlXsSka
+- propertyName: CoverLength
+  usageDefinition: The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the gully trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ydsFk23D4g8rDgLJbgbwG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ydsFk23D4g8rDgLJbgbwG
+    ifdGuid: 3ydsFk23D4g8rDgLJbgbwG
+- propertyName: CoverWidth
+  usageDefinition: The length measured along the y-axis in the local coordinate system of the cover of the gully trap.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wzRDaFIbB2vbwA$BpEp$n
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wzRDaFIbB2vbwA$BpEp$n
+    ifdGuid: 1wzRDaFIbB2vbwA$BpEp$n
 properties:
 - name: NominalBodyLength
   definition: Nominal or quoted length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the chamber of the gully trap.
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2grHw0qXSHuO00025QrE$V
     ifdGuid: 2grHw0qXSHuO00025QrE$V
     legacyGuid: aad51e80d21711e1800000215ad4efdf
+    legacyGuids:
+    - 2grHw0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2grHw0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +180,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qNeQ0qXSHuO00025QrE$V
     ifdGuid: 2qNeQ0qXSHuO00025QrE$V
     legacyGuid: b45e8680d21711e1800000215ad4efdf
+    legacyGuids:
+    - 2qNeQ0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2qNeQ0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +228,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_W8K0qXSHuO00025QrE$V
     ifdGuid: 2_W8K0qXSHuO00025QrE$V
     legacyGuid: be808500d21711e1800000215ad4efdf
+    legacyGuids:
+    - 2_W8K0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_W8K0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +276,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/382Uq0qXSHuO00025QrE$V
     ifdGuid: 382Uq0qXSHuO00025QrE$V
     legacyGuid: c809ed00d21711e1800000215ad4efdf
+    legacyGuids:
+    - 382Uq0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 382Uq0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -333,6 +432,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LltA0qXSHuO00025QrE$V
     ifdGuid: 3LltA0qXSHuO00025QrE$V
     legacyGuid: d5bf7280d21711e1800000215ad4efdf
+    legacyGuids:
+    - 3LltA0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3LltA0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -379,6 +480,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3TVnS0qXSHuO00025QrE$V
     ifdGuid: 3TVnS0qXSHuO00025QrE$V
     legacyGuid: dd7f1700d21711e1800000215ad4efdf
+    legacyGuids:
+    - 3TVnS0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3TVnS0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -577,6 +680,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3iPSc0qXSHuO00025QrE$V
     ifdGuid: 3iPSc0qXSHuO00025QrE$V
     legacyGuid: ec65c980d21711e1800000215ad4efdf
+    legacyGuids:
+    - 3iPSc0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3iPSc0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -623,6 +728,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qlWI0qXSHuO00025QrE$V
     ifdGuid: 3qlWI0qXSHuO00025QrE$V
     legacyGuid: f4be0480d21711e1800000215ad4efdf
+    legacyGuids:
+    - 3qlWI0qXSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3qlWI0qXSHuO00025QrE$V
   localizations:
   - language: en
@@ -1019,6 +1126,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GAG_0qXWHuO00025QrE$V
     ifdGuid: 0GAG_0qXWHuO00025QrE$V
     legacyGuid: 10290f80d21811e1800000215ad4efdf
+    legacyGuids:
+    - 0GAG_0qXWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0GAG_0qXWHuO00025QrE$V
   localizations:
   - language: en
@@ -1065,6 +1174,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0P6U40qXWHuO00025QrE$V
     ifdGuid: 0P6U40qXWHuO00025QrE$V
     legacyGuid: 1919e100d21811e1800000215ad4efdf
+    legacyGuids:
+    - 0P6U40qXWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0P6U40qXWHuO00025QrE$V
   localizations:
   - language: en
@@ -1111,6 +1222,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XSXm0qXWHuO00025QrE$V
     ifdGuid: 0XSXm0qXWHuO00025QrE$V
     legacyGuid: 21721c00d21811e1800000215ad4efdf
+    legacyGuids:
+    - 0XSXm0qXWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0XSXm0qXWHuO00025QrE$V
   localizations:
   - language: en

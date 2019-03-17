@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29cn20qSmHuO00025QrE$V
   ifdGuid: 29cn20qSmHuO00025QrE$V
   legacyGuid: 899b1080d1cc11e1800000215ad4efdf
+  legacyGuids:
+  - 29cn20qSmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 29cn20qSmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,79 @@ localizations:
 applicableIfcClasses:
 - name: IfcCondenser
   type: IfcCondenser
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06oMAC$An5JwZtHjJJvxt8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06oMAC$An5JwZtHjJJvxt8
+    ifdGuid: 06oMAC$An5JwZtHjJJvxt8
+- propertyName: Status
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3HNyiT0$j5kOw4VTsHIO3U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3HNyiT0$j5kOw4VTsHIO3U
+    ifdGuid: 3HNyiT0$j5kOw4VTsHIO3U
+- propertyName: RefrigerantClass
+  usageDefinition: 'Refrigerant class used by the condenser.CFC: Chlorofluorocarbons.HCFC: Hydrochlorofluorocarbons.HFC: Hydrofluorocarbons.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3fhb4m_mvCzf7RXpqjHEkk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fhb4m_mvCzf7RXpqjHEkk
+    ifdGuid: 3fhb4m_mvCzf7RXpqjHEkk
+- propertyName: ExternalSurfaceArea
+  usageDefinition: External surface area (both primary and secondary area).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LjCt6dGLDmOa3pvhASS8v
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LjCt6dGLDmOa3pvhASS8v
+    ifdGuid: 3LjCt6dGLDmOa3pvhASS8v
+- propertyName: InternalSurfaceArea
+  usageDefinition: Internal surface area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1JsxlOFN9BRvZvJc47gcZW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1JsxlOFN9BRvZvJc47gcZW
+    ifdGuid: 1JsxlOFN9BRvZvJc47gcZW
+- propertyName: InternalRefrigerantVolume
+  usageDefinition: Internal volume of condenser (refrigerant side).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3IAZjOYOHDTfelRFWFsogn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IAZjOYOHDTfelRFWFsogn
+    ifdGuid: 3IAZjOYOHDTfelRFWFsogn
+- propertyName: InternalWaterVolume
+  usageDefinition: Internal volume of condenser (water side).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ceYMNd6P9Lf2EEqFHF1cG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ceYMNd6P9Lf2EEqFHF1cG
+    ifdGuid: 2ceYMNd6P9Lf2EEqFHF1cG
+- propertyName: NominalHeatTransferArea
+  usageDefinition: Nominal heat transfer surface area associated with nominal overall heat transfer coefficient.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2cVbT2XXj9DOGFZYvJ1yLL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2cVbT2XXj9DOGFZYvJ1yLL
+    ifdGuid: 2cVbT2XXj9DOGFZYvJ1yLL
+- propertyName: NominalHeatTransferCoefficient
+  usageDefinition: Nominal overall heat transfer coefficient associated with nominal heat transfer area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GQgkb6Sb8LuHMXAT9U8zu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GQgkb6Sb8LuHMXAT9U8zu
+    ifdGuid: 0GQgkb6Sb8LuHMXAT9U8zu
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
@@ -41,6 +116,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2FaF60qSmHuO00025QrE$V
     ifdGuid: 2FaF60qSmHuO00025QrE$V
     legacyGuid: 8f90f180d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 2FaF60qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2FaF60qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -85,8 +162,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '262a_kcCjFIOWs7Pw$Zb5P'
+    ifdGuid: 262a_kcCjFIOWs7Pw$Zb5P
     legacyGuid: d296b7a0f2bb4e309010357681bd4adc
+    legacyGuids:
+    - 3IbhUWyhjEC90GDNQ1lKhS
     legacyGuidAsIfcGlobalId: 3IbhUWyhjEC90GDNQ1lKhS
   localizations:
   - language: de-DE
@@ -282,6 +361,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KxZm0qSmHuO00025QrE$V
     ifdGuid: 2KxZm0qSmHuO00025QrE$V
     legacyGuid: 94ee3c00d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 2KxZm0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2KxZm0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -546,6 +627,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2myTs0qSmHuO00025QrE$V
     ifdGuid: 2myTs0qSmHuO00025QrE$V
     legacyGuid: b0f1dd80d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 2myTs0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2myTs0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -592,6 +675,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2svxw0qSmHuO00025QrE$V
     ifdGuid: 2svxw0qSmHuO00025QrE$V
     legacyGuid: b6e7be80d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 2svxw0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2svxw0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -638,6 +723,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2yHGa0qSmHuO00025QrE$V
     ifdGuid: 2yHGa0qSmHuO00025QrE$V
     legacyGuid: bc450900d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 2yHGa0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2yHGa0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -684,6 +771,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31ebE0qSmHuO00025QrE$V
     ifdGuid: 31ebE0qSmHuO00025QrE$V
     legacyGuid: c1a25380d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 31ebE0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 31ebE0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -730,6 +819,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36PmU0qSmHuO00025QrE$V
     ifdGuid: 36PmU0qSmHuO00025QrE$V
     legacyGuid: c6670780d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 36PmU0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 36PmU0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -776,6 +867,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Bn580qSmHuO00025QrE$V
     ifdGuid: 3Bn580qSmHuO00025QrE$V
     legacyGuid: cbc45200d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 3Bn580qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Bn580qSmHuO00025QrE$V
   localizations:
   - language: en

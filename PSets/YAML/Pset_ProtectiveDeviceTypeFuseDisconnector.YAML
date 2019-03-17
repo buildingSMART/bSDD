@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3k8fE0qVqHuO00025QrE$V
   ifdGuid: 3k8fE0qVqHuO00025QrE$V
   legacyGuid: ee229380d1fd11e1800000215ad4efdf
+  legacyGuids:
+  - 3k8fE0qVqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3k8fE0qVqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDevice/FUSEDISCONNECTOR
   type: IfcProtectiveDevice/FUSEDISCONNECTOR
+propertyUsages:
+- propertyName: FuseDisconnectorType
+  usageDefinition: 'A list of the available types of fuse disconnector from which that required may be selected where:EngineProtectionDevice: A fuse whose characteristic is specifically designed for the protection of a motor or generator.FuseSwitchDisconnector: A switch disconnector in which a fuse link or a fuse carrier with fuse link forms the moving contact,HRC: A standard fuse (High Rupturing Capacity)OverloadProtectionDevice: A device that disconnects the supply when the operating conditions in an electrically undamaged circuit causes an overcurrent,SemiconductorFuse: A fuse whose characteristic is specifically designed for the protection of sem-conductor devices.SwitchDisconnectorFuse: A switch disconnector in which one or more poles have a fuse in series in a composite unit.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09CVJv2XP28AAFZQRhhVUq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09CVJv2XP28AAFZQRhhVUq
+    ifdGuid: 09CVJv2XP28AAFZQRhhVUq
+- propertyName: VoltageLevel
+  usageDefinition: The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3KtcUcC2z2eBa$cBDV9RYI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KtcUcC2z2eBa$cBDV9RYI
+    ifdGuid: 3KtcUcC2z2eBa$cBDV9RYI
+- propertyName: IC60269
+  usageDefinition: The breaking capacity in [A] for fuses in accordance with the IEC 60269 series.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1pX64pJ5D0sxgh$YQjvB54
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pX64pJ5D0sxgh$YQjvB54
+    ifdGuid: 1pX64pJ5D0sxgh$YQjvB54
+- propertyName: PowerLoss
+  usageDefinition: The power loss in [W] of the fuse when the nominal current is flowing through the fuse.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0UMb2HyVbFnBzf_GauqMIZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UMb2HyVbFnBzf_GauqMIZ
+    ifdGuid: 0UMb2HyVbFnBzf_GauqMIZ
 properties:
 - name: FuseDisconnectorType
   definition: 'A list of the available types of fuse disconnector from which that required may be selected where:EngineProtectionDevice: A fuse whose characteristic is specifically designed for the protection of a motor or generator.FuseSwitchDisconnector: A switch disconnector in which a fuse link or a fuse carrier with fuse link forms the moving contact,HRC: A standard fuse (High Rupturing Capacity)OverloadProtectionDevice: A device that disconnects the supply when the operating conditions in an electrically undamaged circuit causes an overcurrent,SemiconductorFuse: A fuse whose characteristic is specifically designed for the protection of sem-conductor devices.SwitchDisconnectorFuse: A switch disconnector in which one or more poles have a fuse in series in a composite unit.'
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3pVzu0qVqHuO00025QrE$V
     ifdGuid: 3pVzu0qVqHuO00025QrE$V
     legacyGuid: f37fde00d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 3pVzu0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3pVzu0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -264,6 +301,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jKEI0qVuHuO00025QrE$V
     ifdGuid: 0jKEI0qVuHuO00025QrE$V
     legacyGuid: 2d50e480d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 0jKEI0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0jKEI0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -509,6 +548,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$onu0qVuHuO00025QrE$V
     ifdGuid: 0$onu0qVuHuO00025QrE$V
     legacyGuid: 3fcb1e00d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 0$onu0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0$onu0qVuHuO00025QrE$V
   localizations:
   - language: en
@@ -558,6 +599,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/15mFy0qVuHuO00025QrE$V
     ifdGuid: 15mFy0qVuHuO00025QrE$V
     legacyGuid: 45c0ff00d1fe11e1800000215ad4efdf
+    legacyGuids:
+    - 15mFy0qVuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 15mFy0qVuHuO00025QrE$V
   localizations:
   - language: en

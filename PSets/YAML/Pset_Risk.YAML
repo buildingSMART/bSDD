@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$8DG0qW0HuO00025QrE$V
   ifdGuid: 3$8DG0qW0HuO00025QrE$V
   legacyGuid: ff20d400d20011e1800000215ad4efdf
+  legacyGuids:
+  - 3$8DG0qW0HuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3$8DG0qW0HuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcProcess
   type: IfcProcess
+propertyUsages:
+- propertyName: RiskType
+  usageDefinition: Identifies the predefined types of risk from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3FpJTDjHH5fPIH9wKsQG1_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3FpJTDjHH5fPIH9wKsQG1_
+    ifdGuid: 3FpJTDjHH5fPIH9wKsQG1_
+- propertyName: NatureOfRisk
+  usageDefinition: "An indication of the generic nature of the risk that might be encountered. NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0S35eiOsD9quCoHatOvY5w
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0S35eiOsD9quCoHatOvY5w
+    ifdGuid: 0S35eiOsD9quCoHatOvY5w
+- propertyName: SubNatureOfRisk1
+  usageDefinition: "A first subsidiary value that might be assigned to designate a more specific type of risk.NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ARAyWQtb1MQPjj1R$T3M$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ARAyWQtb1MQPjj1R$T3M$
+    ifdGuid: 2ARAyWQtb1MQPjj1R$T3M$
+- propertyName: SubNatureOfRisk2
+  usageDefinition: A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/23QU0oF_vFZ8IaXYGPxiLK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23QU0oF_vFZ8IaXYGPxiLK
+    ifdGuid: 23QU0oF_vFZ8IaXYGPxiLK
+- propertyName: RiskCause
+  usageDefinition: A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/23o_IoI398XfC0Lx6nH4oP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23o_IoI398XfC0Lx6nH4oP
+    ifdGuid: 23o_IoI398XfC0Lx6nH4oP
+- propertyName: AssessmentOfRisk
+  usageDefinition: Likelihood of risk event occurring.Note  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/29N3cOEgb7YuPD1ZLv9Zcn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29N3cOEgb7YuPD1ZLv9Zcn
+    ifdGuid: 29N3cOEgb7YuPD1ZLv9Zcn
+- propertyName: RiskConsequence
+  usageDefinition: Indicates the level of severity of the consequences that the risk would have in case it happens.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0y3885gyz6Oxqfq_Xd6aNw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0y3885gyz6Oxqfq_Xd6aNw
+    ifdGuid: 0y3885gyz6Oxqfq_Xd6aNw
+- propertyName: RiskRating
+  usageDefinition: A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3qo$tRK2L5h9_cJHMe0mNp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qo$tRK2L5h9_cJHMe0mNp
+    ifdGuid: 3qo$tRK2L5h9_cJHMe0mNp
+- propertyName: RiskOwner
+  usageDefinition: A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35ujV9GiLCTvGfwhy8VaZf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35ujV9GiLCTvGfwhy8VaZf
+    ifdGuid: 35ujV9GiLCTvGfwhy8VaZf
+- propertyName: AffectsSurroundings
+  usageDefinition: Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).For example, the process of painting would affect all the people in the vicinity of the process.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3G76O3r6b4ZxO0ORYUIhpJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3G76O3r6b4ZxO0ORYUIhpJ
+    ifdGuid: 3G76O3r6b4ZxO0ORYUIhpJ
+- propertyName: PreventiveMeassures
+  usageDefinition: Identifies preventive measures to be taken to mitigate risk.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1FjnnssarBqAvjmqFW2noZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FjnnssarBqAvjmqFW2noZ
+    ifdGuid: 1FjnnssarBqAvjmqFW2noZ
 properties:
 - name: RiskType
   definition: Identifies the predefined types of risk from which the type required may be set.
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/055hK0qW4HuO00025QrE$V
     ifdGuid: 055hK0qW4HuO00025QrE$V
     legacyGuid: 0516b500d20111e1800000215ad4efdf
+    legacyGuids:
+    - 055hK0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 055hK0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -239,6 +332,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KbVu0qW4HuO00025QrE$V
     ifdGuid: 0KbVu0qW4HuO00025QrE$V
     legacyGuid: 1495fe00d20111e1800000215ad4efdf
+    legacyGuids:
+    - 0KbVu0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0KbVu0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -285,6 +380,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RlGm0qW4HuO00025QrE$V
     ifdGuid: 0RlGm0qW4HuO00025QrE$V
     legacyGuid: 1bbd0c00d20111e1800000215ad4efdf
+    legacyGuids:
+    - 0RlGm0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0RlGm0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -331,6 +428,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YIuE0qW4HuO00025QrE$V
     ifdGuid: 0YIuE0qW4HuO00025QrE$V
     legacyGuid: 224b8380d20111e1800000215ad4efdf
+    legacyGuids:
+    - 0YIuE0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0YIuE0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -377,6 +476,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0fSf60qW4HuO00025QrE$V
     ifdGuid: 0fSf60qW4HuO00025QrE$V
     legacyGuid: 29729180d20111e1800000215ad4efdf
+    legacyGuids:
+    - 0fSf60qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0fSf60qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -423,6 +524,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0m0Ga0qW4HuO00025QrE$V
     ifdGuid: 0m0Ga0qW4HuO00025QrE$V
     legacyGuid: 30010900d20111e1800000215ad4efdf
+    legacyGuids:
+    - 0m0Ga0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0m0Ga0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -731,6 +834,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14tPo0qW4HuO00025QrE$V
     ifdGuid: 14tPo0qW4HuO00025QrE$V
     legacyGuid: 44dd9c80d20111e1800000215ad4efdf
+    legacyGuids:
+    - 14tPo0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 14tPo0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -1039,6 +1144,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Qwrq0qW4HuO00025QrE$V
     ifdGuid: 1Qwrq0qW4HuO00025QrE$V
     legacyGuid: 5aeb5d00d20111e1800000215ad4efdf
+    legacyGuids:
+    - 1Qwrq0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Qwrq0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -1347,6 +1454,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1naRG0qW4HuO00025QrE$V
     ifdGuid: 1naRG0qW4HuO00025QrE$V
     legacyGuid: 7191b400d20111e1800000215ad4efdf
+    legacyGuids:
+    - 1naRG0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1naRG0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -1567,6 +1676,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21gPE0qW4HuO00025QrE$V
     ifdGuid: 21gPE0qW4HuO00025QrE$V
     legacyGuid: 81a99380d20111e1800000215ad4efdf
+    legacyGuids:
+    - 21gPE0qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 21gPE0qW4HuO00025QrE$V
   localizations:
   - language: en
@@ -1613,6 +1724,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28qA60qW4HuO00025QrE$V
     ifdGuid: 28qA60qW4HuO00025QrE$V
     legacyGuid: 88d0a180d20111e1800000215ad4efdf
+    legacyGuids:
+    - 28qA60qW4HuO00025QrE$V
     legacyGuidAsIfcGlobalId: 28qA60qW4HuO00025QrE$V
   localizations:
   - language: en

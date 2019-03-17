@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2K9yi0qWaHuO00025QrE$V
   ifdGuid: 2K9yi0qWaHuO00025QrE$V
   legacyGuid: 9427cb00d20911e1800000215ad4efdf
+  legacyGuids:
+  - 2K9yi0qWaHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2K9yi0qWaHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,103 @@ localizations:
 applicableIfcClasses:
 - name: IfcSpaceHeater
   type: IfcSpaceHeater
+propertyUsages:
+- propertyName: FractionRadiantHeatTransfer
+  usageDefinition: Fraction of the total heat transfer rate as the radiant heat transfer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0C_4VVTdzAE8wu9o77awPJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0C_4VVTdzAE8wu9o77awPJ
+    ifdGuid: 0C_4VVTdzAE8wu9o77awPJ
+- propertyName: FractionConvectiveHeatTransfer
+  usageDefinition: Fraction of the total heat transfer rate as the convective heat transfer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3n3b5Bc391lv_oYCrmj5Ba
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3n3b5Bc391lv_oYCrmj5Ba
+    ifdGuid: 3n3b5Bc391lv_oYCrmj5Ba
+- propertyName: Effectiveness
+  usageDefinition: Ratio of the real heat transfer rate to the maximum possible heat transfer rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/39MXlBuoX1MvgohChjxzUK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/39MXlBuoX1MvgohChjxzUK
+    ifdGuid: 39MXlBuoX1MvgohChjxzUK
+- propertyName: SurfaceTemperature
+  usageDefinition: Average surface temperature of the component.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Yy7URhvX7Chxz6HWwZNQZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Yy7URhvX7Chxz6HWwZNQZ
+    ifdGuid: 2Yy7URhvX7Chxz6HWwZNQZ
+- propertyName: SpaceAirTemperature
+  usageDefinition: Dry bulb temperature in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CEfHxyXD9jxUCJ3vDi_gt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CEfHxyXD9jxUCJ3vDi_gt
+    ifdGuid: 1CEfHxyXD9jxUCJ3vDi_gt
+- propertyName: SpaceMeanRadiantTemperature
+  usageDefinition: Mean radiant temperature in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Pzrwf0rH8huqA1f5RzPVb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Pzrwf0rH8huqA1f5RzPVb
+    ifdGuid: 2Pzrwf0rH8huqA1f5RzPVb
+- propertyName: AuxiliaryEnergySourceConsumption
+  usageDefinition: Auxiliary energy source consumption.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AMy4Wc_T5RQsGjjJQfObI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AMy4Wc_T5RQsGjjJQfObI
+    ifdGuid: 3AMy4Wc_T5RQsGjjJQfObI
+- propertyName: UACurve
+  usageDefinition: UA curve as function of ambient temperature and surface temperature; UA = f (Tambient, Tsurface)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Vc_AMVhL4K94oBBXZD7y4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Vc_AMVhL4K94oBBXZD7y4
+    ifdGuid: 3Vc_AMVhL4K94oBBXZD7y4
+- propertyName: OutputCapacityCurve
+  usageDefinition: Partial output capacity curve (as a function of water temperature); Q = f (Twater).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1nneISEv974R8PxV_aSA5c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1nneISEv974R8PxV_aSA5c
+    ifdGuid: 1nneISEv974R8PxV_aSA5c
+- propertyName: AirResistanceCurve
+  usageDefinition: Air resistance curve (w/ fan only); Pressure = f ( flow rate).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3UMhmZlVH6J9II8paU6Mg0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3UMhmZlVH6J9II8paU6Mg0
+    ifdGuid: 3UMhmZlVH6J9II8paU6Mg0
+- propertyName: Exponent
+  usageDefinition: Characteristic exponent, slope of log(heat output) vs log (surface temperature minus environmental temperature).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22BomfYyf5JPY$Wn6p9Uj$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22BomfYyf5JPY$Wn6p9Uj$
+    ifdGuid: 22BomfYyf5JPY$Wn6p9Uj$
+- propertyName: HeatOutputRate
+  usageDefinition: Overall heat transfer rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2QlCYegrPB2xZZ7mLLDtR7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QlCYegrPB2xZZ7mLLDtR7
+    ifdGuid: 2QlCYegrPB2xZZ7mLLDtR7
 properties:
 - name: FractionRadiantHeatTransfer
   definition: Fraction of the total heat transfer rate as the radiant heat transfer.
@@ -41,6 +140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Q7Qm0qWaHuO00025QrE$V
     ifdGuid: 2Q7Qm0qWaHuO00025QrE$V
     legacyGuid: 9a1dac00d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2Q7Qm0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Q7Qm0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +190,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SW0O0qWaHuO00025QrE$V
     ifdGuid: 2SW0O0qWaHuO00025QrE$V
     legacyGuid: 9c800600d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2SW0O0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2SW0O0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +240,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Wh2E0qWaHuO00025QrE$V
     ifdGuid: 2Wh2E0qWaHuO00025QrE$V
     legacyGuid: a0ac2380d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2Wh2E0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Wh2E0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +290,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Z3ds0qWaHuO00025QrE$V
     ifdGuid: 2Z3ds0qWaHuO00025QrE$V
     legacyGuid: a30e7d80d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2Z3ds0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Z3ds0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +340,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2c2Mu0qWaHuO00025QrE$V
     ifdGuid: 2c2Mu0qWaHuO00025QrE$V
     legacyGuid: a6096e00d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2c2Mu0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2c2Mu0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -281,6 +390,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2fdFK0qWaHuO00025QrE$V
     ifdGuid: 2fdFK0qWaHuO00025QrE$V
     legacyGuid: a99cf500d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2fdFK0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2fdFK0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -329,6 +440,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2joHA0qWaHuO00025QrE$V
     ifdGuid: 2joHA0qWaHuO00025QrE$V
     legacyGuid: adc91280d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2joHA0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2joHA0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -377,6 +490,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2nN9c0qWaHuO00025QrE$V
     ifdGuid: 2nN9c0qWaHuO00025QrE$V
     legacyGuid: b15c9980d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2nN9c0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2nN9c0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +540,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2skUG0qWaHuO00025QrE$V
     ifdGuid: 2skUG0qWaHuO00025QrE$V
     legacyGuid: b6b9e400d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2skUG0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2skUG0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -473,6 +590,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vjDI0qWaHuO00025QrE$V
     ifdGuid: 2vjDI0qWaHuO00025QrE$V
     legacyGuid: b9b4d480d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2vjDI0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2vjDI0qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -521,6 +640,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zuF80qWaHuO00025QrE$V
     ifdGuid: 2zuF80qWaHuO00025QrE$V
     legacyGuid: bde0f200d20911e1800000215ad4efdf
+    legacyGuids:
+    - 2zuF80qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2zuF80qWaHuO00025QrE$V
   localizations:
   - language: en
@@ -569,6 +690,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31T7a0qWaHuO00025QrE$V
     ifdGuid: 31T7a0qWaHuO00025QrE$V
     legacyGuid: c1747900d20911e1800000215ad4efdf
+    legacyGuids:
+    - 31T7a0qWaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 31T7a0qWaHuO00025QrE$V
   localizations:
   - language: en

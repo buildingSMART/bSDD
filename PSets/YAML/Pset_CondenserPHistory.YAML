@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Okjk0qSmHuO00025QrE$V
   ifdGuid: 1Okjk0qSmHuO00025QrE$V
   legacyGuid: 58badb80d1cc11e1800000215ad4efdf
+  legacyGuids:
+  - 1Okjk0qSmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1Okjk0qSmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcCondenser
   type: IfcCondenser
+propertyUsages:
+- propertyName: HeatRejectionRate
+  usageDefinition: Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2yfygG1VH83gTht7t3b8ZL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2yfygG1VH83gTht7t3b8ZL
+    ifdGuid: 2yfygG1VH83gTht7t3b8ZL
+- propertyName: ExteriorHeatTransferCoefficient
+  usageDefinition: Exterior heat transfer coefficient associated with exterior surface area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0AUZ53MY9DA9WRG9vYwWUo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0AUZ53MY9DA9WRG9vYwWUo
+    ifdGuid: 0AUZ53MY9DA9WRG9vYwWUo
+- propertyName: InteriorHeatTransferCoefficient
+  usageDefinition: Interior heat transfer coefficient associated with interior surface area.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vWJrkStv3KfYMRTgTTr5b
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vWJrkStv3KfYMRTgTTr5b
+    ifdGuid: 3vWJrkStv3KfYMRTgTTr5b
+- propertyName: RefrigerantFoulingResistance
+  usageDefinition: Fouling resistance on the refrigerant side.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/36RWn8dkz0K9DUPov18BlP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36RWn8dkz0K9DUPov18BlP
+    ifdGuid: 36RWn8dkz0K9DUPov18BlP
+- propertyName: CondensingTemperature
+  usageDefinition: Refrigerant condensing temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LbbraNnT7sfFzjta$u9$N
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LbbraNnT7sfFzjta$u9$N
+    ifdGuid: 3LbbraNnT7sfFzjta$u9$N
+- propertyName: LogarithmicMeanTemperatureDifference
+  usageDefinition: Logarithmic mean temperature difference between refrigerant and water or air.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0KDeljWm1D9AvO4782Vaqa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KDeljWm1D9AvO4782Vaqa
+    ifdGuid: 0KDeljWm1D9AvO4782Vaqa
+- propertyName: UAcurves
+  usageDefinition: UV = f (VExterior, VInterior), UV as a function of interior and exterior fluid flow velocity at the entrance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Cfc_c45L9XB1n5kBECpaO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Cfc_c45L9XB1n5kBECpaO
+    ifdGuid: 0Cfc_c45L9XB1n5kBECpaO
+- propertyName: CompressorCondenserHeatGain
+  usageDefinition: Heat gain between condenser inlet to compressor outlet.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10$LXndXf7eBgthtDKA0u_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10$LXndXf7eBgthtDKA0u_
+    ifdGuid: 10$LXndXf7eBgthtDKA0u_
+- propertyName: CompressorCondenserPressureDrop
+  usageDefinition: Pressure drop between condenser inlet and compressor outlet.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KayZDd0v8K8m7w4y0KsXy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KayZDd0v8K8m7w4y0KsXy
+    ifdGuid: 1KayZDd0v8K8m7w4y0KsXy
+- propertyName: CondenserMeanVoidFraction
+  usageDefinition: Mean void fraction in condenser.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/35QOysYwL7$wdp5BQKfdeB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/35QOysYwL7$wdp5BQKfdeB
+    ifdGuid: 35QOysYwL7$wdp5BQKfdeB
+- propertyName: WaterFoulingResistance
+  usageDefinition: Fouling resistance on water/air side.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zehsRFWX9i9aSkgXu_TPS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zehsRFWX9i9aSkgXu_TPS
+    ifdGuid: 0zehsRFWX9i9aSkgXu_TPS
 properties:
 - name: HeatRejectionRate
   definition: Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.
@@ -41,6 +132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VuUc0qSmHuO00025QrE$V
     ifdGuid: 1VuUc0qSmHuO00025QrE$V
     legacyGuid: 5fe1e980d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1VuUc0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1VuUc0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +182,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1a3WS0qSmHuO00025QrE$V
     ifdGuid: 1a3WS0qSmHuO00025QrE$V
     legacyGuid: 640e0700d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1a3WS0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1a3WS0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +232,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1deOu0qSmHuO00025QrE$V
     ifdGuid: 1deOu0qSmHuO00025QrE$V
     legacyGuid: 67a18e00d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1deOu0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1deOu0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +282,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hpQk0qSmHuO00025QrE$V
     ifdGuid: 1hpQk0qSmHuO00025QrE$V
     legacyGuid: 6bcdab80d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1hpQk0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1hpQk0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +332,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ko9m0qSmHuO00025QrE$V
     ifdGuid: 1ko9m0qSmHuO00025QrE$V
     legacyGuid: 6ec89c00d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1ko9m0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ko9m0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -281,6 +382,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ozBc0qSmHuO00025QrE$V
     ifdGuid: 1ozBc0qSmHuO00025QrE$V
     legacyGuid: 72f4b980d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1ozBc0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ozBc0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -329,6 +432,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1sY420qSmHuO00025QrE$V
     ifdGuid: 1sY420qSmHuO00025QrE$V
     legacyGuid: 76884080d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1sY420qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1sY420qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -377,6 +482,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1w6yU0qSmHuO00025QrE$V
     ifdGuid: 1w6yU0qSmHuO00025QrE$V
     legacyGuid: 7a1bc780d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1w6yU0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1w6yU0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -425,6 +532,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zhqw0qSmHuO00025QrE$V
     ifdGuid: 1zhqw0qSmHuO00025QrE$V
     legacyGuid: 7daf4e80d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 1zhqw0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1zhqw0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -473,6 +582,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21GjM0qSmHuO00025QrE$V
     ifdGuid: 21GjM0qSmHuO00025QrE$V
     legacyGuid: 8142d580d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 21GjM0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 21GjM0qSmHuO00025QrE$V
   localizations:
   - language: en
@@ -521,6 +632,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24rbo0qSmHuO00025QrE$V
     ifdGuid: 24rbo0qSmHuO00025QrE$V
     legacyGuid: 84d65c80d1cc11e1800000215ad4efdf
+    legacyGuids:
+    - 24rbo0qSmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 24rbo0qSmHuO00025QrE$V
   localizations:
   - language: en

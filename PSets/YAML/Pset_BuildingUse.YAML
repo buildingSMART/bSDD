@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2u_ay0qSKHuO00025QrE$V
   ifdGuid: 2u_ay0qSKHuO00025QrE$V
   legacyGuid: b8fa4f00d1c511e1800000215ad4efdf
+  legacyGuids:
+  - 2u_ay0qSKHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2u_ay0qSKHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,103 @@ localizations:
 applicableIfcClasses:
 - name: IfcBuilding
   type: IfcBuilding
+propertyUsages:
+- propertyName: MarketCategory
+  usageDefinition: Category of use e.g. residential, commercial, recreation etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22JBJw2v545g$4xIHbiJYH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22JBJw2v545g$4xIHbiJYH
+    ifdGuid: 22JBJw2v545g$4xIHbiJYH
+- propertyName: MarketSubCategory
+  usageDefinition: Subset of category of use e.g. multi-family, 2 bedroom, low rise.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01kGKFtAP0FgfzYqW$xt0m
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01kGKFtAP0FgfzYqW$xt0m
+    ifdGuid: 01kGKFtAP0FgfzYqW$xt0m
+- propertyName: PlanningControlStatus
+  usageDefinition: Label of zoning category or class, or planning control category for the site or facility.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2IKLkvhKz6bOmP$tPNWxMI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IKLkvhKz6bOmP$tPNWxMI
+    ifdGuid: 2IKLkvhKz6bOmP$tPNWxMI
+- propertyName: NarrativeText
+  usageDefinition: Added information relating to the adjacent building use that is not appropriate to the general descriptive text associated with an entity through the inherited IfcRoot.Description.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LOtIKSJbElwI36TZGtOPX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LOtIKSJbElwI36TZGtOPX
+    ifdGuid: 3LOtIKSJbElwI36TZGtOPX
+- propertyName: VacancyRateInCategoryNow
+  usageDefinition: Percentage of vacancy found in the particular category currently.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0CSn0XNiHCWPN7hMb2avk8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0CSn0XNiHCWPN7hMb2avk8
+    ifdGuid: 0CSn0XNiHCWPN7hMb2avk8
+- propertyName: TenureModesAvailableNow
+  usageDefinition: A list of the tenure modes that are currently available expressed in terms of IfcLabel.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2w$fcnjkL62AJRvVou0KTJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2w$fcnjkL62AJRvVou0KTJ
+    ifdGuid: 2w$fcnjkL62AJRvVou0KTJ
+- propertyName: MarketSubCategoriesAvailableNow
+  usageDefinition: A list of the sub categories of property that are currently available expressed in terms of IfcLabel.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IBBqDTYfFgvsdgDVWWss7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IBBqDTYfFgvsdgDVWWss7
+    ifdGuid: 1IBBqDTYfFgvsdgDVWWss7
+- propertyName: RentalRatesInCategoryNow
+  usageDefinition: Range of the cost rates for property currently available in the required category.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2HumGtYgPBueZdMbOVzLa7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HumGtYgPBueZdMbOVzLa7
+    ifdGuid: 2HumGtYgPBueZdMbOVzLa7
+- propertyName: VacancyRateInCategoryFuture
+  usageDefinition: Percentage of vacancy found in the particular category expected in the future.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0RCe7MOKrBP9JmR0qiyDu0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RCe7MOKrBP9JmR0qiyDu0
+    ifdGuid: 0RCe7MOKrBP9JmR0qiyDu0
+- propertyName: TenureModesAvailableFuture
+  usageDefinition: A list of the tenure modes that are expected to be available in the future expressed in terms of IfcLabel.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1cN1$hYXjFIgLiqJSMxBfi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1cN1$hYXjFIgLiqJSMxBfi
+    ifdGuid: 1cN1$hYXjFIgLiqJSMxBfi
+- propertyName: MarketSubCategoriesAvailableFuture
+  usageDefinition: A list of the sub categories of property that are expected to be available in the future expressed in terms of IfcLabel.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GoSYL4UD1iQEhtOuHPRNN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GoSYL4UD1iQEhtOuHPRNN
+    ifdGuid: 0GoSYL4UD1iQEhtOuHPRNN
+- propertyName: RentalRatesInCategoryFuture
+  usageDefinition: Range of the cost rates for property expected to be available in the future in the required category.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1dcauohdzEp9j6DU7F2Y80
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dcauohdzEp9j6DU7F2Y80
+    ifdGuid: 1dcauohdzEp9j6DU7F2Y80
 properties:
 - name: MarketCategory
   definition: Category of use e.g. residential, commercial, recreation etc.
@@ -41,6 +140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2z9co0qSKHuO00025QrE$V
     ifdGuid: 2z9co0qSKHuO00025QrE$V
     legacyGuid: bd266c80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 2z9co0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2z9co0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +188,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3374s0qSKHuO00025QrE$V
     ifdGuid: 3374s0qSKHuO00025QrE$V
     legacyGuid: c31c4d80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3374s0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3374s0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +236,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/394Yw0qSKHuO00025QrE$V
     ifdGuid: 394Yw0qSKHuO00025QrE$V
     legacyGuid: c9122e80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 394Yw0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 394Yw0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +284,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3F20_0qSKHuO00025QrE$V
     ifdGuid: 3F20_0qSKHuO00025QrE$V
     legacyGuid: cf080f80d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3F20_0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3F20_0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +332,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JpCE0qSKHuO00025QrE$V
     ifdGuid: 3JpCE0qSKHuO00025QrE$V
     legacyGuid: d3ccc380d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3JpCE0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3JpCE0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +380,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3PAWu0qSKHuO00025QrE$V
     ifdGuid: 3PAWu0qSKHuO00025QrE$V
     legacyGuid: d92a0e00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3PAWu0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3PAWu0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -317,6 +428,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Vk8M0qSKHuO00025QrE$V
     ifdGuid: 3Vk8M0qSKHuO00025QrE$V
     legacyGuid: dfb88580d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3Vk8M0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Vk8M0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -363,6 +476,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bhcQ0qSKHuO00025QrE$V
     ifdGuid: 3bhcQ0qSKHuO00025QrE$V
     legacyGuid: e5ae6680d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3bhcQ0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3bhcQ0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -410,6 +525,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hf4U0qSKHuO00025QrE$V
     ifdGuid: 3hf4U0qSKHuO00025QrE$V
     legacyGuid: eba44780d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3hf4U0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3hf4U0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -456,6 +573,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3n0P80qSKHuO00025QrE$V
     ifdGuid: 3n0P80qSKHuO00025QrE$V
     legacyGuid: f1019200d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3n0P80qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3n0P80qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -502,6 +621,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3sztC0qSKHuO00025QrE$V
     ifdGuid: 3sztC0qSKHuO00025QrE$V
     legacyGuid: f6f77300d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3sztC0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3sztC0qSKHuO00025QrE$V
   localizations:
   - language: en
@@ -548,6 +669,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$Jwu0qSKHuO00025QrE$V
     ifdGuid: 3$Jwu0qSKHuO00025QrE$V
     legacyGuid: ff4fae00d1c511e1800000215ad4efdf
+    legacyGuids:
+    - 3$Jwu0qSKHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3$Jwu0qSKHuO00025QrE$V
   localizations:
   - language: en

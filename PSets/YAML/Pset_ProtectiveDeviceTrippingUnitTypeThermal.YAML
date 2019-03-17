@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ULd_0qVmHuO00025QrE$V
   ifdGuid: 3ULd_0qVmHuO00025QrE$V
   legacyGuid: de567f80d1fc11e1800000215ad4efdf
+  legacyGuids:
+  - 3ULd_0qVmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3ULd_0qVmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,63 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit/THERMAL
   type: IfcProtectiveDeviceTrippingUnit/THERMAL
+propertyUsages:
+- propertyName: ThermalTrippingUnitType
+  usageDefinition: A list of the available types of thermal tripping unit  from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3KSBu75hr4wPCtUi_MX1M5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3KSBu75hr4wPCtUi_MX1M5
+    ifdGuid: 3KSBu75hr4wPCtUi_MX1M5
+- propertyName: I1
+  usageDefinition: The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/03xgXw42v9kx_mVH6yg0NJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03xgXw42v9kx_mVH6yg0NJ
+    ifdGuid: 03xgXw42v9kx_mVH6yg0NJ
+- propertyName: I2
+  usageDefinition: The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/27DTAjGzbBnQuiruERoJiB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/27DTAjGzbBnQuiruERoJiB
+    ifdGuid: 27DTAjGzbBnQuiruERoJiB
+- propertyName: T2
+  usageDefinition: The (thermal) testing time in [s] associated with the testing currents I1 and I2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/05Os6Tufj81voPTSWmMEnr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05Os6Tufj81voPTSWmMEnr
+    ifdGuid: 05Os6Tufj81voPTSWmMEnr
+- propertyName: DefinedTemperature
+  usageDefinition: The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0axGg$AjP2TfFH7ADnB_JJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0axGg$AjP2TfFH7ADnB_JJ
+    ifdGuid: 0axGg$AjP2TfFH7ADnB_JJ
+- propertyName: TemperatureFactor
+  usageDefinition: The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qjoGYa0552AJE88M1zNQi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qjoGYa0552AJE88M1zNQi
+    ifdGuid: 0qjoGYa0552AJE88M1zNQi
+- propertyName: CurveDesignation
+  usageDefinition: The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2F$KWX_RT80Rz1lQuYEb0W
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2F$KWX_RT80Rz1lQuYEb0W
+    ifdGuid: 2F$KWX_RT80Rz1lQuYEb0W
 properties:
 - name: ThermalTrippingUnitType
   definition: A list of the available types of thermal tripping unit  from which that required may be selected.
@@ -41,6 +100,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ziye0qVmHuO00025QrE$V
     ifdGuid: 3Ziye0qVmHuO00025QrE$V
     legacyGuid: e3b3ca00d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 3Ziye0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3Ziye0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -242,6 +303,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ocdo0qVmHuO00025QrE$V
     ifdGuid: 3ocdo0qVmHuO00025QrE$V
     legacyGuid: f29a7c80d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 3ocdo0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ocdo0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -291,6 +354,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ua5s0qVmHuO00025QrE$V
     ifdGuid: 3ua5s0qVmHuO00025QrE$V
     legacyGuid: f8905d80d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 3ua5s0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ua5s0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -340,6 +405,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zxQW0qVmHuO00025QrE$V
     ifdGuid: 3zxQW0qVmHuO00025QrE$V
     legacyGuid: fdeda800d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 3zxQW0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3zxQW0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -389,6 +456,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03IlA0qVqHuO00025QrE$V
     ifdGuid: 03IlA0qVqHuO00025QrE$V
     legacyGuid: 034af280d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 03IlA0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 03IlA0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -438,6 +507,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09GDE0qVqHuO00025QrE$V
     ifdGuid: 09GDE0qVqHuO00025QrE$V
     legacyGuid: 0940d380d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 09GDE0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 09GDE0qVqHuO00025QrE$V
   localizations:
   - language: en
@@ -487,6 +558,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0E1OU0qVqHuO00025QrE$V
     ifdGuid: 0E1OU0qVqHuO00025QrE$V
     legacyGuid: 0e058780d1fd11e1800000215ad4efdf
+    legacyGuids:
+    - 0E1OU0qVqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0E1OU0qVqHuO00025QrE$V
   localizations:
   - language: en

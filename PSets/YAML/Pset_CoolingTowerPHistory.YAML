@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14nAa0qSyHuO00025QrE$V
   ifdGuid: 14nAa0qSyHuO00025QrE$V
   legacyGuid: 44c4a900d1cf11e1800000215ad4efdf
+  legacyGuids:
+  - 14nAa0qSyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 14nAa0qSyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,47 @@ localizations:
 applicableIfcClasses:
 - name: IfcCoolingTower
   type: IfcCoolingTower
+propertyUsages:
+- propertyName: Capacity
+  usageDefinition: Cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0aLd9SR0HANxfFup4xy39A
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0aLd9SR0HANxfFup4xy39A
+    ifdGuid: 0aLd9SR0HANxfFup4xy39A
+- propertyName: HeatTransferCoefficient
+  usageDefinition: Heat transfer coefficient-area product.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2vVzfWWFz7mOgjfPHbg0zh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vVzfWWFz7mOgjfPHbg0zh
+    ifdGuid: 2vVzfWWFz7mOgjfPHbg0zh
+- propertyName: SumpHeaterPower
+  usageDefinition: Electrical heat power of sump heater.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DggB1SZDFeBdnnsWmNJyu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DggB1SZDFeBdnnsWmNJyu
+    ifdGuid: 1DggB1SZDFeBdnnsWmNJyu
+- propertyName: UACurve
+  usageDefinition: UA value as a  function of fan speed at certain water flow rate, UA = f ( fan speed).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1bGs4_yAzCwgR_PWiZ96sC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1bGs4_yAzCwgR_PWiZ96sC
+    ifdGuid: 1bGs4_yAzCwgR_PWiZ96sC
+- propertyName: Performance
+  usageDefinition: Water temperature change as a function of wet-bulb temperature, water entering temperature, water flow rate, air flow rate, Tdiff = f ( Twet-bulb, Twater,in, mwater, mair).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1yHRnY8wbEIuS8A4IZpUOZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1yHRnY8wbEIuS8A4IZpUOZ
+    ifdGuid: 1yHRnY8wbEIuS8A4IZpUOZ
 properties:
 - name: Capacity
   definition: Cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream.
@@ -41,6 +84,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Akee0qSyHuO00025QrE$V
     ifdGuid: 1Akee0qSyHuO00025QrE$V
     legacyGuid: 4aba8a00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1Akee0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Akee0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +134,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DjNg0qSyHuO00025QrE$V
     ifdGuid: 1DjNg0qSyHuO00025QrE$V
     legacyGuid: 4db57a80d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1DjNg0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1DjNg0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +184,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Gi6i0qSyHuO00025QrE$V
     ifdGuid: 1Gi6i0qSyHuO00025QrE$V
     legacyGuid: 50b06b00d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1Gi6i0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Gi6i0qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +234,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KG$80qSyHuO00025QrE$V
     ifdGuid: 1KG$80qSyHuO00025QrE$V
     legacyGuid: 5443f200d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1KG$80qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1KG$80qSyHuO00025QrE$V
   localizations:
   - language: en
@@ -233,6 +284,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Nrta0qSyHuO00025QrE$V
     ifdGuid: 1Nrta0qSyHuO00025QrE$V
     legacyGuid: 57d77900d1cf11e1800000215ad4efdf
+    legacyGuids:
+    - 1Nrta0qSyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1Nrta0qSyHuO00025QrE$V
   localizations:
   - language: en

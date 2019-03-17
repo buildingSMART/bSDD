@@ -1,0 +1,48 @@
+﻿name: MoldingHeight
+definition: Height of the molding.The height information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precedence.
+dictionaryReference:
+  dictionaryIdentifier: http://bsdd.buildingsmart.org
+  dictionaryNamespace: PSet
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Lzcn8NAn7c9qjw9yP26Jo
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Lzcn8NAn7c9qjw9yP26Jo
+  ifdGuid: 0Lzcn8NAn7c9qjw9yP26Jo
+  legacyGuid: 1e0092682e5347b2b2c5050bd03ee111
+  legacyGuids:
+  - 0U099eBbD7ihB51GlGFk4H
+  legacyGuidAsIfcGlobalId: 0U099eBbD7ihB51GlGFk4H
+localizations:
+- language: de-DE
+  name: 'Höhe des Gesims'
+  definition: 'Angabe der  Höhe des umlaufenden Gesims (Deckenkante). Der Höhenparameter wird übernommen, wenn kein eigenes Bekleidungsobjekt (IfcCovering mit PredefinedType = MOLDING) für das Gesims dem Raum zugeordnet ist. Bei Inkonsistenzen (wenn beides gegeben ist), hat die Höhe des zugeordneten Bekleidungsobjekts Priorität.'
+- language: en
+  name: 'Molding Height'
+  definition: ''
+- language: fr-FR
+  name: 'Hauteur de la moulure'
+  definition: ''
+- language: ja-JP
+  name: '廻縁高'
+  definition: '部屋の廻縁の高さ。形状表現を持つIfcCovering(type=MOLDING)オブジェクトが存在しない場合に与えられる厚さ情報。IfcCoveringの幾何形状パラメータとこのプロパティ値が一致しない場合、幾何形状パラメータの値を優先する。'
+- language: en-GB
+  name: ''
+  definition: ''
+- language: es-ES
+  name: ''
+  definition: ''
+- language: ru-RU
+  name: ''
+  definition: ''
+typePropertySingleValue:
+  dataType: IfcPositiveLengthMeasure
+  measureType: ''
+  unitType: USERDEFINED
+status:
+  versionNumber: 4
+  dateOfVersion: 2018-01-01T00:00:00.0000000
+  revisionNumber: 2
+  dateOfRevision: 2018-01-01T00:00:00.0000000
+  status: Active
+  dateOfCreation: 2018-01-01T00:00:00.0000000
+  dateOfActivation: 2018-01-01T00:00:00.0000000
+  dateOfLastChange: 2018-01-01T00:00:00.0000000
+  languageOfCreator: en-EN

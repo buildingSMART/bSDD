@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0O78k0qUSHuO00025QrE$V
   ifdGuid: 0O78k0qUSHuO00025QrE$V
   legacyGuid: 181c8b80d1e711e1800000215ad4efdf
+  legacyGuids:
+  - 0O78k0qUSHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0O78k0qUSHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,103 @@ localizations:
 applicableIfcClasses:
 - name: IfcFireSuppressionTerminal/SPRINKLER
   type: IfcFireSuppressionTerminal/SPRINKLER
+propertyUsages:
+- propertyName: SprinklerType
+  usageDefinition: Identifies the predefined types of sprinkler  from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1upi3mGTfFvvoE22$dajDH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1upi3mGTfFvvoE22$dajDH
+    ifdGuid: 1upi3mGTfFvvoE22$dajDH
+- propertyName: Activation
+  usageDefinition: Identifies the predefined methods of sprinkler activation from which that required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3RLQXFJk9FbeSfi2BHfIYC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RLQXFJk9FbeSfi2BHfIYC
+    ifdGuid: 3RLQXFJk9FbeSfi2BHfIYC
+- propertyName: Response
+  usageDefinition: Identifies the predefined methods of sprinkler response from which that required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CqzVRED9FPBMbnNXpeDNy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CqzVRED9FPBMbnNXpeDNy
+    ifdGuid: 1CqzVRED9FPBMbnNXpeDNy
+- propertyName: ActivationTemperature
+  usageDefinition: The temperature at which the object is designed to activate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0D$mWGKSb2jfYFcSxNKfTF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0D$mWGKSb2jfYFcSxNKfTF
+    ifdGuid: 0D$mWGKSb2jfYFcSxNKfTF
+- propertyName: CoverageArea
+  usageDefinition: The area that the sprinkler is designed to protect.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/06uWPsr3j9TQHOp6_ZfpBn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/06uWPsr3j9TQHOp6_ZfpBn
+    ifdGuid: 06uWPsr3j9TQHOp6_ZfpBn
+- propertyName: HasDeflector
+  usageDefinition: Indication of whether the sprinkler has a deflector (baffle) fitted to diffuse the discharge on activation (= TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0OWoto77b35Pc11rggz8J$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0OWoto77b35Pc11rggz8J$
+    ifdGuid: 0OWoto77b35Pc11rggz8J$
+- propertyName: BulbLiquidColor
+  usageDefinition: The color of the liquid in the bulb for a bulb activated sprinkler. Note that the liquid color varies according to the activation temperature requirement of the sprinkler head. Note also that this property does not need to be asserted for quick response activated sprinklers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3J9sat75TAbh95az_YNxEc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3J9sat75TAbh95az_YNxEc
+    ifdGuid: 3J9sat75TAbh95az_YNxEc
+- propertyName: DischargeFlowRate
+  usageDefinition: The volumetric rate of fluid discharge.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3qGQ3o9yTFfwxZY0a8J$M9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3qGQ3o9yTFfwxZY0a8J$M9
+    ifdGuid: 3qGQ3o9yTFfwxZY0a8J$M9
+- propertyName: ResidualFlowingPressure
+  usageDefinition: The residual flowing pressure in the pipeline at which the discharge flow rate is determined.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hiT8nHNPDCBDfgd0fC$LV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hiT8nHNPDCBDfgd0fC$LV
+    ifdGuid: 1hiT8nHNPDCBDfgd0fC$LV
+- propertyName: DischargeCoefficient
+  usageDefinition: The coefficient of flow at the sprinkler.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0M7fKadJ102vbRe7kCOjnQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0M7fKadJ102vbRe7kCOjnQ
+    ifdGuid: 0M7fKadJ102vbRe7kCOjnQ
+- propertyName: MaximumWorkingPressure
+  usageDefinition: Maximum pressure that the object is manufactured to withstand.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Mh_M1pZv6NP4MAcOwS3TI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Mh_M1pZv6NP4MAcOwS3TI
+    ifdGuid: 3Mh_M1pZv6NP4MAcOwS3TI
+- propertyName: ConnectionSize
+  usageDefinition: Size of the inlet connection to the sprinkler.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uH5C9RvHAXRCTmJo4e5nN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uH5C9RvHAXRCTmJo4e5nN
+    ifdGuid: 2uH5C9RvHAXRCTmJo4e5nN
 properties:
 - name: SprinklerType
   definition: Identifies the predefined types of sprinkler  from which the type required may be set.
@@ -41,6 +140,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TUTO0qUSHuO00025QrE$V
     ifdGuid: 0TUTO0qUSHuO00025QrE$V
     legacyGuid: 1d79d600d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 0TUTO0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0TUTO0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -305,6 +406,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nlTC0qUSHuO00025QrE$V
     ifdGuid: 0nlTC0qUSHuO00025QrE$V
     legacyGuid: 31bdd300d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 0nlTC0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0nlTC0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -459,6 +562,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zgPK0qUSHuO00025QrE$V
     ifdGuid: 0zgPK0qUSHuO00025QrE$V
     legacyGuid: 3da99500d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 0zgPK0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0zgPK0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -591,6 +696,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17ovE0qUSHuO00025QrE$V
     ifdGuid: 17ovE0qUSHuO00025QrE$V
     legacyGuid: 47cb9380d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 17ovE0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 17ovE0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -637,6 +744,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DADu0qUSHuO00025QrE$V
     ifdGuid: 1DADu0qUSHuO00025QrE$V
     legacyGuid: 4d28de00d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1DADu0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1DADu0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -683,6 +792,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1J7hy0qUSHuO00025QrE$V
     ifdGuid: 1J7hy0qUSHuO00025QrE$V
     legacyGuid: 531ebf00d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1J7hy0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1J7hy0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -729,6 +840,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PhJQ0qUSHuO00025QrE$V
     ifdGuid: 1PhJQ0qUSHuO00025QrE$V
     legacyGuid: 59ad3680d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1PhJQ0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1PhJQ0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -971,6 +1084,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1im0Q0qUSHuO00025QrE$V
     ifdGuid: 1im0Q0qUSHuO00025QrE$V
     legacyGuid: 6cc00680d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1im0Q0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1im0Q0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -1017,6 +1132,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1o7L40qUSHuO00025QrE$V
     ifdGuid: 1o7L40qUSHuO00025QrE$V
     legacyGuid: 721d5100d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1o7L40qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1o7L40qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -1063,6 +1180,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1u4p80qUSHuO00025QrE$V
     ifdGuid: 1u4p80qUSHuO00025QrE$V
     legacyGuid: 78133200d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1u4p80qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1u4p80qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -1109,6 +1228,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zS7o0qUSHuO00025QrE$V
     ifdGuid: 1zS7o0qUSHuO00025QrE$V
     legacyGuid: 7d707c80d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 1zS7o0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1zS7o0qUSHuO00025QrE$V
   localizations:
   - language: en
@@ -1155,6 +1276,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/23Pbs0qUSHuO00025QrE$V
     ifdGuid: 23Pbs0qUSHuO00025QrE$V
     legacyGuid: 83665d80d1e711e1800000215ad4efdf
+    legacyGuids:
+    - 23Pbs0qUSHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 23Pbs0qUSHuO00025QrE$V
   localizations:
   - language: en

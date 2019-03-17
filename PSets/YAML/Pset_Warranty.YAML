@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01GLs0qXOHuO00025QrE$V
   ifdGuid: 01GLs0qXOHuO00025QrE$V
   legacyGuid: 01415d80d21611e1800000215ad4efdf
+  legacyGuids:
+  - 01GLs0qXOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 01GLs0qXOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcElement
   type: IfcElement
+propertyUsages:
+- propertyName: WarrantyIdentifier
+  usageDefinition: The identifier assigned to a warranty.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17PObFELL2zwUBK_kqeVjR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17PObFELL2zwUBK_kqeVjR
+    ifdGuid: 17PObFELL2zwUBK_kqeVjR
+- propertyName: WarrantyStartDate
+  usageDefinition: The date on which the warranty commences.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/29aKuixgHERBSXDGT3M1IK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29aKuixgHERBSXDGT3M1IK
+    ifdGuid: 29aKuixgHERBSXDGT3M1IK
+- propertyName: WarrantyEndDate
+  usageDefinition: The date on which the warranty expires.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0UvGUhC298JubxmTV8Bssu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UvGUhC298JubxmTV8Bssu
+    ifdGuid: 0UvGUhC298JubxmTV8Bssu
+- propertyName: IsExtendedWarranty
+  usageDefinition: Indication of whether this is an extended warranty whose duration is greater than that normally assigned to an artefact (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2BzLIWW7X8CwLlTmbgiI3t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2BzLIWW7X8CwLlTmbgiI3t
+    ifdGuid: 2BzLIWW7X8CwLlTmbgiI3t
+- propertyName: WarrantyPeriod
+  usageDefinition: The time duration during which a manufacturer or supplier guarantees or warrants the performance of an artefact.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2TEDh08Wv6IB$W6SBemYIE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TEDh08Wv6IB$W6SBemYIE
+    ifdGuid: 2TEDh08Wv6IB$W6SBemYIE
+- propertyName: WarrantyContent
+  usageDefinition: The content of the warranty.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1k7maYvTTBG8zkSIY0KN3I
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1k7maYvTTBG8zkSIY0KN3I
+    ifdGuid: 1k7maYvTTBG8zkSIY0KN3I
+- propertyName: PointOfContact
+  usageDefinition: The organization that should be contacted for action under the terms of the warranty. Note that the role of the organization (manufacturer, supplier, installer etc.) is determined by the IfcActorRole attribute of IfcOrganization.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zY8hXwF56qhG0gqpR4l0z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zY8hXwF56qhG0gqpR4l0z
+    ifdGuid: 1zY8hXwF56qhG0gqpR4l0z
+- propertyName: Exclusions
+  usageDefinition: Items, conditions or actions that may be excluded from the warranty or that may cause the warranty to become void.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25OimWsPP9vvjR0AslGlv7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25OimWsPP9vvjR0AslGlv7
+    ifdGuid: 25OimWsPP9vvjR0AslGlv7
 properties:
 - name: WarrantyIdentifier
   definition: The identifier assigned to a warranty.
@@ -41,6 +108,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08Q6k0qXOHuO00025QrE$V
     ifdGuid: 08Q6k0qXOHuO00025QrE$V
     legacyGuid: 08686b80d21611e1800000215ad4efdf
+    legacyGuids:
+    - 08Q6k0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 08Q6k0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -87,6 +156,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EzkC0qXOHuO00025QrE$V
     ifdGuid: 0EzkC0qXOHuO00025QrE$V
     legacyGuid: 0ef6e300d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0EzkC0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0EzkC0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -133,6 +204,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0KL2s0qXOHuO00025QrE$V
     ifdGuid: 0KL2s0qXOHuO00025QrE$V
     legacyGuid: 14542d80d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0KL2s0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0KL2s0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -179,6 +252,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PiNW0qXOHuO00025QrE$V
     ifdGuid: 0PiNW0qXOHuO00025QrE$V
     legacyGuid: 19b17800d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0PiNW0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0PiNW0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -225,6 +300,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ws8O0qXOHuO00025QrE$V
     ifdGuid: 0Ws8O0qXOHuO00025QrE$V
     legacyGuid: 20d88600d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0Ws8O0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Ws8O0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +348,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0gOUu0qXOHuO00025QrE$V
     ifdGuid: 0gOUu0qXOHuO00025QrE$V
     legacyGuid: 2a61ee00d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0gOUu0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0gOUu0qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -317,6 +396,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cDT20qXOHuO00025QrE$V
     ifdGuid: 0cDT20qXOHuO00025QrE$V
     legacyGuid: 2635d080d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0cDT20qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0cDT20qXOHuO00025QrE$V
   localizations:
   - language: en
@@ -363,6 +444,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0my6M0qXOHuO00025QrE$V
     ifdGuid: 0my6M0qXOHuO00025QrE$V
     legacyGuid: 30f06580d21611e1800000215ad4efdf
+    legacyGuids:
+    - 0my6M0qXOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0my6M0qXOHuO00025QrE$V
   localizations:
   - language: en

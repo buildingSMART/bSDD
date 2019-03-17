@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qZ640qTeHuO00025QrE$V
   ifdGuid: 2qZ640qTeHuO00025QrE$V
   legacyGuid: b48c6100d1da11e1800000215ad4efdf
+  legacyGuids:
+  - 2qZ640qTeHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2qZ640qTeHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -33,6 +35,95 @@ localizations:
 applicableIfcClasses:
 - name: IfcDistributionSystem/VENTILATION
   type: IfcDistributionSystem/VENTILATION
+propertyUsages:
+- propertyName: DesignName
+  usageDefinition: A name for the design values.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0t9VG9ribEpAmXEddRiQba
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0t9VG9ribEpAmXEddRiQba
+    ifdGuid: 0t9VG9ribEpAmXEddRiQba
+- propertyName: DuctSizingMethod
+  usageDefinition: Enumeration that identifies the methodology to be used to size system components.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2tz5qXVkf7IwUzz3p6$7_o
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2tz5qXVkf7IwUzz3p6$7_o
+    ifdGuid: 2tz5qXVkf7IwUzz3p6$7_o
+- propertyName: PressureClass
+  usageDefinition: Nominal pressure rating of the system components. (Data type = PressureMeasure)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/293hHHFT1FCec4BTipODCE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/293hHHFT1FCec4BTipODCE
+    ifdGuid: 293hHHFT1FCec4BTipODCE
+- propertyName: LeakageClass
+  usageDefinition: Nominal leakage rating for the system components.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/14Z4o3pZP40RWXGonvelHp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14Z4o3pZP40RWXGonvelHp
+    ifdGuid: 14Z4o3pZP40RWXGonvelHp
+- propertyName: FrictionLoss
+  usageDefinition: The pressure loss due to friction per unit length. (Data type = PressureMeasure/LengthMeasure)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3IXy7L6VL3VuVjuyd9JcE1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IXy7L6VL3VuVjuyd9JcE1
+    ifdGuid: 3IXy7L6VL3VuVjuyd9JcE1
+- propertyName: ScrapFactor
+  usageDefinition: Sheet metal scrap factor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3lQb1$Y2n9M8eT9hVc2GWE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lQb1$Y2n9M8eT9hVc2GWE
+    ifdGuid: 3lQb1$Y2n9M8eT9hVc2GWE
+- propertyName: DuctSealant
+  usageDefinition: Type of sealant used on the duct and fittings.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2xw06EaefBlgjNFPdl7l2O
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2xw06EaefBlgjNFPdl7l2O
+    ifdGuid: 2xw06EaefBlgjNFPdl7l2O
+- propertyName: MaximumVelocity
+  usageDefinition: The maximum design velocity of the air in the duct or fitting.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/16luPFAcHFxvfqDhFhxPB4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16luPFAcHFxvfqDhFhxPB4
+    ifdGuid: 16luPFAcHFxvfqDhFhxPB4
+- propertyName: AspectRatio
+  usageDefinition: The default aspect ratio.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ARQXaxoDF7OPbpljGMatE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ARQXaxoDF7OPbpljGMatE
+    ifdGuid: 0ARQXaxoDF7OPbpljGMatE
+- propertyName: MinimumHeight
+  usageDefinition: The minimum duct height for rectangular, oval or round duct.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2HeEb4aXz24wDZcmFdJ2$U
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HeEb4aXz24wDZcmFdJ2$U
+    ifdGuid: 2HeEb4aXz24wDZcmFdJ2$U
+- propertyName: MinimumWidth
+  usageDefinition: The minimum duct width for oval or rectangular duct.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0D_tU3CFTBNggrm3j4D45T
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0D_tU3CFTBNggrm3j4D45T
+    ifdGuid: 0D_tU3CFTBNggrm3j4D45T
 properties:
 - name: DesignName
   definition: A name for the design values.
@@ -43,6 +134,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vKHK0qTeHuO00025QrE$V
     ifdGuid: 2vKHK0qTeHuO00025QrE$V
     legacyGuid: b9511500d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 2vKHK0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2vKHK0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -92,6 +185,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$tuo0qTeHuO00025QrE$V
     ifdGuid: 2$tuo0qTeHuO00025QrE$V
     legacyGuid: bfdf8c80d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 2$tuo0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2$tuo0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -271,6 +366,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EBQY0qTeHuO00025QrE$V
     ifdGuid: 3EBQY0qTeHuO00025QrE$V
     legacyGuid: ce2da880d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3EBQY0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3EBQY0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -320,6 +417,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JYlC0qTeHuO00025QrE$V
     ifdGuid: 3JYlC0qTeHuO00025QrE$V
     legacyGuid: d38af300d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3JYlC0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3JYlC0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -369,6 +468,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3OJwS0qTeHuO00025QrE$V
     ifdGuid: 3OJwS0qTeHuO00025QrE$V
     legacyGuid: d84fa700d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3OJwS0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3OJwS0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -418,6 +519,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ThF60qTeHuO00025QrE$V
     ifdGuid: 3ThF60qTeHuO00025QrE$V
     legacyGuid: ddacf180d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3ThF60qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3ThF60qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -467,6 +570,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YSQM0qTeHuO00025QrE$V
     ifdGuid: 3YSQM0qTeHuO00025QrE$V
     legacyGuid: e271a580d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3YSQM0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3YSQM0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -517,6 +622,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cdSC0qTeHuO00025QrE$V
     ifdGuid: 3cdSC0qTeHuO00025QrE$V
     legacyGuid: e69dc300d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3cdSC0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3cdSC0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -566,6 +673,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3kzVu0qTeHuO00025QrE$V
     ifdGuid: 3kzVu0qTeHuO00025QrE$V
     legacyGuid: eef5fe00d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3kzVu0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3kzVu0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -615,6 +724,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3uVsO0qTeHuO00025QrE$V
     ifdGuid: 3uVsO0qTeHuO00025QrE$V
     legacyGuid: f87f6600d1da11e1800000215ad4efdf
+    legacyGuids:
+    - 3uVsO0qTeHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3uVsO0qTeHuO00025QrE$V
   localizations:
   - language: en
@@ -664,6 +775,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/02eMI0qTiHuO00025QrE$V
     ifdGuid: 02eMI0qTiHuO00025QrE$V
     legacyGuid: 02a16480d1db11e1800000215ad4efdf
+    legacyGuids:
+    - 02eMI0qTiHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 02eMI0qTiHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2DHek0qVmHuO00025QrE$V
   ifdGuid: 2DHek0qVmHuO00025QrE$V
   legacyGuid: 8d468b80d1fc11e1800000215ad4efdf
+  legacyGuids:
+  - 2DHek0qVmHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 2DHek0qVmHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,55 @@ localizations:
 applicableIfcClasses:
 - name: IfcProtectiveDeviceTrippingUnit/ELECTRONIC
   type: IfcProtectiveDeviceTrippingUnit/ELECTRONIC
+propertyUsages:
+- propertyName: ElectronicTrippingUnitType
+  usageDefinition: A list of the available types of electronic tripping unit  from which that required may be selected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/21g2T3fr59Y9S6dR5Bj7Sj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21g2T3fr59Y9S6dR5Bj7Sj
+    ifdGuid: 21g2T3fr59Y9S6dR5Bj7Sj
+- propertyName: NominalCurrents
+  usageDefinition: A set of values providing information on available modules (chips) for setting the nominal current of the protective device. Ifthe set is empty, no nominal current modules are available for the tripping unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/22bOLgT3PArgHRmUis622h
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/22bOLgT3PArgHRmUis622h
+    ifdGuid: 22bOLgT3PArgHRmUis622h
+- propertyName: N_Protection
+  usageDefinition: An indication whether the electronic tripping unit has separate protection for the N conductor, or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hV7oy3dX4ygLUI8i_yjh7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hV7oy3dX4ygLUI8i_yjh7
+    ifdGuid: 0hV7oy3dX4ygLUI8i_yjh7
+- propertyName: N_Protection_50
+  usageDefinition: An indication whether the electronic tripping unit is tripping if the current in the N conductor is more than 50% of that of the phase conductors. The property is only asserted if the property N_Protection is asserted.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zryhJajjBNx6Er3EuZbKX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zryhJajjBNx6Er3EuZbKX
+    ifdGuid: 0zryhJajjBNx6Er3EuZbKX
+- propertyName: N_Protection_100
+  usageDefinition: An indication whether the electronic tripping unit is tripping if the current in the N conductor is more than 100% of that of the phase conductors. The property is only asserted if the property N_Protection is asserted.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3YSycRVhT1AuQ0I5trJzFF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3YSycRVhT1AuQ0I5trJzFF
+    ifdGuid: 3YSycRVhT1AuQ0I5trJzFF
+- propertyName: N_Protection_Select
+  usageDefinition: An indication whether the use of the N_Protection can be selected by the user or not. If both the properties N_Protection_50 and N_Protection_100 are asserted, the value of N_Protection_Select property is set to TRUE. The property is only asserted if the property N_Protection is asserted.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0IEych6V97lgJQISSrq$i_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0IEych6V97lgJQISSrq$i_
+    ifdGuid: 0IEych6V97lgJQISSrq$i_
 properties:
 - name: ElectronicTrippingUnitType
   definition: A list of the available types of electronic tripping unit  from which that required may be selected.
@@ -41,6 +92,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IezO0qVmHuO00025QrE$V
     ifdGuid: 2IezO0qVmHuO00025QrE$V
     legacyGuid: 92a3d600d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 2IezO0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2IezO0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -264,6 +317,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Y8ny0qVmHuO00025QrE$V
     ifdGuid: 2Y8ny0qVmHuO00025QrE$V
     legacyGuid: a2231f00d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 2Y8ny0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2Y8ny0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -313,6 +368,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2fIYq0qVmHuO00025QrE$V
     ifdGuid: 2fIYq0qVmHuO00025QrE$V
     legacyGuid: a94a2d00d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 2fIYq0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2fIYq0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -362,6 +419,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mSJi0qVmHuO00025QrE$V
     ifdGuid: 2mSJi0qVmHuO00025QrE$V
     legacyGuid: b0713b00d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 2mSJi0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2mSJi0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -411,6 +470,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uoNO0qVmHuO00025QrE$V
     ifdGuid: 2uoNO0qVmHuO00025QrE$V
     legacyGuid: b8c97600d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 2uoNO0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2uoNO0qVmHuO00025QrE$V
   localizations:
   - language: en
@@ -460,6 +521,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_lrS0qVmHuO00025QrE$V
     ifdGuid: 2_lrS0qVmHuO00025QrE$V
     legacyGuid: bebf5700d1fc11e1800000215ad4efdf
+    legacyGuids:
+    - 2_lrS0qVmHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2_lrS0qVmHuO00025QrE$V
   localizations:
   - language: en

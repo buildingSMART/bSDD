@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1kJVQ0qWWHuO00025QrE$V
   ifdGuid: 1kJVQ0qWWHuO00025QrE$V
   legacyGuid: 6e4df680d20811e1800000215ad4efdf
+  legacyGuids:
+  - 1kJVQ0qWWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1kJVQ0qWWHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcAnnotation/SOUND
   type: IfcAnnotation/SOUND
+propertyUsages:
+- propertyName: SoundScale
+  usageDefinition: 'The reference sound scale.  DBA: Decibels in an A-weighted scaleDBB: Decibels in an B-weighted scaleDBC: Decibels in an C-weighted scaleNC: Noise criteriaNR: Noise rating'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3WTLmaAZzDg9g5ni5QuZR_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WTLmaAZzDg9g5ni5QuZR_
+    ifdGuid: 3WTLmaAZzDg9g5ni5QuZR_
+- propertyName: SoundFrequency
+  usageDefinition: List of nominal sound frequencies, correlated to the SoundPressure time series values (IfcTimeSeries.ListValues)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2lm4EsmfLCAA6EUeCITWrZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2lm4EsmfLCAA6EUeCITWrZ
+    ifdGuid: 2lm4EsmfLCAA6EUeCITWrZ
+- propertyName: SoundPressure
+  usageDefinition: A time series of sound pressure values measured in decibels at a reference pressure of 20 microPascals for the referenced octave band frequency.  Each value in IfcTimeSeries.ListValues is correlated to the sound frequency at the same position within SoundFrequencies.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1gEffvee50W96k54aZM_t$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1gEffvee50W96k54aZM_t$
+    ifdGuid: 1gEffvee50W96k54aZM_t$
 properties:
 - name: SoundScale
   definition: 'The reference sound scale.  DBA: Decibels in an A-weighted scaleDBB: Decibels in an B-weighted scaleDBC: Decibels in an C-weighted scaleNC: Noise criteriaNR: Noise rating'
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qGzU0qWWHuO00025QrE$V
     ifdGuid: 1qGzU0qWWHuO00025QrE$V
     legacyGuid: 7443d780d20811e1800000215ad4efdf
+    legacyGuids:
+    - 1qGzU0qWWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1qGzU0qWWHuO00025QrE$V
   localizations:
   - language: en
@@ -198,6 +227,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20o300qWWHuO00025QrE$V
     ifdGuid: 20o300qWWHuO00025QrE$V
     legacyGuid: 80c83000d20811e1800000215ad4efdf
+    legacyGuids:
+    - 20o300qWWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 20o300qWWHuO00025QrE$V
   localizations:
   - language: en
@@ -247,6 +278,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25ZEG0qWWHuO00025QrE$V
     ifdGuid: 25ZEG0qWWHuO00025QrE$V
     legacyGuid: 858ce400d20811e1800000215ad4efdf
+    legacyGuids:
+    - 25ZEG0qWWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 25ZEG0qWWHuO00025QrE$V
   localizations:
   - language: en

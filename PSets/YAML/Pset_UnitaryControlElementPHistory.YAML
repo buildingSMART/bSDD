@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0B5P60qXCHuO00025QrE$V
   ifdGuid: 0B5P60qXCHuO00025QrE$V
   legacyGuid: 0b159180d21311e1800000215ad4efdf
+  legacyGuids:
+  - 0B5P60qXCHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0B5P60qXCHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcUnitaryControlElement
   type: IfcUnitaryControlElement
+propertyUsages:
+- propertyName: Temperature
+  usageDefinition: Indicates the current measured temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/37ueNlu4jBDxZMC$uFSR67
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/37ueNlu4jBDxZMC$uFSR67
+    ifdGuid: 37ueNlu4jBDxZMC$uFSR67
+- propertyName: Mode
+  usageDefinition: Indicates operation mode corresponding to Pset_UnitaryControlTypeCommon.Mode.  For example, 'HEAT', 'COOL', 'AUTO'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0WNSIQP$115gwZhZvwWhA2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0WNSIQP$115gwZhZvwWhA2
+    ifdGuid: 0WNSIQP$115gwZhZvwWhA2
+- propertyName: Fan
+  usageDefinition: Indicates fan operation where True is on, False is off, and Unknown is automatic.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Zk8Vd5ej55frMMmSv_op4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Zk8Vd5ej55frMMmSv_op4
+    ifdGuid: 1Zk8Vd5ej55frMMmSv_op4
+- propertyName: SetPoint
+  usageDefinition: Indicates the temperature setpoint.  For thermostats with setbacks or separate high and low setpoints, then the time series may contain a pair of values at each entry where the first value is the heating setpoint (low) and the second value is the cooling setpoint (high).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1AcLeVZ_f09O68cIxvS9uY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AcLeVZ_f09O68cIxvS9uY
+    ifdGuid: 1AcLeVZ_f09O68cIxvS9uY
 properties:
 - name: Temperature
   definition: Indicates the current measured temperature.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GSjm0qXCHuO00025QrE$V
     ifdGuid: 0GSjm0qXCHuO00025QrE$V
     legacyGuid: 1072dc00d21311e1800000215ad4efdf
+    legacyGuids:
+    - 0GSjm0qXCHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0GSjm0qXCHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +126,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JRSo0qXCHuO00025QrE$V
     ifdGuid: 0JRSo0qXCHuO00025QrE$V
     legacyGuid: 136dcc80d21311e1800000215ad4efdf
+    legacyGuids:
+    - 0JRSo0qXCHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0JRSo0qXCHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +176,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0N0LE0qXCHuO00025QrE$V
     ifdGuid: 0N0LE0qXCHuO00025QrE$V
     legacyGuid: 17015380d21311e1800000215ad4efdf
+    legacyGuids:
+    - 0N0LE0qXCHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0N0LE0qXCHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +226,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QbDg0qXCHuO00025QrE$V
     ifdGuid: 0QbDg0qXCHuO00025QrE$V
     legacyGuid: 1a94da80d21311e1800000215ad4efdf
+    legacyGuids:
+    - 0QbDg0qXCHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0QbDg0qXCHuO00025QrE$V
   localizations:
   - language: en

@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2hEX8rHcf2IhhVoApZBdbu
   ifdGuid: 2hEX8rHcf2IhhVoApZBdbu
   legacyGuid: 8b098786504d43c3bc4033c8ceccee6d
+  legacyGuids:
+  - 2B2OU6K4r3mxn0CyZEpEvj
   legacyGuidAsIfcGlobalId: 2B2OU6K4r3mxn0CyZEpEvj
 localizations:
 - language: de-DE
@@ -31,6 +33,119 @@ localizations:
 applicableIfcClasses:
 - name: IfcCableSegment
   type: IfcCableSegment
+propertyUsages:
+- propertyName: DesignAmbientTemperature
+  usageDefinition: The highest and lowest local ambient temperature likely to be encountered.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Wlu5G8nvBbvWuI2as7mTB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Wlu5G8nvBbvWuI2as7mTB
+    ifdGuid: 1Wlu5G8nvBbvWuI2as7mTB
+- propertyName: UserCorrectionFactor
+  usageDefinition: An arbitrary correction factor that may be applied by the user.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2TjQTBbwz8bgd4tlV0Iqll
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2TjQTBbwz8bgd4tlV0Iqll
+    ifdGuid: 2TjQTBbwz8bgd4tlV0Iqll
+- propertyName: NumberOfParallelCircuits
+  usageDefinition: Number of parallel circuits.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2sx_Zn8hTDrQZ7H_vw7Uh3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sx_Zn8hTDrQZ7H_vw7Uh3
+    ifdGuid: 2sx_Zn8hTDrQZ7H_vw7Uh3
+- propertyName: InstallationMethod
+  usageDefinition: Method of installation of cable/conductor. Installation methods are typically defined by reference in standards such as IEC 60364-5-52, table 52A-1 or BS7671 Appendix 4 Table 4A1 etc. Selection of the value to be used should be determined from such a standard according to local usage.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0TO7K4TpzBzPYIovuwtK$V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0TO7K4TpzBzPYIovuwtK$V
+    ifdGuid: 0TO7K4TpzBzPYIovuwtK$V
+- propertyName: InstallationMethodFlagEnum
+  usageDefinition: Special installation conditions relating to particular types of installation based on IEC60364-5-52:2001 reference installation methods C and D.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25x7mUzfLCTPfIGO4srF11
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25x7mUzfLCTPfIGO4srF11
+    ifdGuid: 25x7mUzfLCTPfIGO4srF11
+- propertyName: DistanceBetweenParallelCircuits
+  usageDefinition: Distance measured between parallel circuits.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0bTe4p_fT0E8XqYKTgTNEd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bTe4p_fT0E8XqYKTgTNEd
+    ifdGuid: 0bTe4p_fT0E8XqYKTgTNEd
+- propertyName: SoilConductivity
+  usageDefinition: Thermal conductivity of soil. Generally, within standards such as IEC 60364-5-52, table 52A-16, the resistivity of soil is required (measured in [SI] units of degK.m /W). This is the reciprocal of the conductivity value and needs to be calculated accordingly.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0mgPUwyKvEEOCdcmui3IkD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0mgPUwyKvEEOCdcmui3IkD
+    ifdGuid: 0mgPUwyKvEEOCdcmui3IkD
+- propertyName: CarrierStackNumber
+  usageDefinition: Number of carrier segments (tray, ladder etc.) that are vertically stacked (vertical is measured as the z-axis of the local coordinate system of the carrier segment).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/059NIHlB96VuuQ$Jss1Ezg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/059NIHlB96VuuQ$Jss1Ezg
+    ifdGuid: 059NIHlB96VuuQ$Jss1Ezg
+- propertyName: MountingMethod
+  usageDefinition: The method of mounting cable segment occurrences on a cable carrier occurrence from which the method required can be selected. This is for the purpose of carrying out 'worst case' cable sizing calculations and may be a conceptual requirement rather than a statement of the physical occurrences of cable and carrier segments.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1786Y2n7b6bg8WKVaatdes
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1786Y2n7b6bg8WKVaatdes
+    ifdGuid: 1786Y2n7b6bg8WKVaatdes
+- propertyName: IsHorizontalCable
+  usageDefinition: Indication of whether the cable occurrences are mounted horizontally (= TRUE) or vertically (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3j7QNJ20r0Vedx9ysiUw0m
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3j7QNJ20r0Vedx9ysiUw0m
+    ifdGuid: 3j7QNJ20r0Vedx9ysiUw0m
+- propertyName: IsMountedFlatCable
+  usageDefinition: Indication of whether the cable occurrences are mounted flat (= TRUE) or in a trefoil pattern (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0t9ysWAxDBKP$QMhaW5Frg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0t9ysWAxDBKP$QMhaW5Frg
+    ifdGuid: 0t9ysWAxDBKP$QMhaW5Frg
+- propertyName: CurrentCarryingCapasity
+  usageDefinition: 'Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperature specified value is maximum Design Ambient Temperature.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3su_YhJrL6zPAAJgBBzfhn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3su_YhJrL6zPAAJgBBzfhn
+    ifdGuid: 3su_YhJrL6zPAAJgBBzfhn
+- propertyName: MaximumCableLength
+  usageDefinition: 'Maximum cable length based on voltagedrop. NOTE: This value may also be specified as a constraint within an IFC model if required but is included within the property set at this stage pending implementation of the required capabilities within software applications.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3zS_mZ2SHBk8L7Ks8GI$eg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zS_mZ2SHBk8L7Ks8GI$eg
+    ifdGuid: 3zS_mZ2SHBk8L7Ks8GI$eg
+- propertyName: PowerLoss
+  usageDefinition: Total loss of power across this cable.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/044mSzR3rDmfTh8XblxIlc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/044mSzR3rDmfTh8XblxIlc
+    ifdGuid: 044mSzR3rDmfTh8XblxIlc
 properties:
 - name: DesignAmbientTemperature
   definition: The highest and lowest local ambient temperature likely to be encountered.
@@ -39,8 +154,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0IpDUvFwf6jeutA5sCO6Jk'
+    ifdGuid: 0IpDUvFwf6jeutA5sCO6Jk
     legacyGuid: 55fbb56361a24104a0e4b53d8e4cffd5
+    legacyGuids:
+    - 1L_xLZOQ911A3ajJsEJF$L
     legacyGuidAsIfcGlobalId: 1L_xLZOQ911A3ajJsEJF$L
   localizations:
   - language: en
@@ -86,8 +203,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0S$jX0A5HEO9qF$8KqGMVO'
+    ifdGuid: 0S$jX0A5HEO9qF$8KqGMVO
     legacyGuid: d9a5be4540394d228b6c573471e71f22
+    legacyGuids:
+    - 3PfRv5G3bD8ejiLpHnvnyY
     legacyGuidAsIfcGlobalId: 3PfRv5G3bD8ejiLpHnvnyY
   localizations:
   - language: en
@@ -134,6 +253,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WcMHnMLX2Hxyrm8c62H0y
     ifdGuid: 2WcMHnMLX2Hxyrm8c62H0y
     legacyGuid: 4a80a2ecf3504fc6ba3f2235e2f25f04
+    legacyGuids:
+    - 1AWABiyr1Fnhe$8ZNYyby4
     legacyGuidAsIfcGlobalId: 1AWABiyr1Fnhe$8ZNYyby4
   localizations:
   - language: en
@@ -180,6 +301,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ZNlqLzaDEWBf79TWJ7$2R
     ifdGuid: 0ZNlqLzaDEWBf79TWJ7$2R
     legacyGuid: 7c0ce24f9d034d9b83da2ac5e4a0634c
+    legacyGuids:
+    - 1y3E9FdGDDcuFQAiNae6DC
     legacyGuidAsIfcGlobalId: 1y3E9FdGDDcuFQAiNae6DC
   localizations:
   - language: en
@@ -226,6 +349,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kyYqP9Mf3JeNfkjRlQ$KI
     ifdGuid: 0kyYqP9Mf3JeNfkjRlQ$KI
     legacyGuid: be5fd0db9e234a84b4e07762a0e065e1
+    legacyGuids:
+    - 2_Nz3RdYDAXBJWTsAWu6NX
     legacyGuidAsIfcGlobalId: 2_Nz3RdYDAXBJWTsAWu6NX
   localizations:
   - language: en
@@ -424,6 +549,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2gAG0NUaPEkALZKlTIcH4j
     ifdGuid: 2gAG0NUaPEkALZKlTIcH4j
     legacyGuid: 977d1cc9f8f548dcaa23820a3e9d0774
+    legacyGuids:
+    - 2NVHp9_FL8tAeZWWe_dGTq
     legacyGuidAsIfcGlobalId: 2NVHp9_FL8tAeZWWe_dGTq
   localizations:
   - language: en
@@ -470,6 +597,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2l9v_rFQn4KBRk2k9_6Enp
     ifdGuid: 2l9v_rFQn4KBRk2k9_6Enp
     legacyGuid: 366428fd19e54457a10ad655640758e7
+    legacyGuids:
+    - 0sP2Zz6UL4Lw4ArbLa1rZd
     legacyGuidAsIfcGlobalId: 0sP2Zz6UL4Lw4ArbLa1rZd
   localizations:
   - language: en
@@ -516,6 +645,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lEXoRL3v6ywwoKaUQcT$J
     ifdGuid: 3lEXoRL3v6ywwoKaUQcT$J
     legacyGuid: 7a917ce35e224ad58d1e87bc3656c1b8
+    legacyGuids:
+    - 1waNpZNY9ArOqUXxmsLi6u
     legacyGuidAsIfcGlobalId: 1waNpZNY9ArOqUXxmsLi6u
   localizations:
   - language: en
@@ -562,6 +693,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jnNITWuL1zf6AS6UciAZ4
     ifdGuid: 1jnNITWuL1zf6AS6UciAZ4
     legacyGuid: 12584689253640919491fb29d755ac82
+    legacyGuids:
+    - 0IM4Q99JP0aPIH_odNLQo2
     legacyGuidAsIfcGlobalId: 0IM4Q99JP0aPIH_odNLQo2
   localizations:
   - language: en
@@ -716,6 +849,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2OIAGCT2T1tQdYZrkVgwW7
     ifdGuid: 2OIAGCT2T1tQdYZrkVgwW7
     legacyGuid: d4ec271863334e1ea8cdd1a1d63c7708
+    legacyGuids:
+    - 3Kx2SOOpDE7gZDqQ7MF7S8
     legacyGuidAsIfcGlobalId: 3Kx2SOOpDE7gZDqQ7MF7S8
   localizations:
   - language: en
@@ -762,6 +897,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2sgLCyOubCsABWMX4yRq$w
     ifdGuid: 2sgLCyOubCsABWMX4yRq$w
     legacyGuid: 2632b74803d346c0aafd3f7cff1f8d99
+    legacyGuids:
+    - 0cChT80zD6mAhzFtp$7usP
     legacyGuidAsIfcGlobalId: 0cChT80zD6mAhzFtp$7usP
   localizations:
   - language: en
@@ -808,6 +945,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0010zzDu1DGQmc3gwA5Tve
     ifdGuid: 0010zzDu1DGQmc3gwA5Tve
     legacyGuid: a56d336272784003b1418d8169f8652f
+    legacyGuids:
+    - 2bRJDYSdX00x51ZO5f_6Kl
     legacyGuidAsIfcGlobalId: 2bRJDYSdX00x51ZO5f_6Kl
   localizations:
   - language: en
@@ -854,6 +993,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LexilE1r1oOVxWd$BQuc0
     ifdGuid: 2LexilE1r1oOVxWd$BQuc0
     legacyGuid: a008e02d7f54483383e4f8069dde0f37
+    legacyGuids:
+    - 2W2E0jVrH8CuFa_0QTtWyt
     legacyGuidAsIfcGlobalId: 2W2E0jVrH8CuFa_0QTtWyt
   localizations:
   - language: en
@@ -900,6 +1041,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2JrGMduPz65x6spSDSPKbq
     ifdGuid: 2JrGMduPz65x6spSDSPKbq
     legacyGuid: 47d6edba8d714af2b05f07d968909ff6
+    legacyGuids:
+    - 17rkswZN5Ayh1V1zbea9$s
     legacyGuidAsIfcGlobalId: 17rkswZN5Ayh1V1zbea9$s
   localizations:
   - language: en

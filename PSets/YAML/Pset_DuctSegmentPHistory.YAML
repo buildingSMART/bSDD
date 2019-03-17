@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14Vze0qTuHuO00025QrE$V
   ifdGuid: 14Vze0qTuHuO00025QrE$V
   legacyGuid: 447fda00d1de11e1800000215ad4efdf
+  legacyGuids:
+  - 14Vze0qTuHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 14Vze0qTuHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcDuctSegment
   type: IfcDuctSegment
+propertyUsages:
+- propertyName: LossCoefficient
+  usageDefinition: Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3z5N4azEP7EOQLo4QLvOBo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3z5N4azEP7EOQLo4QLvOBo
+    ifdGuid: 3z5N4azEP7EOQLo4QLvOBo
+- propertyName: AtmosphericPressure
+  usageDefinition: Ambient atmospheric pressure.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QmzTUFRj7wBB5zw9sm$wM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QmzTUFRj7wBB5zw9sm$wM
+    ifdGuid: 0QmzTUFRj7wBB5zw9sm$wM
+- propertyName: LeakageCurve
+  usageDefinition: Leakage per unit length curve versus working pressure. If a scalar is expressed then it represents LeakageClass which is flowrate per unit area at a specified pressure rating (e.g., ASHRAE Fundamentals 2001 34.16.).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vAVlaJsj2bvtU64xCOr$D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vAVlaJsj2bvtU64xCOr$D
+    ifdGuid: 3vAVlaJsj2bvtU64xCOr$D
+- propertyName: FluidFlowLeakage
+  usageDefinition: Volumetric leakage flow rate.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Uq2G_nRLEtQEIfArTljs_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Uq2G_nRLEtQEIfArTljs_
+    ifdGuid: 2Uq2G_nRLEtQEIfArTljs_
 properties:
 - name: LossCoefficient
   definition: Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BfkW0qTuHuO00025QrE$V
     ifdGuid: 1BfkW0qTuHuO00025QrE$V
     legacyGuid: 4ba6e800d1de11e1800000215ad4efdf
+    legacyGuids:
+    - 1BfkW0qTuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1BfkW0qTuHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +126,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FEcy0qTuHuO00025QrE$V
     ifdGuid: 1FEcy0qTuHuO00025QrE$V
     legacyGuid: 4f3a6f00d1de11e1800000215ad4efdf
+    legacyGuids:
+    - 1FEcy0qTuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1FEcy0qTuHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +176,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IpVO0qTuHuO00025QrE$V
     ifdGuid: 1IpVO0qTuHuO00025QrE$V
     legacyGuid: 52cdf600d1de11e1800000215ad4efdf
+    legacyGuids:
+    - 1IpVO0qTuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1IpVO0qTuHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +226,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QZPg0qTuHuO00025QrE$V
     ifdGuid: 1QZPg0qTuHuO00025QrE$V
     legacyGuid: 5a8d9a80d1de11e1800000215ad4efdf
+    legacyGuids:
+    - 1QZPg0qTuHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1QZPg0qTuHuO00025QrE$V
   localizations:
   - language: en

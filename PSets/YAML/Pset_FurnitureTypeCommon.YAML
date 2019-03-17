@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hQNE0qUWHuO00025QrE$V
   ifdGuid: 3hQNE0qUWHuO00025QrE$V
   legacyGuid: eb697380d1e811e1800000215ad4efdf
+  legacyGuids:
+  - 3hQNE0qUWHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3hQNE0qUWHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,71 @@ localizations:
 applicableIfcClasses:
 - name: IfcFurniture
   type: IfcFurniture
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0EP9yVB_vF7gQMcdde_wPi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EP9yVB_vF7gQMcdde_wPi
+    ifdGuid: 0EP9yVB_vF7gQMcdde_wPi
+- propertyName: Status
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0xEwnV$Lr03Asb3L$DzAAZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0xEwnV$Lr03Asb3L$DzAAZ
+    ifdGuid: 0xEwnV$Lr03Asb3L$DzAAZ
+- propertyName: Style
+  usageDefinition: Description of the furniture style.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1HXNrd7xbAPx3J_U$_8yqL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1HXNrd7xbAPx3J_U$_8yqL
+    ifdGuid: 1HXNrd7xbAPx3J_U$_8yqL
+- propertyName: NominalHeight
+  usageDefinition: The nominal height of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2T0KL5jAP8CgWrEfLMBpm2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2T0KL5jAP8CgWrEfLMBpm2
+    ifdGuid: 2T0KL5jAP8CgWrEfLMBpm2
+- propertyName: NominalLength
+  usageDefinition: The nominal length of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3XiVQk3enFQBeu89KAICbm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3XiVQk3enFQBeu89KAICbm
+    ifdGuid: 3XiVQk3enFQBeu89KAICbm
+- propertyName: NominalDepth
+  usageDefinition: The nominal depth of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EDUxVycL3$QmzGji21VSC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EDUxVycL3$QmzGji21VSC
+    ifdGuid: 3EDUxVycL3$QmzGji21VSC
+- propertyName: MainColor
+  usageDefinition: The main color of the furniture of this type.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1UJWS5xRH8KPEh9flKmTN2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1UJWS5xRH8KPEh9flKmTN2
+    ifdGuid: 1UJWS5xRH8KPEh9flKmTN2
+- propertyName: IsBuiltIn
+  usageDefinition: Indicates whether the furniture type is intended to be 'built in' i.e. physically attached to a building or facility (= TRUE) or not i.e. Loose and movable (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ll2DD3Qf2ygwvVyHPIZW3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ll2DD3Qf2ygwvVyHPIZW3
+    ifdGuid: 1ll2DD3Qf2ygwvVyHPIZW3
 properties:
 - name: Reference
   definition: PSetManager.PropertyType
@@ -39,8 +106,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '03coo58HbBeO$3ncznD484'
+    ifdGuid: 03coo58HbBeO$3ncznD484
     legacyGuid: c67404c9010c4f04a3d3f31eb6a4d813
+    legacyGuids:
+    - 36T0J90GnF1AFJynwsfDWJ
     legacyGuidAsIfcGlobalId: 36T0J90GnF1AFJynwsfDWJ
   localizations:
   - language: de-DE
@@ -82,8 +151,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0sHHE7YejFUOKdlcP7Icvo'
+    ifdGuid: 0sHHE7YejFUOKdlcP7Icvo
     legacyGuid: 7334640eaf3943b9acb2ae43ea34a47d
+    legacyGuids:
+    - 1pD6GEhpb3kQoohaFgDAHz
     legacyGuidAsIfcGlobalId: 1pD6GEhpb3kQoohaFgDAHz
   localizations:
   - language: de-DE
@@ -279,6 +350,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tLJM0qUWHuO00025QrE$V
     ifdGuid: 3tLJM0qUWHuO00025QrE$V
     legacyGuid: f7553580d1e811e1800000215ad4efdf
+    legacyGuids:
+    - 3tLJM0qUWHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3tLJM0qUWHuO00025QrE$V
   localizations:
   - language: en
@@ -325,6 +398,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00HWS0qUaHuO00025QrE$V
     ifdGuid: 00HWS0qUaHuO00025QrE$V
     legacyGuid: 00460700d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 00HWS0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 00HWS0qUaHuO00025QrE$V
   localizations:
   - language: en
@@ -371,6 +446,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/07RHK0qUaHuO00025QrE$V
     ifdGuid: 07RHK0qUaHuO00025QrE$V
     legacyGuid: 076d1500d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 07RHK0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 07RHK0qUaHuO00025QrE$V
   localizations:
   - language: en
@@ -417,6 +494,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0HZnE0qUaHuO00025QrE$V
     ifdGuid: 0HZnE0qUaHuO00025QrE$V
     legacyGuid: 118f1380d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 0HZnE0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0HZnE0qUaHuO00025QrE$V
   localizations:
   - language: en
@@ -463,6 +542,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Pvqw0qUaHuO00025QrE$V
     ifdGuid: 0Pvqw0qUaHuO00025QrE$V
     legacyGuid: 19e74e80d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 0Pvqw0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Pvqw0qUaHuO00025QrE$V
   localizations:
   - language: en
@@ -509,6 +590,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0VtI_0qUaHuO00025QrE$V
     ifdGuid: 0VtI_0qUaHuO00025QrE$V
     legacyGuid: 1fdd2f80d1e911e1800000215ad4efdf
+    legacyGuids:
+    - 0VtI_0qUaHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0VtI_0qUaHuO00025QrE$V
   localizations:
   - language: en

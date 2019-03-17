@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0I4RK0qRqHuO00025QrE$V
   ifdGuid: 0I4RK0qRqHuO00025QrE$V
   legacyGuid: 1211b500d1bd11e1800000215ad4efdf
+  legacyGuids:
+  - 0I4RK0qRqHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0I4RK0qRqHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcActuator
   type: IfcActuator
+propertyUsages:
+- propertyName: Position
+  usageDefinition: Indicates position of the actuator over time where 0.0 is fully closed and 1.0 is fully open.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XA1nxe49EF8T$_MRdr2z7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XA1nxe49EF8T$_MRdr2z7
+    ifdGuid: 0XA1nxe49EF8T$_MRdr2z7
+- propertyName: Quality
+  usageDefinition: 'Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/05i_TJeIL5JuBkwj4Klx39
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/05i_TJeIL5JuBkwj4Klx39
+    ifdGuid: 05i_TJeIL5JuBkwj4Klx39
+- propertyName: Status
+  usageDefinition: "Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11n8BPX0fCOeoXbxC9Zexb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11n8BPX0fCOeoXbxC9Zexb
+    ifdGuid: 11n8BPX0fCOeoXbxC9Zexb
 properties:
 - name: Position
   definition: Indicates position of the actuator over time where 0.0 is fully closed and 1.0 is fully open.
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Mrca0qRqHuO00025QrE$V
     ifdGuid: 0Mrca0qRqHuO00025QrE$V
     legacyGuid: 16d66900d1bd11e1800000215ad4efdf
+    legacyGuids:
+    - 0Mrca0qRqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Mrca0qRqHuO00025QrE$V
   localizations:
   - language: en
@@ -92,6 +121,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0R0eQ0qRqHuO00025QrE$V
     ifdGuid: 0R0eQ0qRqHuO00025QrE$V
     legacyGuid: 1b028680d1bd11e1800000215ad4efdf
+    legacyGuids:
+    - 0R0eQ0qRqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0R0eQ0qRqHuO00025QrE$V
   localizations:
   - language: en
@@ -143,6 +174,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0T$NS0qRqHuO00025QrE$V
     ifdGuid: 0T$NS0qRqHuO00025QrE$V
     legacyGuid: 1dfd7700d1bd11e1800000215ad4efdf
+    legacyGuids:
+    - 0T$NS0qRqHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0T$NS0qRqHuO00025QrE$V
   localizations:
   - language: en

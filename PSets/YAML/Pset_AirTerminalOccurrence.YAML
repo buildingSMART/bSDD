@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wEp20qRuHuO00025QrE$V
   ifdGuid: 3wEp20qRuHuO00025QrE$V
   legacyGuid: fa3b3080d1be11e1800000215ad4efdf
+  legacyGuids:
+  - 3wEp20qRuHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3wEp20qRuHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,31 @@ localizations:
 applicableIfcClasses:
 - name: IfcAirTerminal
   type: IfcAirTerminal
+propertyUsages:
+- propertyName: AirflowType
+  usageDefinition: Enumeration defining the functional type of air flow through the terminal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0hXLIB1MnBIgF$L5S5f9Kd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0hXLIB1MnBIgF$L5S5f9Kd
+    ifdGuid: 0hXLIB1MnBIgF$L5S5f9Kd
+- propertyName: AirFlowRate
+  usageDefinition: The actual airflow rate as designed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2D2a9Pe51CBB42XM0E5ACX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2D2a9Pe51CBB42XM0E5ACX
+    ifdGuid: 2D2a9Pe51CBB42XM0E5ACX
+- propertyName: Location
+  usageDefinition: Location  (a single type of diffuser can be used for multiple locations); high means close to ceiling.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1TVYC2rkX4VenJ352Cln4t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1TVYC2rkX4VenJ352Cln4t
+    ifdGuid: 1TVYC2rkX4VenJ352Cln4t
 properties:
 - name: AirflowType
   definition: Enumeration defining the functional type of air flow through the terminal.
@@ -41,6 +68,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00CH60qRyHuO00025QrE$V
     ifdGuid: 00CH60qRyHuO00025QrE$V
     legacyGuid: 00311180d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 00CH60qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 00CH60qRyHuO00025QrE$V
   localizations:
   - language: en
@@ -215,8 +244,10 @@ properties:
     dictionaryNamespace: PSet
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/
-    ifdGuid: '0hELVXvvL7iumRDFBubW3Q'
+    ifdGuid: 0hELVXvvL7iumRDFBubW3Q
     legacyGuid: 89dd48d1b3184f2599c12f06ce904666
+    legacyGuids:
+    - 29tKZHinXF9Pd1BmREa4Pc
     legacyGuidAsIfcGlobalId: 29tKZHinXF9Pd1BmREa4Pc
   localizations:
   - language: en
@@ -263,6 +294,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Fi5g0qRyHuO00025QrE$V
     ifdGuid: 0Fi5g0qRyHuO00025QrE$V
     legacyGuid: 0fb05a80d1bf11e1800000215ad4efdf
+    legacyGuids:
+    - 0Fi5g0qRyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0Fi5g0qRyHuO00025QrE$V
   localizations:
   - language: en

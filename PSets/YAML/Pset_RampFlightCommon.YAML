@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ip020qVyHuO00025QrE$V
   ifdGuid: 1ip020qVyHuO00025QrE$V
   legacyGuid: 6ccc0080d1ff11e1800000215ad4efdf
+  legacyGuids:
+  - 1ip020qVyHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1ip020qVyHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,55 @@ localizations:
 applicableIfcClasses:
 - name: IfcRampFlight
   type: IfcRampFlight
+propertyUsages:
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1idQQZJvH2TQxpcqkI0y6s
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1idQQZJvH2TQxpcqkI0y6s
+    ifdGuid: 1idQQZJvH2TQxpcqkI0y6s
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3i_pGk7pjF1vT8xzsQYJC$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3i_pGk7pjF1vT8xzsQYJC$
+    ifdGuid: 3i_pGk7pjF1vT8xzsQYJC$
+- propertyName: Headroom
+  usageDefinition: Actual headroom clearance for the passageway according to the current design. The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2oK9hbIeX3Mg$TDWjVLvEC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2oK9hbIeX3Mg$TDWjVLvEC
+    ifdGuid: 2oK9hbIeX3Mg$TDWjVLvEC
+- propertyName: ClearWidth
+  usageDefinition: Actual clear width measured as the clear space for accessibility and egress; it is a measured distance betwen the two handrails or the wall and a handrail on a ramp.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/02cfn4NXv3yueHOVmb1P1D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/02cfn4NXv3yueHOVmb1P1D
+    ifdGuid: 02cfn4NXv3yueHOVmb1P1D
+- propertyName: Slope
+  usageDefinition: Sloping angle of the object  - relative to horizontal (0.0 degrees). Actual maximum slope for the passageway according to the current design.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zNS61jNDBtwnlLqUwK2UT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zNS61jNDBtwnlLqUwK2UT
+    ifdGuid: 1zNS61jNDBtwnlLqUwK2UT
+- propertyName: CounterSlope
+  usageDefinition: 'Sloping angle of the object, measured perpendicular to the slope  - relative to horizontal (0.0 degrees). Actual maximum slope for the passageway measured perpendicular to the direction of travel according to the current design. The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. Note: new property in IFC4.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1drBqt1PP13QAAGTwllm5Y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1drBqt1PP13QAAGTwllm5Y
+    ifdGuid: 1drBqt1PP13QAAGTwllm5Y
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
@@ -41,6 +92,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pMdW0qVyHuO00025QrE$V
     ifdGuid: 1pMdW0qVyHuO00025QrE$V
     legacyGuid: 735a7800d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 1pMdW0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1pMdW0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -90,6 +143,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ujyA0qVyHuO00025QrE$V
     ifdGuid: 1ujyA0qVyHuO00025QrE$V
     legacyGuid: 78b7c280d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 1ujyA0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1ujyA0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -288,6 +343,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25F1i0qVyHuO00025QrE$V
     ifdGuid: 25F1i0qVyHuO00025QrE$V
     legacyGuid: 853c1b00d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 25F1i0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 25F1i0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -337,6 +394,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2BofA0qVyHuO00025QrE$V
     ifdGuid: 2BofA0qVyHuO00025QrE$V
     legacyGuid: 8bca9280d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 2BofA0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2BofA0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -386,6 +445,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IMGe0qVyHuO00025QrE$V
     ifdGuid: 2IMGe0qVyHuO00025QrE$V
     legacyGuid: 92590a00d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 2IMGe0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2IMGe0qVyHuO00025QrE$V
   localizations:
   - language: de-DE
@@ -435,6 +496,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2N7Ru0qVyHuO00025QrE$V
     ifdGuid: 2N7Ru0qVyHuO00025QrE$V
     legacyGuid: 971dbe00d1ff11e1800000215ad4efdf
+    legacyGuids:
+    - 2N7Ru0qVyHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 2N7Ru0qVyHuO00025QrE$V
   localizations:
   - language: de-DE

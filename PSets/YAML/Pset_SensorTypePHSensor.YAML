@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Jivi0qWOHuO00025QrE$V
   ifdGuid: 0Jivi0qWOHuO00025QrE$V
   legacyGuid: 13b39b00d20611e1800000215ad4efdf
+  legacyGuids:
+  - 0Jivi0qWOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 0Jivi0qWOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/PHSENSOR
   type: IfcSensor/PHSENSOR
+propertyUsages:
+- propertyName: SetPointPH
+  usageDefinition: The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2zpxm81gvEeAESmztr8Lx5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zpxm81gvEeAESmztr8Lx5
+    ifdGuid: 2zpxm81gvEeAESmztr8Lx5
 properties:
 - name: SetPointPH
   definition: The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0P4EM0qWOHuO00025QrE$V
     ifdGuid: 0P4EM0qWOHuO00025QrE$V
     legacyGuid: 1910e580d20611e1800000215ad4efdf
+    legacyGuids:
+    - 0P4EM0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 0P4EM0qWOHuO00025QrE$V
   localizations:
   - language: en

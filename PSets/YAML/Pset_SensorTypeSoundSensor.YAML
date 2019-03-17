@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1m5hg0qWOHuO00025QrE$V
   ifdGuid: 1m5hg0qWOHuO00025QrE$V
   legacyGuid: 7016ba80d20611e1800000215ad4efdf
+  legacyGuids:
+  - 1m5hg0qWOHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 1m5hg0qWOHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,15 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor/SOUNDSENSOR
   type: IfcSensor/SOUNDSENSOR
+propertyUsages:
+- propertyName: SetPointSound
+  usageDefinition: The sound pressure value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3GiHba$lP2ZepTANRX_yOc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3GiHba$lP2ZepTANRX_yOc
+    ifdGuid: 3GiHba$lP2ZepTANRX_yOc
 properties:
 - name: SetPointSound
   definition: The sound pressure value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.
@@ -41,6 +52,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qGjW0qWOHuO00025QrE$V
     ifdGuid: 1qGjW0qWOHuO00025QrE$V
     legacyGuid: 7442d800d20611e1800000215ad4efdf
+    legacyGuids:
+    - 1qGjW0qWOHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 1qGjW0qWOHuO00025QrE$V
   localizations:
   - language: en

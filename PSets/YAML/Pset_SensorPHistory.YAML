@@ -8,6 +8,8 @@ dictionaryReference:
   dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3GfFW0qWGHuO00025QrE$V
   ifdGuid: 3GfFW0qWGHuO00025QrE$V
   legacyGuid: d0a4f800d20411e1800000215ad4efdf
+  legacyGuids:
+  - 3GfFW0qWGHuO00025QrE$V
   legacyGuidAsIfcGlobalId: 3GfFW0qWGHuO00025QrE$V
 localizations:
 - language: de-DE
@@ -31,6 +33,39 @@ localizations:
 applicableIfcClasses:
 - name: IfcSensor
   type: IfcSensor
+propertyUsages:
+- propertyName: Value
+  usageDefinition: Indicates sensed values over time which may be recorded continuously or only when changed beyond a particular deadband.  The range of possible values is defined by the SetPoint property of the corresponding sensor type property set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1zVcEd0Jf7rvKman$D4md9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1zVcEd0Jf7rvKman$D4md9
+    ifdGuid: 1zVcEd0Jf7rvKman$D4md9
+- propertyName: Direction
+  usageDefinition: Indicates sensed direction for sensors capturing magnitude and direction measured from True North (0 degrees) in a clockwise direction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EMF1HFDP5rvjgYfXbglDh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EMF1HFDP5rvjgYfXbglDh
+    ifdGuid: 2EMF1HFDP5rvjgYfXbglDh
+- propertyName: Quality
+  usageDefinition: 'Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GAuBQ8KD8LvNfDTnlug13
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GAuBQ8KD8LvNfDTnlug13
+    ifdGuid: 0GAuBQ8KD8LvNfDTnlug13
+- propertyName: Status
+  usageDefinition: "Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/28PbkCCfjD$grKbxPneoIB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/28PbkCCfjD$grKbxPneoIB
+    ifdGuid: 28PbkCCfjD$grKbxPneoIB
 properties:
 - name: Value
   definition: Indicates sensed values over time which may be recorded continuously or only when changed beyond a particular deadband.  The range of possible values is defined by the SetPoint property of the corresponding sensor type property set.
@@ -41,6 +76,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LQQm0qWGHuO00025QrE$V
     ifdGuid: 3LQQm0qWGHuO00025QrE$V
     legacyGuid: d569ac00d20411e1800000215ad4efdf
+    legacyGuids:
+    - 3LQQm0qWGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3LQQm0qWGHuO00025QrE$V
   localizations:
   - language: en
@@ -89,6 +126,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3O$JC0qWGHuO00025QrE$V
     ifdGuid: 3O$JC0qWGHuO00025QrE$V
     legacyGuid: d8fd3300d20411e1800000215ad4efdf
+    legacyGuids:
+    - 3O$JC0qWGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3O$JC0qWGHuO00025QrE$V
   localizations:
   - language: en
@@ -137,6 +176,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R_2E0qWGHuO00025QrE$V
     ifdGuid: 3R_2E0qWGHuO00025QrE$V
     legacyGuid: dbf82380d20411e1800000215ad4efdf
+    legacyGuids:
+    - 3R_2E0qWGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3R_2E0qWGHuO00025QrE$V
   localizations:
   - language: en
@@ -185,6 +226,8 @@ properties:
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3UynG0qWGHuO00025QrE$V
     ifdGuid: 3UynG0qWGHuO00025QrE$V
     legacyGuid: def31400d20411e1800000215ad4efdf
+    legacyGuids:
+    - 3UynG0qWGHuO00025QrE$V
     legacyGuidAsIfcGlobalId: 3UynG0qWGHuO00025QrE$V
   localizations:
   - language: en
