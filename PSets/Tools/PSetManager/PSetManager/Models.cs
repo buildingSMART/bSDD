@@ -18,4 +18,13 @@ namespace PSets4
         public string name_TL { get; set; }
         public string definition_tl { get; set; }
     }
+
+    public class PSetStatistics
+    {
+        public string pset { get; set; }
+        public string property { get; set; }
+        public string definition { get; set; }
+        public string dataType { get; set; }
+
+    }
 }

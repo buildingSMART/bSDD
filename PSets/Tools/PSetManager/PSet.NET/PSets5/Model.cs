@@ -19,6 +19,8 @@ namespace PSets5
 
         public List<ApplicableIfcClass> applicableIfcClasses { get; set; }
 
+        public List<PropertyUsage> propertyUsages { get; set; }
+
         public List<Property> properties { get; set; }
     }
     public class IfcVersion
@@ -43,7 +45,15 @@ namespace PSets5
         public string name { get; set; }
         public string type { get; set; }
     }
-    public class Property
+
+    public class PropertyUsage
+    {
+        public string propertyName { get; set; }
+        public string usageDefinition { get; set; }
+        public DictionaryReference dictionaryReference { get; set; }
+    }
+
+        public class Property
     {
         public string name { get; set; }
         public string definition { get; set; }
@@ -273,7 +283,6 @@ namespace PSets5
 
         public List<Localization> localizations { get; set; }
     }
-
     public class ConstantValue
     {
         public string name { get; set; }
@@ -284,7 +293,6 @@ namespace PSets5
 
         public List<Localization> localizations { get; set; }
     }
-
     public class PublicationStatus
     {
         public int versionNumber { get; set; }
@@ -299,7 +307,6 @@ namespace PSets5
         public DateTime dateOfDeactivation { get; set; }
         public string languageOfCreator { get; set; }
     }
-
     public class DictionaryReference
     {
         public string dictionaryIdentifier { get; set; }
@@ -308,6 +315,7 @@ namespace PSets5
         public string dictionaryApiUri { get; set; }
         public string ifdGuid { get; set; }
         public string legacyGuid { get; set; }
+        public List<string> legacyGuids { get; set; }
         public string legacyGuidAsIfcGlobalId { get; set; }
     }
 }

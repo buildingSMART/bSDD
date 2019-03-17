@@ -1,5 +1,6 @@
 ﻿using System;
 using CommandLine;
+using PSetManager;
 
 namespace PSets4
 {
@@ -9,6 +10,7 @@ namespace PSets4
 
         static int Main(string[] args)
         {
+           
             log.Info($"PSet Manager started");
             log.Info($"A tool by the community of buildingSMART International");
             log.Info($"The home of PSet Manager is https://github.com/buildingsmart/bSDD");
@@ -17,19 +19,23 @@ namespace PSets4
             Parser.Default.ParseArguments<CommandLineOptions>(args)
                .WithParsed<CommandLineOptions>(options =>
                {
+                   Normalization normalization = new Normalization(options.folderYaml);
+
+                   //Statistics stats = new Statistics(options.folderYaml);
+                   
                    switch (options.mode)
                    {
                         case "ConvertFromXml":
-                            ConverterXml2Yaml converterXml2Yaml = new ConverterXml2Yaml(options.folderXml, options.folderYaml, options.folderJson, options.folderResx, options.checkBSDD);
+                            //ConverterXml2Yaml converterXml2Yaml = new ConverterXml2Yaml(options.folderXml, options.folderYaml, options.folderJson, options.folderResx, options.checkBSDD);
                             break;
 
                        case "LoadTranslation":
-                            YamlTranslationWriter yamlTranslationWriter = new YamlTranslationWriter(options.translationSourceFile, options.folderYaml, options.folderJson, options.folderResx);
+                            //YamlTranslationWriter yamlTranslationWriter = new YamlTranslationWriter(options.translationSourceFile, options.folderYaml, options.folderJson, options.folderResx);
                             break;
 
                        case "PublishToBSDD":
-                           BsddWriter bsddWriter = new BsddWriter();
-                           result = bsddWriter.Workspace(options.folderYaml, options.bsddUrl, options.bsddUser,options.bsddPassword, options.bsddLanguageCode);
+                           //BsddWriter bsddWriter = new BsddWriter();
+                           //result = bsddWriter.Workspace(options.folderYaml, options.bsddUrl, options.bsddUser,options.bsddPassword, options.bsddLanguageCode);
                            break;
                    }
                });

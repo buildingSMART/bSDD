@@ -48,7 +48,6 @@ namespace PSets4
             int ctPropertiesWithMissingTranslation = 0;
             int ctPropertiesWithMissingGuid = 0;
 
-
             foreach (string yamlFileName in yamlFileNames)
             {
                 ctPSets++;
@@ -65,6 +64,7 @@ namespace PSets4
                     log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"--------------------------------------------------------------------------------------------------------");
                     log.Info($"Now checking the PSet {PSet.name} in the bSDD at {PSet.dictionaryReference.ifdGuid}");
+
                     IfdConcept pSetConcept = bsdd.GetConcept(PSet.dictionaryReference.ifdGuid);
  
                     if (pSetConcept != null)
@@ -84,9 +84,9 @@ namespace PSets4
                             localization.name = localization.name.Replace("  ", " ");
                             if (existingFullName == null)
                             {
-                                log.Info($"    Insert Name for concept => {localization.name}");
+                                log.Info($"    Insert Name for concept {pSetConcept.Guid}: '{localization.name}'");
                                 var answer = bsdd.InsertConceptName(pSetConcept.Guid, localization.language, localization.name);
-                                log.Info($"    Succesfully inserted => {answer.Guid}");
+                                log.Info($"    Succesfully inserted: {answer.Guid}");
                             }
                             else
                             {
@@ -94,9 +94,9 @@ namespace PSets4
                                 log.Info($"    NameType : {existingFullName.NameType}");
                                 if (existingFullName.Name != localization.name)
                                 {
-                                    log.Warn($"    Update: {existingFullName.Name}=>{localization.name}");
+                                    log.Warn($"    Update: '{existingFullName.Name}' => '{localization.name}'");
                                     var answer = bsdd.UpdateConceptName(pSetConcept.Guid, existingFullName.Guid, localization.language, localization.name);
-                                    log.Warn($"    Succesfully update => {answer.Guid}");
+                                    log.Warn($"    Succesfully updated: {answer.Guid}");
                                 }
                                 else
                                     log.Info($"    No Update needed, the names are identical: {existingFullName.Guid}");
@@ -107,9 +107,9 @@ namespace PSets4
                             localization.definition = localization.definition.Replace("  ", " ");
                             if (existingDefinition == null)
                             {
-                                log.Warn($"    Insert description for concept : '{localization.definition}'");
+                                log.Warn($"    Insert description for concept {pSetConcept.Guid}: '{localization.definition}'");
                                 var answer = bsdd.InsertConceptDefinition(pSetConcept.Guid, localization.language, localization.definition);
-                                log.Warn($"    Succesfully inserted => {answer.Guid}");
+                                log.Warn($"    Succesfully inserted: {answer.Guid}");
                             }
                             else
                             {
@@ -117,9 +117,9 @@ namespace PSets4
                                 log.Info($"    DescriptionType : {existingDefinition.DescriptionType}");
                                 if (existingDefinition.Description != localization.definition)
                                 { 
-                                    log.Warn($"    Update: {existingDefinition.Description}=>{localization.definition}");
+                                    log.Warn($"    Update: '{existingDefinition.Description}' => '{localization.definition}'");
                                     var answer = bsdd.UpdateConceptDefinition(pSetConcept.Guid, existingDefinition.Guid, localization.language, localization.definition);
-                                    log.Warn($"    Succesfully update => {answer.Guid}");
+                                    log.Warn($"    Succesfully updated: {answer.Guid}");
                                 }
                                 else
                                     log.Info($"    No Update needed, the definitions are identical: {existingDefinition.Guid}");

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("PSet2YamlConverter")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("PSetManager")]
+[assembly: AssemblyDescription("A Program to manage the Property Sets")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PSet2YamlConverter")]
-[assembly: AssemblyCopyright("Copyright © 2018")]
+[assembly: AssemblyCompany("buildingSMART International")]
+[assembly: AssemblyProduct("PSetManager")]
+[assembly: AssemblyCopyright("Copyright © 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

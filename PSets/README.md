@@ -28,3 +28,19 @@ IFC versions are identified using the sematic versioning notation "Major.Minor.A
 
 # Which version do I use?
 The latest version, IFC 4.1 is recommended for all current developments, which is fully backward compatible with IFC 4.0. Core definitions within IFC 4.1 and 4.0 are backward compatible with IFC 2.3.
+
+# Serialization formats
+
+The PSets are provides in different serialization formats. The PSetManager runs on every commit and creates and commits semanticall identical PSet in the other serialization formats.
+
+The build chain is as following:
+
+1. PSets in YAML folder
+2. JSON : Javascript object notation
+3. RESX : Ressource files
+4. XML  : Exentable Markup Language
+5. bSDD : buildingSMART Data Dictionary (online)
+
+The origin are the PSets in the subfolder YAML. All changes, translations go in there. PullRequests for other folders will be ignored.
+
+
