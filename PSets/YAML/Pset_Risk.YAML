@@ -122,6 +122,182 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1FjnnssarBqAvjmqFW2noZ
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FjnnssarBqAvjmqFW2noZ
     ifdGuid: 1FjnnssarBqAvjmqFW2noZ
+- propertyName: RiskType
+  usageDefinition: Identifies the predefined types of risk from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_XOJcMSX7eQiWw7Y39OvD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_XOJcMSX7eQiWw7Y39OvD
+    ifdGuid: 2_XOJcMSX7eQiWw7Y39OvD
+- propertyName: NatureOfRisk
+  usageDefinition: "An indication of the generic nature of the risk that might be encountered. NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/24xF7pgBf7xPzvyHp$K40t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24xF7pgBf7xPzvyHp$K40t
+    ifdGuid: 24xF7pgBf7xPzvyHp$K40t
+- propertyName: SubNatureOfRisk1
+  usageDefinition: "A first subsidiary value that might be assigned to designate a more specific type of risk.NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3LnyVcJIH9sBvhNsiFbEuU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3LnyVcJIH9sBvhNsiFbEuU
+    ifdGuid: 3LnyVcJIH9sBvhNsiFbEuU
+- propertyName: SubNatureOfRisk2
+  usageDefinition: A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1TvzyZiVDDdviLBkxvpW8t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1TvzyZiVDDdviLBkxvpW8t
+    ifdGuid: 1TvzyZiVDDdviLBkxvpW8t
+- propertyName: RiskCause
+  usageDefinition: A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1crDkWg$bFzuVVNS6I6N5V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1crDkWg$bFzuVVNS6I6N5V
+    ifdGuid: 1crDkWg$bFzuVVNS6I6N5V
+- propertyName: AssessmentOfRisk
+  usageDefinition: Likelihood of risk event occurring.Note  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hAXFPp4D5sO7a402tToEV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hAXFPp4D5sO7a402tToEV
+    ifdGuid: 1hAXFPp4D5sO7a402tToEV
+- propertyName: RiskConsequence
+  usageDefinition: Indicates the level of severity of the consequences that the risk would have in case it happens.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3pHk1yHPrCqPCYEl9$CviV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3pHk1yHPrCqPCYEl9$CviV
+    ifdGuid: 3pHk1yHPrCqPCYEl9$CviV
+- propertyName: RiskRating
+  usageDefinition: A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hmpmIhfT9rQANGVRAdCKx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hmpmIhfT9rQANGVRAdCKx
+    ifdGuid: 1hmpmIhfT9rQANGVRAdCKx
+- propertyName: RiskOwner
+  usageDefinition: A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09khEe3MHDoBBoWsu60FCo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09khEe3MHDoBBoWsu60FCo
+    ifdGuid: 09khEe3MHDoBBoWsu60FCo
+- propertyName: AffectsSurroundings
+  usageDefinition: Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).For example, the process of painting would affect all the people in the vicinity of the process.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$Ycx8Tnf41P7FbjiQPWvJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$Ycx8Tnf41P7FbjiQPWvJ
+    ifdGuid: 2$Ycx8Tnf41P7FbjiQPWvJ
+- propertyName: PreventiveMeassures
+  usageDefinition: Identifies preventive measures to be taken to mitigate risk.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2IeLlCVZn8iAV0X2cEF$GL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IeLlCVZn8iAV0X2cEF$GL
+    ifdGuid: 2IeLlCVZn8iAV0X2cEF$GL
+- propertyName: RiskType
+  usageDefinition: Identifies the predefined types of risk from which the type required may be set.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11W$guSD13ehJ4XwW8eTDx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11W$guSD13ehJ4XwW8eTDx
+    ifdGuid: 11W$guSD13ehJ4XwW8eTDx
+- propertyName: NatureOfRisk
+  usageDefinition: "An indication of the generic nature of the risk that might be encountered. NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2HWCc9rHz41PwFmQIRVNFH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2HWCc9rHz41PwFmQIRVNFH
+    ifdGuid: 2HWCc9rHz41PwFmQIRVNFH
+- propertyName: SubNatureOfRisk1
+  usageDefinition: "A first subsidiary value that might be assigned to designate a more specific type of risk.NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/38idZxcS16kvufZioByBQx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/38idZxcS16kvufZioByBQx
+    ifdGuid: 38idZxcS16kvufZioByBQx
+- propertyName: SubNatureOfRisk2
+  usageDefinition: A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/16NJfCS2f9XhONBU$HymU9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16NJfCS2f9XhONBU$HymU9
+    ifdGuid: 16NJfCS2f9XhONBU$HymU9
+- propertyName: RiskCause
+  usageDefinition: A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ap49$pdbD28xzZyGYhpTA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ap49$pdbD28xzZyGYhpTA
+    ifdGuid: 3ap49$pdbD28xzZyGYhpTA
+- propertyName: AssessmentOfRisk
+  usageDefinition: Likelihood of risk event occurring.Note  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$GysbQ6LBBO92HkwF5Eaw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$GysbQ6LBBO92HkwF5Eaw
+    ifdGuid: 2$GysbQ6LBBO92HkwF5Eaw
+- propertyName: RiskConsequence
+  usageDefinition: Indicates the level of severity of the consequences that the risk would have in case it happens.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/14wVHfKbf39gVzPl_Tj37c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/14wVHfKbf39gVzPl_Tj37c
+    ifdGuid: 14wVHfKbf39gVzPl_Tj37c
+- propertyName: RiskRating
+  usageDefinition: A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/26FGqYeM9BmOhRQn8Ny766
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26FGqYeM9BmOhRQn8Ny766
+    ifdGuid: 26FGqYeM9BmOhRQn8Ny766
+- propertyName: RiskOwner
+  usageDefinition: A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/348OGf6m50SRQLo1QzV7uB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/348OGf6m50SRQLo1QzV7uB
+    ifdGuid: 348OGf6m50SRQLo1QzV7uB
+- propertyName: AffectsSurroundings
+  usageDefinition: Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).For example, the process of painting would affect all the people in the vicinity of the process.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0tRM$Q9ZzFSAow3vl__nhc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tRM$Q9ZzFSAow3vl__nhc
+    ifdGuid: 0tRM$Q9ZzFSAow3vl__nhc
+- propertyName: PreventiveMeassures
+  usageDefinition: Identifies preventive measures to be taken to mitigate risk.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3VpcYfcITBQeZoEqDUVHsy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VpcYfcITBQeZoEqDUVHsy
+    ifdGuid: 3VpcYfcITBQeZoEqDUVHsy
 properties:
 - name: RiskType
   definition: Identifies the predefined types of risk from which the type required may be set.

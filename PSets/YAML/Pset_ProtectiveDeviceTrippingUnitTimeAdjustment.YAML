@@ -90,6 +90,118 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25HQpotyr6Ou3glFFej$K1
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25HQpotyr6Ou3glFFej$K1
     ifdGuid: 25HQpotyr6Ou3glFFej$K1
+- propertyName: AdjustmentValueType
+  usageDefinition: The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3B28mmHlr7J8icVz0MfKV5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3B28mmHlr7J8icVz0MfKV5
+    ifdGuid: 3B28mmHlr7J8icVz0MfKV5
+- propertyName: AdjustmentRange
+  usageDefinition: Upper and lower time adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/26ZilEPU5DQAGbGYFL5lAV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26ZilEPU5DQAGbGYFL5lAV
+    ifdGuid: 26ZilEPU5DQAGbGYFL5lAV
+- propertyName: AdjustmentRangeStepValue
+  usageDefinition: Step value of time adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/363vmtvsTAh95Q2Apu1KiQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/363vmtvsTAh95Q2Apu1KiQ
+    ifdGuid: 363vmtvsTAh95Q2Apu1KiQ
+- propertyName: AdjustmentValues
+  usageDefinition: A list of time adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3AuyWhcIX5rvl5Zhfk_xo6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3AuyWhcIX5rvl5Zhfk_xo6
+    ifdGuid: 3AuyWhcIX5rvl5Zhfk_xo6
+- propertyName: AdjustmentDesignation
+  usageDefinition: The desgnation on the device for the adjustment.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0SYE_x9SDDv8GgsOuZ0YHl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0SYE_x9SDDv8GgsOuZ0YHl
+    ifdGuid: 0SYE_x9SDDv8GgsOuZ0YHl
+- propertyName: CurrentForTimeDelay
+  usageDefinition: The tripping current in [x In] at which the time delay is specified. A value for this property should only be asserted for time delay of L-function, and for I2t of the S and G function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0DCrqWN$nCfv4f4EvcOc5a
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DCrqWN$nCfv4f4EvcOc5a
+    ifdGuid: 0DCrqWN$nCfv4f4EvcOc5a
+- propertyName: I2TApplicability
+  usageDefinition: The applicability of the time adjustment related to the tripping function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0OA32FFfL3NP23uXPOjwxe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0OA32FFfL3NP23uXPOjwxe
+    ifdGuid: 0OA32FFfL3NP23uXPOjwxe
+- propertyName: AdjustmentValueType
+  usageDefinition: The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Mo29ev59ESvuWj3xaPqTY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Mo29ev59ESvuWj3xaPqTY
+    ifdGuid: 2Mo29ev59ESvuWj3xaPqTY
+- propertyName: AdjustmentRange
+  usageDefinition: Upper and lower time adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uXAYGfL12$uzbMLz3PeJf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uXAYGfL12$uzbMLz3PeJf
+    ifdGuid: 2uXAYGfL12$uzbMLz3PeJf
+- propertyName: AdjustmentRangeStepValue
+  usageDefinition: Step value of time adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hO2UXBG945vQLXrYi5l0p
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hO2UXBG945vQLXrYi5l0p
+    ifdGuid: 1hO2UXBG945vQLXrYi5l0p
+- propertyName: AdjustmentValues
+  usageDefinition: A list of time adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2QHibSNTzFT8EBoWdIcHme
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QHibSNTzFT8EBoWdIcHme
+    ifdGuid: 2QHibSNTzFT8EBoWdIcHme
+- propertyName: AdjustmentDesignation
+  usageDefinition: The desgnation on the device for the adjustment.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3$1KEQJVn1ZwPl25bq5G0L
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$1KEQJVn1ZwPl25bq5G0L
+    ifdGuid: 3$1KEQJVn1ZwPl25bq5G0L
+- propertyName: CurrentForTimeDelay
+  usageDefinition: The tripping current in [x In] at which the time delay is specified. A value for this property should only be asserted for time delay of L-function, and for I2t of the S and G function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00cjZWCdn5CermVsgKlsl1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00cjZWCdn5CermVsgKlsl1
+    ifdGuid: 00cjZWCdn5CermVsgKlsl1
+- propertyName: I2TApplicability
+  usageDefinition: The applicability of the time adjustment related to the tripping function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0c6y1aYzD8w8IZLvKDnA1H
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0c6y1aYzD8w8IZLvKDnA1H
+    ifdGuid: 0c6y1aYzD8w8IZLvKDnA1H
 properties:
 - name: AdjustmentValueType
   definition: The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).

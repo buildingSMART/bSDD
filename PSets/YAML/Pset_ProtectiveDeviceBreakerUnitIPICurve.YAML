@@ -58,6 +58,54 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/13MvBzlNf5a8z_KliwtqS6
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13MvBzlNf5a8z_KliwtqS6
     ifdGuid: 13MvBzlNf5a8z_KliwtqS6
+- propertyName: VoltageLevel
+  usageDefinition: The voltage level of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EnpMi7nT03uohVbc9t0Fq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EnpMi7nT03uohVbc9t0Fq
+    ifdGuid: 3EnpMi7nT03uohVbc9t0Fq
+- propertyName: NominalCurrent
+  usageDefinition: A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Jh4dAdnr5Xfkum4_q_OCy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Jh4dAdnr5Xfkum4_q_OCy
+    ifdGuid: 2Jh4dAdnr5Xfkum4_q_OCy
+- propertyName: BreakerUnitIPICurve
+  usageDefinition: 'A curve that establishes the let through peak current of a breaker unit when a particular prospective current is applied.  Note that the breaker unit IPI curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:(1) Defining value: A list of minimum 2 and maximum 16 numbers providing the currents in [A] for points in the I/Î log/log coordinate space. The curve is drawn as a straight line between two consecutive points.(2) Defined value: A list of minimum 2 and maximum 16 numbers providing the let-through peak currents, Î, in [A] for points in the I/Î log/log coordinate space. The curve is drawn as a straight line between two consecutive points.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0EashVViPDJvR16v8vBsPj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EashVViPDJvR16v8vBsPj
+    ifdGuid: 0EashVViPDJvR16v8vBsPj
+- propertyName: VoltageLevel
+  usageDefinition: The voltage level of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11gJ9XHrr69QYSDfAGcUgs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11gJ9XHrr69QYSDfAGcUgs
+    ifdGuid: 11gJ9XHrr69QYSDfAGcUgs
+- propertyName: NominalCurrent
+  usageDefinition: A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wIQgyeZn5Cxs9ts_MOn8V
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wIQgyeZn5Cxs9ts_MOn8V
+    ifdGuid: 1wIQgyeZn5Cxs9ts_MOn8V
+- propertyName: BreakerUnitIPICurve
+  usageDefinition: 'A curve that establishes the let through peak current of a breaker unit when a particular prospective current is applied.  Note that the breaker unit IPI curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:(1) Defining value: A list of minimum 2 and maximum 16 numbers providing the currents in [A] for points in the I/Î log/log coordinate space. The curve is drawn as a straight line between two consecutive points.(2) Defined value: A list of minimum 2 and maximum 16 numbers providing the let-through peak currents, Î, in [A] for points in the I/Î log/log coordinate space. The curve is drawn as a straight line between two consecutive points.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1T8A0oguL7LPlq0iLi$Mxa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1T8A0oguL7LPlq0iLi$Mxa
+    ifdGuid: 1T8A0oguL7LPlq0iLi$Mxa
 properties:
 - name: VoltageLevel
   definition: The voltage level of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.

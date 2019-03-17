@@ -114,6 +114,166 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1BPnukK8vAOBEMSmkvD4Dc
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1BPnukK8vAOBEMSmkvD4Dc
     ifdGuid: 1BPnukK8vAOBEMSmkvD4Dc
+- propertyName: ElectroMagneticTrippingUnitType
+  usageDefinition: A list of the available types of electric magnetic tripping unit  from which that required may be selected. These cover overload, none special, short circuit, motor protection and bi-metal tripping.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/20SRkqra98bB9WCjaB6bC0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20SRkqra98bB9WCjaB6bC0
+    ifdGuid: 20SRkqra98bB9WCjaB6bC0
+- propertyName: I1
+  usageDefinition: The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/303F8Jr014z9uOGXc9bPUK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/303F8Jr014z9uOGXc9bPUK
+    ifdGuid: 303F8Jr014z9uOGXc9bPUK
+- propertyName: I2
+  usageDefinition: The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2F1MmO4aD0rwO3k8ocJTMy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2F1MmO4aD0rwO3k8ocJTMy
+    ifdGuid: 2F1MmO4aD0rwO3k8ocJTMy
+- propertyName: T2
+  usageDefinition: The (thermal) testing time in [s] associated with the testing currents I1 and I2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UbcxtTMj73fRGH1w40MNF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UbcxtTMj73fRGH1w40MNF
+    ifdGuid: 2UbcxtTMj73fRGH1w40MNF
+- propertyName: DefinedTemperature
+  usageDefinition: The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08YZK4y9D6aPd5jMck9Dms
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08YZK4y9D6aPd5jMck9Dms
+    ifdGuid: 08YZK4y9D6aPd5jMck9Dms
+- propertyName: TemperatureFactor
+  usageDefinition: The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KvDhS6Xj8c8xBgY1O7dQm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KvDhS6Xj8c8xBgY1O7dQm
+    ifdGuid: 1KvDhS6Xj8c8xBgY1O7dQm
+- propertyName: I4
+  usageDefinition: The lower electromagnetic testing current limit in [x In], indicating that for currents lower than I4, the tripping time shall be longer than the associated tripping time, T5, i.e. the device shall not trip instantaneous.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1yM$6BTVD8rvt0OxZ4upyN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1yM$6BTVD8rvt0OxZ4upyN
+    ifdGuid: 1yM$6BTVD8rvt0OxZ4upyN
+- propertyName: I5
+  usageDefinition: The upper electromagnetic testing current limit in [x In], indicating that for currents larger than I5, the tripping time shall be shorter than or equal to the associated tripping time, T5, i.e. the device shall trip instantaneous.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0LJLLmQ3P7chJbS$ALrHLG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0LJLLmQ3P7chJbS$ALrHLG
+    ifdGuid: 0LJLLmQ3P7chJbS$ALrHLG
+- propertyName: T5
+  usageDefinition: The electromagnetic testing time in [s] associated with the testing currents I4 and I5, i.e. electromagnetic tripping time
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1puE9gHJX2WhFGhUS1TJ6y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1puE9gHJX2WhFGhUS1TJ6y
+    ifdGuid: 1puE9gHJX2WhFGhUS1TJ6y
+- propertyName: CurveDesignation
+  usageDefinition: The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1MGEu_Qon6phzqK0Gu5ysu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1MGEu_Qon6phzqK0Gu5ysu
+    ifdGuid: 1MGEu_Qon6phzqK0Gu5ysu
+- propertyName: ElectroMagneticTrippingUnitType
+  usageDefinition: A list of the available types of electric magnetic tripping unit  from which that required may be selected. These cover overload, none special, short circuit, motor protection and bi-metal tripping.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3VljxPNwr3agR6IUjjHlO1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VljxPNwr3agR6IUjjHlO1
+    ifdGuid: 3VljxPNwr3agR6IUjjHlO1
+- propertyName: I1
+  usageDefinition: The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0wfKhW1gfE4x9BMqvxQuad
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0wfKhW1gfE4x9BMqvxQuad
+    ifdGuid: 0wfKhW1gfE4x9BMqvxQuad
+- propertyName: I2
+  usageDefinition: The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0REVb2sNPB3RAz8wDS_ak0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0REVb2sNPB3RAz8wDS_ak0
+    ifdGuid: 0REVb2sNPB3RAz8wDS_ak0
+- propertyName: T2
+  usageDefinition: The (thermal) testing time in [s] associated with the testing currents I1 and I2.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/291w$1yWLE3AG2uBy5WLz8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/291w$1yWLE3AG2uBy5WLz8
+    ifdGuid: 291w$1yWLE3AG2uBy5WLz8
+- propertyName: DefinedTemperature
+  usageDefinition: The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2rgKvO1_D0fhX8E5hxkjFC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2rgKvO1_D0fhX8E5hxkjFC
+    ifdGuid: 2rgKvO1_D0fhX8E5hxkjFC
+- propertyName: TemperatureFactor
+  usageDefinition: The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Yqjn9EDL6qOd1WT2OWQu2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Yqjn9EDL6qOd1WT2OWQu2
+    ifdGuid: 0Yqjn9EDL6qOd1WT2OWQu2
+- propertyName: I4
+  usageDefinition: The lower electromagnetic testing current limit in [x In], indicating that for currents lower than I4, the tripping time shall be longer than the associated tripping time, T5, i.e. the device shall not trip instantaneous.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01_232hrjFcgF4xRcpd3Sc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01_232hrjFcgF4xRcpd3Sc
+    ifdGuid: 01_232hrjFcgF4xRcpd3Sc
+- propertyName: I5
+  usageDefinition: The upper electromagnetic testing current limit in [x In], indicating that for currents larger than I5, the tripping time shall be shorter than or equal to the associated tripping time, T5, i.e. the device shall trip instantaneous.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0LtiU$cyn8KfjXhtWqV2Vr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0LtiU$cyn8KfjXhtWqV2Vr
+    ifdGuid: 0LtiU$cyn8KfjXhtWqV2Vr
+- propertyName: T5
+  usageDefinition: The electromagnetic testing time in [s] associated with the testing currents I4 and I5, i.e. electromagnetic tripping time
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0stWHPsNn4cgkgy8dYgAyU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0stWHPsNn4cgkgy8dYgAyU
+    ifdGuid: 0stWHPsNn4cgkgy8dYgAyU
+- propertyName: CurveDesignation
+  usageDefinition: The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3JeAkg1XTCbRd0o32fhJ0M
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3JeAkg1XTCbRd0o32fhJ0M
+    ifdGuid: 3JeAkg1XTCbRd0o32fhJ0M
 properties:
 - name: ElectroMagneticTrippingUnitType
   definition: A list of the available types of electric magnetic tripping unit  from which that required may be selected. These cover overload, none special, short circuit, motor protection and bi-metal tripping.

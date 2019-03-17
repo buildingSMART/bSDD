@@ -170,6 +170,278 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08xrXhhiD6hvDZO80IXwKU
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08xrXhhiD6hvDZO80IXwKU
     ifdGuid: 08xrXhhiD6hvDZO80IXwKU
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2nnku6j9586B1SQEavTKAx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2nnku6j9586B1SQEavTKAx
+    ifdGuid: 2nnku6j9586B1SQEavTKAx
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0fSMAvQ8f4CR4hr3XklZcJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0fSMAvQ8f4CR4hr3XklZcJ
+    ifdGuid: 0fSMAvQ8f4CR4hr3XklZcJ
+- propertyName: AcousticRating
+  usageDefinition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Jj424AuX4uA1DF_ORrGrL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Jj424AuX4uA1DF_ORrGrL
+    ifdGuid: 3Jj424AuX4uA1DF_ORrGrL
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2AI5sCn9DEuBzJ4OSfzY2I
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AI5sCn9DEuBzJ4OSfzY2I
+    ifdGuid: 2AI5sCn9DEuBzJ4OSfzY2I
+- propertyName: SecurityRating
+  usageDefinition: Index based rating system indicating security level.It is giving according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EcLmNgFLADhFe18PmjFZg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EcLmNgFLADhFe18PmjFZg
+    ifdGuid: 2EcLmNgFLADhFe18PmjFZg
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3SXM9YeRT2_8QNpBjI6nwa
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3SXM9YeRT2_8QNpBjI6nwa
+    ifdGuid: 3SXM9YeRT2_8QNpBjI6nwa
+- propertyName: Infiltration
+  usageDefinition: Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2gijzTe_v5GA_g2EgmT8Vc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2gijzTe_v5GA_g2EgmT8Vc
+    ifdGuid: 2gijzTe_v5GA_g2EgmT8Vc
+- propertyName: ThermalTransmittance
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material.It applies to the total door construction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KfNE5eJfBivRAM6igLRdq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KfNE5eJfBivRAM6igLRdq
+    ifdGuid: 1KfNE5eJfBivRAM6igLRdq
+- propertyName: GlazingAreaFraction
+  usageDefinition: Fraction of the glazing area relative to the total area of the filling element. It shall be used, if the glazing area is not given separately for all panels within the filling element.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hIrM3HSH3Jhk124WGoj56
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hIrM3HSH3Jhk124WGoj56
+    ifdGuid: 1hIrM3HSH3Jhk124WGoj56
+- propertyName: HasSillExternal
+  usageDefinition: Indication whether the window opening has an external sill (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1qx5xlzvH6Suyc4nls2vVu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qx5xlzvH6Suyc4nls2vVu
+    ifdGuid: 1qx5xlzvH6Suyc4nls2vVu
+- propertyName: HasSillInternal
+  usageDefinition: Indication whether the window opening has an internal sill (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZqXLXInr7qO5DgQFiEnmO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZqXLXInr7qO5DgQFiEnmO
+    ifdGuid: 3ZqXLXInr7qO5DgQFiEnmO
+- propertyName: HasDrive
+  usageDefinition: Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ICm1b$EX0yfy7j_sT4C$L
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ICm1b$EX0yfy7j_sT4C$L
+    ifdGuid: 1ICm1b$EX0yfy7j_sT4C$L
+- propertyName: SmokeStop
+  usageDefinition: Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3fJPvl0DP4SfM3cFYpnlQK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3fJPvl0DP4SfM3cFYpnlQK
+    ifdGuid: 3fJPvl0DP4SfM3cFYpnlQK
+- propertyName: FireExit
+  usageDefinition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE). Here it defines an exit window in accordance to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2X$X5YP0n2qO1tsdaoAUDJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2X$X5YP0n2qO1tsdaoAUDJ
+    ifdGuid: 2X$X5YP0n2qO1tsdaoAUDJ
+- propertyName: WaterTightnessRating
+  usageDefinition: Water tightness rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CPXAVTVf5KRqxgc3wVyfg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CPXAVTVf5KRqxgc3wVyfg
+    ifdGuid: 1CPXAVTVf5KRqxgc3wVyfg
+- propertyName: MechanicalLoadRating
+  usageDefinition: Mechanical load rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2X1h693cD7XfoqA_6Rlpws
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2X1h693cD7XfoqA_6Rlpws
+    ifdGuid: 2X1h693cD7XfoqA_6Rlpws
+- propertyName: WindLoadRating
+  usageDefinition: Wind load resistance rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/398v8R1AX52QOdVUdYIR_v
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/398v8R1AX52QOdVUdYIR_v
+    ifdGuid: 398v8R1AX52QOdVUdYIR_v
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Qvhg_Lgr1FQpKYHyawPJz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Qvhg_Lgr1FQpKYHyawPJz
+    ifdGuid: 3Qvhg_Lgr1FQpKYHyawPJz
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0eofW0Oh5D19Lc_GL9uh5A
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0eofW0Oh5D19Lc_GL9uh5A
+    ifdGuid: 0eofW0Oh5D19Lc_GL9uh5A
+- propertyName: AcousticRating
+  usageDefinition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3QWnbLXdT4lf4ypVUARmI7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3QWnbLXdT4lf4ypVUARmI7
+    ifdGuid: 3QWnbLXdT4lf4ypVUARmI7
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0VH28vdJj7a9llqyYzR3HW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0VH28vdJj7a9llqyYzR3HW
+    ifdGuid: 0VH28vdJj7a9llqyYzR3HW
+- propertyName: SecurityRating
+  usageDefinition: Index based rating system indicating security level.It is giving according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0d_01iqvXDKxzhDWlMUxbD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0d_01iqvXDKxzhDWlMUxbD
+    ifdGuid: 0d_01iqvXDKxzhDWlMUxbD
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3hCozB79j7A8k7K6e_r964
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hCozB79j7A8k7K6e_r964
+    ifdGuid: 3hCozB79j7A8k7K6e_r964
+- propertyName: Infiltration
+  usageDefinition: Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/16U4gw3b5AAhueUlHNX60m
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/16U4gw3b5AAhueUlHNX60m
+    ifdGuid: 16U4gw3b5AAhueUlHNX60m
+- propertyName: ThermalTransmittance
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material.It applies to the total door construction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3pkSbzszvCWujQTzRW29_F
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3pkSbzszvCWujQTzRW29_F
+    ifdGuid: 3pkSbzszvCWujQTzRW29_F
+- propertyName: GlazingAreaFraction
+  usageDefinition: Fraction of the glazing area relative to the total area of the filling element. It shall be used, if the glazing area is not given separately for all panels within the filling element.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3HtDmi7DPCDvJ0zyHqriFY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3HtDmi7DPCDvJ0zyHqriFY
+    ifdGuid: 3HtDmi7DPCDvJ0zyHqriFY
+- propertyName: HasSillExternal
+  usageDefinition: Indication whether the window opening has an external sill (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3tS7A_i8vFc8cY3XI$ArhV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3tS7A_i8vFc8cY3XI$ArhV
+    ifdGuid: 3tS7A_i8vFc8cY3XI$ArhV
+- propertyName: HasSillInternal
+  usageDefinition: Indication whether the window opening has an internal sill (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$NbYqCIXDquFMDxjVYaqt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$NbYqCIXDquFMDxjVYaqt
+    ifdGuid: 2$NbYqCIXDquFMDxjVYaqt
+- propertyName: HasDrive
+  usageDefinition: Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1GKnWDd_j04RvT8IaDcAOH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1GKnWDd_j04RvT8IaDcAOH
+    ifdGuid: 1GKnWDd_j04RvT8IaDcAOH
+- propertyName: SmokeStop
+  usageDefinition: Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09J9dFbLDDkO4AGpbrxiXU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09J9dFbLDDkO4AGpbrxiXU
+    ifdGuid: 09J9dFbLDDkO4AGpbrxiXU
+- propertyName: FireExit
+  usageDefinition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE). Here it defines an exit window in accordance to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3pcHWWHvX0vP4B6lAhm38E
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3pcHWWHvX0vP4B6lAhm38E
+    ifdGuid: 3pcHWWHvX0vP4B6lAhm38E
+- propertyName: WaterTightnessRating
+  usageDefinition: Water tightness rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1RcUuLvfbDMfJqrOO62LTT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1RcUuLvfbDMfJqrOO62LTT
+    ifdGuid: 1RcUuLvfbDMfJqrOO62LTT
+- propertyName: MechanicalLoadRating
+  usageDefinition: Mechanical load rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0jbwgZXjvCRQ8znilcknqH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jbwgZXjvCRQ8znilcknqH
+    ifdGuid: 0jbwgZXjvCRQ8znilcknqH
+- propertyName: WindLoadRating
+  usageDefinition: Wind load resistance rating for this object.It is provided according to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1QQP534nzCBRY7M4n286Qj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1QQP534nzCBRY7M4n286Qj
+    ifdGuid: 1QQP534nzCBRY7M4n286Qj
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.

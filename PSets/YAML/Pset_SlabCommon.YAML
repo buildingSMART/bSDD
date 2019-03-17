@@ -122,6 +122,182 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YqBa_8z11pgJ5njEftJ0m
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YqBa_8z11pgJ5njEftJ0m
     ifdGuid: 0YqBa_8z11pgJ5njEftJ0m
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0kyJfClV5EEQLKkh$ir37E
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0kyJfClV5EEQLKkh$ir37E
+    ifdGuid: 0kyJfClV5EEQLKkh$ir37E
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Z$x8l9dbAT8tj2pLygsgA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Z$x8l9dbAT8tj2pLygsgA
+    ifdGuid: 1Z$x8l9dbAT8tj2pLygsgA
+- propertyName: AcousticRating
+  usageDefinition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$JnHE2Jr60w0NUZjUd3dD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$JnHE2Jr60w0NUZjUd3dD
+    ifdGuid: 1$JnHE2Jr60w0NUZjUd3dD
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object. It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2s7sL8IZnCY9Zkx3R7UNV0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2s7sL8IZnCY9Zkx3R7UNV0
+    ifdGuid: 2s7sL8IZnCY9Zkx3R7UNV0
+- propertyName: PitchAngle
+  usageDefinition: 'Angle of the slab to the horizontal when used as a component for the roof (specified as 0 degrees or not asserted for cases where the slab is not used as a roof component).      The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2j47Ouvp59ygUNboeIXsRG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2j47Ouvp59ygUNboeIXsRG
+    ifdGuid: 2j47Ouvp59ygUNboeIXsRG
+- propertyName: Combustible
+  usageDefinition: Indication whether the object is made from combustible material (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/18GkcGG0j6Pem$s5IykNCS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/18GkcGG0j6Pem$s5IykNCS
+    ifdGuid: 18GkcGG0j6Pem$s5IykNCS
+- propertyName: SurfaceSpreadOfFlame
+  usageDefinition: Indication on how the flames spread around the surface, It is given according to the national building code that governs the fire behaviour for materials.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3u$zkaExf5iAzXVdH6Hqrs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3u$zkaExf5iAzXVdH6Hqrs
+    ifdGuid: 3u$zkaExf5iAzXVdH6Hqrs
+- propertyName: Compartmentation
+  usageDefinition: Indication whether the object is designed to serve as a fire compartmentation (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1AH0FsXPrC7gLmZmDGIUxS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1AH0FsXPrC7gLmZmDGIUxS
+    ifdGuid: 1AH0FsXPrC7gLmZmDGIUxS
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KhfF3U1bA0eLPfjVGsgC8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KhfF3U1bA0eLPfjVGsgC8
+    ifdGuid: 1KhfF3U1bA0eLPfjVGsgC8
+- propertyName: ThermalTransmittance
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material. Here the total thermal transmittance coefficient through the slab (including all materials).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ok4XFeZr2aut62CtTHnVI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ok4XFeZr2aut62CtTHnVI
+    ifdGuid: 0Ok4XFeZr2aut62CtTHnVI
+- propertyName: LoadBearing
+  usageDefinition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/043mszwZ5CzgCFGy0jvVsv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/043mszwZ5CzgCFGy0jvVsv
+    ifdGuid: 043mszwZ5CzgCFGy0jvVsv
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZCrpInzb4ehFn60OVmXws
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZCrpInzb4ehFn60OVmXws
+    ifdGuid: 3ZCrpInzb4ehFn60OVmXws
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3gZBvBRLv9lvr9nmvVkr8M
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3gZBvBRLv9lvr9nmvVkr8M
+    ifdGuid: 3gZBvBRLv9lvr9nmvVkr8M
+- propertyName: AcousticRating
+  usageDefinition: Acoustic rating for this object.It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3t5LmFc8j1LfjyjYlZz0Nw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3t5LmFc8j1LfjyjYlZz0Nw
+    ifdGuid: 3t5LmFc8j1LfjyjYlZz0Nw
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object. It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Cb0hOJJX8VfaPlB9Bd0cm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Cb0hOJJX8VfaPlB9Bd0cm
+    ifdGuid: 2Cb0hOJJX8VfaPlB9Bd0cm
+- propertyName: PitchAngle
+  usageDefinition: 'Angle of the slab to the horizontal when used as a component for the roof (specified as 0 degrees or not asserted for cases where the slab is not used as a roof component).      The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2bHpK4mbvAKe6H22B2if2P
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2bHpK4mbvAKe6H22B2if2P
+    ifdGuid: 2bHpK4mbvAKe6H22B2if2P
+- propertyName: Combustible
+  usageDefinition: Indication whether the object is made from combustible material (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1HtVAuM1552Rshy14LMdH2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1HtVAuM1552Rshy14LMdH2
+    ifdGuid: 1HtVAuM1552Rshy14LMdH2
+- propertyName: SurfaceSpreadOfFlame
+  usageDefinition: Indication on how the flames spread around the surface, It is given according to the national building code that governs the fire behaviour for materials.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/08IkwI3mz7XgQaBTrIA9tR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/08IkwI3mz7XgQaBTrIA9tR
+    ifdGuid: 08IkwI3mz7XgQaBTrIA9tR
+- propertyName: Compartmentation
+  usageDefinition: Indication whether the object is designed to serve as a fire compartmentation (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1G2zDk3unD7vFyeTN7TiCJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1G2zDk3unD7vFyeTN7TiCJ
+    ifdGuid: 1G2zDk3unD7vFyeTN7TiCJ
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11rsw2JBTBrROrcVV5XAt4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11rsw2JBTBrROrcVV5XAt4
+    ifdGuid: 11rsw2JBTBrROrcVV5XAt4
+- propertyName: ThermalTransmittance
+  usageDefinition: Thermal transmittance coefficient (U-Value) of a material. Here the total thermal transmittance coefficient through the slab (including all materials).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cfGzhAvjDyBqBt6dSkLaT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cfGzhAvjDyBqBt6dSkLaT
+    ifdGuid: 3cfGzhAvjDyBqBt6dSkLaT
+- propertyName: LoadBearing
+  usageDefinition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_qbypnjPANP5SNve7euKR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_qbypnjPANP5SNve7euKR
+    ifdGuid: 2_qbypnjPANP5SNve7euKR
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.

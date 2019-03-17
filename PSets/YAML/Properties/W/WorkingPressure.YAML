@@ -1,41 +1,46 @@
 ﻿name: WorkingPressure
-definition: The normally expected maximum working pressure of the valve.
+definition: Boiler working pressure.
 dictionaryReference:
   dictionaryIdentifier: http://bsdd.buildingsmart.org
   dictionaryNamespace: PSet
-  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1_QzC0qXGHuO00025QrE$V
-  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1_QzC0qXGHuO00025QrE$V
-  ifdGuid: 1_QzC0qXGHuO00025QrE$V
-  legacyGuid: 7e6bd300d21411e1800000215ad4efdf
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1D$4Y0qSGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1D$4Y0qSGHuO00025QrE$V
+  ifdGuid: 1D$4Y0qSGHuO00025QrE$V
+  legacyGuid: 4dfc4880d1c411e1800000215ad4efdf
   legacyGuids:
+  - 1D$4Y0qSGHuO00025QrE$V
+  - 2C1cO0qTuHuO00025QrE$V
+  - 2dBw20qVCHuO00025QrE$V
   - 1_QzC0qXGHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: 1_QzC0qXGHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 1D$4Y0qSGHuO00025QrE$V
 localizations:
 - language: en
   name: 'Working Pressure'
   definition: ''
+- language: fr-FR
+  name: 'PressionFonctionnement'
+  definition: 'Pression de fonctionnement de la chaudière.'
 - language: ja-JP
-  name: '運転圧力'
-  definition: 'バルブの通常予想される最高運転圧力'
+  name: '作動圧力'
+  definition: 'ボイラ運転圧力'
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Arbeitsdruck'
+  definition: 'Betriebsdruck des Kessels.'
 - language: en-GB
   name: ''
   definition: ''
 - language: es-ES
   name: ''
   definition: ''
-- language: fr-FR
-  name: ''
-  definition: ''
 - language: ru-RU
   name: ''
   definition: ''
-typePropertySingleValue:
-  dataType: IfcPressureMeasure
-  measureType: ''
-  unitType: USERDEFINED
+typePropertyReferenceValue:
+  refType: IfcTimeSeries
+  url: http://buildingsmart-tech.org
+  guid: ''
+  libraryName: Industry Foundation Classes by buildingSMART International
+  sectionref: Core Schema
 status:
   versionNumber: 4
   dateOfVersion: 2018-01-01T00:00:00.0000000

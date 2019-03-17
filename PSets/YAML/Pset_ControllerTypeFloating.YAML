@@ -90,6 +90,118 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1EGx416QjB58Q3tRKcfKhO
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1EGx416QjB58Q3tRKcfKhO
     ifdGuid: 1EGx416QjB58Q3tRKcfKhO
+- propertyName: ControlType
+  usageDefinition: 'The type of signal modification effected and applicable ports: CONSTANT: No inputs; SignalOffset is written to the output value.MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.ABSOLUTE: Single analog input is read and absolute value is written to the output value.INVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.HYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.RUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.DERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.INTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.BINARY: Single binary input is read and SignalOffset is written to the output value if True.ACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.PULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.SUM: Two analog inputs are read, added, and written to the output value.SUBTRACT: Two analog inputs are read, subtracted, and written to the output value.PRODUCT: Two analog inputs are read, multiplied, and written to the output value.DIVIDE: Two analog inputs are read, divided, and written to the output value.AVERAGE: Two analog inputs are read and the average is written to the output value.MAXIMUM: Two analog inputs are read and the maximum is written to the output value.MINIMUM: Two analog inputs are read and the minimum is written to the output value..INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ES_in5bv2tuyZe_MPP3Fm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ES_in5bv2tuyZe_MPP3Fm
+    ifdGuid: 0ES_in5bv2tuyZe_MPP3Fm
+- propertyName: Labels
+  usageDefinition: Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OyFJ3UYz6uuxYCI4MBkuD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OyFJ3UYz6uuxYCI4MBkuD
+    ifdGuid: 1OyFJ3UYz6uuxYCI4MBkuD
+- propertyName: Range
+  usageDefinition: The physical range of values supported by the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/09UEFNGQv2FujH945Qkki0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/09UEFNGQv2FujH945Qkki0
+    ifdGuid: 09UEFNGQv2FujH945Qkki0
+- propertyName: Value
+  usageDefinition: The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.  The LowerLimitValue and UpperLimitValue must fall within the physical Range and may be used to determine extents when charting Pset_ControllerPHistory.Value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3T4gLWzWD6QuFxPhRo$Csb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3T4gLWzWD6QuFxPhRo$Csb
+    ifdGuid: 3T4gLWzWD6QuFxPhRo$Csb
+- propertyName: SignalOffset
+  usageDefinition: Offset constant added to modfied signal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ec8risEPChgq_zEh9uWsk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ec8risEPChgq_zEh9uWsk
+    ifdGuid: 2ec8risEPChgq_zEh9uWsk
+- propertyName: SignalFactor
+  usageDefinition: Factor multiplied onto offset signal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2b7dZ1zO178uiC7Rf2w8Ge
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2b7dZ1zO178uiC7Rf2w8Ge
+    ifdGuid: 2b7dZ1zO178uiC7Rf2w8Ge
+- propertyName: SignalTime
+  usageDefinition: Time factor used for integral and running average controllers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1TaNwMbYrFuObO6HF_iuzg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1TaNwMbYrFuObO6HF_iuzg
+    ifdGuid: 1TaNwMbYrFuObO6HF_iuzg
+- propertyName: ControlType
+  usageDefinition: 'The type of signal modification effected and applicable ports: CONSTANT: No inputs; SignalOffset is written to the output value.MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.ABSOLUTE: Single analog input is read and absolute value is written to the output value.INVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.HYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.RUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.DERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.INTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.BINARY: Single binary input is read and SignalOffset is written to the output value if True.ACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.PULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.SUM: Two analog inputs are read, added, and written to the output value.SUBTRACT: Two analog inputs are read, subtracted, and written to the output value.PRODUCT: Two analog inputs are read, multiplied, and written to the output value.DIVIDE: Two analog inputs are read, divided, and written to the output value.AVERAGE: Two analog inputs are read and the average is written to the output value.MAXIMUM: Two analog inputs are read and the maximum is written to the output value.MINIMUM: Two analog inputs are read and the minimum is written to the output value..INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZPcF237j1CQy0ab2ta4o5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZPcF237j1CQy0ab2ta4o5
+    ifdGuid: 3ZPcF237j1CQy0ab2ta4o5
+- propertyName: Labels
+  usageDefinition: Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2l_459OuHFTOfs3YMZ_XCY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2l_459OuHFTOfs3YMZ_XCY
+    ifdGuid: 2l_459OuHFTOfs3YMZ_XCY
+- propertyName: Range
+  usageDefinition: The physical range of values supported by the device.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2wItkvfkr8YBTrgv7clIfu
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2wItkvfkr8YBTrgv7clIfu
+    ifdGuid: 2wItkvfkr8YBTrgv7clIfu
+- propertyName: Value
+  usageDefinition: The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.  The LowerLimitValue and UpperLimitValue must fall within the physical Range and may be used to determine extents when charting Pset_ControllerPHistory.Value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1tw_Nr1ebBm9$LLPYR0_Qe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tw_Nr1ebBm9$LLPYR0_Qe
+    ifdGuid: 1tw_Nr1ebBm9$LLPYR0_Qe
+- propertyName: SignalOffset
+  usageDefinition: Offset constant added to modfied signal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2zb1RJL4z8pf4CjxdR65G$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zb1RJL4z8pf4CjxdR65G$
+    ifdGuid: 2zb1RJL4z8pf4CjxdR65G$
+- propertyName: SignalFactor
+  usageDefinition: Factor multiplied onto offset signal.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ahMcRQ7X0Qvfgcq9euLZz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ahMcRQ7X0Qvfgcq9euLZz
+    ifdGuid: 0ahMcRQ7X0Qvfgcq9euLZz
+- propertyName: SignalTime
+  usageDefinition: Time factor used for integral and running average controllers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3UJTl5KDD52fwUGGOU819p
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3UJTl5KDD52fwUGGOU819p
+    ifdGuid: 3UJTl5KDD52fwUGGOU819p
 properties:
 - name: ControlType
   definition: 'The type of signal modification effected and applicable ports: CONSTANT: No inputs; SignalOffset is written to the output value.MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.ABSOLUTE: Single analog input is read and absolute value is written to the output value.INVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.HYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.RUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.DERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.INTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.BINARY: Single binary input is read and SignalOffset is written to the output value if True.ACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.PULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.SUM: Two analog inputs are read, added, and written to the output value.SUBTRACT: Two analog inputs are read, subtracted, and written to the output value.PRODUCT: Two analog inputs are read, multiplied, and written to the output value.DIVIDE: Two analog inputs are read, divided, and written to the output value.AVERAGE: Two analog inputs are read and the average is written to the output value.MAXIMUM: Two analog inputs are read and the maximum is written to the output value.MINIMUM: Two analog inputs are read and the minimum is written to the output value..INPUT: Controller element is a dedicated input.OUTPUT: Controller element is a dedicated output.VARIABLE: Controller element is an in-memory variable.'

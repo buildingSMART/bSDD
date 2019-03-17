@@ -1,31 +1,33 @@
 ﻿name: Roll
-definition: 'Rotation against the longitudinal axis - relative to the global Z direction for all members that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.Note: new property in IFC4.'
+definition: 'Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.Note: new property in IFC4'
 dictionaryReference:
   dictionaryIdentifier: http://bsdd.buildingsmart.org
   dictionaryNamespace: PSet
-  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1fCNq0qV4HuO00025QrE$V
-  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1fCNq0qV4HuO00025QrE$V
-  ifdGuid: 1fCNq0qV4HuO00025QrE$V
-  legacyGuid: 69317d00d1f111e1800000215ad4efdf
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Zgei0qSGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Zgei0qSGHuO00025QrE$V
+  ifdGuid: 0Zgei0qSGHuO00025QrE$V
+  legacyGuid: 23aa8b00d1c411e1800000215ad4efdf
   legacyGuids:
+  - 0Zgei0qSGHuO00025QrE$V
+  - 1nmeq0qSeHuO00025QrE$V
   - 1fCNq0qV4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: 1fCNq0qV4HuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 0Zgei0qSGHuO00025QrE$V
 localizations:
 - language: de-DE
   name: 'Kippwinkel'
-  definition: 'German-description-4'
+  definition: 'Kippwinkel des Balkens relative zur Vertikalen (O Grad).Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.'
 - language: en
   name: 'Roll'
   definition: ''
 - language: fr-FR
   name: 'RotationAutourAxeLongitudinal'
-  definition: 'Rotation autour de l''axe longitudinal - relativement à l''axe Z pour toutes les membrures qui ne sont pas verticales relativement au repère absolu (la direction du profil est celle de l''axe Z si la valeur de la propriété est 0). Cette propriété est donnée en complément de la représentation de la forme de l''élément et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Note : nouvelle propriété de la version IFC2x4.'
+  definition: 'Rotation autour de l''axe longitudinal - relativement à l''axe Z pour toutes les poutres qui ne sont pas verticales relativement au repère absolu (la direction du profil est celle de l''axe Z si la valeur de la propriété est 0). Cette propriété est donnée en complément de la représentation de la forme de l''élément et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété. Note : nouvelle propriété de la version IFC2x4.'
 - language: ja-JP
   name: '回転'
-  definition: 'オブジェクトの長軸に対する回転。'
+  definition: '梁の材軸に対する回転。-この材軸はグローバル座標系で非垂直な全ての梁に対してグローバルZ方向へ相対する。（表示方向は、グローバルZの回転方向を0とする。）その形状（梁の回転）情報は、表示のための形状に内部で使用される幾何学的パラメータを加えて提供される。形状情報と内部の幾何学的パラメータに矛盾が生じた場合は、幾何学的パラメータが優先される。幾何学的パラメ－タ編集アプリケーションでは、CADと同様に、この値は書き込み専用とする。注：IFC2x4の新しいプロパティ'
 - language: zh-CN
   name: '转角'
-  definition: '相对于纵轴的旋转角。对全局坐标系中的非垂直构件，该属性为相对于Z轴的角度。（若轮廓方向在Z轴上，则转角为0。）该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。注：IFC2x4新添属性'
+  definition: '相对于纵轴的旋转角。对全局坐标系中的非垂直梁，该属性为相对于Z轴的角度。（若轮廓方向在Z轴上，则转角为0。）该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。注：IFC2x4新添属性'
 - language: en-GB
   name: ''
   definition: ''

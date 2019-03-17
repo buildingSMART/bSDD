@@ -156,6 +156,246 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CHKE6MHXFXBNKdVLnPptD
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CHKE6MHXFXBNKdVLnPptD
     ifdGuid: 1CHKE6MHXFXBNKdVLnPptD
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10ZWYEiKzAfx5Ryz0hUOAT
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10ZWYEiKzAfx5Ryz0hUOAT
+    ifdGuid: 10ZWYEiKzAfx5Ryz0hUOAT
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3mLf6MWlr5hOO0dzBAdrm3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3mLf6MWlr5hOO0dzBAdrm3
+    ifdGuid: 3mLf6MWlr5hOO0dzBAdrm3
+- propertyName: NominalCapacity
+  usageDefinition: Nominal cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream at nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XHUylo_51GAvdjqEzKqpz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XHUylo_51GAvdjqEzKqpz
+    ifdGuid: 0XHUylo_51GAvdjqEzKqpz
+- propertyName: CircuitType
+  usageDefinition: 'OpenCircuit: Exposes water directly to the cooling atmosphere.CloseCircuit: The fluid is separated from the atmosphere by a heat exchanger.Wet: The air stream or the heat exchange surface is evaporatively cooled.Dry: No evaporation into the air stream.DryWet: A combination of a dry tower and a wet tower.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3nao6qc$rFAO316zQIA7nk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3nao6qc$rFAO316zQIA7nk
+    ifdGuid: 3nao6qc$rFAO316zQIA7nk
+- propertyName: FlowArrangement
+  usageDefinition: 'CounterFlow: Air and water flow enter in different directions.CrossFlow: Air and water flow are perpendicular.ParallelFlow: air and water flow enter in same directions.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1aNTC3A$X9Ee0j_7RDUmyd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1aNTC3A$X9Ee0j_7RDUmyd
+    ifdGuid: 1aNTC3A$X9Ee0j_7RDUmyd
+- propertyName: SprayType
+  usageDefinition: 'SprayFilled: Water is sprayed into airflow.SplashTypeFill: water cascades over successive rows of splash bars.FilmTypeFill: water flows in a thin layer over closely spaced sheets.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1tSHfWJuTEr8bFzP8BkneZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tSHfWJuTEr8bFzP8BkneZ
+    ifdGuid: 1tSHfWJuTEr8bFzP8BkneZ
+- propertyName: CapacityControl
+  usageDefinition: 'FanCycling: Fan is cycled on and off to control duty.TwoSpeedFan: Fan is switched between low and high speed to control duty.VariableSpeedFan: Fan speed is varied to control duty.DampersControl: Dampers modulate the air flow to control duty.BypassValveControl: Bypass valve modulates the water flow to control duty.MultipleSeriesPumps: Turn on/off multiple series pump to control duty.TwoSpeedPump: Switch between high/low pump speed to control duty.VariableSpeedPump: vary pump speed to control duty.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0urpfT3z963uAW8JglSXRv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0urpfT3z963uAW8JglSXRv
+    ifdGuid: 0urpfT3z963uAW8JglSXRv
+- propertyName: ControlStrategy
+  usageDefinition: 'FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature.WetBulbTempReset: The set-point is reset based on the wet-bulb temperature.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3kcAd$jfb8KhrH_0R0_jHP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3kcAd$jfb8KhrH_0R0_jHP
+    ifdGuid: 3kcAd$jfb8KhrH_0R0_jHP
+- propertyName: NumberOfCells
+  usageDefinition: Number of cells in one cooling tower unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/368K9GT4jCnAQrpVezg5LW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/368K9GT4jCnAQrpVezg5LW
+    ifdGuid: 368K9GT4jCnAQrpVezg5LW
+- propertyName: BasinReserveVolume
+  usageDefinition: Volume between operating and overflow levels in cooling tower basin.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2imeiSrKr8MvsR_DD5UKYW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2imeiSrKr8MvsR_DD5UKYW
+    ifdGuid: 2imeiSrKr8MvsR_DD5UKYW
+- propertyName: LiftElevationDifference
+  usageDefinition: Elevation difference between cooling tower sump and the top of the tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0L2OOgOuD0ihyvAThgLbEO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0L2OOgOuD0ihyvAThgLbEO
+    ifdGuid: 0L2OOgOuD0ihyvAThgLbEO
+- propertyName: WaterRequirement
+  usageDefinition: Make-up water requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2B2j6fQfL6kgIxGm5u5jHy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2B2j6fQfL6kgIxGm5u5jHy
+    ifdGuid: 2B2j6fQfL6kgIxGm5u5jHy
+- propertyName: OperationTemperatureRange
+  usageDefinition: Allowable operation ambient air temperature range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Xt2iCb$L82RVqQcV2ePvn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Xt2iCb$L82RVqQcV2ePvn
+    ifdGuid: 2Xt2iCb$L82RVqQcV2ePvn
+- propertyName: AmbientDesignDryBulbTemperature
+  usageDefinition: Ambient design dry bulb temperature used for selecting the cooling tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2IfVRWCDj5QOueQWVBAwCR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IfVRWCDj5QOueQWVBAwCR
+    ifdGuid: 2IfVRWCDj5QOueQWVBAwCR
+- propertyName: AmbientDesignWetBulbTemperature
+  usageDefinition: Ambient design wet bulb temperature used for selecting the cooling tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vQshyESbCA8MU3iWKpJJf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vQshyESbCA8MU3iWKpJJf
+    ifdGuid: 3vQshyESbCA8MU3iWKpJJf
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/31OprEtj5DSByNkIhliaz9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/31OprEtj5DSByNkIhliaz9
+    ifdGuid: 31OprEtj5DSByNkIhliaz9
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2unpDt3KD4i8EZllrnLM_y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2unpDt3KD4i8EZllrnLM_y
+    ifdGuid: 2unpDt3KD4i8EZllrnLM_y
+- propertyName: NominalCapacity
+  usageDefinition: Nominal cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream at nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1mFQal$Jj15P8AfEJmCi3c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mFQal$Jj15P8AfEJmCi3c
+    ifdGuid: 1mFQal$Jj15P8AfEJmCi3c
+- propertyName: CircuitType
+  usageDefinition: 'OpenCircuit: Exposes water directly to the cooling atmosphere.CloseCircuit: The fluid is separated from the atmosphere by a heat exchanger.Wet: The air stream or the heat exchange surface is evaporatively cooled.Dry: No evaporation into the air stream.DryWet: A combination of a dry tower and a wet tower.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Oa07oVk90C9PVTMOT3Zqf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Oa07oVk90C9PVTMOT3Zqf
+    ifdGuid: 2Oa07oVk90C9PVTMOT3Zqf
+- propertyName: FlowArrangement
+  usageDefinition: 'CounterFlow: Air and water flow enter in different directions.CrossFlow: Air and water flow are perpendicular.ParallelFlow: air and water flow enter in same directions.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DpyW4warDc8Wk3fDV6Vhf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DpyW4warDc8Wk3fDV6Vhf
+    ifdGuid: 1DpyW4warDc8Wk3fDV6Vhf
+- propertyName: SprayType
+  usageDefinition: 'SprayFilled: Water is sprayed into airflow.SplashTypeFill: water cascades over successive rows of splash bars.FilmTypeFill: water flows in a thin layer over closely spaced sheets.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XimEnJOvEA9i7JAqUoBSZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XimEnJOvEA9i7JAqUoBSZ
+    ifdGuid: 1XimEnJOvEA9i7JAqUoBSZ
+- propertyName: CapacityControl
+  usageDefinition: 'FanCycling: Fan is cycled on and off to control duty.TwoSpeedFan: Fan is switched between low and high speed to control duty.VariableSpeedFan: Fan speed is varied to control duty.DampersControl: Dampers modulate the air flow to control duty.BypassValveControl: Bypass valve modulates the water flow to control duty.MultipleSeriesPumps: Turn on/off multiple series pump to control duty.TwoSpeedPump: Switch between high/low pump speed to control duty.VariableSpeedPump: vary pump speed to control duty.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2RYSRmYTH6uxHqK$fEbawS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RYSRmYTH6uxHqK$fEbawS
+    ifdGuid: 2RYSRmYTH6uxHqK$fEbawS
+- propertyName: ControlStrategy
+  usageDefinition: 'FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature.WetBulbTempReset: The set-point is reset based on the wet-bulb temperature.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2mnBaGvgTA390gQMxR3kmm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2mnBaGvgTA390gQMxR3kmm
+    ifdGuid: 2mnBaGvgTA390gQMxR3kmm
+- propertyName: NumberOfCells
+  usageDefinition: Number of cells in one cooling tower unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3F4gtnctPF$uhn0fiqzuAI
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3F4gtnctPF$uhn0fiqzuAI
+    ifdGuid: 3F4gtnctPF$uhn0fiqzuAI
+- propertyName: BasinReserveVolume
+  usageDefinition: Volume between operating and overflow levels in cooling tower basin.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1qCsCi4OPDV9IMPSsdCblk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1qCsCi4OPDV9IMPSsdCblk
+    ifdGuid: 1qCsCi4OPDV9IMPSsdCblk
+- propertyName: LiftElevationDifference
+  usageDefinition: Elevation difference between cooling tower sump and the top of the tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1LJvERk7X7buTRYWR5dGGK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LJvERk7X7buTRYWR5dGGK
+    ifdGuid: 1LJvERk7X7buTRYWR5dGGK
+- propertyName: WaterRequirement
+  usageDefinition: Make-up water requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/13HYXb41XE0eAs6pUy0zzx
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/13HYXb41XE0eAs6pUy0zzx
+    ifdGuid: 13HYXb41XE0eAs6pUy0zzx
+- propertyName: OperationTemperatureRange
+  usageDefinition: Allowable operation ambient air temperature range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EixwvvHz0Bg6xygpRxbJ5
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EixwvvHz0Bg6xygpRxbJ5
+    ifdGuid: 3EixwvvHz0Bg6xygpRxbJ5
+- propertyName: AmbientDesignDryBulbTemperature
+  usageDefinition: Ambient design dry bulb temperature used for selecting the cooling tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2srrVtRjnCxh9J96tJUl9d
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2srrVtRjnCxh9J96tJUl9d
+    ifdGuid: 2srrVtRjnCxh9J96tJUl9d
+- propertyName: AmbientDesignWetBulbTemperature
+  usageDefinition: Ambient design wet bulb temperature used for selecting the cooling tower.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2vMLSDEYvDJ8InAtGd6S73
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vMLSDEYvDJ8InAtGd6S73
+    ifdGuid: 2vMLSDEYvDJ8InAtGd6S73
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.

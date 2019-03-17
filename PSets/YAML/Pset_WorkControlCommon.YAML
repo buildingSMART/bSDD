@@ -74,6 +74,86 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vpaLdIzH1$w2VDw_m7v9c
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vpaLdIzH1$w2VDw_m7v9c
     ifdGuid: 3vpaLdIzH1$w2VDw_m7v9c
+- propertyName: WorkStartTime
+  usageDefinition: The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/20_xtLFlH2S8C5iPoUonF0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/20_xtLFlH2S8C5iPoUonF0
+    ifdGuid: 20_xtLFlH2S8C5iPoUonF0
+- propertyName: WorkFinishTime
+  usageDefinition: The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkFinishTime.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0Ma0oaOsnEUBYgUZxxD2pF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0Ma0oaOsnEUBYgUZxxD2pF
+    ifdGuid: 0Ma0oaOsnEUBYgUZxxD2pF
+- propertyName: WorkDayDuration
+  usageDefinition: The elapsed time within a worktime-based day. For presentation purposes, applications may choose to display IfcTask durations in work days where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 24 hours (an elapsed day); if omitted then 8 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XjsJPuJb9iwtOBggZgQxF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XjsJPuJb9iwtOBggZgQxF
+    ifdGuid: 0XjsJPuJb9iwtOBggZgQxF
+- propertyName: WorkWeekDuration
+  usageDefinition: The elapsed time within a worktime-based week. For presentation purposes, applications may choose to display IfcTask durations in work weeks where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 168 hours (an elapsed week); if omitted then 40 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/32jQy_1Mj7tOunVGnO55gc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/32jQy_1Mj7tOunVGnO55gc
+    ifdGuid: 32jQy_1Mj7tOunVGnO55gc
+- propertyName: WorkMonthDuration
+  usageDefinition: The elapsed time within a worktime-based month. For presentation purposes, applications may choose to display IfcTask durations in work months where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 744 hours (an elapsed month of 31 days); if omitted then 160 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$qjdGCh14mRnq7zYObfum
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$qjdGCh14mRnq7zYObfum
+    ifdGuid: 2$qjdGCh14mRnq7zYObfum
+- propertyName: WorkStartTime
+  usageDefinition: The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XsebZH5n95uHkG1OIFpcA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XsebZH5n95uHkG1OIFpcA
+    ifdGuid: 1XsebZH5n95uHkG1OIFpcA
+- propertyName: WorkFinishTime
+  usageDefinition: The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkFinishTime.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0tMzCCjibF08uhrxST975I
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tMzCCjibF08uhrxST975I
+    ifdGuid: 0tMzCCjibF08uhrxST975I
+- propertyName: WorkDayDuration
+  usageDefinition: The elapsed time within a worktime-based day. For presentation purposes, applications may choose to display IfcTask durations in work days where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 24 hours (an elapsed day); if omitted then 8 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/031eTcyfj0cQrrx$3Iwavy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/031eTcyfj0cQrrx$3Iwavy
+    ifdGuid: 031eTcyfj0cQrrx$3Iwavy
+- propertyName: WorkWeekDuration
+  usageDefinition: The elapsed time within a worktime-based week. For presentation purposes, applications may choose to display IfcTask durations in work weeks where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 168 hours (an elapsed week); if omitted then 40 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2NdaI2TfTBOgvENhsCHnbl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2NdaI2TfTBOgvENhsCHnbl
+    ifdGuid: 2NdaI2TfTBOgvENhsCHnbl
+- propertyName: WorkMonthDuration
+  usageDefinition: The elapsed time within a worktime-based month. For presentation purposes, applications may choose to display IfcTask durations in work months where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 744 hours (an elapsed month of 31 days); if omitted then 160 hours is assumed.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/36GTPir6b2SPyF1$16fv62
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/36GTPir6b2SPyF1$16fv62
+    ifdGuid: 36GTPir6b2SPyF1$16fv62
 properties:
 - name: WorkStartTime
   definition: The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.

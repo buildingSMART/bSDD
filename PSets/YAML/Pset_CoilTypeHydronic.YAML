@@ -138,6 +138,214 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1aX5iQ9afD_BgqevFh6_3Y
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1aX5iQ9afD_BgqevFh6_3Y
     ifdGuid: 1aX5iQ9afD_BgqevFh6_3Y
+- propertyName: FluidPressureRange
+  usageDefinition: Allowable water working pressure range inside the tube.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1rqgoYJ8rCouyHc5hVZ9bf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1rqgoYJ8rCouyHc5hVZ9bf
+    ifdGuid: 1rqgoYJ8rCouyHc5hVZ9bf
+- propertyName: CoilCoolant
+  usageDefinition: The fluid used for heating or cooling used by the hydronic coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2AWhgQ1Kb8OgUMi1MsAQz7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2AWhgQ1Kb8OgUMi1MsAQz7
+    ifdGuid: 2AWhgQ1Kb8OgUMi1MsAQz7
+- propertyName: CoilConnectionDirection
+  usageDefinition: Coil connection direction (facing into the air stream).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3EOLt_YAXFgPRM4_pM_NIS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3EOLt_YAXFgPRM4_pM_NIS
+    ifdGuid: 3EOLt_YAXFgPRM4_pM_NIS
+- propertyName: CoilFluidArrangement
+  usageDefinition: 'Fluid flow arrangement of the coil.CrossCounterFlow: Air and water flow enter in different directions.CrossFlow: Air and water flow are perpendicular.CrossParallelFlow: Air and water flow enter in same directions.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Ve$LZv$bA9Rr$goJ_6KEt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Ve$LZv$bA9Rr$goJ_6KEt
+    ifdGuid: 3Ve$LZv$bA9Rr$goJ_6KEt
+- propertyName: CoilFaceArea
+  usageDefinition: Coil face area in the direction against air the flow.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1PcPTWu1PEfvyPnTDnfbyK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1PcPTWu1PEfvyPnTDnfbyK
+    ifdGuid: 1PcPTWu1PEfvyPnTDnfbyK
+- propertyName: HeatExchangeSurfaceArea
+  usageDefinition: Heat exchange surface area associated with U-value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1d1agdjh5AWfAzxtsNV4AJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1d1agdjh5AWfAzxtsNV4AJ
+    ifdGuid: 1d1agdjh5AWfAzxtsNV4AJ
+- propertyName: PrimarySurfaceArea
+  usageDefinition: Primary heat transfer surface area of the tubes and headers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2CADHPUbvBS8oBfnnRfniB
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2CADHPUbvBS8oBfnnRfniB
+    ifdGuid: 2CADHPUbvBS8oBfnnRfniB
+- propertyName: SecondarySurfaceArea
+  usageDefinition: Secondary heat transfer surface area created by fins.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3E5JB7sw9DqvohTYxRXR$e
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3E5JB7sw9DqvohTYxRXR$e
+    ifdGuid: 3E5JB7sw9DqvohTYxRXR$e
+- propertyName: TotalUACurves
+  usageDefinition: 'Total UA curves, UA - air and water velocities, UA = [(C1 * AirFlowRate^0.8)^-1 + (C2 * WaterFlowRate^0.8)^-1]^-1.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: AirFlowRate,WaterFlowRate,UA.  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0c4cW8h8L1YR7_K2HLfOB0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0c4cW8h8L1YR7_K2HLfOB0
+    ifdGuid: 0c4cW8h8L1YR7_K2HLfOB0
+- propertyName: WaterPressureDropCurve
+  usageDefinition: Water pressure drop curve, pressure drop – flow rate curve, WaterPressureDrop = f(WaterflowRate).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3wAxk_gFb6CxEhcwX2XB1f
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wAxk_gFb6CxEhcwX2XB1f
+    ifdGuid: 3wAxk_gFb6CxEhcwX2XB1f
+- propertyName: BypassFactor
+  usageDefinition: Fraction of air that is bypassed by the coil (0-1).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2KEFxAVDf12Oo4kT_ghN6t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KEFxAVDf12Oo4kT_ghN6t
+    ifdGuid: 2KEFxAVDf12Oo4kT_ghN6t
+- propertyName: SensibleHeatRatio
+  usageDefinition: Air-side sensible heat ratio, or fraction of sensible heat transfer to the total heat transfer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1FOCbV_R16SBR3rrYx5IYd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1FOCbV_R16SBR3rrYx5IYd
+    ifdGuid: 1FOCbV_R16SBR3rrYx5IYd
+- propertyName: WetCoilFraction
+  usageDefinition: Fraction of coil surface area that is wet (0-1).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1nHcWZRN5CW9sPEPfBUu1j
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1nHcWZRN5CW9sPEPfBUu1j
+    ifdGuid: 1nHcWZRN5CW9sPEPfBUu1j
+- propertyName: FluidPressureRange
+  usageDefinition: Allowable water working pressure range inside the tube.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0vni8gMyv3ngLf5ckIWLWP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0vni8gMyv3ngLf5ckIWLWP
+    ifdGuid: 0vni8gMyv3ngLf5ckIWLWP
+- propertyName: CoilCoolant
+  usageDefinition: The fluid used for heating or cooling used by the hydronic coil.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2yTErf7kj7hezuBRP1Db6I
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2yTErf7kj7hezuBRP1Db6I
+    ifdGuid: 2yTErf7kj7hezuBRP1Db6I
+- propertyName: CoilConnectionDirection
+  usageDefinition: Coil connection direction (facing into the air stream).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2QV7Z9OwH0rA92yW68U0ta
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2QV7Z9OwH0rA92yW68U0ta
+    ifdGuid: 2QV7Z9OwH0rA92yW68U0ta
+- propertyName: CoilFluidArrangement
+  usageDefinition: 'Fluid flow arrangement of the coil.CrossCounterFlow: Air and water flow enter in different directions.CrossFlow: Air and water flow are perpendicular.CrossParallelFlow: Air and water flow enter in same directions.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0c4B5kFVr5_APoZOJyr_$L
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0c4B5kFVr5_APoZOJyr_$L
+    ifdGuid: 0c4B5kFVr5_APoZOJyr_$L
+- propertyName: CoilFaceArea
+  usageDefinition: Coil face area in the direction against air the flow.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0tfMGAzIj8mfkn4lnXd5$J
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0tfMGAzIj8mfkn4lnXd5$J
+    ifdGuid: 0tfMGAzIj8mfkn4lnXd5$J
+- propertyName: HeatExchangeSurfaceArea
+  usageDefinition: Heat exchange surface area associated with U-value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0lX2NabP12OBb7TvJgzyo3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lX2NabP12OBb7TvJgzyo3
+    ifdGuid: 0lX2NabP12OBb7TvJgzyo3
+- propertyName: PrimarySurfaceArea
+  usageDefinition: Primary heat transfer surface area of the tubes and headers.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3wZP62KoPFj9LExpsQaNAG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3wZP62KoPFj9LExpsQaNAG
+    ifdGuid: 3wZP62KoPFj9LExpsQaNAG
+- propertyName: SecondarySurfaceArea
+  usageDefinition: Secondary heat transfer surface area created by fins.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1e0DavHLL6TA9FCMVBNwft
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1e0DavHLL6TA9FCMVBNwft
+    ifdGuid: 1e0DavHLL6TA9FCMVBNwft
+- propertyName: TotalUACurves
+  usageDefinition: 'Total UA curves, UA - air and water velocities, UA = [(C1 * AirFlowRate^0.8)^-1 + (C2 * WaterFlowRate^0.8)^-1]^-1.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: AirFlowRate,WaterFlowRate,UA.  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Bb_j9qyT1lwIk01zKX1Rk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Bb_j9qyT1lwIk01zKX1Rk
+    ifdGuid: 2Bb_j9qyT1lwIk01zKX1Rk
+- propertyName: WaterPressureDropCurve
+  usageDefinition: Water pressure drop curve, pressure drop – flow rate curve, WaterPressureDrop = f(WaterflowRate).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3zuytFcmrA$RIuRDyLUTl_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zuytFcmrA$RIuRDyLUTl_
+    ifdGuid: 3zuytFcmrA$RIuRDyLUTl_
+- propertyName: BypassFactor
+  usageDefinition: Fraction of air that is bypassed by the coil (0-1).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3IfHFtjr1CghGrk47LWcDo
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3IfHFtjr1CghGrk47LWcDo
+    ifdGuid: 3IfHFtjr1CghGrk47LWcDo
+- propertyName: SensibleHeatRatio
+  usageDefinition: Air-side sensible heat ratio, or fraction of sensible heat transfer to the total heat transfer.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zIKdSEHPEKgqUQOlurKHG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zIKdSEHPEKgqUQOlurKHG
+    ifdGuid: 0zIKdSEHPEKgqUQOlurKHG
+- propertyName: WetCoilFraction
+  usageDefinition: Fraction of coil surface area that is wet (0-1).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2e9BdMZ4jEAw5dlb_oDXnd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2e9BdMZ4jEAw5dlb_oDXnd
+    ifdGuid: 2e9BdMZ4jEAw5dlb_oDXnd
 properties:
 - name: FluidPressureRange
   definition: Allowable water working pressure range inside the tube.

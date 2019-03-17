@@ -1,31 +1,35 @@
 ﻿name: Slope
-definition: Sloping angle of the object  - relative to horizontal (0.0 degrees). Actual maximum slope for the passageway according to the current design.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+definition: 'Slope angle - relative to horizontal (0.0 degrees).The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.'
 dictionaryReference:
   dictionaryIdentifier: http://bsdd.buildingsmart.org
   dictionaryNamespace: PSet
-  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2IMGe0qVyHuO00025QrE$V
-  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2IMGe0qVyHuO00025QrE$V
-  ifdGuid: 2IMGe0qVyHuO00025QrE$V
-  legacyGuid: 92590a00d1ff11e1800000215ad4efdf
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0UvTS0qSGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0UvTS0qSGHuO00025QrE$V
+  ifdGuid: 0UvTS0qSGHuO00025QrE$V
+  legacyGuid: 1ee5d700d1c411e1800000215ad4efdf
   legacyGuids:
+  - 0UvTS0qSGHuO00025QrE$V
+  - 1hpAm0qSeHuO00025QrE$V
+  - 1aRCa0qV4HuO00025QrE$V
+  - 3kjYo0qVCHuO00025QrE$V
   - 2IMGe0qVyHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: 2IMGe0qVyHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 0UvTS0qSGHuO00025QrE$V
 localizations:
 - language: de-DE
-  name: 'Neigung'
-  definition: 'German-description-4'
+  name: 'Neigungswinkel'
+  definition: 'Neigungswinkel des Balkens relative zur Horizontalen (0 Grad).Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.'
 - language: en
   name: 'Slope'
   definition: ''
 - language: fr-FR
-  name: 'Pente'
-  definition: 'Angle d''inclinaison relativement à l''horizontale correspondant à la valeur 0 degrés. Valeur maximale de l''inclinaison actuellement projetée. Cette propriété est donnée en complément de la représentation de la forme de l''élément et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment.'
+  name: 'Inclinaison'
+  definition: 'Angle d''inclinaison avec l''horizontale (0 degrés). Cette propriété  est donnée en complément de la représentation de la forme et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété'
 - language: ja-JP
-  name: '通路の傾斜角度(水平からの角度）'
-  definition: 'オブジェクト傾斜角度（水平が0.0度)現在の設計による通路のための実際の最大の傾斜。形情報は、内側は使用される形表現および幾何学的媒介変数に加えて提供されます。幾何学的媒介変数と形特性の間の矛盾の場合では、付属の特性の中で提供されて、幾何学的媒介変数は先行をとります。"'
+  name: '傾斜'
+  definition: '傾斜角度。水平を0度とする。その形状（傾斜梁）情報は、表示のための形状に内部で使用される幾何学的パラメータを加えて提供される。形状情報と内部の幾何学的パラメータに矛盾が生じた場合は、幾何学的パラメータが優先される。幾何学的パラメ－タ編集アプリケーションでは、CADと同様に、この値は書き込み専用とする。'
 - language: zh-CN
   name: '坡度'
-  definition: '构件相对于水平（0.0度）方向的实际坡度角。当前设计方案确定的通道的最大坡度。该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。'
+  definition: '相对于水平（0.0度）方向的坡度角。该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。'
 - language: en-GB
   name: ''
   definition: ''

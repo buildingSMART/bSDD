@@ -122,6 +122,182 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1jDP832cj3GeKjmhMJvDzI
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1jDP832cj3GeKjmhMJvDzI
     ifdGuid: 1jDP832cj3GeKjmhMJvDzI
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3yx5tEHvH6uu9vu922un7H
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3yx5tEHvH6uu9vu922un7H
+    ifdGuid: 3yx5tEHvH6uu9vu922un7H
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/24I16M$5b81xEE8577YMa$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/24I16M$5b81xEE8577YMa$
+    ifdGuid: 24I16M$5b81xEE8577YMa$
+- propertyName: NominalCapacity
+  usageDefinition: Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0pICdLQHf2RuMkQra4Q1jX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0pICdLQHf2RuMkQra4Q1jX
+    ifdGuid: 0pICdLQHf2RuMkQra4Q1jX
+- propertyName: NominalEfficiency
+  usageDefinition: Nominal chiller efficiency under nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GT4LD4fHDNB8bv1Mc90$G
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GT4LD4fHDNB8bv1Mc90$G
+    ifdGuid: 0GT4LD4fHDNB8bv1Mc90$G
+- propertyName: NominalCondensingTemperature
+  usageDefinition: Chiller condensing temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3m1m1oLHH2O8ytxw7yZjtU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3m1m1oLHH2O8ytxw7yZjtU
+    ifdGuid: 3m1m1oLHH2O8ytxw7yZjtU
+- propertyName: NominalEvaporatingTemperature
+  usageDefinition: Chiller evaporating temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1XDsEYsyT8Bw1yCJb7n9zy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1XDsEYsyT8Bw1yCJb7n9zy
+    ifdGuid: 1XDsEYsyT8Bw1yCJb7n9zy
+- propertyName: NominalHeatRejectionRate
+  usageDefinition: Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1xPWETX0T1s9nfgJNqPodv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1xPWETX0T1s9nfgJNqPodv
+    ifdGuid: 1xPWETX0T1s9nfgJNqPodv
+- propertyName: NominalPowerConsumption
+  usageDefinition: Nominal total power consumption.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0DKq_J9Yf8oxRStK_n1URr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DKq_J9Yf8oxRStK_n1URr
+    ifdGuid: 0DKq_J9Yf8oxRStK_n1URr
+- propertyName: CapacityCurve
+  usageDefinition: 'Chiller cooling capacity is a function of condensing temperature and evaporating temperature, data is in table form, Capacity = f (TempCon, TempEvp), capacity = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPowerMeasure:Capacity2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3v3NKj0w10oP_VcMh_4s4D
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3v3NKj0w10oP_VcMh_4s4D
+    ifdGuid: 3v3NKj0w10oP_VcMh_4s4D
+- propertyName: CoefficientOfPerformanceCurve
+  usageDefinition: 'Chiller coefficient of performance (COP) is function of condensing temperature and evaporating temperature, data is in table form, COP= f (TempCon, TempEvp), COP = a2+b2*Tei+c2*Tei^2+d2*Tci+e2*Tci^2+f2*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPositiveRatioMeasure:CoefficientOfPerformance2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0YfCGdBOHF9OqfhE1Y1xVK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0YfCGdBOHF9OqfhE1Y1xVK
+    ifdGuid: 0YfCGdBOHF9OqfhE1Y1xVK
+- propertyName: FullLoadRatioCurve
+  usageDefinition: Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KPB91kozFiO$mlABzscdM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KPB91kozFiO$mlABzscdM
+    ifdGuid: 1KPB91kozFiO$mlABzscdM
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1K91zV0UP1mQpPxLpJikJH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1K91zV0UP1mQpPxLpJikJH
+    ifdGuid: 1K91zV0UP1mQpPxLpJikJH
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vATIlrfz6dPqmKTMdyIe7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vATIlrfz6dPqmKTMdyIe7
+    ifdGuid: 3vATIlrfz6dPqmKTMdyIe7
+- propertyName: NominalCapacity
+  usageDefinition: Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2VL1aNgpP2$eXy_S98C6ve
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2VL1aNgpP2$eXy_S98C6ve
+    ifdGuid: 2VL1aNgpP2$eXy_S98C6ve
+- propertyName: NominalEfficiency
+  usageDefinition: Nominal chiller efficiency under nominal conditions.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2UqbGU8x9DrRs04qTvrtSA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2UqbGU8x9DrRs04qTvrtSA
+    ifdGuid: 2UqbGU8x9DrRs04qTvrtSA
+- propertyName: NominalCondensingTemperature
+  usageDefinition: Chiller condensing temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IDEbBL_199QPpEr_D9zOS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IDEbBL_199QPpEr_D9zOS
+    ifdGuid: 1IDEbBL_199QPpEr_D9zOS
+- propertyName: NominalEvaporatingTemperature
+  usageDefinition: Chiller evaporating temperature.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ncuzIXSPBHeDBoR7vFVpm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ncuzIXSPBHeDBoR7vFVpm
+    ifdGuid: 3ncuzIXSPBHeDBoR7vFVpm
+- propertyName: NominalHeatRejectionRate
+  usageDefinition: Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3dIJn1JqH8Z82IizFVMB6_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3dIJn1JqH8Z82IizFVMB6_
+    ifdGuid: 3dIJn1JqH8Z82IizFVMB6_
+- propertyName: NominalPowerConsumption
+  usageDefinition: Nominal total power consumption.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Vf_mywUbCPhSG5f0gQg9a
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Vf_mywUbCPhSG5f0gQg9a
+    ifdGuid: 3Vf_mywUbCPhSG5f0gQg9a
+- propertyName: CapacityCurve
+  usageDefinition: 'Chiller cooling capacity is a function of condensing temperature and evaporating temperature, data is in table form, Capacity = f (TempCon, TempEvp), capacity = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPowerMeasure:Capacity2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1UOR1SZWbBsO5JfnR2j2n3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1UOR1SZWbBsO5JfnR2j2n3
+    ifdGuid: 1UOR1SZWbBsO5JfnR2j2n3
+- propertyName: CoefficientOfPerformanceCurve
+  usageDefinition: 'Chiller coefficient of performance (COP) is function of condensing temperature and evaporating temperature, data is in table form, COP= f (TempCon, TempEvp), COP = a2+b2*Tei+c2*Tei^2+d2*Tci+e2*Tci^2+f2*Tei*Tci. This table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: 1.IfcPositiveRatioMeasure:CoefficientOfPerformance2.IfcThermodynamicTemperatureMeasure:CondensingTemperature3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1GFvFTKdX9feu7ypdPEPBP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1GFvFTKdX9feu7ypdPEPBP
+    ifdGuid: 1GFvFTKdX9feu7ypdPEPBP
+- propertyName: FullLoadRatioCurve
+  usageDefinition: Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3z2QZJAGP3uRSSEGYnLd4p
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3z2QZJAGP3uRSSEGYnLd4p
+    ifdGuid: 3z2QZJAGP3uRSSEGYnLd4p
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.

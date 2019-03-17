@@ -1,28 +1,29 @@
 ﻿name: Span
-definition: Clear span for this object.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.
+definition: 'Clear span for this object.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. For geometry editing applications, like CAD: this value should be write-only.'
 dictionaryReference:
   dictionaryIdentifier: http://bsdd.buildingsmart.org
   dictionaryNamespace: PSet
-  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Ttb60qV4HuO00025QrE$V
-  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Ttb60qV4HuO00025QrE$V
-  ifdGuid: 1Ttb60qV4HuO00025QrE$V
-  legacyGuid: 5dde5180d1f111e1800000215ad4efdf
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0PY8o0qSGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0PY8o0qSGHuO00025QrE$V
+  ifdGuid: 0PY8o0qSGHuO00025QrE$V
+  legacyGuid: 19888c80d1c411e1800000215ad4efdf
   legacyGuids:
+  - 0PY8o0qSGHuO00025QrE$V
   - 1Ttb60qV4HuO00025QrE$V
-  legacyGuidAsIfcGlobalId: 1Ttb60qV4HuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 0PY8o0qSGHuO00025QrE$V
 localizations:
 - language: de-DE
   name: 'Spannweite'
-  definition: 'German-description-2'
+  definition: 'Lichte Spannweite des Balkens für die statische Anforderung,Dieser Parameter wird zusätzlich zur geometrischen Repräsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repräsention Priorität. Dieser Parameter ist für CAD Software write-only.'
 - language: en
   name: 'Span'
   definition: ''
 - language: fr-FR
   name: 'PorteeLibre'
-  definition: 'Portée libre. Cette propriété est donnée en complément de la représentation de la forme de l''élément et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment.'
+  definition: 'Portée libre de la poutre. Cette propriété  est donnée en complément de la représentation de la forme et des paramètres géométriques qui la déterminent. En cas d''incohérence entre ces paramètres géométriques et cette propriété, ce sont les paramètres géométriques qui priment. Les applications qui déterminent la géométrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propriété.'
 - language: ja-JP
   name: '全長'
-  definition: 'このオブジェクトの全長。'
+  definition: 'このオブジェクトの全長。その形状（オブジェクトの全長）情報は、表示のための形状に内部で使用される幾何学的パラメータを加えて提供される。形状情報と内部の幾何学的パラメータに矛盾が生じた場合は、幾何学的パラメータが優先される。幾何学的パラメ－タ編集アプリケーションでは、CADと同様に、この値は書き込み専用とする。'
 - language: zh-CN
   name: '跨度'
   definition: '该对象的净跨度。该属性所提供的形状信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的形状属性不符，应以几何参数为准。对CAD等几何编辑程序，该属性应为只写类型。'

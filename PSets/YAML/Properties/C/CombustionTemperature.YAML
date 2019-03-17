@@ -1,41 +1,44 @@
 ﻿name: CombustionTemperature
-definition: Combustion temperature of the material when air is at 298 K and 100 kPa.
+definition: Average combustion chamber temperature.
 dictionaryReference:
   dictionaryIdentifier: http://bsdd.buildingsmart.org
   dictionaryNamespace: PSet
-  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0_tS20qUqHuO00025QrE$V
-  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0_tS20qUqHuO00025QrE$V
-  ifdGuid: 0_tS20qUqHuO00025QrE$V
-  legacyGuid: 3eddc080d1ed11e1800000215ad4efdf
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Gzpa0qSGHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Gzpa0qSGHuO00025QrE$V
+  ifdGuid: 1Gzpa0qSGHuO00025QrE$V
+  legacyGuid: 50f73900d1c411e1800000215ad4efdf
   legacyGuids:
+  - 1Gzpa0qSGHuO00025QrE$V
   - 0_tS20qUqHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: 0_tS20qUqHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 1Gzpa0qSGHuO00025QrE$V
 localizations:
 - language: en
   name: 'Combustion Temperature'
   definition: ''
+- language: fr-FR
+  name: 'TempératureCombustion'
+  definition: 'Température de combustion moyenne au foyer.'
+- language: ja-JP
+  name: '燃焼温度'
+  definition: '燃焼室平均温度'
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Verbrennungstemperatur'
+  definition: 'Durchschnittliche Brennkammertemperatur.'
 - language: en-GB
   name: ''
   definition: ''
 - language: es-ES
   name: ''
   definition: ''
-- language: fr-FR
-  name: ''
-  definition: ''
-- language: ja-JP
-  name: ''
-  definition: ''
 - language: ru-RU
   name: ''
   definition: ''
-typePropertySingleValue:
-  dataType: IfcThermodynamicTemperatureMeasure
-  measureType: ''
-  unitType: USERDEFINED
+typePropertyReferenceValue:
+  refType: IfcTimeSeries
+  url: http://buildingsmart-tech.org
+  guid: ''
+  libraryName: Industry Foundation Classes by buildingSMART International
+  sectionref: Core Schema
 status:
   versionNumber: 4
   dateOfVersion: 2018-01-01T00:00:00.0000000

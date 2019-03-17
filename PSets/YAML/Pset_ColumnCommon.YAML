@@ -98,6 +98,134 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3oe6kQr9n1Uw83Y556g49c
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oe6kQr9n1Uw83Y556g49c
     ifdGuid: 3oe6kQr9n1Uw83Y556g49c
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0T$R4zVdDB2hoaTuq771l1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0T$R4zVdDB2hoaTuq771l1
+    ifdGuid: 0T$R4zVdDB2hoaTuq771l1
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2YH07dXtXDjvJQ0NyiglWc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2YH07dXtXDjvJQ0NyiglWc
+    ifdGuid: 2YH07dXtXDjvJQ0NyiglWc
+- propertyName: Slope
+  usageDefinition: 'Slope angle - relative to horizontal (0.0 degrees).The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.   For geometry editing applications, like CAD: this value should be write-only.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/193YUxpOjDwQk7Nu4nYTyJ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/193YUxpOjDwQk7Nu4nYTyJ
+    ifdGuid: 193YUxpOjDwQk7Nu4nYTyJ
+- propertyName: Roll
+  usageDefinition: 'Rotation against the longitudinal axis - relative to the global  X direction for all columns that are vertical in regard to the global coordinate system (Profile direction equals global X is Roll = 0.). For all non-vertical columns the following applies:  Roll is relative to the global Z direction f(Profile direction of non-vertical columns that equals global Z is Roll = 0.)The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.Note: new property in IFC4'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3oLfzaKJ5478YwhXDbYmUW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oLfzaKJ5478YwhXDbYmUW
+    ifdGuid: 3oLfzaKJ5478YwhXDbYmUW
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0$UsKUEkPB1OzwgAmu4fcP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$UsKUEkPB1OzwgAmu4fcP
+    ifdGuid: 0$UsKUEkPB1OzwgAmu4fcP
+- propertyName: ThermalTransmittance
+  usageDefinition: 'Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the column within the direction of the thermal flow (including all materials).Nore: new property in IFC4'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2_iQeEsvf9WxgQuq$us4Ym
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2_iQeEsvf9WxgQuq$us4Ym
+    ifdGuid: 2_iQeEsvf9WxgQuq$us4Ym
+- propertyName: LoadBearing
+  usageDefinition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3vbLXORzX5HgNgQlTmG4U8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3vbLXORzX5HgNgQlTmG4U8
+    ifdGuid: 3vbLXORzX5HgNgQlTmG4U8
+- propertyName: FireRating
+  usageDefinition: Fire rating for the element.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0JS3RMzAnFCQbws_EYTXTv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JS3RMzAnFCQbws_EYTXTv
+    ifdGuid: 0JS3RMzAnFCQbws_EYTXTv
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0U1KTap_H1$v0GhYg7RqUi
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0U1KTap_H1$v0GhYg7RqUi
+    ifdGuid: 0U1KTap_H1$v0GhYg7RqUi
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ROLfnIfH5ZeKyfn7du2Yf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ROLfnIfH5ZeKyfn7du2Yf
+    ifdGuid: 3ROLfnIfH5ZeKyfn7du2Yf
+- propertyName: Slope
+  usageDefinition: 'Slope angle - relative to horizontal (0.0 degrees).The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.   For geometry editing applications, like CAD: this value should be write-only.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SKzsmJejDtxNYj1xhK4te
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SKzsmJejDtxNYj1xhK4te
+    ifdGuid: 2SKzsmJejDtxNYj1xhK4te
+- propertyName: Roll
+  usageDefinition: 'Rotation against the longitudinal axis - relative to the global  X direction for all columns that are vertical in regard to the global coordinate system (Profile direction equals global X is Roll = 0.). For all non-vertical columns the following applies:  Roll is relative to the global Z direction f(Profile direction of non-vertical columns that equals global Z is Roll = 0.)The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.Note: new property in IFC4'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0NS_zuWH52lBZw2gFmR0Sq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0NS_zuWH52lBZw2gFmR0Sq
+    ifdGuid: 0NS_zuWH52lBZw2gFmR0Sq
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0o39xp4CrAVgQjO3WFzJ9C
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0o39xp4CrAVgQjO3WFzJ9C
+    ifdGuid: 0o39xp4CrAVgQjO3WFzJ9C
+- propertyName: ThermalTransmittance
+  usageDefinition: 'Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the column within the direction of the thermal flow (including all materials).Nore: new property in IFC4'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3oKuZPRxv16em1LKeSFtTz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3oKuZPRxv16em1LKeSFtTz
+    ifdGuid: 3oKuZPRxv16em1LKeSFtTz
+- propertyName: LoadBearing
+  usageDefinition: Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3rBpdmQRr0AAXPlbthK$CL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rBpdmQRr0AAXPlbthK$CL
+    ifdGuid: 3rBpdmQRr0AAXPlbthK$CL
+- propertyName: FireRating
+  usageDefinition: Fire rating for the element.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zqytX0Gr0Tg$BoDzTWu3T
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zqytX0Gr0Tg$BoDzTWu3T
+    ifdGuid: 0zqytX0Gr0Tg$BoDzTWu3T
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.

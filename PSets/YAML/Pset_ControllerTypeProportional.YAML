@@ -106,6 +106,150 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0eF87Opx1ARAhGQX7w7M1D
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0eF87Opx1ARAhGQX7w7M1D
     ifdGuid: 0eF87Opx1ARAhGQX7w7M1D
+- propertyName: ControlType
+  usageDefinition: 'The type of signal modification.PROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. PROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. PROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/26U7S67xnCaezC4CrsXslt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/26U7S67xnCaezC4CrsXslt
+    ifdGuid: 26U7S67xnCaezC4CrsXslt
+- propertyName: Labels
+  usageDefinition: Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Tg9KEwj13VPo7OMS2tuaN
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Tg9KEwj13VPo7OMS2tuaN
+    ifdGuid: 2Tg9KEwj13VPo7OMS2tuaN
+- propertyName: Range
+  usageDefinition: The physical range of values.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1dNziT09vC5gBG5ESexoii
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1dNziT09vC5gBG5ESexoii
+    ifdGuid: 1dNziT09vC5gBG5ESexoii
+- propertyName: Value
+  usageDefinition: The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3$ATfdDFj7qujekyfsdHYz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3$ATfdDFj7qujekyfsdHYz
+    ifdGuid: 3$ATfdDFj7qujekyfsdHYz
+- propertyName: ProportionalConstant
+  usageDefinition: The proportional gain factor of the controller (usually referred to as Kp).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ddOKhSrD7Ru2YkPr$YV9c
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ddOKhSrD7Ru2YkPr$YV9c
+    ifdGuid: 1ddOKhSrD7Ru2YkPr$YV9c
+- propertyName: IntegralConstant
+  usageDefinition: The integral gain factor of the controller (usually referred to as Ki).  Asserted where ControlType is PROPORTIONALINTEGRAL or PROPORTIONALINTEGRALDERIVATIVE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2LVFM2bkr2z9PNQzaUh5Tj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2LVFM2bkr2z9PNQzaUh5Tj
+    ifdGuid: 2LVFM2bkr2z9PNQzaUh5Tj
+- propertyName: DerivativeConstant
+  usageDefinition: The derivative gain factor of the controller (usually referred to as Kd).  Asserted where ControlType is PROPORTIONALINTEGRALDERIVATIVE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/011hLIrq185Q8NGD6VEmlc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/011hLIrq185Q8NGD6VEmlc
+    ifdGuid: 011hLIrq185Q8NGD6VEmlc
+- propertyName: SignalTimeIncrease
+  usageDefinition: Time factor used for exponential increase.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Z1Pycbeb6Aw6OWdUoD2B0
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Z1Pycbeb6Aw6OWdUoD2B0
+    ifdGuid: 3Z1Pycbeb6Aw6OWdUoD2B0
+- propertyName: SignalTimeDecrease
+  usageDefinition: Time factor used for exponential decrease.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/01yY88Drz9$Os9bWIi8AWV
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/01yY88Drz9$Os9bWIi8AWV
+    ifdGuid: 01yY88Drz9$Os9bWIi8AWV
+- propertyName: ControlType
+  usageDefinition: 'The type of signal modification.PROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. PROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. PROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3lp6_jX7L18wmyKBB8Vshk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3lp6_jX7L18wmyKBB8Vshk
+    ifdGuid: 3lp6_jX7L18wmyKBB8Vshk
+- propertyName: Labels
+  usageDefinition: Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0cgFU$Kd5Fm87sNjl52Kym
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0cgFU$Kd5Fm87sNjl52Kym
+    ifdGuid: 0cgFU$Kd5Fm87sNjl52Kym
+- propertyName: Range
+  usageDefinition: The physical range of values.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/316PKJUZPABgDnNXtw44yH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/316PKJUZPABgDnNXtw44yH
+    ifdGuid: 316PKJUZPABgDnNXtw44yH
+- propertyName: Value
+  usageDefinition: The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0jG4dcZgn1ae47hmsMFJT_
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0jG4dcZgn1ae47hmsMFJT_
+    ifdGuid: 0jG4dcZgn1ae47hmsMFJT_
+- propertyName: ProportionalConstant
+  usageDefinition: The proportional gain factor of the controller (usually referred to as Kp).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2p$y6tllrCwRHlvhhOG_GL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2p$y6tllrCwRHlvhhOG_GL
+    ifdGuid: 2p$y6tllrCwRHlvhhOG_GL
+- propertyName: IntegralConstant
+  usageDefinition: The integral gain factor of the controller (usually referred to as Ki).  Asserted where ControlType is PROPORTIONALINTEGRAL or PROPORTIONALINTEGRALDERIVATIVE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ruDEnpzjBhwAWkIsYrgwf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ruDEnpzjBhwAWkIsYrgwf
+    ifdGuid: 2ruDEnpzjBhwAWkIsYrgwf
+- propertyName: DerivativeConstant
+  usageDefinition: The derivative gain factor of the controller (usually referred to as Kd).  Asserted where ControlType is PROPORTIONALINTEGRALDERIVATIVE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DigioXpH9I8sDMCy7GnCj
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DigioXpH9I8sDMCy7GnCj
+    ifdGuid: 1DigioXpH9I8sDMCy7GnCj
+- propertyName: SignalTimeIncrease
+  usageDefinition: Time factor used for exponential increase.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/03pSu5BBz6WevPzga0o2K8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03pSu5BBz6WevPzga0o2K8
+    ifdGuid: 03pSu5BBz6WevPzga0o2K8
+- propertyName: SignalTimeDecrease
+  usageDefinition: Time factor used for exponential decrease.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1LhDWe0858Gv_dZejvfhmG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1LhDWe0858Gv_dZejvfhmG
+    ifdGuid: 1LhDWe0858Gv_dZejvfhmG
 properties:
 - name: ControlType
   definition: 'The type of signal modification.PROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. PROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. PROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.'

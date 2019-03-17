@@ -106,6 +106,150 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0lyOdbzzHDiAK8uBW3__ds
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0lyOdbzzHDiAK8uBW3__ds
     ifdGuid: 0lyOdbzzHDiAK8uBW3__ds
+- propertyName: ConnectionType
+  usageDefinition: 'The physical port connection:ACPLUG: AC plugDCPLUG: DC plugCRIMP: bare wire'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cTZmR0L15lwsaDtFOcMO8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cTZmR0L15lwsaDtFOcMO8
+    ifdGuid: 3cTZmR0L15lwsaDtFOcMO8
+- propertyName: ConnectionSubtype
+  usageDefinition: '<p>The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:</p><ul><li>ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M</li> <li>DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P</li><li>DSub: DA15, DB25, DC37, DD50, DE9, DE15</li><li>EIAJ: RC5720</li><li>HDMI: A, B, C</li><li>RADIO: IEEE802.11g, IEEE802.11n</li><li>RJ: 4P4C, 6P2C, 8P8C</li><li>SOCKET: E-11, E-12, E-14, E-17, E-26, E-27, E-39, E-40</li><li>TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</li></ul>'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3beO$CsWL1OBhj0wkRQMfC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3beO$CsWL1OBhj0wkRQMfC
+    ifdGuid: 3beO$CsWL1OBhj0wkRQMfC
+- propertyName: ConnectionGender
+  usageDefinition: The physical connection gender.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3cFYbHu7P6UwiDrWiHydMQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3cFYbHu7P6UwiDrWiHydMQ
+    ifdGuid: 3cFYbHu7P6UwiDrWiHydMQ
+- propertyName: ConductorFunction
+  usageDefinition: For ports distributing power, indicates function of the conductors to which the load is connected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0qOfSU3JX9yfSe16$lqxaP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0qOfSU3JX9yfSe16$lqxaP
+    ifdGuid: 0qOfSU3JX9yfSe16$lqxaP
+- propertyName: CurrentContent3rdHarmonic
+  usageDefinition: The ratio between the third harmonic current and the phase current.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1wMlOnhtn0Whzb5SXXRnKG
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1wMlOnhtn0Whzb5SXXRnKG
+    ifdGuid: 1wMlOnhtn0Whzb5SXXRnKG
+- propertyName: Current
+  usageDefinition: The actual current and operable range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/383PtQi4z58w37p6q8KMhs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/383PtQi4z58w37p6q8KMhs
+    ifdGuid: 383PtQi4z58w37p6q8KMhs
+- propertyName: Voltage
+  usageDefinition: The actual voltage and operable range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1$i1pzO2XAzvu5ROQRJ0Qg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1$i1pzO2XAzvu5ROQRJ0Qg
+    ifdGuid: 1$i1pzO2XAzvu5ROQRJ0Qg
+- propertyName: Power
+  usageDefinition: The actual power and operable range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00YK9PxSD1Jfh19p6yuZvl
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00YK9PxSD1Jfh19p6yuZvl
+    ifdGuid: 00YK9PxSD1Jfh19p6yuZvl
+- propertyName: Protocols
+  usageDefinition: 'For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Ov5mbGq11fvsNceM60IQr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Ov5mbGq11fvsNceM60IQr
+    ifdGuid: 2Ov5mbGq11fvsNceM60IQr
+- propertyName: ConnectionType
+  usageDefinition: 'The physical port connection:ACPLUG: AC plugDCPLUG: DC plugCRIMP: bare wire'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/25VYDS$On4cPqqAkiBVmyX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/25VYDS$On4cPqqAkiBVmyX
+    ifdGuid: 25VYDS$On4cPqqAkiBVmyX
+- propertyName: ConnectionSubtype
+  usageDefinition: '<p>The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:</p><ul><li>ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M</li> <li>DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P</li><li>DSub: DA15, DB25, DC37, DD50, DE9, DE15</li><li>EIAJ: RC5720</li><li>HDMI: A, B, C</li><li>RADIO: IEEE802.11g, IEEE802.11n</li><li>RJ: 4P4C, 6P2C, 8P8C</li><li>SOCKET: E-11, E-12, E-14, E-17, E-26, E-27, E-39, E-40</li><li>TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</li></ul>'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1SpCK88HLFpfxA_LPona$f
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1SpCK88HLFpfxA_LPona$f
+    ifdGuid: 1SpCK88HLFpfxA_LPona$f
+- propertyName: ConnectionGender
+  usageDefinition: The physical connection gender.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/30kxCOwinCyvcFT8gGwzv$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/30kxCOwinCyvcFT8gGwzv$
+    ifdGuid: 30kxCOwinCyvcFT8gGwzv$
+- propertyName: ConductorFunction
+  usageDefinition: For ports distributing power, indicates function of the conductors to which the load is connected.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2WgAdMZjT0fgcGZj$TGsmz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2WgAdMZjT0fgcGZj$TGsmz
+    ifdGuid: 2WgAdMZjT0fgcGZj$TGsmz
+- propertyName: CurrentContent3rdHarmonic
+  usageDefinition: The ratio between the third harmonic current and the phase current.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2vlDAJNZD7m84v_UzPE2cE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2vlDAJNZD7m84v_UzPE2cE
+    ifdGuid: 2vlDAJNZD7m84v_UzPE2cE
+- propertyName: Current
+  usageDefinition: The actual current and operable range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3w2gT1lxHF9gj8YYDYwJ8Y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3w2gT1lxHF9gj8YYDYwJ8Y
+    ifdGuid: 3w2gT1lxHF9gj8YYDYwJ8Y
+- propertyName: Voltage
+  usageDefinition: The actual voltage and operable range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0bji221HT44QzwUfqADbWZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0bji221HT44QzwUfqADbWZ
+    ifdGuid: 0bji221HT44QzwUfqADbWZ
+- propertyName: Power
+  usageDefinition: The actual power and operable range.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EghfkOIDDiBMSTxe0jbqy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EghfkOIDDiBMSTxe0jbqy
+    ifdGuid: 2EghfkOIDDiBMSTxe0jbqy
+- propertyName: Protocols
+  usageDefinition: 'For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0SV79yaV94yRscRbRcwV8j
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0SV79yaV94yRscRbRcwV8j
+    ifdGuid: 0SV79yaV94yRscRbRcwV8j
 properties:
 - name: ConnectionType
   definition: 'The physical port connection:ACPLUG: AC plugDCPLUG: DC plugCRIMP: bare wire'

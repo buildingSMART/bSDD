@@ -172,6 +172,278 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3utvP9kcXBtxXNxGP_fYa8
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3utvP9kcXBtxXNxGP_fYa8
     ifdGuid: 3utvP9kcXBtxXNxGP_fYa8
+- propertyName: IsSelectable
+  usageDefinition: Indication whether the S-function can be switched off or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0nYWDVLmL6ShVQNfEIa5sX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0nYWDVLmL6ShVQNfEIa5sX
+    ifdGuid: 0nYWDVLmL6ShVQNfEIa5sX
+- propertyName: NominalCurrentAdjusted
+  usageDefinition: An indication if the tripping currents of the short time protection is related to the nominal current multiplied with the actual setting of the current adjustment, if any, of the long time protection part of the protective device, or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3R5PeVt_T9xQ66T$pXhmbE
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3R5PeVt_T9xQ66T$pXhmbE
+    ifdGuid: 3R5PeVt_T9xQ66T$pXhmbE
+- propertyName: ExternalAdjusted
+  usageDefinition: An indication if the ground fault protection may be adjusted according to an external current coil or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1d5pnjLZ5BbBE9XJxMbIVe
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1d5pnjLZ5BbBE9XJxMbIVe
+    ifdGuid: 1d5pnjLZ5BbBE9XJxMbIVe
+- propertyName: ReleaseCurrent
+  usageDefinition: The release current in [x In] for the initial tripping of the S-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0JqMzAAUL0XvrSc0tn$nuO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JqMzAAUL0XvrSc0tn$nuO
+    ifdGuid: 0JqMzAAUL0XvrSc0tn$nuO
+- propertyName: ReleaseTime
+  usageDefinition: The release time in [s] for the initial tripping of the relevant part. This time indicates that for current lower than the indicated release current, the tripping time will be longer than the indicated release time. The value is given as a mean value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Gv2p_Paf61PamKUXniL9q
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Gv2p_Paf61PamKUXniL9q
+    ifdGuid: 2Gv2p_Paf61PamKUXniL9q
+- propertyName: CurrentTolerance1
+  usageDefinition: The tolerance for the current of time/current-curve in [%].
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DEsflwqz0uxi6LoqpB2Pd
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DEsflwqz0uxi6LoqpB2Pd
+    ifdGuid: 1DEsflwqz0uxi6LoqpB2Pd
+- propertyName: CurrentToleranceLimit1
+  usageDefinition: The time limit in [s] limiting the application of CurrentTolerance1, if any. If the value is set to 0, the value of the CurrentTolerance1 is valid for the whole time/current-curve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Y_tf1qQLDtPibwloqPIgK
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Y_tf1qQLDtPibwloqPIgK
+    ifdGuid: 2Y_tf1qQLDtPibwloqPIgK
+- propertyName: CurrentTolerance2
+  usageDefinition: The tolerance for the current of time/current-curve in [%] valid for times above CurrentTolereanceLimit1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3I8ZdM0jL41RNuhLexu1CU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3I8ZdM0jL41RNuhLexu1CU
+    ifdGuid: 3I8ZdM0jL41RNuhLexu1CU
+- propertyName: IsCurrentTolerancePositiveOnly
+  usageDefinition: Indication whether the value of  CurrentTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2MQdX9IunDouyhF6Xk7FNz
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2MQdX9IunDouyhF6Xk7FNz
+    ifdGuid: 2MQdX9IunDouyhF6Xk7FNz
+- propertyName: TimeTolerance1
+  usageDefinition: The tolerance for the time of time/current-curve in [%].
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1M6YtxYXj8_eAKz52Q3RnC
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1M6YtxYXj8_eAKz52Q3RnC
+    ifdGuid: 1M6YtxYXj8_eAKz52Q3RnC
+- propertyName: TimeToleranceLimit1
+  usageDefinition: The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2EgQffKyf3te1Hdz$y_fKs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2EgQffKyf3te1Hdz$y_fKs
+    ifdGuid: 2EgQffKyf3te1Hdz$y_fKs
+- propertyName: TimeTolerance2
+  usageDefinition: The tolerance for the time of the time/current-curve in [%] valid for currents above TimeToleranceLimit1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1W_U6uIrr22gQ$ii1kJmb9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1W_U6uIrr22gQ$ii1kJmb9
+    ifdGuid: 1W_U6uIrr22gQ$ii1kJmb9
+- propertyName: IsTimeTolerancePositiveOnly
+  usageDefinition: Indication whether the value of  TimeTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/139G2l4Yb76g1wQTo8ZFLt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/139G2l4Yb76g1wQTo8ZFLt
+    ifdGuid: 139G2l4Yb76g1wQTo8ZFLt
+- propertyName: ReleaseCurrentI2tStart
+  usageDefinition: The release current in [x In] for the start point of the I2t tripping curve of the G-function, if any.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0DFE2Z_HP9XQYBof69dv2u
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0DFE2Z_HP9XQYBof69dv2u
+    ifdGuid: 0DFE2Z_HP9XQYBof69dv2u
+- propertyName: ReleaseTimeI2tStart
+  usageDefinition: The release time in [s] for the start point of the I2t tripping curve of the G-function, if any.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2F0zpR3Zb87O7MjKxWZCGX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2F0zpR3Zb87O7MjKxWZCGX
+    ifdGuid: 2F0zpR3Zb87O7MjKxWZCGX
+- propertyName: ReleaseCurrentI2tEnd
+  usageDefinition: The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0JGUd5Kc1529SPuV78uAkS
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0JGUd5Kc1529SPuV78uAkS
+    ifdGuid: 0JGUd5Kc1529SPuV78uAkS
+- propertyName: ReleaseTimeI2tEnd
+  usageDefinition: The release time in [s] for the end point of the I2 tripping curve of the G-function, if any. The value of ReleaseTimeI2tEnd shall be lower than ReleaseTimeI2tStart.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0$JN3eAabCWvzh13Y7SjUm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$JN3eAabCWvzh13Y7SjUm
+    ifdGuid: 0$JN3eAabCWvzh13Y7SjUm
+- propertyName: IsSelectable
+  usageDefinition: Indication whether the S-function can be switched off or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1GMSbVCWf0yAUW_sP5sHYF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1GMSbVCWf0yAUW_sP5sHYF
+    ifdGuid: 1GMSbVCWf0yAUW_sP5sHYF
+- propertyName: NominalCurrentAdjusted
+  usageDefinition: An indication if the tripping currents of the short time protection is related to the nominal current multiplied with the actual setting of the current adjustment, if any, of the long time protection part of the protective device, or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1pLrUfw7H6exJWHxtmwR95
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1pLrUfw7H6exJWHxtmwR95
+    ifdGuid: 1pLrUfw7H6exJWHxtmwR95
+- propertyName: ExternalAdjusted
+  usageDefinition: An indication if the ground fault protection may be adjusted according to an external current coil or not.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1Udv2CkXL2DQDPds1XcB8L
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1Udv2CkXL2DQDPds1XcB8L
+    ifdGuid: 1Udv2CkXL2DQDPds1XcB8L
+- propertyName: ReleaseCurrent
+  usageDefinition: The release current in [x In] for the initial tripping of the S-function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3C9n6lcHLCawcQBFK7a9qZ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3C9n6lcHLCawcQBFK7a9qZ
+    ifdGuid: 3C9n6lcHLCawcQBFK7a9qZ
+- propertyName: ReleaseTime
+  usageDefinition: The release time in [s] for the initial tripping of the relevant part. This time indicates that for current lower than the indicated release current, the tripping time will be longer than the indicated release time. The value is given as a mean value.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ljonst2f4duwWijBIynAL
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ljonst2f4duwWijBIynAL
+    ifdGuid: 3ljonst2f4duwWijBIynAL
+- propertyName: CurrentTolerance1
+  usageDefinition: The tolerance for the current of time/current-curve in [%].
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Wa99wXJ99qevQqrj3PhFt
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Wa99wXJ99qevQqrj3PhFt
+    ifdGuid: 3Wa99wXJ99qevQqrj3PhFt
+- propertyName: CurrentToleranceLimit1
+  usageDefinition: The time limit in [s] limiting the application of CurrentTolerance1, if any. If the value is set to 0, the value of the CurrentTolerance1 is valid for the whole time/current-curve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/274lBpIRbCxRbjoskH6DEX
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/274lBpIRbCxRbjoskH6DEX
+    ifdGuid: 274lBpIRbCxRbjoskH6DEX
+- propertyName: CurrentTolerance2
+  usageDefinition: The tolerance for the current of time/current-curve in [%] valid for times above CurrentTolereanceLimit1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0O5gEQH6H4V8rtkQYhv6rq
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0O5gEQH6H4V8rtkQYhv6rq
+    ifdGuid: 0O5gEQH6H4V8rtkQYhv6rq
+- propertyName: IsCurrentTolerancePositiveOnly
+  usageDefinition: Indication whether the value of  CurrentTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/10vzTQRG53SPReYcS6NKJm
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/10vzTQRG53SPReYcS6NKJm
+    ifdGuid: 10vzTQRG53SPReYcS6NKJm
+- propertyName: TimeTolerance1
+  usageDefinition: The tolerance for the time of time/current-curve in [%].
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0zPm81FanD7wNKrzl1$Sct
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0zPm81FanD7wNKrzl1$Sct
+    ifdGuid: 0zPm81FanD7wNKrzl1$Sct
+- propertyName: TimeToleranceLimit1
+  usageDefinition: The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2zH_sWRJvAZuIRfwCrYk3z
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2zH_sWRJvAZuIRfwCrYk3z
+    ifdGuid: 2zH_sWRJvAZuIRfwCrYk3z
+- propertyName: TimeTolerance2
+  usageDefinition: The tolerance for the time of the time/current-curve in [%] valid for currents above TimeToleranceLimit1.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0yaraKVRP87OufgELSdWu8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0yaraKVRP87OufgELSdWu8
+    ifdGuid: 0yaraKVRP87OufgELSdWu8
+- propertyName: IsTimeTolerancePositiveOnly
+  usageDefinition: Indication whether the value of  TimeTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1OpSM8Zrf6AO4ln8akRfgF
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1OpSM8Zrf6AO4ln8akRfgF
+    ifdGuid: 1OpSM8Zrf6AO4ln8akRfgF
+- propertyName: ReleaseCurrentI2tStart
+  usageDefinition: The release current in [x In] for the start point of the I2t tripping curve of the G-function, if any.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3hiPIC8yT49v1iZqr7RG9h
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3hiPIC8yT49v1iZqr7RG9h
+    ifdGuid: 3hiPIC8yT49v1iZqr7RG9h
+- propertyName: ReleaseTimeI2tStart
+  usageDefinition: The release time in [s] for the start point of the I2t tripping curve of the G-function, if any.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0EHtdxkzLEUvXpCh0T_$cs
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0EHtdxkzLEUvXpCh0T_$cs
+    ifdGuid: 0EHtdxkzLEUvXpCh0T_$cs
+- propertyName: ReleaseCurrentI2tEnd
+  usageDefinition: The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00f5AL1YDCNxuzLw8BYkbh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00f5AL1YDCNxuzLw8BYkbh
+    ifdGuid: 00f5AL1YDCNxuzLw8BYkbh
+- propertyName: ReleaseTimeI2tEnd
+  usageDefinition: The release time in [s] for the end point of the I2 tripping curve of the G-function, if any. The value of ReleaseTimeI2tEnd shall be lower than ReleaseTimeI2tStart.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0X1fG9LJz4SP9HfzkArWHO
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0X1fG9LJz4SP9HfzkArWHO
+    ifdGuid: 0X1fG9LJz4SP9HfzkArWHO
 properties:
 - name: IsSelectable
   definition: Indication whether the S-function can be switched off or not.

@@ -1,32 +1,35 @@
 ﻿name: Shape
-definition: Cross sectional shape. Note that this shape is uniform throughout the length of the segment. For nonuniform shapes, a transition fitting should be used instead.
+definition: Shape of the air terminal. Slot is typically a long narrow supply device with an aspect ratio generally greater than 10 to 1.
 dictionaryReference:
   dictionaryIdentifier: http://bsdd.buildingsmart.org
   dictionaryNamespace: PSet
-  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1z7xE0qTuHuO00025QrE$V
-  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1z7xE0qTuHuO00025QrE$V
-  ifdGuid: 1z7xE0qTuHuO00025QrE$V
-  legacyGuid: 7d1fb380d1de11e1800000215ad4efdf
+  dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hUkE0qRyHuO00025QrE$V
+  dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hUkE0qRyHuO00025QrE$V
+  ifdGuid: 1hUkE0qRyHuO00025QrE$V
+  legacyGuid: 6b7ae380d1bf11e1800000215ad4efdf
   legacyGuids:
+  - 1hUkE0qRyHuO00025QrE$V
+  - 1Sbo_0qSKHuO00025QrE$V
+  - 1PwWc0qSWHuO00025QrE$V
   - 1z7xE0qTuHuO00025QrE$V
-  legacyGuidAsIfcGlobalId: 1z7xE0qTuHuO00025QrE$V
+  legacyGuidAsIfcGlobalId: 1hUkE0qRyHuO00025QrE$V
 localizations:
 - language: en
   name: 'Shape'
   definition: ''
+- language: fr-FR
+  name: 'Forme'
+  definition: 'Forme du terminal de ventilation. La fente est généralement un long et étroit appareil d''apport avec un rapport de forme généralement supérieur à 10 pour 1.'
 - language: ja-JP
   name: '形状'
-  definition: '断面形状：この形状は直管を通じて一定である。変形する形状のためには、かわりに変形継手が使用される。（フラットオーバル、角型、丸型　他）'
+  definition: 'ターミナルの形状（円状、四角形、正方形、スロット他）。　スロット（溝状）は一般的にアスペクト比１０以上が典型的である。'
 - language: de-DE
-  name: ''
-  definition: ''
+  name: 'Form'
+  definition: 'Der Schlitz ist typischerweise eine lange, schmale Versorgungseinheit mit einem Seitenverhältnis, das im Allgemeinen größer als 10:1 ist.'
 - language: en-GB
   name: ''
   definition: ''
 - language: es-ES
-  name: ''
-  definition: ''
-- language: fr-FR
   name: ''
   definition: ''
 - language: ru-RU
@@ -34,7 +37,7 @@ localizations:
   definition: ''
 typePropertyEnumeratedValue:
   constantValues:
-  - name: FLATOVAL
+  - name: ROUND
     definition: ''
     ifdGuid: ''
     localizations:
@@ -78,7 +81,29 @@ typePropertyEnumeratedValue:
     - language: ru-RU
       name: ''
       definition: ''
-  - name: ROUND
+  - name: SQUARE
+    definition: ''
+    ifdGuid: ''
+    localizations:
+    - language: de-DE
+      name: ''
+      definition: ''
+    - language: en-GB
+      name: ''
+      definition: ''
+    - language: es-ES
+      name: ''
+      definition: ''
+    - language: fr-FR
+      name: ''
+      definition: ''
+    - language: ja-JP
+      name: ''
+      definition: ''
+    - language: ru-RU
+      name: ''
+      definition: ''
+  - name: SLOT
     definition: ''
     ifdGuid: ''
     localizations:

@@ -98,6 +98,134 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1mJk0QtgT3sxhiUBZKOI5Q
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mJk0QtgT3sxhiUBZKOI5Q
     ifdGuid: 1mJk0QtgT3sxhiUBZKOI5Q
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0RsAfmfvPAdh$7GZ67xqzh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RsAfmfvPAdh$7GZ67xqzh
+    ifdGuid: 0RsAfmfvPAdh$7GZ67xqzh
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1SbtbcgJH6FPdy$IIO0nqr
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1SbtbcgJH6FPdy$IIO0nqr
+    ifdGuid: 1SbtbcgJH6FPdy$IIO0nqr
+- propertyName: NumberOfGangs
+  usageDefinition: Number of gangs/buttons on this switch.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1IohoVT4z6S8_4__$saQP7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1IohoVT4z6S8_4__$saQP7
+    ifdGuid: 1IohoVT4z6S8_4__$saQP7
+- propertyName: SwitchFunction
+  usageDefinition: Indicates types of switches which differs in functionality.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/03uo_oI7H9EBtHdAJ3NbH3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/03uo_oI7H9EBtHdAJ3NbH3
+    ifdGuid: 03uo_oI7H9EBtHdAJ3NbH3
+- propertyName: HasLock
+  usageDefinition: Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2ujKaxKFTFXPkkc7JiM$6Y
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2ujKaxKFTFXPkkc7JiM$6Y
+    ifdGuid: 2ujKaxKFTFXPkkc7JiM$6Y
+- propertyName: IsIlluminated
+  usageDefinition: An indication of whether there is an illuminated indicator to show that the switch is on (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1vXFIJ061Cng$VdBvKbzwU
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1vXFIJ061Cng$VdBvKbzwU
+    ifdGuid: 1vXFIJ061Cng$VdBvKbzwU
+- propertyName: Legend
+  usageDefinition: A text inscribed or applied to the switch as a legend to indicate purpose or function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/07CUjejpf5OxEoYhbl7mpQ
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/07CUjejpf5OxEoYhbl7mpQ
+    ifdGuid: 07CUjejpf5OxEoYhbl7mpQ
+- propertyName: SetPoint
+  usageDefinition: "Indicates the setpoint and label.  For toggle switches, there are two positions, 0 for off and 1 for on.  For dimmer switches, the values may indicate the fully-off and full-on positions, where missing integer values in between are interpolated.   For selector switches, the range indicates the available positions.  An IfcTable may be attached (using IfcMetric and IfcPropertyConstraintRelationship) containing columns of the specified header names and types:'Position' (IfcInteger): The discrete setpoint level.'Sink' (IfcLabel): The Name of the switched input port (IfcDistributionPort with FlowDirection=SINK).'Source' (IfcLabel): The Name of the switched output port (IfcDistributionPort with FlowDirection=SOURCE).'Ratio' (IfcNormalizedRatioMeasure): The ratio of power at the setpoint where 0.0 is off and 1.0 is fully on."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/11hU$lyn1409UHeEdPuVOh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/11hU$lyn1409UHeEdPuVOh
+    ifdGuid: 11hU$lyn1409UHeEdPuVOh
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3RYourQLH2HQ5IZNwCG4tM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3RYourQLH2HQ5IZNwCG4tM
+    ifdGuid: 3RYourQLH2HQ5IZNwCG4tM
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0w0xWICG1C2BTuz_DZRM_e
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0w0xWICG1C2BTuz_DZRM_e
+    ifdGuid: 0w0xWICG1C2BTuz_DZRM_e
+- propertyName: NumberOfGangs
+  usageDefinition: Number of gangs/buttons on this switch.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1VGqwaVmfE1uxi3lbXE$5J
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1VGqwaVmfE1uxi3lbXE$5J
+    ifdGuid: 1VGqwaVmfE1uxi3lbXE$5J
+- propertyName: SwitchFunction
+  usageDefinition: Indicates types of switches which differs in functionality.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1tQMXohM1Af8$TR0Pbnm4b
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1tQMXohM1Af8$TR0Pbnm4b
+    ifdGuid: 1tQMXohM1Af8$TR0Pbnm4b
+- propertyName: HasLock
+  usageDefinition: Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2Wdejo6BL5eA$DwlG4z5LD
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2Wdejo6BL5eA$DwlG4z5LD
+    ifdGuid: 2Wdejo6BL5eA$DwlG4z5LD
+- propertyName: IsIlluminated
+  usageDefinition: An indication of whether there is an illuminated indicator to show that the switch is on (=TRUE) or not (= FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/29AwJFQ0nBxeEY_PEoUwcM
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/29AwJFQ0nBxeEY_PEoUwcM
+    ifdGuid: 29AwJFQ0nBxeEY_PEoUwcM
+- propertyName: Legend
+  usageDefinition: A text inscribed or applied to the switch as a legend to indicate purpose or function.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ZKcgEsK54bfRTs4zroaU1
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ZKcgEsK54bfRTs4zroaU1
+    ifdGuid: 0ZKcgEsK54bfRTs4zroaU1
+- propertyName: SetPoint
+  usageDefinition: "Indicates the setpoint and label.  For toggle switches, there are two positions, 0 for off and 1 for on.  For dimmer switches, the values may indicate the fully-off and full-on positions, where missing integer values in between are interpolated.   For selector switches, the range indicates the available positions.  An IfcTable may be attached (using IfcMetric and IfcPropertyConstraintRelationship) containing columns of the specified header names and types:'Position' (IfcInteger): The discrete setpoint level.'Sink' (IfcLabel): The Name of the switched input port (IfcDistributionPort with FlowDirection=SINK).'Source' (IfcLabel): The Name of the switched output port (IfcDistributionPort with FlowDirection=SOURCE).'Ratio' (IfcNormalizedRatioMeasure): The ratio of power at the setpoint where 0.0 is off and 1.0 is fully on."
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1ScG_4sE52P8gb7vv4i7di
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1ScG_4sE52P8gb7vv4i7di
+    ifdGuid: 1ScG_4sE52P8gb7vv4i7di
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.

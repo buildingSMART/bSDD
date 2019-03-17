@@ -66,6 +66,70 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0RcCoJSPn5bOhVRrYDDgW7
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0RcCoJSPn5bOhVRrYDDgW7
     ifdGuid: 0RcCoJSPn5bOhVRrYDDgW7
+- propertyName: ParkingUse
+  usageDefinition: Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/229tit50X8XOROtmK4I3cR
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/229tit50X8XOROtmK4I3cR
+    ifdGuid: 229tit50X8XOROtmK4I3cR
+- propertyName: ParkingUnits
+  usageDefinition: Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles, provision may be made for more than one unit in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3apf_j6DbBQxtDE7RDHkC8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3apf_j6DbBQxtDE7RDHkC8
+    ifdGuid: 3apf_j6DbBQxtDE7RDHkC8
+- propertyName: IsAisle
+  usageDefinition: Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3Jw_cW4SP0nv9OzLxPVJLP
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3Jw_cW4SP0nv9OzLxPVJLP
+    ifdGuid: 3Jw_cW4SP0nv9OzLxPVJLP
+- propertyName: IsOneWay
+  usageDefinition: Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1CMXT5mTbDbAEhtXK2Jtpc
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1CMXT5mTbDbAEhtXK2Jtpc
+    ifdGuid: 1CMXT5mTbDbAEhtXK2Jtpc
+- propertyName: ParkingUse
+  usageDefinition: Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0QND0jrjPEdvCuMkadwg2h
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0QND0jrjPEdvCuMkadwg2h
+    ifdGuid: 0QND0jrjPEdvCuMkadwg2h
+- propertyName: ParkingUnits
+  usageDefinition: Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles, provision may be made for more than one unit in the space.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2KIhO8zAv4IgbRtajEnSnp
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KIhO8zAv4IgbRtajEnSnp
+    ifdGuid: 2KIhO8zAv4IgbRtajEnSnp
+- propertyName: IsAisle
+  usageDefinition: Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3igHXHVFn68BxqqVfBcBB7
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3igHXHVFn68BxqqVfBcBB7
+    ifdGuid: 3igHXHVFn68BxqqVfBcBB7
+- propertyName: IsOneWay
+  usageDefinition: Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0p9F8gzvr7vPmlQUhlF3Ah
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0p9F8gzvr7vPmlQUhlF3Ah
+    ifdGuid: 0p9F8gzvr7vPmlQUhlF3Ah
 properties:
 - name: ParkingUse
   definition: Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.

@@ -186,6 +186,310 @@ propertyUsages:
     dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1H$7lmVWjBJwzmOfBwi2Xs
     dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1H$7lmVWjBJwzmOfBwi2Xs
     ifdGuid: 1H$7lmVWjBJwzmOfBwi2Xs
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0$R23r$Y93DBsg5XfirU$X
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0$R23r$Y93DBsg5XfirU$X
+    ifdGuid: 0$R23r$Y93DBsg5XfirU$X
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2$V$07mrbCEAujrTeq1mah
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2$V$07mrbCEAujrTeq1mah
+    ifdGuid: 2$V$07mrbCEAujrTeq1mah
+- propertyName: NumberOfRiser
+  usageDefinition: Total number of the risers included in the stair.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2de45HOCnFge6f9LjxOE62
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2de45HOCnFge6f9LjxOE62
+    ifdGuid: 2de45HOCnFge6f9LjxOE62
+- propertyName: NumberOfTreads
+  usageDefinition: Total number of treads included in the stair.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1mSL6cLSHF1uHmcNmWI90i
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1mSL6cLSHF1uHmcNmWI90i
+    ifdGuid: 1mSL6cLSHF1uHmcNmWI90i
+- propertyName: RiserHeight
+  usageDefinition: Vertical distance from tread to tread. The riser height is supposed to be equal for all steps of a stair or stair flight.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SwikiZ5b3OQUE7zmIjuER
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SwikiZ5b3OQUE7zmIjuER
+    ifdGuid: 2SwikiZ5b3OQUE7zmIjuER
+- propertyName: TreadLength
+  usageDefinition: Horizontal distance from the front of the thread to the front of the next tread. The tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2PXFC53yT5jvNy7exaX0z$
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2PXFC53yT5jvNy7exaX0z$
+    ifdGuid: 2PXFC53yT5jvNy7exaX0z$
+- propertyName: NosingLength
+  usageDefinition: Horizontal distance from the front of the tread to the riser underneath. It is the overhang of the tread.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/04dNdgohPDAOgQyYFLC7bb
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04dNdgohPDAOgQyYFLC7bb
+    ifdGuid: 04dNdgohPDAOgQyYFLC7bb
+- propertyName: WalkingLineOffset
+  usageDefinition: 'Offset of the walking line from the inner side of the flight. Note: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3WmkqTod57YePLsr0Wup6s
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3WmkqTod57YePLsr0Wup6s
+    ifdGuid: 3WmkqTod57YePLsr0Wup6s
+- propertyName: TreadLengthAtOffset
+  usageDefinition: Length of treads at a given offset.Walking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculations is different from that used in design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2XY12ffAr30vJB8LFP9ALW
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2XY12ffAr30vJB8LFP9ALW
+    ifdGuid: 2XY12ffAr30vJB8LFP9ALW
+- propertyName: TreadLengthAtInnerSide
+  usageDefinition: Minimum length of treads at the inner side of the winder. Only relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2s0YpYfCTDf9sb2SLh3rSn
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2s0YpYfCTDf9sb2SLh3rSn
+    ifdGuid: 2s0YpYfCTDf9sb2SLh3rSn
+- propertyName: WaistThickness
+  usageDefinition: Minimum thickness of the stair flight, measured perpendicular to the slope of the flight to the inner corner of riser and tread. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2qztTDwf97VwpupzDXix33
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2qztTDwf97VwpupzDXix33
+    ifdGuid: 2qztTDwf97VwpupzDXix33
+- propertyName: RequiredHeadroom
+  usageDefinition: Required headroom clearance for the passageway according to the applicable building code or additional requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3rU$i9iYT61fSnC7jF5OpA
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3rU$i9iYT61fSnC7jF5OpA
+    ifdGuid: 3rU$i9iYT61fSnC7jF5OpA
+- propertyName: HandicapAccessible
+  usageDefinition: Indication that this object is designed to be accessible by the handicapped. Set to (TRUE) if this stair is rated as handicap accessible  according the local building codes, otherwise (FALSE). Accessibility maybe provided by additional means.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0sLhafslrE6udcH7vIQHP3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0sLhafslrE6udcH7vIQHP3
+    ifdGuid: 0sLhafslrE6udcH7vIQHP3
+- propertyName: HasNonSkidSurface
+  usageDefinition: Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3ZKg3Iv9P1lAH4xpqqSxce
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3ZKg3Iv9P1lAH4xpqqSxce
+    ifdGuid: 3ZKg3Iv9P1lAH4xpqqSxce
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2RniY3qtr6zOxCqC4v00k4
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2RniY3qtr6zOxCqC4v00k4
+    ifdGuid: 2RniY3qtr6zOxCqC4v00k4
+- propertyName: ThermalTransmittance
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0ayRjaNQvBReYm2AKzyAal
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0ayRjaNQvBReYm2AKzyAal
+    ifdGuid: 0ayRjaNQvBReYm2AKzyAal
+- propertyName: LoadBearing
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0GQa1Y82LEFBCv5rB6vqW6
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0GQa1Y82LEFBCv5rB6vqW6
+    ifdGuid: 0GQa1Y82LEFBCv5rB6vqW6
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2BQto757n1H9TlnikS18Qg
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2BQto757n1H9TlnikS18Qg
+    ifdGuid: 2BQto757n1H9TlnikS18Qg
+- propertyName: FireExit
+  usageDefinition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here it defines an exit stair in accordance to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3DFLf_NHvBTw75XHRotcDH
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3DFLf_NHvBTw75XHRotcDH
+    ifdGuid: 3DFLf_NHvBTw75XHRotcDH
+- propertyName: Reference
+  usageDefinition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3VfkR5kmH6nBnOoQzIxcw9
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3VfkR5kmH6nBnOoQzIxcw9
+    ifdGuid: 3VfkR5kmH6nBnOoQzIxcw9
+- propertyName: Status
+  usageDefinition: Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1djqxoO0DB298Gz1y8NKVv
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1djqxoO0DB298Gz1y8NKVv
+    ifdGuid: 1djqxoO0DB298Gz1y8NKVv
+- propertyName: NumberOfRiser
+  usageDefinition: Total number of the risers included in the stair.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1KOD8dQmT6Ou$QdAhIsALk
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1KOD8dQmT6Ou$QdAhIsALk
+    ifdGuid: 1KOD8dQmT6Ou$QdAhIsALk
+- propertyName: NumberOfTreads
+  usageDefinition: Total number of treads included in the stair.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2KPpNmR496NP5PRc0ENpxw
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2KPpNmR496NP5PRc0ENpxw
+    ifdGuid: 2KPpNmR496NP5PRc0ENpxw
+- propertyName: RiserHeight
+  usageDefinition: Vertical distance from tread to tread. The riser height is supposed to be equal for all steps of a stair or stair flight.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3zuP71F9z5kv_BhU0xErmh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3zuP71F9z5kv_BhU0xErmh
+    ifdGuid: 3zuP71F9z5kv_BhU0xErmh
+- propertyName: TreadLength
+  usageDefinition: Horizontal distance from the front of the thread to the front of the next tread. The tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2SaZp6LbX0DBWZKp0jhnn2
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2SaZp6LbX0DBWZKp0jhnn2
+    ifdGuid: 2SaZp6LbX0DBWZKp0jhnn2
+- propertyName: NosingLength
+  usageDefinition: Horizontal distance from the front of the tread to the riser underneath. It is the overhang of the tread.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3bXcCblDXDoRLJTgUrVYst
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3bXcCblDXDoRLJTgUrVYst
+    ifdGuid: 3bXcCblDXDoRLJTgUrVYst
+- propertyName: WalkingLineOffset
+  usageDefinition: 'Offset of the walking line from the inner side of the flight. Note: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).'
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/21CHXSoX52Mvx39f$dW61O
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/21CHXSoX52Mvx39f$dW61O
+    ifdGuid: 21CHXSoX52Mvx39f$dW61O
+- propertyName: TreadLengthAtOffset
+  usageDefinition: Length of treads at a given offset.Walking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculations is different from that used in design.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/17aXSnHtHD3hei9hjsnRWY
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/17aXSnHtHD3hei9hjsnRWY
+    ifdGuid: 17aXSnHtHD3hei9hjsnRWY
+- propertyName: TreadLengthAtInnerSide
+  usageDefinition: Minimum length of treads at the inner side of the winder. Only relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1DIEw0sP9DShXtrHQ5HRMf
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1DIEw0sP9DShXtrHQ5HRMf
+    ifdGuid: 1DIEw0sP9DShXtrHQ5HRMf
+- propertyName: WaistThickness
+  usageDefinition: Minimum thickness of the stair flight, measured perpendicular to the slope of the flight to the inner corner of riser and tread. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0dG__opL18KOMbtEuZM$z8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0dG__opL18KOMbtEuZM$z8
+    ifdGuid: 0dG__opL18KOMbtEuZM$z8
+- propertyName: RequiredHeadroom
+  usageDefinition: Required headroom clearance for the passageway according to the applicable building code or additional requirements.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1vBif00zH4yxWD914Jn0B8
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1vBif00zH4yxWD914Jn0B8
+    ifdGuid: 1vBif00zH4yxWD914Jn0B8
+- propertyName: HandicapAccessible
+  usageDefinition: Indication that this object is designed to be accessible by the handicapped. Set to (TRUE) if this stair is rated as handicap accessible  according the local building codes, otherwise (FALSE). Accessibility maybe provided by additional means.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/04d_QPLYf5zOLwgvJ05RHy
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/04d_QPLYf5zOLwgvJ05RHy
+    ifdGuid: 04d_QPLYf5zOLwgvJ05RHy
+- propertyName: HasNonSkidSurface
+  usageDefinition: Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2uanQ$5Fj7$unwc7YGJj7S
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2uanQ$5Fj7$unwc7YGJj7S
+    ifdGuid: 2uanQ$5Fj7$unwc7YGJj7S
+- propertyName: IsExternal
+  usageDefinition: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/0XXsc0phrFofzh$XKQSl6T
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/0XXsc0phrFofzh$XKQSl6T
+    ifdGuid: 0XXsc0phrFofzh$XKQSl6T
+- propertyName: ThermalTransmittance
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/1hS_KqCFf3WAGSMd6BMNFh
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/1hS_KqCFf3WAGSMd6BMNFh
+    ifdGuid: 1hS_KqCFf3WAGSMd6BMNFh
+- propertyName: LoadBearing
+  usageDefinition: PSetManager.PropertyType
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/3QXXYjP$fDjg4XEtU69o3A
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/3QXXYjP$fDjg4XEtU69o3A
+    ifdGuid: 3QXXYjP$fDjg4XEtU69o3A
+- propertyName: FireRating
+  usageDefinition: Fire rating for this object.It is given according to the national fire safety classification.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/2aq1csFPH0e9kSDP4m7yl3
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/2aq1csFPH0e9kSDP4m7yl3
+    ifdGuid: 2aq1csFPH0e9kSDP4m7yl3
+- propertyName: FireExit
+  usageDefinition: Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).Here it defines an exit stair in accordance to the national building code.
+  dictionaryReference:
+    dictionaryIdentifier: http://bsdd.buildingsmart.org
+    dictionaryNamespace: PSet
+    dictionaryWebUri: http://bsdd.buildingsmart.org/#concept/browse/00pRskFWbFIvFMUm3WBf8t
+    dictionaryApiUri: http://bsdd.buildingsmart.org/api/4.0/IfdConcept/00pRskFWbFIvFMUm3WBf8t
+    ifdGuid: 00pRskFWbFIvFMUm3WBf8t
 properties:
 - name: Reference
   definition: Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.
