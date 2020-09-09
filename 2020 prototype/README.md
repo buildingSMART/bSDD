@@ -24,10 +24,13 @@ Don’t forget to check the “read” scope!
 ## Authentication
 For authentication we use Azure Active Directory B2C.
 At this moment only the SearchList API method is secured. This will change when we’re moving to version 1.0 of the API, then probably all API methods will be secured.
+
 If you’re developing a Javascript, Java, Angular, Python or .NET application connecting with the buildingSMART Data Dictionary API is easiest by using the Microsoft Authentication Library (MSAL).
 See [Active directory B2C code samples](https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples) for ready to use examples on how to use the MSAL. You can find the bSDD API specific settings in one of the next sections of this document. Note: all settings will change. So make sure you have them in an easy to update settings file.
-You can find the code for a small .NET console application that accesses the bSDD API (authenticated) in this repository: [.NET console example](https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo). 
+You can find the code for a small .NET console application that accesses the bSDD API (authenticated) in this repository: [.NET console example](https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo).
+
 If you’re developing using one of the many other available languages it is still possible to connect to the bSDD API. The API is developed according to the standards OpenAPI, OAuth2 and OpenID Connect. Only now you need to do all the plumbing yourself.
+
 To access a secured API a user must first register himself. When you’re using MSAL there’s nothing special you need to do for this. The user will be prompted to log in, via a browser window. If the user does not have a buildingSMART API account, he can sign up:
 
 ![bSDD sign up / sign in](https://bsddprototype2020.blob.core.windows.net/public/images/bs-signupsignin.png)
@@ -37,22 +40,24 @@ Currently there’s no further authorization required to be able to use the API.
 
 ## Settings
 These are the settings you can use for demonstration purposes for a Dekstop client app :
-Tenant: "bsddprototype1.onmicrosoft.com"
-AzureAdB2Chostname: "bsddprototype1.b2clogin.com"
-ClientId: "e2d11588-bf15-47eb-bdf8-2c61541fb474"
-RedirectUri: "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect"
-PolicySignUpSignIn: "b2c_1_signupsignin1"
-PolicyEditProfile: "b2c_1_profileediting1"
-PolicyResetPassword: "b2c_1_passwordreset1"
+* Tenant: "bsddprototype1.onmicrosoft.com"
+* AzureAdB2Chostname: "bsddprototype1.b2clogin.com"
+* ClientId: "e2d11588-bf15-47eb-bdf8-2c61541fb474"
+* RedirectUri: "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect"
+* PolicySignUpSignIn: "b2c_1_signupsignin1"
+* PolicyEditProfile: "b2c_1_profileediting1"
+* PolicyResetPassword: "b2c_1_passwordreset1"
 
-ApiScopes: { "https://bsddprototype1.onmicrosoft.com/api/read" }
-BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
+* ApiScopes: { "https://bsddprototype1.onmicrosoft.com/api/read" }
+* BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
 
 If you are developing a Web App that’s going to use the bSDD API, let us know (bsdd_support@buildingsmart.org). The RedirectURI needs to be configured in Azure AD.
 
 ## Additional information
 Language independent description of the authorization flow: [Authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory-b2c/authorization-code-flow)
+
 High level descriptions of the various authentication flows: [AD B2C application types](https://docs.microsoft.com/en-us/azure/active-directory-b2c/application-types)
+
 Oauth2 and OpenId protocol descriptions: [AD B2C protocols overview](https://docs.microsoft.com/en-us/azure/active-directory-b2c/protocols-overview)
 
 ## Copyright
