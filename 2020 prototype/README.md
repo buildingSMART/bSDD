@@ -14,6 +14,8 @@ An example flow is:
 * The app sends a request for Classification details and Properties to the bSDD API (“Classification”-method)
 * The API returns Classification details and Properties, which the app shows to the user
 
+A typical use-case is demonstrated in SketchUp. A video of the SketchUp use-case and bSDD plugin is availalbe on https://vimeo.com/446417661/ff8b6605d3
+
 ## API contracts and testing the API
 You can get the API contract information at [bSDD API contract](https://bs-dd-api-prototype.azurewebsites.net/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
 
