@@ -60,5 +60,3 @@ High level descriptions of the various authentication flows: [AD B2C application
 
 Oauth2 and OpenId protocol descriptions: [AD B2C protocols overview](https://docs.microsoft.com/en-us/azure/active-directory-b2c/protocols-overview)
 
-## Copyright
-You can read the copyright notice here: [Copyirght notice](https://bsddprototype2020.blob.core.windows.net/public/Copyright_2020_buildingSMART_International.txt)
