@@ -2,6 +2,14 @@ This page provides some info about the 2020 prototype of the buildingSMART Data 
 
 **IMPORTANT**: the bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
 
+## Summary
+
+* A typical use-case for bSDD 2020 prototype demonstrated in SketchUp: https://vimeo.com/446417661/ff8b6605d3
+* The Swagger API documentation for the bSDD 2020 prototype: https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html
+* Prototype UI to search bSDD 2020 prototype: https://bs-dd-search-prototype.azurewebsites.net/
+
+This page is to help developers create a similar use-case and help connect to the API.
+
 ## The bSDD API
 The bSDD API offers methods to retrieve Classification and Property information for several Standards (also known as Domains), for example IFC and ETIM.
 An example flow is:
