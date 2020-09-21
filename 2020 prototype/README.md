@@ -2,6 +2,15 @@ This page provides some info about the 2020 prototype of the buildingSMART Data 
 
 **IMPORTANT**: the bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
 
+## Summary
+
+* A typical use-case for bSDD 2020 prototype demonstrated in SketchUp: https://vimeo.com/446417661/ff8b6605d3
+* The Swagger API documentation for the bSDD 2020 prototype: https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html
+* Prototype UI to search bSDD 2020 prototype: https://bs-dd-search-prototype.azurewebsites.net/
+* Presentation about the bSDD (and relation to IFC): https://www.slideshare.net/berlotti/20200903-the-2020-buildingsmart-data-dictionary-prototype-bsdd
+
+This page is to help developers create a similar use-case and help connect to the API.
+
 ## The bSDD API
 The bSDD API offers methods to retrieve Classification and Property information for several Standards (also known as Domains), for example IFC and ETIM.
 An example flow is:
@@ -13,6 +22,8 @@ An example flow is:
 * The user can pick the one needed
 * The app sends a request for Classification details and Properties to the bSDD API (“Classification”-method)
 * The API returns Classification details and Properties, which the app shows to the user
+
+A typical use-case is demonstrated in SketchUp. A video of the SketchUp use-case and bSDD plugin is availalbe on https://vimeo.com/446417661/ff8b6605d3
 
 ## API contracts and testing the API
 You can get the API contract information at [bSDD API contract](https://bs-dd-api-prototype.azurewebsites.net/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
@@ -60,5 +71,3 @@ High level descriptions of the various authentication flows: [AD B2C application
 
 Oauth2 and OpenId protocol descriptions: [AD B2C protocols overview](https://docs.microsoft.com/en-us/azure/active-directory-b2c/protocols-overview)
 
-## Copyright
-You can read the copyright notice here: [Copyirght notice](https://bsddprototype2020.blob.core.windows.net/public/Copyright_2020_buildingSMART_International.txt)
