@@ -12,16 +12,16 @@ namespace bSDD.DemoClientConsole
     public static class Program
     {
         // For authentication & authorization (those items should be in a config file)
-        public static readonly string TenantName = "bsddprototype1";
+        public static readonly string TenantName = "buildingsmartdd";
         private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
         private static readonly string AzureAdB2CHostname = $"{TenantName}.b2clogin.com";
-        public static readonly string ClientId = "e2d11588-bf15-47eb-bdf8-2c61541fb474";
+        public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
         public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
-        public static string PolicySignUpSignIn = "b2c_1_signupsignin1";
-        public static string PolicyEditProfile = "b2c_1_profileediting1";
-        public static string PolicyResetPassword = "b2c_1_passwordreset1";
+        public static string PolicySignUpSignIn = "b2c_1_signupsignin";
+        public static string PolicyEditProfile = "b2c_1_profileediting";
+        public static string PolicyResetPassword = "b2c_1_passwordreset";
 
-        public static string[] ApiScopes = { "https://bsddprototype1.onmicrosoft.com/api/read" };
+        public static string[] ApiScopes = { "https://buildingsmartdd.onmicrosoft.com/api/read" };
 
         private static string AuthorityBase = $"https://{AzureAdB2CHostname}/tfp/{Tenant}/";
         public static string AuthoritySignUpSignIn = $"{AuthorityBase}{PolicySignUpSignIn}";
