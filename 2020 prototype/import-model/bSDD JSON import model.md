@@ -118,7 +118,7 @@ classifications
 | SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
 | Symbol              | Text     | No        | No            |                                                                                                                        |
 | PropertyType        | Text     | No        | No            | Type of the Property for the classification: “Property” (default) or “Dependency”                                      |
-| PropertySet         | Text     | No        | No            |                                                                                                                        |
+| PropertySet         | Text     | No        | No            | Name of the property set in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example when you property is a material you should use the value "IfcMaterial".                                                                                                                    |
 | PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
 | MinValue            | Real     | No        | No            |                                                                                                                        |
 | MaxValue            | Real     | No        | No            |                                                                                                                        |
