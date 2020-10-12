@@ -18,19 +18,17 @@ Contains general information about the domain and the delivered data.
 | DomainName       | Text                   | If new domain or version | No  | Name of the domain. If the domain exists supplying this name is not necessary |
 | ReleaseDate      | Date                   | No        | No            | Date of release of the version E.g. “2017-10-01”                                                                                                                             |
 | Status      | Text                   | No        | No            | State of this release E.g. “Preview”                                                                                                                             |
-| LicenseUrl      | Text                   | No        | No            | Url to a web page with the full license text                                                                                                                         |
 | MoreInfoUrl      | Text                   | No        | No            | Url to web page with more info about the domain                                                                                                                         |
 | LanguageIsoCode  | Text                   | Yes       | No            | ISO language code: indicates the language of the data. If you want to deliver data in multiple language use a json file per language. See reference list [languages](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/languages.csv). \* E.g. “de-DE” |
 | LanguageOnly     | Boolean                | Yes       | No            | true if json contains only language specific information, no otherwise \*                                                                                                |
 | License          | Text                   | No        | No            | Description of the license the data will be made available E.g. “No license”                                                                                                 |
+| LicenseUrl      | Text                   | No        | No            | Url to a web page with the full license text                                                                                                                         |
+| QualityAssuranceProcedure          | Text                   | No        | No            | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown"                                                                                            |
+| QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"                                                                                                                     |
 | Classifications  | List of Classification | Yes       |               | List of objects of type “Classification”. See next section                                                                                                                   |
 | Properties       | List of Property       | Yes       |               | List of objects of type “Property”. See next sections                                                                                                                        |
 
-\* For delivering data in additional languages it is sufficient to fill the
-Domain type fields, all “Code” fields and the fields marked with “Translatable?
-= Yes” of the other types. Make sure that the OrganizationCode, DomainCode and
-DomainVersion are exactly the same and if the data is for adding a language to
-an existing Domain, set field “LanguageOnly” to true.
+\* For delivering data in additional languages it is sufficient to fill the Domain type fields, all “Code” fields and the fields marked with “Translatable? = Yes” of the other types. Make sure that the OrganizationCode, DomainCode and DomainVersion are exactly the same and if the data is for adding a language to an existing Domain, set field “LanguageOnly” to true.
 
 ## Classifications
 
