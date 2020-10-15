@@ -9,6 +9,7 @@ This page provides some info about the 2020 prototype of the buildingSMART Data 
 * Prototype UI to search bSDD 2020 prototype: https://bs-dd-search-prototype.azurewebsites.net/
 * Presentation about the bSDD (and relation to IFC): https://www.slideshare.net/berlotti/20200903-the-2020-buildingsmart-data-dictionary-prototype-bsdd
 * Video recording of a bSDD workshop, including Revit plugin demo: https://app.box.com/s/lndnjrbx80n87eg1eq1zhhbqoz8hfmyz/file/720558204462 (start at 1.44.00)
+* JSON  of the import format you can use to get data into the bSDD: https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/bsdd-import-model.json and the documentation how to use that on https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/bSDD%20JSON%20import%20model.md
 
 This page is to help developers create a similar use-case and help connect to the API.
 
