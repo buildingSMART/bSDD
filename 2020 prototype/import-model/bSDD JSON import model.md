@@ -6,22 +6,22 @@ JSON import model format. This document explains this format.
 Click on the link to get the list of allowed codes for [countries](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/countries.csv), [languages](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/languages.csv), [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv), [reference documents](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/reference-documents.csv) and [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/ifc-classification-names.csv).
 If you think there are reference items missing, please let us know.
 
-## Domain type
+## Domain
 
 Contains general information about the domain and the delivered data.
 
 | Field            | DataType               | Required? | Translatable? | Description                                                                                                                                                                  |
 |------------------|------------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OrganizationCode | Text                   | Yes       | No            | Official name of the organization that’s the owner of the data. E.g. “buildingSMART”                                                                                         |
-| DomainCode       | Text                   | Yes       | No            | Code of the domain E.g. “ifc”                                                                                                                                                |
-| DomainVersion    | Text                   | Yes       | No            | Version of the data E.g. “4.3”                                                                                                                                               |
+| OrganizationCode | Text                   | Yes       | No            | If you do not have a code for your organization yet, request one at bsdd_support@buildingsmart.org                                                                                         |
+| DomainCode       | Text                   | Yes       | No            | Code of the domain, preferably short, only alphabetical characters and numbes allowed, must start with alphabetical character E.g. “ifc”                                                                                                                                                |
+| DomainVersion    | Text                   | Yes       | No            | Version of the domain data in format "x.y". E.g.: 4.3                                                                                                                                               |
 | DomainName       | Text                   | If new domain or version | No  | Name of the domain. If the domain exists supplying this name is not necessary |
 | ReleaseDate      | Date                   | No        | No            | Date of release of the version E.g. “2017-10-01”                                                                                                                             |
-| Status      | Text                   | No        | No            | State of this release E.g. “Preview”                                                                                                                             |
+| Status      | Text                   | No        | No            | State of this version. Must be one of: "Preview", "Released", "Inactive"                                                                                                                             |
 | MoreInfoUrl      | Text                   | No        | No            | Url to web page with more info about the domain                                                                                                                         |
 | LanguageIsoCode  | Text                   | Yes       | No            | ISO language code: indicates the language of the data. If you want to deliver data in multiple language use a json file per language. See reference list [languages](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/languages.csv). \* E.g. “de-DE” |
 | LanguageOnly     | Boolean                | Yes       | No            | true if json contains only language specific information, no otherwise \*                                                                                                |
-| License          | Text                   | No        | No            | Description of the license the data will be made available E.g. “No license”                                                                                                 |
+| License          | Text                   | No        | No            | Description of the license the data will be made available (free text). E.g. “No license”, "MIT license"                                                                                                 |
 | LicenseUrl      | Text                   | No        | No            | Url to a web page with the full license text                                                                                                                         |
 | QualityAssuranceProcedure          | Text                   | No        | No            | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown"                                                                                            |
 | QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"                                                                                                                     |
@@ -30,7 +30,7 @@ Contains general information about the domain and the delivered data.
 
 \* For delivering data in additional languages it is sufficient to fill the Domain type fields, all “Code” fields and the fields marked with “Translatable? = Yes” of the other types. Make sure that the OrganizationCode, DomainCode and DomainVersion are exactly the same and if the data is for adding a language to an existing Domain, set field “LanguageOnly” to true.
 
-## Classifications
+## Classification
 
 A classification can be any (abstract) object (e.g. “IfcWall”), abstract concept
 (e.g. “Costing”) or process (e.g. “Installation”). Classifications can be
@@ -66,7 +66,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections                                                                                                  |
 | ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections                                                                                                  |
 
-## Property type
+## Property
 
 A classification can have multiple properties and a property can be part of many
 classifications
@@ -111,7 +111,7 @@ classifications
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | PropertyCode        | Text     | No \*     | No            | Reference to the property in the same domain                                                                           |
-| ExternalPropertyUri | Text     | No \*     | No            | Reference to the property in a different domain                                                                        |
+| ExternalPropertyUri | Text     | No \*     | No            | Reference to the property in a different domain, preferably using a bSDD namespace uri, e.g. http://bsdd.buildingsmart.org/a/buildingsmart/ifc-4.3/prop/Labels                                                                       |
 | Unit                | Text     | No        | No            | See reference list [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv).                                                                                                                       |
 | SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
 | Symbol              | Text     | No        | No            |                                                                                                                        |
@@ -120,6 +120,7 @@ classifications
 | PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
 | MinValue            | Real     | No        | No            |                                                                                                                        |
 | MaxValue            | Real     | No        | No            |                                                                                                                        |
+| Values              | List of text   | No  | Yes           | List of texts with allowed values for the property, e.g. ["brown", "white", "yellow"]. If property is of type boolean, there is no need to add ["true", "false"] here |
 
 \* One of those is required.
 
