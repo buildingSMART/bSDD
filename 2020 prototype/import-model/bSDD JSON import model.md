@@ -44,9 +44,9 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | Name                      | Text                           | Yes       | Yes           | Name of the classification E.g. “IfcCurtainWall”                                                                   |
 | Definition                | Text                           | No        | Yes           | Definition of the Classification                                                                                   |
 | Status                    | Text                           | No        | No            | Status of the Classification: “Active” (default) or “Inactive”                                                     |
-| ActivationDateUtc         | Date                           | No        | No            |                                                                                                                    |
+| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if left empty |
 | RevisionDateUtc           | Date                           | No        | No            |                                                                                                                    |
-| VersionDateUtc            | Date                           | No        | No            |                                                                                                                    |
+| VersionDateUtc            | Date                           | No        | No            | Will get date of import if left empty |
 | DeactivationDateUtc       | Date                           | No        | No            |                                                                                                                    |
 | VersionNumber             | Integer                        | No        | No            |                                                                                                                    |
 | RevisionNumber            | Integer                        | No        | No            |                                                                                                                    |
@@ -77,9 +77,9 @@ classifications
 | Name                          | Text         | Yes       | Yes           | Name of the Property E.g. “IsExternal”                                                                                                               |
 | Definition                    | Text         | No        | Yes           | Definition of the Property                                                                                                                           |
 | Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”                                                                                             |
-| ActivationDateUtc             | Date         | No        | No            |                                                                                                                                                      |
+| ActivationDateUtc             | Date         | No        | No            | Will get date of import if left empty |
 | RevisionDateUtc               | Date         | No        | No            |                                                                                                                                                      |
-| VersionDateUtc                | Date         | No        | No            |                                                                                                                                                      |
+| VersionDateUtc                | Date         | No        | No            | Will get date of import if left empty |
 | DeactivationDateUtc           | Date         | No        | No            |                                                                                                                                                      |
 | VersionNumber                 | Integer      | No        | No            |                                                                                                                                                      |
 | RevisionNumber                | Integer      | No        | No            |                                                                                                                                                      |
@@ -110,8 +110,8 @@ classifications
 | Field               | DataType | Required? | Translatable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
-| PropertyCode        | Text     | No \*     | No            | Reference to the property in the same domain                                                                           |
-| ExternalPropertyUri | Text     | No \*     | No            | Reference to the property in a different domain, preferably using a bSDD namespace uri, e.g. http://bsdd.buildingsmart.org/a/buildingsmart/ifc-4.3/prop/Labels                                                                       |
+| PropertyCode        | Text     | No \*     | No            | Reference to the property if it is in the same domain. You can leave this one empty if you fill the ExternalPropertyUri                                                                           |
+| ExternalPropertyUri | Text     | No \*     | No            | Reference to the property if it is in a different domain, preferably using a bSDD namespace uri, e.g. http://bsdd.buildingsmart.org/a/buildingsmart/ifc-4.3/prop/Labels                                                                       |
 | Unit                | Text     | No        | No            | See reference list [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv).                                                                                                                       |
 | SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
 | Symbol              | Text     | No        | No            |                                                                                                                        |
