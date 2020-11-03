@@ -102,7 +102,7 @@ classifications
 | IsDynamic                     | Boolean      | No        | No            | Default: false If this is a dynamic property, the value is dependent on the parameters provided in field DynamicParameterProperties                  |
 | DynamicParameterPropertyCodes | List of text | No        | No            | List of codes of properties which are parameters of the function for a dynamic property                                                              |
 | Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv).            |
-| DefiningValues                | List of text | No        | Yes           | In case the value of the property is restricted to a limited list of values, list of values E.g. “Heating”, “Cooling”, “Heating and Cooling”         |
+| PossibleValues                | List of text | No        | Yes           | In case the value of the property is restricted to a limited list of values, list of values E.g. “Heating”, “Cooling”, “Heating and Cooling”         |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
 
 ## ClassificationProperty type
@@ -129,7 +129,7 @@ classifications
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf    |
-| RelatedClassificationUri | Text     | Yes       | No            | Full URI of the related classification. Can be to same or different domain. |
+| RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://bsdd.buildingsmart.org/a/etim/etim-7.0/class/EC002987|
 
 ## Table IfcClassifications
 
