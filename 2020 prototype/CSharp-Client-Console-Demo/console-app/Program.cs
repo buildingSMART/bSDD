@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Security.Policy;
 using System.Text;
 using bSDD.DemoClientConsole.Contract;
 using Microsoft.Identity.Client;
@@ -12,16 +14,20 @@ namespace bSDD.DemoClientConsole
     public static class Program
     {
         // For authentication & authorization (those items should be in a config file)
-        public static readonly string TenantName = "buildingsmartdd";
+        public static readonly string TenantName = "buildingsmartservices";
         private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
         private static readonly string AzureAdB2CHostname = $"{TenantName}.b2clogin.com";
-        public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
-        public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
+        public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
+        // public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
+        public static readonly string RedirectUri = "https://buildingsmartservices.b2clogin.com/oauth2/nativeclient";
+
+        // Not case sensitive
         public static string PolicySignUpSignIn = "b2c_1_signupsignin";
         public static string PolicyEditProfile = "b2c_1_profileediting";
         public static string PolicyResetPassword = "b2c_1_passwordreset";
 
-        public static string[] ApiScopes = { "https://buildingsmartdd.onmicrosoft.com/api/read" };
+        // Not case sensitive
+        public static string[] ApiScopes = { "https://buildingsmartservices.onmicrosoft.com/api/read" };
 
         private static string AuthorityBase = $"https://{AzureAdB2CHostname}/tfp/{Tenant}/";
         public static string AuthoritySignUpSignIn = $"{AuthorityBase}{PolicySignUpSignIn}";
@@ -29,7 +35,7 @@ namespace bSDD.DemoClientConsole
         public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
 
         // For accessing API endpoint
-        public static string ApiEndpoint = "https://bs-dd-api-prototype.azurewebsites.net/api/SearchList?DomainGuid=ed05efb8-bb61-4170-ab6e-92387bf77764";
+        public static string ApiEndpoint = "https://bs-dd-api-prototype.azurewebsites.net/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://bsdd.buildingsmart.org/a/etim/etim-7.0") + "&SearchText=room";
 
         public static int Main(string[] args)
         {
@@ -44,7 +50,7 @@ namespace bSDD.DemoClientConsole
             try
             {
                 var accounts = publicClientApp.GetAccountsAsync(PolicySignUpSignIn).GetAwaiter().GetResult();
-
+                
                 authResult = publicClientApp.AcquireTokenSilent(ApiScopes, accounts.FirstOrDefault())
                     .ExecuteAsync().GetAwaiter().GetResult();
 
@@ -70,6 +76,10 @@ namespace bSDD.DemoClientConsole
 
             Console.WriteLine($"Calling {ApiEndpoint}...");
             var resultText = Helpers.GetHttpContentWithToken(ApiEndpoint, authResult.AccessToken).GetAwaiter().GetResult();
+            if (resultText.Contains("Unauthorized"))
+            {
+                throw new UnauthorizedAccessException(resultText);
+            }
             var searchResult = JsonConvert.DeserializeObject<SearchResultContract>(resultText);
             Console.WriteLine("Result received");
             Console.WriteLine($"Number of classifications found: {searchResult.NumberOfClassificationsFound}");
