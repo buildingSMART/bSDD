@@ -104,6 +104,11 @@ classifications
 | Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv).            |
 | PossibleValues                | List of text | No        | Yes           | In case the value of the property is restricted to a limited list of values, list of values E.g. “Heating”, “Cooling”, “Heating and Cooling”         |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
+| MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive |
+| MaxInclusive            | Real     | No        | No            | Maximum allowed value, inclusive - do not fill both 'inclusive' and 'exclusive' values |
+| MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive |
+| MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive - do not fill both 'inclusive' and 'exclusive' values |
+| Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
 
 ## ClassificationProperty type
 
@@ -118,8 +123,11 @@ classifications
 | PropertyType        | Text     | No        | No            | Type of the Property for the classification: “Property” (default) or “Dependency”                                      |
 | PropertySet         | Text     | No        | No            | Name of the property set in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example when you property is a material you should use the value "IfcMaterial".                                                                                                                    |
 | PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
-| MinValue            | Real     | No        | No            |                                                                                                                        |
-| MaxValue            | Real     | No        | No            |                                                                                                                        |
+| MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive. Overrides the value defined for the Property |
+| MaxInclusive            | Real     | No        | No            | Maximum allowed value, inclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values. |
+| MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive. Overrides the value defined for the Property |
+| MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
+| Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | Values              | List of text   | No  | Yes           | List of texts with allowed values for the property, e.g. ["brown", "white", "yellow"]. If property is of type boolean, there is no need to add ["true", "false"] here |
 
 \* One of those is required.
