@@ -13,7 +13,7 @@ This page provides some info about the 2020 prototype of the buildingSMART Data 
 * JSON  of the import format you can use to get data into the bSDD: https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/bsdd-import-model.json and the documentation how to use that on https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/bSDD%20JSON%20import%20model.md
 * Get help by emailing bsdd_support@buildingsmart.org
 
-
+* There's now also a GraphQL implementation available to get the data: https://bs-dd-api-prototype.azurewebsites.net/graphiql for a browse UI and https://bs-dd-api-prototype.azurewebsites.net/graphql to post the queries to
 
 ## The bSDD API
 The bSDD API offers methods to retrieve Classification and Property information for several Standards (also known as Domains), for example IFC and ETIM.
