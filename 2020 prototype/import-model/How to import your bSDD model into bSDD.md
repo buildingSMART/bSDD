@@ -5,7 +5,7 @@ If you have your model in the bsdd-import-model.json format available, you can u
 *Important* if you upload a file it will replace the whole domain! You cannot upload the classifications in parts, all classifications and properties of one domain must be in one file.
 
 
-1. Go to [bs-dd-api-prototype.azurewebsites.net/swagger](https://bs-dd-api-prototype.auzrewebsites.net/swagger)
+1. Go to [bs-dd-api-prototype.azurewebsites.net/swagger](https://bs-dd-api-prototype.azurewebsites.net/swagger)
 ![bSDD API wagger](https://raw.githubusercontent.com/buildingSMART/bSDD/master/2020%20prototype/import-model/doc_images/Screenshot_01_swagger.png)
 
 2. Press "Authorize"
