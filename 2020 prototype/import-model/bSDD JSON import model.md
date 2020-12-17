@@ -6,6 +6,10 @@ JSON import model format. This document explains this format.
 Click on the link to get the list of allowed codes for [countries](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/countries.csv), [languages](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/languages.csv), [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv), [reference documents](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/reference-documents.csv) and [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/ifc-classification-names.csv).
 If you think there are reference items missing, please let us know.
 
+## General notes
+
+-- Default values will only be applied if a field is not specified. If you specify a field, "null" will not always be a valid value, even if there is a default.
+
 ## Domain
 
 Contains general information about the domain and the delivered data.
@@ -47,10 +51,10 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | Name                      | Text                           | Yes       | Yes           | Name of the classification E.g. “IfcCurtainWall”                                                                   |
 | OwnedUri                | Text                           | No        | No           | If you specified "UseOwnUri = true" at domain level you must supply the namepsace URI that globally uniquely identifies the Classifciation  |
 | Definition                | Text                           | No        | Yes           | Definition of the Classification                                                                                   |
-| Status                    | Text                           | No        | No            | Status of the Classification: “Active” (default) or “Inactive”                                                     |
-| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if left empty |
+| Status                    | Text                           | No        | No            | Status of the Classification: “Active” (default) or “Inactive” |
+| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present |
 | RevisionDateUtc           | Date                           | No        | No            |                                                                                                                    |
-| VersionDateUtc            | Date                           | No        | No            | Will get date of import if left empty |
+| VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present |
 | DeactivationDateUtc       | Date                           | No        | No            |                                                                                                                    |
 | VersionNumber             | Integer                        | No        | No            |                                                                                                                    |
 | RevisionNumber            | Integer                        | No        | No            |                                                                                                                    |
@@ -82,9 +86,9 @@ classifications
 | OwnedUri                | Text                           | No        | No           | If you specified "UseOwnUri = true" at domain level you must supply the namepsace URI that globally uniquely identifies the Property  |
 | Definition                    | Text         | No        | Yes           | Definition of the Property                                                                                                                           |
 | Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”                                                                                             |
-| ActivationDateUtc             | Date         | No        | No            | Will get date of import if left empty |
+| ActivationDateUtc             | Date         | No        | No            | Will get date of import if field not present |
 | RevisionDateUtc               | Date         | No        | No            |                                                                                                                                                      |
-| VersionDateUtc                | Date         | No        | No            | Will get date of import if left empty |
+| VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present |
 | DeactivationDateUtc           | Date         | No        | No            |                                                                                                                                                      |
 | VersionNumber                 | Integer      | No        | No            |                                                                                                                                                      |
 | RevisionNumber                | Integer      | No        | No            |                                                                                                                                                      |
@@ -144,7 +148,4 @@ classifications
 | RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf    |
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://bsdd.buildingsmart.org/a/etim/etim-7.0/class/EC002987|
 
-## Table IfcClassifications
 
-This table should not be altered. It contains the IFC classification names you
-can choose from when linking your classifications to IFC classifications.
