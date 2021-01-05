@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/n8fwfxte8uvw8pl7/branch/master?svg=true)](https://ci.appveyor.com/project/klacol/bsdd/branch/master)
+# ARCHIVED
 
 
 # PSets - Property Set Extension of the IFC schema
@@ -26,5 +26,4 @@ IFC versions are identified using the sematic versioning notation "Major.Minor.A
 - Addendums consist of improvements to existing features, where the schema may change but upward compatibility is guaranteed.
 - Corrigendums consist of improvements to documentation, where the schema does not change though deprecation is possible.
 
-# Which version do I use?
-The latest version, IFC 4.1 is recommended for all current developments, which is fully backward compatible with IFC 4.0. Core definitions within IFC 4.1 and 4.0 are backward compatible with IFC 2.3.
+
