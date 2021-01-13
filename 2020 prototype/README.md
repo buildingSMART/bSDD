@@ -57,15 +57,15 @@ Currently there’s no further authorization required to be able to use the API.
 
 ## Settings
 These are the settings you can use for demonstration purposes for a Dekstop client app :
-* Tenant: "bsddprototype1.onmicrosoft.com"
-* AzureAdB2Chostname: "bsddprototype1.b2clogin.com"
-* ClientId: "e2d11588-bf15-47eb-bdf8-2c61541fb474"
+* Tenant: "buildingsmartservices.onmicrosoft.com "
+* AzureAdB2Chostname: "buildingsmartservices.b2clogin.com"
+* ClientId: "4aba821f-d4ff-498b-a462-c2837dbbba70"
 * RedirectUri: "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect"
-* PolicySignUpSignIn: "b2c_1_signupsignin1"
-* PolicyEditProfile: "b2c_1_profileediting1"
-* PolicyResetPassword: "b2c_1_passwordreset1"
+* PolicySignUpSignIn: "b2c_1_signupsignin"
+* PolicyEditProfile: "b2c_1_profileediting"
+* PolicyResetPassword: "b2c_1_passwordreset"
 
-* ApiScopes: { "https://bsddprototype1.onmicrosoft.com/api/read" }
+* ApiScopes: { "https://buildingsmartservices.onmicrosoft.com/api/read" }
 * BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
 
 If you are developing a Web App that’s going to use the bSDD API, let us know (bsdd_support@buildingsmart.org). The RedirectURI needs to be configured in Azure AD.
