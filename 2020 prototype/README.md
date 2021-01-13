@@ -34,7 +34,7 @@ A typical use-case is demonstrated in SketchUp. A video of the SketchUp use-case
 ## API contracts and testing the API
 You can get the API contract information at [bSDD API contract](https://bs-dd-api-prototype.azurewebsites.net/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
 
-![Swagger authorization](https://bsddprototype2020.blob.core.windows.net/public/images/swagger-authorize.png)
+![Swagger authorization](https://bsddprototype2020.blob.core.windows.net/public/images/swagger-authorize2.png)
 
 Don’t forget to check the “read” scope!
 
