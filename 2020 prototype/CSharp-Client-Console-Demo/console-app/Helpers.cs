@@ -33,9 +33,9 @@ namespace bSDD.DemoClientConsole
             {
                 var request = new HttpRequestMessage(HttpMethod.Get, url);
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                response = await httpClient.SendAsync(request);
+                response = await httpClient.SendAsync(request).ConfigureAwait(false);
 
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 if (!response.IsSuccessStatusCode)
                 {
                     return $"{response.StatusCode} - {response.ReasonPhrase} - {content}";
@@ -50,20 +50,22 @@ namespace bSDD.DemoClientConsole
 
         public static async Task<AuthenticationResult> SignIn(IPublicClientApplication app, string[] apiScopes, string authorityResetPassword, IntPtr? windowHandle)
         {
-            AuthenticationResult authResult = null;
+            AuthenticationResult authResult;
             try
             {
                 if (windowHandle != null)
                 {
                     authResult = await app.AcquireTokenInteractive(apiScopes)
                          .WithParentActivityOrWindow(windowHandle)
-                        .ExecuteAsync();
+                         .ExecuteAsync()
+                         .ConfigureAwait(false);
                 }
                 else
                 {
                     authResult = await app.AcquireTokenInteractive(apiScopes)
                         // .WithParentActivityOrWindow(new WindowInteropHelper(this).Handle)
-                        .ExecuteAsync();
+                        .ExecuteAsync()
+                        .ConfigureAwait(false);
                 }
 
                 return authResult;
@@ -76,7 +78,8 @@ namespace bSDD.DemoClientConsole
                         // .WithParentActivityOrWindow(new WindowInteropHelper(this).Handle)
                         .WithPrompt(Prompt.SelectAccount)
                         .WithB2CAuthority(authorityResetPassword)
-                        .ExecuteAsync();
+                        .ExecuteAsync()
+                        .ConfigureAwait(false);
 
                     return authResult;
                 }
