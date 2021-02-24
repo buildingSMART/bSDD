@@ -7,28 +7,41 @@ But where to start using the API?
 
 ## Context
 
-## Main use-case
+### Main use-case
 
-## Authentication
+One of the main use-cases for using bSDD is having to link parts of a design to classifications or using properties of a specific domain.
+As you've seen in the Sketchup demo some Nl-SfB properties needed to be specified for a wall.
+The bSDD provides an API for getting the list of domains available.
+And after selecting the required domain, there's an API to search for classifications within the selected domain.
+In the demo the search is done via "Related IFC Entity Name". It is also possible to search using plain text.
+Note that not all domains may have relations with IFC specified.
+
+By then selecting the desired classification, details of that classification, including properties, can be requestedusing the Classification API.
+
+### Authentication
 
 Some of the bSDD APIs are publicly available, for others you need to be authenticated.
-Being authenticated means that you have identified yourself to the buildingsmartservices Active Directory. This Active Directory is an Azure service known as Azure AD B2C (with B2C meaning Business to Consumer). A user can sign up himself with the only requirement are providing valid e-mail address and name.
+Being authenticated means for bSDD that you have identified yourself to the buildingsmartservices Active Directory. This Active Directory is an Azure service known as Azure AD B2C (with B2C meaning Business to Consumer). You can sign up yourself by providing valid e-mail address and name.
 
+For this tutorial there is no need to sign up.
 
-## Resources
+### Resources
+
+Some resources for you to get to know more about bSDD and using the API:
 
 Main resource location of the bSDD API: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype.
 Authenticated call to the bSDD API from a .NET Console App: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo
 Azure AD B2C documentation home page: http://aka.ms/aadb2c
 More Azure AD B2C code samples: https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples
+The API swagger page: https://bs-dd-api-prototype.azurewebsites.net/swagger
 
-# Steps
+## Steps
 
-- Request an Application ID (aka Client ID) for getting access to the bSDD API from your app. For now you can use application ID of the demo application: 4aba821f-d4ff-498b-a462-c2837dbbba70 (this Client ID is only applicable for the Prototype environment and has a limited lifetime). If you want to go live with your application, request a Client ID at bsdd_support@buildingsmart.org.
+For following this tutortial we assume you have some experience with programming and using APIs over HTTP. So we are not going into all programming details of executing an API request.
 
-- Configure your application
+For demo, and this tutorial, purposes it is fine to have settings like the base URL of the bSDD API in your code. But if you go along with using bSDD it is better to have these settings configurable so you can, for example, easily switch from the bSDD prototype API to the production API.
 
-- Most bSDD API calls do not require any form of authentication yet. If you do not have any experience with doing authenticated Http calls, you can start without authentication.
+Most bSDD API calls do not require any form of authentication yet, so for this tutorial we're going to skip doing authorized calls.
 
 ## Part 1
 
