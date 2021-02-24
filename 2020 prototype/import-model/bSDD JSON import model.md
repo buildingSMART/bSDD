@@ -152,7 +152,7 @@ classifications
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf    |
+| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://bsdd.buildingsmart.org/a/etim/etim-7.0/class/EC002987|
 
 
