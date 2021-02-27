@@ -43,29 +43,136 @@ For demo, and this tutorial, purposes it is fine to have settings like the base 
 
 Most bSDD API calls do not require any form of authentication yet, so for this tutorial we're going to skip doing authorized calls.
 
-## Part 1
+## Part 1 - get a list of the domains
 
 Prepare your app for doing a HTTP request to the buildingSMART Data Dictionary API.
 How to do this depends a lot on the language you use for building your app. If you're using .NET and C#, have a look at the demo console app: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo
 
-Call the Domain API to get a list of all domains
+Call the Domain API to get a list of all domains.
+API url: https://bs-dd-api-prototype.azurewebsites.net/api/Domain/v2
+query parameters: -none-
+
+Response body looks like:
+```
+[
+  {
+    "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3",
+    "name": "IFC",
+    "version": "4.3",
+    "organizationNameOwner": "buildingSMART",
+    "defaultLanguageCode": "EN",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "qualityAssuranceProcedure": "bSI process",
+    "qualityAssuranceProcedureUrl": "https://www.buildingsmart.org/about/bsi-process"
+  },
+  {
+    "namespaceUri": "http://identifier.buildingsmart.org/uri/etim/etim-7.0",
+    "name": "ETIM",
+    "version": "7.0",
+    "organizationNameOwner": "ETIM International",
+    "defaultLanguageCode": "nl-BE",
+    "qualityAssuranceProcedure": "ETIM international",
+    "qualityAssuranceProcedureUrl": "https://www.etim-international.com/wp-content/uploads/2019/11/Statutes-ETIM-International-version-EN-10-2017.pdf"
+  },
+  ...
+```
 
 Present the list to the user
 
-## Part 2
+## Part 2 - search for classifications within a domain
 
-Call the SearchList API or if you're not implementing the authorization part, use SearchListOpen. Note: you should not use the SearchListOpen for production purposes.
+Call the SearchListOpen API (for production purposes you should use the secured SearchList API).
 Provide one of the Domain NamespaceUris from the list received in the previous step.
 Optionally provide some text to search for or provide an official IFC entity name to get even more specific results.
 Not all domains have RelatedIfcName(s) available.
 
-## Part 3
+API url: https://bs-dd-api-prototype.azurewebsites.net/api/SearchListOpen/v2
+query parameters: DomainNamespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3&SearchText=bridge
 
-Get the details of classification:
+Response body looks like:
+```
+{
+  "numberOfClassificationsFound": 21,
+  "domains": [
+    {
+      "name": "IFC",
+      "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3",
+      "classifications": [
+        {
+          "name": "IfcBridge",
+          "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge",
+          "definition": "A Bridge is civil engineering works that affords passage to pedestrians, animals, vehicles, and services above obstacles or between two points at a height above ground. NOTE Definition from ISO 6707 1 2014 Civil engineering works that affords passage to pedestrians, animals, vehicles, and services above obstacles or between two points at a height above ground. bSI Documentation"
+        },
+        {
+          "name": "IfcBridge.ARCHED",
+          "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.ARCHED"
+        },
+        {
+          "name": "IfcBridge.CABLE_STAYED",
+          "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.CABLE_STAYED"
+        },
+...
+```
+
+## Part 3 - get the details of a classification
+
 Call the Classification API with one of the Classification NamespaceUris received via the SearchList API.
+
+API url: https://bs-dd-api-prototype.azurewebsites.net/api/Classification/v2
+query parameters: namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3%2Fclass%2FIfcBridge&includeChildClassificationReferences=true
+
+Response body looks like:
+```
+{
+  "parentClassificationReference": {
+    "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcFacility",
+    "name": "IfcFacility",
+    "code": "IfcFacility"
+  },
+  "classificationProperties": [
+    {
+      "propertyDomainName": "IFC",
+      "propertyNamespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/StructureIndicator",
+      "name": "StructureIndicator",
+      "propertySet": "Pset_BridgeCommon",
+      "dataType": "PEnum_StructureIndicator",
+      "values": [
+        {
+          "value": "COMPOSITE"
+        },
+        {
+          "value": "HOMOGENEOUS"
+        },
+        {
+          "value": "COATED"
+        }
+      ]
+    }
+  ],
+  "childClassificationReferences": [
+    {
+      "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.CULVERT",
+      "name": "IfcBridge.CULVERT",
+      "code": "IfcBridge.CULVERT"
+    },
+    {
+      "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.CABLE_STAYED",
+      "name": "IfcBridge.CABLE_STAYED",
+      "code": "IfcBridge.CABLE_STAYED"
+    },
+...
+```
 
 ## Further development (out of scope of hackathon)
 
-For a stable app and great user experience in a lot of circumstances you should make your app resilient to temporary failures. Depending on the failure it can make sense to try again in a few seconds.
+For a stable app and great user experience in a lot of circumstances you should make your app resilient to temporary failures. Depending on the failure it can make sense to try again in a few seconds. Most likely there are libraries available you can use to make your app more resilient to transient failures. For .NET for example, you should have a look at the library Polly.
 
-Needing more flexibility? Have a look at our GraphQL implementation: https://bs-dd-api-prototype.azurewebsites.net/graphiql 
+Needing more flexibility in the results returned from the API?
+Have a look at our GraphQL implementation: https://bs-dd-api-prototype.azurewebsites.net/graphiql.
+With GraphQL you can specify the fields you need. Only those fields will be returnd by GraphQL.
+
+## More good to know
+
+You've probably noted the "v2" in the API urls. In case your'e wondering why this is, this is the version number of the API method. If we change the behaviour of the API, or if we change the request parameters and/or response in a way that it is not backwards compatible anymore, the version number will be increased. So it is not necessary for you to immediately adjust your software. The old version will be supported for a long period afterwards. But you need to adjust your software to be able to take advantage of the changes.
+Please be aware that we can change the request parameters and/or response without increasing the version number, but only if it is an addition: your software does not need to be changed. For example, if we add an extra field to the response, the version number will not be increased. Your software should not fail if an extra field is returned. It probably will ignore it, but that's no problem, the behaviour stays the same.
