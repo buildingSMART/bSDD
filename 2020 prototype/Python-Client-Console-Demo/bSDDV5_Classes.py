@@ -47,7 +47,7 @@ class TCountry(TObject):
 #----------------------#        
 class TClassification(TObject):    
     definition = ''
-
+    IFCLinks = []
     Properties = []
 
     # Read the values from the JSON response    
@@ -58,7 +58,10 @@ class TClassification(TObject):
 
     # Ask the API for the classification details
     def Load_Details(self, _content):
-          # need to read the details needed in 
+          if "relatedIfcEntityNames" in _content:
+                for item in _content["relatedIfcEntityNames"]:
+                      self.IFCLinks.append(item)
+                      
           # Properties attached to the classification
           if "classificationProperties" in _content:
                     for item in _content["classificationProperties"]:                                  
@@ -66,17 +69,30 @@ class TClassification(TObject):
                       NewProperty.FillValuesFromJSON(item)                      
                       self.Properties.append(NewProperty)
 
+    # Save properties list  values  of the class into a csv file
+    def SaveToCSV(self, _Name):
+        with open(_Name + '_Properties.csv' , 'w+') as csvfile:
+            MyFields = ['Name' , 'Domain', 'URI', 'Definition', 'dataType']
+            writer = csv.DictWriter(csvfile, delimiter=';' , fieldnames=MyFields)
+            writer.writeheader()
+            for item in self.Properties:
+                writer.writerow({'Name' : item.name, 'Domain': item.domain , 'URI' : item.namespaceUri, 'Definition' : item.definition, 'dataType' : item.dataType})
+
 #----------------------#        
 #  Property            #   
 #----------------------#        
 class TProperty(TObject):    
-    definition = ''
+    definition = ""
+    domain = ""
+    dataType = ""
 
     # Read the values from the JSON response    
     def FillValuesFromJSON(self, _content):
         self.name = self.ReadVal(_content, 'name')
+        self.domain = self.ReadVal(_content, 'propertyDomainName') 
         self.namespaceUri = self.ReadVal(_content, 'propertyNamespaceUri') 
-        #self.definition = self.ReadVal(_content, 'definition') 
+        self.definition = self.ReadVal(_content, 'description') 
+        self.dataType = self.ReadVal(_content, "dataType")
      
 #----------------------#        
 #  Domain              #   
@@ -111,9 +127,7 @@ class TDomain(TObject):
             writer.writeheader()
             for item in self.Classes:
                 writer.writerow({'Name' : item.name, 'URI' : item.namespaceUri, 'Definition' : item.definition})
-
         
-
 #------------------------------------------------------------------------#
 #        This class contains                                             # 
 #           - authorization                                              #
@@ -233,17 +247,17 @@ class TPostman():
       payload["LanguageCode"] = _LanguageCode
       
       Response = self.get(Resource_Search_Secured, payload)
+
+      NbRes = Response["numberOfClassificationsFound"]
       
       for item in Response['domains']: #in this case we should have just 1 !
         ReadDomain = self.GetDomainFromURI(item['namespaceUri']) 
-        NbRes = 0
         for item2 in item["classifications"]:
           NewClass = TClassification()
           NewClass.FillValuesFromJSON(item2)
           ReadDomain.Classes.append(NewClass)
-          NbRes += 1
 
-          #If details are required, a request is launched for each one
+          #If details are required, a request is launched for each class
           if _Get_Details:
                 payloadClass = dict()
                 payloadClass["namespaceUri"] = NewClass.namespaceUri
@@ -257,10 +271,43 @@ class TPostman():
           ReadDomain.SaveToCSV();
 
       return NbRes
+
+    #----------------------------------------------------------------------------------------------------
+    # Retrieve the properties of a classification
+    #----------------------------------------------------------------------------------------------------
+
+    def Get_Classification_Properties(self, _ClassificationURI, _LanguageCode, _SaveResult, _ClassificationName = None): #Classification name, optional, just to nicely name the excel export
+       payloadClass = dict()
+       payloadClass["namespaceUri"] = _ClassificationURI
+       payloadClass["languageCode"] = _LanguageCode
+       payloadClass["includeChildClassificationReferences"] = False #we don't ask for the hierarchy we just want properties
+       mResponse = self.get(Resource_Classification, payloadClass)
+
+       mClassification = TClassification()
+
+       NbRes = 0
+
+       if "relatedIfcEntityNames" in mResponse:
+              for item in mResponse["relatedIfcEntityNames"]:
+                  mClassification.IFCLinks.append(item)
+                      
+        # Get the properties attached to the classification
+       if "classificationProperties" in mResponse:
+            for item in mResponse["classificationProperties"]:                                  
+              mProperty = TProperty()
+              mProperty.FillValuesFromJSON(item)                      
+              mClassification.Properties.append(mProperty)
+              NbRes += 1
+
+       #Save the properties informations to a csv    
+       if _SaveResult:          
+          mClassification.SaveToCSV(_ClassificationName)       
+
+       return NbRes
           
 
     #----------------------------------------------------------------------------------------------------
-    # Retrieve a the classes of a domain linekd to an IFC Entity 
+    # Retrieve a the classes of a domain linked to an IFC Entity 
     #----------------------------------------------------------------------------------------------------
 
     def get_Linked_Classes(self, _DomainURI, _LanguageCode, _IFCEntity, _SaveResult, _Get_Details):
@@ -273,14 +320,14 @@ class TPostman():
       
       Response = self.get(Resource_Search_Open, payload)
       
+      NbRes = Response["numberOfClassificationsFound"]
+
       for item in Response['domains']: #in this case we should have just 1 !
         ReadDomain = self.GetDomainFromURI(item['namespaceUri']) 
-        NbRes = 0
         for item2 in item["classifications"]:
           NewClass = TClassification()
           NewClass.FillValuesFromJSON(item2)
           ReadDomain.Classes.append(NewClass)
-          NbRes += 1
 
           #If details are required, a request is launched for each one
           if _Get_Details:
