@@ -61,15 +61,30 @@ def Get_Classes_Linked_To_IFC():
   NbClasses = bsdd.get_Linked_Classes(DomainURI, LanguageRequired, IFCEntity, SaveResult, Get_Details)
   print ( str(NbClasses) + " classification linked to " + IFCEntity)
       
+#-----------------------------------------------------------
+#                    Get Properties of a class             #
+#-----------------------------------------------------------
+    
+def Get_Classification_Properties():
+  #Ask user the classification URI
+  ClassificationURI = input("enter the classification URI : >") 
+  ClassificationName = input("enter the classification name : >")
+  LanguageRequired = 'EN'
+  SaveResult = True
+  NbProperties = bsdd.Get_Classification_Properties(ClassificationURI, LanguageRequired, SaveResult, ClassificationName)
+  print ( str(NbProperties) + " Properties found for " + ClassificationName)
 
 #-----------------------------------------------------------
 #                    Console APP example                   #
 #-----------------------------------------------------------
 
+#-------------- Uncomment calls as needed
+
 Login()
-Get_Countries()
+#Get_Countries()
 Get_Domains()
-#Get_Classes_For_Domain()
-Get_Classes_Linked_To_IFC()
+#Get_Classes_For_Domain() #Search all classes for a domain
+Get_Classes_Linked_To_IFC() #Search classes linked to an IFC Entity in a domain
+Get_Classification_Properties() # Get the properties for a given classification
 
 
