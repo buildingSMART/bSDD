@@ -1,6 +1,6 @@
-# Use case walkthrough
+# Hackathon - Use case walkthrough
 
-The Python console app provides the API calls needed to implement the use case.
+The Python console app provides the API calls needed to implement the use case presented in the Hackathon on 2021 3th of March.
 1- Get the list of available domains in bSDD
 2- Get the classes linked to IfcWall from NL-SfB 2005 domain 
 3- Get the properties available in (16.21) funderingsconstructies; keerwanden, grondkerende wanden classification
