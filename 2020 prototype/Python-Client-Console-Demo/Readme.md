@@ -61,7 +61,9 @@ Call Get_Classes_Linked_To_IFC()
 ## Parameters
 
 Need to input the parameters into the console
+
 	- DomainNamespaceUri : http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2
+	
 	- RelatedIfcEntity: IfcWall
 	
 ## Result
@@ -106,7 +108,9 @@ Call Get_Classification_Properties()
 ## Parameters
 
 Need to input the parameters into the console
+
 	- ClassificationUri : http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2/class/16.21
+	
 	- ClassificationName: 16.21 (we just use it for a nice filename, nothing else)
 	
 ## Result
