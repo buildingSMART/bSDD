@@ -19,6 +19,28 @@ namespace bSDD.DemoClientConsole
             return JObject.Parse(idToken);
         }
 
+        public static async Task<string> GetHttpContent(string url)
+        {
+            var httpClient = new HttpClient();
+            HttpResponseMessage response;
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Get, url);
+                response = await httpClient.SendAsync(request).ConfigureAwait(false);
+
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                if (!response.IsSuccessStatusCode)
+                {
+                    return $"{response.StatusCode} - {response.ReasonPhrase} - {content}";
+                }
+                return content;
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+        }
+
         /// <summary>
         /// Perform an HTTP GET request to a URL using an HTTP Authorization header
         /// </summary>

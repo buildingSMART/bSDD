@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Security.Policy;
 using System.Text;
+using System.Threading.Tasks;
 using bSDD.DemoClientConsole.Contract;
 using Microsoft.Identity.Client;
 using Newtonsoft.Json;
@@ -35,51 +36,36 @@ namespace bSDD.DemoClientConsole
         public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
 
         // For accessing API endpoint
-        public static string ApiEndpoint = "https://bsdd-prototype.azure-api.net/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/etim/etim-7.0") + "&SearchText=room";
+        public static string ApiEndpointSecure = "https://bsdd-prototype.azure-api.net/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/etim/etim-7.0") + "&SearchText=room";
+
+        private static IPublicClientApplication publicClientApp;
 
         public static int Main(string[] args)
         {
-            var publicClientApp = PublicClientApplicationBuilder.Create(ClientId)
+            publicClientApp = PublicClientApplicationBuilder.Create(ClientId)
                 .WithB2CAuthority(AuthoritySignUpSignIn)
                 .WithRedirectUri(RedirectUri)
                 .WithLogging(Log, LogLevel.Info, false) // don't log PII details on a regular basis
                 .Build();
 
             TokenCacheHelper.Bind(publicClientApp.UserTokenCache);
-            AuthenticationResult authResult = null;
-            try
-            {
-                var accounts = publicClientApp.GetAccountsAsync(PolicySignUpSignIn).GetAwaiter().GetResult();
-                
-                authResult = publicClientApp.AcquireTokenSilent(ApiScopes, accounts.FirstOrDefault())
-                    .ExecuteAsync().GetAwaiter().GetResult();
 
-                DisplayUserInfo(authResult);
-            }
-            catch (MsalUiRequiredException)
+            Console.WriteLine("Press L to clear the token cache before continuing. Any other character just continues.");
+            var keyInfo = Console.ReadKey();
+
+            if (keyInfo.KeyChar == 'l' || keyInfo.KeyChar == 'L')
             {
-                Console.WriteLine("You need to sign-in first");
-                try
-                {
-                    authResult = Helpers.SignIn(publicClientApp, ApiScopes, AuthorityResetPassword, null).GetAwaiter().GetResult();
-                    DisplayUserInfo(authResult);
-                }
-                catch (Exception e)
-                {
-                    return ExitWithError(e.ToString());
-                }
-            }
-            catch (Exception ex)
-            {
-                return ExitWithError($"Error Acquiring Token Silently:{Environment.NewLine}{ex}");
+                Console.WriteLine();
+                Console.WriteLine("Clearing token cache...");
+                ClearTokenCache().GetAwaiter().GetResult();
             }
 
-            Console.WriteLine($"Calling {ApiEndpoint}...");
-            var resultText = Helpers.GetHttpContentWithToken(ApiEndpoint, authResult.AccessToken).GetAwaiter().GetResult();
-            if (resultText.Contains("Unauthorized"))
+            Console.WriteLine("Reading data...");
+            if (SecuredExample(ApiEndpointSecure, out var resultText, out var exitWithError))
             {
-                throw new UnauthorizedAccessException(resultText);
+                return exitWithError;
             }
+
             var searchResult = JsonConvert.DeserializeObject<SearchResultContract>(resultText);
             Console.WriteLine("Result received");
             Console.WriteLine($"Number of classifications found: {searchResult.NumberOfClassificationsFound}");
@@ -97,6 +83,63 @@ namespace bSDD.DemoClientConsole
             return 0;
         }
 
+        private static bool SecuredExample(string fullUrl, out string resultText, out int exitWithError)
+        {
+            AuthenticationResult authResult;
+            try
+            {
+                var accounts = publicClientApp.GetAccountsAsync(PolicySignUpSignIn).GetAwaiter().GetResult();
+                var account = accounts.FirstOrDefault();
+                authResult = publicClientApp.AcquireTokenSilent(ApiScopes, account)
+                    .ExecuteAsync().GetAwaiter().GetResult();
+
+                DisplayUserInfo(authResult);
+            }
+            catch (MsalUiRequiredException)
+            {
+                Console.WriteLine("You need to sign-in first");
+                try
+                {
+                    authResult = Helpers.SignIn(publicClientApp, ApiScopes, AuthorityResetPassword, null).GetAwaiter().GetResult();
+                    DisplayUserInfo(authResult);
+                }
+                catch (Exception e)
+                {
+                    exitWithError = ExitWithError(e.ToString());
+                    resultText = string.Empty;
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                exitWithError = ExitWithError($"Error Acquiring Token Silently:{Environment.NewLine}{ex}");
+                resultText = string.Empty;
+                return true;
+            }
+
+            Console.WriteLine($"Calling {fullUrl}...");
+            resultText = Helpers.GetHttpContentWithToken(fullUrl, authResult.AccessToken).GetAwaiter().GetResult();
+            if (resultText.Contains("Unauthorized"))
+            {
+                throw new UnauthorizedAccessException(resultText);
+            }
+
+            exitWithError = 0;
+            return false;
+        }
+
+        private static async Task ClearTokenCache()
+        {
+            var accounts = (await publicClientApp.GetAccountsAsync(PolicySignUpSignIn)).ToList();
+
+            // clear the cache
+            while (accounts.Any())
+            {
+                await publicClientApp.RemoveAsync(accounts.First());
+                accounts = (await publicClientApp.GetAccountsAsync(PolicySignUpSignIn)).ToList();
+            }
+        }
+
         private static int ExitWithError(string error)
         {
             Console.WriteLine(error);
@@ -111,7 +154,7 @@ namespace bSDD.DemoClientConsole
         {
             if (authResult != null)
             {
-                JObject user = Helpers.ParseIdToken(authResult.IdToken);
+                var user = Helpers.ParseIdToken(authResult.IdToken);
 
                 Console.WriteLine($"Name: {user["name"]}");
                 Console.WriteLine($"User Identifier: {user["oid"]}");
@@ -131,8 +174,8 @@ namespace bSDD.DemoClientConsole
 
         private static void Log(LogLevel level, string message, bool containsPii)
         {
-            string logs = ($"{level} {message}");
-            StringBuilder sb = new StringBuilder();
+            var logs = ($"{level} {message}");
+            var sb = new StringBuilder();
             sb.Append(logs);
             File.AppendAllText(System.Reflection.Assembly.GetExecutingAssembly().Location + ".msalLogs.txt", sb.ToString());
             sb.Clear();
