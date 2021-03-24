@@ -118,13 +118,15 @@ classifications
 | IsDynamic                     | Boolean      | No        | No            | Default: false If this is a dynamic property, the value is dependent on the parameters provided in field DynamicParameterProperties                  |
 | DynamicParameterPropertyCodes | List of text | No        | No            | List of codes of properties which are parameters of the function for a dynamic property                                                              |
 | Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list [units](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/reference-lists/units.csv).            |
-| PossibleValues                | List of text | No        | Yes           | In case the value of the property is restricted to a limited list of values, list of values E.g. “Heating”, “Cooling”, “Heating and Cooling”         |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
 | MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive |
 | MaxInclusive            | Real     | No        | No            | Maximum allowed value, inclusive - do not fill both 'inclusive' and 'exclusive' values |
 | MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive |
 | MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive - do not fill both 'inclusive' and 'exclusive' values |
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+
+Note: the "PossibleValues" field has been deprecated.
 
 ## ClassificationProperty type
 
@@ -144,7 +146,9 @@ classifications
 | MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive. Overrides the value defined for the Property |
 | MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
-| Values              | List of text   | No  | Yes           | List of texts with allowed values for the property, e.g. ["brown", "white", "yellow"]. If property is of type boolean, there is no need to add ["true", "false"] here |
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+
+Note: the "Values" field has been deprecated.
 
 \* One of those is required.
 
@@ -155,4 +159,13 @@ classifications
 | RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://bsdd.buildingsmart.org/a/etim/etim-7.0/class/EC002987|
 
+## PropertyValue type
 
+Note: adding translations of the PropertyValue is not supported yet
+
+| Field                    | DataType | Required? | Translatable? | Description                                                                 |
+|--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
+| Code             | Text     | No       | No            | Code as unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value    |
+| Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
+| Description | Text     | No       | Yes            | A description of the value|
+| SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the Property it belongs to|
