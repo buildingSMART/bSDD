@@ -147,6 +147,7 @@ Note: the "PossibleValues" field has been deprecated.
 | MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
 
 Note: the "Values" field has been deprecated.
 
@@ -169,3 +170,10 @@ Note: adding translations of the PropertyValue is not supported yet
 | Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     | No       | Yes            | A description of the value|
 | SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the Property it belongs to|
+
+## PropertyRelation type
+
+| Field                    | DataType | Required? | Translatable? | Description                                                                 |
+|--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
+| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
+| RelatedPropertyUri | Text     | Yes       | No            | Full namespace URI of the related property. Can be to same or different domain.|
