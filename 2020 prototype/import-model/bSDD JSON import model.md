@@ -158,7 +158,7 @@ Note: the "Values" field has been deprecated.
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
-| RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://bsdd.buildingsmart.org/a/etim/etim-7.0/class/EC002987|
+| RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
 
 ## PropertyValue type
 
@@ -170,6 +170,7 @@ Note: adding translations of the PropertyValue is not supported yet
 | Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     | No       | Yes            | A description of the value|
 | SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the Property it belongs to|
+| NamespaceUri| Text | No | No | You can provide your own Namespace Uri (must be globally unique). If you specify a code but no Namespace Uri, the "identifier.buildingsmart.org" namespace uri will be assigned|
 
 ## PropertyRelation type
 
