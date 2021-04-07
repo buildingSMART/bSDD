@@ -170,7 +170,7 @@ Note: adding translations of the PropertyValue is not supported yet
 | Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     | No       | Yes            | A description of the value|
 | SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the Property it belongs to|
-| NamespaceUri| Text | No | No | You can provide your own Namespace Uri (must be globally unique). If you specify a code but no Namespace Uri, the "identifier.buildingsmart.org" namespace uri will be assigned|
+| NamespaceUri| Text | No | No | You can provide your own Namespace Uri (must be globally unique).|
 
 ## PropertyRelation type
 
