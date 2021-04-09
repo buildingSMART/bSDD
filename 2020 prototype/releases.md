@@ -1,6 +1,6 @@
 # bSDD API Releases
 
-Full details of the contracts returned by the API's can be found on [bSDD swagger]https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html|
+Full details of the contracts returned by the API's can be found on [bSDD swagger](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html).
 If you need a more thorough explanation of the returned attributes, you can find most of them in Table 1 and Table 2 of the ISO 23386:2020(E) specifications.
 
 ## Classification v3
