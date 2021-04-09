@@ -15,12 +15,20 @@ namespace bSDD.DemoClientConsole
     public static class Program
     {
         // For authentication & authorization (those items should be in a config file)
-        public static readonly string TenantName = "buildingsmartservices";
+
+        // Prototype B2C environment
+        // public static readonly string TenantName = "buildingsmartservices";
+        // public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
+
+        // Test B2C environment
+        public static readonly string TenantName = "buildingsmartdd";
+        public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
+
+        public static readonly string RedirectUri = $"https://{TenantName}.b2clogin.com/oauth2/nativeclient";
+
         private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
         private static readonly string AzureAdB2CHostname = $"{TenantName}.b2clogin.com";
-        public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
         // public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
-        public static readonly string RedirectUri = "https://buildingsmartservices.b2clogin.com/oauth2/nativeclient";
 
         // Not case sensitive
         public static string PolicySignUpSignIn = "b2c_1_signupsignin";
