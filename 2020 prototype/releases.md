@@ -34,7 +34,7 @@ If you need a more thorough explanation of the returned attributes, you can find
 |subdivisionsOfUse|string (semicolon separated list of codes)|List of string **breaking change with v1**||
 |units|string (semicolon separated list of codes)|List of string **breaking change with v1**||
 |dynamicParameterPropertyCodes|n/a|List of string|List of property codes of properties that are a parameter of the dynamic function (only applicable if isDynamic is true)|
-|connectedProperties|string (semicolon separated list of codes)|--remove--> as it is replaced by connectedPropertyCodes||
+|connectedProperties|string (semicolon separated list of codes)|--removed-- as it is replaced by connectedPropertyCodes||
 |connectedPropertyCodes|n/a|List of string||
 |possibleValuesList|List of string|--removed-- Replaced by possibleValues  **breaking change with v1**||
 |possibleValues|n/a|List of PropertyValueContract|For details of the PropertyValueContract contract see [bSDD swagger](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html)|
@@ -58,3 +58,13 @@ Added:
 |--------------------------|----------|-----------------------------------------------------------------------------|
 |New|PropertyRelations attribute within Property|Property relations can now be imported. See [bSDD import model](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/bSDD%20JSON%20import%20model.md) for more details|
 |New|AllowedValues attribute within Property|Import of Property values is extended, use the new "AllowedValues" attribute. The "PossibleValues" attribute is still supported but you're encouraged to use the new "AllowedValues" attribute. See [bSDD import model](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/import-model/bSDD%20JSON%20import%20model.md) for more details|
+
+## RequestExportFile
+
+2021-04
+
+Because this is still a preview version, there's no updated version number.
+
+|Change|What|Description|
+|--------------------------|----------|-----------------------------------------------------------------------------|
+|Change|The Values element within ClassificationProperty is replaced by element PossibleValues|See [bSDD export xsd](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/Exports/ExportDomain.xsd) for all details|
