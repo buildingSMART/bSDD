@@ -5,6 +5,7 @@ using System.Net;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using bSDD.DemoClientConsole.ApiHelper;
 using bSDD.DemoClientConsole.Contract;
 using Microsoft.Identity.Client;
 using Newtonsoft.Json;
@@ -17,12 +18,12 @@ namespace bSDD.DemoClientConsole
         // For authentication & authorization (those items should be in a config file)
 
         // Prototype B2C environment
-        // public static readonly string TenantName = "buildingsmartservices";
-        // public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
+        public static readonly string TenantName = "buildingsmartservices";
+        public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
 
         // Test B2C environment
-        public static readonly string TenantName = "buildingsmartdd";
-        public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
+        //public static readonly string TenantName = "buildingsmartdd";
+        //public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
 
         public static readonly string RedirectUri = $"https://{TenantName}.b2clogin.com/oauth2/nativeclient";
 
@@ -44,7 +45,8 @@ namespace bSDD.DemoClientConsole
         public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
 
         // For accessing API endpoint
-        public static string ApiEndpointSecure = "https://bsdd-prototype.azure-api.net/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/etim/etim-7.0") + "&SearchText=room";
+        public const string ApiBaseUrl = "https://bsdd-prototype.azure-api.net";
+        public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/etim/etim-7.0") + "&SearchText=room";
 
         private static IPublicClientApplication publicClientApp;
 
@@ -69,7 +71,8 @@ namespace bSDD.DemoClientConsole
             }
 
             Console.WriteLine("Reading data...");
-            if (SecuredExample(ApiEndpointSecure, out var resultText, out var exitWithError))
+            if (SecuredExample(SearchListUrl, out var resultText, out var exitWithError))
+            // if (SecuredGraphqlExample(ApiBaseUrl, out var resultText, out var exitWithError))
             {
                 return exitWithError;
             }
@@ -93,35 +96,11 @@ namespace bSDD.DemoClientConsole
 
         private static bool SecuredExample(string fullUrl, out string resultText, out int exitWithError)
         {
-            AuthenticationResult authResult;
-            try
+            var authResult = Authenticate();
+            if (authResult == null)
             {
-                var accounts = publicClientApp.GetAccountsAsync(PolicySignUpSignIn).GetAwaiter().GetResult();
-                var account = accounts.FirstOrDefault();
-                authResult = publicClientApp.AcquireTokenSilent(ApiScopes, account)
-                    .ExecuteAsync().GetAwaiter().GetResult();
-
-                DisplayUserInfo(authResult);
-            }
-            catch (MsalUiRequiredException)
-            {
-                Console.WriteLine("You need to sign-in first");
-                try
-                {
-                    authResult = Helpers.SignIn(publicClientApp, ApiScopes, AuthorityResetPassword, null).GetAwaiter().GetResult();
-                    DisplayUserInfo(authResult);
-                }
-                catch (Exception e)
-                {
-                    exitWithError = ExitWithError(e.ToString());
-                    resultText = string.Empty;
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                exitWithError = ExitWithError($"Error Acquiring Token Silently:{Environment.NewLine}{ex}");
                 resultText = string.Empty;
+                exitWithError = 1;
                 return true;
             }
 
@@ -134,6 +113,64 @@ namespace bSDD.DemoClientConsole
 
             exitWithError = 0;
             return false;
+        }
+
+        // In the prototype the GraphQL endpoint is not secured yet. For production it will be
+        private static bool SecuredGraphqlExample(string baseUrl, out string resultText, out int exitWithError)
+        {
+            const string GraphQlExample = @"{domain(namespaceUri: ""http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3"") { name version license languageCode } }";
+
+            var authResult = Authenticate();
+            if (authResult == null)
+            {
+                resultText = string.Empty;
+                exitWithError = 1;
+                return true;
+            }
+
+            Console.WriteLine($"Calling {baseUrl}...");
+            resultText = SimpleBsddClient.PostGraphQL(baseUrl, GraphQlExample, authResult.AccessToken).GetAwaiter().GetResult();
+            if (resultText.Contains("Unauthorized"))
+            {
+                throw new UnauthorizedAccessException(resultText);
+            }
+
+            exitWithError = 0;
+            return false;
+        }
+
+        private static AuthenticationResult Authenticate()
+        {
+            AuthenticationResult authResult;
+            try
+            {
+                var accounts = publicClientApp.GetAccountsAsync(PolicySignUpSignIn).GetAwaiter().GetResult();
+                var account = accounts.FirstOrDefault();
+                authResult = publicClientApp.AcquireTokenSilent(ApiScopes, account).ExecuteAsync().GetAwaiter().GetResult();
+
+                DisplayUserInfo(authResult);
+            }
+            catch (MsalUiRequiredException)
+            {
+                Console.WriteLine("You need to sign-in first...");
+                try
+                {
+                    authResult = Helpers.SignIn(publicClientApp, ApiScopes, AuthorityResetPassword, null).GetAwaiter().GetResult();
+                    DisplayUserInfo(authResult);
+                }
+                catch (Exception e)
+                {
+                    ExitWithError(e.ToString());
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                ExitWithError($"Error Acquiring Token Silently:{Environment.NewLine}{ex}");
+                return null;
+            }
+
+            return authResult;
         }
 
         private static async Task ClearTokenCache()

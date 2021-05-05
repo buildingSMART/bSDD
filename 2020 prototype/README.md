@@ -41,6 +41,11 @@ You can get the API contract information at [bSDD API contract](https://bs-dd-ap
 
 Don’t forget to check the “read” scope!
 
+## GraphQL
+The data can also be accessed via GraphQL.
+[GraphiQL playground](https://bs-dd-api-prototype.azurewebsites.net/graphiql).
+The url to send your GraphQL requests to: https://bs-dd-api-prototype.azurewebsites.net/graphql. 
+
 ## Authentication
 For authentication we use Azure Active Directory B2C.
 At this moment only the SearchList API method is secured. This will change when we’re moving to version 1.0 of the API, then probably all API methods will be secured.
@@ -70,6 +75,8 @@ These are the settings you can use for demonstration purposes for a Dekstop clie
 
 * ApiScopes: { "https://buildingsmartservices.onmicrosoft.com/api/read" }
 * BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
+
+The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1_signupsignin (not the "tfp" part!).
 
 If you are developing a Web App that’s going to use the bSDD API, let us know (bsdd_support@buildingsmart.org). The RedirectURI needs to be configured in Azure AD.
 

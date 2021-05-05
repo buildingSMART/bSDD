@@ -70,6 +70,35 @@ namespace bSDD.DemoClientConsole
             }
         }
 
+        /// <summary>
+        /// Perform an HTTP POST request to a URL using an HTTP Authorization header
+        /// </summary>
+        /// <returns>String containing the results of the GET operation</returns>
+        public static async Task<string> PostHttpContentWithToken(string url, string token, string jsonContent)
+        {
+            var httpClient = new HttpClient();
+            HttpResponseMessage response;
+            try
+            {
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var stringContent = new StringContent(jsonContent);
+                stringContent.Headers.Remove("Content-Type");
+                stringContent.Headers.Add("Content-Type", $"application/json");
+                response = await httpClient.PostAsync(url, stringContent);
+
+                var content = await response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                {
+                    return $"{response.StatusCode} - {response.ReasonPhrase} - {content}";
+                }
+                return content;
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+        }
+
         public static async Task<AuthenticationResult> SignIn(IPublicClientApplication app, string[] apiScopes, string authorityResetPassword, IntPtr? windowHandle)
         {
             AuthenticationResult authResult;

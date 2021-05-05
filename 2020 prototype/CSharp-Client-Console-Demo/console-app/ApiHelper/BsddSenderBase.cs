@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace bSDD.DemoClientConsole.ApiHelper
 {
+    // Under construction
     public abstract class BsddSenderBase
     {
         private readonly HttpClient _httpClient;
