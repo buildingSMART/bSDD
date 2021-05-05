@@ -76,7 +76,7 @@ These are the settings you can use for demonstration purposes for a Dekstop clie
 * ApiScopes: { "https://buildingsmartservices.onmicrosoft.com/api/read" }
 * BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
 
-The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1_signupsignin (not the "tfp" part!).
+The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1_signupsignin (note the "tfp" part!).
 
 If you are developing a Web App that’s going to use the bSDD API, let us know (bsdd_support@buildingsmart.org). The RedirectURI needs to be configured in Azure AD.
 
