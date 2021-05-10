@@ -32,9 +32,15 @@ namespace bSDD.DemoClientConsole
         // public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
 
         // Not case sensitive
+        // IMPORTANT These values are valid until June 30, 2021
         public static string PolicySignUpSignIn = "b2c_1_signupsignin";
         public static string PolicyEditProfile = "b2c_1_profileediting";
         public static string PolicyResetPassword = "b2c_1_passwordreset";
+
+        // IMPORTANT Use these values as from June 30, 2021
+        // public static string PolicySignUpSignIn = "b2c_1a_signupsignin_c";
+        // public static string PolicyEditProfile = "b2c_1a_profileedit_c";
+        // public static string PolicyResetPassword = "b2c_1a_passwordreset_c";
 
         // Not case sensitive
         public static string[] ApiScopes = { "https://buildingsmartservices.onmicrosoft.com/api/read" };
