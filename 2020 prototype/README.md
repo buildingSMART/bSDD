@@ -1,8 +1,12 @@
 This page provides some info about the new buildingSMART Data Dictionary.
 
-**IMPORTANT**: the bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
+**IMPORTANT** For developers using the secured sections: the security policies have changed a bit. The only thing you have to do is replace "b2c_1_signupsignin" by "b2c_1a_signupsignin_c". If you also implemented the password reset and/or profile edit flow, you also need to change "b2c_1_passwordreset" into "b2c_1a_passwordreset_c" and "b2c_1_profileediting" into "b2c_1a_profileedit_c".
+The old policies will be ok until august 2021.
 
-## Important links
+
+The bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
+
+## Very useful links
 
  * FAQ (what does it cost? what is it? how does it relate to IFC? etc..): https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/
  * The API URL [beware: this is not live yet!] https://API.bsdd.buildingsmart.org/ | Until the API URL goes live you can use https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html More info on the API is further down on this page.
@@ -69,14 +73,14 @@ These are the settings you can use for demonstration purposes for a Dekstop clie
 * AzureAdB2Chostname: "buildingsmartservices.b2clogin.com"
 * ClientId: "4aba821f-d4ff-498b-a462-c2837dbbba70"
 * RedirectUri: "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect"
-* PolicySignUpSignIn: "b2c_1_signupsignin"
-* PolicyEditProfile: "b2c_1_profileediting"
-* PolicyResetPassword: "b2c_1_passwordreset"
+* PolicySignUpSignIn: "b2c_1a_signupsignin_c"
+* PolicyEditProfile: "b2c_1a_profileedit_c"
+* PolicyResetPassword: "b2c_1a_passwordreset_c"
 
 * ApiScopes: { "https://buildingsmartservices.onmicrosoft.com/api/read" }
 * BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
 
-The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1_signupsignin (note the "tfp" part!).
+The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1a_signupsignin_c (note the "tfp" part!).
 
 If you are developing a Web App that’s going to use the bSDD API, let us know (bsdd_support@buildingsmart.org). The RedirectURI needs to be configured in Azure AD.
 
