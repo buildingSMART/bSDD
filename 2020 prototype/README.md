@@ -1,7 +1,7 @@
 This page provides some info about the new buildingSMART Data Dictionary.
 
-**IMPORTANT** For developers using the secured sections: the security policies have changed a bit. The only thing you have to do is replace "b2c_1_signupsignin" by "b2c_1a_signupsignin_c". If you also implemented the password reset and/or profile edit flow, you also need to change "b2c_1_passwordreset" into "b2c_1a_passwordreset_c" and "b2c_1_profileediting" into "b2c_1a_profileedit_c".
-The old policies will be ok until august 2021.
+**IMPORTANT change per June 30, 2021** For developers using the secured sections: the security policies will change a bit.
+Per June 30, 2021 you have to replace "b2c_1_signupsignin" by "b2c_1a_signupsignin_c". If you also implemented the password reset and/or profile edit flow, you also need to change "b2c_1_passwordreset" into "b2c_1a_passwordreset_c" and "b2c_1_profileediting" into "b2c_1a_profileedit_c".
 
 
 The bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
