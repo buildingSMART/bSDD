@@ -4,6 +4,8 @@ This page provides some info about the new buildingSMART Data Dictionary.
 Per June 30, 2021 you have to replace "b2c_1_signupsignin" by "b2c_1a_signupsignin_c". If you also implemented the password reset and/or profile edit flow, you also need to change "b2c_1_passwordreset" into "b2c_1a_passwordreset_c" and "b2c_1_profileediting" into "b2c_1a_profileedit_c".
 It works the same, the only change is that the user needs to consent to the terms of use once at log in.
 
+**IMPORANT for GraphQL users** There is now a secured graphql API available: https://bs-dd-api-prototype.azurewebsites.net/graphqls (note the 's' at the end). When we're ready for production, only the secured API will be available! You can find example code how to access a secured bSDD API in this repository. Contact us if you need assistance implementing accessing the secured API.
+
 
 The bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
 
@@ -49,7 +51,7 @@ Don’t forget to check the “read” scope!
 ## GraphQL
 The data can also be accessed via GraphQL.
 [GraphiQL playground](https://bs-dd-api-prototype.azurewebsites.net/graphiql).
-The url to send your GraphQL requests to: https://bs-dd-api-prototype.azurewebsites.net/graphql. 
+The url to send your GraphQL requests to: https://bs-dd-api-prototype.azurewebsites.net/graphql. For accessing this URL no authentication is needed. There is also a secured API available: https://bs-dd-api-prototype.azurewebsites.net/graphqls. When moving to production only the secured API will be avialable and no GraphiQL playground.
 
 ## Authentication
 For authentication we use Azure Active Directory B2C.

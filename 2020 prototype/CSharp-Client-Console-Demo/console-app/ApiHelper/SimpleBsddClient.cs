@@ -8,7 +8,7 @@ namespace bSDD.DemoClientConsole.ApiHelper
     {
         public static async Task<string> PostGraphQL(string baseUrl, string graphqlRequest, string accessToken)
         {
-            var url = $"{baseUrl}/graphql";
+            var url = $"{baseUrl}/graphqls";
 
             Console.WriteLine($"Calling {url}...");
             var jsonContent = @"{ ""query"": """ + graphqlRequest.Replace("\"", "\\\"") + @"""}";

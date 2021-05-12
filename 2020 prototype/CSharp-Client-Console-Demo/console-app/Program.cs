@@ -77,9 +77,12 @@ namespace bSDD.DemoClientConsole
             }
 
             Console.WriteLine("Reading data...");
-            if (SecuredExample(SearchListUrl, out var resultText, out var exitWithError))
-            // if (SecuredGraphqlExample(ApiBaseUrl, out var resultText, out var exitWithError))
+            //if (SecuredExample(SearchListUrl, out var resultText, out var exitWithError))
+            if (SecuredGraphqlExample(ApiBaseUrl, out var resultText, out var exitWithError))
             {
+                Console.WriteLine();
+                Console.WriteLine("Press Enter to close");
+                Console.ReadLine();
                 return exitWithError;
             }
 
@@ -134,11 +137,11 @@ namespace bSDD.DemoClientConsole
                 return true;
             }
 
-            Console.WriteLine($"Calling {baseUrl}...");
             resultText = SimpleBsddClient.PostGraphQL(baseUrl, GraphQlExample, authResult.AccessToken).GetAwaiter().GetResult();
-            if (resultText.Contains("Unauthorized"))
+            if (resultText.StartsWith("Not OK"))
             {
-                throw new UnauthorizedAccessException(resultText);
+                exitWithError = 1;
+                return true;
             }
 
             exitWithError = 0;

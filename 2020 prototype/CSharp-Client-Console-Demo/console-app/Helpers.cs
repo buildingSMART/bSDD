@@ -89,7 +89,7 @@ namespace bSDD.DemoClientConsole
                 var content = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                 {
-                    return $"{response.StatusCode} - {response.ReasonPhrase} - {content}";
+                    return $"Not OK: {response.StatusCode} - {response.ReasonPhrase} - {content}";
                 }
                 return content;
             }
