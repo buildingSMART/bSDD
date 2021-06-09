@@ -20,27 +20,27 @@ GraphQL Endpoint: https://bs-dd-api-prototype.azurewebsites.net/graphql/
 ## Example data queries
 
 Query to get the list of available languages:
-
+```
 {
   languages {
     isocode
   }
 }
-
+```
 ----
 
 Query to get list of country codes:
-
+```
 {
   countries {
     code
   }
 }
-
+```
 ----
 
 You can combine those queries into one:
-
+```
 {
   languages {
     isocode
@@ -50,11 +50,11 @@ You can combine those queries into one:
     code
   }
 }
-
+```
 ----
 
 Query to search for classifications within a domain:
-
+```
 {
   domain(namespaceUri : "http://identifier.buildingsmart.org/uri/etim/etim-8.0") {
     namespaceUri
@@ -73,11 +73,11 @@ Query to search for classifications within a domain:
     }
   }
 }
-
+```
 ----
 
 Query to get details for a classification, using variables:
-
+```
 query ($domainNamespaceUri: String!, $namespaceUri: String!) {
   domain(namespaceUri: $domainNamespaceUri) {
     name
@@ -122,18 +122,18 @@ query ($domainNamespaceUri: String!, $namespaceUri: String!) {
     }
   }
 }
-
+```
 The query variable section defines the variables:
-
+```
 {
   "domainNamespaceUri": "http://identifier.buildingsmart.org/uri/etim/etim-8.0",
   "namespaceUri": "http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC003020"
 }
-
+```
 ## Example meta data queries
 
 In GraphQL you can also execute queries on the GraphQL schema (also known as "Introspection"). You can use that to get, for example, the available fields or queries:
-
+```
 {
   __schema {
     types {
@@ -164,5 +164,5 @@ query availableQueries {
     }
   }
 }
-
+```
 More examples of Introspection can be found at: https://graphql.org/learn/introspection/
