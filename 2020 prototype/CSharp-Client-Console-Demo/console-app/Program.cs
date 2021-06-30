@@ -22,8 +22,9 @@ namespace bSDD.DemoClientConsole
         public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
 
         // Test B2C environment
-        //public static readonly string TenantName = "buildingsmartdd";
-        //public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
+        // public static readonly string TenantName = "buildingsmartdd";
+        // public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
+
 
         public static readonly string RedirectUri = $"https://{TenantName}.b2clogin.com/oauth2/nativeclient";
 
@@ -33,17 +34,17 @@ namespace bSDD.DemoClientConsole
 
         // Not case sensitive
         // IMPORTANT These values are valid until June 30, 2021
-        public static string PolicySignUpSignIn = "b2c_1_signupsignin";
-        public static string PolicyEditProfile = "b2c_1_profileediting";
-        public static string PolicyResetPassword = "b2c_1_passwordreset";
+        // public static string PolicySignUpSignIn = "b2c_1_signupsignin";
+        // public static string PolicyEditProfile = "b2c_1_profileediting";
+        // public static string PolicyResetPassword = "b2c_1_passwordreset";
 
         // IMPORTANT Use these values as from June 30, 2021
-        // public static string PolicySignUpSignIn = "b2c_1a_signupsignin_c";
-        // public static string PolicyEditProfile = "b2c_1a_profileedit_c";
-        // public static string PolicyResetPassword = "b2c_1a_passwordreset_c";
+        public static string PolicySignUpSignIn = "b2c_1a_signupsignin_c";
+        public static string PolicyEditProfile = "b2c_1a_profileedit_c";
+        public static string PolicyResetPassword = "b2c_1a_passwordreset_c";
 
         // Not case sensitive
-        public static string[] ApiScopes = { "https://buildingsmartservices.onmicrosoft.com/api/read" };
+        public static string[] ApiScopes = { $"https://{TenantName}.onmicrosoft.com/api/read" };
 
         private static string AuthorityBase = $"https://{AzureAdB2CHostname}/tfp/{Tenant}/";
         public static string AuthoritySignUpSignIn = $"{AuthorityBase}{PolicySignUpSignIn}";
@@ -51,7 +52,7 @@ namespace bSDD.DemoClientConsole
         public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
 
         // For accessing API endpoint
-        public const string ApiBaseUrl = "https://bsdd-prototype.azure-api.net";
+        public const string ApiBaseUrl = "https://bs-dd-api-prototype.azurewebsites.net";
         public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/etim/etim-7.0") + "&SearchText=room";
 
         private static IPublicClientApplication publicClientApp;
@@ -77,8 +78,8 @@ namespace bSDD.DemoClientConsole
             }
 
             Console.WriteLine("Reading data...");
-            //if (SecuredExample(SearchListUrl, out var resultText, out var exitWithError))
-            if (SecuredGraphqlExample(ApiBaseUrl, out var resultText, out var exitWithError))
+            if (SecuredExample(SearchListUrl, out var resultText, out var exitWithError))
+            //if (SecuredGraphqlExample(ApiBaseUrl, out var resultText, out var exitWithError))
             {
                 Console.WriteLine();
                 Console.WriteLine("Press Enter to close");
