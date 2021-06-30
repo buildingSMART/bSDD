@@ -53,6 +53,8 @@ The data can also be accessed via GraphQL.
 [GraphiQL playground](https://bs-dd-api-prototype.azurewebsites.net/graphiql).
 The url to send your GraphQL requests to: https://bs-dd-api-prototype.azurewebsites.net/graphql. For accessing this URL no authentication is needed. There is also a secured API available: https://bs-dd-api-prototype.azurewebsites.net/graphqls. When moving to production only the secured API will be avialable and no GraphiQL playground.
 
+[Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/2020%20prototype/GraphQL/bSDD%20and%20GraphQL.md)
+
 ## Authentication
 For authentication we use Azure Active Directory B2C.
 At this moment only the SearchList API method is secured. This will change when we’re moving to version 1.0 of the API, then probably all API methods will be secured.
