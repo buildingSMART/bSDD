@@ -3,7 +3,7 @@
 You can deliver data for the buildingSMART Data Dictionary by using the bSDD
 JSON import model format. This document explains this format.
 
-Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification names](https://github.com/buildingSMART/bSDD/Model/Import%20Model/reference-lists/ifc-classification-names.csv).
+Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv).
 If you think there are reference items missing, please let us know.
 
 ## General notes
@@ -68,7 +68,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | DocumentReference         | Text                           | No        | No            | Reference to document with full or official definition of the Classification. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                       |
 | ClassificationType        | Text                           | No        | No            | Must be one of: Class ComposedProperty Domain ReferenceDocument AlternativeUse                                     |
 | ParentClassificationCode  | Text                           | No        | No            | Reference to the parent Classification. The ID in this field MUST exist in the data delivered. E.g. “ifc-00123-00” |
-| RelatedIfcEntityNamesList | List of text                   | No        | No            | References to the IFC equivalent of this Classification. See reference list [ifc classification names](https://github.com/buildingSMART/bSDD/Model/Import%20Model/reference-lists/ifc-classification-names.csv).                                      |
+| RelatedIfcEntityNamesList | List of text                   | No        | No            | References to the IFC equivalent of this Classification. See reference list [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv).                                      |
 | Synonyms                  | List of text                   | No        | Yes           |                                                                                                                    |
 | ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections                                                                                                  |
 | ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections                                                                                                  |
