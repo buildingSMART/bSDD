@@ -5,7 +5,7 @@ Per June 30, 2021 you have to replace "b2c_1_signupsignin" by "b2c_1a_signupsign
 It works the same, the only change is that the user needs to consent to the terms of use once at log in.
 
 **IMPORANT for GraphQL users** There is now a secured graphql API available:
-- prototype: https://bs-dd-api-prototype.azurewebsites.net/graphqls (note the 's' at the end).
+- prototype: https://test.bsdd.buildingsmart.org/graphqls (note the 's' at the end).
 - official release: https://api.bsdd.buildingsmart.org/graphqls
 You can find example code how to access a secured bSDD API in this repository. Contact us if you need assistance implementing accessing the secured API.
 
@@ -29,7 +29,7 @@ An example flow is:
 A typical use-case is demonstrated in SketchUp. A video of the SketchUp use-case and bSDD plugin is availalbe on https://vimeo.com/446417661/ff8b6605d3
 
 ## API contracts and testing the API
-You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [bSDD API contract, prototype](https://bs-dd-api-prototype.azurewebsites.net/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
+You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [bSDD API contract, prototype](https://test.bsdd.buildingsmart.org/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
 
 ![Swagger authorization](https://bsddprototype2020.blob.core.windows.net/public/images/swagger-authorize2.png)
 
@@ -37,12 +37,12 @@ Don’t forget to check the “read” scope!
 
 ## GraphQL
 The data can also be accessed via GraphQL.
-[GraphiQL playground](https://bs-dd-api-prototype.azurewebsites.net/graphiql).
+[GraphiQL playground](https://test.bsdd.buildingsmart.org/graphiql).
 The url to send your GraphQL requests to:
-- prototype: https://bs-dd-api-prototype.azurewebsites.net/graphql
+- prototype: https://test.bsdd.buildingsmart.org/graphql
 - official release: https://api.bsdd.buildingsmart.org/graphql
 For accessing this URL no authentication is needed. There is also a secured API available:
-- prototype: https://bs-dd-api-prototype.azurewebsites.net/graphqls
+- prototype: https://test.bsdd.buildingsmart.org/graphqls
 - official release: https://api.bsdd.buildingsmart.org/graphqls
 
 
@@ -76,7 +76,7 @@ These are the settings you can use for demonstration purposes for a Dekstop clie
 * PolicyResetPassword: "b2c_1a_passwordreset_c"
 
 * ApiScope : "https://buildingsmartservices.onmicrosoft.com/api/read"
-* BsddApiUrl: "https://bs-dd-api-prototype.azurewebsites.net"
+* BsddApiUrl: "https://test.bsdd.buildingsmart.org"
 
 The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1a_signupsignin_c (note the "tfp" part!).
 

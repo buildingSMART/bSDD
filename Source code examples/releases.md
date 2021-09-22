@@ -1,6 +1,6 @@
 # bSDD API Releases
 
-Full details of the contracts returned by the API's can be found on [bSDD swagger](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html).
+Full details of the contracts returned by the API's can be found on [bSDD swagger](https://test.bsdd.buildingsmart.org/swagger/index.html).
 If you need a more thorough explanation of the returned attributes, you can find most of them in Table 1 and Table 2 of the ISO 23386:2020(E) specifications.
 
 ## Classification v3
@@ -19,7 +19,7 @@ If you need a more thorough explanation of the returned attributes, you can find
 ||isRequired|n/a|nullable bool|Indicates if the value of the property must be filled|
 ||isWritable|n/a|nullable bool|Indicates if the value of the property can be changed|
 ||values|List of ValueType|--remove-- as it is replaced by possibleValues **breaking change with v2**||
-||possibleValues|n/a|List of ClassificationPropertyValueContract|List of possible values for the property. For details of the ClassificationPropertyValueContract contract see [bSDD swagger](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html)|
+||possibleValues|n/a|List of ClassificationPropertyValueContract|List of possible values for the property. For details of the ClassificationPropertyValueContract contract see [bSDD swagger](https://test.bsdd.buildingsmart.org/swagger/index.html)|
 ||propertyStatus|n/a|string|
 
 ## Property v2
@@ -37,7 +37,7 @@ If you need a more thorough explanation of the returned attributes, you can find
 |connectedProperties|string (semicolon separated list of codes)|--removed-- as it is replaced by connectedPropertyCodes||
 |connectedPropertyCodes|n/a|List of string||
 |possibleValuesList|List of string|--removed-- Replaced by possibleValues  **breaking change with v1**||
-|possibleValues|n/a|List of PropertyValueContract|For details of the PropertyValueContract contract see [bSDD swagger](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html)|
+|possibleValues|n/a|List of PropertyValueContract|For details of the PropertyValueContract contract see [bSDD swagger](https://test.bsdd.buildingsmart.org/swagger/index.html)|
 |dimensionAmountOfSubstance|n/a|integer|The Amount of substance value of the Dimension attribute|
 |dimensionElectricCurrent|n/a|integer|The Electric current value of the Dimension attribute|
 |dimensionLength|n/a|integer|The Length value of the Dimension attribute|

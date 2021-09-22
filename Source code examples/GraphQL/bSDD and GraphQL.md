@@ -14,8 +14,8 @@ For some scenario's using GraphQL can be more efficient, but there are still lot
 
 The bSDD API also provides a GraphQL endpoint and the prototype environment also has a playground:
 
-Playground: https://bs-dd-api-prototype.azurewebsites.net/graphiql/
-GraphQL Endpoint: https://bs-dd-api-prototype.azurewebsites.net/graphql/
+Playground: https://test.bsdd.buildingsmart.org/graphiql/
+GraphQL Endpoint: https://test.bsdd.buildingsmart.org/graphql/
 
 ## Example data queries
 

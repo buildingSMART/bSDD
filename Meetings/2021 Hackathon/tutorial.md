@@ -33,7 +33,7 @@ Main resource location of the bSDD API: https://github.com/buildingSMART/bSDD/tr
 Authenticated call to the bSDD API from a .NET Console App: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo
 Azure AD B2C documentation home page: http://aka.ms/aadb2c
 More Azure AD B2C code samples: https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples
-The API swagger page: https://bs-dd-api-prototype.azurewebsites.net/swagger
+The API swagger page: https://test.bsdd.buildingsmart.org/swagger
 
 ## Steps
 
@@ -49,7 +49,7 @@ Prepare your app for doing a HTTP request to the buildingSMART Data Dictionary A
 How to do this depends a lot on the language you use for building your app. If you're using .NET and C#, have a look at the demo console app: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo
 
 Call the Domain API to get a list of all domains.
-API url: https://bs-dd-api-prototype.azurewebsites.net/api/Domain/v2
+API url: https://test.bsdd.buildingsmart.org/api/Domain/v2
 query parameters: -none-
 
 Response body looks like:
@@ -87,7 +87,7 @@ Provide one of the Domain NamespaceUris from the list received in the previous s
 Optionally provide some text to search for or provide an official IFC entity name to get even more specific results.
 Not all domains have RelatedIfcName(s) available.
 
-API url: https://bs-dd-api-prototype.azurewebsites.net/api/SearchListOpen/v2
+API url: https://test.bsdd.buildingsmart.org/api/SearchListOpen/v2
 query parameters: DomainNamespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3&SearchText=bridge
 
 Response body looks like:
@@ -119,7 +119,7 @@ Response body looks like:
 
 Call the Classification API with one of the Classification NamespaceUris received via the SearchList API.
 
-API url: https://bs-dd-api-prototype.azurewebsites.net/api/Classification/v2
+API url: https://test.bsdd.buildingsmart.org/api/Classification/v2
 query parameters: namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3%2Fclass%2FIfcBridge&includeChildClassificationReferences=true
 
 Response body looks like:
@@ -169,7 +169,7 @@ Response body looks like:
 For a stable app and great user experience in a lot of circumstances you should make your app resilient to temporary failures. Depending on the failure it can make sense to try again in a few seconds. Most likely there are libraries available you can use to make your app more resilient to transient failures. For .NET for example, you should have a look at the library Polly.
 
 Needing more flexibility in the results returned from the API?
-Have a look at our GraphQL implementation: https://bs-dd-api-prototype.azurewebsites.net/graphiql.
+Have a look at our GraphQL implementation: https://test.bsdd.buildingsmart.org/graphiql.
 With GraphQL you can specify the fields you need. Only those fields will be returnd by GraphQL.
 
 ## More good to know

@@ -3,7 +3,7 @@ import requests
 import requests.auth
 
 #API_Endpoint = "https://bsdd-prototype.azure-api.net/api/" 
-API_EndPoint = 'https://bs-dd-api-prototype.azurewebsites.net/api/';
+API_EndPoint = 'https://test.bsdd.buildingsmart.org/api/';
 
 # API ressources
 Resource_Domains = "Domain/v2"

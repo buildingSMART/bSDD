@@ -8,15 +8,15 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 ## Very useful links
 
  * FAQ (what does it cost? what is it? how does it relate to IFC? etc..): [bSDD](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
- * The API URL [beware: this is not live yet!] [API](https://API.bsdd.buildingsmart.org/) | Until the API URL goes live you can use [prototype API](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html) More info on the API is further down on this page.
+ * The API URL [beware: this is not live yet!] [API](https://API.bsdd.buildingsmart.org/) | Until the API URL goes live you can use [prototype API](https://test.bsdd.buildingsmart.org/swagger/index.html) More info on the API is further down on this page.
  * [Search the database](https://search.bsdd.buildingsmart.org/)
 
 ## In short
 
 * A typical use-case for bSDD 2020 prototype demonstrated in SketchUp: [VIMEO video](https://vimeo.com/446417661/ff8b6605d3)
 * the source code of the SketchUp bSDD plugin: [code source](https://github.com/DigiBase-VolkerWessels/SketchUp-bsDD-plugin)
-* The Swagger API documentation for the bSDD 2020 prototype: [Swagger API](https://bs-dd-api-prototype.azurewebsites.net/swagger/index.html)
-* GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://bs-dd-api-prototype.azurewebsites.net/graphiql)
+* The Swagger API documentation for the bSDD 2020 prototype: [Swagger API](https://test.bsdd.buildingsmart.org/swagger/index.html)
+* GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
 * Presentation about the bSDD (and relation to IFC): [Presentation](https://www.slideshare.net/berlotti/20200903-the-2020-buildingsmart-data-dictionary-prototype-bsdd)
 * Video recording of a bSDD workshop, including Revit plugin demo: [Workshop video](https://app.box.com/s/lndnjrbx80n87eg1eq1zhhbqoz8hfmyz/file/720558204462 (start at 1.44.00))
 * Import format you can use to get data into the bSDD: [JSON](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bsdd-import-model.json) and [documentation](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bSDD%20JSON%20import%20model.md) how to use that

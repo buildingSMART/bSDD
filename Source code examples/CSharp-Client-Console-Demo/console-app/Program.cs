@@ -52,7 +52,7 @@ namespace bSDD.DemoClientConsole
         public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
 
         // For accessing API endpoint
-        public const string ApiBaseUrl = "https://bs-dd-api-prototype.azurewebsites.net";
+        public const string ApiBaseUrl = "https://test.bsdd.buildingsmart.org";
         public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/etim/etim-7.0") + "&SearchText=room";
 
         private static IPublicClientApplication publicClientApp;
