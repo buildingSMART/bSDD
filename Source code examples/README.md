@@ -6,7 +6,7 @@ It works the same, the only change is that the user needs to consent to the term
 
 **IMPORANT for GraphQL users** There is now a secured graphql API available:
 - prototype: https://bs-dd-api-prototype.azurewebsites.net/graphqls (note the 's' at the end).
-- official release: https://api.bsdd.buildingsmart.org/p/graphqls
+- official release: https://api.bsdd.buildingsmart.org/graphqls
 You can find example code how to access a secured bSDD API in this repository. Contact us if you need assistance implementing accessing the secured API.
 
 
@@ -40,10 +40,10 @@ The data can also be accessed via GraphQL.
 [GraphiQL playground](https://bs-dd-api-prototype.azurewebsites.net/graphiql).
 The url to send your GraphQL requests to:
 - prototype: https://bs-dd-api-prototype.azurewebsites.net/graphql
-- official release: https://api.bsdd.buildingsmart.org/p/graphql
+- official release: https://api.bsdd.buildingsmart.org/graphql
 For accessing this URL no authentication is needed. There is also a secured API available:
 - prototype: https://bs-dd-api-prototype.azurewebsites.net/graphqls
-- official release: https://api.bsdd.buildingsmart.org/p/graphqls
+- official release: https://api.bsdd.buildingsmart.org/graphqls
 
 
 [Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Source%20code%20examples/GraphQL/bSDD%20and%20GraphQL.md)
