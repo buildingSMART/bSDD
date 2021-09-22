@@ -8,7 +8,7 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 ## Very useful links
 
  * FAQ (what does it cost? what is it? how does it relate to IFC? etc..): [bSDD](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
- * The API URL [beware: this is not live yet!] [API](https://API.bsdd.buildingsmart.org/) | Until the API URL goes live you can use [prototype API](https://test.bsdd.buildingsmart.org/swagger/index.html) More info on the API is further down on this page.
+ * The API URL [API](https://API.bsdd.buildingsmart.org/) | For testing purposes use [TEST API](https://test.bsdd.buildingsmart.org/swagger/index.html) More info on the API is further down on this page.
  * [Search the database](https://search.bsdd.buildingsmart.org/)
 
 ## In short
