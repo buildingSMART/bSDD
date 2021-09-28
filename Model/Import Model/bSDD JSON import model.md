@@ -16,23 +16,23 @@ Contains general information about the domain and the delivered data.
 
 | Field            | DataType               | Required? | Translatable? | Description                                                                                                                                                                  |
 |------------------|------------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OrganizationCode | Text                   | Yes       | No            | If you do not have a code for your organization yet, request one at bsdd_support@buildingsmart.org                                                                                         |
-| DomainCode       | Text                   | Yes       | No            | Code of the domain, preferably short, only alphabetical characters and numbes allowed, must start with alphabetical character E.g. “ifc”                                                                                                                                                |
-| DomainVersion    | Text                   | Yes       | No            | Version of the domain data in format "x.y". E.g.: 4.3                                                                                                                                               |
+| Classifications  | List of Classification | Yes       |               | List of objects of type “Classification”. See next section  |
+| DomainCode       | Text                   | Yes       | No            | Code of the domain, preferably short, only alphabetical characters and numbes allowed, must start with alphabetical character E.g. “ifc”   |
 | DomainName       | Text                   | If new domain or version | No  | Name of the domain. If the domain exists supplying this name is not necessary |
-| ReleaseDate      | Date                   | No        | No            | Date of release of the version E.g. “2017-10-01”                                                                                                                             |
-| Status      | Text                   | No        | No            | State of this version. Must be one of: "Preview", "Active", "Inactive"                                                                                                                             |
-| MoreInfoUrl      | Text                   | No        | No            | Url to web page with more info about the domain                                                                                                                         |
-| LanguageIsoCode  | Text                   | Yes       | No            | ISO language code: indicates the language of the data. If you want to deliver data in multiple language use a json file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. “de-DE” |
-| LanguageOnly     | Boolean                | Yes       | No            | true if json contains only language specific information, no otherwise \*                                                                                                |
-| License          | Text                   | No        | No            | Description of the license the data will be made available (free text). E.g. “No license”, "MIT license"                                                                                                 |
-| LicenseUrl      | Text                   | No        | No            | Url to a web page with the full license text                                                                                                                         |
-| QualityAssuranceProcedure          | Text                   | No        | No            | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown"                                                                                            |
-| QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"                                                                                                                     |
-| UseOwnUri      | Boolean                   | No        | No            | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "http://bsdd.buildingsmart.org" will be assigned to each Classification and Property |
 | DomainNamespaceUri      | Text                   | No        | No      | Required if UseOwnUri = true. Supply the globally unique namespace that's the first part of all Classifications and Properties namespaces, e.g. "urn:mycompany:mydomain" |
-| Classifications  | List of Classification | Yes       |               | List of objects of type “Classification”. See next section                                                                                                                   |
-| Properties       | List of Property       | Yes       |               | List of objects of type “Property”. See next sections                                                                                                                        |
+| DomainVersion    | Text                   | Yes       | No            | Version of the domain data in format "x.y". E.g.: 4.3 |
+| LanguageIsoCode  | Text                   | Yes       | No            | ISO language code: indicates the language of the data. If you want to deliver data in multiple language use a json file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. “de-DE” |
+| LanguageOnly     | Boolean                | Yes       | No            | true if json contains only language specific information, no otherwise \*  |
+| License          | Text                   | No        | No            | Description of the license the data will be made available (free text). E.g. “No license”, "MIT license"  |
+| LicenseUrl      | Text                   | No        | No            | Url to a web page with the full license text   |
+| MoreInfoUrl      | Text                   | No        | No            | Url to web page with more info about the domain |
+| OrganizationCode | Text                   | Yes       | No            | If you do not have a code for your organization yet, request one at bsdd_support@buildingsmart.org                                                                                         |
+| Properties       | List of Property       | Yes       |               | List of objects of type “Property”. See next sections |
+| QualityAssuranceProcedure          | Text                   | No        | No            | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
+| QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
+| ReleaseDate      | Date                   | No        | No            | Date of release of the version E.g. “2017-10-01”  |
+| Status      | Text                   | No        | No            | State of this version. Must be one of: "Preview", "Active", "Inactive"  |
+| UseOwnUri      | Boolean                   | No        | No            | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "http://bsdd.buildingsmart.org" will be assigned to each Classification and Property |
 
 \* For delivering data in additional languages it is sufficient to fill the Domain type fields, all “Code” fields and the fields marked with “Translatable? = Yes” of the other types. Make sure that the OrganizationCode, DomainCode and DomainVersion are exactly the same and if the data is for adding a language to an existing Domain, set field “LanguageOnly” to true.
 
@@ -46,32 +46,32 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 
 | Field                     | DataType                       | Required? | Translatable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
+| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present |
+| ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections |
+| ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections |
+| ClassificationType        | Text                           | No        | No            | Must be one of: Class ComposedProperty Domain ReferenceDocument AlternativeUse                                     |
 | Code                      | Text                           | Yes       | No            | Unique identification within the domain of the classification E.g. “ifc-00123-01”                                  |
+| CountriesOfUse            | List of text                   | No        | No            | List of country ISO codes this Classification is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
+| CountryOfOrigin           | Text                           | No        | No            | ISO Country Code of the country of origin of this classification. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
+| CreatorLanguageIsoCode    | Text                           | No        | No            | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
+| DeactivationDateUtc       | Date                           | No        | No            | |
+| Definition                | Text                           | No        | Yes           | Definition of the Classification                                                                                   |
+| DeprecationExplanation    | Text                           | No        | Yes           |  |
+| DocumentReference         | Text                           | No        | No            | Reference to document with full or official definition of the Classification. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
 | Name                      | Text                           | Yes       | Yes           | Name of the classification E.g. “IfcCurtainWall”                                                                   |
 | OwnedUri                | Text                           | No        | No           | If you specified "UseOwnUri = true" at domain level you must supply the namepsace URI that globally uniquely identifies the Classifciation  |
-| Definition                | Text                           | No        | Yes           | Definition of the Classification                                                                                   |
-| Status                    | Text                           | No        | No            | Status of the Classification: “Active” (default) or “Inactive” |
-| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present |
-| RevisionDateUtc           | Date                           | No        | No            |                                                                                                                    |
-| VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present |
-| DeactivationDateUtc       | Date                           | No        | No            |                                                                                                                    |
-| VersionNumber             | Integer                        | No        | No            |                                                                                                                    |
-| RevisionNumber            | Integer                        | No        | No            |                                                                                                                    |
-| ReplacedObjectCodes       | List of text                   | No        | No            | List of Classification Codes this Classification replaces                                                          |
-| ReplacingObjectCodes      | List of text                   | No        | No            | List of Classification Codes this classification is replaced by                                                    |
-| DeprecationExplanation    | Text                           | No        | Yes           |                                                                                                                    |
-| CreatorLanguageIsoCode    | Text                           | No        | No            | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1).                                                                                   |
-| VisualRepresentationUri   | Text                           | No        | Yes           |                                                                                                                    |
-| CountriesOfUse            | List of text                   | No        | No            | List of country ISO codes this Classification is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
-| SubdivisionsOfUse         | List of text                   | No        | Yes           | List of geographical regions of use E.g. “US-MT”                                                                   |
-| CountryOfOrigin           | Text                           | No        | No            | ISO Country Code of the country of origin of this classification. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
-| DocumentReference         | Text                           | No        | No            | Reference to document with full or official definition of the Classification. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                       |
-| ClassificationType        | Text                           | No        | No            | Must be one of: Class ComposedProperty Domain ReferenceDocument AlternativeUse                                     |
 | ParentClassificationCode  | Text                           | No        | No            | Reference to the parent Classification. The ID in this field MUST exist in the data delivered. E.g. “ifc-00123-00” |
 | RelatedIfcEntityNamesList | List of text                   | No        | No            | References to the IFC equivalent of this Classification. See reference list [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv).                                      |
-| Synonyms                  | List of text                   | No        | Yes           |                                                                                                                    |
-| ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections                                                                                                  |
-| ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections                                                                                                  |
+| ReplacedObjectCodes       | List of text                   | No        | No            | List of Classification Codes this Classification replaces                                                          |
+| ReplacingObjectCodes      | List of text                   | No        | No            | List of Classification Codes this classification is replaced by                                                    |
+| RevisionDateUtc           | Date                           | No        | No            |  |
+| RevisionNumber            | Integer                        | No        | No            |  |
+| Status                    | Text                           | No        | No            | Status of the Classification: “Active” (default) or “Inactive” |
+| SubdivisionsOfUse         | List of text                   | No        | Yes           | List of geographical regions of use E.g. “US-MT”  |
+| Synonyms                  | List of text                   | No        | Yes           | |
+| VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present |
+| VersionNumber             | Integer                        | No        | No            |  |
+| VisualRepresentationUri   | Text                           | No        | Yes           |  |
 
 ## Property
 
@@ -80,30 +80,18 @@ classifications
 
 | Field                         | DataType     | Required? | Translatable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Code                          | Text         | Yes       | No            | Unique identification within the domain of the property E.g. “ifc-99088-01”                                                                          |
-| Name                          | Text         | Yes       | Yes           | Name of the Property E.g. “IsExternal”                                                                                                               |
-| OwnedUri                | Text                           | No        | No           | If you specified "UseOwnUri = true" at domain level you must supply the namepsace URI that globally uniquely identifies the Property  |
-| Definition                    | Text         | No        | Yes           | Definition of the Property                                                                                                                           |
-| Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”                                                                                             |
 | ActivationDateUtc             | Date         | No        | No            | Will get date of import if field not present |
-| RevisionDateUtc               | Date         | No        | No            |                                                                                                                                                      |
-| VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present |
-| DeactivationDateUtc           | Date         | No        | No            |                                                                                                                                                      |
-| VersionNumber                 | Integer      | No        | No            |                                                                                                                                                      |
-| RevisionNumber                | Integer      | No        | No            |                                                                                                                                                      |
-| ReplacedObjectCodes           | List of text | No        | No            | List of Classification Codes this Classification replaces                                                                                            |
-| ReplacingObjectCodes          | List of text | No        | No            | List of Classification Codes this classification is replaced by                                                                                      |
-| DeprecationExplanation        | Text         | No        | Yes           |                                                                                                                                                      |
-| CreatorLanguageIsoCode        | Text         | No        | No            | Language ISO code of the creator. See reference list (json)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1).                                                                                                                     |
-| VisualRepresentationUri       | Text         | No        | Yes           |                                                                                                                                                      |
-| CountriesOfUse                | Text         | No        | No            | Semicolon separated list of country ISO codes this Classification is being used. See reference list (json) [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
-| SubdivisionsOfUse             | Text         | No        | Yes           | Semicolon separated list of geographical regions of use E.g. “US-MT”                                                                                 |
-| CountryOfOrigin               | Text         | No        | No            | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
-| DocumentReference             | Text         | No        | No            | Reference to document with full or official definition of the Property. See reference list (json) [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                                                               |
-| Description                   | Text         | Yes       | Yes           |                                                                                                                                                      |
-| Example                       | Text         | No        | Yes           | Example of the Property                                                                                                                              |
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| Code                          | Text         | Yes       | No            | Unique identification within the domain of the property E.g. “ifc-99088-01”                                                                          |
 | ConnectedPropertyCodes        | List of text | No        | No            | List of codes of connected properties                                                                                                                |
-| PhysicalQuantity              | Text         | No        | Yes           | Name of the physical quantity of the property E.g. “without” or “mass”                                                                               |
+| CountriesOfUse                | Text         | No        | No            | Semicolon separated list of country ISO codes this Classification is being used. See reference list (json) [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
+| CountryOfOrigin               | Text         | No        | No            | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
+| CreatorLanguageIsoCode        | Text         | No        | No            | Language ISO code of the creator. See reference list (json)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
+| DataType                      | Text         | No        | No            | The datatype the property is expressed in. Must be one of:  Boolean,  Character,  Integer,  Real,  String,  Time                       |
+| DeactivationDateUtc           | Date         | No        | No            |  |
+| Definition                    | Text         | No        | Yes           | Definition of the Property |
+| DeprecationExplanation        | Text         | No        | Yes           |  |
+| Description                   | Text         | Yes       | Yes           | |
 | Dimension                     | Text         | No        | No            | In case of a physical quantity, dimension according to ISO 80000 (all parts) E.g. “1 0 -2 0 0 0 0”                                                   |
 | DimensionLength               | Integer      | No        | No            | The Length dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionMass               | Integer      | No        | No            | The Mass dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
@@ -112,19 +100,31 @@ classifications
 | DimensionThermodynamicTemperature               | Integer      | No        | No            | The ThermodynamicTemperature dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionAmountOfSubstance               | Integer      | No        | No            | The AmountOfSubstance dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionLuminousInensity               | Integer      | No        | No            | The LuminousInensity dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
-| MethodOfMeasurement           | Text         | No        | Yes           | E.g. “Thermal transmittance according to ISO 10077-1”                                                                                                |
-| DataType                      | Text         | No        | No            | The datatype the property is expressed in. Must be one of:  Boolean,  Character,  Integer,  Real,  String,  Time                       |
-| PropertyValueKind             | Text         | No        | No            | Must be one of:  Single (one value, is default),  Range (two values),  List (multiple values), Complex (consists of multiple properties, use ConnectedProperties), ComplexList (list of complex values)                       |
-| IsDynamic                     | Boolean      | No        | No            | Default: false If this is a dynamic property, the value is dependent on the parameters provided in field DynamicParameterProperties                  |
+| DocumentReference             | Text         | No        | No            | Reference to document with full or official definition of the Property. See reference list (json) [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                                                               |
 | DynamicParameterPropertyCodes | List of text | No        | No            | List of codes of properties which are parameters of the function for a dynamic property                                                              |
-| Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).            |
-| TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
-| MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive |
+| Example                       | Text         | No        | Yes           | Example of the Property |
+| IsDynamic                     | Boolean      | No        | No            | Default: false If this is a dynamic property, the value is dependent on the parameters provided in field DynamicParameterProperties                  |
+| MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive - do not fill both 'inclusive' and 'exclusive' values |
 | MaxInclusive            | Real     | No        | No            | Maximum allowed value, inclusive - do not fill both 'inclusive' and 'exclusive' values |
 | MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive |
-| MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive - do not fill both 'inclusive' and 'exclusive' values |
+| MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive |
+| MethodOfMeasurement           | Text         | No        | Yes           | E.g. “Thermal transmittance according to ISO 10077-1”                                                                                                |
+| Name                          | Text         | Yes       | Yes           | Name of the Property E.g. “IsExternal”                                                                                                               |
+| OwnedUri                | Text                           | No        | No           | If you specified "UseOwnUri = true" at domain level you must supply the namepsace URI that globally uniquely identifies the Property  |
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
-| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| PhysicalQuantity              | Text         | No        | Yes           | Name of the physical quantity of the property E.g. “without” or “mass”                                                                               |
+| PropertyValueKind             | Text         | No        | No            | Must be one of:  Single (one value, is default),  Range (two values),  List (multiple values), Complex (consists of multiple properties, use ConnectedProperties), ComplexList (list of complex values)                       |
+| ReplacedObjectCodes           | List of text | No        | No            | List of Classification Codes this Classification replaces                                                                                            |
+| ReplacingObjectCodes          | List of text | No        | No            | List of Classification Codes this classification is replaced by                                                                                      |
+| RevisionDateUtc               | Date         | No        | No            |  |
+| RevisionNumber                | Integer      | No        | No     |  |
+| Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”    |
+| SubdivisionsOfUse             | Text         | No        | Yes           | Semicolon separated list of geographical regions of use E.g. “US-MT”                                                                                 |
+| TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
+| Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).            |
+| VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present |
+| VersionNumber                 | Integer      | No        | No            |  |
+| VisualRepresentationUri       | Text         | No        | Yes           |  |
 
 Note: the "PossibleValues" field has been deprecated.
 
@@ -132,23 +132,25 @@ Note: the "PossibleValues" field has been deprecated.
 
 | Field               | DataType | Required? | Translatable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
-| PropertyCode        | Text     | No \*     | No            | Reference to the property if it is in the same domain. You can leave this one empty if you fill the ExternalPropertyUri                                                                           |
 | ExternalPropertyUri | Text     | No \*     | No            | Reference to the property if it is in a different domain, preferably using a bSDD namespace uri, e.g. http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/position                                                                       |
-| Unit                | Text     | No        | No            | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
-| SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
-| Symbol              | Text     | No        | No            |                                                                                                                        |
-| PropertyType        | Text     | No        | No            | Type of the Property for the classification: “Property” (default) or “Dependency”                                      |
-| PropertySet         | Text     | No        | No            | Name of the property set in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example when you property is a material you should use the value "IfcMaterial".                                                                                                                    |
-| PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
-| MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive. Overrides the value defined for the Property |
+| IsRequired              | Boolean  | No  | Yes           | Indicates if this is a required property of the classification |
+| IsWritable              | Boolean  | No  | Yes           | Indicates if the value of this property of the classification can be changed |
+| MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
 | MaxInclusive            | Real     | No        | No            | Maximum allowed value, inclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values. |
 | MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive. Overrides the value defined for the Property |
-| MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
+| MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive. Overrides the value defined for the Property |
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
-| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
+| PropertyCode        | Text     | No \*     | No            | Reference to the property if it is in the same domain. You can leave this one empty if you fill the ExternalPropertyUri  |
 | PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
+| PropertySet         | Text     | No        | No            | Name of the property set in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example when you property is a material you should use the value "IfcMaterial".                                                                                                                    |
+| PropertyType        | Text     | No        | No            | Type of the Property for the classification: “Property” (default) or “Dependency”                                      |
+| SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
+| Symbol              | Text     | No        | No            |                                                                                                                        |
+| Unit                | Text     | No        | No            | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
 
 Note: the "Values" field has been deprecated.
 
@@ -158,8 +160,8 @@ Note: the "Values" field has been deprecated.
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
+| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 
 ## PropertyValue type
 
@@ -168,14 +170,14 @@ Note: adding translations of the PropertyValue is not supported yet
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | Code             | Text     | No       | No            | Code as unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value    |
-| Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     | No       | Yes            | A description of the value|
-| SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the Property it belongs to|
 | NamespaceUri| Text | No | No | You can provide your own Namespace Uri (must be globally unique).|
+| SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the Property it belongs to|
+| Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 
 ## PropertyRelation type
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 | RelatedPropertyUri | Text     | Yes       | No            | Full namespace URI of the related property. Can be to same or different domain.|
+| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
