@@ -6,38 +6,27 @@ If you have your model in the bsdd-import-model.json format available, you can u
 
 1. If it's the first time you are going to upload, you need to have your e-mail address, the one you used to log in, connected to your organization. To achieve this, send an e-mail with
 - your name
-- your e-mail address you used to log in the bSDD API
+- your e-mail address you use to log in the bSDD API
 - the name of your organization
 - a hyperlink to the website of your organization
 - (optional) contact e-mail address in case users have questions about the domain you uploaded
 to bsdd_support@buildingsmart.org.
 As soon as you've got a reply, you can continue with the next step.
 
-2. Go to [https://app.swaggerhub.com/apis/buildingSMART/Dictionaries-API/v1](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries-API/v1)
-![bSDD API wagger](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_01_swagger.png)
-Note: we're working on improving the user friendliness of the upload process.
+2. Go to [https://manage.bsdd.buildingsmart.org/](bSDD Management App)
+or for test environment: [https://bsddmanwebtest.z6.web.core.windows.net](bSDD Management App TEST)
 
-3. Press "Authorize"
-![Authorize for bSDD](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_02_authorize.png)
-
-Fill in the Client ID: b222e220-1f71-4962-9184-05e0481a390d
-Check the "read" scope checkmark and press Authorize.
+3. Log in
 
 4. If you do not have a bSDD buildingSMART account yet, choose "Sign up now", otherwise choose "Sign in"
 ![Signup/signin](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_03_signupsignin.png)
 
-5. If all is well you should see the authorization confirmation:
-![Authorization confirmation](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_04_authorization_confirmed.png)
+5. If all is well you should see "Upload domain" menu item. Click this
 
-Press "Close"
+6. Select the file you want to upload via button "Select file"
 
-6. Click on the line with "/api/UploadImportFile"
-![Upload Import File API](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_05_upload_1.png)
+7. Optional: check the "Validate only?" checkbox if you only want to validate the file, not inserting the data
 
-7. Press "Try it out"
-![Try the upload](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_06_upload_2.png)
-
-8. Enter the Organization Code of your organization (you should have received it by e-mail as a result of step 5), select your bSDD.json file and press Execute.
-![Upload result](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Model/Import%20Model/doc_images/Screenshot_07_upload_result.png)
+8. Press "Upload selected file"
 
 If there are any validation errors detected you will see them listed. You will receive a more detailed import report, one that might include warnings, by e-mail once the file has been imported.
