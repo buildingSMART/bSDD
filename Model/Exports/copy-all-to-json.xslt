@@ -120,7 +120,7 @@
       "IsDynamic": false,
       "DynamicParameterPropertyCodes": [],
       "Units": [ "mm", "cm" ],
-      "PossibleValues": [],
+      "AllowedValues": [],
       "TextFormat": ""
     },
     {
@@ -160,7 +160,7 @@
       "IsDynamic": false,
       "DynamicParameterPropertyCodes": [],
       "Units": [],
-      "PossibleValues": [],
+      "AllowedValues": [],
       "TextFormat": ""
     }
   ]
