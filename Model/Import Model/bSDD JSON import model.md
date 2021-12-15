@@ -1,4 +1,10 @@
-# buildingSMART Data Dictionary JSON import model
+# buildingSMART Data Dictionary model
+
+The main concept of bSDD consists of a Domain having one or more Classifications and zero or more Properties. If we use IFC as an example, IFC is the Domain, "IfcWall" is a classification and "AcousticRating" is a Property. A Classification can have zero or more Properties. In the below scheme this is depicted as a database model.
+
+[Entity diagram of bSDD](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bSDD%20database%20diagram.png)
+
+# JSON import
 
 You can deliver data for the buildingSMART Data Dictionary by using the bSDD
 JSON import model format. This document explains this format.
@@ -8,7 +14,7 @@ If you think there are reference items missing, please let us know.
 
 ## General notes
 
--- Default values will only be applied if a field is not specified. If you specify a field, "null" will not always be a valid value, even if there is a default.
+-- Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" may not be allowed for the field.
 
 ## Domain
 
