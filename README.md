@@ -9,7 +9,7 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 
  * FAQ (what does it cost? what is it? how does it relate to IFC? etc..): [bSDD](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
  * The API URL [API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) | For testing purposes use [TEST API](https://test.bsdd.buildingsmart.org/swagger/index.html) More info on the API is further down on this page.
- * [Search the database](https://search.bsdd.buildingsmart.org/)
+ * [Search the database](https://search.bsdd.buildingsmart.org/) | For test environment: [TEST Search](https://search-test.bsdd.buildingsmart.org/)
 
 ## In short
 

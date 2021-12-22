@@ -14,7 +14,7 @@ to bsdd_support@buildingsmart.org.
 As soon as you've got a reply, you can continue with the next step.
 
 2. Go to [https://manage.bsdd.buildingsmart.org/](bSDD Management App)
-or for test environment: [https://bsddmanwebtest.z6.web.core.windows.net](bSDD Management App TEST)
+or for test environment: [https://manage-test.bsdd.buildingsmart.org](bSDD Management App TEST)
 
 3. Log in
 
