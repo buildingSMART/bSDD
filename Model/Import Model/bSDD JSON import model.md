@@ -80,6 +80,17 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | VersionNumber             | Integer                        | No        | No            |  |
 | VisualRepresentationUri   | Text                           | No        | Yes           |  |
 
+
+## Material
+
+A material is similar to a classification.
+Differences in model are:
+- no ClassificationType field
+- "ParentMaterialCode" instead of "ParentClassificationCode"
+- "MaterialProperties" instead of "ClassificationProperties"
+
+A domain can have both Materials and Classifications. Please note that the "code" of both Materials and Classifications must be unique within the domain. You can't have a domain with Material with code "abcd" and a Classification with the same code "abcd".
+
 ## Property
 
 A classification can have multiple properties and a property can be part of many
