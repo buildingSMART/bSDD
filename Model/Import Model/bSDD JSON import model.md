@@ -179,7 +179,7 @@ Note: the "Values" field has been deprecated.
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
-| RelationType             | Text     | Yes       | No            | One of:  HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
+| RelationType             | Text     | Yes       | No            | One of:  HasMaterial, HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 
 ## PropertyValue type
 
