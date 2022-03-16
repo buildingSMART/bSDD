@@ -143,6 +143,7 @@ classifications
 | VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present |
 | VersionNumber                 | Integer      | No        | No            |  |
 | VisualRepresentationUri       | Text         | No        | Yes           |  |
+| PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
 
 Note: the "PossibleValues" field has been deprecated.
 
@@ -163,7 +164,6 @@ Note: the "PossibleValues" field has been deprecated.
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
 | PropertyCode        | Text     | No \*     | No            | Reference to the property if it is in the same domain. You can leave this one empty if you fill the ExternalPropertyUri  |
-| PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
 | PropertySet         | Text     | No        | No            | Name of the property set in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example when you property is a material you should use the value "IfcMaterial".                                                                                                                    |
 | PropertyType        | Text     | No        | No            | Type of the Property for the classification: “Property” (default) or “Dependency”                                      |
 | SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
