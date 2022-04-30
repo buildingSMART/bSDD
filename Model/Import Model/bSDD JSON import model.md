@@ -150,7 +150,7 @@ classifications
 
 | Field               | DataType | Required? | Translatable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ExternalPropertyUri | Text     | No \*     | No            | Reference to the property if it is in a different domain, preferably using a bSDD namespace uri, e.g. http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/position                                                                       |
@@ -168,8 +168,6 @@ classifications
 | SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
 | Symbol              | Text     | No        | No            |                                                                                                                        |
 | Unit                | Text     | No        | No            | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
-
-Note: the "Values" field has been deprecated.
 
 \* One of those is required.
 
