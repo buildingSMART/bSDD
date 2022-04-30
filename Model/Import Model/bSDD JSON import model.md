@@ -139,13 +139,12 @@ classifications
 | Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”    |
 | SubdivisionsOfUse             | Text         | No        | Yes           | Semicolon separated list of geographical regions of use E.g. “US-MT”                                                                                 |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
-| Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).            |
+| Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output pls let us know. |
 | VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present |
 | VersionNumber                 | Integer      | No        | No            |  |
 | VisualRepresentationUri       | Text         | No        | Yes           |  |
 | PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
 
-Note: the "PossibleValues" field has been deprecated.
 
 ## ClassificationProperty type
 
