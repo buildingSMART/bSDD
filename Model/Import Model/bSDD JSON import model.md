@@ -9,7 +9,7 @@ The main concept of bSDD consists of a Domain having one or more Classifications
 You can deliver data for the buildingSMART Data Dictionary by using the bSDD
 JSON import model format. This document explains this format.
 
-Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv).
+Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3).
 If you think there are reference items missing, please let us know.
 
 ## General notes
