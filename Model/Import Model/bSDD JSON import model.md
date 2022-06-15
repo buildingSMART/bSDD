@@ -153,7 +153,7 @@ classifications
 | AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
-| ExternalPropertyUri | Text     | No \*     | No            | Reference to the property if it is in a different domain, preferably using a bSDD namespace uri, e.g. http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/position                                                                       |
+| ExternalPropertyUri | Text     | No \*     | No            | DEPRECATED (but still supported) - Use PropertyNamespaceUri instead                |
 | IsRequired              | Boolean  | No  | Yes           | Indicates if this is a required property of the classification |
 | IsWritable              | Boolean  | No  | Yes           | Indicates if the value of this property of the classification can be changed |
 | MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
@@ -162,7 +162,8 @@ classifications
 | MinInclusive            | Real     | No        | No            | Minimum allowed value, inclusive. Overrides the value defined for the Property |
 | Pattern            | Text     | No        | No            | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | PredefinedValue     | Text     | No        | No            | Predefined value for this property. E.g. value for property “IsLoadBearing” can be “true” for classification “IfcWall” |
-| PropertyCode        | Text     | No \*     | No            | Reference to the property if it is in the same domain. You can leave this one empty if you fill the ExternalPropertyUri  |
+| PropertyCode        | Text     | No \*     | No            | Reference to the property if it is in the same domain. You can leave this one empty if you fill the PropertyNamespaceUri  |
+| PropertyNamespaceUri        | Text     | No \*     | No            | Reference to the property if it is in a different domain, e.g. http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/position       |
 | PropertySet         | Text     | No        | No            | Name of the property set in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example when you property is a material you should use the value "IfcMaterial".                                                                                                                    |
 | PropertyType        | Text     | No        | No            | Type of the Property for the classification: “Property” (default) or “Dependency”                                      |
 | SortNumber          | Integer  | No        | No            | Sort number of this property within the classification                                                                 |
