@@ -1,17 +1,8 @@
 
-
-**IMPORTANT change per June 30, 2021** For developers using the secured sections: the security policies will change a bit.
-Per June 30, 2021 you have to replace "b2c_1_signupsignin" by "b2c_1a_signupsignin_c". If you also implemented the password reset and/or profile edit flow, you also need to change "b2c_1_passwordreset" into "b2c_1a_passwordreset_c" and "b2c_1_profileediting" into "b2c_1a_profileedit_c".
-It works the same, the only change is that the user needs to consent to the terms of use once at log in.
-
-**IMPORANT for GraphQL users** There is now a secured graphql API available:
-- prototype: https://test.bsdd.buildingsmart.org/graphqls (note the 's' at the end).
-- official release: https://api.bsdd.buildingsmart.org/graphqls
-You can find example code how to access a secured bSDD API in this repository. Contact us if you need assistance implementing accessing the secured API.
+**IMPORANT for developers using secured bSDD APIs** The URL "buildingsmartservices.onmicrosoft.com" will be changed to "authentication.buildingsmart.org" in the near future. Make sure you do not hard code this url in your code, make it an easy to update setting. You will receive a notification upfront when the change will take place.
 
 
-The bSDD API is currently under development. This means things may change. If you’re actively going to use the API please let us know if you would like to be notified of changes. Send a mail to bsdd_support@buildingsmart.org.
-
+The bSDD API is regularly updated. This means things may change. If there are breaking changes to an API a new version will be created. The 'old' version will be supported for, at least, 6 months after. Note that additions to an existing API usually don't mean a breaking change.
 
 
 ## The bSDD API
@@ -45,6 +36,8 @@ For accessing this URL no authentication is needed. There is also a secured API 
 - prototype: https://test.bsdd.buildingsmart.org/graphqls
 - official release: https://api.bsdd.buildingsmart.org/graphqls
 
+You can find example code how to access a secured bSDD API in this repository. Contact us if you need assistance implementing accessing the secured API.
+
 
 [Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Source%20code%20examples/GraphQL/bSDD%20and%20GraphQL.md)
 
@@ -67,7 +60,7 @@ Currently there’s no further authorization required to be able to use the API.
 
 ## Settings
 These are the settings you can use for demonstration purposes for a Dekstop client app :
-* Tenant: "buildingsmartservices.onmicrosoft.com "
+* Tenant: "buildingsmartservices.onmicrosoft.com"
 * AzureAdB2Chostname: "buildingsmartservices.b2clogin.com"
 * ClientId: "4aba821f-d4ff-498b-a462-c2837dbbba70"
 * RedirectUri: "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect"
