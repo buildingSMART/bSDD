@@ -45,9 +45,14 @@ You can find example code how to access a secured bSDD API in this repository. C
 For authentication we use Azure Active Directory B2C.
 At this moment you need to authenticate only for a few methods. This might change.
 
-If you’re developing a Javascript, Java, Angular, Python or .NET application connecting with the buildingSMART Data Dictionary API is easiest by using the Microsoft Authentication Library (MSAL).
-See [Active directory B2C code samples](https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples) for ready to use examples on how to use the MSAL. You can find the bSDD API specific settings in one of the next sections of this document. Note: all settings will change. So make sure you have them in an easy to update settings file.
+If you’re developing a Javascript, Java, Angular, React, Python or .NET application connecting with the buildingSMART Data Dictionary API is easiest by using the Microsoft Authentication Library (MSAL).
+See [Active directory B2C code samples](https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples) for ready to use examples on how to use the MSAL. You can find the bSDD API specific settings in one of the next sections of this document. Make sure you have the settings in an easy to update settings file. 
 You can find the code for a small .NET console application that accesses the bSDD API (authenticated) in this repository: [.NET console example](https://github.com/buildingSMART/bSDD/tree/master/Source%20code%20examples/CSharp-Client-Console-Demo).
+
+React: https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
+Angular: https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-angular-auth-code
+Java: https://docs.microsoft.com/en-us/samples/azure-samples/ms-identity-java-webapp/ms-identity-java-webapp/ 
+Python: https://docs.microsoft.com/en-us/python/api/overview/azure/active-directory 
 
 If you’re developing using one of the many other available languages it is still possible to connect to the bSDD API. The API is developed according to the standards OpenAPI, OAuth2 and OpenID Connect. Only now you need to do all the plumbing yourself.
 
