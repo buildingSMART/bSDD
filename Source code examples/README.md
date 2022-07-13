@@ -49,7 +49,8 @@ If you’re developing a Javascript, Java, Angular, React, Python or .NET applic
 See [Active directory B2C code samples](https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples) for ready to use examples on how to use the MSAL. You can find the bSDD API specific settings in one of the next sections of this document. Make sure you have the settings in an easy to update settings file. 
 You can find the code for a small .NET console application that accesses the bSDD API (authenticated) in this repository: [.NET console example](https://github.com/buildingSMART/bSDD/tree/master/Source%20code%20examples/CSharp-Client-Console-Demo).
 
-React: https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
+React:  https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
+        https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/1-Authentication/2-sign-in-b2c/README.md
 Angular: https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-angular-auth-code
 Java: https://docs.microsoft.com/en-us/samples/azure-samples/ms-identity-java-webapp/ms-identity-java-webapp/ 
 Python: https://docs.microsoft.com/en-us/python/api/overview/azure/active-directory 
