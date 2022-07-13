@@ -60,7 +60,7 @@ namespace bSDD.DemoClientConsole
                 var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 if (!response.IsSuccessStatusCode)
                 {
-                    return $"{response.StatusCode} - {response.ReasonPhrase} - {content}";
+                    return $"[{response.StatusCode}] - {response.ReasonPhrase} - {content}";
                 }
                 return content;
             }
