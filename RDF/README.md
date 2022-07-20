@@ -1,4 +1,5 @@
-#RDF
+# RDF
+This feature is in PREVIEW.
 
 The following API's support returning data in RDF:
 
