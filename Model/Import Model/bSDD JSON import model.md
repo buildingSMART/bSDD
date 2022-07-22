@@ -180,6 +180,9 @@ classifications
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
 | RelationType             | Text     | Yes       | No            | One of:  HasMaterial, HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
+| Fraction  \*               | Real     | No       | No            | Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+
+\* currently only available in bSDD Test environment
 
 ## PropertyValue type
 
