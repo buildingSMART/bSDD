@@ -152,7 +152,7 @@ classifications
 
 | Field               | DataType | Required? | Translatable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Overrides the values defined for the Property. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ExternalPropertyUri | Text     | No \*     | No            | DEPRECATED (but still supported) - Use PropertyNamespaceUri instead                |
