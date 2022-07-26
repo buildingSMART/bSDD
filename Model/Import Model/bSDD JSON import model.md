@@ -12,9 +12,11 @@ JSON import model format. This document explains this format.
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3).
 If you think there are reference items missing, please let us know.
 
+If you are not familiar with JSON, reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html) is a good idea. And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system then it's best to let the system create the json for you.
+
 ## General notes
 
--- Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" may not be allowed for the field.
+-- Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not be allowed for all fields.
 
 ## Domain
 
@@ -150,7 +152,7 @@ classifications
 
 | Field               | DataType | Required? | Translatable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Overrides the values defined for the Property. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ExternalPropertyUri | Text     | No \*     | No            | DEPRECATED (but still supported) - Use PropertyNamespaceUri instead                |
@@ -178,6 +180,9 @@ classifications
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedClassificationUri | Text     | Yes       | No            | Full namespace URI of the related classification. Can be to same or different domain. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
 | RelationType             | Text     | Yes       | No            | One of:  HasMaterial, HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
+| Fraction  \*               | Real     | No       | No            | Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+
+\* currently only available in bSDD Test environment
 
 ## PropertyValue type
 

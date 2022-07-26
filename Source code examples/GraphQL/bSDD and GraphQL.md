@@ -10,12 +10,15 @@ For more info on GraphQL have a look at, for example:
 
 For some scenario's using GraphQL can be more efficient, but there are still lots of scenario's where a regular API is the most efficient solution.
 
-## bSDD GraphQL endpoint
+## bSDD GraphQL endpoints
 
-The bSDD API also provides a GraphQL endpoint and the prototype environment also has a playground:
+The bSDD API also provides a GraphQL endpoint and the test environment also has a playground:
 
 Playground: https://test.bsdd.buildingsmart.org/graphiql/
-GraphQL Endpoint: https://test.bsdd.buildingsmart.org/graphql/
+Test GraphQL endpoint: https://test.bsdd.buildingsmart.org/graphql/
+Test GraphQL secured endpoint: https://test.bsdd.buildingsmart.org/graphqls/
+
+Production GraphQL secured endpoint: https://api.bsdd.buildingsmart.org/graphqls/
 
 ## Example data queries
 
@@ -56,11 +59,11 @@ You can combine those queries into one:
 Query to search for classifications within a domain:
 ```
 {
-  domain(namespaceUri : "http://identifier.buildingsmart.org/uri/etim/etim-8.0") {
+  domain(namespaceUri : "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
     namespaceUri
     copyrightNotice
     languageCode
-    classificationSearch(searchText: "cotter", languageCode: "EN") {
+    classificationSearch(searchText: "asfaltbetong", languageCode: "sv-SE") {
       name
       namespaceUri
       synonyms
@@ -126,8 +129,8 @@ query ($domainNamespaceUri: String!, $namespaceUri: String!) {
 The query variable section defines the variables:
 ```
 {
-  "domainNamespaceUri": "http://identifier.buildingsmart.org/uri/etim/etim-8.0",
-  "namespaceUri": "http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC003020"
+  "domainNamespaceUri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1",
+  "namespaceUri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1/class/ACDE"
 }
 ```
 ## Example meta data queries
