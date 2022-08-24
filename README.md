@@ -5,6 +5,16 @@
 The bSDD is a system to maintain structures for the localization of the IFC schema and structures for expressing business Semantics on top of the IFC schema.  More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/
 
 
+**2022-08 - Important notification:**
+
+The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
+
+We will support retrieving data using the "http" identifiers for (at least) 6 months. But please do note that only "https" identifiers are returned by the bSDD API's.
+
+Current status: available in test environment.
+
+**End of notification**
+
 ## Very useful links
 
  * FAQ (what does it cost? what is it? how does it relate to IFC? etc..): [bSDD](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)

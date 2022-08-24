@@ -1,5 +1,15 @@
 # buildingSMART Data Dictionary model
 
+**2022-08 - Important notification:**
+
+The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
+
+We will support supplying and retrieving data using the "http" identifiers for (at least) 6 months. But please do note that only "https" identifiers are returned by the bSDD API's.
+
+Current status: available in test environment.
+
+**End of notification**
+
 The main concept of bSDD consists of a Domain having one or more Classifications and zero or more Properties. If we use IFC as an example, IFC is the Domain, "IfcWall" is a classification and "AcousticRating" is a Property. A Classification can have zero or more Properties. In the below scheme this is depicted as a database model.
 
 <img src="https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/>
@@ -182,7 +192,6 @@ classifications
 | RelationType             | Text     | Yes       | No            | One of:  HasMaterial, HasReference,  IsEqualTo,  IsSynonymOf,  IsParentOf,  IsChildOf, HasPart    |
 | Fraction  \*               | Real     | No       | No            | Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 
-\* currently only available in bSDD Test environment
 
 ## PropertyValue type
 
