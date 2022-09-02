@@ -2,7 +2,11 @@
 
 
 # bSDD buildingSMART Data Dictionary (bSDD)
-The bSDD is a system to maintain structures for the localization of the IFC schema and structures for expressing business Semantics on top of the IFC schema.  More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/
+The buildingSMART Data Dictionary (bSDD) is an online service that hosts classifications and their properties, allowed values, units and translations. The bSDD allows linking between all the content inside the database. It provides a standardized workflow to improve data quality and information consistency.
+
+The most important part of the bSDD are the APIs, Application Programming Interfaces, accessible via the internet. Using those APIs other tools and systems can use the data stored in the bSDD.
+
+More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/
 
 
 **2022-08 - Important notification:**
@@ -19,16 +23,18 @@ Current status: available in test environment.
 
  * FAQ (what does it cost? what is it? how does it relate to IFC? etc..): [bSDD](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
 
-## Use the bSDD 
- * The API URL [API](https://api.bsdd.buildingsmart.org/); [Swagger documentation](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/) 
- * [Search the data in the live/production bSDD](https://search.bsdd.buildingsmart.org/)  
-
 ## Test the bSDD
-* [TEST API (swagger)](https://test.bsdd.buildingsmart.org/swagger/) 
-* [Search the data in the test database](https://search-test.bsdd.buildingsmart.org/)
-* [Manage your data in the test database](https://manage-test.bsdd.buildingsmart.org/)
-* Import format you can use to get data into the bSDD: [JSON](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bsdd-import-model.json) and [documentation](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bSDD%20JSON%20import%20model.md).
+* Website to manually explore the bSDD APIs in the test environment: https://test.bsdd.buildingsmart.org/swagger/
+* Search in the bSDD test database: https://search-test.bsdd.buildingsmart.org/
+* Upload your data in the test database: https://manage-test.bsdd.buildingsmart.org/
+* How to upload your data into the bSDD: [empty JSON model](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bsdd-import-model.json) and [import model description](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bSDD%20JSON%20import%20model.md).
 Data owners are encouraged to put their data in the test environment first, and communicate to bsdd_support@buildingsmart.org when they want to push it to the production environment.
+
+## Use the bSDD
+ * Upload data: https://manage.bsdd.buildingsmart.org/
+ * The API URL: https://api.bsdd.buildingsmart.org/
+ * API documentation (aka swagger): https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
+ * Search in the bSDD: https://search.bsdd.buildingsmart.org/
 
 ## Nice to know
 * A typical use-case for bSDD using SketchUp to create IFC data: [VIMEO video](https://vimeo.com/446417661/ff8b6605d3) [source code](https://github.com/DigiBase-VolkerWessels/SketchUp-bsDD-plugin)
@@ -36,6 +42,6 @@ Data owners are encouraged to put their data in the test environment first, and 
 * GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
 * Presentation about the bSDD (and relation to IFC): [Presentation](https://www.slideshare.net/berlotti/20200903-the-2020-buildingsmart-data-dictionary-prototype-bsdd)
 * Video recording of a bSDD workshop, including Revit plugin demo: [Workshop video](https://app.box.com/s/lndnjrbx80n87eg1eq1zhhbqoz8hfmyz/file/720558204462 (start at 1.44.00))
-* Get help by emailing bsdd_support@buildingsmart.org
+* Get help: send an email to bsdd_support@buildingsmart.org
 
 

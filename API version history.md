@@ -4,6 +4,12 @@ This is the version history of the API at https://api.bsdd.buildingsmart.org.
 
 New APIs and updates will always first be published to the bSDD test environment: https://test.bsdd.buildingsmart.org
 
+## Current updates in test environment
+
+ * New: api/ClassificationSearchOpen/v1, optimized API for searching for classifications
+ * Update: api/Domain/v2 and api/Domain/v2/Classifications returns LastUpdatedUtc with date and time the data in bSDD was last updated
+ * Update: "http://idenfitier..." has been replaced by "https://identifier...". Searching for "http://identifier..." is for the time being auto-matched with "https://idenfitier..."
+
 ## 2022-08-23
 
  * Update: api/Domain/v2/Classifications now supports Accept-Language header
