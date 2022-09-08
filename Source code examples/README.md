@@ -67,7 +67,7 @@ Currently there’s no further authorization required to be able to use the API.
 ## Settings
 These are the settings you can use for demonstration purposes for a Dekstop client app :
 * Tenant: "buildingsmartservices.onmicrosoft.com"
-* AzureAdB2Chostname: "buildingsmartservices.b2clogin.com"
+* AzureAdB2Chostname: "authentication.buildingsmart.org"
 * ClientId: "4aba821f-d4ff-498b-a462-c2837dbbba70"
 * RedirectUri: "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect"
 * PolicySignUpSignIn: "b2c_1a_signupsignin_c"
@@ -77,7 +77,7 @@ These are the settings you can use for demonstration purposes for a Dekstop clie
 * ApiScope : "https://buildingsmartservices.onmicrosoft.com/api/read"
 * BsddApiUrl: "https://test.bsdd.buildingsmart.org"
 
-The full B2C authority url is: https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1a_signupsignin_c (note the "tfp" part!).
+The full B2C authority url is: https://authentication.buildingsmart.org/tfp/buildingsmartservices.onmicrosoft.com/b2c_1a_signupsignin_c (note the "tfp" part!).
 
 For using the official release, you should use the settings as above except:
 * ClientId: request a Client ID at bsdd_support@buildingsmart.org

@@ -4,7 +4,11 @@ This is the version history of the API at https://api.bsdd.buildingsmart.org.
 
 New APIs and updates will always first be published to the bSDD test environment: https://test.bsdd.buildingsmart.org
 
-## 2202-09-05
+## 2022-09-08
+
+ATTENTION: for accessing secured API's you must use **https://authentication.buildingsmart.org** instead of https://buildingsmartservices.b2clogin.com !
+
+## 2022-09-05
 
  * New: api/ClassificationSearchOpen/v1, optimized API for searching for classifications
  * Update: api/Domain/v2 and api/Domain/v2/Classifications returns LastUpdatedUtc with date and time the data in bSDD was last updated

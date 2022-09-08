@@ -154,7 +154,7 @@ class TPostman():
       
       from msal import PublicClientApplication
 
-      bSDD_authority = 'https://buildingsmartservices.b2clogin.com/tfp/buildingsmartservices.onmicrosoft.com/b2c_1_signupsignin'
+      bSDD_authority = 'https://authentication.buildingsmart.org/tfp/buildingsmartservices.onmicrosoft.com/b2c_1_signupsignin'
       
       app = PublicClientApplication( bSDD_ClientID, authority = bSDD_authority) #need localhost redirection on azure portal for the client ID
       flow = app.initiate_auth_code_flow(scopes=[bSDD_Scope])

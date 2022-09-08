@@ -26,10 +26,10 @@ namespace bSDD.DemoClientConsole
         // public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
 
 
-        public static readonly string RedirectUri = $"https://{TenantName}.b2clogin.com/oauth2/nativeclient";
+        public static readonly string RedirectUri = $"https://authentication.buildingsmart.org/oauth2/nativeclient";
 
         private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
-        private static readonly string AzureAdB2CHostname = $"{TenantName}.b2clogin.com";
+        private static readonly string AzureAdB2CHostname = $"authentication.buildingsmart.org";
         // public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
 
         // Not case sensitive
