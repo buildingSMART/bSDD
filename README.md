@@ -30,6 +30,8 @@ Current status: available in test environment.
 * How to upload your data into the bSDD: [empty JSON model](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bsdd-import-model.json) and [import model description](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bSDD%20JSON%20import%20model.md).
 Data owners are encouraged to put their data in the test environment first, and communicate to bsdd_support@buildingsmart.org when they want to push it to the production environment.
 
+** If you encounter a login issue on https://maanage-test.bsdd.buildingsmart.org or https://manage.bsdd.buildingsmart.org, e.g. some kind of looping, try clearing your browser cache or start an 'incognito' browser window. **
+
 ## Use the bSDD
  * Upload data: https://manage.bsdd.buildingsmart.org/
  * The API URL: https://api.bsdd.buildingsmart.org/
