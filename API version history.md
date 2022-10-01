@@ -4,6 +4,14 @@ This is the version history of the API at https://api.bsdd.buildingsmart.org.
 
 New APIs and updates will always first be published to the bSDD test environment: https://test.bsdd.buildingsmart.org
 
+## 2022-10-01 In test environment
+
+ * New version: api/Classification/v4: attribute PossibleValues has been renamed into AllowedValues (is now consistent with import attribute name)
+ * New version: api/Material/v2: attribute PossibleValues has been renamed into AllowedValues (is now consistent with import attribute name)
+ * New version: api/Property/v3: attribute PossibleValues has been renamed into AllowedValues (is now consistent with import attribute name)
+ 
+ Previous versions of these APIs will remain available until at least May 2023.
+
 ## 2022-09-08
 
 ATTENTION: for accessing secured API's you must use **https://authentication.buildingsmart.org** instead of https://buildingsmartservices.b2clogin.com !
