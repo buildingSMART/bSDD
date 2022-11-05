@@ -1,0 +1,155 @@
+{
+    "OrganizationCode": "bs-agri",
+    "DomainCode": "fruitvegs",
+    "DomainVersion": "1.0",
+    "DomainName": "Fruit and vegetables",
+    "LanguageIsoCode": "nl-NL",
+    "LanguageOnly": true,
+    "License": "Geen licentie",
+    "Classifications": [
+      {
+        "Code": "fruit",
+        "Name": "Fruit",
+        "Definition": "Fruit is de verzamelnaam voor eetbare vruchten van plantensoorten en -rassen, en daarop gelijkende schijnvruchten zoals aardbei, vijg, ananas, appel en peer"
+      },
+      {
+        "Code": "veg",
+        "Name": "Groente",
+        "Definition": "Een plant of onderdeel van plant dat gegeten kan worden"
+      },
+      {
+        "Code": "apple",
+        "Name": "Appel",
+        "Definition": "De appel is de pitvrucht van de plant Malus domestica uit de rozenfamilie (Rosaceae).",
+        "ClassificationProperties": [
+          {
+            "PropertyCode": "volume",
+            "PropertySet": "SizeSet",
+            "Description": "Het volume van een appel"
+          },
+          {
+            "PropertyCode": "height",
+            "PropertySet": "SizeSet",
+            "Description": "De hoogte van een appel"
+          }
+        ]
+      },
+      {
+        "Code": "grannysmith",
+        "Name": "Granny Smith",
+        "Definition": "De granny smith is een populair appelras, afkomstig uit Australië. Dit ras werd rond 1865 door Marie Ana (Granny) Smith gekweekt. Er wordt verondersteld dat het een kruising is van de Malus sylvestris, de wilde appel, met een gedomesticeerd appelras.",
+        "Synonyms": [ 
+          "Groene appel",
+          "Zure appel"
+        ],
+        "ClassificationProperties": [
+          {
+            "AllowedValues": [
+              {
+                "Code": "green",
+                "Value": "Groen"
+              },
+              {
+                "Code": "yellow",
+                "Value": "Geel"
+              }
+            ],
+            "PropertyCode": "color",
+            "Description": "De kleur van een Granny Smith"
+          },
+          {
+            "AllowedValues": [],
+            "PropertyCode": "height",
+            "PropertySet": "SizeSet",
+            "Description": "De hoogte van een Granny Smith"
+          }
+        ]
+      },
+      {
+        "Code": "tomato",
+        "Name": "Tomato",
+        "Definition": "Eetbare vrucht van de plant Solanum lycopersicum",
+        "Synonyms": [ 
+          "Liefdes appel"
+        ],
+        "ClassificationProperties": [
+          {
+            "AllowedValues": [
+              {
+                "Code": "green",
+                "Value": "Groen",
+                "Description": "Dan is ie nog niet rijp"
+              },
+              {
+                "Code": "yellow",
+                "Value": "Geel",
+                "Description": null
+              },
+              {
+                "Code": "red",
+                "Value": "Rood",
+                "Description": null
+              }
+            ],
+            "PropertyCode": "color",
+            "Description": "De kleur van een tomaat"
+          }
+        ]
+      }
+    ],
+    "Properties": [
+      {
+        "Code": "volume",
+        "Name": "Volume",
+        "Definition": "De inhoud of het volume van een voorwerp (lichaam) is de grootte van het gebied dat door dit voorwerp wordt ingenomen in de driedimensionale ruimte",
+        "MethodOfMeasurement": "Archimedes’ Gold Crown methode"
+      },
+      {
+        "Code": "height",
+        "Name": "Height",
+        "Definition": "Afstand van bodem tot top"
+      },
+      {
+        "Code": "color",
+        "Name": "Color",
+        "Definition": "Kleur is een eigenschap van licht die wordt bepaald door de verschillende golflengtes waaruit dat licht is samengesteld",
+        "AllowedValues": [
+          {
+            "Code": "red",
+            "Value": "Rood",
+            "Description": "Rood"
+          },
+          {
+            "Code": "yellow",
+            "Value": "Geel",
+            "Description": null
+          },
+          {
+            "Code": "green",
+            "Value": "Groen",
+            "Description": null
+          },
+          {
+            "Code": "blue",
+            "Value": "Blauw",
+            "Description": null
+          }
+         ]
+      }
+    ],
+    "Materials": [
+      {
+        "Code": "water",
+        "Name": "Water",
+        "Definition": "Water is de chemische verbinding van twee waterstofatomen en een zuurstofatoom",
+        "Synonyms": [
+          "H2O"
+        ]
+      },
+      {
+        "Code": "fiber",
+        "Name": "Vezel",
+        "Definition": "Een vezel is een dun filament van een beperkte lengte (10 tot 500 mm) die ten minste drie keer zo groot is als de diameter. Vezels kunnen onderscheiden worden in plantaardige, dierlijke en synthetische."
+      }
+    ]
+  }
