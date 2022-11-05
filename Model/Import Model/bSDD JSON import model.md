@@ -166,8 +166,8 @@ classifications
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ~~ExternalPropertyUri~~ | Text     | No \*     | No            | DEPRECATED - Use PropertyNamespaceUri instead                |
-| IsRequired              | Boolean  | No  | Yes           | Indicates if this is a required property of the classification |
-| IsWritable              | Boolean  | No  | Yes           | Indicates if the value of this property of the classification can be changed |
+| IsRequired              | Boolean  | No  | No           | Indicates if this is a required property of the classification |
+| IsWritable              | Boolean  | No  | No           | Indicates if the value of this property of the classification can be changed |
 | MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values |
 | MaxInclusive            | Real     | No        | No            | Maximum allowed value, inclusive. Overrides the value defined for the Property. Do not fill both 'inclusive' and 'exclusive' values. |
 | MinExclusive            | Real     | No        | No            | Minimum allowed value, exclusive. Overrides the value defined for the Property |
