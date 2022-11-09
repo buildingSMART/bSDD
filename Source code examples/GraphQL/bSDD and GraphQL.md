@@ -22,7 +22,7 @@ Production GraphQL secured endpoint: https://api.bsdd.buildingsmart.org/graphqls
 
 ## Example data queries
 
-Query to get the list of available languages:
+-- get the list of available languages:
 ```
 {
   languages {
@@ -32,7 +32,7 @@ Query to get the list of available languages:
 ```
 ----
 
-Query to get list of country codes:
+-- get list of country codes:
 ```
 {
   countries {
@@ -56,7 +56,7 @@ You can combine those queries into one:
 ```
 ----
 
-Query to search for classifications within a domain:
+-- search for classifications within a domain:
 ```
 {
   domain(namespaceUri : "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
@@ -79,7 +79,57 @@ Query to search for classifications within a domain:
 ```
 ----
 
-Query to get details for a classification, using variables:
+-- get all classifications with their properties of a domain (not available on production yet):
+
+ATTENTION: this query will take a long time to execute for domains with many classifications
+```
+{
+  domain(namespaceUri : "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0") {
+    name
+    version
+    namespaceUri
+    copyrightNotice
+    languageCode
+    status
+    releaseDate
+    license
+    licenseUrl
+    moreInfoUrl
+    
+    classificationSearch {
+      code
+      name
+      namespaceUri
+      definition
+      documentReference
+      synonyms
+      relatedIfcEntityNames
+      properties {
+        code
+        name
+        namespaceUri
+        description
+        definition
+        documentReference
+        isRequired
+        dataType
+        example
+        dimension
+        physicalQuantity
+        pattern
+        allowedValues {
+          code
+          value
+        }
+        units
+      }
+    }
+  }
+}
+```
+----
+
+-- get details for a classification, using variables:
 ```
 query ($domainNamespaceUri: String!, $namespaceUri: String!) {
   domain(namespaceUri: $domainNamespaceUri) {
