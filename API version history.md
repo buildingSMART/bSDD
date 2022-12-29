@@ -4,6 +4,21 @@ This is the version history of the API at https://api.bsdd.buildingsmart.org.
 
 New APIs and updates will always first be published to the bSDD test environment: https://test.bsdd.buildingsmart.org
 
+#
+# Versioning strategy
+A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does not (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
+
+If there is a new version of an API the previous version will be supported for 6 to 12 months after releasing the new version. 
+
+## 2022-12-29
+
+ * New version: api/Domain/v3: is same as v2
+ * New version: api/Domain/v3/Classifications: output contract has changed - materials are now returned in a separate list
+ * New version: api/TestSearchListOpen/v6: output contract has changed - materials are now returned in a separate list; input contract now also accepts "Materials" in TypeFilter; TypeFilter values are now case insensitive
+ * Change: api/TestSearchListOpen/v5: TypeFilter values are now case insensitive
+
+ Previous versions of these APIs will remain available until at least July 2023.
+
 ## 2022-10-23
 
  * New version: api/Classification/v4: attribute PossibleValues has been renamed into AllowedValues (is now consistent with import attribute name)
@@ -51,11 +66,4 @@ ATTENTION: for accessing secured API's you must use **https://authentication.bui
 * New: api/Domain/v2/Classifications for getting the list of classifications for a domain
 
 ## 2021-09-01
-* Initial release
-
-
-#
-# Versioning strategy
-A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does not (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
-
-If there is a new version of an API the previous version will be supported for 6 to 12 months after releasing the new version. 
+* Official first release
