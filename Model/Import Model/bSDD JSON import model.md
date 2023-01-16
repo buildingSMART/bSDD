@@ -48,7 +48,7 @@ Contains general information about the domain and the delivered data.
 | Properties       | List of Property       | Yes       |               | List of objects of type “Property”. See next sections |
 | QualityAssuranceProcedure          | Text                   | No        | No            | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
-| ReleaseDate      | Date                   | No        | No            | Date of release of the version E.g. “2017-10-01”  |
+| ReleaseDate                   | No        | No            | | Date of release of the version, YYYY-MM-DD E.g. “2017-12-24”  |
 | Status      | Text                   | No        | No            | State of this version. Must be one of: "Preview", "Active", "Inactive"  |
 | UseOwnUri      | Boolean                   | No        | No            | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "http://bsdd.buildingsmart.org" will be assigned to each Classification and Property |
 
@@ -64,7 +64,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 
 | Field                     | DataType                       | Required? | Translatable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
-| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present |
+| ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections |
 | ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections |
 | ClassificationType        | Text                           | No        | No            | Must be one of: Class ComposedProperty Domain ReferenceDocument AlternativeUse                                     |
@@ -73,7 +73,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | CountriesOfUse            | List of text                   | No        | No            | List of country ISO codes this Classification is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
 | CountryOfOrigin           | Text                           | No        | No            | ISO Country Code of the country of origin of this classification. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
 | CreatorLanguageIsoCode    | Text                           | No        | No            | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
-| DeactivationDateUtc       | Date                           | No        | No            | |
+| DeactivationDateUtc       | Date                           | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
 | Definition                | Text                           | No        | Yes           | Definition of the Classification                                                                                   |
 | DeprecationExplanation    | Text                           | No        | Yes           |  |
 | DocumentReference         | Text                           | No        | No            | Reference to document with full or official definition of the Classification. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
@@ -83,12 +83,12 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | RelatedIfcEntityNamesList | List of text                   | No        | No            | References to the IFC equivalent of this Classification. See reference list [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv).                                      |
 | ReplacedObjectCodes       | List of text                   | No        | No            | List of Classification Codes this Classification replaces                                                          |
 | ReplacingObjectCodes      | List of text                   | No        | No            | List of Classification Codes this classification is replaced by                                                    |
-| RevisionDateUtc           | Date                           | No        | No            |  |
+| RevisionDateUtc           | Date                           | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
 | RevisionNumber            | Integer                        | No        | No            |  |
 | Status                    | Text                           | No        | No            | Status of the Classification: “Active” (default) or “Inactive” |
 | SubdivisionsOfUse         | List of text                   | No        | Yes           | List of geographical regions of use E.g. “US-MT”  |
-| Synonyms                  | List of text                   | No        | Yes           | |
-| VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present |
+| Synonyms                  | List of text                   | No        | Yes           | YYYY-MM-DD E.g. “2017-12-24”|
+| VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber             | Integer                        | No        | No            |  |
 | VisualRepresentationUri   | Text                           | No        | Yes           |  |
 
@@ -110,7 +110,7 @@ classifications
 
 | Field                         | DataType     | Required? | Translatable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ActivationDateUtc             | Date         | No        | No            | Will get date of import if field not present |
+| ActivationDateUtc             | Date         | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
 | Code                          | Text         | Yes       | No            | Unique identification within the domain of the property E.g. “ifc-99088-01”                                                                          |
 | ConnectedPropertyCodes        | List of text | No        | No            | List of codes of connected properties                                                                                                                |
@@ -118,7 +118,7 @@ classifications
 | CountryOfOrigin               | Text         | No        | No            | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         | No        | No            | Language ISO code of the creator. See reference list (json)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
 | DataType                      | Text         | No        | No            | The datatype the property is expressed in. Must be one of:  Boolean,  Character,  Integer,  Real,  String,  Time                       |
-| DeactivationDateUtc           | Date         | No        | No            |  |
+| DeactivationDateUtc           | Date         | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
 | Definition                    | Text         | No        | Yes           | Definition of the Property |
 | DeprecationExplanation        | Text         | No        | Yes           |  |
 | Description                   | Text         | Yes       | Yes           | |
@@ -146,13 +146,13 @@ classifications
 | PropertyValueKind             | Text         | No        | No            | Must be one of:  Single (one value, is default),  Range (two values),  List (multiple values), Complex (consists of multiple properties, use ConnectedProperties), ComplexList (list of complex values)                       |
 | ReplacedObjectCodes           | List of text | No        | No            | List of Classification Codes this Classification replaces                                                                                            |
 | ReplacingObjectCodes          | List of text | No        | No            | List of Classification Codes this classification is replaced by                                                                                      |
-| RevisionDateUtc               | Date         | No        | No            |  |
+| RevisionDateUtc               | Date         | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
 | RevisionNumber                | Integer      | No        | No     |  |
 | Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”    |
 | SubdivisionsOfUse             | Text         | No        | Yes           | Semicolon separated list of geographical regions of use E.g. “US-MT”                                                                                 |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
 | Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output pls let us know. |
-| VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present |
+| VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber                 | Integer      | No        | No            |  |
 | VisualRepresentationUri       | Text         | No        | Yes           |  |
 | PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
