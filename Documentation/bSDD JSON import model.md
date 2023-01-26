@@ -10,7 +10,7 @@
 
 The main concept of bSDD consists of a `Domain` having one or more `Classifications` and zero or more `Properties`. If we use IFC as an example, IFC is the `Domain`, "IfcWall" is a `Classification` and "AcousticRating" is a `Property`. A `Classification` can have zero or more `Properties`. In the below scheme this is depicted as a database model.
 
-<img src="https://github.com/buildingSMART/bSDD/blob/documentation/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/>
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/>
 
 # JSON import
 
