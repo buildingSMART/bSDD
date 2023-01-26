@@ -1,14 +1,12 @@
-Guidelines for bSDD input
+# General guidelines
 
-# General tips and tricks
-
-- Manage and publish translations in a seperate file.
-- Make specific domains, don't try to put too many data into one domain.
+- Manage and publish translations in a seperate files.
+- Make specific domains, don't try to put too much data into one domain.
 - Link to IFC entities for increased usability.
 - Add IFC properties to your content instead of replicating your own properties.
 - Make sure you use the correct encoding of characters. 
 
-# General Naming conventions and guidelines
+# Naming conventions and guidelines
 Avoid names that conflict with other domains. For example, do not create classifications with an 'Ifc'-prefix. Do not replicate content from other domains, but link to it. 
 
 ## Domain name
