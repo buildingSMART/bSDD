@@ -22,6 +22,7 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 ## Useful links
 
 * FAQ (what does it cost? what is it? how does it relate to IFC? etc.): [buildingsmart.org/.../buildingsmart-data-dictionary/](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
+* Browse the documentation: [Documentation](Documentation)
 
 ### Using the bSDD
 
@@ -49,8 +50,8 @@ We also provide a `Test` environment to play with, for those who want to experim
 
 ### Instructions
 
-* [How to upload your data into the bSDD?](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md)
-* [How to structure my data to import to bSDD?](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20JSON%20import%20model.md)
+* [How to upload your data into the bSDD?](/Documentation/bSDD%20import%20tutorial.md)
+* [How to structure my data to import to bSDD?](/Documentation/bSDD%20JSON%20import%20model.md)
 
 ### Example use-cases
 * A typical use-case for bSDD using SketchUp to create IFC data: [VIMEO video](https://vimeo.com/446417661/ff8b6605d3), and the [source code](https://github.com/DigiBase-VolkerWessels/SketchUp-bsDD-plugin)
