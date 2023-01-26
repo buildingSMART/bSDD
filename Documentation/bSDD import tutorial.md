@@ -19,7 +19,7 @@ or for test environment: [https://manage-test.bsdd.buildingsmart.org](bSDD Manag
 3. Log in
 
 4. If you do not have a bSDD buildingSMART account yet, choose "Sign up now", otherwise choose "Sign in"
-![Signup/signin](https://raw.githubusercontent.com/buildingSMART/bSDD/documentation/Documentation/graphics/Screenshot_03_signupsignin.png)
+![Signup/signin](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/Screenshot_03_signupsignin.png)
 
 5. If all is well you should see "Upload domain" menu item. Click this
 
