@@ -71,7 +71,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | CountriesOfUse            | List of text                   | No        | No            | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
 | CountryOfOrigin           | Text                           | No        | No            | ISO Country Code of the country of origin of this classification. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
 | CreatorLanguageIsoCode    | Text                           | No        | No            | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
-| DeactivationDateUtc       | Date                           | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
+| DeActivationDateUtc       | Date                           | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
 | Definition                | Text                           | No        | Yes           | Definition of the `Classification`|
 | DeprecationExplanation    | Text                           | No        | Yes           |  |
 | DocumentReference         | Text                           | No        | No            | Reference to document with full or official definition of the Classification. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
@@ -116,7 +116,7 @@ classifications
 | CountryOfOrigin               | Text         | No        | No            | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         | No        | No            | Language ISO code of the creator. See reference list (json)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
 | DataType                      | Text         | No        | No            | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
-| DeactivationDateUtc           | Date         | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
+| DeActivationDateUtc           | Date         | No        | No            | YYYY-MM-DD E.g. “2017-12-24” |
 | Definition                    | Text         | No        | Yes           | Definition of the `Property` |
 | DeprecationExplanation        | Text         | No        | Yes           |  |
 | Description                   | Text         | Yes       | Yes           | |
@@ -127,7 +127,7 @@ classifications
 | DimensionElectricCurrent               | Integer      | No        | No            | The ElectricCurrent dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionThermodynamicTemperature               | Integer      | No        | No            | The ThermodynamicTemperature dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionAmountOfSubstance               | Integer      | No        | No            | The AmountOfSubstance dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
-| DimensionLuminousInensity               | Integer      | No        | No            | The LuminousInensity dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
+| DimensionLuminousIntensity               | Integer      | No        | No            | The LuminousIntensity dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DocumentReference             | Text         | No        | No            | Reference to document with full or official definition of the `Property`. See reference list (json) [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                                                               |
 | DynamicParameterPropertyCodes | List of text | No        | No            | List of codes of properties which are parameters of the function for a dynamic property                                                              |
 | Example                       | Text         | No        | Yes           | Example of the `Property` |
