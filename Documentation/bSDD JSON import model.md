@@ -48,7 +48,7 @@ Contains general information about the `Domain` and the delivered data.
 | QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
 | ReleaseDate                   | No        | No            | | Date of release of the version, YYYY-MM-DD E.g. “2017-12-24”  |
 | Status      | Text                   | No        | No            | State of this version. Must be one of: `Preview`, `Active`, `Inactive`  |
-| UseOwnUri      | Boolean                   | No        | No            | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "http://bsdd.buildingsmart.org" will be assigned to each Classification and Property |
+| UseOwnUri      | Boolean                   | Yes        | No            | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "http://bsdd.buildingsmart.org" will be assigned to each Classification and Property |
 
 \* For delivering data in additional languages it is sufficient to fill the `Domain` type fields, all `Code` fields and the fields marked with `Translatable?` = “Yes” of the other types. Make sure that the `OrganizationCode`, `DomainCode` and `DomainVersion` are exactly the same and if the data is for adding a language to an existing `Domain`, set field `LanguageOnly` to true.
 
