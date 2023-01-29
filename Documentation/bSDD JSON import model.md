@@ -85,7 +85,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | RevisionNumber            | Integer                        | No        | No            |  |
 | Status                    | Text                           | No        | No            | Status of the `Classification`: `Active` (default) or `Inactive` |
 | SubdivisionsOfUse         | List of text                   | No        | Yes           | List of geographical regions of use E.g. “US-MT”  |
-| Synonyms                  | List of text                   | No        | Yes           | YYYY-MM-DD E.g. “2017-12-24”|
+| Synonyms                  | List of text                   | No        | Yes           | List of alternative names of this classification for easier finding.|
 | VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber             | Integer                        | No        | No            |  |
 | VisualRepresentationUri   | Text                           | No        | Yes           |  |
