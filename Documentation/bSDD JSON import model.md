@@ -86,6 +86,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | Status                    | Text                           | No        | No            | Status of the `Classification`: `Active` (default) or `Inactive` |
 | SubdivisionsOfUse         | List of text                   | No        | Yes           | List of geographical regions of use E.g. “US-MT”  |
 | Synonyms                  | List of text                   | No        | Yes           | List of alternative names of this classification for easier finding.|
+| Uid                  | Text                   | No        | No           | Unique identification (ID), in case the URI is not enough. |
 | VersionDateUtc            | Date                           | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber             | Integer                        | No        | No            |  |
 | VisualRepresentationUri   | Text                           | No        | Yes           |  |
@@ -149,6 +150,7 @@ classifications
 | Status                        | Text         | No        | No            | Status of the Property: “Active” (default) or “Inactive”    |
 | SubdivisionsOfUse             | Text         | No        | Yes           | Semicolon separated list of geographical regions of use E.g. “US-MT”                                                                                 |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
+| Uid                  | Text                   | No        | No           | Unique identification (ID), in case the URI is not enough. |
 | Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output pls let us know. |
 | VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber                 | Integer      | No        | No            |  |
