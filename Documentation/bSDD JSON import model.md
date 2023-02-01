@@ -158,7 +158,7 @@ classifications
 | PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
 
 
-## ClassificationProperty type
+## ClassificationProperty
 
 | Field               | DataType | Required? | Translatable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
@@ -184,7 +184,7 @@ classifications
 
 \* One of those is required.
 
-## ClassificationRelation type
+## ClassificationRelation
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
@@ -195,7 +195,7 @@ classifications
 
 
 
-## PropertyValue type
+## PropertyValue
 
 Note: adding translations of the `PropertyValue` is not supported yet
 
@@ -208,7 +208,7 @@ Note: adding translations of the `PropertyValue` is not supported yet
 | Value | Text     | Yes       | Yes            | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 
 
-## PropertyRelation type
+## PropertyRelation
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
