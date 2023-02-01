@@ -8,9 +8,16 @@
 
 # buildingSMART Data Dictionary model
 
-The main concept of bSDD consists of a `Domain` having one or more `Classifications` and zero or more `Properties`. If we use IFC as an example, IFC is the `Domain`, "IfcWall" is a `Classification` and "AcousticRating" is a `Property`. A `Classification` can have zero or more `Properties`. In the below scheme this is depicted as a database model.
+The main concept of bSDD consists of a `Domain` having one or more `Classifications` and zero or more `Properties`. If we use IFC as an example, IFC is the `Domain`, "IfcWall" is a `Classification` and "AcousticRating" is a `Property`. A `Classification` can have zero or more `Properties`. 
 
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/>
+The diagram below shows the data model behind the bSDD:
+
+<!-- <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/> -->
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 450px"/>
+
+Here is an example usage of the above concepts from the ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/Classification/Index/58078) domain:
+
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
 
 # JSON import
 
