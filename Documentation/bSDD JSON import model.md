@@ -121,7 +121,7 @@ classifications
 | Definition                    | Text         | No        | Yes           | Definition of the `Property` |
 | DeprecationExplanation        | Text         | No        | Yes           |  |
 | Description                   | Text         | Yes       | Yes           | |
-| Dimension                     | Text         | No        | No            | In case of a physical quantity, dimension according to ISO 80000 (all parts) E.g. “1 0 -2 0 0 0 0”                                                   |
+| Dimension                     | Text         | No        | No            | In case of a physical quantity, specify dimension according to [International_System_of_Quantities](https://en.wikipedia.org/wiki/International_System_of_Quantities), as defined in ISO 80000-1. The order is: `length`, `mass`, `time`, `electric current`, `thermodynamic temperature`, `amount of substance`, and `luminous intensity`. For example speed (m/s) would be denoted as “1 0 -1 0 0 0 0”. More examples in [IDS docs](https://github.com/buildingSMART/IDS/blob/master/Documentation/units.md) |
 | DimensionLength               | Integer      | No        | No            | The Length dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionMass               | Integer      | No        | No            | The Mass dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
 | DimensionTime               | Integer      | No        | No            | The Time dimension; either use the field Dimension to specifiy all parts, or specify all parts separately|
