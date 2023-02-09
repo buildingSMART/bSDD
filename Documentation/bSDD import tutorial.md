@@ -4,18 +4,23 @@ If you have your model in the bsdd-import-model.json format available, you can u
 
 **Important** if you upload a file it will replace the whole domain! You cannot upload the classifications in parts, all classifications and properties of one domain must be in one file.
 
-1. If it's the first time you are going to upload, you need to have your e-mail address, the one you used to log in, connected to your organization. To achieve this, send an e-mail with
+1. If it's the first time you are going to upload, you need to have your e-mail address, the one you used to log in, connected to your organization. To achieve this, send an e-mail with:
 - your name
 - your e-mail address you use to log in the bSDD API
 - the name of your organization
+- the code for the organization, we advice short abbreviation, without whitespaces (as this will be used in URIs/links).
 - a hyperlink to the website of your organization
-- (optional) contact e-mail address in case users have questions about the domain you uploaded
+- (optional) contact e-mail address in case users have questions about the domain you uploaded if different than your email
+- (optional) list of e-mail addresses of people from your organisation who should also be able to upload domains. Note that regular users don't need to be specified to access all content.
 
-to bsdd_support@buildingsmart.org.
+to <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
 As soon as you've got a reply, you can continue with the next step.
 
-2. Go to [https://manage.bsdd.buildingsmart.org/](bSDD Management App)
-or for test environment: [https://manage-test.bsdd.buildingsmart.org](bSDD Management App TEST)
+2. Go to:
+-  [https://manage-test.bsdd.buildingsmart.org](https://manage-test.bsdd.buildingsmart.org) for the TEST environment*
+-  [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/) for the PRODUCTION environment
+
+*We recommend everyone to first test the bSDD using the TEST environment and when ready, start using the PRODUCTION one.
 
 3. Log in
 
