@@ -4,7 +4,7 @@ If you have your model in the bsdd-import-model.json format available, you can u
 
 **Important** if you upload a file it will replace the whole domain! You cannot upload the classifications in parts, all classifications and properties of one domain must be in one file.
 
-1. If it's the first time you are going to upload, you need to have your e-mail address, the one you used to log in, connected to your organization. To achieve this, send an e-mail with:
+1. If it's the first time you are going to upload, you need to have your e-mail address, the one you used to log in, connected to your organization. To achieve this, send an e-mail us at: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a> with:
 - your name
 - your e-mail address you use to log in the bSDD API
 - the name of your organization
@@ -13,7 +13,6 @@ If you have your model in the bsdd-import-model.json format available, you can u
 - (optional) contact e-mail address in case users have questions about the domain you uploaded if different than your email
 - (optional) list of e-mail addresses of people from your organisation who should also be able to upload domains. Note that regular users don't need to be specified to access all content.
 
-to <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
 As soon as you've got a reply, you can continue with the next step.
 
 2. Go to:
