@@ -72,7 +72,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections |
 | ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections |
-| ClassificationType        | Text                           | No        | No            | Must be one of: `Class` `ComposedProperty` `Domain` `ReferenceDocument` `AlternativeUse`  |
+| ClassificationType        | Text                           | No        | No            | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`  |
 | Code                      | Text                           | Yes       | No            | Unique identification within the domain of the classification E.g. “ifc-00123-01”                                  |
 | ReferenceCode             | Text                           | No        | No            | Reference code, can have domain specific usage. If null, then the value of Code is used to fill the field. To make ReferenceCode empty use empty string "".  |
 | CountriesOfUse            | List of text                   | No        | No            | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
