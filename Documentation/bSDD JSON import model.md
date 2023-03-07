@@ -49,7 +49,7 @@ Contains general information about the `Domain` and the delivered data.
 | License          | Text                   | No        | No            | Description of the license the data will be made available (free text). E.g. “No license”, "MIT license"  |
 | LicenseUrl      | Text                   | No        | No            | Url to a web page with the full license text   |
 | MoreInfoUrl      | Text                   | No        | No            | Url to web page with more info about the domain |
-| OrganizationCode | Text                   | Yes       | No            | If you do not have a code for your organization yet, request one at bsdd_support@buildingsmart.org                                                                                         |
+| OrganizationCode | Text                   | Yes       | No            | If you do not have a code for your organization yet, request one at [bSDD User Helpdesk](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25)                                                                                         |
 | Properties       | List of Property       | Yes       |               | List of objects of type “Property”. See next sections |
 | QualityAssuranceProcedure          | Text                   | No        | No            | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl      | Text                   | No        | No            | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
