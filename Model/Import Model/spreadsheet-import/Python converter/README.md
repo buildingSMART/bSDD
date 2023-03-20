@@ -14,4 +14,4 @@ Please report if you experience any problems with using it. We advise to always 
     *  WITH_NULLS (False - produce minimal JSON only with fields filled in Excel, True - export also fields that are empty in Excel with 'null' assigned)  
   
     You can do that from the (Windows) console with:
-    ```Python Excel2bSDD_converter.py '...\Excel_file.xlsx' '...\Result.json' True```
+    ```Python Excel2bSDD_converter.py "C:\...\Excel_file.xlsx" "C:\...\Result.json" False```

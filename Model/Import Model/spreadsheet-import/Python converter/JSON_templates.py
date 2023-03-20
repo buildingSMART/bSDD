@@ -59,7 +59,8 @@ ClassificationRelation = {
     }
 
 AllowedValue = {
-    "(Origin Property Code OR ClassificationProperty Code)": None,
+    "(Origin Property Code)": None,
+    "(ClassificationProperty Code)": None,
     "NamespaceUri": None,
     "Code": None,
     "Value": None,
