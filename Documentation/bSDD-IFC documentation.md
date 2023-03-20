@@ -56,7 +56,7 @@ Mapping rules are defined for the following concepts:
 |                    | bSDD                      | IFC 4.3                      | IFC 4                      | IFC 2x3                    | IDS   |
 |--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
 | **Domain name**    | DomainName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |❎*    |
-| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | ❌                           |uri**      |
+| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | ❌                           |uri      |
 | **Domain version** | DomainVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |uri**      |
 | **Domain owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |uri**      |
 | **Domain date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |❎*      |
