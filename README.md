@@ -47,16 +47,20 @@ We also provide a `Test` environment to play with, for those who want to experim
 * The API URL (not a readable website): https://api.bsdd.buildingsmart.org/ 
 * API documentation on Swagger: https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
 * `Test` API documentation on Swagger: https://test.bsdd.buildingsmart.org/swagger/
+* GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
 
 ### Instructions
 
 * [How to upload your data into the bSDD?](/Documentation/bSDD%20import%20tutorial.md)
 * [How to structure my data to import to bSDD?](/Documentation/bSDD%20JSON%20import%20model.md)
 
-### Example use-cases
+### Example use-cases, tools and presentations
 * A typical use-case for bSDD using SketchUp to create IFC data: [VIMEO video](https://vimeo.com/446417661/ff8b6605d3), and the [source code](https://github.com/DigiBase-VolkerWessels/SketchUp-bsDD-plugin)
 * A typical use-case for bSDD using ACCA software: [YouTube video](https://www.youtube.com/watch?v=KTzJRJkisKk&ab_channel=ETIMInternational)
-* GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
+* Recording of bSDD session from InfraBIM Open 2023 in Tampere, Finland. [YouTube video](https://www.youtube.com/watch?v=gie0ryGD3NQ)
+     * [00:00:00](https://www.youtube.com/watch?v=gie0ryGD3NQ&t=0s) How to use the buildingSMART Data Dictionary to extend IFC for your needs - Léon van Berlo
+     * [00:26:27](https://www.youtube.com/watch?v=gie0ryGD3NQ&t=1587s) How to utilize bSDD in infrastructure owners perspective - case Finnish Transport Infrastructure Agency - Niki Tapper, Teea Kantojärvi
+     * [00:55:35](https://www.youtube.com/watch?v=gie0ryGD3NQ&t=3335s) Using IFC 4.3 with bSDD for railway - Giulia Minnucci
 * Presentation about the bSDD (and relation to IFC): [Presentation](https://www.slideshare.net/berlotti/20200903-the-2020-buildingsmart-data-dictionary-prototype-bsdd)
 * Video recording of a bSDD workshop, including Revit plugin demo: [Workshop video](https://app.box.com/s/lndnjrbx80n87eg1eq1zhhbqoz8hfmyz/file/720558204462 (start at 1.44.00))
 
