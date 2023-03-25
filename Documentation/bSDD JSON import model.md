@@ -208,7 +208,7 @@ Note: adding translations of the `PropertyValue` is not supported yet
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| Code             | Text     | No       | No            | Code as unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value    |
+| Code             | Text     | Yes       | No            | Code as unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value    |
 | Description | Text     | No       | Yes            | A description of the value|
 | NamespaceUri| Text | No | No | You can provide your own Namespace Uri (must be globally unique).|
 | SortNumber | Integer     | No       | No            | SortNumber of the Value in the list of Values of the `Property` it belongs to|
