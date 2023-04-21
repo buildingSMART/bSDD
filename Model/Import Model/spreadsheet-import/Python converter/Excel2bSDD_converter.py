@@ -153,11 +153,6 @@ if __name__ == "__main__":
     EXCEL_PATH = sys.argv[1]
     JSON_PATH = sys.argv[2]
     WITHOUT_NULLS = sys.argv[3]
-    # EXCEL_PATH = r"C:\Code\bSDD\ignore\Python_Excel_test\Excel_file.xlsx"
-    # EXCEL_PATH = r"C:\Users\arturbt\buildingSMART\buildingSMART International\buildingSMART International Team Site - bSDD\bSDD_uploads\RPAG Swiss\Excel - Copy.xlsx"
-    # JSON_PATH = r"C:\Code\bSDD\ignore\Python_Excel_test\Result.json"
-    # JSON_PATH = r"C:\Users\arturbt\buildingSMART\buildingSMART International\buildingSMART International Team Site - bSDD\bSDD_uploads\RPAG Swiss\Result.json"
-    # WITHOUT_NULLS = False
 
     excel = load_excel(EXCEL_PATH)
     bsdd_data = excel2bsdd(excel)
