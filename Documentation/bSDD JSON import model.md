@@ -8,9 +8,17 @@
 
 # buildingSMART Data Dictionary model
 
-The main concept of bSDD consists of a `Domain` having one or more `Classifications` and zero or more `Properties`. If we use IFC as an example, IFC is the `Domain`, "IfcWall" is a `Classification` and "AcousticRating" is a `Property`. A `Classification` can have zero or more `Properties`. 
+`data dictionary` - centralized repository of information about data such as meaning, relationships to other data, origin usage and format.<sup>1<sup>3.9</sup></sup>. The bSDD is a service to facilitate distribution of such dictionaries.
 
-The diagram below shows the data model behind the bSDD:
+The content in bSDD is structured in `Domains` published by owner organizations. Each `Domain` consists of `Classifications` and `Properties`, which could be related with each other or with other `Domains`. 
+
+> `Domain` - area of activity covering a science, a technique, a material, etc. A domain can be associated with a group to which the property applies. <sup>1<sup>3.11</sup></sup>
+> `Class` - description of a set of objects that share the same characteristics.<sup>1<sup>3.7</sup></sup> 
+> `Property` - inherent or acquired feature of an item. Example: `Thermal efficiency`, `heat flow`, (...) `colour`. <sup>1<sup>3.17</sup></sup>
+
+If we use IFC as an example, IFC 4.3 is the `Domain`, "IfcWall" is a `Class` and "AcousticRating" is a `Property`. A `Class` can have zero or more `Properties`. 
+
+The diagram below shows the simplified data model behind the bSDD:
 
 <!-- <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/> -->
 <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 450px"/>
@@ -21,8 +29,7 @@ Here is an example usage of the above concepts from the ["Fruit and vegetables"]
 
 # JSON import
 
-You can deliver data for the buildingSMART Data Dictionary by using the bSDD
-JSON import model format. This document explains this format.
+You can deliver data for the buildingSMART Data Dictionary by using the bSDD JSON import model format. This document explains this format.
 
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3).
 If you think there are reference items missing, please let us know.
@@ -158,11 +165,11 @@ classifications
 | SubdivisionsOfUse             | Text         | No        | Yes           | Semicolon separated list of geographical regions of use E.g. “US-MT”                                                                                 |
 | TextFormat                    | Text         | No        | No            | Pair for text type (encoding, number of characters) The encoding is set according to “Name of encoding standard” of IANA, RFC 2978 E.g. “(UTF-8,32)” |
 | Uid                  | Text                   | No        | No           | Unique identification (ID), in case the URI is not enough. |
-| Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output pls let us know. |
+| Units                         | List of text | No        | No            | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output, please contact us at <bsdd_support@buildingsmart.org>. |
 | VersionDateUtc                | Date         | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber                 | Integer      | No        | No            |  |
 | VisualRepresentationUri       | Text         | No        | Yes           |  |
-| PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section "PropertyRelation type" for more info |
+| PropertyRelations              | List of PropertyRelation  | No  | Yes           | List of related properties. See section [PropertyRelation](#propertyrelation) for more info. |
 
 
 ## ClassificationProperty
@@ -172,7 +179,7 @@ classifications
 | AllowedValues              | List of PropertyValue  | No  | Yes           | List of allowed values for the `Property`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info  |
 | Code                | Text     | No        | No            | Unique identification within the domain of this classification property                                                |
 | Description         | Text     | No        | Yes           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
-| ~~ExternalPropertyUri~~ | Text     | No \*     | No            | DEPRECATED - Use `PropertyNamespaceUri` instead                |
+| ~~ExternalPropertyUri~~ | ~~Text~~     | ~~No \*~~     | ~~No~~            | DEPRECATED - Use `PropertyNamespaceUri` instead                |
 | IsRequired              | Boolean  | No  | No           | Indicates if this is a required `Property` of the `Classification` |
 | IsWritable              | Boolean  | No  | No           | Indicates if the value of this `Property` of the `Classification` can be changed |
 | MaxExclusive            | Real     | No        | No            | Maximum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values |
@@ -223,23 +230,54 @@ Note: adding translations of the `PropertyValue` is not supported yet
 | RelatedPropertyUri | Text     | Yes       | No            | Full namespace URI of the related `Property`. Can be to same or different `Domain`.|
 | RelationType             | Text     | Yes       | No            | One of:  `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
 
+---
 
-# Explanations
+# Additional explanations
 
 ### Classification types
 
 Each classification must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3<sup>1</sup>:
-* `class` - description of a set of objects that share the same characteristics <sup>1 (3.7)</sup>. This is the most common type in bSDD.
-* `group of properties` - collection enabling the properties to be prearranged or organized.<sup>1 (3.14)</sup>
+* `class` - description of a set of objects that share the same characteristics <sup>1<sup>3.7</sup></sup>. This is the most common type in bSDD.
+* `group of properties` - collection enabling the properties to be prearranged or organized.<sup>1<sup>3.14</sup></sup>
   * A Property Set as defined in ISO 16739-1 is a group of properties, but a group of properties is not necessarily a Property Set.
   * There are five categories of possible groups of properties: class, domain, reference document, composed property, alternative use.
   * A property can be member of several groups of properties. A property cannot be member of several Property Sets as defined in ISO 16739-1.
-* `reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain.<sup>1 (3.18)</sup>
+* `reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain.<sup>1<sup>3.18</sup></sup>
   * A reference document can be associated with any data present in a data dictionary.
   * In bSDD we also have a [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) list with most common standards that can be used as reference. 
-* `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1 (3.8)</sup>
+* `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>
   * Using this category of group of properties requires to fill all the properties part of the composed property. There is no value attached to the group of properties. 
   * Example: To describe the characteristic "concrete facing quality" it is mandatory to describe 3 properties: concrete planarity, concrete hue, concrete texture.	
-* `alternative use` - type to be used if no other type fits the needs.<sup>1 (3.1)</sup>
+* `alternative use` - type to be used if no other type fits the needs.<sup>1<sup>3.1</sup></sup>
 
+### Relation types
+
+`Properties` and `Classifications` must have a specific type. Below is the explanation of what each type means:
+* `IsEqualTo` - if two concepts are unequivocal and have the same name
+* `IsSynonymOf` - if two concepts are unequivocal but have a different name
+* `IsChildOf` - equivalent of "subtype" relationship from ISO 12006<sup><sup>1</sup>F.3.1</sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of a generic concept "Motor". 
+* `IsParentOf` - the opposite relation to `IsChildOf`.
+* `HasPart` - for example, an electric motor can be composed of elements such as stators, rotors, etc.<sup><sup>1</sup>F.3.2</sup>.
+* `HasMaterial` - a class can be associated with particular material. For example: "Steel Beam" could be related to material "Steel". This type is only available for `Classes`, not `Properties`.
+* `HasReference` - if there is another type of relation between concepts, for example "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them. 
+
+### Relation 🆚 ParentClassificationCode 🆚 RelatedIfcEntityNamesList
+TBD...
+
+### PropertySet 🆚 GroupOfProperties 🆚 ConnectedPropertyCodes 🆚 ComposedProperty 
+TBD...
+
+### Unit(s) 🆚 Dimension 🆚 PhysicalQuantity
+TBD...
+
+### Dynamic property 🆚 ComposedProperty
+TBD...
+
+### AllowedValues (PropertyValue) 🆚 Min/MaxInc/Exclusive 🆚 Pattern
+TBD...
+
+### URI 🆚 (G)UID
+TBD...
+
+--- 
 <sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
