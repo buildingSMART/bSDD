@@ -72,7 +72,7 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | ActivationDateUtc         | Date                           | No        | No            | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | ClassificationProperties  | List of ClassificationProperty | No        | No            | See next sections |
 | ClassificationRelations   | List of ClassificationRelation | No        | No            | See next sections |
-| ClassificationType        | Text                           | No        | No            | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`  |
+| ClassificationType        | Text                           | Yes        | No            | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`. Read more [here](#classification-types).   |
 | Code                      | Text                           | Yes       | No            | Unique identification within the domain of the classification E.g. “ifc-00123-01”                                  |
 | ReferenceCode             | Text                           | No        | No            | Reference code, can have domain specific usage. If null, then the value of Code is used to fill the field. To make ReferenceCode empty use empty string "".  |
 | CountriesOfUse            | List of text                   | No        | No            | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
@@ -223,3 +223,29 @@ Note: adding translations of the `PropertyValue` is not supported yet
 | RelatedPropertyUri | Text     | Yes       | No            | Full namespace URI of the related `Property`. Can be to same or different `Domain`.|
 | RelationType             | Text     | Yes       | No            | One of:  `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
 
+
+# Explanations
+
+### Classification types
+
+Each classification must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3:
+
+`class` - description of a set of objects that share the same characteristics (3.7)
+  * This is the most common type in bSDD.
+  * The characteristics may be embodied by the use of properties, operations, methods, relations, semantics, etc.
+  * Each class is a hierarchical element of a classification.
+
+`group of properties` - collection enabling the properties to be prearranged or organized. (3.14)
+  * A Property Set as defined in ISO 16739-1 is a group of properties, but a group of properties is not necessarily a Property Set.
+  * There are five categories of possible groups of properties: class, domain, reference document, composed property, alternative use.
+  * A property can be member of several groups of properties. A property cannot be member of several Property Sets as defined in ISO 16739-1.
+
+`reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain. (3.18) 
+  * A reference document can be associated with any data present in a data dictionary.
+  * In bSDD we also have a [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) list with most common standards that can be used as reference. 
+
+`composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined. (3.8)
+  * Using this category of group of properties requires to fill all the properties part of the composed property. There is no value attached to the group of properties. 
+  * Example: To describe the characteristic "concrete facing quality" it is mandatory to describe 3 properties: concrete planarity, concrete hue, concrete texture.	
+
+`alternative use` - category of `group of properties` not corresponding to [anything else]. (...) shall be used only after having considered the possible use of all the other categories. (3.1) 
