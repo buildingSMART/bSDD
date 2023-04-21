@@ -13,8 +13,10 @@
 The content in bSDD is structured in `Domains` published by owner organizations. Each `Domain` consists of `Classifications` and `Properties`, which could be related with each other or with other `Domains`. 
 
 > `Domain` - area of activity covering a science, a technique, a material, etc. A domain can be associated with a group to which the property applies. <sup>1<sup>3.11</sup></sup>
+> 
 > `Class` - description of a set of objects that share the same characteristics.<sup>1<sup>3.7</sup></sup> 
-> `Property` - inherent or acquired feature of an item. Example: `Thermal efficiency`, `heat flow`, (...) `colour`. <sup>1<sup>3.17</sup></sup>
+>
+>  `Property` - inherent or acquired feature of an item. Example: `Thermal efficiency`, `heat flow`, (...) `colour`. <sup>1<sup>3.17</sup></sup>
 
 If we use IFC as an example, IFC 4.3 is the `Domain`, "IfcWall" is a `Class` and "AcousticRating" is a `Property`. A `Class` can have zero or more `Properties`. 
 
