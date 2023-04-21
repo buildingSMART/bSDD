@@ -257,9 +257,9 @@ Each classification must have a specific type. Below is the explanation of what 
 `Properties` and `Classifications` must have a specific type. Below is the explanation of what each type means:
 * `IsEqualTo` - if two concepts are unequivocal and have the same name
 * `IsSynonymOf` - if two concepts are unequivocal but have a different name
-* `IsChildOf` - equivalent of "subtype" relationship from ISO 12006<sup><sup>1</sup>F.3.1</sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of a generic concept "Motor". 
+* `IsChildOf` - equivalent of "subtype" relationship from ISO 12006<sup>1<sup>F.3.1</sup></sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of a generic concept "Motor". 
 * `IsParentOf` - the opposite relation to `IsChildOf`.
-* `HasPart` - for example, an electric motor can be composed of elements such as stators, rotors, etc.<sup><sup>1</sup>F.3.2</sup>.
+* `HasPart` - for example, an electric motor can be composed of elements such as stators, rotors, etc.<sup>1<sup>F.3.2</sup></sup>.
 * `HasMaterial` - a class can be associated with particular material. For example: "Steel Beam" could be related to material "Steel". This type is only available for `Classes`, not `Properties`.
 * `HasReference` - if there is another type of relation between concepts, for example "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them. 
 
