@@ -228,24 +228,18 @@ Note: adding translations of the `PropertyValue` is not supported yet
 
 ### Classification types
 
-Each classification must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3:
-
-`class` - description of a set of objects that share the same characteristics (3.7)
-  * This is the most common type in bSDD.
-  * The characteristics may be embodied by the use of properties, operations, methods, relations, semantics, etc.
-  * Each class is a hierarchical element of a classification.
-
-`group of properties` - collection enabling the properties to be prearranged or organized. (3.14)
+Each classification must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3<sup>1</sup>:
+* `class` - description of a set of objects that share the same characteristics <sup>1 (3.7)</sup>. This is the most common type in bSDD.
+* `group of properties` - collection enabling the properties to be prearranged or organized.<sup>1 (3.14)</sup>
   * A Property Set as defined in ISO 16739-1 is a group of properties, but a group of properties is not necessarily a Property Set.
   * There are five categories of possible groups of properties: class, domain, reference document, composed property, alternative use.
   * A property can be member of several groups of properties. A property cannot be member of several Property Sets as defined in ISO 16739-1.
-
-`reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain. (3.18) 
+* `reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain.<sup>1 (3.18)</sup>
   * A reference document can be associated with any data present in a data dictionary.
   * In bSDD we also have a [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) list with most common standards that can be used as reference. 
-
-`composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined. (3.8)
+* `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1 (3.8)</sup>
   * Using this category of group of properties requires to fill all the properties part of the composed property. There is no value attached to the group of properties. 
   * Example: To describe the characteristic "concrete facing quality" it is mandatory to describe 3 properties: concrete planarity, concrete hue, concrete texture.	
+* `alternative use` - type to be used if no other type fits the needs.<sup>1 (3.1)</sup>
 
-`alternative use` - category of `group of properties` not corresponding to [anything else]. (...) shall be used only after having considered the possible use of all the other categories. (3.1) 
+<sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
