@@ -6,9 +6,11 @@ Please report if you experience any problems with using it. We advise to always 
 
 ## Using the Python converter
 
-1. Copy the Excel template and fill in with your data. All the fields marked with * are mandatory if a row is in use.
-2. Save and close the Excel file.
-3. Run the Python script Excel2bSDD_converter.py with the three arguments:
+1. You need to have Python installed. If not, download and install python from here: https://www.python.org/downloads/.
+2. You need the two Python libraries: Numpy and Pandas. If you don't, type in the console: `pip install numpy pandas`
+4. Copy the Excel template and fill in with your data. All the fields marked with * are mandatory if a row is in use.
+5. Save and close the Excel file.
+6. Run the Python script Excel2bSDD_converter.py with the three arguments:
     *  EXCEL_PATH (path to your Excel file)
     *  JSON_PATH (path where you want to create the resultant JSON file, should end with ".JSON")
     *  WITH_NULLS (False - produce minimal JSON only with fields filled in Excel, True - export also fields that are empty in Excel with 'null' assigned)  
