@@ -43,7 +43,7 @@ Contains general information about the `Domain` and the delivered data.
 | DomainCode       | Text                   | ✅       |             | Code of the domain, preferably short, only alphabetical characters and numbes allowed, must start with alphabetical character E.g. “ifc”   |
 | DomainName       | Text                   | ✅\* |   | Name of the domain. \*If the domain exists supplying this name is not necessary. |
 | DomainNamespaceUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique namespace that's the first part of all Classifications and Properties namespaces, e.g. "urn:mycompany:mydomain" |
-| DomainVersion    | Text                   | ✅       |             | Version of the domain data in format "x.y". E.g.: 4.3 |
+| DomainVersion    | Text                   | ✅       |             | Version of the domain data in format "x.y.z". E.g.: 1.0.1. We recommend following [Semantic Versioning](https://semver.org/) approach.   |
 | LanguageIsoCode  | Text                   | ✅       |             | ISO language code: indicates the language of the data. If you want to deliver data in multiple language use a json file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. “de-DE” |
 | LanguageOnly     | Boolean                | ✅       |             | true if json contains only language specific information, no otherwise \*  |
 | License          | Text                   |         |             | Description of the license the data will be made available (free text). E.g. “No license”, "MIT license"  |
