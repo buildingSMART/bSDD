@@ -39,7 +39,7 @@ Contains general information about the `Domain` and the delivered data.
 
 | Field            | DataType               | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
 |------------------|------------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Classifications  | List of Classification | ✅       |               | List of objects of type `Classification`. See next section  |
+| Classifications  | List of Classification | ✅       |               | List of objects of type `Classification`. See section [Classification](#classification)  |
 | DomainCode       | Text                   | ✅       |             | Code of the domain, preferably short, only alphabetical characters and numbes allowed, must start with alphabetical character E.g. “ifc”   |
 | DomainName       | Text                   | ✅\* |   | Name of the domain. \*If the domain exists supplying this name is not necessary. |
 | DomainNamespaceUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique namespace that's the first part of all Classifications and Properties namespaces, e.g. "urn:mycompany:mydomain" |
@@ -50,7 +50,7 @@ Contains general information about the `Domain` and the delivered data.
 | LicenseUrl      | Text                   |         |             | Url to a web page with the full license text   |
 | MoreInfoUrl      | Text                   |         |             | Url to web page with more info about the domain |
 | OrganizationCode | Text                   | ✅       |             | Code of the Organization, preferably short, as it will appear in all the URI links. Only alphabetical characters and numbers are allowed. Can't start with a digit. E.g. “ifc”. If you do not have a code for your organization yet, request one at [bSDD User Helpdesk](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25)                                                                                         |
-| Properties       | List of Property       | ✅       |               | List of objects of type “Property”. See next sections |
+| Properties       | List of Property       | ✅       |               | List of objects of type “Property”. See section [Property](#property) |
 | QualityAssuranceProcedure          | Text                   |         |             | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "-	AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl      | Text                   |         |             | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
 | ReleaseDate                   | Date        |             | | Date of release of the version, YYYY-MM-DD E.g. “2017-12-24”  |
@@ -70,9 +70,9 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
 | ActivationDateUtc         | Date                           |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
-| ClassificationProperties  | List of ClassificationProperty |         |             | See next sections |
-| ClassificationRelations   | List of ClassificationRelation |         |             | See next sections |
-| ClassificationType        | Text                           | ✅        |             | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`. Read more [here](#classification-types).   |
+| ClassificationProperties  | List of ClassificationProperty |         |             | See section [ClassificationProperty](#classificationproperty) |
+| ClassificationRelations   | List of ClassificationRelation |         |             | See section [ClassificationRelation](#classificationrelation) |
+| ClassificationType        | Text                           | ✅        |             | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`. Read more about [classification types](#classification-types).   |
 | Code                      | Text                           | ✅       |             | Unique identification within the domain of the classification E.g. “ifc-00123-01”                                  |
 | ReferenceCode             | Text                           |         |             | Reference code, can have domain specific usage. If null, then the value of Code is used to fill the field. To make ReferenceCode empty use empty string "".  |
 | CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
@@ -117,7 +117,7 @@ classifications
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ActivationDateUtc             | Date         |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
-| AllowedValues              | List of PropertyValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section "PropertyValue type" for more info |
+| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
 | Code                          | Text         | ✅       |             | Unique identification within the domain of the property E.g. “ifc-99088-01”                                                                          |
 | ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties                                                                                                                |
 | CountriesOfUse                | Text         |         |             | Semicolon separated list of country ISO codes this Classification is being used. See reference list (json) [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
@@ -162,14 +162,14 @@ classifications
 | VersionDateUtc                | Date         |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. “2017-12-24” |
 | VersionNumber                 | Integer      |         |             |  |
 | VisualRepresentationUri       | Text         |         | ✅           |  |
-| PropertyRelations              | List of PropertyRelation  |   | ✅           | List of related properties. See section "PropertyRelation type" for more info |
+| PropertyRelations              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#propertyrelation) |
 
 
 ## ClassificationProperty
 
 | Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| AllowedValues              | List of PropertyValue  |   | ✅           | List of allowed values for the `Property`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section "PropertyValue type" for more info  |
+| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `Property`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
 | Code                | Text     |         |             | Unique identification within the domain of this classification property                                                |
 | Description         | Text     |         | ✅           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyNamespaceUri` instead                |
@@ -202,9 +202,9 @@ classifications
 
 
 
-## PropertyValue
+## AllowedValue
 
-Note: adding translations of the `PropertyValue` is not supported yet
+Note: adding translations of the `AllowedValue` is not supported yet
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
