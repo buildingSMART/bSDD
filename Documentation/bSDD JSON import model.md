@@ -1,11 +1,3 @@
-**2022-08 - Important notification:**
-
-> The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
-> 
-> We will support supplying and retrieving data using the "http" identifiers for (at least) 6 months. But please do note that only "https" identifiers are returned by the bSDD API's.
-> 
-> Current status: available in test environment.
-
 # buildingSMART Data Dictionary model
 
 The main concept of bSDD consists of a `Domain` having one or more `Classifications` and zero or more `Properties`. If we use IFC as an example, IFC is the `Domain`, "IfcWall" is a `Classification` and "AcousticRating" is a `Property`. A `Classification` can have zero or more `Properties`. 
@@ -245,3 +237,13 @@ Each classification must have a specific type. Below is the explanation of what 
 * `alternative use` - type to be used if no other type fits the needs.<sup>1 (3.1)</sup>
 
 <sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
+
+# Notifications
+
+**2022-08 - Important notification:**
+
+> The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
+> 
+> We will support supplying and retrieving data using the "http" identifiers for (at least) 6 months. But please do note that only "https" identifiers are returned by the bSDD API's.
+> 
+> Current status: available in test environment.
