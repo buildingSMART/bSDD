@@ -13,11 +13,13 @@ The main concept of bSDD consists of a `Domain` having one or more `Classificati
 The diagram below shows the data model behind the bSDD:
 
 <!-- <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/> -->
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 450px"/>
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 550px"/>
 
-Here is an example usage of the above concepts from the ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/Classification/Index/58078) domain:
+Here is an example demonstrating usage of the above concepts:
 
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 800px"/>
+
+We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/Classification/Index/58078).
 
 # JSON import
 
