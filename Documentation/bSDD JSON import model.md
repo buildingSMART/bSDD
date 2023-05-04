@@ -164,7 +164,7 @@ classifications
 | Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `Property`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
-| Code                | Text     |         |             | Unique identification within the domain of this classification property                                                |
+| Code                | Text     | ✅        |             | Unique identification within the domain of this classification property                                                |
 | Description         | Text     |         | ✅           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyNamespaceUri` instead                |
 | IsRequired              | Boolean  |   |            | Indicates if this is a required `Property` of the `Classification` |
