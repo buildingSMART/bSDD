@@ -65,10 +65,7 @@ Contains general information about the `Domain` and the delivered data.
 ## Classification
 
 A `Classification` can be any (abstract) object (e.g. “IfcWall”), abstract concept
-(e.g. “Costing”) or process (e.g. “Installation”). `Classification` can be
-organized in a tree like structure. For example: “IfcCurtainWall” is a more
-specific classification of “IfcWall”. We use the term “parent” to identify this
-relation: the parent of “IfcCurtainWall” is “IfcWall”.
+(e.g. “Costing”) or process (e.g. “Installation”). 
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
@@ -87,8 +84,8 @@ relation: the parent of “IfcCurtainWall” is “IfcWall”.
 | DocumentReference         | Text                           |         |             | Reference to document with full or official definition of the Classification. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
 | Name                      | Text                           | ✅       | ✅           | Name of the `Classification` E.g. “IfcCurtainWall”                                                                   |
 | OwnedUri                | Text                           |         |            | If you specified "UseOwnUri = true" at domain level you must supply the namepsace URI that globally uniquely identifies the Classifciation  |
-| ParentClassificationCode  | Text                           |         |             | Reference to the parent `Classification`. The ID in this field MUST exist in the data delivered. E.g. “ifc-00123-00” |
-| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Classification`. See reference list [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv).                                      |
+| ParentClassificationCode  | Text                           |         |             | Reference to the parent `Classification`. The ID in this field MUST exist in the data delivered. E.g. “ifc-00123-00”. See section [How to define relations?](#how-to-define-relations) |
+| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Classification`. See reference list [ifc classification names](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/reference-lists/ifc-classification-names.csv). See section [How to define relations?](#how-to-define-relations)                                      |
 | ReplacedObjectCodes       | List of text                   |         |             | List of Classification Codes this Classification replaces                                                          |
 | ReplacingObjectCodes      | List of text                   |         |             | List of Classification Codes this classification is replaced by                                                    |
 | RevisionDateUtc           | Date                           |         |             | YYYY-MM-DD E.g. “2017-12-24” |
@@ -196,13 +193,14 @@ classifications
 
 ## ClassificationRelation
 
+`Classification`s and `Material`s can be linked by relations. See section [How to define relations?](#how-to-define-relations)
+
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedClassificationUri | Text     | ✅       |             | Full namespace URI of the related `Classification`. Can be to same or different `Domain`. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
 | RelatedClassificationName | Text     |        |             |  |
 | RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
 | Fraction       | Real     |        |             | Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
-
 
 
 ## AllowedValue
@@ -246,6 +244,16 @@ Each classification must have a specific type. Below is the explanation of what 
   * Example: To describe the characteristic "concrete facing quality" it is mandatory to describe 3 properties: concrete planarity, concrete hue, concrete texture.	
 * `alternative use` - type to be used if no other type fits the needs.<sup>1<sup>3.1</sup></sup>
 
+
+### How to define relations?
+
+`ParentClassificationCode` - `Classification`s and `Material`s within the same domain can be organized in a tree like hierarchy structure. For example: “IfcCurtainWall” is a more
+specific classification of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassificationCode` attribute on the child object.
+
+`ClassificationRelation` and `PropertyRelation`- use those to link your concepts with each other. Relations allow to define parent-child links also with other domains. Apart from specialization, you can also define other types of relations, such as decomposition (`HasPart` type, see the list of possible types: [Relation types](#relation-types)).
+
+`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your classification to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are refering to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classifications to a particular IFC category.
+
 ### Relation types
 
 `Properties` and `Classifications` must have a specific type. Below is the explanation of what each type means:
@@ -257,17 +265,12 @@ Each classification must have a specific type. Below is the explanation of what 
 * `HasMaterial` - a class can be associated with particular material. For example: "Steel Beam" could be related to material "Steel". This type is only available for `Classes`, not `Properties`.
 * `HasReference` - if there is another type of relation between concepts, for example "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them. 
 
-### 🚧 How to define relations?
-`Relation`...
-
-`ParentClassificationCode`...
-
-`RelatedIfcEntityNamesList`...
 
 ### 🚧 How to group properties?
-`PropertySet`...
 
 `GroupOfProperties`...
+
+`PropertySet`...
 
 `ConnectedPropertyCodes`...
 
