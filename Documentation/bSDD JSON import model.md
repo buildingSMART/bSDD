@@ -27,7 +27,7 @@ We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsd
 
 You can deliver data for the buildingSMART Data Dictionary by using the bSDD JSON import model format. This document explains this format.
 
-Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3).
+Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3).
 If you think there are reference items missing, please let us know.
 
 If you are not familiar with JSON, reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html) is a good idea. And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system then it's best to let the system create the json for you.
