@@ -1,5 +1,4 @@
-# bSDD-IFC documentation
-
+# Referencing bSDD in IFC and IDS
 
 ## Intro
 To associate a classification from an external reference (such as bSDD) to objects in an IFC model, the following documentation shall be used.
@@ -54,13 +53,17 @@ Mapping rules are defined for the following concepts:
 
 **In IFC**, domain information are captured using _IfcClassification_. Below are the mapping rules, for different IFC versions.
 
-|                    | in bSDD                      | in IFC 4.3                      | in IFC 4                      | in IFC 2x3                    |
-|--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|
-| **Domain name**    | DomainName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |
-| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | n.a.                          |
-| **Domain version** | DomainVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |
-| **Domain owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |
-| **Domain date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |
+|                    | bSDD                      | IFC 4.3                      | IFC 4                      | IFC 2x3                    | IDS   |
+|--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
+| **Domain name**    | DomainName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |❎*    |
+| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | ❌                           |uri      |
+| **Domain version** | DomainVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |uri**      |
+| **Domain owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |uri**      |
+| **Domain date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |❎*      |
+
+> \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
+> 
+> \*\* The IDS doesn't support a direct reference to the bSDD domains, but whenever a classification, property or material is referenced by "uri" attribute, those include information about their domains: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DomainCode`-`DomainVersion`/..."
 
 :pill: **Snippets**
 <details><summary>bSDD domain</summary>
@@ -94,6 +97,13 @@ Mapping rules are defined for the following concepts:
 ```
 </details>
 
+<details><summary>IFC 4</summary>
+
+```
+    TBC
+```
+</details>
+
 <details><summary>IFC 2x3</summary>
 
 ```
@@ -108,11 +118,15 @@ Mapping rules are defined for the following concepts:
 
 **In IFC**, classification information are captured using _IfcClassificationReference_. Below are the mapping rules, for different IFC versions.
 
-|                           | in bSDD                              | in IFC 4.3                                | in IFC 4                                  | in IFC 2x3                               |
-|---------------------------|--------------------------------------|-------------------------------------------|-------------------------------------------|------------------------------------------|
-| **Classification name**   | Name *(of classification)*           | IfcClassificationReference.Name           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |
-| **Classification code**   | Code *(of classification)*           | IfcClassificationReference.Identification | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |
-| **Classification source** | *namespaceUri of the classification* | IfcClassificationReference.Location       | IfcClassificationReference.Location       | IfcClassificationReference.Location      |
+|                           | bSDD                              | IFC 4.3                                | IFC 4                                  | IFC 2x3                               |IDS   |
+|---------------------------|--------------------------------------|-------------------------------------------|-------------------------------------------|------------------------------------------|-------|
+| **Classification name**   | name *of the classification*           | IfcClassificationReference.Name           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |❎*      |
+| **Classification code**   | code *of the classification*           | IfcClassificationReference.Identification | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |uri**      |
+| **Classification source** | namespaceUri *of the classification* | IfcClassificationReference.Location       | IfcClassificationReference.Location       | IfcClassificationReference.Location      |uri      |
+
+> \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
+> 
+> \*\* Classification code is a part of the "uri" attribute: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DomainCode`-`DomainVersion`/class/`code`"
 
 :pill: **Snippets**
 <details><summary>bSDD classification</summary>
@@ -167,14 +181,29 @@ Mapping rules are defined for the following concepts:
 
 <details><summary>IFC 4.3</summary>
     
-    #46 = IFCCLASSIFICATIONREFERENCE('http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/ifctrackelementsleeper','ifctrackelementsleeper','IfcTrackElement.SLEEPER',#45,$,$)
+#46 = IFCCLASSIFICATIONREFERENCE('http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/ifctrackelementsleeper','ifctrackelementsleeper','IfcTrackElement.SLEEPER',#45,$,$)
 
 </details>
 
 <details><summary>IFC 2x3</summary>
     
-    #39116 = IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/buildingsmart/bSI-wd-0.1/class/BAR-WI', 'BAR-WI', 'MyWindow', #39115);
+#39116 = IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/buildingsmart/bSI-wd-0.1/class/BAR-WI', 'BAR-WI', 'MyWindow', #39115);
 
+</details>
+
+<details><summary>IDS</summary>
+
+```
+<ids:classification minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/apple" instructions="Those objects must be classified as apples.">     
+    <ids:value>
+        <ids:simpleValue>apple</ids:simpleValue>
+    </ids:value>
+    <ids:system>
+        <ids:simpleValue>fruitvegs</ids:simpleValue>
+    </ids:system>
+</ids:classification>
+    
+```
 </details>
 
 ---
@@ -184,13 +213,17 @@ Mapping rules are defined for the following concepts:
 
 **In IFC**, properties information are captured using _IfcProperty_ (and grouped using _IfcPropertySet_). Below are the mapping rules, for different IFC versions.
 :construction: :construction: :construction:
-|                                                | bSDD                                      | IFC 4.3                                      | IFC 4                                        | IFC 2x3                                      |
-|------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|
-| **Property name**                              | Name *(of property)*                      | IfcProperty.Name                             | IfcProperty.Name                             | IfcProperty.Name                             |
-| **Property source**                            | *namespaceUri of the property*            | IfcProperty.Specification                    | IfcProperty.Description                      | IfcProperty.Description                      |
-| **Property predefined value** (single value)              | PredefinedValue                           | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |
-| **Property allowed values** (from enumeration) | AllowedValues (which ones?)               | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues |
-| **PropertySet name**                           | PropertySet *(of ClassificationProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          | IfcPropertySet.Name                          |
+|                                                | bSDD                                      | IFC 4.3                                      | IFC 4                                        | IFC 2x3                                      |IDS                                      |
+|------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|-----------------------|
+| **Property name**                              | Name *(of property)*                      | IfcProperty.Name                             | IfcProperty.Name                             | IfcProperty.Name                             |❎*      |
+| **Property source**                            | *namespaceUri of the property*            | IfcProperty.Specification                    | IfcProperty.Description                      | IfcProperty.Description                      |uri      |
+| **Property predefined value** (single value)              | PredefinedValue                           | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |❎*      |
+| **Property allowed values** (from enumeration) | AllowedValues (which ones?)               | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues |❎*      |
+| **PropertySet name**                           | PropertySet *(of ClassificationProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          | IfcPropertySet.Name                          |❎*      |
+
+> \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
+> 
+> \*\* Property code is a part of the "uri" attribute
 
 :o: **IMPORTANT** :o:
 In bSDD, properties exist independently form the classification (object) they might be assigned to. Therefore: 
@@ -215,6 +248,26 @@ In bSDD, properties exist independently form the classification (object) they mi
 
 </details>
 
+<details><summary>IDS</summary>
+
+```
+<ids:property minOccurs="1" measure="IfcText" uri="http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
+    <ids:propertySet>
+        <ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
+    </ids:propertySet>
+    <ids:name>
+        <ids:simpleValue>Manufacturer</ids:simpleValue>
+    </ids:name>
+    <ids:value>
+        <xs:restriction>
+            <xs:enumeration value="Manufacturer 1"/>
+            <xs:enumeration value="Manufacturer 2"/>
+        </xs:restriction>
+    </ids:value>
+</ids:property>
+```
+</details>
+
 ---
 
 ### 4. bSDD materials
@@ -234,12 +287,13 @@ In bSDD, properties exist independently form the classification (object) they mi
 
 Below are the mapping rules, for different IFC versions.
 :construction: :construction: :construction:
-|                                                   | bSDD                                                               | IFC 4.3                 | IFC 4                   | IFC 2x3                 |
-|---------------------------------------------------|--------------------------------------------------------------------|-------------------------|-------------------------|-------------------------|
-| **Material identification** (option 1: Code)      | Code *(of material)* (E.g., MM34)                                  | IfcMaterial.Name        | IfcMaterial.Name        | IfcMaterial.Name        |
-| **Material identification** (option 2: Code_Name) | *Concatenate* "Code";"_";"Name" *(of material)* (E.g., MM34_Steel) | IfcMaterial.Name        | IfcMaterial.Name        | IfcMaterial.Name        |
-| **Material source**                               | *namespaceUri of the material*                                     | IfcMaterial.Description | IfcMaterial.Description | IfcMaterial.Description |
+|                                                   | bSDD                                                               | IFC 4.3                 | IFC 4                   | IFC 2x3                 |IDS                 |
+|---------------------------------------------------|--------------------------------------------------------------------|-------------------------|-------------------------|-------------------------|-----------|
+| **Material identification** (option 1: Code)      | Code *(of material)* (E.g., MM34)                                  | IfcMaterial.Name        | IfcMaterial.Name        | IfcMaterial.Name        |❎*      |
+| **Material identification** (option 2: Code_Name) | *Concatenate* "Code";"_";"Name" *(of material)* (E.g., MM34_Steel) | IfcMaterial.Name        | IfcMaterial.Name        | IfcMaterial.Name        |❎*      |
+| **Material source**                               | *namespaceUri of the material*                                     | IfcMaterial.Description | IfcMaterial.Description | IfcMaterial.Description |uri      |
 
+> \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
 
 :pill: **Snippets**
 <details><summary>bSDD material</summary>
@@ -253,4 +307,16 @@ Below are the mapping rules, for different IFC versions.
     
     TBC
 
+</details>
+
+<details><summary>IDS</summary>
+
+```
+<ids:material minOccurs="1" uri="
+https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/mat/fiber" instructions="The material should be fiber.">     
+    <ids:value>
+        <ids:simpleValue>fiber</ids:simpleValue>
+    </ids:value>
+</ids:material>
+```
 </details>
