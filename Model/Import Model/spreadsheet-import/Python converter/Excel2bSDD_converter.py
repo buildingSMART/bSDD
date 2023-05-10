@@ -44,7 +44,7 @@ def load_excel(EXCEL_PATH):
     excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=5, usecols="C:AU", true_values="TRUE")
     excel['classificationproperty'] = pd.read_excel(excel_df, 'ClassificationProperty', usecols="C:T", skiprows=5, true_values="TRUE")
     excel['classificationrelation'] = pd.read_excel(excel_df, 'ClassificationRelation', usecols="C:G", skiprows=5, true_values="TRUE")
-    excel['propertyvalue'] = pd.read_excel(excel_df, 'PropertyValue', skiprows=5, usecols="C:I", true_values="TRUE")
+    excel['allowedvalue'] = pd.read_excel(excel_df, 'AllowedValue', skiprows=5, usecols="C:I", true_values="TRUE")
     excel['propertyrelation'] = pd.read_excel(excel_df, 'PropertyRelation', skiprows=5, usecols="C:F", true_values="TRUE")
     return excel
 
@@ -120,8 +120,8 @@ def excel2bsdd(excel):
         related = cls_rel['(Origin Classification Code)']
         cls_rel.pop("(Origin Classification Code)")
         next(item for item in bsdd_data['Classifications'] if item["Code"] == related)['ClassificationRelations'].append(cls_rel)
-    # process PropertyValue
-    prop_vals = jsonify(excel['propertyvalue'], AllowedValue)
+    # process AllowedValue
+    prop_vals = jsonify(excel['allowedvalue'], AllowedValue)
     for prop_val in prop_vals:
         # only one of the two Code columns is possible:
         if prop_val['(Origin Property Code)']:
@@ -136,7 +136,7 @@ def excel2bsdd(excel):
             # iterate all properties and add AllowedValue if present in spreadsheet
             next(item for item in bsdd_data['Properties'] if item["Code"] == related)['AllowedValues'].append(prop_val)
         else: 
-            # iterate all classifications to find the one referenced by property value
+            # iterate all classifications to find the one referenced by the property value
             for classification in bsdd_data['Classifications']:
                 next(item for item in classification['ClassificationProperties'] if item["PropertyCode"] == related)['AllowedValues'].append(prop_val)
     # process PropertyRelation
