@@ -26,6 +26,12 @@ You can get the API contract information at [bSDD API contract, official release
 
 Don’t forget to check the “read” scope!
 
+## Using https://identifier.buildingsmart.org
+!! For system to system communication using these identifier URIs is not recommended. !!
+You can access the data of classification or property also directly via the URI of the classification or property. For example, you can navigate in the browser to https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcWall and then you will see a visual representation of the data of that classification. If you would like the output in json format, then sending an "Accept" header with "application/json" will give you a result in json. The content of this json result differs from the html result!
+
+IMPORTANT: Do not use these identifier URIs for system to system communication! First of all, it introduces an extra 'hop' from server to server. Second, you do not have control over the version of the API it's using. The result may differ after a new release of bSDD has been published with the result from before the release.
+
 ## GraphQL
 The data can also be accessed via GraphQL.
 [GraphiQL playground](https://test.bsdd.buildingsmart.org/graphiql).
