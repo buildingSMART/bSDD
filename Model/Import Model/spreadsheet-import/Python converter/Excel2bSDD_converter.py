@@ -69,7 +69,7 @@ def jsonify(dataframe, json_part):
                 if type(column_data) == pd._libs.tslibs.timestamps.Timestamp:
                     column_data = column_data.isoformat()
                 elif type(column_data) == str:
-                    if "[" in column_data and "]" in column_data:
+                    if column_data.startswith("[") and column_data.endswith("]"):
                         content = literal_eval(column_data)
                         if isinstance(content, list):
                             column_data = content
