@@ -56,7 +56,7 @@ Mapping rules are defined for the following concepts:
 |                    | bSDD                      | IFC 4.3                      | IFC 4                      | IFC 2x3                    | IDS   |
 |--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
 | **Domain name**    | DomainName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |❎*    |
-| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | ❌                           |uri      |
+| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | ❌ (IfcClassification.Source can be used as a workaround)   |uri      |
 | **Domain version** | DomainVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |uri**      |
 | **Domain owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |uri**      |
 | **Domain date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |❎*      |
@@ -66,50 +66,62 @@ Mapping rules are defined for the following concepts:
 > \*\* The IDS doesn't support a direct reference to the bSDD domains, but whenever a classification, property or material is referenced by "uri" attribute, those include information about their domains: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DomainCode`-`DomainVersion`/..."
 
 :pill: **Snippets**
-<details><summary>bSDD domain</summary>
+<details><summary>bSDD</summary>
     
 ```
 {
-    "OrganizationCode": "buildingsmart",
-    "DomainCode": "bSI-wd",
-    "DomainVersion": "0.1",
-    "DomainName": "Workshop Dictionary",
-    "ReleaseDate": "2020-06-01T00:00:00",
-    "Status": "Active",
-    "LanguageIsoCode": "en-GB",
+    "OrganizationCode": "text",
+    "DomainCode": "text",
+    "DomainVersion": "text",
+    "DomainName": "text",
+    "ReleaseDate": null,
+    "Status": "text",
+    "MoreInfoUrl": "text",
+    "UseOwnUri": false,
+    "DomainNamespaceUri": "text",
+    "LanguageIsoCode": "text",
     "LanguageOnly": false,
-  
-  
-  
+    "License": "text",
+    "LicenseUrl": "text",
+    "QualityAssuranceProcedure": "text",
+    "QualityAssuranceProcedureUrl": "text",
     "Classifications": [], 
-    
     "Properties": [],
-  
     "Materials": []
   }
 ```
 </details>
 
-<details><summary>IFC 4.3</summary>
+<details><summary>IFC 4x3 <a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassification.htm">(IfcClassification)</a></summary>
 
 ```    
-    #45 = IFCCLASSIFICATION('buildingSMART','4.3',$,'IFC',$,'https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3',$);
+    IFCCLASSIFICATION(<Source>,<Edition>,<EditionDate>,<Name>,<Description>,<Specification>,<ReferenceTokens>);
+
+    Example:
+    #45 = IFCCLASSIFICATION('buildingSMART','4.3','2023-08-27','IFC','Industry Foundation Classes','https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3',['.']);
 ```
 </details>
 
-<details><summary>IFC 4</summary>
+<details><summary>IFC 4 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/">(IfcClassification)</a></summary>
 
-```
-    TBC
+```    
+    IFCCLASSIFICATION(<Source>,<Edition>,<EditionDate>,<Description>,<Location>,<ReferenceTokens>);
+
+    Example:
+    #45 = IFCCLASSIFICATION('buildingSMART','4.3','2023-08-27','Industry Foundation Classes','https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3',['.']);
 ```
 </details>
 
-<details><summary>IFC 2x3</summary>
+<details><summary>IFC 2x3 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcexternalreferenceresource/lexical/ifcclassification.htm">(IfcClassification)</a></summary>
 
-```
-    #39115 = IFCCLASSIFICATION('buildingSMART', '0.1', $, 'Workshop Dictionary');
+```    
+    IFCCLASSIFICATION(<Source>,<Edition>,<EditionDate>,<Name>);
+
+    Example:
+    #45 = IFCCLASSIFICATION('https://identifier.buildingsmart.org/uri/buildingsmart/ifc-2.3', '2.3', '2023-08-27','Industry Foundation Classes');
 ```
 </details>
+    
 
 ---
 
@@ -132,50 +144,72 @@ Mapping rules are defined for the following concepts:
 <details><summary>bSDD classification</summary>
     
 ```
-    "Classifications": [
-        {
-            "Code": "BAR-WI",
-            "Name": "MyWindow",
-      
-            "ClassificationType": "Class",
-            "Synonyms": [],
-            "Definition": "Cambridge: a space, usually filled with glass, in the wall of a building, to allow light and air in, and to allow people inside the building to see out.",
-      
-            "RelatedIfcEntityNamesList": [
-              "IfcWindow"
-            ],
-            
-            "ClassificationRelations": [
-              {
-                "RelatedClassificationUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcWindow",
-                "RelationType": "HasReference"
-              }
-            ],
-            "ClassificationProperties": [
-              {
-                "PropertyCode": "ws-ISB",
-                "PropertySet": "WS_MyWindow",
-                "PropertyType": "Property",
-                "AllowedValues": [
-                  {
-                    "Code": "IsBeautiful_true",
-                    "Value": "true"
-                  }
-                ]
-              },
-              {
-                "ExternalPropertyUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/FireExit",
-                "PropertySet": "WS_MyWindow",
-                "PropertyType": "Property"
-              },
-              {
-                "ExternalPropertyUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/AssemblyPlace",
-                "PropertySet": "WS_MyWindow",
-                "PropertyType": "Property"
-              }
-            ]
-          }
-    ], 
+{
+	"Code": "text",
+	"Uid": "text",
+	"OwnedUri": "text",
+	"Name": "text",
+	"Definition": "text",
+	"Status": "text",
+	"ActivationDateUtc": "2022-05-12T00:00:00+02:00",
+	"RevisionDateUtc": null,
+	"VersionDateUtc": "2022-05-12T00:00:00+02:00",
+	"DeActivationDateUtc": null,
+	"VersionNumber": null,
+	"RevisionNumber": null,
+	"ReplacedObjectCodes": [],
+	"ReplacingObjectCodes": [],
+	"DeprecationExplanation": "text",
+	"CreatorLanguageIsoCode": "text",
+	"VisualRepresentationUri": "text",
+	"CountriesOfUse": [],
+	"SubdivisionsOfUse": [],
+	"CountryOfOrigin": "text",
+	"DocumentReference": "text",
+	"Synonyms": [],
+	"ReferenceCode": "text",
+	"ClassificationRelations": [
+	  {
+		"RelationType": "text",
+		"RelatedClassificationUri": "text",
+		"RelatedClassificationName": "text",
+		"Fraction": null
+	  }
+	],
+	"ClassificationType": "text",
+	"ParentClassificationCode": "text",
+	"RelatedIfcEntityNamesList": [],
+	"ClassificationProperties": [
+	  {
+		"AllowedValues": [
+		  {
+			"NamespaceUri": "text",
+			"Code": "text",
+			"Value": "text",
+			"Description": "text",
+			"SortNumber": null
+		  }
+		],
+		"Code": "text",
+		"Description": "text",
+		"IsRequired": null,
+		"IsWritable": null,
+		"MaxExclusive": null,
+		"MaxInclusive": null,
+		"MinExclusive": null,
+		"MinInclusive": null,
+		"Pattern": "text",
+		"PredefinedValue": "text",
+		"PropertyCode": "text",
+		"PropertyNamespaceUri": "text",
+		"PropertySet": "text",
+		"PropertyType": "text",
+		"SortNumber": null,
+		"Symbol": "text",
+		"Unit": "text"
+	  }
+	]
+}
 ```
 </details>
 
@@ -218,7 +252,7 @@ Mapping rules are defined for the following concepts:
 | **Property name**                              | Name *(of property)*                      | IfcProperty.Name                             | IfcProperty.Name                             | IfcProperty.Name                             |❎*      |
 | **Property source**                            | *namespaceUri of the property*            | IfcProperty.Specification                    | IfcProperty.Description                      | IfcProperty.Description                      |uri      |
 | **Property predefined value** (single value)              | PredefinedValue                           | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |❎*      |
-| **Property allowed values** (from enumeration) | AllowedValues (which ones?)               | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues |❎*      |
+| **Property allowed values** (from enumeration) | AllowedValues                  | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues |❎*      |
 | **PropertySet name**                           | PropertySet *(of ClassificationProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          | IfcPropertySet.Name                          |❎*      |
 
 > \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
@@ -238,7 +272,69 @@ In bSDD, properties exist independently form the classification (object) they mi
 <details><summary>bSDD property</summary>
     
 ```
-    TBC
+{
+	"Code": "text",
+	"Uid": "text",
+	"OwnedUri": "text",
+	"Name": "text",
+	"Definition": "text",
+	"Status": "text",
+	"ActivationDateUtc": "2022-05-12T00:00:00+02:00",
+	"RevisionDateUtc": null,
+	"VersionDateUtc": "2022-05-12T00:00:00+02:00",
+	"DeActivationDateUtc": null,
+	"VersionNumber": null,
+	"RevisionNumber": null,
+	"ReplacedObjectCodes": [],
+	"ReplacingObjectCodes": [],
+	"DeprecationExplanation": "text",
+	"CreatorLanguageIsoCode": "text",
+	"VisualRepresentationUri": "text",
+	"CountriesOfUse": [],
+	"SubdivisionsOfUse": [],
+	"CountryOfOrigin": "text",
+	"DocumentReference": "text",
+	"Description": "text",
+	"Example": "text",
+	"ConnectedPropertyCodes": [],
+	"PhysicalQuantity": "text",
+	"Dimension": "text",
+	"DimensionLength": null,
+	"DimensionMass": null,
+	"DimensionTime": null,
+	"DimensionElectricCurrent": null,
+	"DimensionThermodynamicTemperature": null,
+	"DimensionAmountOfSubstance": null,
+	"DimensionLuminousIntensity": null,
+	"MethodOfMeasurement": "text",
+	"DataType": "text",
+	"PropertyValueKind": "text",
+	"MinInclusive": null,
+	"MaxInclusive": null,
+	"MinExclusive": null,
+	"MaxExclusive": null,
+	"Pattern": "text",
+	"IsDynamic": false,
+	"DynamicParameterPropertyCodes": [],
+	"Units": [],
+	"AllowedValues": [
+	  {
+		"NamespaceUri": "text",
+		"Code": "text",
+		"Value": "text",
+		"Description": "text",
+		"SortNumber": null
+	  }
+	],
+	"TextFormat": "text",
+	"PropertyRelations": [
+	  {
+		"RelationType": "text",
+		"RelatedPropertyUri": "text",
+		"RelatedPropertyName": "text"
+	  }
+	]
+}
 ```
 </details>
 
@@ -299,7 +395,69 @@ Below are the mapping rules, for different IFC versions.
 <details><summary>bSDD material</summary>
     
 ```
-    TBC
+{
+	"Code": "text",
+	"Uid": "text",
+	"OwnedUri": "text",
+	"Name": "text",
+	"Definition": "text",
+	"Status": "text",
+	"ActivationDateUtc": "2022-05-12T00:00:00+02:00",
+	"RevisionDateUtc": null,
+	"VersionDateUtc": "2022-05-12T00:00:00+02:00",
+	"DeActivationDateUtc": null,
+	"VersionNumber": null,
+	"RevisionNumber": null,
+	"ReplacedObjectCodes": [],
+	"ReplacingObjectCodes": [],
+	"DeprecationExplanation": "text",
+	"CreatorLanguageIsoCode": "text",
+	"VisualRepresentationUri": "text",
+	"CountriesOfUse": [],
+	"SubdivisionsOfUse": [],
+	"CountryOfOrigin": "text",
+	"DocumentReference": "text",
+	"Synonyms": [],
+	"ReferenceCode": "text",
+	"ClassificationRelations": [
+	  {
+		"RelationType": "text",
+		"RelatedClassificationUri": "text",
+		"RelatedClassificationName": "text"
+	  }
+	],
+	"ParentMaterialCode": "text",
+	"MaterialProperties": [
+	  {
+		"AllowedValues": [
+		  {
+			"NamespaceUri": "text",
+			"Code": "text",
+			"Value": "text",
+			"Description": "text",
+			"SortNumber": null
+		  }
+		],
+		"Code": "text",
+		"Description": "text",
+		"ExternalPropertyUri": "text",
+		"IsRequired": null,
+		"IsWritable": null,
+		"MaxExclusive": null,
+		"MaxInclusive": null,
+		"MinExclusive": null,
+		"MinInclusive": null,
+		"Pattern": "text",
+		"PredefinedValue": "text",
+		"PropertyCode": "text",
+		"PropertySet": "text",
+		"PropertyType": "text",
+		"SortNumber": null,
+		"Symbol": "text",
+		"Unit": "text"
+	  }
+	]
+}
 ```
 </details>
 
