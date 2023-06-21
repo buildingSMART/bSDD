@@ -1,3 +1,10 @@
+# The lifecycle of the bSDD content
+
+<img src="/Documentation/graphics/Content_lifecycle_workflow.jpg" alt="Signup/signin" style="width: 900px">
+When you publish new content, it is in `Preview` status. At this stage, you can activate or permanently delete it.
+⚠️ Once content is activated, it will get an immutable URI, meaning the URL and content will stay in bSDD forever, and can't be deleted. It is only possible to change the status to "Inactive", but the page will still show the content, to support use in contractual agreements.  
+
+
 # How to import your bSDD model into bSDD?
 
 If you have your model in the bsdd-import-model.json format available, you can upload it into the bSDD database yourself.
