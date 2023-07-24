@@ -103,7 +103,7 @@ A `Classification` can be any (abstract) object (e.g. “IfcWall”), abstract c
 
 A `Material` is similar to a `Classification`.
 Differences in model are:
-- no `ClassificationType` field
+- no `ClassificationType` and `RelatedIfcEntityNamesList` fields
 - `ParentMaterialCode` instead of `ParentClassificationCode`
 - `MaterialProperties` instead of `ClassificationProperties`
 
