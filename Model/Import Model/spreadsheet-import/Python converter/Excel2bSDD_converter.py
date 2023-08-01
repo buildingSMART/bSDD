@@ -40,7 +40,7 @@ def load_excel(EXCEL_PATH):
     excel={}
     excel['domain'] = pd.read_excel(excel_df, 'Domain', skiprows=5, usecols="C:Q", true_values="TRUE")
     excel['classification'] = pd.read_excel(excel_df, 'Classification', skiprows=5, usecols="C:AB", true_values="TRUE")
-    excel['material'] = pd.read_excel(excel_df, 'Material', skiprows=5, usecols="C:Z", true_values="TRUE")
+    excel['material'] = pd.read_excel(excel_df, 'Material', skiprows=5, usecols="C:Y", true_values="TRUE")
     excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=5, usecols="C:AU", true_values="TRUE")
     excel['classificationproperty'] = pd.read_excel(excel_df, 'ClassificationProperty', usecols="C:T", skiprows=5, true_values="TRUE")
     excel['classificationrelation'] = pd.read_excel(excel_df, 'ClassificationRelation', usecols="C:G", skiprows=5, true_values="TRUE")
@@ -121,24 +121,27 @@ def excel2bsdd(excel):
         cls_rel.pop("(Origin Classification Code)")
         next(item for item in bsdd_data['Classifications'] if item["Code"] == related)['ClassificationRelations'].append(cls_rel)
     # process AllowedValue
-    prop_vals = jsonify(excel['allowedvalue'], AllowedValue)
-    for prop_val in prop_vals:
+    allowed_vals = jsonify(excel['allowedvalue'], AllowedValue)
+    for allowed_val in allowed_vals:
         # only one of the two Code columns is possible:
-        if prop_val['(Origin Property Code)']:
+        if allowed_val['(Origin Property Code)']:
             relToProperty = True
-            related = prop_val['(Origin Property Code)']
+            related = allowed_val['(Origin Property Code)']
         else:
             relToProperty = False
-            related = prop_val['(ClassificationProperty Code)']
-        prop_val.pop("(Origin Property Code)")
-        prop_val.pop("(ClassificationProperty Code)")
+            related = allowed_val['(ClassificationProperty Code)']
+        allowed_val.pop("(Origin Property Code)")
+        allowed_val.pop("(ClassificationProperty Code)")
         if relToProperty:
             # iterate all properties and add AllowedValue if present in spreadsheet
-            next(item for item in bsdd_data['Properties'] if item["Code"] == related)['AllowedValues'].append(prop_val)
+            next(item for item in bsdd_data['Properties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
         else: 
-            # iterate all classifications to find the one referenced by the property value
+            # iterate all classifications to find the one referenced by the property AllowedValue
             for classification in bsdd_data['Classifications']:
-                next(item for item in classification['ClassificationProperties'] if item["PropertyCode"] == related)['AllowedValues'].append(prop_val)
+                # next(item for item in classification['ClassificationProperties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
+                for item in classification['ClassificationProperties']:
+                    if item["Code"] == related:
+                        item['AllowedValues'].append(allowed_val)
     # process PropertyRelation
     prop_rels = jsonify(excel['propertyrelation'], PropertyRelation)
     for prop_rel in prop_rels:

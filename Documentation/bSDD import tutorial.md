@@ -1,3 +1,12 @@
+# The lifecycle of the bSDD dictionary version
+
+<img src="/Documentation/graphics/Content_lifecycle_workflow.jpg" alt="Signup/signin" style="width: 900px">
+
+When you publish a new version of a dictionary in bSDD, it has the `Preview` status. At this stage, you can *reupload* the content to modify it, *activate* the version, or permanently *delete* it. The status can be changed through the [Management Portal](https://manage.bsdd.buildingsmart.org/) or via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1).
+
+⚠️ Once the content is activated, it will get an immutable URI, meaning the URL and content will stay in bSDD forever, and can't be deleted. Changing the status to "Inactive" is possible, but the page will still show the content to support use in contractual agreements. Consider that before activating the version of a dictionary.
+
+
 # How to import your bSDD model into bSDD?
 
 If you have your model in the bsdd-import-model.json format available, you can upload it into the bSDD database yourself.
