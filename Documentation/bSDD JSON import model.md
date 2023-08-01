@@ -49,7 +49,7 @@ Contains general information about the `Domain` and the delivered data.
 | DomainVersion    | Text                   | ✅       |             | Version of the domain data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
 | LanguageIsoCode  | Text                   | ✅       |             | ISO language code: indicates the language of the data. If you want to deliver data in multiple language use a json file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. "de-DE" |
 | LanguageOnly     | Boolean                | ✅       |             | true if json contains only language specific information, no otherwise \*  |
-| License          | Text                   |         |             | Description of the license the data will be made available (free text). E.g. “No license”, "MIT license"  |
+| License          | Text                   |         |             | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
 | LicenseUrl      | Text                   |         |             | Url to a web page with the full license text   |
 | Materials      | List of Material                   |         |             | List of objects of type `Material`. See section [Material](#material)   |
 | MoreInfoUrl      | Text                   |         |             | Url to web page with more info about the domain |
@@ -57,9 +57,9 @@ Contains general information about the `Domain` and the delivered data.
 | Properties       | List of Property       | ✅       |               | List of objects of type `Property`. See section [Property](#property) |
 | QualityAssuranceProcedure          | Text                   |         |             | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl      | Text                   |         |             | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
-| ReleaseDate                   | Date        |             | | Date of release of the version, YYYY-MM-DD E.g. "2017-12-24"  |
-| Status      | Text                   |         |             | State of this version. Must be one of: `Preview`, `Active`, `Inactive`  |
-| UseOwnUri      | Boolean                   | ✅        |             | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "http://bsdd.buildingsmart.org" will be assigned to each `Classification` and `Property` |
+| ReleaseDate                   | DateTime        |             | | Date of release of the version, See [Date Time format](#datetime-format).  |
+| Status      | Text                   |         |             | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
+| UseOwnUri      | Boolean                   | ✅        |             | Use your own namespace uri for global unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Classification` and `Property` |
 
 \* For delivering data in additional languages it is sufficient to fill the `Domain` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Make sure that the `OrganizationCode`, `DomainCode` and `DomainVersion` are exactly the same and if the data is for adding a language to an existing `Domain`, set field `LanguageOnly` to true.
 
@@ -70,7 +70,7 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
-| ActivationDateUtc         | Date                           |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. "2017-12-24" |
+| ActivationDateUtc         | DateTime                           |         |             | See [Date Time format](#datetime-format). |
 | ClassificationProperties  | List of ClassificationProperty |         |             | See section [ClassificationProperty](#classificationproperty) |
 | ClassificationRelations   | List of ClassificationRelation |         |             | See section [ClassificationRelation](#classificationrelation) |
 | ClassificationType        | Text                           | ✅*        |             | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`. Read more about [classification types](#classification-types). If not specified, the `Class` type will be used by default.  |
@@ -79,7 +79,7 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 | CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
 | CountryOfOrigin           | Text                           |         |             | ISO Country Code of the country of origin of this `Classification`. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
 | CreatorLanguageIsoCode    | Text                           |         |             | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
-| DeActivationDateUtc       | Date                           |         |             | YYYY-MM-DD E.g. "2017-12-24" |
+| DeActivationDateUtc       | DateTime                           |         |             | See [Date Time format](#datetime-format). |
 | Definition                | Text                           |         | ✅           | Definition of the `Classification`|
 | DeprecationExplanation    | Text                           |         | ✅           |  |
 | DocumentReference         | Text                           |         |             | Reference to document with full or official definition of the `Classification`. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
@@ -89,13 +89,13 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 | RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Classification`. See bSDD API [ifc classifications](https://api.bsdd.buildingsmart.org/api/Domain/v3/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
 | ReplacedObjectCodes       | List of text                   |         |             | List of Classification Codes this Classification replaces                                                          |
 | ReplacingObjectCodes      | List of text                   |         |             | List of Classification Codes this classification is replaced by                                                    |
-| RevisionDateUtc           | Date                           |         |             | YYYY-MM-DD E.g. "2017-12-24" |
+| RevisionDateUtc           | DateTime                           |         |             | See [Date Time format](#datetime-format). |
 | RevisionNumber            | Integer                        |         |             |  |
 | Status                    | Text                           |         |             | Status of the `Classification`: `Active` (default) or `Inactive` |
 | SubdivisionsOfUse         | List of text                   |         | ✅           | List of geographical regions of use E.g. "US-MT"  |
 | Synonyms                  | List of text                   |         | ✅           | List of alternative names of this classification for easier finding.|
 | Uid                  | Text                   |         |            | Unique identification (ID), in case the URI is not enough. |
-| VersionDateUtc            | Date                           |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. "2017-12-24" |
+| VersionDateUtc            | DateTime                           |         |             | By default takes the date of import. See [Date Time format](#datetime-format). |
 | VersionNumber             | Integer                        |         |             |  |
 | VisualRepresentationUri   | Text                           |         | ✅           |  |
 
@@ -104,7 +104,7 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 
 A `Material` is similar to a `Classification`.
 Differences in model are:
-- no `ClassificationType` field
+- no `ClassificationType` and `RelatedIfcEntityNamesList` fields
 - `ParentMaterialCode` instead of `ParentClassificationCode`
 - `MaterialProperties` instead of `ClassificationProperties`
 
@@ -117,7 +117,7 @@ classifications
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ActivationDateUtc             | Date         |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. "2017-12-24" |
+| ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
 | Code                          | Text         | ✅       |             | Unique identification within the domain of the property E.g. "ifc-99088-01"                                                                          |
 | ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties                                                                                                                |
@@ -125,7 +125,7 @@ classifications
 | CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         |         |             | Language ISO code of the creator. See reference list (json)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
 | DataType                      | Text         |         |             | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
-| DeActivationDateUtc           | Date         |         |             | YYYY-MM-DD E.g. "2017-12-24" |
+| DeActivationDateUtc           | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | Definition                    | Text         |         | ✅           | Definition of the `Property` |
 | DeprecationExplanation        | Text         |         | ✅           |  |
 | Description                   | Text         | ✅       | ✅           | |
@@ -153,14 +153,14 @@ classifications
 | PropertyValueKind             | Text         |         |             | Must be one of:  `Single` (one value, is default),  `Range` (two values),  `List` (multiple values), `Complex` (consists of multiple properties, use ConnectedProperties), `ComplexList` (list of complex values)                       |
 | ReplacedObjectCodes           | List of text |         |             | List of Property Codes this `Property` replaces                                                                                            |
 | ReplacingObjectCodes          | List of text |         |             | List of Property Codes this `Property` is replaced by                                                                                      |
-| RevisionDateUtc               | Date         |         |             | YYYY-MM-DD E.g. "2017-12-24" |
+| RevisionDateUtc               | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | RevisionNumber                | Integer      |         |      |  |
 | Status                        | Text         |         |             | Status of the Property: `Active` (default) or `Inactive`    |
 | SubdivisionsOfUse             | List of text         |         | ✅           | List of geographical regions of use E.g. "US-MT"                                                                                 |
 | TextFormat                    | Text         |         |             | Pair for text type (encoding, number of characters) The encoding is set according to "Name of encoding standard" of IANA, RFC 2978 E.g. "(UTF-8,32)" |
 | Uid                  | Text                   |         |            | Unique identification (ID), in case the URI is not enough. |
 | Units                         | List of text |         |             | The units to represent a scale that enables a value to be measured (ISO 80000 or ISO 4217 or ISO 8601). List of values. See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output pls let us know. |
-| VersionDateUtc                | Date         |         |             | Will get date of import if field not present, YYYY-MM-DD E.g. "2017-12-24" |
+| VersionDateUtc                | DateTime         |         |             | By default takes the date of import. See [Date Time format](#datetime-format). |
 | VersionNumber                 | Integer      |         |             |  |
 | VisualRepresentationUri       | Text         |         | ✅           |  |
 | PropertyRelations              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#propertyrelation) |
@@ -266,6 +266,10 @@ specific classification of “IfcWall”. In bSDD terminology, we say that “If
 * `HasMaterial` - a class can be associated with particular material. For example: "Steel Beam" could be related to material "Steel". This type is only available for `Classes`, not `Properties`.
 * `HasReference` - if there is another type of relation between concepts, for example "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them. 
 
+
+### DateTime format
+
+The date-time format according to the ISO 8601 series should be used: `YYYY-MM-DDThh:mm:ssTZD`. Import allows both: `2023-05-10`, `2023-05-10T15:10:12Z` and `2023-05-10T15:10:12+02:00`.
 
 ### 🚧 How to group properties?
 
