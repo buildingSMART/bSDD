@@ -7,6 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 
 <https://bsdd.buildingsmart.org/rdfs/def>
   a owl:Ontology ;
@@ -32,32 +33,32 @@ bsdd:Name a rdf:Property ;
   rdfs:range xsd:string .
 
 bsdd:ReleaseDate a rdf:Property ;
-  skos:prefLabel "releaseDate"@en ;
-  rdfs:range xsd:dateTime .
+  skos:prefLabel "Release Date"@en ;
+  rdfs:range xsd:date .
 
 bsdd:Status a rdf:Property ;
-  skos:prefLabel "status"@en ;
+  skos:prefLabel "Status"@en ;
   rdfs:range xsd:string .
 
 bsdd:MoreInfoUrl a rdf:Property ;
-  skos:prefLabel "moreInfoUrl"@en ;
+  skos:prefLabel "More Info URL"@en ;
   rdfs:range xsd:string .
 
 bsdd:NamespaceUri a rdf:Property ;
-  skos:prefLabel "NamespaceUri"@en ;
-  rdfs:range xsd:string .
+  skos:prefLabel "Namespace URI"@en ;
+  rdfs:range xsd:anyURI .
 
 bsdd:LanguageIsoCode a rdf:Property ;
-  skos:prefLabel "LanguageIsoCode"@en ;
-  rdfs:range xsd:string .
+  skos:prefLabel "Language ISO Code"@en ;
+  rdfs:range xsd:language .
 
 bsdd:License a rdf:Property ;
   skos:prefLabel "License"@en ;
   rdfs:range xsd:string .
 
 bsdd:LicenseUrl a rdf:Property ;
-  skos:prefLabel "LicenseUrl"@en ;
-  rdfs:range xsd:string .
+  skos:prefLabel "License URL"@en ;
+  rdfs:range xsd:anyURI .
 
 bsdd:QualityAssuranceProcedure a rdf:Property ;
   skos:prefLabel "Quality Assurance Procedure"@en ;
@@ -65,40 +66,40 @@ bsdd:QualityAssuranceProcedure a rdf:Property ;
 
 bsdd:QualityAssuranceProcedureUrl a rdf:Property ;
   skos:prefLabel "Quality Assurance Procedure URL"@en ;
-  rdfs:range xsd:string .
+  rdfs:range xsd:anyURI .
 
 bsdd:Classification a rdfs:Class ;
   skos:prefLabel "Classification"@en .
 
 bsdd:UID a rdf:Property ;
-  skos:prefLabel "Unique IDentification"@en ;
+  skos:prefLabel "Unique Identification"@en ;
   owl:equivalentProperty skos:notation ;
   rdfs:range xsd:string .
 
 bsdd:Definition a rdf:Property ;
-  skos:prefLabel "definition"@en ;
+  skos:prefLabel "Definition"@en ;
   owl:equivalentProperty skos:definition ;
   rdfs:range xsd:string .
 
 bsdd:Status a rdf:Property ;
-  skos:prefLabel "status"@en ;
+  skos:prefLabel "Status"@en ;
   rdfs:range xsd:string .
 
 bsdd:ActivationDateUtc a rdf:Property ;
-  skos:prefLabel "activationDateUtc"@en ;
-  rdfs:range xsd:dateTime .
+  skos:prefLabel "Activation Date UTC"@en ;
+  rdfs:range xsd:date .
 
 bsdd:RevisionDateUtc a rdf:Property ;
-  skos:prefLabel "revisionDateUtc"@en ;
-  rdfs:range xsd:dateTime .
+  skos:prefLabel "Revision Date UTC"@en ;
+  rdfs:range xsd:date .
 
 bsdd:VersionDateUtc a rdf:Property ;
-  skos:prefLabel "Version Date Utc"@en ;
-  rdfs:range xsd:dateTime .
+  skos:prefLabel "Version Date UTC"@en ;
+  rdfs:range xsd:date .
 
 bsdd:DeActivationDateUtc a rdf:Property ;
-  skos:prefLabel "Deactivation Date Utc"@en ;
-  rdfs:range xsd:dateTime .
+  skos:prefLabel "Deactivation Date UTC"@en ;
+  rdfs:range xsd:date .
 
 bsdd:VersionNumber a rdf:Property ;
   skos:prefLabel "Version Number"@en ;
@@ -122,11 +123,11 @@ bsdd:DeprecationExplanation a rdf:Property ;
 
 bsdd:CreatorLanguageIsoCode a rdf:Property ;
   skos:prefLabel "Creator Language ISO Code"@en ;
-  rdfs:range xsd:string .
+  rdfs:range xsd:language .
 
 bsdd:VisualRepresentationUri a rdf:Property ;
   skos:prefLabel "Visual Representation URI"@en ;
-  rdfs:range xsd:string .
+  rdfs:range xsd:anyURI .
 
 bsdd:CountryOfUse a rdf:Property ;
   skos:prefLabel "Country Of Use"@en ;
@@ -157,15 +158,15 @@ bsdd:Synonym a rdf:Property ;
   rdfs:range xsd:string .
 
 bsdd:ClassificationRelation a rdfs:Class ;
-  skos:prefLabel "ClassificationRelation"@en .
+  skos:prefLabel "Classification Relation"@en .
 
 bsdd:RelationType a rdf:Property ;
   skos:prefLabel "Relation Type"@en ;
   rdfs:range xsd:string .
 
 bsdd:RelatedClassificationUri a rdf:Property ;
-  skos:prefLabel "RelatedClassificationUri"@en ;
-  rdfs:range xsd:string .
+  skos:prefLabel "Related Classification URI"@en ;
+  rdfs:range xsd:anyURI .
 
 bsdd:ClassificationProperty a rdfs:Class ;
   skos:prefLabel "Classification Property"@en .
@@ -179,15 +180,16 @@ bsdd:PropertySet a rdf:Property ;
   rdfs:range xsd:string .
 
 bsdd:ExternalPropertyUri a rdf:Property ;
-  skos:prefLabel "ExternalPropertyUri"@en ;
-  rdfs:range xsd:string .
+  skos:prefLabel "External Property URI"@en ;
+  rdfs:range xsd:anyURI .
 
 bsdd:Unit a rdf:Property ;
-  skos:prefLabel "unit"@en ;
+  skos:prefLabel "Unit"@en ;
   rdfs:range xsd:string .
 
 bsdd:QudtUnit a rdf:Property ;
-  skos:prefLabel "QUDT reference"@en .
+  skos:prefLabel "QUDT Unit"@en ;
+  rdfs:range qudt:Unit .
 
 bsdd:SortNumber a rdf:Property ;
   skos:prefLabel "Sort Number"@en ;
@@ -202,36 +204,42 @@ bsdd:PropertyType a rdf:Property ;
   rdfs:range xsd:string .
 
 bsdd:PredefinedValue a rdf:Property ;
-  skos:prefLabel "Ppredefined Value"@en ;
+  skos:prefLabel "Predefined Value"@en ;
   rdfs:range xsd:string .
 
 bsdd:MinInclusive a rdf:Property ;
   skos:prefLabel "Min Inclusive"@en ;
-  rdfs:range xsd:float .
+  rdfs:range xsd:anySimpleType .
 
 bsdd:MaxInclusive a rdf:Property ;
   skos:prefLabel "Max Inclusive"@en ;
-  rdfs:range xsd:float .
+  rdfs:range xsd:anySimpleType .
 
 bsdd:MinExclusive a rdf:Property ;
   skos:prefLabel "Min Exclusive"@en ;
-  rdfs:range xsd:float .
+  rdfs:range xsd:anySimpleType .
 
 bsdd:MaxExclusive a rdf:Property ;
-  skos:prefLabel "MaxExclusive"@en ;
-  rdfs:range xsd:float .
+  skos:prefLabel "Max Exclusive"@en ;
+  rdfs:range xsd:anySimpleType .
 
 bsdd:Pattern a rdf:Property ;
   skos:prefLabel "Pattern"@en ;
   rdfs:range xsd:string .
 
 bsdd:AllowedValue a rdfs:Class ;
-  skos:prefLabel "AllowedValue"@en .
+  skos:prefLabel "Allowed Value"@en .
 
 bsdd:Value a rdf:Property ;
-  skos:prefLabel "value"@en ;
+  skos:prefLabel "Value"@en ;
   rdfs:range xsd:string .
 
 bsdd:Description a rdf:Property ;
   skos:prefLabel "Description"@en ;
   rdfs:range xsd:string.
+
+bsdd:Property a rdfs:Class ;
+  skos:prefLabel "Property"@en .
+  
+bsdd:Material a rdfs:Class ;
+  skos:prefLabel "Material"@en .
