@@ -266,10 +266,23 @@ specific classification of “IfcWall”. In bSDD terminology, we say that “If
 * `HasMaterial` - a class can be associated with particular material. For example: "Steel Beam" could be related to material "Steel". This type is only available for `Classes`, not `Properties`.
 * `HasReference` - if there is another type of relation between concepts, for example "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them. 
 
-
 ### DateTime format
 
 The date-time format according to the ISO 8601 series should be used: `YYYY-MM-DDThh:mm:ssTZD`. Import allows both: `2023-05-10`, `2023-05-10T15:10:12Z` and `2023-05-10T15:10:12+02:00`.
+
+### Property inheritance
+
+`Class` → `Sub-class`
+
+The properties of a higher hierarchy class are not passed to its children. If authors intend to pass properties down the hierarchy tree, they should assign corresponding properties in the import files.
+
+For example, an [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall) is a parent class of [IfcWallStandardCase](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWallStandardCase). While [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall) has properties, such as [AcoustucRating](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall/prop/Pset_WallCommon/AcousticRating), the [IfcWallStandardCase](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWallStandardCase) does not. 
+
+`Property` → `ClassificationProperty`
+
+The `ClassificationProperty` instantiates a general property to a particular class. By default, it inherits all `Property` attributes, including `AllowedValue` and min/max restrictions. The `ClassificationProperty` attributes can be overridden. 
+
+For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/prop/height) property has a maximum value of 100 cm, but the [Apple-Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple/prop/SizeSet/height) ClassificationProperty has the limit of 25 cm.
 
 ### 🚧 How to group properties?
 
