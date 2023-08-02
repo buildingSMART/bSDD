@@ -21,20 +21,32 @@ Here is an example demonstrating usage of the above concepts:
 
 <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 800px"/>
 
-We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/Classification/Index/58078).
+We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
 # JSON import
 
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
 
-Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3).
+Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
 If you think there are reference items missing, please let us know.
 
 If you are not familiar with JSON, reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html) is a good idea. And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system then it's best to let the system create the json for you.
 
 ## General notes
 
-* Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not be allowed for all fields.
+* Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
+
+* For codes only characters a to z, A to Z, numbers, underscore, dot and dash are allowed. Codes are not case sensitive.
+Some examples of valid codes are:
+  - bs-agri
+  - apple
+  - one.X
+
+  Some examples of invalid codes are:
+  - ДДb    (only characters a-z and A-Z allowed)
+  - ab$    ($ not allowed)
+  - test-% (% not allowed) 
+
 
 ## Domain
 
@@ -86,7 +98,7 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 | Name                      | Text                           | ✅       | ✅           | Name of the `Classification` E.g. "IfcCurtainWall"                                                                   |
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at domain level you must supply the namepsace URI that globally uniquely identifies the `Classifciation`  |
 | ParentClassificationCode  | Text                           |         |             | Reference to the parent `Classification`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#how-to-define-relations) |
-| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Classification`. See bSDD API [ifc classifications](https://api.bsdd.buildingsmart.org/api/Domain/v3/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
+| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Classification`. See bSDD API [ifc classifications](https://api.bsdd.buildingsmart.org/api/Domain/v3/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
 | ReplacedObjectCodes       | List of text                   |         |             | List of Classification Codes this Classification replaces                                                          |
 | ReplacingObjectCodes      | List of text                   |         |             | List of Classification Codes this classification is replaced by                                                    |
 | RevisionDateUtc           | DateTime                           |         |             | See [Date Time format](#datetime-format). |
@@ -182,8 +194,8 @@ classifications
 | Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | PredefinedValue     | Text     |         |             | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for classification "IfcWall" |
 | PropertyCode        | Text     |  ✅\*     |             | Reference to the `Property` if it is in the same `Domain`. Not required if you fill the PropertyNamespaceUri  |
-| PropertyNamespaceUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Domain`, e.g. http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/position Not required if you fill the PropertyCode       |
-| PropertySet         | Text     |         |             | Name of the "property set" in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example, when a property is a material, you should use the value "IfcMaterial".                                                                                                                    |
+| PropertyNamespaceUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Domain`, e.g. https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/position Not required if you fill the PropertyCode       |
+| PropertySet         | Text     |         |             | Code validation will be applied.<br/> Name of the "property set" in which the property should be placed during IFC export. When the property should be placed in an IFC entity you should use that. For example, when a property is a material, you should use the value IfcMaterial". |
 | PropertyType        | Text     |         |             | Type of the `Property` for the `Classification`: `Property` (default) or `Dependency`                                      |
 | SortNumber          | Integer  |         |             | Sort number of this `Property` within the `Classification`                                                                 |
 | Symbol              | Text     |         |             |                                                                                                                        |
@@ -198,7 +210,7 @@ classifications
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| RelatedClassificationUri | Text     | ✅       |             | Full namespace URI of the related `Classification`. Can be to same or different `Domain`. Example: http://identifier.buildingsmart.org/uri/etim/etim-8.0/class/EC002987|
+| RelatedClassificationUri | Text     | ✅       |             | Full namespace URI of the related `Classification`. Can be to same or different `Domain`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
 | RelatedClassificationName | Text     |        |             |  |
 | RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
 | Fraction       | Real     |        |             | Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
@@ -319,10 +331,17 @@ For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/frui
 
 # Notifications
 
+
+**2023-07 - Important notification:**
+
+> As we're continuously improving bSDD we've updated all identifiers: the dash between domain code and domain version has been replaced by a dash, e.g.:
+>  https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0.0/class/apple will now be https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple
+> 
+> We will support supplying and retrieving data using the dash between domain code and version for (at least) 4 months. But please do note that only identifiers in the new format are returned by the bSDD API's.
+
+
 **2022-08 - Important notification:**
 
 > The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
 > 
-> We will support supplying and retrieving data using the "http" identifiers for (at least) 6 months. But please do note that only "https" identifiers are returned by the bSDD API's.
-> 
-> Current status: available in test environment.
+> Support for using the old "http" identifiers will be deprecated soon!
