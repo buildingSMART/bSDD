@@ -28,25 +28,13 @@ We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsd
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
 
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
-If you think there are reference items missing, please let us know.
+If you think there are reference documents missing, please let us know.
 
-If you are not familiar with JSON, reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html) is a good idea. And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system then it's best to let the system create the json for you.
+If you are not familiar with JSON, reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html) is a good idea. And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system, then it's best to let the system create the JSON for you.
 
 ## General notes
 
 * Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
-
-* For codes only characters a to z, A to Z, numbers, underscore, dot and dash are allowed. Codes are not case sensitive.
-Some examples of valid codes are:
-  - bs-agri
-  - apple
-  - one.X
-
-  Some examples of invalid codes are:
-  - ДДb    (only characters a-z and A-Z allowed)
-  - ab$    ($ not allowed)
-  - test-% (% not allowed) 
-
 
 ## Domain
 
@@ -55,7 +43,7 @@ Contains general information about the `Domain` and the delivered data.
 | Field            | DataType               | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
 |------------------|------------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Classifications  | List of Classification | ✅       |               | List of objects of type `Classification`. See section [Classification](#classification)  |
-| DomainCode       | Text                   | ✅       |             | Code of the domain, preferably short, only alphabetical characters and numbes allowed, must start with alphabetical character E.g. "ifc"   |
+| DomainCode       | Text                   | ✅       |             | Code of the domain, preferably short, E.g. "ifc". See section [Code format](#code-format) |
 | DomainName       | Text                   | ✅\* |   | Name of the domain. \*If the domain exists supplying this name is not necessary. |
 | DomainNamespaceUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique namespace that's the first part of all Classifications and Properties namespaces, e.g. "urn:mycompany:mydomain" |
 | DomainVersion    | Text                   | ✅       |             | Version of the domain data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
@@ -86,7 +74,7 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 | ClassificationProperties  | List of ClassificationProperty |         |             | See section [ClassificationProperty](#classificationproperty) |
 | ClassificationRelations   | List of ClassificationRelation |         |             | See section [ClassificationRelation](#classificationrelation) |
 | ClassificationType        | Text                           | ✅*        |             | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`. Read more about [classification types](#classification-types). If not specified, the `Class` type will be used by default.  |
-| Code                      | Text                           | ✅       |             | Unique identification within the domain of the classification E.g. "ifc-00123-01"                                  |
+| Code                      | Text                           | ✅       |             | Unique identification within the domain of the classification E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
 | ReferenceCode             | Text                           |         |             | Reference code, can have domain specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty use empty string "".  |
 | CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
 | CountryOfOrigin           | Text                           |         |             | ISO Country Code of the country of origin of this `Classification`. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
@@ -131,7 +119,7 @@ classifications
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
-| Code                          | Text         | ✅       |             | Unique identification within the domain of the property E.g. "ifc-99088-01"                                                                          |
+| Code                          | Text         | ✅       |             | Unique identification within the domain of the property E.g. "ifc-99088-01". See section [Code format](#code-format)                                                                          |
 | ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties                                                                                                                |
 | CountriesOfUse                | List of text         |         |             |  List of country ISO codes this `Property` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
 | CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
@@ -182,7 +170,7 @@ classifications
 | Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `ClassificationProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
-| Code                | Text     | ✅        |             | Unique identification within the domain of this `ClassificationProperty`                                                |
+| Code                | Text     | ✅        |             | Unique identification within the domain of this `ClassificationProperty`. See section [Code format](#code-format).                                                |
 | Description         | Text     |         | ✅           | You can supply the property description specific for the classification. If left out, the 'common' description of the property will be shown where applicable |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyNamespaceUri` instead                |
 | IsRequired              | Boolean  |   |            | Indicates if this is a required `Property` of the `Classification` |
@@ -212,8 +200,8 @@ classifications
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedClassificationUri | Text     | ✅       |             | Full namespace URI of the related `Classification`. Can be to same or different `Domain`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
 | RelatedClassificationName | Text     |        |             |  |
-| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
-| Fraction       | Real     |        |             | Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`. R    |
+| Fraction       | Real     |        |             | Only applicable to `HasMaterial`. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 
 
 ## AllowedValue
@@ -222,7 +210,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| Code             | Text     | ✅       |             | Code as unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value    |
+| Code             | Text     | ✅       |             | Code is unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
 | Description | Text     |        | ✅       | A description of the value|
 | NamespaceUri| Text |  |  | You can provide your own Namespace Uri (must be globally unique).|
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
@@ -240,6 +228,19 @@ Note: adding translations of the `AllowedValue` is not supported yet
 ---
 
 # Additional explanations
+
+### Code format
+
+For codes, only characters, numbers, underscore, dot, and dash are allowed (a-z, A-Z, 0-9, "_", ".", "-"). Codes are not case-sensitive.
+Some examples of valid codes are:
+  - bs-agri
+  - apple
+  - one.X
+
+Some examples of invalid codes are:
+  - ДДb    (only characters a-z and A-Z allowed)
+  - ab$    ($ not allowed)
+  - test-% (% not allowed) 
 
 ### Classification types
 
