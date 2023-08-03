@@ -73,7 +73,7 @@ A `Classification` can be any (abstract) object (e.g. "IfcWall"), abstract conce
 | ActivationDateUtc         | DateTime                           |         |             | See [Date Time format](#datetime-format). |
 | ClassificationProperties  | List of ClassificationProperty |         |             | See section [ClassificationProperty](#classificationproperty) |
 | ClassificationRelations   | List of ClassificationRelation |         |             | See section [ClassificationRelation](#classificationrelation) |
-| ClassificationType        | Text                           | ✅*        |             | Must be one of: `Class` `ComposedProperty` `Domain` `GroupOfProperties` `ReferenceDocument` `AlternativeUse`. Read more about [classification types](#classification-types). If not specified, the `Class` type will be used by default.  |
+| ClassificationType        | Text                           | ✅*        |             | Must be one of: `Class` `GroupOfProperties` `AlternativeUse`. Read more about [classification types](#classification-types). If not specified, the `Class` type will be used by default. We've deprecated types `ReferenceDocument`, `ComposedProperty` and `Domain`, cannot use these anymore for upload but may be present in API results. |
 | Code                      | Text                           | ✅       |             | Unique identification within the domain of the classification E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
 | ReferenceCode             | Text                           |         |             | Reference code, can have domain specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty use empty string "".  |
 | CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
@@ -250,10 +250,10 @@ Each classification must have a specific type. Below is the explanation of what 
   * A Property Set as defined in ISO 16739-1 is a group of properties, but a group of properties is not necessarily a Property Set.
   * There are five categories of possible groups of properties: class, domain, reference document, composed property, alternative use.
   * A property can be member of several groups of properties. A property cannot be member of several Property Sets as defined in ISO 16739-1.
-* `reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain.<sup>1<sup>3.18</sup></sup>
+* [DEPRECATED] `reference document` - publication that is consulted to find specific information, particularly in a technical or scientific domain.<sup>1<sup>3.18</sup></sup>
   * A reference document can be associated with any data present in a data dictionary.
   * In bSDD we also have a [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) list with most common standards that can be used as reference. 
-* `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>
+* [DEPRECATED] `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>
   * Using this category of group of properties requires to fill all the properties part of the composed property. There is no value attached to the group of properties. 
   * Example: To describe the characteristic "concrete facing quality" it is mandatory to describe 3 properties: concrete planarity, concrete hue, concrete texture.	
 * `alternative use` - type to be used if no other type fits the needs.<sup>1<sup>3.1</sup></sup>
@@ -301,7 +301,6 @@ For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/frui
 
 `ConnectedPropertyCodes`...
 
-`ComposedProperty`...
 
 ### 🚧 How to restrict property values?
 `AllowedValues`...
@@ -322,10 +321,8 @@ For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/frui
 
 `PhysicalQuantity`...
 
-### 🚧 DynamicProperty vs ComposedProperty
+### 🚧 DynamicProperty
 `DynamicProperty`...
-
-`ComposedProperty`...
 
 --- 
 <sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
