@@ -12,11 +12,8 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 
 ## Updates
 
-> **2022-08 - Important notification:**
-> 
-> The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
-> 
-> We will support retrieving data using the "http" identifiers for (at least) 6 months. But please do note that only "https" identifiers are returned by the bSDD API's. 
+We inform about planned and recently implemented bSDD updates that might affect you in this forum thread:
+[https://forums.buildingsmart.org/t/bsdd-tech-updates/4889](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889)
 
 ## Useful links
 
@@ -28,10 +25,10 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 * Search in the bSDD: https://search.bsdd.buildingsmart.org/
 * Upload data: https://manage.bsdd.buildingsmart.org/ 
 
-We also provide a `Test` environment to play with, for those who want to experiment with bSDD first. We encourage to try `Test` before publishing in the actual bSDD. You can acces it via:  
+We also provide a **Test** environment to play with, for those who want to experiment with bSDD first. We encourage to try **Test** before publishing in the actual bSDD. You can access it via:  
 
-* Search in the `Test` bSDD: https://search-test.bsdd.buildingsmart.org/
-* Upload data to the `Test` database: https://manage-test.bsdd.buildingsmart.org/
+* Search in the **Test** bSDD: https://search-test.bsdd.buildingsmart.org/
+* Upload data to the **Test** database: https://manage-test.bsdd.buildingsmart.org/
 
 > Note: 
 > 
@@ -45,8 +42,8 @@ We also provide a `Test` environment to play with, for those who want to experim
 ### For developers 👩‍💻
 * The API URL (not a readable website): https://api.bsdd.buildingsmart.org/ 
 * API documentation on Swagger: https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
-* `Test` API documentation on Swagger: https://test.bsdd.buildingsmart.org/swagger/
-* GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
+* **Test** environment API documentation on Swagger: https://test.bsdd.buildingsmart.org/swagger/
+* **Test** environment GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
 
 ### Instructions
 
