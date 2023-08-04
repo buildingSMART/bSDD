@@ -301,6 +301,8 @@ If you want to reference specific resources but are not sure of the version or w
 Try it out:
 https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 
+⚠️ The "latest" points to the most recent resource, meaning that it will change once a new version is present. Use with caution as it is not an immutable URI, and the content can change. For contractual agreements, we suggest using specific version numbers.
+
 ### 🚧 How to group properties?
 
 `GroupOfProperties`...
@@ -335,8 +337,8 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 --- 
 <sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
 
-# Notifications
 
+# Notifications
 
 **2023-07 - Important notification:**
 
@@ -345,9 +347,10 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 > 
 > We will support supplying and retrieving data using the dash between domain code and version for (at least) 4 months. But please do note that only identifiers in the new format are returned by the bSDD API's.
 
-
 **2022-08 - Important notification:**
 
 > The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
 > 
 > Support for using the old "http" identifiers will be deprecated soon!
+
+📢 Read more about the latest tech updates in the dedicated forum topic: https://forums.buildingsmart.org/t/bsdd-tech-updates/4889
