@@ -1,4 +1,4 @@
-# buildingSMART Data Dictionary model
+![image](https://github.com/buildingSMART/bSDD/assets/22922395/747ea016-782b-4fe7-8c85-482a9f9582ae)# buildingSMART Data Dictionary model
 
 `data dictionary` - centralized repository of information about data such as meaning, relationships to other data, origin usage and format.<sup>1<sup>3.9</sup></sup>. The bSDD is a service to facilitate distribution of such dictionaries.
 
@@ -295,8 +295,10 @@ For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/frui
 
 ### Latest version
 In bSDD, all resources get a unique identifier - URI. The URI, among other information, contains codes of the organisation, the dictionary and the version number, for example: .../uri/bs-agri/fruitvegs/**1.0.0**/class/fruit
-If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version: 
-.../uri/bs-agri/fruitvegs/**latest**/class/fruit
+If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version containing that resource: 
+.../uri/bs-agri/fruitvegs/**latest**/class/fruit. 
+
+<img src="https://github.com/buildingSMART/bSDD/assets/22922395/3fb6dc42-fd64-41a1-be1f-656cde7f9d28" alt="bSDD latest" style="width: 600px"/>
 
 Try it out:
 https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
