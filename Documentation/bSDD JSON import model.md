@@ -293,6 +293,14 @@ For example, the [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsma
 `ClassificationProperty` is an instantiation of general `Property` for a particular `Class`. The attributes of a property, such as `AllowedValue` and min/max restrictions,  are by default passed to `ClassificationProperty`. The values of the `ClassificationProperty` can be modified without influencing the origin `Property`.  
 For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/prop/height) has an upper limit of 100 cm. When applied to the "Apple" class, the [Apple-Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple/prop/SizeSet/height) has a lower limit - 25cm. 
 
+### Latest version
+In bSDD, all resources get a unique identifier - URI. The URI, among other information, contains codes of the organisation, the dictionary and the version number, for example: .../uri/bs-agri/fruitvegs/**1.0.0**/class/fruit
+If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version: 
+.../uri/bs-agri/fruitvegs/**latest**/class/fruit
+
+Try it out:
+https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
+
 ### 🚧 How to group properties?
 
 `GroupOfProperties`...
