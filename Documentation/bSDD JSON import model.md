@@ -1,29 +1,41 @@
-![image](https://github.com/buildingSMART/bSDD/assets/22922395/747ea016-782b-4fe7-8c85-482a9f9582ae)# buildingSMART Data Dictionary model
+# buildingSMART Data Dictionary model
 
-`data dictionary` - a centralized repository of information about data such as meaning, relationships to other data, origin usage and format.<sup>1<sup>3.9</sup></sup>. The bSDD is a service to facilitate the distribution of such dictionaries.
+## Table of content:
 
-The content in bSDD is structured in `Domains` published by owner organizations. Each `Domain` consists of `Classifications` and `Properties`, which could be related to each other or with other `Domains`. 
+* [Glossary](#glossary)
+* [Data model](#data-model)
+* [JSON format](#json-format)
+* [List of fields](#list-of-fields)
+    * [Domain](#domain)  
+    * [Classification](#classification)  
+    * [Material](#material)
+    * [Property](#property)  
+    * [ClassificationProperty](#classificationproperty)  
+    * [ClassificationRelation](#classificationrelation)  
+    * [AllowedValue](#allowedvalue)  
+    * [PropertyRelation](#propertyrelation)  
+* [Additional explanations](#additional-explanations)
+* [Notifications](#notifications)
 
-> `Domain` - an area of activity covering a science, a technique, a material, etc. A domain can be associated with a group to which the property applies. <sup>1<sup>3.11</sup></sup>
-> 
-> `Class` - description of a set of objects that share the same characteristics.<sup>1<sup>3.7</sup></sup> 
->
->  `Property` - an inherent or acquired feature of an item. Example: `Thermal efficiency`, `heat flow`, (...) `colour`. <sup>1<sup>3.17</sup></sup>
+## Glossary
 
-If we use IFC as an example, IFC 4.3 is the `Domain`, "IfcWall" is a `Class` and "AcousticRating" is a `Property`. A `Class` can have zero or more `Properties`. 
+* `Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. The bSDD is a service to facilitate the distribution of such dictionaries. The content in bSDD is structured in `Dictionaries` (previously `Domains`) published by different organizations. Each `Dictionary` (previously `Domain`) consists of `Classes` (previously `Classifications`) and `Properties`, which could be related to each other or with other `Dictionaries` (previously `Domains`). 
+
+* `Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]
+
+* `Property` - '_an inherent or acquired feature of an item. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].
+
+## Data model
 
 The diagram below shows the simplified data model behind the bSDD:
 
 <!-- <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD%20database%20diagram.png" alt="bSDD entity diagram"/> -->
 <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 550px"/>
 
-Here is an example demonstrating the usage of the above concepts:
-
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 800px"/>
-
+See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png).
 We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
-# JSON import
+## JSON format
 
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
 
@@ -32,11 +44,11 @@ If you think there are reference documents missing, please let us know.
 
 If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system, then it's best to let the system create the JSON for you.
 
-## General notes
+## List of fields
 
-* Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
+NB Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
 
-## Domain
+### Domain
 
 Contains general information about the `Domain` and the delivered data.
 
@@ -63,7 +75,7 @@ Contains general information about the `Domain` and the delivered data.
 
 \* For delivering data in additional languages, it is sufficient to fill the `Domain` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Ensure that the `OrganizationCode`, `DomainCode` and `DomainVersion` are exactly the same and if the data is for adding a language to an existing `Domain`, set the field `LanguageOnly` to true.
 
-## Classification
+### Classification
 
 A `Classification` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "time") or process (e.g. "installation").
 
@@ -99,7 +111,7 @@ A `Classification` can be any (abstract) object (e.g. "wall") or abstract concep
 | VisualRepresentationUri   | Text                           |         | ✅           |  |
 
 
-## Material
+### Material
 
 A `Material` is similar to a `Classification`.
 Differences in model are:
@@ -109,7 +121,7 @@ Differences in model are:
 
 A `Domain` can have both `Material`(s) and `Classification`(s). Please note that the "code" of both `Material`(s) and `Classification`(s) must be unique within the domain. You can't have a `Domain` with `Material` with code "abcd" and a `Classification` with the same code "abcd".
 
-## Property
+### Property
 
 A `Classification` can have multiple properties, and a `Property` can be part of many classifications
 
@@ -163,7 +175,7 @@ A `Classification` can have multiple properties, and a `Property` can be part of
 | VisualRepresentationUri       | Text         |         | ✅           |  |
 | PropertyRelations              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#propertyrelation) |
 
-## ClassificationProperty
+### ClassificationProperty
 
 | Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
@@ -190,7 +202,7 @@ A `Classification` can have multiple properties, and a `Property` can be part of
 
 \* One of those is required.
 
-## ClassificationRelation
+### ClassificationRelation
 
 `Classification` and `Material` can be linked by relations. See section [How to define relations?](#how-to-define-relations)
 
@@ -202,7 +214,7 @@ A `Classification` can have multiple properties, and a `Property` can be part of
 | Fraction       | Real     |        |             | Only applicable to `HasMaterial`. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 
 
-## AllowedValue
+### AllowedValue
 
 Note: adding translations of the `AllowedValue` is not supported yet
 
@@ -215,7 +227,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 
 
-## PropertyRelation
+### PropertyRelation
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
@@ -225,7 +237,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 
 ---
 
-# Additional explanations
+## Additional explanations
 
 ### Code format
 
@@ -338,7 +350,7 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 <sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
 
 
-# Notifications
+## Notifications
 
 **2023-07 - Important notification:**
 
