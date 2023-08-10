@@ -1,5 +1,17 @@
 # bSDD and GraphQL
 
+## Notification
+
+We've applied several changes in naming:
+
+1. "Domain" --> "Dictionary"
+2. "Classification" --> "Class"
+3. "NamespaceUri" --> "Uri"
+4. "IncludeChilds" --> "IncludeChildren"
+
+To be consistent, names in our GraphQL API have also been changed.
+But we do support the old naming until at least February 2024.
+
 ## Short intro on GraphQL
 
 A 'regular' API is quite static: you do a request and it returns a predefined set of data. If you need some more info you probably need to do another API call. And then maybe another call until you have got all the data you want. GraphQL is designed to overcome that issue: it is a query language with which you can specify the data you need.
@@ -58,16 +70,16 @@ You can combine those queries into one:
 ```
 ----
 
--- search for classifications within a domain:
+-- search for classes within a dictionary:
 ```
 {
-  domain(namespaceUri : "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
-    namespaceUri
+  dictionary(uri : "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
+    uri
     copyrightNotice
     languageCode
-    classificationSearch(searchText: "asfaltbetong", languageCode: "sv-SE") {
+    classSearch(searchText: "asfaltbetong", languageCode: "sv-SE") {
       name
-      namespaceUri
+      uri
       synonyms
       relatedIfcEntityNames
       properties {
@@ -81,15 +93,15 @@ You can combine those queries into one:
 ```
 ----
 
--- get all classifications with their properties of a domain (not available on production yet):
+-- get all classes with their properties of a dictionary:
 
-ATTENTION: this query will take a long time to execute for domains with many classifications
+ATTENTION: this query will take a long time to execute for dictionaries with many classes
 ```
 {
-  domain(namespaceUri : "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0") {
+  dictionary(uri : "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0") {
     name
     version
-    namespaceUri
+    uri
     copyrightNotice
     languageCode
     status
@@ -98,10 +110,10 @@ ATTENTION: this query will take a long time to execute for domains with many cla
     licenseUrl
     moreInfoUrl
     
-    classificationSearch {
+    classSearch {
       code
       name
-      namespaceUri
+      uri
       definition
       documentReference
       synonyms
@@ -109,7 +121,7 @@ ATTENTION: this query will take a long time to execute for domains with many cla
       properties {
         code
         name
-        namespaceUri
+        uri
         description
         definition
         documentReference
@@ -131,19 +143,19 @@ ATTENTION: this query will take a long time to execute for domains with many cla
 ```
 ----
 
--- get details for a classification, using variables:
+-- get details for a class, using variables:
 ```
-query ($domainNamespaceUri: String!, $namespaceUri: String!) {
-  domain(namespaceUri: $domainNamespaceUri) {
+query ($dictionaryUri: String!, $uri: String!) {
+  dictionary(uri: $dictionaryUri) {
     name
-    namespaceUri
-    classification(namespaceUri: $namespaceUri, includeChilds: true) {
+    uri
+    class(uri: $uri, includeChildren: true) {
       activationDateUtc
       childs {
         name
         namespaceUri
       }
-      classificationType
+      classType
       code
       countriesOfUse
       countryOfOrigin
@@ -160,8 +172,8 @@ query ($domainNamespaceUri: String!, $namespaceUri: String!) {
       }
       relatedIfcEntityNames
       relations {
-        relatedClassificationName
-        relatedClassificationUri
+        relatedClassName
+        relatedClassUri
         relationType
       }
       replacedObjectCodes
@@ -181,8 +193,8 @@ query ($domainNamespaceUri: String!, $namespaceUri: String!) {
 The query variable section defines the variables:
 ```
 {
-  "domainNamespaceUri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1",
-  "namespaceUri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1/class/ACDE"
+  "dictionaryUri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1",
+  "uri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1/class/ACDE"
 }
 ```
 ## Example meta data queries
