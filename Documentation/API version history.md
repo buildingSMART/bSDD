@@ -8,7 +8,15 @@ New APIs and updates will always first be published to the bSDD test environment
 # Versioning strategy
 A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does not (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
 
-If there is a new version of an API the previous version will be supported for 6 to 12 months after releasing the new version. 
+If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
+
+## 2023-08-10
+
+ * Added: api/Domain/v3/{organizationCode}/{code}/{version} - put: to update the status of a domain version
+ * Added: api/Domain/v3/{organizationCode}/{code}/{version} - delete: to delete a domain version
+ * Added: api/Domain/v3/{organizationCode}/{code} - delete: to delete a domain
+ * Change: api/Classification/v4: now includes "namespaceUri" in result contracts of the classification property and classification relation
+ * Change: api/Property/v3: now includes "namespaceUri" in result contract of the property relation
 
 ## 2023-05-10
 
