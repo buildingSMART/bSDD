@@ -1,6 +1,6 @@
 # Mapping of the attributes between bSDD and ISO standards
 
-**⚠️ THIS PAGE IS A WORK IN PROGRESS, AND SHOULD NOT BE USED FOR REFERENCE**
+**⚠️ THIS PAGE IS A WORK IN PROGRESS AND SHOULD NOT BE USED FOR REFERENCE ⚠️**
 
 The bSDD is based on ISO12006-3 and ISO23386 standards, which define data dictionaries. For ease of integration with openBIM workflows, the bSDD is stripped down to the essential aspects: defining interrelated terms and properties describing the built environment. The bSDD constraints include the imposed units list, languages list, and types of relations between concepts (ISO leaves freedom of definition to users, hindering interpretation by software). The inheritance structure of ISO12006-3 (Root→Object→Concept→Subject/Property) is simplified in bSDD to one level: Class and Property. 
 
@@ -8,7 +8,7 @@ The ISO allows the versioning of each concept individually, which is important f
 
 Below is the table mapping the attributes of bSDD and ISO standards. bSDD attributes are defined in [the bSDD data model](https://github.com/buildingSMART/bSDD/blob/doc_update/Documentation/bSDD%20JSON%20import%20model.md). 
 
-| **bSDD** | **ISO23386** | **ISO12006-3** | **Comment** |
+| **bSDD** | **ISO23386:2020** | **ISO12006-3:2022** | **Comment** |
 |---|---|---|---|
 | Property/Class: Uid,   NamespaceUri | Property/GroupOfProperties: Globally unique identifier | xtdRoot: UniqueId | _(G)UID is optional in bSDD, required in ISO. In bSDD role of   UID was replaced with URI, and UID is only to support use cases needing it.   URI allows viewing the metadata of a property._ |
 | Property/Class/Dictionary:   Status | Property/GroupOfProperties: Status | ✖️ | _bSDD and ISO have “Active” and “Inactive”. bSDD also has   “Preview”, so extends ISO._ |
@@ -18,8 +18,8 @@ Below is the table mapping the attributes of bSDD and ISO standards. bSDD attrib
 | Property/Class:   RevisionDateUtc | Property/GroupOfProperties: Date of revision | ✖️ |  |
 | Property/Class: VersionDateUtc | Property/GroupOfProperties: Date of version | ✖️ |  |
 | Property/Class:   DeActivationDateUtc | Property/GroupOfProperties: Date of deactivation | ✖️ |  |
-| Property/Class: VersionNumber | Property/GroupOfProperties: Version number | xtdObject: MajorVersion, MinorVersion | _Two fields in ISO12006-3_ |
-| Property/Class: RevisionNumber | Property/GroupOfProperties: Revision number | ✖️ |  |
+| Property/Class: VersionNumber | Property/GroupOfProperties: Version number | xtdObject: MajorVersion | _Version number in ISO23386 is what Major version in ISO12006-3 (similarly Revision number is MinorVersion). In bSDD, the attributes are named like in ISO23386, but the version already includes three numbers: 1.2.3 - Major, Minor and Patch (read more on Semantic Versioning at https://semver.org/)._ |
+| Property/Class: RevisionNumber | Property/GroupOfProperties: Revision number | xtdObject: MinorVersion | _See row above. The revision number is redundant in bSDD, but can be used to say how many revision of a certain field has been made._ |
 | Property/Class:   ReplacedObjectCodes | Property/GroupOfProperties: List of replaced properties | xtdObject: ReplacedObjects |  |
 | Property/Class:   ReplacingObjectCodes | Property/GroupOfProperties: List of replacing properties | ✖️ |  |
 | Property/Class:   DeprecationExplanation | Property/GroupOfProperties: Deprecation explanation | xtdObject: DeprecationExplanation |  |
