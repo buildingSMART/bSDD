@@ -10,7 +10,7 @@ We've applied several changes in naming:
 4. "IncludeChilds" --> "IncludeChildren"
 
 To be consistent, names in our GraphQL API have also been changed.
-But we do support the old naming until at least February 2024.
+But we do support the old naming until at least April 2024.
 
 ## Short intro on GraphQL
 
