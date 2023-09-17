@@ -1,19 +1,19 @@
 # Referencing bSDD in IFC and IDS
 
 ## Intro
-To associate a classification from an external reference (such as bSDD) to objects in an IFC model, the following documentation shall be used.
+To associate a class from an external reference (such as bSDD) to objects in an IFC model, the following documentation shall be used.
 
-The main IFC concept template to be used is: [Classification Association](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Classification_Association/content.html)
+The main IFC concept template to be used is: [Class Association](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Class_Association/content.html)
 
 The main entities involved are:
-- _IfcClassification_
-- _IfcClassificationReference_
-- _IfcRelAssociatesClassification_
+- _IfcClass_
+- _IfcClassReference_
+- _IfcRelAssociatesClass_
 
-The next section indicates the mapping rules between bSDD data model and IFC concepts used for classification. To support this, snippets (:pill:) of IFC file and bSDD domain file are reported as example.
+The next section indicates the mapping rules between bSDD data model and IFC concepts used for class. To support this, snippets (:pill:) of IFC file and bSDD dictionary file are reported as example.
 
 - :page_facing_up: Sample IFC snippets are taken from this [IFC file](https:// "title") [:construction:]
-- :blue_book: Sample bSDD snippets are taken from this [bSDD domain](https:// "title") [:construction:]
+- :blue_book: Sample bSDD snippets are taken from this [bSDD dictionary](https:// "title") [:construction:]
 
 
 ## openBIM workflows
@@ -41,29 +41,29 @@ Management of conflicting information shall be handled at the project/organisati
 
 Mapping rules are defined for the following concepts:
 
-1. [bSDD domain](#1.-bSDD-domain)
-2. [bSDD classifications (objects)](#2.-bSDD-classifications-(objects))
+1. [bSDD dictionary](#1.-bSDD-dictionary)
+2. [bSDD classes (objects)](#2.-bSDD-classes-(objects))
 3. [bSDD properties](#3.-bSDD-properties)
 4. [bSDD materials](#4.-bSDD-materials)
 
 ---
 
-### 1. bSDD domain
-**In bSDD**, a domain (a.k.a., classification system) is a standardised collection of object definitions, properties, materials, owned and maintained by one organisation. One organisation can own one or more domains.
+### 1. bSDD dictionary
+**In bSDD**, a dictionary (a.k.a., class system) is a standardised collection of object definitions, properties, materials, owned and maintained by one organisation. One organisation can own one or more dictionaries.
 
-**In IFC**, domain information are captured using _IfcClassification_. Below are the mapping rules, for different IFC versions.
+**In IFC**, dictionary information are captured using _IfcClass_. Below are the mapping rules, for different IFC versions.
 
 |                    | bSDD                      | IFC 4.3                      | IFC 4                      | IFC 2x3                    | IDS   |
 |--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
-| **Domain name**    | DomainName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |❎*    |
-| **Domain source**  | *namespaceUri of the domain* | IfcClassification.Specification | IfcClassification.Location    | ❌ (IfcClassification.Source can be used as a workaround)   |uri      |
-| **Domain version** | DomainVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |uri**      |
-| **Domain owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |uri**      |
-| **Domain date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |❎*      |
+| **Dictionary name**    | DictionaryName                   | IfcClass.Name          | IfcClass.Name        | IfcClass.Name        |❎*    |
+| **Dictionary source**  | *uri of the dictionary* | IfcClass.Specification | IfcClass.Location    | ❌ (IfcClass.Source can be used as a workaround)   |uri      |
+| **Dictionary version** | DictionaryVersion                | IfcClass.Edition       | IfcClass.Edition     | IfcClass.Edition     |uri**      |
+| **Dictionary owner**   | OrganizationCode             | IfcClass.Source        | IfcClass.Source      | IfcClass.Source      |uri**      |
+| **Dictionary date**    | ReleaseDate                  | IfcClass.EditionDate   | IfcClass.EditionDate | IfcClass.EditionDate |❎*      |
 
 > \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
 > 
-> \*\* The IDS doesn't support a direct reference to the bSDD domains, but whenever a classification, property or material is referenced by "uri" attribute, those include information about their domains: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DomainCode`-`DomainVersion`/..."
+> \*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but whenever a class or property is referenced by "uri" attribute, those include information about their dictionaries: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DictionaryCode`-`DictionaryVersion`/..."
 
 :pill: **Snippets**
 <details><summary>bSDD</summary>
@@ -71,28 +71,27 @@ Mapping rules are defined for the following concepts:
 ```
 {
     "OrganizationCode": "text",
-    "DomainCode": "text",
-    "DomainVersion": "text",
-    "DomainName": "text",
+    "DictionaryCode": "text",
+    "DictionaryVersion": "text",
+    "DictionaryName": "text",
     "ReleaseDate": null,
     "Status": "text",
     "MoreInfoUrl": "text",
     "UseOwnUri": false,
-    "DomainNamespaceUri": "text",
+    "DictionaryUri": "text",
     "LanguageIsoCode": "text",
     "LanguageOnly": false,
     "License": "text",
     "LicenseUrl": "text",
     "QualityAssuranceProcedure": "text",
     "QualityAssuranceProcedureUrl": "text",
-    "Classifications": [], 
-    "Properties": [],
-    "Materials": []
+    "Classes": [], 
+    "Properties": []
   }
 ```
 </details>
 
-<details><summary>IFC 4x3 <a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassification.htm">(IfcClassification)</a></summary>
+<details><summary>IFC 4x3 <a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClass.htm">(IfcClass)</a></summary>
 
 ```    
     IFCCLASSIFICATION(<Source>,<Edition>,<EditionDate>,<Name>,<Description>,<Specification>,<ReferenceTokens>);
@@ -102,7 +101,7 @@ Mapping rules are defined for the following concepts:
 ```
 </details>
 
-<details><summary>IFC 4 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/">(IfcClassification)</a></summary>
+<details><summary>IFC 4 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/">(IfcClass)</a></summary>
 
 ```    
     IFCCLASSIFICATION(<Source>,<Edition>,<EditionDate>,<Description>,<Location>,<ReferenceTokens>);
@@ -112,7 +111,7 @@ Mapping rules are defined for the following concepts:
 ```
 </details>
 
-<details><summary>IFC 2x3 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcexternalreferenceresource/lexical/ifcclassification.htm">(IfcClassification)</a></summary>
+<details><summary>IFC 2x3 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcexternalreferenceresource/lexical/ifcclassification.htm">(IfcClass)</a></summary>
 
 ```    
     IFCCLASSIFICATION(<Source>,<Edition>,<EditionDate>,<Name>);
@@ -125,23 +124,23 @@ Mapping rules are defined for the following concepts:
 
 ---
 
-### 2. bSDD classifications (objects)
-**In bSDD**, a classification can be any (abstract) object (e.g. _IfcWall_), abstract concept (e.g. _Costing_) or process (e.g. _Installation”_.
+### 2. bSDD classes (objects)
+**In bSDD**, a class can be any (abstract) object (e.g. _IfcWall_), abstract concept (e.g. _Costing_) or process (e.g. _Installation”_.
 
-**In IFC**, classification information are captured using _IfcClassificationReference_. Below are the mapping rules, for different IFC versions.
+**In IFC**, class information are captured using _IfcClassReference_. Below are the mapping rules, for different IFC versions.
 
 |                           | bSDD                              | IFC 4.3                                | IFC 4                                  | IFC 2x3                               |IDS   |
 |---------------------------|--------------------------------------|-------------------------------------------|-------------------------------------------|------------------------------------------|-------|
-| **Classification name**   | name *of the classification*           | IfcClassificationReference.Name           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |❎*      |
-| **Classification code**   | code *of the classification*           | IfcClassificationReference.Identification | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |uri**      |
-| **Classification source** | namespaceUri *of the classification* | IfcClassificationReference.Location       | IfcClassificationReference.Location       | IfcClassificationReference.Location      |uri      |
+| **Class name**   | name *of the class*           | IfcClassReference.Name           | IfcClassReference.Name           | IfcClassReference.Name          |❎*      |
+| **Class code**   | code *of the class*           | IfcClassReference.Identification | IfcClassReference.Identification | IfcClassReference.ItemReference |uri**      |
+| **Class source** | uri *of the class* | IfcClassReference.Location       | IfcClassReference.Location       | IfcClassReference.Location      |uri      |
 
 > \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
 > 
-> \*\* Classification code is a part of the "uri" attribute: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DomainCode`-`DomainVersion`/class/`code`"
+> \*\* Class code is a part of the "uri" attribute: uri="`http://identifier.buildingsmart.org/uri`/`OrganizationCode`/`DictionaryCode`-`DictionaryVersion`/class/`code`"
 
 :pill: **Snippets**
-<details><summary>bSDD classification</summary>
+<details><summary>bSDD class</summary>
     
 ```
 {
@@ -168,22 +167,22 @@ Mapping rules are defined for the following concepts:
 	"DocumentReference": "text",
 	"Synonyms": [],
 	"ReferenceCode": "text",
-	"ClassificationRelations": [
+	"ClassRelations": [
 	  {
 		"RelationType": "text",
-		"RelatedClassificationUri": "text",
-		"RelatedClassificationName": "text",
+		"RelatedClassUri": "text",
+		"RelatedClassName": "text",
 		"Fraction": null
 	  }
 	],
-	"ClassificationType": "text",
-	"ParentClassificationCode": "text",
+	"ClassType": "text",
+	"ParentClassCode": "text",
 	"RelatedIfcEntityNamesList": [],
-	"ClassificationProperties": [
+	"ClassProperties": [
 	  {
 		"AllowedValues": [
 		  {
-			"NamespaceUri": "text",
+			"Uri": "text",
 			"Code": "text",
 			"Value": "text",
 			"Description": "text",
@@ -201,7 +200,7 @@ Mapping rules are defined for the following concepts:
 		"Pattern": "text",
 		"PredefinedValue": "text",
 		"PropertyCode": "text",
-		"PropertyNamespaceUri": "text",
+		"PropertyUri": "text",
 		"PropertySet": "text",
 		"PropertyType": "text",
 		"SortNumber": null,
@@ -228,14 +227,14 @@ Mapping rules are defined for the following concepts:
 <details><summary>IDS</summary>
 
 ```
-<ids:classification minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/apple" instructions="Those objects must be classified as apples.">     
+<ids:class minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/apple" instructions="Those objects must be classified as apples.">     
     <ids:value>
         <ids:simpleValue>apple</ids:simpleValue>
     </ids:value>
     <ids:system>
         <ids:simpleValue>fruitvegs</ids:simpleValue>
     </ids:system>
-</ids:classification>
+</ids:class>
     
 ```
 </details>
@@ -243,29 +242,29 @@ Mapping rules are defined for the following concepts:
 ---
 
 ### 3. bSDD properties
-**In bSDD**, a classification (object) can have multiple properties and a property can be part of many classifications (objects).
+**In bSDD**, a class (object) can have multiple properties and a property can be part of many classes (objects).
 
 **In IFC**, properties information are captured using _IfcProperty_ (and grouped using _IfcPropertySet_). Below are the mapping rules, for different IFC versions.
 :construction: :construction: :construction:
 |                                                | bSDD                                      | IFC 4.3                                      | IFC 4                                        | IFC 2x3                                      |IDS                                      |
 |------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|-----------------------|
 | **Property name**                              | Name *(of property)*                      | IfcProperty.Name                             | IfcProperty.Name                             | IfcProperty.Name                             |❎*      |
-| **Property source**                            | *namespaceUri of the property*            | IfcProperty.Specification                    | IfcProperty.Description                      | IfcProperty.Description                      |uri      |
+| **Property source**                            | *uri of the property*            | IfcProperty.Specification                    | IfcProperty.Description                      | IfcProperty.Description                      |uri      |
 | **Property predefined value** (single value)              | PredefinedValue                           | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |❎*      |
 | **Property allowed values** (from enumeration) | AllowedValues                  | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues | IfcPropertyEnumeratedValue.EnumerationValues |❎*      |
-| **PropertySet name**                           | PropertySet *(of ClassificationProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          | IfcPropertySet.Name                          |❎*      |
+| **PropertySet name**                           | PropertySet *(of ClassProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          | IfcPropertySet.Name                          |❎*      |
 
 > \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
 > 
 > \*\* Property code is a part of the "uri" attribute
 
 :o: **IMPORTANT** :o:
-In bSDD, properties exist independently form the classification (object) they might be assigned to. Therefore: 
+In bSDD, properties exist independently form the class (object) they might be assigned to. Therefore: 
 
 - The AllowedValues of a property are defined at the level of each property
-- The PredefinedValues of a property is defined at the level of each classification (object)
-- The relationship between a property and its property set is defined at the level of each classification (object)
-- AllowedValues can be defined also at the level of each classification (object). When this happens, the AllowedValues defined at the level of the property are overwritten 
+- The PredefinedValues of a property is defined at the level of each class (object)
+- The relationship between a property and its property set is defined at the level of each class (object)
+- AllowedValues can be defined also at the level of each class (object). When this happens, the AllowedValues defined at the level of the property are overwritten 
 
 
 :pill: **Snippets**
@@ -319,7 +318,7 @@ In bSDD, properties exist independently form the classification (object) they mi
 	"Units": [],
 	"AllowedValues": [
 	  {
-		"NamespaceUri": "text",
+		"Uri": "text",
 		"Code": "text",
 		"Value": "text",
 		"Description": "text",
@@ -367,13 +366,13 @@ In bSDD, properties exist independently form the classification (object) they mi
 ---
 
 ### 4. bSDD materials
-**In bSDD**, a Material is similar to a Classification. Like a Classification, a Material can have multiple properties. Also, a Material can be associated to one or more Classifications (objects). A domain can contain both Materials and Classifications.
+**In bSDD**, a Material is a Class of type "Material".
  
 **In IFC**, materials information are captured using _IfcMaterial_, and (unfortunately) associated to objects in many possible ways.
 
-**The main difference between bSDD Classifications and bSDD Materials is on the mapping rules for IFC models:**
+**The main difference between bSDD Classes and bSDD Materials is on the mapping rules for IFC models:**
 
-- **bSDD Classifications (objects)** are linked to the IfcObject that they classify (e.g., to an IfcWall)
+- **bSDD Classes (objects)** are linked to the IfcObject that they classify (e.g., to an IfcWall)
 - **bSDD Materials** are linked to the IfcMaterial they classify, which is linked to the IfcObject (e.g., the IfcMaterial of the mentioned IfcWall)
 
 :bulb: **IMPLEMENTATION OPTIONS** :bulb:
@@ -387,78 +386,13 @@ Below are the mapping rules, for different IFC versions.
 |---------------------------------------------------|--------------------------------------------------------------------|-------------------------|-------------------------|-------------------------|-----------|
 | **Material identification** (option 1: Code)      | Code *(of material)* (E.g., MM34)                                  | IfcMaterial.Name        | IfcMaterial.Name        | IfcMaterial.Name        |❎*      |
 | **Material identification** (option 2: Code_Name) | *Concatenate* "Code";"_";"Name" *(of material)* (E.g., MM34_Steel) | IfcMaterial.Name        | IfcMaterial.Name        | IfcMaterial.Name        |❎*      |
-| **Material source**                               | *namespaceUri of the material*                                     | IfcMaterial.Description | IfcMaterial.Description | IfcMaterial.Description |uri      |
+| **Material source**                               | *uri of the material*                                     | IfcMaterial.Description | IfcMaterial.Description | IfcMaterial.Description |uri      |
 
 > \* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI. 
 
 :pill: **Snippets**
 <details><summary>bSDD material</summary>
-    
-```
-{
-	"Code": "text",
-	"Uid": "text",
-	"OwnedUri": "text",
-	"Name": "text",
-	"Definition": "text",
-	"Status": "text",
-	"ActivationDateUtc": "2022-05-12T00:00:00+02:00",
-	"RevisionDateUtc": null,
-	"VersionDateUtc": "2022-05-12T00:00:00+02:00",
-	"DeActivationDateUtc": null,
-	"VersionNumber": null,
-	"RevisionNumber": null,
-	"ReplacedObjectCodes": [],
-	"ReplacingObjectCodes": [],
-	"DeprecationExplanation": "text",
-	"CreatorLanguageIsoCode": "text",
-	"VisualRepresentationUri": "text",
-	"CountriesOfUse": [],
-	"SubdivisionsOfUse": [],
-	"CountryOfOrigin": "text",
-	"DocumentReference": "text",
-	"Synonyms": [],
-	"ReferenceCode": "text",
-	"ClassificationRelations": [
-	  {
-		"RelationType": "text",
-		"RelatedClassificationUri": "text",
-		"RelatedClassificationName": "text"
-	  }
-	],
-	"ParentMaterialCode": "text",
-	"MaterialProperties": [
-	  {
-		"AllowedValues": [
-		  {
-			"NamespaceUri": "text",
-			"Code": "text",
-			"Value": "text",
-			"Description": "text",
-			"SortNumber": null
-		  }
-		],
-		"Code": "text",
-		"Description": "text",
-		"ExternalPropertyUri": "text",
-		"IsRequired": null,
-		"IsWritable": null,
-		"MaxExclusive": null,
-		"MaxInclusive": null,
-		"MinExclusive": null,
-		"MinInclusive": null,
-		"Pattern": "text",
-		"PredefinedValue": "text",
-		"PropertyCode": "text",
-		"PropertySet": "text",
-		"PropertyType": "text",
-		"SortNumber": null,
-		"Symbol": "text",
-		"Unit": "text"
-	  }
-	]
-}
-```
+See bSDD class    
 </details>
 
 <details><summary>IFC 2x3</summary>

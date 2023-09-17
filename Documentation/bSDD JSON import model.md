@@ -6,12 +6,11 @@
 * [Data model](#data-model)
 * [JSON format](#json-format)
 * [List of fields](#list-of-fields)
-    * [Domain](#domain)  
-    * [Classification](#classification)  
-    * [Material](#material)
+    * [Dictionary](#dictionary)  
+    * [Class](#class)  
     * [Property](#property)  
-    * [ClassificationProperty](#classificationproperty)  
-    * [ClassificationRelation](#classificationrelation)  
+    * [ClassProperty](#classproperty)  
+    * [ClassRelation](#classrelation)  
     * [AllowedValue](#allowedvalue)  
     * [PropertyRelation](#propertyrelation)  
 * [Additional explanations](#additional-explanations)
@@ -19,7 +18,7 @@
 
 ## Glossary
 
-* `Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. The bSDD is a service to facilitate the distribution of such dictionaries. The content in bSDD is structured in `Dictionaries` (previously `Domains`) published by different organizations. Each `Dictionary` (previously `Domain`) consists of `Classes` (previously `Classifications`) and `Properties`, which could be related to each other or with other `Dictionaries` (previously `Domains`). 
+* `Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. The bSDD is a service to facilitate the distribution of such dictionaries. The content in bSDD is structured in `Dictionaries` (previously `Dictionarys`) published by different organizations. Each `Dictionary` (previously `Dictionary`) consists of `Classes` (previously `Classes`) and `Properties`, which could be related to each other or with other `Dictionaries` (previously `Dictionarys`). 
 
 * `Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]
 
@@ -33,78 +32,77 @@ The diagram below shows the simplified data model behind the bSDD:
 <img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 550px"/>
 
 See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png).
-We also have a demonstration domain: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
+We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
 ## JSON format
 
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
 
-Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc classification](https://api.bsdd.buildingsmart.org/api/Domain/v2/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
+Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc class](https://api.bsdd.buildingsmart.org/api/Dictionary/v2/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
 If you think there are reference documents missing, please let us know.
 
-If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). And please note that JSON is a format meant for computer systems to exchange data. If you have your domain data in a computer system, then it's best to let the system create the JSON for you.
+If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). And please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
 
 ## List of fields
 
 NB Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
 
-### Domain
+### Dictionary
 
-Contains general information about the `Domain` and the delivered data.
+Contains general information about the `Dictionary` and the delivered data.
 
 | Field            | DataType               | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
 |------------------|------------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Classifications  | List of Classification | ✅       |               | List of objects of type `Classification`. See section [Classification](#classification)  |
-| DomainCode       | Text                   | ✅       |             | Code of the domain, preferably short, E.g. "ifc". See section [Code format](#code-format) |
-| DomainName       | Text                   | ✅\* |   | Name of the domain. \*If the domain exists, supplying this name is not necessary. |
-| DomainNamespaceUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique namespace that's the first part of all Classifications and Properties namespaces, e.g. "urn:mycompany:mydomain" |
-| DomainVersion    | Text                   | ✅       |             | Version of the domain data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
+| Classes  | List of Class | ✅       |               | List of objects of type `Class`. See section [Class](#class)  |
+| DictionaryCode       | Text                   | ✅       |             | Code of the dictionary, preferably short, E.g. "ifc". See section [Code format](#code-format) |
+| DictionaryName       | Text                   | ✅\* |   | Name of the dictionary. \*If the dictionary exists, supplying this name is not necessary. |
+| DictionaryNamespaceUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
+| DictionaryVersion    | Text                   | ✅       |             | Version of the dictionary data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
 | LanguageIsoCode  | Text                   | ✅       |             | ISO language code: indicates the language of the data. If you want to deliver data in multiple languages, use a JSON file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. "de-DE" |
 | LanguageOnly     | Boolean                | ✅       |             | true if JSON contains only language-specific information, no otherwise \*  |
 | License          | Text                   |         |             | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
 | LicenseUrl      | Text                   |         |             | Url to a web page with the full license text   |
-| Materials      | List of Material                   |         |             | List of objects of type `Material`. See section [Material](#material)   |
-| MoreInfoUrl      | Text                   |         |             | Url to a web page with more info about the domain |
+| MoreInfoUrl      | Text                   |         |             | Url to a web page with more info about the dictionary |
 | OrganizationCode | Text                   | ✅       |             | Code of the Organization, preferably short, as it will appear in all the URI links. Only alphabetical characters and numbers are allowed. Can't start with a digit. E.g. "ifc". If you do not have a code for your organization yet, request one at [bSDD User Helpdesk](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25)                                                                                         |
 | Properties       | List of Property       | ✅       |               | List of objects of type `Property`. See section [Property](#property) |
-| QualityAssuranceProcedure          | Text                   |         |             | Name or short description of the quality assurance procedure used for the domain, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
+| QualityAssuranceProcedure          | Text                   |         |             | Name or short description of the quality assurance procedure used for the dictionary, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl      | Text                   |         |             | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
 | ReleaseDate                   | DateTime        |             | | Date of release of the version, See [Date Time format](#datetime-format).  |
 | Status      | Text                   |         |             | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
-| UseOwnUri      | Boolean                   | ✅        |             | Use your own namespace URI for globally unique identification of Classifications and Properties. If you don't use your own namespace URI a namespace URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Classification` and `Property` |
+| UseOwnUri      | Boolean                   | ✅        |             | Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
 
-\* For delivering data in additional languages, it is sufficient to fill the `Domain` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Ensure that the `OrganizationCode`, `DomainCode` and `DomainVersion` are exactly the same and if the data is for adding a language to an existing `Domain`, set the field `LanguageOnly` to true.
+\* For delivering data in additional languages, it is sufficient to fill the `Dictionary` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Ensure that the `OrganizationCode`, `DictionaryCode` and `DictionaryVersion` are exactly the same and if the data is for adding a language to an existing `Dictionary`, set the field `LanguageOnly` to true.
 
-### Classification
+### Class
 
-A `Classification` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "time") or process (e.g. "installation").
+A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "time") or process (e.g. "installation").
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
 | ActivationDateUtc         | DateTime                           |         |             | See [Date Time format](#datetime-format). |
-| ClassificationProperties  | List of ClassificationProperty |         |             | See section [ClassificationProperty](#classificationproperty) |
-| ClassificationRelations   | List of ClassificationRelation |         |             | See section [ClassificationRelation](#classificationrelation) |
-| ClassificationType        | Text                           | ✅*        |             | Must be one of: `Class` `GroupOfProperties` `AlternativeUse`. Read more about [classification types](#classification-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Domain` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
-| Code                      | Text                           | ✅       |             | Unique identification within the domain of the classification E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
-| ReferenceCode             | Text                           |         |             | Reference code can have domain-specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty, use empty string "".  |
-| CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Classification` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
-| CountryOfOrigin           | Text                           |         |             | ISO Country Code of the country of origin of this `Classification`. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
+| ClassProperties  | List of ClassProperty |         |             | See section [ClassProperty](#classproperty) |
+| ClassRelations   | List of ClassRelation |         |             | See section [ClassRelation](#classrelation) |
+| ClassType        | Text                           | ✅*        |             | Must be one of: `Class` `GroupOfProperties` `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
+| Code                      | Text                           | ✅       |             | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
+| ReferenceCode             | Text                           |         |             | Reference code can have dictionary-specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty, use empty string "".  |
+| CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Class` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
+| CountryOfOrigin           | Text                           |         |             | ISO Country Code of the country of origin of this `Class`. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
 | CreatorLanguageIsoCode    | Text                           |         |             | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
 | DeActivationDateUtc       | DateTime                           |         |             | See [Date Time format](#datetime-format). |
-| Definition                | Text                           |         | ✅           | Definition of the `Classification`|
+| Definition                | Text                           |         | ✅           | Definition of the `Class`|
 | DeprecationExplanation    | Text                           |         | ✅           |  |
-| DocumentReference         | Text                           |         |             | Reference to document with the full or official definition of the `Classification`. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
-| Name                      | Text                           | ✅       | ✅           | Name of the `Classification,` E.g. "IfcCurtainWall"                                                                   |
-| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the domain level, you must supply the namespace URI that globally uniquely identifies the `Classification`  |
-| ParentClassificationCode  | Text                           |         |             | Reference to the parent `Classification`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#how-to-define-relations) |
-| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Classification`. See bSDD API [ifc classifications](https://api.bsdd.buildingsmart.org/api/Domain/v3/Classifications?namespaceUri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
-| ReplacedObjectCodes       | List of text                   |         |             | List of Classification Codes this Classification replaces                                                          |
-| ReplacingObjectCodes      | List of text                   |         |             | List of Classification Codes this classification is replaced by                                                    |
+| DocumentReference         | Text                           |         |             | Reference to document with the full or official definition of the `Class`. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
+| Name                      | Text                           | ✅       | ✅           | Name of the `Class,` E.g. "IfcCurtainWall"                                                                   |
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the `Class`  |
+| ParentClassCode  | Text                           |         |             | Reference to the parent `Class`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#how-to-define-relations) |
+| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Class`. See bSDD API [ifc classs](https://api.bsdd.buildingsmart.org/api/Dictionary/v3/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
+| ReplacedObjectCodes       | List of text                   |         |             | List of Class Codes this Class replaces                                                          |
+| ReplacingObjectCodes      | List of text                   |         |             | List of Class Codes this class is replaced by                                                    |
 | RevisionDateUtc           | DateTime                           |         |             | See [Date Time format](#datetime-format). |
 | RevisionNumber            | Integer                        |         |             |  |
-| Status                    | Text                           |         |             | Status of the `Classification`: `Active` (default) or `Inactive` |
+| Status                    | Text                           |         |             | Status of the `Class`: `Active` (default) or `Inactive` |
 | SubdivisionsOfUse         | List of text                   |         | ✅           | List of geographical regions of use E.g. "US-MT"  |
-| Synonyms                  | List of text                   |         | ✅           | List of alternative names of this classification for easier finding.|
+| Synonyms                  | List of text                   |         | ✅           | List of alternative names of this class for easier finding.|
 | Uid                  | Text                   |         |            | Unique identification (ID), in case the URI is not enough. |
 | VersionDateUtc            | DateTime                           |         |             | By default takes the date of import. See [Date Time format](#datetime-format). |
 | VersionNumber             | Integer                        |         |             |  |
@@ -113,26 +111,21 @@ A `Classification` can be any (abstract) object (e.g. "wall") or abstract concep
 
 ### Material
 
-A `Material` is similar to a `Classification`.
-Differences in model are:
-- no `ClassificationType` and `RelatedIfcEntityNamesList` fields
-- `ParentMaterialCode` instead of `ParentClassificationCode`
-- `MaterialProperties` instead of `ClassificationProperties`
-
-A `Domain` can have both `Material`(s) and `Classification`(s). Please note that the "code" of both `Material`(s) and `Classification`(s) must be unique within the domain. You can't have a `Domain` with `Material` with code "abcd" and a `Classification` with the same code "abcd".
+A `Material` is a `Class` of type `Material`.
+Since the release of Oktober 2023, Materials are not treated separately anymore.
 
 ### Property
 
-A `Classification` can have multiple properties, and a `Property` can be part of many classifications
+A `Class` can have multiple properties, and a `Property` can be part of many classs
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
-| Code                          | Text         | ✅       |             | Unique identification within the domain of the property E.g. "ifc-99088-01". See section [Code format](#code-format)                                                                          |
+| Code                          | Text         | ✅       |             | Unique identification within the dictionary of the property E.g. "ifc-99088-01". See section [Code format](#code-format)                                                                          |
 | ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties                                                                                                                |
 | CountriesOfUse                | List of text         |         |             |  List of country ISO codes this `Property` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
-| CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this classification. See reference list.                                                                           |
+| CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this class. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         |         |             | Language ISO code of the creator. See reference list (JSON)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
 | DataType                      | Text         |         |             | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
 | DeActivationDateUtc           | DateTime         |         |             | See [Date Time format](#datetime-format). |
@@ -157,7 +150,7 @@ A `Classification` can have multiple properties, and a `Property` can be part of
 | MinInclusive            | Real     |         |             | Minimum allowed value, inclusive |
 | MethodOfMeasurement           | Text         |         | ✅           | E.g. "Thermal transmittance according to ISO 10077-1"                                                                                                |
 | Name                          | Text         | ✅       | ✅           | Name of the Property E.g. "IsExternal"                                                                                                               |
-| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the domain level, you must supply the namespace URI that globally uniquely identifies the Property  |
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the Property  |
 | Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
 | PhysicalQuantity              | Text         |         | ✅           | Name of the physical quantity of the property, E.g. "without" or "mass"                                                                               |
 | PropertyValueKind             | Text         |         |             | Must be one of:  `Single` (one value; this is the default),  `Range` (two values),  `List` (multiple values), `Complex` (consists of multiple properties, use ConnectedProperties), `ComplexList` (list of complex values)                       |
@@ -175,43 +168,43 @@ A `Classification` can have multiple properties, and a `Property` can be part of
 | VisualRepresentationUri       | Text         |         | ✅           |  |
 | PropertyRelations              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#propertyrelation) |
 
-### ClassificationProperty
+### ClassProperty
 
 | Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `ClassificationProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
-| Code                | Text     | ✅        |             | Unique identification within the domain of this `ClassificationProperty`. See section [Code format](#code-format).                                                |
-| Description         | Text     |         | ✅           | You can supply the property description specific to the classification. If left out, the 'common' description of the property will be shown where applicable |
+| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
+| Code                | Text     | ✅        |             | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
+| Description         | Text     |         | ✅           | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyNamespaceUri` instead                |
-| IsRequired              | Boolean  |   |            | Indicates if this is a required `Property` of the `Classification` |
-| IsWritable              | Boolean  |   |            | Indicates if the value of this `Property` of the `Classification` can be changed |
+| IsRequired              | Boolean  |   |            | Indicates if this is a required `Property` of the `Class` |
+| IsWritable              | Boolean  |   |            | Indicates if the value of this `Property` of the `Class` can be changed |
 | MaxExclusive            | Real     |         |             | Maximum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values |
 | MaxInclusive            | Real     |         |             | Maximum allowed value, inclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
 | MinExclusive            | Real     |         |             | Minimum allowed value, exclusive. Overrides the value defined for the `Property` |
 | MinInclusive            | Real     |         |             | Minimum allowed value, inclusive. Overrides the value defined for the `Property` |
 | Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
-| PredefinedValue     | Text     |         |             | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for classification "IfcWall" |
-| PropertyCode        | Text     |  ✅\*     |             | Reference to the `Property` if it is in the same `Domain`. Not required if you fill in the PropertyNamespaceUri  |
-| PropertyNamespaceUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Domain`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
+| PredefinedValue     | Text     |         |             | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for class "IfcWall" |
+| PropertyCode        | Text     |  ✅\*     |             | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyNamespaceUri  |
+| PropertyNamespaceUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
 | PropertySet         | Text     |         |             | Code validation will be applied.<br/> Name of the "property set" where the property should be placed during IFC export. When the property should be placed in an IFC entity, you should use that. For example, when a property is material, you should use the value IfcMaterial". |
-| PropertyType        | Text     |         |             | Type of the `Property` for the `Classification`: `Property` (default) or `Dependency`                                      |
-| SortNumber          | Integer  |         |             | Sort number of this `Property` within the `Classification`                                                                 |
+| PropertyType        | Text     |         |             | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
+| SortNumber          | Integer  |         |             | Sort number of this `Property` within the `Class`                                                                 |
 | Symbol              | Text     |         |             |                                                                                                                        |
 | Unit                | Text     |         |             | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
 
 
 \* One of those is required.
 
-### ClassificationRelation
+### ClassRelation
 
-`Classification` and `Material` can be linked by relations. See section [How to define relations?](#how-to-define-relations)
+`Classes` can be linked by relations. See section [How to define relations?](#how-to-define-relations)
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| RelatedClassificationUri | Text     | ✅       |             | Full namespace URI of the related `Classification`. It can be to same or a different `Domain`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
-| RelatedClassificationName | Text     |        |             |  |
+| RelatedClassUri | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
+| RelatedClassName | Text     |        |             |  |
 | RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`. Read more about [Relation types](#relation-types).    |
-| Fraction       | Real     |        |             | Only applicable to `HasMaterial`. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Classification owning the relations. The sum of Fractions per classification/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+| Fraction       | Real     |        |             | Only applicable to `HasMaterial`. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 
 
 ### AllowedValue
@@ -232,7 +225,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedPropertyName | Text     |        |             | Name of the related `Property`.|
-| RelatedPropertyUri | Text     | ✅       |             | Full namespace URI of the related `Property`. It can be to same or a different `Domain`.|
+| RelatedPropertyUri | Text     | ✅       |             | Full URI of the related `Property`. It can be to same or a different `Dictionary`.|
 | RelationType             | Text     | ✅       |             | One of:  `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
 
 ---
@@ -252,15 +245,15 @@ Some examples of invalid codes are:
   - ab$    ($ not allowed)
   - test-% (% not allowed) 
 
-### Classification types
+### Class types
 
-Each classification must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3<sup>1</sup>:
+Each class must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3<sup>1</sup>:
 * `class` - description of a set of objects that share the same characteristics <sup>1<sup>3.7</sup></sup>. This is the most common type in bSDD.
 * `group of properties` - collection enabling the properties to be prearranged or organized.<sup>1<sup>3.14</sup></sup>
   * A Property Set, as defined in ISO 16739-1, is a group of properties, but a group of properties is not necessarily a Property Set.
-  * There are five categories of possible groups of properties: class, domain, reference document, composed property, and alternative use.
+  * There are five categories of possible groups of properties: class, dictionary, reference document, composed property, and alternative use.
   * A property can be a member of several groups of properties. A property cannot be a member of several Property Sets as defined in ISO 16739-1.
-* [DEPRECATED] `reference document` - a publication that is consulted to find specific information, particularly in a technical or scientific domain.<sup>1<sup>3.18</sup></sup>
+* [DEPRECATED] `reference document` - a publication that is consulted to find specific information, particularly in a technical or scientific dictionary.<sup>1<sup>3.18</sup></sup>
   * A reference document can be associated with any data present in a data dictionary.
   * In bSDD, we also have a [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) list with the most common standards that can be used as reference. 
 * [DEPRECATED] `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>
@@ -271,16 +264,16 @@ Each classification must have a specific type. Below is the explanation of what 
 
 ### How to define relations?
 
-`ParentClassificationCode` - `Classification`s and `Material`s within the same domain can be organized in a tree-like hierarchy structure. For example: “IfcCurtainWall” is a more
-specific classification of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassificationCode` attribute on the child object.
+`ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcCurtainWall” is a more
+specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
 
-`ClassificationRelation` and `PropertyRelation`- use those to link your concepts with each other. Relations allow us to define parent-child links also with other domains. Apart from specialization, you can also define other types of relations, such as decomposition (`HasPart` type, see the list of possible types: [Relation types](#relation-types)).
+`ClassRelation` and `PropertyRelation`- use those to link your concepts with each other. Relations allow us to define parent-child links also with other dictionaries. Apart from specialization, you can also define other types of relations, such as decomposition (`HasPart` type, see the list of possible types: [Relation types](#relation-types)).
 
-`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your classification to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classifications to a particular IFC category.
+`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your class to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classs to a particular IFC category.
 
 ### Relation types
 
-`Properties` and `Classifications` must have a specific type. Below is an explanation of what each type means:
+`Properties` and `Classes` must have a specific type. Below is an explanation of what each type means:
 * `IsEqualTo` - if two concepts are unequivocal and have the same name
 * `IsSynonymOf` - if two concepts are unequivocal but have a different name
 * `IsChildOf` - the equivalent of the "subtype" relationship from ISO 12006<sup>1<sup>F.3.1</sup></sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor". 
@@ -299,8 +292,8 @@ The date-time format according to the ISO 8601 series should be used: `YYYY-MM-D
 The child `Class` does not inherit properties from the parent `Class`. If authors want child classes to also have properties of parent classes, they should specify them intentionally in import files.  
 For example, the [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall) is a parent class of [IfcWallStandardCase](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWallStandardCase). While [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall) has the property [AcousticRating](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall/prop/Pset_WallCommon/AcousticRating), the [IfcWallStandardCase](https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWallStandardCase) doesn't.
 
-* `Property` → `ClassificationProperty`  
-`ClassificationProperty` is an instantiation of general `Property` for a particular `Class`. The attributes of a property, such as `AllowedValue` and min/max restrictions,  are by default passed to `ClassificationProperty`. The values of the `ClassificationProperty` can be modified without influencing the origin `Property`.  
+* `Property` → `ClassProperty`  
+`ClassProperty` is an instantiation of general `Property` for a particular `Class`. The attributes of a property, such as `AllowedValue` and min/max restrictions,  are by default passed to `ClassProperty`. The values of the `ClassProperty` can be modified without influencing the origin `Property`.  
 For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/prop/height) has an upper limit of 100 cm. When applied to the "Apple" class, the [Apple-Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple/prop/SizeSet/height) has a lower limit - 25cm. 
 
 ### Latest version
@@ -354,14 +347,14 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 
 **2023-07 - Important notification:**
 
-> As we're continuously improving bSDD, we've updated all identifiers: the dash between domain code and domain version has been replaced by a dash, e.g.:
+> As we're continuously improving bSDD, we've updated all identifiers: the dash between dictionary code and dictionary version has been replaced by a dash, e.g.:
 >  https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0.0/class/apple will now be https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple
 > 
-> We will support supplying and retrieving data using the dash between domain code and version for (at least) 4 months. But please do note that only identifiers in the new format are returned by the bSDD APIs.
+> We will support supplying and retrieving data using the dash between dictionary code and version for (at least) 4 months. But please do note that only identifiers in the new format are returned by the bSDD APIs.
 
 **2022-08 - Important notification:**
 
-> The bSDD is in the process of moving from identifiers (aka "namespace URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
+> The bSDD is in the process of moving from identifiers (aka "URI") starting with "http://identifier.buildingsmart.org" to "https://identifier.buildingsmart.org" ("http" to "https"). This is to ease the use of these identifiers as hyperlinks as well.
 > 
 > Support for using the old "http" identifiers will be deprecated soon!
 

@@ -1,6 +1,4 @@
 
-**IMPORANT for developers using secured bSDD APIs** The URL "buildingsmartservices.onmicrosoft.com" will be changed to "authentication.buildingsmart.org" in the near future. Make sure you do not hard code this url in your code, make it an easy to update setting. You will receive a notification upfront when the change will take place.
-
 The bSDD API is regularly updated. This means things may change. If there are breaking changes to an API a new version will be created. The 'old' version will be supported for, at least, 6 months after. Note that additions to an existing API usually don't mean a breaking change.
 
 ## bSDD test environment
