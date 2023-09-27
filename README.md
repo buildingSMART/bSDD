@@ -24,6 +24,7 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 * Frequently asked questions (what is it for? does it cost? how does it relate to IFC? etc.): [buildingsmart.org/.../buildingsmart-data-dictionary/](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
 * Browse the documentation: [Documentation](Documentation)
 * List of tools integrating bSDD: [https://technical.buildingsmart.org/resources/software-implementations/](https://technical.buildingsmart.org/resources/software-implementations/?filter_5%5B%5D=bSDD%20read%20API&filter_5%5B%5D=bSDD%20submit%2Fmanage&filter_5%5B%5D=bSDD%20IFC%20export%20(including%20URIs)&filter_1=&gv_search=&mode=any). This is a self-managed list, so feel free to add missing tools.
+* [How to turn a dictionary into private in bSDD](https://scribehow.com/shared/How_to_turn_a_dictionary_into_private_in_bSDD__uwo7s5scREWWY0f9LehJCg)
 
 ### For developers 👩‍💻
 * The API URL (not a readable website): https://api.bsdd.buildingsmart.org/ 
