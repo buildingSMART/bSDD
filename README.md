@@ -31,8 +31,8 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 * API documentation on Swagger: https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
 
 We also provide a **Test** environment where the latest features are rolled out first and tested. If you want to check it out, here are the equivalent pages:
-* Search in the **Test** bSDD: https://search-test.bsdd.buildingsmart.org/
-* Upload data to the **Test** database: https://manage-test.bsdd.buildingsmart.org/
+* **Test** Search in the (test) bSDD: https://search-test.bsdd.buildingsmart.org/
+* **Test** upload data to the (test) database: https://manage-test.bsdd.buildingsmart.org/
 * **Test** environment API documentation on Swagger: https://test.bsdd.buildingsmart.org/swagger/
 * **Test** environment GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
 
