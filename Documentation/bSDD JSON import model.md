@@ -31,7 +31,7 @@ The diagram below shows the simplified data model behind the bSDD:
 <img src="https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
 
 See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_example.png):
-<img src="https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 750px"/>
+<img src="https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
