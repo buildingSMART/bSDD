@@ -35,6 +35,8 @@ See our example demonstrating the usage of the above concepts: [bSDD data exampl
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
+📢 Read about the latest technical updates in the dedicated forum topic: https://forums.buildingsmart.org/t/bsdd-tech-updates/4889
+
 ## JSON format
 
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
@@ -83,7 +85,7 @@ A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "
 | ActivationDateUtc         | DateTime                           |         |             | See [Date Time format](#datetime-format). |
 | ClassProperties  | List of ClassProperty |         |             | See section [ClassProperty](#classproperty) |
 | ClassRelations   | List of ClassRelation |         |             | See section [ClassRelation](#classrelation) |
-| ClassType        | Text                           | ✅*        |             | Must be one of: `Class` `GroupOfProperties` `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
+| ClassType        | Text                           | ✅*        |             | Must be one of: `Class`, `Material`, `GroupOfProperties`, `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
 | Code                      | Text                           | ✅       |             | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
 | ReferenceCode             | Text                           |         |             | Reference code can have dictionary-specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty, use empty string "".  |
 | CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Class` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
@@ -204,8 +206,8 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedClassUri | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
 | RelatedClassName | Text     |        |             |  |
-| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`. Read more about [Relation types](#relation-types).    |
-| Fraction       | Real     |        |             | Only applicable to `HasMaterial`. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSimilarTo`,  `IsParentOf`,  `IsChildOf`, `HasPart`, `IsPartOf`. Read more about [Relation types](#relation-types).    |
+| Fraction       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 
 
 ### AllowedValue
@@ -227,7 +229,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | RelatedPropertyName | Text     |        |             | Name of the related `Property`.|
 | RelatedPropertyUri | Text     | ✅       |             | Full URI of the related `Property`. It can be to same or a different `Dictionary`.|
-| RelationType             | Text     | ✅       |             | One of:  `HasReference`,  `IsEqualTo`,  `IsSynonymOf`,  `IsParentOf`,  `IsChildOf`, `HasPart`    |
+| RelationType             | Text     | ✅       |             | One of:  `HasReference`,  `IsEqualTo`,  `IsSimilarTo`, ~~IsParentOf,  IsChildOf, HasPart~~. Read more about [Relation types](#relation-types).  |
 
 ---
 
@@ -249,18 +251,18 @@ Some examples of invalid codes are:
 ### Class types
 
 Each class must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3<sup>1</sup>:
-* `class` - description of a set of objects that share the same characteristics <sup>1<sup>3.7</sup></sup>. This is the most common type in bSDD.
-* `group of properties` - collection enabling the properties to be prearranged or organized.<sup>1<sup>3.14</sup></sup>
+* `Class` - description of a set of objects that share the same characteristics <sup>1<sup>3.7</sup></sup>. This is the most common type in bSDD. (e.g. wall, space)
+* `GroupOfProperties` - collection enabling the properties to be prearranged or organized.<sup>1<sup>3.14</sup></sup>. (e.g. environmental properties)
   * A Property Set, as defined in ISO 16739-1, is a group of properties, but a group of properties is not necessarily a Property Set.
-  * There are five categories of possible groups of properties: class, dictionary, reference document, composed property, and alternative use.
   * A property can be a member of several groups of properties. A property cannot be a member of several Property Sets as defined in ISO 16739-1.
-* [DEPRECATED] `reference document` - a publication that is consulted to find specific information, particularly in a technical or scientific dictionary.<sup>1<sup>3.18</sup></sup>
-  * A reference document can be associated with any data present in a data dictionary.
-  * In bSDD, we also have a [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) list with the most common standards that can be used as reference. 
-* [DEPRECATED] `composed property` - category of group of properties corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>
-  * Using this category of the group of properties requires filling all the properties part of the composed property. There is no value attached to the group of properties. 
-  * Example: To describe the characteristic "concrete facing quality", it is mandatory to describe 3 properties: concrete planarity, concrete hue, and concrete texture.	
-* `alternative use` - type to be used if no other type fits the needs.<sup>1<sup>3.1</sup></sup>
+* `Material` - a physical substance that things can be made from (e.g. steel, glass)
+* `AlternativeUse` - type to be used if no other type fits the needs.<sup>1<sup>3.1</sup></sup>
+   * Be aware that most software implementations disregard this class type, as it is not straightforward to interpret.
+* **DEPRECATED** ~~ReferenceDocument - a publication that is consulted to find specific information, particularly in a technical or scientific dictionary.<sup>1<sup>3.18</sup></sup> A reference document can be associated with any data present in a data dictionary.~~
+  * In bSDD we have a global list of [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1), which includes the most common standards that can be used as reference. This is to avoid having duplicate references with different naming. If you don't find the reference you are looking for, and think it should be added to the list - let us know: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
+* **DEPRECATED**  ~~ComposedProperty - (...) corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>~~
+  * ~~Example: To describe the characteristic "concrete facing quality", it is mandatory to describe 3 properties: concrete planarity, concrete hue, and concrete texture.~~
+  * Use `GroupOfProperties` instead.
 
 
 ### How to define relations?
@@ -274,15 +276,19 @@ specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” 
 
 ### Relation types
 
-`Properties` and `Classes` must have a specific type. Below is an explanation of what each type means:
-* `IsEqualTo` - if two concepts are unequivocal and have the same name
-* `IsSynonymOf` - if two concepts are unequivocal but have a different name
-* `IsChildOf` - the equivalent of the "subtype" relationship from ISO 12006<sup>1<sup>F.3.1</sup></sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor". 
-* `IsParentOf` - the opposite relation to `IsChildOf`.
-* `HasPart` - for example, an electric motor can be composed of elements such as stators, rotors, etc.<sup>1<sup>F.3.2</sup></sup>.
-* `HasMaterial` - a class that can be associated with a particular material. For example: "Steel Beam" could be related to the material "Steel". This type is only available for `Classes`, not `Properties`.
-* `HasReference` - if there is another type of relation between concepts, for example, "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them. 
+`Properties` and `Classes` can be related to each other. Each relation must have a specific type to allow software to interpret it. Below is an explanation of what each type means:
+* `IsEqualTo` - if two concepts are unequivocal and have the same name, code and description. Classes also need to share the same properties. It is quite rare for concepts to be equal. An example is when a concept doesn't have an official translation, but someone defines a new concept in that language and wants to say it is exactly the same as the original. 
+* `IsSimilarTo` - if two concepts are almost unequivocal but differ by name, code, description or set of properties. This is a very common relation type. Used, for example, to say that 'IfcWall' is a similar concept to 'Wall System' from CCI.
+* `HasReference` - if two concepts relate to each other, but other relation types do not apply. For example, "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them.
+* **DEPRECATED** ~~IsSynonymOf - if two concepts are unequivocal but have a different name.~~
 
+Only applicable to classes (not properties):
+* `IsChildOf` - specialisation relation. The equivalent of the "subtype" relationship from ISO 12006<sup>1<sup>F.3.1</sup></sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor".
+* `IsParentOf` - the opposite relation to `IsChildOf`.
+* `HasPart` - composition relation. For example, an electric motor can be composed of elements such as stators, rotors, etc.<sup>1<sup>F.3.2</sup></sup>.
+* `IsPartOf` - reverse of `HasPart`.
+* `HasMaterial` - a class that can be associated with a particular material. For example: "Steel Beam" could be related to the material "Steel".
+  
 ### DateTime format
 
 The date-time format according to the ISO 8601 series should be used: `YYYY-MM-DDThh:mm:ssTZD`. Import allows both: `2023-05-10`, `2023-05-10T15:10:12Z` and `2023-05-10T15:10:12+02:00`.
@@ -326,7 +332,7 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 `Pattern`...
 
 ### 🚧 How are bSDD resources identified?  
-`URI`...
+`URI`... Can be generated by bSDD or external.
 
 `UID`(GUID)...
 
