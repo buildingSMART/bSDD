@@ -242,15 +242,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 ### Code format
 
 For codes, only characters, numbers, underscore, dot, and dash are allowed (a-z, A-Z, 0-9, "_", ".", "-"). Codes are not case-sensitive.
-Some examples of valid codes are:
-  - bs-agri
-  - apple
-  - one.X
-
-Some examples of invalid codes are:
-  - ДДb    (only characters a-z and A-Z allowed)
-  - ab$    ($ not allowed)
-  - test-% (% not allowed) 
+Some examples of valid codes are: "bs-agri", "apple", "one.X". Some examples of invalid codes are: "my test" (whitespace not allowed), "ДДb$%" (only characters a-z and A-Z allowed, not %, $, or Д).
 
 ### Classification types
 
