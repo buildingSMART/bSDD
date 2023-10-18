@@ -29,6 +29,8 @@ Other changes:
 
 Chagend APIs:
  * api/Class/v1: new, replaces api/Classification/v4
+    - Option excludeClassProperties added. If true, classProperties will not be fetched.
+    - Option excludeClassRelations added. If true, classRelations will not be fetched.
  * api/ClassSearch/v1: new, replaces api/ClassificationSearchOpen/v1.
     - Return contract now contains just one dictionary instead of a list of dictionaries which always contains one item.
     - Supports pagination
@@ -36,6 +38,8 @@ Chagend APIs:
     - Supports pagination
  * api/Dictionary/v1/Classes: new, replaces api/Domain/v3/Classifications.
     - Materials are not separately listed anymore
+    - Supports pagination
+ * api/Dictionary/v1/Properties: new
     - Supports pagination
  * api/Dictionary/v1 PUT, DELETE: new, replaces api/Domain/v1
  * api/Material has been replaced by api/Class
