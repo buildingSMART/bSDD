@@ -31,7 +31,7 @@ Chagend APIs:
  * api/Class/v1: new, replaces api/Classification/v4
     - Option excludeClassProperties added. If true, classProperties will not be fetched.
     - Option excludeClassRelations added. If true, classRelations will not be fetched.
- * api/ClassSearch/v1: new, replaces api/ClassificationSearchOpen/v1.
+ * api/Class/Search/v1: new, replaces api/ClassificationSearchOpen/v1.
     - Return contract now contains just one dictionary instead of a list of dictionaries which always contains one item.
     - Supports pagination
  * api/Dictionary/v1: new, replaces api/Domain/v3
@@ -42,13 +42,14 @@ Chagend APIs:
  * api/Dictionary/v1/Properties: new
     - Supports pagination
  * api/Dictionary/v1 PUT, DELETE: new, replaces api/Domain/v1
+ * api/DictionaryDownload/sketchup/v1: new, replaces api/RequestExportFile/preview
  * api/Material has been replaced by api/Class
  * api/Property/v4: new, replaces api/Property/v3
- * api/SearchList(Open)/v3: new, replaces api/SearchList(Open)/v2
+ * api/SearchInDictionary/v1: new, replaces api/SearchList(Open)/v2
     - Supports pagination
- * api/TextSearchListOpen/v7: new, replaces api/TextSearchListOpen/v6
+ * api/TextSearch/v1: new, replaces api/TextSearchListOpen/v6
     - Supports pagination
- * api/UploadImportFile/v1: updated, it accepts both old and new import json. Support for old import json will become deprecated.
+  * api/UploadImportFile/v1: updated, it accepts both old and new import json. Support for old import json will become deprecated.
 
 All replaced APIs still work for now but are marked as obsolete, as can be seen on the swagger page https://test.bsdd.buildingsmart.org/swagger.
 
