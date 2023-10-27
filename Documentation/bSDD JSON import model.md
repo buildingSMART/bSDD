@@ -59,7 +59,7 @@ Contains general information about the `Dictionary` and the delivered data.
 | Classes  | List of Class | ✅       |               | List of objects of type `Class`. See section [Class](#class)  |
 | DictionaryCode       | Text                   | ✅       |             | Code of the dictionary, preferably short, E.g. "ifc". See section [Code format](#code-format) |
 | DictionaryName       | Text                   | ✅\* |   | Name of the dictionary. \*If the dictionary exists, supplying this name is not necessary. |
-| DictionaryNamespaceUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
+| DictionaryUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
 | DictionaryVersion    | Text                   | ✅       |             | Version of the dictionary data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
 | LanguageIsoCode  | Text                   | ✅       |             | ISO language code: indicates the language of the data. If you want to deliver data in multiple languages, use a JSON file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. "de-DE" |
 | LanguageOnly     | Boolean                | ✅       |             | true if JSON contains only language-specific information, no otherwise \*  |
@@ -179,7 +179,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
 | Code                | Text     | ✅        |             | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
 | Description         | Text     |         | ✅           | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
-| ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyNamespaceUri` instead                |
+| ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyUri` instead                |
 | IsRequired              | Boolean  |   |            | Indicates if this is a required `Property` of the `Class` |
 | IsWritable              | Boolean  |   |            | Indicates if the value of this `Property` of the `Class` can be changed |
 | MaxExclusive            | Real     |         |             | Maximum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values |
@@ -188,8 +188,8 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | MinInclusive            | Real     |         |             | Minimum allowed value, inclusive. Overrides the value defined for the `Property` |
 | Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | PredefinedValue     | Text     |         |             | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for class "IfcWall" |
-| PropertyCode        | Text     |  ✅\*     |             | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyNamespaceUri  |
-| PropertyNamespaceUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
+| PropertyCode        | Text     |  ✅\*     |             | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
+| PropertyUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
 | PropertySet         | Text     |         |             | Code validation will be applied.<br/> Name of the "property set" where the property should be placed during IFC export. When the property should be placed in an IFC entity, you should use that. For example, when a property is material, you should use the value IfcMaterial". |
 | PropertyType        | Text     |         |             | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
 | SortNumber          | Integer  |         |             | Sort number of this `Property` within the `Class`                                                                 |
@@ -219,7 +219,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
 | Description | Text     |        | ✅       | A description of the value|
-| NamespaceUri| Text |  |  | You can provide your own Namespace Uri (must be globally unique).|
+| Uri| Text |  |  | You can provide your own Namespace Uri (must be globally unique).|
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
 | Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 

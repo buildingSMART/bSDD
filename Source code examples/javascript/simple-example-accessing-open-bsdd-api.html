@@ -8,10 +8,10 @@
         $(function() {
             $("#send").click(function() {
                 var personalInfo = {
-                    NamespaceUri: $('#Name').val()
+                    Uri: $('#Name').val()
                 };
                 $.ajax({
-                    url: 'https://bs-dd-api-prototype.azurewebsites.net/api/Domain/v3?namespaceuri='+personalInfo.NamespaceUri,
+                    url: 'https://test.bsdd.buildingsmart.org/api/Dictionary/v1?uri='+personalInfo.Uri,
                     type: 'GET',
                     contentType: "application/json; charset=utf-8",
                     dataType: 'json',
@@ -21,7 +21,7 @@
                         var rows = "";
 
                         for(var i=0;i<num_rows;i++){
-                            rows +='<tr><td>'+data[i].namespaceUri+'</td><td>'+data[i].name+'</td></tr>';         
+                            rows +='<tr><td>'+data[i].uri+'</td><td>'+data[i].name+'</td></tr>';         
                         }
                         $("#table").append(rows);
                     },
@@ -35,8 +35,8 @@
 
     <p>Get list of domains</p>
     <form id="form1">
-        <p>Give full namespace URI to filter or leave empty to get full list</p>
-        Namespace URI: <input type="text" name="Name" id="Name" />
+        <p>Give full URI to filter or leave empty to get full list</p>
+        URI: <input type="text" name="Name" id="Name" />
         <input type="button" id="send" value="Send Post Data" />
     </form>
     <table>
