@@ -153,7 +153,7 @@ query ($dictionaryUri: String!, $uri: String!) {
       activationDateUtc
       childs {
         name
-        namespaceUri
+        uri
       }
       classType
       code
@@ -165,10 +165,10 @@ query ($dictionaryUri: String!, $uri: String!) {
       deprecationExplanation
       documentReference
       name
-      namespaceUri
+      uri
       properties {
         name
-        namespaceUri
+        uri
       }
       relatedIfcEntityNames
       relations {

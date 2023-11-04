@@ -39,6 +39,7 @@ Chagend APIs:
  * api/Dictionary/v1/Classes: new, replaces api/Domain/v3/Classifications.
     - Materials are not separately listed anymore
     - Supports pagination
+    - Optional filter on ClassType
  * api/Dictionary/v1/Properties: new
     - Supports pagination
  * api/Dictionary/v1 PUT, DELETE: new, replaces api/Domain/v1
