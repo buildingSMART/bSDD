@@ -10,7 +10,7 @@ A new version will only be created if it 'breaks' the current version. For examp
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
 
-## 2023-10-03
+## 2023-11-08
 
 -- Test environment only. Planned production date end oktober / early november 2023. --
 
@@ -29,8 +29,9 @@ Other changes:
 
 Chagend APIs:
  * api/Class/v1: new, replaces api/Classification/v4
-    - Option excludeClassProperties added. If true, classProperties will not be fetched.
-    - Option excludeClassRelations added. If true, classRelations will not be fetched.
+    - Option includeClassProperties added. If true, classProperties will be fetched. Default is false.
+    - Option includeClassRelations added. If true, classRelations will be fetched. Default is false.
+    - New output field: Class.Description
  * api/Class/Search/v1: new, replaces api/ClassificationSearchOpen/v1.
     - Return contract now contains just one dictionary instead of a list of dictionaries which always contains one item.
     - Supports pagination
