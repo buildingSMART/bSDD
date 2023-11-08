@@ -117,7 +117,7 @@ A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "
 ### Material
 
 A `Material` is a `Class` of type `Material`.
-Since the release of Oktober 2023, Materials are not treated separately anymore.
+Since the release of November 2023, Materials are not treated separately anymore.
 
 ### Property
 
@@ -192,6 +192,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | MinExclusive        | Real     |         |     | Minimum allowed value, exclusive. Overrides the value defined for the `Property` |
 | MinInclusive        | Real     |         |     | Minimum allowed value, inclusive. Overrides the value defined for the `Property` |
 | Pattern             | Text     |         |     | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassProperty  |
 | PropertyType        | Text     |         |     | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
 | SortNumber          | Integer  |         |     | Sort number of this `Property` within the `Class`                                                                 |
 | Symbol              | Text     |         |     |                                                                                                                        |
@@ -211,6 +212,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | RelatedClassUri | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
 | RelatedClassName | Text     |        |             |  |
 | Fraction       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
 
 
 ### AllowedValue
@@ -224,6 +226,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Description | Text     |        | ✅       | A description of the value|
 | Uri| Text |  |  | You can provide your own Namespace Uri (must be globally unique).|
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
 
 
 ### PropertyRelation
@@ -233,6 +236,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | RelatedPropertyName | Text     |        |             | Name of the related `Property`.|
 | RelatedPropertyUri | Text     | ✅       |             | Full URI of the related `Property`. It can be to same or a different `Dictionary`.|
 | RelationType             | Text     | ✅       |             | One of:  `HasReference`,  `IsEqualTo`,  `IsSimilarTo`, ~~IsParentOf,  IsChildOf, HasPart~~. Read more about [Relation types](#relation-types).  |
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the PropertyRelation  |
 
 ---
 
