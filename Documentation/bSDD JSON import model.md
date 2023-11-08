@@ -54,26 +54,27 @@ NB Default values will only be applied if a field is not specified. If you speci
 
 Contains general information about the `Dictionary` and the delivered data.
 
-| Field            | DataType               | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
-|------------------|------------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Classes  | List of Class | ✅       |               | List of objects of type `Class`. See section [Class](#class)  |
-| DictionaryCode       | Text                   | ✅       |             | Code of the dictionary, preferably short, E.g. "ifc". See section [Code format](#code-format) |
-| DictionaryName       | Text                   | ✅\* |   | Name of the dictionary. \*If the dictionary exists, supplying this name is not necessary. |
-| DictionaryUri      | Text                   |         |       | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
-| DictionaryVersion    | Text                   | ✅       |             | Version of the dictionary data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
-| LanguageIsoCode  | Text                   | ✅       |             | ISO language code: indicates the language of the data. If you want to deliver data in multiple languages, use a JSON file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. "de-DE" |
-| LanguageOnly     | Boolean                | ✅       |             | true if JSON contains only language-specific information, no otherwise \*  |
-| License          | Text                   |         |             | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
-| LicenseUrl      | Text                   |         |             | Url to a web page with the full license text   |
-| ModelVersion      | Text                   |         |             | Version number of the input JSON template. |
-| MoreInfoUrl      | Text                   |         |             | Url to a web page with more info about the dictionary |
-| OrganizationCode | Text                   | ✅       |             | Code of the Organization, preferably short, as it will appear in all the URI links. Only alphabetical characters and numbers are allowed. Can't start with a digit. E.g. "ifc". If you do not have a code for your organization yet, request one at [bSDD User Helpdesk](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25)                                                                                         |
-| Properties       | List of Property       | ✅       |               | List of objects of type `Property`. See section [Property](#property) |
-| QualityAssuranceProcedure          | Text                   |         |             | Name or short description of the quality assurance procedure used for the dictionary, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
-| QualityAssuranceProcedureUrl      | Text                   |         |             | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
-| ReleaseDate                   | DateTime        |             | | Date of release of the version, See [Date Time format](#datetime-format).  |
-| Status      | Text                   |         |             | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
-| UseOwnUri      | Boolean                   | ✅        |             | Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
+| Field            | DataType         | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
+|------------------|------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| OrganizationCode | Text             | ✅    | | Code of the Organization, preferably short, as it will appear in all the URI links. Only alphabetical characters and numbers are allowed. Can't start with a digit. E.g. "ifc". If you do not have a code for your organization yet, request one at [bSDD User Helpdesk](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25)  |
+| DictionaryCode   | Text             | ✅    | | Code of the dictionary, preferably short, E.g. "ifc". See section [Code format](#code-format) |
+| DictionaryName   | Text             | ✅\*  | | Name of the dictionary. \*If the dictionary exists, supplying this name is not necessary. |
+| DictionaryUri    | Text             |       | | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
+| DictionaryVersion| Text             | ✅   | | Version of the dictionary data. Allowed format: up to three dot-separated numbers, e.g.: 1.0.1. Allowed: "12", "10.1", "1.2.3". Not allowed: "1.2.3.4", "Beta", "2x3". We recommend following [Semantic Versioning](https://semver.org/) approach.   |
+| LanguageIsoCode  | Text             | ✅   | | ISO language code: indicates the language of the data. If you want to deliver data in multiple languages, use a JSON file per language. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). \* E.g. "de-DE" |
+| LanguageOnly     | Boolean          | ✅   | | true if JSON contains only language-specific information, no otherwise \*  |
+| License          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
+| LicenseUrl       | Text             |       | | Url to a web page with the full license text   |
+| ModelVersion     | Text             |       | | Version number of the input JSON template. |
+| MoreInfoUrl      | Text             |       | | Url to a web page with more info about the dictionary |
+| QualityAssuranceProcedure      | Text      | | | Name or short description of the quality assurance procedure used for the dictionary, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
+| QualityAssuranceProcedureUrl   | Text      | | | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
+| ReleaseDate                    | DateTime  | | | Date of release of the version, See [Date Time format](#datetime-format).  |
+| Status                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
+| UseOwnUri      | Boolean                   | ✅        |             | Default: false. Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
+| Classes          | List of Class    | ✅    | | List of objects of type `Class`. See section [Class](#class)  |
+| Properties       | List of Property | ✅    | | List of objects of type `Property`. See section [Property](#property) |
+
 
 \* For delivering data in additional languages, it is sufficient to fill the `Dictionary` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Ensure that the `OrganizationCode`, `DictionaryCode` and `DictionaryVersion` are exactly the same and if the data is for adding a language to an existing `Dictionary`, set the field `LanguageOnly` to true.
 
@@ -82,36 +83,36 @@ Contains general information about the `Dictionary` and the delivered data.
 A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "time") or process (e.g. "installation").
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
-|---------------------------|--------------------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------|
-| ActivationDateUtc         | DateTime                           |         |             | See [Date Time format](#datetime-format). |
-| ClassProperties  | List of ClassProperty |         |             | See section [ClassProperty](#classproperty) |
-| ClassRelations   | List of ClassRelation |         |             | See section [ClassRelation](#classrelation) |
-| ClassType        | Text                           | ✅*        |             | Must be one of: `Class`, `Material`, `GroupOfProperties`, `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
-| Code                      | Text                           | ✅       |             | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
-| ReferenceCode             | Text                           |         |             | Reference code can have dictionary-specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty, use empty string "".  |
-| CountriesOfUse            | List of text                   |         |             | List of country ISO codes this `Class` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
-| CountryOfOrigin           | Text                           |         |             | ISO Country Code of the country of origin of this `Class`. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
-| CreatorLanguageIsoCode    | Text                           |         |             | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
-| DeActivationDateUtc       | DateTime                           |         |             | See [Date Time format](#datetime-format). |
-| Definition                | Text                           |         | ✅           | Definition of the `Class`|
-| DeprecationExplanation    | Text                           |         | ✅           |  |
-| DocumentReference         | Text                           |         |             | Reference to document with the full or official definition of the `Class`. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
-| Name                      | Text                           | ✅       | ✅           | Name of the `Class,` E.g. "IfcCurtainWall"                                                                   |
-| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the `Class`  |
-| ParentClassCode  | Text                           |         |             | Reference to the parent `Class`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#how-to-define-relations) |
-| RelatedIfcEntityNamesList | List of text                   |         |             | References to the IFC equivalent of this `Class`. See bSDD API [ifc classs](https://api.bsdd.buildingsmart.org/api/Dictionary/v3/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
-| ReplacedObjectCodes       | List of text                   |         |             | List of Class Codes this Class replaces                                                          |
-| ReplacingObjectCodes      | List of text                   |         |             | List of Class Codes this class is replaced by                                                    |
-| RevisionDateUtc           | DateTime                           |         |             | See [Date Time format](#datetime-format). |
-| RevisionNumber            | Integer                        |         |             |  |
-| Status                    | Text                           |         |             | Status of the `Class`: `Active` (default) or `Inactive` |
-| SubdivisionsOfUse         | List of text                   |         | ✅           | List of geographical regions of use E.g. "US-MT"  |
-| Synonyms                  | List of text                   |         | ✅           | List of alternative names of this class for easier finding.|
-| Uid                  | Text                   |         |            | Unique identification (ID), in case the URI is not enough. |
-| VersionDateUtc            | DateTime                           |         |             | By default takes the date of import. See [Date Time format](#datetime-format). |
-| VersionNumber             | Integer                        |         |             |  |
-| VisualRepresentationUri   | Text                           |         | ✅           |  |
-
+|---------------------------|--------------------------------|-------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
+| Code                      | Text                           | ✅         |            | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
+| Name                      | Text                           | ✅         | ✅         | Name of the `Class,` E.g. "IfcCurtainWall"                                                                   |
+| ClassType                 | Text                           | ✅*        |            | Must be one of: `Class`, `Material`, `GroupOfProperties`, `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
+| Definition                | Text                           |            | ✅          | Definition of the `Class`, explaining the semantic meaning. A required field according to the ISO.  |
+| Description               | Text                           |            | ✅          | Additional field for supplementary explanation. Please only use it if the _Definition_ comes from a standard and requires further explanation.  |
+| ParentClassCode           | Text                           |            |             | Reference to the parent `Class`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#how-to-define-relations) |
+| RelatedIfcEntityNamesList | List of text                   |            |             | References to the IFC equivalent of this `Class`. See bSDD API [ifc classs](https://api.bsdd.buildingsmart.org/api/Dictionary/v3/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
+| Synonyms                  | List of text                   |            | ✅         | List of alternative names of this class for easier finding.|
+| ActivationDateUtc         | DateTime                       |            |             | See [Date Time format](#datetime-format). |
+| ReferenceCode             | Text                           |            |             | Reference code can have dictionary-specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty, use empty string "".  |
+| CountriesOfUse            | List of text                   |            |             | List of country ISO codes this `Class` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                    |
+| CountryOfOrigin           | Text                           |            |             | ISO Country Code of the country of origin of this `Class`. See reference list [countries](https://api.bsdd.buildingsmart.org//api/Country/v1).                                         |
+| CreatorLanguageIsoCode    | Text                           |            |             | Language ISO code of the creator. See reference list [languages](https://api.bsdd.buildingsmart.org/api/Language/v1). |
+| DeActivationDateUtc       | DateTime                       |            |             | See [Date Time format](#datetime-format). |
+| DeprecationExplanation    | Text                           |            | ✅         | Only fill for deprecated definitions. |
+| DocumentReference         | Text                           |            |             | Reference to document with the full or official definition of the `Class`. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
+| OwnedUri                  | Text                           |            |             | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the `Class`  |
+| ReplacedObjectCodes       | List of text                   |            |             | List of Class Codes this Class replaces                                                          |
+| ReplacingObjectCodes      | List of text                   |            |             | List of Class Codes this class is replaced by                                                    |
+| RevisionDateUtc           | DateTime                       |            |             | See [Date Time format](#datetime-format). |
+| RevisionNumber            | Integer                        |            |             |  |
+| Status                    | Text                           |            |             | Status of the `Class`: `Active` (default) or `Inactive` |
+| SubdivisionsOfUse         | List of text                   |            | ✅         | List of geographical regions of use E.g. "US-MT"  |
+| Uid                       | Text                           |            |             | Unique identification (ID), in case the URI is not enough. |
+| VersionDateUtc            | DateTime                       |            |             | By default takes the date of import. See [Date Time format](#datetime-format). |
+| VersionNumber             | Integer                        |            |             |  |
+| VisualRepresentationUri   | Text                           |            | ✅         |  |
+| ClassProperties           | List of ClassProperty          |            |             | See section [ClassProperty](#classproperty) |
+| ClassRelations            | List of ClassRelation          |            |             | See section [ClassRelation](#classrelation) |
 
 ### Material
 
@@ -124,18 +125,20 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
-| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
 | Code                          | Text         | ✅       |             | Unique identification within the dictionary of the property E.g. "ifc-99088-01". See section [Code format](#code-format)                                                                          |
+| Name                          | Text         | ✅       | ✅           | Name of the Property E.g. "IsExternal"                                                                                                               |
+| Definition                    | Text         |         | ✅           | Definition of the `Property`, explaining the semantic meaning. A required field according to the ISO.  |
+| Description                   | Text         |         | ✅           | Additional field for supplementary explanation. Please only use it if the _Definition_ comes from a standard and requires further explanation.  |
+| DataType                      | Text         |         |             | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
+| Units                         | List of text |         |             | The units represent a scale that enables a value to be measured (ISO 80000 or ISO 4217, or ISO 8601). List of values. See reference list (JSON) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output, please let us know. |
+| Example                       | Text         |         | ✅           | Example value of the `Property` |
+| ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties                                                                                                                |
 | CountriesOfUse                | List of text         |         |             |  List of country ISO codes this `Property` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
 | CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this class. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         |         |             | Language ISO code of the creator. See reference list (JSON)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
-| DataType                      | Text         |         |             | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
 | DeActivationDateUtc           | DateTime         |         |             | See [Date Time format](#datetime-format). |
-| Definition                    | Text         |         | ✅           | Definition of the `Property` |
 | DeprecationExplanation        | Text         |         | ✅           |  |
-| Description                   | Text         | ✅       | ✅           | |
 | Dimension                     | Text         |         |             | In case of a physical quantity, specify dimension according to [International_System_of_Quantities](https://en.wikipedia.org/wiki/International_System_of_Quantities), as defined in ISO 80000-1. The order is: `length`, `mass`, `time`, `electric current`, `thermodynamic temperature`, `amount of substance`, and `luminous intensity`. For example, speed (m/s) would be denoted as "1 0 -1 0 0 0 0". More examples in [IDS docs](https://github.com/buildingSMART/IDS/blob/master/Documentation/units.md) |
 | DimensionLength               | Integer      |         |             | The Length dimension; either use the field `Dimension` to specify all parts or specify all parts separately|
 | DimensionMass               | Integer      |         |             | The Mass dimension; either use the field `Dimension` to specify all parts or specify all parts separately|
@@ -146,14 +149,12 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | DimensionLuminousIntensity               | Integer      |         |             | The LuminousIntensity dimension; either use the field `Dimension` to specify all parts or specify all parts separately|
 | DocumentReference             | Text         |         |             | Reference to document with the full or official definition of the `Property`. See reference list (JSON) [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                                                               |
 | DynamicParameterPropertyCodes | List of text |         |             | List of codes of properties which are parameters of the function for a dynamic property                                                              |
-| Example                       | Text         |         | ✅           | Example of the `Property` |
 | IsDynamic                     | Boolean      |         |             | Default: false If this is a dynamic property, the value is dependent on the parameters provided in the field DynamicParameterProperties                  |
 | MaxExclusive            | Real     |         |             | Maximum allowed value, exclusive - do not fill both 'inclusive' and 'exclusive' values |
 | MaxInclusive            | Real     |         |             | Maximum allowed value, inclusive - do not fill both 'inclusive' and 'exclusive' values |
 | MinExclusive            | Real     |         |             | Minimum allowed value, exclusive |
 | MinInclusive            | Real     |         |             | Minimum allowed value, inclusive |
 | MethodOfMeasurement           | Text         |         | ✅           | E.g. "Thermal transmittance according to ISO 10077-1"                                                                                                |
-| Name                          | Text         | ✅       | ✅           | Name of the Property E.g. "IsExternal"                                                                                                               |
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the Property  |
 | Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
 | PhysicalQuantity              | Text         |         | ✅           | Name of the physical quantity of the property, E.g. "without" or "mass"                                                                               |
@@ -166,35 +167,36 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | SubdivisionsOfUse             | List of text         |         | ✅           | List of geographical regions of use E.g. "US-MT"                                                                                 |
 | TextFormat                    | Text         |         |             | Pair for text type (encoding, number of characters) The encoding is set according to "Name of encoding standard" of IANA, RFC 2978, E.g. "(UTF-8,32)" |
 | Uid                  | Text                   |         |            | Unique identification (ID), in case the URI is not enough. |
-| Units                         | List of text |         |             | The units represent a scale that enables a value to be measured (ISO 80000 or ISO 4217, or ISO 8601). List of values. See reference list (JSON) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output, please let us know. |
 | VersionDateUtc                | DateTime         |         |             | By default takes the date of import. See [Date Time format](#datetime-format). |
 | VersionNumber                 | Integer      |         |             |  |
 | VisualRepresentationUri       | Text         |         | ✅           |  |
 | PropertyRelations              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#propertyrelation) |
+| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
+
 
 ### ClassProperty
 
 | Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
-| Code                | Text     | ✅        |             | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
-| Description         | Text     |         | ✅           | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
+| Code                | Text     | ✅     |     | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
+| PropertyCode        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
+| PropertyUri         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
+| Description         | Text     |         | ✅ | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
+| PropertySet         | Text     |         |     | Code validation will be applied.<br/> Name of the "property set" where the property should be placed during IFC export. When the property should be placed in an IFC entity, you should use that. For example, when a property is material, you should use the value IfcMaterial". |
+| Unit                | Text     |         |     | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
+| PredefinedValue     | Text     |         |     | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for class "IfcWall" |
+| IsRequired          | Boolean  |         |     | Indicates if this is a required `Property` of the `Class` |
+| IsWritable          | Boolean  |         |     | Indicates if the value of this `Property` of the `Class` can be changed |
+| MaxExclusive        | Real     |         |     | Maximum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
+| MaxInclusive        | Real     |         |     | Maximum allowed value, inclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
+| MinExclusive        | Real     |         |     | Minimum allowed value, exclusive. Overrides the value defined for the `Property` |
+| MinInclusive        | Real     |         |     | Minimum allowed value, inclusive. Overrides the value defined for the `Property` |
+| Pattern             | Text     |         |     | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
+| PropertyType        | Text     |         |     | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
+| SortNumber          | Integer  |         |     | Sort number of this `Property` within the `Class`                                                                 |
+| Symbol              | Text     |         |     |                                                                                                                        |
+| AllowedValues       | List of AllowedValue  |  | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyUri` instead                |
-| IsRequired              | Boolean  |   |            | Indicates if this is a required `Property` of the `Class` |
-| IsWritable              | Boolean  |   |            | Indicates if the value of this `Property` of the `Class` can be changed |
-| MaxExclusive            | Real     |         |             | Maximum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values |
-| MaxInclusive            | Real     |         |             | Maximum allowed value, inclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
-| MinExclusive            | Real     |         |             | Minimum allowed value, exclusive. Overrides the value defined for the `Property` |
-| MinInclusive            | Real     |         |             | Minimum allowed value, inclusive. Overrides the value defined for the `Property` |
-| Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
-| PredefinedValue     | Text     |         |             | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for class "IfcWall" |
-| PropertyCode        | Text     |  ✅\*     |             | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
-| PropertyUri        | Text     |  ✅\*     |             | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
-| PropertySet         | Text     |         |             | Code validation will be applied.<br/> Name of the "property set" where the property should be placed during IFC export. When the property should be placed in an IFC entity, you should use that. For example, when a property is material, you should use the value IfcMaterial". |
-| PropertyType        | Text     |         |             | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
-| SortNumber          | Integer  |         |             | Sort number of this `Property` within the `Class`                                                                 |
-| Symbol              | Text     |         |             |                                                                                                                        |
-| Unit                | Text     |         |             | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
 
 
 \* One of those is required.
@@ -205,9 +207,9 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
+| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSimilarTo`,  `IsParentOf`,  `IsChildOf`, `HasPart`, `IsPartOf`. Read more about [Relation types](#relation-types).    |
 | RelatedClassUri | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
 | RelatedClassName | Text     |        |             |  |
-| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSimilarTo`,  `IsParentOf`,  `IsChildOf`, `HasPart`, `IsPartOf`. Read more about [Relation types](#relation-types).    |
 | Fraction       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 
 
@@ -218,10 +220,10 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
+| Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     |        | ✅       | A description of the value|
 | Uri| Text |  |  | You can provide your own Namespace Uri (must be globally unique).|
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
-| Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 
 
 ### PropertyRelation
