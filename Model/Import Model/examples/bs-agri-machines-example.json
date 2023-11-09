@@ -1,21 +1,22 @@
 {
+    "ModelVersion": "2.0",
     "OrganizationCode": "bs-agri",
-    "DomainCode": "agri-machine",
-    "DomainVersion": "0.1",
-    "DomainName": "Agricultural machinery (private)",
+    "DictionaryCode": "agri-machine",
+    "DictionaryVersion": "0.1",
+    "DictionaryName": "Agricultural machinery (private)",
     "ReleaseDate": "2023-02-05",
     "IsPrivate": true,
     "Status": "Preview",
     "MoreInfoUrl": null,
     "UseOwnUri": false,
-    "DomainNamespaceUri": null,
+    "DictionaryUri": null,
     "LanguageIsoCode": "en-US",
     "LanguageOnly": false,
     "License": "No license",
     "LicenseUrl": null,
     "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
     "QualityAssuranceProcedureUrl": null,
-    "Classifications": [
+    "Classes": [
       {
         "Code": "plow",
         "Name": "Plow",
@@ -43,9 +44,9 @@
         "DocumentReference": null,
         "Synonyms": [],
         "ReferenceCode": "plow",
-        "ParentClassificationCode": null,
+        "ParentClassCode": null,
         "RelatedIfcEntityNamesList": [],
-        "ClassificationProperties": []
+        "ClassProperties": []
       },
       {
         "Code": "disc-plow",
@@ -63,8 +64,8 @@
         "DeprecationExplanation": null,
         "CreatorLanguageIsoCode": "en-US",
         "Synonyms": [ "Disk plow" ],
-        "ParentClassificationCode": "plow",
-        "ClassificationProperties": [
+        "ParentClassCode": "plow",
+        "ClassProperties": [
           {
             "Code": "number-of-discs",
             "Description": "Number of discs",
@@ -75,7 +76,7 @@
             "MinExclusive": null,
             "MinInclusive": 1,
             "PropertyCode": "number",
-            "PropertyNamespaceUri": null,
+            "PropertyUri": null,
             "PropertySet": null,
             "PropertyType": "Property",
             "SortNumber": null,

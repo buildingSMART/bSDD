@@ -1,20 +1,21 @@
 {
+    "ModelVersion": "2.0",
     "OrganizationCode": "bs-agri",
-    "DomainCode": "fruitvegs",
-    "DomainVersion": "1.0",
-    "DomainName": "Fruit and vegetables",
+    "DictionaryCode": "fruitvegs",
+    "DictionaryVersion": "1.0",
+    "DictionaryName": "Fruit and vegetables",
     "ReleaseDate": "2022-09-26",
     "Status": "Preview",
     "MoreInfoUrl": null,
     "UseOwnUri": false,
-    "DomainNamespaceUri": null,
+    "DictionaryUri": null,
     "LanguageIsoCode": "en-US",
     "LanguageOnly": false,
     "License": "No license",
     "LicenseUrl": null,
     "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
     "QualityAssuranceProcedureUrl": null,
-    "Classifications": [
+    "Classes": [
       {
         "Code": "fruit",
         "Name": "Fruit",
@@ -42,23 +43,23 @@
         "DocumentReference": "The Fruit Book",
         "Synonyms": [],
         "ReferenceCode": "fruit",
-        "ClassificationRelations": [
+        "ClassRelations": [
           {
             "RelationType": "HasReference",
-            "RelatedClassificationUri": "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/veg",
-            "RelatedClassificationName": "Vegetables"
+            "RelatedClassUri": "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/veg",
+            "RelatedClassName": "Vegetables"
           },
           {
             "RelationType": "HasReference",
-            "RelatedClassificationUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015-1/class/Pr_45_30_90_07",
-            "RelatedClassificationName": "Bare-root fruit trees"
+            "RelatedClassUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015-1/class/Pr_45_30_90_07",
+            "RelatedClassName": "Bare-root fruit trees"
           }
 
         ],
-        "ClassificationType": "Class",
-        "ParentClassificationCode": null,
+        "ClassType": "Class",
+        "ParentClassCode": null,
         "RelatedIfcEntityNamesList": [],
-        "ClassificationProperties": []
+        "ClassProperties": []
       },
       {
         "Code": "veg",
@@ -88,22 +89,22 @@
         "DocumentReference": "The Vegetable Book",
         "Synonyms": [ "Edibles" ],
         "ReferenceCode": "vegetable",
-        "ClassificationRelations": [
+        "ClassRelations": [
           {
             "RelationType": "HasReference",
-            "RelatedClassificationUri": "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/fruit",
-            "RelatedClassificationName": "Fruit"
+            "RelatedClassUri": "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/fruit",
+            "RelatedClassName": "Fruit"
           },
           {
             "RelationType": "HasReference",
-            "RelatedClassificationUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015-1/class/Ac_30_40_32",
-            "RelatedClassificationName": "Fresh fruit and vegetable packing"
+            "RelatedClassUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015-1/class/Ac_30_40_32",
+            "RelatedClassName": "Fresh fruit and vegetable packing"
           }
         ],
-        "ClassificationType": "Class",
-        "ParentClassificationCode": null,
+        "ClassType": "Class",
+        "ParentClassCode": null,
         "RelatedIfcEntityNamesList": [],
-        "ClassificationProperties": []
+        "ClassProperties": []
       },
       {
         "Code": "apple",
@@ -127,11 +128,11 @@
         "DocumentReference": null,
         "Synonyms": [],
         "ReferenceCode": null,
-        "ClassificationRelations": [],
-        "ClassificationType": "Class",
-        "ParentClassificationCode": "fruit",
+        "ClassRelations": [],
+        "ClassType": "Class",
+        "ParentClassCode": "fruit",
         "RelatedIfcEntityNamesList": [ "IfcCommunicationAppliance" ],
-        "ClassificationProperties": [
+        "ClassProperties": [
           {
             "AllowedValues": [],
             "Code": "apple-volume",
@@ -145,7 +146,7 @@
             "Pattern": null,
             "PredefinedValue": null,
             "PropertyCode": "volume",
-            "PropertyNamespaceUri": null,
+            "PropertyUri": null,
             "PropertySet": "SizeSet",
             "PropertyType": "Property",
             "SortNumber": null,
@@ -165,7 +166,7 @@
             "Pattern": null,
             "PredefinedValue": null,
             "PropertyCode": "height",
-            "PropertyNamespaceUri": null,
+            "PropertyUri": null,
             "PropertySet": "SizeSet",
             "PropertyType": "Property",
             "SortNumber": null,
@@ -199,11 +200,11 @@
           "Sour apple"
         ],
         "ReferenceCode": null,
-        "ClassificationRelations": [],
-        "ClassificationType": "Class",
-        "ParentClassificationCode": "apple",
+        "ClassRelations": [],
+        "ClassType": "Class",
+        "ParentClassCode": "apple",
         "RelatedIfcEntityNamesList": [ ],
-        "ClassificationProperties": [
+        "ClassProperties": [
           {
             "AllowedValues": [
               {
@@ -230,7 +231,7 @@
             "Pattern": null,
             "PredefinedValue": "green",
             "PropertyCode": "color",
-            "PropertyNamespaceUri": null,
+            "PropertyUri": null,
             "PropertySet": null,
             "PropertyType": "Property",
             "SortNumber": null,
@@ -250,7 +251,7 @@
             "Pattern": null,
             "PredefinedValue": null,
             "PropertyCode": "height",
-            "PropertyNamespaceUri": null,
+            "PropertyUri": null,
             "PropertySet": "SizeSet",
             "PropertyType": "Property",
             "SortNumber": null,
@@ -283,11 +284,11 @@
           "Love apple"
         ],
         "ReferenceCode": null,
-        "ClassificationRelations": [],
-        "ClassificationType": "Class",
-        "ParentClassificationCode": "veg",
+        "ClassRelations": [],
+        "ClassType": "Class",
+        "ParentClassCode": "veg",
         "RelatedIfcEntityNamesList": [ ],
-        "ClassificationProperties": [
+        "ClassProperties": [
           {
             "AllowedValues": [
               {
@@ -320,7 +321,7 @@
             "Pattern": null,
             "PredefinedValue": "red",
             "PropertyCode": "color",
-            "PropertyNamespaceUri": null,
+            "PropertyUri": null,
             "PropertySet": null,
             "PropertyType": "Property",
             "SortNumber": null,
@@ -506,9 +507,7 @@
           }
          ],
         "TextFormat": null
-      }
-    ],
-    "Materials": [
+      },
       {
         "Code": "water",
         "Name": "Water",
@@ -533,9 +532,9 @@
           "H2O"
         ],
         "ReferenceCode": null,
-        "ClassificationRelations": [],
-        "ParentMaterialCode": null,
-        "MaterialProperties": []
+        "ClassRelations": [],
+        "ParentClassCode": null,
+        "ClassProperties": []
       },
       {
         "Code": "fiber",
@@ -561,9 +560,9 @@
           "Fibre"
         ],
         "ReferenceCode": null,
-        "ClassificationRelations": [],
-        "ParentMaterialCode": null,
-        "MaterialProperties": []
+        "ClassRelations": [],
+        "ParentClassCode": null,
+        "ClassProperties": []
       }
     ]
   }

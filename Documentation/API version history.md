@@ -10,6 +10,51 @@ A new version will only be created if it 'breaks' the current version. For examp
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
 
+## 2023-11-08
+
+-- Test environment only. Planned production date end oktober / early november 2023. --
+
+Name changes:
+ * Classification ==> Class
+ * Domain ==> Dictionary
+ * NamespaceUri ==> Uri
+ * IncludeChilds ==> IncludeChildren
+
+This involves all APIs either with one of these names in the API name itself, in the input contract or in the output contract. For all these APIs new versions, some with new names, have been created. Existing APIs will remain for at least 6 months after go live but we advise you to use the new APIs.
+
+Other changes:
+ * "Materials" are not treated separately anymore, they are just Classes with type being Material.
+ * Import field ClassificationProperty.ExternalPropertyUri has been removed completely. The field PropertyNamespaceUri (which is now called PropertyUri) already replaced it.
+ * Search APIs now support pagination
+
+Chagend APIs:
+ * api/Class/v1: new, replaces api/Classification/v4
+    - Option includeClassProperties added. If true, classProperties will be fetched. Default is false.
+    - Option includeClassRelations added. If true, classRelations will be fetched. Default is false.
+    - New output field: Class.Description
+ * api/Class/Search/v1: new, replaces api/ClassificationSearchOpen/v1.
+    - Return contract now contains just one dictionary instead of a list of dictionaries which always contains one item.
+    - Supports pagination
+ * api/Dictionary/v1: new, replaces api/Domain/v3
+    - Supports pagination
+ * api/Dictionary/v1/Classes: new, replaces api/Domain/v3/Classifications.
+    - Materials are not separately listed anymore
+    - Supports pagination
+    - Optional filter on ClassType
+ * api/Dictionary/v1/Properties: new
+    - Supports pagination
+ * api/Dictionary/v1 PUT, DELETE: new, replaces api/Domain/v1
+ * api/DictionaryDownload/sketchup/v1: new, replaces api/RequestExportFile/preview
+ * api/Material has been replaced by api/Class
+ * api/Property/v4: new, replaces api/Property/v3
+ * api/SearchInDictionary/v1: new, replaces api/SearchList(Open)/v2
+    - Supports pagination
+ * api/TextSearch/v1: new, replaces api/TextSearchListOpen/v6
+    - Supports pagination
+  * api/UploadImportFile/v1: updated, it accepts both old and new import json. Support for old import json will become deprecated.
+
+All replaced APIs still work for now but are marked as obsolete, as can be seen on the swagger page https://test.bsdd.buildingsmart.org/swagger.
+
 ## 2023-08-10
 
  * Added: api/Domain/v3/{organizationCode}/{code}/{version} - put: to update the status of a domain version
