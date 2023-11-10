@@ -1,25 +1,25 @@
-Domain = {
+Dictionary = {
+    "ModelVersion": None,
     "OrganizationCode": None,
-    "DomainCode": None,
-    "DomainVersion": None,
-    "DomainName": None,
+    "DictionaryCode": None,
+    "DictionaryVersion": None,
+    "DictionaryName": None,
     "ReleaseDate": None,
     "Status": None,
     "MoreInfoUrl": None,
     "UseOwnUri": False,
-    "DomainNamespaceUri": None,
+    "DictionaryUri": None,
     "LanguageIsoCode": None,
     "LanguageOnly": False,
     "License": None,
     "LicenseUrl": None,
     "QualityAssuranceProcedure": None,
     "QualityAssuranceProcedureUrl": None,
-    "Classifications": [],
-    "Properties": [],
-    "Materials": []
+    "Classes": [],
+    "Properties": []
 }
 
-Classification = {
+Class = {
     "Code": None,
     "Uid": None,
     "OwnedUri": None,
@@ -43,33 +43,33 @@ Classification = {
     "DocumentReference": None,
     "Synonyms": [],
     "ReferenceCode": None,
-    "ClassificationRelations": [],
-    "ClassificationType": None,
-    "ParentClassificationCode": None,
+    "ClassRelations": [],
+    "ClassType": None,
+    "ParentClassCode": None,
     "RelatedIfcEntityNamesList": [],
-    "ClassificationProperties": []
+    "ClassProperties": []
     }
 
-ClassificationRelation = {
-    "(Origin Classification Code)": None,
+ClassRelation = {
+    "(Origin Class Code)": None,
     "RelationType": None,
-    "RelatedClassificationUri": None,
-    "RelatedClassificationName": None,
+    "RelatedClassUri": None,
+    "RelatedClassName": None,
     "Fraction": None
     }
 
 AllowedValue = {
     "(Origin Property Code)": None,
-    "(ClassificationProperty Code)": None,
-    "NamespaceUri": None,
+    "(ClassProperty Code)": None,
+    "Uri": None,
     "Code": None,
     "Value": None,
     "Description": None,
     "SortNumber": None
     }
 
-ClassificationProperty = {
-    "(Origin Classification Code)": None,
+ClassProperty = {
+    "(Origin Class Code)": None,
     "AllowedValues": [],
     "Code": None,
     "Description": None,
@@ -82,7 +82,7 @@ ClassificationProperty = {
     "Pattern": None,
     "PredefinedValue": None,
     "PropertyCode": None,
-    "PropertyNamespaceUri": None,
+    "PropertyUri": None,
     "PropertySet": None,
     "PropertyType": None,
     "SortNumber": None,
@@ -145,34 +145,4 @@ PropertyRelation = {
     "RelationType": None,
     "RelatedPropertyUri": None,
     "RelatedPropertyName": None
-    }
-
-Material = {
-    "Code": None,
-    "Uid": None,
-    "OwnedUri": None,
-    "Name": None,
-    "Definition": None,
-    "Status": None,
-    "DeactivationDateUtc": None,
-    "ActivationDateUtc": "2022-05-12T00:00:00+02:00",
-    "RevisionDateUtc": None,
-    "VersionDateUtc": "2022-05-12T00:00:00+02:00",
-    "DeActivationDateUtc": None,
-    "VersionNumber": None,
-    "RevisionNumber": None,
-    "ReplacedObjectCodes": [],
-    "ReplacingObjectCodes": [],
-    "DeprecationExplanation": None,
-    "CreatorLanguageIsoCode": None,
-    "VisualRepresentationUri": None,
-    "CountriesOfUse": [],
-    "SubdivisionsOfUse": [],
-    "CountryOfOrigin": None,
-    "DocumentReference": None,
-    "Synonyms": [],
-    "ReferenceCode": None,
-    "ClassificationRelations": [],
-    "ParentMaterialCode": None,
-    "MaterialProperties": []
     }

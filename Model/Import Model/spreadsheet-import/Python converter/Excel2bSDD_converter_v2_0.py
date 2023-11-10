@@ -20,8 +20,8 @@ import sys
 import json
 from ast import literal_eval 
 from copy import deepcopy
-from JSON_templates import Domain, Classification, ClassificationRelation, AllowedValue
-from JSON_templates import ClassificationProperty, Property, PropertyRelation, Material
+from JSON_templates_v2_0 import Dictionary, Class, ClassRelation, AllowedValue
+from JSON_templates_v2_0 import ClassProperty, Property, PropertyRelation
 import numpy as np
 import pandas as pd
 
@@ -38,12 +38,11 @@ def load_excel(EXCEL_PATH):
     excel_df = pd.ExcelFile(EXCEL_PATH)
 
     excel={}
-    excel['domain'] = pd.read_excel(excel_df, 'Domain', skiprows=5, usecols="C:Q", true_values="TRUE")
-    excel['classification'] = pd.read_excel(excel_df, 'Classification', skiprows=5, usecols="C:AB", true_values="TRUE")
-    excel['material'] = pd.read_excel(excel_df, 'Material', skiprows=5, usecols="C:Y", true_values="TRUE")
+    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=5, usecols="C:Q", true_values="TRUE")
+    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=5, usecols="C:AB", true_values="TRUE")
     excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=5, usecols="C:AU", true_values="TRUE")
-    excel['classificationproperty'] = pd.read_excel(excel_df, 'ClassificationProperty', usecols="C:T", skiprows=5, true_values="TRUE")
-    excel['classificationrelation'] = pd.read_excel(excel_df, 'ClassificationRelation', usecols="C:G", skiprows=5, true_values="TRUE")
+    excel['classproperty'] = pd.read_excel(excel_df, 'ClassProperty', usecols="C:T", skiprows=5, true_values="TRUE")
+    excel['classrelation'] = pd.read_excel(excel_df, 'ClassRelation', usecols="C:G", skiprows=5, true_values="TRUE")
     excel['allowedvalue'] = pd.read_excel(excel_df, 'AllowedValue', skiprows=5, usecols="C:I", true_values="TRUE")
     excel['propertyrelation'] = pd.read_excel(excel_df, 'PropertyRelation', skiprows=5, usecols="C:F", true_values="TRUE")
     return excel
@@ -103,23 +102,22 @@ def excel2bsdd(excel):
     :rtype: dict
     """
     bsdd_data = {}
-    bsdd_data = jsonify(excel['domain'], Domain)[0]
+    bsdd_data = jsonify(excel['dictionary'], Dictionary)[0]
     # process basic concepts
-    bsdd_data['Classifications'] = jsonify(excel['classification'], Classification)
-    bsdd_data['Materials'] = jsonify(excel['material'], Material)
+    bsdd_data['Classes'] = jsonify(excel['class'], Class)
     bsdd_data['Properties'] = jsonify(excel['property'], Property)
-    # process ClassificationProperty
-    cls_props = jsonify(excel['classificationproperty'], ClassificationProperty)
+    # process ClassProperty
+    cls_props = jsonify(excel['classproperty'], ClassProperty)
     for cls_prop in cls_props:
-        related = cls_prop['(Origin Classification Code)']
-        cls_prop.pop("(Origin Classification Code)")
-        next(item for item in bsdd_data['Classifications'] if item["Code"] == related)['ClassificationProperties'].append(cls_prop)
-    # process ClassificationRelation
-    cls_rels = jsonify(excel['classificationrelation'], ClassificationRelation)
+        related = cls_prop['(Origin Class Code)']
+        cls_prop.pop("(Origin Class Code)")
+        next(item for item in bsdd_data['Classes'] if item["Code"] == related)['ClassProperties'].append(cls_prop)
+    # process ClassRelation
+    cls_rels = jsonify(excel['classrelation'], ClassRelation)
     for cls_rel in cls_rels:
-        related = cls_rel['(Origin Classification Code)']
-        cls_rel.pop("(Origin Classification Code)")
-        next(item for item in bsdd_data['Classifications'] if item["Code"] == related)['ClassificationRelations'].append(cls_rel)
+        related = cls_rel['(Origin Class Code)']
+        cls_rel.pop("(Origin Class Code)")
+        next(item for item in bsdd_data['Classes'] if item["Code"] == related)['ClassRelations'].append(cls_rel)
     # process AllowedValue
     allowed_vals = jsonify(excel['allowedvalue'], AllowedValue)
     for allowed_val in allowed_vals:
@@ -129,17 +127,17 @@ def excel2bsdd(excel):
             related = allowed_val['(Origin Property Code)']
         else:
             relToProperty = False
-            related = allowed_val['(ClassificationProperty Code)']
+            related = allowed_val['(ClassProperty Code)']
         allowed_val.pop("(Origin Property Code)")
-        allowed_val.pop("(ClassificationProperty Code)")
+        allowed_val.pop("(ClassProperty Code)")
         if relToProperty:
             # iterate all properties and add AllowedValue if present in spreadsheet
             next(item for item in bsdd_data['Properties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
         else: 
-            # iterate all classifications to find the one referenced by the property AllowedValue
-            for classification in bsdd_data['Classifications']:
-                # next(item for item in classification['ClassificationProperties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
-                for item in classification['ClassificationProperties']:
+            # iterate all classes to find the one referenced by the property AllowedValue
+            for class in bsdd_data['Classes']:
+                # next(item for item in class['ClassProperties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
+                for item in class['ClassProperties']:
                     if item["Code"] == related:
                         item['AllowedValues'].append(allowed_val)
     # process PropertyRelation

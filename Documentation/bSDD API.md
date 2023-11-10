@@ -1,40 +1,49 @@
 
-**IMPORANT for developers using secured bSDD APIs** The URL "buildingsmartservices.onmicrosoft.com" will be changed to "authentication.buildingsmart.org" in the near future. Make sure you do not hard code this url in your code, make it an easy to update setting. You will receive a notification upfront when the change will take place.
-
-
 The bSDD API is regularly updated. This means things may change. If there are breaking changes to an API a new version will be created. The 'old' version will be supported for, at least, 6 months after. Note that additions to an existing API usually don't mean a breaking change.
 
+## bSDD test environment
+
+The bSDD has a test environment for testing new developments of the bSDD. Although meant for internal use, developers wanting to use the bSDD APIs are welcome to use the test environment for development purposes. We do not have an SLA for that environment but we try to have an up time of the test environment of at least 95%.
+If you're a Dictionary owner and want to check your data or test the upload process, please use the official release.
 
 ## The bSDD API
-The bSDD API offers methods to retrieve Classification and Property information for several Standards (also known as Domains), for example IFC and ETIM.
+The bSDD API offers methods to retrieve Class and Property information for several Standards (also known as Dictionaries), for example IFC and ETIM.
 An example flow is:
-* User opens screen to search for a Classification and its Properties
-* After opening screen the app calls the “Domain”-method of the API to retrieve a list of available Domains. This list can then be presented to the user to make a selection.
-* The user selects a Domain and enters some text to find the required Classification
+* User opens screen to search for a Class and its Properties
+* After opening screen the app calls the “Dictionary”-method of the API to retrieve a list of available Dictionaries. This list can then be presented to the user to make a selection.
+* The user selects a Dictionary and enters some text to find the required Class
 * The user press Search and the app sends the request to the bSDD API (“SearchList”-method)
-* The result is a list of Classifications
+* The result is a list of Classes
 * The user can pick the one needed
-* The app sends a request for Classification details and Properties to the bSDD API (“Classification”-method)
-* The API returns Classification details and Properties, which the app shows to the user
+* The app sends a request for Class details and Properties to the bSDD API (“Class”-method)
+* The API returns Class details and Properties, which the app shows to the user
 
 A typical use-case is demonstrated in SketchUp. A video of the SketchUp use-case and bSDD plugin is availalbe on https://vimeo.com/446417661/ff8b6605d3
 
 ## API contracts and testing the API
-You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [bSDD API contract, prototype](https://test.bsdd.buildingsmart.org/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
+You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [bSDD API contract, test](https://test.bsdd.buildingsmart.org/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods you need to log in via the UI by using the Authorize button:
 
 ![Swagger authorization](https://bsddprototype2020.blob.core.windows.net/public/images/swagger-authorize2.png)
 
 Don’t forget to check the “read” scope!
 
+## Using https://identifier.buildingsmart.org
+!! For system to system communication using these identifier URIs is not recommended. !!
+You can access the data of Class or property also directly via the URI of the Class or property. For example, you can navigate in the browser to https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall and then you will see a visual representation of the data of that Class. If you would like the output in json format, then sending an "Accept" header with "application/json" will give you a result in json. The content of this json result differs from the html result!
+
+IMPORTANT: Do not use these identifier URIs for system to system communication! First of all, it introduces an extra 'hop' from server to server. Second, you do not have control over the version of the API it's using. The result may differ after a new release of bSDD has been published with the result from before the release.
+
 ## GraphQL
 The data can also be accessed via GraphQL.
 [GraphiQL playground](https://test.bsdd.buildingsmart.org/graphiql).
 The url to send your GraphQL requests to:
-- prototype: https://test.bsdd.buildingsmart.org/graphql
-- official release: https://api.bsdd.buildingsmart.org/graphql
-For accessing this URL no authentication is needed. There is also a secured API available:
-- prototype: https://test.bsdd.buildingsmart.org/graphqls
+- test: https://test.bsdd.buildingsmart.org/graphql
+
+For using the official release the secured endpoint is (note the "s" at the end):
 - official release: https://api.bsdd.buildingsmart.org/graphqls
+For developers: the test environment also has a secured endpoint available:
+- test: https://test.bsdd.buildingsmart.org/graphqls
+
 
 You can find example code how to access a secured bSDD API in this repository. Contact us if you need assistance implementing accessing the secured API.
 

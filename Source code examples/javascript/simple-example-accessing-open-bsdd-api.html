@@ -1,0 +1,48 @@
+<html>
+<header>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</header>
+
+<body>
+    <script>
+        $(function() {
+            $("#send").click(function() {
+                var personalInfo = {
+                    Uri: $('#Name').val()
+                };
+                $.ajax({
+                    url: 'https://test.bsdd.buildingsmart.org/api/Dictionary/v1?uri='+personalInfo.Uri,
+                    type: 'GET',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    success: function(data, textStatus, xhr) {
+                        console.log(data);
+                        var num_rows = data.length;
+                        var rows = "";
+
+                        for(var i=0;i<num_rows;i++){
+                            rows +='<tr><td>'+data[i].uri+'</td><td>'+data[i].name+'</td></tr>';         
+                        }
+                        $("#table").append(rows);
+                    },
+                    error: function(xhr, textStatus, errorThrown) {
+                        console.log('Error in Operation', textStatus, errorThrown);
+                    }
+                });
+            });
+        })
+    </script>
+
+    <p>Get list of domains</p>
+    <form id="form1">
+        <p>Give full URI to filter or leave empty to get full list</p>
+        URI: <input type="text" name="Name" id="Name" />
+        <input type="button" id="send" value="Send Post Data" />
+    </form>
+    <table>
+        <thead></thead>
+        <tbody id="table"></tbody>
+    </table>
+</body>
+
+</html>

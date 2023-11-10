@@ -17,33 +17,19 @@ namespace bSDD.DemoClientConsole
     {
         // For authentication & authorization (those items should be in a config file)
 
-        // Prototype B2C environment
+        // B2C environment
         public static readonly string TenantName = "buildingsmartservices";
         public static readonly string ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70";
 
-        // Test B2C environment
-        // public static readonly string TenantName = "buildingsmartdd";
-        // public static readonly string ClientId = "88bd5c3e-c765-49cf-ab4d-9be9ae3ac005";
-
-
-        public static readonly string RedirectUri = $"https://authentication.buildingsmart.org/oauth2/nativeclient";
+        public static readonly string RedirectUri = "https://authentication.buildingsmart.org/oauth2/nativeclient";
 
         private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
-        private static readonly string AzureAdB2CHostname = $"authentication.buildingsmart.org";
-        // public static readonly string RedirectUri = "com.onmicrosoft.bsddprototypeb2c.democonsoleapp://oauth/redirect";
-
-        // Not case sensitive
-        // IMPORTANT These values are valid until June 30, 2021
-        // public static string PolicySignUpSignIn = "b2c_1_signupsignin";
-        // public static string PolicyEditProfile = "b2c_1_profileediting";
-        // public static string PolicyResetPassword = "b2c_1_passwordreset";
-
-        // IMPORTANT Use these values as from June 30, 2021
+        private static readonly string AzureAdB2CHostname = "authentication.buildingsmart.org";
         public static string PolicySignUpSignIn = "b2c_1a_signupsignin_c";
         public static string PolicyEditProfile = "b2c_1a_profileedit_c";
         public static string PolicyResetPassword = "b2c_1a_passwordreset_c";
 
-        // Not case sensitive
+        // For accessing production environment the last part of the scope must be bsddapi/read
         public static string[] ApiScopes = { $"https://{TenantName}.onmicrosoft.com/api/read" };
 
         private static string AuthorityBase = $"https://{AzureAdB2CHostname}/tfp/{Tenant}/";
