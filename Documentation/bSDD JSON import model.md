@@ -28,10 +28,10 @@
 
 The diagram below shows the simplified data model behind the bSDD:
 
-<img src="https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
 
-See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_example.png):
-<img src="https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
+See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png):
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
@@ -307,7 +307,7 @@ In bSDD, all resources get a unique identifier - URI. The URI, among other infor
 If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version containing that resource: 
 .../uri/bs-agri/fruitvegs/**latest**/class/fruit. 
 
-<img src="https://github.com/buildingSMART/bSDD/blob/bsdd-202-renaming/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
+<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
 
 Try it out:
 https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
