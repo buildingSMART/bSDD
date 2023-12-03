@@ -2,16 +2,16 @@
     "ModelVersion": "2.0",
     "OrganizationCode": "bs-agri",
     "DictionaryCode": "fruitvegs",
-    "DictionaryVersion": "1.0",
+    "DictionaryVersion": "1.2.3",
     "DictionaryName": "Fruit and vegetables",
     "ReleaseDate": "2022-09-26",
     "Status": "Preview",
     "MoreInfoUrl": null,
     "UseOwnUri": false,
-    "DictionaryUri": null,
-    "LanguageIsoCode": "en-US",
     "LanguageOnly": false,
+    "LanguageIsoCode": "en-US",
     "License": "No license",
+    "DictionaryUri": null,
     "LicenseUrl": null,
     "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
     "QualityAssuranceProcedureUrl": null,
@@ -20,6 +20,7 @@
         "Code": "fruit",
         "Name": "Fruit",
         "Definition": "A fruit is a mature, ripened ovary, along with the contents of the ovary. The ovary is the ovule-bearing reproductive structure in the plant flower. The ovary serves to enclose and protect the ovules, from the youngest stages of flower development until the ovules become fertilized and turn into seeds.",
+        "ClassType": "Class",
         "Status": "Active",
         "ActivationDateUtc": "2022-09-26",
         "RevisionDateUtc": null,
@@ -54,9 +55,7 @@
             "RelatedClassUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015-1/class/Pr_45_30_90_07",
             "RelatedClassName": "Bare-root fruit trees"
           }
-
         ],
-        "ClassType": "Class",
         "ParentClassCode": null,
         "RelatedIfcEntityNamesList": [],
         "ClassProperties": []
@@ -134,8 +133,10 @@
         "RelatedIfcEntityNamesList": [ "IfcCommunicationAppliance" ],
         "ClassProperties": [
           {
-            "AllowedValues": [],
             "Code": "apple-volume",
+            "PropertyCode": "volume",
+            "PropertyUri": null,
+            "AllowedValues": [],
             "Description": "The volume of an apple",
             "IsRequired": true,
             "IsWritable": true,
@@ -145,8 +146,6 @@
             "MinInclusive": null,
             "Pattern": null,
             "PredefinedValue": null,
-            "PropertyCode": "volume",
-            "PropertyUri": null,
             "PropertySet": "SizeSet",
             "PropertyType": "Property",
             "SortNumber": null,
@@ -329,6 +328,64 @@
             "Unit": null
           }
         ]
+      },
+      {
+        "Code": "water",
+        "Name": "Water",
+        "ClassType": "Material",
+        "Definition": "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms",
+        "Status": "Active",
+        "ActivationDateUtc": "2022-09-26",
+        "RevisionDateUtc": null,
+        "VersionDateUtc": "2022-09-26",
+        "DeActivationDateUtc": null,
+        "VersionNumber": null,
+        "RevisionNumber": null,
+        "ReplacedObjectCodes": [],
+        "ReplacingObjectCodes": [],
+        "DeprecationExplanation": null,
+        "CreatorLanguageIsoCode": null,
+        "VisualRepresentationUri": null,
+        "CountriesOfUse": [],
+        "SubdivisionsOfUse": [],
+        "CountryOfOrigin": null,
+        "DocumentReference": null,
+        "Synonyms": [
+          "H2O"
+        ],
+        "ReferenceCode": null,
+        "ClassRelations": [],
+        "ParentClassCode": null,
+        "ClassProperties": []
+      },
+      {
+        "Code": "fiber",
+        "Name": "Fiber",
+        "ClassType": "Material",
+        "Definition": "The portion of plant-derived food that cannot be completely broken down by human digestive enzymes",
+        "Status": "Active",
+        "ActivationDateUtc": "2022-09-26",
+        "RevisionDateUtc": null,
+        "VersionDateUtc": "2022-09-26",
+        "DeActivationDateUtc": null,
+        "VersionNumber": null,
+        "RevisionNumber": null,
+        "ReplacedObjectCodes": [],
+        "ReplacingObjectCodes": [],
+        "DeprecationExplanation": null,
+        "CreatorLanguageIsoCode": "en-US",
+        "VisualRepresentationUri": null,
+        "CountriesOfUse": [],
+        "SubdivisionsOfUse": [],
+        "CountryOfOrigin": null,
+        "DocumentReference": null,
+        "Synonyms": [
+          "Fibre"
+        ],
+        "ReferenceCode": null,
+        "ClassRelations": [],
+        "ParentClassCode": null,
+        "ClassProperties": []
       }
     ],
     "Properties": [
@@ -507,62 +564,6 @@
           }
          ],
         "TextFormat": null
-      },
-      {
-        "Code": "water",
-        "Name": "Water",
-        "Definition": "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms",
-        "Status": "Active",
-        "ActivationDateUtc": "2022-09-26",
-        "RevisionDateUtc": null,
-        "VersionDateUtc": "2022-09-26",
-        "DeActivationDateUtc": null,
-        "VersionNumber": null,
-        "RevisionNumber": null,
-        "ReplacedObjectCodes": [],
-        "ReplacingObjectCodes": [],
-        "DeprecationExplanation": null,
-        "CreatorLanguageIsoCode": null,
-        "VisualRepresentationUri": null,
-        "CountriesOfUse": [],
-        "SubdivisionsOfUse": [],
-        "CountryOfOrigin": null,
-        "DocumentReference": null,
-        "Synonyms": [
-          "H2O"
-        ],
-        "ReferenceCode": null,
-        "ClassRelations": [],
-        "ParentClassCode": null,
-        "ClassProperties": []
-      },
-      {
-        "Code": "fiber",
-        "Name": "Fiber",
-        "Definition": "The portion of plant-derived food that cannot be completely broken down by human digestive enzymes",
-        "Status": "Active",
-        "ActivationDateUtc": "2022-09-26",
-        "RevisionDateUtc": null,
-        "VersionDateUtc": "2022-09-26",
-        "DeActivationDateUtc": null,
-        "VersionNumber": null,
-        "RevisionNumber": null,
-        "ReplacedObjectCodes": [],
-        "ReplacingObjectCodes": [],
-        "DeprecationExplanation": null,
-        "CreatorLanguageIsoCode": "en-US",
-        "VisualRepresentationUri": null,
-        "CountriesOfUse": [],
-        "SubdivisionsOfUse": [],
-        "CountryOfOrigin": null,
-        "DocumentReference": null,
-        "Synonyms": [
-          "Fibre"
-        ],
-        "ReferenceCode": null,
-        "ClassRelations": [],
-        "ParentClassCode": null,
-        "ClassProperties": []
       }
     ]
   }
