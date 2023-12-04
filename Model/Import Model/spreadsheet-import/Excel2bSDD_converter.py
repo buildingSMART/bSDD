@@ -171,11 +171,6 @@ if __name__ == "__main__":
     JSON_OUTPUT_PATH = sys.argv[3]
     WITHOUT_NULLS = sys.argv[4]
 
-    # EXCEL_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\bSDD_Excel_my_example.xlsx"
-    # JSON_TEMPLATE_PATH = r"C:\Code\bSDD\Model\Import Model\bsdd-import-model.json"
-    # JSON_OUTPUT_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\bSDD_Excel_my_example.json"
-    # WITHOUT_NULLS = True
-
     excel = load_excel(EXCEL_PATH)
     bsdd_template = json.load(open(JSON_TEMPLATE_PATH, encoding="utf-8"))
     bsdd_data = excel2bsdd(excel, bsdd_template)
