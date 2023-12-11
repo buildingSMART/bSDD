@@ -182,15 +182,15 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | PropertyCode        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
 | PropertyUri         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
 | Description         | Text     |         | ✅ | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
-| PropertySet         | Text     |         |     | Code validation will be applied.<br/> Name of the "property set" where the property should be placed during IFC export. When the property should be placed in an IFC entity, you should use that. For example, when a property is material, you should use the value IfcMaterial". |
+| PropertySet         | Text     |         |     | Code validation will be applied. Name of the "property set" where the property should be placed during IFC export. The prefix 'Pset_' is only reserved for the official IFC. |
 | Unit                | Text     |         |     | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
 | PredefinedValue     | Text     |         |     | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for class "IfcWall" |
 | IsRequired          | Boolean  |         |     | Indicates if this is a required `Property` of the `Class` |
 | IsWritable          | Boolean  |         |     | Indicates if the value of this `Property` of the `Class` can be changed |
 | MaxExclusive        | Real     |         |     | Maximum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
 | MaxInclusive        | Real     |         |     | Maximum allowed value, inclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
-| MinExclusive        | Real     |         |     | Minimum allowed value, exclusive. Overrides the value defined for the `Property` |
-| MinInclusive        | Real     |         |     | Minimum allowed value, inclusive. Overrides the value defined for the `Property` |
+| MinExclusive        | Real     |         |     | Minimum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
+| MinInclusive        | Real     |         |     | Minimum allowed value, inclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
 | Pattern             | Text     |         |     | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassProperty  |
 | PropertyType        | Text     |         |     | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
@@ -245,7 +245,8 @@ Note: adding translations of the `AllowedValue` is not supported yet
 ### Code format
 
 For codes, only characters, numbers, underscore, dot, and dash are allowed (a-z, A-Z, 0-9, "_", ".", "-"). Codes are not case-sensitive.
-Some examples of valid codes are: "bs-agri", "apple", "one.X". Some examples of invalid codes are: "my test" (whitespace not allowed), "ДДb$%" (only characters a-z and A-Z allowed, not %, $, or Д).
+Some examples of valid codes are: "bs-agri", "apple", "one.X". 
+Some examples of invalid codes are: "my test" (whitespace not allowed), "ДДb$%" (only characters a-z and A-Z allowed, not %, $, or Д).
 
 ### Class types
 
