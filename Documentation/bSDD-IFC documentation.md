@@ -305,8 +305,8 @@ Below are the mapping rules for different IFC versions.
 
 |                                                | bSDD                                      | IFC 4.3                                      | IFC 4 & IFC 2x3                                      |IDS                                      |
 |------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|-----------------------|
-| **Property name**                              | Name *(of Property)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |❎*      |
-| **Property identifier**                            | uri *(of Property)*          | IfcPropertySingleValue.Specification                    | IfcPropertySingleValue.Description                      |uri      |
+| **Property name**                              | PropertyCode *(of ClassProperty)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |❎*      |
+| **Property identifier**                            | uri *(of ClassProperty)*          | IfcPropertySingleValue.Specification                    | IfcPropertySingleValue.Description                      |uri      |
 | **Property predefined value** (single value)              | PredefinedValue *(of ClassProperty)*   | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |❎*      |
 | **Property unit** (single value or from enumeration)              | PredefinedValue *(of Property or ClassProperty)*   | IfcPropertySingleValue.Unit          | IfcPropertySingleValue.Unit          |❎*      |
 | **Property allowed values** (from enumeration) | AllowedValues *(of Property or ClassProperty)*    | IfcPropertyEnumeratedValue .EnumerationValues | IfcPropertyEnumeratedValue .EnumerationValues |❎*      |
@@ -324,7 +324,8 @@ In bSDD, properties exist independently of the class (object) they might be assi
 - The relationship between a property and its property set is defined at the level of each class (object).
 - `AllowedValue`s can be defined also at the level of each class (object). When this happens, the `AllowedValue` defined at the level of the `Property` is overwritten. 
 
-
+The human-readable and translatable _Name_ that exists in bSDD has no reflection in IFC. That is why it is important to remember that the _Code_ will be used in IFC datasets, and _Name_ will only be displayed by software capable of reading the names from bSDD. The reason for this is that we need the datasets to follow consistent terms, regardless of the language displayed to the user. 
+ 
 :pill: **Snippets**
 <details><summary>bSDD property</summary>
     
