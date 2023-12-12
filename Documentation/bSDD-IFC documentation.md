@@ -9,7 +9,7 @@ The main entities involved are:
 - [_IfcClassificationReference_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassificationReference.htm)
 - [_IfcRelAssociatesClassification_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRelAssociatesClassification.htm)
 
-The next section indicates the mapping rules between the bSDD data model and IFC concepts used for class. To support this, snippets (:pill:) of IFC files and bSDD dictionary files are reported as examples.
+The next section indicates the mapping rules between the bSDD data model and IFC concepts used for class. To support this, snippets ( :pill:) of IFC files and bSDD dictionary files are reported as examples.
 
 
 ## openBIM workflows
