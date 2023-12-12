@@ -10,7 +10,7 @@ Below is the table mapping the attributes of bSDD and ISO standards. bSDD attrib
 
 | **bSDD** | **ISO23386:2020** | **ISO12006-3:2022** | **Comment** |
 |---|---|---|---|
-| Property/Class: Uid,   NamespaceUri | Property/GroupOfProperties: Globally unique identifier | xtdRoot: UniqueId | _(G)UID is optional in bSDD, required in ISO. In bSDD role of   UID was replaced with URI, and UID is only to support use cases needing it.   URI allows viewing the metadata of a property._ |
+| Property/Class: Uid,   Uri | Property/GroupOfProperties: Globally unique identifier | xtdRoot: UniqueId | _(G)UID is optional in bSDD, required in ISO. In bSDD role of   UID was replaced with URI, and UID is only to support use cases needing it.   URI allows viewing the metadata of a property._ |
 | Property/Class/Dictionary:   Status | Property/GroupOfProperties: Status | ✖️ | _bSDD and ISO have “Active” and “Inactive”. bSDD also has   “Preview”, so extends ISO._ |
 | ✖️ | Property/GroupOfProperties: Date of creation | xtdObject: DateOfCreation | _Not directly in bSDD, but could be derived as date of the   first version upload._ |
 | Property/Class:   ActivationDateUtc | Property/GroupOfProperties: Date of activation | ✖️ |  |
@@ -46,7 +46,7 @@ Below is the table mapping the attributes of bSDD and ISO standards. bSDD attrib
 | ✖️ | Property: Tolerance | ✖️ | _ISO23386: For numerical values; the total amont that a   specific unit is permitted to vary; it is the difference between the maxium   and the minimum limits per unit._ |
 | ✖️ | Property: Digital format | ✖️ | _In ISO23386 it is a pair of precision and unit for digital   text type. Not to be confused with DataFormat pattern._ |
 | Property: TextFormat | Property: Text format | ✖️ |  |
-| Property: AllowedValues | Property: List of possible values in language N | xtdProperty: PossibleValues  | _ISO: ‘the description of a value of an xtdProperty’. ISO has   ‘NominalValue’, while bSDD has Description, Value, SortNumber, NamespaceUri,   Code._ |
+| Property: AllowedValues | Property: List of possible values in language N | xtdProperty: PossibleValues  | _ISO: ‘the description of a value of an xtdProperty’. ISO has   ‘NominalValue’, while bSDD has Description, Value, SortNumber, Uri,   Code._ |
 | Property: MaxExclusive,   MaxInclusive, MinExclusive, MinInclusive | Property: Boundary values | xtdProperty: BoundaryValues | _In ISO xtdInterval object which contains: Minimum,   MinimumIncluded, Maximum, MaximumIncluded.       In bSDD separate attributes to do the same:       MinExclusive, MinInclusive, MaxExclusive, MaxInclusive._ |
 | PropertyRelation:   (RelationType == IsSynonymOf) | ✖️ | xtdConcept: SimilarTo | _In bSDD solved with relations of type "IsSynonymOf"_ |
 | (schema/API) | ✖️ | xtdObject: Dictionary | _In bSDD property is located in a certain dictionary._ |
@@ -67,7 +67,7 @@ Below is the table mapping the attributes of bSDD and ISO standards. bSDD attrib
 | ClassProperty: IsWritable | ✖️ | ✖️ |  |
 | ClassProperty: PredefinedValue | ✖️ | ✖️ |  |
 | ClassProperty: PropertyCode | ✖️ | ✖️ |  |
-| ClassProperty:   PropertyNamespaceUri | ✖️ | ✖️ |  |
+| ClassProperty:   PropertyUri | ✖️ | ✖️ |  |
 | ClassProperty: PropertySet | ✖️ | ✖️ |  |
 | ClassProperty: PropertyType | ✖️ | ✖️ | _In bSDD: Property/Dependency_ |
 | ClassProperty: SortNumber | ✖️ | ✖️ | _ISO has xtdOrderedValue object: “to connect a value with its   order in a list of predefined values.”. In bSDD AllowedValues have this   optional order attribute._ |
@@ -91,12 +91,12 @@ Below is the table mapping the attributes of bSDD and ISO standards. bSDD attrib
 | PropertyRelation: RelationType | ✖️ | ✖️ |  |
 | AllowedValue: Code | ✖️ | ✖️ | _Code is used to generate URI and can be used for   identification within a dictionary._ |
 | AllowedValue: Description | ✖️ | ✖️ |  |
-| AllowedValue: NamespaceUri | ✖️ | ✖️ |  |
+| AllowedValue: Uri | ✖️ | ✖️ |  |
 | AllowedValue: SortNumber | ✖️ | ✖️ |  |
 | AllowedValue: Value | ✖️ | ✖️ |  |
 | Dictionary: DictionaryCode | ✖️ | ✖️ | _Code is used to generate URI and can be used for   identification within an organisation._ |
 | Dictionary: DictionaryName | ✖️ | ✖️ |  |
-| Dictionary:   DictionaryNamespaceUri | ✖️ | ✖️ |  |
+| Dictionary:   DictionaryUri | ✖️ | ✖️ |  |
 | Dictionary: DictionaryVersion | ✖️ | ✖️ |  |
 | Dictionary: LanguageIsoCode | ✖️ | ✖️ |  |
 | Dictionary: License | ✖️ | ✖️ |  |
