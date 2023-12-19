@@ -277,9 +277,9 @@ specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” 
 ### Relation types
 
 `Properties` and `Classes` can be related to each other. Each relation must have a specific type to allow software to interpret it. Below is an explanation of what each type means:
-* `IsEqualTo` - if two concepts are unequivocal and have the same name, code and description. Classes also need to share the same properties. It is quite rare for concepts to be equal. An example is when a concept doesn't have an official translation, but someone defines a new concept in that language and wants to say it is exactly the same as the original. 
-* `IsSimilarTo` - if two concepts are almost unequivocal but differ by name, code, description or set of properties. This is a very common relation type. Used, for example, to say that 'IfcWall' is a similar concept to 'Wall System' from CCI.
-* `HasReference` - if two concepts relate to each other, but other relation types do not apply. For example, "wall light" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them.
+* `IsEqualTo` - if two concepts are unequivocal and have the same name, code, definition and description. Classes also need to share the same class properties. It is quite rare for concepts to be equal. An example of usage is when a concept doesn't have an official translation, but someone defines a new dictionary with that concept in a new language and wants to say it is exactly the same as the original. (We always recommend proposing translations and improvements to the original data dictionaries instead of building duplicate ones). 
+* `IsSimilarTo` - if two concepts are almost equal but differ by name, code, definition, description or set of class properties. This is a very common relationship type. Used, for example, to say that 'IfcWall' is a similar concept to 'Wall System' from CCI. The downside of such a relation is that it doesn't inform on the level of similarity – is it slightly differing by the wording of the definition, or is the difference huge?
+* `HasReference` - if two concepts relate to each other, but other relation types do not apply. For example, "wall lamp" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them.
 * **DEPRECATED** ~~IsSynonymOf - if two concepts are unequivocal but have a different name.~~
 
 Only applicable to classes (not properties):
