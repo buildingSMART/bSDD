@@ -13,15 +13,11 @@ If you have your model in the bsdd-import-model.json format available, you can u
 
 **Important** If you upload a file, it will replace the whole dictionary! You cannot upload the classes in parts. All classes and properties of one dictionary must be in one file.
 
-1. If it's the first time you are going to upload, you need to have your organization registered in bSDD and the e-mail address you used to log in connected to that organization. To achieve this, please fill the form: [Organization registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25). In case the organization exists, but you can't access the content, contact us at: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>
+1. If it's the first time you are going to upload, you need to have your organization registered in bSDD and the e-mail address you used to log in connected to that organization. To achieve this, please fill out the form: [Organization registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25). In case the organization exists, but you can't access the content, contact us at: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>
 
 As soon as you've got a reply, you can continue with the next step.
 
-2. Go to:
--  [https://manage-test.bsdd.buildingsmart.org](https://manage-test.bsdd.buildingsmart.org) for the TEST environment*
--  [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/) for the PRODUCTION environment
-
-*We recommend everyone first to test the bSDD using the TEST environment and, when ready, start using the PRODUCTION one.
+2. Go to the Management portal of bSDD: [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/) (alternatively the TEST Management portal where we roll out and test new bSDD features: [https://manage-test.bsdd.buildingsmart.org](https://manage-test.bsdd.buildingsmart.org)).
 
 3. Log in
 
