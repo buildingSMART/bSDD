@@ -50,6 +50,21 @@ You can find example code how to access a secured bSDD API in this repository. C
 
 [Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Source%20code%20examples/GraphQL/bSDD%20and%20GraphQL.md)
 
+## For client developers
+If you are going to build a client that is going to use secured APIs, you must request a Client ID. You can do so by sending us an email and give:
+- the name of the client application
+- type of application:
+  - Web application
+  - Single-page application
+  - iOS / macOS, Objecte-C, Swift, Xamarin
+  - Adroid - Java, Kotlin, Xamarin
+  - Mobile/desktop
+- which language are you using? (sometimes the redirectUri to be configured depends on the used library)
+- if it is a website or SPA, specify the return url (the login page will redirect to this url after user has logged in)
+
+If you don't use the secured APIs but want to call the other APIs from your website or SPA, then we need the URL of your website to allow CORS.
+If you're creating a desktop client that only calls the not secured APIs, you're ready to go.
+
 ## Authentication
 For authentication we use Azure Active Directory B2C.
 At this moment you need to authenticate only for a few methods. This might change.
