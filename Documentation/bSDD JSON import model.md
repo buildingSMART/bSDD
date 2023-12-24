@@ -66,7 +66,7 @@ Contains general information about the `Dictionary` and the delivered data.
 | DictionaryUri    | Text             |  ✅\*     | | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
 | License          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
 | LicenseUrl       | Text             |       | | Url to a web page with the full license text   |
-| ChangeRequestEmailAddresses     | Text             |       | | Email address for receiving change requests from users. |
+| ChangeRequestEmailAddress     | Text             |       | | Single email address for receiving change requests from users. |
 | ModelVersion     | Text             |       | | Version number of the input JSON template. |
 | MoreInfoUrl      | Text             |       | | Url to a web page with more info about the dictionary |
 | QualityAssuranceProcedure      | Text      | | | Name or short description of the quality assurance procedure used for the dictionary, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
