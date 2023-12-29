@@ -1,6 +1,6 @@
 # buildingSMART Data Dictionary model
 
-## Table of content:
+## Table of contents:
 
 * [Glossary](#glossary)
 * [Data model](#data-model)
@@ -44,7 +44,7 @@ You can deliver data for the buildingSMART Data Dictionary in the JSON file foll
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc class](https://api.bsdd.buildingsmart.org/api/Dictionary/v2/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
 If you think there are reference documents missing, please let us know.
 
-If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). And please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
+If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). Please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
 
 ## List of fields
 
@@ -85,13 +85,13 @@ A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
-| Code                      | Text                           | ✅         |            | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format)                                |
+| Code                      | Text                           | ✅         |            | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format).                                |
 | Name                      | Text                           | ✅         | ✅         | Name of the `Class,` E.g. "IfcCurtainWall"                                                                   |
 | ClassType                 | Text                           | ✅*        |            | Must be one of: `Class`, `Material`, `GroupOfProperties`, `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
 | Definition                | Text                           |            | ✅          | Definition of the `Class`, explaining the semantic meaning. A required field according to the ISO.  |
 | Description               | Text                           |            | ✅          | Additional field for supplementary explanation. Please only use it if the _Definition_ comes from a standard and requires further explanation.  |
-| ParentClassCode           | Text                           |            |             | Reference to the parent `Class`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#how-to-define-relations) |
-| RelatedIfcEntityNamesList | List of text                   |            |             | Codes of IFC classes to use as a representation of this `Class`. For example: ['IfcWall']. See bSDD API [ifc classs](https://api.bsdd.buildingsmart.org/api/Dictionary/v3/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#how-to-define-relations)                                      |
+| ParentClassCode           | Text                           |            |             | Reference to the parent `Class`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#defining-relations) |
+| RelatedIfcEntityNamesList | List of text                   |            |             | Codes of IFC classes to use as a representation of this `Class`. For example: ['IfcWall']. See bSDD API [ifc classs](https://api.bsdd.buildingsmart.org/api/Dictionary/v3/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#defining-relations)                                      |
 | Synonyms                  | List of text                   |            | ✅         | List of alternative names of this class for easier finding.|
 | ActivationDateUtc         | DateTime                       |            |             | See [Date Time format](#datetime-format). |
 | ReferenceCode             | Text                           |            |             | Reference code can have dictionary-specific usage. If null, then the value of `Code` is used to fill the field. To make `ReferenceCode` empty, use empty string "".  |
@@ -134,7 +134,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | Units                         | List of text |         |             | The units represent a scale that enables a value to be measured (ISO 80000 or ISO 4217, or ISO 8601). List of values. See reference list (JSON) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output, please let us know. |
 | Example                       | Text         |         | ✅           | Example value of the `Property` |
 | ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
-| ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties                                                                                                                |
+| ConnectedPropertyCodes        | List of text |         |             | List of codes of connected properties. See [assembling properties](#assembling-properties).                                                                                                               |
 | CountriesOfUse                | List of text         |         |             |  List of country ISO codes this `Property` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
 | CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this class. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         |         |             | Language ISO code of the creator. See reference list (JSON)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
@@ -149,17 +149,17 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | DimensionAmountOfSubstance               | Integer      |         |             | The AmountOfSubstance dimension; either use the field `Dimension` to specify all parts or specify all parts separately|
 | DimensionLuminousIntensity               | Integer      |         |             | The LuminousIntensity dimension; either use the field `Dimension` to specify all parts or specify all parts separately|
 | DocumentReference             | Text         |         |             | Reference to document with the full or official definition of the `Property`. See reference list (JSON) [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1).                                                                               |
-| DynamicParameterPropertyCodes | List of text |         |             | List of codes of properties which are parameters of the function for a dynamic property                                                              |
-| IsDynamic                     | Boolean      |         |             | Default: false If this is a dynamic property, the value is dependent on the parameters provided in the field DynamicParameterProperties                  |
-| MaxExclusive            | Real     |         |             | Maximum allowed value, exclusive - do not fill both 'inclusive' and 'exclusive' values |
-| MaxInclusive            | Real     |         |             | Maximum allowed value, inclusive - do not fill both 'inclusive' and 'exclusive' values |
+| DynamicParameterPropertyCodes | List of text |         |             | List of codes of properties which are parameters of the function for a dynamic property. See [assembling properties](#assembling-properties).       |
+| IsDynamic                     | Boolean      |         |             | Default: `false`. If this is a dynamic property, the value is dependent on the parameters provided in the field `DynamicParameterPropertyCodes`. See [assembling properties](#assembling-properties).     |
+| MaxExclusive            | Real     |         |             | Maximum allowed value, exclusive - do not fill both inclusive and exclusive values |
+| MaxInclusive            | Real     |         |             | Maximum allowed value, inclusive - do not fill both inclusive and exclusive values |
 | MinExclusive            | Real     |         |             | Minimum allowed value, exclusive |
 | MinInclusive            | Real     |         |             | Minimum allowed value, inclusive |
 | MethodOfMeasurement           | Text         |         | ✅           | E.g. "Thermal transmittance according to ISO 10077-1"                                                                                                |
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the Property  |
 | Pattern            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
 | PhysicalQuantity              | Text         |         | ✅           | Name of the physical quantity of the property, E.g. "without" or "mass"                                                                               |
-| PropertyValueKind             | Text         |         |             | Must be one of:  `Single` (one value; this is the default),  `Range` (two values),  `List` (multiple values), `Complex` (consists of multiple properties, use ConnectedProperties), `ComplexList` (list of complex values)                       |
+| PropertyValueKind             | Text         |         |             | Must be one of:  `Single` (one value; this is the default),  `Range` (two values),  `List` (multiple values), `Complex` (neither single/range/list, for example an object like IfcActor or an aggregation of connected properties - see [assembling properties](#assembling-properties)), `ComplexList` (list of complex values).   |
 | ReplacedObjectCodes           | List of text |         |             | List of Property Codes this `Property` replaces                                                                                            |
 | ReplacingObjectCodes          | List of text |         |             | List of Property Codes this `Property` is replaced by                                                                                      |
 | RevisionDateUtc               | DateTime         |         |             | See [Date Time format](#datetime-format). |
@@ -183,7 +183,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | PropertyCode        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
 | PropertyUri         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
 | Description         | Text     |         | ✅ | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
-| PropertySet         | Text     |         |     | Code validation will be applied. Name of the "property set" where the property should be placed during IFC export. The prefix 'Pset_' is only reserved for the official IFC. |
+| PropertySet         | Text     |         |     | Code validation will be applied. Name of the "property set" where the property should be placed during IFC export. The prefix 'Pset_' is only reserved for the official IFC. See [assembling properties](#assembling-properties). |
 | Unit                | Text     |         |     | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
 | PredefinedValue     | Text     |         |     | Predefined value for this `Property`. E.g. value for property "IsLoadBearing" can be "true" for class "IfcWall" |
 | IsRequired          | Boolean  |         |     | Indicates if this is a required `Property` of the `Class` |
@@ -205,7 +205,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 
 ### ClassRelation
 
-`Classes` can be linked by relations. See section [How to define relations?](#how-to-define-relations)
+`Classes` can be linked by relations. See section [How to define relations?](#defining-relations)
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
@@ -251,29 +251,28 @@ Some examples of invalid codes are: "my test" (whitespace not allowed), "ДДb$%
 
 ### Class types
 
-Each class must have a specific type. Below is the explanation of what each type means, according to the ISO 12006-3<sup>1</sup>:
-* `Class` - description of a set of objects that share the same characteristics <sup>1<sup>3.7</sup></sup>. This is the most common type in bSDD. (e.g. wall, space)
-* `GroupOfProperties` - collection enabling the properties to be prearranged or organized.<sup>1<sup>3.14</sup></sup>. (e.g. environmental properties)
-  * A Property Set, as defined in ISO 16739-1, is a group of properties, but a group of properties is not necessarily a Property Set.
-  * A property can be a member of several groups of properties. A property cannot be a member of several Property Sets as defined in ISO 16739-1.
+Each class must have a specific type. Below is the explanation of what each type means, according to ISO 12006-3:
+* `Class` - description of a set of objects that share the same characteristics <sup>[ISO12006-3,3.7]</sup>. This is the most common type in bSDD. (e.g. wall, space)
+* `GroupOfProperties` - collection enabling the properties to be prearranged or organized <sup>[ISO12006-3,3.14]</sup>. For example, 'environmental properties'. See [assembling properties](#assembling-properties).
 * `Material` - a physical substance that things can be made from (e.g. steel, glass)
-* `AlternativeUse` - type to be used if no other type fits the needs.<sup>1<sup>3.1</sup></sup>
+* `AlternativeUse` - type to be used if no other type fits the needs.<sup>[ISO12006-3,3.1]</sup>.
    * Be aware that most software implementations disregard this class type, as it is not straightforward to interpret.
-* **DEPRECATED** ~~ReferenceDocument - a publication that is consulted to find specific information, particularly in a technical or scientific dictionary.<sup>1<sup>3.18</sup></sup> A reference document can be associated with any data present in a data dictionary.~~
+* **DEPRECATED** ~~ReferenceDocument - a publication that is consulted to find specific information, particularly in a technical or scientific dictionary. <sup>[ISO12006-3,3.18]</sup>. A reference document can be associated with any data present in a data dictionary.~~
   * In bSDD we have a global list of [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1), which includes the most common standards that can be used as reference. This is to avoid having duplicate references with different naming. If you don't find the reference you are looking for, and think it should be added to the list - let us know: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
-* **DEPRECATED**  ~~ComposedProperty - (...) corresponding to a feature needing multiple properties to be defined.<sup>1<sup>3.8</sup></sup>~~
+* **DEPRECATED**  ~~ComposedProperty - (...) corresponding to a feature needing multiple properties to be defined. <sup>[ISO12006-3,3.8]</sup>.~~
   * ~~Example: To describe the characteristic "concrete facing quality", it is mandatory to describe 3 properties: concrete planarity, concrete hue, and concrete texture.~~
   * Use `GroupOfProperties` instead.
 
 
-### How to define relations?
+### Defining relations
 
 `ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcCurtainWall” is a more
 specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
 
 `ClassRelation` and `PropertyRelation`- use those to link your concepts with each other. Relations allow us to define parent-child links also with other dictionaries. Apart from specialization, you can also define other types of relations, such as decomposition (`HasPart` type, see the list of possible types: [Relation types](#relation-types)).
 
-`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your class to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classs to a particular IFC category.
+`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your class to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classes to a particular IFC category.
+
 
 ### Relation types
 
@@ -284,15 +283,17 @@ specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” 
 * **DEPRECATED** ~~IsSynonymOf - if two concepts are unequivocal but have a different name.~~
 
 Only applicable to classes (not properties):
-* `IsChildOf` - specialisation relation. The equivalent of the "subtype" relationship from ISO 12006<sup>1<sup>F.3.1</sup></sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor".
+* `IsChildOf` - specialisation relation. The equivalent of the "subtype" relationship <sup>[ISO12006-3, F3.1]</sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor".
 * `IsParentOf` - the opposite relation to `IsChildOf`.
-* `HasPart` - composition relation. For example, an electric motor can be composed of elements such as stators, rotors, etc.<sup>1<sup>F.3.2</sup></sup>.
+* `HasPart` - composition relation. For example, an electric motor can be composed of elements such as stators, rotors, etc. <sup>[ISO12006-3, F3.2]</sup>.
 * `IsPartOf` - reverse of `HasPart`.
 * `HasMaterial` - a class that can be associated with a particular material. For example: "Steel Beam" could be related to the material "Steel".
+
   
 ### DateTime format
 
 The date-time format according to the ISO 8601 series should be used: `YYYY-MM-DDThh:mm:ssTZD`. Import allows both: `2023-05-10`, `2023-05-10T15:10:12Z` and `2023-05-10T15:10:12+02:00`.
+
 
 ### Property inheritance
 
@@ -303,6 +304,7 @@ For example, the [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsma
 * `Property` → `ClassProperty`  
 `ClassProperty` is an instantiation of general `Property` for a particular `Class`. The attributes of a property, such as `AllowedValue` and min/max restrictions,  are by default passed to `ClassProperty`. The values of the `ClassProperty` can be modified without influencing the origin `Property`.  
 For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/prop/height) has an upper limit of 100 cm. When applied to the "Apple" class, the [Apple-Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple/prop/SizeSet/height) has a lower limit - 25cm. 
+
 
 ### Latest version
 In bSDD, all resources get a unique identifier - URI. The URI, among other information, contains codes of the organisation, the dictionary and the version number, for example .../uri/bs-agri/fruitvegs/**1.0.0**/class/fruit
@@ -316,26 +318,55 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 
 ⚠️ The "latest" points to the most recent resource, meaning that it will change once a new version is present. Use with caution as it is not an immutable URI, and the content can change. For contractual agreements, we suggest using specific version numbers.
 
-### 🚧 How to group properties?
 
-`GroupOfProperties`...
+### Assembling properties
 
-`PropertySet`...
+**Groups of Properties** (use `Class`.`ClassType`:`GroupOfProperties`) "collection enabling the properties to be prearranged or organized" <sup>[ISO12006-3,3.14]</sup>. In bSDD, implemented as a Type of Class meant to group multiple Properties.
 
-`ConnectedPropertyCodes`...
+Use Group of Properties to organize properties in a data dictionary.
 
+Example: _'[Global Warming Potential](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/class/GlobalWarmingPotential)' class from '[LCA indicators and modules](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0)' groups four properties: '[...total](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total)', '[...biogenic](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic)', '[...fossil fuels](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil)' and '[...land use...](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc)'._
 
-### 🚧 How to restrict property values?
+**Sets of properties** (use `ClassProperty`.`PropertySet`) - a concept from the IFC standard for grouping properties. In bSDD represented as a text field defined for Class Property, telling in which set this Class Property should appear when serialised to IFC data. 
+  * A Property Set, as defined in ISO 16739-1, is a group of properties, but a group of properties is not necessarily a Property Set.
+  * A property can be a member of several groups of properties. A class property cannot be a member of several Property Sets.
+  * The prefix 'Pset_' is only reserved for the official IFC.
+
+Use Property Set to define where to place a property in an IFC dataset.
+
+Example: _A property 'Concrete Cover' of 'IfcWall' is located in property set: 'Pset_ConcreteElementGeneral'._
+
+**Connected properties** (use `Property`.`ConnectedPropertyCodes`) "List of properties connected to the current property. The connection can be a specialization or a dependency." <sub>[ISO12006-3, 5.3.29]</sub> 
+
+Use Connected Properties if the value of one property depends on the value of another property.
+
+Example: _The property ['Global Warming Potential - total' (GWP)](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total) should be defined for each phase of the life cycle of a product. Defining the property separately for each phase (GWP_A1, GWP_A2, ...) is not desired. Instead, it is connected to another property - '[information module (PHASE)](https://search.bsdd.buildingsmart.org/uri/LCA/LCA/3.0/prop/information_module)', taking 18 possible values (A1, A2, C3...). To interpret the meaning of GWP value, one should look at pairs of values: {GWP=1.0, PHASE=A1}, {GWP=15.0, PHASE=A3}, etc. _
+
+⚠️ This feature comes from the ISO standard but is rarely supported by software implementation. The IFC also doesn't support multiple properties with the same name under one property set. Consider avoiding Connected Properties to make the data dictionary more accessible.
+
+**Dynamic properties** (use `Property`.`IsDynamic` and .`DynamicParameterPropertyCodes`) "properties which are parameters of the function for a dynamic property" <sub>[ISO23386, 5.3.29]</sub>. In other words, the value of a dynamic property is dependent on the values of properties specified in `DynamicParameterPropertyCodes`. There is no field in bSDD to define the exact equation of the formula in a machine-interpretable form. 
+
+Use Dynamic Properties to tell which other properties influence the value of the particular property.
+
+Example: _The 'Area' of a wall depends on its 'Height' and 'Length', following the formula: A = H * L._
+
+⚠️ This feature comes from the ISO standard but is rarely supported by software implementation. Consider avoiding Dynamic Properties to make the data dictionary more accessible.
+
+### 🚧 Restricting property values
 `AllowedValues`...
 
 `Min/MaxInc/Exclusive`...
 
 `Pattern`...
 
+
 ### 🚧 How are bSDD resources identified?  
 `URI`... Can be generated by bSDD or external.
 
+`Code`...  See section [Code format](#code-format).
+
 `UID`(GUID)...
+
 
 ### 🚧 How to specify units?
 `Unit(s)`...
@@ -343,12 +374,6 @@ https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 `Dimension`...
 
 `PhysicalQuantity`...
-
-### 🚧 DynamicProperty
-`DynamicProperty`...
-
---- 
-<sup>[1] ISO 12006-3:2022 "Building construction — Organization of information about construction works — Part 3: Framework for object-oriented information"</sup>
 
 
 ## Notifications
