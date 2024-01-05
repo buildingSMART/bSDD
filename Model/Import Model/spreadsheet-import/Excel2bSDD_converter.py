@@ -36,13 +36,13 @@ def load_excel(EXCEL_PATH):
     excel_df = pd.ExcelFile(EXCEL_PATH)
 
     excel={}
-    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:Q", true_values="TRUE")
-    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=6, usecols="C:AC", true_values="TRUE")
-    excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=6, usecols="C:AU", true_values="TRUE")
-    excel['classproperty'] = pd.read_excel(excel_df, 'ClassProperty', usecols="C:T", skiprows=6, true_values="TRUE")
-    excel['classrelation'] = pd.read_excel(excel_df, 'ClassRelation', usecols="C:H", skiprows=6, true_values="TRUE")
-    excel['allowedvalue'] = pd.read_excel(excel_df, 'AllowedValue', skiprows=6, usecols="C:I", true_values="TRUE")
-    excel['propertyrelation'] = pd.read_excel(excel_df, 'PropertyRelation', skiprows=6, usecols="C:G", true_values="TRUE")
+    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:R", true_values="TRUE", keep_default_na=False)
+    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=6, usecols="C:AC", true_values="TRUE", keep_default_na=False)
+    excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=6, usecols="C:AU", true_values="TRUE", keep_default_na=False)
+    excel['classproperty'] = pd.read_excel(excel_df, 'ClassProperty', usecols="C:U", skiprows=6, true_values="TRUE", keep_default_na=False)
+    excel['classrelation'] = pd.read_excel(excel_df, 'ClassRelation', usecols="C:H", skiprows=6, true_values="TRUE", keep_default_na=False)
+    excel['allowedvalue'] = pd.read_excel(excel_df, 'AllowedValue', skiprows=6, usecols="C:J", true_values="TRUE", keep_default_na=False)
+    excel['propertyrelation'] = pd.read_excel(excel_df, 'PropertyRelation', skiprows=6, usecols="C:G", true_values="TRUE", keep_default_na=False)
     return excel
 
 def map_data(excel_data, bsdd_part_template):
@@ -65,6 +65,7 @@ def map_data(excel_data, bsdd_part_template):
             template[k] = []
 
     # replace NANs
+    excel_data = excel_data.replace(r'^\s*$', np.nan, regex=True)
     excel_data = excel_data.astype(object).replace(np.nan, None)
     new_objects = []
     for index, row in excel_data.iterrows():
@@ -181,4 +182,4 @@ if __name__ == "__main__":
     json.dump(bsdd_data, resultant_file, indent = 2)
     resultant_file.close()
 
-    print(f"\nFile saved to {JSON_OUTPUT_PATH}\n")
+    print(f"\nFile successfully saved to {JSON_OUTPUT_PATH}\n")
