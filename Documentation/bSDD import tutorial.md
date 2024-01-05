@@ -19,6 +19,8 @@ As soon as you've got a reply, you can continue with the next step.
 
 2. Go to the Management portal of bSDD: [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/) (alternatively the TEST Management portal where we roll out and test new bSDD features: [https://manage-test.bsdd.buildingsmart.org](https://manage-test.bsdd.buildingsmart.org)).
 
+Note: does the Management portal shows an error at startup or you keep seeing the spinner icon? Try pressing Ctrl-F5. If that doesn't work, then try an "incognito" or "InPrivate" window of your browser and then navigate to the Management portal. If that still doesn't work, then contact us.
+
 3. Log in
 
 > If you do not have a bSDD buildingSMART account yet, choose "Sign up now", otherwise choose "Sign in"
