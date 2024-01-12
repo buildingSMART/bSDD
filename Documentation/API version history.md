@@ -4,6 +4,8 @@ This is the version history of the API at https://api.bsdd.buildingsmart.org.
 
 New APIs and updates will always first be published to the bSDD test environment: https://test.bsdd.buildingsmart.org
 
+For planned updates and other tech discussions, see [bSDD tech updates forum](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889).
+
 #
 # Versioning strategy
 A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does not (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
