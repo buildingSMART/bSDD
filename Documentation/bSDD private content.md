@@ -6,7 +6,7 @@ A private dictionary can only be accessed by designated users. To see the conten
 Private dictionaries are **a paid feature** of bSDD, priced individually. If you are interested in this feature, please contact bSDD_support@buildingsmart.org.  
 
 ### How to make a dictionary private?
-Organization users with upload rights can make a dictionary Private by adding a line to their JSON files: `IsPrivate: "true"` **in the first upload** of a dictionary. Subsequent uploads cannot change this setting.
+Organization users with upload rights can make a dictionary Private by adding a line to their JSON files: `IsPrivate: true,` **in the first upload** of a dictionary. Subsequent uploads cannot change this setting.
 
 Another option to make a dictionary private (or public again) is by manually changing the setting via the bSDD Management site:
 → "Dictionaries" → 'Make dictionary private' button for the desired dictionary. Such a dictionary needs to be uploaded as public first.
