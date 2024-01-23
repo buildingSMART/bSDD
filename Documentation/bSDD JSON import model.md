@@ -88,7 +88,7 @@ A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "
 | Code                      | Text                           | ✅         |            | Unique identification within the dictionary of the class E.g. "ifc-00123-01". See section [Code format](#code-format).                                |
 | Name                      | Text                           | ✅         | ✅         | Name of the `Class,` E.g. "IfcCurtainWall"                                                                   |
 | ClassType                 | Text                           | ✅*        |            | Must be one of: `Class`, `Material`, `GroupOfProperties`, `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
-| Definition                | Text                           |            | ✅          | Definition of the `Class`, explaining the semantic meaning. A required field according to the ISO.  |
+| Definition                | Text                           |            | ✅          | Definition of the `Class`, explaining the semantic meaning. A required field according to the ISO. Supports [double square bracket links](#double-square-bracket-links).  |
 | Description               | Text                           |            | ✅          | Additional field for supplementary explanation. Please only use it if the _Definition_ comes from a standard and requires further explanation.  |
 | ParentClassCode           | Text                           |            |             | Reference to the parent `Class`. The ID in this field MUST exist in the data delivered. E.g. "ifc-00123-00". See section [How to define relations?](#defining-relations) |
 | RelatedIfcEntityNamesList | List of text                   |            |             | Codes of IFC classes to use as a representation of this `Class`. For example: ['IfcWall']. See bSDD API [ifc classs](https://api.bsdd.buildingsmart.org/api/Dictionary/v3/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2F). See section [How to define relations?](#defining-relations)                                      |
@@ -128,7 +128,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code                          | Text         | ✅       |             | Unique identification within the dictionary of the property E.g. "ifc-99088-01". See section [Code format](#code-format)                                                                          |
 | Name                          | Text         | ✅       | ✅           | Name of the Property E.g. "IsExternal"                                                                                                               |
-| Definition                    | Text         |         | ✅           | Definition of the `Property`, explaining the semantic meaning. A required field according to the ISO.  |
+| Definition                    | Text         |         | ✅           | Definition of the `Property`, explaining the semantic meaning. A required field according to the ISO. Supports [double square bracket links](#double-square-bracket-links). |
 | Description                   | Text         |         | ✅           | Additional field for supplementary explanation. Please only use it if the _Definition_ comes from a standard and requires further explanation.  |
 | DataType                      | Text         |         |             | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
 | Units                         | List of text |         |             | The units represent a scale that enables a value to be measured (ISO 80000 or ISO 4217, or ISO 8601). List of values. See reference list (JSON) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).  We are working on supporting the [QUDT](http://www.qudt.org/) vocabulary. If you would like to import using QUDT units or want to have the QUDT units in the API output, please let us know. |
@@ -375,6 +375,8 @@ Example: _The 'Area' of a wall depends on its 'Height' and 'Length', following t
 
 `PhysicalQuantity`...
 
+### Double square bracket links
+It is possible to reference other resources from the same dictionary using double square brackets, and the platform will replace the brackets with hyperlinks pointing to that resource. In cases where the same code exists for both class and property, the hyperlink will point to the class. If the code is not found, the square brackets are omitted. The API returns the definition with square brackets. 
 
 ## Notifications
 
