@@ -7,31 +7,29 @@ info:
     href="https://manage.bsdd.buildingsmart.org">bSDD Management portal</a>.
     Version history can be found at <a
     href="https://github.com/buildingSMART/bSDD/blob/master/API%20version%20history.md">Version
-    history</a>.</p>
-    <p>In case you want to try out secured APIs via this swagger portal, you need to enter client ID <span style="white-space: nowrap;">b222e220-1f71-4962-9184-05e0481a390d</span>. If you create your own tool 
-    that needs to access secured APIs, please contact us via e-mail.</p>
-    <p>If you have any questions or need further assistance, feel free to send us an e-mail</p>
-    <h3>For client developers</h3><p>If you're creating a
-    desktop client that only calls the not secured APIs, you're ready to
-    go.<br/>If you don't use the secured APIs but want to call the other APIs
-    from your website or SPA, then we need the URL of your website to allow
-    CORS.</p><p>If you are going to build a client that is going to use secured
-    APIs, you must request a Client ID. You can do so by sending us an email and
-    give:</p><ul><li>the name of the client application</li><li>type of
-    application:<ul><li>Web application</li><li>Single-page
-    application</li><li>iOS / macOS, Object-C, Swift, Xamarin</li><li>Adroid -
-    Java, Kotlin, Xamarin</li><li>Mobile/desktop</li></ul> <li>which development
-    language are you using? (sometimes the redirectUri to be configured depends
-    on the used library)</li><li>if it is a website or SPA, specify the return
-    url (the login page will redirect to this url after user has logged
-    in)</li></ul>
+    history</a>.</p><p>Keep an eye on (planned) updates: <a
+    href="https://forums.buildingsmart.org/t/bsdd-tech-updates/4889">bSDD tech
+    updates</a></p><h3>For client developers</h3><p>If you're creating a desktop
+    client that only calls the not secured APIs, you're ready to go.<br/>If you
+    don't use the secured APIs but want to call the other APIs from your website
+    or SPA, then we need the URL of your website to allow CORS.</p><p>If you are
+    going to build a client that is going to use secured APIs, you must request
+    a Client ID. You can do so by sending us an email and give:</p><ul><li>the
+    name of the client application</li><li>type of application:<ul><li>Web
+    application</li><li>Single-page application</li><li>iOS / macOS, Object-C,
+    Swift, Xamarin</li><li>Adroid - Java, Kotlin,
+    Xamarin</li><li>Mobile/desktop</li></ul> <li>which development language are
+    you using? (sometimes the redirectUri to be configured depends on the used
+    library)</li><li>if it is a website or SPA, specify the return url (the
+    login page will redirect to this url after user has logged in)</li></ul>
   contact:
     name: Support
     url: https://github.com/buildingSMART/bSDD
     email: bsdd_support@buildingsmart.org
   license:
     name: MIT license
-    url: https://bsddprototype2020.blob.core.windows.net/public/Copyright_2020_buildingSMART_International.txt
+    url: >-
+      https://bsddprototype2020.blob.core.windows.net/public/Copyright_2020_buildingSMART_International.txt
   version: v1
 servers:
   - url: https://api.bsdd.buildingsmart.org/
@@ -42,7 +40,7 @@ paths:
         - Class
       summary: "Get Class details - this API replaces api/Classification\r\nChanges:\r\n- now returns Material as well\r\n- \"Classification\" has been renamed to \"Class\"\r\n- \"Domain\" has been renamed to \"Dictionary\"\r\n- \"NamespaceUri\" has been renamed to \"Uri\""
       parameters:
-        - name: uri
+        - name: Uri
           in: query
           description: >-
             URI of the class, e.g.
@@ -50,27 +48,44 @@ paths:
           required: true
           schema:
             type: string
-        - name: includeClassProperties
+        - name: IncludeClassProperties
           in: query
           description: >-
             Use this option to include properties of the class. By default it is
             set to false
           schema:
             type: boolean
-        - name: includeChildClassReferences
+        - name: IncludeChildClassReferences
           in: query
           description: >-
             Use this option to include references to child classes. By default
             it is set to false
           schema:
             type: boolean
-        - name: includeClassRelations
+        - name: IncludeClassRelations
           in: query
           description: >-
-            Use this option to skip loading relations of the class. By default
-            it is set to false
+            Use this option to include loading relations of the class. By
+            default it is set to false
           schema:
             type: boolean
+        - name: IncludeReverseRelations
+          in: query
+          description: >-
+            Use this option to include loading reverse relations of the class,
+            i.e. classes having a relation with this class. By default it is set
+            to false
+          schema:
+            type: boolean
+        - name: ReverseRelationDictionaryUris
+          in: query
+          description: >-
+            When including reverse relations, you can specify which dictionaries
+            to include. By default all dictionaries are included
+          schema:
+            type: array
+            items:
+              type: string
         - name: languageCode
           in: query
           description: >-
@@ -121,6 +136,11 @@ paths:
           description: "Optional parameter to filter by first part of URI. Use this one to get details of just one dictionary version\r\nor, if you leave out the version number at the end, get all the versions of a dictionary.\r\nExample: https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/"
           schema:
             type: string
+        - name: IncludeTestDictionaries
+          in: query
+          description: "Should test dictionaries be included in the result? By default it is set to false.\r\nThis option is ignored if you specify a URI."
+          schema:
+            type: boolean
         - name: Offset
           in: query
           description: Zero-based offset of the first item to be returned. Default is 0.
@@ -131,8 +151,7 @@ paths:
           in: query
           description: >-
             Limit number of items to be returned. If you enter an offset then
-            default limit is 100. If you don't enter offset and limit then
-            maximum number list items returned is 1000.
+            default limit is 100. The maximum number of items returned is 1000.
           schema:
             type: integer
             format: int32
@@ -203,8 +222,7 @@ paths:
           in: query
           description: >-
             Limit number of items to be returned. If you enter an offset then
-            default limit is 100. If you don't enter offset and limit then
-            maximum number list items returned is 1000.
+            default limit is 100. The maximum number of items returned is 1000.
           schema:
             type: integer
             format: int32
@@ -271,8 +289,7 @@ paths:
           in: query
           description: >-
             Limit number of items to be returned. If you enter an offset then
-            default limit is 100. If you don't enter offset and limit then
-            maximum number list items returned is 1000.
+            default limit is 100. The maximum number of items returned is 1000.
           schema:
             type: integer
             format: int32
@@ -486,12 +503,17 @@ paths:
                 ValidateOnly:
                   type: boolean
                   description: "Set to true if you only want to validate the file. Even when there are no validation errors the file wil not be imported.\r\nThe validation result will not be send via e-mail."
+                IsTest:
+                  type: boolean
+                  description: "Set to true if you are just testing your file. Data will be stored in the database, you can retrieve it via the API, but you can't set status to Active.\r\nDictionary will be deleted after 60 days of last upload."
             encoding:
               OrganizationCode:
                 style: form
               FormFile:
                 style: form
               ValidateOnly:
+                style: form
+              IsTest:
                 style: form
       responses:
         '200':
@@ -634,7 +656,8 @@ paths:
           in: query
           description: >-
             Set to true to get list of classes where property is used (only
-            classes of the same dictionary as the property)
+            classes of the same dictionary as the property). Maximum number of
+            class properties returned is 2000
           schema:
             type: boolean
         - name: languageCode
@@ -736,7 +759,7 @@ paths:
         - name: SearchText
           in: query
           description: >-
-            The text to search for, minimum 3 characters (case and accent
+            The text to search for, minimum 2 characters (case and accent
             insensitive)
           required: true
           schema:
@@ -763,8 +786,7 @@ paths:
           in: query
           description: >-
             Limit number of items to be returned. If you enter an offset then
-            default limit is 100. If you don't enter offset and limit then
-            maximum number list items returned is 1000.
+            default limit is 100. The maximum number of items returned is 1000.
           schema:
             type: integer
             format: int32
@@ -840,8 +862,7 @@ paths:
           in: query
           description: >-
             Limit number of items to be returned. If you enter an offset then
-            default limit is 100. If you don't enter offset and limit then
-            maximum number list items returned is 1000.
+            default limit is 100. The maximum number of items returned is 1000.
           schema:
             type: integer
             format: int32
@@ -914,8 +935,7 @@ paths:
           in: query
           description: >-
             Limit number of items to be returned. If you enter an offset then
-            default limit is 100. If you don't enter offset and limit then
-            maximum number list items returned is 1000.
+            default limit is 100. The maximum number of items returned is 1000.
           schema:
             type: integer
             format: int32
@@ -2526,7 +2546,7 @@ components:
           nullable: true
         referenceCode:
           type: string
-          description: Code that can be used for domain specific purposes
+          description: Code that can be used for dictionary specific purposes
           nullable: true
         synonyms:
           type: array
@@ -2554,13 +2574,21 @@ components:
             $ref: '#/components/schemas/ClassRelationContract.v1'
           description: >-
             List of relations to other classes, can be reference to classes of
-            other domains
+            other dictionaries
           nullable: true
         childClassReferences:
           type: array
           items:
             $ref: '#/components/schemas/ClassReferenceContract.v1'
           description: List of child classes (only filled if requested)
+          nullable: true
+        reverseClassRelations:
+          type: array
+          items:
+            $ref: '#/components/schemas/ClassReverseRelationContract.v1'
+          description: >-
+            List of relations of other classes to this class (only filled if
+            requested)
           nullable: true
       additionalProperties: false
     ClassListItemContract.v1:
@@ -2605,6 +2633,10 @@ components:
         description:
           type: string
           description: "Plain language description of the property.\r\nIf at Property level no description has been given but a \"Definition\" is available, then \"Definition\" is returned as description"
+          nullable: true
+        definition:
+          type: string
+          description: "Definition of the property.\r\nDescription is same as definition if at Property level no description has been given."
           nullable: true
         dataType:
           type: string
@@ -2717,11 +2749,15 @@ components:
           type: string
           description: >-
             Code of the property, only applicable if property is of the same
-            domain as the class.
+            dictionary as the class.
           nullable: true
         propertyDictionaryName:
           type: string
-          description: Name of the Domain this property belongs to
+          description: Name of the Dictionary this property belongs to
+          nullable: true
+        propertyDictionaryUri:
+          type: string
+          description: Uri of the Dictionary this property belongs to
           nullable: true
         propertyUri:
           type: string
@@ -2830,6 +2866,40 @@ components:
             Optional provision of a fraction of the total amount (e.g. volume or
             weight) that applies to the class relations of one relation type
           format: double
+          nullable: true
+      additionalProperties: false
+    ClassReverseRelationContract.v1:
+      required:
+        - classUri
+        - relationType
+      type: object
+      properties:
+        relationType:
+          minLength: 1
+          type: string
+          description: >-
+            Can be one of: HasReference, IsEqualTo, IsSynonymOf, IsParentOf,
+            IsChildOf, HasPart
+        classUri:
+          minLength: 1
+          type: string
+          description: URI of the reverse related class
+        className:
+          type: string
+          description: Name of the reverse related class
+          nullable: true
+        fraction:
+          type: number
+          description: >-
+            Optional provision of a fraction of the total amount (e.g. volume or
+            weight) that applies to the class relations of one relation type
+          format: double
+          nullable: true
+        dictionaryUri:
+          type: string
+          description: >-
+            The URI of the dictionary that contains the reverse related class.
+            This URI can be used to retrieve the dictionary
           nullable: true
       additionalProperties: false
     ClassSearchResponseClassContract.v1:
@@ -3814,7 +3884,7 @@ components:
           nullable: true
         referenceCode:
           type: string
-          description: Code that can be used for domain specific purposes
+          description: Code that can be used for dictionary specific purposes
           nullable: true
         classificationType:
           type: string
