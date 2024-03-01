@@ -42,7 +42,7 @@ Other changes:
  * Import field ClassificationProperty.ExternalPropertyUri has been removed completely. The field PropertyNamespaceUri (which is now called PropertyUri) already replaced it.
  * Search APIs now support pagination
 
-Changend APIs:
+Changed APIs:
  * api/Class/v1: new, replaces api/Classification/v4
     - Option includeClassProperties added. If true, classProperties will be fetched. Default is false.
     - Option includeClassRelations added. If true, classRelations will be fetched. Default is false.
