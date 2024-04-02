@@ -136,7 +136,7 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | ActivationDateUtc             | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | ConnectedPropertyCodes        | List of text |         |             | List of codes of one or more connected properties. Can also be full URI instead of code, in case it is a property of another dictionary. See [assembling properties](#assembling-properties)|
 | CountriesOfUse                | List of text         |         |             |  List of country ISO codes this `Property` is being used. See reference list [countries](https://api.bsdd.buildingsmart.org/api/Country/v1).                                                      |
-| CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this class. See reference list.                                                                           |
+| CountryOfOrigin               | Text         |         |             | ISO Country Code of the country of origin of this `Property`. See reference list.                                                                           |
 | CreatorLanguageIsoCode        | Text         |         |             | Language ISO code of the creator. See reference list (JSON)[languages](https://api.bsdd.buildingsmart.org/api/Language/v1)  |
 | DeActivationDateUtc           | DateTime         |         |             | See [Date Time format](#datetime-format). |
 | DeprecationExplanation        | Text         |         | ✅           |  |
@@ -225,7 +225,6 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
 | Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     |        | ✅       | A description of the value|
-| Uri| Text |  |  | You can provide your own Namespace Uri (must be globally unique).|
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
 
