@@ -225,7 +225,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
 | Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     |        | ✅       | A description of the value|
-| Uri*| Text |  |  | *To be deprecated in the new model version, as it overlaps with the OwnedUri. |
+| Uri*| Text |  |  | * To be deprecated in the new model version, as it overlaps with the OwnedUri. |
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
 
