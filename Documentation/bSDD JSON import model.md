@@ -28,10 +28,10 @@
 
 The diagram below shows the simplified data model behind the bSDD:
 
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
 
-See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png):
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
+See our example demonstrating the usage of the above concepts: [bSDD data example](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_example.png):
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0).
 
@@ -72,7 +72,7 @@ Contains general information about the `Dictionary` and the delivered data.
 | QualityAssuranceProcedure      | Text      | | | Name or short description of the quality assurance procedure used for the dictionary, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl   | Text      | | | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
 | ReleaseDate                    | DateTime  | | | Date of release of the version, See [Date Time format](#datetime-format).  |
-| Status                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
+| Status                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
 | Classes          | List of Class    | ✅    | | List of objects of type `Class`. See section [Class](#class)  |
 | Properties       | List of Property | ✅    | | List of objects of type `Property`. See section [Property](#property) |
 
@@ -311,7 +311,7 @@ In bSDD, all resources get a unique identifier - URI. The URI, among other infor
 If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version containing that resource: 
 .../uri/bs-agri/fruitvegs/**latest**/class/fruit. 
 
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
 
 Try it out:
 https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
