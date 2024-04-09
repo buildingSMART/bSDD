@@ -20,7 +20,7 @@ Do you want to only experiment with bSDD without registering your organisation? 
 
 Go to the Management portal: [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/).
 
-Alternatively, use one of [the third-party tools to manage and upload data dictionaries in bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5=bSDD+submit%2Fmanage&mode=any).
+Alternatively, use one of [the third-party tools to manage and upload data dictionaries in bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5=bSDD+submit%2Fmanage&mode=any), which integrates with [the bSDD API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1).
 
 Note: if the Management Portal shows an error at startup or you keep seeing the spinner icon, try pressing Ctrl-F5 to refresh the cookies. If that doesn't work, then try an "incognito" or "InPrivate" window of your browser and then navigate to the Management portal. If that still doesn't work, then contact us: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
 
@@ -45,6 +45,8 @@ Before each import, we recommend first using the option 'Validate only?' This wi
 Once ready, and if the platform returns no errors, click "Upload selected file." 
 
 Once the file has been imported, you will receive a more detailed import report by email. It might take up to 15 minutes. In case the import routine spots any errors, you will see them listed in the email.
+
+Note: all of the steps explained above can also be automated using [the bSDD API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) integration. 
 
 # The lifecycle of the bSDD dictionary version
 
