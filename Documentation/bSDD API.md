@@ -28,10 +28,11 @@ You can get the API contract information at [bSDD API contract, official release
 Don’t forget to check the “read” scope!
 
 ## Using https://identifier.buildingsmart.org
-!! For system to system communication using these identifier URIs is not recommended. !!
 You can access the data of Class or property also directly via the URI of the Class or property. For example, you can navigate in the browser to https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall and then you will see a visual representation of the data of that Class. If you would like the output in json format, then sending an "Accept" header with "application/json" will give you a result in json. The content of this json result differs from the html result!
 
 IMPORTANT: Do not use these identifier URIs for system to system communication! First of all, it introduces an extra 'hop' from server to server. Second, you do not have control over the version of the API it's using. The result may differ after a new release of bSDD has been published with the result from before the release.
+
+!! Getting the data in JSON format by directly calling the https://identifier.buildingsmart.org URL will be DEPRECATED. User api/Class/vX or api/Property/vX instead. !!
 
 ## GraphQL
 The data can also be accessed via GraphQL.
@@ -51,6 +52,11 @@ You can find example code how to access a secured bSDD API in this repository. C
 [Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Source%20code%20examples/GraphQL/bSDD%20and%20GraphQL.md)
 
 ## For client developers
+
+### Http header "(X-)User-Agent"
+Can you put the the name and version of your application in the HTTP header "User-Agent" (or "X-User-Agent") for each HTTP call? This way we can provide you some statistics regarding your application using the bSDD API. The preferred format is "application/version", e.g. "Autodesk.Revit/2024".
+
+### Secure APIs
 If you are going to build a client that is going to use secured APIs, you must request a Client ID. You can do so by sending us an email and give:
 - the name of the client application
 - type of application:
@@ -65,7 +71,7 @@ If you are going to build a client that is going to use secured APIs, you must r
 If you don't use the secured APIs but want to call the other APIs from your website or SPA, then we need the URL of your website to allow CORS.
 If you're creating a desktop client that only calls the not secured APIs, you're ready to go.
 
-## Authentication
+### Authentication
 For authentication we use Azure Active Directory B2C.
 At this moment you need to authenticate only for a few methods. This might change.
 
@@ -88,7 +94,7 @@ To access a secured API a user must first register himself. When you’re using 
 The user will be registered in the buildingSMART Azure B2C Active Directory.
 Currently there’s no further authorization required to be able to use the API.
 
-## Settings
+### Settings
 These are the settings you can use for demonstration purposes for a Dekstop client app :
 * Tenant: "buildingsmartservices.onmicrosoft.com"
 * AzureAdB2Chostname: "authentication.buildingsmart.org"
@@ -112,7 +118,7 @@ For using the official release, you should use the settings as above except:
 
 If you are developing a Web App that’s going to use the bSDD API, let us know (bsdd_support@buildingsmart.org). The RedirectURI needs to be configured in Azure AD.
 
-## Additional information
+### Additional information
 Language independent description of the authorization flow: [Authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory-b2c/authorization-code-flow)
 
 High level descriptions of the various authentication flows: [AD B2C application types](https://docs.microsoft.com/en-us/azure/active-directory-b2c/application-types)
