@@ -1,6 +1,5 @@
 <h2 id="table-of-content">Table of contents</h2>
 
-* [Glossary](#glossary)
 * [Data model](#data-model)
 * [JSON format](#json-format)
 * [List of fields](#list-of-fields)
@@ -14,17 +13,10 @@
 * [Additional explanations](#additional-explanations)
 * [Notifications](#notifications)
 
-<h2 id="glossary">Glossary</h2>
-
-* `Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. The bSDD is a service to facilitate the distribution of such dictionaries. The content in bSDD is structured in `Dictionaries` (previously `Dictionarys`) published by different organizations. Each `Dictionary` (previously `Dictionary`) consists of `Classes` (previously `Classes`) and `Properties`, which could be related to each other or with other `Dictionaries` (previously `Dictionarys`). 
-
-* `Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]
-
-* `Property` - '_an inherent or acquired feature of an item. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].
 
 <h2 id="data-model">Data model</h2>
 
-The diagram below shows the simplified data model behind the bSDD:
+The bSDD is a service to facilitate the distribution of data dictionaries (read below about what those are) published by independent organisations. The diagram below shows the simplified data model behind the bSDD:
 
 <img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
 
@@ -50,7 +42,7 @@ NB Default values will only be applied if a field is not specified. If you speci
 
 <h3 id="dictionary">Dictionary</h3>
 
-Contains general information about the `Dictionary` and the delivered data.
+`Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. Each `Dictionary` (previously `domain`) consists of `Classes` (previously `classifications`) and `Properties`, which could be related to each other or with other `Dictionaries`. Each `Dictionary` object contains general metadata about it, as listed in the table below.
 
 | Field            | DataType         | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
 |------------------|------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +54,7 @@ Contains general information about the `Dictionary` and the delivered data.
 | LanguageOnly     | Boolean          | ✅   | | true if JSON contains only language-specific information, no otherwise \*  |
 | UseOwnUri      | Boolean                   | ✅        |             | Default: false. Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
 | DictionaryUri    | Text             |  ✅\*     | | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
-| License          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
+| License          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, a helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
 | LicenseUrl       | Text             |       | | Url to a web page with the full license text   |
 | ChangeRequestEmailAddress     | Text             |       | | Single email address for receiving change requests from users. |
 | ModelVersion     | Text             |       | | Version number of the input JSON template. |
@@ -79,7 +71,8 @@ Contains general information about the `Dictionary` and the delivered data.
 
 <h3 id="class">Class</h3>
 
-A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "time") or process (e.g. "installation").
+`Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]. A `Class` can be any object (examples: "wall", "window") or abstract concept (examples: "time", "room") or process (examples: "installation", "disassembly").
+
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
@@ -113,14 +106,12 @@ A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "
 | ClassProperties           | List of ClassProperty          |            |             | See section [ClassProperty](#classproperty) |
 | ClassRelations            | List of ClassRelation          |            |             | See section [ClassRelation](#classrelation) |
 
-<h3 id="material">Material</h3>
+Note: Since the release of November 2023, Materials are not treated separately anymore. A `Material` is now simply a `Class` of type `Material`.
 
-A `Material` is a `Class` of type `Material`.
-Since the release of November 2023, Materials are not treated separately anymore.
+<h3 id="class">Property</h3>
 
-<h3 id="class">class</h3>
+`Property` - '_an inherent or acquired feature of an item [`Class`]. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].  The assignment of `Properties` to `Classes` is handled through the interim [ClassProperty](#classproperty) object. 
 
-A `Class` can have multiple properties, and a `Property` can be part of many classs
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -175,7 +166,12 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 
 <h3 id="classproperty">ClassProperty</h3>
 
-| Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
+Interim object to assign a `Property` to a `Class` it should describe. Each `Class` can have multiple properties, and each `Property` can be part of many `Classes`, but one `ClassProperty` is always a pair of one `Class` and one `Property`. 
+
+Through `ClassProperty`, one can further specify a 'Property' by defining its unit, property set it should be stored in, and value restrictions when applied to that particular `Class`. For example, a general 'Temperature' can be expressed in Celcius or Fahrenheit and can be any negative or positive value, but when applied to an indoor space, it might be restricted to a range of 5-40 degrees Celcius.   
+
+
+|  Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | Code                | Text     | ✅     |     | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
 | PropertyCode        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
@@ -201,22 +197,9 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 
 \* One of those is required.
 
-<h3 id="classrelation">ClassRelation</h3>
-
-`Classes` can be linked by relations. See section [How to define relations?](#defining-relations)
-
-| Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
-|--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSimilarTo`,  `IsParentOf`,  `IsChildOf`, `HasPart`, `IsPartOf`. Read more about [Relation types](#relation-types).    |
-| RelatedClassUri | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
-| RelatedClassName | Text     |        |             |  |
-| Fraction       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
-| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
-
-
 <h3 id="allowedvalue">AllowedValue</h3>
 
-Note: adding translations of the `AllowedValue` is not supported yet
+Optional value enumerations that can be listed for `Properties` and `ClassProperties`. For example, a 'Fire Rating' could only have a few allowed values: REI30, REI60, REI90 or REI120.
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
@@ -227,7 +210,24 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
 
+Note: adding translations of the `AllowedValue` is not supported yet
+
+<h3 id="classrelation">ClassRelation</h3>
+
+`Classes` can be linked by relations. There are various types of relations, allowing for the definition of hierarchy, composition, similarity or reference. See section [How to define relations?](#defining-relations)
+
+| Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
+|--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
+| RelationType             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSimilarTo`,  `IsParentOf`,  `IsChildOf`, `HasPart`, `IsPartOf`. Read more about [Relation types](#relation-types).    |
+| RelatedClassUri | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
+| RelatedClassName | Text     |        |             |  |
+| Fraction       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (e.g. volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
+
+
 <h3 id="propertyrelation">PropertyRelation</h3>
+
+Analogous to `ClassRelations` but between `Properties`.
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
