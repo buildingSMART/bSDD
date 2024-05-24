@@ -36,8 +36,8 @@ def load_excel(EXCEL_PATH):
     excel_df = pd.ExcelFile(EXCEL_PATH)
 
     excel={}
-    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:R", true_values="TRUE", keep_default_na=False)
-    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=6, usecols="C:AC", true_values="TRUE", keep_default_na=False)
+    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:R", true_values="TRUE", keep_default_na=False, converters={'DictionaryVersion':str})
+    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=6, usecols="C:AC", true_values="TRUE", keep_default_na=False, converters={'Uid':str})
     excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=6, usecols="C:AU", true_values="TRUE", keep_default_na=False)
     excel['classproperty'] = pd.read_excel(excel_df, 'ClassProperty', usecols="C:U", skiprows=6, true_values="TRUE", keep_default_na=False)
     excel['classrelation'] = pd.read_excel(excel_df, 'ClassRelation', usecols="C:H", skiprows=6, true_values="TRUE", keep_default_na=False)
@@ -125,13 +125,27 @@ def excel2bsdd(excel, bsdd_template):
     for cls_prop in cls_props:
         related = cls_prop['(Origin Class Code)']
         cls_prop.pop("(Origin Class Code)")
-        next(item for item in bsdd_data['Classes'] if item["Code"] == related)['ClassProperties'].append(cls_prop)
+        found_it = False
+        for item in bsdd_data['Classes']:
+            if item["Code"] == related:
+                item['ClassProperties'].append(cls_prop)
+                found_it = True
+                break
+        if not found_it:
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the class property: '{cls_prop}'!")
     # process ClassRelation
     cls_rels = map_data(excel['classrelation'], bsdd_template['Classes'][0]['ClassRelations'])
     for cls_rel in cls_rels:
         related = cls_rel['(Origin Class Code)']
         cls_rel.pop("(Origin Class Code)")
-        next(item for item in bsdd_data['Classes'] if item["Code"] == related)['ClassRelations'].append(cls_rel)
+        found_it = False
+        for item in bsdd_data['Classes']:
+            if item["Code"] == related:
+                item['ClassRelations'].append(cls_rel)
+                found_it = True
+                break
+        if not found_it:
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {cls_rel}!")
     # process AllowedValue
     allowed_vals = map_data(excel['allowedvalue'], bsdd_template['Properties'][0]['AllowedValues'])
     for allowed_val in allowed_vals:
@@ -147,30 +161,54 @@ def excel2bsdd(excel, bsdd_template):
         allowed_val.pop("(Origin Property Code)")
         allowed_val.pop("(Origin ClassProperty Code)")
         if relToProperty:
-            # iterate all properties and add AllowedValue if present in spreadsheet
-            next(item for item in bsdd_data['Properties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
+            # iterate all properties and add AllowedValue if such property is present in the spreadsheet
+            found_it = False
+            for item in bsdd_data['Properties']:
+                if item['Code'] == related:
+                    item['AllowedValues'].append(allowed_val)
+                    found_it = True
+                    break
+            if not found_it:
+                raise Exception(f"Property '{related}' not found in the spreadsheet, so couldn't append the vallue {allowed_val}!")
         else: 
             # iterate all classes to find the one referenced by the property AllowedValue
-            for c in bsdd_data['Classes']:
-                # next(item for item in class['ClassProperties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
-                for item in c['ClassProperties']:
+            found_it = False
+            for cl in bsdd_data['Classes']:
+                for item in cl['ClassProperties']:
                     if item["Code"] == related:
                         item['AllowedValues'].append(allowed_val)
+                        found_it = True
+                        break
+            if not found_it:
+                raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {allowed_val}!")
     # process PropertyRelation
     prop_rels = map_data(excel['propertyrelation'], bsdd_template['Properties'][0]['PropertyRelations'])
     for prop_rel in prop_rels:
         related = prop_rel['(Origin Property Code)']
         prop_rel.pop("(Origin Property Code)")
-        next(item for item in bsdd_data['Properties'] if item["Code"] == related)['PropertyRelations'].append(prop_rel)
-
+        found_it = False
+        for p in bsdd_data['Properties']:
+            if item["Code"] == related:
+                item['PropertyRelations'].append(prop_rel)
+                found_it = True
+                break
+        if not found_it:
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {prop_rel}!")
+        
     return bsdd_data
 
 
 if __name__ == "__main__":
-    EXCEL_PATH = sys.argv[1]
-    JSON_TEMPLATE_PATH = sys.argv[2]
-    JSON_OUTPUT_PATH = sys.argv[3]
-    WITHOUT_NULLS = sys.argv[4]
+    # EXCEL_PATH = sys.argv[1]
+    # JSON_TEMPLATE_PATH = sys.argv[2]
+    # JSON_OUTPUT_PATH = sys.argv[3]
+    # WITHOUT_NULLS = sys.argv[4]
+    # EXCEL_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\bSDD_Excel_Example_all_fields.xlsx"
+    EXCEL_PATH = r"C:\Users\arturbt\buildingSMART\buildingSMART International\buildingSMART International Team Site - bSDD\bSDD_uploads\MIDAS HBIM\bSDD_Excel_MIDAS_monuments.xlsx"
+    JSON_TEMPLATE_PATH = r"C:\Code\bSDD\Model\Import Model\bsdd-import-model.json"
+    # JSON_OUTPUT_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\TEST_OUTPUT.json"
+    JSON_OUTPUT_PATH = r"C:\Users\arturbt\buildingSMART\buildingSMART International\buildingSMART International Team Site - bSDD\bSDD_uploads\MIDAS HBIM\bSDD_Excel_MIDAS_monuments.json"
+    WITHOUT_NULLS = True
 
     excel = load_excel(EXCEL_PATH)
     bsdd_template = json.load(open(JSON_TEMPLATE_PATH, encoding="utf-8"))
