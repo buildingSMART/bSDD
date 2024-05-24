@@ -7,7 +7,7 @@ Please report if you experience any problems with using it. We advise to always 
 ## Using the Python converter
 
 1. You need to have Python installed. If not, download and install python from here: https://www.python.org/downloads/.
-2. You need the two Python libraries: Numpy and Pandas. If you don't, type in the console: `pip install numpy pandas`
+2. You need the two Python libraries: Numpy and Pandas. If you don't, type in the console: `pip install numpy pandas openpyxl`
 4. Copy the Excel template and fill in with your data. All the fields marked with * are mandatory if a row is in use.
 5. Save and close the Excel file.
 6. Run the Python script Excel_to_bSDDjson_converter.py with these arguments:

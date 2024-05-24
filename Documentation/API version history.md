@@ -4,15 +4,30 @@ This is the version history of the API at https://api.bsdd.buildingsmart.org.
 
 New APIs and updates will always first be published to the bSDD test environment: https://test.bsdd.buildingsmart.org
 
+For planned updates and other tech discussions, see [bSDD tech updates forum](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889).
+
 #
 # Versioning strategy
 A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does not (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
 
-## 2023-11-08
+## 2024-03-01
 
--- Test environment only. Planned production date end oktober / early november 2023. --
+- On uploading a dictionary user can now indicate that it is for testing purposes.
+
+Changend APIs:
+ * api/Class/v1: 
+    - Option IncludeReverseRelations added
+ * api/Dictionary/v1: 
+    - Option IncludeTestDictionaries added
+ * api/UploadImportFile/v1:
+    - Option IsTest added
+ * api/TextSearch/v1:
+    - Text search with multiple word(parts) now also finds results if first word partly ('startswith') matches. Previously it would find only exact matches on first word(s)
+
+
+## 2023-11-08
 
 Name changes:
  * Classification ==> Class
@@ -27,7 +42,7 @@ Other changes:
  * Import field ClassificationProperty.ExternalPropertyUri has been removed completely. The field PropertyNamespaceUri (which is now called PropertyUri) already replaced it.
  * Search APIs now support pagination
 
-Chagend APIs:
+Changed APIs:
  * api/Class/v1: new, replaces api/Classification/v4
     - Option includeClassProperties added. If true, classProperties will be fetched. Default is false.
     - Option includeClassRelations added. If true, classRelations will be fetched. Default is false.

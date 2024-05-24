@@ -1,62 +1,75 @@
+# How to upload data dictionary to bSDD
+
+**1. Prepare the content**
+
+The primary form of data upload to bSDD is a properly structured JSON file. In [the data model documentation](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20JSON%20import%20model.md), we specify what such a file should contain and how to structure it.
+
+You can manually create such a file by coping [the JSON template](https://github.com/buildingSMART/bSDD/blob/master/Model/Import%20Model/bsdd-import-model.json), or use [the Excel template instructions](https://github.com/buildingSMART/bSDD/tree/master/Model/Import%20Model/spreadsheet-import).
+
+Alternatively, use one of [the third-party tools to manage and upload data dictionaries in bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5=bSDD+submit%2Fmanage&mode=any).
+
+**2. Register your organisation**
+
+Each data dictionary in bSDD is published on behalf of a registered organisation. If this is the first time you are uploading, you need to register your organization in bSDD and connect the e-mail address you used to log in to that organization. To achieve this, please fill out the [Organization registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25). 
+
+As part of bSDD housekeeping, we manually review each request. For that reason, it can take up to a few days. As soon as you've received a reply, you can proceed to the next step.
+
+Do you want to only experiment with bSDD without registering your organisation? We can add you to the DEMO organisation. For this and other requests, contact us at: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>
+
+**3. Go to the Management portal of bSDD**
+
+Go to the Management portal: [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/).
+
+Alternatively, use one of [the third-party tools to manage and upload data dictionaries in bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5=bSDD+submit%2Fmanage&mode=any), which integrates with [the bSDD API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1).
+
+Note: if the Management Portal shows an error at startup or you keep seeing the spinner icon, try pressing Ctrl-F5 to refresh the cookies. If that doesn't work, then try an "incognito" or "InPrivate" window of your browser and then navigate to the Management portal. If that still doesn't work, then contact us: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
+
+**4. Log in**
+
+If you do not have a bSDD buildingSMART account yet, choose "Sign up now", otherwise choose "Sign in".
+
+**5. Upload file**
+
+Go to the "Dictionaries" tab and select your organisation from the list. 
+
+Using the "Select file" button load your dictionary JSON file. 
+
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD%20management%20portal.png" alt="bSDD manage" style="width: 800px"/>
+
+**6. Press "Upload selected file"**
+
+Before each import, we recommend first using the option 'Validate only?' This will inform you of any errors or warnings without trying to import the file.
+
+**Important** Uploading a new file replaces the existing dictionary with the same version.
+
+Once ready, and if the platform returns no errors, click "Upload selected file." 
+
+Once the file has been imported, you will receive a more detailed import report by email. It might take up to 15 minutes. In case the import routine spots any errors, you will see them listed in the email.
+
+Note: all of the steps explained above can also be automated using [the bSDD API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) integration. 
+
 # The lifecycle of the bSDD dictionary version
 
-<img src="/Documentation/graphics/Content_lifecycle_workflow.jpg" alt="Lifecycle workflow" style="width: 900px">
+When you publish a new dictionary version in bSDD, it initially always has the `Preview` status. At this stage, you can *reupload* the content to modify it, *activate* that version, or permanently *delete* it. The status can be changed through the [Management Portal](https://manage.bsdd.buildingsmart.org/) or via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1).
 
-When you publish a new dictionary version in bSDD, it initially has the `Preview` status. At this stage, you can *reupload* the content to modify it, *activate* that version, or permanently *delete* it. The status can be changed through the [Management Portal](https://manage.bsdd.buildingsmart.org/) or via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1).
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/Content_lifecycle_workflow.jpg" alt="Lifecycle workflow" style="width: 900px">
 
 ⚠️ Once the content is activated, it will get an immutable URI, meaning the URL and content will stay in bSDD forever and can't be deleted. Changing the status to "Inactive" is possible, but the page will still show the content to support use in contractual agreements. Consider that before activating the version of a dictionary.
 
-
-# How to import your bSDD model into bSDD?
-
-If you have your model in the bsdd-import-model.json format available, you can upload it into the bSDD database yourself.
-
-**Important** If you upload a file, it will replace the whole dictionary! You cannot upload the classes in parts. All classes and properties of one dictionary must be in one file.
-
-1. If it's the first time you are going to upload, you need to have your organization registered in bSDD and the e-mail address you used to log in connected to that organization. To achieve this, please fill out the form: [Organization registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25). In case the organization exists, but you can't access the content, contact us at: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>
-
-As soon as you've got a reply, you can continue with the next step.
-
-2. Go to the Management portal of bSDD: [https://manage.bsdd.buildingsmart.org/](https://manage.bsdd.buildingsmart.org/) (alternatively the TEST Management portal where we roll out and test new bSDD features: [https://manage-test.bsdd.buildingsmart.org](https://manage-test.bsdd.buildingsmart.org)).
-
-3. Log in
-
-> If you do not have a bSDD buildingSMART account yet, choose "Sign up now", otherwise choose "Sign in"
-> 
-> <img src="/Documentation/graphics/Screenshot_03_signupsignin.png" alt="Signup/signin" style="width: 400px">
-
-4. If all is well, you should see the "Upload dictionary" menu item. Click on it.
-
-5. Select the JSON file you want to upload via the button "Select file".
-> If you don't know how to create the proper JSON file, read that section: [bSDD JSON import model](/Documentation/bSDD%20JSON%20import%20model.md).
-
-6. Optional: check the "Validate only?" checkbox if you only want to validate the file, not insert the data
-
-7. Press "Upload selected file"
-
-> If there are any validation errors detected you will see them listed. You will receive a more detailed import report, which might include warnings, by e-mail once the file has been imported.
-
 # General guidelines
 
-- Manage and publish translations in a separate files.
+- Fill in all the required attributes.
+- You cannot upload the content in parts. All classes and properties of one dictionary must be in one file.
+- Manage and publish translations in a separate file.
 - Make specific dictionaries; don't try to put too much data into one dictionary.
 - Link to IFC entities for increased usability.
-- Add IFC properties to your content instead of replicating your own properties.
-- Make sure you use the correct encoding of characters. 
+- Add existing properties to your content instead of replicating them. 
 
-# Naming conventions and guidelines
-Avoid names that conflict with other dictionaries. For example, do not create classes with an 'Ifc'-prefix. Avoid replicating content from other dictionaries. Some licenses do not allow redistribution or modifications. It's a good practice to reuse content by linking it to your dictionary. For example, you can add to your class properties from other dictionaries. 
+### Naming conventions and guidelines
+The dictionary name needs to be unique. Avoid the use of a name that is too generic. Avoid names that conflict with other dictionaries. For example, do not create classes with an 'Ifc' prefix. Avoid replicating content from other dictionaries. Some licenses do not allow redistribution or modifications. It's a good practice to reuse content by linking it to your dictionary. For example, you can add properties from other dictionaries to your class. 
 
-## Dictionary name
-The dictionary name needs to be unique. Avoid the use of a name that is generic; choose a dictionary name that is specific. Global names like 'building products' are not allowed. Add your region or application (use case application, not software) to the name of the dictionary to make it specific.
+### Dictionary code
+The dictionary code needs to be unique in the bSDD; choose one that is recognizable with the dictionary name. The dictionary code is used to generate the URIs of all the resources, so it should be short and preferably without spaces. 
 
-## Dictionary code
-The dictionary code needs to be unique in the bSDD; choose one that is recognizable with the dictionary name.
-The dictionary code is used in the URI of all the data, so choose carefully. 
-
-## Organisation name
-The organisation name (and URI code) will be assigned by the bSDD team, but suggestions can be made.
-
-## Property set names
-Avoid the use of 'Pset_' prefix. This is restricted for IFC only.
-Avoid replicating the name of the property or class.
+### Property set names
+Avoid using the 'Pset_' prefix. This is restricted to IFC only. Do not replicate the property or class name.
