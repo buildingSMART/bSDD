@@ -206,8 +206,6 @@ if __name__ == "__main__":
     JSON_TEMPLATE_PATH = sys.argv[2]
     JSON_OUTPUT_PATH = sys.argv[3]
     WITHOUT_NULLS = sys.argv[4]
-    # EXCEL_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\bSDD_Excel_Example_all_fields.xlsx"
-    # JSON_OUTPUT_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\TEST_OUTPUT.json"
 
     excel = load_excel(EXCEL_PATH)
     bsdd_template = json.load(open(JSON_TEMPLATE_PATH, encoding="utf-8"))
