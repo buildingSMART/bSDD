@@ -11,7 +11,7 @@ SOFTWARE.
 
 __license__ = "MIT"
 __author__ = "Artur Tomczak"
-__copyright__ = "Copyright (c) 2023 buildingSMART International Ltd."
+__copyright__ = "Copyright (c) 2024 buildingSMART International Ltd."
 __version__ = "1.0.0"
 __email__ = "bsdd_support@buildingsmart.org"
 """
@@ -199,16 +199,12 @@ def excel2bsdd(excel, bsdd_template):
 
 
 if __name__ == "__main__":
-    # EXCEL_PATH = sys.argv[1]
-    # JSON_TEMPLATE_PATH = sys.argv[2]
-    # JSON_OUTPUT_PATH = sys.argv[3]
-    # WITHOUT_NULLS = sys.argv[4]
+    EXCEL_PATH = sys.argv[1]
+    JSON_TEMPLATE_PATH = sys.argv[2]
+    JSON_OUTPUT_PATH = sys.argv[3]
+    WITHOUT_NULLS = sys.argv[4]
     # EXCEL_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\bSDD_Excel_Example_all_fields.xlsx"
-    EXCEL_PATH = r"C:\Users\arturbt\buildingSMART\buildingSMART International\buildingSMART International Team Site - bSDD\bSDD_uploads\MIDAS HBIM\bSDD_Excel_MIDAS_monuments.xlsx"
-    JSON_TEMPLATE_PATH = r"C:\Code\bSDD\Model\Import Model\bsdd-import-model.json"
     # JSON_OUTPUT_PATH = r"C:\Code\bSDD\Model\Import Model\spreadsheet-import\TEST_OUTPUT.json"
-    JSON_OUTPUT_PATH = r"C:\Users\arturbt\buildingSMART\buildingSMART International\buildingSMART International Team Site - bSDD\bSDD_uploads\MIDAS HBIM\bSDD_Excel_MIDAS_monuments.json"
-    WITHOUT_NULLS = True
 
     excel = load_excel(EXCEL_PATH)
     bsdd_template = json.load(open(JSON_TEMPLATE_PATH, encoding="utf-8"))
