@@ -22,6 +22,8 @@ from ast import literal_eval
 from copy import deepcopy
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
+import time
 
 
 def load_excel(EXCEL_PATH):
@@ -45,7 +47,7 @@ def load_excel(EXCEL_PATH):
     excel['propertyrelation'] = pd.read_excel(excel_df, 'PropertyRelation', skiprows=6, usecols="C:G", true_values="TRUE", keep_default_na=False)
     return excel
 
-def map_data(excel_data, bsdd_part_template):
+def map_data(excel_data, bsdd_part_template, name=""):
     """Transforms the input pandas dataframe to JSON only if a property exists in the template
 
     :param excel_data: Pandas dataframe with parsed Excel data
@@ -68,7 +70,8 @@ def map_data(excel_data, bsdd_part_template):
     excel_data = excel_data.replace(r'^\s*$', np.nan, regex=True)
     excel_data = excel_data.astype(object).replace(np.nan, None)
     new_objects = []
-    for index, row in excel_data.iterrows():
+
+    for index, row in tqdm(excel_data.iterrows(), desc=f"Processing {name}", unit=" items", total=len(excel_data)):
         if not excel_data.dropna(how="all").empty:
             new_object = deepcopy(template)
             for column_name, column_data in row.items():
@@ -116,12 +119,12 @@ def excel2bsdd(excel, bsdd_template):
     :rtype: dict
     """
     bsdd_data = bsdd_template
-    bsdd_data = map_data(excel['dictionary'], bsdd_template)[0]
+    bsdd_data = map_data(excel['dictionary'], bsdd_template, "dictionary")[0]
     # process basic concepts
-    bsdd_data['Classes'] = map_data(excel['class'], bsdd_template['Classes'])
-    bsdd_data['Properties'] = map_data(excel['property'], bsdd_template['Properties'])
+    bsdd_data['Classes'] = map_data(excel['class'], bsdd_template['Classes'], "classes")
+    bsdd_data['Properties'] = map_data(excel['property'], bsdd_template['Properties'], "properties")
     # process ClassProperty
-    cls_props = map_data(excel['classproperty'], bsdd_template['Classes'][0]['ClassProperties'])
+    cls_props = map_data(excel['classproperty'], bsdd_template['Classes'][0]['ClassProperties'], "class-properties")
     for cls_prop in cls_props:
         related = cls_prop['(Origin Class Code)']
         cls_prop.pop("(Origin Class Code)")
@@ -134,7 +137,7 @@ def excel2bsdd(excel, bsdd_template):
         if not found_it:
             raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the class property: '{cls_prop}'!")
     # process ClassRelation
-    cls_rels = map_data(excel['classrelation'], bsdd_template['Classes'][0]['ClassRelations'])
+    cls_rels = map_data(excel['classrelation'], bsdd_template['Classes'][0]['ClassRelations'], "class-relations")
     for cls_rel in cls_rels:
         related = cls_rel['(Origin Class Code)']
         cls_rel.pop("(Origin Class Code)")
@@ -147,7 +150,7 @@ def excel2bsdd(excel, bsdd_template):
         if not found_it:
             raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {cls_rel}!")
     # process AllowedValue
-    allowed_vals = map_data(excel['allowedvalue'], bsdd_template['Properties'][0]['AllowedValues'])
+    allowed_vals = map_data(excel['allowedvalue'], bsdd_template['Properties'][0]['AllowedValues'], "allowed-values")
     for allowed_val in allowed_vals:
         # only one of the two Code columns is possible:
         if allowed_val['(Origin Property Code)']:
@@ -182,7 +185,7 @@ def excel2bsdd(excel, bsdd_template):
             if not found_it:
                 raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {allowed_val}!")
     # process PropertyRelation
-    prop_rels = map_data(excel['propertyrelation'], bsdd_template['Properties'][0]['PropertyRelations'])
+    prop_rels = map_data(excel['propertyrelation'], bsdd_template['Properties'][0]['PropertyRelations'], "property-relations")
     for prop_rel in prop_rels:
         related = prop_rel['(Origin Property Code)']
         prop_rel.pop("(Origin Property Code)")
@@ -216,4 +219,4 @@ if __name__ == "__main__":
     json.dump(bsdd_data, resultant_file, indent = 2)
     resultant_file.close()
 
-    print(f"\nFile successfully saved to {JSON_OUTPUT_PATH}\n")
+    print(f"\n\033[92mFile successfully saved to {JSON_OUTPUT_PATH}\033[0m\n")
