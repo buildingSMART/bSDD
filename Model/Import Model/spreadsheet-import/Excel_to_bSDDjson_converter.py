@@ -24,6 +24,10 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 import time
+import warnings
+
+
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
 def load_excel(EXCEL_PATH):
