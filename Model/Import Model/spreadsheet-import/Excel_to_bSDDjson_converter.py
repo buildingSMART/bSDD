@@ -92,6 +92,9 @@ def map_data(excel_data, bsdd_part_template, name=""):
                             content = literal_eval(column_data)
                             if isinstance(content, list):
                                 column_data = content
+                    if column_name == "RelatedIfcEntityNamesList":
+                        if not isinstance(column_data, list):
+                            column_data = [column_data]
                     new_object[column_name] = column_data
                     # new_part[column_name] = column_data
                 elif column_name in ('(Origin Class Code)','(Origin Property Code)','(Origin ClassProperty Code)'):
