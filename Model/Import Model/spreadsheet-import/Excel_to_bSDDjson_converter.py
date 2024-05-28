@@ -38,8 +38,12 @@ def load_excel(EXCEL_PATH):
     :return: Dictionary of Pandas dataframes with parsed Excel data
     :rtype: dict
     """
-        
-    excel_df = pd.ExcelFile(EXCEL_PATH)
+
+    try:   
+        excel_df = pd.ExcelFile(EXCEL_PATH)
+    except PermissionError:
+        print("\n\n\033[0;31mLooks like the Excel file is open by another tool. Please close the file and try again.\033[0m\n")
+        sys.exit()
 
     excel={}
     excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:R", true_values="TRUE", keep_default_na=False, converters={'DictionaryVersion':str})
