@@ -203,7 +203,7 @@ Optional value enumerations that can be listed for `Properties` and `ClassProper
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
+| Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). It is required and, in most cases is the same as the value. It is needed to enable translations of Values or their Descriptions. See section [Code format](#code-format) |
 | Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
 | Description | Text     |        | ✅       | A description of the value|
 | Uri*| Text |  |  | * To be deprecated in the new model version, as it overlaps with the OwnedUri. |
