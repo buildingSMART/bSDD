@@ -201,7 +201,7 @@ def excel2bsdd(excel, bsdd_template):
         related = prop_rel['(Origin Property Code)']
         prop_rel.pop("(Origin Property Code)")
         found_it = False
-        for p in bsdd_data['Properties']:
+        for item in bsdd_data['Properties']:
             if item["Code"] == related:
                 item['PropertyRelations'].append(prop_rel)
                 found_it = True
