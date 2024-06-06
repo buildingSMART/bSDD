@@ -108,7 +108,7 @@ NB Default values will only be applied if a field is not specified. If you speci
 
 Note: Since the release of November 2023, Materials are not treated separately anymore. A `Material` is now simply a `Class` of type `Material`.
 
-<h3 id="class">Property</h3>
+<h3 id="property">Property</h3>
 
 `Property` - '_an inherent or acquired feature of an item [`Class`]. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].  The assignment of `Properties` to `Classes` is handled through the interim [ClassProperty](#classproperty) object. 
 
