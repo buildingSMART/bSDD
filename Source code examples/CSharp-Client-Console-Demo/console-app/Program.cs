@@ -39,7 +39,7 @@ namespace bSDD.DemoClientConsole
 
         // For accessing API endpoint
         public const string ApiBaseUrl = "https://test.bsdd.buildingsmart.org";
-        public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3") + "&SearchText=room";
+        public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchInDictionary/v1?DictionaryUri=" + WebUtility.UrlEncode("https://identifier.buildingsmart.org/uri/bs-agri/tractors/1.0");
 
         private static IPublicClientApplication publicClientApp;
 
