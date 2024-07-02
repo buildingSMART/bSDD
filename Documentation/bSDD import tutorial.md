@@ -14,7 +14,7 @@ Each data dictionary in bSDD is published on behalf of a registered organisation
 
 As part of bSDD housekeeping, we manually review each request. For that reason, it can take up to a few days. As soon as you've received a reply, you can proceed to the next step.
 
-Do you want to only experiment with bSDD without registering your organisation? We can add you to the DEMO organisation. For this and other requests, contact us at: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>
+Do you want to only experiment with bSDD without registering your organisation? We can add you to the DEMO organisation. For this and other requests, contact us: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h).
 
 **3. Go to the Management portal of bSDD**
 
@@ -22,7 +22,7 @@ Go to the Management portal: [https://manage.bsdd.buildingsmart.org/](https://ma
 
 Alternatively, use one of [the third-party tools to manage and upload data dictionaries in bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5=bSDD+submit%2Fmanage&mode=any), which integrates with [the bSDD API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1).
 
-Note: if the Management Portal shows an error at startup or you keep seeing the spinner icon, try pressing Ctrl-F5 to refresh the cookies. If that doesn't work, then try an "incognito" or "InPrivate" window of your browser and then navigate to the Management portal. If that still doesn't work, then contact us: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
+Note: if the Management Portal shows an error at startup or you keep seeing the spinner icon, try pressing Ctrl-F5 to refresh the cookies. If that doesn't work, then try an "incognito" or "InPrivate" window of your browser and then navigate to the Management portal. If that still doesn't work, then contact us: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h).
 
 **4. Log in**
 
