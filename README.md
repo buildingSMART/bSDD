@@ -12,7 +12,7 @@ More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dic
 
 <img src="https://github.com/buildingSMART/bSDD/assets/22922395/0b581c14-fd16-402f-baa8-c55eac500eff"
      alt="bSDD diagram"
-     style="width: 700px" />
+     style="width: 550px" />
 
 📢 We inform about planned and recently implemented bSDD updates in this forum topic:
 [bSDD Tech Updates](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889).
@@ -50,8 +50,6 @@ We also provide a **Test** environment where the latest features are rolled out 
 
 ## Contact us
 
-Need help? Got suggestions? Send an email to <bsdd_support@buildingsmart.org>
-
-or contact the bSDD product manager: Artur Tomczak <artur.tomczak@buildingsmart.org>
+Need help? Got suggestions? Contact us: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h).
 
 
