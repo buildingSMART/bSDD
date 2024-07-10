@@ -112,3 +112,6 @@ TBD...
 
 ## ISO23386 Category of GroupOfProperties vs bSDD ClassType
 TBD...
+
+## Additional notes
+- According to ISO12006-3, it is obligatory to have the English term provided for all the names/definitions.
