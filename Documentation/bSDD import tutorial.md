@@ -28,7 +28,7 @@ You can manually create such a file by coping <a href="https://github.com/buildi
 - Naming conventions and guidelines - the dictionary name needs to be unique. Avoid the use of a name that is too generic. Avoid names that conflict with other dictionaries. For example, do not create classes with an 'Ifc' prefix. Avoid replicating content from other dictionaries. Some licenses do not allow redistribution or modifications. It's a good practice to reuse content by linking it to your dictionary. For example, you can add properties from other dictionaries to your class. 
 - Dictionary code - the dictionary code needs to be unique in the bSDD; choose one that is recognizable with the dictionary name. The dictionary code is used to generate the URIs of all the resources, so it should be short and preferably without spaces. 
 
-**Read more** about good practices for creating data dictionaries: [https://technical.buildingsmart.org/services/bsdd/publishing/guidelines/](https://technical.buildingsmart.org/services/bsdd/publishing/guidelines/)
+**Read more** about good practices for creating data dictionaries: [https://technical.buildingsmart.org/services/bsdd/guidelines/](https://technical.buildingsmart.org/services/bsdd/guidelines/)
 
 ### 3. Upload
 
