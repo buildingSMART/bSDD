@@ -11,13 +11,13 @@ Below is the table mapping the attributes of bSDD and ISO standards. bSDD attrib
 | **bSDD** | **ISO23386:2020** | **ISO12006-3:2022** | **Comment** |
 |---|---|---|---|
 | Property/Class: Uid,   Uri | Property/GroupOfProperties: Globally unique identifier | xtdRoot: UniqueId | _(G)UID is optional in bSDD, required in ISO. In bSDD role of   UID was replaced with URI, and UID is only to support use cases needing it.   URI allows viewing the metadata of a property._ |
-| Property/Class/Dictionary:   Status | Property/GroupOfProperties: Status | ✖️ | _bSDD and ISO have “Active” and “Inactive”. bSDD also has   “Preview”, so extends ISO._ |
-| ✖️ | Property/GroupOfProperties: Date of creation | xtdObject: DateOfCreation | _Not directly in bSDD, but could be derived as date of the   first version upload._ |
-| Property/Class:   ActivationDateUtc | Property/GroupOfProperties: Date of activation | ✖️ |  |
-| ✖️ | Property/GroupOfProperties: Date of last change | ✖️ | _Not directly in bSDD, but could be derived as date of the last   version where a property/class changed._ |
+| Property/Class/Dictionary:   Status | Property/GroupOfProperties: Status | ✖️ | _bSDD and ISO have “Active” and “Inactive”. bSDD also has   “Preview”, so it extends ISO._ |
+| (see Dictionary:  ReleaseDate) | Property/GroupOfProperties: Date of creation | xtdObject: DateOfCreation | _In bSDD it is the ReleaseDate date of the first version._ |
+| Property/Class:   ActivationDateUtc | Property/GroupOfProperties: Date of activation | ✖️ |  _In bSDD it is the date when the status was changed to 'Active'._ |
+| (see Dictionary:  ReleaseDate) | Property/GroupOfProperties: Date of last change | ✖️ | _In bSDD it is the date of the last version when a change occured._ |
 | Property/Class:   RevisionDateUtc | Property/GroupOfProperties: Date of revision | ✖️ |  |
 | Property/Class: VersionDateUtc | Property/GroupOfProperties: Date of version | ✖️ |  |
-| Property/Class:   DeActivationDateUtc | Property/GroupOfProperties: Date of deactivation | ✖️ |  |
+| Property/Class:   DeActivationDateUtc | Property/GroupOfProperties: Date of deactivation | ✖️ | _In bSDD it is the date when the status was changed to 'Inactive'._ |
 | Property/Class: VersionNumber | Property/GroupOfProperties: Version number | xtdObject: MajorVersion | _Version number in ISO23386 is what Major version in ISO12006-3 (similarly Revision number is MinorVersion). In bSDD, the attributes are named like in ISO23386, but the version already includes three numbers: 1.2.3 - Major, Minor and Patch (read more on Semantic Versioning at https://semver.org/)._ |
 | Property/Class: RevisionNumber | Property/GroupOfProperties: Revision number | xtdObject: MinorVersion | _See row above. The revision number is redundant in bSDD, but can be used to say how many revision of a certain field has been made._ |
 | Property/Class:   ReplacedObjectCodes | Property/GroupOfProperties: List of replaced properties | xtdObject: ReplacedObjects |  |
@@ -112,3 +112,6 @@ TBD...
 
 ## ISO23386 Category of GroupOfProperties vs bSDD ClassType
 TBD...
+
+## Additional notes
+- According to ISO12006-3, it is obligatory to have the English term provided for all the names/definitions.

@@ -6,52 +6,45 @@
 
 **The buildingSMART Data Dictionary (bSDD)** is an online service for hosting data dictionaries containing classifications, their properties, allowed values, units, translations, etc. It provides a standardized workflow to improve data quality and information consistency.
 
-At the heart of bSDD is a database, where all dictionaries can be related to each other. The main way to access the bSDD is through its [APIs (Application Programming Interfaces)](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1). This is how most BIM software and other apps can use the data stored in the bSDD. Apart from that, there is [the bSDD Search page](https://search.bsdd.buildingsmart.org/), where people can look up the content. Authors can publish content to bSDD through [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [the Management Portal](https://manage.bsdd.buildingsmart.org/). To be able to upload, please fill out [the organisation registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25).
+Read more at bSDD project page: https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/
 
-More info on https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/
+### Overview
+
+At the heart of bSDD is a canonical database, where all dictionaries can be related to each other. The main way to access the bSDD is through its [APIs (Application Programming Interfaces)](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1). This is how most BIM software and other apps can use the data stored in the bSDD. Apart from that, there is [the bSDD Search page](https://search.bsdd.buildingsmart.org/), where people can look up the content. Authors can publish content to bSDD through [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [the bSDD Manage portal](https://manage.bsdd.buildingsmart.org/). To upload, please register your organisation using [the organisation registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25).
 
 <img src="https://github.com/buildingSMART/bSDD/assets/22922395/0b581c14-fd16-402f-baa8-c55eac500eff"
      alt="bSDD diagram"
-     style="width: 700px" />
+     style="width: 500px" />
+
+### Quick links
+
+* [bSDD project page](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
+* [bSDD Search page]()
+* [bSDD Manage portal]()
+* [bSDD API Swagger page]()
+* [bSDD updates forum]()
+* [bSDD data structure](/Documentation/bSDD%20JSON%20import%20model.md)
+* [bSDD JSON template](/Model/Import%20Model/bsdd-import-model.json) / [bSDD Excel template](/Model/Import%20Model/spreadsheet-import)
+* [Tools integrating bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5%5B%5D=bSDD%20read%20API&filter_5%5B%5D=bSDD%20submit%2Fmanage&filter_5%5B%5D=bSDD%20IFC%20export%20(including%20URIs)&filter_1=&gv_search=&mode=any). This is a self-managed list, so feel free to add missing ones.
+* [How to upload your data into the bSDD?](/Documentation/bSDD%20import%20tutorial.md)
+
+### For developers
 
 📢 We inform about planned and recently implemented bSDD updates in this forum topic:
 [bSDD Tech Updates](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889).
 
-### Instructions
+* **API documentation** https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20API.md
+* **API interactive documentation** on Swagger: https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
 
-* [How to upload your data into the bSDD?](/Documentation/bSDD%20import%20tutorial.md)
-* [How to structure my data to import to bSDD?](/Documentation/bSDD%20JSON%20import%20model.md)
-* Frequently asked questions (what is it for? does it cost? how does it relate to IFC? etc.): [buildingsmart.org/.../buildingsmart-data-dictionary/](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
-* Browse the documentation: [Documentation](Documentation)
-* List of tools integrating bSDD: [https://technical.buildingsmart.org/resources/software-implementations/](https://technical.buildingsmart.org/resources/software-implementations/?filter_5%5B%5D=bSDD%20read%20API&filter_5%5B%5D=bSDD%20submit%2Fmanage&filter_5%5B%5D=bSDD%20IFC%20export%20(including%20URIs)&filter_1=&gv_search=&mode=any). This is a self-managed list, so feel free to add missing tools.
-* [How to turn a dictionary into private in bSDD](https://scribehow.com/shared/How_to_turn_a_dictionary_into_private_in_bSDD__uwo7s5scREWWY0f9LehJCg)
-
-### For developers 👩‍💻
-* The API URL (not a readable website): https://api.bsdd.buildingsmart.org/ 
-* API documentation on Swagger: https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
-
-We also provide a **Test** environment where the latest features are rolled out first and tested. If you want to check it out, here are the equivalent pages:
-* **Test** Search in the (test) bSDD: https://search-test.bsdd.buildingsmart.org/
-* **Test** upload data to the (test) database: https://manage-test.bsdd.buildingsmart.org/
-* **Test** environment API documentation on Swagger: https://test.bsdd.buildingsmart.org/swagger/
-* **Test** environment GraphQL UI for getting data via GraphQL in the UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
-
-### Examples, use-cases, tools and presentations
-* 2020.08.08 Classyfing IFC model in SketchUp with bSDD and DigiBase plugin: [Vimeo: bSDD APIv5 SketchUp connection](https://vimeo.com/446417661/ff8b6605d3), and the [source code](https://github.com/DigiBase-VolkerWessels/SketchUp-bsDD-plugin)
-* 2021.10.13 Use case with ETIM classification accessible from usBIM software from ACCA: [YouTube: Use case video ETIM-bSDD - usBIM - ACCA Software](https://www.youtube.com/watch?v=KTzJRJkisKk&ab_channel=ETIMInternational)
-* 2023.03.16 Recording of bSDD session from InfraBIM Open 2023 in Tampere, Finland. [YouTube video](https://www.youtube.com/watch?v=gie0ryGD3NQ)
-     * [00:00:00](https://www.youtube.com/watch?v=gie0ryGD3NQ&t=0s) How to use the buildingSMART Data Dictionary to extend IFC for your needs - Léon van Berlo
-     * [00:26:27](https://www.youtube.com/watch?v=gie0ryGD3NQ&t=1587s) How to utilize bSDD in infrastructure owners perspective - case Finnish Transport Infrastructure Agency - Niki Tapper, Teea Kantojärvi
-     * [00:55:35](https://www.youtube.com/watch?v=gie0ryGD3NQ&t=3335s) Using IFC 4.3 with bSDD for railway - Giulia Minnucci
-* 2020.09.03 Presentation about the bSDD (and relation to IFC): [Presentation](https://www.slideshare.net/berlotti/20200903-the-2020-buildingsmart-data-dictionary-prototype-bsdd)
-* 2020.09.15 Video recording of a bSDD workshop, including Revit plugin demo: [Workshop video](https://app.box.com/s/lndnjrbx80n87eg1eq1zhhbqoz8hfmyz/file/720558204462 (start at 1.44.00))
-* 2023.03.22 BIMVoice podcast with Artur Tomczak answering bSDD-related questions: [YouTube: BIMvoice with Artur Tomczak: bSDD](https://www.youtube.com/watch?v=VMgaTZhFmjE)
-* 2023.08.25 Plannerly [YouTube: The Power of bSDD from buildingSMART](https://www.youtube.com/watch?v=QZHsPEN-L0w)
+We also provide a **TEST** environment where the latest features are rolled out first and tested. If you want to check it out, here are the equivalent pages (not to be used by end-users!):
+* **TEST API documentation** on Swagger: https://test.bsdd.buildingsmart.org/swagger/
+* **TEST GraphQL** environment UI: [GraphQL UI](https://test.bsdd.buildingsmart.org/graphiql)
+and related Search/Manage pages:
+* **TEST Search** page: https://search-test.bsdd.buildingsmart.org/
+* **TEST Manage** portal: https://manage-test.bsdd.buildingsmart.org/
 
 ## Contact us
 
-Need help? Got suggestions? Send an email to <bsdd_support@buildingsmart.org>
+Need help? Got suggestions? Contact us: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h).
 
-or contact the bSDD product manager: Artur Tomczak <artur.tomczak@buildingsmart.org>
-
-
+bSDD is one of our [Strategic Projects](https://www.buildingsmart.org/about/strategic-projects/), meaning buildingSMART International is calling on industry sponsorship to help fund the delivery of bSDD improvements.

@@ -1,8 +1,5 @@
-# buildingSMART Data Dictionary model
+<h2 id="table-of-content">Table of contents</h2>
 
-## Table of contents:
-
-* [Glossary](#glossary)
 * [Data model](#data-model)
 * [JSON format](#json-format)
 * [List of fields](#list-of-fields)
@@ -16,28 +13,21 @@
 * [Additional explanations](#additional-explanations)
 * [Notifications](#notifications)
 
-## Glossary
 
-* `Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. The bSDD is a service to facilitate the distribution of such dictionaries. The content in bSDD is structured in `Dictionaries` (previously `Dictionarys`) published by different organizations. Each `Dictionary` (previously `Dictionary`) consists of `Classes` (previously `Classes`) and `Properties`, which could be related to each other or with other `Dictionaries` (previously `Dictionarys`). 
+<h2 id="data-model">Data model</h2>
 
-* `Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]
+The bSDD is a service to facilitate the distribution of data dictionaries (read below about what those are) published by independent organisations. The diagram below shows the simplified data model behind the bSDD:
 
-* `Property` - '_an inherent or acquired feature of an item. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
 
-## Data model
-
-The diagram below shows the simplified data model behind the bSDD:
-
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
-
-See our example demonstrating the usage of the above concepts: [bSDD data example](https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png):
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
+See our example demonstrating the usage of the above concepts: [bSDD data example](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_example.png):
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.1).
 
 📢 Read about the latest technical updates in the dedicated forum topic: https://forums.buildingsmart.org/t/bsdd-tech-updates/4889
 
-## JSON format
+<h2 id="json-format">JSON format</h2>
 
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
 
@@ -46,13 +36,13 @@ If you think there are reference documents missing, please let us know.
 
 If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). Please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
 
-## List of fields
+<h2 id="list-of-fields">List of fields</h2>
 
 NB Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
 
-### Dictionary
+<h3 id="dictionary">Dictionary</h3>
 
-Contains general information about the `Dictionary` and the delivered data.
+`Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. Each `Dictionary` (previously `domain`) consists of `Classes` (previously `classifications`) and `Properties`, which could be related to each other or with other `Dictionaries`. Each `Dictionary` object contains general metadata about it, as listed in the table below.
 
 | Field            | DataType         | Requ- ired? | Trans- latable? | Description                                                                                                                                                                  |
 |------------------|------------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,7 +54,7 @@ Contains general information about the `Dictionary` and the delivered data.
 | LanguageOnly     | Boolean          | ✅   | | true if JSON contains only language-specific information, no otherwise \*  |
 | UseOwnUri      | Boolean                   | ✅        |             | Default: false. Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
 | DictionaryUri    | Text             |  ✅\*     | | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, e.g. "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
-| License          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
+| License          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). E.g. "MIT" or "CC BY 4.0". Also, a helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
 | LicenseUrl       | Text             |       | | Url to a web page with the full license text   |
 | ChangeRequestEmailAddress     | Text             |       | | Single email address for receiving change requests from users. |
 | ModelVersion     | Text             |       | | Version number of the input JSON template. |
@@ -72,16 +62,17 @@ Contains general information about the `Dictionary` and the delivered data.
 | QualityAssuranceProcedure      | Text      | | | Name or short description of the quality assurance procedure used for the dictionary, e.g. "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | QualityAssuranceProcedureUrl   | Text      | | | Url to a web page with more detailed info on the quality assurance procedure, e.g. "https://www.buildingsmart.org/about/bsi-process"  |
 | ReleaseDate                    | DateTime  | | | Date of release of the version, See [Date Time format](#datetime-format).  |
-| Status                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
+| Status                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
 | Classes          | List of Class    | ✅    | | List of objects of type `Class`. See section [Class](#class)  |
 | Properties       | List of Property | ✅    | | List of objects of type `Property`. See section [Property](#property) |
 
 
 \* For delivering data in additional languages, it is sufficient to fill the `Dictionary` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Ensure that the `OrganizationCode`, `DictionaryCode` and `DictionaryVersion` are exactly the same and if the data is for adding a language to an existing `Dictionary`, set the field `LanguageOnly` to true.
 
-### Class
+<h3 id="class">Class</h3>
 
-A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "time") or process (e.g. "installation").
+`Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]. A `Class` can be any object (examples: "wall", "window") or abstract concept (examples: "time", "room") or process (examples: "installation", "disassembly").
+
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
@@ -115,14 +106,12 @@ A `Class` can be any (abstract) object (e.g. "wall") or abstract concept (e.g. "
 | ClassProperties           | List of ClassProperty          |            |             | See section [ClassProperty](#classproperty) |
 | ClassRelations            | List of ClassRelation          |            |             | See section [ClassRelation](#classrelation) |
 
-### Material
+Note: Since the release of November 2023, Materials are not treated separately anymore. A `Material` is now simply a `Class` of type `Material`.
 
-A `Material` is a `Class` of type `Material`.
-Since the release of November 2023, Materials are not treated separately anymore.
+<h3 id="property">Property</h3>
 
-### Property
+`Property` - '_an inherent or acquired feature of an item [`Class`]. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].  The assignment of `Properties` to `Classes` is handled through the interim [ClassProperty](#classproperty) object. 
 
-A `Class` can have multiple properties, and a `Property` can be part of many classs
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -175,9 +164,14 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | AllowedValues              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
 
 
-### ClassProperty
+<h3 id="classproperty">ClassProperty</h3>
 
-| Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
+Interim object to assign a `Property` to a `Class` it should describe. Each `Class` can have multiple properties, and each `Property` can be part of many `Classes`, but one `ClassProperty` is always a pair of one `Class` and one `Property`. 
+
+Through `ClassProperty`, one can further specify a 'Property' by defining its unit, property set it should be stored in, and value restrictions when applied to that particular `Class`. For example, a general 'Temperature' can be expressed in Celcius or Fahrenheit and can be any negative or positive value, but when applied to an indoor space, it might be restricted to a range of 5-40 degrees Celcius.   
+
+
+|  Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | Code                | Text     | ✅     |     | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
 | PropertyCode        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
@@ -203,9 +197,24 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 
 \* One of those is required.
 
-### ClassRelation
+<h3 id="allowedvalue">AllowedValue</h3>
 
-`Classes` can be linked by relations. See section [How to define relations?](#defining-relations)
+Optional value enumerations that can be listed for `Properties` and `ClassProperties`. For example, a 'Fire Rating' could only have a few allowed values: REI30, REI60, REI90 or REI120.
+
+| Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
+|--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
+| Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). It is required and, in most cases is the same as the value. It is needed to enable translations of Values or their Descriptions. See section [Code format](#code-format) |
+| Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
+| Description | Text     |        | ✅       | A description of the value|
+| Uri*| Text |  |  | * To be deprecated in the new model version, as it overlaps with the OwnedUri. |
+| SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
+| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
+
+Note: adding translations of the `AllowedValue` is not supported yet
+
+<h3 id="classrelation">ClassRelation</h3>
+
+`Classes` can be linked by relations. There are various types of relations, allowing for the definition of hierarchy, composition, similarity or reference. See section [How to define relations?](#defining-relations)
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
@@ -216,21 +225,9 @@ A `Class` can have multiple properties, and a `Property` can be part of many cla
 | OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
 
 
-### AllowedValue
+<h3 id="propertyrelation">PropertyRelation</h3>
 
-Note: adding translations of the `AllowedValue` is not supported yet
-
-| Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
-|--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| Code             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). If you want to add translations of Values or their Descriptions, you must supply a Code for each Value. See section [Code format](#code-format) |
-| Value | Text     | ✅       | ✅       | One of the Values the property can have, e.g. "Green" in case the Property is something like "Color"|
-| Description | Text     |        | ✅       | A description of the value|
-| Uri*| Text |  |  | * To be deprecated in the new model version, as it overlaps with the OwnedUri. |
-| SortNumber | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
-| OwnedUri                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
-
-
-### PropertyRelation
+Analogous to `ClassRelations` but between `Properties`.
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
@@ -241,15 +238,16 @@ Note: adding translations of the `AllowedValue` is not supported yet
 
 ---
 
-## Additional explanations
+<h2 id="additional-explanations">Additional explanations</h2>
 
-### Code format
+<h3 id="code-format">Code format</h3>
 
-For codes, only characters, numbers, underscore, dot, and dash are allowed (a-z, A-Z, 0-9, "_", ".", "-"). Codes are not case-sensitive.
-Some examples of valid codes are: "bs-agri", "apple", "one.X". 
-Some examples of invalid codes are: "my test" (whitespace not allowed), "ДДb$%" (only characters a-z and A-Z allowed, not %, $, or Д).
+(from April 2024) All codes support diacritics, whitespace, dots, dashes, underscores and numbers. Not allowed are special characters: `"#%/\:{}[]|;<>?~` (and `). Codes are not case-sensitive. 
+Some examples of valid codes are: "bs-agri", "apple", "éÄą _- Д開発...żź".
 
-### Class types
+Codes need to be unique within the same data dictionary and are used to generate URIs! 
+
+<h3 id="class-types">Class types</h3>
 
 Each class must have a specific type. Below is the explanation of what each type means, according to ISO 12006-3:
 * `Class` - description of a set of objects that share the same characteristics <sup>[ISO12006-3,3.7]</sup>. This is the most common type in bSDD. (e.g. wall, space)
@@ -258,13 +256,12 @@ Each class must have a specific type. Below is the explanation of what each type
 * `AlternativeUse` - type to be used if no other type fits the needs.<sup>[ISO12006-3,3.1]</sup>.
    * Be aware that most software implementations disregard this class type, as it is not straightforward to interpret.
 * **DEPRECATED** ~~ReferenceDocument - a publication that is consulted to find specific information, particularly in a technical or scientific dictionary. <sup>[ISO12006-3,3.18]</sup>. A reference document can be associated with any data present in a data dictionary.~~
-  * In bSDD we have a global list of [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1), which includes the most common standards that can be used as reference. This is to avoid having duplicate references with different naming. If you don't find the reference you are looking for, and think it should be added to the list - let us know: <a href="mailto:bsdd_support@buildingsmart.org">bsdd_support@buildingsmart.org</a>.
+  * In bSDD we have a global list of [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1), which includes the most common standards that can be used as reference. This is to avoid having duplicate references with different naming. If you don't find the reference you are looking for, and think it should be added to the list - let us know: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h).
 * **DEPRECATED**  ~~ComposedProperty - (...) corresponding to a feature needing multiple properties to be defined. <sup>[ISO12006-3,3.8]</sup>.~~
   * ~~Example: To describe the characteristic "concrete facing quality", it is mandatory to describe 3 properties: concrete planarity, concrete hue, and concrete texture.~~
   * Use `GroupOfProperties` instead.
 
-
-### Defining relations
+<h3 id="defining-relations">Defining relations</h3>
 
 `ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcCurtainWall” is a more
 specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
@@ -273,8 +270,7 @@ specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” 
 
 `RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your class to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classes to a particular IFC category.
 
-
-### Relation types
+<h3 id="relation-types">Relation types</h3>
 
 `Properties` and `Classes` can be related to each other. Each relation must have a specific type to allow software to interpret it. Below is an explanation of what each type means:
 * `IsEqualTo` - if two concepts are unequivocal and have the same name, code, definition and description. Classes also need to share the same class properties. It is quite rare for concepts to be equal. An example of usage is when a concept doesn't have an official translation, but someone defines a new dictionary with that concept in a new language and wants to say it is exactly the same as the original. (We always recommend proposing translations and improvements to the original data dictionaries instead of building duplicate ones). 
@@ -289,13 +285,11 @@ Only applicable to classes (not properties):
 * `IsPartOf` - reverse of `HasPart`.
 * `HasMaterial` - a class that can be associated with a particular material. For example: "Steel Beam" could be related to the material "Steel".
 
-  
-### DateTime format
+<h3 id="datetime-format">DateTime format</h3>
 
 The date-time format according to the ISO 8601 series should be used: `YYYY-MM-DDThh:mm:ssTZD`. Import allows both: `2023-05-10`, `2023-05-10T15:10:12Z` and `2023-05-10T15:10:12+02:00`.
 
-
-### Property inheritance
+<h3 id="property-inheritance">Property inheritance</h3>
 
 * Parent `Class` → child `Class`  
 The child `Class` does not inherit properties from the parent `Class`. If authors want child classes to also have properties of parent classes, they should specify them intentionally in import files.  
@@ -305,21 +299,20 @@ For example, the [IfcWall](https://search.bsdd.buildingsmart.org/uri/buildingsma
 `ClassProperty` is an instantiation of general `Property` for a particular `Class`. The attributes of a property, such as `AllowedValue` and min/max restrictions,  are by default passed to `ClassProperty`. The values of the `ClassProperty` can be modified without influencing the origin `Property`.  
 For example, the [Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/prop/height) has an upper limit of 100 cm. When applied to the "Apple" class, the [Apple-Height](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.0.0/class/apple/prop/SizeSet/height) has a lower limit - 25cm. 
 
+<h3 id="latest-version">Latest version</h3>
 
-### Latest version
 In bSDD, all resources get a unique identifier - URI. The URI, among other information, contains codes of the organisation, the dictionary and the version number, for example .../uri/bs-agri/fruitvegs/**1.0.0**/class/fruit
 If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version containing that resource: 
 .../uri/bs-agri/fruitvegs/**latest**/class/fruit. 
 
-<img src="https://github.com/buildingSMART/bSDD/blob/master/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
+<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
 
 Try it out:
 https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
 
 ⚠️ The "latest" points to the most recent resource, meaning that it will change once a new version is present. Use with caution as it is not an immutable URI, and the content can change. For contractual agreements, we suggest using specific version numbers.
 
-
-### Assembling properties
+<h3 id="assembling-properties">Assembling properties</h3>
 
 **Groups of Properties** (use `Class`.`ClassType`:`GroupOfProperties`) "collection enabling the properties to be prearranged or organized" <sup>[ISO12006-3,3.14]</sup>. In bSDD, implemented as a Type of Class meant to group multiple Properties.
 
@@ -352,33 +345,37 @@ Example: _The 'Area' of a wall depends on its 'Height' and 'Length', following t
 
 ⚠️ This feature comes from the ISO standard but is rarely supported by software implementation. Consider avoiding Dynamic Properties to make the data dictionary more accessible.
 
-### 🚧 Restricting property values
+<h3 id="restricting-property-values">Restricting property values</h3>
+
+🚧 TO BE DEVELOPED 🚧
 `AllowedValues`...
 
 `Min/MaxInc/Exclusive`...
 
 `Pattern`...
 
+<h3 id="identifying-bsdd-resources">Identifying bSDD resources</h3>
 
-### 🚧 How are bSDD resources identified?  
+🚧 TO BE DEVELOPED 🚧
 `URI`... Can be generated by bSDD or external.
 
 `Code`...  See section [Code format](#code-format).
 
 `UID`(GUID)...
 
+<h3 id="specifying-units">Specifying units</h3>
 
-### 🚧 How to specify units?
+🚧 TO BE DEVELOPED 🚧
 `Unit(s)`...
 
 `Dimension`...
 
 `PhysicalQuantity`...
 
-### Double square bracket links
+<h3 id="double-square-bracket-links">Double square bracket links</h3>
 It is possible to reference other resources from the same dictionary using double square brackets, and the platform will replace the brackets with hyperlinks pointing to that resource. In cases where the same code exists for both class and property, the hyperlink will point to the class. If the code is not found, the square brackets are omitted. The API returns the definition with square brackets. 
 
-## Notifications
+<h2 id="notifications">Notifications</h2>
 
 **2023-07 - Important notification:**
 

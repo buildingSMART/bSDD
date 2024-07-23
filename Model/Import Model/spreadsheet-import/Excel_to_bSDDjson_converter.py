@@ -11,7 +11,7 @@ SOFTWARE.
 
 __license__ = "MIT"
 __author__ = "Artur Tomczak"
-__copyright__ = "Copyright (c) 2023 buildingSMART International Ltd."
+__copyright__ = "Copyright (c) 2024 buildingSMART International Ltd."
 __version__ = "1.0.0"
 __email__ = "bsdd_support@buildingsmart.org"
 """
@@ -22,6 +22,12 @@ from ast import literal_eval
 from copy import deepcopy
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
+import time
+import warnings
+
+
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
 def load_excel(EXCEL_PATH):
@@ -32,12 +38,16 @@ def load_excel(EXCEL_PATH):
     :return: Dictionary of Pandas dataframes with parsed Excel data
     :rtype: dict
     """
-        
-    excel_df = pd.ExcelFile(EXCEL_PATH)
+
+    try:   
+        excel_df = pd.ExcelFile(EXCEL_PATH)
+    except PermissionError:
+        print("\n\n\033[0;31mLooks like the Excel file is open by another tool. Please close the file and try again.\033[0m\n")
+        sys.exit()
 
     excel={}
-    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:R", true_values="TRUE", keep_default_na=False)
-    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=6, usecols="C:AC", true_values="TRUE", keep_default_na=False)
+    excel['dictionary'] = pd.read_excel(excel_df, 'Dictionary', skiprows=6, usecols="C:R", true_values="TRUE", keep_default_na=False, converters={'DictionaryVersion':str})
+    excel['class'] = pd.read_excel(excel_df, 'Class', skiprows=6, usecols="C:AC", true_values="TRUE", keep_default_na=False, converters={'Uid':str})
     excel['property'] = pd.read_excel(excel_df, 'Property', skiprows=6, usecols="C:AU", true_values="TRUE", keep_default_na=False)
     excel['classproperty'] = pd.read_excel(excel_df, 'ClassProperty', usecols="C:U", skiprows=6, true_values="TRUE", keep_default_na=False)
     excel['classrelation'] = pd.read_excel(excel_df, 'ClassRelation', usecols="C:H", skiprows=6, true_values="TRUE", keep_default_na=False)
@@ -45,7 +55,7 @@ def load_excel(EXCEL_PATH):
     excel['propertyrelation'] = pd.read_excel(excel_df, 'PropertyRelation', skiprows=6, usecols="C:G", true_values="TRUE", keep_default_na=False)
     return excel
 
-def map_data(excel_data, bsdd_part_template):
+def map_data(excel_data, bsdd_part_template, name=""):
     """Transforms the input pandas dataframe to JSON only if a property exists in the template
 
     :param excel_data: Pandas dataframe with parsed Excel data
@@ -68,7 +78,8 @@ def map_data(excel_data, bsdd_part_template):
     excel_data = excel_data.replace(r'^\s*$', np.nan, regex=True)
     excel_data = excel_data.astype(object).replace(np.nan, None)
     new_objects = []
-    for index, row in excel_data.iterrows():
+
+    for index, row in tqdm(excel_data.iterrows(), desc=f"Processing {name}", unit=" items", total=len(excel_data)):
         if not excel_data.dropna(how="all").empty:
             new_object = deepcopy(template)
             for column_name, column_data in row.items():
@@ -81,6 +92,9 @@ def map_data(excel_data, bsdd_part_template):
                             content = literal_eval(column_data)
                             if isinstance(content, list):
                                 column_data = content
+                    if column_name == "RelatedIfcEntityNamesList":
+                        if not isinstance(column_data, list):
+                            column_data = [column_data]
                     new_object[column_name] = column_data
                     # new_part[column_name] = column_data
                 elif column_name in ('(Origin Class Code)','(Origin Property Code)','(Origin ClassProperty Code)'):
@@ -116,24 +130,38 @@ def excel2bsdd(excel, bsdd_template):
     :rtype: dict
     """
     bsdd_data = bsdd_template
-    bsdd_data = map_data(excel['dictionary'], bsdd_template)[0]
+    bsdd_data = map_data(excel['dictionary'], bsdd_template, "dictionary")[0]
     # process basic concepts
-    bsdd_data['Classes'] = map_data(excel['class'], bsdd_template['Classes'])
-    bsdd_data['Properties'] = map_data(excel['property'], bsdd_template['Properties'])
+    bsdd_data['Classes'] = map_data(excel['class'], bsdd_template['Classes'], "classes")
+    bsdd_data['Properties'] = map_data(excel['property'], bsdd_template['Properties'], "properties")
     # process ClassProperty
-    cls_props = map_data(excel['classproperty'], bsdd_template['Classes'][0]['ClassProperties'])
+    cls_props = map_data(excel['classproperty'], bsdd_template['Classes'][0]['ClassProperties'], "class-properties")
     for cls_prop in cls_props:
         related = cls_prop['(Origin Class Code)']
         cls_prop.pop("(Origin Class Code)")
-        next(item for item in bsdd_data['Classes'] if item["Code"] == related)['ClassProperties'].append(cls_prop)
+        found_it = False
+        for item in bsdd_data['Classes']:
+            if item["Code"] == related:
+                item['ClassProperties'].append(cls_prop)
+                found_it = True
+                break
+        if not found_it:
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the class property: '{cls_prop}'!")
     # process ClassRelation
-    cls_rels = map_data(excel['classrelation'], bsdd_template['Classes'][0]['ClassRelations'])
+    cls_rels = map_data(excel['classrelation'], bsdd_template['Classes'][0]['ClassRelations'], "class-relations")
     for cls_rel in cls_rels:
         related = cls_rel['(Origin Class Code)']
         cls_rel.pop("(Origin Class Code)")
-        next(item for item in bsdd_data['Classes'] if item["Code"] == related)['ClassRelations'].append(cls_rel)
+        found_it = False
+        for item in bsdd_data['Classes']:
+            if item["Code"] == related:
+                item['ClassRelations'].append(cls_rel)
+                found_it = True
+                break
+        if not found_it:
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {cls_rel}!")
     # process AllowedValue
-    allowed_vals = map_data(excel['allowedvalue'], bsdd_template['Properties'][0]['AllowedValues'])
+    allowed_vals = map_data(excel['allowedvalue'], bsdd_template['Properties'][0]['AllowedValues'], "allowed-values")
     for allowed_val in allowed_vals:
         # only one of the two Code columns is possible:
         if allowed_val['(Origin Property Code)']:
@@ -147,22 +175,40 @@ def excel2bsdd(excel, bsdd_template):
         allowed_val.pop("(Origin Property Code)")
         allowed_val.pop("(Origin ClassProperty Code)")
         if relToProperty:
-            # iterate all properties and add AllowedValue if present in spreadsheet
-            next(item for item in bsdd_data['Properties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
+            # iterate all properties and add AllowedValue if such property is present in the spreadsheet
+            found_it = False
+            for item in bsdd_data['Properties']:
+                if item['Code'] == related:
+                    item['AllowedValues'].append(allowed_val)
+                    found_it = True
+                    break
+            if not found_it:
+                raise Exception(f"Property '{related}' not found in the spreadsheet, so couldn't append the vallue {allowed_val}!")
         else: 
             # iterate all classes to find the one referenced by the property AllowedValue
-            for c in bsdd_data['Classes']:
-                # next(item for item in class['ClassProperties'] if item["Code"] == related)['AllowedValues'].append(allowed_val)
-                for item in c['ClassProperties']:
+            found_it = False
+            for cl in bsdd_data['Classes']:
+                for item in cl['ClassProperties']:
                     if item["Code"] == related:
                         item['AllowedValues'].append(allowed_val)
+                        found_it = True
+                        break
+            if not found_it:
+                raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {allowed_val}!")
     # process PropertyRelation
-    prop_rels = map_data(excel['propertyrelation'], bsdd_template['Properties'][0]['PropertyRelations'])
+    prop_rels = map_data(excel['propertyrelation'], bsdd_template['Properties'][0]['PropertyRelations'], "property-relations")
     for prop_rel in prop_rels:
         related = prop_rel['(Origin Property Code)']
         prop_rel.pop("(Origin Property Code)")
-        next(item for item in bsdd_data['Properties'] if item["Code"] == related)['PropertyRelations'].append(prop_rel)
-
+        found_it = False
+        for item in bsdd_data['Properties']:
+            if item["Code"] == related:
+                item['PropertyRelations'].append(prop_rel)
+                found_it = True
+                break
+        if not found_it:
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the vallue {prop_rel}!")
+        
     return bsdd_data
 
 
@@ -182,4 +228,4 @@ if __name__ == "__main__":
     json.dump(bsdd_data, resultant_file, indent = 2)
     resultant_file.close()
 
-    print(f"\nFile successfully saved to {JSON_OUTPUT_PATH}\n")
+    print(f"\n\033[92mFile successfully saved to {JSON_OUTPUT_PATH}\033[0m\n")
