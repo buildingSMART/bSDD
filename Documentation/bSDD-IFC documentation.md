@@ -9,7 +9,7 @@ The main entities involved are:
 - [_IfcClassificationReference_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassificationReference.htm)
 - [_IfcRelAssociatesClassification_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRelAssociatesClassification.htm)
 
-The next section indicates the mapping rules between the bSDD data model and IFC concepts used for class. To support this, snippets ( :pill:) of IFC files and bSDD dictionary files are reported as examples.
+The next section indicates the mapping rules between the bSDD data model and IFC concepts used for class. To support this, snippets (✂️) of IFC files and bSDD dictionary files are reported as examples, click to open them.
 
 
 ## openBIM workflows
@@ -36,7 +36,7 @@ Mapping rules are defined for the following concepts:
 
 **In IFC**, dictionary information are captured using [_IfcClassification_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassification.htm). Below are the mapping rules for different IFC versions.
 
-|                    | bSDD                      | IFC 4.3                      | IFC 4                      | IFC 2x3                    | IDS   |
+|                    | bSDD                      | IFC4x3_ADD2                      | IFC4                      | IFC2x3                    | IDS   |
 |--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
 | **Dictionary name**    | DictionaryName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |❎*    |
 | **Dictionary source**  | *uri of the dictionary* | IfcClassification.Specification | IfcClassification.Location    | ❌ (IfcClassification.Source can be used as a workaround)   |uri      |
@@ -48,8 +48,8 @@ _\* IDS references bSDD using URI, instead of copying its content. Thanks to tha
  
 _\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but whenever a class or property is referenced by "uri" attribute, those include information about their dictionaries: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/...```"_
 
-:pill: **Snippets**
-<details><summary>bSDD</summary>
+**Snippets**
+<details><summary>✂️ **bSDD**</summary>
     
 ```
 {
@@ -74,19 +74,19 @@ _\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but w
 ```
 </details>
 
-<details><summary>IFC 4x3 <a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassification.htm">(IfcClassification)</a></summary>
+<details><summary>✂️ **IFC4x3_ADD2** <a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassification.htm">(IfcClassification)</a></summary>
 	
     /* 			 Source,   Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens  */
     #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ('.'));
 </details>
 
-<details><summary>IFC 4 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/">(IfcClassification)</a></summary>
+<details><summary>✂️ **IFC4** <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/">(IfcClassification)</a></summary>
 
     /*  		 Source,   Edition, EditionDate,  Name,                Description,            Location,                                                      ReferenceTokens   */
     #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ('.'));
 </details>
 
-<details><summary>IFC 2x3 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcexternalreferenceresource/lexical/ifcclassification.htm">(IfcClassification)</a></summary>
+<details><summary>✂️ **IFC2x3** <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcexternalreferenceresource/lexical/ifcclassification.htm">(IfcClassification)</a></summary>
 
     /*  		 Source,   Edition, EditionDate,  Name    */
     #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction');
@@ -100,7 +100,7 @@ _\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but w
 
 **In IFC**, class information is captured using [_IfcClassificationReference_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassificationReference.htm). Below are the mapping rules, for different IFC versions.
 
-|                    | bSDD                      | IFC 4.3 & IFC 4                      | IFC 2x3                    | IDS   |
+|                    | bSDD                      | IFC4x3_ADD2 & IFC4                      | IFC2x3                    | IDS   |
 |---------------------------|--------------------------------------|-------------------------------------------|------------------------------------------|-------|
 | **Class name**   | name *of the class*           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |❎*      |
 | **Class code**   | code *of the class*           | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |uri**      |
@@ -110,8 +110,8 @@ _\* IDS references bSDD using URI instead of copying its content. Thanks to that
 
 _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<code>```"_
 
-:pill: **Snippets**
-<details><summary>bSDD class</summary>
+**Snippets**
+<details><summary>✂️ **bSDD class**</summary>
     
 ```
 {
@@ -183,7 +183,7 @@ _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.bui
 ```
 </details>
 
-<details><summary>IFC 4.3 & IFC 4</summary>
+<details><summary>✂️ **IFC4x3_ADD2 & IFC4**</summary>
 	
     /*  		 Source,   Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens   */
     #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ('.'));
@@ -198,7 +198,7 @@ _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.bui
     #4=IFCRELASSOCIATESCLASSIFICATION('2t3TDZl_D9NOIWB0BSjzJI', $,            $,    $,           (#3),           #2);
 </details>
 
-<details><summary>IFC 2x3</summary>
+<details><summary>✂️ **IFC2x3**</summary>
     
 	
     /*  		  Source,   Edition, EditionDate,  Name   */
@@ -214,7 +214,7 @@ _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.bui
     #4=IFCRELASSOCIATESCLASSIFICATION('2t3TDZl_D9NOIWB0BSjzJI', $,            $,    $,           (#3),           #2);
 </details>
 
-<details><summary>IDS</summary>
+<details><summary>✂️ **IDS**</summary>
 	
 ```
 <ids:class minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/apple" instructions="Those objects must be classified as apples.">     
@@ -237,7 +237,7 @@ _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.bui
 
 Below are the mapping rules for different IFC versions.
 
-|                                                   | bSDD                                                               | IFC 4.3 & IFC 4         | IFC 2x3    |IDS   |
+|                                                   | bSDD                                                               | IFC4x3_ADD2 & IFC4         | IFC2x3    |IDS   |
 |---------------------------------------------------|--------------------------------------------------------------------|-------------------------|-----------|-----|
 | **Material name**  | Class(Material).**Name**       | IfcMaterial.**Name** & IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Name**        | IfcMaterial.**Name**        | ❎*      |
 | **Material code**  | Class(Material).**Code**        | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Identification**        | IfcMaterialClassificationRelationship.IfcClassificationReference.**ItemReference**       | ❎*      |
@@ -245,11 +245,11 @@ Below are the mapping rules for different IFC versions.
 
 _\* IDS references bSDD using URI instead of copying its content. Thanks to that, the information is still accessible by following the URI._
 
-:pill: **Snippets**
+**Snippets**
 
 _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(objects))_
 
-<details><summary>IFC 4.3 & IFC 4</summary>
+<details><summary>✂️ **IFC4x3_ADD2 & IFC4**</summary>
 
     /*    		 Source, Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens   */
     #1=IFCCLASSIFICATION('SBE',  '1',     '2023-08-27', 'Swedish materials', 'List of materials...', 'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ('.'));
@@ -265,7 +265,7 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 
 </details>
 
-<details><summary>IFC 2x3</summary>
+<details><summary>✂️ **IFC2x3**</summary>
     
     /* 			 Source, Edition, EditionDate, Name 		    */
     #1=IFCCLASSIFICATION('SBE',  '1',    '2023-08-27', 'Swedish materials');
@@ -282,7 +282,7 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 
 </details>
 
-<details><summary>IDS</summary>
+<details><summary>✂️ **IDS**</summary>
 
 ```
 <ids:material minOccurs="1" maxOccurs="unbounded" uri="
@@ -303,7 +303,7 @@ https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/mat/fiber" instru
 
 Below are the mapping rules for different IFC versions.
 
-|                                                | bSDD                                      | IFC 4.3                                      | IFC 4 & IFC 2x3                                      |IDS                                      |
+|                                                | bSDD                                      | IFC4x3_ADD2                                      | IFC4 & IFC2x3                                      |IDS                                      |
 |------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|-----------------------|
 | **Property name**                              | PropertyCode *(of ClassProperty)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |❎*      |
 | **Property identifier**                            | uri *(of ClassProperty)*          | IfcPropertySingleValue.Specification                    | IfcPropertySingleValue.Description                      |uri      |
@@ -326,8 +326,8 @@ In bSDD, properties exist independently of the class (object) they might be assi
 
 The human-readable and translatable _Name_ that exists in bSDD has no reflection in IFC. That is why it is important to remember that the _Code_ will be used in IFC datasets, and _Name_ will only be displayed by software capable of reading the names from bSDD. The reason for this is that we need the datasets to follow consistent terms, regardless of the language displayed to the user. 
  
-:pill: **Snippets**
-<details><summary>bSDD property</summary>
+**Snippets**
+<details><summary>✂️ **bSDD property**</summary>
     
 ```
 {
@@ -396,7 +396,7 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 ```
 </details>
 
-<details><summary>IFC 2x3</summary>
+<details><summary>✂️ **IFC2x3**</summary>
     
     /*                         Name,       Description, 							  NominalValue, Unit */
     #1=IFCPROPERTYSINGLEVALUE("EF021146", "https://identifier.buildingsmart.org/uri/etim/etim/9.0/prop/EF021146", $,            $);
@@ -405,14 +405,14 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 
 </details>
 
-<details><summary>IFC 4.3</summary>
+<details><summary>✂️ **IFC4x3_ADD2**</summary>
     
     /*                         Name,       Specification, 							  NominalValue, Unit */
     #1=IFCPROPERTYSINGLEVALUE("EF021146", "https://identifier.buildingsmart.org/uri/etim/etim/9.0/prop/EF021146", $,            $);
 
 </details>
 
-<details><summary>IDS</summary>
+<details><summary>✂️ **IDS**</summary>
 
 ```
 <ids:property minOccurs="1" measure="IfcText" uri="http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
