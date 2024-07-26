@@ -77,13 +77,13 @@ _\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but w
 <details><summary>IFC 4x3 <a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcClassification.htm">(IfcClassification)</a></summary>
 	
     /* 			 Source,   Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens  */
-    #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://search.bsdd.buildingsmart.org/uri/sbe/swedishmaterials/1', ['.']);
+    #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ['.']);
 </details>
 
 <details><summary>IFC 4 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/">(IfcClassification)</a></summary>
 
     /*  		 Source,   Edition, EditionDate,  Name,                Description,            Location,                                                      ReferenceTokens   */
-    #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://search.bsdd.buildingsmart.org/uri/sbe/swedishmaterials/1', ['.']);
+    #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ['.']);
 </details>
 
 <details><summary>IFC 2x3 <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcexternalreferenceresource/lexical/ifcclassification.htm">(IfcClassification)</a></summary>
@@ -186,7 +186,7 @@ _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.bui
 <details><summary>IFC 4.3 & IFC 4</summary>
 	
     /*  		 Source,   Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens   */
-    #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://search.bsdd.buildingsmart.org/uri/sbe/swedishmaterials/1', ['.']);
+    #1=IFCCLASSIFICATION('Molio',  '1.0',   '2023-08-27', 'CCI Construction',  'List of codes...',    'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ['.']);
     
     /*  			  Location,                                                                        Identification, Name,             ReferencedSource, Description,           Sort   */
     #2=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0/class/L-BD', 'L-BD',         'Wall structure', #1,               'structural system...', $);
@@ -252,7 +252,7 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 <details><summary>IFC 4.3 & IFC 4</summary>
 
     /*    		 Source, Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens   */
-    #1=IFCCLASSIFICATION('SBE',  '1',     '2023-08-27', 'Swedish materials', 'List of materials...', 'https://search.bsdd.buildingsmart.org/uri/sbe/swedishmaterials/1', ['.']);
+    #1=IFCCLASSIFICATION('SBE',  '1',     '2023-08-27', 'Swedish materials', 'List of materials...', 'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ['.']);
     
     /*  			  Location,                                                                   Identification, Name,     ReferencedSource, Description,           Sort   */
     #2=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1/mat/CE--', 'CE--',         'Betong', #1,               'kompositmaterial...', $);
