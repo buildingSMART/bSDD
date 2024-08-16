@@ -28,6 +28,8 @@ Changed API methods:
     - Option "SearchText" added
  * api/Dictionary/v1/Properties:
     - Option "SearchText" added
+ * api/DictionaryDownload/sketchup/v1:
+    - now downloads ".skc" file instead of ".xsd"
 
 
 ## 2024-03-01
