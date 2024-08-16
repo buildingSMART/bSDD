@@ -8,9 +8,27 @@ For planned updates and other tech discussions, see [bSDD tech updates forum](ht
 
 #
 # Versioning strategy
-A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does not (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
+A new version will only be created if it 'breaks' the current version. For example, adding a new field to the output of an API does NOT (or should not) break your app. Removing an output field on the other hand is a breaking change and will result in a new version of that API.
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
+
+## 2024-08-16
+
+New API methods:
+ * api/Class/Relations/v1:  Get class relations or reverse relations (paginated)
+ * api/Class/Properties/v1:  Get class properties (paginated)
+ * api/UploadImportFile/v2:  Supports upload of large files. Validation will be done asynchronously and results will be sent by email
+ * api/Dictionary/Popular/v1:  Get short list of most popular dictionaries
+ * api/Property/Relations/v1:  Get property relations or reverse relations (paginated)
+ * api/Property/Classes/v1:  Get list of classes that uses the property (paginated)
+ * api/TextSearch/v2:  new filter options and some changes in output
+
+Changed API methods:
+ * api/Dictionary/v1/Classes:
+    - Option "SearchText" added
+ * api/Dictionary/v1/Properties:
+    - Option "SearchText" added
+
 
 ## 2024-03-01
 
