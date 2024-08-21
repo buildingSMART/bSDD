@@ -51,14 +51,14 @@ paths:
         - name: IncludeClassProperties
           in: query
           description: >-
-            Use this option to include properties of the class. By default it is
-            set to false
+            Use this option to include properties of the class. By default, it
+            is set to false
           schema:
             type: boolean
         - name: IncludeChildClassReferences
           in: query
           description: >-
-            Use this option to include references to child classes. By default
+            Use this option to include references to child classes. By default,
             it is set to false
           schema:
             type: boolean
@@ -66,22 +66,22 @@ paths:
           in: query
           description: >-
             Use this option to include loading relations of the class. By
-            default it is set to false
+            default, it is set to false
           schema:
             type: boolean
         - name: IncludeReverseRelations
           in: query
           description: >-
             Use this option to include loading reverse relations of the class,
-            i.e. classes having a relation with this class. By default it is set
-            to false
+            i.e. classes having a relation with this class. By default, it is
+            set to false
           schema:
             type: boolean
         - name: ReverseRelationDictionaryUris
           in: query
           description: >-
             When including reverse relations, you can specify which dictionaries
-            to include. By default all dictionaries are included
+            to include. By default, all dictionaries are included
           schema:
             type: array
             items:
@@ -125,11 +125,173 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/ClassContract.v1'
+  /api/Class/Relations/v1:
+    get:
+      tags:
+        - Class
+      summary: Get class relations or reverse relations (paginated)
+      parameters:
+        - name: ClassUri
+          in: query
+          description: >-
+            URI of the class, e.g.
+            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/apple
+          required: true
+          schema:
+            type: string
+        - name: GetReverseRelations
+          in: query
+          description: Get either the forward or the reverse relations
+          required: true
+          schema:
+            type: boolean
+        - name: SearchText
+          in: query
+          description: "Optional: Search text to filter the relations.\r\nSearch is done in the class name only."
+          schema:
+            type: string
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
+          in: query
+          description: >-
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
+          schema:
+            type: integer
+            format: int32
+        - name: languageCode
+          in: query
+          description: >-
+            Specify language (case sensitive). For those items the text is not
+            available in the requested language, the text will be returned in
+            the default language of the dictionary
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/ClassRelationsContract.v1'
+  /api/Class/Properties/v1:
+    get:
+      tags:
+        - Class
+      summary: Get class properties (paginated)
+      parameters:
+        - name: ClassUri
+          in: query
+          description: >-
+            URI of the class, e.g.
+            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/apple
+          required: true
+          schema:
+            type: string
+        - name: PropertySet
+          in: query
+          description: 'Optional: Property set to filter the properties'
+          schema:
+            type: string
+        - name: PropertyCode
+          in: query
+          description: 'Optional: Property code to filter the properties'
+          schema:
+            type: string
+        - name: SearchText
+          in: query
+          description: "Optional: Search text to filter the properties.\r\nSearch is done in the property name, property description and property code.\r\nCannot be used together with PropertySet or PropertyCode."
+          schema:
+            type: string
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
+          in: query
+          description: >-
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
+          schema:
+            type: integer
+            format: int32
+        - name: languageCode
+          in: query
+          description: >-
+            Specify language (case sensitive). For those items the text is not
+            available in the requested language, the text will be returned in
+            the default language of the dictionary
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/ClassPropertiesContract.v1'
   /api/Dictionary/v1:
     get:
       tags:
         - Dictionary
-      summary: "Get list of available Dictionaries. This one replaces /api/Domain. Changes:\r\n- \"Domain\" has been renamed to \"Dictionary\"\r\n- \"NamespaceUri\" has been renamed to \"Uri\""
+      summary: Get list of available Dictionaries with optional filtering.
       parameters:
         - name: Uri
           in: query
@@ -150,8 +312,9 @@ paths:
         - name: Limit
           in: query
           description: >-
-            Limit number of items to be returned. If you enter an offset then
-            default limit is 100. The maximum number of items returned is 1000.
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
             type: integer
             format: int32
@@ -212,6 +375,11 @@ paths:
             "GroupOfProperties", "AlternativeUse" and "Material".
           schema:
             type: string
+        - name: SearchText
+          in: query
+          description: "Optional filter text.\r\nNot supported when UseNestedClasses = true"
+          schema:
+            type: string
         - name: Offset
           in: query
           description: Zero-based offset of the first item to be returned. Default is 0.
@@ -221,8 +389,9 @@ paths:
         - name: Limit
           in: query
           description: >-
-            Limit number of items to be returned. If you enter an offset then
-            default limit is 100. The maximum number of items returned is 1000.
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
             type: integer
             format: int32
@@ -279,6 +448,11 @@ paths:
           required: true
           schema:
             type: string
+        - name: SearchText
+          in: query
+          description: Optional filter text.
+          schema:
+            type: string
         - name: Offset
           in: query
           description: Zero-based offset of the first item to be returned. Default is 0.
@@ -288,8 +462,9 @@ paths:
         - name: Limit
           in: query
           description: >-
-            Limit number of items to be returned. If you enter an offset then
-            default limit is 100. The maximum number of items returned is 1000.
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
             type: integer
             format: int32
@@ -476,6 +651,76 @@ paths:
       security:
         - aad-jwt:
             - /read
+  /api/UploadImportFile/v2:
+    post:
+      tags:
+        - Dictionary Update
+      summary: "Upload a bSDD import model json file, see https://github.com/buildingSMART/bSDD/tree/master/Model/Import%20Model for more information.\r\nValidation will be done asynchronously for large files (>= 15 MB). Validation results will be sent by e-mail."
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              required:
+                - FormFile
+                - OrganizationCode
+              type: object
+              properties:
+                OrganizationCode:
+                  type: string
+                  description: "Code of the organization owning the dictionary.\r\nIf you do not know the code, contact us (see e-mail address on top of this page)"
+                FormFile:
+                  type: string
+                  description: The bsdd import file in json format
+                  format: binary
+                ValidateOnly:
+                  type: boolean
+                  description: "Set to true if you only want to validate the file. Even when there are no validation errors the file wil not be imported.\r\nThe validation result will not be send via e-mail."
+                IsTest:
+                  type: boolean
+                  description: "Set to true if you are just testing your file. Data will be stored in the database, you can retrieve it via the API, but you can't set status to Active.\r\nDictionary will be deleted after 60 days of last upload."
+            encoding:
+              OrganizationCode:
+                style: form
+              FormFile:
+                style: form
+              ValidateOnly:
+                style: form
+              IsTest:
+                style: form
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/UploadImportFileResult.v2'
+      security:
+        - aad-jwt:
+            - /read
   /api/UploadImportFile/v1:
     post:
       tags:
@@ -638,6 +883,109 @@ paths:
       security:
         - aad-jwt:
             - /manage
+  /api/Dictionary/Popular/v1:
+    get:
+      tags:
+        - PopularDictionary
+      summary: Get list of popular Dictionaries
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/PopularDictionariesResponseContract.v1'
+  /api/Organization/v1/{organizationCode}/{dictionaryCode}/PrivateAccess:
+    post:
+      tags:
+        - Private dictionary specific APIs
+      summary: Add access for e-mail domain or user
+      parameters:
+        - name: organizationCode
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: dictionaryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PrivateDictionaryAccessContract.v1'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/PrivateDictionaryAccessContract.v1'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/PrivateDictionaryAccessContract.v1'
+        required: true
+      responses:
+        '200':
+          description: Success
+      security:
+        - aad-jwt:
+            - /manage
+    delete:
+      tags:
+        - Private dictionary specific APIs
+      summary: Delete access for e-mail domain or user
+      parameters:
+        - name: organizationCode
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: dictionaryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PrivateDictionaryAccessContract.v1'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/PrivateDictionaryAccessContract.v1'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/PrivateDictionaryAccessContract.v1'
+        required: true
+      responses:
+        '200':
+          description: Success
+      security:
+        - aad-jwt:
+            - /manage
   /api/Property/v4:
     get:
       tags:
@@ -654,10 +1002,7 @@ paths:
             type: string
         - name: includeClasses
           in: query
-          description: >-
-            Set to true to get list of classes where property is used (only
-            classes of the same dictionary as the property). Maximum number of
-            class properties returned is 2000
+          description: "Set to true to get list of classes where property is used (only classes of the same dictionary as the property).\r\n            Maximum number of class properties returned is 2000. In the next version of the API this option probably will be removed.\r\n            Preferred way to get the classes is by using api/Property/Classes/v1"
           schema:
             type: boolean
         - name: languageCode
@@ -699,6 +1044,161 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/PropertyContract.v4'
+  /api/Property/Relations/v1:
+    get:
+      tags:
+        - Property
+      summary: Get property relations or reverse relations (paginated)
+      parameters:
+        - name: PropertyUri
+          in: query
+          description: >-
+            URI of the property, e.g.
+            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/prop/height
+          required: true
+          schema:
+            type: string
+        - name: GetReverseRelations
+          in: query
+          description: Get either the forward or the reverse relations
+          required: true
+          schema:
+            type: boolean
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
+          in: query
+          description: >-
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
+          schema:
+            type: integer
+            format: int32
+        - name: languageCode
+          in: query
+          description: >-
+            Specify language (case sensitive). For those items the text is not
+            available in the requested language, the text will be returned in
+            the default language of the dictionary
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/PropertyRelationsContract.v1'
+  /api/Property/Classes/v1:
+    get:
+      tags:
+        - Property
+      summary: Get list of classes that uses the property (paginated)
+      parameters:
+        - name: PropertyUri
+          in: query
+          description: >-
+            URI of the property, e.g.
+            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/prop/height
+          required: true
+          schema:
+            type: string
+        - name: InternalExternal
+          in: query
+          description: >-
+            Option to get only classes of same dictionary as the property
+            (internal, default), only classes of other dictionaries (external)
+            or all classes (all)
+          schema:
+            $ref: '#/components/schemas/InternalExternalOption.v1'
+        - name: SearchText
+          in: query
+          description: Search text to filter classes
+          schema:
+            type: string
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
+          in: query
+          description: >-
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
+          schema:
+            type: integer
+            format: int32
+        - name: languageCode
+          in: query
+          description: >-
+            Specify language (case sensitive). For those items the text is not
+            available in the requested language, the text will be returned in
+            the default language of the dictionary
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/PropertyClassesContract.v1'
   /api/PropertyValue/v2:
     get:
       tags:
@@ -749,6 +1249,102 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/PropertyValueContract.v4'
+  /api/TextSearch/v2:
+    get:
+      tags:
+        - Search
+      summary: "Search the bSDD database using free text, get list of Classes and/or Properties matching the text.\r\nPagination options are for Classes and Properties combined. So if result consists of 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first, so if you then use Offset=10 and Limit=5, you will get the 5 properties."
+      description: The details can be requested per Class via the Class API
+      parameters:
+        - name: SearchText
+          in: query
+          description: >-
+            The text to search for, minimum 2 characters (case and accent
+            insensitive)
+          required: true
+          schema:
+            type: string
+        - name: TypeFilter
+          in: query
+          description: >-
+            Type filter: can be "Class", "Property", "Material",
+            "GroupOfProperties" of a semicolon separated list of these. Empty
+            means all
+          schema:
+            type: string
+        - name: DictionaryUris
+          in: query
+          description: List of dictionaries to filter on
+          schema:
+            type: array
+            items:
+              type: string
+        - name: OnlyLatestVersion
+          in: query
+          schema:
+            type: boolean
+        - name: OnlyVerified
+          in: query
+          schema:
+            type: boolean
+        - name: IncludeInactive
+          in: query
+          schema:
+            type: boolean
+        - name: IncludePreview
+          in: query
+          schema:
+            type: boolean
+        - name: IncludeSearchDescriptions
+          in: query
+          schema:
+            type: boolean
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
+          in: query
+          description: >-
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/TextSearchResponseContract.v2'
   /api/TextSearch/v1:
     get:
       tags:
@@ -785,8 +1381,9 @@ paths:
         - name: Limit
           in: query
           description: >-
-            Limit number of items to be returned. If you enter an offset then
-            default limit is 100. The maximum number of items returned is 1000.
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
             type: integer
             format: int32
@@ -861,8 +1458,9 @@ paths:
         - name: Limit
           in: query
           description: >-
-            Limit number of items to be returned. If you enter an offset then
-            default limit is 100. The maximum number of items returned is 1000.
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
             type: integer
             format: int32
@@ -934,8 +1532,9 @@ paths:
         - name: Limit
           in: query
           description: >-
-            Limit number of items to be returned. If you enter an offset then
-            default limit is 100. The maximum number of items returned is 1000.
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
             type: integer
             format: int32
@@ -1441,151 +2040,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/SearchResultContract.v2'
       deprecated: true
-  /api/RequestExportFile/preview:
-    post:
-      tags:
-        - zz Obsolete APIs
-      summary: "PREVIEW\r\nRequest a file with an export of a domain.\r\nOnly format \"Sketchup\" is supported. You get an export in xsd format with limited content.\r\nOBSOLETE: pls use /api/DictionaryDownload/sketchup/v1"
-      parameters:
-        - name: DomainNamespaceUri
-          in: query
-          description: The namespace uri of the domain to be downloaded
-          required: true
-          schema:
-            type: string
-        - name: ExportFormat
-          in: query
-          description: "Select the Export Format you want the result in.\r\nOnly support format is Sketchup\r\nField can be left empty"
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-                format: binary
-            application/json:
-              schema:
-                type: string
-                format: binary
-            text/json:
-              schema:
-                type: string
-                format: binary
-            text/html:
-              schema:
-                type: string
-                format: binary
-            text/turtle:
-              schema:
-                type: string
-                format: binary
-            application/x-turtle:
-              schema:
-                type: string
-                format: binary
-            application/rdf+xml:
-              schema:
-                type: string
-                format: binary
-        '400':
-          description: Bad Request
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-        '401':
-          description: Unauthorized
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-        '404':
-          description: Not Found
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/ProblemDetails'
-        '500':
-          description: Server Error
-      deprecated: true
-      security:
-        - aad-jwt:
-            - /read
   /api/Property/v3:
     get:
       tags:
@@ -2590,6 +3044,12 @@ components:
             List of relations of other classes to this class (only filled if
             requested)
           nullable: true
+        hierarchy:
+          type: array
+          items:
+            $ref: '#/components/schemas/HierarchyItemContract.v1'
+          description: List of parents of this class till root
+          nullable: true
       additionalProperties: false
     ClassListItemContract.v1:
       type: object
@@ -2612,10 +3072,37 @@ components:
         parentClassCode:
           type: string
           nullable: true
+        descriptionPart:
+          type: string
+          description: Description of the class, max 101 characters long
+          nullable: true
         children:
           type: array
           items:
             $ref: '#/components/schemas/ClassListItemContract.v1'
+          nullable: true
+      additionalProperties: false
+    ClassPropertiesContract.v1:
+      type: object
+      properties:
+        totalCount:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        classUri:
+          type: string
+          description: Uri of the class
+          nullable: true
+        classProperties:
+          type: array
+          items:
+            $ref: '#/components/schemas/ClassPropertyItemContract.v1'
+          description: List of the properties of this class
           nullable: true
       additionalProperties: false
     ClassPropertyContract.v1:
@@ -2795,7 +3282,214 @@ components:
           description: List of QUDT unit codes to select from
           nullable: true
       additionalProperties: false
+    ClassPropertyItemContract.v1:
+      required:
+        - name
+        - propertySet
+        - uri
+      type: object
+      properties:
+        name:
+          minLength: 1
+          type: string
+          description: Name of the property
+        uri:
+          minLength: 1
+          type: string
+          description: Uri of the property
+        description:
+          type: string
+          description: "Plain language description of the property.\r\nIf at Property level no description has been given but a \"Definition\" is available, then \"Definition\" is returned as description"
+          nullable: true
+        definition:
+          type: string
+          description: Definition of the property.
+          nullable: true
+        dataType:
+          type: string
+          description: Format for expressing the value of the property
+          nullable: true
+        dimension:
+          type: string
+          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
+          nullable: true
+        dimensionLength:
+          type: integer
+          description: The Length value of the dimension
+          format: int32
+          nullable: true
+        dimensionMass:
+          type: integer
+          description: The Mass value of the dimension
+          format: int32
+          nullable: true
+        dimensionTime:
+          type: integer
+          description: The Time value of the dimension
+          format: int32
+          nullable: true
+        dimensionElectricCurrent:
+          type: integer
+          description: The Electric current value of the dimension
+          format: int32
+          nullable: true
+        dimensionThermodynamicTemperature:
+          type: integer
+          description: The Thermodynamic temperature value of the dimension
+          format: int32
+          nullable: true
+        dimensionAmountOfSubstance:
+          type: integer
+          description: The Amount of substance value of the dimension
+          format: int32
+          nullable: true
+        dimensionLuminousIntensity:
+          type: integer
+          description: The Luminous intensity value of the dimension
+          format: int32
+          nullable: true
+        dynamicParameterPropertyCodes:
+          type: array
+          items:
+            type: string
+          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
+          nullable: true
+        example:
+          type: string
+          description: Illustrate possible use or values of the Property
+          nullable: true
+        isDynamic:
+          type: boolean
+          description: >-
+            True if the value of this property is dependent on other properties
+            (as provided in DynamicParameterPropertyCodes)
+          nullable: true
+        isRequired:
+          type: boolean
+          description: Indicates if this property is required for the class
+          nullable: true
+        isWritable:
+          type: boolean
+          description: Indicates if the value of the property can be changed by the user
+          nullable: true
+        maxExclusive:
+          type: number
+          description: "Maximum value of the property, exclusive\r\nThis value does not need to be the same as the MaxExclusive in the Property contract\r\nbecause this value can be overruled at Class-Property level to define a more strict value."
+          format: double
+          nullable: true
+        maxInclusive:
+          type: number
+          description: "Maximum value of the property, inclusive\r\nThis value does not need to be the same as the MaxInclusive in the Property contract\r\nbecause this value can be overruled at Class-Property level to define a more strict value."
+          format: double
+          nullable: true
+        minExclusive:
+          type: number
+          description: "Minimum value of the property, exclusive\r\nThis value does not need to be the same as the MinExclusive in the Property contract\r\nbecause this value can be overruled at Class-Property level to define a more strict value."
+          format: double
+          nullable: true
+        minInclusive:
+          type: number
+          description: "Minimum value of the property, inclusive\r\nThis value does not need to be the same as the MinInclusive in the Property contract\r\nbecause this value can be overruled at Class-Property level to define a more strict value."
+          format: double
+          nullable: true
+        pattern:
+          type: string
+          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html.\r\nThis value does not need to be the same as the Pattern in the Property contract\r\nbecause this value can be overruled at Class-Property level to define a more strict value."
+          nullable: true
+        physicalQuantity:
+          type: string
+          description: The quantity in plain text
+          nullable: true
+        allowedValues:
+          type: array
+          items:
+            $ref: '#/components/schemas/ClassPropertyValueItemContract.v1'
+          description: "List of allowed values\r\nThis list does not need to be the same as the list of AllowedValues in the Property contract\r\nbecause this list can be overruled at Class-Property level to define a more strict list."
+          nullable: true
+        predefinedValue:
+          type: string
+          description: >-
+            Predefined value: if the class can have only one value for this
+            property, this is it
+          nullable: true
+        propertyCode:
+          type: string
+          description: >-
+            Code of the property, only applicable if property is of the same
+            dictionary as the class.
+          nullable: true
+        propertyDictionaryName:
+          type: string
+          description: Name of the Dictionary this property belongs to
+          nullable: true
+        propertyDictionaryUri:
+          type: string
+          description: Uri of the Dictionary this property belongs to
+          nullable: true
+        propertyUri:
+          type: string
+          description: Unique identification of the property
+          nullable: true
+        propertySet:
+          minLength: 1
+          type: string
+          description: Name of the Property Set
+        propertyStatus:
+          type: string
+          description: 'Status of the property: Preview, Active or Inactive'
+          nullable: true
+        propertyValueKind:
+          type: string
+          description: >-
+            Indicates kind of value: Single, Range (2 values expected), List
+            (multiple values expected), Complex (use in combination with
+            "ConnectedProperties"), ComplexList
+          nullable: true
+        symbol:
+          type: string
+          description: Symbol of the property
+          nullable: true
+        units:
+          type: array
+          items:
+            type: string
+          description: List of units to select from
+          nullable: true
+        qudtCodes:
+          type: array
+          items:
+            type: string
+          description: List of QUDT unit codes to select from
+          nullable: true
+      additionalProperties: false
     ClassPropertyValueContract.v1:
+      required:
+        - value
+      type: object
+      properties:
+        uri:
+          type: string
+          description: Globally unique identification of the value
+          nullable: true
+        code:
+          type: string
+          description: Identification of the value
+          nullable: true
+        value:
+          minLength: 1
+          type: string
+          description: Allowed value of the property
+        description:
+          type: string
+          description: Description of the value
+          nullable: true
+        sortNumber:
+          type: integer
+          description: Sort number of value within the list of values for the Property
+          format: int32
+          nullable: true
+      additionalProperties: false
+    ClassPropertyValueItemContract.v1:
       required:
         - value
       type: object
@@ -2866,6 +3560,65 @@ components:
             Optional provision of a fraction of the total amount (e.g. volume or
             weight) that applies to the class relations of one relation type
           format: double
+          nullable: true
+      additionalProperties: false
+    ClassRelationItemContract.v1:
+      required:
+        - classUri
+        - relationType
+      type: object
+      properties:
+        relationType:
+          minLength: 1
+          type: string
+          description: >-
+            Can be one of: HasReference, IsEqualTo, IsSynonymOf, IsParentOf,
+            IsChildOf, HasPart
+        classUri:
+          minLength: 1
+          type: string
+          description: URI of the related class
+        className:
+          type: string
+          description: Name of the related class
+          nullable: true
+        fraction:
+          type: number
+          description: >-
+            Optional provision of a fraction of the total amount (e.g. volume or
+            weight) that applies to the class relations of one relation type
+          format: double
+          nullable: true
+        dictionaryUri:
+          type: string
+          description: >-
+            The URI of the dictionary that contains the reverse related class.
+            This URI can be used to retrieve the dictionary
+          nullable: true
+      additionalProperties: false
+    ClassRelationsContract.v1:
+      type: object
+      properties:
+        totalCount:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        classUri:
+          type: string
+          description: Uri of the class
+          nullable: true
+        areReversedRelations:
+          type: boolean
+        classRelations:
+          type: array
+          items:
+            $ref: '#/components/schemas/ClassRelationItemContract.v1'
+          description: List of the relations of this class
           nullable: true
       additionalProperties: false
     ClassReverseRelationContract.v1:
@@ -3899,6 +4652,16 @@ components:
             type: string
           nullable: true
       additionalProperties: false
+    CodeNameDto:
+      type: object
+      properties:
+        code:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+      additionalProperties: false
     CountryContract.v1:
       type: object
       properties:
@@ -3911,7 +4674,10 @@ components:
       additionalProperties: false
     DictionaryClassesResponseContract.v1:
       required:
+        - code
         - defaultLanguageCode
+        - isLatestVersion
+        - isVerified
         - name
         - organizationCodeOwner
         - organizationNameOwner
@@ -3919,6 +4685,9 @@ components:
         - version
       type: object
       properties:
+        code:
+          minLength: 1
+          type: string
         uri:
           minLength: 1
           type: string
@@ -3938,6 +4707,10 @@ components:
           minLength: 1
           type: string
           description: The default language for this domain
+        isLatestVersion:
+          type: boolean
+        isVerified:
+          type: boolean
         license:
           type: string
           description: >-
@@ -4001,7 +4774,10 @@ components:
       additionalProperties: false
     DictionaryContract.v1:
       required:
+        - code
         - defaultLanguageCode
+        - isLatestVersion
+        - isVerified
         - name
         - organizationCodeOwner
         - organizationNameOwner
@@ -4009,6 +4785,9 @@ components:
         - version
       type: object
       properties:
+        code:
+          minLength: 1
+          type: string
         uri:
           minLength: 1
           type: string
@@ -4028,6 +4807,10 @@ components:
           minLength: 1
           type: string
           description: The default language for this domain
+        isLatestVersion:
+          type: boolean
+        isVerified:
+          type: boolean
         license:
           type: string
           description: >-
@@ -4069,10 +4852,19 @@ components:
           type: string
           description: Date and time the data of the domain has been last updated in bSDD
           format: date-time
+        availableLanguages:
+          type: array
+          items:
+            $ref: '#/components/schemas/CodeNameDto'
+          description: List of (partly) available languages for this dictionary
+          nullable: true
       additionalProperties: false
     DictionaryPropertiesResponseContract.v1:
       required:
+        - code
         - defaultLanguageCode
+        - isLatestVersion
+        - isVerified
         - name
         - organizationCodeOwner
         - organizationNameOwner
@@ -4080,6 +4872,9 @@ components:
         - version
       type: object
       properties:
+        code:
+          minLength: 1
+          type: string
         uri:
           minLength: 1
           type: string
@@ -4099,6 +4894,10 @@ components:
           minLength: 1
           type: string
           description: The default language for this domain
+        isLatestVersion:
+          type: boolean
+        isVerified:
+          type: boolean
         license:
           type: string
           description: >-
@@ -4507,17 +5306,46 @@ components:
             $ref: '#/components/schemas/ClassificationListItemContract.v3'
           nullable: true
       additionalProperties: false
+    HierarchyItemContract.v1:
+      required:
+        - code
+        - level
+        - name
+        - uri
+      type: object
+      properties:
+        level:
+          type: integer
+          format: int32
+        name:
+          minLength: 1
+          type: string
+        code:
+          minLength: 1
+          type: string
+        uri:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    InternalExternalOption.v1:
+      enum:
+        - 0
+        - 1
+        - 2
+      type: integer
+      format: int32
     LanguageContract.v1:
       required:
         - isoCode
+        - name
       type: object
       properties:
         isoCode:
           minLength: 1
           type: string
         name:
+          minLength: 1
           type: string
-          nullable: true
       additionalProperties: false
     MaterialClassificationRelationContract.v1:
       type: object
@@ -5282,6 +6110,39 @@ components:
             $ref: '#/components/schemas/MaterialClassificationRelationContract.v1'
           nullable: true
       additionalProperties: false
+    PopularDictionariesResponseContract.v1:
+      type: object
+      properties:
+        popularDictionaries:
+          type: array
+          items:
+            $ref: '#/components/schemas/PopularDictionaryContract.v1'
+          nullable: true
+      additionalProperties: false
+    PopularDictionaryContract.v1:
+      required:
+        - name
+        - organizationName
+        - uri
+      type: object
+      properties:
+        uri:
+          minLength: 1
+          type: string
+        name:
+          minLength: 1
+          type: string
+        organizationName:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    PrivateDictionaryAccessContract.v1:
+      type: object
+      properties:
+        emailAddressOrDomain:
+          type: string
+          nullable: true
+      additionalProperties: false
     ProblemDetails:
       type: object
       properties:
@@ -5329,6 +6190,57 @@ components:
           nullable: true
         propertySet:
           type: string
+          nullable: true
+      additionalProperties: false
+    PropertyClassItemContract.v1:
+      required:
+        - name
+        - propertySet
+        - uri
+      type: object
+      properties:
+        name:
+          minLength: 1
+          type: string
+          description: Name of the class
+        uri:
+          minLength: 1
+          type: string
+          description: Uri of the class
+        description:
+          type: string
+          description: Description of the class
+          nullable: true
+        dictionaryUri:
+          type: string
+          description: Uri of the dictionary where the class is defined
+          nullable: true
+        propertySet:
+          minLength: 1
+          type: string
+          description: The Pset the property belongs to within the class
+      additionalProperties: false
+    PropertyClassesContract.v1:
+      type: object
+      properties:
+        totalCount:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        propertyUri:
+          type: string
+          description: Uri of the property
+          nullable: true
+        propertyClasses:
+          type: array
+          items:
+            $ref: '#/components/schemas/PropertyClassItemContract.v1'
+          description: List of classes having this property
           nullable: true
       additionalProperties: false
     PropertyContract.v2:
@@ -6098,6 +7010,10 @@ components:
         name:
           type: string
           nullable: true
+        descriptionPart:
+          type: string
+          description: Description of the class, max 101 characters long
+          nullable: true
       additionalProperties: false
     PropertyRelationContract.v2:
       type: object
@@ -6153,6 +7069,56 @@ components:
         relatedPropertyName:
           type: string
           description: Name of the related property
+          nullable: true
+      additionalProperties: false
+    PropertyRelationItemContract.v1:
+      required:
+        - propertyUri
+        - relationType
+      type: object
+      properties:
+        relationType:
+          minLength: 1
+          type: string
+          description: 'Can be one of: HasReference, IsEqualTo, IsSimilarTo, IsParentOf'
+        propertyUri:
+          minLength: 1
+          type: string
+          description: URI of the related property
+        propertyName:
+          type: string
+          description: Name of the related property
+          nullable: true
+        dictionaryUri:
+          type: string
+          description: >-
+            The URI of the dictionary that contains the related property. This
+            URI can be used to retrieve the dictionary
+          nullable: true
+      additionalProperties: false
+    PropertyRelationsContract.v1:
+      type: object
+      properties:
+        totalCount:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        propertyUri:
+          type: string
+          description: Uri of the property
+          nullable: true
+        areReversedRelations:
+          type: boolean
+        propertyRelations:
+          type: array
+          items:
+            $ref: '#/components/schemas/PropertyRelationItemContract.v1'
+          description: List of the relations of this property
           nullable: true
       additionalProperties: false
     PropertyValueContract.v1:
@@ -6367,6 +7333,43 @@ components:
             type: string
           nullable: true
       additionalProperties: false
+    TextSearchResponseClassContract.v2:
+      type: object
+      properties:
+        dictionaryUri:
+          type: string
+          description: Unique identification of the dictionary the class belongs to
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        code:
+          type: string
+          nullable: true
+        referenceCode:
+          type: string
+          description: Code that can be used for dictionary specific purposes
+          nullable: true
+        uri:
+          type: string
+          description: Unique identification of the class
+          nullable: true
+        classType:
+          type: string
+          description: Type of the class
+          nullable: true
+        description:
+          type: string
+          nullable: true
+        parentClassName:
+          type: string
+          nullable: true
+        relatedIfcEntityNames:
+          type: array
+          items:
+            type: string
+          nullable: true
+      additionalProperties: false
     TextSearchResponseClassificationContract.v5:
       type: object
       properties:
@@ -6474,6 +7477,37 @@ components:
           description: List of Properties found
           nullable: true
       additionalProperties: false
+    TextSearchResponseContract.v2:
+      type: object
+      properties:
+        totalCount:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        classes:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextSearchResponseClassContract.v2'
+          description: The list of Classes found
+          nullable: true
+        dictionaries:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextSearchResponseDictionaryContract.v2'
+          description: The list of Dictionaries with found results
+          nullable: true
+        properties:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextSearchResponsePropertyContract.v2'
+          description: List of Properties found
+          nullable: true
+      additionalProperties: false
     TextSearchResponseContract.v5:
       type: object
       properties:
@@ -6531,6 +7565,42 @@ components:
         name:
           type: string
           nullable: true
+      additionalProperties: false
+    TextSearchResponseDictionaryContract.v2:
+      required:
+        - isLatestVersion
+        - isVerified
+        - languages
+        - name
+        - organizationName
+        - status
+        - uri
+        - version
+      type: object
+      properties:
+        uri:
+          minLength: 1
+          type: string
+        organizationName:
+          minLength: 1
+          type: string
+        name:
+          minLength: 1
+          type: string
+        version:
+          minLength: 1
+          type: string
+        status:
+          minLength: 1
+          type: string
+        languages:
+          type: array
+          items:
+            $ref: '#/components/schemas/LanguageContract.v1'
+        isLatestVersion:
+          type: boolean
+        isVerified:
+          type: boolean
       additionalProperties: false
     TextSearchResponseDomainContract.v5:
       type: object
@@ -6591,6 +7661,25 @@ components:
           type: string
           nullable: true
         uri:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        description:
+          type: string
+          nullable: true
+      additionalProperties: false
+    TextSearchResponsePropertyContract.v2:
+      type: object
+      properties:
+        dictionaryUri:
+          type: string
+          nullable: true
+        uri:
+          type: string
+          nullable: true
+        code:
           type: string
           nullable: true
         name:
@@ -6679,7 +7768,47 @@ components:
           description: Informational messages
           nullable: true
       additionalProperties: false
+    UploadImportFileResult.v2:
+      type: object
+      properties:
+        isValidatedAsync:
+          type: boolean
+          description: "Indicates if the file will be validated in the background.\r\nLarge files (>= 15 MB) will be validated in the background. You receive the results by e-mail."
+        isOk:
+          type: boolean
+          nullable: true
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/UploadImportFileResultItem.v2'
+          description: "The list of errors found.\r\nIt may happen that if you fix one error new errors will be discovered."
+          nullable: true
+        warnings:
+          type: array
+          items:
+            $ref: '#/components/schemas/UploadImportFileResultItem.v2'
+          description: "List of warnings.\r\nIt is best to have no warnings at all to avoid inconsistent or incorrect values in the database"
+          nullable: true
+        informationalMessages:
+          type: array
+          items:
+            $ref: '#/components/schemas/UploadImportFileResultItem.v2'
+          description: Informational messages
+          nullable: true
+      additionalProperties: false
     UploadImportFileResultItem.v1:
+      type: object
+      properties:
+        attribute:
+          type: string
+          description: The attribute the message applies to
+          nullable: true
+        message:
+          type: string
+          description: The message
+          nullable: true
+      additionalProperties: false
+    UploadImportFileResultItem.v2:
       type: object
       properties:
         attribute:
