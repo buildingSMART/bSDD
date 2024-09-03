@@ -52,7 +52,7 @@ Press "Upload selected file"
 
 Before each import, we recommend first using the option 'Validate only?' This will inform you of any errors or warnings without trying to import the file.
 
-**Important** Uploading a new file if a dictionary with the same version already exists will replace the existing content.
+**Important** Uploading a new file with the same version number as already existing will replace the content (only if status is `Preview`, as all other content is immutable - [read more below](#the-lifecycle-of-a-dictionary)).
 
 Once ready, and if the platform returns no errors, click "Upload selected file."
 
