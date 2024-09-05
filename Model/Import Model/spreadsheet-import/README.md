@@ -10,7 +10,7 @@ Please report if you experience any problems with using it. We advise to always 
 2. You need the two Python libraries: Numpy and Pandas. If you don't, type in the console: `pip install numpy pandas openpyxl tqdm`
 4. Copy the Excel template and fill in with your data. All the fields marked with * are mandatory if a row is in use.
 5. Save and close the Excel file.
-6. Run the Python script Excel_to_bSDDjson_converter.py with these arguments:
+6. Run the Python script Excel2bSDD_converter.py with these arguments:
     *  EXCEL_PATH (path to your Excel file)
     *  JSON_TEMPLATE_PATH (path where the template JSON file is located. You can find this file in the bSDD/Model/Import Model)
     *  JSON_OUTPUT_PATH (path where you want to create the resultant JSON file, should end with ".JSON")
