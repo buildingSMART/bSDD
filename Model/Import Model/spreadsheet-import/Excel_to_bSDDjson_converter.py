@@ -87,7 +87,9 @@ def map_data(excel_data, bsdd_part_template, name=""):
                     # Convert date to: 2022-05-12T00:00:00+02:00
                     if type(column_data) == pd._libs.tslibs.timestamps.Timestamp:
                         column_data = column_data.isoformat()
-                    elif type(column_data) == str:
+                    elif "Date" in column_name:
+                        column_data = pd.to_datetime(column_data, origin='1899-12-30', unit='D').isoformat()
+                    if type(column_data) == str:
                         if column_data.startswith("[") and column_data.endswith("]"):
                             content = literal_eval(column_data)
                             if isinstance(content, list):
@@ -95,6 +97,8 @@ def map_data(excel_data, bsdd_part_template, name=""):
                     if column_name == "RelatedIfcEntityNamesList":
                         if not isinstance(column_data, list):
                             column_data = [column_data]
+                    elif column_name in ["Uid","Example","Value","PredefinedValue"] and not isinstance(column_data, str): # turn those columns to text
+                        column_data = str(column_data)
                     new_object[column_name] = column_data
                     # new_part[column_name] = column_data
                 elif column_name in ('(Origin Class Code)','(Origin Property Code)','(Origin ClassProperty Code)'):
