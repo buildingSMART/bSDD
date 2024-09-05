@@ -217,7 +217,7 @@ _\*\* Class code is a part of the "uri" attribute: uri="```https://identifier.bu
 <details><summary>✂️ IDS1.0</summary>
 	
 ```
-<ids:class minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/apple" instructions="Those objects must be classified as apples.">     
+<ids:class minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/class/apple" instructions="Those objects must be classified as apples.">     
     <ids:value>
         <ids:simpleValue>apple</ids:simpleValue>
     </ids:value>
@@ -415,7 +415,7 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 <details><summary>✂️ IDS1.0</summary>
 
 ```
-<ids:property minOccurs="1" measure="IfcText" uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
+<ids:property minOccurs="1" measure="IfcText" uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
     <ids:propertySet>
         <ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
     </ids:propertySet>

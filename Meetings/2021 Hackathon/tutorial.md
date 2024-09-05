@@ -122,7 +122,7 @@ Response body looks like:
 Call the Classification API with one of the Classification NamespaceUris received via the SearchList API.
 
 API url: https://test.bsdd.buildingsmart.org/api/Classification/v2
-query parameters: namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc/4.3%2Fclass%2FIfcBridge&includeChildClassificationReferences=true
+query parameters: namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2Fclass%2FIfcBridge&includeChildClassificationReferences=true
 
 Response body looks like:
 ```

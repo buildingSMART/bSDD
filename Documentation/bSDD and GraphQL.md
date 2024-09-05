@@ -73,7 +73,7 @@ You can combine those queries into one:
 -- search for classes within a dictionary:
 ```
 {
-  dictionary(uri : "https://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
+  dictionary(uri : "https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1") {
     uri
     copyrightNotice
     languageCode
