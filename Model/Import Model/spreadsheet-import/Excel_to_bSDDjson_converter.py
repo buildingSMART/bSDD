@@ -225,7 +225,7 @@ if __name__ == "__main__":
     if str(WITHOUT_NULLS).lower() == 'true':
         bsdd_data = clean_nones(bsdd_data)
     resultant_file = open(JSON_OUTPUT_PATH, "w", encoding="utf-8")
-    json.dump(bsdd_data, resultant_file, indent = 2)
+    json.dump(bsdd_data, resultant_file, ensure_ascii=False, indent = 2)
     resultant_file.close()
 
     print(f"\n\033[92mFile successfully saved to {JSON_OUTPUT_PATH}\033[0m\n")
