@@ -116,7 +116,7 @@ namespace bSDD.DemoClientConsole
         // In the prototype the GraphQL endpoint is not secured yet. For production it will be
         private static bool SecuredGraphqlExample(string baseUrl, out string resultText, out int exitWithError)
         {
-            const string GraphQlExample = @"{domain(namespaceUri: ""http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3"") { name version license languageCode } }";
+            const string GraphQlExample = @"{domain(namespaceUri: ""https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3"") { name version license languageCode } }";
 
             var authResult = Authenticate();
             if (authResult == null)

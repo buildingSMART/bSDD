@@ -46,7 +46,7 @@ Mapping rules are defined for the following concepts:
 
 _\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI._
  
-_\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but whenever a class or property is referenced by "uri" attribute, those include information about their dictionaries: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/...```"_
+_\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but whenever a class or property is referenced by "uri" attribute, those include information about their dictionaries: uri="```https://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/...```"_
 
 **Snippets**
 <details><summary>✂️ bSDD</summary>
@@ -108,7 +108,7 @@ _\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but w
 
 _\* IDS references bSDD using URI instead of copying its content. Thanks to that, the information is still accessible by following the URI._ 
 
-_\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<code>```"_
+_\*\* Class code is a part of the "uri" attribute: uri="```https://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<code>```"_
 
 **Snippets**
 <details><summary>✂️ bSDD class</summary>
@@ -415,7 +415,7 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 <details><summary>✂️ IDS1.0</summary>
 
 ```
-<ids:property minOccurs="1" measure="IfcText" uri="http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
+<ids:property minOccurs="1" measure="IfcText" uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
     <ids:propertySet>
         <ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
     </ids:propertySet>

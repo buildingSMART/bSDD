@@ -73,7 +73,7 @@ You can combine those queries into one:
 -- search for classes within a dictionary:
 ```
 {
-  dictionary(uri : "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
+  dictionary(uri : "https://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1") {
     uri
     copyrightNotice
     languageCode
@@ -98,7 +98,7 @@ You can combine those queries into one:
 ATTENTION: this query will take a long time to execute for dictionaries with many classes
 ```
 {
-  dictionary(uri : "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0") {
+  dictionary(uri : "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0") {
     name
     version
     uri
@@ -193,8 +193,8 @@ query ($dictionaryUri: String!, $uri: String!) {
 The query variable section defines the variables:
 ```
 {
-  "dictionaryUri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1",
-  "uri": "http://identifier.buildingsmart.org/uri/sbe/swedishmaterials-1/class/ACDE"
+  "dictionaryUri": "https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1",
+  "uri": "https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1/class/ACDE"
 }
 ```
 ## Example meta data queries
