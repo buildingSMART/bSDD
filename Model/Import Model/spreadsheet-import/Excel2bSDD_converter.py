@@ -89,18 +89,21 @@ def map_data(excel_data, bsdd_part_template, name=""):
                         column_data = column_data.isoformat()
                     elif "Date" in column_name and column_data:
                         column_data = pd.to_datetime(column_data, origin='1899-12-30', unit='D').isoformat()
+                    elif (column_name in ["RevisionNumber","VersionNumber","SortNumber"] or (column_name[0:9]=="Dimension" and len(column_name)>9)) and not column_data is None:
+                        column_data = int(column_data)
+                    elif column_name == "RelatedIfcEntityNamesList":
+                        if not isinstance(column_data, list):
+                            column_data = [column_data]
+                    elif column_name in ["Uid","Example","Value","PredefinedValue"] and not isinstance(column_data, str): # turn those columns to text
+                        column_data = str(column_data)
+                    # process lists
                     if type(column_data) == str:
                         if column_data.startswith("[") and column_data.endswith("]"):
                             content = literal_eval(column_data)
                             if isinstance(content, list):
                                 column_data = content
-                    if column_name == "RelatedIfcEntityNamesList":
-                        if not isinstance(column_data, list):
-                            column_data = [column_data]
-                    elif column_name in ["Uid","Example","Value","PredefinedValue"] and not isinstance(column_data, str): # turn those columns to text
-                        column_data = str(column_data)
+                    # append
                     new_object[column_name] = column_data
-                    # new_part[column_name] = column_data
                 elif column_name in ('(Origin Class Code)','(Origin Property Code)','(Origin ClassProperty Code)'):
                     new_object[column_name] = column_data
                 else:
