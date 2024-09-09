@@ -87,7 +87,7 @@ def map_data(excel_data, bsdd_part_template, name=""):
                     # Convert date to: 2022-05-12T00:00:00+02:00
                     if type(column_data) == pd._libs.tslibs.timestamps.Timestamp:
                         column_data = column_data.isoformat()
-                    elif "Date" in column_name:
+                    elif "Date" in column_name and column_data:
                         column_data = pd.to_datetime(column_data, origin='1899-12-30', unit='D').isoformat()
                     if type(column_data) == str:
                         if column_data.startswith("[") and column_data.endswith("]"):
