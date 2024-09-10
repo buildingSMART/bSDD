@@ -14,7 +14,7 @@ Please report if you experience any problems with using it. We advise to always 
     *  EXCEL_PATH (path to your Excel file)
     *  JSON_TEMPLATE_PATH (path where the template JSON file is located. You can find this file in the bSDD/Model/Import Model)
     *  JSON_OUTPUT_PATH (path where you want to create the resultant JSON file, should end with ".JSON")
-    *  WITHOUT_NULLS (False - produce minimal JSON only with fields filled in Excel, True - export also fields that are empty in Excel with 'null' assigned)  
+    *  WITHOUT_NULLS (set to 'True' to produce a minimal JSON only with fields filled in Excel, 'False' to also export all empty fields with 'null' assigned)  
    
     You can do that from the (Windows) console with:
     ```Python Excel2bSDD_converter.py "C:\...\Excel_file.xlsx" "C:\...\Template.json" "C:\...\Result.json" False```
