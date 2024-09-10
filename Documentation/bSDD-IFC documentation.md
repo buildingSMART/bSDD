@@ -217,14 +217,14 @@ _\*\* Class code is a part of the "uri" attribute: uri="```http://identifier.bui
 <details><summary>✂️ IDS1.0</summary>
 	
 ```
-<ids:class minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs-1.0/class/apple" instructions="Those objects must be classified as apples.">     
-    <ids:value>
-        <ids:simpleValue>apple</ids:simpleValue>
-    </ids:value>
-    <ids:system>
-        <ids:simpleValue>fruitvegs</ids:simpleValue>
-    </ids:system>
-</ids:class>
+<ids:classification uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/apple" cardinality="required" instructions="Those objects must be classified as apples.">
+  <ids:value>
+	<ids:simpleValue>apple</ids:simpleValue>
+  </ids:value>
+  <ids:system>
+	<ids:simpleValue>fruitvegs</ids:simpleValue>
+  </ids:system>
+</ids:classification>
 ```
 </details>
 
@@ -285,11 +285,10 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 <details><summary>✂️ IDS1.0</summary>
 
 ```
-<ids:material minOccurs="1" maxOccurs="unbounded" uri="
-https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/mat/fiber" instructions="The material should be called fiber.">     
-    <ids:value>
-        <ids:simpleValue>fiber</ids:simpleValue>
-    </ids:value>
+<ids:material uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/fiber" cardinality="required" instructions="The material should be called fiber.">
+  <ids:value>
+	<ids:simpleValue>fiber</ids:simpleValue>
+  </ids:value>
 </ids:material>
 ```
 </details>
@@ -415,19 +414,19 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 <details><summary>✂️ IDS1.0</summary>
 
 ```
-<ids:property minOccurs="1" measure="IfcText" uri="http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
-    <ids:propertySet>
-        <ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
-    </ids:propertySet>
-    <ids:name>
-        <ids:simpleValue>Manufacturer</ids:simpleValue>
-    </ids:name>
-    <ids:value>
-        <xs:restriction>
-            <xs:enumeration value="Manufacturer 1"/>
-            <xs:enumeration value="Manufacturer 2"/>
-        </xs:restriction>
-    </ids:value>
+<ids:property dataType="IFCLABEL" uri="http://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/manufacturer" cardinality="required" instructions="One of the two manufacturers must be specified.">
+  <ids:propertySet>
+	<ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
+  </ids:propertySet>
+  <ids:baseName>
+	<ids:simpleValue>Manufacturer</ids:simpleValue>
+  </ids:baseName>
+  <ids:value>
+	<xs:restriction base="xs:string">
+	  <xs:enumeration value="Manufacturer 1" />
+	  <xs:enumeration value="Manufacturer 2" />
+	</xs:restriction>
+  </ids:value>
 </ids:property>
 ```
 </details>
