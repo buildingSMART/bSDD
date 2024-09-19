@@ -24,10 +24,13 @@ The buildingSMART Data Dictionary is a key component in many openBIM workflows. 
 
 Mapping rules are defined for the following concepts:
 
-1. [bSDD dictionary](#1.-bSDD-dictionary)
-2. [bSDD classes (objects)](#2.-bSDD-classes-(objects))
-3. [bSDD materials](#3.-bSDD-materials)
-4. [bSDD properties](#4.-bSDD-properties)
+- [Referencing bSDD in IFC and IDS](#referencing-bsdd-in-ifc-and-ids)
+	- [openBIM workflows](#openbim-workflows)
+	- [bSDD - IFC mapping](#bsdd---ifc-mapping)
+		- [1. bSDD dictionary](#1-bsdd-dictionary)
+		- [2. bSDD classes (objects)](#2-bsdd-classes-objects)
+		- [3. bSDD materials](#3-bsdd-materials)
+		- [4. bSDD properties](#4-bsdd-properties)
 
 ---
 
@@ -38,15 +41,13 @@ Mapping rules are defined for the following concepts:
 
 |                    | bSDD                      | IFC4x3_ADD2                      | IFC4                      | IFC2x3                    | IDS1.0   |
 |--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
-| **Dictionary name**    | DictionaryName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |❎*    |
+| **Dictionary name**    | DictionaryName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |ids:classification.system / (uri)*    |
 | **Dictionary source**  | *uri of the dictionary* | IfcClassification.Specification | IfcClassification.Location    | ❌ (IfcClassification.Source can be used as a workaround)   |uri      |
-| **Dictionary version** | DictionaryVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |uri**      |
-| **Dictionary owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |uri**      |
-| **Dictionary date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |❎*      |
+| **Dictionary version** | DictionaryVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |(uri)*      |
+| **Dictionary owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |(uri)*      |
+| **Dictionary date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |(uri)*      |
 
-_\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI._
- 
-_\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but whenever a class or property is referenced by "uri" attribute, those include information about their dictionaries: uri="```https://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/...```"_
+_\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/...```."_
 
 **Snippets**
 <details><summary>✂️ bSDD</summary>
@@ -102,13 +103,11 @@ _\*\* The IDS doesn't support a direct reference to the bSDD dictionaries, but w
 
 |                    | bSDD                      | IFC4x3_ADD2 & IFC4                      | IFC2x3                    | IDS1.0   |
 |---------------------------|--------------------------------------|-------------------------------------------|------------------------------------------|-------|
-| **Class name**   | name *of the class*           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |❎*      |
-| **Class code**   | code *of the class*           | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |uri**      |
+| **Class name**   | name *of the class*           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |(uri)*      |
+| **Class code**   | code *of the class*           | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |(uri)*      |
 | **Class identifier** | uri *of the class* | IfcClassificationReference.Location      | IfcClassificationReference.Location      |uri      |
 
-_\* IDS references bSDD using URI instead of copying its content. Thanks to that, the information is still accessible by following the URI._ 
-
-_\*\* Class code is a part of the "uri" attribute: uri="```https://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<code>```"_
+_\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<ClassCode>```."_
 
 **Snippets**
 <details><summary>✂️ bSDD class</summary>
@@ -217,14 +216,14 @@ _\*\* Class code is a part of the "uri" attribute: uri="```https://identifier.bu
 <details><summary>✂️ IDS1.0</summary>
 	
 ```
-<ids:class minOccurs="1" uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/class/apple" instructions="Those objects must be classified as apples.">     
-    <ids:value>
-        <ids:simpleValue>apple</ids:simpleValue>
-    </ids:value>
-    <ids:system>
-        <ids:simpleValue>fruitvegs</ids:simpleValue>
-    </ids:system>
-</ids:class>
+<ids:classification uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/apple" cardinality="required" instructions="Those objects must be classified as apples.">
+  <ids:value>
+	<ids:simpleValue>apple</ids:simpleValue>
+  </ids:value>
+  <ids:system>
+	<ids:simpleValue>fruitvegs</ids:simpleValue>
+  </ids:system>
+</ids:classification>
 ```
 </details>
 
@@ -239,11 +238,11 @@ Below are the mapping rules for different IFC versions.
 
 |                                                   | bSDD                                                               | IFC4x3_ADD2 & IFC4         | IFC2x3    |IDS1.0   |
 |---------------------------------------------------|--------------------------------------------------------------------|-------------------------|-----------|-----|
-| **Material name**  | Class(Material).**Name**       | IfcMaterial.**Name** & IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Name**        | IfcMaterial.**Name**        | ❎*      |
-| **Material code**  | Class(Material).**Code**        | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Identification**        | IfcMaterialClassificationRelationship.IfcClassificationReference.**ItemReference**       | ❎*      |
+| **Material name**  | Class(Material).**Name**       | IfcMaterial.**Name** & IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Name**        | IfcMaterial.**Name**        | (uri)*      |
+| **Material code**  | Class(Material).**Code**        | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Identification**        | IfcMaterialClassificationRelationship.IfcClassificationReference.**ItemReference**       | (uri)*      |
 | **Material identifier**  | Class(Material).**Uri**  | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Location** | IfcMaterialClassificationRelationship.IfcClassificationReference.**Location**  |uri      |
 
-_\* IDS references bSDD using URI instead of copying its content. Thanks to that, the information is still accessible by following the URI._
+_\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<MaterialCode>```."_
 
 **Snippets**
 
@@ -252,10 +251,10 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 <details><summary>✂️ IFC4x3_ADD2 & IFC4</summary>
 
     /*    		 Source, Edition, EditionDate,  Name,                Description,            Specification,                                                      ReferenceTokens   */
-    #1=IFCCLASSIFICATION('SBE',  '1',     '2023-08-27', 'Swedish materials', 'List of materials...', 'https://identifier.buildingsmart.org/uri/molio/cciconstruction/1.0', ('.'));
+    #1=IFCCLASSIFICATION('bs-agri',  '1.1',     '2022-12-26', 'Fruit and vegetables', 'Demonstration dictionary', 'https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1', ('.'));
     
     /*  			  Location,                                                                   Identification, Name,     ReferencedSource, Description,           Sort   */
-    #2=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1/mat/CE--', 'CE--',         'Betong', #1,               'kompositmaterial...', $);
+    #2=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1/class/CE--', 'CE--',         'Betong', #1,               'kompositmaterial...', $);
 
     /*   	    Name,    Description,          Category   */
     #3=IFCMATERIAL('Betong','kompositmaterial...','concrete');
@@ -268,14 +267,14 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 <details><summary>✂️ IFC2x3</summary>
     
     /* 			 Source, Edition, EditionDate, Name 		    */
-    #1=IFCCLASSIFICATION('SBE',  '1',    '2023-08-27', 'Swedish materials');
+    #1=IFCCLASSIFICATION('bs-agri',  '1.1',    '2022-12-26', 'Fruit and vegetables');
     
     /*  			  Location,                                                                   ItemReference, Name,     ReferencedSource */
-    #2=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/sbe/swedishmaterials/1/mat/CE--', 'CE--',        'Betong', #1);
+    #2=IFCCLASSIFICATIONREFERENCE('https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/fiber', 'fiber',        'Fiber', #1);
      IfcClassificationReference( $,**ItemReference**,$,$)
      
     /*              Name      */
-    #3=IFCMATERIAL('Betong');
+    #3=IFCMATERIAL('Fiber');
     
     /*  				     MaterialClassifications, ClassifiedMaterial  */
     #4=IFCMATERIALCLASSIFICATIONRELATIONSHIP(#2,                      #3);
@@ -285,11 +284,10 @@ _For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(ob
 <details><summary>✂️ IDS1.0</summary>
 
 ```
-<ids:material minOccurs="1" maxOccurs="unbounded" uri="
-https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/mat/fiber" instructions="The material should be called fiber.">     
-    <ids:value>
-        <ids:simpleValue>fiber</ids:simpleValue>
-    </ids:value>
+<ids:material uri="https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/class/fiber" cardinality="required" instructions="The material should be called fiber.">
+  <ids:value>
+	<ids:simpleValue>fiber</ids:simpleValue>
+  </ids:value>
 </ids:material>
 ```
 </details>
@@ -305,16 +303,14 @@ Below are the mapping rules for different IFC versions.
 
 |                                                | bSDD                                      | IFC4x3_ADD2                                      | IFC4 & IFC2x3                                      |IDS1.0                                     |
 |------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|-----------------------|
-| **Property name**                              | PropertyCode *(of ClassProperty)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |❎*      |
+| **Property name**                              | PropertyCode *(of ClassProperty)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |(uri)*      |
 | **Property identifier**                            | uri *(of ClassProperty)*          | IfcPropertySingleValue.Specification                    | IfcPropertySingleValue.Description                      |uri      |
-| **Property predefined value** (single value)              | PredefinedValue *(of ClassProperty)*   | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |❎*      |
-| **Property unit** (single value or from enumeration)              | PredefinedValue *(of Property or ClassProperty)*   | IfcPropertySingleValue.Unit          | IfcPropertySingleValue.Unit          |❎*      |
-| **Property allowed values** (from enumeration) | AllowedValues *(of Property or ClassProperty)*    | IfcPropertyEnumeratedValue .EnumerationValues | IfcPropertyEnumeratedValue .EnumerationValues |❎*      |
-| **PropertySet name**                           | PropertySet *(of ClassProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          |❎*      |
+| **Property predefined value** (single value)              | PredefinedValue *(of ClassProperty)*   | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |(uri)*      |
+| **Property unit** (single value or from enumeration)              | PredefinedValue *(of Property or ClassProperty)*   | IfcPropertySingleValue.Unit          | IfcPropertySingleValue.Unit          |(uri)*      |
+| **Property allowed values** (from enumeration) | AllowedValues *(of Property or ClassProperty)*    | IfcPropertyEnumeratedValue .EnumerationValues | IfcPropertyEnumeratedValue .EnumerationValues |(uri)*      |
+| **PropertySet name**                           | PropertySet *(of ClassProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          |(uri)*      |
 
-_\* IDS references bSDD using URI instead of copying its content. Thanks to that, the information is still accessible by following the URI._
-
-_\*\* Property code is a part of the "uri" attribute_
+_\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/prop/<PropertyCode>```."_
 
 ⚠️ **IMPORTANT**
 In bSDD, properties exist independently of the class (object) they might be assigned to. Therefore: 
@@ -415,19 +411,19 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 <details><summary>✂️ IDS1.0</summary>
 
 ```
-<ids:property minOccurs="1" measure="IfcText" uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/manufacturer"  instructions="One of the two manufacturers must be specified.">
-    <ids:propertySet>
-        <ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
-    </ids:propertySet>
-    <ids:name>
-        <ids:simpleValue>Manufacturer</ids:simpleValue>
-    </ids:name>
-    <ids:value>
-        <xs:restriction>
-            <xs:enumeration value="Manufacturer 1"/>
-            <xs:enumeration value="Manufacturer 2"/>
-        </xs:restriction>
-    </ids:value>
+<ids:property dataType="IFCLABEL" uri="http://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/manufacturer" cardinality="required" instructions="One of the two manufacturers must be specified.">
+  <ids:propertySet>
+	<ids:simpleValue>Pset_ManufacturerTypeInformation</ids:simpleValue>
+  </ids:propertySet>
+  <ids:baseName>
+	<ids:simpleValue>Manufacturer</ids:simpleValue>
+  </ids:baseName>
+  <ids:value>
+	<xs:restriction base="xs:string">
+	  <xs:enumeration value="Manufacturer 1" />
+	  <xs:enumeration value="Manufacturer 2" />
+	</xs:restriction>
+  </ids:value>
 </ids:property>
 ```
 </details>
