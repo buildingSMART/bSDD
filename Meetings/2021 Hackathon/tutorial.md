@@ -1,3 +1,5 @@
+IMPORTANT: naming and (some) example API calls in this file are outdated! Please check the [swagger information page](https://test.bsdd.buildingsmart.org/swagger) for up-to-date API information.
+
 # March 2021 Hackathon Tutorial
 
 How to use the buildingSMART Data Dictionary API?
@@ -56,7 +58,7 @@ Response body looks like:
 ```
 [
   {
-    "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3",
+    "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3",
     "name": "IFC",
     "version": "4.3",
     "organizationNameOwner": "buildingSMART",
@@ -67,7 +69,7 @@ Response body looks like:
     "qualityAssuranceProcedureUrl": "https://www.buildingsmart.org/about/bsi-process"
   },
   {
-    "namespaceUri": "http://identifier.buildingsmart.org/uri/etim/etim-7.0",
+    "namespaceUri": "https://identifier.buildingsmart.org/uri/etim/etim/7.0",
     "name": "ETIM",
     "version": "7.0",
     "organizationNameOwner": "ETIM International",
@@ -88,7 +90,7 @@ Optionally provide some text to search for or provide an official IFC entity nam
 Not all domains have RelatedIfcName(s) available.
 
 API url: https://test.bsdd.buildingsmart.org/api/SearchListOpen/v2
-query parameters: DomainNamespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3&SearchText=bridge
+query parameters: DomainNamespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc/4.3&SearchText=bridge
 
 Response body looks like:
 ```
@@ -97,20 +99,20 @@ Response body looks like:
   "domains": [
     {
       "name": "IFC",
-      "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3",
+      "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3",
       "classifications": [
         {
           "name": "IfcBridge",
-          "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge",
+          "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBridge",
           "definition": "A Bridge is civil engineering works that affords passage to pedestrians, animals, vehicles, and services above obstacles or between two points at a height above ground. NOTE Definition from ISO 6707 1 2014 Civil engineering works that affords passage to pedestrians, animals, vehicles, and services above obstacles or between two points at a height above ground. bSI Documentation"
         },
         {
           "name": "IfcBridge.ARCHED",
-          "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.ARCHED"
+          "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBridge.ARCHED"
         },
         {
           "name": "IfcBridge.CABLE_STAYED",
-          "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.CABLE_STAYED"
+          "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBridge.CABLE_STAYED"
         },
 ...
 ```
@@ -120,20 +122,20 @@ Response body looks like:
 Call the Classification API with one of the Classification NamespaceUris received via the SearchList API.
 
 API url: https://test.bsdd.buildingsmart.org/api/Classification/v2
-query parameters: namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc-4.3%2Fclass%2FIfcBridge&includeChildClassificationReferences=true
+query parameters: namespaceUri=http%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3%2Fclass%2FIfcBridge&includeChildClassificationReferences=true
 
 Response body looks like:
 ```
 {
   "parentClassificationReference": {
-    "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcFacility",
+    "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcFacility",
     "name": "IfcFacility",
     "code": "IfcFacility"
   },
   "classificationProperties": [
     {
       "propertyDomainName": "IFC",
-      "propertyNamespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/StructureIndicator",
+      "propertyNamespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/StructureIndicator",
       "name": "StructureIndicator",
       "propertySet": "Pset_BridgeCommon",
       "dataType": "PEnum_StructureIndicator",
@@ -152,12 +154,12 @@ Response body looks like:
   ],
   "childClassificationReferences": [
     {
-      "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.CULVERT",
+      "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBridge.CULVERT",
       "name": "IfcBridge.CULVERT",
       "code": "IfcBridge.CULVERT"
     },
     {
-      "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/IfcBridge.CABLE_STAYED",
+      "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBridge.CABLE_STAYED",
       "name": "IfcBridge.CABLE_STAYED",
       "code": "IfcBridge.CABLE_STAYED"
     },

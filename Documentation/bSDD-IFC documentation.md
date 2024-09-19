@@ -24,10 +24,13 @@ The buildingSMART Data Dictionary is a key component in many openBIM workflows. 
 
 Mapping rules are defined for the following concepts:
 
-1. [bSDD dictionary](#1.-bSDD-dictionary)
-2. [bSDD classes (objects)](#2.-bSDD-classes-(objects))
-3. [bSDD materials](#3.-bSDD-materials)
-4. [bSDD properties](#4.-bSDD-properties)
+- [Referencing bSDD in IFC and IDS](#referencing-bsdd-in-ifc-and-ids)
+	- [openBIM workflows](#openbim-workflows)
+	- [bSDD - IFC mapping](#bsdd---ifc-mapping)
+		- [1. bSDD dictionary](#1-bsdd-dictionary)
+		- [2. bSDD classes (objects)](#2-bsdd-classes-objects)
+		- [3. bSDD materials](#3-bsdd-materials)
+		- [4. bSDD properties](#4-bsdd-properties)
 
 ---
 

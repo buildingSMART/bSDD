@@ -1,3 +1,5 @@
+IMPORTANT: naming and (some) example API calls in this file are outdated! Please check the [swagger information page](https://test.bsdd.buildingsmart.org/swagger) for up-to-date API information.
+
 # Hackathon - Use case walkthrough
 
 The Python console app provides the API calls needed to implement the use case presented in the Hackathon on 2021 3th of March.
@@ -26,7 +28,7 @@ Call Get_Domains()
 ```json
 [
   {
-    "namespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3",
+    "namespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3",
     "name": "IFC",
     "version": "4.3",
     "organizationNameOwner": "buildingSMART",
@@ -38,7 +40,7 @@ Call Get_Domains()
   },
   
    {
-    "namespaceUri": "http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2",
+    "namespaceUri": "https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2",
     "name": "NL-SfB 2005",
     "version": "2.2",
     "organizationNameOwner": "NL-SfB",
@@ -62,7 +64,7 @@ Call Get_Classes_Linked_To_IFC()
 
 Need to input the parameters into the console
 
-	- DomainNamespaceUri : http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2
+	- DomainNamespaceUri : https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2
 	
 	- RelatedIfcEntity: IfcWall
 	
@@ -76,15 +78,15 @@ The call will return 22 classification linked to IfcWall
   "domains": [
     {
       "name": "NL-SfB 2005",
-      "namespaceUri": "http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2",
+      "namespaceUri": "https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2",
       "classifications": [
         {
           "name": "(16.21) funderingsconstructies; keerwanden, grondkerende wanden",
-          "namespaceUri": "http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2/class/16.21"
+          "namespaceUri": "https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2/class/16.21"
         },
         {
           "name": "(16.22) funderingsconstructies; keerwanden, waterkerende wanden",
-          "namespaceUri": "http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2/class/16.22"
+          "namespaceUri": "https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2/class/16.22"
         }
         ...
       ]
@@ -109,7 +111,7 @@ Call Get_Classification_Properties()
 
 Need to input the parameters into the console
 
-	- ClassificationUri : http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2/class/16.21
+	- ClassificationUri : https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2/class/16.21
 	
 	- ClassificationName: 16.21 (we just use it for a nice filename, nothing else)
 	
@@ -122,14 +124,14 @@ Need to input the parameters into the console
     "IfcWall"
   ],
   "parentClassificationReference": {
-    "namespaceUri": "http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2/class/16.2",
+    "namespaceUri": "https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2/class/16.2",
     "name": "(16.2) funderingsconstructies; keerwanden",
     "code": "16.2"
   },
   "classificationProperties": [
     {
       "propertyDomainName": "IFC",
-      "propertyNamespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/LoadBearing",
+      "propertyNamespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/LoadBearing",
       "name": "LoadBearing",
       "description": "Indicates whether the object is intended to carry loads TRUE or not FALSE .",
       "propertySet": "Pset_WallCommon",
@@ -138,7 +140,7 @@ Need to input the parameters into the console
     },
     {
       "propertyDomainName": "IFC",
-      "propertyNamespaceUri": "http://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/IsExternal",
+      "propertyNamespaceUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/IsExternal",
       "name": "IsExternal",
       "description": "Indication of whether the junction box type is allowed for exposure to outdoor elements set TRUE where external exposure is allowed .",
       "propertySet": "Pset_WallCommon",
@@ -147,7 +149,7 @@ Need to input the parameters into the console
     }
   ],
   "code": "16.21",
-  "namespaceUri": "http://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005-2.2/class/16.21",
+  "namespaceUri": "https://identifier.buildingsmart.org/uri/nlsfb/nlsfb2005/2.2/class/16.21",
   "name": "(16.21) funderingsconstructies; keerwanden, grondkerende wanden",
   "status": "Preview",
   "activationDateUtc": "0001-01-01T00:00:00",
