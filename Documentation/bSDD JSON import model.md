@@ -173,7 +173,7 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 
 |  Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
-| Code                | Text     | ✅     |     | Unique identification within the dictionary of this `ClassProperty`. See section [Code format](#code-format).                                                |
+| Code                | Text     |      |     | Unique identification code of the `ClassProperty`. See section [Code format](#code-format). When left empty on import, bSDD will generate a random GUID.    |
 | PropertyCode        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
 | PropertyUri         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, e.g. [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
 | Description         | Text     |         | ✅ | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
