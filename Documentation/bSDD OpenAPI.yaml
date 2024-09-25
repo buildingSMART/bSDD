@@ -353,7 +353,7 @@ paths:
     get:
       tags:
         - Dictionary
-      summary: "Get Dictionary with tree of classes.\r\nThis one replaces /api/Domain. See https://github.com/buildingSMART/bSDD/blob/master/Documentation/API%20version%20history.md for changes."
+      summary: Get Dictionary with (tree of) classes
       parameters:
         - name: Uri
           in: query
@@ -377,7 +377,12 @@ paths:
             type: string
         - name: SearchText
           in: query
-          description: "Optional filter text.\r\nNot supported when UseNestedClasses = true"
+          description: "Optional filter text.\r\nIgnored when UseNestedClasses = true"
+          schema:
+            type: string
+        - name: RelatedIfcEntity
+          in: query
+          description: "Optional filter on related IFC entity. It accepts an IFC entity code (e.g. IfcWall) or uri (e.g. https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall).\r\nWhen a code is supplied, finding matching classes ignores the IFC version.\r\nIgnored when UseNestedClasses = true"
           schema:
             type: string
         - name: Offset
@@ -409,31 +414,40 @@ paths:
           content:
             text/plain:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             application/json:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             text/json:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             application/xml:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             text/xml:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             text/html:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             text/turtle:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             application/x-turtle:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
             application/rdf+xml:
               schema:
-                $ref: '#/components/schemas/DictionaryClassesResponseContract.v1'
+                $ref: >-
+                  #/components/schemas/DictionaryClassesResponseContract.v1.Classes
   /api/Dictionary/v1/Properties:
     get:
       tags:
@@ -3051,7 +3065,7 @@ components:
           description: List of parents of this class till root
           nullable: true
       additionalProperties: false
-    ClassListItemContract.v1:
+    ClassListItemContract.v1.Classes:
       type: object
       properties:
         uri:
@@ -3079,7 +3093,7 @@ components:
         children:
           type: array
           items:
-            $ref: '#/components/schemas/ClassListItemContract.v1'
+            $ref: '#/components/schemas/ClassListItemContract.v1.Classes'
           nullable: true
       additionalProperties: false
     ClassPropertiesContract.v1:
@@ -4672,7 +4686,7 @@ components:
           type: string
           nullable: true
       additionalProperties: false
-    DictionaryClassesResponseContract.v1:
+    DictionaryClassesResponseContract.v1.Classes:
       required:
         - code
         - defaultLanguageCode
@@ -4719,7 +4733,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -4755,7 +4771,7 @@ components:
         classes:
           type: array
           items:
-            $ref: '#/components/schemas/ClassListItemContract.v1'
+            $ref: '#/components/schemas/ClassListItemContract.v1.Classes'
           nullable: true
         classesTotalCount:
           type: integer
@@ -4819,7 +4835,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -4906,7 +4924,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -5021,7 +5041,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -5091,7 +5113,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -5187,7 +5211,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -5262,7 +5288,9 @@ components:
           nullable: true
         licenseUrl:
           type: string
-          description: URL where you can find more details about the license
+          description: >-
+            URL where you can find more details about the license or default
+            link to info about licensing
           nullable: true
         qualityAssuranceProcedure:
           type: string
@@ -7568,6 +7596,7 @@ components:
       additionalProperties: false
     TextSearchResponseDictionaryContract.v2:
       required:
+        - code
         - isLatestVersion
         - isVerified
         - languages
@@ -7582,6 +7611,9 @@ components:
           minLength: 1
           type: string
         organizationName:
+          minLength: 1
+          type: string
+        code:
           minLength: 1
           type: string
         name:

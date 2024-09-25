@@ -12,6 +12,15 @@ A new version will only be created if it 'breaks' the current version. For examp
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
 
+## 2024-09-23
+
+Changed API methods:
+ * api/Dictionary/v1/Classes:
+    - Option "RelatedIfcEntity" added
+ * api/TextSearch/v2:
+    - Field "code" added to output of the Dictionaries list
+
+
 ## 2024-08-16
 
 New API methods:
