@@ -9,7 +9,6 @@ Code,Name,Symbol,QUDT
 %obsc/ft,percent obscuration per foot,NULL,NULL
 %obsc/m,percent obscuration per metre,NULL,NULL
 %RH,percent relative humidity,NULL,NULL
-(m²·K)/W,(m²·K)/W,NULL,NULL
 °,grad (angel degree),NULL,GRAD
 °C,celsius,NULL,NULL
 °C/h,degrees celsius per hour,NULL,NULL
@@ -51,8 +50,8 @@ AFN,afghani,Af,AFN
 Ah,ampere hour,NULL,A-HR
 AirWatt,AirWatt,NULL,NULL
 ALL,lek,NULL,Lek
-Am²,ampere square metre,NULL,A-M2
-Am²/Js,ampere square metre per joule second,NULL,A-M2-PER-J-SEC
+A·m²,ampere square metre,NULL,A-M2
+A·m²/(J·s),ampere square metre per joule second,NULL,A-M2-PER-J-SEC
 AMD,armenian dram,Դ,AMD
 Ao,angstrom,Å,ANGSTROM
 AOA,kwanza,Kz,Kwanza
@@ -166,7 +165,7 @@ ft/s,feet per second,NULL,FT-PER-SEC
 ft²,square foot,NULL,FT2
 ft³,cubic foot,NULL,FT3
 ft³ gas,cubic feet natural gas,NULL,NULL
-ftlbs/sec,foot pounds per second,NULL,FT-LB_F-PER-SEC
+ft·lbs/sec,foot pounds per second,NULL,FT-LB_F-PER-SEC
 g,gram,NULL,GM
 g/cm³,gram per cubic centimetre,NULL,GM-PER-CentiM3
 g/h,gram per hour,NULL,GM-PER-HR
@@ -193,7 +192,7 @@ GIP,gibraltar pound,NULL,GibraltarPound
 GJ,gigajoule,NULL,NULL
 GJ/h,gigajoule per hour,NULL,NULL
 GJ/jaar,GJ/jaar,NULL,NULL
-GJ/year,Gigajoule per year,NULL,NULL
+GJ/yr,Gigajoule per year,NULL,NULL
 GMD,dalasi,NULL,Dalasi
 GNF,guinea franc,NULL,GuineaFranc
 GTQ,quetzal,NULL,NULL
@@ -290,7 +289,7 @@ kJ/K,kilojoule per degree kelvin,NULL,KiloJ-PER-K
 kJ/h,kilojoule per hour,NULL,NULL
 kJ/kg,kilojoule per kilogram,NULL,KiloJ-PER-KiloGM
 kJ/kg dry,kilojoule per kilogram dry air,NULL,NULL
-kJ/kg·K,kilojoule per kilogram kelvin,NULL,KiloJ-PER-KiloGM-K
+kJ/(kg·K),kilojoule per kilogram kelvin,NULL,KiloJ-PER-KiloGM-K
 kJ/m²,kJ/m²,NULL,NULL
 kJ/Ohm,kJ/Ohm,NULL,NULL
 kL,kilolitre,NULL,KiloL
@@ -351,7 +350,7 @@ m,metre,NULL,M
 m rad,m rad,NULL,NULL
 m/h,metre per hour,NULL,M-PER-HR
 m/min,metre per minute,NULL,M-PER-MIN
-m/Nm²,metre per newton square metre,NULL,NULL
+m/(N·m²),metre per newton square metre,NULL,NULL
 m/s,metre per second,NULL,M-PER-SEC
 m/s²,metre per square second,NULL,M-PER-SEC2
 m²,square metre,NULL,M2
@@ -359,7 +358,7 @@ m²/h,square metre per hour,NULL,NULL
 m²/l,square metre per litre,NULL,NULL
 m²/m,square metre per metre,NULL,NULL
 m²/N,square metre per newton,NULL,M2-PER-N
-m²K/W,square metre kelvin per watt,NULL,NULL
+m²·K/W,square metre kelvin per watt,NULL,NULL
 m²/s,square metre per second,NULL,M2-PER-SEC
 m³,cubic metre,NULL,M3
 m⁴,metre to the fourth power,NULL,M4
@@ -499,7 +498,7 @@ PKR,pakistan rupee,₨,PakistanRupee
 PLN,pzloty,zł,NULL
 ppb,parts per billion,NULL,PPB
 ppm,parts per million,NULL,PPM
-ppmv,Microlitre per Litre,NULL,MicroL-PER-L
+ppmv,Microlitre per Litre,NULL,MicroL-PER-L
 ppu,parts per unit,NULL,NULL
 psi,pound force per square inch (lbf/in²),NULL,PSI
 psi/°F,psi per degree fahrenheit,NULL,NULL
@@ -582,10 +581,10 @@ W/K,W/K,NULL,W-PER-K
 W/m,W/m,NULL,W-PER-M
 W/m²,watt per square metre,NULL,W-PER-M2
 W/m² irr,watt per square metre irradiance,NULL,NULL
-W/m²K,watt per square metre kelvin,NULL,W-PER-M2-K
-W/m²K²,watt per square metre square kelvin,NULL,NULL
+W/(m²·K),watt per square metre kelvin,NULL,W-PER-M2-K
+W/(m²·K²),watt per square metre square kelvin,NULL,NULL
 W/m³/s,watt per cubic metre per second,NULL,NULL
-W/mK,watt per metre kelvin,NULL,W-PER-M-K
+W/(m·K),watt per metre kelvin,NULL,W-PER-M-K
 Wb,weber,NULL,WB
 Wh,watt hour,NULL,W-HR
 Wh/ft²,watt hours per square foot,NULL,NULL
