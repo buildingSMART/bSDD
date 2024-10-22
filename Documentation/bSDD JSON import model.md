@@ -3,13 +3,13 @@
 * [Data model](#data-model)
 * [JSON format](#json-format)
 * [List of fields](#list-of-fields)
-    * [Dictionary](#dictionary)  
-    * [Class](#class)  
-    * [Property](#property)  
-    * [ClassProperty](#classproperty)  
-    * [ClassRelation](#classrelation)  
-    * [AllowedValue](#allowedvalue)  
-    * [PropertyRelation](#propertyrelation)  
+    * [Dictionary](#Dictionary)  
+    * [Class](#Class)  
+    * [Property](#Property)  
+    * [ClassProperty](#ClassProperty)  
+    * [ClassRelation](#ClassRelation)  
+    * [AllowedValue](#AllowedValue)  
+    * [PropertyRelation](#PropertyRelation)  
 * [Additional explanations](#additional-explanations)
 * [Notifications](#notifications)
 
@@ -40,7 +40,7 @@ If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](htt
 
 NB Default values will only be applied if a field is not specified. If you specify a field value of "null", the default will not be applied. Note that "null" is not allowed for all fields.
 
-<h3 id="dictionary">Dictionary</h3>
+<h3 id="Dictionary">Dictionary</h3>
 
 `Data dictionary` - '_a centralized repository of information about data such as meaning, relationships to other data, origin usage and format._' [ISO23386]. '_database that contains metadata_' [ISO12006-3]. Each `Dictionary` (previously `domain`) consists of `Classes` (previously `classifications`) and `Properties`, which could be related to each other or with other `Dictionaries`. Each `Dictionary` object contains general metadata about it, as listed in the table below.
 
@@ -69,7 +69,7 @@ NB Default values will only be applied if a field is not specified. If you speci
 
 \* For delivering data in additional languages, it is sufficient to fill the `Dictionary` type fields, all `Code` fields and the fields marked with `Translatable?` = "Yes" of the other types. Ensure that the `OrganizationCode`, `DictionaryCode` and `DictionaryVersion` are exactly the same and if the data is for adding a language to an existing `Dictionary`, set the field `LanguageOnly` to true.
 
-<h3 id="class">Class</h3>
+<h3 id="Class">Class</h3>
 
 `Class` - '_description of a set of objects that share the same characteristics._' [ISO23386]. A `Class` can be any object (examples: "wall", "window") or abstract concept (examples: "time", "room") or process (examples: "installation", "disassembly").
 
@@ -103,14 +103,14 @@ NB Default values will only be applied if a field is not specified. If you speci
 | <span id="VersionDateUtc">VersionDateUtc</span>            | DateTime                       |            |             | By default takes the date of import. See [Date Time format](#datetime-format). |
 | <span id="VersionNumber">VersionNumber</span>             | Integer                        |            |             |  |
 | <span id="VisualRepresentationUri">VisualRepresentationUri</span>   | Text                           |            | ✅         |  |
-| <span id="ClassProperties">ClassProperties</span>           | List of ClassProperty          |            |             | See section [ClassProperty](#classproperty) |
-| <span id="ClassRelations">ClassRelations</span>            | List of ClassRelation          |            |             | See section [ClassRelation](#classrelation) |
+| <span id="ClassProperties">ClassProperties</span>           | List of ClassProperty          |            |             | See section [ClassProperty](#ClassProperty) |
+| <span id="ClassRelations">ClassRelations</span>            | List of ClassRelation          |            |             | See section [ClassRelation](#ClassRelation) |
 
 Note: Since the release of November 2023, Materials are not treated separately anymore. A `Material` is now simply a `Class` of type `Material`.
 
-<h3 id="property">Property</h3>
+<h3 id="Property">Property</h3>
 
-`Property` - '_an inherent or acquired feature of an item [`Class`]. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].  The assignment of `Properties` to `Classes` is handled through the interim [ClassProperty](#classproperty) object. 
+`Property` - '_an inherent or acquired feature of an item [`Class`]. Example: Thermal efficiency, heat flow, (...), colour._' [ISO23386].  The assignment of `Properties` to `Classes` is handled through the interim [ClassProperty](#ClassProperty) object. 
 
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
@@ -160,11 +160,11 @@ Note: Since the release of November 2023, Materials are not treated separately a
 | <span id="VersionDateUtc">VersionDateUtc</span>                | DateTime         |         |             | By default takes the date of import. See [Date Time format](#datetime-format). |
 | <span id="VersionNumber">VersionNumber</span>                 | Integer      |         |             |  |
 | <span id="VisualRepresentationUri">VisualRepresentationUri</span>       | Text         |         | ✅           |  |
-| <span id="PropertyRelations">PropertyRelations</span>              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#propertyrelation) |
-| <span id="AllowedValues">AllowedValues</span>              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue). |
+| <span id="PropertyRelations">PropertyRelations</span>              | List of PropertyRelation  |   | ✅           | List of related properties. See section [PropertyRelation](#PropertyRelation) |
+| <span id="AllowedValues">AllowedValues</span>              | List of AllowedValue  |   | ✅           | List of allowed values for the property. Note: do not use this one for properties of type boolean. See section [AllowedValue](#AllowedValue). |
 
 
-<h3 id="classproperty">ClassProperty</h3>
+<h3 id="ClassProperty">ClassProperty</h3>
 
 Interim object to assign a `Property` to a `Class` it should describe. Each `Class` can have multiple properties, and each `Property` can be part of many `Classes`, but one `ClassProperty` is always a pair of one `Class` and one `Property`. 
 
@@ -191,13 +191,13 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 | <span id="PropertyType">PropertyType</span>        | Text     |         |     | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
 | <span id="SortNumber">SortNumber</span>          | Integer  |         |     | Sort number of this `Property` within the `Class`                                                                 |
 | <span id="Symbol">Symbol</span>              | Text     |         |     |                                                                                                                        |
-| <span id="AllowedValues">AllowedValues</span>       | List of AllowedValue  |  | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#allowedvalue)  |
+| <span id="AllowedValues">AllowedValues</span>       | List of AllowedValue  |  | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#AllowedValue)  |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyUri` instead                |
 
 
 \* One of those is required.
 
-<h3 id="allowedvalue">AllowedValue</h3>
+<h3 id="AllowedValue">AllowedValue</h3>
 
 Optional value enumerations that can be listed for `Properties` and `ClassProperties`. For example, a 'Fire Rating' could only have a few allowed values: REI30, REI60, REI90 or REI120.
 
@@ -212,7 +212,7 @@ Optional value enumerations that can be listed for `Properties` and `ClassProper
 
 Note: adding translations of the `AllowedValue` is not supported yet
 
-<h3 id="classrelation">ClassRelation</h3>
+<h3 id="ClassRelation">ClassRelation</h3>
 
 `Classes` can be linked by relations. There are various types of relations, allowing for the definition of hierarchy, composition, similarity or reference. See section [How to define relations?](#defining-relations)
 
@@ -225,7 +225,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
 
 
-<h3 id="propertyrelation">PropertyRelation</h3>
+<h3 id="PropertyRelation">PropertyRelation</h3>
 
 Analogous to `ClassRelations` but between `Properties`.
 
