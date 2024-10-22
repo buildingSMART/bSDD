@@ -273,17 +273,17 @@ specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” 
 <h3 id="relation-types">Relation types</h3>
 
 `Properties` and `Classes` can be related to each other. Each relation must have a specific type to allow software to interpret it. Below is an explanation of what each type means:
-* `IsEqualTo` - if two concepts are unequivocal and have the same name, code, definition and description. Classes also need to share the same class properties. It is quite rare for concepts to be equal. An example of usage is when a concept doesn't have an official translation, but someone defines a new dictionary with that concept in a new language and wants to say it is exactly the same as the original. (We always recommend proposing translations and improvements to the original data dictionaries instead of building duplicate ones). 
-* `IsSimilarTo` - if two concepts are almost equal but differ by name, code, definition, description or set of class properties. This is a very common relationship type. Used, for example, to say that 'IfcWall' is a similar concept to 'Wall System' from CCI. The downside of such a relation is that it doesn't inform on the level of similarity – is it slightly differing by the wording of the definition, or is the difference huge?
-* `HasReference` - if two concepts relate to each other, but other relation types do not apply. For example, "wall lamp" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them.
+* <span id='IsEqulTo'>`IsEqualTo`</span> - if two concepts are unequivocal and have the same name, code, definition and description. Classes also need to share the same class properties. It is quite rare for concepts to be equal. An example of usage is when a concept doesn't have an official translation, but someone defines a new dictionary with that concept in a new language and wants to say it is exactly the same as the original. (We always recommend proposing translations and improvements to the original data dictionaries instead of building duplicate ones). 
+* <span id='IsSimilarTo'>`IsSimilarTo`</span> - if two concepts are almost equal but differ by name, code, definition, description or set of class properties. This is a very common relationship type. Used, for example, to say that 'IfcWall' is a similar concept to 'Wall System' from CCI. The downside of such a relation is that it doesn't inform on the level of similarity – is it slightly differing by the wording of the definition, or is the difference huge?
+* <span id='HasReference'>`HasReference`</span> - if two concepts relate to each other, but other relation types do not apply. For example, "wall lamp" (or "sconce") is referencing a wall, even though those are different concepts and there is no hierarchy between them.
 * **DEPRECATED** ~~IsSynonymOf - if two concepts are unequivocal but have a different name.~~
 
 Only applicable to classes (not properties):
-* `IsChildOf` - specialisation relation. The equivalent of the "subtype" relationship <sup>[ISO12006-3, F3.1]</sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor".
-* `IsParentOf` - the opposite relation to `IsChildOf`.
-* `HasPart` - composition relation. For example, an electric motor can be composed of elements such as stators, rotors, etc. <sup>[ISO12006-3, F3.2]</sup>.
-* `IsPartOf` - reverse of `HasPart`.
-* `HasMaterial` - a class that can be associated with a particular material. For example: "Steel Beam" could be related to the material "Steel".
+* <span id='IsChildOf'>`IsChildOf`</span> - specialisation relation. The equivalent of the "subtype" relationship <sup>[ISO12006-3, F3.1]</sup>. For example: "Electrical motor" and a "Combustion motor" are children (subtypes) of the generic concept "Motor".
+* <span id='IsParentOf'>`IsParentOf`</span> - the opposite relation to `IsChildOf`.
+* <span id='HasPart'>`HasPart`</span> - composition relation. For example, an electric motor can be composed of elements such as stators, rotors, etc. <sup>[ISO12006-3, F3.2]</sup>.
+* <span id='IsPartOf'>`IsPartOf`</span> - reverse of `HasPart`.
+* <span id='HasMaterial'>`HasMaterial`</span> - a class that can be associated with a particular material. For example: "Steel Beam" could be related to the material "Steel".
 
 <h3 id="datetime-format">DateTime format</h3>
 
