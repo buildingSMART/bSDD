@@ -32,13 +32,14 @@ info:
       https://bsddprototype2020.blob.core.windows.net/public/Copyright_2020_buildingSMART_International.txt
   version: v1
 servers:
-  - url: https://api.bsdd.buildingsmart.org/
+  - url: '[https://api.bsdd.buildingsmart.org/](https://api.bsdd.buildingsmart.org/)'
 paths:
   /api/Class/v1:
     get:
       tags:
         - Class
-      summary: "Get Class details - this API replaces api/Classification\r\nChanges:\r\n- now returns Material as well\r\n- \"Classification\" has been renamed to \"Class\"\r\n- \"Domain\" has been renamed to \"Dictionary\"\r\n- \"NamespaceUri\" has been renamed to \"Uri\""
+      summary: Get class details
+      operationId: ClassGet
       parameters:
         - name: Uri
           in: query
@@ -130,6 +131,7 @@ paths:
       tags:
         - Class
       summary: Get class relations or reverse relations (paginated)
+      operationId: ClassRelationsGet
       parameters:
         - name: ClassUri
           in: query
@@ -209,6 +211,7 @@ paths:
       tags:
         - Class
       summary: Get class properties (paginated)
+      operationId: ClassPropertiesGet
       parameters:
         - name: ClassUri
           in: query
@@ -292,6 +295,7 @@ paths:
       tags:
         - Dictionary
       summary: Get list of available Dictionaries with optional filtering.
+      operationId: DictionaryGet
       parameters:
         - name: Uri
           in: query
@@ -349,11 +353,86 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/DictionaryResponseContract.v1'
+  /api/Dictionary/v1/Properties:
+    get:
+      tags:
+        - Dictionary
+      summary: Get Dictionary with its properties
+      operationId: DictionaryGetWithProperties
+      parameters:
+        - name: Uri
+          in: query
+          description: >-
+            The URI of the dictionary. The option "latest" is supported, e.g.
+            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/latest
+          required: true
+          schema:
+            type: string
+        - name: SearchText
+          in: query
+          description: Optional filter text.
+          schema:
+            type: string
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
+          in: query
+          description: >-
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
+          schema:
+            type: integer
+            format: int32
+        - name: languageCode
+          in: query
+          description: >-
+            Specify language (case sensitive). For those items the text is not
+            available in the requested language, the text will be returned in
+            the default language of the dictionary
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
   /api/Dictionary/v1/Classes:
     get:
       tags:
         - Dictionary
       summary: Get Dictionary with (tree of) classes
+      operationId: DictionaryClassesGetWithClasses
       parameters:
         - name: Uri
           in: query
@@ -448,84 +527,12 @@ paths:
               schema:
                 $ref: >-
                   #/components/schemas/DictionaryClassesResponseContract.v1.Classes
-  /api/Dictionary/v1/Properties:
-    get:
-      tags:
-        - Dictionary
-      summary: Get Dictionary with its properties
-      parameters:
-        - name: Uri
-          in: query
-          description: >-
-            The URI of the dictionary. The option "latest" is supported, e.g.
-            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/latest
-          required: true
-          schema:
-            type: string
-        - name: SearchText
-          in: query
-          description: Optional filter text.
-          schema:
-            type: string
-        - name: Offset
-          in: query
-          description: Zero-based offset of the first item to be returned. Default is 0.
-          schema:
-            type: integer
-            format: int32
-        - name: Limit
-          in: query
-          description: >-
-            Limit number of items to be returned. The default and maximum number
-            of items returned is 1000. When Offset is specified, then the
-            default limit is 100.
-          schema:
-            type: integer
-            format: int32
-        - name: languageCode
-          in: query
-          description: >-
-            Specify language (case sensitive). For those items the text is not
-            available in the requested language, the text will be returned in
-            the default language of the dictionary
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/DictionaryPropertiesResponseContract.v1'
   /api/DictionaryDownload/sketchup/v1:
     post:
       tags:
         - Dictionary
       summary: "Download a file with an export of a dictionary in format supported by Sketchup.\r\nThis API replaces /api/RequestExportFile/preview"
+      operationId: DictionaryDownloadSketchup
       parameters:
         - name: DictionaryUri
           in: query
@@ -670,6 +677,7 @@ paths:
       tags:
         - Dictionary Update
       summary: "Upload a bSDD import model json file, see https://github.com/buildingSMART/bSDD/tree/master/Model/Import%20Model for more information.\r\nValidation will be done asynchronously for large files (>= 15 MB). Validation results will be sent by e-mail."
+      operationId: UploadImportFilePost
       requestBody:
         content:
           multipart/form-data:
@@ -743,6 +751,7 @@ paths:
         Upload a bSDD import model json file, see
         https://github.com/buildingSMART/bSDD/tree/master/Model/Import%20Model
         for more information
+      operationId: UploadImportFileV1Post
       requestBody:
         content:
           multipart/form-data:
@@ -813,6 +822,7 @@ paths:
       tags:
         - Dictionary Update
       summary: Update the status of a Dictionary
+      operationId: DictionaryUpdateStatus
       parameters:
         - name: organizationCode
           in: path
@@ -853,6 +863,7 @@ paths:
       tags:
         - Dictionary Update
       summary: Delete a dictionary version
+      operationId: DictionaryUpdateDeleteVersion
       parameters:
         - name: organizationCode
           in: path
@@ -880,6 +891,7 @@ paths:
       tags:
         - Dictionary Update
       summary: Delete all versions of a dictionary
+      operationId: DictionaryUpdateDelete
       parameters:
         - name: organizationCode
           in: path
@@ -902,6 +914,7 @@ paths:
       tags:
         - PopularDictionary
       summary: Get list of popular Dictionaries
+      operationId: PopularDictionaryGet
       responses:
         '200':
           description: Success
@@ -938,6 +951,7 @@ paths:
       tags:
         - Private dictionary specific APIs
       summary: Add access for e-mail domain or user
+      operationId: OrganizationManagePrivateAccessAdd
       parameters:
         - name: organizationCode
           in: path
@@ -971,6 +985,7 @@ paths:
       tags:
         - Private dictionary specific APIs
       summary: Delete access for e-mail domain or user
+      operationId: OrganizationManagePrivateAccessDelete
       parameters:
         - name: organizationCode
           in: path
@@ -1005,6 +1020,7 @@ paths:
       tags:
         - Property
       summary: Get Property details
+      operationId: PropertyGet
       parameters:
         - name: uri
           in: query
@@ -1063,6 +1079,7 @@ paths:
       tags:
         - Property
       summary: Get property relations or reverse relations (paginated)
+      operationId: PropertyRelationsGet
       parameters:
         - name: PropertyUri
           in: query
@@ -1137,6 +1154,7 @@ paths:
       tags:
         - Property
       summary: Get list of classes that uses the property (paginated)
+      operationId: PropertyClassesGet
       parameters:
         - name: PropertyUri
           in: query
@@ -1218,6 +1236,7 @@ paths:
       tags:
         - Property
       summary: Get Property Value details
+      operationId: PropertyValueGet
       parameters:
         - name: uri
           in: query
@@ -1267,8 +1286,9 @@ paths:
     get:
       tags:
         - Search
-      summary: "Search the bSDD database using free text, get list of Classes and/or Properties matching the text.\r\nPagination options are for Classes and Properties combined. So if result consists of 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first, so if you then use Offset=10 and Limit=5, you will get the 5 properties."
+      summary: "Search bSDD using free text, get list of Classes and/or Properties.\r\nPagination options for Classes and Properties are combined. If result contains 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first. Use Offset=10 and Limit=5, to get the 5 properties only."
       description: The details can be requested per Class via the Class API
+      operationId: TextSearchGet
       parameters:
         - name: SearchText
           in: query
@@ -1363,8 +1383,9 @@ paths:
     get:
       tags:
         - Search
-      summary: "Search the bSDD database using free text, get list of Classes and/or Properties matching the text.\r\nPagination options are for Classes and Properties combined. So if result consists of 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first, so if you then use Offset=10 and Limit=5, you will get the 5 properties."
+      summary: "Search bSDD using free text, get list of Classes and/or Properties.\r\nPagination options for Classes and Properties are combined. If result contains 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first. Use Offset=10 and Limit=5, to get the 5 properties only."
       description: The details can be requested per Class via the Class API
+      operationId: TextSearchV1Get
       parameters:
         - name: SearchText
           in: query
@@ -1438,6 +1459,7 @@ paths:
         - Search
       summary: "Search the bSDD database, get list of Classes without details.\r\nThis version uses new naming and returns one Dictionary instead of a list with always one Dictionary.\r\nThis API replaces /api/SearchList."
       description: The details can be requested per Class via the Class API
+      operationId: SearchInDictionaryGet
       parameters:
         - name: DictionaryUri
           in: query
@@ -1513,7 +1535,10 @@ paths:
     get:
       tags:
         - Search
-      summary: "Search the bSDD database using free text, get list of Classes matching the text and optional additional filters.\r\nChanges with obsolete api/ClassificationSearch:\r\n- \"Classification\" has been renamed to \"Class\"\r\n- \"Domain\" has been renamed to \"Dictionary\"\r\n- \"NamespaceUri\" has been renamed to \"Uri\""
+      summary: >-
+        Search bSDD using free text. Get list of Classes matching the text and
+        optional additional filters.
+      operationId: ClassSearchGet
       parameters:
         - name: SearchText
           in: query
@@ -1588,6 +1613,7 @@ paths:
       tags:
         - z Lookup data
       summary: Get list of all units
+      operationId: UnitGet
       responses:
         '200':
           description: Success
@@ -1642,6 +1668,7 @@ paths:
       tags:
         - z Lookup data
       summary: Get list of all ReferenceDocuments
+      operationId: ReferenceDocumentGet
       responses:
         '200':
           description: Success
@@ -1696,6 +1723,7 @@ paths:
       tags:
         - z Lookup data
       summary: Get list of available Languages
+      operationId: LanguageGet
       responses:
         '200':
           description: Success
@@ -1750,6 +1778,7 @@ paths:
       tags:
         - z Lookup data
       summary: Get list of all Countries
+      operationId: CountryGet
       responses:
         '200':
           description: Success
@@ -1799,6 +1828,15 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/CountryContract.v1'
+  /api/Health:
+    get:
+      tags:
+        - z Other
+      summary: Basic check you can use to see if the bSDD API is up and running
+      operationId: HealthGet
+      responses:
+        '200':
+          description: Success
   /api/TextSearchListOpen/v6:
     get:
       tags:
@@ -1809,6 +1847,7 @@ paths:
       description: >-
         The details can be requested per Classification via the Classification
         API
+      operationId: TextSearchListGet
       parameters:
         - name: SearchText
           in: query
@@ -1874,6 +1913,7 @@ paths:
       description: >-
         The details can be requested per Classification via the Classification
         API
+      operationId: TextSearchListV5Get
       parameters:
         - name: SearchText
           in: query
@@ -1935,6 +1975,7 @@ paths:
       description: >-
         The details can be requested per Classification via the Classification
         API
+      operationId: SearchListGet
       parameters:
         - name: DomainNamespaceUri
           in: query
@@ -2000,6 +2041,7 @@ paths:
       description: >-
         The details can be requested per Classification via the Classification
         API
+      operationId: SearchListGetOpen
       parameters:
         - name: DomainNamespaceUri
           in: query
@@ -2059,6 +2101,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Property details
+      operationId: PropertyV3Get
       parameters:
         - name: namespaceUri
           in: query
@@ -2113,6 +2156,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Property details
+      operationId: PropertyV2Get
       parameters:
         - name: namespaceUri
           in: query
@@ -2167,6 +2211,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Property Value details
+      operationId: PropertyValueV1Get
       parameters:
         - name: namespaceUri
           in: query
@@ -2216,6 +2261,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Material details
+      operationId: MaterialGet
       parameters:
         - name: namespaceUri
           in: query
@@ -2273,6 +2319,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Material details
+      operationId: MaterialV1Get
       parameters:
         - name: namespaceUri
           in: query
@@ -2331,6 +2378,7 @@ paths:
         - zz Obsolete APIs
       summary: Search the bSDD database, get list of Materials without details.
       description: "This is a preview version! Contracts may change.\r\nThe details can be requested per Material via the Material API"
+      operationId: MaterialSearchGet
       parameters:
         - name: DomainNamespaceUri
           in: query
@@ -2385,6 +2433,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get list of available Domains
+      operationId: DomainGet
       parameters:
         - name: namespaceUri
           in: query
@@ -2446,6 +2495,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Domain with the classification and/or material tree
+      operationId: DomainWithClassificationTree
       parameters:
         - name: namespaceUri
           in: query
@@ -2505,6 +2555,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: UpdateDomainStatus
+      operationId: DomainUpdateStatus
       parameters:
         - name: organizationCode
           in: path
@@ -2546,6 +2597,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Delete domain version
+      operationId: DomainUpdateDeleteVersion
       parameters:
         - name: organizationCode
           in: path
@@ -2574,6 +2626,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Delete all versions of domain
+      operationId: DomainUpdateDelete
       parameters:
         - name: organizationCode
           in: path
@@ -2597,6 +2650,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get list of available Domains
+      operationId: DomainV2Get
       parameters:
         - name: namespaceUri
           in: query
@@ -2658,6 +2712,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Domain with the classification tree
+      operationId: DomainWithClassificationTreeV2
       parameters:
         - name: namespaceUri
           in: query
@@ -2717,6 +2772,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Classification details - please use api/Class/v1 instead
+      operationId: ClassificationGet
       parameters:
         - name: namespaceUri
           in: query
@@ -2776,6 +2832,7 @@ paths:
       tags:
         - zz Obsolete APIs
       summary: Get Classification details - please use api/Class/v1 instead
+      operationId: ClassificationV3Get
       parameters:
         - name: namespaceUri
           in: query
@@ -2837,6 +2894,7 @@ paths:
       summary: >-
         Search the bSDD database using free text - please use
         api/Class/Search/v1 instead
+      operationId: ClassificationSearchGet
       parameters:
         - name: SearchText
           in: query
@@ -4717,6 +4775,9 @@ components:
         organizationNameOwner:
           minLength: 1
           type: string
+        changeRequestEmail:
+          type: string
+          nullable: true
         defaultLanguageCode:
           minLength: 1
           type: string
@@ -4819,6 +4880,9 @@ components:
         organizationNameOwner:
           minLength: 1
           type: string
+        changeRequestEmail:
+          type: string
+          nullable: true
         defaultLanguageCode:
           minLength: 1
           type: string
@@ -4908,6 +4972,9 @@ components:
         organizationNameOwner:
           minLength: 1
           type: string
+        changeRequestEmail:
+          type: string
+          nullable: true
         defaultLanguageCode:
           minLength: 1
           type: string
@@ -7808,6 +7875,7 @@ components:
           description: "Indicates if the file will be validated in the background.\r\nLarge files (>= 15 MB) will be validated in the background. You receive the results by e-mail."
         isOk:
           type: boolean
+          description: "Indicates if the file will be imported.\r\nWarnings are allowed, import will continue but may lead to undesired values in the database.\r\nOnly applicable for small files (smaller than 15 MB)."
           nullable: true
         errors:
           type: array
