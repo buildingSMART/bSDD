@@ -4,20 +4,20 @@
 
 | Code   | Item                                                         |
 | ------ | ------------------------------------------------------------ |
-| [GEN-01](#gen-01) | English version should be provided for all relevant fields   |
-| [GEN-02](#gen-02) | Translations should be accurate without changes              |
+| [GEN-01](#gen-01) | Must have English version   |
+| [GEN-02](#gen-02) | Translations should be accurate              |
 | [GEN-03](#gen-03) | Names should be clear and easy to interpret                  |
-| [GEN-04](#gen-04) | Names and codes should follow a consistent naming convention |
-| [DCT-01](#dct-01)   | Dictionary should have the status 'Active'                         |
-| [DCT-02](#dct-02)   | Dictionary name should not be misleading or suggest they represent something else |
-| [DCT-03](#dct-03)   | Dictionary procedure information should be complete and transparent |
-| [PRP-01](#prp-01)   | Numeric property should have Unit, Dimension, and correct data type |
-| [PRP-02](#prp-02)   | Duplicated IFC properties should be avoided                  |
-| [PRP-03](#prp-03)   | Using PSET_ in property or property set names is not allowed |
-| [PRP-04](#prp-04)   | Data type of property should match the definition            |
-| [PRP-05](#prp-05)   | Avoid unnecessary allowed values when simple data types can represent the value |
+| [GEN-04](#gen-04) | Follow a consistent naming convention |
+| [DCT-01](#dct-01)   | Dictionary should be 'Active'                         |
+| [DCT-02](#dct-02)   | Dictionary name should not be misleading |
+| [DCT-03](#dct-03)   | Dictionary metadata should be complete |
 | [CLS-01](#cls-01)   | Classes should be mapped to IFC correctly                    |
-| [CLS-02](#cls-02)   | Avoid circular dependencies in ParentClassCode               |
+| [CLS-02](#cls-02)   | Avoid circular dependencies               |
+| [PRP-01](#prp-01)   | Numeric property metadata |
+| [PRP-02](#prp-02)   | Avoid duplicating IFC properties                 |
+| [PRP-03](#prp-03)   | PSET_ prefix is forbidden |
+| [PRP-04](#prp-04)   | Data type of property should match the definition            |
+| [PRP-05](#prp-05)   | Avoid unnecessary allowed values |
 | [CPR-01](#cpr-01)  | External properties should not be used in ClassProperty      |
 | [CPR-02](#cpr-02)  | ClassProperty should have PropertySet named                  |
 | [CRE-01](#cre-01)  | Avoid circular relationships in RelationType                 |
@@ -36,87 +36,134 @@
 ## General
 
 ### GEN-01 
-**English version should be provided for all relevant fields**
+**Must have English version**
 
-The dictionary should include English translations for all translatable fields across items such as properties, classes, and allowed values. These fields include name, definition, description, examples, and synonyms.
+As per ISO 12006-3:2022, the dictionary should include an English version of all the relevant content for all translatable fields, such as properties, classes, and allowed values. These fields include name, definition, description, and examples. The existence of other language translations is optional.
 
 ### GEN-02
-**Translations should be accurate without changes**
+**Translations should be accurate**
 
-Translations should be precise and faithful to the original content without adding additional explanations or removing any part of the original sentences.
+The translations are optional, but when they exist, all the translations should be precise and faithful to the original content. Translations can not extend the explanations or remove any part of the original sentences. 
+
+Example:
+
+|  ENG (original) | German (translation) |   |
+| ---- | ----- | ----- |
+| _The wall represents a vertical construction that may bound or subdivide spaces..._ | _Vertikale Konstruktion zur Abgrenzung oder Unterteilung von Räumen... Anmerkung: Nach ISO 6707-1 ist eine vertikale Konstruktion in der Regel aus Mauerwerk oder Beton, ..._ | ❌ FAIL: The German translation has additional sentence referring ISO - the two are therefore not consistent. |
+
 
 ### GEN-03
 **Names should be clear and easy to interpret**
 
-The name of each item should be clear and help users understand the concept, which enhances usability and readability in software.
+Unlike codes, the name of each item must be clear and help users understand the concept to enhance usability.
 
 Notes:
 
-- Avoid adding prefixes to each item in the dictionary, as this can complicate search and filtering for others.
+- Avoid adding prefixes to each item in the dictionary, as this can complicate search and filtering.
 - Try to avoid acronyms, as they may vary between languages and can have different meanings in different contexts.
 - Avoid using abstract or generic placeholders like Class1, Class2, etc., which do not provide meaningful information.
 
 Examples:
 
-- A class name like `Class 20-18.7` doesn't convey the actual meaning of the class.
-- The property name using the acronym `FR-MR` could stand for "Fire Rating Minimal Requirement" or "Mechanical Resistance with country code FR," leading to confusion.
-- Prefixing all classes with `MAT_` for "My Architect Technologies" could mislead users searching for material-related items.
+- ❌ Name: `Class 20-18.7` - doesn't convey the actual meaning of the class.
+- ❌ Name: `FR-MR` - an acronym that could stand for many things.
+- ❌ Name: `ABC_Wall` - unnecessary prefix.
 
 ### GEN-04
-**Names and codes should follow a consistent naming convention**
+**Follow a consistent naming convention**
 
-While no specific naming convention is required, using a consistent style for names and codes improves searchability and readability.
+Names and codes should follow consistent naming conventions. While no specific naming convention is required, using a consistent style for names and codes improves searchability and readability.
 
 Notes:
 
-- Pascal case(CustomClass), sentence case(Custom class), title case(Custom Class), snake case(custom_class), and kebab case(custom-class) are all common naming conventions. Whitespace, dots, dashes, and underscores are acceptable for use in both names and codes.
+- Common naming conventions include: Pascal case (_CustomClass_), sentence case (_Custom class_), title case (_Custom Class_), snake case (_custom_class_), and kebab case (_custom-class_).
+- Whitespace, dots, dashes, and underscores are acceptable for use in both names and codes.
+- It is recommended that the codes are also easily recognizable, as they are the pieces of information that get stored in the data and are displayed by most of the software without integration with the bSDD. The reason for having both is that names can be translated, unliked the codes, and some software doesn't allow special characters or whitespaces in the codes (e.g. 'Łączna Wysokość').
 
 Examples:
 
-- The names `CLS03 Load Capacity` (title case), `CLS04 Power zone` (sentence case), and `CLPRP-01 ZoneCategories` (pascal case, code with a dash separator) would be clearer if the same convention were used across the dictionary.
+- ❌ Codes: `CLS03`, `CLS04`, `CLPRP-01` - last code with a dash separator, unlike the others
+- ❌ Names: `Load Capacity` (title case), `Power zone` (sentence case), `ZoneCategories` (pascal case) - not consistent naming convention.
+- ❌ Code: `74ts8bifnc74e7toe8n` - hard to interpret or identify in IFC data
+- ✔️ Code 1: `IsExternal`, Name 1: `is external`, Code 2: `AirTerminal`, Name 2: `air terminal` - both codes and names follow consistent naming schemas, and the codes are also interpretable.
 
 ## Dictionary
 
 ### DCT-01 
-**Dictionary should have the status 'Active'**
+**Dictionary should be 'Active'**
 
-Ensure that the dictionary is in the status `Active`. Only active dictionaries can be included in API requests and displayed in the bSDD search interface.
+Ensure that the dictionary is in the status `Active`. It is possible to apply for verification while in 'Preview', but it is only to be granted after a positive review and a change of status to 'Active'.
 
 ### DCT-02 
-**Dictionary name should not be misleading or suggest they represent something else**
+**Dictionary names should not be misleading**
 
-The dictionary's name must clearly and accurately describe its content and purpose. It should not be misleading or suggest any association with other dictionaries or organizations. Please do not include names of other dictionaries or organizations.
+The dictionary's name should be original and must clearly and accurately describe its content and purpose. It should not be misleading or suggest any association with other dictionaries or organizations. Please do not include names of other dictionaries or organizations.
 
 Examples: 
 
-- Dictionary name "Uniclass for Infra" may mislead users into thinking the dictionary is published by NBS and is part of the Uniclass.
-- Dictionary name "IFC Something" is not allowed, as no dictionary may include `IFC` in its title.
+- ❌ "Uniclass4Infra" - may mislead users into thinking the dictionary is published by NBS and is part of the official Uniclass.
+- ❌ "IFC Something" - not allowed, as the IFC term is reserved for the official publications of the IFC standard by buildingSMART.
+- ⚠️ "Revit Classification" - it is recommended first obtain permission from the rightful owner (in this case, the Autodesk company).
 
 ### DCT-03
-**Dictionary procedure information should be complete and transparent**
+**Dictionary metadata should be complete**
 
-The dictionary must provide complete and transparent information, including its license, official website, quality assurance procedures, and a contact email for change requests. 
+While the minimum information for publishing in bSDD is low, the requirements for verification are set higher. The dictionary must provide complete and transparent information, including its license, official website, quality assurance procedures, and a contact email for change requests. 🚧
+
+The required Dictionary fields are:
+- QualityAssuranceProcedure
+- ChangeRequestEmailAddress
+- License
+- LicenseUrl
+- 🚧
+
+## Class
+
+### CLS-01
+**Classes should be mapped to IFC correctly**
+
+Each class must be mapped to IFC appropriately using `RelatedIfcEntities` (`RelatedIfcEntityNamesList` in the import file).
+
+Notes:
+
+- Do not map a class to an abstract class, type, relation, or measure.
+- Avoid using `USERDEFINED` and `NOTDEFINED` types.
+- Before mapping a class to a `Proxy`, ensure there are no existing appropriate IFC entities by thoroughly searching available options.
+
+### CLS-02
+**Avoid circular dependencies**
+
+Parent-child class relationships, defined with `ParentClassCode`, must form a tree structure without circular dependencies.
+
+Examples:
+- ❌ Class A is the parent of B, B is the parent of C, and C is the parent of A - circular chain.
 
 ## Property
 
 ### PRP-01
-**Numeric property should have Unit, Dimension, and correct data type**
+**Numeric property metadata**
 
-For numeric properties, both Unit and Dimension must be provided. The correct data type should be either `Real` or `Integer`.
+When a property is numeric (its `DataType` is `Integer` or `Real`), it should specify a `Dimension`. The `Unit` is optional, always assumed to be an SI unit, but it must match the Dimension when present. 
 
-Notes:
-
-- For properties without units, use Unit: `{"Code":"unitless","Name":"unitless","Symbol":"-"}` and Dimension: `0000000`
-
+Examples:
+- ✔️ Dimension: '1 0 -1 0 0 0 0', Unit: 'm/s' - correct specification of a speed property.
+- ✔️ Dimension: '0 0 0 0 0 0 0' - dimensionless property (still, the Dimension is specified).
+- ❌ Dimension: '1 0 0 0 0 0 0', 'Unit: 'h' - mismatch between dimension (length) and unit (time).
+- ❌ Unit: 'W' - no dimension. 
+  
 ### PRP-02
-**Duplicated IFC properties should be avoided**
+**Avoid duplicating IFC properties**
 
-Avoid replicating IFC properties with a 1:1 correspondence. When necessary, use a relation such as `IsEqualTo` or `IsSimilarTo` instead of direct duplication. This approach ensures better data integrity and reduces redundancy.
+When a close match property already exists in the IFC dictionary, it should be referenced in a dictionary rather than recreated. This way, we increase the usage of consistent terms, limiting model variations. Do not be discouraged by the naming of the property set, as properties are independent objects. 
+
+Only invent new properties if no close match exists in IFC. Reusing properties from other active and verified dictionaries is also recommended. When adding a new property that is a specialisation of an existing one (for example, 'Net Weight Dry' could be a specialisation of 'Net Weight'), provide a relation to the existing property in IFC. Use `IsSimilarTo` relation type.
 
 ### PRP-03
-**Using PSET_ in property or property set names is not allowed**
+**PSET_ prefix is forbidden**
 
-The prefix `PSET_` is reserved by IFC. Property sets should be named differently to avoid conflicts. This helps implementers to correctly group properties and display them in user interfaces.
+The prefix 'PSET_' is reserved for the IFC standard. All other forms are acceptable (example: 'My cool set'). 
+
+A common practice for naming new sets that are to be proposed for being part of the future version of IFC is to use 'cPSET_' prefix ('c' for custom/created). For proposing new properties to extend existing property sets, one could use 'ePSET_'. Those are allowed, and not mandatory. 
 
 ### PRP-04
 **Data type of property should match the definition**
@@ -128,7 +175,7 @@ Examples:
 - If a property has a `String` type but its definition specifies only `True` or `False`, the data type should be changed to `Boolean`.
 
 ### PRP-05
-**Avoid unnecessary allowed values when simple data types can represent the value**
+**Avoid unnecessary allowed values**
 
 Allowed values should be used only when a property has a defined and countable number of options. Do not use allowed values to localize basic data types such as `Boolean` or `Integer`.
 
@@ -136,27 +183,6 @@ Examples:
 
 - Instead of creating an allowed value list for options like `True/False` or `Yes/No` or `Oui/Non`(Yes/No in French), use the `Boolean` data type directly.
 
-## Class
-
-### CLS-01
-**Classes should be mapped to IFC correctly**
-
-Each class must be mapped to IFC appropriately using `RelatedIfcEntities`.
-
-Notes:
-
-- Do not map a class to an abstract class, type, relation, or measure.
-- Avoid using `USERDEFINED` and `NOTDEFINED` types.
-- Before mapping a class to a `Proxy`, ensure there are no existing appropriate IFC entities by thoroughly searching available options.
-
-### CLS-02
-**Avoid circular dependencies in ParentClassCode**
-
-Parent-child class relationships must be clearly defined, with no circular dependencies.
-
-Examples:
-
-- Circular case: A's parent is B, B's parent is C, and C's parent is A.
 
 ## ClassProperty
 
@@ -200,6 +226,7 @@ Relationships between properties should be clearly defined, avoiding circular de
 Examples:
 
 - Circular case: A `IsSimilarTo` B, B `IsEqualTo` C, and A `IsEqualTo` C.
+
 
 ## Semantics
 
