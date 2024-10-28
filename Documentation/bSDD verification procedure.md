@@ -1,6 +1,9 @@
 # bSDD verification procedure
 
-The bSDD verification procedure is an on-demand, paid service designed to increase the trustworthiness of data within the bSDD platform. Verified content undergoes a series of checks to ensure quality and consistency, marked by a verified icon in bSDD. While the verification list below is comprehensive, it is not exhaustive — additional aspects may be verified over time to maintain and enhance reliability further.
+The content...
+1. **Organisation review** - at the moment of registration, each organisation willing to publish in bSDD is reviewed to make sure their objective fits the mission of bSDD.
+1. **Import validation** - automatic step triggered on every upload to bSDD. It checks the existence of necessary fields and their types. This step ensures the content is well structured and compliant with the service.
+1. **bSDD verification** - an on-demand, paid service designed to increase the trustworthiness of data within the bSDD platform. Verified content undergoes a series of checks to ensure quality and consistency, marked by a verified icon in bSDD. While the verification list below is comprehensive, it is not exhaustive — additional aspects may be verified over time to maintain and enhance reliability further. The procedure is executed by buildingSMART International and/or trusted partners.
 
 ## Overview
 
@@ -12,6 +15,8 @@ The bSDD verification procedure is an on-demand, paid service designed to increa
 | [GEN-04](#gen-04) | Names should be clear and easy to interpret                  |
 | [GEN-05](#gen-05) | Follow a consistent naming convention |
 | [GEN-06](#gen-06) | Use of correct types                             |
+| [GEN-07](#gen-07) | Governance of the data dictionary                             |
+| [GEN-08](#gen-08) | Ownership verification                     |
 | [DCT-01](#dct-01)   | Dictionary should be 'Active'                         |
 | [DCT-02](#dct-02)   | Dictionary name should not be misleading |
 | [CLS-01](#cls-01)   | Classes should be mapped to IFC correctly                    |
@@ -43,7 +48,7 @@ While it is possible to publish in bSDD without some fields filled, the requirem
 |      |  Dictionary  |  Class  | Property | 
 | ----- | ----- | ----- | ----- | 
 | Required by bSDD | `OrganizationCode`, `DictionaryCode`, `DictionaryName`, `DictionaryVersion`, `LanguageIsoCode`  | `Code`, `Name`, `ClassType`  | `Code`, `Name`, `DataType` | 
-| Required for verification | `QualityAssuranceProcedure`, `ChangeRequestEmailAddress`, `License`, `LicenseUrl` | `Definition`, `RelatedIfcEntityNamesList`  | `Definition`, `Example`, `Dimension` (if numeric), `PropertyValueKind`  | 
+| Additional requirements for the verification | `QualityAssuranceProcedure`, `ChangeRequestEmailAddress`, `License`, `LicenseUrl` | `Definition`, `RelatedIfcEntityNamesList`  | `Definition`, `Example`, `Dimension` (if numeric), `PropertyValueKind`  | 
 
 Additionally, `ClassProperty` should have a value of its `PropertySet`.
 
@@ -108,6 +113,7 @@ Examples:
 
 - ✔️ 'Cement' is a `Class` with ClassType: `Material`.
 - ✔️ 'Volume' is a `Property` (it should also have adequate Dimension: 3 0 0 0 0 0 0, and DataType: Real) 
+
 
 ## Dictionary
 
