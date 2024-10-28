@@ -1,46 +1,58 @@
 # bSDD verification procedure
 
+The bSDD verification procedure is an on-demand, paid service designed to increase the trustworthiness of data within the bSDD platform. Verified content undergoes a series of checks to ensure quality and consistency, marked by a verified icon in bSDD. While the verification list below is comprehensive, it is not exhaustive — additional aspects may be verified over time to maintain and enhance reliability further.
+
 ## Overview
 
 | Code   | Item                                                         |
 | ------ | ------------------------------------------------------------ |
-| [GEN-01](#gen-01) | Must have English version   |
-| [GEN-02](#gen-02) | Translations should be accurate              |
-| [GEN-03](#gen-03) | Names should be clear and easy to interpret                  |
-| [GEN-04](#gen-04) | Follow a consistent naming convention |
+| [GEN-01](#gen-01) | Required fields   |
+| [GEN-02](#gen-02) | Must have English version   |
+| [GEN-03](#gen-03) | Translations should be accurate              |
+| [GEN-04](#gen-04) | Names should be clear and easy to interpret                  |
+| [GEN-05](#gen-05) | Follow a consistent naming convention |
+| [GEN-06](#gen-06) | Use of correct types                             |
 | [DCT-01](#dct-01)   | Dictionary should be 'Active'                         |
 | [DCT-02](#dct-02)   | Dictionary name should not be misleading |
-| [DCT-03](#dct-03)   | Dictionary metadata should be complete |
 | [CLS-01](#cls-01)   | Classes should be mapped to IFC correctly                    |
 | [CLS-02](#cls-02)   | Avoid circular dependencies               |
+| [CLS-03](#cls-03) | Hierarchy of classes |
+| [CLS-04](#cls-04) | Avoid syncretic classes |
 | [PRP-01](#prp-01)   | Numeric property metadata |
 | [PRP-02](#prp-02)   | Avoid duplicating IFC properties                 |
 | [PRP-03](#prp-03)   | PSET_ prefix is forbidden |
-| [PRP-04](#prp-04)   | Data type of property should match the definition            |
-| [PRP-05](#prp-05)   | Avoid unnecessary allowed values |
-| [CPR-01](#cpr-01)  | External properties should not be used in ClassProperty      |
-| [CPR-02](#cpr-02)  | ClassProperty should have PropertySet named                  |
-| [CRE-01](#cre-01)  | Avoid circular relationships in RelationType                 |
-| [CRE-02](#cre-02)  | Avoid incorrect class types in RelationType                  |
-| [PRE-01](#pre-01)  | Avoid unclear circular relationships in RelationType         |
-| [SEM-01](#sem-01) | Correct types should be assigned                             |
-| [SEM-02](#sem-02) | Dimension-Unit match must be accurate                        |
-| [SEM-03](#sem-03) | Classes with multiple levels should be structured hierarchically |
-| [SEM-04](#sem-04) | Relations must be meaningful                                 |
-| [SEM-05](#sem-05) | Avoid creating syncretic classes that combine multiple aspects |
-| [SEM-06](#sem-06) | Avoid mixing multiple aspects within a single property       |
-| [SEM-07](#sem-07) | AllowedValues must be distinct and represent alternative options |
+| [PRP-04](#prp-04)   | Property adequate data type            |
+| [PRP-05](#prp-05) | Single aspect properties       |
+| [PRP-06](#prp-06)   | Avoid unnecessary allowed values |
+| [PRP-07](#prp-07) | Allowed values must be meaningful |
+| [CPR-01](#cpr-01)  | Only use active bSDD Properties in ClassProperty      |
+| [CPR-02](#cpr-02)  | ClassProperty should have a PropertySet name                  |
+| [REL-01](#rel-01)  | Avoid circular relationships in RelationType                 |
+| [REL-02](#rel-02)  | Avoid incorrect class types in RelationType                  |
+| [REL-03](#rel-03) | Relations must be meaningful                                 |
 
-**Verification item code naming convention: GEN (General), DCT (Dictionary), CLS (Class), PRP (Property), ALV (AllowedValue), CPR (ClassProperty), CRE (ClassRelation), PRE (PropertyRelation), SEM (Semantics) with two digit number using dash separator.*
+**GEN (General), DCT (Dictionary), CLS (Class), PRP (Property), ALV (AllowedValue), CPR (ClassProperty), REL (Relations)*
 
 ## General
 
 ### GEN-01 
-**Must have English version**
+**Required fields**
 
-As per ISO 12006-3:2022, the dictionary should include an English version of all the relevant content for all translatable fields, such as properties, classes, and allowed values. These fields include name, definition, description, and examples. The existence of other language translations is optional.
+While it is possible to publish in bSDD without some fields filled, the requirements for verification are set higher. The dictionary, classes and properties must at least provide the fields from both rows below correspondingly: 
+
+|      |  Dictionary  |  Class  | Property | 
+| ----- | ----- | ----- | ----- | 
+| Required by bSDD | `OrganizationCode`, `DictionaryCode`, `DictionaryName`, `DictionaryVersion`, `LanguageIsoCode`  | `Code`, `Name`, `ClassType`  | `Code`, `Name`, `DataType` | 
+| Required for verification | `QualityAssuranceProcedure`, `ChangeRequestEmailAddress`, `License`, `LicenseUrl` | `Definition`, `RelatedIfcEntityNamesList`  | `Definition`, `Example`, `Dimension` (if numeric), `PropertyValueKind`  | 
+
+Additionally, `ClassProperty` should have a value of its `PropertySet`.
 
 ### GEN-02
+**Must have English version**
+
+As per ISO 12006-3:2022, the dictionary should include an English version of all the relevant content for all translatable fields. See bSDD documentation for a list of translatable fields. The existence of other language translations is optional.
+
+### GEN-03
 **Translations should be accurate**
 
 The translations are optional, but when they exist, all the translations should be precise and faithful to the original content. Translations can not extend the explanations or remove any part of the original sentences. 
@@ -52,7 +64,7 @@ Example:
 | _The wall represents a vertical construction that may bound or subdivide spaces..._ | _Vertikale Konstruktion zur Abgrenzung oder Unterteilung von Räumen... Anmerkung: Nach ISO 6707-1 ist eine vertikale Konstruktion in der Regel aus Mauerwerk oder Beton, ..._ | ❌ FAIL: The German translation has additional sentence referring ISO - the two are therefore not consistent. |
 
 
-### GEN-03
+### GEN-04
 **Names should be clear and easy to interpret**
 
 Unlike codes, the name of each item must be clear and help users understand the concept to enhance usability.
@@ -65,11 +77,11 @@ Notes:
 
 Examples:
 
-- ❌ Name: `Class 20-18.7` - doesn't convey the actual meaning of the class.
-- ❌ Name: `FR-MR` - an acronym that could stand for many things.
-- ❌ Name: `ABC_Wall` - unnecessary prefix.
+- ❌ Name: 'Class 20-18.7' - doesn't convey the actual meaning of the class.
+- ❌ Name: 'FR-MR' - an acronym that could stand for many things.
+- ❌ Name: 'ABC_Wall' - unnecessary prefix.
 
-### GEN-04
+### GEN-05
 **Follow a consistent naming convention**
 
 Names and codes should follow consistent naming conventions. While no specific naming convention is required, using a consistent style for names and codes improves searchability and readability.
@@ -82,17 +94,27 @@ Notes:
 
 Examples:
 
-- ❌ Codes: `CLS03`, `CLS04`, `CLPRP-01` - last code with a dash separator, unlike the others
-- ❌ Names: `Load Capacity` (title case), `Power zone` (sentence case), `ZoneCategories` (pascal case) - not consistent naming convention.
-- ❌ Code: `74ts8bifnc74e7toe8n` - hard to interpret or identify in IFC data
-- ✔️ Code 1: `IsExternal`, Name 1: `is external`, Code 2: `AirTerminal`, Name 2: `air terminal` - both codes and names follow consistent naming schemas, and the codes are also interpretable.
+- ❌ Codes: 'CLS03', 'CLS04', 'CLPRP-01' - last code with a dash separator, unlike the others
+- ❌ Names: 'Load Capacity' (title case), 'Power zone' (sentence case), 'ZoneCategories' (pascal case) - not consistent naming convention.
+- ❌ Code: '74ts8bifnc74e7toe8n' - hard to interpret or identify in IFC data
+- ✔️ Code 1: 'IsExternal', Name 1: 'is external', Code 2: 'AirTerminal', Name 2: 'air terminal' - both codes and names follow consistent naming schemas, and the codes are also interpretable.
+
+### GEN-06
+**Use of correct types**
+
+Ensure that each item is assigned the appropriate type.
+
+Examples:
+
+- ✔️ 'Cement' is a `Class` with ClassType: `Material`.
+- ✔️ 'Volume' is a `Property` (it should also have adequate Dimension: 3 0 0 0 0 0 0, and DataType: Real) 
 
 ## Dictionary
 
 ### DCT-01 
 **Dictionary should be 'Active'**
 
-Ensure that the dictionary is in the status `Active`. It is possible to apply for verification while in 'Preview', but it is only to be granted after a positive review and a change of status to 'Active'.
+Ensure that the dictionary is in the status 'Active'. It is possible to apply for verification while in 'Preview', but it is only to be granted after a positive review and a change of status to 'Active'.
 
 ### DCT-02 
 **Dictionary names should not be misleading**
@@ -105,38 +127,46 @@ Examples:
 - ❌ "IFC Something" - not allowed, as the IFC term is reserved for the official publications of the IFC standard by buildingSMART.
 - ⚠️ "Revit Classification" - it is recommended first obtain permission from the rightful owner (in this case, the Autodesk company).
 
-### DCT-03
-**Dictionary metadata should be complete**
-
-While the minimum information for publishing in bSDD is low, the requirements for verification are set higher. The dictionary must provide complete and transparent information, including its license, official website, quality assurance procedures, and a contact email for change requests. 🚧
-
-The required Dictionary fields are:
-- QualityAssuranceProcedure
-- ChangeRequestEmailAddress
-- License
-- LicenseUrl
-- 🚧
-
 ## Class
 
 ### CLS-01
 **Classes should be mapped to IFC correctly**
 
-Each class must be mapped to IFC appropriately using `RelatedIfcEntities` (`RelatedIfcEntityNamesList` in the import file).
+Each class must be mapped to IFC appropriately using 'RelatedIfcEntities' ('RelatedIfcEntityNamesList' in the import file).
 
 Notes:
 
 - Do not map a class to an abstract class, type, relation, or measure.
-- Avoid using `USERDEFINED` and `NOTDEFINED` types.
-- Before mapping a class to a `Proxy`, ensure there are no existing appropriate IFC entities by thoroughly searching available options.
+- Avoid using 'USERDEFINED' and 'NOTDEFINED' types.
+- Before mapping a class to a 'Proxy', ensure there are no existing appropriate IFC entities by thoroughly searching available options.
 
 ### CLS-02
 **Avoid circular dependencies**
 
-Parent-child class relationships, defined with `ParentClassCode`, must form a tree structure without circular dependencies.
+Parent-child class relationships, defined with 'ParentClassCode', must form a tree structure without circular dependencies.
 
 Examples:
 - ❌ Class A is the parent of B, B is the parent of C, and C is the parent of A - circular chain.
+
+### CLS-03
+**Hierarchy of classes**
+
+When multiple hierarchical levels can be distinguished, they shouldn't be modelled as a flat list but be structured in a clear and logical hierarchy.
+
+Examples: 
+
+- ❌ 'Column', 'Round Column', 'Rectangular Column' being a flat list.
+- ✔️ 'Column' is a parent of 'Round Column' and 'Rectangular Column'.
+
+### CLS-04
+**Avoid syncretic classes**
+
+Do not create classes that combine multiple aspects, such as material, class, and property, into a single class.
+
+Examples: 
+
+- ❌ 'External Steel Door' - incorrect because it combines information about the class, material, and property into one definition
+- ✔️ Class: 'Door', Material: 'Steel', IsExternal: 'True'.
 
 ## Property
 
@@ -149,99 +179,7 @@ Examples:
 - ✔️ Dimension: '1 0 -1 0 0 0 0', Unit: 'm/s' - correct specification of a speed property.
 - ✔️ Dimension: '0 0 0 0 0 0 0' - dimensionless property (still, the Dimension is specified).
 - ❌ Dimension: '1 0 0 0 0 0 0', 'Unit: 'h' - mismatch between dimension (length) and unit (time).
-- ❌ Unit: 'W' - no dimension. 
-  
-### PRP-02
-**Avoid duplicating IFC properties**
-
-When a close match property already exists in the IFC dictionary, it should be referenced in a dictionary rather than recreated. This way, we increase the usage of consistent terms, limiting model variations. Do not be discouraged by the naming of the property set, as properties are independent objects. 
-
-Only invent new properties if no close match exists in IFC. Reusing properties from other active and verified dictionaries is also recommended. When adding a new property that is a specialisation of an existing one (for example, 'Net Weight Dry' could be a specialisation of 'Net Weight'), provide a relation to the existing property in IFC. Use `IsSimilarTo` relation type.
-
-### PRP-03
-**PSET_ prefix is forbidden**
-
-The prefix 'PSET_' is reserved for the IFC standard. All other forms are acceptable (example: 'My cool set'). 
-
-A common practice for naming new sets that are to be proposed for being part of the future version of IFC is to use 'cPSET_' prefix ('c' for custom/created). For proposing new properties to extend existing property sets, one could use 'ePSET_'. Those are allowed, and not mandatory. 
-
-### PRP-04
-**Data type of property should match the definition**
-
-The data type of a property must follow its definition, ensuring clarity and restricting the value to the appropriate type. The data type of a property must be one of the following: `Boolean`, `Character`, `Integer`, `Real`, `String`, `Time`.
-
-Examples: 
-
-- If a property has a `String` type but its definition specifies only `True` or `False`, the data type should be changed to `Boolean`.
-
-### PRP-05
-**Avoid unnecessary allowed values**
-
-Allowed values should be used only when a property has a defined and countable number of options. Do not use allowed values to localize basic data types such as `Boolean` or `Integer`.
-
-Examples: 
-
-- Instead of creating an allowed value list for options like `True/False` or `Yes/No` or `Oui/Non`(Yes/No in French), use the `Boolean` data type directly.
-
-
-## ClassProperty
-
-### CPR-01
-**External properties should not be used in ClassProperty**
-
-Properties associated with a ClassProperty must be defined within the same dictionary or in another existing internal dictionary.
-
-### CPR-02
-**ClassProperty should have PropertySet named**
-
-Property sets should be properly named and consistently defined within the appropriate context.
-
-## Relations
-
-### CRE-01 
-**Avoid circular relationships in RelationType**
-
-Class relations must avoid circular dependencies, ensuring clarity in hierarchical structures.
-
-Examples:
-
-- Circular case 1: A `IsPartOf` B, and B `IsPartOf` A.
-- Circular case 2: A `IsPartOf` B, A `HasPart` C, and C `IsEqualTo` A.
-
-### CRE-02 
-**Avoid incorrect class types in RelationType**
-
-Ensure that relations between classes are logically consistent and correctly assigned to the appropriate class types.
-
-Examples:
-
-- Incorrect relation 1: ClassA `HasMaterial` GroupOfPropertiesB.
-- Incorrect relation 2: MaterialA `IsParentOf` ClassB.
-
-### PRE-01
-**Avoid unclear circular relationships in RelationType**
-
-Relationships between properties should be clearly defined, avoiding circular dependencies that can obscure meaning.
-
-Examples:
-
-- Circular case: A `IsSimilarTo` B, B `IsEqualTo` C, and A `IsEqualTo` C.
-
-
-## Semantics
-
-### SEM-01
-**Correct types should be assigned**
-
-Ensure that each item is assigned the appropriate type. This helps maintain consistency and clarity across the data structure.
-
-Examples:
-
-- `Cement` should be classified as a `Class` with ClassType: `Material`.
-- `Volume` should be classified as a `Property`.
-
-### SEM-02
-**Dimension-Unit match must be accurate**
+- ❌ Unit: 'W' - no dimension.
 
 Ensure that the assigned unit corresponds correctly with the dimension. A mismatch between the dimension and unit can lead to confusion and errors.
 
@@ -252,56 +190,103 @@ Notes:
 
 Examples: 
 
-- A dimension value of `1 1 -2 0 0 0 0` in property `Units` could have `kilonewton`, `newton` in the list, but should not have `millimetre`.
-- A dimension value of `1 0 0 0 0 0 0` should not be assigned to unit `kilogram`. (correct dimension is `0 1 0 0 0 0 0`, length = 0, mass = 1, time = 0, electric current = 0, thermodynamic temperature = 0, amount of substance = 0, luminous intensity = 0)
-- Speed (m/s) would be denoted as `1 0 -1 0 0 0 0`.
+- A dimension value of '1 1 -2 0 0 0 0' in property `Units` could have 'kilonewton', 'newton' in the list, but should not have 'millimetre'.
+- A dimension value of '1 0 0 0 0 0 0' should not be assigned to unit 'kilogram'. (correct dimension is '0 1 0 0 0 0 0', length = 0, mass = 1, time = 0, electric current = 0, thermodynamic temperature = 0, amount of substance = 0, luminous intensity = 0)
+- Speed (m/s) would be denoted as '1 0 -1 0 0 0 0'.
 
-### SEM-03
-**Classes with multiple levels should be structured hierarchically**
 
-When multiple hierarchical levels exist within a class, they should be structured in a clear and logical hierarchy.
+### PRP-02
+**Avoid duplicating IFC properties**
 
-Notes: 
+When a close match property already exists in the IFC dictionary, it should be referenced in a dictionary rather than recreated. This way, we increase the usage of consistent terms, limiting model variations. Do not be discouraged by the naming of the property set, as properties are independent objects. 
 
-- A flat, unrelated list should not be approved without considering potential hierarchical relationships.
+Only invent new properties if no close match exists in IFC. Reusing properties from other active and verified dictionaries is also recommended. When adding a new property that is a specialisation of an existing one (for example, 'Net Weight Dry' could be a specialisation of 'Net Weight'), provide a relation to the existing property in IFC. Use `IsSimilarTo` relation type.
 
-Examples: 
+### PRP-03
+**PSET_ prefix is forbidden**
 
-- If there are `Columns` with subtypes such as `Round Columns` and `Rectangular Columns`, these subtypes should be organized as children of the `Columns` class.
+The prefix 'PSET_' is reserved for the IFC standard. All other forms are acceptable (for example: 'My cool set'). 
 
-### SEM-04
-**Relations must be meaningful**
+A common practice for naming new sets for future versions of IFC is to use the 'cPSET_' prefix ('c' for custom/created). To propose new properties to extend existing IFC sets, one could use 'ePSET_' ('e' for extend). 
 
-Relationships between classes or properties should be logical and purposeful. Avoid creating relationships that do not make sense or serve a clear function.
+### PRP-04
+**Property adequate data type**
 
-Examples: 
-
-- An `IsChildOf` relation between `Column` and `Concrete` is illogical and should be avoided.
-
-### SEM-05
-**Avoid creating syncretic classes that combine multiple aspects**
-
-Do not create classes that merge multiple dimensions, such as material, class, and property, into a single entity.
+The data type of a property must follow its definition, ensuring clarity and restricting the value to the appropriate type. The data type of a property must be one of the following: `Boolean`, `Character`, `Integer`, `Real`, `String`, `Time`.
 
 Examples: 
 
-- A class like `External Steel Door` is incorrect because it combines information about the class, material, and property into one definition, which complicates classification.
+- If a property can only be 'True' or 'False', the data type should be `Boolean`, not `String`.
 
-### SEM-06
-**Avoid mixing multiple aspects within a single property**
+### PRP-05
+**Single aspect properties**
 
 Do not combine multiple aspects within a single property. Each property must clearly represent only one aspect to ensure clarity and proper classification.
 
 Examples: 
 
-- A `Type of Window` property with an allowed value list like `Steel frame single`, `Wood frame single`, `Steel frame double`, and `Wood frame double` should be split into two properties: one for the frame material and one for the type (single or double).
+- A property 'Type of Window' with an allowed value list like 'Steel frame single', 'Wood frame single', 'Steel frame double', and 'Wood frame double' should be split into two properties: one for the frame material and one for the type (single or double).
 
-### SEM-07
-**AllowedValues must be distinct and represent alternative options**
+### PRP-06
+**Avoid unnecessary allowed values**
 
-The `AllowedValues` of a property should provide clear and distinct options. Avoid including values that represent a combination or mix of alternatives.
+Allowed values should only be used when a property has a defined and countable number of options. Do not use allowed values for `Boolean` or list all possible `Integers` within a specific range (use min/max inc/exclusive instead).
 
 Examples: 
 
-- For a `Color` property that allows values like `red` and `green`, a value like `gradient` would be inappropriate because it represents a combination rather than a clear, distinct alternative.
+- ❌ Allowed values: 'Oui', 'Non'(Yes/No in French) - instead use the `Boolean` data type directly.
+- ❌ Allowed values: '1', '2', '3' - instead use `Integer` data type with MinInclusive=1 and MaxInclusive=3
 
+### PRP-07
+**Allowed values must be meaningful**
+
+The `AllowedValues` of a property should provide a clear and distinct value. Avoid including values that represent a combination or mix of alternatives.
+
+Examples: 
+
+- Allowed values of a property 'Color': ✔️ 'red', ✔️ 'green', ❌ 'gradient' (inappropriate because it represents a combination of colours).
+
+## ClassProperty
+
+### CPR-01
+**Only use active bSDD Properties in ClassProperty**
+
+Properties associated with a `ClassProperty` should be defined within the same dictionary or another dictionary found in bSDD with a status `Active`. Otherwise, it is hard to ensure immutability and findability.
+
+### CPR-02
+**ClassProperty should have a PropertySet name**
+
+Property sets should be named appropriately and consistently.
+
+## Relations
+
+### REL-01 
+**Avoid circular relationships in RelationType**
+
+Class and Property relations must avoid circular dependencies, ensuring clarity in hierarchical structures.
+
+Examples:
+
+- ❌ A 'IsParentOf' B, B 'IsParentOf' C, C 'IsParentOf' A.
+- ❌ A 'IsPartOf' B, and B 'IsPartOf' A.
+- ❌ A 'IsPartOf' B, A 'HasPart' C, and C 'IsEqualTo' A.
+
+### REL-02 
+**Avoid incorrect class types in RelationType**
+
+Ensure that relations between classes are logically consistent and correctly assigned to the appropriate class types.
+
+Examples:
+
+- ❌ Class 'A' 'HasMaterial' GroupOfProperties 'B'. (not a Material)
+- ❌ Material 'A' 'IsParentOf' Class 'B'. (Material can only by a parent of other Material)
+
+### REL-03
+**Relations must be meaningful**
+
+Relationships between classes or properties should be logical and purposeful.
+
+Examples: 
+
+- ❌ `IsChildOf` relation between a 'Column' and 'Concrete' class - illogical.
+- ✔️ `IsChildOf` relation between a 'Round Column' and 'Column' class.
