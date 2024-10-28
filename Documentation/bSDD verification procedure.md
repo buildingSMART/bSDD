@@ -1,9 +1,12 @@
 # bSDD verification procedure
 
-The content...
+The content of bSDD is governed by independent organisations. To ensure a certain level of quality, the bSDD content undergoes the following verification procedure: 
 1. **Organisation review** - at the moment of registration, each organisation willing to publish in bSDD is reviewed to make sure their objective fits the mission of bSDD.
 1. **Import validation** - automatic step triggered on every upload to bSDD. It checks the existence of necessary fields and their types. This step ensures the content is well structured and compliant with the service.
-1. **bSDD verification** - an on-demand, paid service designed to increase the trustworthiness of data within the bSDD platform. Verified content undergoes a series of checks to ensure quality and consistency, marked by a verified icon in bSDD. While the verification list below is comprehensive, it is not exhaustive — additional aspects may be verified over time to maintain and enhance reliability further. The procedure is executed by buildingSMART International and/or trusted partners.
+1. **User review** - a crowdsourcing type of review in which every bSDD user has the right to file a 'change request' to the owner of the dictionary to report mistakes or propose improvements. The bSDD platform processes 'change requests' in accordance with ISO 12006-3:2022. Additionally, users can also trigger claims directly to the bSDD team regarding content accuracy or potential licensing violations. When a user reports such issues, the bSDD team initiates a targeted review process to investigate the reported content thoroughly.
+1. **Detailed verification** - an on-demand, paid service designed to increase the trustworthiness of data within the bSDD platform. Verified content undergoes a series of checks to ensure quality and consistency, marked by a verified icon in bSDD. While the verification list below is comprehensive, it is not exhaustive — additional aspects may be verified over time to maintain and enhance reliability further. The procedure is executed by buildingSMART International and/or trusted partners.
+
+The document below specifies the details of the last step.
 
 ## Overview
 
