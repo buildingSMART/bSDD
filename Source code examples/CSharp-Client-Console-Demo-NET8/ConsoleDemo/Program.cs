@@ -1,294 +1,97 @@
-﻿using System;
-using System.Net;
-using System.Net.Http;
+﻿using System.Net;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+using Microsoft.Identity.Client;
 
-class Program
+var config = new PublicClientApplicationOptions
 {
-    private static readonly HttpClient httpClient = new HttpClient();
+    // 'Directory (tenant) ID' of the app registration in the Microsoft Entra admin center
+    TenantId = "14762077-e0ef-404b-b843-5c32a95a0d43",
 
-    static async Task Main(string[] args)
+    // 'Application (client) ID' of the app registration in the Microsoft Entra admin center
+    ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70"
+};
+
+
+const string tenantName = "buildingsmartservices";
+const string tenant = $"{tenantName}.onmicrosoft.com";
+const string scope = $"https://{tenantName}.onmicrosoft.com/api/read";
+const string policySignUpSignIn = "b2c_1a_signupsignin_c";
+const string azureAdB2CHostname = "authentication.buildingsmart.org";
+const string authorityBase = $"https://{azureAdB2CHostname}/tfp/{tenant}/";
+const string authoritySignUpSignIn = $"{authorityBase}{policySignUpSignIn}";
+const string redirectUri = "http://localhost";
+
+const string apiBaseUrl = "https://test.bsdd.buildingsmart.org";
+string searchListUrl = $"{apiBaseUrl}/api/SearchInDictionary/v1?DictionaryUri=" + WebUtility.UrlEncode("https://identifier.buildingsmart.org/uri/bs-agri/testpriv/1.0");
+
+// In order to take advantage of token caching, your MSAL client singleton must
+// have a lifecycle that at least matches the lifecycle of the user's session in
+// the console application.
+var publicMsalClient = PublicClientApplicationBuilder.CreateWithApplicationOptions(config)
+    .WithB2CAuthority(authoritySignUpSignIn)
+    .WithRedirectUri(redirectUri)
+    .WithLogging(Log, LogLevel.Info, false)
+    .Build();
+
+AuthenticationResult? msalAuthenticationResult = null;
+
+// Attempt to use a cached access token if one is available. This will renew existing, but
+// expired access tokens if possible. In this specific sample, this will always result in
+// a cache miss, but this pattern would be what you'd use on subsequent calls that require
+// the usage of the same access token.
+IEnumerable<IAccount> accounts = (await publicMsalClient.GetAccountsAsync(policySignUpSignIn)).ToList();
+
+if (accounts.Any())
+{
+    try
     {
-        string accessToken = await GetAccessTokenAsync();
-        if (!string.IsNullOrEmpty(accessToken))
-        {
-            string apiUrl = Constants.SearchListUrl;
-            string response = await CallApiAsync(apiUrl, accessToken);
-            Console.WriteLine(response);
-        }
-        else
-        {
-            Console.WriteLine("Failed to obtain access token.");
-        }
+        msalAuthenticationResult = await publicMsalClient.AcquireTokenSilent(
+            [scope],
+            accounts.First()).ExecuteAsync();
     }
-
-    static async Task<string> GetAccessTokenAsync()
+    catch (MsalUiRequiredException)
     {
-        try
-        {
-            string tokenUrl = Constants.AuthoritySignUpSignIn;
-            var requestContent = new FormUrlEncodedContent(new[]
-            {
-                new KeyValuePair<string, string>("grant_type", "password"),
-                new KeyValuePair<string, string>("client_id", Constants.ClientId),
-                new KeyValuePair<string, string>("username", "sanjay.kasar@schindler.com"),
-                new KeyValuePair<string, string>("password", "Bsdd@1234"),
-                new KeyValuePair<string, string>("scope", string.Join(" ", Constants.ApiScopes))
-            });
-
-            var response = await httpClient.PostAsync(tokenUrl, requestContent);
-            if (response.IsSuccessStatusCode)
-            {
-                var responseData = await response.Content.ReadFromJsonAsync<TokenResponse>();
-                return responseData.access_token;
-            }
-            else
-            {
-                Console.WriteLine($"Failed to obtain access token. Status Code: {response.StatusCode}");
-                return null;
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"An error occurred while getting access token: {ex.Message}");
-            return null;
-        }
-    }
-
-    static async Task<string> CallApiAsync(string apiUrl, string accessToken)
-    {
-        try
-        {
-            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-            var response = await httpClient.GetAsync(apiUrl);
-            if (response.IsSuccessStatusCode)
-            {
-                return await response.Content.ReadAsStringAsync();
-            }
-            else
-            {
-                Console.WriteLine($"Failed to call API. Status Code: {response.StatusCode}");
-                return null;
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"An error occurred while calling API: {ex.Message}");
-            return null;
-        }
+        // No usable cached token was found for this scope + account or Entra ID insists in
+        // an interactive user flow.
     }
 }
 
-public static class Constants
+if (msalAuthenticationResult == null)
 {
-    public static readonly string TenantName = "buildingsmartservices";
-    public static readonly string ClientId = "12c33ebc-677a-4834-9168-de8bae2d9549";
-    public static readonly string RedirectUri = "https://authentication.buildingsmart.org/oauth2/nativeclient";
-    private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
-    private static readonly string AzureAdB2CHostname = "authentication.buildingsmart.org";
-    public static string PolicySignUpSignIn = "b2c_1a_signupsignin_c";
-    public static string PolicyEditProfile = "b2c_1a_profileedit_c";
-    public static string PolicyResetPassword = "b2c_1a_passwordreset_c";
-    public static string[] ApiScopes = { $"https://{TenantName}.onmicrosoft.com/api/read" };
-    private static string AuthorityBase = $"https://{AzureAdB2CHostname}/tfp/{Tenant}/";
-    public static string AuthoritySignUpSignIn = $"{AuthorityBase}{PolicySignUpSignIn}";
-    public static string AuthorityEditProfile = $"{AuthorityBase}{PolicyEditProfile}";
-    public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
-    public const string ApiBaseUrl = "https://test.bsdd.buildingsmart.org";
-    public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3") + "&SearchText=room";
+    // Initiate the device code flow.
+    msalAuthenticationResult = await publicMsalClient.AcquireTokenInteractive([scope])
+        .ExecuteAsync();
 }
 
-public class TokenResponse
+// At this point we now have a valid access token for Microsoft Graph, with only the specific scopes
+// necessary to complete the following call. Build the Microsoft Graph HTTP request, using the obtained
+// access token.
+using var searchRequest = new HttpRequestMessage(HttpMethod.Get, searchListUrl);
+searchRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", msalAuthenticationResult.AccessToken);
+//searchRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6bTcxb1o0WjZlQVRYdC0zUmF2SUEybUdnVG8xeDJpZmgyX0FGZk5oMEEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiIxNDRlMDM3Zi02YTcxLTQxYmItOGNlMS00ZTg1NTQ1MjA3NTYiLCJpc3MiOiJodHRwczovL2F1dGhlbnRpY2F0aW9uLmJ1aWxkaW5nc21hcnQub3JnLzE0NzYyMDc3LWUwZWYtNDA0Yi1iODQzLTVjMzJhOTVhMGQ0My92Mi4wLyIsImV4cCI6MTczMDI4NDgyMywibmJmIjoxNzMwMjgxMjIzLCJzdWIiOiI4N2FmNmMxOC03ZTYyLTQzZWEtYTgzMi1iZWY0OWIwMzBhZWMiLCJlbWFpbCI6ImVyaWtfYmFhcnNAaG90bWFpbC5jb20iLCJuYW1lIjoiRXJpayBCLiIsImdpdmVuX25hbWUiOiJFcmlrIiwiZmFtaWx5X25hbWUiOiJCYWFycyIsImlzRm9yZ290UGFzc3dvcmQiOmZhbHNlLCJub25jZSI6IjFjYWM4NWNlLTAzNDItNGJkNi1iYjE4LTUzMGM1MTAzNTA5MiIsInNjcCI6Im1hbmFnZSByZWFkIiwiYXpwIjoiZjYwY2MzZGUtYzBhNC00NjI3LTlmZjktNWUxNGE1OWQxYWNlIiwidmVyIjoiMS4wIiwiaWF0IjoxNzMwMjgxMjIzfQ.r-ox5LV66iiAz5GeGwL7cm5OGMhV1rB_4_Ai2HIKni3i8TAOknx6yqDQFJMT7hHhZJSrtOU8_CDTbcKFL56Fq68NbcnHVoxqIOhM_I-IY0ulxN2SnrMgOJ7GlGFQWPonbclTzL_RspAIwyMHv38Df4CWlbE4dsoeqFXq4ait8yCwBGpma3-awuum2-CpoVEZjhTXnhPMh8z2nZhiiUYobT9Qru_RObo53Rzo4nmqRaN8VyiLysVJIrwu2habmX5YjJGGtUUDZcrjTg8skrCBWwLP3WLB5sT6KW4LnvFauX6I3X42EL-eD3BKoF2AWaDsWAUECGxJgl8_HKdzT76ODg");
+
+// Make the API call
+var httpClient = new HttpClient();
+var searchResponse = await httpClient.SendAsync(searchRequest);
+searchResponse.EnsureSuccessStatusCode();
+
+// Present the results to the user (formatting the JSON for readability)
+var responseBody = JsonDocument.Parse(await searchResponse.Content.ReadAsStringAsync());
+Console.WriteLine(JsonSerializer.Serialize(responseBody,
+    new JsonSerializerOptions()
+    {
+        WriteIndented = true,
+        Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+    }));
+
+
+static void Log(LogLevel level, string message, bool containsPii)
 {
-    public string access_token { get; set; }
+    var logs = ($"{level} {message}");
+    var sb = new StringBuilder();
+    sb.Append(logs);
+    File.AppendAllText(System.Reflection.Assembly.GetExecutingAssembly().Location + ".msalLogs.txt", sb.ToString());
+    sb.Clear();
 }
-
-
-
-
-
-
-//using System;
-//using System.Net;
-//using System.Net.Http;
-//using System.Net.Http.Headers;
-//using System.Text;
-//using System.Threading.Tasks;
-
-
-
-
-
-//class Program
-//{
-//    private static readonly HttpClient httpClient = new HttpClient();
-
-//    static Program()
-//    {
-//        //var httpClientHandler = new HttpClientHandler
-//        //{
-//        //    Proxy = new WebProxy("http://webgateway-eu.schindler.com:3128"),
-//        //    UseProxy = true,
-//        //    UseDefaultCredentials = false,
-//        //    Credentials = new NetworkCredential("admkasarsa", "%") // Replace with actual username and password
-//        //};
-
-//        //httpClient = new HttpClient(httpClientHandler);
-//    }
-//    //private static readonly HttpClient httpClient = new HttpClient();
-
-//    static async Task Main(string[] args)
-//    {
-//        string accessToken = await GetAccessTokenAsync();
-//        if (!string.IsNullOrEmpty(accessToken))
-//        {
-//            string apiUrl = Constants.SearchListUrl;
-//            string response = await CallApiAsync(apiUrl, accessToken);
-//            Console.WriteLine(response);
-//        }
-//        else
-//        {
-//            Console.WriteLine("Failed to obtain access token.");
-//        }
-//    }
-
-//    static async Task<string> GetAccessTokenAsync()
-//    {
-//        try
-//        {
-//            string tokenUrl = Constants.AuthoritySignUpSignIn;
-//            var requestContent = new FormUrlEncodedContent(new[]
-//            {
-//                new KeyValuePair<string, string>("grant_type", "client_credentials"),
-//                new KeyValuePair<string, string>("client_id", Constants.ClientId),
-//                new KeyValuePair<string, string>("redirect_uri", Constants.RedirectUri),
-//                new KeyValuePair<string, string>("scope", string.Join(" ", Constants.ApiScopes))
-//            });
-
-//            var response = await httpClient.PostAsync(tokenUrl, requestContent);
-//            if (response.IsSuccessStatusCode)
-//            {
-//                var responseContent = await response.Content.ReadAsStringAsync();
-//                // Parse access token from responseContent
-//                return "YOUR_ACCESS_TOKEN";
-//            }
-//            else
-//            {
-//                Console.WriteLine($"Failed to obtain access token. Status Code: {response.StatusCode}");
-//                return null;
-//            }
-//        }
-//        catch (Exception ex)
-//        {
-//            Console.WriteLine($"An error occurred while getting access token: {ex.Message}");
-//            return null;
-//        }
-//    }
-
-//    static async Task<string> CallApiAsync(string apiUrl, string accessToken)
-//    {
-//        try
-//        {
-//            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-//            var response = await httpClient.GetAsync(apiUrl);
-//            if (response.IsSuccessStatusCode)
-//            {
-//                return await response.Content.ReadAsStringAsync();
-//            }
-//            else
-//            {
-//                Console.WriteLine($"Failed to call API. Status Code: {response.StatusCode}");
-//                return null;
-//            }
-//        }
-//        catch (Exception ex)
-//        {
-//            Console.WriteLine($"An error occurred while calling API: {ex.Message}");
-//            return null;
-//        }
-//    }
-//}
-
-//public static class Constants
-//{
-//    public static readonly string TenantName = "buildingsmartservices";
-//    public static readonly string ClientId = "12c33ebc-677a-4834-9168-de8bae2d9549";
-//    public static readonly string RedirectUri = "https://authentication.buildingsmart.org/oauth2/nativeclient";
-//    private static readonly string Tenant = $"{TenantName}.onmicrosoft.com";
-//    private static readonly string AzureAdB2CHostname = "authentication.buildingsmart.org";
-//    public static string PolicySignUpSignIn = "b2c_1a_signupsignin_c";
-//    public static string PolicyEditProfile = "b2c_1a_profileedit_c";
-//    public static string PolicyResetPassword = "b2c_1a_passwordreset_c";
-//    public static string[] ApiScopes = { $"https://{TenantName}.onmicrosoft.com/api/read" };
-//    private static string AuthorityBase = $"https://{AzureAdB2CHostname}/tfp/{Tenant}/";
-//    public static string AuthoritySignUpSignIn = $"{AuthorityBase}{PolicySignUpSignIn}";
-//    public static string AuthorityEditProfile = $"{AuthorityBase}{PolicyEditProfile}";
-//    public static string AuthorityResetPassword = $"{AuthorityBase}{PolicyResetPassword}";
-//    public const string ApiBaseUrl = "https://test.bsdd.buildingsmart.org";
-//    public static string SearchListUrl = $"{ApiBaseUrl}/api/SearchList/v2?DomainNamespaceUri=" + WebUtility.UrlEncode("https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3") + "&SearchText=room";
-//}
-//class Program
-//{
-//static async Task Main(string[] args)
-//{
-//    string baseUrl = "https://bs-dd-api-prototype.azurewebsites.net/api/v3";
-//    string apiKey = "12c33ebc-677a-4834-9168-de8bae2d9549"; // Replace "client id" with your actual API key
-
-//    // Create HttpClient instance
-//    HttpClient client = new HttpClient();
-
-//    // Set the API key in the request headers
-//    client.DefaultRequestHeaders.Add("ApiKey", apiKey);
-
-//    try
-//    {
-//        // Create a new project (POST request)
-//        string createProjectUrl = $"{baseUrl}/projects";
-//        string newProjectJson = "{\"name\":\"New Project\",\"description\":\"Sample description\"}";
-
-//        HttpResponseMessage createResponse = await client.PostAsync(createProjectUrl, new StringContent(newProjectJson, Encoding.UTF8, "application/json"));
-
-//        if (createResponse.IsSuccessStatusCode)
-//        {
-//            // Read the response to get the created project ID
-//            string createResponseBody = await createResponse.Content.ReadAsStringAsync();
-//            Console.WriteLine("Project created successfully.");
-
-//            // Extract project ID from the response if needed
-//            // Example: string projectId = extractProjectId(createResponseBody);
-
-//            // Retrieve information about the created project (GET request)
-//            // Replace "{projectId}" with the actual ID of the created project
-//            string getProjectUrl = $"{baseUrl}/project/{{projectId}}";
-//            HttpResponseMessage getResponse = await client.GetAsync(getProjectUrl);
-
-//            if (getResponse.IsSuccessStatusCode)
-//            {
-//                string getResponseBody = await getResponse.Content.ReadAsStringAsync();
-//                Console.WriteLine("Project retrieved successfully:");
-//                Console.WriteLine(getResponseBody);
-//            }
-//            else
-//            {
-//                Console.WriteLine($"Failed to retrieve project information. Status code: {getResponse.StatusCode}");
-//            }
-//        }
-//        else
-//        {
-//            Console.WriteLine($"Failed to create project. Status code: {createResponse.StatusCode}");
-//        }
-//    }
-//    catch (Exception ex)
-//    {
-//        Console.WriteLine($"An error occurred: {ex.Message}");
-//    }
-//    finally
-//    {
-//        // Dispose of the HttpClient instance
-//        client.Dispose();
-//    }
-//}
-//}
