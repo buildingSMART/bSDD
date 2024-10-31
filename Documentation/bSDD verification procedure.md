@@ -8,7 +8,7 @@ The content of bSDD is governed by independent organisations. To ensure a certai
 
 The document below specifies the details of the last step.
 
-## Overview
+## Detailed verification checklist
 
 | Code   | Item                                                         |
 | ------ | ------------------------------------------------------------ |
