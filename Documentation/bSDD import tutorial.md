@@ -2,7 +2,7 @@ In this tutorial, we explain how to publish and manage bSDD content using [the b
 
 ## Publishing the first dictionary
 
-### 1. Register your organisation
+<h3 id="register">1. Register your organisation</h3>
 
 Each data dictionary in bSDD is published on behalf of a registered organisation. If this is the first time you are uploading, you need to register your organization in bSDD and connect the e-mail address you used to log in to that organization. To achieve this, please fill out the <a href="https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25">Organization registration form</a>.
 
@@ -10,7 +10,7 @@ As part of bSDD housekeeping, we manually review each request, which can take up
 
 > Do you want to only experiment with bSDD without registering your organisation? We can add you to the DEMO organisation. For this and other requests, contact us: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h).
 
-### 2. Prepare the content
+<h3 id="prepare">2. Prepare the content</h3>
 
 The primary form of data upload to bSDD is a properly structured JSON file. In [the data model documentation](https://technical.buildingsmart.org/services/bsdd/data-structure/), we specify what such a file should contain and how to structure it.
 
@@ -30,7 +30,7 @@ You can manually create such a file by coping <a href="https://github.com/buildi
 
 **Read more** about good practices for creating data dictionaries: [https://technical.buildingsmart.org/services/bsdd/guidelines/](https://technical.buildingsmart.org/services/bsdd/guidelines/)
 
-### 3. Upload
+<h3 id="upload">3. Upload</h3>
 
 Go to [the bSDD Manage portal](https://manage.bsdd.buildingsmart.org/). If you do not have a bSDD buildingSMART account yet, choose "Sign up now"; otherwise, choose "Sign in".
 
@@ -64,7 +64,7 @@ Once the file has been imported, you will receive a more detailed import report 
 
 > Note: all of the steps explained above can also be automated using <a href="https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1">the bSDD API</a> integration.
 
-## The lifecycle of a dictionary
+<h2 id="dictionary-lifecycle">The lifecycle of a dictionary</h2>
 
 When you publish a new dictionary version in the bSDD, it always initially has the `Preview` status. At this stage, you can **reupload** the content to modify it, **activate** that version, or permanently **delete** it.
 
@@ -72,11 +72,11 @@ When you publish a new dictionary version in the bSDD, it always initially has t
 
 **⚠️ Once the content is activated, it will get an immutable URI, meaning the content will stay in bSDD permanently and can't be deleted.** It is still possible to change the status to `Inactive`, indicating it should no longer be used, but the page will still exist and show the content. Consider that before activating the version of a dictionary.
 
-## Publishing a new dictionary version
+<h2 id="dictionary-reupload">Publishing a new dictionary version</h2>
 
 Similarly to publishing for the first time, you can also upload a new dictionary version by loading a properly structured JSON file and clicking Upload.
 
-## Changing the dictionary status
+<h2 id="dictionary-status">Changing the dictionary status</h2>
 
 As soon as you have at least one version of a dictionary uploaded, you will see a row in the table with the name, version number and other properties of each version. By clicking `action`, you can **download** the JSON file to your computer, **change the status** to `Active`, or **delete** the version (both options are only available if the status is `Preview`).
 
