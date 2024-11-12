@@ -34,6 +34,9 @@ The bSDD has a TEST environment for testing new developments of the bSDD. Althou
 ## GraphQL
 The data can also be accessed via GraphQL.
 [GraphiQL TEST playground](https://test.bsdd.buildingsmart.org/graphiql).
+
+Note: the links below do not work in a browser as you need to POST data to them (GET does not work).
+
 The URL to send your GraphQL requests to:
 - test: https://test.bsdd.buildingsmart.org/graphql
 
@@ -44,7 +47,7 @@ For developers: the test environment also has a secured endpoint available:
 
 This repository contains example code for accessing a secured bSDD API. Contact us if you need assistance implementing this.
 
-[Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Source%20code%20examples/GraphQL/bSDD%20and%20GraphQL.md)
+[Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20and%20GraphQL.md)
 
 ## For client developers
 
