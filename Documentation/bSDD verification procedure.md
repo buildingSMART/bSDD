@@ -117,6 +117,13 @@ Examples:
 - ✔️ 'Cement' is a `Class` with ClassType: `Material`.
 - ✔️ 'Volume' is a `Property` (it should also have adequate Dimension: 3 0 0 0 0 0 0, and DataType: Real) 
 
+### GEN-07
+**Governance of the data dictionary**
+🚧 TBC...
+
+### GEN-08
+**Ownership verification**
+🚧 TBC...
 
 ## Dictionary
 
