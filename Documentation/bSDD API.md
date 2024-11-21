@@ -32,23 +32,18 @@ IMPORTANT: Do not use these identifier URIs for system-to-system communication! 
 The bSDD has a TEST environment for testing new developments of the bSDD. Although meant for internal use, developers wanting to use the bSDD APIs are welcome to use the TEST environment for development purposes. We do not have an SLA for that environment and we don't recommend showing its content to users. If you're a Dictionary owner and want to check your data or test the upload process, please use the official bSDD.
 
 ## GraphQL
-The data can also be accessed via GraphQL.
+The data can also be accessed via GraphQL. You can try it out here:
 [GraphiQL TEST playground](https://test.bsdd.buildingsmart.org/graphiql).
 
-Note: the links below do not work in a browser as you need to POST data to them (GET does not work).
 
-The URL to send your GraphQL requests to:
-- test: https://test.bsdd.buildingsmart.org/graphql
+The URL to send GraphQL requests to is:
+- official release: https://api.bsdd.buildingsmart.org/graphqls (secured, note the "s" at the end)
+- test version: https://test.bsdd.buildingsmart.org/graphql (not secured)
+- test version: https://test.bsdd.buildingsmart.org/graphqls (secured)
+Note: those URLs are not hyperlinks and do not work in a browser. You need to send a POST request with the query data (the GET request does not work).
 
-For using the official release, the secured endpoint is (note the "s" at the end):
-- official release: https://api.bsdd.buildingsmart.org/graphqls
-For developers: the test environment also has a secured endpoint available:
-- test: https://test.bsdd.buildingsmart.org/graphqls
-
-This repository contains example code for accessing a secured bSDD API. Contact us if you need assistance implementing this.
-
-[Some bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20and%20GraphQL.md)
-
+Here you can find an example code for accessing a secured bSDD API: [bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20and%20GraphQL.md). Contact us if you need assistance implementing this.
+ 
 ## For client developers
 
 ### Http header "(X-)User-Agent"
