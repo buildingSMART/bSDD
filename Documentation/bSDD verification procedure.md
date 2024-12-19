@@ -123,7 +123,16 @@ Examples:
 
 ### GEN-08
 **Ownership verification**
-🚧 TBC...
+For new organization registration: 
+
+- The organization must be legitimate and have an active website.
+- The contact email should be a professional, domain-specific address (e.g., `name@organization.com`).
+- Clearly state the purpose of the dictionary during registration. The purpose must align with bSDD acceptable use (e.g., not a product catalogue, project data, or unrelated content).
+
+For ongoing updates: 
+
+- An email verification will be conducted **every 1 year** to ensure continued validity.
+- Organizations should report any changes around ownership (eg., website URL update, contact email update, transfer ownership, or shift of the purpose of dictionary)
 
 ## Dictionary
 
