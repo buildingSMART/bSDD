@@ -20,6 +20,9 @@ The document below specifies the details of the last step.
 | [GEN-06](#gen-06) | Use of correct types                             |
 | [GEN-07](#gen-07) | Governance of the data dictionary                             |
 | [GEN-08](#gen-08) | Ownership verification                     |
+| [GEN-09](#gen-09) | Avoid circular definitions                     |
+| [GEN-10](#gen-10) | Avoid inaccurate definitions                    |
+| [GEN-11](#gen-11) | Avoid negative definitions                    |
 | [DCT-01](#dct-01)   | Dictionary should be 'Active'                         |
 | [DCT-02](#dct-02)   | Dictionary name should not be misleading |
 | [CLS-01](#cls-01)   | Classes should be mapped to IFC correctly                    |
@@ -130,6 +133,31 @@ For new organization registration:
 - Clearly state the purpose of the dictionary during registration. The purpose must align with bSDD's acceptable use (for example, not a product catalogue, project data, or unrelated content).
 - Email verification will be conducted to make sure the author has access to such email address. The verification can be repeated periodically to ensure responsiveness. 
 - Organizations should report any changes around ownership (for example, website URL change, contact email update, ownership transfer, change of dictionary purpose)
+
+### GEN-09
+**Avoid circular definitions**
+In line with ISO 704:2022 6.5.2, a definition should not repeat the term it is defining (inner circle) or use another term for the explanation if it repeats the term being defined (outer circle).
+
+Examples:
+- ❌ Wall Thickness - Thickness of a wall measured between the wall faces.
+- ✔️ Wall Thickness - Distance between faces of a wall.
+
+### GEN-10
+**Avoid inaccurate definitions**
+In line with ISO 704:2022 6.5.3, a definition should be accurate.
+
+Examples:
+- ❌ Column - usually vertical structural member. (too broad, could also mean wall)
+- ❌ Column - vertical structural member supporting a roof. (too narrow, could also support floor slabs or else)
+- ✔️ Column - usually vertical structural member of slender form.
+
+### GEN-11
+**Avoid negative definitions**
+In line with ISO 704:2022 6.5.4, a definition should describe what a concept is, not what it is not.
+
+Examples:
+- ❌ Slanted column - A column that is not vertical.
+- ✔️ Slanted column - A column at an angle.
 
 ## Dictionary
 
