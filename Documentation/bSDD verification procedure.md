@@ -169,16 +169,18 @@ By default, bSDD generates URI identifiers following the syntax: `https://identi
 ### DCT-01 
 **Dictionary should be 'Active'**
 
-Ensure that the dictionary is in the status 'Active'. It is possible to apply for verification while in 'Preview', but it is only to be granted after a positive review and a change of status to 'Active'.
+Ensure that the dictionary is in the status 'Active'. This guarantees that the content will not change. 
+
+It is possible to apply for verification while in 'Preview' status, provided that no changes are allowed once verification is requested except for post-verification improvements. A verified badge is only to be granted after a positive review and a change of status to 'Active'.
 
 ### DCT-02 
-**Dictionary names should not be misleading**
+**Dictionary name should not be misleading**
 
 The dictionary's name should be original and must clearly and accurately describe its content and purpose. It should not be misleading or suggest any association with other dictionaries or organizations. Please do not include names of other dictionaries or organizations.
 
 Examples: 
 
-- ❌ "Uniclass4Infra" - may mislead users into thinking the dictionary is published by NBS and is part of the official Uniclass.
+- ❌ "Uniclass4Infra" - may mislead users into thinking the dictionary is part of the official Uniclass published by NBS.
 - ❌ "IFC Something" - not allowed, as the IFC term is reserved for the official publications of the IFC standard by buildingSMART.
 - ⚠️ "Revit Classification" - it is recommended first obtain permission from the rightful owner (in this case, the Autodesk company).
 
