@@ -23,6 +23,7 @@ The document below specifies the details of the last step.
 | [GEN-09](#gen-09) | Avoid circular definitions                     |
 | [GEN-10](#gen-10) | Avoid inaccurate definitions                    |
 | [GEN-11](#gen-11) | Avoid negative definitions                    |
+| [GEN-12](#gen-12) | Own URIs must provide information                    |
 | [DCT-01](#dct-01)   | Dictionary should be 'Active'                         |
 | [DCT-02](#dct-02)   | Dictionary name should not be misleading |
 | [CLS-01](#cls-01)   | Classes should be mapped to IFC correctly                    |
@@ -158,6 +159,10 @@ In line with ISO 704:2022 6.5.4, a definition should describe what a concept is,
 Examples:
 - ❌ Slanted column - A column that is not vertical.
 - ✔️ Slanted column - A column at an angle.
+
+### GEN-12
+**Own URIs must provide information**
+By default, bSDD generates URI identifiers following the syntax: `https://identifier.buildingsmart.org/uri/<organisation>/<dictionary>/<version>/...`. Publishers have the option to provide their own custom URIs instead, provided that those exist. This is verified by checking if the URI leads to an existing page and if that page contains basic information such as name and definition.
 
 ## Dictionary
 
