@@ -242,8 +242,9 @@ Analogous to `ClassRelations` but between `Properties`.
 
 <h3 id="code-format">Code format</h3>
 
-(from April 2024) All codes support diacritics, whitespace, dots, dashes, underscores and numbers. Not allowed are special characters: `"#%/\:{}[]|;<>?~` (and `). Codes are not case-sensitive. 
-Some examples of valid codes are: "bs-agri", "apple", "éÄą _- Д開発...żź".
+(from April 2024) All codes support diacritics, whitespace, dots, commas, dashes, round brackets (parentheses) underscores and numbers. Not allowed are special characters: ```"#%/\:`{}[]|;<>?~```. Codes are not case-sensitive. 
+
+Some examples of valid codes are: "bs-agri", "apple", "éÄą _- (Д開発,...żź)".
 
 Codes need to be unique within the same data dictionary and are used to generate URIs! 
 
