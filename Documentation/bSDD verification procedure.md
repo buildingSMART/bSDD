@@ -10,38 +10,24 @@ The document below specifies the details of the last step.
 
 ## Detailed verification checklist
 
-| Code   | Item                                                         |
-| ------ | ------------------------------------------------------------ |
-| [GEN-01](#gen-01) | Required fields   |
-| [GEN-02](#gen-02) | Must have English version   |
-| [GEN-03](#gen-03) | Translations should be accurate              |
-| [GEN-04](#gen-04) | Names should be clear and easy to interpret                  |
-| [GEN-05](#gen-05) | Follow a consistent naming convention |
-| [GEN-06](#gen-06) | Use of correct types                             |
-| [GEN-07](#gen-07) | Governance of the data dictionary                             |
-| [GEN-08](#gen-08) | Ownership verification                     |
-| [GEN-09](#gen-09) | Avoid circular definitions                     |
-| [GEN-10](#gen-10) | Avoid inaccurate definitions                    |
-| [GEN-11](#gen-11) | Avoid negative definitions                    |
-| [GEN-12](#gen-12) | Own URIs must provide information                    |
-| [DCT-01](#dct-01)   | Dictionary should be 'Active'                         |
-| [DCT-02](#dct-02)   | Dictionary name should not be misleading |
-| [CLS-01](#cls-01)   | Classes should be mapped to IFC correctly                    |
-| [CLS-02](#cls-02)   | Avoid circular dependencies               |
-| [CLS-03](#cls-03) | Hierarchy of classes |
-| [CLS-04](#cls-04) | Avoid syncretic classes |
-| [PRP-01](#prp-01)   | Numeric property metadata |
-| [PRP-02](#prp-02)   | Avoid duplicating IFC properties                 |
-| [PRP-03](#prp-03)   | PSET_ prefix is forbidden |
-| [PRP-04](#prp-04)   | Property adequate data type            |
-| [PRP-05](#prp-05) | Single aspect properties       |
-| [PRP-06](#prp-06)   | Avoid unnecessary allowed values |
-| [PRP-07](#prp-07) | Allowed values must be meaningful |
-| [CPR-01](#cpr-01)  | Only use active bSDD Properties in ClassProperty      |
-| [CPR-02](#cpr-02)  | ClassProperty should have a PropertySet name                  |
-| [REL-01](#rel-01)  | Avoid circular relationships in RelationType                 |
-| [REL-02](#rel-02)  | Avoid incorrect class types in RelationType                  |
-| [REL-03](#rel-03) | Relations must be meaningful                                 |
+| Code              | Item                                        | Code              | Item                                             |
+|-------------------|---------------------------------------------|-------------------|--------------------------------------------------|
+| [GEN-01](#gen-01) | Required fields                             | [CLS-03](#cls-03) | Hierarchy of classes                             |
+| [GEN-02](#gen-02) | Must have English version                   | [CLS-04](#cls-04) | Avoid syncretic classes                          |
+| [GEN-03](#gen-03) | Translations should be accurate             | [CLS-05](#cls-05) | Forbidden prefix 'Ifc'                           |
+| [GEN-04](#gen-04) | Names should be clear and easy to interpret | [PRP-01](#prp-01) | Numeric property metadata                        |
+| [GEN-05](#gen-05) | Follow a consistent naming convention       | [PRP-02](#prp-02) | Avoid duplicating IFC properties                 |
+| [GEN-06](#gen-06) | Use of correct types                        | [PRP-03](#prp-03) | Forbidden prefix 'PSET_'                         |
+| [GEN-07](#gen-07) | Governance of the data dictionary           | [PRP-04](#prp-04) | Property adequate data type                      |
+| [GEN-08](#gen-08) | Ownership verification                      | [PRP-05](#prp-05) | Single aspect properties                         |
+| [GEN-09](#gen-09) | Avoid circular definitions                  | [PRP-06](#prp-06) | Avoid unnecessary allowed values                 |
+| [GEN-10](#gen-10) | Avoid inaccurate definitions                | [PRP-07](#prp-07) | Allowed values must be meaningful                |
+| [GEN-11](#gen-11) | Avoid negative definitions                  | [CPR-01](#cpr-01) | Only use active bSDD Properties in ClassProperty |
+| [GEN-12](#gen-12) | Own URIs must provide information           | [CPR-02](#cpr-02) | ClassProperty should have a PropertySet name     |
+| [DCT-01](#dct-01) | Dictionary should be 'Active'               | [REL-01](#rel-01) | Avoid circular relationships in RelationType     |
+| [DCT-02](#dct-02) | Dictionary name should not be misleading    | [REL-02](#rel-02) | Avoid incorrect class types in RelationType      |
+| [CLS-01](#cls-01) | Classes should be mapped to IFC correctly   | [REL-03](#rel-03) | Relations must be meaningful                     |
+| [CLS-02](#cls-02) | Avoid circular dependencies                 |                   |                                                  |
 
 **GEN (General), DCT (Dictionary), CLS (Class), PRP (Property), ALV (AllowedValue), CPR (ClassProperty), REL (Relations)*
 
@@ -225,6 +211,11 @@ Examples:
 - ❌ 'External Steel Door' - incorrect because it combines information about the class, material, and property into one definition
 - ✔️ Class: 'Door', Material: 'Steel', IsExternal: 'True'.
 
+### CLS-05
+**Forbidden prefix 'Ifc'**
+
+The prefix 'Ifc' is reserved for the IFC standard. It also applies to all resembling forms of the prefix like '1fc' or '_Ifc'. All other forms are acceptable (for example: 'AbcWall').
+
 ## Property
 
 ### PRP-01
@@ -243,7 +234,7 @@ Ensure that the assigned unit corresponds correctly with the dimension. A mismat
 Notes:
 
 - Units in Property should all match to the same Dimension. Unit in ClassProperty should match Property's Dimension.
-- In case of a physical quantity, specify dimension according to [International_System_of_Quantities](https://en.wikipedia.org/wiki/International_System_of_Quantities), as defined in ISO 80000-1. The order is: `length`, `mass`, `time`, `electric current`, `thermodynamic temperature`, `amount of substance`, and `luminous intensity`. 
+- In the case of a physical quantity, specify dimension according to [International_System_of_Quantities](https://en.wikipedia.org/wiki/International_System_of_Quantities), as defined in ISO 80000-1. The order is: `length`, `mass`, `time`, `electric current`, `thermodynamic temperature`, `amount of substance`, and `luminous intensity`. 
 
 Examples: 
 
@@ -260,11 +251,11 @@ When a close match property already exists in the IFC dictionary, it should be r
 Only invent new properties if no close match exists in IFC. Reusing properties from other active and verified dictionaries is also recommended. When adding a new property that is a specialisation of an existing one (for example, 'Net Weight Dry' could be a specialisation of 'Net Weight'), provide a relation to the existing property in IFC. Use `IsSimilarTo` relation type.
 
 ### PRP-03
-**PSET_ prefix is forbidden**
+**Forbidden prefix 'PSET_'**
 
-The prefix 'PSET_' is reserved for the IFC standard. All other forms are acceptable (for example: 'My cool set'). 
+The prefix 'PSET_' is reserved for the IFC standard. It also applies to resembling forms like 'P5ET_' or '.PSET_'. PSET proceeded by other letter is allowed, for example, 'ePSET_'). 
 
-A common practice for naming new sets for future versions of IFC is to use the 'cPSET_' prefix ('c' for custom/created). To propose new properties to extend existing IFC sets, one could use 'ePSET_' ('e' for extend). 
+A common practice for naming new sets is to use the 'cPSET_' prefix ('c' for custom/created). To propose new properties to extend existing IFC sets, one could use 'ePSET_' ('e' for extend). 
 
 ### PRP-04
 **Property adequate data type**
