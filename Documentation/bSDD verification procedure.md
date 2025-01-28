@@ -1,12 +1,18 @@
-# bSDD verification procedure
+# The bSDD Verification Procedures
 
-The content of bSDD is governed by independent organisations. To ensure a certain level of quality, the bSDD content undergoes the following verification procedure: 
-1. **Organisation review** - at the moment of registration, each organisation willing to publish in bSDD is reviewed to make sure their objective fits the mission of bSDD.
-1. **Import validation** - automatic step triggered on every upload to bSDD. It checks the existence of necessary fields and their types. This step ensures the content is well structured and compliant with the service.
-1. **User review** - a crowdsourcing type of review in which every bSDD user has the right to file a 'change request' to the owner of the dictionary to report mistakes or propose improvements. The bSDD platform processes 'change requests' in accordance with ISO 12006-3:2022. Additionally, users can also trigger claims directly to the bSDD team regarding content accuracy or potential licensing violations. When a user reports such issues, the bSDD team initiates a targeted review process to investigate the reported content thoroughly.
-1. **Detailed verification** - an on-demand, paid service designed to increase the trustworthiness of data within the bSDD platform. Verified content undergoes a series of checks to ensure quality and consistency, marked by a verified icon in bSDD. While the verification list below is comprehensive, it is not exhaustive — additional aspects may be verified over time to maintain and enhance reliability further. The procedure is executed by buildingSMART International and/or trusted partners.
+While the bSDD service is governed by buildingSMART International, the content of the bSDD is governed by independent organisations -- data dictionary owners. To ensure quality, the bSDD content undergoes the following verification procedures: 
 
-The document below specifies the details of the last step.
+| **Type**                  | **When**         | **Who**               | **Cost** | **What**                                                                                                                                                                                                  |
+|---------------------------|------------------|-----------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Organisation review**   | On registration  | bSI team              | Free     | Each new organisation is reviewed to make sure its objectives fit the bSDD's mission.                                                                                                                   |
+| **Import validation**     | On upload        | automated             | Free     | Automatic step triggered on every bSDD upload, verifying compliance with the bSDD data structure.                                                                                                         |
+| **User/reactive review**  | On user request  | Community & bSI team  | Free     | bSDD users can file 'change requests' to report problems or propose improvements to the content owner and bSDD team (acc. ISO 12006-3:2022). The bSDD team investigates reports on license violations.  |
+| **Detailed verification** | On owner request | bSI team or delegates | Paid*     | On-demand paid service to ensure the quality of the content, marked by a verified badge in bSDD. Designed to increase the trustworthiness of data within the bSDD platform. The procedure is described in [the checklist](#detailed-verification-checklist).                                  |
+
+\* The cost of the verification procedure depends on the amount of content, number of iterations, and complexity of the data dictionary. The service price is determined individually - please get in touch with the bSDD Team for a quote: [CONTACT FORM](https://share.hsforms.com/1RtgbtGyIQpCd7Cdwt2l67A2wx5h?__hstc=265579920.1c41677ee7e38ddbd3a5a993f3a67a91.1729689591361.1738077297342.1738084047841.83&__hssc=265579920.2.1738084047841&__hsfp=2763741192).
+
+> Disclaimer: the verification checklist is not exhaustive — additional aspects may be verified. The checklist might also change over time to enhance quality. To obtain a 'verified badge', a data dictionary must comply with the latest version of the checklist.
+
 
 ## Detailed verification checklist
 
