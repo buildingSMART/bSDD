@@ -174,8 +174,8 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 |  Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | <span id="Code">Code</span>                | Text     |      |     | Unique identification code of the `ClassProperty`. Code validation applies, see: [Code format](#code-format). When left empty on import, bSDD will generate a random GUID.    |
-| <span id="PropertyCode">PropertyCode</span>        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
-| <span id="PropertyUri">PropertyUri</span>         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, Example: [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
+| <span id="PropertyCode">PropertyCode</span>        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. \* Only one of the two is required, and if PropertyCode is in use, do not fill in the PropertyUri.  |
+| <span id="PropertyUri">PropertyUri</span>         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, Example: [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) \* Only one of the two is required, and if PropertyUri is in use, do not fill in the PropertyCode.       |
 | <span id="Description">Description</span>         | Text     |         | ✅ | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
 | <span id="PropertySet">PropertySet</span>         | Text     |         |     | Name of the set where the property should be placed in IFC data. The prefix 'Pset_' is reserved for the official IFC. Code validation applies, see: [Code format](#code-format). Read more: [assembling properties](#assembling-properties). |
 | <span id="Unit">Unit</span>                | Text     |         |     | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
@@ -194,8 +194,6 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 | <span id="AllowedValues">AllowedValues</span>       | List of AllowedValue  |  | ✅           | List of allowed values for the `ClassProperty`. Overrides the values defined for the `Property`. Do not use this one for properties of type boolean. See section [AllowedValue](#AllowedValue)  |
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyUri` instead                |
 
-
-\* One of those is required.
 
 <h3 id="AllowedValue">AllowedValue</h3>
 
