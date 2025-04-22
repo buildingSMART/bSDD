@@ -32,7 +32,7 @@ We also have a demonstration dictionary: ["Fruit and vegetables"](https://search
 You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
 
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc class](https://api.bsdd.buildingsmart.org/api/Dictionary/v2/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
-If you think there are reference documents missing, please let us know.
+If you think there are reference documents missing, please let us know by [posting an issue](https://github.com/buildingSMART/bSDD/issues). All values in JSON must be strings captured in double quotes, including for numeric Example and AllowedValue fields.
 
 If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). Please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
 
