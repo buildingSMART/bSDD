@@ -25,14 +25,14 @@ See our example demonstrating the usage of the above concepts: [bSDD data exampl
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.1).
 
-📢 Read about the latest technical updates in the dedicated forum topic: https://forums.buildingsmart.org/t/bsdd-tech-updates/4889
+📢 Read about the latest technical updates in the dedicated forum topic: [https://forums.buildingsmart.org/t/bsdd-tech-updates/4889](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889)
 
 <h2 id="json-format">JSON format</h2>
 
-You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
+You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](https://github.com/buildingSMART/bSDD/tree/master/Model/Import%20Model).
 
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc class](https://api.bsdd.buildingsmart.org/api/Dictionary/v2/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
-If you think there are reference documents missing, please let us know.
+If you think there are reference documents missing, please let us know by [posting an issue](https://github.com/buildingSMART/bSDD/issues). All values in JSON must be strings captured in double quotes, including for numeric Example and AllowedValue fields.
 
 If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). Please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
 
@@ -54,8 +54,8 @@ NB Default values will only be applied if a field is not specified. If you speci
 | <span id="LanguageOnly">LanguageOnly</span>     | Boolean          | ✅   | | true if JSON contains only language-specific information, no otherwise \*  |
 | <span id="UseOwnUri">UseOwnUri</span>      | Boolean                   | ✅        |             | Default: false. Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
 | <span id="DictionaryUri">DictionaryUri</span>    | Text             |  ✅\*     | | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, Example: "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
-| <span id="License">License</span>          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). Example: "MIT" or "CC BY 4.0". Also, a helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
-| <span id="LicenseUrl">LicenseUrl</span>       | Text             |       | | Url to a web page with the full license text   |
+| <span id="License">License</span>          | Text             |       | | Identifier of the license to the content. We suggest choosing a license from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). If applicable, a standardised [SPDX](https://spdx.org/licenses/) identifier should be used for canonical and reliable identification, for example: "MIT" or "CC-BY-4.0". A helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
+| <span id="LicenseUrl">LicenseUrl</span>       | Text             |       | | Link to a website with the full license text. The license page should match the provided "License" name.   |
 | <span id="ChangeRequestEmailAddress">ChangeRequestEmailAddress</span>     | Text             |       | | Single email address for receiving change requests from users. By providing the email address, you consent to us forwarding requests from users and exposing the address through the API. You have the right to withdraw the information by contacting us. |
 | <span id="ModelVersion">ModelVersion</span>     | Text             |       | | Version number of the input JSON template. |
 | <span id="MoreInfoUrl">MoreInfoUrl</span>      | Text             |       | | Url to a web page with more info about the dictionary |
