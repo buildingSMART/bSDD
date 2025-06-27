@@ -12,6 +12,21 @@ A new version will only be created if it 'breaks' the current version. For examp
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
 
+## 2025-06-27
+
+Changed API methods:
+ * api/Dictionary/v1/Classes:
+    - Option "RelatedIfcEntities" added. You can specify multiple related IFC entities
+
+Removed the following obsolete API methods:
+  * api/Classification/v3
+  * api/ClassificationSearchOpen/v1
+  * api/Domain/v2
+  * api/Domain/v2/Classifications
+  * api/Domain/v3
+  * api/Domain/v3/Classifications
+  * api/TextSearchListOpen/v5
+
 ## 2024-09-23
 
 Changed API methods:

@@ -32,7 +32,7 @@ info:
       https://bsddprototype2020.blob.core.windows.net/public/Copyright_2020_buildingSMART_International.txt
   version: v1
 servers:
-  - url: 'https://api.bsdd.buildingsmart.org/'
+  - url: https://api.bsdd.buildingsmart.org/
 paths:
   /api/Class/v1:
     get:
@@ -464,6 +464,14 @@ paths:
           description: "Optional filter on related IFC entity. It accepts an IFC entity code (e.g. IfcWall) or uri (e.g. https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall).\r\nWhen a code is supplied, finding matching classes ignores the IFC version.\r\nIgnored when UseNestedClasses = true"
           schema:
             type: string
+            deprecated: true
+        - name: RelatedIfcEntities
+          in: query
+          description: "Optional filter on related IFC entities. It accepts an IFC entity code (e.g. IfcWall) or uri (e.g. https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall).\r\nWhen a code is supplied, finding matching classes ignores the IFC version.\r\nIgnored when UseNestedClasses = true"
+          schema:
+            type: array
+            items:
+              type: string
         - name: Offset
           in: query
           description: Zero-based offset of the first item to be returned. Default is 0.
@@ -980,7 +988,7 @@ paths:
           description: Success
       security:
         - aad-jwt:
-            - /manage
+            - /read
     delete:
       tags:
         - Private dictionary specific APIs
@@ -1014,12 +1022,12 @@ paths:
           description: Success
       security:
         - aad-jwt:
-            - /manage
-  /api/Property/v4:
+            - /read
+  /api/Property/v5:
     get:
       tags:
         - Property
-      summary: Get Property details
+      summary: "Get Property details.\r\nIf you also need the list of classes using the property, then use api/Property/Classes"
       operationId: PropertyGet
       parameters:
         - name: uri
@@ -1030,11 +1038,6 @@ paths:
           required: true
           schema:
             type: string
-        - name: includeClasses
-          in: query
-          description: "Set to true to get list of classes where property is used (only classes of the same dictionary as the property).\r\n            Maximum number of class properties returned is 2000. In the next version of the API this option probably will be removed.\r\n            Preferred way to get the classes is by using api/Property/Classes/v1"
-          schema:
-            type: boolean
         - name: languageCode
           in: query
           description: >-
@@ -1049,31 +1052,31 @@ paths:
           content:
             text/plain:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             application/json:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             text/json:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             application/xml:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             text/xml:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             text/html:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             text/turtle:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             application/x-turtle:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
             application/rdf+xml:
               schema:
-                $ref: '#/components/schemas/PropertyContract.v4'
+                $ref: '#/components/schemas/PropertyContract.v5'
   /api/Property/Relations/v1:
     get:
       tags:
@@ -1379,80 +1382,6 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/TextSearchResponseContract.v2'
-  /api/TextSearch/v1:
-    get:
-      tags:
-        - Search
-      summary: "Search bSDD using free text, get list of Classes and/or Properties.\r\nPagination options for Classes and Properties are combined. If result contains 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first. Use Offset=10 and Limit=5, to get the 5 properties only."
-      description: The details can be requested per Class via the Class API
-      operationId: TextSearchV1Get
-      parameters:
-        - name: SearchText
-          in: query
-          description: >-
-            The text to search for, minimum 2 characters (case and accent
-            insensitive)
-          required: true
-          schema:
-            type: string
-        - name: TypeFilter
-          in: query
-          description: 'Type filter: must be "All", "Classes" or "Properties"'
-          schema:
-            type: string
-        - name: DictionaryUris
-          in: query
-          description: List of dictionaries to filter on
-          schema:
-            type: array
-            items:
-              type: string
-        - name: Offset
-          in: query
-          description: Zero-based offset of the first item to be returned. Default is 0.
-          schema:
-            type: integer
-            format: int32
-        - name: Limit
-          in: query
-          description: >-
-            Limit number of items to be returned. The default and maximum number
-            of items returned is 1000. When Offset is specified, then the
-            default limit is 100.
-          schema:
-            type: integer
-            format: int32
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v1'
   /api/SearchInDictionary/v1:
     get:
       tags:
@@ -1542,9 +1471,7 @@ paths:
       parameters:
         - name: SearchText
           in: query
-          description: >-
-            The text to search for, minimum 3 characters (case and accent
-            insensitive)
+          description: The text to search for (case and accent insensitive)
           required: true
           schema:
             type: string
@@ -1608,6 +1535,43 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/ClassSearchResponseContract.v1'
+  /api/UriRedirection/v1:
+    get:
+      tags:
+        - z Lookup data
+      summary: Get list of URI redirections
+      operationId: UriRedirectionGet
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            text/turtle:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            application/x-turtle:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
+            application/rdf+xml:
+              schema:
+                $ref: '#/components/schemas/UriRedirectionsContract.v1'
   /api/Unit/v1:
     get:
       tags:
@@ -1837,677 +1801,99 @@ paths:
       responses:
         '200':
           description: Success
-  /api/TextSearchListOpen/v6:
+  /api/TextSearch/v1:
     get:
       tags:
         - zz Obsolete APIs
-      summary: >-
-        Search the bSDD database using free text, get list of Classifications
-        and/or Properties matching the text.
-      description: >-
-        The details can be requested per Classification via the Classification
-        API
-      operationId: TextSearchListGet
+      summary: "Search bSDD using free text, get list of Classes and/or Properties.\r\nPagination options for Classes and Properties are combined. If result contains 10 classes and 5 properties, TotalCount will be 15. Classes will be listed first. Use Offset=10 and Limit=5, to get the 5 properties only."
+      description: The details can be requested per Class via the Class API
+      operationId: TextSearchV1Get
       parameters:
         - name: SearchText
           in: query
           description: >-
-            The text to search for, minimum 3 characters (case and accent
+            The text to search for, minimum 2 characters (case and accent
             insensitive)
           required: true
           schema:
             type: string
         - name: TypeFilter
           in: query
-          description: >-
-            Type filter: must be "All", "Classifications", "Materials" or
-            "Properties"
+          description: 'Type filter: must be "All", "Classes" or "Properties"'
           schema:
             type: string
-        - name: DomainNamespaceUris
+        - name: DictionaryUris
           in: query
-          description: List of domain to filter on
+          description: List of dictionaries to filter on
           schema:
             type: array
             items:
               type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v6'
-      deprecated: true
-  /api/TextSearchListOpen/v5:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: >-
-        Search the bSDD database using free text, get list of Classifications
-        and/or Properties matching the text.
-      description: >-
-        The details can be requested per Classification via the Classification
-        API
-      operationId: TextSearchListV5Get
-      parameters:
-        - name: SearchText
+        - name: Offset
+          in: query
+          description: Zero-based offset of the first item to be returned. Default is 0.
+          schema:
+            type: integer
+            format: int32
+        - name: Limit
           in: query
           description: >-
-            The text to search for, minimum 3 characters (case and accent
-            insensitive)
-          required: true
+            Limit number of items to be returned. The default and maximum number
+            of items returned is 1000. When Offset is specified, then the
+            default limit is 100.
           schema:
-            type: string
-        - name: TypeFilter
-          in: query
-          description: 'Type filter: must be "All", "Classifications" or "Properties"'
-          schema:
-            type: string
-        - name: DomainNamespaceUris
-          in: query
-          description: List of domain to filter on
-          schema:
-            type: array
-            items:
-              type: string
+            type: integer
+            format: int32
       responses:
         '200':
           description: Success
           content:
             text/plain:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             application/json:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             text/json:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             application/xml:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             text/xml:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             text/html:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             text/turtle:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             application/x-turtle:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
             application/rdf+xml:
               schema:
-                $ref: '#/components/schemas/TextSearchResponseContract.v5'
+                $ref: '#/components/schemas/TextSearchResponseContract.v1'
       deprecated: true
-  /api/SearchList/v2:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: "Secured version of the \"Search List API\".\r\nSearch the bSDD database, get list of Classifications without details."
-      description: >-
-        The details can be requested per Classification via the Classification
-        API
-      operationId: SearchListGet
-      parameters:
-        - name: DomainNamespaceUri
-          in: query
-          description: The namespace uri of the Domain to filter on (required)
-          required: true
-          schema:
-            type: string
-        - name: SearchText
-          in: query
-          description: The text to search for (case and accent insensitive)
-          schema:
-            type: string
-        - name: LanguageCode
-          in: query
-          description: "The ISO language code to search in and to return the text in (case sensitive)\r\nIf no language code specified or the text is not available in the requested language, the text will be returned in the default language of the Domain.\r\nIf a language code has been given, the search takes place in texts of that language, otherwise searches will be done in the default language of the Domain.\r\nIf an invalid or not supported language code is given, a Bad Request will be returned."
-          schema:
-            type: string
-        - name: RelatedIfcEntity
-          in: query
-          description: The official IFC entity name to filter on (case sensitive)
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-      deprecated: true
-      security:
-        - aad-jwt:
-            - /read
-  /api/SearchListOpen/v2:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Search the bSDD database, get list of Classifications without details.
-      description: >-
-        The details can be requested per Classification via the Classification
-        API
-      operationId: SearchListGetOpen
-      parameters:
-        - name: DomainNamespaceUri
-          in: query
-          description: The namespace uri of the Domain to filter on (required)
-          required: true
-          schema:
-            type: string
-        - name: SearchText
-          in: query
-          description: The text to search for (case and accent insensitive)
-          schema:
-            type: string
-        - name: LanguageCode
-          in: query
-          description: "The ISO language code to search in and to return the text in (case sensitive)\r\nIf no language code specified or the text is not available in the requested language, the text will be returned in the default language of the Domain.\r\nIf a language code has been given, the search takes place in texts of that language, otherwise searches will be done in the default language of the Domain.\r\nIf an invalid or not supported language code is given, a Bad Request will be returned."
-          schema:
-            type: string
-        - name: RelatedIfcEntity
-          in: query
-          description: The official IFC entity name to filter on (case sensitive)
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v2'
-      deprecated: true
-  /api/Property/v3:
+  /api/Property/v4:
     get:
       tags:
         - zz Obsolete APIs
       summary: Get Property details
-      operationId: PropertyV3Get
+      operationId: PropertyV4Get
       parameters:
-        - name: namespaceUri
+        - name: uri
           in: query
           description: >-
-            Namespace URI of the property, e.g.
-            https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/AirConditioning
+            URI of the property, e.g.
+            https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.1/prop/color
           required: true
           schema:
             type: string
-        - name: languageCode
+        - name: includeClasses
           in: query
-          description: >-
-            Specify language (case sensitive). For those items the text is not
-            available in the requested language, the text will be returned in
-            the default language of the domain
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v3'
-      deprecated: true
-  /api/Property/v2:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Property details
-      operationId: PropertyV2Get
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: >-
-            Namespace URI of the property, e.g.
-            https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/prop/AirConditioning
-          required: true
-          schema:
-            type: string
-        - name: languageCode
-          in: query
-          description: >-
-            Specify language (case sensitive). For those items the text is not
-            available in the requested language, the text will be returned in
-            the default language of the domain
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/PropertyContract.v2'
-      deprecated: true
-  /api/PropertyValue/v1:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Property Value details
-      operationId: PropertyValueV1Get
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: Namespace URI of the property value
-          required: true
-          schema:
-            type: string
-        - name: languageCode
-          in: query
-          description: Language Code
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/PropertyValueContract.v1'
-      deprecated: true
-  /api/Material/v2:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Material details
-      operationId: MaterialGet
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: Namespace URI of the material
-          required: true
-          schema:
-            type: string
-        - name: languageCode
-          in: query
-          description: >-
-            Language Code the result will be returned in. For items the
-            translation is not available, the default language of the domain
-            will be returned
-          schema:
-            type: string
-        - name: includeChildMaterialReferences
-          in: query
-          description: Use this option to include references to child materials
-          schema:
-            type: boolean
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v2'
-      deprecated: true
-  /api/Material/v1:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Material details
-      operationId: MaterialV1Get
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: Namespace URI of the material
-          required: true
-          schema:
-            type: string
-        - name: languageCode
-          in: query
-          description: >-
-            Language Code the result will be returned in. For items the
-            translation is not available, the default language of the domain
-            will be returned
-          schema:
-            type: string
-        - name: includeChildMaterialReferences
-          in: query
-          description: Use this option to include references to child materials
-          schema:
-            type: boolean
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/MaterialContract.v1'
-      deprecated: true
-  /api/Material/SearchOpen/preview:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Search the bSDD database, get list of Materials without details.
-      description: "This is a preview version! Contracts may change.\r\nThe details can be requested per Material via the Material API"
-      operationId: MaterialSearchGet
-      parameters:
-        - name: DomainNamespaceUri
-          in: query
-          description: The namespace uri of the Domain to filter on (required)
-          required: true
-          schema:
-            type: string
-        - name: SearchText
-          in: query
-          description: The text to search for materials (case and accent insensitive)
-          schema:
-            type: string
-        - name: LanguageCode
-          in: query
-          description: "The ISO language code to search in and to return the text in (case sensitive)\r\nIf no language code specified or the text is not available in the requested language, the text will be returned in the default language of the Domain.\r\nIf a language code has been given, the search takes place in texts of that language, otherwise searches will be done in the default language of the Domain.\r\nIf an invalid or not supported language code is given, a Bad Request will be returned."
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/SearchResultContract.v1'
-      deprecated: true
-  /api/Domain/v3:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get list of available Domains
-      operationId: DomainGet
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: "Optional parameter to filter by first part of namespace URI. Use this one to get details of just one domain version\r\n            or, if you leave out the version number at the end, get all the versions of a domain."
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            text/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            application/xml:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            text/xml:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            text/html:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            text/turtle:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            application/x-turtle:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-            application/rdf+xml:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v3'
-      deprecated: true
-  /api/Domain/v3/Classifications:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Domain with the classification and/or material tree
-      operationId: DomainWithClassificationTree
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: Required parameter to select the domain.
-          required: true
-          schema:
-            type: string
-        - name: useNestedClassifications
-          in: query
-          description: >-
-            Set to true if you want a tree of classifications, set to false to
-            get a flat list of classifications
+          description: "Set to true to get list of classes where property is used (only classes of the same dictionary as the property).\r\n            Maximum number of class properties returned is 2000. In the next version of the API this option probably will be removed.\r\n            Preferred way to get the classes is by using api/Property/Classes/v1"
           schema:
             type: boolean
         - name: languageCode
@@ -2515,7 +1901,7 @@ paths:
           description: >-
             Specify language (case sensitive). For those items the text is not
             available in the requested language, the text will be returned in
-            the default language of the domain
+            the default language of the dictionary
           schema:
             type: string
       responses:
@@ -2524,248 +1910,31 @@ paths:
           content:
             text/plain:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             application/json:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             text/json:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             application/xml:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             text/xml:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             text/html:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             text/turtle:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             application/x-turtle:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
+                $ref: '#/components/schemas/PropertyContract.v4'
             application/rdf+xml:
               schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v3'
-      deprecated: true
-  /api/Domain/v3/{organizationCode}/{code}/{version}:
-    put:
-      tags:
-        - zz Obsolete APIs
-      summary: UpdateDomainStatus
-      operationId: DomainUpdateStatus
-      parameters:
-        - name: organizationCode
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: code
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: version
-          in: path
-          required: true
-          schema:
-            type: string
-      requestBody:
-        description: >-
-          The new status of the domain. Only transitions allowed are: Preview
-          --> Active, Active --> Inactive and Inactive --> Active
-        content:
-          application/json:
-            schema:
-              type: string
-          text/json:
-            schema:
-              type: string
-          application/*+json:
-            schema:
-              type: string
-      responses:
-        '200':
-          description: Success
-      deprecated: true
-      security:
-        - aad-jwt:
-            - /manage
-    delete:
-      tags:
-        - zz Obsolete APIs
-      summary: Delete domain version
-      operationId: DomainUpdateDeleteVersion
-      parameters:
-        - name: organizationCode
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: code
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: version
-          in: path
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-      deprecated: true
-      security:
-        - aad-jwt:
-            - /manage
-  /api/Domain/v3/{organizationCode}/{code}:
-    delete:
-      tags:
-        - zz Obsolete APIs
-      summary: Delete all versions of domain
-      operationId: DomainUpdateDelete
-      parameters:
-        - name: organizationCode
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: code
-          in: path
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-      deprecated: true
-      security:
-        - aad-jwt:
-            - /manage
-  /api/Domain/v2:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get list of available Domains
-      operationId: DomainV2Get
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: "Optional parameter to filter by first part of namespace URI. Use this one to get details of just one domain version\r\n            or, if you leave out the version number at the end, get all the versions of a domain."
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            text/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            application/xml:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            text/xml:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            text/html:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            text/turtle:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            application/x-turtle:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-            application/rdf+xml:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/DomainContract.v2'
-      deprecated: true
-  /api/Domain/v2/Classifications:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Domain with the classification tree
-      operationId: DomainWithClassificationTreeV2
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: Required parameter to select the domain.
-          required: true
-          schema:
-            type: string
-        - name: useNestedClassifications
-          in: query
-          description: >-
-            Set to true if you want a tree of classifications, set to false to
-            get a flat list of classifications
-          schema:
-            type: boolean
-        - name: languageCode
-          in: query
-          description: >-
-            Specify language (case sensitive). For those items the text is not
-            available in the requested language, the text will be returned in
-            the default language of the domain
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/DomainWithClassificationsContract.v2'
+                $ref: '#/components/schemas/PropertyContract.v4'
       deprecated: true
   /api/Classification/v4:
     get:
@@ -2826,129 +1995,6 @@ paths:
             application/rdf+xml:
               schema:
                 $ref: '#/components/schemas/ClassificationContract.v4'
-      deprecated: true
-  /api/Classification/v3:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: Get Classification details - please use api/Class/v1 instead
-      operationId: ClassificationV3Get
-      parameters:
-        - name: namespaceUri
-          in: query
-          description: >-
-            Namespace URI of the classification, e.g.
-            https://identifier.buildingsmart.org/uri/buildingsmart/ifc-4.3/class/ifcwall
-          required: true
-          schema:
-            type: string
-        - name: includeChildClassificationReferences
-          in: query
-          description: Use this option to include references to child classifications
-          schema:
-            type: boolean
-        - name: languageCode
-          in: query
-          description: >-
-            Specify language (case sensitive). For those items the text is not
-            available in the requested language, the text will be returned in
-            the default language of the domain
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/ClassificationContract.v3'
-      deprecated: true
-  /api/ClassificationSearchOpen/v1:
-    get:
-      tags:
-        - zz Obsolete APIs
-      summary: >-
-        Search the bSDD database using free text - please use
-        api/Class/Search/v1 instead
-      operationId: ClassificationSearchGet
-      parameters:
-        - name: SearchText
-          in: query
-          description: >-
-            The text to search for, minimum 3 characters (case and accent
-            insensitive)
-          required: true
-          schema:
-            type: string
-        - name: DomainNamespaceUris
-          in: query
-          description: "List of domains to filter on.\r\nFor a classification to be found it must be part of one of the given domains"
-          schema:
-            type: array
-            items:
-              type: string
-        - name: RelatedIfcEntities
-          in: query
-          description: "List of related IFC entities to filter on.\r\nFor a classification to be found it must have at least one of the given Related Ifc Entities"
-          schema:
-            type: array
-            items:
-              type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            text/json:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            text/xml:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            text/html:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            text/turtle:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            application/x-turtle:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
-            application/rdf+xml:
-              schema:
-                $ref: '#/components/schemas/ClassificationSearchResponseContract.v1'
       deprecated: true
 components:
   schemas:
@@ -3813,159 +2859,6 @@ components:
             type: string
           nullable: true
       additionalProperties: false
-    ClassificationContract.v3:
-      required:
-        - activationDateUtc
-        - code
-        - name
-        - namespaceUri
-        - status
-        - versionDateUtc
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Namespace URI of the domain
-          nullable: true
-        activationDateUtc:
-          type: string
-          description: Date of activation
-          format: date-time
-        code:
-          minLength: 1
-          type: string
-          description: Code used originally by the domain
-        creatorLanguageCode:
-          type: string
-          description: Language code of the creator
-          nullable: true
-        countriesOfUse:
-          type: array
-          items:
-            type: string
-          description: List of countries where used
-          nullable: true
-        countryOfOrigin:
-          type: string
-          description: Country of origin
-          nullable: true
-        deActivationDateUtc:
-          type: string
-          description: Date of deactivation
-          format: date-time
-          nullable: true
-        definition:
-          type: string
-          description: Definition
-          nullable: true
-        deprecationExplanation:
-          type: string
-          description: Explanation of the deprecation
-          nullable: true
-        documentReference:
-          type: string
-          description: Reference to a(n official) document
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-          description: Name
-        namespaceUri:
-          minLength: 1
-          type: string
-          description: Unique identification
-        replacedObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replaced items
-          nullable: true
-        replacingObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replacing items
-          nullable: true
-        revisionDateUtc:
-          type: string
-          description: Date of the revision
-          format: date-time
-          nullable: true
-        revisionNumber:
-          type: integer
-          description: Revision number
-          format: int32
-          nullable: true
-        status:
-          minLength: 1
-          type: string
-          description: 'Status, can be: Preview, Active or Inactive'
-        subdivisionsOfUse:
-          type: array
-          items:
-            type: string
-          description: List of subdivisions (e.g. states) where used
-          nullable: true
-        uid:
-          type: string
-          description: Alternative unique global identification
-          nullable: true
-        versionDateUtc:
-          type: string
-          description: Date of the version
-          format: date-time
-        versionNumber:
-          type: integer
-          description: Version number
-          format: int32
-          nullable: true
-        visualRepresentationUri:
-          type: string
-          description: URI of a visual representation
-          nullable: true
-        classificationType:
-          type: string
-          description: Type of Classification
-          nullable: true
-        referenceCode:
-          type: string
-          description: Code that can be used for domain specific purposes
-          nullable: true
-        synonyms:
-          type: array
-          items:
-            type: string
-          description: List of synonyms for the classification
-          nullable: true
-        relatedIfcEntityNames:
-          type: array
-          items:
-            type: string
-          description: List of related IFC entity names (version independent)
-          nullable: true
-        parentClassificationReference:
-          $ref: '#/components/schemas/ClassificationReferenceContract.v3'
-        classificationProperties:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationPropertyContract.v3'
-          description: List of the properties of this classification
-          nullable: true
-        classificationRelations:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationRelationContract.v3'
-          description: >-
-            List of relations to other classifications, can be reference to
-            classifications of other domains
-          nullable: true
-        childClassificationReferences:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationReferenceContract.v3'
-          description: List of child classifications (only filled if requested)
-          nullable: true
-      additionalProperties: false
     ClassificationContract.v4:
       required:
         - activationDateUtc
@@ -4117,220 +3010,6 @@ components:
           items:
             $ref: '#/components/schemas/ClassificationReferenceContract.v4'
           description: List of child classifications (only filled if requested)
-          nullable: true
-      additionalProperties: false
-    ClassificationListItemContract.v2:
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        code:
-          type: string
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        referenceCode:
-          type: string
-          nullable: true
-        parentClassificationCode:
-          type: string
-          nullable: true
-        children:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationListItemContract.v2'
-          nullable: true
-      additionalProperties: false
-    ClassificationListItemContract.v3:
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        code:
-          type: string
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        referenceCode:
-          type: string
-          nullable: true
-        parentClassificationCode:
-          type: string
-          nullable: true
-        children:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationListItemContract.v3'
-          nullable: true
-      additionalProperties: false
-    ClassificationPropertyContract.v3:
-      required:
-        - name
-      type: object
-      properties:
-        name:
-          minLength: 1
-          type: string
-          description: Name of the property
-        description:
-          type: string
-          description: "Plain language description of the property.\r\nIf at Property level no description has been given but a \"Definition\" is available, then \"Definition\" is returned as description"
-          nullable: true
-        dataType:
-          type: string
-          description: Format for expressing the value of the property
-          nullable: true
-        dimension:
-          type: string
-          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
-          nullable: true
-        dimensionLength:
-          type: integer
-          description: The Length value of the dimension
-          format: int32
-          nullable: true
-        dimensionMass:
-          type: integer
-          description: The Mass value of the dimension
-          format: int32
-          nullable: true
-        dimensionTime:
-          type: integer
-          description: The Time value of the dimension
-          format: int32
-          nullable: true
-        dimensionElectricCurrent:
-          type: integer
-          description: The Electric current value of the dimension
-          format: int32
-          nullable: true
-        dimensionThermodynamicTemperature:
-          type: integer
-          description: The Thermodynamic temperature value of the dimension
-          format: int32
-          nullable: true
-        dimensionAmountOfSubstance:
-          type: integer
-          description: The Amount of substance value of the dimension
-          format: int32
-          nullable: true
-        dimensionLuminousIntensity:
-          type: integer
-          description: The Luminous intensity value of the dimension
-          format: int32
-          nullable: true
-        dynamicParameterPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
-          nullable: true
-        example:
-          type: string
-          description: Illustrate possible use or values of the Property
-          nullable: true
-        isDynamic:
-          type: boolean
-          description: >-
-            True if the value of this property is dependent on other properties
-            (as provided in DynamicParameterPropertyCodes)
-          nullable: true
-        isRequired:
-          type: boolean
-          description: Indicates if this property is required for the classification
-          nullable: true
-        isWritable:
-          type: boolean
-          description: Indicates if the value of the property can be changed by the user
-          nullable: true
-        maxExclusive:
-          type: number
-          description: "Maximum value of the property, exclusive\r\nThis value does not need to be the same as the MaxExclusive in the Property contract\r\nbecause this value can be overruled at Classification-Property level to define a more strict value."
-          format: double
-          nullable: true
-        maxInclusive:
-          type: number
-          description: "Maximum value of the property, inclusive\r\nThis value does not need to be the same as the MaxInclusive in the Property contract\r\nbecause this value can be overruled at Classification-Property level to define a more strict value."
-          format: double
-          nullable: true
-        minExclusive:
-          type: number
-          description: "Minimum value of the property, exclusive\r\nThis value does not need to be the same as the MinExclusive in the Property contract\r\nbecause this value can be overruled at Classification-Property level to define a more strict value."
-          format: double
-          nullable: true
-        minInclusive:
-          type: number
-          description: "Minimum value of the property, inclusive\r\nThis value does not need to be the same as the MinInclusive in the Property contract\r\nbecause this value can be overruled at Classification-Property level to define a more strict value."
-          format: double
-          nullable: true
-        pattern:
-          type: string
-          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html.\r\nThis value does not need to be the same as the Pattern in the Property contract\r\nbecause this value can be overruled at Classification-Property level to define a more strict value."
-          nullable: true
-        physicalQuantity:
-          type: string
-          description: The quantity in plain text
-          nullable: true
-        possibleValues:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationPropertyValueContract.v3'
-          description: "List of possible values\r\nThis list does not need to be the same as the list of PossibleValues in the Property contract\r\nbecause this list can be overruled at Classification-Property level to define a more strict list."
-          nullable: true
-        predefinedValue:
-          type: string
-          description: >-
-            Predefined value: if the classification can have only one value for
-            this property, this is it
-          nullable: true
-        propertyCode:
-          type: string
-          description: >-
-            Code of the property, only applicable if property is of the same
-            domain as the classification.
-          nullable: true
-        propertyDomainName:
-          type: string
-          description: Name of the Domain this property belongs to
-          nullable: true
-        propertyNamespaceUri:
-          type: string
-          description: Unique identification of the property
-          nullable: true
-        propertySet:
-          type: string
-          description: Name of the Property Set
-          nullable: true
-        propertyStatus:
-          type: string
-          description: 'Status of the property: Preview, Active or Inactive'
-          nullable: true
-        propertyValueKind:
-          type: string
-          description: >-
-            Indicates kind of value: Single, Range (2 values expected), List
-            (multiple values expected), Complex (use in combination with
-            "ConnectedProperties"), ComplexList
-          nullable: true
-        symbol:
-          type: string
-          description: Symbol of the property
-          nullable: true
-        units:
-          type: array
-          items:
-            type: string
-          description: List of units to select from
-          nullable: true
-        qudtCodes:
-          type: array
-          items:
-            type: string
-          description: List of QUDT unit codes to select from
           nullable: true
       additionalProperties: false
     ClassificationPropertyContract.v4:
@@ -4502,33 +3181,6 @@ components:
           description: List of QUDT unit codes to select from
           nullable: true
       additionalProperties: false
-    ClassificationPropertyValueContract.v3:
-      required:
-        - value
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          description: Globally unique identification of the value (if present)
-          nullable: true
-        code:
-          type: string
-          description: Identification of the value
-          nullable: true
-        value:
-          minLength: 1
-          type: string
-          description: Possible value of the property
-        description:
-          type: string
-          description: Description of the value
-          nullable: true
-        sortNumber:
-          type: integer
-          description: Sort number of value within the list of values for the Property
-          format: int32
-          nullable: true
-      additionalProperties: false
     ClassificationPropertyValueContract.v4:
       required:
         - value
@@ -4556,21 +3208,6 @@ components:
           format: int32
           nullable: true
       additionalProperties: false
-    ClassificationReferenceContract.v3:
-      required:
-        - namespaceUri
-      type: object
-      properties:
-        namespaceUri:
-          minLength: 1
-          type: string
-        name:
-          type: string
-          nullable: true
-        code:
-          type: string
-          nullable: true
-      additionalProperties: false
     ClassificationReferenceContract.v4:
       required:
         - namespaceUri
@@ -4584,35 +3221,6 @@ components:
           nullable: true
         code:
           type: string
-          nullable: true
-      additionalProperties: false
-    ClassificationRelationContract.v3:
-      required:
-        - relatedClassificationUri
-        - relationType
-      type: object
-      properties:
-        relationType:
-          minLength: 1
-          type: string
-          description: >-
-            Can be one of: HasReference, IsEqualTo, IsSynonymOf, IsParentOf,
-            IsChildOf, HasPart
-        relatedClassificationUri:
-          minLength: 1
-          type: string
-          description: Namespace URI of the related classification
-        relatedClassificationName:
-          type: string
-          description: Name of the related classification
-          nullable: true
-        fraction:
-          type: number
-          description: >-
-            Optional provision of a fraction of the total amount (e.g. volume or
-            weight) that applies to the classification relations of one relation
-            type
-          format: double
           nullable: true
       additionalProperties: false
     ClassificationRelationContract.v4:
@@ -4647,83 +3255,6 @@ components:
           format: double
           nullable: true
       additionalProperties: false
-    ClassificationSearchResponseClassificationContract.v1:
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Unique identification of the domain the classification belongs to
-          nullable: true
-        domainName:
-          type: string
-          description: Name of the domain the classification belongs to
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        referenceCode:
-          type: string
-          description: Code that can be used for domain specific purposes
-          nullable: true
-        namespaceUri:
-          type: string
-          description: Unique identification of the classification
-          nullable: true
-        classificationType:
-          type: string
-          description: Type of the classification.
-          nullable: true
-        description:
-          type: string
-          nullable: true
-        parentClassificationName:
-          type: string
-          nullable: true
-        relatedIfcEntityNames:
-          type: array
-          items:
-            type: string
-          nullable: true
-      additionalProperties: false
-    ClassificationSearchResponseContract.v1:
-      type: object
-      properties:
-        classifications:
-          type: array
-          items:
-            $ref: >-
-              #/components/schemas/ClassificationSearchResponseClassificationContract.v1
-          description: The list of Classifications found
-          nullable: true
-      additionalProperties: false
-    ClassificationSearchResultContract.v2:
-      type: object
-      properties:
-        name:
-          type: string
-          description: Name of the Classification
-          nullable: true
-        namespaceUri:
-          type: string
-          description: Unique identification of the Classification
-          nullable: true
-        referenceCode:
-          type: string
-          description: Code that can be used for dictionary specific purposes
-          nullable: true
-        classificationType:
-          type: string
-          description: Type of the classification.
-          nullable: true
-        definition:
-          type: string
-          nullable: true
-        synonyms:
-          type: array
-          items:
-            type: string
-          nullable: true
-      additionalProperties: false
     CodeNameDto:
       type: object
       properties:
@@ -4749,6 +3280,7 @@ components:
         - code
         - defaultLanguageCode
         - isLatestVersion
+        - isPrivate
         - isVerified
         - name
         - organizationCodeOwner
@@ -4785,6 +3317,8 @@ components:
         isLatestVersion:
           type: boolean
         isVerified:
+          type: boolean
+        isPrivate:
           type: boolean
         license:
           type: string
@@ -4854,6 +3388,7 @@ components:
         - code
         - defaultLanguageCode
         - isLatestVersion
+        - isPrivate
         - isVerified
         - name
         - organizationCodeOwner
@@ -4890,6 +3425,8 @@ components:
         isLatestVersion:
           type: boolean
         isVerified:
+          type: boolean
+        isPrivate:
           type: boolean
         license:
           type: string
@@ -4946,6 +3483,7 @@ components:
         - code
         - defaultLanguageCode
         - isLatestVersion
+        - isPrivate
         - isVerified
         - name
         - organizationCodeOwner
@@ -4982,6 +3520,8 @@ components:
         isLatestVersion:
           type: boolean
         isVerified:
+          type: boolean
+        isPrivate:
           type: boolean
         license:
           type: string
@@ -5076,331 +3616,6 @@ components:
             $ref: '#/components/schemas/ClassSearchResultContract.v1'
           nullable: true
       additionalProperties: false
-    DomainContract.v2:
-      required:
-        - defaultLanguageCode
-        - name
-        - organizationNameOwner
-        - version
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-        version:
-          minLength: 1
-          type: string
-        organizationNameOwner:
-          minLength: 1
-          type: string
-        defaultLanguageCode:
-          minLength: 1
-          type: string
-          description: The default language for this domain
-        license:
-          type: string
-          description: >-
-            Name or short description of the license under which you can use
-            this data
-          nullable: true
-        licenseUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the license or default
-            link to info about licensing
-          nullable: true
-        qualityAssuranceProcedure:
-          type: string
-          description: >-
-            Name or short description of the quality assurance procedure used
-            while creating and maintaining the domain data
-          nullable: true
-        qualityAssuranceProcedureUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the quality assurance
-            procedure
-          nullable: true
-        status:
-          type: string
-          description: >-
-            For state indication, like "Preview", "Active", "InActive",
-            "Released
-          nullable: true
-        moreInfoUrl:
-          type: string
-          description: Url to site with more info on domain
-          nullable: true
-        releaseDate:
-          type: string
-          description: Date of the release of this version
-          format: date-time
-          nullable: true
-        lastUpdatedUtc:
-          type: string
-          description: Date and time the data of the domain has been last updated in bSDD
-          format: date-time
-      additionalProperties: false
-    DomainContract.v3:
-      required:
-        - defaultLanguageCode
-        - name
-        - organizationCodeOwner
-        - organizationNameOwner
-        - version
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-        version:
-          minLength: 1
-          type: string
-        organizationCodeOwner:
-          minLength: 1
-          type: string
-        organizationNameOwner:
-          minLength: 1
-          type: string
-        defaultLanguageCode:
-          minLength: 1
-          type: string
-          description: The default language for this domain
-        license:
-          type: string
-          description: >-
-            Name or short description of the license under which you can use
-            this data
-          nullable: true
-        licenseUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the license or default
-            link to info about licensing
-          nullable: true
-        qualityAssuranceProcedure:
-          type: string
-          description: >-
-            Name or short description of the quality assurance procedure used
-            while creating and maintaining the domain data
-          nullable: true
-        qualityAssuranceProcedureUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the quality assurance
-            procedure
-          nullable: true
-        status:
-          type: string
-          description: >-
-            For state indication, like "Preview", "Active", "InActive",
-            "Released
-          nullable: true
-        moreInfoUrl:
-          type: string
-          description: Url to site with more info on domain
-          nullable: true
-        releaseDate:
-          type: string
-          description: Date of the release of this version
-          format: date-time
-          nullable: true
-        lastUpdatedUtc:
-          type: string
-          description: Date and time the data of the domain has been last updated in bSDD
-          format: date-time
-      additionalProperties: false
-    DomainSearchResultContract.v1:
-      type: object
-      properties:
-        name:
-          type: string
-          nullable: true
-        namespaceUri:
-          type: string
-          nullable: true
-        materials:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialSearchResultContract.v1'
-          nullable: true
-      additionalProperties: false
-    DomainSearchResultContract.v2:
-      type: object
-      properties:
-        name:
-          type: string
-          nullable: true
-        namespaceUri:
-          type: string
-          nullable: true
-        classifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationSearchResultContract.v2'
-          nullable: true
-      additionalProperties: false
-    DomainWithClassificationsContract.v2:
-      required:
-        - defaultLanguageCode
-        - name
-        - organizationNameOwner
-        - version
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-        version:
-          minLength: 1
-          type: string
-        organizationNameOwner:
-          minLength: 1
-          type: string
-        defaultLanguageCode:
-          minLength: 1
-          type: string
-          description: The default language for this domain
-        license:
-          type: string
-          description: >-
-            Name or short description of the license under which you can use
-            this data
-          nullable: true
-        licenseUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the license or default
-            link to info about licensing
-          nullable: true
-        qualityAssuranceProcedure:
-          type: string
-          description: >-
-            Name or short description of the quality assurance procedure used
-            while creating and maintaining the domain data
-          nullable: true
-        qualityAssuranceProcedureUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the quality assurance
-            procedure
-          nullable: true
-        status:
-          type: string
-          description: >-
-            For state indication, like "Preview", "Active", "InActive",
-            "Released
-          nullable: true
-        moreInfoUrl:
-          type: string
-          description: Url to site with more info on domain
-          nullable: true
-        releaseDate:
-          type: string
-          description: Date of the release of this version
-          format: date-time
-          nullable: true
-        lastUpdatedUtc:
-          type: string
-          description: Date and time the data of the domain has been last updated in bSDD
-          format: date-time
-        classifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationListItemContract.v2'
-          nullable: true
-      additionalProperties: false
-    DomainWithClassificationsContract.v3:
-      required:
-        - defaultLanguageCode
-        - name
-        - organizationCodeOwner
-        - organizationNameOwner
-        - version
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-        version:
-          minLength: 1
-          type: string
-        organizationCodeOwner:
-          minLength: 1
-          type: string
-        organizationNameOwner:
-          minLength: 1
-          type: string
-        defaultLanguageCode:
-          minLength: 1
-          type: string
-          description: The default language for this domain
-        license:
-          type: string
-          description: >-
-            Name or short description of the license under which you can use
-            this data
-          nullable: true
-        licenseUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the license or default
-            link to info about licensing
-          nullable: true
-        qualityAssuranceProcedure:
-          type: string
-          description: >-
-            Name or short description of the quality assurance procedure used
-            while creating and maintaining the domain data
-          nullable: true
-        qualityAssuranceProcedureUrl:
-          type: string
-          description: >-
-            URL where you can find more details about the quality assurance
-            procedure
-          nullable: true
-        status:
-          type: string
-          description: >-
-            For state indication, like "Preview", "Active", "InActive",
-            "Released
-          nullable: true
-        moreInfoUrl:
-          type: string
-          description: Url to site with more info on domain
-          nullable: true
-        releaseDate:
-          type: string
-          description: Date of the release of this version
-          format: date-time
-          nullable: true
-        lastUpdatedUtc:
-          type: string
-          description: Date and time the data of the domain has been last updated in bSDD
-          format: date-time
-        classifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationListItemContract.v3'
-          nullable: true
-        materials:
-          type: array
-          items:
-            $ref: '#/components/schemas/ClassificationListItemContract.v3'
-          nullable: true
-      additionalProperties: false
     HierarchyItemContract.v1:
       required:
         - code
@@ -5441,769 +3656,6 @@ components:
         name:
           minLength: 1
           type: string
-      additionalProperties: false
-    MaterialClassificationRelationContract.v1:
-      type: object
-      properties:
-        name:
-          type: string
-          nullable: true
-        namespaceUri:
-          type: string
-          nullable: true
-      additionalProperties: false
-    MaterialContract.v1:
-      required:
-        - activationDateUtc
-        - code
-        - name
-        - namespaceUri
-        - status
-        - versionDateUtc
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Namespace URI of the domain
-          nullable: true
-        activationDateUtc:
-          type: string
-          description: Date of activation
-          format: date-time
-        code:
-          minLength: 1
-          type: string
-          description: Code used originally by the domain
-        creatorLanguageCode:
-          type: string
-          description: Language code of the creator
-          nullable: true
-        countriesOfUse:
-          type: array
-          items:
-            type: string
-          description: List of countries where used
-          nullable: true
-        countryOfOrigin:
-          type: string
-          description: Country of origin
-          nullable: true
-        deActivationDateUtc:
-          type: string
-          description: Date of deactivation
-          format: date-time
-          nullable: true
-        definition:
-          type: string
-          description: Definition
-          nullable: true
-        deprecationExplanation:
-          type: string
-          description: Explanation of the deprecation
-          nullable: true
-        documentReference:
-          type: string
-          description: Reference to a(n official) document
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-          description: Name
-        namespaceUri:
-          minLength: 1
-          type: string
-          description: Unique identification
-        replacedObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replaced items
-          nullable: true
-        replacingObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replacing items
-          nullable: true
-        revisionDateUtc:
-          type: string
-          description: Date of the revision
-          format: date-time
-          nullable: true
-        revisionNumber:
-          type: integer
-          description: Revision number
-          format: int32
-          nullable: true
-        status:
-          minLength: 1
-          type: string
-          description: 'Status, can be: Preview, Active or Inactive'
-        subdivisionsOfUse:
-          type: array
-          items:
-            type: string
-          description: List of subdivisions (e.g. states) where used
-          nullable: true
-        uid:
-          type: string
-          description: Alternative unique global identification
-          nullable: true
-        versionDateUtc:
-          type: string
-          description: Date of the version
-          format: date-time
-        versionNumber:
-          type: integer
-          description: Version number
-          format: int32
-          nullable: true
-        visualRepresentationUri:
-          type: string
-          description: URI of a visual representation
-          nullable: true
-        synonyms:
-          type: array
-          items:
-            type: string
-          description: List of synonyms for the material
-          nullable: true
-        parentMaterialReference:
-          $ref: '#/components/schemas/MaterialReferenceContract.v1'
-        materialProperties:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialPropertyContract.v1'
-          description: List of the properties of this material
-          nullable: true
-        classificationRelations:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialRelationContract.v1'
-          description: >-
-            List of relations to classifications, can be reference to materials
-            of other domains
-          nullable: true
-        childMaterialReferences:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialReferenceContract.v1'
-          description: List of child materials (only filled if requested)
-          nullable: true
-      additionalProperties: false
-    MaterialContract.v2:
-      required:
-        - activationDateUtc
-        - code
-        - name
-        - namespaceUri
-        - status
-        - versionDateUtc
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Namespace URI of the domain
-          nullable: true
-        activationDateUtc:
-          type: string
-          description: Date of activation
-          format: date-time
-        code:
-          minLength: 1
-          type: string
-          description: Code used originally by the domain
-        creatorLanguageCode:
-          type: string
-          description: Language code of the creator
-          nullable: true
-        countriesOfUse:
-          type: array
-          items:
-            type: string
-          description: List of countries where used
-          nullable: true
-        countryOfOrigin:
-          type: string
-          description: Country of origin
-          nullable: true
-        deActivationDateUtc:
-          type: string
-          description: Date of deactivation
-          format: date-time
-          nullable: true
-        definition:
-          type: string
-          description: Definition
-          nullable: true
-        deprecationExplanation:
-          type: string
-          description: Explanation of the deprecation
-          nullable: true
-        documentReference:
-          type: string
-          description: Reference to a(n official) document
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-          description: Name
-        namespaceUri:
-          minLength: 1
-          type: string
-          description: Unique identification
-        replacedObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replaced items
-          nullable: true
-        replacingObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replacing items
-          nullable: true
-        revisionDateUtc:
-          type: string
-          description: Date of the revision
-          format: date-time
-          nullable: true
-        revisionNumber:
-          type: integer
-          description: Revision number
-          format: int32
-          nullable: true
-        status:
-          minLength: 1
-          type: string
-          description: 'Status, can be: Preview, Active or Inactive'
-        subdivisionsOfUse:
-          type: array
-          items:
-            type: string
-          description: List of subdivisions (e.g. states) where used
-          nullable: true
-        uid:
-          type: string
-          description: Alternative unique global identification
-          nullable: true
-        versionDateUtc:
-          type: string
-          description: Date of the version
-          format: date-time
-        versionNumber:
-          type: integer
-          description: Version number
-          format: int32
-          nullable: true
-        visualRepresentationUri:
-          type: string
-          description: URI of a visual representation
-          nullable: true
-        synonyms:
-          type: array
-          items:
-            type: string
-          description: List of synonyms for the material
-          nullable: true
-        parentMaterialReference:
-          $ref: '#/components/schemas/MaterialReferenceContract.v2'
-        materialProperties:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialPropertyContract.v2'
-          description: List of the properties of this material
-          nullable: true
-        classificationRelations:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialRelationContract.v2'
-          description: >-
-            List of relations to classifications, can be reference to materials
-            of other domains
-          nullable: true
-        childMaterialReferences:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialReferenceContract.v2'
-          description: List of child materials (only filled if requested)
-          nullable: true
-      additionalProperties: false
-    MaterialPropertyContract.v1:
-      required:
-        - name
-      type: object
-      properties:
-        name:
-          minLength: 1
-          type: string
-          description: Name of the property
-        description:
-          type: string
-          description: "Plain language description of the property.\r\nIf at Property level no description has been given but a \"Definition\" is available, then \"Definition\" is returned as description"
-          nullable: true
-        dataType:
-          type: string
-          description: Format for expressing the value of the property
-          nullable: true
-        dimension:
-          type: string
-          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
-          nullable: true
-        dimensionLength:
-          type: integer
-          description: The Length value of the dimension
-          format: int32
-          nullable: true
-        dimensionMass:
-          type: integer
-          description: The Mass value of the dimension
-          format: int32
-          nullable: true
-        dimensionTime:
-          type: integer
-          description: The Time value of the dimension
-          format: int32
-          nullable: true
-        dimensionElectricCurrent:
-          type: integer
-          description: The Electric current value of the dimension
-          format: int32
-          nullable: true
-        dimensionThermodynamicTemperature:
-          type: integer
-          description: The Thermodynamic temperature value of the dimension
-          format: int32
-          nullable: true
-        dimensionAmountOfSubstance:
-          type: integer
-          description: The Amount of substance value of the dimension
-          format: int32
-          nullable: true
-        dimensionLuminousIntensity:
-          type: integer
-          description: The Luminous intensity value of the dimension
-          format: int32
-          nullable: true
-        dynamicParameterPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
-          nullable: true
-        example:
-          type: string
-          description: Illustrate possible use or values of the Property
-          nullable: true
-        isDynamic:
-          type: boolean
-          description: >-
-            True if the value of this property is dependent on other properties
-            (as provided in DynamicParameterPropertyCodes)
-          nullable: true
-        isRequired:
-          type: boolean
-          description: Indicates if this property is required for the material
-          nullable: true
-        isWritable:
-          type: boolean
-          description: Indicates if the value of the property can be changed by the user
-          nullable: true
-        maxExclusive:
-          type: number
-          description: "Maximum value of the property, exclusive\r\nThis value does not need to be the same as the MaxExclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        maxInclusive:
-          type: number
-          description: "Maximum value of the property, inclusive\r\nThis value does not need to be the same as the MaxInclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        minExclusive:
-          type: number
-          description: "Minimum value of the property, exclusive\r\nThis value does not need to be the same as the MinExclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        minInclusive:
-          type: number
-          description: "Minimum value of the property, inclusive\r\nThis value does not need to be the same as the MinInclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        pattern:
-          type: string
-          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html.\r\nThis value does not need to be the same as the Pattern in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          nullable: true
-        physicalQuantity:
-          type: string
-          description: The quantity in plain text
-          nullable: true
-        possibleValues:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialPropertyValueContract.v1'
-          description: "List of possible values\r\nThis list does not need to be the same as the list of PossibleValues in the Property contract\r\nbecause this list can be overruled at Material-Property level to define a more strict list."
-          nullable: true
-        predefinedValue:
-          type: string
-          description: >-
-            Predefined value: if the material can have only one value for this
-            property, this is it
-          nullable: true
-        propertyCode:
-          type: string
-          description: >-
-            Code of the property, only applicable if property is of the same
-            domain as the material.
-          nullable: true
-        propertyDomainName:
-          type: string
-          description: Name of the Domain this property belongs to
-          nullable: true
-        propertyNamespaceUri:
-          type: string
-          description: Unique identification of the property
-          nullable: true
-        propertySet:
-          type: string
-          description: Name of the Property Set
-          nullable: true
-        propertyStatus:
-          type: string
-          description: 'Status of the property: Preview, Active or Inactive'
-          nullable: true
-        propertyValueKind:
-          type: string
-          description: >-
-            Indicates kind of value: Single, Range (2 values expected), List
-            (multiple values expected), Complex (use in combination with
-            "ConnectedProperties"), ComplexList
-          nullable: true
-        symbol:
-          type: string
-          description: Symbol of the property
-          nullable: true
-        units:
-          type: array
-          items:
-            type: string
-          description: List of units to select from
-          nullable: true
-      additionalProperties: false
-    MaterialPropertyContract.v2:
-      required:
-        - name
-      type: object
-      properties:
-        name:
-          minLength: 1
-          type: string
-          description: Name of the property
-        description:
-          type: string
-          description: "Plain language description of the property.\r\nIf at Property level no description has been given but a \"Definition\" is available, then \"Definition\" is returned as description"
-          nullable: true
-        dataType:
-          type: string
-          description: Format for expressing the value of the property
-          nullable: true
-        dimension:
-          type: string
-          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
-          nullable: true
-        dimensionLength:
-          type: integer
-          description: The Length value of the dimension
-          format: int32
-          nullable: true
-        dimensionMass:
-          type: integer
-          description: The Mass value of the dimension
-          format: int32
-          nullable: true
-        dimensionTime:
-          type: integer
-          description: The Time value of the dimension
-          format: int32
-          nullable: true
-        dimensionElectricCurrent:
-          type: integer
-          description: The Electric current value of the dimension
-          format: int32
-          nullable: true
-        dimensionThermodynamicTemperature:
-          type: integer
-          description: The Thermodynamic temperature value of the dimension
-          format: int32
-          nullable: true
-        dimensionAmountOfSubstance:
-          type: integer
-          description: The Amount of substance value of the dimension
-          format: int32
-          nullable: true
-        dimensionLuminousIntensity:
-          type: integer
-          description: The Luminous intensity value of the dimension
-          format: int32
-          nullable: true
-        dynamicParameterPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
-          nullable: true
-        example:
-          type: string
-          description: Illustrate possible use or values of the Property
-          nullable: true
-        isDynamic:
-          type: boolean
-          description: >-
-            True if the value of this property is dependent on other properties
-            (as provided in DynamicParameterPropertyCodes)
-          nullable: true
-        isRequired:
-          type: boolean
-          description: Indicates if this property is required for the material
-          nullable: true
-        isWritable:
-          type: boolean
-          description: Indicates if the value of the property can be changed by the user
-          nullable: true
-        maxExclusive:
-          type: number
-          description: "Maximum value of the property, exclusive\r\nThis value does not need to be the same as the MaxExclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        maxInclusive:
-          type: number
-          description: "Maximum value of the property, inclusive\r\nThis value does not need to be the same as the MaxInclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        minExclusive:
-          type: number
-          description: "Minimum value of the property, exclusive\r\nThis value does not need to be the same as the MinExclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        minInclusive:
-          type: number
-          description: "Minimum value of the property, inclusive\r\nThis value does not need to be the same as the MinInclusive in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          format: double
-          nullable: true
-        pattern:
-          type: string
-          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html.\r\nThis value does not need to be the same as the Pattern in the Property contract\r\nbecause this value can be overruled at Material-Property level to define a more strict value."
-          nullable: true
-        physicalQuantity:
-          type: string
-          description: The quantity in plain text
-          nullable: true
-        allowedValues:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialPropertyValueContract.v2'
-          description: "List of allowed values\r\nThis list does not need to be the same as the list of AllowedValues in the Property contract\r\nbecause this list can be overruled at Material-Property level to define a more strict list."
-          nullable: true
-        predefinedValue:
-          type: string
-          description: >-
-            Predefined value: if the material can have only one value for this
-            property, this is it
-          nullable: true
-        propertyCode:
-          type: string
-          description: >-
-            Code of the property, only applicable if property is of the same
-            domain as the material.
-          nullable: true
-        propertyDomainName:
-          type: string
-          description: Name of the Domain this property belongs to
-          nullable: true
-        propertyNamespaceUri:
-          type: string
-          description: Unique identification of the property
-          nullable: true
-        propertySet:
-          type: string
-          description: Name of the Property Set
-          nullable: true
-        propertyStatus:
-          type: string
-          description: 'Status of the property: Preview, Active or Inactive'
-          nullable: true
-        propertyValueKind:
-          type: string
-          description: >-
-            Indicates kind of value: Single, Range (2 values expected), List
-            (multiple values expected), Complex (use in combination with
-            "ConnectedProperties"), ComplexList
-          nullable: true
-        symbol:
-          type: string
-          description: Symbol of the property
-          nullable: true
-        units:
-          type: array
-          items:
-            type: string
-          description: List of units to select from
-          nullable: true
-        qudtCodes:
-          type: array
-          items:
-            type: string
-          description: List of QUDT unit codes to select from
-          nullable: true
-      additionalProperties: false
-    MaterialPropertyValueContract.v1:
-      required:
-        - value
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          description: Globally unique identification of the value (if present)
-          nullable: true
-        code:
-          type: string
-          description: Identification of the value
-          nullable: true
-        value:
-          minLength: 1
-          type: string
-          description: Possible value of the property
-        description:
-          type: string
-          description: Description of the value
-          nullable: true
-        sortNumber:
-          type: integer
-          description: Sort number of value within the list of values for the Property
-          format: int32
-          nullable: true
-      additionalProperties: false
-    MaterialPropertyValueContract.v2:
-      required:
-        - value
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          description: Globally unique identification of the value (if present)
-          nullable: true
-        code:
-          type: string
-          description: Identification of the value
-          nullable: true
-        value:
-          minLength: 1
-          type: string
-          description: Allowed value of the property
-        description:
-          type: string
-          description: Description of the value
-          nullable: true
-        sortNumber:
-          type: integer
-          description: Sort number of value within the list of values for the Property
-          format: int32
-          nullable: true
-      additionalProperties: false
-    MaterialReferenceContract.v1:
-      required:
-        - namespaceUri
-      type: object
-      properties:
-        namespaceUri:
-          minLength: 1
-          type: string
-        name:
-          type: string
-          nullable: true
-        code:
-          type: string
-          nullable: true
-      additionalProperties: false
-    MaterialReferenceContract.v2:
-      required:
-        - namespaceUri
-      type: object
-      properties:
-        namespaceUri:
-          minLength: 1
-          type: string
-        name:
-          type: string
-          nullable: true
-        code:
-          type: string
-          nullable: true
-      additionalProperties: false
-    MaterialRelationContract.v1:
-      required:
-        - relatedClassificationUri
-        - relationType
-      type: object
-      properties:
-        relationType:
-          minLength: 1
-          type: string
-          description: >-
-            Can be one of: HasReference, IsEqualTo, IsSynonymOf, IsParentOf,
-            IsChildOf, HasPart
-        relatedClassificationUri:
-          minLength: 1
-          type: string
-          description: Namespace URI of the related classification
-        relatedClassificationName:
-          type: string
-          description: Name of the related classification
-          nullable: true
-      additionalProperties: false
-    MaterialRelationContract.v2:
-      required:
-        - relatedClassificationUri
-        - relationType
-      type: object
-      properties:
-        relationType:
-          minLength: 1
-          type: string
-          description: >-
-            Can be one of: HasReference, IsEqualTo, IsSynonymOf, IsParentOf,
-            IsChildOf, HasPart
-        relatedClassificationUri:
-          minLength: 1
-          type: string
-          description: Namespace URI of the related classification
-        relatedClassificationName:
-          type: string
-          description: Name of the related classification
-          nullable: true
-      additionalProperties: false
-    MaterialSearchResultContract.v1:
-      type: object
-      properties:
-        name:
-          type: string
-          nullable: true
-        namespaceUri:
-          type: string
-          nullable: true
-        definition:
-          type: string
-          nullable: true
-        synonyms:
-          type: array
-          items:
-            type: string
-          nullable: true
-        relatedClassifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/MaterialClassificationRelationContract.v1'
-          nullable: true
       additionalProperties: false
     PopularDictionariesResponseContract.v1:
       type: object
@@ -6336,504 +3788,6 @@ components:
           items:
             $ref: '#/components/schemas/PropertyClassItemContract.v1'
           description: List of classes having this property
-          nullable: true
-      additionalProperties: false
-    PropertyContract.v2:
-      required:
-        - activationDateUtc
-        - code
-        - name
-        - namespaceUri
-        - status
-        - versionDateUtc
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Namespace URI of the domain
-          nullable: true
-        activationDateUtc:
-          type: string
-          description: Date of activation
-          format: date-time
-        code:
-          minLength: 1
-          type: string
-          description: Code used originally by the domain
-        creatorLanguageCode:
-          type: string
-          description: Language code of the creator
-          nullable: true
-        countriesOfUse:
-          type: array
-          items:
-            type: string
-          description: List of countries where used
-          nullable: true
-        countryOfOrigin:
-          type: string
-          description: Country of origin
-          nullable: true
-        deActivationDateUtc:
-          type: string
-          description: Date of deactivation
-          format: date-time
-          nullable: true
-        definition:
-          type: string
-          description: Definition
-          nullable: true
-        deprecationExplanation:
-          type: string
-          description: Explanation of the deprecation
-          nullable: true
-        documentReference:
-          type: string
-          description: Reference to a(n official) document
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-          description: Name
-        namespaceUri:
-          minLength: 1
-          type: string
-          description: Unique identification
-        replacedObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replaced items
-          nullable: true
-        replacingObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replacing items
-          nullable: true
-        revisionDateUtc:
-          type: string
-          description: Date of the revision
-          format: date-time
-          nullable: true
-        revisionNumber:
-          type: integer
-          description: Revision number
-          format: int32
-          nullable: true
-        status:
-          minLength: 1
-          type: string
-          description: 'Status, can be: Preview, Active or Inactive'
-        subdivisionsOfUse:
-          type: array
-          items:
-            type: string
-          description: List of subdivisions (e.g. states) where used
-          nullable: true
-        uid:
-          type: string
-          description: Alternative unique global identification
-          nullable: true
-        versionDateUtc:
-          type: string
-          description: Date of the version
-          format: date-time
-        versionNumber:
-          type: integer
-          description: Version number
-          format: int32
-          nullable: true
-        visualRepresentationUri:
-          type: string
-          description: URI of a visual representation
-          nullable: true
-        description:
-          type: string
-          description: Plain language description of the property.
-          nullable: true
-        connectedPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: List of connected property codes
-          nullable: true
-        dataType:
-          type: string
-          description: >-
-            Format for expressing the value of the property: Boolean, Character,
-            Date, Enumeration, Integer, Real, String, Time
-          nullable: true
-        dimension:
-          type: string
-          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
-          nullable: true
-        dimensionLength:
-          type: integer
-          description: The Length value of the dimension
-          format: int32
-          nullable: true
-        dimensionMass:
-          type: integer
-          description: The Mass value of the dimension
-          format: int32
-          nullable: true
-        dimensionTime:
-          type: integer
-          description: The Time value of the dimension
-          format: int32
-          nullable: true
-        dimensionElectricCurrent:
-          type: integer
-          description: The Electric current value of the dimension
-          format: int32
-          nullable: true
-        dimensionThermodynamicTemperature:
-          type: integer
-          description: The Thermodynamic temperature value of the dimension
-          format: int32
-          nullable: true
-        dimensionAmountOfSubstance:
-          type: integer
-          description: The Amount of substance value of the dimension
-          format: int32
-          nullable: true
-        dimensionLuminousIntensity:
-          type: integer
-          description: The Luminous intensity value of the dimension
-          format: int32
-          nullable: true
-        dynamicParameterPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
-          nullable: true
-        example:
-          type: string
-          description: Illustrate possible use or values of the Property
-          nullable: true
-        isDynamic:
-          type: boolean
-          description: >-
-            True if the value of this property is dependent on other properties
-            (as provided in DynamicParameterPropertyCodes)
-          nullable: true
-        maxExclusive:
-          type: number
-          description: Maximum value of the property, exclusive
-          format: double
-          nullable: true
-        maxInclusive:
-          type: number
-          description: Maximum value of the property, inclusive
-          format: double
-          nullable: true
-        methodOfMeasurement:
-          type: string
-          description: Description of the method of measurement
-          nullable: true
-        minExclusive:
-          type: number
-          description: Minimum value of the property, exclusive
-          format: double
-          nullable: true
-        minInclusive:
-          type: number
-          description: Minimum value of the property, inclusive
-          format: double
-          nullable: true
-        pattern:
-          type: string
-          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html."
-          nullable: true
-        physicalQuantity:
-          type: string
-          description: The quantity in plain text
-          nullable: true
-        possibleValues:
-          type: array
-          items:
-            $ref: '#/components/schemas/PropertyValueContract.v2'
-          description: List of possible values
-          nullable: true
-        propertyValueKind:
-          type: string
-          description: >-
-            Indicates kind of value: Single, Range (2 values expected), List
-            (multiple values expected), Complex (use in combination with
-            "ConnectedProperties"), ComplexList
-          nullable: true
-        propertyRelations:
-          type: array
-          items:
-            $ref: '#/components/schemas/PropertyRelationContract.v2'
-          description: List of relations with other properties
-          nullable: true
-        textFormat:
-          type: string
-          description: The text type, e.g. UTF-8
-          nullable: true
-        units:
-          type: array
-          items:
-            type: string
-          description: Multiple references to Unit
-          nullable: true
-        qudtCodes:
-          type: array
-          items:
-            type: string
-          description: List of QUDT unit codes (if QUDT code available)
-          nullable: true
-      additionalProperties: false
-    PropertyContract.v3:
-      required:
-        - activationDateUtc
-        - code
-        - name
-        - namespaceUri
-        - status
-        - versionDateUtc
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Namespace URI of the domain
-          nullable: true
-        activationDateUtc:
-          type: string
-          description: Date of activation
-          format: date-time
-        code:
-          minLength: 1
-          type: string
-          description: Code used originally by the domain
-        creatorLanguageCode:
-          type: string
-          description: Language code of the creator
-          nullable: true
-        countriesOfUse:
-          type: array
-          items:
-            type: string
-          description: List of countries where used
-          nullable: true
-        countryOfOrigin:
-          type: string
-          description: Country of origin
-          nullable: true
-        deActivationDateUtc:
-          type: string
-          description: Date of deactivation
-          format: date-time
-          nullable: true
-        definition:
-          type: string
-          description: Definition
-          nullable: true
-        deprecationExplanation:
-          type: string
-          description: Explanation of the deprecation
-          nullable: true
-        documentReference:
-          type: string
-          description: Reference to a(n official) document
-          nullable: true
-        name:
-          minLength: 1
-          type: string
-          description: Name
-        namespaceUri:
-          minLength: 1
-          type: string
-          description: Unique identification
-        replacedObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replaced items
-          nullable: true
-        replacingObjectCodes:
-          type: array
-          items:
-            type: string
-          description: List of codes of the replacing items
-          nullable: true
-        revisionDateUtc:
-          type: string
-          description: Date of the revision
-          format: date-time
-          nullable: true
-        revisionNumber:
-          type: integer
-          description: Revision number
-          format: int32
-          nullable: true
-        status:
-          minLength: 1
-          type: string
-          description: 'Status, can be: Preview, Active or Inactive'
-        subdivisionsOfUse:
-          type: array
-          items:
-            type: string
-          description: List of subdivisions (e.g. states) where used
-          nullable: true
-        uid:
-          type: string
-          description: Alternative unique global identification
-          nullable: true
-        versionDateUtc:
-          type: string
-          description: Date of the version
-          format: date-time
-        versionNumber:
-          type: integer
-          description: Version number
-          format: int32
-          nullable: true
-        visualRepresentationUri:
-          type: string
-          description: URI of a visual representation
-          nullable: true
-        description:
-          type: string
-          description: Plain language description of the property.
-          nullable: true
-        connectedPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: List of connected property codes
-          nullable: true
-        dataType:
-          type: string
-          description: >-
-            Format for expressing the value of the property: Boolean, Character,
-            Date, Enumeration, Integer, Real, String, Time
-          nullable: true
-        dimension:
-          type: string
-          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
-          nullable: true
-        dimensionLength:
-          type: integer
-          description: The Length value of the dimension
-          format: int32
-          nullable: true
-        dimensionMass:
-          type: integer
-          description: The Mass value of the dimension
-          format: int32
-          nullable: true
-        dimensionTime:
-          type: integer
-          description: The Time value of the dimension
-          format: int32
-          nullable: true
-        dimensionElectricCurrent:
-          type: integer
-          description: The Electric current value of the dimension
-          format: int32
-          nullable: true
-        dimensionThermodynamicTemperature:
-          type: integer
-          description: The Thermodynamic temperature value of the dimension
-          format: int32
-          nullable: true
-        dimensionAmountOfSubstance:
-          type: integer
-          description: The Amount of substance value of the dimension
-          format: int32
-          nullable: true
-        dimensionLuminousIntensity:
-          type: integer
-          description: The Luminous intensity value of the dimension
-          format: int32
-          nullable: true
-        dynamicParameterPropertyCodes:
-          type: array
-          items:
-            type: string
-          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
-          nullable: true
-        example:
-          type: string
-          description: Illustrate possible use or values of the Property
-          nullable: true
-        isDynamic:
-          type: boolean
-          description: >-
-            True if the value of this property is dependent on other properties
-            (as provided in DynamicParameterPropertyCodes)
-          nullable: true
-        maxExclusive:
-          type: number
-          description: Maximum value of the property, exclusive
-          format: double
-          nullable: true
-        maxInclusive:
-          type: number
-          description: Maximum value of the property, inclusive
-          format: double
-          nullable: true
-        methodOfMeasurement:
-          type: string
-          description: Description of the method of measurement
-          nullable: true
-        minExclusive:
-          type: number
-          description: Minimum value of the property, exclusive
-          format: double
-          nullable: true
-        minInclusive:
-          type: number
-          description: Minimum value of the property, inclusive
-          format: double
-          nullable: true
-        pattern:
-          type: string
-          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html."
-          nullable: true
-        physicalQuantity:
-          type: string
-          description: The quantity in plain text
-          nullable: true
-        allowedValues:
-          type: array
-          items:
-            $ref: '#/components/schemas/PropertyValueContract.v3'
-          description: List of allowed values
-          nullable: true
-        propertyValueKind:
-          type: string
-          description: >-
-            Indicates kind of value: Single, Range (2 values expected), List
-            (multiple values expected), Complex (use in combination with
-            "ConnectedProperties"), ComplexList
-          nullable: true
-        propertyRelations:
-          type: array
-          items:
-            $ref: '#/components/schemas/PropertyRelationContract.v3'
-          description: List of relations with other properties
-          nullable: true
-        textFormat:
-          type: string
-          description: The text type, e.g. UTF-8
-          nullable: true
-        units:
-          type: array
-          items:
-            type: string
-          description: Multiple references to Unit
-          nullable: true
-        qudtCodes:
-          type: array
-          items:
-            type: string
-          description: List of QUDT unit codes (if QUDT code available)
           nullable: true
       additionalProperties: false
     PropertyContract.v4:
@@ -7093,6 +4047,255 @@ components:
             dictionary as the property are listed)
           nullable: true
       additionalProperties: false
+    PropertyContract.v5:
+      required:
+        - activationDateUtc
+        - code
+        - name
+        - status
+        - uri
+        - versionDateUtc
+      type: object
+      properties:
+        dictionaryUri:
+          type: string
+          description: URI of the dictionary
+          nullable: true
+        activationDateUtc:
+          type: string
+          description: Date of activation
+          format: date-time
+        code:
+          minLength: 1
+          type: string
+          description: Code used originally by the dictionary
+        creatorLanguageCode:
+          type: string
+          description: Language code of the creator
+          nullable: true
+        countriesOfUse:
+          type: array
+          items:
+            type: string
+          description: List of countries where used
+          nullable: true
+        countryOfOrigin:
+          type: string
+          description: Country of origin
+          nullable: true
+        deActivationDateUtc:
+          type: string
+          description: Date of deactivation
+          format: date-time
+          nullable: true
+        definition:
+          type: string
+          description: Formal definition
+          nullable: true
+        deprecationExplanation:
+          type: string
+          description: Explanation of the deprecation
+          nullable: true
+        description:
+          type: string
+          description: Description
+          nullable: true
+        documentReference:
+          type: string
+          description: Reference to a(n official) document
+          nullable: true
+        name:
+          minLength: 1
+          type: string
+          description: Name
+        uri:
+          minLength: 1
+          type: string
+          description: Unique identification
+        replacedObjectCodes:
+          type: array
+          items:
+            type: string
+          description: List of codes of the replaced items
+          nullable: true
+        replacingObjectCodes:
+          type: array
+          items:
+            type: string
+          description: List of codes of the replacing items
+          nullable: true
+        revisionDateUtc:
+          type: string
+          description: Date of the revision
+          format: date-time
+          nullable: true
+        revisionNumber:
+          type: integer
+          description: Revision number
+          format: int32
+          nullable: true
+        status:
+          minLength: 1
+          type: string
+          description: 'Status, can be: Preview, Active or Inactive'
+        subdivisionsOfUse:
+          type: array
+          items:
+            type: string
+          description: List of subdivisions (e.g. states) where used
+          nullable: true
+        uid:
+          type: string
+          description: Alternative unique global identification
+          nullable: true
+        versionDateUtc:
+          type: string
+          description: Date of the version
+          format: date-time
+        versionNumber:
+          type: integer
+          description: Version number
+          format: int32
+          nullable: true
+        visualRepresentationUri:
+          type: string
+          description: URI of a visual representation
+          nullable: true
+        connectedPropertyCodes:
+          type: array
+          items:
+            type: string
+          description: List of connected property codes
+          nullable: true
+        dataType:
+          type: string
+          description: >-
+            Format for expressing the value of the property: Boolean, Character,
+            Date, Enumeration, Integer, Real, String, Time
+          nullable: true
+        dimension:
+          type: string
+          description: "Dimension of the physical quantity in format \"L M T I Θ N J\", for example \"-2 1 0 0 0 0 0\".\r\nWith\r\n  L   Length\r\n  M   Mass\r\n  T   Time\r\n  I   Electric current\r\n  Θ   Thermodynamic Temperature\r\n  N   Amount of substance\r\n  J   Luminous intensity"
+          nullable: true
+        dimensionLength:
+          type: integer
+          description: The Length value of the dimension
+          format: int32
+          nullable: true
+        dimensionMass:
+          type: integer
+          description: The Mass value of the dimension
+          format: int32
+          nullable: true
+        dimensionTime:
+          type: integer
+          description: The Time value of the dimension
+          format: int32
+          nullable: true
+        dimensionElectricCurrent:
+          type: integer
+          description: The Electric current value of the dimension
+          format: int32
+          nullable: true
+        dimensionThermodynamicTemperature:
+          type: integer
+          description: The Thermodynamic temperature value of the dimension
+          format: int32
+          nullable: true
+        dimensionAmountOfSubstance:
+          type: integer
+          description: The Amount of substance value of the dimension
+          format: int32
+          nullable: true
+        dimensionLuminousIntensity:
+          type: integer
+          description: The Luminous intensity value of the dimension
+          format: int32
+          nullable: true
+        dynamicParameterPropertyCodes:
+          type: array
+          items:
+            type: string
+          description: "List of codes of the properties which are parameters of the function for a dynamic property.\r\nOnly applicable for dynamic properties (IsDynamic)"
+          nullable: true
+        example:
+          type: string
+          description: Illustrate possible use or values of the Property
+          nullable: true
+        isDynamic:
+          type: boolean
+          description: >-
+            True if the value of this property is dependent on other properties
+            (as provided in DynamicParameterPropertyCodes)
+          nullable: true
+        maxExclusive:
+          type: number
+          description: Maximum value of the property, exclusive
+          format: double
+          nullable: true
+        maxInclusive:
+          type: number
+          description: Maximum value of the property, inclusive
+          format: double
+          nullable: true
+        methodOfMeasurement:
+          type: string
+          description: Description of the method of measurement
+          nullable: true
+        minExclusive:
+          type: number
+          description: Minimum value of the property, exclusive
+          format: double
+          nullable: true
+        minInclusive:
+          type: number
+          description: Minimum value of the property, inclusive
+          format: double
+          nullable: true
+        pattern:
+          type: string
+          description: "An XML Schema Regular expression for the property value.\r\nSee for explanation: https://www.regular-expressions.info/xml.html."
+          nullable: true
+        physicalQuantity:
+          type: string
+          description: The quantity in plain text
+          nullable: true
+        allowedValues:
+          type: array
+          items:
+            $ref: '#/components/schemas/PropertyValueContract.v5'
+          description: List of allowed values
+          nullable: true
+        propertyValueKind:
+          type: string
+          description: >-
+            Indicates kind of value: Single, Range (2 values expected), List
+            (multiple values expected), Complex (use in combination with
+            "ConnectedProperties"), ComplexList
+          nullable: true
+        propertyRelations:
+          type: array
+          items:
+            $ref: '#/components/schemas/PropertyRelationContract.v5'
+          description: List of relations with other properties
+          nullable: true
+        textFormat:
+          type: string
+          description: The text type, e.g. UTF-8
+          nullable: true
+        units:
+          type: array
+          items:
+            type: string
+          description: Multiple references to Unit
+          nullable: true
+        qudtCodes:
+          type: array
+          items:
+            type: string
+          description: List of QUDT unit codes (if QUDT code available)
+          nullable: true
+      additionalProperties: false
     PropertyListItemContract.v1:
       type: object
       properties:
@@ -7110,43 +4313,27 @@ components:
           description: Description of the class, max 101 characters long
           nullable: true
       additionalProperties: false
-    PropertyRelationContract.v2:
-      type: object
-      properties:
-        relationType:
-          type: string
-          description: 'The relation with the other property: e.g. HasReference, IsEqualTo'
-          nullable: true
-        relatedPropertyUri:
-          type: string
-          description: Namespace URI of the related property
-          nullable: true
-        relatedPropertyName:
-          type: string
-          description: Name of the related property
-          nullable: true
-      additionalProperties: false
-    PropertyRelationContract.v3:
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          description: Globally unique identification of the value
-          nullable: true
-        relationType:
-          type: string
-          description: 'The relation with the other property: e.g. HasReference, IsEqualTo'
-          nullable: true
-        relatedPropertyUri:
-          type: string
-          description: Namespace URI of the related property
-          nullable: true
-        relatedPropertyName:
-          type: string
-          description: Name of the related property
-          nullable: true
-      additionalProperties: false
     PropertyRelationContract.v4:
+      type: object
+      properties:
+        uri:
+          type: string
+          description: Globally unique identification of the relation
+          nullable: true
+        relationType:
+          type: string
+          description: 'The relation with the other property: e.g. HasReference, IsEqualTo'
+          nullable: true
+        relatedPropertyUri:
+          type: string
+          description: Namespace URI of the related property
+          nullable: true
+        relatedPropertyName:
+          type: string
+          description: Name of the related property
+          nullable: true
+      additionalProperties: false
+    PropertyRelationContract.v5:
       type: object
       properties:
         uri:
@@ -7216,70 +4403,12 @@ components:
           description: List of the relations of this property
           nullable: true
       additionalProperties: false
-    PropertyValueContract.v1:
+    PropertyValueContract.v4:
       required:
         - value
       type: object
       properties:
-        namespaceUri:
-          type: string
-          description: Globally unique identification of the value (if present)
-          nullable: true
-        code:
-          type: string
-          description: Identification of the value (unique within the property)
-          nullable: true
-        value:
-          minLength: 1
-          type: string
-          description: Allowed value of the property
-        description:
-          type: string
-          description: Description of the value
-          nullable: true
-        sortNumber:
-          type: integer
-          description: >-
-            (Optional) Sort number of value within the list of values for the
-            Property
-          format: int32
-          nullable: true
-      additionalProperties: false
-    PropertyValueContract.v2:
-      required:
-        - value
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          description: Globally unique identification of the value (if present)
-          nullable: true
-        code:
-          type: string
-          description: Identification of the value (unique within the property)
-          nullable: true
-        value:
-          minLength: 1
-          type: string
-          description: Possible value of the property
-        description:
-          type: string
-          description: Description of the value
-          nullable: true
-        sortNumber:
-          type: integer
-          description: >-
-            (Optional) Sort number of value within the list of values for the
-            Property
-          format: int32
-          nullable: true
-      additionalProperties: false
-    PropertyValueContract.v3:
-      required:
-        - value
-      type: object
-      properties:
-        namespaceUri:
+        uri:
           type: string
           description: Globally unique identification of the value
           nullable: true
@@ -7303,7 +4432,7 @@ components:
           format: int32
           nullable: true
       additionalProperties: false
-    PropertyValueContract.v4:
+    PropertyValueContract.v5:
       required:
         - value
       type: object
@@ -7359,36 +4488,6 @@ components:
           format: int32
         dictionary:
           $ref: '#/components/schemas/DictionarySearchResultContract.v1'
-      additionalProperties: false
-    SearchResultContract.v1:
-      type: object
-      properties:
-        numberOfMaterialsFound:
-          type: integer
-          description: The total number of Materials matching the search criteria
-          format: int32
-        domains:
-          type: array
-          items:
-            $ref: '#/components/schemas/DomainSearchResultContract.v1'
-          description: The list of Domains with found Materials and Material Properties
-          nullable: true
-      additionalProperties: false
-    SearchResultContract.v2:
-      type: object
-      properties:
-        numberOfClassificationsFound:
-          type: integer
-          description: The total number of Classifications matching the search criteria
-          format: int32
-        domains:
-          type: array
-          items:
-            $ref: '#/components/schemas/DomainSearchResultContract.v2'
-          description: >-
-            The list of Domains with found Classification and
-            ClassificationProperties
-          nullable: true
       additionalProperties: false
     TextSearchResponseClassContract.v1:
       type: object
@@ -7465,82 +4564,6 @@ components:
             type: string
           nullable: true
       additionalProperties: false
-    TextSearchResponseClassificationContract.v5:
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Unique identification of the domain the classification belongs to
-          nullable: true
-        domainName:
-          type: string
-          description: Name of the domain the classification belongs to
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        referenceCode:
-          type: string
-          description: Code that can be used for domain specific purposes
-          nullable: true
-        namespaceUri:
-          type: string
-          description: Unique identification of the classification
-          nullable: true
-        classificationType:
-          type: string
-          description: Type of the classification.
-          nullable: true
-        description:
-          type: string
-          nullable: true
-        parentClassificationName:
-          type: string
-          nullable: true
-        relatedIfcEntityNames:
-          type: array
-          items:
-            type: string
-          nullable: true
-      additionalProperties: false
-    TextSearchResponseClassificationContract.v6:
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Unique identification of the domain the classification belongs to
-          nullable: true
-        domainName:
-          type: string
-          description: Name of the domain the classification belongs to
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        referenceCode:
-          type: string
-          description: Code that can be used for domain specific purposes
-          nullable: true
-        namespaceUri:
-          type: string
-          description: Unique identification of the classification
-          nullable: true
-        classificationType:
-          type: string
-          description: Type of the classification.
-          nullable: true
-        description:
-          type: string
-          nullable: true
-        parentClassificationName:
-          type: string
-          nullable: true
-        relatedIfcEntityNames:
-          type: array
-          items:
-            type: string
-          nullable: true
-      additionalProperties: false
     TextSearchResponseContract.v1:
       type: object
       properties:
@@ -7603,54 +4626,6 @@ components:
           description: List of Properties found
           nullable: true
       additionalProperties: false
-    TextSearchResponseContract.v5:
-      type: object
-      properties:
-        classifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponseClassificationContract.v5'
-          description: The list of Classifications found
-          nullable: true
-        domains:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponseDomainContract.v5'
-          nullable: true
-        properties:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponsePropertyContract.v5'
-          nullable: true
-      additionalProperties: false
-    TextSearchResponseContract.v6:
-      type: object
-      properties:
-        classifications:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponseClassificationContract.v6'
-          description: The list of Classifications found
-          nullable: true
-        domains:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponseDomainContract.v6'
-          description: The list of Domains with found results
-          nullable: true
-        materials:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponseMaterialContract.v6'
-          description: The list of Materials found
-          nullable: true
-        properties:
-          type: array
-          items:
-            $ref: '#/components/schemas/TextSearchResponsePropertyContract.v6'
-          description: List of Properties found
-          nullable: true
-      additionalProperties: false
     TextSearchResponseDictionaryContract.v1:
       type: object
       properties:
@@ -7701,55 +4676,6 @@ components:
         isVerified:
           type: boolean
       additionalProperties: false
-    TextSearchResponseDomainContract.v5:
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          type: string
-          nullable: true
-      additionalProperties: false
-    TextSearchResponseDomainContract.v6:
-      type: object
-      properties:
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          type: string
-          nullable: true
-      additionalProperties: false
-    TextSearchResponseMaterialContract.v6:
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          description: Unique identification of the domain the material belongs to
-          nullable: true
-        domainName:
-          type: string
-          description: Name of the domain the material belongs to
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        referenceCode:
-          type: string
-          description: Code that can be used for domain specific purposes
-          nullable: true
-        namespaceUri:
-          type: string
-          description: Unique identification of the material
-          nullable: true
-        description:
-          type: string
-          nullable: true
-        parentMaterialName:
-          type: string
-          nullable: true
-      additionalProperties: false
     TextSearchResponsePropertyContract.v1:
       type: object
       properties:
@@ -7779,44 +4705,6 @@ components:
           type: string
           nullable: true
         code:
-          type: string
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        description:
-          type: string
-          nullable: true
-      additionalProperties: false
-    TextSearchResponsePropertyContract.v5:
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          nullable: true
-        domainName:
-          type: string
-          nullable: true
-        namespaceUri:
-          type: string
-          nullable: true
-        name:
-          type: string
-          nullable: true
-        description:
-          type: string
-          nullable: true
-      additionalProperties: false
-    TextSearchResponsePropertyContract.v6:
-      type: object
-      properties:
-        domainNamespaceUri:
-          type: string
-          nullable: true
-        domainName:
-          type: string
-          nullable: true
-        namespaceUri:
           type: string
           nullable: true
         name:
@@ -7918,6 +4806,34 @@ components:
         message:
           type: string
           description: The message
+          nullable: true
+      additionalProperties: false
+    UriRedirectionContract.v1:
+      type: object
+      properties:
+        organizationCodeSource:
+          type: string
+          nullable: true
+        dictionaryCodeSource:
+          type: string
+          nullable: true
+        organizationCodeDestination:
+          type: string
+          nullable: true
+        dictionaryCodeDestination:
+          type: string
+          nullable: true
+      additionalProperties: false
+    UriRedirectionsContract.v1:
+      type: object
+      properties:
+        uriRedirections:
+          type: array
+          items:
+            $ref: '#/components/schemas/UriRedirectionContract.v1'
+          description: >-
+            List of obsolete organization/dictionary codes which are mapped to
+            new ones
           nullable: true
       additionalProperties: false
   securitySchemes:
