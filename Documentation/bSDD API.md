@@ -14,10 +14,11 @@ A typical use case is demonstrated in SketchUp. A video of the SketchUp use-case
 **The bSDD API is regularly updated.** If there are breaking changes to the API, we create a new version and support both versions for 6 months after the change occurred. Additions to an existing API usually don't mean a breaking change and can be introduced to the same version.
 
 ## API contracts and testing the API
-You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [bSDD API contract, test](https://test.bsdd.buildingsmart.org/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods, you need to log in via the UI by using the Authorize button:
+You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods, you need to log in via the UI by using the Authorize button:
 
 <img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/swagger-authorize2.png" alt="Swagger authorization" style="width: 550px" />
 
+Fill in the following client_id: b222e220-1f71-4962-9184-05e0481a390d
 Don’t forget to check the “read” scope!
 
 ## Using https://identifier.buildingsmart.org
