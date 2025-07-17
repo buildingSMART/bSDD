@@ -19,6 +19,7 @@ You can get the API contract information at [bSDD API contract, official release
 <img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/swagger-authorize2.png" alt="Swagger authorization" style="width: 550px" />
 
 Fill in the following client_id: b222e220-1f71-4962-9184-05e0481a390d
+
 Don’t forget to check the “read” scope!
 
 ## Using https://identifier.buildingsmart.org
