@@ -12,6 +12,16 @@ A new version will only be created if it 'breaks' the current version. For examp
 
 If there is a new version of an API the previous version will be supported for at least 6 months after releasing the new version. 
 
+## 2025-09-17
+
+New API methods:
+ * api/DictionaryDownload/bsdd/v1 (HTTPGET)
+    - Download full dictionary as json file (bsdd format)
+    - Supply a 'previous download date' (DateFrom) to only download the file if the dictionary has been changed after the given date
+ * api/DictionaryDownload/sketchup/v2 (HTTPGET)
+    - Is a GET operation instead of a POST operation (as  v1)
+    - Supply a 'previous download date' (DateFrom) to only download the file if the dictionary has been changed after the given date
+
 ## 2025-06-27
 
 Changed API methods:
