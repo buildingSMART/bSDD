@@ -156,7 +156,9 @@ def excel2bsdd(excel, bsdd_template):
                 found_it = True
                 break
         if not found_it:
-            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the class property: '{cls_prop}'!")
+            print(related)
+            print(cls_prop['PropertyCode'])
+            raise Exception(f"Class '{related}' not found in the spreadsheet, so couldn't append the class property: '{cls_prop['PropertyCode']}'!")
     # process ClassRelation
     cls_rels = map_data(excel['classrelation'], bsdd_template['Classes'][0]['ClassRelations'], "class-relations")
     for cls_rel in cls_rels:
