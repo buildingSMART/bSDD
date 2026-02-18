@@ -266,8 +266,8 @@ Each class must have a specific type. Below is the explanation of what each type
 
 <h3 id="defining-relations">Defining relations</h3>
 
-`ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcCurtainWall” is a more
-specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
+`ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcPile” is a more
+specific class of “IfcDeepFoundation”. In bSDD terminology, we say that “IfcDeepFoundation” is a **parent of** “IfcPile”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
 
 `ClassRelation` and `PropertyRelation`- use those to link your concepts with each other. Relations allow us to define parent-child links also with other dictionaries. Apart from specialization, you can also define other types of relations, such as decomposition (`HasPart` type, see the list of possible types: [Relation types](#relation-types)).
 
