@@ -366,6 +366,7 @@ The human-readable and translatable _Name_ that exists in bSDD has no reflection
 	"DimensionLuminousIntensity": null,
 	"MethodOfMeasurement": "text",
 	"DataType": "text",
+	"IfcDataType": "text",
 	"PropertyValueKind": "text",
 	"MinInclusive": null,
 	"MaxInclusive": null,

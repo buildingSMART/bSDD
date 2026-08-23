@@ -46,7 +46,7 @@ While it is possible to publish in bSDD without some fields filled, the requirem
 
 |      |  Dictionary  |  Class  | Property | 
 | ----- | ----- | ----- | ----- | 
-| Required by bSDD | `OrganizationCode`, `DictionaryCode`, `DictionaryName`, `DictionaryVersion`, `LanguageIsoCode`  | `Code`, `Name`, `ClassType`  | `Code`, `Name`, `DataType` | 
+| Required by bSDD | `OrganizationCode`, `DictionaryCode`, `DictionaryName`, `DictionaryVersion`, `LanguageIsoCode`  | `Code`, `Name`, `ClassType`  | `Code`, `Name`, `DataType`, `IfcDataType` | 
 | Additional requirements for the verification | `QualityAssuranceProcedure`, `ChangeRequestEmailAddress`, `License`, `LicenseUrl` | `Definition`, `RelatedIfcEntityNamesList`  | `Definition`, `Example`, `Dimension` (if numeric), `PropertyValueKind`  | 
 
 Additionally, `ClassProperty` should have a value of its `PropertySet`.
