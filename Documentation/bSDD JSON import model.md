@@ -220,8 +220,9 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
 | <span id="RelationType">RelationType</span>             | Text     | ✅       |             | One of:  `HasMaterial`, `HasReference`,  `IsEqualTo`,  `IsSimilarTo`,  `IsParentOf`,  `IsChildOf`, `HasPart`, `IsPartOf`. Read more about [Relation types](#relation-types).    |
-| <span id="RelatedClassUri">RelatedClassUri</span> | Text     | ✅       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. Example: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
-| <span id="RelatedClassName">RelatedClassName</span> | Text     |        |             |  |
+| <span id="RelatedClassUri">RelatedClassUri</span> | Text     | ✅?       |             | Full URI of the related `Class`. It can be to same or a different `Dictionary`. `RelatedClassCode` or `RelatedClassUri` is required. Example value: https://identifier.buildingsmart.org/uri/etim/etim/8.0/class/EC002987|
+| <span id="RelatedClassCode">RelatedClassCode</span> | Text     | ✅?       |             | If the related `Class` is in same dictionary the `RelatedClassCode` can be used instead of the `RelatedClassUri`. `RelatedClassCode` or `RelatedClassUri` is required.|
+| <span id="RelatedClassName">RelatedClassName</span> | Text     |        |             |Specify if the related class is not in bSDD.  |
 | <span id="Fraction">Fraction</span>       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (Example: volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
 | <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
 
@@ -232,8 +233,9 @@ Analogous to `ClassRelations` but between `Properties`.
 
 | Field                    | DataType | Required? | Translatable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| <span id="RelatedPropertyName">RelatedPropertyName</span> | Text     |        |             | Name of the related `Property`.|
-| <span id="RelatedPropertyUri">RelatedPropertyUri</span> | Text     | ✅       |             | Full URI of the related `Property`. It can be to same or a different `Dictionary`.|
+| <span id="RelatedPropertyName">RelatedPropertyName</span> | Text     |        |             | Name of the related `Property`. Specify if the related property is not in bSDD.|
+| <span id="RelatedPropertyUri">RelatedPropertyUri</span> | Text     | ✅?       |             | Full URI of the related `Property`. It can be to same or a different `Dictionary`. `RelatedPropertyUri` or `RelatedPropertyCode` is required.|
+| <span id="RelatedPropertyCode">RelatedPropertyCode</span> | Text     | ✅?       |             | If the related `Property` is in same dictionary the `RelatedPropertyCode` can be used instead of the `RelatedPropertyUri`. `RelatedPropertyCode` or `RelatedPropertyUri` is required.|
 | <span id="RelationType">RelationType</span>             | Text     | ✅       |             | One of:  `HasReference`,  `IsEqualTo`,  `IsSimilarTo`, ~~IsParentOf,  IsChildOf, HasPart~~. Read more about [Relation types](#relation-types).  |
 | <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the PropertyRelation  |
 
