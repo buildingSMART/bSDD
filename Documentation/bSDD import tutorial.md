@@ -70,11 +70,11 @@ When you publish a new dictionary version in the bSDD, it always initially has t
 
 **⚠️ Once the content is activated, it will get an immutable URI, meaning the content will stay in bSDD permanently and can't be deleted.** It is still possible to change the status to `Inactive`, indicating it should no longer be used, but the page will still exist and show the content. Consider that before activating the version of a dictionary.
 
-<h3 id="dictionary-reupload">Publishing a new dictionary version</h2>
+<h3 id="dictionary-reupload">Publishing a new dictionary version</h3>
 
 Similar to publishing for the first time, you can also upload a new dictionary version by loading a properly structured JSON file and clicking Upload.
 
-<h3 id="dictionary-status">Changing the dictionary status</h2>
+<h3 id="dictionary-status">Changing the dictionary status</h3>
 
 As soon as you have at least one version of a dictionary uploaded, you will see a row in the table with the name, version number and other properties of each version. By clicking `action`, you can **download** the JSON file to your computer, **change the status** to `Active`, or **delete** the version (both options are only available if the status is `Preview`).
 
