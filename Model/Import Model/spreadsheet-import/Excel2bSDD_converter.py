@@ -91,7 +91,7 @@ def map_data(excel_data, bsdd_part_template, name=""):
                         column_data = pd.to_datetime(column_data, origin='1899-12-30', unit='D').isoformat()
                     elif (column_name in ["RevisionNumber","VersionNumber","SortNumber"] or (column_name[0:9]=="Dimension" and len(column_name)>9)) and not column_data is None:
                         column_data = int(column_data)
-                    elif column_name in ["Uid","Example","Value","PredefinedValue"] and not isinstance(column_data, str): # turn those columns to text
+                    elif column_name in ["Uid","Example","Value","PredefinedValue"] and column_data is not None and not isinstance(column_data, str): # turn those columns to text
                         column_data = str(column_data)
                     # process lists
                     if type(column_data) == str:
@@ -121,13 +121,11 @@ def clean_nones(value):
     the result as a new dictionary or list.
     """
     if isinstance(value, list):
-        return [clean_nones(x) for x in value if not x in ("", [], None)] # is not None]
+        cleaned = [clean_nones(x) for x in value]
+        return [x for x in cleaned if not x in ("", [], None)]
     elif isinstance(value, dict):
-        return {
-            key: clean_nones(val)
-            for key, val in value.items()
-            if not val in ("", [], None)
-        }
+        cleaned = {key: clean_nones(val) for key, val in value.items()}
+        return {key: val for key, val in cleaned.items() if not val in ("", [], None)}
     else:
         return value
 
@@ -228,7 +226,8 @@ if __name__ == "__main__":
     EXCEL_PATH = sys.argv[1]
     JSON_TEMPLATE_PATH = sys.argv[2]
     JSON_OUTPUT_PATH = sys.argv[3]
-    WITHOUT_NULLS = sys.argv[4]
+    # WITHOUT_NULLS is true by default
+    WITHOUT_NULLS = sys.argv[4] if len(sys.argv) > 4 else "true"
 
     excel = load_excel(EXCEL_PATH)
     bsdd_template = json.load(open(JSON_TEMPLATE_PATH, encoding="utf-8"))
