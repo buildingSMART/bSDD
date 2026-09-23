@@ -1,0 +1,382 @@
+{
+  "ModelVersion": "2.0",
+  "OrganizationCode": "bs-agri",
+  "DictionaryCode": "fruitvegs",
+  "DictionaryVersion": "1.6",
+  "DictionaryName": "Fruit and vegetables",
+  "ReleaseDate": "2022-12-26T00:00:00",
+  "Status": "Preview",
+  "LanguageIsoCode": "en-US",
+  "LanguageOnly": null,
+  "License": "No license",
+  "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
+  "Classes": [
+    {
+      "ClassType": "Class",
+      "ReferenceCode": "fruit",
+      "ClassProperties": [
+        {
+          "Code": "fruit-country-of-origin",
+          "Description": "Where the fruit comes from",
+          "IsRequired": true,
+          "IsWritable": true,
+          "PropertyCode": "country-of-origin",
+          "PropertySet": "GeoSet",
+          "PropertyType": "Property"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "HasReference",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/class/veg",
+          "RelatedClassName": "Vegetables"
+        },
+        {
+          "RelationType": "HasReference",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015/1/class/Pr_45_30_90_07",
+          "RelatedClassName": "Bare-root fruit trees"
+        }
+      ],
+      "Code": "fruit",
+      "Name": "Fruit",
+      "Uid": "12344321",
+      "Definition": "A fruit is a mature, ripened ovary, along with the contents of the ovary. The ovary is the ovule-bearing reproductive structure in the plant flower. The ovary serves to enclose and protect the ovules, from the youngest stages of flower development until the ovules become fertilized and turn into seeds.",
+      "Status": "Active",
+      "VersionNumber": 1,
+      "RevisionNumber": 0,
+      "CreatorLanguageIsoCode": "en-GB",
+      "VisualRepresentationUri": "https://study.com/academy/lesson/fruit-definition-types-benefits-examples.html",
+      "CountriesOfUse": [
+        "GB",
+        "NL",
+        "IT",
+        "BE"
+      ],
+      "DocumentReference": "The Fruit Book"
+    },
+    {
+      "ClassType": "Class",
+      "Synonyms": [
+        "Edibles"
+      ],
+      "ReferenceCode": "vegetable",
+      "ClassRelations": [
+        {
+          "RelationType": "HasReference",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/bs-agri/fruitvegs/1.0/class/fruit",
+          "RelatedClassName": "Fruit"
+        },
+        {
+          "RelationType": "HasReference",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015/1/class/Ac_30_40_32",
+          "RelatedClassName": "Fresh fruit and vegetable packing"
+        }
+      ],
+      "Code": "veg",
+      "Name": "Vegetable",
+      "Definition": "A plant or part of a plant used as food",
+      "Status": "Active",
+      "ActivationDateUtc": "",
+      "VersionDateUtc": "",
+      "VersionNumber": 1,
+      "RevisionNumber": 0,
+      "CreatorLanguageIsoCode": "en-GB",
+      "VisualRepresentationUri": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Marketvegetables.jpg/220px-Marketvegetables.jpg",
+      "CountriesOfUse": [
+        "GB",
+        "NL",
+        "IT",
+        "BE",
+        "FR"
+      ],
+      "DocumentReference": "The Vegetable Book"
+    },
+    {
+      "ClassType": "Class",
+      "ParentClassCode": "fruit",
+      "RelatedIfcEntityNamesList": [
+        "IfcCommunicationAppliance"
+      ],
+      "ClassProperties": [
+        {
+          "Code": "apple-volume",
+          "Description": "The volume of an apple",
+          "IsRequired": true,
+          "IsWritable": true,
+          "MaxInclusive": 20.0000,
+          "MinExclusive": 1.0000,
+          "PropertyCode": "volume",
+          "PropertySet": "SizeSet",
+          "PropertyType": "Property",
+          "Unit": "cm\u00B3"
+        },
+        {
+          "Code": "apple-height",
+          "Description": "The height of an apple",
+          "IsRequired": true,
+          "IsWritable": true,
+          "MaxInclusive": 25.0000,
+          "MinExclusive": 1.0000,
+          "PropertyCode": "height",
+          "PropertySet": "SizeSet",
+          "PropertyType": "Property",
+          "Unit": "cm"
+        }
+      ],
+      "ReferenceCode": "apple",
+      "ClassRelations": [
+        {
+          "RelationType": "HasReference",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcCommunicationAppliance"
+        }
+      ],
+      "Code": "apple",
+      "Name": "Apple",
+      "Definition": "The round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh",
+      "Status": "Active",
+      "ActivationDateUtc": null,
+      "VersionDateUtc": null,
+      "VersionNumber": 1,
+      "RevisionNumber": 0,
+      "CreatorLanguageIsoCode": "en-GB"
+    },
+    {
+      "ClassType": "Class",
+      "ParentClassCode": "apple",
+      "ClassProperties": [
+        {
+          "AllowedValues": [
+            {
+              "Code": "green67890green67890green67890green67890green67890green67890green67890green67890green67890green67890",
+              "Value": "Green",
+              "SortNumber": 1
+            },
+            {
+              "Code": "yellow",
+              "Value": "Yellow",
+              "SortNumber": 2
+            }
+          ],
+          "Code": "grannysmith-color",
+          "Description": "The color of a Granny Smith",
+          "IsRequired": true,
+          "IsWritable": true,
+          "PredefinedValue": "green",
+          "PropertyCode": "color",
+          "PropertySet": "undefined_set",
+          "PropertyType": "Property"
+        },
+        {
+          "Code": "grannysmith-height",
+          "Description": "The height of a Granny Smith",
+          "IsRequired": true,
+          "IsWritable": true,
+          "MaxInclusive": 15.0000,
+          "MinExclusive": 4.0000,
+          "PropertyCode": "height",
+          "PropertySet": "SizeSet",
+          "PropertyType": "Property",
+          "Unit": "cm"
+        }
+      ],
+      "Synonyms": [
+        "Green apple",
+        "Sour apple"
+      ],
+      "ReferenceCode": "grannysmith",
+      "Code": "grannysmith",
+      "Name": "Granny Smith",
+      "Definition": "The Granny Smith, also known as a green apple or sour apple, is an apple cultivar which originated in Australia in 1868",
+      "Status": "Active",
+      "ActivationDateUtc": "2022-09-26T00:00:00",
+      "VersionDateUtc": "2022-09-26T00:00:00",
+      "VersionNumber": 1,
+      "RevisionNumber": 0,
+      "CountryOfOrigin": "AU"
+    },
+    {
+      "ClassType": "Class",
+      "ParentClassCode": "veg",
+      "ClassProperties": [
+        {
+          "AllowedValues": [
+            {
+              "Code": "green",
+              "Value": "Green",
+              "SortNumber": 3
+            },
+            {
+              "Code": "yellow",
+              "Value": "Yellow",
+              "SortNumber": 2
+            },
+            {
+              "Code": "red",
+              "Value": "Red",
+              "SortNumber": 1
+            }
+          ],
+          "Code": "tomato-color",
+          "Description": "The color of a tomato",
+          "IsRequired": "true",
+          "IsWritable": true,
+          "PredefinedValue": "red",
+          "PropertyCode": "color",
+          "PropertySet": "undefined_set",
+          "PropertyType": "Property"
+        }
+      ],
+      "Synonyms": [
+        "Love apple"
+      ],
+      "ReferenceCode": "tomato",
+      "Code": "tomato",
+      "Name": "Tomato",
+      "Definition": "The tomato is the edible berry of the plant Solanum lycopersicum",
+      "Status": "Active",
+      "VersionNumber": 1,
+      "RevisionNumber": null,
+      "CountryOfOrigin": "AU"
+    },
+    {
+      "ClassType": "Class",
+      "ParentClassCode": "veg",
+      "ClassProperties": [
+        {
+          "Code": "banana-color",
+          "Description": "The color of a banana",
+          "IsRequired": "true",
+          "IsWritable": true,
+          "PredefinedValue": "red",
+          "PropertyCode": "color",
+          "PropertySet": "multi",
+          "PropertyType": "Property"
+        }
+      ],
+      "ReferenceCode": "banana",
+      "Code": "banana",
+      "Name": "Banana",
+      "Definition": "You know,....",
+      "Status": "Preview",
+      "VersionNumber": 1,
+      "RevisionNumber": null,
+      "CountryOfOrigin": "EC"
+    },
+    {
+      "ClassType": "Material",
+      "Synonyms": [
+        "H2O"
+      ],
+      "ReferenceCode": "water",
+      "Code": "water",
+      "Name": "Water",
+      "Definition": "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth\u0027s hydrosphere and the fluids of all known living organisms",
+      "Status": "Active",
+    },
+    {
+      "ClassType": "Material",
+      "Synonyms": [
+        "Fibre"
+      ],
+      "ReferenceCode": "fiber",
+      "Code": "fiber",
+      "Name": "Fiber",
+      "Definition": "The portion of plant-derived food that cannot be completely broken down by human digestive enzymes",
+      "Status": "Active",
+      "CreatorLanguageIsoCode": "en-US"
+    }
+  ],
+  "Properties": [
+    {
+      "Example": "For example, the space that a substance or 3D shape occupies or contains.",
+      "ConnectedPropertyCodes": [
+        "height",
+        "width",
+        "depth",
+        "diameter"
+      ],
+      "PhysicalQuantity": "Volume",
+      "Dimension": "3 0 0 0 0 0 0",
+      "MethodOfMeasurement": "Archimedes\u2019 Gold Crown method",
+      "DataType": "Real",
+      "PropertyValueKind": "Single",
+      "MaxInclusive": 5000.0000,
+      "MinExclusive": 0.0000,
+      "Units": [
+        "cm\u00B3"
+      ],
+      "Code": "volume",
+      "Name": "Volume",
+      "Definition": "Volume is a scalar quantity expressing the amount of three-dimensional space enclosed by a closed surface. Volume is often quantified numerically using the SI derived unit, the cubic metre",
+      "Status": "Active",
+      "RevisionDateUtc": "2022-09-26T00:00:00",
+      "VersionDateUtc": "2021-10-01T00:00:00",
+      "VersionNumber": 2,
+      "RevisionNumber": 0,
+      "CreatorLanguageIsoCode": "en-GB",
+      "VisualRepresentationUri": "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/screenshot-2021-02-19-at-10.29.40_ver_1.png",
+      "CountryOfOrigin": "FR"
+    },
+    {
+      "PhysicalQuantity": "Height",
+      "Dimension": "1 0 0 0 0 0 0",
+      "DataType": "Real",
+      "PropertyValueKind": "Single",
+      "MaxInclusive": 100.0000,
+      "MinExclusive": 0.0000,
+      "Units": [
+        "cm"
+      ],
+      "Code": "height",
+      "Name": "Height",
+      "Definition": "Distance from bottom to top of something standing upright",
+      "Status": "Active",
+      "RevisionDateUtc": "2022-09-26T00:00:00",
+      "VersionDateUtc": "2021-10-01T00:00:00",
+      "VersionNumber": 2,
+      "RevisionNumber": 0
+    },
+    {
+      "DataType": "String",
+      "PropertyValueKind": "List",
+      "AllowedValues": [
+        {
+          "Code": "blue",
+          "Value": "Blue"
+        },
+        {
+          "Code": "green",
+          "Value": "Green"
+        },
+        {
+          "Code": "red",
+          "Value": "Red",
+          "Description": "Red"
+        },
+        {
+          "Code": "yellow",
+          "Value": "Yellow"
+        }
+      ],
+      "Code": "color",
+      "Name": "Color",
+      "Definition": "The property possessed by an object of producing different sensations on the eye as a result of the way it reflects or emits light",
+      "Status": "Active",
+      "VersionDateUtc": "2021-10-01T00:00:00",
+      "VersionNumber": "1"
+    },
+    {
+      "DataType": "String",
+      "PropertyValueKind": "Single",
+      "Code": "country-of-origin",
+      "Name": "Country of origin",
+      "Definition": "Production location",
+      "Status": "Active",
+      "RevisionDateUtc": "2022-09-26T00:00:00",
+      "VersionDateUtc": "2021-10-01T00:00:00",
+      "VersionNumber": 1,
+      "RevisionNumber": 0,
+      "CreatorLanguageIsoCode": "en-GB"
+    }
+  ]
+{ "}", "" },
