@@ -30,7 +30,7 @@ public static class BsddSettings
     /// 'Application ID URI' of the app registration of the bSDD API. It is also the audience of the access token,
     /// so it must match the API you call: the test environment uses another app registration than production.
     /// </summary>
-    public const string ApplicationIdUri = $"https://{Tenant}/test-api";
+    public const string ApplicationIdUri = $"https://{Tenant}/bsddapi";
 
     /// <summary>
     /// Scope for a user: the user signs in and the API checks the e-mail address in the token
