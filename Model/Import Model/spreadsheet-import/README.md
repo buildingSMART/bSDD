@@ -7,7 +7,7 @@ Please report if you experience any problems with using it. We advise to always 
 ## Using the Python converter
 
 1. You need to have Python installed. If not, download and install python from here: https://www.python.org/downloads/.
-2. You need to install a few Python libraries. If you don't have them already, type in the console: `pip install numpy pandas openpyxl tqdm`
+2. You need to install a few Python libraries. If you don't have them already, type in the console: `pip install numpy "pandas<3" openpyxl tqdm` (pandas 3 is not yet supported by the script)
    (note: system console, not a Python console. To open on Windows, find 'Command Prompt' app)
 4. Copy the Excel template and fill in with your data. All the fields marked with * are mandatory if a row is in use.
 5. Save and close the Excel file.
