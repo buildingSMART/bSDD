@@ -1,89 +1,105 @@
-﻿using System.Net;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json;
-using Microsoft.Identity.Client;
+using ConsoleDemo;
 
-var config = new PublicClientApplicationOptions
+// Demo of the two ways to call the secured bSDD API:
+// - as a user: the user signs in and the API uses the e-mail address in the token (see UserAuthentication)
+// - as an application (machine to machine): the app registration signs in with its secret (see ApplicationAuthentication)
+// Run with --help to see all options.
+
+if (!CommandLineOptions.TryParse(args, out var options, out var error))
 {
-    // 'Application (client) ID' of the app registration in the Microsoft Entra admin center
-    ClientId = "4aba821f-d4ff-498b-a462-c2837dbbba70"
-};
-
-const string tenantName = "buildingsmartservices";
-const string tenant = $"{tenantName}.onmicrosoft.com";
-const string scope = $"https://{tenantName}.onmicrosoft.com/api/read";
-const string policySignUpSignIn = "b2c_1a_signupsignin_c";
-const string azureAdB2CHostname = "authentication.buildingsmart.org";
-const string authorityBase = $"https://{azureAdB2CHostname}/tfp/{tenant}/";
-const string authoritySignUpSignIn = $"{authorityBase}{policySignUpSignIn}";
-const string redirectUri = "http://localhost";
-
-const string apiBaseUrl = "https://test.bsdd.buildingsmart.org";
-string searchListUrl = $"{apiBaseUrl}/api/SearchInDictionary/v1?DictionaryUri=" + WebUtility.UrlEncode("https://identifier.buildingsmart.org/uri/bs-agri/testpriv/1.0");
-
-// In order to take advantage of token caching, your MSAL client singleton must
-// have a lifecycle that at least matches the lifecycle of the user's session in
-// the console application.
-var publicMsalClient = PublicClientApplicationBuilder.CreateWithApplicationOptions(config)
-    .WithB2CAuthority(authoritySignUpSignIn)
-    .WithRedirectUri(redirectUri)
-    .WithLogging(Log, LogLevel.Info, false)
-    .Build();
-
-AuthenticationResult? msalAuthenticationResult = null;
-
-// Attempt to use a cached access token if one is available. This will renew existing, but
-// expired access tokens if possible. In this specific sample, this will always result in
-// a cache miss, but this pattern would be what you'd use on subsequent calls that require
-// the usage of the same access token.
-IEnumerable<IAccount> accounts = (await publicMsalClient.GetAccountsAsync(policySignUpSignIn)).ToList();
-
-if (accounts.Any())
-{
-    try
+    if (error != null)
     {
-        msalAuthenticationResult = await publicMsalClient.AcquireTokenSilent(
-            [scope],
-            accounts.First()).ExecuteAsync();
+        Console.WriteLine(error);
+        Console.WriteLine();
     }
-    catch (MsalUiRequiredException)
-    {
-        // No usable cached token was found for this scope + account or Entra ID insists in
-        // an interactive user flow.
-    }
+
+    Console.WriteLine(CommandLineOptions.GetUsage());
+    return error == null ? 0 : 1;
 }
 
-if (msalAuthenticationResult == null)
+try
 {
-    // Initiate the device code flow.
-    msalAuthenticationResult = await publicMsalClient.AcquireTokenInteractive([scope])
-        .ExecuteAsync();
+    if (options.MachineToMachine)
+    {
+        return await RunMachineToMachineDemoAsync(options);
+    }
+
+    return await RunUserDemoAsync(options);
+}
+catch (Exception exception)
+{
+    Console.WriteLine(exception.Message);
+    return 1;
 }
 
-using var searchRequest = new HttpRequestMessage(HttpMethod.Get, searchListUrl);
-searchRequest.Headers.Authorization = new AuthenticationHeaderValue("Bearer", msalAuthenticationResult.AccessToken);
-
-// Make the API call
-var httpClient = new HttpClient();
-var searchResponse = await httpClient.SendAsync(searchRequest);
-searchResponse.EnsureSuccessStatusCode();
-
-// Present the results to the user (formatting the JSON for readability)
-var responseBody = JsonDocument.Parse(await searchResponse.Content.ReadAsStringAsync());
-Console.WriteLine(JsonSerializer.Serialize(responseBody,
-    new JsonSerializerOptions()
-    {
-        WriteIndented = true,
-        Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-    }));
-
-
-static void Log(LogLevel level, string message, bool containsPii)
+// The user signs in and searches in a dictionary
+static async Task<int> RunUserDemoAsync(CommandLineOptions options)
 {
-    var logs = ($"{level} {message}");
-    var sb = new StringBuilder();
-    sb.Append(logs);
-    File.AppendAllText(System.Reflection.Assembly.GetExecutingAssembly().Location + ".msalLogs.txt", sb.ToString());
-    sb.Clear();
+    Console.WriteLine("Signing in as user...");
+    var accessToken = await new UserAuthentication().GetAccessTokenAsync();
+
+    if (options.ShowToken)
+    {
+        TokenDisplay.Show(accessToken);
+    }
+
+    var apiClient = new BsddApiClient(accessToken, options.ApiUrl);
+    await apiClient.SearchInDictionaryAsync("https://identifier.buildingsmart.org/uri/bs-agri/testpriv/1.0");
+    return 0;
+}
+
+// The application signs in with its own client id and secret and uploads an import file
+static async Task<int> RunMachineToMachineDemoAsync(CommandLineOptions options)
+{
+    if (!TryGetFileToUpload(options.FilePath, out var filePath, out var fileError))
+    {
+        Console.WriteLine(fileError);
+        return 1;
+    }
+
+    Console.WriteLine($"Getting an access token for application '{options.ClientId}'...");
+    var authentication = new ApplicationAuthentication(options.ClientId!, options.ClientSecret!, options.Policy, options.Hostname, options.Scope);
+    var accessToken = await authentication.GetAccessTokenAsync();
+
+    if (options.ShowToken)
+    {
+        TokenDisplay.Show(accessToken);
+    }
+
+    Console.WriteLine($"Uploading '{filePath}' for organization '{options.OrganizationCode}'...");
+    var apiClient = new BsddApiClient(accessToken, options.ApiUrl);
+    var isOk = await apiClient.UploadImportFileAsync(filePath, options.OrganizationCode!, options.ValidateOnly, options.IsTest);
+
+    return isOk ? 0 : 1;
+}
+
+// Uses the given file or else the first json file in the current directory
+static bool TryGetFileToUpload(string? filePath, out string fileToUpload, out string? error)
+{
+    fileToUpload = string.Empty;
+    error = null;
+
+    if (!string.IsNullOrWhiteSpace(filePath))
+    {
+        if (!File.Exists(filePath))
+        {
+            error = $"File '{filePath}' does not exist.";
+            return false;
+        }
+
+        fileToUpload = Path.GetFullPath(filePath);
+        return true;
+    }
+
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var firstJsonFile = Directory.EnumerateFiles(currentDirectory, "*.json").Order(StringComparer.OrdinalIgnoreCase).FirstOrDefault();
+    if (firstJsonFile == null)
+    {
+        error = $"No json file found in '{currentDirectory}'. Use --file <path> to specify the import file to upload.";
+        return false;
+    }
+
+    fileToUpload = firstJsonFile;
+    Console.WriteLine($"No file given, using the first json file in the current directory: '{Path.GetFileName(firstJsonFile)}'");
+    return true;
 }
