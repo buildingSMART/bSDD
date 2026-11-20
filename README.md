@@ -14,7 +14,7 @@ At the heart of bSDD is a canonical database, where all dictionaries can be rela
 
 <img src="/Documentation/graphics/bsdd_diagram.svg"
      alt="bSDD diagram"
-     style="width: 700px" />
+     style="width: 900px" />
 
 ### Quick links
 
