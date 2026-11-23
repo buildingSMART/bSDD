@@ -19,10 +19,10 @@ At the heart of bSDD is a canonical database, where all dictionaries can be rela
 ### Quick links
 
 * [bSDD project page](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
-* [bSDD Search page]()
-* [bSDD Manage portal]()
+* [bSDD Search page](https://search.bsdd.buildingsmart.org/)
+* [bSDD Manage portal](https://manage.bsdd.buildingsmart.org/)
 * [bSDD API Swagger page]()
-* [bSDD updates forum]()
+* [bSDD updates forum](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889)
 * [bSDD data structure](/Documentation/bSDD%20JSON%20import%20model.md)
 * [bSDD JSON template](/Model/Import%20Model/bsdd-import-model.json) / [bSDD Excel template](/Model/Import%20Model/spreadsheet-import)
 * [Tools integrating bSDD](https://technical.buildingsmart.org/resources/software-implementations/?filter_5%5B%5D=bSDD%20read%20API&filter_5%5B%5D=bSDD%20submit%2Fmanage&filter_5%5B%5D=bSDD%20IFC%20export%20(including%20URIs)&filter_1=&gv_search=&mode=any). This is a self-managed list, so feel free to add missing ones.
@@ -33,7 +33,7 @@ At the heart of bSDD is a canonical database, where all dictionaries can be rela
 📢 We inform about planned and recently implemented bSDD updates in this forum topic:
 [bSDD Tech Updates](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889).
 
-* **API documentation** https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20API.md
+* **API documentation** [bSDD API](Documentation/bSDD%20API.md)
 * **API interactive documentation** on Swagger: https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1
 
 We also provide a **TEST** environment where the latest features are rolled out first and tested. If you want to check it out, here are the equivalent pages (not to be used by end-users!):

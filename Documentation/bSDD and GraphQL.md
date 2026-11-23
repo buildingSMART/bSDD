@@ -32,7 +32,7 @@ Test GraphQL secured endpoint: https://test.bsdd.buildingsmart.org/graphqls/
 
 Production GraphQL secured endpoint: https://api.bsdd.buildingsmart.org/graphqls/
 
-See document https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20API.md for info how to access secured APIs. For accessing the secured GraphQL endpoint it is the same.
+See the [bSDD API documentation](bSDD%20API.md) for information about accessing secured APIs. Accessing the secured GraphQL endpoint works the same way.
 
 ## Example data queries
 

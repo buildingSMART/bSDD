@@ -14,9 +14,11 @@ A typical use case is demonstrated in SketchUp. A video of the SketchUp use-case
 **The bSDD API is regularly updated.** If there are breaking changes to the API, we create a new version and support both versions for 6 months after the change occurred. Additions to an existing API usually don't mean a breaking change and can be introduced to the same version.
 
 ## API contracts and testing the API
-You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [bSDD API contract, test](https://test.bsdd.buildingsmart.org/swagger). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods, you need to log in via the UI by using the Authorize button:
+You can get the API contract information at [bSDD API contract, official release](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1). This information is available without the need for you to log in. You can also test the API methods. Secured methods are marked with a lock. To access secured methods, you need to log in via the UI by using the Authorize button:
 
-<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/swagger-authorize2.png" alt="Swagger authorization" style="width: 550px" />
+<img src="graphics/swagger-authorize2.png" alt="Swagger authorization" style="width: 550px" />
+
+Fill in the following client_id: b222e220-1f71-4962-9184-05e0481a390d
 
 Don’t forget to check the “read” scope!
 
@@ -42,7 +44,7 @@ The URL to send GraphQL requests to is:
 - test version: https://test.bsdd.buildingsmart.org/graphqls (secured)
 Note: those URLs are not hyperlinks and do not work in a browser. You need to send a POST request with the query data (the GET request does not work).
 
-Here you can find an example code for accessing a secured bSDD API: [bSDD GraphQL examples](https://github.com/buildingSMART/bSDD/blob/master/Documentation/bSDD%20and%20GraphQL.md). Contact us if you need assistance implementing this.
+Here you can find an example code for accessing a secured bSDD API: [bSDD GraphQL examples](bSDD%20and%20GraphQL.md). Contact us if you need assistance implementing this.
  
 ## For client developers
 
@@ -70,7 +72,7 @@ At this moment, you need to authenticate only a few methods. This might change.
 
 If you’re developing a Javascript, Java, Angular, React, Python, or .NET application, connecting with the buildingSMART Data Dictionary API is easiest if you use the Microsoft Authentication Library (MSAL).
 See [Active directory B2C code samples](https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples) for ready-to-use examples on how to use the MSAL. You can find the bSDD API-specific settings in one of the next sections of this document. Make sure you have the settings in an easy-to-update settings file. 
-You can find the code for a small .NET console application that accesses the bSDD API (authenticated) in this repository: [.NET console example](https://github.com/buildingSMART/bSDD/tree/master/Source%20code%20examples/CSharp-Client-Console-Demo).
+You can find the code for a small .NET console application that accesses the bSDD API (authenticated) in this repository: [.NET console example](../Source%20code%20examples/CSharp-Client-Console-Demo/).
 
 React:  https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-v2-react
         https://github.com/Azure-Samples/ms-identity-javascript-react-tutorial/blob/main/1-Authentication/2-sign-in-b2c/README.md
@@ -82,7 +84,7 @@ If you're developing using other languages, you can still connect to the bSDD AP
 
 To access a secured API, a user must first register themself. When you’re using MSAL, there’s nothing special you need to do for this. The user will be prompted to log in via a browser window. If the user does not have a buildingSMART API account, he can sign up:
 
-<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bs-signupsignin.png" alt="bSDD sign up / sign in" style="width: 350px" />
+<img src="graphics/bs-signupsignin.png" alt="bSDD sign up / sign in" style="width: 350px" />
 
 The user will be registered in the buildingSMART Azure B2C Active Directory.
 Currently there’s no further authorization required to be able to use the API.
@@ -117,4 +119,3 @@ Language-independent description of the authorization flow: [Authorization code 
 High-level descriptions of the various authentication flows: [AD B2C application types](https://docs.microsoft.com/en-us/azure/active-directory-b2c/application-types)
 
 Oauth2 and OpenId protocol descriptions: [AD B2C protocols overview](https://docs.microsoft.com/en-us/azure/active-directory-b2c/protocols-overview)
-

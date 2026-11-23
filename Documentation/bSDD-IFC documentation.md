@@ -28,7 +28,7 @@ Mapping rules are defined for the following concepts:
 	- [openBIM workflows](#openbim-workflows)
 	- [bSDD - IFC mapping](#bsdd---ifc-mapping)
 		- [1. bSDD dictionary](#1-bsdd-dictionary)
-		- [2. bSDD classes (objects)](#2-bsdd-classes-objects)
+		- [2. bSDD classes (objects)](#2-bsdd-class-objects)
 		- [3. bSDD materials](#3-bsdd-materials)
 		- [4. bSDD properties](#4-bsdd-properties)
 
@@ -41,11 +41,11 @@ Mapping rules are defined for the following concepts:
 
 |                    | bSDD                      | IFC4x3_ADD2                      | IFC4                      | IFC2x3                    | IDS1.0   |
 |--------------------|------------------------------|---------------------------------|-------------------------------|-------------------------------|---------|
-| **Dictionary name**    | DictionaryName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |ids:classification.system / (uri)*    |
-| **Dictionary source**  | *uri of the dictionary* | IfcClassification.Specification | IfcClassification.Location    | ❌ (IfcClassification.Source can be used as a workaround)   |uri      |
-| **Dictionary version** | DictionaryVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |(uri)*      |
-| **Dictionary owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |(uri)*      |
-| **Dictionary date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |(uri)*      |
+| **Dictionary name**    | DictionaryName                   | IfcClassification.Name          | IfcClassification.Name        | IfcClassification.Name        |ids:classification.system   |
+| **Dictionary source**  | *uri of the dictionary* | IfcClassification.Specification | IfcClassification.Location    | ❌ (IfcClassification.Source can be used as a workaround)   |ids:classification.uri |
+| **Dictionary version** | DictionaryVersion                | IfcClassification.Edition       | IfcClassification.Edition     | IfcClassification.Edition     |❌ (via uri)*      |
+| **Dictionary owner**   | OrganizationCode             | IfcClassification.Source        | IfcClassification.Source      | IfcClassification.Source      |❌ (via uri)*       |
+| **Dictionary date**    | ReleaseDate                  | IfcClassification.EditionDate   | IfcClassification.EditionDate | IfcClassification.EditionDate |❌ (via uri)*       |
 
 _\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/...```."_
 
@@ -104,9 +104,9 @@ _\* IDS references bSDD using URI, instead of copying its content. Thanks to tha
 
 |                    | bSDD                      | IFC4x3_ADD2 & IFC4                      | IFC2x3                    | IDS1.0   |
 |---------------------------|--------------------------------------|-------------------------------------------|------------------------------------------|-------|
-| **Class name**   | name *of the class*           | IfcClassificationReference.Name           | IfcClassificationReference.Name          |(uri)*      |
-| **Class code**   | code *of the class*           | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |(uri)*      |
-| **Class identifier** | uri *of the class* | IfcClassificationReference.Location      | IfcClassificationReference.Location      |uri      |
+| **Class name**   | name *of the class*           | IfcClassificationReference.Name           | IfcClassificationReference.Name          | ❌ (via uri)*      |
+| **Class code**   | code *of the class*           | IfcClassificationReference.Identification | IfcClassificationReference.ItemReference |ids:classification.value      |
+| **Class identifier** | uri *of the class* | IfcClassificationReference.Location      | IfcClassificationReference.Location      | ids:classification.uri      |
 
 _\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<ClassCode>```."_
 
@@ -234,21 +234,21 @@ _\* IDS references bSDD using URI, instead of copying its content. Thanks to tha
 
 **In bSDD**, a material is defined with a class of type 'Material'. The main difference is in the mapping rules for IFC models. The **bSDD class of type 'Material'** should be linked to the [_IfcMaterial_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterial.htm), which is then linked to various [_IfcObject_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcObject.htm).
  
-**In IFC**, [_IfcMaterial_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterial.htm) are associated with objects through [_IfcRelAssociatesMaterial_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRelAssociatesMaterial.htm) relation. However, when more than one material is associated with an element, there are many possible ways to define this relation through layer sets, profiles or constituents (% of content). Read more about: [Material Association](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/content.html), in particular: [Material Constituent Set](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Constituent_Set/content.html), [Material Layer Set Usage](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Constituent_Set/content.html), [Material Profile Set Usage](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Profile_Set_Usage/content.html), [Material Set](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Set/content.html), [Material Single](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Single/content.html).
+**In IFC**, [_IfcMaterial_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterial.htm) are associated with objects through [_IfcRelAssociatesMaterial_](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRelAssociatesMaterial.htm) relation. However, when more than one material is associated with an element, there are many possible ways to define this relation through layer sets, profiles or constituents (% of content). Read more about: [Material Association](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/content.html), in particular: [Material Constituent Set](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Constituent_Set/content.html), [Material Layer Set Usage](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Layer_Set_Usage/content.html), [Material Profile Set Usage](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Profile_Set_Usage/content.html), [Material Set](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Set/content.html), [Material Single](https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/concepts/Object_Association/Material_Association/Material_Single/content.html).
 
 Below are the mapping rules for different IFC versions.
 
 |                                                   | bSDD                                                               | IFC4x3_ADD2 & IFC4         | IFC2x3    |IDS1.0   |
 |---------------------------------------------------|--------------------------------------------------------------------|-------------------------|-----------|-----|
-| **Material name**  | Class(Material).**Name**       | IfcMaterial.**Name** & IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Name**        | IfcMaterial.**Name**        | (uri)*      |
-| **Material code**  | Class(Material).**Code**        | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Identification**        | IfcMaterialClassificationRelationship.IfcClassificationReference.**ItemReference**       | (uri)*      |
-| **Material identifier**  | Class(Material).**Uri**  | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Location** | IfcMaterialClassificationRelationship.IfcClassificationReference.**Location**  |uri      |
+| **Material name**  | Class(Material).**Name**       | IfcMaterial.**Name** & IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Name**        | IfcMaterial.**Name**        | ❌ (via uri)*       |
+| **Material code**  | Class(Material).**Code**        | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Identification**        | IfcMaterialClassificationRelationship.IfcClassificationReference.**ItemReference**       | ids:material.value      |
+| **Material identifier**  | Class(Material).**Uri**  | IfcExternalReferenceRelationship.RelatingReference.IfcClassificationReference.**Location** | IfcMaterialClassificationRelationship.IfcClassificationReference.**Location**  |ids:material.uri      |
 
 _\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/class/<MaterialCode>```."_
 
 **Snippets**
 
-_For the bSDD snippet, look at the [bSDD classes (objects)](#2.-bSDD-classes-(objects))_
+_For the bSDD snippet, look at the [bSDD classes (objects)](#2-bsdd-class-objects)_
 
 <details><summary>✂️ IFC4x3_ADD2 & IFC4</summary>
 
@@ -307,12 +307,12 @@ Below are the mapping rules for different IFC versions.
 
 |                                                | bSDD                                      | IFC4x3_ADD2                                      | IFC4 & IFC2x3                                      |IDS1.0                                     |
 |------------------------------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|-----------------------|
-| **Property name**                              | PropertyCode *(of ClassProperty)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |(uri)*      |
-| **Property identifier**                            | uri *(of ClassProperty)*          | IfcPropertySingleValue.Specification                    | IfcPropertySingleValue.Description                      |uri      |
-| **Property predefined value** (single value)              | PredefinedValue *(of ClassProperty)*   | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |(uri)*      |
-| **Property unit** (single value or from enumeration)              | PredefinedValue *(of Property or ClassProperty)*   | IfcPropertySingleValue.Unit          | IfcPropertySingleValue.Unit          |(uri)*      |
-| **Property allowed values** (from enumeration) | AllowedValues *(of Property or ClassProperty)*    | IfcPropertyEnumeratedValue .EnumerationValues | IfcPropertyEnumeratedValue .EnumerationValues |(uri)*      |
-| **PropertySet name**                           | PropertySet *(of ClassProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          |(uri)*      |
+| **Property name**                              | PropertyCode *(of ClassProperty)*                      | IfcPropertySingleValue.Name                             | IfcPropertySingleValue.Name                             |ids:property.baseName      |
+| **Property identifier**                            | uri *(of ClassProperty)*          | IfcPropertySingleValue.Specification                    | IfcPropertySingleValue.Description                      |ids:property.uri      |
+| **Property predefined value** (single value)              | PredefinedValue *(of ClassProperty)*   | IfcPropertySingleValue.NominalValue          | IfcPropertySingleValue.NominalValue          |❌ (via uri)*       |
+| **Property unit** (single value or from enumeration)              | PredefinedValue *(of Property or ClassProperty)*   | IfcPropertySingleValue.Unit          | IfcPropertySingleValue.Unit          |❌ (via uri)*       |
+| **Property allowed values** (from enumeration) | AllowedValues *(of Property or ClassProperty)*    | IfcPropertyEnumeratedValue .EnumerationValues | IfcPropertyEnumeratedValue .EnumerationValues |❌ (via uri)*       |
+| **PropertySet name**                           | PropertySet *(of ClassProperty)* | IfcPropertySet.Name                          | IfcPropertySet.Name                          |- (via uri)*       |
 
 _\* IDS references bSDD using URI, instead of copying its content. Thanks to that, the information is still accessible by following the URI link. Note that the URI include many of those information: uri="```http://identifier.buildingsmart.org/uri/<OrganizationCode>/<DictionaryCode>/<DictionaryVersion>/prop/<PropertyCode>```."_
 

@@ -4,7 +4,7 @@ IMPORTANT: naming and (some) example API calls in this file are outdated! Please
 
 How to use the buildingSMART Data Dictionary API?
 
-You can find a lot of info regarding the bSDD API on https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype.
+You can find information about the bSDD API in the [bSDD API documentation](../../Documentation/bSDD%20API.md).
 But where to start using the API?
 
 ## Context
@@ -31,8 +31,8 @@ For this tutorial there is no need to sign up.
 
 Some resources for you to get to know more about bSDD and using the API:
 
-Main resource location of the bSDD API: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype.
-Authenticated call to the bSDD API from a .NET Console App: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo
+Main resource location of the bSDD API: [bSDD API documentation](../../Documentation/bSDD%20API.md).
+Authenticated call to the bSDD API from a .NET Console App: [.NET console example](../../Source%20code%20examples/CSharp-Client-Console-Demo/)
 Azure AD B2C documentation home page: http://aka.ms/aadb2c
 More Azure AD B2C code samples: https://docs.microsoft.com/en-us/azure/active-directory-b2c/code-samples
 The API swagger page: https://test.bsdd.buildingsmart.org/swagger
@@ -48,7 +48,7 @@ Most bSDD API calls do not require any form of authentication yet, so for this t
 ## Part 1 - get a list of the domains
 
 Prepare your app for doing a HTTP request to the buildingSMART Data Dictionary API.
-How to do this depends a lot on the language you use for building your app. If you're using .NET and C#, have a look at the demo console app: https://github.com/buildingSMART/bSDD/tree/master/2020%20prototype/CSharp-Client-Console-Demo
+How to do this depends a lot on the language you use for building your app. If you're using .NET and C#, have a look at the [.NET console example](../../Source%20code%20examples/CSharp-Client-Console-Demo/).
 
 Call the Domain API to get a list of all domains.
 API url: https://test.bsdd.buildingsmart.org/api/Domain/v2

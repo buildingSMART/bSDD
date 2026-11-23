@@ -18,21 +18,21 @@
 
 The bSDD is a service to facilitate the distribution of data dictionaries (read below about what those are) published by independent organisations. The diagram below shows the simplified data model behind the bSDD:
 
-<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
+<img src="graphics/bSDD_data_model.png" alt="bSDD entity diagram" style="width: 650px"/>
 
-See our example demonstrating the usage of the above concepts: [bSDD data example](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_example.png):
-<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
+See our example demonstrating the usage of the above concepts: [bSDD data example](graphics/bSDD_data_example.png):
+<img src="graphics/bSDD_data_example.png" alt="bSDD entity diagram" style="width: 700px"/>
 
 We also have a demonstration dictionary: ["Fruit and vegetables"](https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/1.1).
 
-📢 Read about the latest technical updates in the dedicated forum topic: https://forums.buildingsmart.org/t/bsdd-tech-updates/4889
+📢 Read about the latest technical updates in the dedicated forum topic: [https://forums.buildingsmart.org/t/bsdd-tech-updates/4889](https://forums.buildingsmart.org/t/bsdd-tech-updates/4889)
 
 <h2 id="json-format">JSON format</h2>
 
-You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](/Model/Import%20Model).
+You can deliver data for the buildingSMART Data Dictionary in the JSON file following our standard, which we explain in this document. You can also find the JSON and Excel templates in [/Model/Import Model](../Model/Import%20Model/).
 
 Click on the link to get the list of allowed codes for [countries](https://api.bsdd.buildingsmart.org/api/Country/v1), [languages](https://api.bsdd.buildingsmart.org/api/Language/v1), [units](https://api.bsdd.buildingsmart.org/api/Unit/v1), [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1) and [ifc class](https://api.bsdd.buildingsmart.org/api/Dictionary/v2/Classes?uri=https%3A%2F%2Fidentifier.buildingsmart.org%2Furi%2Fbuildingsmart%2Fifc%2F4.3).
-If you think there are reference documents missing, please let us know.
+If you think there are reference documents missing, please let us know by [posting an issue](https://github.com/buildingSMART/bSDD/issues). All values in JSON must be strings captured in double quotes, including for numeric Example and AllowedValue fields.
 
 If you are unfamiliar with JSON, we recommend reading [Introduction to JSON](https://javaee.github.io/tutorial/jsonp001.html). Please note that JSON is a format meant for computer systems to exchange data. If you have your dictionary data in a computer system, then it's best to let the system create the JSON for you.
 
@@ -54,15 +54,15 @@ NB Default values will only be applied if a field is not specified. If you speci
 | <span id="LanguageOnly">LanguageOnly</span>     | Boolean          | ✅   | | true if JSON contains only language-specific information, no otherwise \*  |
 | <span id="UseOwnUri">UseOwnUri</span>      | Boolean                   | ✅        |             | Default: false. Use your own URIs for globally unique identification of Classes and Properties. If you don't use your own URI a URI starting with "https://identifier.buildingsmart.org" will be assigned to each `Class` and `Property` |
 | <span id="DictionaryUri">DictionaryUri</span>    | Text             |  ✅\*     | | Required if UseOwnUri = true. Supply the globally unique that's the first part of all Classes and Properties uris, Example: "urn:mycompany:mydictionary" or "https://mycompany.com/mydictionary" |
-| <span id="License">License</span>          | Text             |       | | Name of the license to the content. We suggest choosing from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). Example: "MIT" or "CC BY 4.0". Also, a helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
-| <span id="LicenseUrl">LicenseUrl</span>       | Text             |       | | Url to a web page with the full license text   |
+| <span id="License">License</span>          | Text             |       | | Identifier of the license to the content. We suggest choosing a license from [Creative Commons](https://creativecommons.org/choose/) or [OSI Approved Licenses](https://opensource.org/licenses/). If applicable, a standardised [SPDX](https://spdx.org/licenses/) identifier should be used for canonical and reliable identification, for example: "MIT" or "CC-BY-4.0". A helpful resource is [ChooseALicense.com](https://choosealicense.com/).  |
+| <span id="LicenseUrl">LicenseUrl</span>       | Text             |       | | Link to a website with the full license text. The license page should match the provided "License" name.   |
 | <span id="ChangeRequestEmailAddress">ChangeRequestEmailAddress</span>     | Text             |       | | Single email address for receiving change requests from users. By providing the email address, you consent to us forwarding requests from users and exposing the address through the API. You have the right to withdraw the information by contacting us. |
 | <span id="ModelVersion">ModelVersion</span>     | Text             |       | | Version number of the input JSON template. |
 | <span id="MoreInfoUrl">MoreInfoUrl</span>      | Text             |       | | Url to a web page with more info about the dictionary |
 | <span id="QualityAssuranceProcedure">QualityAssuranceProcedure</span>      | Text      | | | Name or short description of the quality assurance procedure used for the dictionary, Example: "ETIM international", "AFNOR NF XP P07-150 (PPBIM)", "bSI process", "UN GHS 2015", "UN CPC 1.1", "Private", "Unknown" |
 | <span id="QualityAssuranceProcedureUrl">QualityAssuranceProcedureUrl</span>   | Text      | | | Url to a web page with more detailed info on the quality assurance procedure, Example: "https://www.buildingsmart.org/about/bsi-process"  |
 | <span id="ReleaseDate">ReleaseDate</span>                    | DateTime  | | | Date of release of the version, See [Date Time format](#datetime-format).  |
-| <span id="Status">Status</span>                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/bSDD%20import%20tutorial.md#the-lifecycle-of-the-bsdd-dictionary-version)  |
+| <span id="Status">Status</span>                         | Text      | | | Possible version statuses: `Preview`, `Active`, `Inactive`. When uploading a new version, it should always be in `Preview`. You can then activate or deactivate content via [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [Management Portal](https://manage.bsdd.buildingsmart.org/). Read more: [the lifecycle of the bSDD content](bSDD%20import%20tutorial.md#the-lifecycle-of-a-dictionary)  |
 | <span id="Classes">Classes</span>          | List of Class    | ✅    | | List of objects of type `Class`. See section [Class](#class)  |
 | <span id="Properties">Properties</span>       | List of Property | ✅    | | List of objects of type `Property`. See section [Property](#property) |
 
@@ -76,7 +76,7 @@ NB Default values will only be applied if a field is not specified. If you speci
 
 | Field                     | DataType                       | Requ- ired? | Trans- latable? | Description                                                                                                        |
 |---------------------------|--------------------------------|-------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="Code">Code</span>                      | Text                           | ✅         |            | Unique identification of the class within the dictionary. Example: "abc-00123-01" or "SpecialWall". Code validation applies, see: [Code format](#code-format). The prefix 'Ifc' is reserved for the IFC standard.                         |
+| <span id="Code">Code</span>                      | Text                           | ✅         |            | Unique identification of the class within the dictionary. This is the information to be used as an identifier in IFC models. Example: "abc-00123-01" or "SpecialWall". Code validation applies, see: [Code format](#code-format). The prefix 'Ifc' is reserved for the IFC standard.                         |
 | <span id="Name">Name</span>                      | Text                           | ✅         | ✅         | Name of the `Class,` Example: "IfcCurtainWall"                                                                   |
 | <span id="ClassType">ClassType</span>                 | Text                           | ✅*        |            | Must be one of: `Class`, `Material`, `GroupOfProperties`, `AlternativeUse`. Read more about [class types](#class-types). If not specified, the `Class` type will be used by default. The types `ReferenceDocument`, `ComposedProperty` and `Dictionary` were deprecated and can not be used on upload but may be present in API results for the duration of transition time. |
 | <span id="Definition">Definition</span>                | Text                           |            | ✅          | Definition of the `Class`, explaining the semantic meaning. A required field according to the ISO. Supports [double square bracket links](#double-square-bracket-links).  |
@@ -92,7 +92,7 @@ NB Default values will only be applied if a field is not specified. If you speci
 | <span id="DeActivationDateUtc">DeActivationDateUtc</span>       | DateTime                       |            |             | See [Date Time format](#datetime-format). |
 | <span id="DeprecationExplanation">DeprecationExplanation</span>    | Text                           |            | ✅         | Only fill for deprecated definitions. |
 | <span id="DocumentReference">DocumentReference</span>         | Text                           |            |             | Reference to document with the full or official definition of the `Class`. See reference list [reference documents](https://api.bsdd.buildingsmart.org/api/ReferenceDocument/v1). |
-| <span id="OwnedUri">OwnedUri</span>                  | Text                           |            |             | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the `Class`  |
+| <span id="OwnedUri">OwnedUri</span>                  | Text                           |  ✳️        |             | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the `Class`.  |
 | <span id="ReplacedObjectCodes">ReplacedObjectCodes</span>       | List of text                   |            |             | List of Class Codes this Class replaces                                                          |
 | <span id="ReplacingObjectCodes">ReplacingObjectCodes</span>      | List of text                   |            |             | List of Class Codes this class is replaced by                                                    |
 | <span id="RevisionDateUtc">RevisionDateUtc</span>           | DateTime                       |            |             | See [Date Time format](#datetime-format). |
@@ -115,8 +115,8 @@ Note: Since the release of November 2023, Materials are not treated separately a
 
 | Field                         | DataType     | Requ- ired? | Trans- latable? | Description                                                                                                                                          |
 |-------------------------------|--------------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Code">Code</span>                          | Text         | ✅       |             | Unique identification of the property within the dictionary. Example: "abc-00123-01" or "SpecialWidth". Code validation applies, see: [Code format](#code-format).                                                                          |
-| <span id="Name">Name</span>                          | Text         | ✅       | ✅           | Name of the Property Example: "IsExternal"                                                                                                               |
+| <span id="Code">Code</span>                          | Text         | ✅       |             | Unique identification of the property within the dictionary. This is the information to be used as an identifier in IFC models. Example: "abc-00123-01" or "ExternalArea". Code validation applies, see: [Code format](#code-format).                                                                          |
+| <span id="Name">Name</span>                          | Text         | ✅       | ✅           | Name of the Property Example: "External Area"                                                                                                               |
 | <span id="Definition">Definition</span>                    | Text         |         | ✅           | Definition of the `Property`, explaining the semantic meaning. A required field according to the ISO. Supports [double square bracket links](#double-square-bracket-links). |
 | <span id="Description">Description</span>                   | Text         |         | ✅           | Additional field for supplementary explanation. Please only use it if the _Definition_ comes from a standard and requires further explanation.  |
 | <span id="DataType">DataType</span>                      | Text         |  ✅       |             | The datatype the property is expressed in. Must be one of:  `Boolean`,  `Character`,  `Integer`,  `Real`,  `String`,  `Time`                       |
@@ -146,7 +146,7 @@ Note: Since the release of November 2023, Materials are not treated separately a
 | <span id="MinExclusive">MinExclusive</span>            | Real     |         |             | Minimum allowed value, exclusive |
 | <span id="MinInclusive">MinInclusive</span>            | Real     |         |             | Minimum allowed value, inclusive |
 | <span id="MethodOfMeasurement">MethodOfMeasurement</span>           | Text         |         | ✅           | Example: "Thermal transmittance according to ISO 10077-1"                                                                                                |
-| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the Property  |
+| <span id="OwnedUri">OwnedUri</span>                | Text                           | ✳️        |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the `Property`.  |
 | <span id="Pattern">Pattern</span>            | Text     |         |             | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values |
 | <span id="PhysicalQuantity">PhysicalQuantity</span>              | Text         |         | ✅           | Name of the physical quantity of the property, Example: "without" or "mass"                                                                               |
 | <span id="PropertyValueKind">PropertyValueKind</span>             | Text         |         |             | Must be one of:  `Single` (one value; this is the default),  `Range` (two values),  `List` (multiple values), `Complex` (neither single/range/list, for example an object like IfcActor or an aggregation of connected properties - see [assembling properties](#assembling-properties)), `ComplexList` (list of complex values).   |
@@ -175,11 +175,11 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 |  Field               | DataType | Requ- ired? | Trans- latable? | Description                                                                                                            |
 |---------------------|----------|-----------|---------------|------------------------------------------------------------------------------------------------------------------------|
 | <span id="Code">Code</span>                | Text     |      |     | Unique identification code of the `ClassProperty`. Code validation applies, see: [Code format](#code-format). When left empty on import, bSDD will generate a random GUID.    |
-| <span id="PropertyCode">PropertyCode</span>        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. Not required if you fill in the PropertyUri  |
-| <span id="PropertyUri">PropertyUri</span>         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, Example: [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) Not required if you fill the PropertyCode       |
+| <span id="PropertyCode">PropertyCode</span>        | Text     | ✅\*   |     | Reference to the `Property` if it is in the same `Dictionary`. \* Only one of the two is required, and if PropertyCode is in use, do not fill in the PropertyUri.  |
+| <span id="PropertyUri">PropertyUri</span>         | Text     | ✅\*   |     | Reference to the `Property` if it is in a different `Dictionary`, Example: [https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth](https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ClearWidth) \* Only one of the two is required, and if PropertyUri is in use, do not fill in the PropertyCode.       |
 | <span id="Description">Description</span>         | Text     |         | ✅ | You can supply the property description specific to the class. If left out, the 'common' description of the property will be shown where applicable |
-| <span id="PropertySet">PropertySet</span>         | Text     |         |     | Name of the set where the property should be placed in IFC data. The prefix 'Pset_' is reserved for the official IFC. Code validation applies, see: [Code format](#code-format). Read more: [assembling properties](#assembling-properties). |
-| <span id="Unit">Unit</span>                | Text     |         |     | See reference list (json) [units](https://api.bsdd.buildingsmart.org/api/Unit/v1).                                                                                                                       |
+| <span id="PropertySet">PropertySet</span>         | Text     |         |     | Name of the set where the property should be placed in IFC data. Empty field will default to "undefined_set". The prefix 'Pset_' is reserved for the official IFC. Code validation applies, see: [Code format](#code-format). Read more: [assembling properties](#assembling-properties). |
+| <span id="Unit">Unit</span>                | Text     |         |     | The code of the unit. Unlike Property 'Units' (list), this attribute takes a single value. See reference list of [units (JSON)](https://api.bsdd.buildingsmart.org/api/Unit/v1) or in the form of [a CSV table of units](../DataFiles/units.csv). We support many of the [QUDT](http://www.qudt.org/) units, but if you miss any unit, please [post a unit request as an issue](https://github.com/buildingSMART/bSDD/issues).                                                                                                                       |
 | <span id="PredefinedValue">PredefinedValue</span>     | Text     |         |     | Predefined value for this `Property`. Example: value for property "IsLoadBearing" can be "true" for class "IfcWall" |
 | <span id="IsRequired">IsRequired</span>          | Boolean  |         |     | Indicates if this is a required `Property` of the `Class` |
 | <span id="IsWritable">IsWritable</span>          | Boolean  |         |     | Indicates if the value of this `Property` of the `Class` can be changed |
@@ -188,7 +188,7 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 | <span id="MinExclusive">MinExclusive</span>        | Real     |         |     | Minimum allowed value, exclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
 | <span id="MinInclusive">MinInclusive</span>        | Real     |         |     | Minimum allowed value, inclusive. Overrides the value defined for the `Property`. Do not fill both 'inclusive' and 'exclusive' values. |
 | <span id="Pattern">Pattern</span>             | Text     |         |     | An [XML Schema regular expression](https://www.regular-expressions.info/xml.html) to limit allowed values. Overrides the pattern defined for the Property |
-| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassProperty  |
+| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the `ClassProperty`. Otherwise, the URI will be auto-generated.  |
 | <span id="PropertyType">PropertyType</span>        | Text     |         |     | Type of the `Property` for the `Class`: `Property` (default) or `Dependency`                                      |
 | <span id="SortNumber">SortNumber</span>          | Integer  |         |     | Sort number of this `Property` within the `Class`                                                                 |
 | <span id="Symbol">Symbol</span>              | Text     |         |     |                                                                                                                        |
@@ -196,20 +196,18 @@ Through `ClassProperty`, one can further specify a 'Property' by defining its un
 | ~~ExternalPropertyUri~~ | ~~Text~~     |       |             | DEPRECATED - Use `PropertyUri` instead                |
 
 
-\* One of those is required.
-
 <h3 id="AllowedValue">AllowedValue</h3>
 
 Optional value enumerations that can be listed for `Properties` and `ClassProperties`. For example, a 'Fire Rating' could only have a few allowed values: REI30, REI60, REI90 or REI120.
 
 | Field                    | DataType | Requ- ired? | Trans- latable? | Description                                                                 |
 |--------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|
-| <span id="Code">Code</span>             | Text     | ✅       |             | Code is a unique identification of the value (max 20 characters). It is required and, in most cases is the same as the value. It is needed to enable translations of Values or their Descriptions. Code validation applies, see: [Code format](#code-format). |
-| <span id="Value">Value</span> | Text     | ✅       | ✅       | One of the Values the property can have, Example: "Green" in case the Property is something like "Color"|
+| <span id="Code">Code</span>             | Text     | ✅       |             | Code is a unique identification of the value. This is the information to be used as an identifier in IFC models. It is required and, in most cases, is the same as the value. It is needed to enable translations of Values or their Descriptions. Code validation applies, see: [Code format](#code-format). |
+| <span id="Value">Value</span> | Text     | ✅       | ✅       | The name of the value, example: "Green" (for Property "Color"). This is mainly for translation, and not to be used in IFC models. |
 | <span id="Description">Description</span> | Text     |        | ✅       | A description of the value|
 | <span id="Uri">Uri</span>*| Text |  |  | * To be deprecated in the new model version, as it overlaps with the OwnedUri. |
 | <span id="SortNumber">SortNumber</span> | Integer     |        |             | SortNumber of the Value in the list of Values of the `Property` it belongs to|
-| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the AllowedValue  |
+| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the `AllowedValue`. Otherwise, the URI will be auto-generated.  |
 
 Note: adding translations of the `AllowedValue` is not supported yet
 
@@ -224,7 +222,7 @@ Note: adding translations of the `AllowedValue` is not supported yet
 | <span id="RelatedClassCode">RelatedClassCode</span> | Text     | ✅?       |             | If the related `Class` is in same dictionary the `RelatedClassCode` can be used instead of the `RelatedClassUri`. `RelatedClassCode` or `RelatedClassUri` is required.|
 | <span id="RelatedClassName">RelatedClassName</span> | Text     |        |             |Specify if the related class is not in bSDD.  |
 | <span id="Fraction">Fraction</span>       | Real     |        |             | Only applicable to `HasMaterial` relation. Optional provision of a fraction of the total amount (Example: volume or weight) that applies to the Class owning the relations. The sum of Fractions per class/relationtype must be 1. Similar to Fraction in [IfcMaterialConstituent](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcMaterialConstituent.htm)|
-| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the ClassRelation  |
+| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the `ClassRelation`. Otherwise, the URI will be auto-generated.  |
 
 
 <h3 id="PropertyRelation">PropertyRelation</h3>
@@ -237,7 +235,7 @@ Analogous to `ClassRelations` but between `Properties`.
 | <span id="RelatedPropertyUri">RelatedPropertyUri</span> | Text     | ✅?       |             | Full URI of the related `Property`. It can be to same or a different `Dictionary`. `RelatedPropertyUri` or `RelatedPropertyCode` is required.|
 | <span id="RelatedPropertyCode">RelatedPropertyCode</span> | Text     | ✅?       |             | If the related `Property` is in same dictionary the `RelatedPropertyCode` can be used instead of the `RelatedPropertyUri`. `RelatedPropertyCode` or `RelatedPropertyUri` is required.|
 | <span id="RelationType">RelationType</span>             | Text     | ✅       |             | One of:  `HasReference`,  `IsEqualTo`,  `IsSimilarTo`, ~~IsParentOf,  IsChildOf, HasPart~~. Read more about [Relation types](#relation-types).  |
-| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you must supply the URI that globally uniquely identifies the PropertyRelation  |
+| <span id="OwnedUri">OwnedUri</span>                | Text                           |         |            | If you specified `UseOwnUri = true` at the dictionary level, you can supply the URI that globally uniquely identifies the `PropertyRelation`. Otherwise, the URI will be auto-generated.  |
 
 ---
 
@@ -250,6 +248,8 @@ Analogous to `ClassRelations` but between `Properties`.
 Some examples of valid codes are: "bs-agri", "apple", "éÄą _- (Д開発,...żź)".
 
 Codes need to be unique within the same data dictionary and are used to generate URIs.
+
+The code length limit is 100 characters.
 
 Some codes might be reserved, for example, the IFC standard reserves the codes starting with a prefix 'Ifc' and 'Pset'. 
 
@@ -269,12 +269,12 @@ Each class must have a specific type. Below is the explanation of what each type
 
 <h3 id="defining-relations">Defining relations</h3>
 
-`ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcCurtainWall” is a more
-specific class of “IfcWall”. In bSDD terminology, we say that “IfcWall” is a **parent of** “IfcCurtainWall”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
+`ParentClassCode` - `Class`es within the same dictionary can be organized in a tree-like hierarchy structure. For example: “IfcPile” is a more
+specific class of “IfcDeepFoundation”. In bSDD terminology, we say that “IfcDeepFoundation” is a **parent of** “IfcPile”. To define such specialization relation, use the `ParentClassCode` attribute on the child object.
 
 `ClassRelation` and `PropertyRelation`- use those to link your concepts with each other. Relations allow us to define parent-child links also with other dictionaries. Apart from specialization, you can also define other types of relations, such as decomposition (`HasPart` type, see the list of possible types: [Relation types](#relation-types)).
 
-`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your class to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signaling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classes to a particular IFC category.
+`RelatedIfcEntityNamesList` - IFC is a top-level schema (foundation classes) used for exchanging information between software. Because of that, the bSDD provides a special way to relate your class to IFC. Use `RelatedIfcEntityNamesList` to show which entities from IFC you are referring to or extending. For example, “Signalling LED diode” relates to “IfcLamp” from IFC. `RelatedIfcEntityNamesList` can be used by bSDD-related tools to filter the list of possible classes to a particular IFC category.
 
 <h3 id="relation-types">Relation types</h3>
 
@@ -311,7 +311,7 @@ In bSDD, all resources get a unique identifier - URI. The URI, among other infor
 If you want to reference specific resources but are not sure of the version or want to always point to the most recent version, we implemented the "latest" feature. Now, it is possible to use "latest" instead of a version number, and bSDD will resolve the link to the latest active or preview version containing that resource: 
 .../uri/bs-agri/fruitvegs/**latest**/class/fruit. 
 
-<img src="https://raw.githubusercontent.com/buildingSMART/bSDD/master/Documentation/graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
+<img src="graphics/latest_example.jpg" alt="bSDD latest" style="width: 750px"/>
 
 Try it out:
 https://search.bsdd.buildingsmart.org/uri/bs-agri/fruitvegs/latest/class/fruit
@@ -350,33 +350,6 @@ Use Dynamic Properties to tell which other properties influence the value of the
 Example: _The 'Area' of a wall depends on its 'Height' and 'Length', following the formula: A = H * L._
 
 ⚠️ This feature comes from the ISO standard but is rarely supported by software implementation. Consider avoiding Dynamic Properties to make the data dictionary more accessible.
-
-<h3 id="restricting-property-values">Restricting property values</h3>
-
-🚧 TO BE DEVELOPED 🚧
-`AllowedValues`...
-
-`Min/MaxInc/Exclusive`...
-
-`Pattern`...
-
-<h3 id="identifying-bsdd-resources">Identifying bSDD resources</h3>
-
-🚧 TO BE DEVELOPED 🚧
-`URI`... Can be generated by bSDD or external.
-
-`Code`...  See section [Code format](#code-format).
-
-`UID`(GUID)...
-
-<h3 id="specifying-units">Specifying units</h3>
-
-🚧 TO BE DEVELOPED 🚧
-`Unit(s)`...
-
-`Dimension`...
-
-`PhysicalQuantity`...
 
 <h3 id="double-square-bracket-links">Double square bracket links</h3>
 It is possible to reference other resources from the same dictionary using double square brackets, and the platform will replace the brackets with hyperlinks pointing to that resource. In cases where the same code exists for both class and property, the hyperlink will point to the class. If the code is not found, the square brackets are omitted. The API returns the definition with square brackets. 

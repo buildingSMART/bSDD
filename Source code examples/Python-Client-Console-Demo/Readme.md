@@ -4,7 +4,7 @@ IMPORTANT: naming and (some) example API calls in this file are outdated! Please
 
 The Python console app provides the API calls needed to implement the use case presented in the Hackathon on 2021 3th of March.
 
-see: https://github.com/buildingSMART/bSDD/blob/master/2021%20Hackathon/tutorial.md
+See the [March 2021 Hackathon tutorial](../../Meetings/2021%20Hackathon/tutorial.md).
 
 1- Get the list of available domains in bSDD
 

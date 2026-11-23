@@ -4,9 +4,9 @@
 
 The bSDD is based on ISO12006-3 and ISO23386 standards, which define data dictionaries. For ease of integration with openBIM workflows, the bSDD is stripped down to the essential aspects: defining interrelated terms and properties describing the built environment. The bSDD constraints include the imposed units list, languages list, and types of relations between concepts (ISO leaves freedom of definition to users, hindering interpretation by software). The inheritance structure of ISO12006-3 (Root→Object→Concept→Subject/Property) is simplified in bSDD to one level: Class and Property. 
 
-The ISO allows the versioning of each concept individually, which is important for the development of a data dictionary. In bSDD, to support contractual agreements, each change results in a new version of the complete dictionary. This does not apply if a dictionary is not activated. Read more about [the content lifecycle in bSDD](https://github.com/buildingSMART/bSDD/blob/doc_update/Documentation/bSDD%20import%20tutorial.md).
+The ISO allows the versioning of each concept individually, which is important for the development of a data dictionary. In bSDD, to support contractual agreements, each change results in a new version of the complete dictionary. This does not apply if a dictionary is not activated. Read more about [the content lifecycle in bSDD](bSDD%20import%20tutorial.md#the-lifecycle-of-a-dictionary).
 
-Below is the table mapping the attributes of bSDD and ISO standards. bSDD attributes are defined in [the bSDD data model](https://github.com/buildingSMART/bSDD/blob/doc_update/Documentation/bSDD%20JSON%20import%20model.md). 
+Below is the table mapping the attributes of bSDD and ISO standards. bSDD attributes are defined in [the bSDD data model](bSDD%20JSON%20import%20model.md).
 
 | **bSDD** | **ISO23386:2020** | **ISO12006-3:2022** | **Comment** |
 |---|---|---|---|

@@ -21,8 +21,8 @@ Another option to make a dictionary private (or public again) is by manually cha
 ![image](https://github.com/buildingSMART/bSDD/assets/22922395/517fc34e-020f-4e91-9b67-83a132a9e0e4)
 
 ### How can I access a private data dictionary?
-You can only access private dictionary data when you're logged in as a user that is allowed to access it, and the application you are using supports it.
+You can only access private dictionary data when you're logged in as a user who is allowed to access it, and the application you are using supports it.
 
-For example, to access the content via the Swagger page (Production: https://app.swaggerhub.com/apis-docs/buildingSMART/Dictionaries/v1 / Test: https://test.bsdd.buildingsmart.org/swagger), you should authorise and use the secured API's. Accessing the data via the unsecured APIs is possible, but Swagger does not support that (for those unsecured APIs, swagger does not send your 'token', so the server does not know who you are).
+For example, to access the content via the Swagger page (Production: https://app.swaggerhub.com/apis-docs/buildingSMART/Dictionaries/v1 / Test: https://test.bsdd.buildingsmart.org/swagger), you should authorise and use the secured API's. Accessing the data via the unsecured APIs is possible, but Swagger does not support that (for those unsecured APIs, Swagger does not send your 'token', so the server does not know who you are).
 
-> Currently, you cannot access private data via the search website (Production: https://search.bsdd.buildingsmart.org/ / Test: https://search-test.bsdd.buildingsmart.org).
+You can also access private data via the Search website (Production: https://search.bsdd.buildingsmart.org/ / Test: https://search-test.bsdd.buildingsmart.org), once you log in.

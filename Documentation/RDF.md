@@ -12,4 +12,4 @@ You can request output in RDF-xml format by adding an HTTP header with key "Acce
 
 You can request output in turtle format by adding an HTTP header with key "Accept" and value "text/turtle" of "application/x-turtle".
 
-<img src="https://github.com/buildingSMART/bSDD/blob/documentation/Documentation/graphics/HowToGetOutputInTurtleFormat.PNG" alt="How to get output in turtle format"/>
+<img src="graphics/HowToGetOutputInTurtleFormat.PNG" alt="How to get output in turtle format"/>
