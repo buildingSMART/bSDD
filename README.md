@@ -10,7 +10,9 @@ Read more at bSDD project page: https://www.buildingsmart.org/users/services/bui
 
 ### Overview
 
-At the heart of bSDD is a canonical database, where all dictionaries can be related to each other. The main way to access the bSDD is through its [APIs (Application Programming Interfaces)](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1). This is how most BIM software and other apps can use the data stored in the bSDD. Apart from that, there is [the bSDD Search page](https://search.bsdd.buildingsmart.org/), where people can look up the content. Authors can publish content to bSDD through [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [the bSDD Manage portal](https://manage.bsdd.buildingsmart.org/). To upload, please register your organisation using [the organisation registration form](https://bsi-technicalservices.atlassian.net/servicedesk/customer/portal/3/group/4/create/25).
+At the heart of bSDD is a canonical database, where all dictionaries can be related to each other. The main way to access the bSDD is through its [APIs (Application Programming Interfaces)](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1). This is how most BIM software and other apps can use the data stored in the bSDD. Apart from that, there is [the bSDD Search page](https://search.bsdd.buildingsmart.org/), where people can look up the content. Authors can publish content to bSDD through [the API](https://app.swaggerhub.com/apis/buildingSMART/Dictionaries/v1) or [the bSDD Manage portal](https://manage.bsdd.buildingsmart.org/). 
+
+To upload, please register your organisation at [bSDD Manage](https://manage.bsdd.buildingsmart.org/).
 
 <img src="/Documentation/graphics/bsdd_diagram.svg"
      alt="bSDD diagram"
